@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2001-2021, Python Software Foundation
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python 3.10\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: library/pty.rst:2
+msgid ":mod:`pty` --- Pseudo-terminal utilities"
+msgstr ""
+
+#: library/pty.rst:11
+msgid "**Source code:** :source:`Lib/pty.py`"
+msgstr ""
+
+#: library/pty.rst:15
+msgid ""
+"The :mod:`pty` module defines operations for handling the pseudo-terminal "
+"concept: starting another process and being able to write to and read from "
+"its controlling terminal programmatically."
+msgstr ""
+
+#: library/pty.rst:19
+msgid ""
+"Pseudo-terminal handling is highly platform dependent. This code is mainly "
+"tested on Linux, FreeBSD, and macOS (it is supposed to work on other POSIX "
+"platforms but it's not been thoroughly tested)."
+msgstr ""
+
+#: library/pty.rst:23
+msgid "The :mod:`pty` module defines the following functions:"
+msgstr ""
+
+#: library/pty.rst:28
+msgid ""
+"Fork. Connect the child's controlling terminal to a pseudo-terminal. Return "
+"value is ``(pid, fd)``. Note that the child  gets *pid* 0, and the *fd* is "
+"*invalid*. The parent's return value is the *pid* of the child, and *fd* is "
+"a file descriptor connected to the child's controlling terminal (and also to "
+"the child's standard input and output)."
+msgstr ""
+
+#: library/pty.rst:37
+msgid ""
+"Open a new pseudo-terminal pair, using :func:`os.openpty` if possible, or "
+"emulation code for generic Unix systems. Return a pair of file descriptors "
+"``(master, slave)``, for the master and the slave end, respectively."
+msgstr ""
+
+#: library/pty.rst:44
+msgid ""
+"Spawn a process, and connect its controlling terminal with the current "
+"process's standard io. This is often used to baffle programs which insist on "
+"reading from the controlling terminal. It is expected that the process "
+"spawned behind the pty will eventually terminate, and when it does *spawn* "
+"will return."
+msgstr ""
+
+#: library/pty.rst:50
+msgid ""
+"A loop copies STDIN of the current process to the child and data received "
+"from the child to STDOUT of the current process. It is not signaled to the "
+"child if STDIN of the current process closes down."
+msgstr ""
+
+#: library/pty.rst:54
+msgid ""
+"The functions *master_read* and *stdin_read* are passed a file descriptor "
+"which they should read from, and they should always return a byte string. In "
+"order to force spawn to return before the child process exits an empty byte "
+"array should be returned to signal end of file."
+msgstr ""
+
+#: library/pty.rst:59
+msgid ""
+"The default implementation for both functions will read and return up to "
+"1024 bytes each time the function is called. The *master_read* callback is "
+"passed the pseudoterminal’s master file descriptor to read output from the "
+"child process, and *stdin_read* is passed file descriptor 0, to read from "
+"the parent process's standard input."
+msgstr ""
+
+#: library/pty.rst:65
+msgid ""
+"Returning an empty byte string from either callback is interpreted as an end-"
+"of-file (EOF) condition, and that callback will not be called after that. If "
+"*stdin_read* signals EOF the controlling terminal can no longer communicate "
+"with the parent process OR the child process. Unless the child process will "
+"quit without any input, *spawn* will then loop forever. If *master_read* "
+"signals EOF the same behavior results (on linux at least)."
+msgstr ""
+
+#: library/pty.rst:72
+msgid ""
+"Return the exit status value from :func:`os.waitpid` on the child process."
+msgstr ""
+
+#: library/pty.rst:74
+msgid ""
+":func:`waitstatus_to_exitcode` can be used to convert the exit status into "
+"an exit code."
+msgstr ""
+
+#: library/pty.rst:77
+msgid ""
+"Raises an :ref:`auditing event <auditing>` ``pty.spawn`` with argument "
+"``argv``."
+msgstr ""
+
+#: library/pty.rst:79
+msgid ""
+":func:`spawn` now returns the status value from :func:`os.waitpid` on the "
+"child process."
+msgstr ""
+
+#: library/pty.rst:84
+msgid "Example"
+msgstr ""
+
+#: library/pty.rst:88
+msgid ""
+"The following program acts like the Unix command :manpage:`script(1)`, using "
+"a pseudo-terminal to record all input and output of a terminal session in a "
+"\"typescript\". ::"
+msgstr ""

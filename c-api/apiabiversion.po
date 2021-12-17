@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2001-2021, Python Software Foundation
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python 3.10\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: c-api/apiabiversion.rst:7
+msgid "API and ABI Versioning"
+msgstr ""
+
+#: c-api/apiabiversion.rst:9
+msgid ""
+"CPython exposes its version number in the following macros. Note that these "
+"correspond to the version code is **built** with, not necessarily the "
+"version used at **run time**."
+msgstr ""
+
+#: c-api/apiabiversion.rst:13
+msgid ""
+"See :ref:`stable` for a discussion of API and ABI stability across versions."
+msgstr ""
+
+#: c-api/apiabiversion.rst:17
+msgid "The ``3`` in ``3.4.1a2``."
+msgstr ""
+
+#: c-api/apiabiversion.rst:21
+msgid "The ``4`` in ``3.4.1a2``."
+msgstr ""
+
+#: c-api/apiabiversion.rst:25
+msgid "The ``1`` in ``3.4.1a2``."
+msgstr ""
+
+#: c-api/apiabiversion.rst:29
+msgid ""
+"The ``a`` in ``3.4.1a2``. This can be ``0xA`` for alpha, ``0xB`` for beta, "
+"``0xC`` for release candidate or ``0xF`` for final."
+msgstr ""
+
+#: c-api/apiabiversion.rst:35
+msgid "The ``2`` in ``3.4.1a2``. Zero for final releases."
+msgstr ""
+
+#: c-api/apiabiversion.rst:39
+msgid "The Python version number encoded in a single integer."
+msgstr ""
+
+#: c-api/apiabiversion.rst:41
+msgid ""
+"The underlying version information can be found by treating it as a 32 bit "
+"number in the following manner:"
+msgstr ""
+
+#: c-api/apiabiversion.rst:45
+msgid "Bytes"
+msgstr ""
+
+#: c-api/apiabiversion.rst:45
+msgid "Bits (big endian order)"
+msgstr ""
+
+#: c-api/apiabiversion.rst:45
+msgid "Meaning"
+msgstr ""
+
+#: c-api/apiabiversion.rst:45
+msgid "Value for ``3.4.1a2``"
+msgstr ""
+
+#: c-api/apiabiversion.rst:47
+msgid "1"
+msgstr ""
+
+#: c-api/apiabiversion.rst:47
+msgid "1-8"
+msgstr ""
+
+#: c-api/apiabiversion.rst:47
+msgid "``PY_MAJOR_VERSION``"
+msgstr ""
+
+#: c-api/apiabiversion.rst:47
+msgid "``0x03``"
+msgstr ""
+
+#: c-api/apiabiversion.rst:49
+msgid "2"
+msgstr ""
+
+#: c-api/apiabiversion.rst:49
+msgid "9-16"
+msgstr ""
+
+#: c-api/apiabiversion.rst:49
+msgid "``PY_MINOR_VERSION``"
+msgstr ""
+
+#: c-api/apiabiversion.rst:49
+msgid "``0x04``"
+msgstr ""
+
+#: c-api/apiabiversion.rst:51
+msgid "3"
+msgstr ""
+
+#: c-api/apiabiversion.rst:51
+msgid "17-24"
+msgstr ""
+
+#: c-api/apiabiversion.rst:51
+msgid "``PY_MICRO_VERSION``"
+msgstr ""
+
+#: c-api/apiabiversion.rst:51
+msgid "``0x01``"
+msgstr ""
+
+#: c-api/apiabiversion.rst:53
+msgid "4"
+msgstr ""
+
+#: c-api/apiabiversion.rst:53
+msgid "25-28"
+msgstr ""
+
+#: c-api/apiabiversion.rst:53
+msgid "``PY_RELEASE_LEVEL``"
+msgstr ""
+
+#: c-api/apiabiversion.rst:53
+msgid "``0xA``"
+msgstr ""
+
+#: c-api/apiabiversion.rst:55
+msgid "29-32"
+msgstr ""
+
+#: c-api/apiabiversion.rst:55
+msgid "``PY_RELEASE_SERIAL``"
+msgstr ""
+
+#: c-api/apiabiversion.rst:55
+msgid "``0x2``"
+msgstr ""
+
+#: c-api/apiabiversion.rst:58
+msgid ""
+"Thus ``3.4.1a2`` is hexversion ``0x030401a2`` and ``3.10.0`` is hexversion "
+"``0x030a00f0``."
+msgstr ""
+
+#: c-api/apiabiversion.rst:62
+msgid "All the given macros are defined in :source:`Include/patchlevel.h`."
+msgstr ""
