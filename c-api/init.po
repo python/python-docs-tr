@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"POT-Creation-Date: 2021-12-17 23:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -529,9 +530,7 @@ msgid ""
 "this storage."
 msgstr ""
 
-#: c-api/init.rst:511
-#: c-api/init.rst:644
-#: c-api/init.rst:661
+#: c-api/init.rst:511 c-api/init.rst:644 c-api/init.rst:661
 msgid ""
 "Use :c:func:`Py_DecodeLocale` to decode a bytes string to get a :c:type:"
 "`wchar_*` string."
@@ -544,17 +543,13 @@ msgid ""
 "not modify its value."
 msgstr ""
 
-#: c-api/init.rst:398
-#: c-api/init.rst:458
-#: c-api/init.rst:671
+#: c-api/init.rst:398 c-api/init.rst:458 c-api/init.rst:671
 msgid ""
 "This function should not be called before :c:func:`Py_Initialize`, otherwise "
 "it returns ``NULL``."
 msgstr ""
 
-#: c-api/init.rst:401
-#: c-api/init.rst:461
-#: c-api/init.rst:674
+#: c-api/init.rst:401 c-api/init.rst:461 c-api/init.rst:674
 msgid "It now returns ``NULL`` if called before :c:func:`Py_Initialize`."
 msgstr ""
 
@@ -1059,8 +1054,7 @@ msgid ""
 "ensues."
 msgstr ""
 
-#: c-api/init.rst:975
-#: c-api/init.rst:1272
+#: c-api/init.rst:975 c-api/init.rst:1272
 msgid ""
 "Calling this function from a thread when the runtime is finalizing will "
 "terminate the thread, even if the thread was not created by Python. You can "
@@ -1279,8 +1273,7 @@ msgstr ""
 msgid "See also :c:func:`PyEval_GetFrame`."
 msgstr ""
 
-#: c-api/init.rst:1130
-#: c-api/init.rst:1139
+#: c-api/init.rst:1130 c-api/init.rst:1139
 msgid "*tstate* must not be ``NULL``."
 msgstr ""
 
@@ -1698,8 +1691,7 @@ msgstr ""
 msgid ":const:`PyTrace_CALL`"
 msgstr ""
 
-#: c-api/init.rst:1512
-#: c-api/init.rst:1523
+#: c-api/init.rst:1512 c-api/init.rst:1523
 msgid "Always :c:data:`Py_None`."
 msgstr ""
 
@@ -1728,8 +1720,7 @@ msgstr ""
 msgid ":const:`PyTrace_C_CALL`"
 msgstr ""
 
-#: c-api/init.rst:1519
-#: c-api/init.rst:1521
+#: c-api/init.rst:1519 c-api/init.rst:1521
 msgid "Function object being called."
 msgstr ""
 

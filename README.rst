@@ -1,7 +1,7 @@
 Translation of the Python Documentation — tr
 ============================================
 
-.. image:: https://travis-ci.org/python/python-docs-tr.svg?branch=3.7
+.. image:: https://travis-ci.org/python/python-docs-tr.svg?branch=3.10
   :target: https://travis-ci.org/python/python-docs-tr
 
 

@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"POT-Creation-Date: 2021-12-17 23:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -70,8 +71,7 @@ msgstr ""
 msgid "*key* is the predefined handle to connect to."
 msgstr ""
 
-#: library/winreg.rst:77
-#: library/winreg.rst:109
+#: library/winreg.rst:77 library/winreg.rst:109
 msgid ""
 "The return value is the handle of the opened key. If the function fails, an :"
 "exc:`OSError` exception is raised."
@@ -83,9 +83,7 @@ msgid ""
 "arguments ``computer_name``, ``key``."
 msgstr ""
 
-#: library/winreg.rst:84
-#: library/winreg.rst:139
-#: library/winreg.rst:208
+#: library/winreg.rst:84 library/winreg.rst:139 library/winreg.rst:208
 #: library/winreg.rst:334
 msgid "See :ref:`above <exception-changed>`."
 msgstr ""
@@ -96,15 +94,9 @@ msgid ""
 "object>`."
 msgstr ""
 
-#: library/winreg.rst:93
-#: library/winreg.rst:153
-#: library/winreg.rst:197
-#: library/winreg.rst:265
-#: library/winreg.rst:342
-#: library/winreg.rst:388
-#: library/winreg.rst:437
-#: library/winreg.rst:496
-#: library/winreg.rst:528
+#: library/winreg.rst:93 library/winreg.rst:153 library/winreg.rst:197
+#: library/winreg.rst:265 library/winreg.rst:342 library/winreg.rst:388
+#: library/winreg.rst:437 library/winreg.rst:496 library/winreg.rst:528
 msgid ""
 "*key* is an already open key, or one of the predefined :ref:`HKEY_* "
 "constants <hkey-constants>`."
@@ -130,8 +122,7 @@ msgid ""
 "arguments ``key``, ``sub_key``, ``access``."
 msgstr ""
 
-#: library/winreg.rst:114
-#: library/winreg.rst:329
+#: library/winreg.rst:114 library/winreg.rst:329
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.OpenKey/result`` with "
 "argument ``key``."
@@ -257,18 +248,15 @@ msgstr ""
 msgid "The result is a tuple of 3 items:"
 msgstr ""
 
-#: library/winreg.rst:348
-#: library/winreg.rst:396
+#: library/winreg.rst:348 library/winreg.rst:396
 msgid "Index"
 msgstr ""
 
-#: library/winreg.rst:348
-#: library/winreg.rst:396
+#: library/winreg.rst:348 library/winreg.rst:396
 msgid "Meaning"
 msgstr ""
 
-#: library/winreg.rst:350
-#: library/winreg.rst:398
+#: library/winreg.rst:350 library/winreg.rst:398
 msgid "``0``"
 msgstr ""
 
@@ -276,8 +264,7 @@ msgstr ""
 msgid "A string that identifies the value name"
 msgstr ""
 
-#: library/winreg.rst:353
-#: library/winreg.rst:400
+#: library/winreg.rst:353 library/winreg.rst:400
 msgid "``1``"
 msgstr ""
 
@@ -607,8 +594,7 @@ msgid ""
 "operating system."
 msgstr ""
 
-#: library/winreg.rst:516
-#: library/winreg.rst:533
+#: library/winreg.rst:516 library/winreg.rst:533
 msgid ""
 "Will generally raise :exc:`NotImplementedError` if executed on a 32-bit "
 "operating system."

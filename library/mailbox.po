@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"POT-Creation-Date: 2021-12-17 23:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -534,8 +535,7 @@ msgid ""
 "`mbox` instance may yield unpredictable results or raise an exception."
 msgstr ""
 
-#: library/mailbox.rst:688
-#: library/mailbox.rst:739
+#: library/mailbox.rst:688 library/mailbox.rst:739
 msgid ""
 "Three locking mechanisms are used---dot locking and, if available, the :c:"
 "func:`flock` and :c:func:`lockf` system calls."
@@ -926,24 +926,19 @@ msgid ""
 "flags for Maildir messages are as follows:"
 msgstr ""
 
-#: library/mailbox.rst:981
-#: library/mailbox.rst:1351
+#: library/mailbox.rst:981 library/mailbox.rst:1351
 msgid "Flag"
 msgstr ""
 
-#: library/mailbox.rst:981
-#: library/mailbox.rst:1351
+#: library/mailbox.rst:981 library/mailbox.rst:1351
 msgid "Meaning"
 msgstr ""
 
-#: library/mailbox.rst:981
-#: library/mailbox.rst:1218
-#: library/mailbox.rst:1351
+#: library/mailbox.rst:981 library/mailbox.rst:1218 library/mailbox.rst:1351
 msgid "Explanation"
 msgstr ""
 
-#: library/mailbox.rst:987
-#: library/mailbox.rst:1357
+#: library/mailbox.rst:987 library/mailbox.rst:1357
 msgid "D"
 msgstr ""
 
@@ -955,18 +950,15 @@ msgstr ""
 msgid "Under composition"
 msgstr ""
 
-#: library/mailbox.rst:989
-#: library/mailbox.rst:1359
+#: library/mailbox.rst:989 library/mailbox.rst:1359
 msgid "F"
 msgstr ""
 
-#: library/mailbox.rst:989
-#: library/mailbox.rst:1359
+#: library/mailbox.rst:989 library/mailbox.rst:1359
 msgid "Flagged"
 msgstr ""
 
-#: library/mailbox.rst:989
-#: library/mailbox.rst:1359
+#: library/mailbox.rst:989 library/mailbox.rst:1359
 msgid "Marked as important"
 msgstr ""
 
@@ -982,8 +974,7 @@ msgstr ""
 msgid "Forwarded, resent, or bounced"
 msgstr ""
 
-#: library/mailbox.rst:983
-#: library/mailbox.rst:1353
+#: library/mailbox.rst:983 library/mailbox.rst:1353
 msgid "R"
 msgstr ""
 
@@ -991,9 +982,7 @@ msgstr ""
 msgid "Replied"
 msgstr ""
 
-#: library/mailbox.rst:991
-#: library/mailbox.rst:1226
-#: library/mailbox.rst:1361
+#: library/mailbox.rst:991 library/mailbox.rst:1226 library/mailbox.rst:1361
 msgid "Replied to"
 msgstr ""
 
@@ -1005,8 +994,7 @@ msgstr ""
 msgid "Seen"
 msgstr ""
 
-#: library/mailbox.rst:983
-#: library/mailbox.rst:1353
+#: library/mailbox.rst:983 library/mailbox.rst:1353
 msgid "Read"
 msgstr ""
 
@@ -1018,8 +1006,7 @@ msgstr ""
 msgid "Trashed"
 msgstr ""
 
-#: library/mailbox.rst:987
-#: library/mailbox.rst:1357
+#: library/mailbox.rst:987 library/mailbox.rst:1357
 msgid "Marked for subsequent deletion"
 msgstr ""
 
@@ -1107,77 +1094,49 @@ msgid ""
 "take place:"
 msgstr ""
 
-#: library/mailbox.rst:930
-#: library/mailbox.rst:1052
-#: library/mailbox.rst:1084
-#: library/mailbox.rst:1166
-#: library/mailbox.rst:1195
-#: library/mailbox.rst:1309
-#: library/mailbox.rst:1423
-#: library/mailbox.rst:1455
-#: library/mailbox.rst:1471
+#: library/mailbox.rst:930 library/mailbox.rst:1052 library/mailbox.rst:1084
+#: library/mailbox.rst:1166 library/mailbox.rst:1195 library/mailbox.rst:1309
+#: library/mailbox.rst:1423 library/mailbox.rst:1455 library/mailbox.rst:1471
 msgid "Resulting state"
 msgstr ""
 
-#: library/mailbox.rst:1181
-#: library/mailbox.rst:1309
+#: library/mailbox.rst:1181 library/mailbox.rst:1309
 msgid ":class:`mboxMessage` or :class:`MMDFMessage` state"
 msgstr ""
 
-#: library/mailbox.rst:932
-#: library/mailbox.rst:1056
-#: library/mailbox.rst:1427
+#: library/mailbox.rst:932 library/mailbox.rst:1056 library/mailbox.rst:1427
 msgid "\"cur\" subdirectory"
 msgstr ""
 
-#: library/mailbox.rst:1056
-#: library/mailbox.rst:1088
-#: library/mailbox.rst:1427
-#: library/mailbox.rst:1459
-#: library/mailbox.rst:1475
+#: library/mailbox.rst:1056 library/mailbox.rst:1088 library/mailbox.rst:1427
+#: library/mailbox.rst:1459 library/mailbox.rst:1475
 msgid "O flag"
 msgstr ""
 
-#: library/mailbox.rst:936
-#: library/mailbox.rst:1075
-#: library/mailbox.rst:1172
-#: library/mailbox.rst:1431
-#: library/mailbox.rst:1479
+#: library/mailbox.rst:936 library/mailbox.rst:1075 library/mailbox.rst:1172
+#: library/mailbox.rst:1431 library/mailbox.rst:1479
 msgid "F flag"
 msgstr ""
 
-#: library/mailbox.rst:921
-#: library/mailbox.rst:953
-#: library/mailbox.rst:1062
-#: library/mailbox.rst:1170
-#: library/mailbox.rst:1425
-#: library/mailbox.rst:1473
+#: library/mailbox.rst:921 library/mailbox.rst:953 library/mailbox.rst:1062
+#: library/mailbox.rst:1170 library/mailbox.rst:1425 library/mailbox.rst:1473
 msgid "R flag"
 msgstr ""
 
-#: library/mailbox.rst:1062
-#: library/mailbox.rst:1092
-#: library/mailbox.rst:1186
-#: library/mailbox.rst:1433
-#: library/mailbox.rst:1463
-#: library/mailbox.rst:1481
+#: library/mailbox.rst:1062 library/mailbox.rst:1092 library/mailbox.rst:1186
+#: library/mailbox.rst:1433 library/mailbox.rst:1463 library/mailbox.rst:1481
 msgid "A flag"
 msgstr ""
 
-#: library/mailbox.rst:1054
-#: library/mailbox.rst:1425
+#: library/mailbox.rst:1054 library/mailbox.rst:1425
 msgid "S flag"
 msgstr ""
 
-#: library/mailbox.rst:955
-#: library/mailbox.rst:1296
-#: library/mailbox.rst:1429
+#: library/mailbox.rst:955 library/mailbox.rst:1296 library/mailbox.rst:1429
 msgid "T flag"
 msgstr ""
 
-#: library/mailbox.rst:1058
-#: library/mailbox.rst:1105
-#: library/mailbox.rst:1429
+#: library/mailbox.rst:1058 library/mailbox.rst:1105 library/mailbox.rst:1429
 #: library/mailbox.rst:1477
 msgid "D flag"
 msgstr ""
@@ -1188,14 +1147,11 @@ msgid ""
 "`MHMessage` instance, the following conversions take place:"
 msgstr ""
 
-#: library/mailbox.rst:1069
-#: library/mailbox.rst:1440
+#: library/mailbox.rst:1069 library/mailbox.rst:1440
 msgid ":class:`MHMessage` state"
 msgstr ""
 
-#: library/mailbox.rst:1073
-#: library/mailbox.rst:1184
-#: library/mailbox.rst:1325
+#: library/mailbox.rst:1073 library/mailbox.rst:1184 library/mailbox.rst:1325
 #: library/mailbox.rst:1444
 msgid "\"unseen\" sequence"
 msgstr ""
@@ -1204,20 +1160,15 @@ msgstr ""
 msgid "\"cur\" subdirectory and S flag"
 msgstr ""
 
-#: library/mailbox.rst:1071
-#: library/mailbox.rst:1442
+#: library/mailbox.rst:1071 library/mailbox.rst:1442
 msgid "no \"unseen\" sequence"
 msgstr ""
 
-#: library/mailbox.rst:1075
-#: library/mailbox.rst:1188
-#: library/mailbox.rst:1446
+#: library/mailbox.rst:1075 library/mailbox.rst:1188 library/mailbox.rst:1446
 msgid "\"flagged\" sequence"
 msgstr ""
 
-#: library/mailbox.rst:1077
-#: library/mailbox.rst:1186
-#: library/mailbox.rst:1327
+#: library/mailbox.rst:1077 library/mailbox.rst:1186 library/mailbox.rst:1327
 #: library/mailbox.rst:1448
 msgid "\"replied\" sequence"
 msgstr ""
@@ -1228,20 +1179,16 @@ msgid ""
 "`BabylMessage` instance, the following conversions take place:"
 msgstr ""
 
-#: library/mailbox.rst:1084
-#: library/mailbox.rst:1455
+#: library/mailbox.rst:1084 library/mailbox.rst:1455
 msgid ":class:`BabylMessage` state"
 msgstr ""
 
-#: library/mailbox.rst:1088
-#: library/mailbox.rst:1294
-#: library/mailbox.rst:1325
+#: library/mailbox.rst:1088 library/mailbox.rst:1294 library/mailbox.rst:1325
 #: library/mailbox.rst:1459
 msgid "\"unseen\" label"
 msgstr ""
 
-#: library/mailbox.rst:1086
-#: library/mailbox.rst:1457
+#: library/mailbox.rst:1086 library/mailbox.rst:1457
 msgid "no \"unseen\" label"
 msgstr ""
 
@@ -1253,16 +1200,12 @@ msgstr ""
 msgid "\"forwarded\" or \"resent\" label"
 msgstr ""
 
-#: library/mailbox.rst:1092
-#: library/mailbox.rst:1298
-#: library/mailbox.rst:1327
+#: library/mailbox.rst:1092 library/mailbox.rst:1298 library/mailbox.rst:1327
 #: library/mailbox.rst:1463
 msgid "\"answered\" label"
 msgstr ""
 
-#: library/mailbox.rst:1090
-#: library/mailbox.rst:1314
-#: library/mailbox.rst:1461
+#: library/mailbox.rst:1090 library/mailbox.rst:1314 library/mailbox.rst:1461
 msgid "\"deleted\" label"
 msgstr ""
 
@@ -1380,8 +1323,7 @@ msgid ""
 "conversions take place:"
 msgstr ""
 
-#: library/mailbox.rst:1166
-#: library/mailbox.rst:1423
+#: library/mailbox.rst:1166 library/mailbox.rst:1423
 msgid ":class:`MaildirMessage` state"
 msgstr ""
 
@@ -1391,8 +1333,7 @@ msgid ""
 "`MHMessage` instance, the following conversions take place:"
 msgstr ""
 
-#: library/mailbox.rst:1086
-#: library/mailbox.rst:1457
+#: library/mailbox.rst:1086 library/mailbox.rst:1457
 msgid "R flag and O flag"
 msgstr ""
 

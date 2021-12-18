@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"POT-Creation-Date: 2021-12-17 23:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -143,19 +144,15 @@ msgid ""
 "errors are handled."
 msgstr ""
 
-#: library/logging.handlers.rst:105
-#: library/logging.handlers.rst:187
-#: library/logging.handlers.rst:335
-#: library/logging.handlers.rst:441
+#: library/logging.handlers.rst:105 library/logging.handlers.rst:187
+#: library/logging.handlers.rst:335 library/logging.handlers.rst:441
 msgid ""
 "As well as string values, :class:`~pathlib.Path` objects are also accepted "
 "for the *filename* argument."
 msgstr ""
 
-#: library/logging.handlers.rst:109
-#: library/logging.handlers.rst:191
-#: library/logging.handlers.rst:339
-#: library/logging.handlers.rst:445
+#: library/logging.handlers.rst:109 library/logging.handlers.rst:191
+#: library/logging.handlers.rst:339 library/logging.handlers.rst:445
 msgid "The *errors* parameter was added."
 msgstr ""
 
@@ -182,8 +179,7 @@ msgstr ""
 msgid "Returns a new instance of the :class:`NullHandler` class."
 msgstr ""
 
-#: library/logging.handlers.rst:138
-#: library/logging.handlers.rst:142
+#: library/logging.handlers.rst:138 library/logging.handlers.rst:142
 msgid "This method does nothing."
 msgstr ""
 
@@ -411,8 +407,7 @@ msgid ""
 "they are renamed to :file:`app.log.2`, :file:`app.log.3` etc. respectively."
 msgstr ""
 
-#: library/logging.handlers.rst:344
-#: library/logging.handlers.rst:450
+#: library/logging.handlers.rst:344 library/logging.handlers.rst:450
 msgid "Does a rollover, as described above."
 msgstr ""
 
@@ -467,10 +462,8 @@ msgstr ""
 msgid "Seconds"
 msgstr ""
 
-#: library/logging.handlers.rst:375
-#: library/logging.handlers.rst:377
-#: library/logging.handlers.rst:379
-#: library/logging.handlers.rst:381
+#: library/logging.handlers.rst:375 library/logging.handlers.rst:377
+#: library/logging.handlers.rst:379 library/logging.handlers.rst:381
 msgid "Ignored"
 msgstr ""
 
@@ -506,8 +499,7 @@ msgstr ""
 msgid "Weekday (0=Monday)"
 msgstr ""
 
-#: library/logging.handlers.rst:383
-#: library/logging.handlers.rst:386
+#: library/logging.handlers.rst:383 library/logging.handlers.rst:386
 msgid "Used to compute initial rollover time"
 msgstr ""
 
@@ -865,13 +857,11 @@ msgstr ""
 msgid "**Priorities**"
 msgstr ""
 
-#: library/logging.handlers.rst:680
-#: library/logging.handlers.rst:702
+#: library/logging.handlers.rst:680 library/logging.handlers.rst:702
 msgid "Name (string)"
 msgstr ""
 
-#: library/logging.handlers.rst:680
-#: library/logging.handlers.rst:702
+#: library/logging.handlers.rst:680 library/logging.handlers.rst:702
 msgid "Symbolic value"
 msgstr ""
 

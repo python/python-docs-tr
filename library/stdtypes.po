@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"POT-Creation-Date: 2021-12-17 23:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -98,22 +99,16 @@ msgstr ""
 msgid "These are the Boolean operations, ordered by ascending priority:"
 msgstr ""
 
-#: library/stdtypes.rst:143
-#: library/stdtypes.rst:364
-#: library/stdtypes.rst:883
+#: library/stdtypes.rst:143 library/stdtypes.rst:364 library/stdtypes.rst:883
 #: library/stdtypes.rst:1078
 msgid "Operation"
 msgstr ""
 
-#: library/stdtypes.rst:275
-#: library/stdtypes.rst:414
-#: library/stdtypes.rst:1078
+#: library/stdtypes.rst:275 library/stdtypes.rst:414 library/stdtypes.rst:1078
 msgid "Result"
 msgstr ""
 
-#: library/stdtypes.rst:275
-#: library/stdtypes.rst:883
-#: library/stdtypes.rst:2310
+#: library/stdtypes.rst:275 library/stdtypes.rst:883 library/stdtypes.rst:2310
 #: library/stdtypes.rst:3531
 msgid "Notes"
 msgstr ""
@@ -126,9 +121,7 @@ msgstr ""
 msgid "if *x* is false, then *y*, else *x*"
 msgstr ""
 
-#: library/stdtypes.rst:285
-#: library/stdtypes.rst:888
-#: library/stdtypes.rst:2316
+#: library/stdtypes.rst:285 library/stdtypes.rst:888 library/stdtypes.rst:2316
 #: library/stdtypes.rst:3537
 msgid "\\(1)"
 msgstr ""
@@ -141,9 +134,7 @@ msgstr ""
 msgid "if *x* is false, then *x*, else *y*"
 msgstr ""
 
-#: library/stdtypes.rst:288
-#: library/stdtypes.rst:1117
-#: library/stdtypes.rst:2322
+#: library/stdtypes.rst:288 library/stdtypes.rst:1117 library/stdtypes.rst:2322
 #: library/stdtypes.rst:3543
 msgid "\\(2)"
 msgstr ""
@@ -156,18 +147,13 @@ msgstr ""
 msgid "if *x* is false, then ``True``, else ``False``"
 msgstr ""
 
-#: library/stdtypes.rst:897
-#: library/stdtypes.rst:2324
-#: library/stdtypes.rst:2328
-#: library/stdtypes.rst:3545
-#: library/stdtypes.rst:3549
+#: library/stdtypes.rst:897 library/stdtypes.rst:2324 library/stdtypes.rst:2328
+#: library/stdtypes.rst:3545 library/stdtypes.rst:3549
 #: library/stdtypes.rst:3551
 msgid "\\(3)"
 msgstr ""
 
-#: library/stdtypes.rst:319
-#: library/stdtypes.rst:924
-#: library/stdtypes.rst:2356
+#: library/stdtypes.rst:319 library/stdtypes.rst:924 library/stdtypes.rst:2356
 #: library/stdtypes.rst:3581
 msgid "Notes:"
 msgstr ""
@@ -207,8 +193,7 @@ msgstr ""
 msgid "This table summarizes the comparison operations:"
 msgstr ""
 
-#: library/stdtypes.rst:2287
-#: library/stdtypes.rst:3508
+#: library/stdtypes.rst:2287 library/stdtypes.rst:3508
 #: library/stdtypes.rst:3531
 msgid "Meaning"
 msgstr ""
@@ -491,8 +476,7 @@ msgid ""
 "zero."
 msgstr ""
 
-#: library/stdtypes.rst:1110
-#: library/stdtypes.rst:3568
+#: library/stdtypes.rst:1110 library/stdtypes.rst:3568
 msgid "\\(6)"
 msgstr ""
 
@@ -528,11 +512,8 @@ msgstr ""
 msgid "*x* to the power *y*"
 msgstr ""
 
-#: library/stdtypes.rst:312
-#: library/stdtypes.rst:1102
-#: library/stdtypes.rst:2346
-#: library/stdtypes.rst:3564
-#: library/stdtypes.rst:3571
+#: library/stdtypes.rst:312 library/stdtypes.rst:1102 library/stdtypes.rst:2346
+#: library/stdtypes.rst:3564 library/stdtypes.rst:3571
 msgid "\\(5)"
 msgstr ""
 
@@ -666,9 +647,7 @@ msgstr ""
 msgid "bitwise :dfn:`or` of *x* and *y*"
 msgstr ""
 
-#: library/stdtypes.rst:419
-#: library/stdtypes.rst:1123
-#: library/stdtypes.rst:2336
+#: library/stdtypes.rst:419 library/stdtypes.rst:1123 library/stdtypes.rst:2336
 #: library/stdtypes.rst:3557
 msgid "\\(4)"
 msgstr ""
@@ -2437,16 +2416,11 @@ msgid ""
 "Splitting an empty string with a specified separator returns ``['']``."
 msgstr ""
 
-#: library/stdtypes.rst:2010
-#: library/stdtypes.rst:2130
-#: library/stdtypes.rst:3043
-#: library/stdtypes.rst:3150
-#: library/stdtypes.rst:3191
-#: library/stdtypes.rst:3233
-#: library/stdtypes.rst:3265
-#: library/stdtypes.rst:3315
-#: library/stdtypes.rst:3384
-#: library/stdtypes.rst:3408
+#: library/stdtypes.rst:2010 library/stdtypes.rst:2130
+#: library/stdtypes.rst:3043 library/stdtypes.rst:3150
+#: library/stdtypes.rst:3191 library/stdtypes.rst:3233
+#: library/stdtypes.rst:3265 library/stdtypes.rst:3315
+#: library/stdtypes.rst:3384 library/stdtypes.rst:3408
 msgid "For example::"
 msgstr ""
 
@@ -2847,8 +2821,7 @@ msgstr ""
 msgid "``'d'``"
 msgstr ""
 
-#: library/stdtypes.rst:2314
-#: library/stdtypes.rst:3535
+#: library/stdtypes.rst:2314 library/stdtypes.rst:3535
 msgid "Signed integer decimal."
 msgstr ""
 
@@ -2908,8 +2881,7 @@ msgstr ""
 msgid "``'f'``"
 msgstr ""
 
-#: library/stdtypes.rst:2330
-#: library/stdtypes.rst:3551
+#: library/stdtypes.rst:2330 library/stdtypes.rst:3551
 msgid "Floating point decimal format."
 msgstr ""
 
@@ -3353,16 +3325,14 @@ msgid ""
 "interpreted as in slice notation."
 msgstr ""
 
-#: library/stdtypes.rst:2751
-#: library/stdtypes.rst:2839
+#: library/stdtypes.rst:2751 library/stdtypes.rst:2839
 #: library/stdtypes.rst:2852
 msgid ""
 "The subsequence to search for may be any :term:`bytes-like object` or an "
 "integer in the range 0 to 255."
 msgstr ""
 
-#: library/stdtypes.rst:2763
-#: library/stdtypes.rst:2842
+#: library/stdtypes.rst:2763 library/stdtypes.rst:2842
 #: library/stdtypes.rst:2855
 msgid "Also accept an integer in the range 0 to 255 as the subsequence."
 msgstr ""
@@ -3378,14 +3348,10 @@ msgstr ""
 msgid "The *prefix* may be any :term:`bytes-like object`."
 msgstr ""
 
-#: library/stdtypes.rst:2697
-#: library/stdtypes.rst:2920
-#: library/stdtypes.rst:2965
-#: library/stdtypes.rst:3021
-#: library/stdtypes.rst:3109
-#: library/stdtypes.rst:3276
-#: library/stdtypes.rst:3374
-#: library/stdtypes.rst:3417
+#: library/stdtypes.rst:2697 library/stdtypes.rst:2920
+#: library/stdtypes.rst:2965 library/stdtypes.rst:3021
+#: library/stdtypes.rst:3109 library/stdtypes.rst:3276
+#: library/stdtypes.rst:3374 library/stdtypes.rst:3417
 #: library/stdtypes.rst:3619
 msgid ""
 "The bytearray version of this method does *not* operate in place - it always "
@@ -3757,8 +3723,7 @@ msgid ""
 "sequence and no uppercase ASCII characters, ``False`` otherwise."
 msgstr ""
 
-#: library/stdtypes.rst:3254
-#: library/stdtypes.rst:3320
+#: library/stdtypes.rst:3254 library/stdtypes.rst:3320
 #: library/stdtypes.rst:3389
 msgid ""
 "Lowercase ASCII characters are those byte values in the sequence "

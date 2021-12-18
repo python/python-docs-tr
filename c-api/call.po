@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"POT-Creation-Date: 2021-12-17 23:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -211,10 +212,7 @@ msgid ""
 "future extensions."
 msgstr ""
 
-#: c-api/call.rst:161
-#: c-api/call.rst:259
-#: c-api/call.rst:360
-#: c-api/call.rst:391
+#: c-api/call.rst:161 c-api/call.rst:259 c-api/call.rst:360 c-api/call.rst:391
 #: c-api/call.rst:413
 msgid "This function is not part of the :ref:`limited API <stable>`."
 msgstr ""
@@ -285,10 +283,7 @@ msgstr ""
 msgid ":c:func:`PyObject_Call`"
 msgstr ""
 
-#: c-api/call.rst:199
-#: c-api/call.rst:203
-#: c-api/call.rst:209
-#: c-api/call.rst:219
+#: c-api/call.rst:199 c-api/call.rst:203 c-api/call.rst:209 c-api/call.rst:219
 msgid "``PyObject *``"
 msgstr ""
 
@@ -304,10 +299,7 @@ msgstr ""
 msgid ":c:func:`PyObject_CallNoArgs`"
 msgstr ""
 
-#: c-api/call.rst:201
-#: c-api/call.rst:205
-#: c-api/call.rst:209
-#: c-api/call.rst:213
+#: c-api/call.rst:201 c-api/call.rst:205 c-api/call.rst:209 c-api/call.rst:213
 #: c-api/call.rst:215
 msgid "---"
 msgstr ""
@@ -356,8 +348,7 @@ msgstr ""
 msgid ":c:func:`PyObject_CallMethodObjArgs`"
 msgstr ""
 
-#: c-api/call.rst:213
-#: c-api/call.rst:215
+#: c-api/call.rst:213 c-api/call.rst:215
 msgid "obj + name"
 msgstr ""
 
@@ -373,8 +364,7 @@ msgstr ""
 msgid ":c:func:`PyObject_Vectorcall`"
 msgstr ""
 
-#: c-api/call.rst:219
-#: c-api/call.rst:221
+#: c-api/call.rst:219 c-api/call.rst:221
 msgid "vectorcall"
 msgstr ""
 
@@ -402,12 +392,8 @@ msgid ""
 "no named arguments are needed, *kwargs* can be *NULL*."
 msgstr ""
 
-#: c-api/call.rst:245
-#: c-api/call.rst:269
-#: c-api/call.rst:301
-#: c-api/call.rst:334
-#: c-api/call.rst:357
-#: c-api/call.rst:410
+#: c-api/call.rst:245 c-api/call.rst:269 c-api/call.rst:301 c-api/call.rst:334
+#: c-api/call.rst:357 c-api/call.rst:410
 msgid ""
 "Return the result of the call on success, or raise an exception and return "
 "*NULL* on failure."

@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"POT-Creation-Date: 2021-12-17 23:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -219,8 +220,7 @@ msgid ""
 "Unicode object (not checked)."
 msgstr ""
 
-#: c-api/unicode.rst:228
-#: c-api/unicode.rst:756
+#: c-api/unicode.rst:228 c-api/unicode.rst:756
 msgid ""
 "Part of the old-style Unicode API, please migrate to using :c:func:"
 "`PyUnicode_GET_LENGTH`."
@@ -346,8 +346,7 @@ msgstr ""
 msgid "Return the character *ch* converted to lower case."
 msgstr ""
 
-#: c-api/unicode.rst:347
-#: c-api/unicode.rst:355
+#: c-api/unicode.rst:347 c-api/unicode.rst:355
 msgid "This function uses simple case mappings."
 msgstr ""
 
@@ -489,8 +488,7 @@ msgstr ""
 msgid ":attr:`%c`"
 msgstr ""
 
-#: c-api/unicode.rst:469
-#: c-api/unicode.rst:505
+#: c-api/unicode.rst:469 c-api/unicode.rst:505
 msgid "int"
 msgstr ""
 
@@ -661,8 +659,7 @@ msgstr ""
 msgid ":attr:`%A`"
 msgstr ""
 
-#: c-api/unicode.rst:522
-#: c-api/unicode.rst:534
+#: c-api/unicode.rst:522 c-api/unicode.rst:534
 msgid "PyObject\\*"
 msgstr ""
 
@@ -1068,8 +1065,7 @@ msgstr ""
 msgid "Decode a string from the :term:`filesystem encoding and error handler`."
 msgstr ""
 
-#: c-api/unicode.rst:907
-#: c-api/unicode.rst:923
+#: c-api/unicode.rst:907 c-api/unicode.rst:923
 msgid ""
 "If :c:data:`Py_FileSystemDefaultEncoding` is not set, fall back to the "
 "locale encoding."
@@ -1083,8 +1079,7 @@ msgid ""
 "`PyUnicode_DecodeLocaleAndSize`."
 msgstr ""
 
-#: c-api/unicode.rst:912
-#: c-api/unicode.rst:936
+#: c-api/unicode.rst:912 c-api/unicode.rst:936
 msgid "Use :c:data:`Py_FileSystemDefaultEncodeErrors` error handler."
 msgstr ""
 
@@ -1365,8 +1360,7 @@ msgstr ""
 msgid "If *byteorder* is ``NULL``, the codec starts in native order mode."
 msgstr ""
 
-#: c-api/unicode.rst:1195
-#: c-api/unicode.rst:1270
+#: c-api/unicode.rst:1195 c-api/unicode.rst:1270
 msgid "Return ``NULL`` if an exception was raised by the codec."
 msgstr ""
 

@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"POT-Creation-Date: 2021-12-17 23:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -147,24 +148,17 @@ msgstr ""
 msgid "All the :mod:`ttk` Widgets accepts the following options:"
 msgstr ""
 
-#: library/tkinter.ttk.rst:147
-#: library/tkinter.ttk.rst:216
-#: library/tkinter.ttk.rst:405
-#: library/tkinter.ttk.rst:507
-#: library/tkinter.ttk.rst:742
-#: library/tkinter.ttk.rst:861
+#: library/tkinter.ttk.rst:147 library/tkinter.ttk.rst:216
+#: library/tkinter.ttk.rst:405 library/tkinter.ttk.rst:507
+#: library/tkinter.ttk.rst:742 library/tkinter.ttk.rst:861
 #: library/tkinter.ttk.rst:889
 msgid "Option"
 msgstr ""
 
-#: library/tkinter.ttk.rst:147
-#: library/tkinter.ttk.rst:216
-#: library/tkinter.ttk.rst:319
-#: library/tkinter.ttk.rst:481
-#: library/tkinter.ttk.rst:671
-#: library/tkinter.ttk.rst:810
-#: library/tkinter.ttk.rst:889
-#: library/tkinter.ttk.rst:934
+#: library/tkinter.ttk.rst:147 library/tkinter.ttk.rst:216
+#: library/tkinter.ttk.rst:319 library/tkinter.ttk.rst:481
+#: library/tkinter.ttk.rst:671 library/tkinter.ttk.rst:810
+#: library/tkinter.ttk.rst:889 library/tkinter.ttk.rst:934
 msgid "Description"
 msgstr ""
 
@@ -263,8 +257,7 @@ msgid ""
 "widgets."
 msgstr ""
 
-#: library/tkinter.ttk.rst:523
-#: library/tkinter.ttk.rst:863
+#: library/tkinter.ttk.rst:523 library/tkinter.ttk.rst:863
 msgid "text"
 msgstr ""
 
@@ -292,8 +285,7 @@ msgid ""
 "text string. The underline character is used for mnemonic activation."
 msgstr ""
 
-#: library/tkinter.ttk.rst:525
-#: library/tkinter.ttk.rst:897
+#: library/tkinter.ttk.rst:525 library/tkinter.ttk.rst:897
 msgid "image"
 msgstr ""
 
@@ -334,8 +326,7 @@ msgstr ""
 msgid "none: the default. display the image if present, otherwise the text."
 msgstr ""
 
-#: library/tkinter.ttk.rst:349
-#: library/tkinter.ttk.rst:493
+#: library/tkinter.ttk.rst:349 library/tkinter.ttk.rst:493
 msgid "width"
 msgstr ""
 
@@ -350,8 +341,7 @@ msgstr ""
 msgid "Compatibility Options"
 msgstr ""
 
-#: library/tkinter.ttk.rst:334
-#: library/tkinter.ttk.rst:509
+#: library/tkinter.ttk.rst:334 library/tkinter.ttk.rst:509
 msgid "state"
 msgstr ""
 
@@ -518,14 +508,12 @@ msgid ""
 "it has some other methods, described at :class:`ttk.Combobox`."
 msgstr ""
 
-#: library/tkinter.ttk.rst:398
-#: library/tkinter.ttk.rst:664
+#: library/tkinter.ttk.rst:398 library/tkinter.ttk.rst:664
 #: library/tkinter.ttk.rst:803
 msgid "Options"
 msgstr ""
 
-#: library/tkinter.ttk.rst:400
-#: library/tkinter.ttk.rst:666
+#: library/tkinter.ttk.rst:400 library/tkinter.ttk.rst:666
 #: library/tkinter.ttk.rst:805
 msgid "This widget accepts the following specific options:"
 msgstr ""
@@ -551,8 +539,7 @@ msgid ""
 "\"center\", or \"right\"."
 msgstr ""
 
-#: library/tkinter.ttk.rst:483
-#: library/tkinter.ttk.rst:820
+#: library/tkinter.ttk.rst:483 library/tkinter.ttk.rst:820
 msgid "height"
 msgstr ""
 
@@ -585,8 +572,7 @@ msgid ""
 "vice versa. See :class:`tkinter.StringVar`."
 msgstr ""
 
-#: library/tkinter.ttk.rst:419
-#: library/tkinter.ttk.rst:867
+#: library/tkinter.ttk.rst:419 library/tkinter.ttk.rst:867
 msgid "values"
 msgstr ""
 
@@ -757,8 +743,7 @@ msgid ""
 "of all panes is used."
 msgstr ""
 
-#: library/tkinter.ttk.rst:519
-#: library/tkinter.ttk.rst:824
+#: library/tkinter.ttk.rst:519 library/tkinter.ttk.rst:824
 msgid "padding"
 msgstr ""
 
@@ -1807,8 +1792,7 @@ msgstr ""
 msgid "*items* becomes the new selection."
 msgstr ""
 
-#: library/tkinter.ttk.rst:1199
-#: library/tkinter.ttk.rst:1215
+#: library/tkinter.ttk.rst:1199 library/tkinter.ttk.rst:1215
 msgid ""
 "*items* can be passed as separate arguments, not just as a single tuple."
 msgstr ""

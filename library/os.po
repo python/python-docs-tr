@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"POT-Creation-Date: 2021-12-17 23:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -264,60 +265,23 @@ msgid ""
 "Return the filename corresponding to the controlling terminal of the process."
 msgstr ""
 
-#: library/os.rst:333
-#: library/os.rst:351
-#: library/os.rst:370
-#: library/os.rst:413
-#: library/os.rst:461
-#: library/os.rst:481
-#: library/os.rst:501
-#: library/os.rst:540
-#: library/os.rst:557
-#: library/os.rst:577
-#: library/os.rst:603
-#: library/os.rst:620
-#: library/os.rst:635
-#: library/os.rst:651
-#: library/os.rst:868
-#: library/os.rst:899
-#: library/os.rst:957
-#: library/os.rst:990
-#: library/os.rst:1185
-#: library/os.rst:1213
-#: library/os.rst:1397
-#: library/os.rst:1429
-#: library/os.rst:1489
-#: library/os.rst:1506
-#: library/os.rst:1790
-#: library/os.rst:1873
-#: library/os.rst:1913
-#: library/os.rst:1941
-#: library/os.rst:2151
-#: library/os.rst:2206
-#: library/os.rst:3037
-#: library/os.rst:3662
-#: library/os.rst:3677
-#: library/os.rst:3691
-#: library/os.rst:3705
-#: library/os.rst:3720
-#: library/os.rst:3735
-#: library/os.rst:3751
-#: library/os.rst:3767
-#: library/os.rst:3781
-#: library/os.rst:3857
-#: library/os.rst:3885
-#: library/os.rst:4049
-#: library/os.rst:4302
-#: library/os.rst:4333
-#: library/os.rst:4403
-#: library/os.rst:4455
-#: library/os.rst:4485
-#: library/os.rst:4508
-#: library/os.rst:4524
-#: library/os.rst:4542
-#: library/os.rst:4697
-#: library/os.rst:4727
-#: library/os.rst:4746
+#: library/os.rst:333 library/os.rst:351 library/os.rst:370 library/os.rst:413
+#: library/os.rst:461 library/os.rst:481 library/os.rst:501 library/os.rst:540
+#: library/os.rst:557 library/os.rst:577 library/os.rst:603 library/os.rst:620
+#: library/os.rst:635 library/os.rst:651 library/os.rst:868 library/os.rst:899
+#: library/os.rst:957 library/os.rst:990 library/os.rst:1185
+#: library/os.rst:1213 library/os.rst:1397 library/os.rst:1429
+#: library/os.rst:1489 library/os.rst:1506 library/os.rst:1790
+#: library/os.rst:1873 library/os.rst:1913 library/os.rst:1941
+#: library/os.rst:2151 library/os.rst:2206 library/os.rst:3037
+#: library/os.rst:3662 library/os.rst:3677 library/os.rst:3691
+#: library/os.rst:3705 library/os.rst:3720 library/os.rst:3735
+#: library/os.rst:3751 library/os.rst:3767 library/os.rst:3781
+#: library/os.rst:3857 library/os.rst:3885 library/os.rst:4049
+#: library/os.rst:4302 library/os.rst:4333 library/os.rst:4403
+#: library/os.rst:4455 library/os.rst:4485 library/os.rst:4508
+#: library/os.rst:4524 library/os.rst:4542 library/os.rst:4697
+#: library/os.rst:4727 library/os.rst:4746
 msgid ":ref:`Availability <availability>`: Unix."
 msgstr ""
 
@@ -541,14 +505,9 @@ msgid ""
 "getpwuid(os.getuid())[0]`` to get the login name of the current real user id."
 msgstr ""
 
-#: library/os.rst:432
-#: library/os.rst:944
-#: library/os.rst:1568
-#: library/os.rst:2229
-#: library/os.rst:3051
-#: library/os.rst:4134
-#: library/os.rst:4239
-#: library/os.rst:4263
+#: library/os.rst:432 library/os.rst:944 library/os.rst:1568
+#: library/os.rst:2229 library/os.rst:3051 library/os.rst:4134
+#: library/os.rst:4239 library/os.rst:4263
 msgid ":ref:`Availability <availability>`: Unix, Windows."
 msgstr ""
 
@@ -973,8 +932,7 @@ msgid ""
 "this is equivalent to ``os.chmod(fd, mode)``."
 msgstr ""
 
-#: library/os.rst:1834
-#: library/os.rst:1925
+#: library/os.rst:1834 library/os.rst:1925
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.chmod`` with arguments "
 "``path``, ``mode``, ``dir_fd``."
@@ -987,8 +945,7 @@ msgid ""
 "`chown`.  As of Python 3.3, this is equivalent to ``os.chown(fd, uid, gid)``."
 msgstr ""
 
-#: library/os.rst:1856
-#: library/os.rst:1938
+#: library/os.rst:1856 library/os.rst:1938
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.chown`` with arguments "
 "``path``, ``uid``, ``gid``, ``dir_fd``."
@@ -1171,35 +1128,22 @@ msgid ""
 "a file descriptor in a file object, use :func:`fdopen`."
 msgstr ""
 
-#: library/os.rst:2062
-#: library/os.rst:2152
-#: library/os.rst:2264
+#: library/os.rst:2062 library/os.rst:2152 library/os.rst:2264
 msgid "The *dir_fd* argument."
 msgstr ""
 
-#: library/os.rst:1364
-#: library/os.rst:4385
+#: library/os.rst:1364 library/os.rst:4385
 msgid ""
 "If the system call is interrupted and the signal handler does not raise an "
 "exception, the function now retries the system call instead of raising an :"
 "exc:`InterruptedError` exception (see :pep:`475` for the rationale)."
 msgstr ""
 
-#: library/os.rst:1731
-#: library/os.rst:1794
-#: library/os.rst:1874
-#: library/os.rst:1929
-#: library/os.rst:2001
-#: library/os.rst:2065
-#: library/os.rst:2133
-#: library/os.rst:2196
-#: library/os.rst:2286
-#: library/os.rst:2645
-#: library/os.rst:3057
-#: library/os.rst:3113
-#: library/os.rst:3272
-#: library/os.rst:3634
-#: library/os.rst:4122
+#: library/os.rst:1731 library/os.rst:1794 library/os.rst:1874
+#: library/os.rst:1929 library/os.rst:2001 library/os.rst:2065
+#: library/os.rst:2133 library/os.rst:2196 library/os.rst:2286
+#: library/os.rst:2645 library/os.rst:3057 library/os.rst:3113
+#: library/os.rst:3272 library/os.rst:3634 library/os.rst:4122
 msgid "Accepts a :term:`path-like object`."
 msgstr ""
 
@@ -1259,8 +1203,7 @@ msgid ""
 "more portable approach, use the :mod:`pty` module."
 msgstr ""
 
-#: library/os.rst:1160
-#: library/os.rst:3819
+#: library/os.rst:1160 library/os.rst:3819
 msgid ":ref:`Availability <availability>`: some flavors of Unix."
 msgstr ""
 
@@ -1346,8 +1289,7 @@ msgid ""
 "total capacity of all the objects."
 msgstr ""
 
-#: library/os.rst:1303
-#: library/os.rst:1538
+#: library/os.rst:1303 library/os.rst:1538
 msgid ""
 "The operating system may set a limit (:func:`sysconf` value "
 "``'SC_IOV_MAX'``) on the number of buffers that can be used."
@@ -1719,9 +1661,7 @@ msgstr ""
 msgid "Get the \"inheritable\" flag of the specified handle (a boolean)."
 msgstr ""
 
-#: library/os.rst:1623
-#: library/os.rst:4157
-#: library/os.rst:4203
+#: library/os.rst:1623 library/os.rst:4157 library/os.rst:4203
 msgid ":ref:`Availability <availability>`: Windows."
 msgstr ""
 
@@ -2036,8 +1976,7 @@ msgstr ""
 msgid ":data:`stat.S_IXOTH`"
 msgstr ""
 
-#: library/os.rst:1849
-#: library/os.rst:3103
+#: library/os.rst:1849 library/os.rst:3103
 msgid ""
 "This function can support :ref:`specifying a file descriptor <path_fd>`, :"
 "ref:`paths relative to directory descriptors <dir_fd>` and :ref:`not "
@@ -2146,8 +2085,7 @@ msgstr ""
 msgid "Added the *src_dir_fd*, *dst_dir_fd*, and *follow_symlinks* arguments."
 msgstr ""
 
-#: library/os.rst:2316
-#: library/os.rst:3025
+#: library/os.rst:2316 library/os.rst:3025
 msgid "Accepts a :term:`path-like object` for *src* and *dst*."
 msgstr ""
 
@@ -2217,16 +2155,13 @@ msgid ""
 "follow_symlinks=False)``."
 msgstr ""
 
-#: library/os.rst:2054
-#: library/os.rst:2147
-#: library/os.rst:2221
+#: library/os.rst:2054 library/os.rst:2147 library/os.rst:2221
 msgid ""
 "This function can also support :ref:`paths relative to directory descriptors "
 "<dir_fd>`."
 msgstr ""
 
-#: library/os.rst:2230
-#: library/os.rst:3018
+#: library/os.rst:2230 library/os.rst:3018
 msgid "Added support for Windows 6.0 (Vista) symbolic links."
 msgstr ""
 
@@ -2374,8 +2309,7 @@ msgid ""
 "included in that mapping, passing an integer for *name* is also accepted."
 msgstr ""
 
-#: library/os.rst:2880
-#: library/os.rst:3046
+#: library/os.rst:2880 library/os.rst:3046
 msgid ""
 "This function can support :ref:`specifying a file descriptor <path_fd>`."
 msgstr ""
@@ -2431,8 +2365,7 @@ msgid ""
 "the file does not exist, a :exc:`FileNotFoundError` is raised."
 msgstr ""
 
-#: library/os.rst:2364
-#: library/os.rst:3000
+#: library/os.rst:2364 library/os.rst:3000
 msgid ""
 "This function can support :ref:`paths relative to directory descriptors "
 "<dir_fd>`."
@@ -2450,8 +2383,7 @@ msgstr ""
 msgid "This function is semantically identical to :func:`unlink`."
 msgstr ""
 
-#: library/os.rst:2284
-#: library/os.rst:3068
+#: library/os.rst:2284 library/os.rst:3068
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.remove`` with arguments "
 "``path``, ``dir_fd``."
@@ -2503,8 +2435,7 @@ msgid ""
 "`replace`."
 msgstr ""
 
-#: library/os.rst:2332
-#: library/os.rst:2349
+#: library/os.rst:2332 library/os.rst:2349
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.rename`` with arguments "
 "``src``, ``dst``, ``src_dir_fd``, ``dst_dir_fd``."
@@ -2868,9 +2799,7 @@ msgid ""
 "``follow_symlinks=False``, or use :func:`lstat`."
 msgstr ""
 
-#: library/os.rst:3434
-#: library/os.rst:3466
-#: library/os.rst:3486
+#: library/os.rst:3434 library/os.rst:3466 library/os.rst:3486
 msgid ""
 "This function can support :ref:`specifying a file descriptor <path_fd>` and :"
 "ref:`not following symlinks <follow_symlinks>`."
@@ -3654,8 +3583,7 @@ msgid ""
 "unsigned int. The function does not verify that *fd* is an :func:`eventfd`."
 msgstr ""
 
-#: library/os.rst:3390
-#: library/os.rst:3407
+#: library/os.rst:3390 library/os.rst:3407
 msgid ":ref:`Availability <availability>`: See :func:`eventfd`"
 msgstr ""
 
@@ -3708,8 +3636,7 @@ msgid ""
 "``path``, ``attribute``."
 msgstr ""
 
-#: library/os.rst:3471
-#: library/os.rst:3496
+#: library/os.rst:3471 library/os.rst:3496
 msgid "Accepts a :term:`path-like object` for *path* and *attribute*."
 msgstr ""
 

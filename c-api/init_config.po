@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"POT-Creation-Date: 2021-12-17 23:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -110,8 +111,7 @@ msgstr ""
 msgid "*index* must be greater than or equal to 0."
 msgstr ""
 
-#: c-api/init_config.rst:124
-#: c-api/init_config.rst:519
+#: c-api/init_config.rst:124 c-api/init_config.rst:519
 msgid "Structure fields:"
 msgstr ""
 
@@ -304,8 +304,7 @@ msgstr ""
 msgid "See the :term:`locale encoding`."
 msgstr ""
 
-#: c-api/init_config.rst:319
-#: c-api/init_config.rst:627
+#: c-api/init_config.rst:319 c-api/init_config.rst:627
 msgid "Default: ``1`` in Python config, ``0`` in isolated config."
 msgstr ""
 
@@ -332,8 +331,7 @@ msgid ""
 "member:`PyConfig.dev_mode`."
 msgstr ""
 
-#: c-api/init_config.rst:633
-#: c-api/init_config.rst:1094
+#: c-api/init_config.rst:633 c-api/init_config.rst:1094
 msgid "Default: ``-1`` in Python mode, ``0`` in isolated mode."
 msgstr ""
 
@@ -373,14 +371,10 @@ msgid ""
 "Windows specific code."
 msgstr ""
 
-#: c-api/init_config.rst:588
-#: c-api/init_config.rst:646
-#: c-api/init_config.rst:770
-#: c-api/init_config.rst:814
-#: c-api/init_config.rst:881
-#: c-api/init_config.rst:990
-#: c-api/init_config.rst:1058
-#: c-api/init_config.rst:1129
+#: c-api/init_config.rst:588 c-api/init_config.rst:646
+#: c-api/init_config.rst:770 c-api/init_config.rst:814
+#: c-api/init_config.rst:881 c-api/init_config.rst:990
+#: c-api/init_config.rst:1058 c-api/init_config.rst:1129
 msgid "Default: ``0``."
 msgstr ""
 
@@ -448,13 +442,11 @@ msgstr ""
 msgid "Functions to preinitialize Python:"
 msgstr ""
 
-#: c-api/init_config.rst:363
-#: c-api/init_config.rst:372
+#: c-api/init_config.rst:363 c-api/init_config.rst:372
 msgid "Preinitialize Python from *preconfig* preconfiguration."
 msgstr ""
 
-#: c-api/init_config.rst:368
-#: c-api/init_config.rst:377
+#: c-api/init_config.rst:368 c-api/init_config.rst:377
 msgid "*preconfig* must not be ``NULL``."
 msgstr ""
 
@@ -542,8 +534,7 @@ msgstr ""
 msgid "Copy the wide character string *str* into ``*config_str``."
 msgstr ""
 
-#: c-api/init_config.rst:453
-#: c-api/init_config.rst:468
+#: c-api/init_config.rst:453 c-api/init_config.rst:468
 #: c-api/init_config.rst:488
 msgid ":ref:`Preinitialize Python <c-preinit>` if needed."
 msgstr ""
@@ -655,12 +646,9 @@ msgid ""
 "that :data:`sys.argv` always exists and is never empty."
 msgstr ""
 
-#: c-api/init_config.rst:541
-#: c-api/init_config.rst:561
-#: c-api/init_config.rst:662
-#: c-api/init_config.rst:851
-#: c-api/init_config.rst:967
-#: c-api/init_config.rst:998
+#: c-api/init_config.rst:541 c-api/init_config.rst:561
+#: c-api/init_config.rst:662 c-api/init_config.rst:851
+#: c-api/init_config.rst:967 c-api/init_config.rst:998
 #: c-api/init_config.rst:1018
 msgid "Default: ``NULL``."
 msgstr ""
@@ -673,10 +661,8 @@ msgstr ""
 msgid ":data:`sys.base_exec_prefix`."
 msgstr ""
 
-#: c-api/init_config.rst:555
-#: c-api/init_config.rst:655
-#: c-api/init_config.rst:868
-#: c-api/init_config.rst:951
+#: c-api/init_config.rst:555 c-api/init_config.rst:655
+#: c-api/init_config.rst:868 c-api/init_config.rst:951
 msgid "Part of the :ref:`Python Path Configuration <init-path-config>` output."
 msgstr ""
 
@@ -712,8 +698,7 @@ msgstr ""
 msgid "stdin is always opened in buffered mode."
 msgstr ""
 
-#: c-api/init_config.rst:1046
-#: c-api/init_config.rst:1161
+#: c-api/init_config.rst:1046 c-api/init_config.rst:1161
 msgid "Default: ``1``."
 msgstr ""
 
@@ -964,8 +949,7 @@ msgstr ""
 msgid "Set by the :envvar:`PYTHONHOME` environment variable."
 msgstr ""
 
-#: c-api/init_config.rst:840
-#: c-api/init_config.rst:942
+#: c-api/init_config.rst:840 c-api/init_config.rst:942
 #: c-api/init_config.rst:969
 msgid "Part of the :ref:`Python Path Configuration <init-path-config>` input."
 msgstr ""
@@ -1001,8 +985,7 @@ msgstr ""
 msgid "Install Python signal handlers?"
 msgstr ""
 
-#: c-api/init_config.rst:916
-#: c-api/init_config.rst:1113
+#: c-api/init_config.rst:916 c-api/init_config.rst:1113
 msgid "Default: ``1`` in Python mode, ``0`` in isolated mode."
 msgstr ""
 
@@ -1158,8 +1141,7 @@ msgid ""
 "`Py_GetArgcArgv` function."
 msgstr ""
 
-#: c-api/init_config.rst:1148
-#: c-api/init_config.rst:1167
+#: c-api/init_config.rst:1148 c-api/init_config.rst:1167
 msgid "Default: empty list."
 msgstr ""
 
@@ -1270,8 +1252,7 @@ msgstr ""
 msgid "Value of the :option:`-c` command line option."
 msgstr ""
 
-#: c-api/init_config.rst:1008
-#: c-api/init_config.rst:1016
+#: c-api/init_config.rst:1008 c-api/init_config.rst:1016
 msgid "Used by :c:func:`Py_RunMain`."
 msgstr ""
 

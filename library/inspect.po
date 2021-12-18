@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"POT-Creation-Date: 2021-12-17 23:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -70,15 +71,11 @@ msgstr ""
 msgid "module"
 msgstr ""
 
-#: library/inspect.rst:48
-#: library/inspect.rst:76
-#: library/inspect.rst:233
+#: library/inspect.rst:48 library/inspect.rst:76 library/inspect.rst:233
 msgid "__doc__"
 msgstr ""
 
-#: library/inspect.rst:48
-#: library/inspect.rst:76
-#: library/inspect.rst:233
+#: library/inspect.rst:48 library/inspect.rst:76 library/inspect.rst:233
 msgid "documentation string"
 msgstr ""
 
@@ -94,9 +91,7 @@ msgstr ""
 msgid "class"
 msgstr ""
 
-#: library/inspect.rst:60
-#: library/inspect.rst:202
-#: library/inspect.rst:235
+#: library/inspect.rst:60 library/inspect.rst:202 library/inspect.rst:235
 msgid "__name__"
 msgstr ""
 
@@ -104,20 +99,15 @@ msgstr ""
 msgid "name with which this class was defined"
 msgstr ""
 
-#: library/inspect.rst:63
-#: library/inspect.rst:204
-#: library/inspect.rst:238
+#: library/inspect.rst:63 library/inspect.rst:204 library/inspect.rst:238
 msgid "__qualname__"
 msgstr ""
 
-#: library/inspect.rst:63
-#: library/inspect.rst:204
-#: library/inspect.rst:238
+#: library/inspect.rst:63 library/inspect.rst:204 library/inspect.rst:238
 msgid "qualified name"
 msgstr ""
 
-#: library/inspect.rst:73
-#: library/inspect.rst:106
+#: library/inspect.rst:73 library/inspect.rst:106
 msgid "__module__"
 msgstr ""
 
@@ -251,8 +241,7 @@ msgstr ""
 msgid "next inner traceback object (called by this level)"
 msgstr ""
 
-#: library/inspect.rst:206
-#: library/inspect.rst:223
+#: library/inspect.rst:206 library/inspect.rst:223
 msgid "frame"
 msgstr ""
 
@@ -312,8 +301,7 @@ msgstr ""
 msgid "tracing function for this frame, or ``None``"
 msgstr ""
 
-#: library/inspect.rst:210
-#: library/inspect.rst:227
+#: library/inspect.rst:210 library/inspect.rst:227
 msgid "code"
 msgstr ""
 
@@ -1578,8 +1566,7 @@ msgid ""
 "outermost call on *frame*'s stack."
 msgstr ""
 
-#: library/inspect.rst:1250
-#: library/inspect.rst:1287
+#: library/inspect.rst:1250 library/inspect.rst:1287
 msgid ""
 "A list of :term:`named tuples <named tuple>` ``FrameInfo(frame, filename, "
 "lineno, function, code_context, index)`` is returned."

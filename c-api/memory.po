@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"POT-Creation-Date: 2021-12-17 23:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -179,8 +180,7 @@ msgid ""
 "zero bytes."
 msgstr ""
 
-#: c-api/memory.rst:215
-#: c-api/memory.rst:323
+#: c-api/memory.rst:215 c-api/memory.rst:323
 msgid ""
 "Allocates *n* bytes and returns a pointer of type :c:type:`void*` to the "
 "allocated memory, or ``NULL`` if the request fails."
@@ -193,8 +193,7 @@ msgid ""
 "have been initialized in any way."
 msgstr ""
 
-#: c-api/memory.rst:225
-#: c-api/memory.rst:333
+#: c-api/memory.rst:225 c-api/memory.rst:333
 msgid ""
 "Allocates *nelem* elements each whose size in bytes is *elsize* and returns "
 "a pointer of type :c:type:`void*` to the allocated memory, or ``NULL`` if "
@@ -208,8 +207,7 @@ msgid ""
 "called instead."
 msgstr ""
 
-#: c-api/memory.rst:238
-#: c-api/memory.rst:346
+#: c-api/memory.rst:238 c-api/memory.rst:346
 msgid ""
 "Resizes the memory block pointed to by *p* to *n* bytes. The contents will "
 "be unchanged to the minimum of the old and the new sizes."
@@ -243,8 +241,7 @@ msgid ""
 "called before, undefined behavior occurs."
 msgstr ""
 
-#: c-api/memory.rst:259
-#: c-api/memory.rst:367
+#: c-api/memory.rst:259 c-api/memory.rst:367
 msgid "If *p* is ``NULL``, no operation is performed."
 msgstr ""
 
@@ -612,8 +609,7 @@ msgstr ""
 msgid "Enum used to identify an allocator domain. Domains:"
 msgstr ""
 
-#: c-api/memory.rst:443
-#: c-api/memory.rst:452
+#: c-api/memory.rst:443 c-api/memory.rst:452
 msgid "Functions:"
 msgstr ""
 

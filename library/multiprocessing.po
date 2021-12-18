@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"POT-Creation-Date: 2021-12-17 23:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -142,8 +143,7 @@ msgid ""
 "pipes."
 msgstr ""
 
-#: library/multiprocessing.rst:130
-#: library/multiprocessing.rst:1037
+#: library/multiprocessing.rst:130 library/multiprocessing.rst:1037
 msgid ""
 "On macOS, the *spawn* start method is now the default.  The *fork* start "
 "method should be considered unsafe as it can lead to crashes of the "
@@ -300,8 +300,7 @@ msgid ""
 "`Array`.  For example, the following code ::"
 msgstr ""
 
-#: library/multiprocessing.rst:319
-#: library/multiprocessing.rst:365
+#: library/multiprocessing.rst:319 library/multiprocessing.rst:365
 msgid "will print ::"
 msgstr ""
 
@@ -1320,8 +1319,7 @@ msgid ""
 "BoundedSemaphore`."
 msgstr ""
 
-#: library/multiprocessing.rst:1240
-#: library/multiprocessing.rst:1378
+#: library/multiprocessing.rst:1240 library/multiprocessing.rst:1378
 msgid ""
 "A solitary difference from its close analog exists: its ``acquire`` method's "
 "first argument is named *block*, as is consistent with :meth:`Lock.acquire`."
@@ -1343,8 +1341,7 @@ msgid ""
 "object from :mod:`multiprocessing`."
 msgstr ""
 
-#: library/multiprocessing.rst:1254
-#: library/multiprocessing.rst:1788
+#: library/multiprocessing.rst:1254 library/multiprocessing.rst:1788
 msgid "The :meth:`~threading.Condition.wait_for` method was added."
 msgstr ""
 
@@ -1376,8 +1373,7 @@ msgid ""
 "used in :keyword:`with` statements."
 msgstr ""
 
-#: library/multiprocessing.rst:1281
-#: library/multiprocessing.rst:1332
+#: library/multiprocessing.rst:1281 library/multiprocessing.rst:1332
 msgid "Acquire a lock, blocking or non-blocking."
 msgstr ""
 
@@ -1545,8 +1541,7 @@ msgid ""
 "itself can be accessed via the *value* attribute of a :class:`Value`."
 msgstr ""
 
-#: library/multiprocessing.rst:1418
-#: library/multiprocessing.rst:1505
+#: library/multiprocessing.rst:1418 library/multiprocessing.rst:1505
 msgid ""
 "*typecode_or_type* determines the type of the returned object: it is either "
 "a ctypes type or a one character typecode of the kind used by the :mod:"
@@ -1576,8 +1571,7 @@ msgid ""
 "instead do ::"
 msgstr ""
 
-#: library/multiprocessing.rst:1441
-#: library/multiprocessing.rst:1531
+#: library/multiprocessing.rst:1441 library/multiprocessing.rst:1531
 #: library/multiprocessing.rst:1546
 msgid "Note that *lock* is a keyword-only argument."
 msgstr ""
@@ -1684,8 +1678,7 @@ msgid ""
 "array."
 msgstr ""
 
-#: library/multiprocessing.rst:1523
-#: library/multiprocessing.rst:1539
+#: library/multiprocessing.rst:1523 library/multiprocessing.rst:1539
 msgid ""
 "If *lock* is ``True`` (the default) then a new lock object is created to "
 "synchronize access to the value.  If *lock* is a :class:`~multiprocessing."
@@ -2283,8 +2276,7 @@ msgid ""
 "``None`` then the number returned by :func:`os.cpu_count` is used."
 msgstr ""
 
-#: library/multiprocessing.rst:2133
-#: library/multiprocessing.rst:2693
+#: library/multiprocessing.rst:2133 library/multiprocessing.rst:2693
 msgid ""
 "If *initializer* is not ``None`` then each worker process will call "
 "``initializer(*initargs)`` when it starts."
@@ -2360,8 +2352,7 @@ msgid ""
 "`~multiprocessing.pool.AsyncResult` object."
 msgstr ""
 
-#: library/multiprocessing.rst:2188
-#: library/multiprocessing.rst:2219
+#: library/multiprocessing.rst:2188 library/multiprocessing.rst:2219
 msgid ""
 "If *callback* is specified then it should be a callable which accepts a "
 "single argument.  When the result becomes ready *callback* is applied to it, "
@@ -2369,16 +2360,14 @@ msgid ""
 "applied instead."
 msgstr ""
 
-#: library/multiprocessing.rst:2193
-#: library/multiprocessing.rst:2224
+#: library/multiprocessing.rst:2193 library/multiprocessing.rst:2224
 msgid ""
 "If *error_callback* is specified then it should be a callable which accepts "
 "a single argument.  If the target function fails, then the *error_callback* "
 "is called with the exception instance."
 msgstr ""
 
-#: library/multiprocessing.rst:2197
-#: library/multiprocessing.rst:2228
+#: library/multiprocessing.rst:2197 library/multiprocessing.rst:2228
 msgid ""
 "Callbacks should complete immediately since otherwise the thread which "
 "handles the results will get blocked."
@@ -2577,8 +2566,7 @@ msgid ""
 "*address*. (See :ref:`multiprocessing-address-formats`)"
 msgstr ""
 
-#: library/multiprocessing.rst:2389
-#: library/multiprocessing.rst:2424
+#: library/multiprocessing.rst:2389 library/multiprocessing.rst:2424
 msgid ""
 "If *authkey* is given and not None, it should be a byte string and will be "
 "used as the secret key for an HMAC-based authentication challenge. No "

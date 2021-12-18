@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"POT-Creation-Date: 2021-12-17 23:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -66,8 +67,7 @@ msgid ""
 "`devpoll` may return an incomplete list of active file descriptors."
 msgstr ""
 
-#: library/select.rst:78
-#: library/select.rst:105
+#: library/select.rst:78 library/select.rst:105
 msgid "The new file descriptor is :ref:`non-inheritable <fd_inheritance>`."
 msgstr ""
 
@@ -201,9 +201,7 @@ msgid ""
 "and does not handle file descriptors that don't originate from WinSock."
 msgstr ""
 
-#: library/select.rst:266
-#: library/select.rst:454
-#: library/select.rst:495
+#: library/select.rst:266 library/select.rst:454 library/select.rst:495
 msgid ""
 "The function is now retried with a recomputed timeout when interrupted by a "
 "signal, except if the signal handler raises an exception (see :pep:`475` for "
@@ -323,16 +321,12 @@ msgstr ""
 msgid "*eventmask*"
 msgstr ""
 
-#: library/select.rst:401
-#: library/select.rst:550
-#: library/select.rst:589
+#: library/select.rst:401 library/select.rst:550 library/select.rst:589
 #: library/select.rst:632
 msgid "Constant"
 msgstr ""
 
-#: library/select.rst:401
-#: library/select.rst:550
-#: library/select.rst:589
+#: library/select.rst:401 library/select.rst:550 library/select.rst:589
 #: library/select.rst:632
 msgid "Meaning"
 msgstr ""

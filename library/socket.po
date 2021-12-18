@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"POT-Creation-Date: 2021-12-17 23:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -98,8 +99,7 @@ msgid ""
 "Previously, :const:`AF_UNIX` socket paths were assumed to use UTF-8 encoding."
 msgstr ""
 
-#: library/socket.rst:979
-#: library/socket.rst:1751
+#: library/socket.rst:979 library/socket.rst:1751
 msgid "Writable :term:`bytes-like object` is now accepted."
 msgstr ""
 
@@ -417,8 +417,7 @@ msgid ""
 "description of *h_errno*, as returned by the :c:func:`hstrerror` C function."
 msgstr ""
 
-#: library/socket.rst:285
-#: library/socket.rst:298
+#: library/socket.rst:285 library/socket.rst:298
 msgid "This class was made a subclass of :exc:`OSError`."
 msgstr ""
 
@@ -530,15 +529,13 @@ msgid ""
 "can be used in the same  way that ``TCP_KEEPIDLE`` is used on Linux."
 msgstr ""
 
-#: library/socket.rst:463
-#: library/socket.rst:474
+#: library/socket.rst:463 library/socket.rst:474
 msgid ""
 "Many constants of these forms, documented in the Linux documentation, are "
 "also defined in the socket module."
 msgstr ""
 
-#: library/socket.rst:411
-#: library/socket.rst:446
+#: library/socket.rst:411 library/socket.rst:446
 msgid ":ref:`Availability <availability>`: Linux >= 2.6.25."
 msgstr ""
 
@@ -706,8 +703,7 @@ msgid ""
 "This may help close a detached socket using :meth:`socket.close()`."
 msgstr ""
 
-#: library/socket.rst:723
-#: library/socket.rst:1290
+#: library/socket.rst:723 library/socket.rst:1290
 msgid "The newly created socket is :ref:`non-inheritable <fd_inheritance>`."
 msgstr ""
 
@@ -1226,9 +1222,7 @@ msgid ""
 "the permissible range of values."
 msgstr ""
 
-#: library/socket.rst:1064
-#: library/socket.rst:1551
-#: library/socket.rst:1657
+#: library/socket.rst:1064 library/socket.rst:1551 library/socket.rst:1657
 msgid ""
 ":ref:`Availability <availability>`: most Unix platforms, possibly others."
 msgstr ""
@@ -1287,13 +1281,11 @@ msgid ""
 "tuples. :exc:`OSError` if the system call fails."
 msgstr ""
 
-#: library/socket.rst:1129
-#: library/socket.rst:1146
+#: library/socket.rst:1129 library/socket.rst:1146
 msgid ":ref:`Availability <availability>`: Unix, Windows."
 msgstr ""
 
-#: library/socket.rst:1132
-#: library/socket.rst:1149
+#: library/socket.rst:1132 library/socket.rst:1149
 msgid "Windows support was added."
 msgstr ""
 
@@ -1400,9 +1392,7 @@ msgstr ""
 msgid "The socket is now non-inheritable."
 msgstr ""
 
-#: library/socket.rst:1423
-#: library/socket.rst:1512
-#: library/socket.rst:1602
+#: library/socket.rst:1423 library/socket.rst:1512 library/socket.rst:1602
 #: library/socket.rst:1662
 msgid ""
 "If the system call is interrupted and the signal handler does not raise an "

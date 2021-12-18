@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 19:55+0300\n"
+"POT-Creation-Date: 2021-12-17 23:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -140,21 +141,15 @@ msgid ""
 "type:`long`."
 msgstr ""
 
-#: c-api/long.rst:145
-#: c-api/long.rst:186
-#: c-api/long.rst:209
+#: c-api/long.rst:145 c-api/long.rst:186 c-api/long.rst:209
 msgid "Returns ``-1`` on error.  Use :c:func:`PyErr_Occurred` to disambiguate."
 msgstr ""
 
-#: c-api/long.rst:147
-#: c-api/long.rst:190
-#: c-api/long.rst:294
+#: c-api/long.rst:147 c-api/long.rst:190 c-api/long.rst:294
 msgid "Use :meth:`__index__` if available."
 msgstr ""
 
-#: c-api/long.rst:150
-#: c-api/long.rst:193
-#: c-api/long.rst:297
+#: c-api/long.rst:150 c-api/long.rst:193 c-api/long.rst:297
 msgid "This function will no longer use :meth:`__int__`."
 msgstr ""
 
