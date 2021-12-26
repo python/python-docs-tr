@@ -3,29 +3,32 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-12-19 03:27+0300\n"
+"Last-Translator: \n"
+"Language-Team: TURKISH\n"
+"Language: tr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: library/functions.rst:11
 msgid "Built-in Functions"
-msgstr ""
+msgstr "Gömülü Fonksiyonlar"
 
 #: library/functions.rst:7
 msgid ""
 "The Python interpreter has a number of functions and types built into it "
 "that are always available.  They are listed here in alphabetical order."
 msgstr ""
+"Python yorumlayıcısı, içinde gömülü olarak her zaman kullanılabilen bir dizi "
+"fonksiyon ve tür barındırır. Burada alfabetik sıraya göre listelenmiştir."
 
 #: library/functions.rst:0
 msgid "**A**"
@@ -397,33 +400,44 @@ msgid ""
 "floating point number, or an object implementing :meth:`__abs__`. If the "
 "argument is a complex number, its magnitude is returned."
 msgstr ""
+"Bir sayının mutlak değerini döndürür. Bu argüman bir tam sayı, ondalıklı "
+"sayı veya :meth:`__abs__` 'i implement eden bir obje olabilir. Eğer argüman "
+"bir karmaşık sayıysa, onun büyüklüğünü döndürülür."
 
 #: library/functions.rst:66
 msgid ""
 "Return an :term:`asynchronous iterator` for an :term:`asynchronous "
 "iterable`. Equivalent to calling ``x.__aiter__()``."
 msgstr ""
+"Bir term:`asynchronous iterable` için bir :term:`asynchronous iterator` "
+"döndürür. ``x.__aiter__()`` çağrısına eşdeğerdir."
 
 #: library/functions.rst:69
 msgid "Note: Unlike :func:`iter`, :func:`aiter` has no 2-argument variant."
 msgstr ""
+"Not: :func:'iter' 'ın aksine, :func:'aiter' 'ın 2 bağımsız değişkeni yoktur."
 
 #: library/functions.rst:75
 msgid ""
 "Return ``True`` if all elements of the *iterable* are true (or if the "
 "iterable is empty).  Equivalent to::"
 msgstr ""
+"Eğer *iterable* 'ın tüm elementleri doğruysa, \"True\" döndürür. Şuna "
+"eşittir::"
 
 #: library/functions.rst:87
 msgid ""
 "When awaited, return the next item from the given :term:`asynchronous "
 "iterator`, or *default* if given and the iterator is exhausted."
 msgstr ""
+"Hazır olunduğunda, verilen :term:`asynchronous iterator` 'dan sıradaki "
+"parçayı döndürür. Eğer yineleyici tükendiyse ve *default* değer verildiyse, "
+"*default* değeri döndürür."
 
 #: library/functions.rst:90
 msgid ""
 "This is the async variant of the :func:`next` builtin, and behaves similarly."
-msgstr ""
+msgstr "Bu :func:'next' 'in gömülü asenkron varyantı ve benzer çalışır."
 
 #: library/functions.rst:93
 msgid ""
@@ -432,12 +446,18 @@ msgid ""
 "iterator. If *default* is given, it is returned if the iterator is "
 "exhausted, otherwise :exc:`StopAsyncIteration` is raised."
 msgstr ""
+"Bu *async_iterator* 'ın :meth:`~object.__anext__` metodunu çağırır. Bir :"
+"term:`awaitable` döndürür. Bunu beklemek yineleyicinin bir sonraki değerini "
+"döndürür. Eğer *default* değer verildiyse, yineleyici tükendiğinde o "
+"döndürülür. Aksi takdirde :exc:`StopAsyncIteration` hatası yükseltilir."
 
 #: library/functions.rst:102
 msgid ""
 "Return ``True`` if any element of the *iterable* is true.  If the iterable "
 "is empty, return ``False``.  Equivalent to::"
 msgstr ""
+"Eğer *iterable* 'ın elementlerinden herhangi biri doğru ise \"True\" "
+"döndürür. Eğer *iterable* boş ise, \"False\" döndürür. Şuna eşittir::"
 
 #: library/functions.rst:114
 msgid ""
@@ -446,6 +466,11 @@ msgid ""
 "`repr` using ``\\x``, ``\\u``, or ``\\U`` escapes.  This generates a string "
 "similar to that returned by :func:`repr` in Python 2."
 msgstr ""
+":func:`repr` 'in bir nesnenin yazdırılabilir temsilini içeren bir dize "
+"döndürdüğü, ancak :func:`repr` tarafından döndürülen dizedeki ASCII olmayan "
+"karakterlerden ``\\x``, ``\\u` ` veya ``\\U`` gibi kaçış karakterlerini "
+"kullanarak kaçtığı gibi, bu da Python 2'deki :func:`repr` tarafından "
+"döndürülen değere benzeyen bir string üretir."
 
 #: library/functions.rst:122
 msgid ""
