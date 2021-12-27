@@ -112,12 +112,12 @@ serve:
 progress:
 	@$(PYTHON) -c 'import sys; print("{:.1%}".format(int(sys.argv[1]) / int(sys.argv[2])))'  \
 	@read -p "File: " file; \
-	ifeq ($$file, "") \
+	ifeq ($$file, "")
 		@echo "No file specified, showing total progress"; \
 		$(shell msgcat *.po */*.po | msgattrib --translated | grep -c '^msgid') \
 		$(shell msgcat *.po */*.po | grep -c '^msgid')
 
-	else \
+	else
 		$(shell msgcat $$file | msgattrib --translated | grep -c '^msgid') \
 		$(shell msgcat $$file | grep -c '^msgid')
 	endif
