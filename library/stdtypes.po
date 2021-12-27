@@ -2,35 +2,40 @@
 # Copyright (C) 2001-2021, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-12-28 00:21+0300\n"
+"Last-Translator: \n"
+"Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: library/stdtypes.rst:8
 msgid "Built-in Types"
-msgstr ""
+msgstr "Gömülü Türler"
 
 #: library/stdtypes.rst:10
 msgid ""
 "The following sections describe the standard types that are built into the "
 "interpreter."
 msgstr ""
+"Aşağıdaki bölümlerde, yorumlayıcıda yerleşik olarak yer alan standart türler "
+"açıklanmaktadır."
 
 #: library/stdtypes.rst:15
 msgid ""
 "The principal built-in types are numerics, sequences, mappings, classes, "
 "instances and exceptions."
 msgstr ""
+"Başlıca gömülü türler sayısallar, sıralar, eşleşmeler, sınıflar, örnekler ve "
+"kural dışı durumlardır."
 
 #: library/stdtypes.rst:18
 msgid ""
@@ -38,6 +43,9 @@ msgid ""
 "rearrange their members in place, and don't return a specific item, never "
 "return the collection instance itself but ``None``."
 msgstr ""
+"Bazı koleksiyon sınıfları değişebilirdir.  Üyelerini yerinde ekleyen, "
+"çıkaran veya yeniden düzenleyen ve belirli bir öğe döndürmeyen metotlar, her "
+"zaman koleksiyon örneğini değil ``None`` değerini döndürür."
 
 #: library/stdtypes.rst:22
 msgid ""
@@ -47,16 +55,24 @@ msgid ""
 "slightly different :func:`str` function).  The latter function is implicitly "
 "used when an object is written by the :func:`print` function."
 msgstr ""
+"Bazı işlemler birkaç nesne türü tarafından desteklenir; özellikle, tüm "
+"nesneler eşitlik için karşılaştırılabilir, doğruluk değeri için test "
+"edilebilir ve bir dizeye dönüştürülebilir (:func:`repr` fonksiyonu veya "
+"hafif farklı olan :func:`str` fonksiyonu ile).  İkinci işlev, bir nesne :"
+"func:`print` ile yazdırıldığında dolaylı olarak kullanılır."
 
 #: library/stdtypes.rst:32
 msgid "Truth Value Testing"
-msgstr ""
+msgstr "Doğruluk Değeri Testi"
 
 #: library/stdtypes.rst:41
 msgid ""
 "Any object can be tested for truth value, for use in an :keyword:`if` or :"
 "keyword:`while` condition or as operand of the Boolean operations below."
 msgstr ""
+"Herhangi bir nesne, :keyword:`if` veya :keyword:`while` koşulunda veya "
+"aşağıdaki Boolean işlemlerinin işleneni olarak kullanımında doğruluk değeri "
+"için test edilebilir."
 
 #: library/stdtypes.rst:46
 msgid ""
@@ -65,22 +81,30 @@ msgid ""
 "that returns zero, when called with the object. [1]_  Here are most of the "
 "built-in objects considered false:"
 msgstr ""
+"Varsayılan olarak, bir nesne, sınıfı \"False\" döndüren bir :meth:`__bool__` "
+"yöntemini veya nesneyle birlikte çağrıldığında sıfır döndüren bir :meth:"
+"`__len__` yöntemini tanımlamadıkça doğru kabul edilir. [1]_ Yanlış olarak "
+"kabul edilen yerleşik nesnelerin çoğu:"
 
 #: library/stdtypes.rst:55
 msgid "constants defined to be false: ``None`` and ``False``."
-msgstr ""
+msgstr "false olarak tanımlanan sabitler: ``None`` ve ``False``."
 
 #: library/stdtypes.rst:57
 msgid ""
 "zero of any numeric type: ``0``, ``0.0``, ``0j``, ``Decimal(0)``, "
 "``Fraction(0, 1)``"
 msgstr ""
+"herhangi bir sayısal türden sıfır: ``0``, ``0.0``, ``0j``, ``Decimal(0)``, "
+"``Fraction(0, 1)``"
 
 #: library/stdtypes.rst:60
 msgid ""
 "empty sequences and collections: ``''``, ``()``, ``[]``, ``{}``, ``set()``, "
 "``range(0)``"
 msgstr ""
+"boş sıralar ve koleksiyonlar: ``''``, ``()``, ``[]``, ``{}``, ``set()``, "
+"``range(0)``"
 
 #: library/stdtypes.rst:69
 msgid ""
@@ -89,95 +113,106 @@ msgid ""
 "otherwise stated. (Important exception: the Boolean operations ``or`` and "
 "``and`` always return one of their operands.)"
 msgstr ""
+"Boolean sonucu olan işlemler ve yerleşik işlevler, aksi belirtilmedikçe her "
+"zaman false için \"0\" veya \"False\" ve true için \"1\" veya \"True\" "
+"döndürür. (Önemli istisna: Boolean işlemleri \"or\" ve \"and\" her zaman "
+"işlenenlerinden birini döndürür.)"
 
 #: library/stdtypes.rst:78
 msgid "Boolean Operations --- :keyword:`!and`, :keyword:`!or`, :keyword:`!not`"
-msgstr ""
+msgstr "Boolean İşlemleri --- :keyword:`!and`, :keyword:`!or`, :keyword:`!not`"
 
 #: library/stdtypes.rst:82
 msgid "These are the Boolean operations, ordered by ascending priority:"
-msgstr ""
+msgstr "Bunlar artan önceliğe göre sıralanmış Boolean işlemleridir:"
 
 #: library/stdtypes.rst:143 library/stdtypes.rst:364 library/stdtypes.rst:883
 #: library/stdtypes.rst:1078
 msgid "Operation"
-msgstr ""
+msgstr "İşlem"
 
 #: library/stdtypes.rst:275 library/stdtypes.rst:414 library/stdtypes.rst:1078
 msgid "Result"
-msgstr ""
+msgstr "Sonuç"
 
 #: library/stdtypes.rst:275 library/stdtypes.rst:883 library/stdtypes.rst:2310
 #: library/stdtypes.rst:3531
 msgid "Notes"
-msgstr ""
+msgstr "Notlar"
 
 #: library/stdtypes.rst:87
 msgid "``x or y``"
-msgstr ""
+msgstr "``x or y``"
 
 #: library/stdtypes.rst:87
 msgid "if *x* is false, then *y*, else *x*"
-msgstr ""
+msgstr "*x* yanlışsa, *y*, yoksa *x*"
 
 #: library/stdtypes.rst:285 library/stdtypes.rst:888 library/stdtypes.rst:2316
 #: library/stdtypes.rst:3537
 msgid "\\(1)"
-msgstr ""
+msgstr "\\(1)"
 
 #: library/stdtypes.rst:90
 msgid "``x and y``"
-msgstr ""
+msgstr "``x and y``"
 
 #: library/stdtypes.rst:90
 msgid "if *x* is false, then *x*, else *y*"
-msgstr ""
+msgstr "*x* yanlışsa, *x*, yoksa *y*"
 
 #: library/stdtypes.rst:288 library/stdtypes.rst:1117 library/stdtypes.rst:2322
 #: library/stdtypes.rst:3543
 msgid "\\(2)"
-msgstr ""
+msgstr "\\(2)"
 
 #: library/stdtypes.rst:93
 msgid "``not x``"
-msgstr ""
+msgstr "``not x``"
 
 #: library/stdtypes.rst:93
 msgid "if *x* is false, then ``True``, else ``False``"
-msgstr ""
+msgstr "*x* yanlışsa, ``True``, değilse ``False``"
 
 #: library/stdtypes.rst:897 library/stdtypes.rst:2324 library/stdtypes.rst:2328
 #: library/stdtypes.rst:3545 library/stdtypes.rst:3549
 #: library/stdtypes.rst:3551
 msgid "\\(3)"
-msgstr ""
+msgstr "\\(3)"
 
 #: library/stdtypes.rst:319 library/stdtypes.rst:924 library/stdtypes.rst:2356
 #: library/stdtypes.rst:3581
 msgid "Notes:"
-msgstr ""
+msgstr "Notlar:"
 
 #: library/stdtypes.rst:105
 msgid ""
 "This is a short-circuit operator, so it only evaluates the second argument "
 "if the first one is false."
 msgstr ""
+"Bu bir kısa devre operatörüdür, bu nedenle ikinci argümanı yalnızca "
+"birincisi yanlışsa değerlendirir."
 
 #: library/stdtypes.rst:109
 msgid ""
 "This is a short-circuit operator, so it only evaluates the second argument "
 "if the first one is true."
 msgstr ""
+"Bu bir kısa devre operatörüdür, bu nedenle sadece ilki doğruysa ikinci "
+"argümanı değerlendirir."
 
 #: library/stdtypes.rst:113
 msgid ""
 "``not`` has a lower priority than non-Boolean operators, so ``not a == b`` "
 "is interpreted as ``not (a == b)``, and ``a == not b`` is a syntax error."
 msgstr ""
+"``not`` Boolean olmayan operatörlerden daha düşük bir önceliğe sahiptir, bu "
+"nedenle ``not a == b``, ``not (a == b)`` olarak yorumlanır bu sebeple ``a == "
+"not b`` bir sözdizimi hatasıdır."
 
 #: library/stdtypes.rst:120
 msgid "Comparisons"
-msgstr ""
+msgstr "Karşılaştırmalar"
 
 #: library/stdtypes.rst:134
 msgid ""
@@ -187,79 +222,85 @@ msgid ""
 "< y and y <= z``, except that *y* is evaluated only once (but in both cases "
 "*z* is not evaluated at all when ``x < y`` is found to be false)."
 msgstr ""
+"Python'da sekiz karşılaştırma işlemi vardır.  Hepsinin önceliği aynıdır "
+"(Boolean işlemlerinden daha önceliklidir).  Karşılaştırmalar isteğe bağlı "
+"olarak zincirlenebilir; örneğin, ``x < y <= z``, ``x < y and y <= z`` ile "
+"eşdeğerdir, ancak *y* yalnızca bir kez değerlendirilir (ancak her iki "
+"durumda da ``x < y`` yanlış olduğu tespit edildiğinde *z* hiç "
+"değerlendirilmez)."
 
 #: library/stdtypes.rst:140
 msgid "This table summarizes the comparison operations:"
-msgstr ""
+msgstr "Bu tablo karşılaştırma operatörlerini özetlemektedir:"
 
 #: library/stdtypes.rst:2287 library/stdtypes.rst:3508
 #: library/stdtypes.rst:3531
 msgid "Meaning"
-msgstr ""
+msgstr "Anlamı"
 
 #: library/stdtypes.rst:145
 msgid "``<``"
-msgstr ""
+msgstr "``<``"
 
 #: library/stdtypes.rst:145
 msgid "strictly less than"
-msgstr ""
+msgstr "kesinlikle daha az"
 
 #: library/stdtypes.rst:147
 msgid "``<=``"
-msgstr ""
+msgstr "``<=``"
 
 #: library/stdtypes.rst:147
 msgid "less than or equal"
-msgstr ""
+msgstr "daha az veya eşit"
 
 #: library/stdtypes.rst:149
 msgid "``>``"
-msgstr ""
+msgstr "``>``"
 
 #: library/stdtypes.rst:149
 msgid "strictly greater than"
-msgstr ""
+msgstr "kesinlikle daha büyük"
 
 #: library/stdtypes.rst:151
 msgid "``>=``"
-msgstr ""
+msgstr "``>=``"
 
 #: library/stdtypes.rst:151
 msgid "greater than or equal"
-msgstr ""
+msgstr "daha büyük veya eşit"
 
 #: library/stdtypes.rst:153
 msgid "``==``"
-msgstr ""
+msgstr "``==``"
 
 #: library/stdtypes.rst:153
 msgid "equal"
-msgstr ""
+msgstr "eşit"
 
 #: library/stdtypes.rst:155
 msgid "``!=``"
-msgstr ""
+msgstr "``!=``"
 
 #: library/stdtypes.rst:155
 msgid "not equal"
-msgstr ""
+msgstr "eşit değil"
 
 #: library/stdtypes.rst:157
 msgid "``is``"
-msgstr ""
+msgstr "``is``"
 
 #: library/stdtypes.rst:157
 msgid "object identity"
-msgstr ""
+msgstr "nesne kimliği"
 
 #: library/stdtypes.rst:159
 msgid "``is not``"
-msgstr ""
+msgstr "``is not``"
 
 #: library/stdtypes.rst:159
 msgid "negated object identity"
-msgstr ""
+msgstr "olumsuz nesne kimliği"
 
 #: library/stdtypes.rst:166
 msgid ""
@@ -270,12 +311,20 @@ msgid ""
 "example, they raise a :exc:`TypeError` exception when one of the arguments "
 "is a complex number."
 msgstr ""
+"Farklı sayısal türler dışında, farklı türdeki nesneler hiçbir zaman eşit "
+"olarak karşılaştırılmaz. ``==`` operatörü her zaman tanımlanır, ancak bazı "
+"nesne türleri için (örneğin, sınıf nesneleri) :keyword:`is` ile eşdeğerdir. "
+"``<``, ``<=``, ``>`` ve ``>=`` operatörleri yalnızca anlamlı oldukları yerde "
+"tanımlanır; örneğin, bağımsız değişkenlerden biri karmaşık bir sayı "
+"olduğunda bir :exc:`TypeError` hatası oluştururlar."
 
 #: library/stdtypes.rst:180
 msgid ""
 "Non-identical instances of a class normally compare as non-equal unless the "
 "class defines the :meth:`~object.__eq__` method."
 msgstr ""
+"Normalde, bir sınıfın özdeş olmayan örnekleri, sınıf :meth:`~object.__eq__` "
+"yöntemini tanımlamadığı sürece eşit olmayan olarak karşılaştırılır."
 
 #: library/stdtypes.rst:183
 msgid ""
@@ -286,6 +335,12 @@ msgid ""
 "meth:`~object.__eq__` are sufficient, if you want the conventional meanings "
 "of the comparison operators)."
 msgstr ""
+"Bir sınıfın örnekleri, sınıf yeterli yöntemleri tanımlamadıkça, aynı sınıfın "
+"diğer örneklerine veya diğer nesne türlerine göre sıralanamaz :meth:`~object."
+"__lt__`, :meth:`~object.__le__` , :meth:`~object.__gt__` ve :meth:`~object."
+"__ge__` (karşılaştırma operatörlerin geleneksel anlamlarını istiyorsanız, :"
+"meth:`~object.__lt__` ve :meth:`~object.__eq__` genellikle yeterli "
+"olacaktır)."
 
 #: library/stdtypes.rst:190
 msgid ""
@@ -293,6 +348,9 @@ msgid ""
 "customized; also they can be applied to any two objects and never raise an "
 "exception."
 msgstr ""
+":keyword:`is` ve :keyword:`is not` operatörlerinin davranışı "
+"özelleştirilemez; ayrıca herhangi iki nesneye uygulanabilirler ve asla bir "
+"hata oluşturmazlar."
 
 #: library/stdtypes.rst:198
 msgid ""
@@ -300,10 +358,13 @@ msgid ""
 "keyword:`not in`, are supported by types that are :term:`iterable` or "
 "implement the :meth:`__contains__` method."
 msgstr ""
+"Aynı sözdizimsel önceliğe sahip iki işlem daha, :keyword:`in` ve :keyword:"
+"`not in`, :term:`iterable` olan veya :meth:`__contains__` yöntemini "
+"uygulayan türler tarafından desteklenir."
 
 #: library/stdtypes.rst:205
 msgid "Numeric Types --- :class:`int`, :class:`float`, :class:`complex`"
-msgstr ""
+msgstr "Sayısal Türler --- :class:`int`, :class:`float`, :class:`complex`"
 
 #: library/stdtypes.rst:215
 msgid ""
@@ -319,6 +380,17 @@ msgid ""
 "numeric types :mod:`fractions.Fraction`, for rationals, and :mod:`decimal."
 "Decimal`, for floating-point numbers with user-definable precision.)"
 msgstr ""
+"Üç farklı sayısal tür vardır: :dfn:`integers`, :dfn:`floating point "
+"numbers`, ve :dfn:`complex numbers`.  Ayrıca, Booleanlar tam sayıların bir "
+"alt türüdür.  Tam sayıların kesinliği sınırsızdır.  Ondalıklı sayılar "
+"genellikle C dilinde :c:type:`double` kullanılarak uygulanır; programınızın "
+"çalıştığı makine için ondalıklı sayıların kesinliği ve dahili gösterimi "
+"hakkında bilgi :data:`sys.float_info` içinde mevcuttur.  Karmaşık sayıların "
+"her biri bir ondalık sayı olan gerçek ve sanal birer kısımları vardır. Bu "
+"parçaları *z* karmaşık sayısından ayıklamak için ``z.real`` ve ``z.imag`` "
+"kullanın. (Standart kütüphane, rasyonel sayılar için :mod:`fractions."
+"Fraction` ve kullanıcı tarafından tanımlanabilen hassasiyete sahip ondalıklı "
+"sayılar için :mod:`decimal.Decimal` ek sayısal türlerini içerir.)"
 
 #: library/stdtypes.rst:237
 msgid ""
@@ -330,8 +402,16 @@ msgid ""
 "with a zero real part) which you can add to an integer or float to get a "
 "complex number with real and imaginary parts."
 msgstr ""
+"Sayılar, sayısal değişmezlerle veya, gömülü fonksiyonlar ve operatörlerin "
+"sonucu olarak oluşturulur.  Sade tamsayı değişmezleri (onaltılı, sekizli ve "
+"ikili sayılar dahil) tamsayıları verir.  Ondalık nokta veya üs işareti "
+"içeren sayısal değişmezler, ondalıklı sayıları verir.  Sayısal bir değişmeze "
+"``'j'`` veya ``'J'`` eklemek, tam veya ondalıklı bir sayıya eklenince gerçek "
+"ve hayali kısımları olan bir karmaşık sayı ortaya çıkaran, hayali bir sayı "
+"üretir."
 
 #: library/stdtypes.rst:262
+#, fuzzy
 msgid ""
 "Python fully supports mixed arithmetic: when a binary arithmetic operator "
 "has operands of different numeric types, the operand with the \"narrower\" "
@@ -340,189 +420,201 @@ msgid ""
 "of different types behaves as though the exact values of those numbers were "
 "being compared. [2]_"
 msgstr ""
+"Python karma aritmetiği tam olarak destekler: herhangi bir ikili aritmetik "
+"operatörü farklı sayısal türlerde işlenenlere sahip olduğunda, \"dar\" türe "
+"sahip işlenen, tamsayı karmaşık sayıdan daha dar olan ondalıklı sayıdan daha "
+"dar olduğu diğerininkine genişletilir. Farklı türlerdeki sayıların "
+"karşılaştırılması, bu sayıların tam değerleri karşılaştırılıyormuş gibi "
+"davranır. [2]_"
 
 #: library/stdtypes.rst:268
 msgid ""
 "The constructors :func:`int`, :func:`float`, and :func:`complex` can be used "
 "to produce numbers of a specific type."
 msgstr ""
+":func:`int`, :func:`float` ve :func:`complex` yapıcıları belirli bir türde "
+"sayılar üretmek için kullanılabilir."
 
 #: library/stdtypes.rst:271
 msgid ""
 "All numeric types (except complex) support the following operations (for "
 "priorities of the operations, see :ref:`operator-summary`):"
 msgstr ""
+"Tüm sayısal türler (karmaşık sayılar hariç) aşağıdaki işlemleri destekler "
+"(işlemlerin öncelikleri için bkz. :ref:`operator-summary`):"
 
 #: library/stdtypes.rst:275
 msgid "Full documentation"
-msgstr ""
+msgstr "Tam dokümantasyon"
 
 #: library/stdtypes.rst:277
 msgid "``x + y``"
-msgstr ""
+msgstr "``x + y``"
 
 #: library/stdtypes.rst:277
 msgid "sum of *x* and *y*"
-msgstr ""
+msgstr "*x* ve *y* 'nin toplamı"
 
 #: library/stdtypes.rst:279
 msgid "``x - y``"
-msgstr ""
+msgstr "``x - y``"
 
 #: library/stdtypes.rst:279
 msgid "difference of *x* and *y*"
-msgstr ""
+msgstr "*x* ve *y* 'nin farkı"
 
 #: library/stdtypes.rst:281
 msgid "``x * y``"
-msgstr ""
+msgstr "``x * y``"
 
 #: library/stdtypes.rst:281
 msgid "product of *x* and *y*"
-msgstr ""
+msgstr "*x* ve *y* 'nin çarpımı"
 
 #: library/stdtypes.rst:283
 msgid "``x / y``"
-msgstr ""
+msgstr "``x / y``"
 
 #: library/stdtypes.rst:283
 msgid "quotient of *x* and *y*"
-msgstr ""
+msgstr "*x* 'in *y* 'ye bölümü"
 
 #: library/stdtypes.rst:285
 msgid "``x // y``"
-msgstr ""
+msgstr "``x // y``"
 
 #: library/stdtypes.rst:285
 msgid "floored quotient of *x* and *y*"
-msgstr ""
+msgstr "*x* ve *y* 'nin kat bölümü"
 
 #: library/stdtypes.rst:288
 msgid "``x % y``"
-msgstr ""
+msgstr "``x % y``"
 
 #: library/stdtypes.rst:288
 msgid "remainder of ``x / y``"
-msgstr ""
+msgstr "``x / y`` işleminde kalan"
 
 #: library/stdtypes.rst:290
 msgid "``-x``"
-msgstr ""
+msgstr "``-x``"
 
 #: library/stdtypes.rst:290
 msgid "*x* negated"
-msgstr ""
+msgstr "*x* 'in negatifi"
 
 #: library/stdtypes.rst:292
 msgid "``+x``"
-msgstr ""
+msgstr "``+x``"
 
 #: library/stdtypes.rst:292
 msgid "*x* unchanged"
-msgstr ""
+msgstr "*x* 'in değişmemişi"
 
 #: library/stdtypes.rst:294
 msgid "``abs(x)``"
-msgstr ""
+msgstr "``abs(x)``"
 
 #: library/stdtypes.rst:294
 msgid "absolute value or magnitude of *x*"
-msgstr ""
+msgstr "*x* 'in mutlak değeri"
 
 #: library/stdtypes.rst:294
 msgid ":func:`abs`"
-msgstr ""
+msgstr ":func:`abs`"
 
 #: library/stdtypes.rst:297
 msgid "``int(x)``"
-msgstr ""
+msgstr "``int(x)``"
 
 #: library/stdtypes.rst:297
 msgid "*x* converted to integer"
-msgstr ""
+msgstr "*x* 'in integer tamsayıya (integer) dönüştürülmüş hali"
 
 #: library/stdtypes.rst:297
 msgid "\\(3)\\(6)"
-msgstr ""
+msgstr "\\(3)\\(6)"
 
 #: library/stdtypes.rst:297
 msgid ":func:`int`"
-msgstr ""
+msgstr ":func:`int`"
 
 #: library/stdtypes.rst:299
 msgid "``float(x)``"
-msgstr ""
+msgstr "``float(x)``"
 
 #: library/stdtypes.rst:299
 msgid "*x* converted to floating point"
-msgstr ""
+msgstr "*x* 'in ondalıklı sayıya (float) dönüştürülmüş hali"
 
 #: library/stdtypes.rst:299
 msgid "\\(4)\\(6)"
-msgstr ""
+msgstr "\\(4)\\(6)"
 
 #: library/stdtypes.rst:299
 msgid ":func:`float`"
-msgstr ""
+msgstr ":func:`float`"
 
 #: library/stdtypes.rst:301
 msgid "``complex(re, im)``"
-msgstr ""
+msgstr "``complex(re, im)``"
 
 #: library/stdtypes.rst:301
 msgid ""
 "a complex number with real part *re*, imaginary part *im*. *im* defaults to "
 "zero."
 msgstr ""
+"gerçek kısmı *re*, sanal kısmı *im* olan bir karmaşık sayı. *im* varsayılan "
+"olarak sıfırdır."
 
 #: library/stdtypes.rst:1110 library/stdtypes.rst:3568
 msgid "\\(6)"
-msgstr ""
+msgstr "\\(6)"
 
 #: library/stdtypes.rst:301
 msgid ":func:`complex`"
-msgstr ""
+msgstr ":func:`complex`"
 
 #: library/stdtypes.rst:305
 msgid "``c.conjugate()``"
-msgstr ""
+msgstr "``c.conjugate()``"
 
 #: library/stdtypes.rst:305
 msgid "conjugate of the complex number *c*"
-msgstr ""
+msgstr "*c* karmaşık sayısının eşleniği"
 
 #: library/stdtypes.rst:308
 msgid "``divmod(x, y)``"
-msgstr ""
+msgstr "``divmod(x, y)``"
 
 #: library/stdtypes.rst:308
 msgid "the pair ``(x // y, x % y)``"
-msgstr ""
+msgstr "``(x // y, x % y)`` ifadesinin ikilisi"
 
 #: library/stdtypes.rst:308
 msgid ":func:`divmod`"
-msgstr ""
+msgstr ":func:`divmod`"
 
 #: library/stdtypes.rst:310
 msgid "``pow(x, y)``"
-msgstr ""
+msgstr "``pow(x, y)``"
 
 #: library/stdtypes.rst:312
 msgid "*x* to the power *y*"
-msgstr ""
+msgstr "*x* üzeri *y*"
 
 #: library/stdtypes.rst:312 library/stdtypes.rst:1102 library/stdtypes.rst:2346
 #: library/stdtypes.rst:3564 library/stdtypes.rst:3571
 msgid "\\(5)"
-msgstr ""
+msgstr "\\(5)"
 
 #: library/stdtypes.rst:310
 msgid ":func:`pow`"
-msgstr ""
+msgstr ":func:`pow`"
 
 #: library/stdtypes.rst:312
 msgid "``x ** y``"
-msgstr ""
+msgstr "``x ** y``"
 
 #: library/stdtypes.rst:322
 msgid ""
@@ -531,12 +623,18 @@ msgid ""
 "always rounded towards minus infinity: ``1//2`` is ``0``, ``(-1)//2`` is "
 "``-1``, ``1//(-2)`` is ``-1``, and ``(-1)//(-2)`` is ``0``."
 msgstr ""
+"Tamsayılı bölümü olarak da adlandırılır.  Elde edilen değer bir tamsayıdır, "
+"ancak sonucun türü her zaman int olmayabilir.  Sonuç her zaman eksi sonsuza "
+"yuvarlanır: ``1//2`` = ``0``, ``(-1)//2`` = ``-1``, ``1//(-2)`` = ``-1``, ve "
+"``(-1)//(-2)`` = ``0``."
 
 #: library/stdtypes.rst:328
 msgid ""
 "Not for complex numbers.  Instead convert to floats using :func:`abs` if "
 "appropriate."
 msgstr ""
+"Karmaşık sayılar için değil.  Bunun yerine uygunsa :func:`abs` kullanarak "
+"ondalıklı sayılara dönüştürün."
 
 #: library/stdtypes.rst:340
 msgid ""
@@ -544,80 +642,101 @@ msgid ""
 "functions :func:`math.floor` and :func:`math.ceil` for well-defined "
 "conversions."
 msgstr ""
+"Ondalıklı sayının (float) tam sayıya (integer) dönüştürülmesi, C dilinde de "
+"olduğu gibi sayının yuvarlanmasına veya kırpılmasına sebep olabilir; iyi "
+"tanımlanmış dönüşümler için :func:`math.floor` ve :func:`math.ceil` "
+"fonksiyonlarına bakın."
 
 #: library/stdtypes.rst:345
+#, fuzzy
 msgid ""
 "float also accepts the strings \"nan\" and \"inf\" with an optional prefix "
 "\"+\" or \"-\" for Not a Number (NaN) and positive or negative infinity."
 msgstr ""
+"float ayrıca \"nan\" ve \"inf\" dizelerini, Sayı Değil ( Not a Number -> "
+"NaN) ve pozitif veya negatif sonsuzluk için isteğe bağlı bir \"+\" veya \"-"
+"\" ön ekiyle kabul eder."
 
 #: library/stdtypes.rst:349
 msgid ""
 "Python defines ``pow(0, 0)`` and ``0 ** 0`` to be ``1``, as is common for "
 "programming languages."
 msgstr ""
+"Python, diğer programlama dillerinde de olduğu gibi ``pow(0, 0)`` = ``1`` ve "
+"``0 ** 0`` = ``1`` şeklinde tanımlar."
 
 #: library/stdtypes.rst:353
 msgid ""
 "The numeric literals accepted include the digits ``0`` to ``9`` or any "
 "Unicode equivalent (code points with the ``Nd`` property)."
 msgstr ""
+"Kabul edilen sayısal değişmezler, ``0`` ile ``9`` arasındaki rakamları veya "
+"herhangi bir Unicode eşdeğerini (\"Nd\" özelliğine sahip kod noktaları) "
+"içerir."
 
 #: library/stdtypes.rst:356
 msgid ""
 "See https://www.unicode.org/Public/13.0.0/ucd/extracted/DerivedNumericType."
 "txt for a complete list of code points with the ``Nd`` property."
 msgstr ""
+"``Nd`` özelliğine sahip kod noktalarının tam listesi için https://www."
+"unicode.org/Public/13.0.0/ucd/extracted/DerivedNumericType.txt adresine "
+"bakın."
 
 #: library/stdtypes.rst:360
 msgid ""
 "All :class:`numbers.Real` types (:class:`int` and :class:`float`) also "
 "include the following operations:"
 msgstr ""
+"Tüm :class:`numbers.Real` türleri (:class:`int` ve :class:`float`) ayrıca "
+"aşağıdaki işlemleri içerir:"
 
 #: library/stdtypes.rst:366
 msgid ":func:`math.trunc(\\ x) <math.trunc>`"
-msgstr ""
+msgstr ":func:`math.trunc(\\ x) <math.trunc>`"
 
 #: library/stdtypes.rst:366
 msgid "*x* truncated to :class:`~numbers.Integral`"
-msgstr ""
+msgstr "*x* :class:`~numbers.Integral` şeklinde kısaltıldı"
 
 #: library/stdtypes.rst:369
 msgid ":func:`round(x[, n]) <round>`"
-msgstr ""
+msgstr ":func:`round(x[, n]) <round>`"
 
 #: library/stdtypes.rst:369
 msgid ""
 "*x* rounded to *n* digits, rounding half to even. If *n* is omitted, it "
 "defaults to 0."
 msgstr ""
+"*x* *n* haneye yuvarlanır, yarıdan çifte yuvarlanır. *n* atlanırsa, *n* "
+"varsayılan olarak 0 olur."
 
 #: library/stdtypes.rst:373
 msgid ":func:`math.floor(\\ x) <math.floor>`"
-msgstr ""
+msgstr ":func:`math.floor(\\ x) <math.floor>`"
 
 #: library/stdtypes.rst:373
 msgid "the greatest :class:`~numbers.Integral` <= *x*"
-msgstr ""
+msgstr "en büyük :class:`~numbers.Integral` <= *x*"
 
 #: library/stdtypes.rst:376
 msgid ":func:`math.ceil(x) <math.ceil>`"
-msgstr ""
+msgstr ":func:`math.ceil(x) <math.ceil>`"
 
 #: library/stdtypes.rst:376
 msgid "the least :class:`~numbers.Integral` >= *x*"
-msgstr ""
+msgstr "en küçük :class:`~numbers.Integral` >= *x*"
 
 #: library/stdtypes.rst:380
 msgid ""
 "For additional numeric operations see the :mod:`math` and :mod:`cmath` "
 "modules."
 msgstr ""
+"Ek sayısal işlemler için :mod:`math` ve :mod:`cmath` modüllerine bakın."
 
 #: library/stdtypes.rst:389
 msgid "Bitwise Operations on Integer Types"
-msgstr ""
+msgstr "Tamsayı Türlerinde Bit Düzeyinde İşlemler"
 
 #: library/stdtypes.rst:403
 msgid ""
@@ -625,6 +744,9 @@ msgid ""
 "operations is calculated as though carried out in two's complement with an "
 "infinite number of sign bits."
 msgstr ""
+"Bit düzeyinde işlemler yalnızca tamsayılar için anlamlıdır. Bit düzeyinde "
+"işlemlerin sonucu, sonsuz sayıda işaret biti ile ikiye tümleyende "
+"gerçekleştiriliyormuş gibi hesaplanır."
 
 #: library/stdtypes.rst:407
 msgid ""
@@ -633,86 +755,93 @@ msgid ""
 "``~`` has the same priority as the other unary numeric operations (``+`` and "
 "``-``)."
 msgstr ""
+"İkili bit düzeyinde işlemlerin öncelikleri, sayısal işlemlerden daha düşük "
+"ve karşılaştırmalardan daha yüksektir; ``~`` tekli işlemidiğer tekli sayısal "
+"işlemlerle (``+`` ve ``-``) aynı önceliğe sahiptir."
 
 #: library/stdtypes.rst:411
 msgid "This table lists the bitwise operations sorted in ascending priority:"
 msgstr ""
+"Bu tablo, artan önceliğe göre sıralanmış bit düzeyinde işlemleri listeler:"
 
 #: library/stdtypes.rst:416
 msgid "``x | y``"
-msgstr ""
+msgstr "``x | y``"
 
 #: library/stdtypes.rst:416
 msgid "bitwise :dfn:`or` of *x* and *y*"
-msgstr ""
+msgstr "bit düzeyinde *x* :dfn:`or` *y*"
 
 #: library/stdtypes.rst:419 library/stdtypes.rst:1123 library/stdtypes.rst:2336
 #: library/stdtypes.rst:3557
 msgid "\\(4)"
-msgstr ""
+msgstr "\\(4)"
 
 #: library/stdtypes.rst:419
 msgid "``x ^ y``"
-msgstr ""
+msgstr "``x ^ y``"
 
 #: library/stdtypes.rst:419
 msgid "bitwise :dfn:`exclusive or` of *x* and *y*"
-msgstr ""
+msgstr "bit düzeyinde *x* :dfn:`exclusive or` *y*"
 
 #: library/stdtypes.rst:422
 msgid "``x & y``"
-msgstr ""
+msgstr "``x & y``"
 
 #: library/stdtypes.rst:422
 msgid "bitwise :dfn:`and` of *x* and *y*"
-msgstr ""
+msgstr "bit düzeyinde *x* :dfn:`and` *y*"
 
 #: library/stdtypes.rst:425
 msgid "``x << n``"
-msgstr ""
+msgstr "``x << n``"
 
 #: library/stdtypes.rst:425
 msgid "*x* shifted left by *n* bits"
-msgstr ""
+msgstr "*x*, *n* bit kadar sola kaydırıldı"
 
 #: library/stdtypes.rst:425
 msgid "(1)(2)"
-msgstr ""
+msgstr "(1)(2)"
 
 #: library/stdtypes.rst:427
 msgid "``x >> n``"
-msgstr ""
+msgstr "``x >> n``"
 
 #: library/stdtypes.rst:427
 msgid "*x* shifted right by *n* bits"
-msgstr ""
+msgstr "*x*, *n* bit kadar sağa kaydırıldı"
 
 #: library/stdtypes.rst:427
 msgid "(1)(3)"
-msgstr ""
+msgstr "(1)(3)"
 
 #: library/stdtypes.rst:429
 msgid "``~x``"
-msgstr ""
+msgstr "``~x``"
 
 #: library/stdtypes.rst:429
 msgid "the bits of *x* inverted"
-msgstr ""
+msgstr "*x* 'in bitleri ters çevrildi"
 
 #: library/stdtypes.rst:435
 msgid ""
 "Negative shift counts are illegal and cause a :exc:`ValueError` to be raised."
 msgstr ""
+"Negatif kaydırma sayıları geçersizdir ve :exc:`ValueError` hatasına sebep "
+"olur."
 
 #: library/stdtypes.rst:438
 msgid ""
 "A left shift by *n* bits is equivalent to multiplication by ``pow(2, n)``."
-msgstr ""
+msgstr "*n* bitlik sola kaydırma, ``pow(2, n)`` ile çarpmaya eşdeğerdir."
 
 #: library/stdtypes.rst:441
 msgid ""
 "A right shift by *n* bits is equivalent to floor division by ``pow(2, n)``."
 msgstr ""
+"*n* bitlik sağa kaydırma, ``pow(2, n)`` ile kat bölümü işlemine eşdeğerdir."
 
 #: library/stdtypes.rst:444
 msgid ""
