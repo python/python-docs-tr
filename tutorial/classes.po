@@ -3,23 +3,24 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-12-27 21:01+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: tutorial/classes.rst:5
 msgid "Classes"
-msgstr ""
+msgstr "Sınıflar"
 
 #: tutorial/classes.rst:7
 msgid ""
@@ -29,6 +30,11 @@ msgid ""
 "attributes attached to it for maintaining its state.  Class instances can "
 "also have methods (defined by its class) for modifying its state."
 msgstr ""
+"Sınıflar, verileri ve işlevleri bir arada tutan bir araçtır. Yeni bir sınıf "
+"oluşturulurken, objeye ait yeni örnekler (instances) oluşturulur. Sınıf "
+"örnekleri, durumlarını korumak için onlara iliştirilmiş niteliklere sahip "
+"olabilir. Sınıfların durumunu modifiye etmek için ise metodlar "
+"kullanılabilir."
 
 #: tutorial/classes.rst:13
 msgid ""
@@ -43,6 +49,16 @@ msgid ""
 "nature of Python: they are created at runtime, and can be modified further "
 "after creation."
 msgstr ""
+"Diğer programlama dilleriyle karşılaştırıldığında, Python'un sınıf "
+"mekanizması olabildiğince az yeni sözdizimi ve semantik içeren sınıflar "
+"ekler.  C++ ve Modula-3'te bulunan sınıf mekanizmalarının bir karışımıdır.  "
+"Python sınıfları Nesne Yönelimli Programlama'nın tüm standart özelliklerini "
+"sağlar: sınıf devralma mekanizması birden çok temel sınıfa izin verir, "
+"türetilmiş bir sınıf temel sınıfının veya sınıflarının herhangi bir metodunu "
+"geçersiz kılabilir ve bir metod aynı ada sahip bir temel sınıfın metodunu "
+"çağırabilir.  Nesneler farklı miktar ve türlerde veri içerebilir.  Modüller "
+"için olduğu gibi, sınıflar da Python'un dinamik doğasına uygundur: çalışma "
+"sırasında oluşturulurlar ve oluşturulduktan sonra da değiştirilebilirler."
 
 #: tutorial/classes.rst:23
 msgid ""
@@ -58,6 +74,17 @@ msgid ""
 "(arithmetic operators, subscripting etc.) can be redefined for class "
 "instances."
 msgstr ""
+"C++ terminolojisinde, normalde sınıf üyeleri (veri üyeleri dahil) *public* "
+"(aşağıdakine bakın:ref:'tut-private') ve tüm üye fonksiyonları *virtual*' "
+"dır.  Modula-3'te olduğu gibi, nesnenin üyelerine metodlarından ulaşmak için "
+"bir kısayol yoktur: metodun işlevi, çağrı tarafından örtülü olarak sağlanan "
+"objeyi temsil eden açık bir argümanla bildirilir.  Smalltalk'ta olduğu gibi, "
+"sınıfların kendileri de birer nesnedir.  Bu sayede metoldar yeniden "
+"isimlendirilebilir veya içe aktarılabilir.  C++ ve Modula-3'ün aksine, "
+"yerleşik türler kullanıcının üzerlerine yapacağı geliştirmeler için temel "
+"sınıflar olarak kullanılabilir.  Ayrıca, C++'ta olduğu gibi, özel "
+"sözdizimine sahip çoğu yerleşik işleç (aritmetik işleçler, alt simgeleme "
+"vb.) sınıf örnekleri için yeniden tanımlanabilir, geliştirilebilir."
 
 #: tutorial/classes.rst:34
 msgid ""
@@ -66,10 +93,14 @@ msgid ""
 "since its object-oriented semantics are closer to those of Python than C++, "
 "but I expect that few readers have heard of it.)"
 msgstr ""
+"(Sınıflara dair evrensel terimlerin yanısıra, nadiren Smalltalk ve C++ "
+"terimlerini kullanacağım. Onun yerine Modula-3 terimlerini kullanacağım "
+"çünkü Python'un nesne yönelimli semantiğine C++'tan daha yakın, yine de "
+"ancak çok az okuyucunun bunları duymuş olacağını tahmin ediyorum.)"
 
 #: tutorial/classes.rst:43
 msgid "A Word About Names and Objects"
-msgstr ""
+msgstr "İsim ve Nesneler Hakkında Birkaç Şey"
 
 #: tutorial/classes.rst:45
 msgid ""
@@ -102,7 +133,7 @@ msgstr ""
 
 #: tutorial/classes.rst:69
 msgid "Let's begin with some definitions."
-msgstr ""
+msgstr "Haydi birkaç tanımlama ile başlayalım."
 
 #: tutorial/classes.rst:71
 msgid ""
@@ -258,7 +289,7 @@ msgstr ""
 
 #: tutorial/classes.rst:191
 msgid "The output of the example code is:"
-msgstr ""
+msgstr "Örnek kodun çıktısı şudur:"
 
 #: tutorial/classes.rst:200
 msgid ""
