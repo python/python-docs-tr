@@ -133,13 +133,13 @@ ifeq ($(fix),)
 	powrap --check --quiet *.po **/*.po
 
 else
-	ifeq ($(file),)
-		@echo "Checking and fixing wrapping"
-		powrap *.po **/*.po
-	else
-		@echo "Fixing wrapping in $(file)"
-		powrap $(file)
-	endif
+ifeq ($(file),)
+	@echo "Checking and fixing wrapping"
+	powrap *.po **/*.po
+else
+	@echo "Fixing wrapping in $(file)"
+	powrap $(file)
+endif
 endif
 
 SRCS = $(shell git diff --name-only $(BRANCH) | grep '.po$$')
