@@ -110,8 +110,16 @@ serve:
 .PHONY: progress
 progress:
 	@$(PYTHON) -c 'import sys; print("{:.1%}".format(int(sys.argv[1]) / int(sys.argv[2])))'  \
-	$(shell msgcat *.po */*.po | msgattrib --translated | grep -c '^msgid') \
-	$(shell msgcat *.po */*.po | grep -c '^msgid')
+	@echo "File: "; \
+	read FILE; \
+	ifeq ($$(FILE), "")
+		@echo "No file specified, showing total progress"; \
+		$(shell msgcat *.po */*.po | msgattrib --translated | grep -c '^msgid') \
+		$(shell msgcat *.po */*.po | grep -c '^msgid')
+
+	else
+		$(shell msgcat $$(FILE) | msgattrib --translated | grep -c '^msgid') \
+		$(shell msgcat $$(FILE) | grep -c '^msgid')
 
 
 .PHONY: todo
