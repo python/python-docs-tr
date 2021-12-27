@@ -109,7 +109,7 @@ serve:
 
 .PHONY: progress
 progress:
-	ifeq ($(file), "")
+	ifeq ($(file),)
 		@echo "No file specified, showing total progress"; \
 		@$(PYTHON) -c 'import sys; print("{:.1%}".format(int(sys.argv[1]) / int(sys.argv[2])))'  \
 		$(shell msgcat *.po */*.po | msgattrib --translated | grep -c '^msgid') \
