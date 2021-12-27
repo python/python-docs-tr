@@ -108,7 +108,6 @@ serve:
 
 
 .PHONY: progress
-.ONESHELL: progress
 progress:
 	ifeq ($(file), "")
 		@echo "No file specified, showing total progress"; \
