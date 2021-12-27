@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: 2021-12-27 21:01+0300\n"
+"PO-Revision-Date: 2021-12-27 22:22+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: tr\n"
@@ -117,10 +117,23 @@ msgid ""
 "the caller will see the change --- this eliminates the need for two "
 "different argument passing mechanisms as in Pascal."
 msgstr ""
+"Nesnelerin bireyselliği vardır ve birden çok ad (birden çok kapsamda) aynı "
+"nesneye bağlanabilir.  Bu, diğer dillerde örtüşme (aliasing) olarak "
+"bilinir.  Bu genellikle Python'a ilk bakışta takdir edilmeyen bir özellik "
+"olsa da değiştirilemeyen veri türleriyle (sayılar, dizeler, diziler) "
+"uğraşırken rahatlıkla göz ardı edilebilir.  Ancak, örtüşmeler, listeler, "
+"sözlükler ve diğer türlerin çoğu gibi değişebilir nesneleri içeren Python "
+"kodunun semantiği üzerinde şaşırtıcı bir etkiye sahiptir. Diğer adlar bazı "
+"açılardan işaretçiler (pointers) gibi davrandığından, bu genellikle "
+"programın yararına kullanılır.  Örneğin, bir nesneyi geçirmek kolaydır çünkü "
+"uygulama tarafından geçirilen şey yalnızca bir işaretçidir; bir fonksiyon "
+"argüman olarak geçirilen bir nesneyi değiştirirse, çağıran bu değişikliği "
+"görür --- bu Pascal'daki iki farklı bağımsız değişken geçirme mekanizmasına "
+"olan gereksinimi ortadan kaldırır."
 
 #: tutorial/classes.rst:61
 msgid "Python Scopes and Namespaces"
-msgstr ""
+msgstr "Python Etki Alanları ve Ad Alanları"
 
 #: tutorial/classes.rst:63
 msgid ""
@@ -130,6 +143,11 @@ msgid ""
 "understand what's going on. Incidentally, knowledge about this subject is "
 "useful for any advanced Python programmer."
 msgstr ""
+"Derslere başlamadan önce, size Python'un etki alanı kuralları hakkında bir "
+"şey söylemeliyim.  Sınıf tanımlarında ad alanlarının kullanımının bazı püf "
+"noktaları vardır ve neler olduğunu tam olarak anlamak için etki alanlarının "
+"ve isimlerin nasıl çalıştığını bilmeniz gerekir. Bu arada, bu konuda bilgi "
+"edinmek herhangi bir ileri düzey Python programcısı için yararlıdır."
 
 #: tutorial/classes.rst:69
 msgid "Let's begin with some definitions."
@@ -149,6 +167,17 @@ msgid ""
 "may both define a function ``maximize`` without confusion --- users of the "
 "modules must prefix it with the module name."
 msgstr ""
+"*Ad alanları* (namespace), adlardan nesnelere eşlemedir.  Çoğu isim şu anda "
+"Python sözlükleri olarak uygulanmaktadır, ancak bu fark edilir çapta bir "
+"fark yaratmaz (performans hariç) ve gelecekte değişebilir.  Ad alanlarına "
+"örnek olarak şunlar verilebilir: yerleşik isimler (:func:'abs' ve yerleşik "
+"özel durum adları gibi fonksiyonları içerir); modüldeki global adlar; ve bir "
+"fonksiyon çağırmadaki yerel adlar.  Bir bakıma, bir nesnenin nitelik kümesi "
+"de bir ad alanı oluşturur.  İsimler hakkında bilinmesi gereken önemli şey, "
+"farklı ad alanlarındaki adlar arasında kesinlikle bir ilişki olmamasıdır; "
+"örneğin, iki farklı modülün her ikisi de karışıklık olmadan ''maximize'' "
+"fonksiyonunu tanımlayabilir --- modül kullanıcılarının modül adını "
+"örneklemesi gerekir."
 
 #: tutorial/classes.rst:82
 msgid ""
@@ -307,17 +336,19 @@ msgstr ""
 
 #: tutorial/classes.rst:212
 msgid "A First Look at Classes"
-msgstr ""
+msgstr "Sınıflara İlk Bakış"
 
 #: tutorial/classes.rst:214
 msgid ""
 "Classes introduce a little bit of new syntax, three new object types, and "
 "some new semantics."
 msgstr ""
+"Sınıflar biraz yeni sözdizimi, üç yeni nesne türü ve bazı yeni semantiklere "
+"sahiptir."
 
 #: tutorial/classes.rst:221
 msgid "Class Definition Syntax"
-msgstr ""
+msgstr "Sınıf Tanımlama Sözdizimi"
 
 #: tutorial/classes.rst:223
 msgid "The simplest form of class definition looks like this::"
@@ -361,7 +392,7 @@ msgstr ""
 
 #: tutorial/classes.rst:259
 msgid "Class Objects"
-msgstr ""
+msgstr "Sınıf Nesneleri"
 
 #: tutorial/classes.rst:261
 msgid ""
