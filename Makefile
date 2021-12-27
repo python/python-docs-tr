@@ -129,7 +129,7 @@ todo: ensure_prerequisites
 .PHONY: wrap
 wrap: ensure_prerequisites
 ifeq ($(fix),)
-	@echo "Verify wrapping" \
+	@echo "Verify wrapping"
 	powrap --check --quiet *.po **/*.po
 
 else
