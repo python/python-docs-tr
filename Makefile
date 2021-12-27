@@ -128,8 +128,19 @@ todo: ensure_prerequisites
 
 .PHONY: wrap
 wrap: ensure_prerequisites
-	@echo "Verify wrapping"
+ifeq ($(fix),)
+	@echo "Verify wrapping" \
 	powrap --check --quiet *.po **/*.po
+
+else
+	ifeq ($(file),)
+		@echo "Checking and fixing wrapping"
+		powrap *.po **/*.po
+	else
+		@echo "Fixing wrapping in $(file)"
+		powrap $(file)
+	endif
+endif
 
 SRCS = $(shell git diff --name-only $(BRANCH) | grep '.po$$')
 # foo/bar.po => $(POSPELL_TMP_DIR)/foo/bar.po.out
