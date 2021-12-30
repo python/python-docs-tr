@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: 2021-12-28 00:21+0300\n"
+"PO-Revision-Date: 2021-12-31 00:46+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -34,7 +34,7 @@ msgid ""
 "The principal built-in types are numerics, sequences, mappings, classes, "
 "instances and exceptions."
 msgstr ""
-"Başlıca gömülü türler sayısallar, sıralar, eşleşmeler, sınıflar, örnekler ve "
+"Başlıca gömülü türler sayısallar, diziler, eşleşmeler, sınıflar, örnekler ve "
 "kural dışı durumlardır."
 
 #: library/stdtypes.rst:18
@@ -103,7 +103,7 @@ msgid ""
 "empty sequences and collections: ``''``, ``()``, ``[]``, ``{}``, ``set()``, "
 "``range(0)``"
 msgstr ""
-"boş sıralar ve koleksiyonlar: ``''``, ``()``, ``[]``, ``{}``, ``set()``, "
+"boş diziler ve koleksiyonlar: ``''``, ``()``, ``[]``, ``{}``, ``set()``, "
 "``range(0)``"
 
 #: library/stdtypes.rst:69
@@ -146,7 +146,7 @@ msgstr "``x or y``"
 
 #: library/stdtypes.rst:87
 msgid "if *x* is false, then *y*, else *x*"
-msgstr "*x* yanlışsa, *y*, yoksa *x*"
+msgstr "*x* yanlışsa, *y*, aksi halde *x*"
 
 #: library/stdtypes.rst:285 library/stdtypes.rst:888 library/stdtypes.rst:2316
 #: library/stdtypes.rst:3537
@@ -159,7 +159,7 @@ msgstr "``x and y``"
 
 #: library/stdtypes.rst:90
 msgid "if *x* is false, then *x*, else *y*"
-msgstr "*x* yanlışsa, *x*, yoksa *y*"
+msgstr "*x* yanlışsa, *x*, aksi halde *y*"
 
 #: library/stdtypes.rst:288 library/stdtypes.rst:1117 library/stdtypes.rst:2322
 #: library/stdtypes.rst:3543
@@ -172,7 +172,7 @@ msgstr "``not x``"
 
 #: library/stdtypes.rst:93
 msgid "if *x* is false, then ``True``, else ``False``"
-msgstr "*x* yanlışsa, ``True``, değilse ``False``"
+msgstr "*x* yanlışsa, ``True``, aksi halde ``False``"
 
 #: library/stdtypes.rst:897 library/stdtypes.rst:2324 library/stdtypes.rst:2328
 #: library/stdtypes.rst:3545 library/stdtypes.rst:3549
@@ -382,14 +382,14 @@ msgid ""
 msgstr ""
 "Üç farklı sayısal tür vardır: :dfn:`integers`, :dfn:`floating point "
 "numbers`, ve :dfn:`complex numbers`.  Ayrıca, Booleanlar tam sayıların bir "
-"alt türüdür.  Tam sayıların kesinliği sınırsızdır.  Ondalıklı sayılar "
+"alt türüdür.  Tam sayıların kesinliği sınırsızdır.  Gerçel sayılar "
 "genellikle C dilinde :c:type:`double` kullanılarak uygulanır; programınızın "
-"çalıştığı makine için ondalıklı sayıların kesinliği ve dahili gösterimi "
+"çalıştığı makine için gerçel sayıların kesinliği ve dahili gösterimi "
 "hakkında bilgi :data:`sys.float_info` içinde mevcuttur.  Karmaşık sayıların "
-"her biri bir ondalık sayı olan gerçek ve sanal birer kısımları vardır. Bu "
+"her biri bir gerçel sayı olan gerçek ve sanal birer kısımları vardır. Bu "
 "parçaları *z* karmaşık sayısından ayıklamak için ``z.real`` ve ``z.imag`` "
 "kullanın. (Standart kütüphane, rasyonel sayılar için :mod:`fractions."
-"Fraction` ve kullanıcı tarafından tanımlanabilen hassasiyete sahip ondalıklı "
+"Fraction` ve kullanıcı tarafından tanımlanabilen hassasiyete sahip gerçel "
 "sayılar için :mod:`decimal.Decimal` ek sayısal türlerini içerir.)"
 
 #: library/stdtypes.rst:237
@@ -405,8 +405,8 @@ msgstr ""
 "Sayılar, sayısal değişmezlerle veya, gömülü fonksiyonlar ve operatörlerin "
 "sonucu olarak oluşturulur.  Sade tamsayı değişmezleri (onaltılı, sekizli ve "
 "ikili sayılar dahil) tamsayıları verir.  Ondalık nokta veya üs işareti "
-"içeren sayısal değişmezler, ondalıklı sayıları verir.  Sayısal bir değişmeze "
-"``'j'`` veya ``'J'`` eklemek, tam veya ondalıklı bir sayıya eklenince gerçek "
+"içeren sayısal değişmezler, gerçel sayıları verir.  Sayısal bir değişmeze "
+"``'j'`` veya ``'J'`` eklemek, tam veya gerçel bir sayıya eklenince gerçek "
 "ve hayali kısımları olan bir karmaşık sayı ortaya çıkaran, hayali bir sayı "
 "üretir."
 
@@ -422,7 +422,7 @@ msgid ""
 msgstr ""
 "Python karma aritmetiği tam olarak destekler: herhangi bir ikili aritmetik "
 "operatörü farklı sayısal türlerde işlenenlere sahip olduğunda, \"dar\" türe "
-"sahip işlenen, tamsayı karmaşık sayıdan daha dar olan ondalıklı sayıdan daha "
+"sahip işlenen, tamsayı karmaşık sayıdan daha dar olan gerçel sayıdan daha "
 "dar olduğu diğerininkine genişletilir. Farklı türlerdeki sayıların "
 "karşılaştırılması, bu sayıların tam değerleri karşılaştırılıyormuş gibi "
 "davranır. [2]_"
@@ -545,7 +545,7 @@ msgstr "``float(x)``"
 
 #: library/stdtypes.rst:299
 msgid "*x* converted to floating point"
-msgstr "*x* 'in ondalıklı sayıya (float) dönüştürülmüş hali"
+msgstr "*x* 'in gerçel sayıya (float) dönüştürülmüş hali"
 
 #: library/stdtypes.rst:299
 msgid "\\(4)\\(6)"
@@ -634,7 +634,7 @@ msgid ""
 "appropriate."
 msgstr ""
 "Karmaşık sayılar için değil.  Bunun yerine uygunsa :func:`abs` kullanarak "
-"ondalıklı sayılara dönüştürün."
+"gerçel sayılara dönüştürün."
 
 #: library/stdtypes.rst:340
 msgid ""
@@ -642,7 +642,7 @@ msgid ""
 "functions :func:`math.floor` and :func:`math.ceil` for well-defined "
 "conversions."
 msgstr ""
-"Ondalıklı sayının (float) tam sayıya (integer) dönüştürülmesi, C dilinde de "
+"Gerçel sayının (float) tam sayıya (integer) dönüştürülmesi, C dilinde de "
 "olduğu gibi sayının yuvarlanmasına veya kırpılmasına sebep olabilir; iyi "
 "tanımlanmış dönüşümler için :func:`math.floor` ve :func:`math.ceil` "
 "fonksiyonlarına bakın."
@@ -850,24 +850,33 @@ msgid ""
 "bit_length(), y.bit_length())`` or more) is sufficient to get the same "
 "result as if there were an infinite number of sign bits."
 msgstr ""
+"Bu hesaplamaları, sonlu ikinin tümleyen temsilinde en az bir ekstra işaret "
+"uzatma biti ile yapmak ( ``1 + max(x.bit_length(), y.bit_length())`` veya "
+"daha fazla çalışan bit genişliği), sonsuz sayıda işaret biti varmış gibi "
+"aynı sonucu elde etmek için yeterlidir."
 
 #: library/stdtypes.rst:451
 msgid "Additional Methods on Integer Types"
-msgstr ""
+msgstr "Integer (Tam sayı) Türlerinde Ek Metotlar"
 
 #: library/stdtypes.rst:453
 msgid ""
 "The int type implements the :class:`numbers.Integral` :term:`abstract base "
 "class`. In addition, it provides a few more methods:"
 msgstr ""
+"Int türü, :class:`numbers.Integral` :term:`abstract base class` 'ı uygular. "
+"Ek olarak, birkaç metot daha sağlar:"
 
 #: library/stdtypes.rst:458
 msgid ""
 "Return the number of bits necessary to represent an integer in binary, "
 "excluding the sign and leading zeros::"
 msgstr ""
+"İşaret ve baştaki sıfırlar hariç, ikili sistemde bir tamsayıyı (integer) "
+"temsil etmek için gereken bit sayısını döndürür::"
 
 #: library/stdtypes.rst:467
+#, fuzzy
 msgid ""
 "More precisely, if ``x`` is nonzero, then ``x.bit_length()`` is the unique "
 "positive integer ``k`` such that ``2**(k-1) <= abs(x) < 2**k``. "
@@ -875,26 +884,35 @@ msgid ""
 "logarithm, then ``k = 1 + int(log(abs(x), 2))``. If ``x`` is zero, then ``x."
 "bit_length()`` returns ``0``."
 msgstr ""
+"Daha doğrusu, ``x`` sıfırdan farklıysa, ``x.bit_length()``, ``2**(k-1) <= "
+"abs(x) < 2**k`` olacak şekilde benzersiz ``k`` pozitif tamsayıdır. Aynı "
+"şekilde, ``abs(x)`` doğru olarak yuvarlatılmış bir logaritmaya sahip olacak "
+"kadar küçük olduğunda, ``k = 1 + int(log(abs(x), 2))`` olur. ``x`` sıfır "
+"ise, ``x.bit_length()``, ``0`` döndürür."
 
 #: library/stdtypes.rst:496
 msgid "Equivalent to::"
-msgstr ""
+msgstr "Eşittir::"
 
 #: library/stdtypes.rst:484
 msgid ""
 "Return the number of ones in the binary representation of the absolute value "
 "of the integer. This is also known as the population count. Example::"
 msgstr ""
+"Tamsayının mutlak değerinin ikili gösterimindeki birlerin sayısını döndürün. "
+"Buna nüfus sayımı da denir. Örneğin::"
 
 #: library/stdtypes.rst:505
 msgid "Return an array of bytes representing an integer."
-msgstr ""
+msgstr "Bir tamsayıyı temsil eden bir bayt dizisi döndürür."
 
 #: library/stdtypes.rst:517
 msgid ""
 "The integer is represented using *length* bytes.  An :exc:`OverflowError` is "
 "raised if the integer is not representable with the given number of bytes."
 msgstr ""
+"Tam sayı, *length* bayt kullanılarak temsil edilir.  Tamsayı verilen bayt "
+"sayısıyla gösterilemezse :exc:`OverflowError` hatası ortaya çıkar."
 
 #: library/stdtypes.rst:553
 msgid ""
@@ -905,6 +923,11 @@ msgid ""
 "byte order of the host system, use :data:`sys.byteorder` as the byte order "
 "value."
 msgstr ""
+"*byteorder* argümanı, tamsayıyı temsil etmek için kullanılan bayt sırasını "
+"belirler.  *byteorder* ``\"big\"`` ise, en önemli bayt, bayt dizisinin "
+"başındadır. *byteorder* ``\"little\"`` ise, en önemli bayt, bayt dizisinin "
+"sonundadır. Ana sistemin yerel bayt sırasını istemek için bayt sırası değeri "
+"olarak :data:`sys.byteorder` kullanın."
 
 #: library/stdtypes.rst:528
 msgid ""
@@ -913,22 +936,31 @@ msgid ""
 "given, an :exc:`OverflowError` is raised. The default value for *signed* is "
 "``False``."
 msgstr ""
+"*signed* argümanı, tamsayıyı temsil etmek için ikinin tümleyeninin "
+"kullanılıp kullanılmayacağını belirler.  *signed* ``False`` ise ve negatif "
+"bir tamsayı verilirse, bir :exc:`OverflowError` hatası ortaya çıkar. "
+"*signed* için varsayılan değer ``False`` şeklindedir."
 
 #: library/stdtypes.rst:537
 msgid "Return the integer represented by the given array of bytes."
-msgstr ""
+msgstr "Verilen bayt dizisi tarafından temsil edilen tamsayıyı döndürür."
 
 #: library/stdtypes.rst:550
+#, fuzzy
 msgid ""
 "The argument *bytes* must either be a :term:`bytes-like object` or an "
 "iterable producing bytes."
 msgstr ""
+"*bytes* argümanı ya bir :term:`bytes-like object` ya da yinelenebilir üreten "
+"bayt olabilir."
 
 #: library/stdtypes.rst:560
 msgid ""
 "The *signed* argument indicates whether two's complement is used to "
 "represent the integer."
 msgstr ""
+"*signed* bağımsız değişkeni, tamsayıyı temsil etmek için ikinin tümleyeninin "
+"kullanılıp kullanılmadığını gösterir."
 
 #: library/stdtypes.rst:567
 msgid ""
@@ -937,16 +969,21 @@ msgid ""
 "(whole numbers) is always the integer as the numerator and ``1`` as the "
 "denominator."
 msgstr ""
+"Oranı, orijinal tam sayıya tam olarak eşit ve pozitif bir paydaya sahip bir "
+"tam sayı çifti döndürür. Integerlerin tamsayı oranı her zaman pay olarak tam "
+"sayı ve payda olarak ``1``dir."
 
 #: library/stdtypes.rst:575
 msgid "Additional Methods on Float"
-msgstr ""
+msgstr "Gerçel Sayılarda Ek Metotlar"
 
 #: library/stdtypes.rst:577
 msgid ""
 "The float type implements the :class:`numbers.Real` :term:`abstract base "
 "class`. float also has the following additional methods."
 msgstr ""
+"Float türü, :class:`numbers.Real` :term:`abstract base class` 'ı uygular. "
+"Float ayrıca aşağıdaki ek metotlara sahiptir."
 
 #: library/stdtypes.rst:582
 msgid ""
@@ -954,12 +991,17 @@ msgid ""
 "and with a positive denominator.  Raises :exc:`OverflowError` on infinities "
 "and a :exc:`ValueError` on NaNs."
 msgstr ""
+"Oranı tam olarak orijinal gerçel sayıya eşit ve pozitif bir paydaya sahip "
+"bir çift tamsayı döndürür. Sonsuzluklarda :exc `OverflowError` ve NaN'lerde "
+"(SayıDeğil) :exc:`ValueError` hataları ortaya çıkar."
 
 #: library/stdtypes.rst:589
 msgid ""
 "Return ``True`` if the float instance is finite with integral value, and "
 "``False`` otherwise::"
 msgstr ""
+"Float örneği integral değeriyle sonluysa ``True``, aksi takdirde ``False`` "
+"döndürür::"
 
 #: library/stdtypes.rst:597
 msgid ""
@@ -970,6 +1012,13 @@ msgid ""
 "of floating-point numbers.  This can be useful when debugging, and in "
 "numerical work."
 msgstr ""
+"İki yöntem, onaltılık dizelere dönüştürmeyi destekler. Python'un floatları "
+"dahili olarak ikili sayılar olarak depolandığından, bir kayan noktayı "
+"*decimal* (ondalık) dizgeye dönüştürmek veya bu karakter dizisinden "
+"dönüştürmek genellikle küçük bir yuvarlama hatası içerir. Buna karşılık, "
+"onaltılık diziler, gerçel sayıların tam olarak gösterilmesine ve "
+"belirtilmesine izin verir. Bu, hata ayıklama sırasında ve sayısal "
+"çalışmalarda yararlı olabilir."
 
 #: library/stdtypes.rst:608
 msgid ""
