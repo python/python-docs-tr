@@ -109,9 +109,17 @@ serve:
 
 .PHONY: progress
 progress:
-	@$(PYTHON) -c 'import sys; print("{:.1%}".format(int(sys.argv[1]) / int(sys.argv[2])))'  \
+ifeq ($(file),)
+	@echo "No file specified, showing total progress"; \
+	$(PYTHON) -c 'import sys; print("{:.1%}".format(int(sys.argv[1]) / int(sys.argv[2])))'  \
 	$(shell msgcat *.po */*.po | msgattrib --translated | grep -c '^msgid') \
 	$(shell msgcat *.po */*.po | grep -c '^msgid')
+
+else
+	@$(PYTHON) -c 'import sys; print("{:.1%}".format(int(sys.argv[1]) / int(sys.argv[2])))'  \
+	$(shell msgcat $(file) | msgattrib --translated | grep -c '^msgid') \
+	$(shell msgcat $(file) | grep -c '^msgid')
+endif
 
 
 .PHONY: todo
@@ -120,8 +128,19 @@ todo: ensure_prerequisites
 
 .PHONY: wrap
 wrap: ensure_prerequisites
+ifeq ($(fix),)
 	@echo "Verify wrapping"
 	powrap --check --quiet *.po **/*.po
+
+else
+ifeq ($(file),)
+	@echo "Checking and fixing wrapping"
+	powrap *.po **/*.po
+else
+	@echo "Fixing wrapping in $(file)"
+	powrap $(file)
+endif
+endif
 
 SRCS = $(shell git diff --name-only $(BRANCH) | grep '.po$$')
 # foo/bar.po => $(POSPELL_TMP_DIR)/foo/bar.po.out
