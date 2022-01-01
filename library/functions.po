@@ -449,7 +449,7 @@ msgstr ""
 "Bu *async_iterator* 'ın :meth:`~object.__anext__` metodunu çağırır. Bir :"
 "term:`awaitable` döndürür. Bunu beklemek yineleyicinin bir sonraki değerini "
 "döndürür. Eğer *default* değer verildiyse, yineleyici tükendiğinde o "
-"döndürülür. Aksi takdirde :exc:`StopAsyncIteration` hatası yükseltilir."
+"döndürülür. Aksi takdirde :exc:`StopAsyncIteration` hatası ortaya çıkar."
 
 #: library/functions.rst:102
 msgid ""
