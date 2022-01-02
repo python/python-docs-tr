@@ -3,31 +3,32 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-01-02 19:09+0300\n"
+"Last-Translator: \n"
+"Language-Team: TURKISH<python.docs.tr@gmail.com>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: tutorial/appendix.rst:5
 msgid "Appendix"
-msgstr ""
+msgstr "Ek"
 
 #: tutorial/appendix.rst:11
 msgid "Interactive Mode"
-msgstr ""
+msgstr "Etkileşimli Mod"
 
 #: tutorial/appendix.rst:16
 msgid "Error Handling"
-msgstr ""
+msgstr "Hata İşleme"
 
 #: tutorial/appendix.rst:18
 msgid ""
@@ -41,6 +42,15 @@ msgid ""
 "messages are written to the standard error stream; normal output from "
 "executed commands is written to standard output."
 msgstr ""
+"Bir hata oluştuğunda, yorumlayıcı bir hata iletisi ve yığın izlemesi "
+"yazdırır. Etkileşimli modda, daha sonra birincil isteme döner; bir dosyadan "
+"giriş geldiğinde, yığın izlemeyi yazdırdıktan sonra sıfır olmayan bir çıkış "
+"durumuyla çıkar. (:keyword:'try' deyimindeki :keyword:'except' yan tümcesi "
+"tarafından işlenen özel durumlar bu bağlamda hata değildir.)  Bazı hatalar "
+"koşulsuz olarak ölümcüldür ve sıfır olmayan bir çıkışla çıkışa neden olur; "
+"bu, iç tutarsızlıklar ve belleğin tükendiklerine ilişkin bazı durumlar için "
+"geçerlidir.  Tüm hata iletileri standart hata akışına yazılır; yürütülen "
+"komutlardan normal çıktı standart çıktıya yazılır."
 
 #: tutorial/appendix.rst:28
 msgid ""
@@ -50,16 +60,23 @@ msgid ""
 "the :exc:`KeyboardInterrupt` exception, which may be handled by a :keyword:"
 "`try` statement."
 msgstr ""
+"Kesme karakterinin (genellikle :kbd:'Control-C' veya :kbd:'Delete') birincil "
+"veya ikincil istemine yazılması girişi iptal eder ve birincil isteme döner. "
+"[#]_ Bir komut yürütülürken kesme yazmak:exc:'KeyboardInterrupt' özel "
+"durumuna neden olur ve bu özel durum :keyword:'try' deyimi tarafından "
+"işlenebilir."
 
 #: tutorial/appendix.rst:38
 msgid "Executable Python Scripts"
-msgstr ""
+msgstr "Yürütülebilir Python Komut Dosyaları"
 
 #: tutorial/appendix.rst:40
 msgid ""
 "On BSD'ish Unix systems, Python scripts can be made directly executable, "
 "like shell scripts, by putting the line ::"
 msgstr ""
+"BSD'ish Unix sistemlerinde Python komut dosyaları, :: satırı koyarak kabuk "
+"komut dosyaları gibi doğrudan yürütülebilir hale getirilebilir:"
 
 #: tutorial/appendix.rst:45
 msgid ""
@@ -70,12 +87,20 @@ msgid ""
 "(``'\\r\\n'``) line ending.  Note that the hash, or pound, character, "
 "``'#'``, is used to start a comment in Python."
 msgstr ""
+"(yorumlayıcının kullanıcının :envvar:'PATH') komut dosyasının başında "
+"olduğunu ve dosyaya yürütülebilir bir mod verdiğini varsayarsak.  ''#!'' "
+"dosyanın ilk iki karakteri olmalıdır.  Bazı platformlarda, bu ilk satırın "
+"Windows ('\\r\\n') satır sonuyla değil, Unix stili bir satır sonuyla "
+"(''\\n''') bitmesi gerekir.  Python'da yorum başlatmak için karma veya pound "
+"karakteri olan '''#''' kullanıldığını unutmayın."
 
 #: tutorial/appendix.rst:52
 msgid ""
 "The script can be given an executable mode, or permission, using the :"
 "program:`chmod` command."
 msgstr ""
+"Komut dosyasına :p rogram:'chmod' komutu kullanılarak yürütülebilir mod veya "
+"izin verilebilir."
 
 #: tutorial/appendix.rst:59
 msgid ""
@@ -85,10 +110,15 @@ msgid ""
 "extension can also be ``.pyw``, in that case, the console window that "
 "normally appears is suppressed."
 msgstr ""
+"Windows sistemlerinde, \"yürütülebilir mod\" kavramı yoktur.  Python "
+"yükleyicisi otomatik olarak ''.py'' dosyalarını ''python.exe'' ile "
+"ilişkilendirir, böylece python dosyasına çift tıklama komut dosyası olarak "
+"çalıştırılır.  Uzantı ''.pyw' de olabilir, bu durumda normalde görünen "
+"konsol penceresi bastırılır."
 
 #: tutorial/appendix.rst:69
 msgid "The Interactive Startup File"
-msgstr ""
+msgstr "Etkileşimli Başlangıç Dosyası"
 
 #: tutorial/appendix.rst:71
 msgid ""
@@ -98,6 +128,11 @@ msgid ""
 "the name of a file containing your start-up commands.  This is similar to "
 "the :file:`.profile` feature of the Unix shells."
 msgstr ""
+"Python'u etkileşimli olarak kullandığınızda, yorumlayıcı her başlatıldığında "
+"bazı standart komutların yürütülmesi genellikle kullanışlıdır.  Bunu, "
+"başlatma komutlarınızı içeren bir dosyanın adına :envvar:'PYTHONSTARTUP' "
+"adlı bir ortam değişkeni ayarlayarak yapabilirsiniz.  Bu, Unix kabuklarının :"
+"file:'.profile' özelliğine benzer."
 
 #: tutorial/appendix.rst:77
 msgid ""
@@ -109,6 +144,13 @@ msgid ""
 "qualification in the interactive session. You can also change the prompts "
 "``sys.ps1`` and ``sys.ps2`` in this file."
 msgstr ""
+"Bu dosya yalnızca etkileşimli oturumlarda okunur, Python komutları bir komut "
+"dosyasından okuduğunda değil, :file:'/dev/tty' komutların açık kaynağı "
+"olarak verildiğinde değil (aksi takdirde etkileşimli bir oturum gibi "
+"davranır).  Etkileşimli komutların yürütüldüğü aynı ad alanında yürütülür, "
+"böylece tanımladığı veya aldığı nesneler etkileşimli oturumda nitelik "
+"olmadan kullanılabilir. Bu dosyadaki ''sys.ps1'' ve ''sys.ps2'' istemlerini "
+"de değiştirebilirsiniz."
 
 #: tutorial/appendix.rst:85
 msgid ""
@@ -118,10 +160,15 @@ msgid ""
 "want to use the startup file in a script, you must do this explicitly in the "
 "script::"
 msgstr ""
+"Geçerli dizinden ek bir başlangıç dosyası okumak istiyorsanız, bunu genel "
+"başlangıç dosyasında ''if os.path.isfile('.pythonrc.py'): exec(open('."
+"pythonrc.py').read()'' gibi bir kod kullanarak programlayabilirsiniz. "
+"Başlangıç dosyasını bir komut dosyasında kullanmak istiyorsanız, bunu komut "
+"dosyasında açıkça yapmalısınız::"
 
 #: tutorial/appendix.rst:102
 msgid "The Customization Modules"
-msgstr ""
+msgstr "Özelliştirme Modülleri"
 
 #: tutorial/appendix.rst:104
 msgid ""
@@ -130,6 +177,10 @@ msgid ""
 "location of your user site-packages directory.  Start Python and run this "
 "code::"
 msgstr ""
+"Python özelleştirmenize izin vermek için iki kanca sağlar: :"
+"mod:'sitecustomize' ve :mod:'usercustomize'.  Nasıl çalıştığını görmek için "
+"önce kullanıcı sitesi paketleri dizininizin konumunu bulmanız gerekir.  "
+"Python'ı başlatın ve şu kodu çalıştırın::"
 
 #: tutorial/appendix.rst:112
 msgid ""
@@ -138,6 +189,10 @@ msgid ""
 "unless it is started with the :option:`-s` option to disable the automatic "
 "import."
 msgstr ""
+"Artık bu dizinde :file:'usercustomize.py' adlı bir dosya oluşturabilir ve "
+"içine istediğiniz her şeyi koyabilirsiniz.  Otomatik içe aktarmayı devre "
+"dışı bırakmak için :option:'-s' seçeneğiyle başlatılmadıkça Python'un her "
+"çağrısını etkiler."
 
 #: tutorial/appendix.rst:116
 msgid ""
@@ -146,11 +201,15 @@ msgid ""
 "imported before :mod:`usercustomize`.  See the documentation of the :mod:"
 "`site` module for more details."
 msgstr ""
+":mod:'sitecustomize' aynı şekilde çalışır, ancak genellikle genel site "
+"paketleri dizinindeki bilgisayarın yöneticisi tarafından oluşturulur ve :"
+"mod:'usercustomize'den önce alınır.  Daha fazla ayrıntı için :mod:'site' "
+"modülünün belgelerine bakın."
 
 #: tutorial/appendix.rst:123
 msgid "Footnotes"
-msgstr ""
+msgstr "Dipnotlar"
 
 #: tutorial/appendix.rst:124
 msgid "A problem with the GNU Readline package may prevent this."
-msgstr ""
+msgstr "GNU Readline paketiyle ilgili bir sorun bunu engelleyebilir."
