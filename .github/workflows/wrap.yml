@@ -45,7 +45,7 @@ jobs:
         # Wrap changed files
       - name: Wrap
         run: |
-          if ${#${CHANGED_FILES}[@]} == 0; then
+          if #${CHANGED_FILES}[@] == 0; then
             echo "No files to wrap"
           else
             echo "Wrapping files: ${CHANGED_FILES}"
