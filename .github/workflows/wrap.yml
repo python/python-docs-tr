@@ -41,16 +41,16 @@ jobs:
         # Detect changed files
       - name: Detect changed files
         run: echo "CHANGED_FILES=$(git diff --name-only ${{ github.event.before }}..${{ github.event.after }}) -- $(find . -name *.po)" >> $GITHUB_ENV
-
-        # Wrap changed files
-      - name: Wrap
-        run: |
-          if #${CHANGED_FILES}[@] == 0; then
-            echo "No files to wrap"
-          else
-            echo "Wrapping files: ${CHANGED_FILES}"
-            for file in ${{ CHANGED_FILES }}; do
-              echo "Wrapping $file"
-              powrap $file
-            done
-          fi
+        run: echo "${CHANGED_FILES}"
+      #   # Wrap changed files
+      # - name: Wrap
+      #   run: |
+      #     if #${CHANGED_FILES}[@] == 0; then
+      #       echo "No files to wrap"
+      #     else
+      #       echo "Wrapping files: ${CHANGED_FILES}"
+      #       for file in ${{ CHANGED_FILES }}; do
+      #         echo "Wrapping $file"
+      #         powrap $file
+      #       done
+      #     fi
