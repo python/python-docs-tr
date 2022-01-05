@@ -46,4 +46,4 @@ jobs:
 
         # Wrap changed files
       - name: Wrap
-        run: powrap ${{ files_updated }}
+        run: powrap files_updated
