@@ -64,7 +64,7 @@ jobs:
 
         # Detect changed files
       - name: Detect changed files
-        echo "WRAPPED=$(git diff --name-only | tr '\n' ' ')" >> $GITHUB_ENV
+        run: echo "WRAPPED=$(git diff --name-only | tr '\n' ' ')" >> $GITHUB_ENV
 
         # Commit changes
       - name: Commit changes
