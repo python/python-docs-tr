@@ -46,11 +46,11 @@ jobs:
       - name: Wrap
         run: |
           if #${CHANGED_FILES}[@] == 0; then
-            echo "No files to wrap"
+              echo "No files to wrap"
           else
-            echo "Wrapping files: ${CHANGED_FILES}"
-            for file in ${CHANGED_FILES}; do
-              echo "Wrapping $file"
-              powrap $file
-            done
+              echo "Wrapping files: ${CHANGED_FILES}"
+              for file in ${CHANGED_FILES}; do
+                  echo "Wrapping $file"
+                  powrap $file
+              done
           fi
