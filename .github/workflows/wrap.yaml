@@ -1,0 +1,49 @@
+name: "Wrap"
+
+on:
+  push:
+    branches: [ "**" ]
+  pull_request:
+    branches: [ "**" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        # Run in all these versions of Python
+        python-version: ["3.10"]
+
+    steps:
+        # Checkout the latest code from the repo
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+        # Setup which version of Python to use
+      - name: Set Up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+        # Display the Python version being used
+      - name: Display Python version
+        run: python -c "import sys; print(sys.version)"
+
+        # Update pip
+      - name: Update pip
+        run: python -m pip install --upgrade pip
+
+        # Install requirements.
+      - name: Install requirements
+        run: python -m pip install --upgrade -r requirements.txt
+
+        # Detect changed files
+      - name: Changed Files Exporter
+        uses: umani/changed-files@v3.3.0
+        with:
+          repo-token: ${{ github.token }}
+
+        # Wrap changed files
+      - name: Wrap
+        run: powrap ${{ files_updated }}
