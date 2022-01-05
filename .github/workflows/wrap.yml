@@ -85,7 +85,7 @@ jobs:
 
         # Push changes
       - name: Push changes
-        if: ${{ WRAPPED == "True" }}
+        if: $WRAPPED == "True"
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
