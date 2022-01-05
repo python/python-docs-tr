@@ -82,9 +82,13 @@ jobs:
               git commit -m "Wrap translations"
           fi
 
-        # Push changes
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.event.pull_request.head.ref }}
+      # Display changed files
+      - name: Display changed files
+        run: echo ${WRAPPED}
+
+      #   # Push changes
+      # - name: Push changes
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     branch: ${{ github.event.pull_request.head.ref }}
