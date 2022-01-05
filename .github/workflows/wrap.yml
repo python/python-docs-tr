@@ -62,7 +62,7 @@ jobs:
               for file in ${CHANGED_FILES}; do
                   if [[ $file == *.po ]]; then
                       echo "Wrapping $file"
-                      powrap $file
+                      powrap --check $file
                   fi
               done
           fi
