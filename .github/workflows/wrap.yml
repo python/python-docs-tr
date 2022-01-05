@@ -40,7 +40,7 @@ jobs:
 
         # Detect changed files
       - name: Detect changed files
-        run: echo "CHANGED_FILES=$(git diff -- '***.po' --name-only ${{ github.event.before }}..${{ github.event.after }})" >> $GITHUB_ENV
+        run: echo "CHANGED_FILES=$(git diff -- {.,**}/*.po --name-only ${{ github.event.before }}..${{ github.event.after }})" >> $GITHUB_ENV
 
         # Display changed files
       - name: Display changed files
