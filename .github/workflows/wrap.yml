@@ -58,7 +58,6 @@ jobs:
           if [[ $len -eq 0 ]]; then
               echo "No files to wrap"
           else
-              echo "Wrapping files: ${CHANGED_FILES}"
               for file in ${CHANGED_FILES}; do
                   if [[ $file == *.po ]]; then
                       echo "Wrapping $file"
