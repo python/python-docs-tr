@@ -69,9 +69,18 @@ jobs:
         # Commit changes
       - name: Commit files
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git commit -m "Wrap files" -a
+          echo "WRAPPED=$(git diff --name-only | tr '\n' ' ')" >> $GITHUB_ENV
+          array=($WRAPPED)
+          len=${#array[@]}
+          if [[ $len -eq 0 ]]; then
+              echo "No files to commit"
+          else
+              echo "Committing changes"
+              git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+              git config --local user.name "github-actions[bot]"
+              git add ${WRAPPED}
+              git commit -m "Wrap translations"
+          fi
 
         # Push changes
       - name: Push changes
