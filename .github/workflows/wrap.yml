@@ -40,7 +40,7 @@ jobs:
 
         # Detect changed files
       - name: Detect changed files
-        run: echo "CHANGED_FILES=$(git diff -- {.,**}/*.po --name-only ${{ github.event.before }}..${{ github.event.after }})" >> $GITHUB_ENV
+        run: echo "CHANGED_FILES=$(git diff --name-only ${{ github.event.before }}..${{ github.event.after }})" >> $GITHUB_ENV
 
         # Display changed files
       - name: Display changed files
@@ -56,7 +56,9 @@ jobs:
           else
               echo "Wrapping files: ${CHANGED_FILES}"
               for file in ${CHANGED_FILES}; do
-                  echo "Wrapping $file"
-                  powrap $file
+                  if [[ $file == *.po ]]; then
+                      echo "Wrapping $file"
+                      powrap $file
+                  fi
               done
           fi
