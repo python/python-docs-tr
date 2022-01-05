@@ -46,10 +46,6 @@ jobs:
       - name: Detect changed files
         run: echo "CHANGED_FILES=$(git diff --name-only ${{ github.event.before }}..${{ github.event.after }} | tr '\n' ' ')" >> $GITHUB_ENV
 
-        # Display changed files
-      - name: Display changed files
-        run: echo ${CHANGED_FILES}
-
         # Wrap changed files
       - name: Wrap
         run: |
@@ -66,10 +62,13 @@ jobs:
               done
           fi
 
+        # Detect changed files
+      - name: Detect changed files
+        echo "WRAPPED=$(git diff --name-only | tr '\n' ' ')" >> $GITHUB_ENV
+
         # Commit changes
       - name: Commit changes
         run: |
-          echo "WRAPPED=$(git diff --name-only | tr '\n' ' ')" >> $GITHUB_ENV
           array=($WRAPPED)
           len=${#array[@]}
           if [[ $len -eq 0 ]]; then
@@ -82,13 +81,9 @@ jobs:
               git commit -m "Wrap translations"
           fi
 
-      # Display changed files
-      - name: Display changed files
-        run: echo ${WRAPPED}
-
-      #   # Push changes
-      # - name: Push changes
-      #   uses: ad-m/github-push-action@master
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     branch: ${{ github.event.pull_request.head.ref }}
+        # Push changes
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.event.pull_request.head.ref }}
