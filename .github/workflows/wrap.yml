@@ -45,7 +45,7 @@ jobs:
         # Wrap changed files
       - name: Wrap
         run: |
-          len=#${CHANGED_FILES}[@]
+          len=${#${CHANGED_FILES}[@]}
           if [[ $len -eq 0 ]]; then
               echo "No files to wrap"
           else
