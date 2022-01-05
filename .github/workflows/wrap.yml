@@ -73,19 +73,19 @@ jobs:
           len=${#array[@]}
           if [[ $len -eq 0 ]]; then
               echo "No files to commit"
-              echo "WRAPPED=$("False")" >> $GITHUB_ENV
+              echo "WRAPPED=False" >> $GITHUB_ENV
           else
               echo "Committing changes"
               git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
               git config --local user.name "github-actions[bot]"
               git add ${WRAPPED}
               git commit -m "Wrap translations"
-              echo "WRAPPED=$("True")" >> $GITHUB_ENV
+              echo "WRAPPED=True" >> $GITHUB_ENV
           fi
 
         # Push changes
       - name: Push changes
-        if: $WRAPPED == "True"
+        if: env.WRAPPED == 'True'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
