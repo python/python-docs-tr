@@ -67,7 +67,7 @@ jobs:
           fi
 
         # Commit changes
-      - name: Commit files
+      - name: Commit changes
         run: |
           echo "WRAPPED=$(git diff --name-only | tr '\n' ' ')" >> $GITHUB_ENV
           array=($WRAPPED)
@@ -87,4 +87,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ secrets.GITHUB_BASE_REF }}
+          branch: ${{ github.head_ref }}
