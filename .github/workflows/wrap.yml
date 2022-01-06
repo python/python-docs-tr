@@ -48,7 +48,7 @@ jobs:
         
         # Pull latest
       - name: git pull
-        run: git pull ${{ github.event.pull_request.head.ref }}
+        run: git pull origin ${{ github.event.pull_request.head.ref }}
 
         # Wrap changed files
       - name: Wrap
