@@ -47,8 +47,8 @@ jobs:
         run: echo "CHANGED_FILES=$(git diff --name-only ${{ github.event.before }}..${{ github.event.after }} | tr '\n' ' ')" >> $GITHUB_ENV
         
         # Pull latest
-      - name: git pull
-        run: git pull
+      - name: git branch
+        run: git branch
 
         # Wrap changed files
       - name: Wrap
