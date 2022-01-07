@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: 2021-12-30 22:21+0300\n"
+"PO-Revision-Date: 2022-01-07 19:47+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -527,12 +527,17 @@ msgid ""
 "object is a parameterless function that returns a new instance of the class. "
 "For example (assuming the above class)::"
 msgstr ""
+"Sınıf *örnekleme* fonksiyon notasyonunu kullanır.  Sınıf nesnesinin, sınıfın "
+"yeni bir örneğini döndüren parametresiz bir fonksiyon olduğunu varsayın. "
+"Örneğin (yukarıdaki sınıfı varsayarsak)::"
 
 #: tutorial/classes.rst:288
 msgid ""
 "creates a new *instance* of the class and assigns this object to the local "
 "variable ``x``."
 msgstr ""
+"sınıfın yeni bir *örnek* öğesini oluşturur ve bu nesneyi ''x'' yerel "
+"değişkenine atar."
 
 #: tutorial/classes.rst:291
 msgid ""
@@ -541,6 +546,10 @@ msgid ""
 "specific initial state. Therefore a class may define a special method named :"
 "meth:`__init__`, like this::"
 msgstr ""
+"Örnekleme işlemi (\"sınıf nesnesi çağırma\") boş bir nesne oluşturur. Birçok "
+"sınıf, belirli bir başlangıç durumuna göre özelleştirilmiş örneklerle "
+"nesneler oluşturmayı sever. Bu nedenle bir sınıf, :meth:'__init__' adlı özel "
+"bir metot tanımlayabilir:"
 
 #: tutorial/classes.rst:299
 msgid ""
@@ -549,6 +558,9 @@ msgid ""
 "instance.  So in this example, a new, initialized instance can be obtained "
 "by::"
 msgstr ""
+"Bir sınıf bir :meth:'__init__' metodunu tanımladığında, örnekleme işlemi "
+"yeni oluşturulan sınıf örneği için otomatik olarak :meth:'__init__' öğesini "
+"çağırır.  Bu örnekte, yeni başlatılmış bir örnek şu şekilde elde edilebilir:"
 
 #: tutorial/classes.rst:305
 msgid ""
@@ -556,10 +568,13 @@ msgid ""
 "flexibility.  In that case, arguments given to the class instantiation "
 "operator are passed on to :meth:`__init__`.  For example, ::"
 msgstr ""
+"Tabii ki, :meth:'__init__' yöntemi daha fazla esneklik için argümanlara "
+"sahip olabilir.  Bu durumda, sınıf örnekleme işlecine verilen bağımsız "
+"değişkenler :meth:'__init__'' için aktarılır.  Mesela::"
 
 #: tutorial/classes.rst:322
 msgid "Instance Objects"
-msgstr ""
+msgstr "Örnek Nesneleri"
 
 #: tutorial/classes.rst:324
 msgid ""
@@ -567,6 +582,9 @@ msgid ""
 "instance objects are attribute references.  There are two kinds of valid "
 "attribute names: data attributes and methods."
 msgstr ""
+"Şimdi örnek nesnelerle ne yapabiliriz?  Örnek nesneleri tarafından anlaşılan "
+"tek işlemler nitelik başvurularıdır.  İki tür geçerli öznitelik adı vardır: "
+"veri nitelikleri ve metotları."
 
 #: tutorial/classes.rst:328
 msgid ""
@@ -577,6 +595,11 @@ msgid ""
 "following piece of code will print the value ``16``, without leaving a "
 "trace::"
 msgstr ""
+"*veri nitelikleri*, Smalltalk'taki \"örnek değişkenlerine\" ve C++'taki "
+"\"veri üyelerine\" karşılık gelir.  Veri niteliklerinin önceden tanımlanması "
+"gerekmez; yerel değişkenler gibi, ilk değer atandığı anda varlıkları "
+"başlar.  Örneğin, ''x'' yukarıda oluşturulan :class:'MyClass' örneğiyse, "
+"aşağıdaki kod parçası iz bırakmadan ''16'' değerini yazdırır::"
 
 #: tutorial/classes.rst:340
 msgid ""
@@ -588,6 +611,12 @@ msgid ""
 "exclusively to mean methods of class instance objects, unless explicitly "
 "stated otherwise.)"
 msgstr ""
+"Diğer örnek nitelik başvurusu türü bir *metot*. Metot, bir nesneye \"ait\" "
+"olan bir fonksiyondur.  (Python'da, terim metodu sınıf örneklerine özgü "
+"değildir: diğer nesne türlerinin de metotları olabilir.  Örneğin, liste "
+"nesnelerini genişletme, ekleme, kaldırma, sıralama vb. Ancak, aşağıdaki "
+"tartışmada, aksi açıkça belirtilmedikçe, yalnızca sınıf örneği nesnelerinin "
+"metotlarını ifade etmek için terim metodunu kullanacağız.)"
 
 #: tutorial/classes.rst:349
 msgid ""
@@ -598,14 +627,21 @@ msgid ""
 "not, since ``MyClass.i`` is not.  But ``x.f`` is not the same thing as "
 "``MyClass.f`` --- it is a *method object*, not a function object."
 msgstr ""
+"Örnek nesnesinin geçerli metot adları nesnenin sınıfına bağlıdır.  Fonksiyon "
+"nesneleri olan bir sınıfın tüm nitelikleri, örneklerinin karşılık gelen "
+"fonksiyonlarını tanımlar.  Bu nedenle, örneğimizde ,'x.f'' geçerli bir "
+"yöntem başvurusudur, ne de olsa ''MyClass.f'' bir fonksiyondur ancak "
+"''MyClass.i'' fonksiyon olmadığından ''x.i'' değildir.  Ancak ''x.f', "
+"''MyClass.f'' ile aynı şey değildir çünkü bir fonksiyon nesnesi değil, "
+"*metot nesnesi*dir."
 
 #: tutorial/classes.rst:360
 msgid "Method Objects"
-msgstr ""
+msgstr "Yöntem Nesneleri"
 
 #: tutorial/classes.rst:362
 msgid "Usually, a method is called right after it is bound::"
-msgstr ""
+msgstr "Genellikle, bir yöntem bağlandıktan hemen sonra çağrılır::"
 
 #: tutorial/classes.rst:366
 msgid ""
@@ -614,10 +650,13 @@ msgid ""
 "is a method object, and can be stored away and called at a later time.  For "
 "example::"
 msgstr ""
+":class:'MyClass' örneğinde, '''merhaba dünya'''' string'ini döndürür. Lakin, "
+"hemen bir yöntem çağırmak gerekli değildir: ''x.f'' bir metot nesnesidir, "
+"yani daha sonra depolanabilir ve çağrılabilir.  Mesela::"
 
 #: tutorial/classes.rst:374
 msgid "will continue to print ``hello world`` until the end of time."
-msgstr ""
+msgstr "daima ``hello world`` yazdırmaya devam edecek"
 
 #: tutorial/classes.rst:376
 msgid ""
@@ -628,6 +667,12 @@ msgid ""
 "argument is called without any --- even if the argument isn't actually "
 "used..."
 msgstr ""
+"Bir yöntem çağrıldığında tam olarak ne gerçekleşir?  :meth:'f' fonksiyon "
+"tanımı bir bağımsız değişken belirtmiş olsa da, ''x.f()'' öğesinin yukarıda "
+"bir bağımsız değişken olmadan çağrıldığını fark etmiş olabilirsiniz.  Peki "
+"bağımsız değişkene ne oldu? Elbette Python, bağımsız değişken gerektiren bir "
+"fonksiyon, bağımsız değişken verilmemiş iken çağırılırsa -bağımsız değişken "
+"kullanılmasa bile- hata verir. "
 
 #: tutorial/classes.rst:382
 msgid ""
@@ -639,6 +684,12 @@ msgid ""
 "that is created by inserting the method's instance object before the first "
 "argument."
 msgstr ""
+"Aslında, cevabı tahmin etmiş olabilirsiniz: yöntemlerle ilgili özel şey, "
+"örnek nesnesinin fonksiyonun ilk bağımsız değişkeni olarak geçirilmesidir.  "
+"Örneğimizde, ''x.f()'' çağrısı tam olarak ''MyClass.f(x)'' ile eşdeğerdir.  "
+"Genel olarak, *n* tane bağımsız değişkene sahip bir metodu çağırmak, ilk "
+"bağımsız değişkenden önce metodun örnek nesnesi eklenerek oluşturulan bir "
+"bağımsız değişken listesiyle karşılık gelen fonksiyonu çağırmaya eşdeğerdir."
 
 #: tutorial/classes.rst:389
 msgid ""
@@ -652,10 +703,19 @@ msgid ""
 "from the instance object and the argument list, and the function object is "
 "called with this new argument list."
 msgstr ""
+"Metotların nasıl çalıştığını hala anlamıyorsanız, nasıl uygulandığına bakmak "
+"belki de sorunları açıklığa kavuşturabilir.  Bir örneğin, veri olmayan bir "
+"niteliğine başvurulduğu zaman bu örneğin ait olduğu sınıfa bakılır.  Ad bir "
+"fonksiyon nesnesi olan geçerli bir sınıf özniteliğini gösterirse, örnek "
+"nesne ve fonksiyon nesnesi soyut bir nesnede paketlenerek (işaretçiler) bir "
+"metot nesnesi oluşturulur. İşte bu metot nesnesidir.  Metot nesnesi bir "
+"bağımsız değişken listesiyle çağrıldığında, örnek nesneden ve bağımsız "
+"değişken listesinden yeni bir bağımsız değişken listesi oluşturulur ve "
+"fonksiyon nesnesi bu yeni bağımsız değişken listesiyle çağrılır."
 
 #: tutorial/classes.rst:403
 msgid "Class and Instance Variables"
-msgstr ""
+msgstr "Sınıf ve Örnek Değişkenleri"
 
 #: tutorial/classes.rst:405
 msgid ""
@@ -663,6 +723,9 @@ msgid ""
 "and class variables are for attributes and methods shared by all instances "
 "of the class::"
 msgstr ""
+"Genel olarak, örnek değişkenleri o örneğe özgü veriler içindir ve sınıf "
+"değişkenleri sınıfın tüm örnekleri tarafından paylaşılan nitelikler ile "
+"metotlar içindir::"
 
 #: tutorial/classes.rst:427
 msgid ""
@@ -672,10 +735,16 @@ msgid ""
 "not be used as a class variable because just a single list would be shared "
 "by all *Dog* instances::"
 msgstr ""
+":ref:'tut-object'te anlatıldığı gibi, paylaşılan veriler listeler ve "
+"sözlükler gibi :term:'mutable' nesnelerini içeren şaşırtıcı etkilere sahip "
+"olabilir. Örneğin, aşağıdaki koddaki *tricks* listesi sınıf değişkeni olarak "
+"kullanılmamalıdır, çünkü yalnızca tek bir liste tüm *Dog* örnekleri "
+"tarafından paylaşılacaktır::"
 
 #: tutorial/classes.rst:450
 msgid "Correct design of the class should use an instance variable instead::"
 msgstr ""
+"Doğru olan ise veriyi paylaşmak yerine bir örnek değişkeni kullanmaktır:"
 
 #: tutorial/classes.rst:474
 msgid "Random Remarks"
