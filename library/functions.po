@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: 2022-01-07 01:59+0300\n"
+"PO-Revision-Date: 2022-01-07 19:13+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH\n"
 "Language: tr_TR\n"
@@ -902,12 +902,16 @@ msgid ""
 "Previously, :exc:`TypeError` was raised when null bytes were encountered in "
 "*source*."
 msgstr ""
+"Önceden, *source* , null baytlar içeriyorsa :exc:`TypeError` hatası ortaya "
+"çıkardı."
 
 #: library/functions.rst:349
 msgid ""
 "``ast.PyCF_ALLOW_TOP_LEVEL_AWAIT`` can now be passed in flags to enable "
 "support for top-level ``await``, ``async for``, and ``async with``."
 msgstr ""
+"``ast.PyCF_ALLOW_TOP_LEVEL_AWAIT`` artık üst düze ``await``, ``async for``, "
+"ve ``async with`` desteğini etkinleştirmek için bayraklarla iletilebilir."
 
 #: library/functions.rst:356
 msgid ""
@@ -920,6 +924,13 @@ msgid ""
 "conversion like :class:`int` and :class:`float`.  If both arguments are "
 "omitted, returns ``0j``."
 msgstr ""
+"*real* + *imag*\\*1j değeriyle bir karmaşık sayı döndürür veya dize veya "
+"sayıyı karmaşık sayıya dönüştürür. Eğer ilk parametre dize ise, karmaşık "
+"sayı olarak yorumlanır ve fonksiyon ikinci bir parametre olmadan "
+"çağrılmalıdır. İkinci parametre asla dize olamaz. Her argüman bir sayısal "
+"çeşit olabilir (karmaşık sayılar dahil). Eğer *imag* atlandıysa, varsayılan "
+"olarak sıfır alınır ve yapıcı metot :class:`int` ve :class:`float` gibi sayı "
+"dönüştürme işlevi görür. Eğer iki argüman da atlandıysa, ``0j`` döndürür."
 
 #: library/functions.rst:365
 msgid ""
@@ -928,6 +939,9 @@ msgid ""
 "meth:`__float__`.  If ``__float__()`` is not defined then it falls back to :"
 "meth:`__index__`."
 msgstr ""
+"Genel bir python nesnesi ``x`` için, ``complex(x)`` , ``x.__complex__()`` 'i "
+"temsil eder. Eğer ``__complex__()`` tanımlanmadıysa, :meth:`__float__` 'a "
+"geri döner. ``__float__()`` tanımlanmadıysa, :meth:`__index__` 'e geri döner."
 
 #: library/functions.rst:372
 msgid ""
@@ -935,20 +949,27 @@ msgid ""
 "the central ``+`` or ``-`` operator.  For example, ``complex('1+2j')`` is "
 "fine, but ``complex('1 + 2j')`` raises :exc:`ValueError`."
 msgstr ""
+"Bir dize dönüştürürken,  dizenin, merkezi `` + '' veya `` -`` operatörünün "
+"etrafında boşluk içermesine gerek yoktur. Örnek olarak, ``complex('1+2j')`` "
+"iyi, ama ``complex('1 + 2j')`` :exc:`ValueError` hatası ortaya çıkarır."
 
 #: library/functions.rst:377
 msgid "The complex type is described in :ref:`typesnumeric`."
-msgstr ""
+msgstr "Karmaşık tür,  :ref:`typesnumeric` kısmında açıklanmıştır."
 
 #: library/functions.rst:669 library/functions.rst:885
 msgid "Grouping digits with underscores as in code literals is allowed."
 msgstr ""
+"Rakamların, kod sabitlerinde olduğu gibi alt çizgi ile gruplandırılmasına "
+"izin verilir."
 
 #: library/functions.rst:382
 msgid ""
 "Falls back to :meth:`__index__` if :meth:`__complex__` and :meth:`__float__` "
 "are not defined."
 msgstr ""
+"Eğer :meth:`__complex__` ve :meth:`__float__` tanımlanmadıysa, :meth:"
+"`__index__` 'e geri döner."
 
 #: library/functions.rst:389
 msgid ""
@@ -957,18 +978,27 @@ msgid ""
 "function deletes the named attribute, provided the object allows it.  For "
 "example, ``delattr(x, 'foobar')`` is equivalent to ``del x.foobar``."
 msgstr ""
+":func:`setattr` fonksiyonuna yakındır. Argümanlar bir nesne ve bir dizedir. "
+"Dize nesnenin özelliklerinden birinin adı olmak zorundadır. Fonksiyon "
+"nesnenin izin vermesi koşuluyla, dizede belirtilen bu özelliği siler. Örnek "
+"olarak, ``delattr(x, 'foobar')`` , ``del x.foobar`` 'a eşittir."
 
 #: library/functions.rst:401
 msgid ""
 "Create a new dictionary.  The :class:`dict` object is the dictionary class. "
 "See :class:`dict` and :ref:`typesmapping` for documentation about this class."
 msgstr ""
+"Yeni bir sözlük yaratır. :class:`dict` nesnesi bir sözlük sınıfıdır.  Bu "
+"sınıf hakkındaki dökümantasyon için :class:`dict` ve :ref:`typesmapping` 'e "
+"bakınız."
 
 #: library/functions.rst:404
 msgid ""
 "For other containers see the built-in :class:`list`, :class:`set`, and :"
 "class:`tuple` classes, as well as the :mod:`collections` module."
 msgstr ""
+"Diğer konteynerler için dahili :class:`list` , :class:`set` , :class:`tuple` "
+"sınıfları ve :mod:`collections` modülüne bakınız."
 
 #: library/functions.rst:410
 msgid ""
@@ -976,6 +1006,9 @@ msgid ""
 "With an argument, attempt to return a list of valid attributes for that "
 "object."
 msgstr ""
+"Argüman yoksa, mevcut yerel kapsamdaki isimleri liste olarak döndürür. "
+"Argüman varsa, o nesne için geçerli özelliklerin bir listesini döndürmeye "
+"çalışır."
 
 #: library/functions.rst:413
 msgid ""
@@ -984,6 +1017,11 @@ msgid ""
 "custom :func:`__getattr__` or :func:`__getattribute__` function to customize "
 "the way :func:`dir` reports their attributes."
 msgstr ""
+"Eğer nesne :meth:`__dir__` adında bir metoda sahipse, bu metot çağrılır ve "
+"nesnenin özelliklerinin listesini döndürmelidir. Bu, özel bir :func:"
+"`__getattr__` veya :func:`__getattribute__` fonksiyonunu uygulayan "
+"nesnelerin, :func:`dir` 'in özellikleri bildirme şeklini özelleştirmesine "
+"izin verir."
 
 #: library/functions.rst:418
 msgid ""
@@ -993,6 +1031,10 @@ msgid ""
 "complete and may be inaccurate when the object has a custom :func:"
 "`__getattr__`."
 msgstr ""
+"Eğer nesne :meth:`__dir__` metodu sağlamıyorsa, fonksiyon nesnenin :attr:"
+"`~object.__dict__` özelliğinden veri toplamak için elinen gelenin en iyisini "
+"dener. Sonuç listesinin tamamlanmış olmasına gerek yoktur ve nesnenin özel "
+"bir  :func:`__getattr__` fonksiyonu varsa kusurlu olabilir."
 
 #: library/functions.rst:423
 msgid ""
@@ -1000,18 +1042,24 @@ msgid ""
 "of objects, as it attempts to produce the most relevant, rather than "
 "complete, information:"
 msgstr ""
+"Varsayılan :func:`dir` mekanizması, eksiksiz bilgi yerine en alakalı bilgiyi "
+"üretmeye çalıştığı için farklı nesne türleriyle farklı çalışır:"
 
 #: library/functions.rst:427
 msgid ""
 "If the object is a module object, the list contains the names of the "
 "module's attributes."
 msgstr ""
+"Eğer nesne bir modül nesnesiyse, liste modülün özelliklerinin isimlerini "
+"içerir."
 
 #: library/functions.rst:430
 msgid ""
 "If the object is a type or class object, the list contains the names of its "
 "attributes, and recursively of the attributes of its bases."
 msgstr ""
+"Eğer nesne bir tür veya sınıf nesnesiyse, liste onun özelliklerini ve "
+"yinelemeli olarak tabanlarının özelliklerini içerir."
 
 #: library/functions.rst:433
 msgid ""
@@ -1019,10 +1067,12 @@ msgid ""
 "its class's attributes, and recursively of the attributes of its class's "
 "base classes."
 msgstr ""
+"Aksi takdirde, liste nesnenin özelliklerini, sınıfının özelliklerini ve "
+"yinelemeli olarak sınıfının temel sınıflarının özelliklerini içerir."
 
 #: library/functions.rst:437
 msgid "The resulting list is sorted alphabetically.  For example:"
-msgstr ""
+msgstr "Sonuç listesi alfabetik olarak sıralanmıştır. Örnek olarak:"
 
 #: library/functions.rst:456
 msgid ""
@@ -1032,6 +1082,11 @@ msgid ""
 "its detailed behavior may change across releases.  For example, metaclass "
 "attributes are not in the result list when the argument is a class."
 msgstr ""
+"Çünkü :func:`dir`, öncelikle etkileşimli bir komut isteminde kullanım "
+"kolaylığı sunmak amacıyla sağlanır. Titizlikle ve tutarlı bir isim kümesi "
+"sağlamaktansa ilginç bir isim kümesi sağlar, Detaylı davranışlı sürümler "
+"arasında değişikliğe uğrayabilir. Örnek olarak, argüman sınıf ise metasınıf "
+"özellikleri sonuç listesinde yer almaz."
 
 #: library/functions.rst:466
 msgid ""
@@ -1044,6 +1099,14 @@ msgid ""
 "is very close to *a*, if ``a % b`` is non-zero it has the same sign as *b*, "
 "and ``0 <= abs(a % b) < abs(b)``."
 msgstr ""
+"Argüman olarak iki (karmaşık olmayan) sayı alır ve bölme işlemi yapılırken "
+"bu argümanların bölümleri ve kalanlarından oluşan bir sayı çifti döndürür. "
+"Karışık işlenen türlerinde, ikili aritmetik işleçler için geçerli olan "
+"kurallar geçerlidir. Sonuç tam sayılar için ``(a // b, a % b)`` , Gerçel "
+"sayılar için ``(q, a % b)`` (*q* genellikle ``math.floor(a / b)`` 'ye eşit "
+"ama bundan 1 eksik olabilir). Her durumda ``q * b + a % b`` , *a* 'ya çok "
+"yakındır. Eğer ``a % b`` sıfır değilse, *b* ile aynı işarete sahiptir ve ``0 "
+"<= abs(a % b) < abs(b)``."
 
 #: library/functions.rst:478
 msgid ""
@@ -1053,10 +1116,15 @@ msgid ""
 "returns a tuple containing a count (from *start* which defaults to 0) and "
 "the values obtained from iterating over *iterable*."
 msgstr ""
+"Bir numaralandırma nesnesi döndürür. *iterable* bir dize, :term:`iterator` "
+"veya tekrarlamayı destekleyen başka bir nesne olmalıdır. Yineleyicinin by :"
+"func:`enumerate` tarafından döndürülen :meth:`~iterator.__next__` metodu bir "
+"sayıyı (varsayılan olarak 0 olan *start*'dan) ve *yinelenebilir* üzerinde "
+"yinelemeden elde edilen değerleri içeren bir demet döndürür."
 
 #: library/functions.rst:490
 msgid "Equivalent to::"
-msgstr ""
+msgstr "Şuna eşittir::"
 
 #: library/functions.rst:501
 msgid ""
