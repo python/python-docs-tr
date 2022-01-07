@@ -173,11 +173,20 @@ msgid ""
 "also be deleted with the :keyword:`del` statement.  For example, ``del modname.the_answer`` will "
 "remove the attribute :attr:`the_answer` from the object named by ``modname``."
 msgstr ""
+<<<<<<< HEAD
 "Nitelikler salt okunur veya düzenlenebilir olabilir.  İkinci durumda, niteliklere atama yapmak "
 "mümkündür.  Modül nitelikleri düzenlenebilir: ``modname.the_answer = 42`` yazabilirsiniz.  "
 "Düzenlenebilir nitelikler :keyword:`del` ifadesiyle de silinebilir.  Örneğin, ``del modname."
 "the_answer`` ifadesi :attr:`the_answer` niteliğini ``modname`` tarafından adlandırılan nesneden "
 "kaldırır."
+=======
+"Nitelikler salt okunur veya düzenlenebilir olabilir.  İkinci durumda, "
+"niteliklere atama yapmak mümkündür.  Modül nitelikleri düzenlenebilir: "
+"``modname.the_answer = 42`` yazabilirsiniz.  Düzenlenebilir nitelikler :"
+"keyword:`del` ifadesiyle de silinebilir.  Örneğin, ``del modname."
+"the_answer`` ifadesi :attr:`the_answer` niteliğini ``modname`` tarafından "
+"adlandırılan nesneden kaldırır."
+>>>>>>> 0b438c8558f727d1f238324a55b708ea37c94ca7
 
 #: tutorial/classes.rst:96
 msgid ""
@@ -189,12 +198,23 @@ msgid ""
 "of a module called :mod:`__main__`, so they have their own global namespace.  (The built-in names "
 "actually also live in a module; this is called :mod:`builtins`.)"
 msgstr ""
+<<<<<<< HEAD
 "Ad alanları farklı anlarda oluşturulur ve farklı yaşam sürelerine sahiptir.  Yerleşik adları içeren "
 "ad alanı, Python yorumlayıcısı başlatıldığında oluşturulur ve hiçbir zaman silinmez.  Modül tanımı "
 "okunduğunda modül için genel ad alanı oluşturulur; normalde, modül ad alanları da yorumlayıcı çıkıp "
 "bitene kadar sürer.  Bir komut dosyasından veya etkileşimli olarak okunan yorumlayıcının en üst "
 "düzey çağrısı tarafından yürütülen ifadeler: mod:`__main__` adlı bir modülün parçası olarak kabul "
 "edilir, bu nedenle kendi genel ad alanlarına sahiptirler.  (Yerleşik isimler aslında bir modülde de "
+=======
+"Ad alanları farklı anlarda oluşturulur ve farklı yaşam sürelerine sahiptir.  "
+"Yerleşik adları içeren ad alanı, Python yorumlayıcısı başlatıldığında "
+"oluşturulur ve hiçbir zaman silinmez.  Modül tanımı okunduğunda modül için "
+"genel ad alanı oluşturulur; normalde, modül ad alanları da yorumlayıcı çıkıp "
+"bitene kadar sürer.  Bir komut dosyasından veya etkileşimli olarak okunan "
+"yorumlayıcının en üst düzey çağrısı tarafından yürütülen ifadeler: mod:"
+"`__main__` adlı bir modülün parçası olarak kabul edilir, bu nedenle kendi "
+"genel ad alanlarına sahiptirler.  (Yerleşik isimler aslında bir modülde de "
+>>>>>>> 0b438c8558f727d1f238324a55b708ea37c94ca7
 "yaşar; buna :mod:`builtins`.)"
 
 #: tutorial/classes.rst:106
@@ -306,9 +326,16 @@ msgid ""
 "scope and should be rebound there; the :keyword:`nonlocal` statement indicates that particular "
 "variables live in an enclosing scope and should be rebound there."
 msgstr ""
+<<<<<<< HEAD
 ":keyword:`global` deyimi, belirli değişkenlerin genel kapsamda yaşadığını ve orada geri alınması "
 "gerektiğini belirtmek için kullanılabilir; :keyword:`nonlocal` deyimi, belirli değişkenlerin bir "
 "çevreleme kapsamında yaşadığını ve orada geri alınması gerektiğini gösterir."
+=======
+":keyword:`global` deyimi, belirli değişkenlerin genel kapsamda yaşadığını ve "
+"orada geri alınması gerektiğini belirtmek için kullanılabilir; :keyword:"
+"`nonlocal` deyimi, belirli değişkenlerin bir çevreleme kapsamında yaşadığını "
+"ve orada geri alınması gerektiğini gösterir."
+>>>>>>> 0b438c8558f727d1f238324a55b708ea37c94ca7
 
 #: tutorial/classes.rst:162
 msgid "Scopes and Namespaces Example"
@@ -341,7 +368,8 @@ msgid ""
 "You can also see that there was no previous binding for *spam* before the :keyword:`global` "
 "assignment."
 msgstr ""
-"Ayrıca :keyword:`global` atamasından önce *spam* için herhangi bir bağlama olmadığını görebilirsiniz."
+"Ayrıca :keyword:`global` atamasından önce *spam* için herhangi bir bağlama "
+"olmadığını görebilirsiniz."
 
 #: tutorial/classes.rst:212
 msgid "A First Look at Classes"
