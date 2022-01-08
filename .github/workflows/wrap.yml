@@ -7,13 +7,15 @@ on:
 jobs:
   wrap:
     if: contains(github.event.comment.html_url, '/pull/')
-    if: contains(github.event.comment.body, '!wrap')
+    
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         # Run in all these versions of Python
         python-version: ["3.10"]
+
+    if: contains(github.event.comment.body, '!wrap')
 
     steps:
         # Checkout the latest code from the repo
