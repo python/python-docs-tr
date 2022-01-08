@@ -2,8 +2,7 @@ name: "Wrap"
 
 on:
   pull_request:
-    branches:
-      - ${{ github.event.pull_request.head.ref }}
+    branches: [ "**" ]
 
 jobs:
   wrap:
