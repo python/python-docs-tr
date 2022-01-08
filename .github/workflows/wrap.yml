@@ -94,6 +94,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.event.pull_request.head.ref }}
 
-    if: false == github.event.review.state == 'approved'
-    - name: Will wrap when the review is approved
-      run: echo "Will wrap when the review is approved"
+    if: ! "github.event.review.state == 'approved'"
+    name: Will wrap when the review is approved
+    run: echo "Will wrap when the review is approved"
