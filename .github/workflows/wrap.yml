@@ -7,9 +7,9 @@ on:
 
 jobs:
   wrap:
-    if: ${{ github.event.comment.body == '/wrap'}}
-    
     runs-on: ubuntu-latest
+
+    if: ${{ github.event.issue.pull_request && github.event.comment.body == '/wrap'}}
 
     strategy:
       matrix:
