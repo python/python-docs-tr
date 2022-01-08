@@ -47,7 +47,7 @@ jobs:
 
         # Detect changed files
       - name: Detect changed files
-        run: echo "CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.before }}..${{ github.event.pull_request.after }} | tr '\n' ' ')" >> $GITHUB_ENV
+        run: echo "CHANGED_FILES=$(python .github/workflows/get-changes.py --pull_no ${{ github.event.number }} | tr '\n' ' ')" >> $GITHUB_ENV
 
         # Wrap changed files
       - name: Wrap
