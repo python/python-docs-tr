@@ -1,11 +1,12 @@
 name: "Wrap"
 
 on:
-  pull_request:
-    branches: [ "**" ]
+  pull_request_review:
+    types: [submitted]
 
 jobs:
-  test:
+  wrap:
+    if: github.event.review.state == 'approved'
     runs-on: ubuntu-latest
 
     strategy:
