@@ -45,9 +45,7 @@ jobs:
 
         # Detect changed files
       - name: Detect changed files
-        run: |
-          echo "EVENT_NUMBER=${{ github.event.pull_request.number }}"
-          echo "CHANGED_FILES=$(python .github/workflows/get-changes.py --pull $EVENT_NUMBER | tr '\n' ' ')" >> $GITHUB_ENV
+        run: echo "CHANGED_FILES=$(python .github/workflows/get-changes.py --pull ${{ github.event.pull_request.number }} | tr '\n' ' ')" >> $GITHUB_ENV
 
         # Wrap changed files
       - name: Wrap
