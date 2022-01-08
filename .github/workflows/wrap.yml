@@ -1,8 +1,8 @@
 name: "Wrap"
 
 on:
-  pull_request_review:
-    types: [submitted]
+  pull_request: 
+    branches: [ "**" ]
 
 jobs: 
   wrap:
