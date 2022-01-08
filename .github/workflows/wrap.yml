@@ -81,6 +81,7 @@ jobs:
               git add ${WRAPPED}
               git commit -m "Wrap translations"
               echo "WRAPPED=True" >> $GITHUB_ENV
+              echo test
           fi
 
         # Push changes
@@ -89,4 +90,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.event.pull_request.head.ref }}
+          branch: ${{ github.event.pull_request.head.ref }}    
