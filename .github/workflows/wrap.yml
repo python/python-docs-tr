@@ -1,12 +1,13 @@
 name: "Wrap"
 
 on:
-  pull_request_review:
-    types: [submitted]
+  issue_comment:                                     
+    types: [created, edited, deleted]
 
 jobs:
   wrap:
-    if: github.event.review.state == 'approved'
+    if: contains(github.event.comment.html_url, '/pull/')
+    if: contains(github.event.comment.body, '!wrap')
     runs-on: ubuntu-latest
 
     strategy:
