@@ -1,16 +1,13 @@
 name: "Wrap"
 
 on:
-  issue_comment:                                     
-    types:
-      -created
-    branches: [" ** "]
+  workflow_dispatch:
+    branches:
+      - ${{ github.event.pull_request.head.ref }}
 
 jobs:
   wrap:
     runs-on: ubuntu-latest
-
-    if: ${{ github.event.issue.pull_request && github.event.comment.body == '/wrap'}}
 
     strategy:
       matrix:
