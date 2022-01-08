@@ -6,7 +6,7 @@ on:
 
 jobs:
   wrap:
-    if: contains(github.event.comment.html_url, '/pull/') && contains(github.event.comment.body, '!wrap')
+    if: ((contains(github.event.comment.html_url, '/pull/')) && (contains(github.event.comment.body, '/wrap'))) == true
     
     runs-on: ubuntu-latest
 
