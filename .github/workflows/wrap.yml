@@ -82,7 +82,6 @@ jobs:
               git add ${WRAPPED}
               git commit -m "Wrap translations"
               echo "WRAPPED=True" >> $GITHUB_ENV
-              echo test
           fi
 
         # Push changes
