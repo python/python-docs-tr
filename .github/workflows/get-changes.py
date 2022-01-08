@@ -3,7 +3,7 @@ import json
 from argparse import ArgumentParser
 
 parser = ArgumentParser()
-parser.add_argument("--pull_no", help="PR Number ${{ github.event.number }}")
+parser.add_argument("--pull", help="PR Number ${{ github.event.number }}")
 args = parser.parse_args()
 
 response = requests.get(
