@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: 2022-01-02 20:56+0300\n"
+"PO-Revision-Date: 2022-01-23 20:46+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: tutorial/modules.rst:5
 msgid "Modules"
-msgstr ""
+msgstr "Modüller"
 
 #: tutorial/modules.rst:7
 msgid ""
@@ -33,6 +33,14 @@ msgid ""
 "You may also want to use a handy function that you've written in several "
 "programs without copying its definition into each program."
 msgstr ""
+"Python yorumlayıcısından çıkıp tekrar girerseniz, yaptığınız tanımlar "
+"(fonksiyonlar  ve değişkenler) kaybolur. Bu nedenle, biraz daha uzun bir "
+"program yazmak istiyorsanız, girdiyi yorumlayıcıya hazırlamak için bir metin "
+"düzenleyicisi kullanmak ve bunun yerine o dosyayla girdi olarak çalıştırmak "
+"daha iyidir.  Bu bir *script* oluşturma olarak bilinir.  Programınız "
+"uzadıkça, daha kolay bakım için birkaç dosyaya bölmek isteyebilirsiniz.  "
+"Ayrıca, tanımını her programa kopyalamadan birkaç programda yazdığınız "
+"kullanışlı bir fonksiyonu kullanmak isteyebilirsiniz."
 
 #: tutorial/modules.rst:16
 msgid ""
@@ -42,6 +50,12 @@ msgid ""
 "modules or into the *main* module (the collection of variables that you have "
 "access to in a script executed at the top level and in calculator mode)."
 msgstr ""
+"Bunu desteklemek için Python, tanımları bir dosyaya koymanın ve bunları bir "
+"komut dosyasında veya yorumlayıcının etkileşimli bir örneğinde kullanmanın "
+"bir yoluna sahiptir. Böyle bir dosyaya *module* denir; bir modülden alınan "
+"tanımlar diğer modüllere veya *main* modülüne (en üst düzeyde ve hesap "
+"makinesi modunda yürütülen bir komut dosyasında erişiminiz olan "
+"değişkenlerin derlenmesi) aktarılabilir."
 
 #: tutorial/modules.rst:22
 msgid ""
@@ -52,12 +66,19 @@ msgid ""
 "to create a file called :file:`fibo.py` in the current directory with the "
 "following contents::"
 msgstr ""
+"Modül, Python tanımlarını ve ifadelerini içeren bir dosyadır.  Dosya adı, :"
+"file:'.py' son ekini içeren modül adıdır.  Bir modül içinde, modülün adı "
+"(dize olarak) ''__name__'' genel değişkeninin değeri olarak kullanılabilir.  "
+"Örneğin, geçerli dizinde aşağıdaki içeriklerle :file:'fibo.py' adlı bir "
+"dosya oluşturmak için en sevdiğiniz metin düzenleyicisini kullanın::"
 
 #: tutorial/modules.rst:45
 msgid ""
 "Now enter the Python interpreter and import this module with the following "
 "command::"
 msgstr ""
+"Şimdi Python yorumlayıcısına girin ve bu modülü aşağıdaki komutla içe "
+"aktarın::"
 
 #: tutorial/modules.rst:50
 msgid ""
@@ -65,15 +86,20 @@ msgid ""
 "in the current symbol table; it only enters the module name ``fibo`` there. "
 "Using the module name you can access the functions::"
 msgstr ""
+"Bu, ''fibo'' içinde tanımlanan işlevlerin adlarını doğrudan geçerli sembol "
+"tablosuna girmez; sadece ''fibo'' modül adını oraya girer. Modül adını "
+"kullanarak şu işlevlere erişebilirsiniz::"
 
 #: tutorial/modules.rst:61
 msgid ""
 "If you intend to use a function often you can assign it to a local name::"
 msgstr ""
+"Bir işlevi sık sık kullanmayı düşünüyorsanız, işlevi yerel bir ada "
+"atayabilirsiniz::"
 
 #: tutorial/modules.rst:71
 msgid "More on Modules"
-msgstr ""
+msgstr "Modüller hakkında daha fazla şey"
 
 #: tutorial/modules.rst:73
 msgid ""
@@ -82,6 +108,10 @@ msgid ""
 "only the *first* time the module name is encountered in an import statement. "
 "[#]_ (They are also run if the file is executed as a script.)"
 msgstr ""
+"Bir modül, işlev tanımlarının yanı sıra çalıştırılabilir ifadeler de "
+"içerebilir. Bu ifadeler modülü başlatmayı amaçlamaktadır. Bunlar yalnızca "
+"*first* kez yürütülür modül adı bir alma deyiminde karşılaşılan. [#]_ (Dosya "
+"komut dosyası olarak yürütülürse de çalıştırılırlar.)"
 
 #: tutorial/modules.rst:78
 msgid ""
@@ -92,6 +122,13 @@ msgid ""
 "know what you are doing you can touch a module's global variables with the "
 "same notation used to refer to its functions, ``modname.itemname``."
 msgstr ""
+"Her modülün, modülde tanımlanan tüm fonksiyonlar tarafından genel sembol "
+"tablosu olarak kullanılan kendi özel sembol tablosu vardır. Böylece, bir "
+"modülün yazarı, kullanıcının genel değişkenleriyle yanlışlıkla çakışmalar "
+"konusunda endişelenmeden modüldeki genel değişkenleri kullanabilir. Öte "
+"yandan, ne yaptığınızı biliyorsanız, bir modülün genel değişkenlerine, "
+"''modname.itemname'' işlevlerini ifade etmek için kullanılan aynı notasyonla "
+"dokunabilirsiniz."
 
 #: tutorial/modules.rst:85
 msgid ""
@@ -100,6 +137,10 @@ msgid ""
 "for that matter).  The imported module names are placed in the importing "
 "module's global symbol table."
 msgstr ""
+"Modüller diğer modülleri içe aktarabilir.  Gelenekseldir, ancak tüm :"
+"keyword:'import' deyimlerini bir modülün (veya komut dosyasının) başına "
+"yerleştirmek gerekli değildir.  İçe aktarılan modül adları, içe aktarma "
+"modülünün genel sembol tablosuna yerleştirilir."
 
 #: tutorial/modules.rst:90
 msgid ""
