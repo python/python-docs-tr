@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: 2021-12-31 00:46+0300\n"
+"PO-Revision-Date: 2022-02-04 03:30+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -1026,24 +1026,32 @@ msgid ""
 "For finite floating-point numbers, this representation will always include a "
 "leading ``0x`` and a trailing ``p`` and exponent."
 msgstr ""
+"Bir gerçel sayının temsilini, onaltılık bir dize olarak döndürür. Sonlu "
+"gerçel sayılar için, bu gösterim her zaman başında bir ``0x`` ve sonunda bir "
+"``p`` ve üs içerecektir."
 
 #: library/stdtypes.rst:616
 msgid ""
 "Class method to return the float represented by a hexadecimal string *s*.  "
 "The string *s* may have leading and trailing whitespace."
 msgstr ""
+"Gerçel sayıyı temsil eden bir onaltılık dize *s*'yi döndüren için sınıf "
+"(class) metodu. *s* dizesinin başında ve sonunda boşluk olabilir."
 
 #: library/stdtypes.rst:621
 msgid ""
 "Note that :meth:`float.hex` is an instance method, while :meth:`float."
 "fromhex` is a class method."
 msgstr ""
+":meth:`float.hex` 'in bir örnek (instance) metodu olduğunu, :meth:`float."
+"fromhex` 'in ise bir sınıf (class) metodu olduğunu unutmayın."
 
 #: library/stdtypes.rst:624
 msgid "A hexadecimal string takes the form::"
-msgstr ""
+msgstr "Onaltılık bir dize şu biçimi alır::"
 
 #: library/stdtypes.rst:628
+#, fuzzy
 msgid ""
 "where the optional ``sign`` may by either ``+`` or ``-``, ``integer`` and "
 "``fraction`` are strings of hexadecimal digits, and ``exponent`` is a "
@@ -1056,6 +1064,16 @@ msgid ""
 "by C's ``%a`` format character or Java's ``Double.toHexString`` are accepted "
 "by :meth:`float.fromhex`."
 msgstr ""
+"burada opsiyonel ``işaret``, ``+`` veya ``-`` olabilir; ``tamsayı`` ve "
+"``kesir`` onaltılı basamaklı dizelerdir; ``üs`` opsiyonel ön işaretle "
+"birlikte ondalık tamsayıdır.  Büyük/küçük harf önemli değildir ve tamsayı "
+"veya kesirde en az bir onaltılık basamak olmalıdır.  Bu sözdizimi, C99 "
+"standardının 6.4.4.2 bölümünde belirtilen sözdizimine ve ayrıca Java 1.5'ten "
+"itibaren kullanılan sözdizimine benzer.  Özellikle, :meth:`float.hex` 'in "
+"çıktısı, C veya Java kodunda bir onaltılık gerçel değişmezi olarak "
+"kullanılabilir ve C'nin ``%a`` biçim karakteri veya Java'nın ``Double."
+"toHexString`` 'i tarafından üretilen onaltılık dizeler :meth:`float.fromhex` "
+"tarafından kabul edilir."
 
 #: library/stdtypes.rst:641
 msgid ""
@@ -1064,16 +1082,22 @@ msgid ""
 "example, the hexadecimal string ``0x3.a7p10`` represents the floating-point "
 "number ``(3 + 10./16 + 7./16**2) * 2.0**10``, or ``3740.0``::"
 msgstr ""
+"Üssün onaltılık değil ondalık olarak yazıldığına ve katsayıyı çarpmak için "
+"2'nin gücünü verdiğine dikkat edin. Örneğin, ``0x3.a7p10`` onaltılık dizesi, "
+"``(3 + 10./16 + 7./16**2) * 2.0**10`` veya ``3740.0`` gerçel sayısını temsil "
+"eder::"
 
 #: library/stdtypes.rst:651
 msgid ""
 "Applying the reverse conversion to ``3740.0`` gives a different hexadecimal "
 "string representing the same number::"
 msgstr ""
+"``3740.0`` 'a ters dönüştürme uygulamak, aynı sayıyı temsil eden farklı bir "
+"onaltılık dize verir::"
 
 #: library/stdtypes.rst:661
 msgid "Hashing of numeric types"
-msgstr ""
+msgstr "Sayısal türlerin hashlemesi"
 
 #: library/stdtypes.rst:663
 msgid ""
@@ -1090,16 +1114,28 @@ msgid ""
 "value of ``P`` is made available to Python as the :attr:`modulus` attribute "
 "of :data:`sys.hash_info`."
 msgstr ""
+"Muhtemelen farklı türlerdeki ``x`` ve ``y`` sayıları için, ``x == y`` "
+"olduğunda ``hash(x) == hash(y)`` olması bir gerekliliktir (bkz. :meth:"
+"`~object.__hash__`). Çeşitli sayısal türler arasında uygulama kolaylığı ve "
+"verimlilik için (:class:`int`, :class:`float`, :class:`decimal.Decimal` ve :"
+"class:`fractions.Fraction` dahil) Python'un sayısal türler için ``hash`` 'i, "
+"herhangi bir rasyonel sayı için tanımlanmış tek bir matematiksel fonksiyona "
+"dayanır ve bu nedenle :class:`int` ve :class:`fractions` 'ın tüm örnekleri "
+"için geçerlidir. Esasen, bu fonksiyon sabit bir asal sayı olan ``P`` için "
+"``reduction modulo`` ``P`` ile verilir. ``P`` değeri Python'a :data:`sys."
+"hash_info` 'nun :attr:`modulus` özelliği olarak sunulur."
 
 #: library/stdtypes.rst:678
 msgid ""
 "Currently, the prime used is ``P = 2**31 - 1`` on machines with 32-bit C "
 "longs and ``P = 2**61 - 1`` on machines with 64-bit C longs."
 msgstr ""
+"Şu anda kullanılan asal sayı, 32 bit C uzunluğundaki makinelerde ``P = 2**31 "
+"- 1`` ve 64-bit C uzunluğundaki makinelerde ``P = 2**61 - 1`` şeklindedir."
 
 #: library/stdtypes.rst:681
 msgid "Here are the rules in detail:"
-msgstr ""
+msgstr "İşte ayrıntılı kurallar:"
 
 #: library/stdtypes.rst:683
 msgid ""
@@ -1107,6 +1143,9 @@ msgid ""
 "by ``P``, define ``hash(x)`` as ``m * invmod(n, P) % P``, where ``invmod(n, "
 "P)`` gives the inverse of ``n`` modulo ``P``."
 msgstr ""
+"``x = m / n`` negatif olmayan bir rasyonel sayıysa ve ``n`` ``P`` ile "
+"bölünemiyorsa, ``hash(x)`` 'i ``m * invmod(n, P) % P`` olarak tanımlayın, bu "
+"durumda ``invmod(n, P)``, ``n`` modulo ``P`` 'nin tersini verir."
 
 #: library/stdtypes.rst:687
 msgid ""
@@ -1115,12 +1154,19 @@ msgid ""
 "above doesn't apply; in this case define ``hash(x)`` to be the constant "
 "value ``sys.hash_info.inf``."
 msgstr ""
+"``x = m / n`` negatif olmayan bir rasyonel sayıysa ve ``n``, ``P`` ile "
+"bölünebiliyorsa (ancak ``m`` değildir), o zaman ``n`` 'nin ``P`` şeklinde "
+"ters modulo 'su yoktur ve yukarıdaki kural geçerli değildir; bu durumda "
+"``hash(x)`` i ``sys.hash_info.inf`` olarak tanımlayın."
 
 #: library/stdtypes.rst:692
 msgid ""
 "If ``x = m / n`` is a negative rational number define ``hash(x)`` as ``-"
 "hash(-x)``.  If the resulting hash is ``-1``, replace it with ``-2``."
 msgstr ""
+"``x = m / n`` negatif bir rasyonel sayıysa, ``hash(x)`` 'i ``-hash(-x)`` "
+"olarak tanımlayın. Elde edilen ``hash`` ``-1`` ise, bunu ``-2`` ile "
+"değiştirin."
 
 #: library/stdtypes.rst:696
 msgid ""
@@ -1128,8 +1174,11 @@ msgid ""
 "used as hash values for positive infinity or negative infinity "
 "(respectively)."
 msgstr ""
+"``sys.hash_info.inf`` ve ``-sys.hash_info.inf``, pozitif sonsuz veya negatif "
+"sonsuz (sırasıyla) için ``hash`` değerleri olarak kullanılır."
 
 #: library/stdtypes.rst:700
+#, fuzzy
 msgid ""
 "For a :class:`complex` number ``z``, the hash values of the real and "
 "imaginary parts are combined by computing ``hash(z.real) + sys.hash_info."
@@ -1137,6 +1186,11 @@ msgid ""
 "lies in ``range(-2**(sys.hash_info.width - 1), 2**(sys.hash_info.width - "
 "1))``.  Again, if the result is ``-1``, it's replaced with ``-2``."
 msgstr ""
+"Bir :class:`complex` sayı ``z`` için, gerçek ve sanal parçaların ```hash`` "
+"değerleri, ``hash(z.real) + sys.hash_info.imag * hash(z.imag)`` , ``reduced "
+"modulo`` ``2**sys.hash_info.width`` hesaplanarak birleştirilir, böylece "
+"``range(-2**(sys.hash_info.width - 1), 2**(sys.hash_info.width - 1))`` 'de "
+"bulunur. Yine sonuç ``-1`` ise, ``-2`` ile değiştirilir."
 
 #: library/stdtypes.rst:708
 msgid ""
@@ -1144,10 +1198,13 @@ msgid ""
 "the built-in hash, for computing the hash of a rational number, :class:"
 "`float`, or :class:`complex`::"
 msgstr ""
+"Yukarıdaki kuralları açıklığa kavuşturmak için, :class:`float` veya :class:"
+"`complex` olan rasyonel bir sayının ``hash`` 'ini hesaplamak için gömülü "
+"``hash`` 'e eşdeğer örnek Python kodu::"
 
 #: library/stdtypes.rst:763
 msgid "Iterator Types"
-msgstr ""
+msgstr "Yineleyici Türleri"
 
 #: library/stdtypes.rst:771
 msgid ""
@@ -1156,12 +1213,19 @@ msgid ""
 "support iteration.  Sequences, described below in more detail, always "
 "support the iteration methods."
 msgstr ""
+"Python, konteynerler üzerinde yineleme kavramını destekler. Bu, iki farklı "
+"yöntem kullanılarak uygulanır; bunlar, kullanıcı tanımlı sınıfların "
+"yinelemeyi desteklemesine izin vermek için kullanılır. Aşağıda daha "
+"ayrıntılı olarak açıklanan diziler, her zaman yineleme yöntemlerini "
+"destekler."
 
 #: library/stdtypes.rst:776
 msgid ""
 "One method needs to be defined for container objects to provide :term:"
 "`iterable` support:"
 msgstr ""
+"Kapsayıcı nesnelerinin :term:`iterable` desteği sağlaması için bir yöntemin "
+"tanımlanması gerekir:"
 
 #: library/stdtypes.rst:783
 msgid ""
