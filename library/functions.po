@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: 2022-02-20 17:09+0300\n"
+"PO-Revision-Date: 2022-02-20 20:07+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH\n"
 "Language: tr_TR\n"
@@ -1704,10 +1704,18 @@ msgid ""
 "``True`` if *object* is an instance of any of the types. If *classinfo* is not a "
 "type or tuple of types and such tuples, a :exc:`TypeError` exception is raised."
 msgstr ""
+"*object* argümanı, *classinfo* argümanının bir örneğiyse veya (doğrudan, dolaylı "
+"veya :term:`sanal <abstract base class>`) alt sınıfının bir örneğiyse ``True`` "
+"döndürür. Eğer *object* verilen tipte bir nesne değilse, fonksiyon mutlaka "
+"``False`` döndürür. *classinfo*, tür nesnelerinden oluşan bir demet (veya "
+"yinelemeli olarak, bu tür diğer demetler) veya birden çok türden bir :ref:`types-"
+"union` ise, ayrıca *object* bu verilen türlerden herhangi birinin örneği ise "
+"``True`` döndürür. Eğer *classinfo* bir tür veya türler içeren bir tuple değilse, :"
+"exc:`TypeError` hatası ortaya çıkar."
 
 #: library/functions.rst:920
 msgid "*classinfo* can be a :ref:`types-union`."
-msgstr ""
+msgstr "*classinfo* bir :ref:`types-union` olabilir."
 
 #: library/functions.rst:913
 msgid ""
@@ -1913,67 +1921,67 @@ msgstr ""
 
 #: library/functions.rst:1133
 msgid "Character"
-msgstr ""
+msgstr "Karakter"
 
 #: library/functions.rst:1133
 msgid "Meaning"
-msgstr ""
+msgstr "Anlam"
 
 #: library/functions.rst:1135
 msgid "``'r'``"
-msgstr ""
+msgstr "``'r'``"
 
 #: library/functions.rst:1135
 msgid "open for reading (default)"
-msgstr ""
+msgstr "okumaya açık (varsayılan)"
 
 #: library/functions.rst:1136
 msgid "``'w'``"
-msgstr ""
+msgstr "``'w'``"
 
 #: library/functions.rst:1136
 msgid "open for writing, truncating the file first"
-msgstr ""
+msgstr "yazmaya açık, önce dosyayı keser"
 
 #: library/functions.rst:1137
 msgid "``'x'``"
-msgstr ""
+msgstr "``'x'``"
 
 #: library/functions.rst:1137
 msgid "open for exclusive creation, failing if the file already exists"
-msgstr ""
+msgstr "ayrıcalıklı oluşturma için açık, dosya varsa hata verir"
 
 #: library/functions.rst:1138
 msgid "``'a'``"
-msgstr ""
+msgstr "``'a'``"
 
 #: library/functions.rst:1138
 msgid "open for writing, appending to the end of file if it exists"
-msgstr ""
+msgstr "yazmaya açık, eğer dosya bulunuyorsa dosyaya ekleme yapar"
 
 #: library/functions.rst:1139
 msgid "``'b'``"
-msgstr ""
+msgstr "``'b'``"
 
 #: library/functions.rst:1139
 msgid "binary mode"
-msgstr ""
+msgstr "ikili mod"
 
 #: library/functions.rst:1140
 msgid "``'t'``"
-msgstr ""
+msgstr "``'t'``"
 
 #: library/functions.rst:1140
 msgid "text mode (default)"
-msgstr ""
+msgstr "metin modu (varsayılan)"
 
 #: library/functions.rst:1141
 msgid "``'+'``"
-msgstr ""
+msgstr "``'+'``"
 
 #: library/functions.rst:1141
 msgid "open for updating (reading and writing)"
-msgstr ""
+msgstr "güncellemeye açık (okuma ve yazma)"
 
 #: library/functions.rst:1144
 msgid ""
@@ -2848,7 +2856,7 @@ msgstr ""
 
 #: library/functions.rst:1888
 msgid "Tips and tricks:"
-msgstr ""
+msgstr "İpucu ve hileler:"
 
 #: library/functions.rst:1890
 msgid ""
@@ -2863,16 +2871,19 @@ msgstr ""
 msgid ""
 ":func:`zip` in conjunction with the ``*`` operator can be used to unzip a list::"
 msgstr ""
+":func:`zip`, bir listeyi açmak için ``*`` operatörüyle birlikte kullanılabilir::"
 
 #: library/functions.rst:1907
 msgid "Added the ``strict`` argument."
-msgstr ""
+msgstr "``strict`` argümanı eklendi."
 
 #: library/functions.rst:1919
 msgid ""
 "This is an advanced function that is not needed in everyday Python programming, "
 "unlike :func:`importlib.import_module`."
 msgstr ""
+"Bu :func:`importlib.import_module` 'un aksine günlük Python programlamasında genel "
+"olarak kullanılmayan gelişmiş bir fonksiyondur."
 
 #: library/functions.rst:1922
 msgid ""
