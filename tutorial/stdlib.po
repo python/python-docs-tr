@@ -3,33 +3,37 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-02-22 23:00+0300\n"
+"Last-Translator: \n"
+"Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"[22: 24]\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: tutorial/stdlib.rst:5
 msgid "Brief Tour of the Standard Library"
-msgstr ""
+msgstr "Standart Kütüphanenin Özeti"
 
 #: tutorial/stdlib.rst:11
 msgid "Operating System Interface"
-msgstr ""
+msgstr "İşletim Sistemi Arayüzü"
 
 #: tutorial/stdlib.rst:13
 msgid ""
 "The :mod:`os` module provides dozens of functions for interacting with the "
 "operating system::"
 msgstr ""
+":mod:'os' modülü, işletim sistemiyle etkileşim kurmak için düzinelerce "
+"fonksiyon sağlar::"
 
 #: tutorial/stdlib.rst:23
 msgid ""
@@ -37,32 +41,41 @@ msgid ""
 "This will keep :func:`os.open` from shadowing the built-in :func:`open` "
 "function which operates much differently."
 msgstr ""
+"''From os import *'' yerine ''import os'' stilini kullandığınızdan emin "
+"olun.  Bu, :func:'os.open'ın çok daha farklı çalışan yerleşik :func:'open' "
+"işlevini gölgelemesini sağlayacaktır."
 
 #: tutorial/stdlib.rst:29
 msgid ""
 "The built-in :func:`dir` and :func:`help` functions are useful as "
 "interactive aids for working with large modules like :mod:`os`::"
 msgstr ""
+"Yerleşik :func:`dir` ve :func:`help` fonksiyonları mod:`os` gibi büyük "
+"modülleri ile çalışma konusunda interaktif yardımcılar olarak kullanışlıdır::"
 
 #: tutorial/stdlib.rst:38
 msgid ""
 "For daily file and directory management tasks, the :mod:`shutil` module "
 "provides a higher level interface that is easier to use::"
 msgstr ""
+"Günlük dosya ve dizin yönetimi görevleri için: mod:'shutil' modülü kullanımı "
+"daha kolay olan daha yüksek düzeyli bir arayüz sağlar::"
 
 #: tutorial/stdlib.rst:51
 msgid "File Wildcards"
-msgstr ""
+msgstr "Dosya Wildcard'ları"
 
 #: tutorial/stdlib.rst:53
 msgid ""
 "The :mod:`glob` module provides a function for making file lists from "
 "directory wildcard searches::"
 msgstr ""
+":mod:`glob` modülü , klasör wildcard aramalarından dosya listeleri "
+"oluşturabilmek için bir fonsiyon sağlar::"
 
 #: tutorial/stdlib.rst:64
 msgid "Command Line Arguments"
-msgstr ""
+msgstr "Komut Satırı Argümanları"
 
 #: tutorial/stdlib.rst:66
 msgid ""
@@ -71,6 +84,10 @@ msgid ""
 "For instance the following output results from running ``python demo.py one "
 "two three`` at the command line::"
 msgstr ""
+"Ortak yardımcı script'ler çoğunlukla komut satırı argümanı işlemi gerektirir."
+"Bu argümanlar :mod:`sys` module's *argv* özelliğinin içinde liste olarak "
+"saklanır.Mesela ``python demo.py one two three`` dosyasını çalıştırdığınız "
+"zaman vereceği çıktı::"
 
 #: tutorial/stdlib.rst:75
 msgid ""
@@ -78,6 +95,9 @@ msgid ""
 "process command line arguments.  The following script extracts one or more "
 "filenames and an optional number of lines to be displayed::"
 msgstr ""
+":mod:`argparse` modülü, komut satırı argümanını işlemek için daha sofistike "
+"bir yöntem sağlar.Bu script bir veya birden fazla dosya adını ve "
+"görüntülenecek isteğe bağlı sayıda satırı ayıklar::"
 
 #: tutorial/stdlib.rst:88
 msgid ""
@@ -85,10 +105,13 @@ msgid ""
 "txt``, the script sets ``args.lines`` to ``5`` and ``args.filenames`` to "
 "``['alpha.txt', 'beta.txt']``."
 msgstr ""
+"Komut satırı ``python top.py --lines=5 alpha.txt beta.txt`` ile "
+"çalıştırıldığı zaman , script ; ``args.lines`` ögesini ``5`` ve ``args."
+"filenames`` ögesini ``['alpha.txt', 'beta.txt']`` olarak ayarlar."
 
 #: tutorial/stdlib.rst:96
 msgid "Error Output Redirection and Program Termination"
-msgstr ""
+msgstr "Hata Çıktısının Yeniden Yönlendirilmesi ve Programın Sonlandırılması"
 
 #: tutorial/stdlib.rst:98
 msgid ""
@@ -96,14 +119,20 @@ msgid ""
 "*stderr*. The latter is useful for emitting warnings and error messages to "
 "make them visible even when *stdout* has been redirected::"
 msgstr ""
+":mod:'sys' modülü ayrıca *stdin*, *stdout* ve *stderr* özelliklerine "
+"sahiptir. İkincisi, *stdout* yeniden yönlendirilmiş olsa bile bunları "
+"görünür hale getirmek için uyarılar ve hata iletileri yayımlamak için "
+"yararlıdır::"
 
 #: tutorial/stdlib.rst:105
 msgid "The most direct way to terminate a script is to use ``sys.exit()``."
 msgstr ""
+"Bir script'i sonlandırmak için en kısa yol olan ``sys.exit()`` komutunu "
+"kullanın."
 
 #: tutorial/stdlib.rst:111
 msgid "String Pattern Matching"
-msgstr ""
+msgstr "String modeli eşleştirmesi"
 
 #: tutorial/stdlib.rst:113
 msgid ""
@@ -111,42 +140,54 @@ msgid ""
 "processing. For complex matching and manipulation, regular expressions offer "
 "succinct, optimized solutions::"
 msgstr ""
+":mod:'re' modülü, gelişmiş string işleme için düzenli ifade araçları sağlar. "
+"Karmaşık eşleştirme ve manipülasyon için, düzenli ifadeler kısa ve optimize "
+"edilmiş çözümler sunar::"
 
 #: tutorial/stdlib.rst:123
 msgid ""
 "When only simple capabilities are needed, string methods are preferred "
 "because they are easier to read and debug::"
 msgstr ""
+"Basit kapabiliteler gerektiği zaman, \"string\" metodu önerilir çünkü "
+"okuması ve hata ayıklaması daha kolaydır::"
 
 #: tutorial/stdlib.rst:133
 msgid "Mathematics"
-msgstr ""
+msgstr "Matematik"
 
 #: tutorial/stdlib.rst:135
 msgid ""
 "The :mod:`math` module gives access to the underlying C library functions "
 "for floating point math::"
 msgstr ""
+":mod:`math` modülünün içinde olan C kütüphanesi ondalıklı matematik "
+"fonksiyonlarına erişim sağlanabilmesini sağlar::"
 
 #: tutorial/stdlib.rst:144
 msgid "The :mod:`random` module provides tools for making random selections::"
 msgstr ""
+":mod:`random` modülü rastgele işaretlemeler yapmak için araçlar sağlar::"
 
 #: tutorial/stdlib.rst:156
 msgid ""
 "The :mod:`statistics` module calculates basic statistical properties (the "
 "mean, median, variance, etc.) of numeric data::"
 msgstr ""
+":mod:`statistics` modülü sayı içeren veriler için temel istatistiksel "
+"ayarları hesaplar (ortalama, ortanca, fark vb.)::"
 
 #: tutorial/stdlib.rst:168
 msgid ""
 "The SciPy project <https://scipy.org> has many other modules for numerical "
 "computations."
 msgstr ""
+"SciPy projesi <https://scipy.org> sayısal hesaplamalar için daha fazla "
+"modüller içerir."
 
 #: tutorial/stdlib.rst:174
 msgid "Internet Access"
-msgstr ""
+msgstr "İnternet Erişimi"
 
 #: tutorial/stdlib.rst:176
 msgid ""
@@ -154,14 +195,19 @@ msgid ""
 "internet protocols. Two of the simplest are :mod:`urllib.request` for "
 "retrieving data from URLs and :mod:`smtplib` for sending mail::"
 msgstr ""
+"İnternete bağlanmak ve internet protokollerini işlemek için modüller var. En "
+"basit ikisi; :mod:`urllib.request` URL'den veri çekmek için ve :mod:"
+"`smtplib` ise mail göndermek için::"
 
 #: tutorial/stdlib.rst:199
 msgid "(Note that the second example needs a mailserver running on localhost.)"
 msgstr ""
+"(Not: 2. örnek için bir mail sunucusu'nun localhost'ta çalışması "
+"gerekmektedir.)"
 
 #: tutorial/stdlib.rst:205
 msgid "Dates and Times"
-msgstr ""
+msgstr "Tarihler ve Saatler"
 
 #: tutorial/stdlib.rst:207
 msgid ""
@@ -171,10 +217,15 @@ msgid ""
 "for output formatting and manipulation.  The module also supports objects "
 "that are timezone aware. ::"
 msgstr ""
+":mod:'datetime' modülü, tarihleri ve saatleri hem basit hem de karmaşık "
+"şekillerde işlemek için sınıflar sağlar. Tarih ve saat aritmetiği "
+"desteklenirken, uygulamanın odak noktası çıktı biçimlendirmesi ve "
+"düzenlemesi için verimli üye ayıklamadır.  Modül ayrıca saat dilimi farkında "
+"olan nesneleri de destekler. ::"
 
 #: tutorial/stdlib.rst:231
 msgid "Data Compression"
-msgstr ""
+msgstr "Veri Sıkıştırma"
 
 #: tutorial/stdlib.rst:233
 msgid ""
@@ -182,10 +233,13 @@ msgid ""
 "modules including: :mod:`zlib`, :mod:`gzip`, :mod:`bz2`, :mod:`lzma`, :mod:"
 "`zipfile` and :mod:`tarfile`. ::"
 msgstr ""
+"Ortak veri arşivleme ve sıkıştırma formatları şu modüller tarafından "
+"desteklenir: :mod:`zlib`, :mod:`gzip`, :mod:`bz2`, :mod:`lzma`, :mod:"
+"`zipfile` ve :mod:`tarfile`. ::"
 
 #: tutorial/stdlib.rst:253
 msgid "Performance Measurement"
-msgstr ""
+msgstr "Performans Ölçümü"
 
 #: tutorial/stdlib.rst:255
 msgid ""
@@ -193,6 +247,9 @@ msgid ""
 "performance of different approaches to the same problem. Python provides a "
 "measurement tool that answers those questions immediately."
 msgstr ""
+"Bazı Python kullanıcıları, aynı soruna farklı yaklaşımların göreli "
+"performansını bilmek konusunda derin bir ilgi geliştirir. Python, bu "
+"soruları hemen yanıtlayan bir ölçüm aracı sağlar."
 
 #: tutorial/stdlib.rst:259
 msgid ""
@@ -200,6 +257,9 @@ msgid ""
 "feature instead of the traditional approach to swapping arguments. The :mod:"
 "`timeit` module quickly demonstrates a modest performance advantage::"
 msgstr ""
+"Örneğin, bağımsız değişkenleri değiştirmek için geleneksel yaklaşım yerine "
+"dizi paketleme ve açma özelliğini kullanmak cazip olabilir. :mod:'timeit' "
+"modülü hızla sade bir performans avantajı gösterir::"
 
 #: tutorial/stdlib.rst:269
 msgid ""
@@ -207,10 +267,13 @@ msgid ""
 "and :mod:`pstats` modules provide tools for identifying time critical "
 "sections in larger blocks of code."
 msgstr ""
+"Bunun aksine :mod:'timeit'in ince parçalı yapı düzeyi, :mod:'profile' ve :"
+"mod:'pstats' modülleri, daha büyük kod bloklarında zaman açısından kritik "
+"bölümleri tanımlamak için araçlar sağlar."
 
 #: tutorial/stdlib.rst:277
 msgid "Quality Control"
-msgstr ""
+msgstr "Kalite Kontrolü"
 
 #: tutorial/stdlib.rst:279
 msgid ""
@@ -218,6 +281,8 @@ msgid ""
 "function as it is developed and to run those tests frequently during the "
 "development process."
 msgstr ""
+"Yüksek kalitede yazılımlar geliştirmek için her fonksiyon için testler "
+"yazılmalıdır ve bu testler geliştirirken sık sık çalıştırmalıdır."
 
 #: tutorial/stdlib.rst:283
 msgid ""
@@ -228,6 +293,11 @@ msgid ""
 "example and it allows the doctest module to make sure the code remains true "
 "to the documentation::"
 msgstr ""
+":mod:'doctest' modülü, bir modülü taramak ve bir programın docstrings'ine "
+"gömülü testleri doğrulamak için bir araç sağlar.  Test yapısı, sonuçlarıyla "
+"birlikte tipik bir çağrıyı docstring'e kesip yapıştırma kadar basittir. Bu, "
+"kullanıcıya bir örnek sunarak belgeleri geliştirir ve doctest modülünün "
+"kodun belgelere sadık kaldığından emin olmasını sağlar::"
 
 #: tutorial/stdlib.rst:301
 msgid ""
@@ -235,10 +305,12 @@ msgid ""
 "module, but it allows a more comprehensive set of tests to be maintained in "
 "a separate file::"
 msgstr ""
+":mod:`unittest` modülü, :mod:`doctest` modülü gibi çaba istemeyen bir "
+"modüldür ama daha geniş kapsamlı test setleri ayrı dosyalarda sağlanır::"
 
 #: tutorial/stdlib.rst:323
 msgid "Batteries Included"
-msgstr ""
+msgstr "Bataryalar Dahildir"
 
 #: tutorial/stdlib.rst:325
 msgid ""
@@ -246,6 +318,8 @@ msgid ""
 "the sophisticated and robust capabilities of its larger packages. For "
 "example:"
 msgstr ""
+"Python'un \"bataryalar dahil\" felsefesi vardır. Bu , büyük paketlerin en "
+"iyi şekilde sofistike ve sağlam kapabiliteleriyle görülür. Mesela:"
 
 #: tutorial/stdlib.rst:328
 msgid ""
@@ -253,6 +327,9 @@ msgid ""
 "remote procedure calls into an almost trivial task.  Despite the modules "
 "names, no direct knowledge or handling of XML is needed."
 msgstr ""
+":mod:'xmlrpc.client' ve :mod:'xmlrpc.server' modülleri, uzak işlem grubu "
+"çağrılarını uygulamayı neredeyse önemsiz bir görev haline getirir.  Modül "
+"adlarına rağmen, XML'nin doğrudan bilgisine veya işlenmesine gerek yoktur."
 
 #: tutorial/stdlib.rst:332
 msgid ""
@@ -263,6 +340,12 @@ msgid ""
 "structures (including attachments) and for implementing internet encoding "
 "and header protocols."
 msgstr ""
+":mod:`email` paketi e-mail mesajlarını işlemek için bir kütüphanedir.MIME ve "
+"diğer :rfc:`2822`-tabanlı mesajların dökümanlarını içerir. Mesaj gönderip "
+"alan :mod:`smtplib` ve :mod:`poplib`in aksine, e-mail paketinin derleme "
+"işlemini, kompleks mesaj yapılarını (ekler dahil) decode edilebilmesini "
+"sağlayan, internet encode işlemini ve header protokollerini uygulamak için "
+"geniş kapsamlı bir toolkit'e sahiptir."
 
 #: tutorial/stdlib.rst:339
 msgid ""
@@ -274,6 +357,14 @@ msgid ""
 "these modules and packages greatly simplify data interchange between Python "
 "applications and other tools."
 msgstr ""
+":mod:'json' paketi, bu popüler veri değişim biçimini ayrıştırma için sağlam "
+"destek sağlar.  :mod:'csv' modülü, genellikle veritabanları ve elektronik "
+"tablolar tarafından desteklenen Virgülle-Ayrılmış Değer biçimindeki "
+"dosyaların doğrudan okunmasını ve yazılmasını destekler.  XML işleme :"
+"mod:'xml.etree.ElementTree', :mod:'xml.dom' ve :mod:'xml.sax' paketleri "
+"tarafından desteklenir. Birlikte, bu modüller ve paketler Python "
+"uygulamaları ve diğer araçlar arasındaki veri değişimini büyük ölçüde "
+"basitleştirir."
 
 #: tutorial/stdlib.rst:348
 msgid ""
@@ -281,9 +372,14 @@ msgid ""
 "providing a persistent database that can be updated and accessed using "
 "slightly nonstandard SQL syntax."
 msgstr ""
+":mod:`sqlite3` modülü , SQLite veritabanı kütüphanesi için bir \"wrapper"
+"\"dır. Biraz standart dışı SQL syntax'ları kullanılarak güncellenebilen ve "
+"erişilebilen kalıcı bir veritabanı sağlanabilir."
 
 #: tutorial/stdlib.rst:352
 msgid ""
 "Internationalization is supported by a number of modules including :mod:"
 "`gettext`, :mod:`locale`, and the :mod:`codecs` package."
 msgstr ""
+"Uluslararasılaştırma: mod:'gettext', :mod:'locale' ve :mod:'codecs' paketi "
+"dahil olmak üzere bir dizi modül tarafından desteklenir."
