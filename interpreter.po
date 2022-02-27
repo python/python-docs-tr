@@ -1,0 +1,285 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2001-2021, Python Software Foundation
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Python 3.10\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"PO-Revision-Date: 2022-01-23 20:04+0300\n"
+"Last-Translator: Kerem Sevgin <keremkerembaran@hotmail.com>\n"
+"Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: tutorial/interpreter.rst:5
+msgid "Using the Python Interpreter"
+msgstr "Python Yorumlayıcısını Kullanma"
+
+#: tutorial/interpreter.rst:11
+msgid "Invoking the Interpreter"
+msgstr "Yorumlayıcı Çağırma"
+
+#: tutorial/interpreter.rst:13
+msgid ""
+"The Python interpreter is usually installed as :file:`/usr/local/bin/"
+"python3.10` on those machines where it is available; putting :file:`/usr/"
+"local/bin` in your Unix shell's search path makes it possible to start it by "
+"typing the command:"
+msgstr ""
+"Python yorumlayıcısı genellikle mevcut olduğu makinelerde :file:'/usr/local/"
+"bin/python3.10' yüklenir; Unix kabuğunuzun arama çubuğuna :file:'/usr/local/"
+"bin' yazmak, komutu yazarak başlatmayı mümkün kılar:"
+
+#: tutorial/interpreter.rst:21
+msgid ""
+"to the shell. [#]_ Since the choice of the directory where the interpreter "
+"lives is an installation option, other places are possible; check with your "
+"local Python guru or system administrator.  (E.g., :file:`/usr/local/python` "
+"is a popular alternative location.)"
+msgstr ""
+"kabuğa. [#]_ Yorumlayıcının yaşadığı dizinin seçimi bir yükleme seçeneği "
+"olduğundan, başka yerler de mümkündür; yerel Python gurunuza veya sistem "
+"yöneticinize danışın.  (Örneğin, :file:'/usr/local/python' popüler bir "
+"alternatif konumdur.)"
+
+#: tutorial/interpreter.rst:26
+msgid ""
+"On Windows machines where you have installed Python from the :ref:`Microsoft "
+"Store <windows-store>`, the :file:`python3.10` command will be available. If "
+"you have the :ref:`py.exe launcher <launcher>` installed, you can use the :"
+"file:`py` command. See :ref:`setting-envvars` for other ways to launch "
+"Python."
+msgstr ""
+"Python'ı :ref:'Microsoft Store'dan <windows-store> yüklediğiniz Windows "
+"makinelerinde: file:'python3.10' komutu kullanılabilir. :ref:'py.exe "
+"<launcher>başlatıcısı yüklüyse, :file:'py' komutunu kullanabilirsiniz. "
+"Python'u başlatmanın diğer yolları için :ref:'setting-envvars'a bakın."
+
+#: tutorial/interpreter.rst:31
+msgid ""
+"Typing an end-of-file character (:kbd:`Control-D` on Unix, :kbd:`Control-Z` "
+"on Windows) at the primary prompt causes the interpreter to exit with a zero "
+"exit status.  If that doesn't work, you can exit the interpreter by typing "
+"the following command: ``quit()``."
+msgstr ""
+"Dosya sonu karakteri (:kbd:'Control-D' Unix üzerine, :kbd:'Control-Z'  "
+"Windows üzerine) yazılması, yorumlayıcının sıfır sonucu vermesine neden "
+"olur.  Bu işe yaramazsa, aşağıdaki komutu yazarak yorumlayıcıdan "
+"çıkabilirsiniz: ''quit()'''."
+
+#: tutorial/interpreter.rst:36
+msgid ""
+"The interpreter's line-editing features include interactive editing, history "
+"substitution and code completion on systems that support the `GNU Readline "
+"<https://tiswww.case.edu/php/chet/readline/rltop.html>`_ library. Perhaps "
+"the quickest check to see whether command line editing is supported is "
+"typing :kbd:`Control-P` to the first Python prompt you get.  If it beeps, "
+"you have command line editing; see Appendix :ref:`tut-interacting` for an "
+"introduction to the keys.  If nothing appears to happen, or if ``^P`` is "
+"echoed, command line editing isn't available; you'll only be able to use "
+"backspace to remove characters from the current line."
+msgstr ""
+"Yorumlayıcının satır düzenleme özellikleri arasında etkileşimli düzenleme, "
+"geçmiş değiştirme ve 'GNU Readline <https://tiswww.case.edu/php/chet/"
+"readline/rltop.html>'_ kitaplığını destekleyen sistemlerde kod tamamlama "
+"bulunur. Komut satırı düzenlemenin desteklenip desteklenmediğini görmek için "
+"belki de en hızlı denetim, elde ettiğiniz ilk Python istemine :kbd:'Control-"
+"P' yazmaktır.  Bip sesi çıkarsa, komut satırı düzenlemeniz vardır; Tuşların "
+"tanıtımı için :ref:'tut-interacting'. Hiçbir şey görünmüyorsa veya ''^P'' "
+"yankılanıyorsa, komut satırı düzenlemesi kullanılamaz; yalnızca geçerli "
+"satırdaki karakterleri kaldırmak için geri alabiliyorsunuz."
+
+#: tutorial/interpreter.rst:46
+msgid ""
+"The interpreter operates somewhat like the Unix shell: when called with "
+"standard input connected to a tty device, it reads and executes commands "
+"interactively; when called with a file name argument or with a file as "
+"standard input, it reads and executes a *script* from that file."
+msgstr ""
+"Yorumlayıcı bir şekilde Unix kabuğu gibi çalışır: bir tty aygıtına bağlı "
+"standart girdi ile çağrıldığında, komutları etkileşimli olarak okur ve "
+"yürütür; bir dosya adı argümanıyla veya standart girdi olarak bir dosyayla "
+"çağrıldığında, o dosyadan bir *komut dosyası* okur ve yürütür."
+
+#: tutorial/interpreter.rst:51
+msgid ""
+"A second way of starting the interpreter is ``python -c command [arg] ...``, "
+"which executes the statement(s) in *command*, analogous to the shell's :"
+"option:`-c` option.  Since Python statements often contain spaces or other "
+"characters that are special to the shell, it is usually advised to quote "
+"*command* in its entirety with single quotes."
+msgstr ""
+"Yorumlayıcıyı başlatmanın ikinci bir yolu, kabuğun :option:`-c` seçeneğine "
+"benzer şekilde *komut* içindeki ifadeleri yürüten ``python -c komutu "
+"[arg] ...`` dır. Python deyimleri genellikle boşluklar veya diğer "
+"karakterler içerdiğinden kabukta özeldir, genellikle *komut*'un tamamının "
+"tek tırnak ile alıntılanması önerilir."
+
+#: tutorial/interpreter.rst:57
+msgid ""
+"Some Python modules are also useful as scripts.  These can be invoked using "
+"``python -m module [arg] ...``, which executes the source file for *module* "
+"as if you had spelled out its full name on the command line."
+msgstr ""
+"Bazı Python modülleri komut dosyası olarak da yararlıdır.  Bunlar, eğer tam "
+"adını komut satırına yazarsanız *module* için kaynak dosyası ''python -m "
+"module [arg] ...'' kullanılarak çağrılabilir."
+
+#: tutorial/interpreter.rst:61
+msgid ""
+"When a script file is used, it is sometimes useful to be able to run the "
+"script and enter interactive mode afterwards.  This can be done by passing :"
+"option:`-i` before the script."
+msgstr ""
+"Bir komut dosyası kullanıldığında, bazen komut dosyasını çalıştırabilmek ve "
+"daha sonra etkileşimli moda girebilmek yararlıdır.  Bu komut dosyasından "
+"önce :option:'-i' geçirilerek yapılabilir."
+
+#: tutorial/interpreter.rst:65
+msgid "All command line options are described in :ref:`using-on-general`."
+msgstr ""
+"Tüm komut satırı seçenekleri :ref:'using-on-general' bölümünde açıklanmıştır."
+
+#: tutorial/interpreter.rst:71
+msgid "Argument Passing"
+msgstr "Değişken Geçirme"
+
+#: tutorial/interpreter.rst:73
+msgid ""
+"When known to the interpreter, the script name and additional arguments "
+"thereafter are turned into a list of strings and assigned to the ``argv`` "
+"variable in the ``sys`` module.  You can access this list by executing "
+"``import sys``.  The length of the list is at least one; when no script and "
+"no arguments are given, ``sys.argv[0]`` is an empty string.  When the script "
+"name is given as ``'-'`` (meaning  standard input), ``sys.argv[0]`` is set "
+"to ``'-'``.  When :option:`-c` *command* is used, ``sys.argv[0]`` is set to "
+"``'-c'``.  When :option:`-m` *module* is used, ``sys.argv[0]``  is set to "
+"the full name of the located module.  Options found after  :option:`-c` "
+"*command* or :option:`-m` *module* are not consumed  by the Python "
+"interpreter's option processing but left in ``sys.argv`` for  the command or "
+"module to handle."
+msgstr ""
+"Yorumlayıcı tarafından bilindiğinde, komut dosyası adı ve bundan sonraki ek "
+"bağımsız değişkenler dizelerin listesine dönüştürülür ve ''sys'' modülündeki "
+"''argv'' değişkenine atanır.  Bu listeye ''import sys'' öğesini yürüterek "
+"erişebilirsiniz.  Listenin uzunluğu en az birdir; komut dosyası ve bağımsız "
+"değişken verilmediğinde, ''sys.argv[0]'' boş bir dizedir.  Komut dosyası adı "
+"'''-'' (standart giriş anlamına gelir) olarak verildiğinde, ''sys.argv[0]'' "
+"','-'' olarak ayarlanır.  :option:'-c' *command* kullanıldığında, ''sys."
+"argv[0]'' ','-c'' olarak ayarlanır.  :option:'-m' *module* kullanıldığında, "
+"''sys.argv[0]'' bulunan modülün tam adına ayarlanır.  Sonra bulunan "
+"seçenekler :option:'-c' *command* veya :option:'-m' *module*, Python "
+"yorumlayıcısının seçenek işlemesi tarafından tüketilmez, ancak komut veya "
+"modülün işlemesi için ''sys.argv'' içinde bırakılır."
+
+#: tutorial/interpreter.rst:89
+msgid "Interactive Mode"
+msgstr "Etkileşimli Mod"
+
+#: tutorial/interpreter.rst:91
+msgid ""
+"When commands are read from a tty, the interpreter is said to be in "
+"*interactive mode*.  In this mode it prompts for the next command with the "
+"*primary prompt*, usually three greater-than signs (``>>>``); for "
+"continuation lines it prompts with the *secondary prompt*, by default three "
+"dots (``...``). The interpreter prints a welcome message stating its version "
+"number and a copyright notice before printing the first prompt:"
+msgstr ""
+"Komutlar bir tty'den okunduğunda, yorumlayıcının *etkileşimli modda* olduğu "
+"söylenir.  Bu modda, genellikle üç büyük işaret olan *öncelikli bilgi "
+"sistemi* ile bir sonraki komutu ister (''>>>'); devam satırları için "
+"*ikincil istem* ile sorar, varsayılan olarak üç nokta (''...''). "
+"Yorumlayıcı, ilk istemi yazdırmadan önce sürüm numarasını ve telif hakkı "
+"bildirimini belirten bir karşılama iletisi yazdırır:"
+
+#: tutorial/interpreter.rst:108
+msgid ""
+"Continuation lines are needed when entering a multi-line construct. As an "
+"example, take a look at this :keyword:`if` statement::"
+msgstr ""
+"Çok satırlı bir yapıya girilirken devamlılık satırları gereklidir. Örnek "
+"olarak, şu :keyword:'if' deyimine bir göz atın::"
+
+#: tutorial/interpreter.rst:118
+msgid "For more on interactive mode, see :ref:`tut-interac`."
+msgstr "Etkileşimli mod hakkında daha fazla şey için bkz. :ref:`tut-interac`."
+
+#: tutorial/interpreter.rst:124
+msgid "The Interpreter and Its Environment"
+msgstr "Yorumlayıcı ve Çevresi"
+
+#: tutorial/interpreter.rst:130
+msgid "Source Code Encoding"
+msgstr "Kaynak Kodu Kodlaması"
+
+#: tutorial/interpreter.rst:132
+msgid ""
+"By default, Python source files are treated as encoded in UTF-8.  In that "
+"encoding, characters of most languages in the world can be used "
+"simultaneously in string literals, identifiers and comments --- although the "
+"standard library only uses ASCII characters for identifiers, a convention "
+"that any portable code should follow.  To display all these characters "
+"properly, your editor must recognize that the file is UTF-8, and it must use "
+"a font that supports all the characters in the file."
+msgstr ""
+"Varsayılan olarak, Python kaynak dosyaları UTF-8'de kodlanmış olarak kabul "
+"edilir.  Bu kodlamada, dünyadaki çoğu dilin karakterleri dize "
+"değişmezlerinde, tanımlayıcılarda ve yorumlarda aynı anda kullanılabilir --- "
+"standart kitaplık tanımlayıcılar için yalnızca ASCII karakterleri kullansa "
+"da, herhangi bir taşınabilir kodun izlemesi gereken bir kuraldır.  Tüm bu "
+"karakterleri düzgün görüntülemek için, düzenleyicinizin dosyanın UTF-8 "
+"olduğunu tanıması ve dosyadaki tüm karakterleri destekleyen bir yazı tipi "
+"kullanması gerekir."
+
+#: tutorial/interpreter.rst:140
+msgid ""
+"To declare an encoding other than the default one, a special comment line "
+"should be added as the *first* line of the file.  The syntax is as follows::"
+msgstr ""
+"Varsayılan kod dışında bir kodlama bildirmek için, dosyanın *ilk* satırı "
+"olarak özel bir yorum satırı eklenmelidir.  Sözdizimi aşağıdaki gibidir::"
+
+#: tutorial/interpreter.rst:145
+msgid "where *encoding* is one of the valid :mod:`codecs` supported by Python."
+msgstr ""
+"burada *kodlama*, Python tarafından desteklenen geçerli :mod:'codec "
+"bileşenlerinden biridir."
+
+#: tutorial/interpreter.rst:147
+msgid ""
+"For example, to declare that Windows-1252 encoding is to be used, the first "
+"line of your source code file should be::"
+msgstr ""
+"Örneğin, Windows-1252 kodlamasının kullanılacağını bildirmek için, kaynak "
+"kod dosyanızın ilk satırı şu olmalıdır::"
+
+#: tutorial/interpreter.rst:152
+msgid ""
+"One exception to the *first line* rule is when the source code starts with "
+"a :ref:`UNIX \"shebang\" line <tut-scripts>`.  In this case, the encoding "
+"declaration should be added as the second line of the file.  For example::"
+msgstr ""
+"*ilk satır* kuralının bir istisnası, kaynak kodun :ref:'UNIX \"shebang\" "
+"satırı ' ile <tut-scripts>başlamasıdır.  Bu durumda, kodlama bildirimi "
+"dosyanın ikinci satırı olarak eklenmelidir.  Mesela::"
+
+#: tutorial/interpreter.rst:160
+msgid "Footnotes"
+msgstr "Dipnotlar"
+
+#: tutorial/interpreter.rst:161
+msgid ""
+"On Unix, the Python 3.x interpreter is by default not installed with the "
+"executable named ``python``, so that it does not conflict with a "
+"simultaneously installed Python 2.x executable."
+msgstr ""
+"Unix'te, Python 3.x yorumlayıcısı varsayılan olarak ''python'' adlı "
+"yürütülebilir dosyayla yüklenmez, böylece aynı anda yüklenen bir Python 2.x "
+"yürütülebilir dosyasıyla çakışmaz."
