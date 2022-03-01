@@ -140,11 +140,10 @@ msgid ""
 "exception. ::"
 msgstr ""
 "Seçili özel durumları işleyen programlar yazmak mümkündür. Geçerli bir "
-"tamsayı girilene kadar kullanıcıdan giriş isteyen, ancak kullanıcının "
-"programı kesmesine izin veren aşağıdaki örneğe bakın (:kbd:'Control-C' veya "
-"işletim sistemi ne destekliyorsa onu kullanarak); :exc:'KeyboardInterrupt' "
-"özel durumu yükseltilerek kullanıcı tarafından oluşturulan bir kesintinin "
-"işaretlendiğini unutmayın. ::"
+"tam sayı girilene kadar kullanıcıdan giriş isteyen, ancak kullanıcının "
+"programı kesmesine izin veren aşağıdaki örneğe bakın (:kbd:`Control-C` veya "
+"işletim sistemi ne destekliyorsa onu kullanarak); kullanıcı kaynaklı kesintilerin "
+":exc:`KeyboardInterrupt` özel durumu ile gösterildiğini unutmayın::
 
 #: tutorial/errors.rst:96
 msgid "The :keyword:`try` statement works as follows."
