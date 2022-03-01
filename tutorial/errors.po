@@ -234,11 +234,11 @@ msgid ""
 "message and then re-raise the exception (allowing a caller to handle the "
 "exception as well)::"
 msgstr ""
-"Tüm özel durumlar :exc:'BaseException'dan devralır ve böylece joker karakter "
+"Tüm özel durumlar :exc:`BaseException` 'dan kalıt alınır ve böylece joker karakter "
 "olarak kullanılabilir. Bunu çok dikkatli kullanın, çünkü gerçek bir "
 "programlama hatasını bu şekilde maskelemek kolaydır!  Ayrıca, bir hata "
 "iletisi yazdırmak ve sonra özel durumu yeniden yükseltmek için de "
-"kullanılabilir (arayanın özel durumu işlemesine izin vermek)::"
+"kullanılabilir (çağıranın özel durumu işlemesine izin vermek)::"
 
 #: tutorial/errors.rst:169
 msgid ""
