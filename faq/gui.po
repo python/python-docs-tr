@@ -20,7 +20,7 @@ msgstr ""
 
 #: faq/gui.rst:5
 msgid "Graphic User Interface FAQ"
-msgstr "Grafik Kullanıcı Arabirimi SSS"
+msgstr "Grafik Kullanıcı Arayüzü SSS"
 
 #: faq/gui.rst:8
 msgid "Contents"
@@ -44,11 +44,11 @@ msgid ""
 "tk>`_.  Tcl/Tk is fully portable to the macOS, Windows, and Unix platforms."
 msgstr ""
 "Python'un standart yapıları, :ref:`tkinter <Tkinter>` adlı Tcl/Tk pencere "
-"öğesi kümesine yönelik nesne yönelimli bir arabirim içerir. Bu muhtemelen "
-"kurulumu ve kullanımı en kolay olanıdır (çünkü çoğu `binary distributions "
-"<https://www.python.org/downloads/>`_ Python'da bulunur) ve kullanılandır. "
+"öğesi kümesine yönelik nesne yönelimli bir arayüz içerir. Bu muhtemelen "
+"kurulumu ve kullanımı en kolay olanıdır (çünkü çoğu Python'ın `ikili dağıtımlar "
+"<https://www.python.org/downloads/>`_ kısmında bulunur) ve kullanılandır. "
 "Kaynak işaretçiler de dahil olmak üzere Tk hakkında daha fazla bilgi için "
-"`Tcl/Tk ana sayfasına <https://www.tcl.tk>` bakın. Tcl/Tk, macOS, Windows ve "
+"`Tcl/Tk ana sayfasına <https://www.tcl.tk>`_ bakın. Tcl/Tk, macOS, Windows ve "
 "Unix platformlarına tamamen taşınabilir."
 
 #: faq/gui.rst:28
@@ -61,7 +61,7 @@ msgid ""
 msgstr ""
 "Hangi platformları hedeflediğinize bağlı olarak, birkaç alternatif de "
 "mevcuttur. Bir `list of cross-platform <https://wiki.python.org/moin/"
-"GuiProgramming#Cross-Platform_Frameworks>` ve `platform-specific <https://"
+"GuiProgramming#Cross-Platform_Frameworks>`_ ve `platform-specific <https://"
 "wiki.python.org/moin/GuiProgramming#Platform-specific_Frameworks>`_ GKA "
 "çerçeveleri Python Wiki'de bulunabilir."
 
@@ -132,11 +132,11 @@ msgstr ""
 "yok! Ancak G/Ç kodunuzu tekrardan yapılandırmanız gerekecek. Tk, Xt'nin :c:"
 "func:`XtAddInput()` çağrısına eşdeğerdir; bu, bir dosya tanıtıcısında G/Ç "
 "mümkün olduğunda Tk ana döngüsünden çağrılacak bir geri arama işlevini "
-"kaydetmenize olanak tanır. Bakınız :ref:`tkinter-file-handlers`."
+"kaydetmenize olanak tanır. Bkz. :ref:`tkinter-file-handlers`"
 
 #: faq/gui.rst:71
 msgid "I can't get key bindings to work in Tkinter: why?"
-msgstr "Tkinter'da çalışmak için anahtar bağlamaları alamıyorum: neden?"
+msgstr "Tkinter'da çalışmak için anahtar bağlamalarını alamıyorum: neden?"
 
 #: faq/gui.rst:73
 msgid ""
@@ -155,6 +155,6 @@ msgid ""
 "it (but not for labels; see the takefocus option)."
 msgstr ""
 "En yaygın neden, bağlamanın uygulandığı pencere öğesinin \"klavye odağına\" "
-"sahip olmamasıdır. Focus komutu için Tk belgelerine bakın. Genellikle bir "
+"sahip olmamasıdır. Focus komutu için Tk dokümantasyonuna bakın. Genellikle "
 "Wigdet'lara tıklanılarak klavye odağı verilir (ancak etiketler için değil; "
 "odak alma seçeneğine bakın)."
