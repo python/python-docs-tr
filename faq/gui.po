@@ -18,21 +18,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.0.1\n"
 
+
 #: faq/gui.rst:5
 msgid "Graphic User Interface FAQ"
-msgstr "Grafik Kullanıcı Arabirimi SSS"
+msgstr ""
 
 #: faq/gui.rst:8
 msgid "Contents"
-msgstr "İçerikler"
+msgstr ""
 
 #: faq/gui.rst:15
 msgid "General GUI Questions"
-msgstr "Genel GKA Soruları"
+msgstr ""
 
 #: faq/gui.rst:18
 msgid "What GUI toolkits exist for Python?"
-msgstr "Python için hangi GKA araç setleri var?"
+msgstr ""
 
 #: faq/gui.rst:20
 msgid ""
@@ -43,13 +44,6 @@ msgid ""
 "including pointers to the source, see the `Tcl/Tk home page <https://www.tcl."
 "tk>`_.  Tcl/Tk is fully portable to the macOS, Windows, and Unix platforms."
 msgstr ""
-"Python'un standart yapıları, :ref:`tkinter <Tkinter>` adlı Tcl/Tk pencere "
-"öğesi kümesine yönelik nesne yönelimli bir arabirim içerir. Bu muhtemelen "
-"kurulumu ve kullanımı en kolay olanıdır (çünkü çoğu `binary distributions "
-"<https://www.python.org/downloads/>`_ Python'da bulunur) ve kullanılandır. "
-"Kaynak işaretçiler de dahil olmak üzere Tk hakkında daha fazla bilgi için "
-"`Tcl/Tk ana sayfasına <https://www.tcl.tk>` bakın. Tcl/Tk, macOS, Windows ve "
-"Unix platformlarına tamamen taşınabilir."
 
 #: faq/gui.rst:28
 msgid ""
@@ -59,19 +53,14 @@ msgid ""
 "wiki.python.org/moin/GuiProgramming#Platform-specific_Frameworks>`_ GUI "
 "frameworks can be found on the python wiki."
 msgstr ""
-"Hangi platformları hedeflediğinize bağlı olarak, birkaç alternatif de "
-"mevcuttur. Bir `list of cross-platform <https://wiki.python.org/moin/"
-"GuiProgramming#Cross-Platform_Frameworks>` ve `platform-specific <https://"
-"wiki.python.org/moin/GuiProgramming#Platform-specific_Frameworks>`_ GKA "
-"çerçeveleri Python Wiki'de bulunabilir."
 
 #: faq/gui.rst:36
 msgid "Tkinter questions"
-msgstr "Tkinter soruları"
+msgstr ""
 
 #: faq/gui.rst:39
 msgid "How do I freeze Tkinter applications?"
-msgstr "Tkinter uygulamalarını nasıl dondurabilirim?"
+msgstr ""
 
 #: faq/gui.rst:41
 msgid ""
@@ -79,10 +68,6 @@ msgid ""
 "applications, the applications will not be truly stand-alone, as the "
 "application will still need the Tcl and Tk libraries."
 msgstr ""
-"Dondurma işlemi, tek başına bağımsız uygulamalar oluşturmak için bir "
-"araçtır. Tkinter uygulamalarını dondururken, uygulama hala Tcl ve Tk "
-"kütüphanelerine ihtiyaç duyacağından, uygulamalar gerçekten bağımsız "
-"olmayacaktır."
 
 #: faq/gui.rst:45
 msgid ""
@@ -90,9 +75,6 @@ msgid ""
 "point to them at run-time using the :envvar:`TCL_LIBRARY` and :envvar:"
 "`TK_LIBRARY` environment variables."
 msgstr ""
-"Çözümlerden biri, uygulamayı Tcl ve Tk kütüphaneleri ile birlikte göndermek "
-"ve çalışma zamanında :envvar:`TCL_LIBRARY` ve :envvar:`TK_LIBRARY` ortam "
-"değişkenlerini kullanarak onlara işaret etmektir."
 
 #: faq/gui.rst:49
 msgid ""
@@ -101,10 +83,6 @@ msgid ""
 "is SAM (stand-alone modules), which is part of the Tix distribution (http://"
 "tix.sourceforge.net/)."
 msgstr ""
-"Gerçekten bağımsız uygulamalar elde etmek için kütüphaneyi oluşturan Tcl "
-"betiklerinin de uygulamaya entegre edilmesi gerekir. Bunu destekleyen "
-"araçlardan biri, Tix dağıtımının (http://tix.sourceforge.net/) 'in bir "
-"parçası olan SAM'dir (bağımsız modüller)."
 
 #: faq/gui.rst:54
 msgid ""
@@ -112,13 +90,10 @@ msgid ""
 "`Tclsam_init`, etc. inside Python's :file:`Modules/tkappinit.c`, and link "
 "with libtclsam and libtksam (you might include the Tix libraries as well)."
 msgstr ""
-"SAM etkinken Tix oluşturun, Python'un :file:`Modules/tkappinit.c` içindeki :"
-"c:func:`Tclsam_init` vb. için uygun çağrıyı yapın ve libtclsam ve libtksam "
-"ile bağlantı kurun (Tix kütüphanelerini da dahil edebilirsiniz) )."
 
 #: faq/gui.rst:61
 msgid "Can I have Tk events handled while waiting for I/O?"
-msgstr "G/Ç'yi beklerken Tk olaylarını işleyebilir miyim?"
+msgstr ""
 
 #: faq/gui.rst:63
 msgid ""
@@ -128,15 +103,10 @@ msgid ""
 "function which will be called from the Tk mainloop when I/O is possible on a "
 "file descriptor.  See :ref:`tkinter-file-handlers`."
 msgstr ""
-"Windows dışındaki platformlarda, evet ve iş parçacığına bile ihtiyacınız "
-"yok! Ancak G/Ç kodunuzu tekrardan yapılandırmanız gerekecek. Tk, Xt'nin :c:"
-"func:`XtAddInput()` çağrısına eşdeğerdir; bu, bir dosya tanıtıcısında G/Ç "
-"mümkün olduğunda Tk ana döngüsünden çağrılacak bir geri arama işlevini "
-"kaydetmenize olanak tanır. Bakınız :ref:`tkinter-file-handlers`."
 
 #: faq/gui.rst:71
 msgid "I can't get key bindings to work in Tkinter: why?"
-msgstr "Tkinter'da çalışmak için anahtar bağlamaları alamıyorum: neden?"
+msgstr ""
 
 #: faq/gui.rst:73
 msgid ""
@@ -144,8 +114,6 @@ msgid ""
 "meth:`bind` method don't get handled even when the appropriate key is "
 "pressed."
 msgstr ""
-"Sıkça duyulan bir şikayet, :meth:`bind` yöntemiyle olaylara bağlanan "
-"işleyicilerin uygun tuşa basıldığında bile işlenmemesidir."
 
 #: faq/gui.rst:76
 msgid ""
@@ -154,7 +122,3 @@ msgid ""
 "focus command. Usually a widget is given the keyboard focus by clicking in "
 "it (but not for labels; see the takefocus option)."
 msgstr ""
-"En yaygın neden, bağlamanın uygulandığı pencere öğesinin \"klavye odağına\" "
-"sahip olmamasıdır. Focus komutu için Tk belgelerine bakın. Genellikle bir "
-"Wigdet'lara tıklanılarak klavye odağı verilir (ancak etiketler için değil; "
-"odak alma seçeneğine bakın)."
