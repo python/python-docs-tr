@@ -2,47 +2,48 @@
 # Copyright (C) 2001-2021, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-01-11 18:02+0300\n"
+"Last-Translator: \n"
+"Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: distutils/index.rst:5
 msgid "Distributing Python Modules (Legacy version)"
-msgstr ""
+msgstr "Python Modüllerini Dağıtma (Eski sürüm)"
 
 #: distutils/index.rst:0
 msgid "Authors"
-msgstr ""
+msgstr "Yazarlar"
 
 #: distutils/index.rst:7
 msgid "Greg Ward, Anthony Baxter"
-msgstr ""
+msgstr "Greg Ward, Anthony Baxter"
 
 #: distutils/index.rst:0
 msgid "Email"
-msgstr ""
+msgstr "E-posta"
 
 #: distutils/index.rst:8
 msgid "distutils-sig@python.org"
-msgstr ""
+msgstr "distutils-sig@python.org"
 
 #: distutils/index.rst:12
 msgid ":ref:`distributing-index`"
-msgstr ""
+msgstr ":ref:`distributing-index`"
 
 #: distutils/index.rst:13
 msgid "The up to date module distribution documentations"
-msgstr ""
+msgstr "Güncel modül dağıtım dokümantasyonu "
 
 #: distutils/index.rst:17
 msgid ""
@@ -51,6 +52,10 @@ msgid ""
 "removed with the package. See the :ref:`What's New <distutils-deprecated>` "
 "entry for more information."
 msgstr ""
+"Tüm ``distutils`` paketi artık kullanılmamaktadır ve Python 3.12'de tamamen "
+"kaldırılacaktır. Bu dokümantasyon yalnızca referans olarak tutulur ve "
+"paketin kaldırılmasıyla birlikte bu belge de kaldırılacaktır. Daha fazla "
+"bilgi için :ref:`What's New <distutils-deprecated>` girişine bakın."
 
 #: distutils/_setuptools_disclaimer.rst:3
 msgid ""
@@ -58,6 +63,9 @@ msgid ""
 "documentation at https://setuptools.readthedocs.io/en/latest/setuptools.html "
 "independently covers all of the relevant information currently included here."
 msgstr ""
+"Bu dokümantasyon, https://setuptools.readthedocs.io/en/latest/setuptools."
+"html adresindeki ``setuptools`` dokümantasyonu burada bulunan tüm bilgileri "
+"kapsayana kadar saklanacaktır."
 
 #: distutils/index.rst:26
 msgid ""
@@ -67,6 +75,12 @@ msgid ""
 "recommendations section <https://packaging.python.org/guides/tool-"
 "recommendations/>`__ in the Python Packaging User Guide for more information."
 msgstr ""
+"Bu rehber yalnızca, Python'un bu sürümünün bir parçası olarak sağlanan "
+"uzantıları oluşturmaya ve dağıtmaya yönelik temel araçları kapsar. Üçüncü "
+"taraf araçlar, kullanımı daha kolay ve daha güvenli alternatifler sunar. "
+"Daha fazla bilgi için Python Paketleme Kullanıcı Kılavuzundaki `hızlı "
+"tavsiyeler bölümüne <https://packaging.python.org/guides/tool-"
+"recommendations/>`__ bakın."
 
 #: distutils/index.rst:32
 msgid ""
@@ -75,3 +89,8 @@ msgid ""
 "capabilities that ``setuptools`` builds on to allow Python developers to "
 "make Python modules and extensions readily available to a wider audience."
 msgstr ""
+"Bu dokümantasyon, modül geliştiricisinin bakış açısından Python Dağıtım "
+"Yardımcı Programlarını (\"Distutils\") açıklar ve Python geliştiricilerinin "
+"Python modüllerini ve uzantılarını daha geniş bir kitle için hazır hale "
+"getirmesine olanak sağlamak amacıyla ``setuptools`` 'un geliştirdiği temel "
+"işlevleri açıklar."

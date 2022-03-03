@@ -2,27 +2,28 @@
 # Copyright (C) 2001-2021, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-12-27 22:33+0300\n"
+"Last-Translator: \n"
+"Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: tutorial/venv.rst:6
 msgid "Virtual Environments and Packages"
-msgstr ""
+msgstr "Sanal Ortamlar ve Paketler"
 
 #: tutorial/venv.rst:9
 msgid "Introduction"
-msgstr ""
+msgstr "Tanıtım"
 
 #: tutorial/venv.rst:11
 msgid ""
@@ -32,6 +33,11 @@ msgid ""
 "bug has been fixed or the application may be written using an obsolete "
 "version of the library's interface."
 msgstr ""
+"Python uygulamaları genellikle standart kütüphanenin bir parçası olmayan "
+"paketleri ve modülleri kullanır.  Uygulama bazen kütüphanenin spesifik bir "
+"sürümüne ihtiyaç duyar, çünkü uygulama belirli bir hatanın düzeltilmiş "
+"olmasını veya uygulamanın kütüphanenin arabiriminin eski bir sürümü "
+"kullanılarak yazılmasını gerektirebilir."
 
 #: tutorial/venv.rst:17
 msgid ""
@@ -41,6 +47,11 @@ msgid ""
 "are in conflict and installing either version 1.0 or 2.0 will leave one "
 "application unable to run."
 msgstr ""
+"Bu, bir Python yüklemesinin, her uygulamanın gereksinimlerini karşılamasının "
+"mümkün olmayabileceği anlamına gelir.  Bir A uygulaması belirli bir modülün "
+"1.0 sürümüne, bir B uygulaması ise 2.0 sürümüne ihtiyaç duyuyorsa, "
+"sürümlerin farklı olmasından dolayı versiyon 1.0 veya 2.0'ı yüklemek A veya "
+"B uygulamasından birini çalışmaz hale getirecektir."
 
 #: tutorial/venv.rst:23
 msgid ""
@@ -48,6 +59,9 @@ msgid ""
 "self-contained directory tree that contains a Python installation for a "
 "particular version of Python, plus a number of additional packages."
 msgstr ""
+"Bu sorunun çözümü, spesifik bir Python sürümü için Python yüklemesi ve bir "
+"dizi ek paket içeren bağımsız bir dizin ağacı olan :term:`virtual "
+"environment` (sanal ortam) oluşturmaktır."
 
 #: tutorial/venv.rst:27
 msgid ""
@@ -58,10 +72,15 @@ msgid ""
 "application B requires a library be upgraded to version 3.0, this will not "
 "affect application A's environment."
 msgstr ""
+"Bu sayede farklı uygulamalar farklı sanal ortamlar kullanabilir. Çakışan "
+"gereksinimlerin önceki örneğini çözmek için, A uygulamasının sanal ortamında "
+"sürüm 1.0 yüklüyken, B uygulamasının sanal ortamında sürüm 2.0 yüklü "
+"olabilir. B uygulaması bir kitaplığın sürüm 3.0'a yükseltilmesini "
+"gerektiriyorsa, bu uygulama A'nın ortamını etkilemez."
 
 #: tutorial/venv.rst:36
 msgid "Creating Virtual Environments"
-msgstr ""
+msgstr "Sanal Ortamlar Oluşturma"
 
 #: tutorial/venv.rst:38
 msgid ""
@@ -71,6 +90,10 @@ msgid ""
 "system, you can select a specific Python version by running ``python3`` or "
 "whichever version you want."
 msgstr ""
+"Sanal ortamlar oluşturmak ve yönetmek için kullanılan modüle :mod:`venv` "
+"denir.  :mod:`venv` genellikle mevcut olan en son Python sürümünü yükler. "
+"Sisteminizde birden fazla Python sürümü varsa, ``python3`` veya istediğiniz "
+"sürümü çalıştırarak belirli bir Python sürümünü seçebilirsiniz."
 
 #: tutorial/venv.rst:44
 msgid ""
@@ -78,6 +101,8 @@ msgid ""
 "place it, and run the :mod:`venv` module as a script with the directory "
 "path::"
 msgstr ""
+"Sanal ortam oluşturmak için, yerleştirmek istediğiniz dizine karar verin ve :"
+"mod:`venv` modülünü dizin yolu ile bir komut dosyası olarak çalıştırın::"
 
 #: tutorial/venv.rst:49
 msgid ""
@@ -85,6 +110,9 @@ msgid ""
 "also create directories inside it containing a copy of the Python "
 "interpreter and various supporting files."
 msgstr ""
+"Bu, eğer yoksa ``tutorial-env`` dizinini oluşturur ve ayrıca Python "
+"derleyicisinin bir kopyasını ve çeşitli destekleyici dosyaları içeren "
+"dizinler oluşturur."
 
 #: tutorial/venv.rst:53
 msgid ""
@@ -94,18 +122,22 @@ msgid ""
 "prevents clashing with ``.env`` environment variable definition files that "
 "some tooling supports."
 msgstr ""
+"Sanal ortam için ortak bir dizin konumu ``.venv``dir. Bu ad, dizini "
+"genellikle kabuğunuzda gizli tutar ve böylece dizinin neden var olduğunu "
+"açıklayan bir ad verirken aradan uzak tutar. Ayrıca, bazı araç çalıştırmanın "
+"desteklediği ``.env`` ortam değişkeni tanım dosyalarıyla çakışmayı önler."
 
 #: tutorial/venv.rst:59
 msgid "Once you've created a virtual environment, you may activate it."
-msgstr ""
+msgstr "Sanal bir ortam oluşturduktan sonra onu etkinleştirebilirsiniz."
 
 #: tutorial/venv.rst:61
 msgid "On Windows, run::"
-msgstr ""
+msgstr "Windows'da çalıştır::"
 
 #: tutorial/venv.rst:65
 msgid "On Unix or MacOS, run::"
-msgstr ""
+msgstr "Unix veya MacOS'ta çalıştır::"
 
 #: tutorial/venv.rst:69
 msgid ""
@@ -113,6 +145,9 @@ msgid ""
 "or :program:`fish` shells, there are alternate ``activate.csh`` and "
 "``activate.fish`` scripts you should use instead.)"
 msgstr ""
+"(Bu komut dosyası bash kabuğu için yazılmıştır.  Eğer :program:`csh` veya :"
+"program:`fish` kabuklarını kullanıyorsanız, bunun yerine ``activate.csh`` "
+"veya ``activate.fish`` komut dosyalarını kullanmanız gerekmektedir.)"
 
 #: tutorial/venv.rst:74
 msgid ""
@@ -121,10 +156,14 @@ msgid ""
 "running ``python`` will get you that particular version and installation of "
 "Python. For example:"
 msgstr ""
+"Sanal ortamı etkinleştirmek, hangi sanal ortamı kullandığınızı göstermek "
+"için kabuğunuzun görünüşünü değiştirir ve ortamı değiştirerek ``python`` "
+"komutunun belirlediğiniz spesifik Python kurulumunu ve sürümünü "
+"çalıştırmasını sağlar. Mesela:"
 
 #: tutorial/venv.rst:93
 msgid "Managing Packages with pip"
-msgstr ""
+msgstr "Paketleri pip ile Yönetme"
 
 #: tutorial/venv.rst:95
 msgid ""
@@ -133,6 +172,10 @@ msgid ""
 "Package Index, <https://pypi.org>.  You can browse the Python Package Index "
 "by going to it in your web browser."
 msgstr ""
+":program:`pip` adlı bir program kullanarak paketleri yükleyebilir, "
+"yükseltebilir ve kaldırabilirsiniz.  Varsayılan olarak ``pip``, <https://"
+"pypi.org> Python Paket Dizini'nden paketler yükler.  Python Paket Dizini'ne "
+"web tarayıcınızdan giderek göz atabilirsiniz."
 
 #: tutorial/venv.rst:100
 msgid ""
@@ -140,18 +183,23 @@ msgid ""
 "etc.  (Consult the :ref:`installing-index` guide for complete documentation "
 "for ``pip``.)"
 msgstr ""
+"``pip`` bir dizi alt komut içerir: \"install\" (yükle), \"uninstall"
+"\" (kaldır), \"freeze\" (dondur), vb.  (``pip`` için eksiksiz dokümantasyon "
+"için :ref:`installing-index` rehberine bakın.)"
 
 #: tutorial/venv.rst:104
 msgid ""
 "You can install the latest version of a package by specifying a package's "
 "name:"
-msgstr ""
+msgstr "Paketin adını belirterek paketin en son sürümünü yükleyebilirsiniz:"
 
 #: tutorial/venv.rst:115
 msgid ""
 "You can also install a specific version of a package by giving the package "
 "name  followed by ``==`` and the version number:"
 msgstr ""
+"Paketin belirli bir sürümünü, paket adını ve ardından ``==`` ve sürüm "
+"numarasını vererek de yükleyebilirsiniz:"
 
 #: tutorial/venv.rst:126
 msgid ""
@@ -160,22 +208,28 @@ msgid ""
 "number to get that version, or you can run ``pip install --upgrade`` to "
 "upgrade the package to the latest version:"
 msgstr ""
+"Bu komutu yeniden çalıştırırsanız, ``pip`` istenen sürümün zaten yüklü "
+"olduğunu fark eder ve hiçbir şey yapmaz.  Bu sürüme erişmek için farklı bir "
+"sürüm numarası edinebilir veya paketi en son sürüme yükseltmek için ``pip "
+"install --upgrade`` komutunu çalıştırabilirsiniz:"
 
 #: tutorial/venv.rst:141
 msgid ""
 "``pip uninstall`` followed by one or more package names will remove the "
 "packages from the virtual environment."
 msgstr ""
+"``pip uninstall`` ve ardından bir veya daha fazla paket adı paketleri sanal "
+"ortamdan kaldırır."
 
 #: tutorial/venv.rst:144
 msgid "``pip show`` will display information about a particular package:"
-msgstr ""
+msgstr "``pip show`` belirli bir paketle ilgili bilgileri görüntüler:"
 
 #: tutorial/venv.rst:161
 msgid ""
 "``pip list`` will display all of the packages installed in the virtual "
 "environment:"
-msgstr ""
+msgstr "``pip list`` sanal ortamda yüklü tüm paketleri görüntüler:"
 
 #: tutorial/venv.rst:173
 msgid ""
@@ -183,6 +237,9 @@ msgid ""
 "the output uses the format that ``pip install`` expects. A common convention "
 "is to put this list in a ``requirements.txt`` file:"
 msgstr ""
+"``pip freeze`` yüklü paketlerin benzer bir listesini oluşturur, ancak çıktı "
+"``pip install`` beklediği biçimi kullanır. Genel bir kullanım, bu listeyi "
+"bir ``requirements.txt`` dosyasına koymaktır:"
 
 #: tutorial/venv.rst:185
 msgid ""
@@ -190,6 +247,9 @@ msgid ""
 "shipped as part of an application.  Users can then install all the necessary "
 "packages with ``install -r``:"
 msgstr ""
+"``requirements.txt`` daha sonra sürüm denetimine kaydedilebilir ve bir "
+"uygulamanın parçası olarak gönderilebilir.  Kullanıcılar daha sonra gerekli "
+"tüm paketleri ``install -r`` ile yükleyebilir:"
 
 #: tutorial/venv.rst:202
 msgid ""
@@ -198,3 +258,7 @@ msgid ""
 "want to make it available on the Python Package Index, consult the :ref:"
 "`distributing-index` guide."
 msgstr ""
+"``pip`` daha birçok seçeneğe sahiptir.  ``pip`` için eksiksiz "
+"dokümantasyona :ref:`installing-index` adresinden ulaşabilirsiniz.  Bir "
+"paket yazdığınızda ve paketi Python Paket Dizini'nde kullanılabilir hale "
+"getirmek istediğinizde :ref:`distributing-index` rehberine bakın."
