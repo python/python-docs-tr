@@ -37,10 +37,6 @@ jobs:
         # Install dependencies
       - name: Install dependencies
         run: sudo apt install gettext
-        
-        # Clone CPython repository
-      - name: Clone CPython repository
-        run: git clone https://github.com/python/cpython ../cpython/
 
         # Wrap all po files
       - name: Wrap
