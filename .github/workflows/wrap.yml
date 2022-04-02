@@ -1,9 +1,10 @@
 name: "Wrap"
 
 on:
+  workflow_dispatch:
   pull_request: 
     branches: [ "**" ]
-
+  
 jobs: 
   wrap:
     runs-on: ubuntu-latest
