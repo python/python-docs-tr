@@ -42,9 +42,9 @@ jobs:
       - name: Clone CPython repository
         run: git clone https://github.com/python/cpython ../cpython/
 
-        # Wrap changed files
+        # Wrap all po files
       - name: Wrap
-        run: make wrap fix=1
+        run: powrap *.po **/*.po
         
         # Detect changed files
       - name: Detect changed files
