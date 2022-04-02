@@ -1,9 +1,6 @@
-name: "Wrap"
+name: "Wrap all po files in branch"
 
-on:
-  workflow_dispatch:
-  pull_request: 
-    branches: [ "**" ]
+on: workflow_dispatch
 
 jobs: 
   wrap:
@@ -18,9 +15,6 @@ jobs:
         # Checkout the latest code from the repo
       - name: Checkout repo
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.ref }}
 
         # Setup which version of Python to use
       - name: Set Up Python ${{ matrix.python-version }}
@@ -44,26 +38,10 @@ jobs:
       - name: Install dependencies
         run: sudo apt install gettext
 
-        # Detect changed files
-      - name: Detect changed files
-        run: echo "CHANGED_FILES=$(python .github/workflows/get-changes.py --pull ${{ github.event.pull_request.number }} | tr '\n' ' ')" >> $GITHUB_ENV
-
         # Wrap changed files
       - name: Wrap
-        run: |
-          array=($CHANGED_FILES)
-          len=${#array[@]}
-          if [[ $len -eq 0 ]]; then
-              echo "No files to wrap"
-          else
-              for file in ${CHANGED_FILES}; do
-                  if [[ $file == *.po ]]; then
-                      echo "Wrapping $file"
-                      powrap $file
-                  fi
-              done
-          fi
-
+        run: make wrap fix=1
+        
         # Detect changed files
       - name: Detect changed files
         run: echo "WRAPPED=$(git diff --name-only | tr '\n' ' ')" >> $GITHUB_ENV
@@ -84,11 +62,10 @@ jobs:
               git commit -m "Wrap translations"
               echo "WRAPPED=True" >> $GITHUB_ENV
           fi
-
         # Push changes
       - name: Push changes
         if: env.WRAPPED == 'True'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.event.pull_request.head.ref }}
+          branch: ${GITHUB_REF_NAME}

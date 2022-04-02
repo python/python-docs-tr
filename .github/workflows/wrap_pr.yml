@@ -1,0 +1,93 @@
+name: "Wrap"
+
+on:
+  pull_request: 
+    branches: [ "**" ]
+
+jobs: 
+  wrap:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        # Run in all these versions of Python
+        python-version: ["3.10"]
+
+    steps:
+        # Checkout the latest code from the repo
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
+
+        # Setup which version of Python to use
+      - name: Set Up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+        # Display the Python version being used
+      - name: Display Python version
+        run: python -c "import sys; print(sys.version)"
+
+        # Update pip
+      - name: Update pip
+        run: python -m pip install --upgrade pip
+
+        # Install requirements.
+      - name: Install requirements
+        run: python -m pip install --upgrade -r requirements.txt
+
+        # Install dependencies
+      - name: Install dependencies
+        run: sudo apt install gettext
+
+        # Detect changed files
+      - name: Detect changed files
+        run: echo "CHANGED_FILES=$(python .github/workflows/get-changes.py --pull ${{ github.event.pull_request.number }} | tr '\n' ' ')" >> $GITHUB_ENV
+
+        # Wrap changed files
+      - name: Wrap
+        run: |
+          array=($CHANGED_FILES)
+          len=${#array[@]}
+          if [[ $len -eq 0 ]]; then
+              echo "No files to wrap"
+          else
+              for file in ${CHANGED_FILES}; do
+                  if [[ $file == *.po ]]; then
+                      echo "Wrapping $file"
+                      powrap $file
+                  fi
+              done
+          fi
+
+        # Detect changed files
+      - name: Detect changed files
+        run: echo "WRAPPED=$(git diff --name-only | tr '\n' ' ')" >> $GITHUB_ENV
+
+        # Commit changes
+      - name: Commit changes
+        run: |
+          array=($WRAPPED)
+          len=${#array[@]}
+          if [[ $len -eq 0 ]]; then
+              echo "No files to commit"
+              echo "WRAPPED=False" >> $GITHUB_ENV
+          else
+              echo "Committing changes"
+              git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+              git config --local user.name "github-actions[bot]"
+              git add ${WRAPPED}
+              git commit -m "Wrap translations"
+              echo "WRAPPED=True" >> $GITHUB_ENV
+          fi
+
+        # Push changes
+      - name: Push changes
+        if: env.WRAPPED == 'True'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.event.pull_request.head.ref }}
