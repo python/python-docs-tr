@@ -3,23 +3,24 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-03-03 01:11+0300\n"
+"Last-Translator: \n"
+"Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: extending/embedding.rst:8
 msgid "Embedding Python in Another Application"
-msgstr ""
+msgstr "Python'ı Başka Bir Uygulamaya Gömme"
 
 #: extending/embedding.rst:10
 msgid ""
@@ -33,6 +34,15 @@ msgid ""
 "writing some scripts in Python.  You can also use it yourself if some of the "
 "functionality can be written in Python more easily."
 msgstr ""
+"Önceki bölümlerde Python'un nasıl genişletileceği, yani Python'a bir C "
+"fonksiyonları kitaplığı ekleyerek Python'un işlevselliğinin nasıl "
+"genişletileceği tartışıldı. Bunu ayrıca tam tersi şekilde de yapmak "
+"mümkündür: Python'u içine gömerek C/C++ uygulamanızı zenginleştirin. Gömme "
+"işlemi, uygulamanıza bazı işlevlerini C veya C++ yerine Python'da uygulama "
+"yeteneği sağlar. Bu birçok amaç için kullanılabilir; bir örnek olarak "
+"kullanıcıların Python'da bazı komut dosyaları yazarak uygulamayı "
+"ihtiyaçlarına göre uyarlamalarına izin vermek olabilir. Bazı işlevler "
+"Python'da daha kolay yazılabilecekse kendiniz de kullanabilirsiniz."
 
 #: extending/embedding.rst:20
 msgid ""
@@ -42,6 +52,12 @@ msgid ""
 "nothing to do with Python --- instead, some parts of the application "
 "occasionally call the Python interpreter to run some Python code."
 msgstr ""
+"Python'u gömmek, onu genişletmeye benzer, ancak tam olarak değil. "
+"Aralarındaki farksa Python'u genişlettiğinizde, uygulamanın ana programının "
+"hala Python yorumlayıcısı olması; Python'u gömerseniz, ana programın Python "
+"ile hiçbir ilgisi olmayabilmesidir --- bunun yerine, uygulamanın bazı "
+"bölümleri bazı Python kodlarını çalıştırmak için zaman zaman Python "
+"yorumlayıcısını çağırır."
 
 #: extending/embedding.rst:26
 msgid ""
@@ -52,6 +68,12 @@ msgid ""
 "Python.  Then later you can call the interpreter from any part of the "
 "application."
 msgstr ""
+"Yani Python'u gömüyorsanız, kendi ana programınızı sağlıyorsunuz demektir. "
+"Bu ana programın yapması gereken şeylerden biri Python yorumlayıcısını "
+"başlatmaktır. En azından :c:func:`Py_Initialize` fonksiyonunu "
+"çağırmalısınız. Python'a komut satırı argümanlarını iletmek için opsiyonel "
+"çağrılar vardır. Daha sonra uygulamanın herhangi bir yerinden yorumlayıcıyı "
+"çağırabilirsiniz."
 
 #: extending/embedding.rst:32
 msgid ""
@@ -62,20 +84,28 @@ msgid ""
 "level operations described in the previous chapters to construct and use "
 "Python objects."
 msgstr ""
+"Yorumlayıcıyı çağırmanın birkaç farklı yolu vardır: Python deyimlerini "
+"içeren bir dizeyi :c:func:`PyRun_SimpleString` öğesine veya bir stdio dosya "
+"işaretçisini ve bir dosya adını (yalnızca hata mesajlarında tanımlama için) "
+"c:func:`PyRun_SimpleFile` 'a iletebilirsiniz. Python nesnelerini oluşturmak "
+"ve kullanmak için önceki bölümlerde açıklanan alt düzey işlemleri de "
+"çağırabilirsiniz."
 
 #: extending/embedding.rst:42
 msgid ":ref:`c-api-index`"
-msgstr ""
+msgstr ":ref:`c-api-index`"
 
 #: extending/embedding.rst:42
 msgid ""
 "The details of Python's C interface are given in this manual. A great deal "
 "of necessary information can be found here."
 msgstr ""
+"Python'un C arayüzünün detayları bu kılavuzda verilmiştir. Çok sayıda "
+"gerekli bilgi burada bulunabilir."
 
 #: extending/embedding.rst:49
 msgid "Very High Level Embedding"
-msgstr ""
+msgstr "Çok Üst Düzey Gömme"
 
 #: extending/embedding.rst:51
 msgid ""
@@ -84,6 +114,10 @@ msgid ""
 "needing to interact with the application directly. This can for example be "
 "used to perform some operation on a file. ::"
 msgstr ""
+"Python'u gömmenin en basit şekli, çok yüksek seviyeli arayüzün "
+"kullanılmasıdır. Bu arabirim, uygulamayla doğrudan etkileşime girmeye gerek "
+"kalmadan bir Python betiği yürütmeyi amaçlamaktadır. Bu örnek olarak bir "
+"dosya üzerinde bazı işlemler gerçekleştirmek için kullanılabilir. ::"
 
 #: extending/embedding.rst:78
 msgid ""
@@ -99,10 +133,21 @@ msgid ""
 "which saves you the trouble of allocating memory space and loading the file "
 "contents."
 msgstr ""
+":c:func:`Py_SetProgramName` işlevi, yorumlayıcıyı Python çalışma zamanı "
+"kitaplıklarına giden yollar hakkında bilgilendirmek için :c:func:"
+"`Py_Initialize` öncesinde çağrılmalıdır. Ardından, Python yorumlayıcısı :c:"
+"func:`Py_Initialize` ile başlatılır, ardından tarih ve saati yazdıran sabit "
+"kodlanmış bir Python betiği yürütülür. Daha sonra, :c:func:`Py_FinalizeEx` "
+"çağrısı yorumlayıcıyı kapatır ve ardından programın sonu gelir. Gerçek bir "
+"programda, Python betiğini başka bir kaynaktan, belki bir metin düzenleyici "
+"rutininden, bir dosyadan veya bir veri tabanından almak isteyebilirsiniz. "
+"Python kodunu bir dosyadan almak, sizi bellek alanı ayırma ve dosya "
+"içeriğini yükleme zahmetinden kurtaran :c:func:`PyRun_SimpleFile` işlevi "
+"kullanılarak daha iyi yapılabilir."
 
 #: extending/embedding.rst:93
 msgid "Beyond Very High Level Embedding: An overview"
-msgstr ""
+msgstr "Çok Yüksek Düzeyde Gömmenin Ötesinde: Genel Bir Bakış"
 
 #: extending/embedding.rst:95
 msgid ""
@@ -112,6 +157,11 @@ msgid ""
 "calls. At the cost of having to write more C code, you can achieve almost "
 "anything."
 msgstr ""
+"Yüksek seviyeli arayüz size uygulamanızdan rastgele Python kodu parçalarını "
+"yürütme yeteneği verir, ancak veri değerleri alışverişi en hafif tabirle "
+"oldukça zahmetlidir. Bunu istiyorsanız, daha düşük seviyeli aramalar "
+"kullanmalısınız. Daha fazla C kodu yazmak zorunda kalma pahasına neredeyse "
+"her şeyi başarabilirsiniz. "
 
 #: extending/embedding.rst:100
 msgid ""
@@ -120,36 +170,43 @@ msgid ""
 "previous chapters are still valid. To show this, consider what the extension "
 "code from Python to C really does:"
 msgstr ""
+"Farklı amaçlara rağmen Python'u genişletmek ve Python'u gömmek tamamen aynı "
+"aktivitedir. Önceki bölümlerde tartışılan konuların çoğu hala geçerlidir. "
+"Bunu göstermek için Python'dan C'ye uzantı kodunun gerçekten ne yaptığını "
+"düşünün: "
 
 #: extending/embedding.rst:105
 msgid "Convert data values from Python to C,"
-msgstr ""
+msgstr "Veri değerlerini Python'dan C'ye çevirin,"
 
 #: extending/embedding.rst:107
 msgid "Perform a function call to a C routine using the converted values, and"
 msgstr ""
+"Çevrilen değerleri kullanarak bir C rutinine bir fonksiyon çağrısı yapın, ve"
 
 #: extending/embedding.rst:109
 msgid "Convert the data values from the call from C to Python."
-msgstr ""
+msgstr "Çağrıdaki veri değerlerini C'den Python'a çevirin."
 
 #: extending/embedding.rst:111
 msgid "When embedding Python, the interface code does:"
-msgstr ""
+msgstr "Python'u yerleştirirken, arayüz kodu şunları yapar: "
 
 #: extending/embedding.rst:113
 msgid "Convert data values from C to Python,"
-msgstr ""
+msgstr "Veri değerlerini C'den Python'a çevirin,"
 
 #: extending/embedding.rst:115
 msgid ""
 "Perform a function call to a Python interface routine using the converted "
 "values, and"
 msgstr ""
+"Çevrilen değerleri kullanarak bir Python arabirim rutinine bir fonksiyon "
+"çağrısı gerçekleştirin ve"
 
 #: extending/embedding.rst:118
 msgid "Convert the data values from the call from Python to C."
-msgstr ""
+msgstr "Çağrıdaki veri değerlerini C'den Python'a dönüştürün. "
 
 #: extending/embedding.rst:120
 msgid ""
@@ -158,6 +215,10 @@ msgid ""
 "is the routine that you call between both data conversions. When extending, "
 "you call a C routine, when embedding, you call a Python routine."
 msgstr ""
+"Gördüğünüz gibi, veri dönüştürme adımları, diller arası aktarımın farklı "
+"yönüne uyum sağlamak için basitçe değiştirilir. Tek fark, her iki veri "
+"dönüşümü arasında çağırdığınız rutindir. Uzatırken C rutini çağırırsınız, "
+"gömerken Python rutini çağırırsınız."
 
 #: extending/embedding.rst:125
 msgid ""
@@ -166,10 +227,15 @@ msgid ""
 "be understood.  Since these aspects do not differ from extending the "
 "interpreter, you can refer to earlier chapters for the required information."
 msgstr ""
+"Bu bölüm, verilerin Python'dan C'ye nasıl dönüştürüleceğini ve bunun tam "
+"tersini tartışmayacaktır. Ayrıca, referansların doğru kullanımı ve hataların "
+"ele alınmasının anlaşıldığı varsayılmaktadır. Bu hususlar, yorumlayıcının "
+"genişletilmesinden farklı olmadığı için, gerekli bilgiler için önceki "
+"bölümlere başvurabilirsiniz."
 
 #: extending/embedding.rst:134
 msgid "Pure Embedding"
-msgstr ""
+msgstr "Saf Gömme"
 
 #: extending/embedding.rst:136
 msgid ""
@@ -178,10 +244,14 @@ msgid ""
 "directly interact with the application (but that will change in the next "
 "section)."
 msgstr ""
+"İlk program, bir Python betiğinde bir fonksiyonu çalıştırmayı amaçlar. Çok "
+"yüksek seviyeli arayüzle ilgili bölümde olduğu gibi, Python yorumlayıcısı "
+"uygulama ile doğrudan etkileşime girmez (ancak bu bir sonraki bölümde "
+"değişecektir)."
 
 #: extending/embedding.rst:141
 msgid "The code to run a function defined in a Python script is:"
-msgstr ""
+msgstr "Python betiğinde tanımlanan bir işlevi çalıştırma kodu:"
 
 #: extending/embedding.rst:146
 msgid ""
@@ -191,10 +261,16 @@ msgid ""
 "(let's call the finished executable :program:`call`), and use it to execute "
 "a Python script, such as:"
 msgstr ""
+"Bu kod, ``argv[1]`` kullanarak bir Python betiği yükler ve ``argv[2]`` "
+"içinde adlandırılan fonksiyonu çağırır. Tamsayı argümanları, \"argv\" "
+"dizisinin diğer değerleridir. Bu programı :ref:`derler, <compiling>`  ve "
+"bağlarsanız (bitmiş yürütülebilir dosyayı :program:`call` olarak "
+"adlandıralım) ve onu aşağıdaki gibi bir Python betiğini çalıştırmak için "
+"kullanırsanız:"
 
 #: extending/embedding.rst:161
 msgid "then the result should be:"
-msgstr ""
+msgstr "o zaman sonuç olmalıdır:"
 
 #: extending/embedding.rst:169
 msgid ""
@@ -202,6 +278,9 @@ msgid ""
 "is for data conversion between Python and C, and for error reporting.  The "
 "interesting part with respect to embedding Python starts with ::"
 msgstr ""
+"Program işlevselliği açısından oldukça büyük olmasına rağmen, kodun çoğu "
+"Python ve C arasında veri dönüştürme ve hata raporlama içindir. Python'u "
+"gömmekle ilgili ilginç kısım şununla başlar ::"
 
 #: extending/embedding.rst:178
 msgid ""
@@ -210,6 +289,10 @@ msgid ""
 "which is constructed using the :c:func:`PyUnicode_FromString` data "
 "conversion routine. ::"
 msgstr ""
+"Yorumlayıcıyı başlattıktan sonra komut dosyası :c:func:`PyImport_Import` "
+"kullanılarak yüklenir. Bu rutin, argümanı olarak :c:func:"
+"`PyUnicode_FromString` veri dönüştürme rutini kullanılarak oluşturulan bir "
+"Python dizesine ihtiyaç duyar. ::"
 
 #: extending/embedding.rst:191
 msgid ""
@@ -219,6 +302,11 @@ msgid ""
 "proceeds by constructing a tuple of arguments as normal.  The call to the "
 "Python function is then made with::"
 msgstr ""
+"Komut dosyası yüklendikten sonra, aradığımız ad :c:func:"
+"`PyObject_GetAttrString` kullanılarak alınır. Ad varsa ve döndürülen nesne "
+"çağrılabilirse bunun bir fonksiyon olduğunu güvenle varsayabilirsiniz. "
+"Program daha sonra normal olarak bir dizi argüman oluşturarak devam eder. "
+"Python işlevine yapılan çağrı şu şekilde yapılır:"
 
 #: extending/embedding.rst:199
 msgid ""
@@ -226,10 +314,13 @@ msgid ""
 "reference to the return value of the function.  Be sure to release the "
 "reference after examining the value."
 msgstr ""
+"Fonksiyon döndürüldüğünde, ``pValue`` ya ``NULL`` olur ya da fonksiyonun "
+"dönüş değerine bir başvuru içerir. Değeri inceledikten sonra referans "
+"bıraktığınızdan emin olun."
 
 #: extending/embedding.rst:207
 msgid "Extending Embedded Python"
-msgstr ""
+msgstr "Gömülü Python'u Genişletme"
 
 #: extending/embedding.rst:209
 msgid ""
@@ -242,12 +333,22 @@ msgid ""
 "and write some glue code that gives Python access to those routines, just "
 "like you would write a normal Python extension.  For example::"
 msgstr ""
+"Şimdiye kadar, gömülü Python yorumlayıcısının uygulamanın kendisinden "
+"işlevselliğe erişimi yoktu. Python API, gömülü yorumlayıcıyı genişleterek "
+"buna izin verir. Yani, gömülü yorumlayıcı, uygulama tarafından sağlanan "
+"rutinlerle genişletilir. Kulağa karmaşık gelse de, o kadar da kötü değil. "
+"Uygulamanın Python yorumlayıcısını başlattığını bir süreliğine unutun. Bunun "
+"yerine, uygulamayı bir dizi altyordam olarak düşünün ve tıpkı normal bir "
+"Python uzantısı yazacağınız gibi, Python'un bu rutinlere erişmesini sağlayan "
+"bir tutkal kodu yazın. Örneğin::"
 
 #: extending/embedding.rst:246
 msgid ""
 "Insert the above code just above the :c:func:`main` function. Also, insert "
 "the following two statements before the call to :c:func:`Py_Initialize`::"
 msgstr ""
+"Yukarıdaki kodu :c:func:`main` fonksiyonunun hemen üstüne ekleyin. Ayrıca, :"
+"c:func:`Py_Initialize`: çağrısından önce aşağıdaki iki ifadeyi ekleyin::"
 
 #: extending/embedding.rst:252
 msgid ""
@@ -255,16 +356,20 @@ msgid ""
 "numargs` function accessible to the embedded Python interpreter. With these "
 "extensions, the Python script can do things like"
 msgstr ""
+"Bu iki satır ``numargs`` değişkenini başlatır ve :func:`emb.numargs` "
+"fonksiyonunu gömülü Python yorumlayıcısı için erişilebilir kılar. Bu "
+"uzantılarla Python betiği şekilde gibi şeyler yapabilir"
 
 #: extending/embedding.rst:261
 msgid ""
 "In a real application, the methods will expose an API of the application to "
 "Python."
 msgstr ""
+"Gerçek bir uygulamada, yöntemler uygulamanın API'sini Python'a gösterir."
 
 #: extending/embedding.rst:271
 msgid "Embedding Python in C++"
-msgstr ""
+msgstr "Python'u C++'a Gömmek"
 
 #: extending/embedding.rst:273
 msgid ""
@@ -274,10 +379,15 @@ msgid ""
 "and link your program.  There is no need to recompile Python itself using C+"
 "+."
 msgstr ""
+"Python'u bir C++ programına yerleştirmek de mümkündür; bunun tam olarak "
+"nasıl yapılacağı, kullanılan C++ sisteminin ayrıntılarına bağlı olacaktır; "
+"genel olarak ana programı C++ ile yazmanız ve programınızı derlemek ve "
+"bağlamak için C++ derleyicisini kullanmanız gerekecektir. Python'un "
+"kendisini C++ kullanarak yeniden derlemeye gerek yoktur."
 
 #: extending/embedding.rst:282
 msgid "Compiling and Linking under Unix-like systems"
-msgstr ""
+msgstr "Unix benzeri sistemler altında Derleme ve Bağlama"
 
 #: extending/embedding.rst:284
 msgid ""
@@ -286,6 +396,11 @@ msgid ""
 "application, particularly because Python needs to load library modules "
 "implemented as C dynamic extensions (:file:`.so` files) linked against it."
 msgstr ""
+"Python yorumlayıcısını uygulamanıza gömmek için derleyicinize (ve "
+"bağlayıcınıza) iletilecek doğru bayrakları bulmak mutlaka önemli değildir, "
+"özellikle Python'un C dinamik uzantıları buna karşı bağlatılı olan (:file:`."
+"so`  dosyaları) olarak uygulanan kitaplık modüllerini yüklemesi "
+"gerektiğinden."
 
 #: extending/embedding.rst:290
 msgid ""
@@ -295,18 +410,26 @@ msgid ""
 "available).  This script has several options, of which the following will be "
 "directly useful to you:"
 msgstr ""
+"Gerekli derleyici ve bağlayıcı bayraklarını bulmak için, yükleme işleminin "
+"bir parçası olarak oluşturulan :file:`python{XY}-config` betiğini "
+"çalıştırabilirsiniz (bir :file:`python3-config` betiği de mevcut olabilir). "
+"Bu komut dosyası, size doğrudan yardımcı olacak birkaç seçeneğe sahiptir:"
 
 #: extending/embedding.rst:296
 msgid ""
 "``pythonX.Y-config --cflags`` will give you the recommended flags when "
 "compiling:"
 msgstr ""
+"``pythonX.Y-config --cflags`` derleme sırasında size önerilen bayrakları "
+"verecektir:"
 
 #: extending/embedding.rst:304
 msgid ""
 "``pythonX.Y-config --ldflags`` will give you the recommended flags when "
 "linking:"
 msgstr ""
+"``pythonX.Y-config --ldflags``, bağlantı kurarken size önerilen bayrakları "
+"verecektir:"
 
 #: extending/embedding.rst:313
 msgid ""
@@ -315,6 +438,9 @@ msgid ""
 "that you use the absolute path to :file:`python{X.Y}-config`, as in the "
 "above example."
 msgstr ""
+"Birkaç Python kurulumu arasında (ve özellikle sistem Python ile kendi "
+"derlenmiş Python'unuz arasında) karışıklığı önlemek için, yukarıdaki örnekte "
+"olduğu gibi mutlak :file:`python{X.Y}-config` yolunu kullanmanız önerilir."
 
 #: extending/embedding.rst:318
 msgid ""
@@ -327,3 +453,11 @@ msgid ""
 "extract the configuration values that you will want to combine together.  "
 "For example:"
 msgstr ""
+"Bu prosedür sizin için işe yaramazsa (tüm Unix benzeri platformlar için "
+"çalışması garanti edilmez; ancak, memnuniyetle karşılıyoruz: :ref:`hata "
+"raporları <reporting-bugs>`) dinamik hakkında sisteminizin belgelerini "
+"okumanız gerekecektir ve/veya  Python'un :file:`Makefile` (konumunu bulmak "
+"için :func:`sysconfig.get_makefile_filename` kullanın) ve derleme "
+"seçeneklerini bağlamayı inceleyin. Bu durumda, :mod:`sysconfig` modülü, "
+"birleştirmek isteyeceğiniz konfigürasyon değerlerini programlı olarak "
+"çıkarmak için kullanışlı bir araçtır. Örneğin:"
