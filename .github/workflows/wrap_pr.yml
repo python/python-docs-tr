@@ -1,7 +1,6 @@
-name: "Wrap"
+name: "Wrap changed files in pull requests"
 
 on:
-  workflow_dispatch:
   pull_request: 
     branches: [ "**" ]
 
