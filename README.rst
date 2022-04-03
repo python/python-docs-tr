@@ -1,4 +1,4 @@
-Translation of the Python Documentation — tr
+Turkish Translation of the Official Python Documentation
 ============================================
 
 .. image:: https://travis-ci.org/python/python-docs-tr.svg?branch=3.10
