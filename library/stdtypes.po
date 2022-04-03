@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: 2022-02-20 18:26+0300\n"
+"PO-Revision-Date: 2022-04-03 18:26+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -82,8 +82,8 @@ msgid ""
 "built-in objects considered false:"
 msgstr ""
 "Varsayılan olarak, bir nesne, sınıfı \"False\" döndüren bir :meth:`__bool__` "
-"yöntemini veya nesneyle birlikte çağrıldığında sıfır döndüren bir :meth:"
-"`__len__` yöntemini tanımlamadıkça doğru kabul edilir. [1]_ Yanlış olarak "
+"metodunu veya nesneyle birlikte çağrıldığında sıfır döndüren bir :meth:"
+"`__len__` metodunu tanımlamadıkça doğru kabul edilir. [1]_ Yanlış olarak "
 "kabul edilen yerleşik nesnelerin çoğu:"
 
 #: library/stdtypes.rst:55
@@ -323,7 +323,7 @@ msgid ""
 "class defines the :meth:`~object.__eq__` method."
 msgstr ""
 "Normalde, bir sınıfın özdeş olmayan örnekleri, sınıf :meth:`~object.__eq__` "
-"yöntemini tanımlamadığı sürece eşit olmayan olarak karşılaştırılır."
+"metodunu tanımlamadığı sürece eşit olmayan olarak karşılaştırılır."
 
 #: library/stdtypes.rst:183
 msgid ""
@@ -334,7 +334,7 @@ msgid ""
 "meth:`~object.__eq__` are sufficient, if you want the conventional meanings "
 "of the comparison operators)."
 msgstr ""
-"Bir sınıfın örnekleri, sınıf yeterli yöntemleri tanımlamadıkça, aynı sınıfın "
+"Bir sınıfın örnekleri, sınıf yeterli metotları tanımlamadıkça, aynı sınıfın "
 "diğer örneklerine veya diğer nesne türlerine göre sıralanamaz :meth:`~object."
 "__lt__`, :meth:`~object.__le__` , :meth:`~object.__gt__` ve :meth:`~object."
 "__ge__` (karşılaştırma operatörlerin geleneksel anlamlarını istiyorsanız, :"
@@ -358,8 +358,8 @@ msgid ""
 "implement the :meth:`__contains__` method."
 msgstr ""
 "Aynı söz dizimsel önceliğe sahip iki işlem daha, :keyword:`in` ve :keyword:"
-"`not in`, :term:`iterable` olan veya :meth:`__contains__` yöntemini "
-"uygulayan türler tarafından desteklenir."
+"`not in`, :term:`iterable` olan veya :meth:`__contains__` metodunu uygulayan "
+"türler tarafından desteklenir."
 
 #: library/stdtypes.rst:205
 msgid "Numeric Types --- :class:`int`, :class:`float`, :class:`complex`"
@@ -1251,7 +1251,7 @@ msgid ""
 "methods, which together form the :dfn:`iterator protocol`:"
 msgstr ""
 "Yineleyici nesnelerinin kendilerinin, birlikte :dfn:`iterator protocol` 'ü "
-"oluşturan aşağıdaki iki yöntemi desteklemesi gerekir:"
+"oluşturan aşağıdaki iki metodu desteklemesi gerekir:"
 
 #: library/stdtypes.rst:798
 msgid ""
@@ -1296,7 +1296,7 @@ msgid ""
 "`StopIteration`, it must continue to do so on subsequent calls. "
 "Implementations that do not obey this property are deemed broken."
 msgstr ""
-"Bir yineleyicinin :meth:`~iterator.__next__` yöntemi :exc:`StopIteration` "
+"Bir yineleyicinin :meth:`~iterator.__next__` metodu :exc:`StopIteration` "
 "hatasını verdiğinde, sonraki çağrılarda bunu yapmaya devam etmelidir. Bu "
 "özelliğe uymayan uygulamalar bozuk sayılır."
 
@@ -1314,9 +1314,9 @@ msgid ""
 "found in :ref:`the documentation for the yield expression <yieldexpr>`."
 msgstr ""
 "Python'un :term:`generator`\\s, yineleyici protokolünü uygulamak için uygun "
-"bir yol sağlar.  Bir container nesnesinin :meth:`__iter__` yöntemi bir "
+"bir yol sağlar.  Bir container nesnesinin :meth:`__iter__` metodu bir "
 "oluşturucu olarak uygulanırsa, otomatik olarak :meth:`__iter__` ve :meth:"
-"`~generator.__next__` yöntemlerini sağlayan bir yineleyici nesne (teknik "
+"`~generator.__next__` metotlarını sağlayan bir yineleyici nesne (teknik "
 "olarak bir oluşturucu nesnesi) döndürür. Oluşturucular hakkında daha fazla "
 "bilgi :ref:`the documentation for the yield expression <yieldexpr>` "
 "adresinde bulunabilir."
@@ -2276,6 +2276,9 @@ msgid ""
 "provide features such as containment tests, element index lookup, slicing "
 "and support for negative indices (see :ref:`typesseq`):"
 msgstr ""
+"Aralık (range) nesneleri :class:`collections.abc.Sequence` ABC'sini uygular "
+"ve sınırlama testleri, eleman indeksi araması, dilimleme ve negatif "
+"indeksler için destek gibi özellikler sağlar (bkz. :ref:`typesseq`):"
 
 #: library/stdtypes.rst:1384
 msgid ""
@@ -2286,6 +2289,12 @@ msgid ""
 "and :attr:`~range.step` attributes, for example ``range(0) == range(2, 1, "
 "3)`` or ``range(0, 3, 2) == range(0, 4, 2)``.)"
 msgstr ""
+"Aralık nesnelerini ``==`` ve ``!=`` ile eşitlik açısından test etmek, "
+"bunları diziler olarak karşılaştırır. Yani, aynı değer dizisini temsil "
+"ediyorlarsa, iki aralık nesnesi eşit kabul edilir.  (Eşit karşılaştıran iki "
+"aralık nesnesinin farklı :attr:`~range.start`, :attr:`~range.stop` ve :attr:"
+"`~range.step` niteliklerine sahip olabileceğini unutmayın, örneğin "
+"``range(0) == range(2, 1, 3)`` veya ``range(0, 3, 2) == range(0, 4, 2)``.)"
 
 #: library/stdtypes.rst:1391
 msgid ""
@@ -2293,18 +2302,24 @@ msgid ""
 "class:`int` objects for membership in constant time instead of iterating "
 "through all items."
 msgstr ""
+"Dizi ABC'sini uygular, Dilimleme ve negatif indekslemeyi destekler, Tüm "
+"öğeleri yinelemek yerine sabit zamanda üyelik için :class:`int` nesnelerini "
+"test eder."
 
 #: library/stdtypes.rst:1397
 msgid ""
 "Define '==' and '!=' to compare range objects based on the sequence of "
 "values they define (instead of comparing based on object identity)."
 msgstr ""
+"Aralık nesnelerini tanımladıkları değer sırasına göre karşılaştırmak için "
+"'==' ve '!=' tanımlayın (nesne kimliğine göre karşılaştırmak yerine)."
 
 #: library/stdtypes.rst:1402
 msgid ""
 "The :attr:`~range.start`, :attr:`~range.stop` and :attr:`~range.step` "
 "attributes."
 msgstr ""
+":attr:`~range.start`, :attr:`~range.stop` ve :attr:`~range.step` özellikleri."
 
 #: library/stdtypes.rst:1408
 msgid ""
@@ -2312,10 +2327,13 @@ msgid ""
 "how to implement a lazy version of range suitable for floating point "
 "applications."
 msgstr ""
+"`Linspace tarifi <http://code.activestate.com/recipes/579000/>`_ , kayan "
+"nokta uygulamaları için uygun olan tembel bir aralığın nasıl uygulanacağını "
+"gösterir."
 
 #: library/stdtypes.rst:1420
 msgid "Text Sequence Type --- :class:`str`"
-msgstr ""
+msgstr "Metin Sırası Türü --- :class:`str`"
 
 #: library/stdtypes.rst:1422
 msgid ""
@@ -2323,26 +2341,31 @@ msgid ""
 "`strings`. Strings are immutable :ref:`sequences <typesseq>` of Unicode code "
 "points.  String literals are written in a variety of ways:"
 msgstr ""
+"Python'da metinsel veriler :class:`str` nesneleri veya :dfn:`strings` ile "
+"işlenir. Dizeler, Unicode kod noktalarının değişmez :ref:`dizgeleridir "
+"<typesseq>`. Dize değişmezleri çeşitli şekillerde yazılır:"
 
 #: library/stdtypes.rst:1427
 msgid "Single quotes: ``'allows embedded \"double\" quotes'``"
-msgstr ""
+msgstr "Tek tırnak: ``'katıştırılmış \"çift\" tırnaklara izin verir'``"
 
 #: library/stdtypes.rst:1428
 msgid "Double quotes: ``\"allows embedded 'single' quotes\"``."
-msgstr ""
+msgstr "Çift tırnak: ``\"katıştırılmış 'tek' tırnaklara izin verir\"``."
 
 #: library/stdtypes.rst:1429
 msgid ""
 "Triple quoted: ``'''Three single quotes'''``, ``\"\"\"Three double quotes"
 "\"\"\"``"
-msgstr ""
+msgstr "Üçlü tırnak: ``'''Üç tek tırnak'''``, ``\"\"\"Üç çift tırnak\"\"\"``"
 
 #: library/stdtypes.rst:1431
 msgid ""
 "Triple quoted strings may span multiple lines - all associated whitespace "
 "will be included in the string literal."
 msgstr ""
+"Üçlü tırnak içine alınmış dizeler birden çok satıra yayılabilir - ilişkili "
+"tüm boşluklar dize değişmezine dahil edilecektir."
 
 #: library/stdtypes.rst:1434
 msgid ""
@@ -2350,6 +2373,9 @@ msgid ""
 "whitespace between them will be implicitly converted to a single string "
 "literal. That is, ``(\"spam \" \"eggs\") == \"spam eggs\"``."
 msgstr ""
+"Tek bir ifadenin parçası olan ve aralarında yalnızca boşluk bulunan dize "
+"değişmezleri, örtük olarak tek bir dize değişmezine dönüştürülür. Yani, "
+"``(\"spam\" \"yumurtalar\") == \"spam yumurtalar\"``."
 
 #: library/stdtypes.rst:1438
 msgid ""
@@ -2357,18 +2383,27 @@ msgid ""
 "including supported escape sequences, and the ``r`` (\"raw\") prefix that "
 "disables most escape sequence processing."
 msgstr ""
+"Desteklenen kaçış dizileri ve çoğu kaçış dizisi işlemeyi devre dışı bırakan "
+"``r`` (\"raw\", Türkçesiyle \"ham\") ön eki dahil olmak üzere dize "
+"değişmezinin çeşitli biçimleri hakkında daha fazla bilgi için bkz. :ref:"
+"`strings`."
 
 #: library/stdtypes.rst:1442
 msgid ""
 "Strings may also be created from other objects using the :class:`str` "
 "constructor."
 msgstr ""
+"Dizeler, :class:`str` yapıcısı kullanılarak diğer nesnelerden de "
+"oluşturulabilir."
 
 #: library/stdtypes.rst:1445
 msgid ""
 "Since there is no separate \"character\" type, indexing a string produces "
 "strings of length 1. That is, for a non-empty string *s*, ``s[0] == s[0:1]``."
 msgstr ""
+"Ayrı bir \"karakter\" türü olmadığından, bir dizenin indekslenmesi 1 "
+"uzunluğunda dizeler üretir. Yani, boş olmayan bir *s* dizesi için ``s[0] == "
+"s[0:1]``."
 
 #: library/stdtypes.rst:1451
 msgid ""
@@ -2376,6 +2411,9 @@ msgid ""
 "StringIO` can be used to efficiently construct strings from multiple "
 "fragments."
 msgstr ""
+"Değiştirilebilir bir dize türü de yoktur, ancak :meth:`str.join` veya :class:"
+"`io.StringIO` birden çok parçadan dizeleri verimli bir şekilde oluşturmak "
+"için kullanılabilir."
 
 #: library/stdtypes.rst:1455
 msgid ""
@@ -2383,13 +2421,20 @@ msgid ""
 "once again permitted on string literals. It has no effect on the meaning of "
 "string literals and cannot be combined with the ``r`` prefix."
 msgstr ""
+"Python 2 serisiyle geriye dönük uyumluluk için, dize değişmezlerinde ``u`` "
+"ön ekine izin verilir. Bunun dize değişmezlerinin anlamı üzerinde hiçbir "
+"etkisi yoktur ve ``r`` ön ekiyle birleştirilemez."
 
 #: library/stdtypes.rst:1467
+#, fuzzy
 msgid ""
 "Return a :ref:`string <textseq>` version of *object*.  If *object* is not "
 "provided, returns the empty string.  Otherwise, the behavior of ``str()`` "
 "depends on whether *encoding* or *errors* is given, as follows."
 msgstr ""
+"*nesne* 'nin :ref:`string <textseq>` sürümünü döndürür. *nesne* sağlanmazsa "
+"boş dizeyi döndürür.  Aksi takdirde, ``str()`` davranışı, aşağıdaki gibi "
+"*kodlama* veya *hatalar* 'ın verilmesine bağlıdır."
 
 #: library/stdtypes.rst:1471
 msgid ""
@@ -2399,6 +2444,11 @@ msgid ""
 "the string itself.  If *object* does not have a :meth:`~object.__str__` "
 "method, then :func:`str` falls back to returning :meth:`repr(object) <repr>`."
 msgstr ""
+"Ne *kodlama* ne de *hatalar* verilmezse, ``str(object)`` :meth:`object."
+"__str__() <object.__str__>` döndürür; bu, *object* ifadesinin \"gayriresmi\" "
+"veya güzel yazdırılabilir dize temsilidir. Dize nesneleri için bu, dizenin "
+"kendisidir. *object*'in bir :meth:`~object.__str__` metodu yoksa, :func:"
+"`str`, :meth:`repr(object) <repr>` döndürmeye geri döner."
 
 #: library/stdtypes.rst:1482
 msgid ""
@@ -2411,6 +2461,14 @@ msgid ""
 "decode`.  See :ref:`binaryseq` and :ref:`bufferobjects` for information on "
 "buffer objects."
 msgstr ""
+"*kodlama* veya *hatalar* 'dan en az biri verilirse, *nesne* bir :term:`bytes-"
+"like object` olmalıdır (ör. :class:`bytes` veya :class:`bytearray`).  Bu "
+"durumda, *nesne* bir :class:`bytes` (veya :class:`bytearray`) nesnesiyse "
+"``str(bytes, *kodlama*, *hatalar*)``, :meth:`bytes.decode(*kodlama*, "
+"*hatalar*) <bytes.decode>` 'a eşdeğerdir.  Aksi takdirde, arabellek "
+"nesnesinin altında yatan bayt nesnesi, :meth:`bytes.decode` çağrılmadan önce "
+"elde edilir.  Arabellek nesneleri hakkında bilgi için bkz. :ref:`binaryseq` "
+"ve :ref:`bufferobjects`."
 
 #: library/stdtypes.rst:1491
 msgid ""
@@ -2419,6 +2477,9 @@ msgid ""
 "string representation (see also the :option:`-b` command-line option to "
 "Python).  For example::"
 msgstr ""
+"Bir :class:`bytes` nesnesini *kodlama* veya *hatalar* argümanları olmadan :"
+"func:`str` 'ye iletmek, gayriresmi dize temsilini döndürmenin ilk durumuna "
+"girer (ayrıca bkz. Python için :option:`-b` komut satırı seçeneği)."
 
 #: library/stdtypes.rst:1499
 msgid ""
@@ -2427,18 +2488,25 @@ msgid ""
 "strings, see the :ref:`f-strings` and :ref:`formatstrings` sections.  In "
 "addition, see the :ref:`stringservices` section."
 msgstr ""
+"``str`` sınıfı ve metotları hakkında daha fazla bilgi için aşağıdaki :ref:"
+"`textseq` ve :ref:`string-methods` bölümüne bakın.  Biçimlendirilmiş "
+"dizelerin çıktısını almak için :ref:`f-strings` ve :ref:`formatstrings` "
+"bölümlerine bakın.  Ayrıca, :ref:`stringservices` bölümüne de bakın."
 
 #: library/stdtypes.rst:1511
 msgid "String Methods"
-msgstr ""
+msgstr "String (Dize) Metotları"
 
 #: library/stdtypes.rst:1516
 msgid ""
 "Strings implement all of the :ref:`common <typesseq-common>` sequence "
 "operations, along with the additional methods described below."
 msgstr ""
+"Dizeler, aşağıda açıklanan ek yöntemlerle birlikte tüm :ref:`ortak <typesseq-"
+"common>` dizi işlemlerini uygular."
 
 #: library/stdtypes.rst:1519
+#, fuzzy
 msgid ""
 "Strings also support two styles of string formatting, one providing a large "
 "degree of flexibility and customization (see :meth:`str.format`, :ref:"
@@ -2447,6 +2515,12 @@ msgid ""
 "slightly harder to use correctly, but is often faster for the cases it can "
 "handle (:ref:`old-string-formatting`)."
 msgstr ""
+"Ayrıca dizeler, biri büyük ölçüde esneklik ve özelleştirme sağlayan ve "
+"diğeri daha dar bir tür aralığını işleyen (bkz. :meth:`str.format`, :ref:"
+"`formatstrings` ve :ref:`string-formatting`) ve doğru kullanımı biraz daha "
+"zor olan C ``printf`` stili biçimlendirmesine dayanan iki dize biçimlendirme "
+"stilini destekler, ancak genellikle işleyebileceği durumlar için daha "
+"hızlıdır (:ref:`old-string-formatting`)."
 
 #: library/stdtypes.rst:1526
 msgid ""
@@ -2454,25 +2528,36 @@ msgid ""
 "other modules that provide various text related utilities (including regular "
 "expression support in the :mod:`re` module)."
 msgstr ""
+"Standart kütüphanenin :ref:`textservices` bölümü, metinle ilgili çeşitli "
+"yardımcı programlar sağlayan bir dizi başka modülü kapsar (:mod:`re` "
+"modülündeki normal ifade desteği dahil)."
 
 #: library/stdtypes.rst:1532
 msgid ""
 "Return a copy of the string with its first character capitalized and the "
 "rest lowercased."
 msgstr ""
+"İlk karakteri büyük ve geri kalanı küçük harf ile, dizenin bir kopyasını "
+"döndürür."
 
 #: library/stdtypes.rst:1535
+#, fuzzy
 msgid ""
 "The first character is now put into titlecase rather than uppercase. This "
 "means that characters like digraphs will only have their first letter "
 "capitalized, instead of the full character."
 msgstr ""
+"Dizenin ilk karakteri başlıklarda olduğu gibi büyük harfe çevrilir. Bu "
+"digraf gibi karakterlerin, sadece ilk harflerinin büyütüleceği anlamına "
+"gelir."
 
 #: library/stdtypes.rst:1542
 msgid ""
 "Return a casefolded copy of the string. Casefolded strings may be used for "
 "caseless matching."
 msgstr ""
+"Dizenin küçük harfe katlanmış bir kopyasını döndürür. Küçük harfe katlanmış "
+"dizeler, büyük/küçük harfsiz eşleştirme için kullanılabilir."
 
 #: library/stdtypes.rst:1545
 msgid ""
@@ -2482,12 +2567,18 @@ msgid ""
 "already lowercase, :meth:`lower` would do nothing to ``'ß'``; :meth:"
 "`casefold` converts it to ``\"ss\"``."
 msgstr ""
+"Büyük harf katlama, harf küçültmeye (lowercasing) benzer ancak daha "
+"agresiftir, çünkü bir dizedeki tüm büyük/küçük harf ayrımlarını kaldırmayı "
+"amaçlar. Örneğin, Almanca küçük harf ``'ß'``, ``\"ss\"`` ile eşdeğerdir. "
+"Zaten küçük harf olduğundan, :meth:`lower` ``'ß'`` için hiçbir şey yapmaz; :"
+"meth:`casefold` onu ``\"ss\"`` biçimine dönüştürür."
 
 #: library/stdtypes.rst:1551
 msgid ""
 "The casefolding algorithm is described in section 3.13 of the Unicode "
 "Standard."
 msgstr ""
+"Casefolding algoritması, Unicode Standardının 3.13 bölümünde açıklanmıştır."
 
 #: library/stdtypes.rst:1559
 msgid ""
@@ -2495,6 +2586,10 @@ msgid ""
 "specified *fillchar* (default is an ASCII space). The original string is "
 "returned if *width* is less than or equal to ``len(s)``."
 msgstr ""
+"*width* uzunluğundaki bir dizede ortalanmış olarak döndürür. Doldurma, "
+"belirtilen *fillchar* kullanılarak yapılır (varsayılanı bir ASCII "
+"boşluğudur). *width*, ``len(s)`` değerinden küçük veya ona eşitse orijinal "
+"dize döndürülür."
 
 #: library/stdtypes.rst:1567
 msgid ""
@@ -2502,6 +2597,9 @@ msgid ""
 "range [*start*, *end*].  Optional arguments *start* and *end* are "
 "interpreted as in slice notation."
 msgstr ""
+"[*start*, *end*] aralığında *sub* alt dizesinin örtüşmeyen oluşumlarının "
+"sayısını döndürür. İsteğe bağlı bağımsız değişkenler *start* ve *end*, dilim "
+"notasyonunda olduğu gibi yorumlanır."
 
 #: library/stdtypes.rst:1574
 msgid ""
