@@ -63,8 +63,8 @@ msgstr ""
 "Bu kılavuzdaki örneklerin çoğu, etkileşimli komut isteminde girilenler "
 "dahil, yorumlar içerir. Python'da yorumlar, ``#`` hash karakteriyle başlar "
 "ve fiziksel satırın sonuna kadar uzanır. Bir satırın başında veya boşluk "
-"veya kodun ardından bir yorum görünebilir, ancak bir dize değişmezi içinde "
-"değil. Bir dize değişmezi içindeki bir karma karakter, yalnızca bir karma "
+"veya kodun ardından bir yorum görünebilir, ancak bir dize sabiti içinde "
+"değil. Bir dize sabiti içindeki bir hash karakteri, yalnızca bir hash "
 "karakterdir. Yorumlar kodu netleştirmek için olduğundan ve Python tarafından "
 "yorumlanmadığından örnekler yazarken atlanabilirler."
 
@@ -109,7 +109,7 @@ msgid ""
 "`float`.  We will see more about numeric types later in the tutorial."
 msgstr ""
 "Tam sayıların (örneğin ``2``, ``4``, ``20``) türü :class:`int` olup, kesirli "
-"kısmı olanlar (örneğin ``5.0``, ``1.6``)  :class:`float` türüne sahiptir. "
+"kısmı olanlar (örneğin ``5.0``, ``1.6``) :class:`float` türüne sahiptir.  "
 "Sayısal türler hakkında sonrasında daha fazlasını göreceğiz."
 
 #: tutorial/introduction.rst:72
@@ -118,7 +118,7 @@ msgid ""
 "get an integer result (discarding any fractional result) you can use the ``//"
 "`` operator; to calculate the remainder you can use ``%``::"
 msgstr ""
-"Bölme (``/``) her zaman bir ondalıklı sayı döndürür. :term:`floor partition` "
+"Bölme (``/``) her zaman bir ondalıklı sayı döndürür. :term:`floor division` "
 "yapmak ve bir tam sayı sonucu almak için (herhangi bir kesirli sonucu "
 "atarak) ``//`` operatörünü kullanabilirsiniz; kalanı hesaplamak içinse ``%`` "
 "operatörünü kullanabilirsiniz::"
@@ -173,7 +173,7 @@ msgid ""
 "the same name masking the built-in variable with its magic behavior."
 msgstr ""
 "Bu değişken, kullanıcı tarafından salt okunur olarak ele alınmalıdır. Açıkça "
-"ona bir değer atamayın --- yerleşik değişkeni sihirli davranışıyla "
+"ona bir değer atamayın --- sihirli davranışları olan bu gömülü değişkeni "
 "maskeleyen aynı ada sahip bağımsız bir yerel değişken yaratırsınız."
 
 #: tutorial/introduction.rst:132
@@ -184,9 +184,9 @@ msgid ""
 "<typesnumeric>`, and uses the ``j`` or ``J`` suffix to indicate the "
 "imaginary part (e.g. ``3+5j``)."
 msgstr ""
-":class:`int` ve :class:`float`a ek olarak Python, :class:`~decimal.Decimal` "
+":class:`int` ve :class:`float` 'a ek olarak Python, :class:`~decimal.Decimal` "
 "ve :class:`~fractions.Fraction` gibi diğer sayı türlerini de destekler. "
-"Python ayrıca :ref:`<typesnumeric>` karmaşık sayıları için yerleşik desteğe "
+"Python ayrıca :ref:`karmaşık sayılar <typesnumeric>` için gömülü desteğe "
 "sahiptir ve hayali kısmı belirtmek için ``j`` veya ``J`` son ekini kullanır "
 "(ör. ``3+5j``)."
 
@@ -203,8 +203,8 @@ msgid ""
 msgstr ""
 "Sayıların yanı sıra Python, çeşitli şekillerde ifade edilebilen dizeleri de "
 "değiştirebilir. Tek tırnak (``'...'``) veya çift tırnak (``\"...\"``) içine "
-"alınabilirler ve aynı sonuç [#]_ olur. ``\\`` tırnaklardan kaçmak için "
-"kullanılabilir:"
+"alınabilirler ve aynı sonuç olur [#]_. ``\\`` tırnaklardan kaçmak için "
+"kullanılabilir::"
 
 #: tutorial/introduction.rst:162
 msgid ""
@@ -222,7 +222,7 @@ msgstr ""
 "görünse de (ilgili tırnak işaretleri değişebilir), iki dize eş değerdir. "
 "Dize tek bir tırnak işareti içeriyorsa ve çift tırnak içermiyorsa dize çift "
 "tırnak içine alınır, aksi takdirde tek tırnak içine alınır. :func:`print` "
-"işlevi, ekteki tırnak işaretlerini atlayarak ve çıkış karakterlerini ve özel "
+"fonksiyonu, ekteki tırnak işaretlerini atlayarak ve çıkış karakterlerini ve özel "
 "karakterleri yazdırarak daha okunaklı bir çıktı üretir::"
 
 #: tutorial/introduction.rst:182
@@ -231,9 +231,9 @@ msgid ""
 "characters, you can use *raw strings* by adding an ``r`` before the first "
 "quote::"
 msgstr ""
-"\"\\\" ile başlayan karakterlerin özel karakterler olarak yorumlanmasını "
-"istemiyorsanız, ilk alıntıdan önce bir \"r\" ekleyerek *ham dizeleri* "
-"kullanabilirsiniz:"
+"``\\`` ile başlayan karakterlerin özel karakterler olarak yorumlanmasını "
+"istemiyorsanız, ilk alıntıdan önce bir ``r`` ekleyerek *ham dizeleri (raw strings)* "
+"kullanabilirsiniz::"
 
 #: tutorial/introduction.rst:192
 msgid ""
@@ -242,7 +242,7 @@ msgid ""
 "in the string, but it's possible to prevent this by adding a ``\\`` at the "
 "end of the line.  The following example::"
 msgstr ""
-"Dize değişmezleri birden çok satıra yayılabilir. Bunun bir yolu üçlü tırnak "
+"Dize sabitleri birden çok satıra yayılabilir. Bunun bir yolu üçlü tırnak "
 "kullanmaktır: ``\"\"\"...\"\"\"`` veya ``'''...'''``. Satır sonu otomatik "
 "olarak dizeye dahil edilir, ancak satırın sonuna ``\\`` ekleyerek bunu "
 "önlemek mümkündür. Aşağıdaki örnek::"
@@ -259,15 +259,15 @@ msgid ""
 "Strings can be concatenated (glued together) with the ``+`` operator, and "
 "repeated with ``*``::"
 msgstr ""
-"Dizeler \"+\" operatörüyle birleştirilebilir (birbirine yapıştırılabilir) ve "
-"\"*\" ile tekrarlanabilir:"
+"Dizeler ``+`` operatörüyle birleştirilebilir (birbirine yapıştırılabilir) ve "
+"``*`` ile tekrarlanabilir::"
 
 #: tutorial/introduction.rst:218
 msgid ""
 "Two or more *string literals* (i.e. the ones enclosed between quotes) next "
 "to each other are automatically concatenated. ::"
 msgstr ""
-"Yan yana iki veya daha fazla *dize değişmezi* (yani, tırnak işaretleri "
+"Yan yana iki veya daha fazla *dize sabiti* (yani, tırnak işaretleri "
 "arasına alınanlar) otomatik olarak birleştirilir. ::"
 
 #: tutorial/introduction.rst:224
@@ -280,14 +280,14 @@ msgstr ""
 msgid ""
 "This only works with two literals though, not with variables or expressions::"
 msgstr ""
-"Bu, değişkenler veya ifadelerle değil, yalnızca iki değişmez değerle "
+"Bu, değişkenler veya ifadelerle değil, yalnızca iki sabit değerle "
 "çalışır::"
 
 #: tutorial/introduction.rst:245
 msgid ""
 "If you want to concatenate variables or a variable and a literal, use ``+``::"
 msgstr ""
-"Değişkenleri veya bir değişkeni ve bir değişmezi birleştirmek istiyorsanız, "
+"Değişkenleri veya bir değişkeni ve bir sabiti birleştirmek istiyorsanız, "
 "``+`` kullanın:"
 
 #: tutorial/introduction.rst:250
@@ -297,8 +297,8 @@ msgid ""
 "of size one::"
 msgstr ""
 "Dizeler, ilk karakterin indeksi 0 olacak şekilde *dizine eklenebilir* (abone "
-"olabilir). Ayrı bir karakter tipi yoktur; bir karakter yalnızca bir boyutlu "
-"bir dizedir::"
+"olabilir). Karakterler için ayrı bir tür yoktur; karakterler yalnızca *bir* uzunluğunda "
+"dizelerdir::"
 
 #: tutorial/introduction.rst:260
 msgid ""
@@ -335,7 +335,7 @@ msgid ""
 "makes sure that ``s[:i] + s[i:]`` is always equal to ``s``::"
 msgstr ""
 "Başlangıcın her zaman dahil edildiğine ve sonun her zaman hariç tutulduğuna "
-"dikkat edin. Bu, ```s[:i] + s[i:]`` değerinin her zaman ``s`` değerine eşit "
+"dikkat edin. Bu, ``s[:i] + s[i:]`` değerinin her zaman ``s`` değerine eşit "
 "olmasını sağlar::"
 
 #: tutorial/introduction.rst:297
@@ -347,8 +347,8 @@ msgid ""
 msgstr ""
 "Dilimlerin nasıl çalıştığını hatırlamanın bir yolu, dizinleri ilk karakterin "
 "sol kenarı 0 ile *arasındaki* karakterleri işaret ediyor olarak düşünmektir. "
-"Ardından, *n* karakterli bir dizenin son karakterinin sağ kenarında dizin * "
-"vardır. n*, örneğin::"
+"Ardından, *n* karakterli bir dizenin son karakterinin sağ kenarında *n* dizini "
+"vardır, örneğin::"
 
 #: tutorial/introduction.rst:308
 msgid ""
@@ -368,7 +368,7 @@ msgid ""
 "``word[1:3]`` is 2."
 msgstr ""
 "Negatif olmayan indeksler için, her ikisi de sınırlar içindeyse, bir dilimin "
-"uzunluğu indekslerin farkıdır. Örneğin, \"kelime[1:3]\"'nin uzunluğu 2'dir."
+"uzunluğu indekslerin farkıdır. Örneğin, ``kelime[1:3]`` 'ün uzunluğu 2'dir."
 
 #: tutorial/introduction.rst:317
 msgid "Attempting to use an index that is too large will result in an error::"
@@ -400,7 +400,7 @@ msgstr "Yerleşik işlev :func:`len`, bir dizenin uzunluğunu döndürür::"
 
 #: tutorial/introduction.rst:362
 msgid ":ref:`textseq`"
-msgstr ":ref:`metin sırası`"
+msgstr ":ref:`textseq`"
 
 #: tutorial/introduction.rst:361
 msgid ""
@@ -412,7 +412,7 @@ msgstr ""
 
 #: tutorial/introduction.rst:366
 msgid ":ref:`string-methods`"
-msgstr ":ref:`dize-yöntemleri`"
+msgstr ":ref:`dize-yöntemleri <string-methods>`"
 
 #: tutorial/introduction.rst:365
 msgid ""
@@ -422,15 +422,15 @@ msgstr "Dizeler, temel dönüşümler ve arama için çok sayıda yöntemi deste
 
 #: tutorial/introduction.rst:369
 msgid ":ref:`f-strings`"
-msgstr ":ref:`f-dizeleri'"
+msgstr ":ref:`f-strings`"
 
 #: tutorial/introduction.rst:369
 msgid "String literals that have embedded expressions."
-msgstr "Gömülü ifadelere sahip dize değişmezleri."
+msgstr "Gömülü ifadelere sahip dize sabitleri."
 
 #: tutorial/introduction.rst:372
 msgid ":ref:`formatstrings`"
-msgstr ":ref:`formatdizileri`"
+msgstr ":ref:`formatstrings`"
 
 #: tutorial/introduction.rst:372
 msgid "Information about string formatting with :meth:`str.format`."
@@ -438,7 +438,7 @@ msgstr ":meth:`str.format` ile dize biçimlendirme hakkında bilgi."
 
 #: tutorial/introduction.rst:375
 msgid ":ref:`old-string-formatting`"
-msgstr ":ref:`eski-dize-biçimlendirme'"
+msgstr ":ref:`old-string-formatting`"
 
 #: tutorial/introduction.rst:375
 msgid ""
@@ -470,7 +470,7 @@ msgid ""
 "Like strings (and all other built-in :term:`sequence` types), lists can be "
 "indexed and sliced::"
 msgstr ""
-"Dizeler gibi (ve diğer tüm yerleşik :term:`dizi' türleri), listeler dizine "
+"Dizeler gibi (ve diğer tüm yerleşik :term:`sequence` türleri), listeler dizine "
 "alınabilir ve dilimlenebilir::"
 
 #: tutorial/introduction.rst:403
@@ -480,7 +480,7 @@ msgid ""
 "<shallow_vs_deep_copy>` of the list::"
 msgstr ""
 "Tüm dilim işlemleri, istenen ögeleri içeren yeni bir liste döndürür. Bu, "
-"aşağıdaki dilimin listenin bir :ref:`shallow kopyası <shallow_vs_deep_copy>` "
+"aşağıdaki dilimin listenin bir :ref:`shallow copy <shallow_vs_deep_copy>` "
 "döndürdüğü anlamına gelir::"
 
 #: tutorial/introduction.rst:410
@@ -535,7 +535,7 @@ msgid ""
 "`Fibonacci series <https://en.wikipedia.org/wiki/Fibonacci_number>`_ as "
 "follows::"
 msgstr ""
-"Elbette Python'ı iki ile ikiyi toplamaktan daha karmaşık görevler için "
+"Elbette Python'ı iki ile ikiyi toplamaktan daha komplike görevler için "
 "kullanabiliriz. Örneğin, `Fibonacci serisinin <https://en.wikipedia.org/wiki/"
 "Fibonacci_number>`_ ilk alt dizisini aşağıdaki gibi yazabiliriz:"
 
@@ -586,7 +586,7 @@ msgid ""
 "(since the parser cannot guess when you have typed the last line).  Note "
 "that each line within a basic block must be indented by the same amount."
 msgstr ""
-"Döngünün *gövdesi * girintilidir*: girinti, Python'un ifadeleri gruplama "
+"Döngünün *gövdesi girintilidir*: girinti, Python'un ifadeleri gruplama "
 "şeklidir. Etkileşimli komut isteminde, girintili her satır için bir sekme "
 "veya boşluk(lar) yazmanız gerekir. Pratikte, bir metin düzenleyici ile "
 "Python için daha karmaşık girdiler hazırlayacaksınız; tüm düzgün metin "
