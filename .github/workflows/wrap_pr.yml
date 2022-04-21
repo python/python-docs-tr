@@ -6,6 +6,8 @@ on:
 
 jobs: 
   wrap:
+    # Check if the source branch is from a fork
+    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
 
     strategy:
