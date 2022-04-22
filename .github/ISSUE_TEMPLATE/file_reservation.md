@@ -4,6 +4,7 @@ about: Bir .po dosyası rezerve etmek istiyorum (üzerinde sadece kendim çalı�
 title: foo/bar.po üzerinde çalışmak istiyorum.
 labels: reservation
 assignees: ''
+reviewers: 'egeakman'
 
 ---
 
