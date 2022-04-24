@@ -14,7 +14,7 @@ jobs:
     steps:
         # Checkout the latest code from the repo
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
         # Setup which version of Python to use
       - name: Set Up Python ${{ matrix.python-version }}
@@ -62,10 +62,21 @@ jobs:
               git commit -m "Wrap translations"
               echo "WRAPPED=True" >> $GITHUB_ENV
           fi
-        # Push changes
-      - name: Push changes
-        if: env.WRAPPED == 'True'
-        uses: ad-m/github-push-action@master
+               
+        # Create pull request
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref_name }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Update report
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          signoff: false
+          branch: ${{ github.ref_name }}_wrapped
+          delete-branch: true
+          title: 'Wrap branch: ${{ github.ref_name }}'
+          body: Wrapped all translations on branch ${{ github.ref_name }}.
+          labels: wrap
+          team-reviewers: reviewers
+          draft: false

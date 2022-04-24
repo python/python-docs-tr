@@ -6,6 +6,8 @@ on:
 
 jobs: 
   wrap:
+    # Check if the source branch is from a fork
+    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
 
     strategy:
@@ -16,7 +18,7 @@ jobs:
     steps:
         # Checkout the latest code from the repo
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref }}
