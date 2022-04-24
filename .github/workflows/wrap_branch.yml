@@ -72,12 +72,11 @@ jobs:
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
-          branch: ${{ github.ref_name }}
+          branch: ${{ python -c "branch='refs/head/3.10/wrap'.split('/'); print(f'{branch[2]}/{branch[3]}')" }}
           delete-branch: true
           title: 'Wrap branch: ${{ github.ref_name }}'
           body: |
             Wrapped all translations on requested branch.
-            
           labels: |
             wrap
           assignees: github-actions
