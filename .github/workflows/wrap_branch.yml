@@ -73,7 +73,7 @@ jobs:
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
-          branch: ${{ github.ref_name }}/wrap
+          branch: 3.10/wrap
           delete-branch: true
           title: 'Wrap branch: ${{ github.ref_name }}'
           body: |
