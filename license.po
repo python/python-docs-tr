@@ -10,7 +10,7 @@ msgstr ""
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
 "PO-Revision-Date: 2022-04-10 14:55+0300\n"
 "Last-Translator: \n"
-"Language-Team: TURKISH TEAM\n"
+"Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -241,7 +241,7 @@ msgid ""
 "Python software and documentation are licensed under the :ref:`PSF License "
 "Agreement <PSF-license>`."
 msgstr ""
-"Python yazılımı ve belgeleri :ref:`PSF License Agreement <PSF-license>` "
+"Python yazılımı ve belgeleri :ref:`PSF Lisans Anlaşması <PSF-license>` "
 "kapsamında lisanslanmıştır."
 
 #: license.rst:78
@@ -313,7 +313,7 @@ msgid ""
 msgstr ""
 ":mod:`_random` modülü, http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/"
 "MT2002/emt19937ar.html adresinden indirilen kodu temel alır. Orijinal koddan "
-"kelimesi kelimesine yorumlar aşağıdadır:"
+"kelimesi kelimesine yorumlar aşağıdadır::"
 
 #: license.rst:352
 msgid "Sockets"
@@ -354,7 +354,7 @@ msgstr "Çalıştırma izleme"
 
 #: license.rst:444
 msgid "The :mod:`trace` module contains the following notice::"
-msgstr ":mod:`trace` modülü aşağıdaki uyarıyı içerir:"
+msgstr ":mod:`trace` modülü aşağıdaki uyarıyı içerir::"
 
 #: license.rst:475
 msgid "UUencode and UUdecode functions"
@@ -370,7 +370,7 @@ msgstr "XML Uzaktan Yordam Çağrıları"
 
 #: license.rst:507
 msgid "The :mod:`xmlrpc.client` module contains the following notice::"
-msgstr ":mod:`xmlrpc.client` modülü aşağıdaki uyarıyı içerir:"
+msgstr ":mod:`xmlrpc.client` modülü aşağıdaki uyarıyı içerir::"
 
 #: license.rst:538
 msgid "test_epoll"
@@ -388,7 +388,7 @@ msgstr "kqueue seçin"
 msgid ""
 "The :mod:`select` module contains the following notice for the kqueue "
 "interface::"
-msgstr ":mod:`select` modülü, kqueue arayüzü için aşağıdaki uyarıyı içerir:"
+msgstr ":mod:`select` modülü, kqueue arayüzü için aşağıdaki uyarıyı içerir::"
 
 #: license.rst:595
 msgid "SipHash24"
@@ -414,10 +414,10 @@ msgid ""
 "org/fp/.  The original file, as retrieved on March 16, 2009, contains the "
 "following copyright and licensing notice::"
 msgstr ""
-"C çiftlerinin dizgilere ve dizgelerden dönüştürülmesi için dtoa ve strtod C "
-"işlevlerini sağlayan :file:`Python/dtoa.c` dosyası, David M. Gay tarafından "
-"şu anda http: //www.netlib.org/fp/. 16 Mart 2009'da alınan orijinal dosya, "
-"aşağıdaki telif hakkı ve lisans bildirimini içerir:"
+"C double'larının dizgilere ve dizgelerden dönüştürülmesi için dtoa ve strtod "
+"C işlevlerini sağlayan :file:`Python/dtoa.c` dosyası, şu anda http://www.netlib.org/fp/ "
+"adresinden erişilebilen David M. Gay'in aynı adlı dosyasından türetilmiştir. 16 Mart "
+"2009'da alınan orijinal dosya, aşağıdaki telif hakkı ve lisans bildirimini içerir::"
 
 #: license.rst:654
 msgid "OpenSSL"
@@ -432,10 +432,10 @@ msgid ""
 "license here::"
 msgstr ""
 ":mod:`hashlib`, :mod:`posix`, :mod:`ssl`, :mod:`crypt` modülleri, işletim "
-"sistemi tarafından sağlanmışsa ek performans için OpenSSL kitaplığını "
+"sistemi tarafından sağlanmışsa ek performans için OpenSSL kütüphanesini "
 "kullanır. Ek olarak, Python için Windows ve macOS yükleyicileri, OpenSSL "
-"kitaplıklarının bir kopyasını içerebilir, bu nedenle buraya OpenSSL "
-"lisansının bir kopyasını ekliyoruz:"
+"kütüphanelerinin bir kopyasını içerebilir, bu nedenle buraya OpenSSL "
+"lisansının bir kopyasını ekliyoruz::"
 
 #: license.rst:791
 msgid "expat"
@@ -448,7 +448,7 @@ msgid ""
 msgstr ""
 ":mod:`pyexpat` uzantısı, derleme ``--with-system-expat`` şeklinde "
 "yapılandırılmadığı sürece, expat kaynaklarının dahil edildiği bir kopya "
-"kullanılarak oluşturulmuştur:"
+"kullanılarak oluşturulur::"
 
 #: license.rst:820
 msgid "libffi"
@@ -461,7 +461,7 @@ msgid ""
 msgstr ""
 ":mod:`_ctypes` uzantısı, yapı ``--with-system-libffi`` olarak "
 "yapılandırılmadığı sürece libffi kaynaklarının dahil edildiği bir kopya "
-"kullanılarak oluşturulur:"
+"kullanılarak oluşturulur::"
 
 #: license.rst:849
 msgid "zlib"
@@ -500,7 +500,7 @@ msgid ""
 msgstr ""
 ":mod:`_decimal` modülü, yapı ``--with-system-libmpdec`` şeklinde "
 "yapılandırılmadığı sürece libmpdec kitaplığının dahil edildiği bir kopya "
-"kullanılarak oluşturulur:"
+"kullanılarak oluşturulur::"
 
 #: license.rst:953
 msgid "W3C C14N test suite"
@@ -512,6 +512,6 @@ msgid ""
 "c14n-20/``) was retrieved from the W3C website at https://www.w3.org/TR/xml-"
 "c14n2-testcases/ and is distributed under the 3-clause BSD license::"
 msgstr ""
-":mod:`test` paketindeki (``Lib/test/xmltestdata/c14n-20/``) C14N 2.0 test "
-"paketi, https://www.w3.org/TR/xml adresindeki W3C web sitesinden alınmıştır. "
-"-c14n2-testcases/ ve 3 maddeli BSD lisansı altında dağıtılır::"
+":mod:`test` paketindeki C14N 2.0 test paketi (``Lib/test/xmltestdata/c14n-20/``), "
+"https://www.w3.org/TR/xml-c14n2-testcases/ adresindeki W3C web sitesinden "
+"alınmıştır ve 3 maddeli BSD lisansı altında dağıtılmaktadır::"
