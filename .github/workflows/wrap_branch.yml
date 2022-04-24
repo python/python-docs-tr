@@ -65,7 +65,7 @@ jobs:
           
         # Base branch name
       - name: Get base branch name
-        run: echo BASE_BRANCH=$(python -c "branch='refs/head/3.10/wrap'.split('/'); print(f'{branch[2]}/{branch[3]}') >> $GITHUB_ENV
+        run: echo "BASE_BRANCH=$(python get_base_branch.py ${{ github.ref_name }})" >> $GITHUB_ENV
       
         # Create pull request
       - name: Create Pull Request
