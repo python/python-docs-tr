@@ -62,11 +62,7 @@ jobs:
               git commit -m "Wrap translations"
               echo "WRAPPED=True" >> $GITHUB_ENV
           fi
-          
-        # Base branch name
-      - name: Get base branch name
-        run: echo "BASE_BRANCH=$(python .github/workflows/get_base_branch.py ${{ github.ref_name }})" >> $GITHUB_ENV
-      
+               
         # Create pull request
       - name: Create Pull Request
         id: cpr
@@ -77,7 +73,7 @@ jobs:
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
-          branch: ${{ github.BASE_BRANCH }}
+          branch: ${{ github.ref_name }}/wrap
           delete-branch: true
           title: 'Wrap branch: ${{ github.ref_name }}'
           body: |
