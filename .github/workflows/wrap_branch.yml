@@ -73,14 +73,10 @@ jobs:
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
-          branch: ${{ github.ref_name }}_wrap
+          branch: ${{ github.ref_name }}_wrapped
           delete-branch: true
           title: 'Wrap branch: ${{ github.ref_name }}'
-          body: |
-            Wrapped all translations on requested branch.
-          labels: |
-            wrap
-          assignees: github-actions
-          team-reviewers: |
-            reviewers
+          body: Wrapped all translations on branch ${{ github.ref_name }}.
+          labels: wrap
+          team-reviewers: reviewers
           draft: false
