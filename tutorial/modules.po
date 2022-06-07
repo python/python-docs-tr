@@ -140,7 +140,7 @@ msgid ""
 "module directly into the importing module's symbol table.  For example::"
 msgstr ""
 "Bir modülden adları doğrudan içe aktarma modülünün sembol tablosuna içe alan :"
-"keyword:'import' deyiminin bir varyantı vardır.  Mesela::"
+"keyword:`import` deyiminin bir varyantı vardır.  Mesela::"
 
 #: tutorial/modules.rst:97
 msgid ""
@@ -148,7 +148,7 @@ msgid ""
 "local symbol table (so in the example, ``fibo`` is not defined)."
 msgstr ""
 "Bu, yerel sembol tablosunda içe aktarmaların alındığı modül adını tanıtmaz (bu "
-"nedenle örnekte ''fibo'' tanımlanmamıştır)."
+"nedenle örnekte ``fibo`` tanımlanmamıştır)."
 
 #: tutorial/modules.rst:100
 msgid "There is even a variant to import all names that a module defines::"
@@ -160,7 +160,7 @@ msgid ""
 "cases Python programmers do not use this facility since it introduces an unknown set "
 "of names into the interpreter, possibly hiding some things you have already defined."
 msgstr ""
-"Bu, alt çizgiyle başlayanlar (''_'') dışındaki tüm isimleri alır. Çoğu durumda "
+"Bu, alt çizgiyle başlayanlar (``_``) dışındaki tüm isimleri alır. Çoğu durumda "
 "Python programcıları bu özelliği kullanmaz, çünkü yorumlayıcıya bilinmeyen bir ad "
 "kümesi ekler ve muhtemelen önceden tanımladığınız bazı şeyleri gizler."
 
@@ -170,7 +170,7 @@ msgid ""
 "frowned upon, since it often causes poorly readable code. However, it is okay to use "
 "it to save typing in interactive sessions."
 msgstr ""
-"Genel olarak, bir modülden veya paketten ''*'' içeri aktarma uygulamasının, "
+"Genel olarak, bir modülden veya paketten ``*`` içeri aktarma uygulamasının, "
 "genellikle okunamayan koda neden olduğundan hoş karşılanmadığına dikkat edin. Ancak, "
 "etkileşimli oturumlarda yazmayı kaydetmek için kullanmak sorun değildir."
 
@@ -187,12 +187,12 @@ msgid ""
 "This is effectively importing the module in the same way that ``import fibo`` will "
 "do, with the only difference of it being available as ``fib``."
 msgstr ""
-"Bu, modülün \"import fibo\"nun yapacağı şekilde etkin bir şekilde içe "
-"aktarılmasıdır, tek farkı \"fib\" olarak mevcut olmasıdır."
+"Bu, modülün ``import fibo`` 'nun yapacağı şekilde etkin bir şekilde içe "
+"aktarılmasıdır, tek farkı \``fib\`` olarak mevcut olmasıdır."
 
 #: tutorial/modules.rst:127
 msgid "It can also be used when utilising :keyword:`from` with similar effects::"
-msgstr "Benzer efektlere sahip :keyword:'from' kullanılırken de kullanılabilir::"
+msgstr "Benzer efektlere sahip :keyword:`from` kullanılırken de kullanılabilir::"
 
 #: tutorial/modules.rst:136
 msgid ""
@@ -204,7 +204,7 @@ msgstr ""
 "Verimlilik nedeniyle, her modül yorumlayıcı oturumu başına yalnızca bir kez içe "
 "aktarılır.  Bu nedenle, modüllerinizi değiştirirseniz, yorumlayıcıyı yeniden "
 "başlatmanız gerekir - veya etkileşimli olarak test etmek istediğiniz tek bir "
-"modülse, :func:'importlib.reload', örneğin ''importlib; importlib.reload(modüladı)''."
+"modülse, :func:`importlib.reload`, örneğin ``importlib; importlib.reload(modulename)``."
 
 #: tutorial/modules.rst:146
 msgid "Executing modules as scripts"
@@ -230,7 +230,7 @@ msgid ""
 "\"main\" file:"
 msgstr ""
 "dosyayı bir komut dosyası ve içe aktarılabilir bir modül olarak kullanılabilir hale "
-"getirebilirsiniz, çünkü komut satırını ayrıştıran kod yalnızca modül \"ana\" dosya "
+"getirebilirsiniz, çünkü komut satırını ayrıştıran kod yalnızca modül \"main\" dosya "
 "olarak yürütülürse çalışır:"
 
 #: tutorial/modules.rst:169
@@ -257,8 +257,8 @@ msgid ""
 "data:`sys.path` is initialized from these locations:"
 msgstr ""
 ":mod:`spam` adlı bir modül içe aktarıldığında, yorumlayıcı önce bu ada sahip "
-"yerleşik bir modül arar. Bulunamazsa, 'ata:'sys.path:d değişkeni tarafından verilen "
-"dizinlerin listesinde :file:'spam.py' adlı bir dosyayı arar.  :d ata:'sys.path' şu "
+"yerleşik bir modül arar. Bulunamazsa, `ata:`sys.path:d değişkeni tarafından verilen "
+"dizinlerin listesinde :file:`spam.py` adlı bir dosyayı arar.  :data:`sys.path` şu "
 "konumlardan başlatılır:"
 
 #: tutorial/modules.rst:190
@@ -307,8 +307,8 @@ msgstr ""
 "Çalıştırılmakta olan komut dosyasını içeren dizin, arama yolunun başına, standart "
 "kitaplık yolunun önüne yerleştirilir. Bu, kitaplık dizininde aynı ada sahip modüller "
 "yerine bu dizindeki komut dosyalarının yüklanacağı anlamına gelir. Değiştirme "
-"amaçlanmadığı sürece bu bir hatadır.  Daha fazla bilgi için :ref:'tut-"
-"standardmodules' bölümüne bakın."
+"amaçlanmadığı sürece bu bir hatadır.  Daha fazla bilgi için :ref:`tut-"
+"standardmodules` bölümüne bakın."
 
 #: tutorial/modules.rst:213
 msgid "\"Compiled\" Python files"
