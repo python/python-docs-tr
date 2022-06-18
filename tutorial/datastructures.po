@@ -46,8 +46,8 @@ msgstr ""
 msgid ""
 "Add an item to the end of the list.  Equivalent to ``a[len(a):] = [x]``."
 msgstr ""
-"Listenin sonuna bir öğe ekleyin.  Eklemek için şunu kullanın: ``a[len(a):] = "
-"[x]``."
+"Listenin sonuna bir öğe ekleyin. ``a[len(a):] = [x]`` ile"
+"eşdeğerdir."
 
 #: tutorial/datastructures.rst:28
 msgid ""
@@ -64,7 +64,7 @@ msgid ""
 "of the list, and ``a.insert(len(a), x)`` is equivalent to ``a.append(x)``."
 msgstr ""
 "Verilen pozisyona bir öğe ekleyin.  İlk argüman, daha önce ekleyeceğiniz "
-"öğenin indexidir, bu nedenle ``a.insert(0, x)`` listenin önüne ekler ve ``a."
+"öğenin indeksidir, bu nedenle ``a.insert(0, x)`` listenin önüne ekler ve ``a."
 "insert(len(a), x)`` komutu ``a.append(x)`` komutu ile eşdeğerdir."
 
 #: tutorial/datastructures.rst:43
@@ -133,7 +133,7 @@ msgstr "Listenin öğelerini yerinde ters çevirir."
 
 #: tutorial/datastructures.rst:97
 msgid "Return a shallow copy of the list.  Equivalent to ``a[:]``."
-msgstr "Listenin yüzeysel bir kopyasını döndürün.  Döndürmek için: ``a[:]``."
+msgstr "Listenin yüzeysel bir kopyasını döndürün. ``a[:]`` ile eşdeğerdir."
 
 #: tutorial/datastructures.rst:100
 msgid "An example that uses most of the list methods::"
@@ -263,7 +263,7 @@ msgstr ""
 "keyword:`!for` cümlesinden, ardından sıfır veya daha fazla :keyword:`!for` "
 "veya :keyword:`!if` cümlesinden oluşur.  Sonuç, ifadenin kendisini takip "
 "eden :keyword:`!for` ve :keyword:`!if` cümleleri bağlamında "
-"değerlendirilmesiyle elde edilen yeni bir liste olacaktır. Örneğin, bu "
+"değerlendirilmesiyle elde edilen yeni bir liste olacaktır. Örneğin, "
 "listcomp, eşit değillerse iki listenin öğelerini birleştirir::"
 
 #: tutorial/datastructures.rst:235
@@ -432,7 +432,7 @@ msgstr ""
 "genellikle paket açma (bu bölümün ilerleyen kısımlarına bakınız) veya "
 "indeksleme (hatta :func:`namedtuples <collections.namedtuple>` durumunda "
 "öznitelik ile) yoluyla erişilen heterojen bir dizi eleman içerir. Listeler :"
-"term:`mutable`dır ve elemanları genellikle homojendir ve listenin üzerinde "
+"term:`mutable` 'dır ve elemanları genellikle homojendir ve listenin üzerinde "
 "yinelenerek erişilir."
 
 #: tutorial/datastructures.rst:416
@@ -467,10 +467,10 @@ msgid ""
 "in the sequence.  Note that multiple assignment is really just a combination "
 "of tuple packing and sequence unpacking."
 msgstr ""
-"Buna uygun bir şekilde *dizi açma* denir ve sağ taraftaki herhangi bir dizi "
+"Buna uygun bir şekilde *dizi açma (sequence unpacking)* denir ve sağ taraftaki herhangi bir dizi "
 "için çalışır.  Dizi açma, eşittir işaretinin sol tarafında dizideki eleman "
 "sayısı kadar değişken olmasını gerektirir.  Çoklu atamanın aslında tuple "
-"paketleme ve dizi açma'nın bir kombinasyonu olduğunu unutmayın."
+"paketleme ve dizi açmanın bir kombinasyonu olduğunu unutmayın."
 
 #: tutorial/datastructures.rst:447
 msgid "Sets"
@@ -675,7 +675,7 @@ msgid ""
 "It is sometimes tempting to change a list while you are looping over it; "
 "however, it is often simpler and safer to create a new list instead. ::"
 msgstr ""
-"Bazen bir listeyi üzerinde döngü yaparken değiştirmek cazip gelebilir; ancak "
+"Bazen bir liste üzerinde döngü yaparken değiştirmek cazip gelebilir; ancak "
 "bunun yerine yeni bir liste oluşturmak genellikle daha basit ve daha "
 "güvenlidir. ::"
 
@@ -822,4 +822,4 @@ msgid ""
 "such as ``d->insert(\"a\")->remove(\"b\")->sort();``."
 msgstr ""
 "Diğer diller, ``d->insert(``a``)->sove(``b``)->sort();``. gibi yöntem "
-"zincirlemesine izin veren mutasyona uğramış nesneyi döndürebilir."
+"zincirlemesine izin veren değiştirilmiş nesneyi döndürebilir."
