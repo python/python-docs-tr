@@ -2,34 +2,37 @@
 # Copyright (C) 2001-2021, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-06-14 14:55+0300\n"
+"Last-Translator: \n"
+"Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1\n"
 
 #: tutorial/floatingpoint.rst:9
 msgid "Floating Point Arithmetic:  Issues and Limitations"
-msgstr ""
+msgstr "Kayan Nokta Aritmetiği: Sorunlar ve Sınırlamalar"
 
 #: tutorial/floatingpoint.rst:14
 msgid ""
 "Floating-point numbers are represented in computer hardware as base 2 "
 "(binary) fractions.  For example, the decimal fraction ::"
 msgstr ""
+"Kayan noktalı sayılar bilgisayar donanımında taban 2 (ikili) kesirler olarak "
+"temsil edilir.  Örneğin, ondalık kesir ::"
 
 #: tutorial/floatingpoint.rst:19
 msgid ""
 "has value 1/10 + 2/100 + 5/1000, and in the same way the binary fraction ::"
-msgstr ""
+msgstr "1/10 + 2/100 + 5/1000 değerine sahiptir ve aynı şekilde ikili kesir ::"
 
 #: tutorial/floatingpoint.rst:23
 msgid ""
@@ -37,6 +40,9 @@ msgid ""
 "only real difference being that the first is written in base 10 fractional "
 "notation, and the second in base 2."
 msgstr ""
+"0/2 + 0/4 + 1/8 değerine sahiptir.  Bu iki kesir aynı değerlere sahiptir, "
+"tek gerçek fark ilkinin 10 tabanında, ikincisinin ise 2 tabanında kesirli "
+"gösterimle yazılmış olmasıdır."
 
 #: tutorial/floatingpoint.rst:27
 msgid ""
@@ -45,16 +51,23 @@ msgid ""
 "point numbers you enter are only approximated by the binary floating-point "
 "numbers actually stored in the machine."
 msgstr ""
+"Ne yazık ki, ondalık kesirlerin çoğu tam olarak ikili kesir olarak "
+"gösterilemez.  Bunun bir sonucu olarak, genel olarak, girdiğiniz ondalık "
+"kayan noktalı sayılar, makinede gerçekte depolanan ikili kayan noktalı "
+"sayılar tarafından yalnızca yaklaşık olarak gösterilir."
 
 #: tutorial/floatingpoint.rst:32
 msgid ""
 "The problem is easier to understand at first in base 10.  Consider the "
 "fraction 1/3.  You can approximate that as a base 10 fraction::"
 msgstr ""
+"Problem ilk başta 10 tabanında daha kolay anlaşılabilir.  1/3 kesrini "
+"düşünün.  Bunu 10 tabanında bir kesir olarak yaklaşık olarak "
+"hesaplayabilirsiniz::"
 
 #: tutorial/floatingpoint.rst:41
 msgid "or, better, ::"
-msgstr ""
+msgstr "ya da daha iyisi ::"
 
 #: tutorial/floatingpoint.rst:45
 msgid ""
@@ -62,6 +75,9 @@ msgid ""
 "result will never be exactly 1/3, but will be an increasingly better "
 "approximation of 1/3."
 msgstr ""
+"ve bunun gibi.  Kaç basamak yazmak isterseniz isteyin, sonuç hiçbir zaman "
+"tam olarak 1/3 olmayacak, ancak 1/3'ün giderek daha iyi bir yaklaşımı "
+"olacaktır."
 
 #: tutorial/floatingpoint.rst:49
 msgid ""
@@ -69,6 +85,9 @@ msgid ""
 "decimal value 0.1 cannot be represented exactly as a base 2 fraction.  In "
 "base 2, 1/10 is the infinitely repeating fraction ::"
 msgstr ""
+"Aynı şekilde, kaç tane 2 tabanı basamağı kullanmak isterseniz isteyin, 0.1 "
+"ondalık değeri tam olarak 2 tabanı kesri olarak gösterilemez.  Taban 2'de "
+"1/10 sonsuza kadar tekrar eden bir kesirdir ::"
 
 #: tutorial/floatingpoint.rst:55
 msgid ""
@@ -79,6 +98,12 @@ msgid ""
 "fraction is ``3602879701896397 / 2 ** 55`` which is close to but not exactly "
 "equal to the true value of 1/10."
 msgstr ""
+"Herhangi bir sonlu bit sayısında durduğunuzda bir yaklaşık değer elde "
+"edersiniz.  Bugün çoğu makinede, kayan sayılar, pay en anlamlı bitten "
+"başlayarak ilk 53 bit kullanılarak ve payda ikinin kuvveti olarak ikili bir "
+"kesir kullanılarak yaklaştırılır.  1/10 durumunda ikili kesir, 1/10'un "
+"gerçek değerine yakın ancak tam olarak eşit olmayan ``3602879701896397 / 2 "
+"** 55`` şeklindedir."
 
 #: tutorial/floatingpoint.rst:62
 msgid ""
@@ -88,18 +113,28 @@ msgid ""
 "if Python were to print the true decimal value of the binary approximation "
 "stored for 0.1, it would have to display ::"
 msgstr ""
+"Birçok kullanıcı, değerlerin görüntülenme şekli nedeniyle bu yaklaşımın "
+"farkında değildir.  Python, makine tarafından depolanan ikili yaklaşımın "
+"gerçek ondalık değerine yalnızca ondalık bir yaklaşım yazdırır.  Çoğu "
+"makinede, Python 0.1 için saklanan ikili yaklaşımın gerçek ondalık değerini "
+"yazdıracak olsaydı, ::"
 
 #: tutorial/floatingpoint.rst:71
 msgid ""
 "That is more digits than most people find useful, so Python keeps the number "
 "of digits manageable by displaying a rounded value instead ::"
 msgstr ""
+"Bu çoğu insanın kullanışlı bulacağı seviyeden çok daha fazla basamak olurdu. "
+"Dolayısıyla, Python sayıları yuvarlayarak basamak sayısını kontrol "
+"edilebilir seviyede tutar ::"
 
 #: tutorial/floatingpoint.rst:77
 msgid ""
 "Just remember, even though the printed result looks like the exact value of "
 "1/10, the actual stored value is the nearest representable binary fraction."
 msgstr ""
+"Unutmayın, yazdırılan sonuç 1/10'un tam değeri gibi görünse de, saklanan "
+"gerçek değer temsil edilebilir olan en yakın ikili kesirdir."
 
 #: tutorial/floatingpoint.rst:80
 msgid ""
@@ -111,6 +146,12 @@ msgid ""
 "values share the same approximation, any one of them could be displayed "
 "while still preserving the invariant ``eval(repr(x)) == x``."
 msgstr ""
+"İlginç bir şekilde, aynı en yakın yaklaşık ikili kesri paylaşan birçok "
+"farklı ondalık sayı vardır.  Örneğin, ``0.1`` ve ``0.10000000000000001`` ve "
+"``0.1000000000000000055511151231257827021181583404541015625`` sayılarının "
+"tümü ``3602879701896397 / 2 ** 55`` ile yaklaştırılır.  Bu ondalık "
+"değerlerin tümü aynı yaklaşımı paylaştığından, ``eval(repr(x)) == x`` "
+"değişmezi korunarak bunlardan herhangi biri görüntülenebilir."
 
 #: tutorial/floatingpoint.rst:88
 msgid ""
@@ -119,6 +160,10 @@ msgid ""
 "Starting with Python 3.1, Python (on most systems) is now able to choose the "
 "shortest of these and simply display ``0.1``."
 msgstr ""
+"Geçmişte, Python komut istemi ve yerleşik :func:`repr` işlevi 17 anlamlı "
+"basamağa sahip olanı, ``0.10000000000000001`` seçerdi.   Python 3.1’den "
+"itibaren, Python (çoğu sistemde) artık bunlardan en kısa olanı seçebilmekte "
+"ve basitçe ``0.1``i görüntüleyebilmektedir."
 
 #: tutorial/floatingpoint.rst:93
 msgid ""
@@ -128,24 +173,34 @@ msgid ""
 "arithmetic (although some languages may not *display* the difference by "
 "default, or in all output modes)."
 msgstr ""
+"Bunun ikili kayan noktanın doğasında olduğunu unutmayın: bu Python'daki bir "
+"hata değildir ve kodunuzda daki bir hata da değildir.  Donanımınızın kayan "
+"noktalı aritmetiğini destekleyen tüm dillerde aynı şeyi göreceksiniz (bazı "
+"diller varsayılan olarak veya tüm çıktı modlarında farkı *göstermeyebilir*)."
 
 #: tutorial/floatingpoint.rst:99
 msgid ""
 "For more pleasant output, you may wish to use string formatting to produce a "
 "limited number of significant digits::"
 msgstr ""
+"Daha hoş bir çıktı için, sınırlı sayıda anlamlı hane üretmek üzere dize "
+"biçimlendirmesini kullanmak isteyebilirsiniz::"
 
 #: tutorial/floatingpoint.rst:111
 msgid ""
 "It's important to realize that this is, in a real sense, an illusion: you're "
 "simply rounding the *display* of the true machine value."
 msgstr ""
+"Bunun gerçek anlamda bir yanılsama olduğunun farkına varmak önemlidir: "
+"gerçek makine değerinin *görüntüsünü* yuvarlıyorsunuz."
 
 #: tutorial/floatingpoint.rst:114
 msgid ""
 "One illusion may beget another.  For example, since 0.1 is not exactly 1/10, "
 "summing three values of 0.1 may not yield exactly 0.3, either::"
 msgstr ""
+"Bir yanılsama diğerini doğurabilir.  Örneğin, 0,1 tam olarak 1/10 "
+"olmadığından, 0,1'in üç değerini toplamak da tam olarak 0,3 vermeyebilir::"
 
 #: tutorial/floatingpoint.rst:120
 msgid ""
@@ -153,6 +208,9 @@ msgid ""
 "cannot get any closer to the exact value of 3/10, then pre-rounding with :"
 "func:`round` function cannot help::"
 msgstr ""
+"Ayrıca, 0,1 tam 1/10 değerine ve 0,3 tam 3/10 değerine daha fazla "
+"yaklaşamayacağından, :func:`round` fonksiyonu ile ön yuvarlama yapmak "
+"yardımcı olamaz::"
 
 #: tutorial/floatingpoint.rst:127
 msgid ""
@@ -160,6 +218,9 @@ msgid ""
 "the :func:`round` function can be useful for post-rounding so that results "
 "with inexact values become comparable to one another::"
 msgstr ""
+"Sayılar amaçlanan tam değerlere yaklaştırılamasa da, :func:`round` işlevi, "
+"kesin olmayan değerlere sahip sonuçların birbiriyle karşılaştırılabilir hale "
+"gelmesi için sonradan yuvarlama yapmaya yarayabilir::"
 
 #: tutorial/floatingpoint.rst:134
 msgid ""
@@ -169,6 +230,11 @@ msgid ""
 "<https://www.lahey.com/float.htm>`_ for a more complete account of other "
 "common surprises."
 msgstr ""
+"İkili kayan noktalı aritmetik bunun gibi birçok sürpriz barındırır.  \"0.1\" "
+"ile ilgili sorun aşağıda \"Temsil Hatası\" bölümünde ayrıntılı olarak "
+"açıklanmıştır.  Diğer yaygın sürprizlerin daha kapsamlı bir açıklaması için "
+"`The Perils of Floating Point <https://www.lahey.com/float.htm>`_ bölümüne "
+"bakınız."
 
 #: tutorial/floatingpoint.rst:139
 msgid ""
@@ -180,6 +246,13 @@ msgid ""
 "decimal arithmetic and that every float operation can suffer a new rounding "
 "error."
 msgstr ""
+"Söylendiği üzere, \"kolay cevaplar yoktur.\"  Yine de, kayan nokta konusunda "
+"gereksiz yere temkinli olmayın!  Python kayan nokta işlemlerindeki hatalar "
+"kayan nokta donanımından miras alınır ve çoğu makinede işlem başına 2\\*"
+"\\*53'te 1 parçadan fazla değildir.  Bu, çoğu görev için fazlasıyla "
+"yeterlidir, ancak bunun ondalık aritmetik olmadığını ve her kayan nokta "
+"işleminin yeni bir yuvarlama hatasına maruz kalabileceğini aklınızda "
+"bulundurmanız gerekir."
 
 #: tutorial/floatingpoint.rst:146
 msgid ""
@@ -189,6 +262,12 @@ msgid ""
 "expect. :func:`str` usually suffices, and for finer control see the :meth:"
 "`str.format` method's format specifiers in :ref:`formatstrings`."
 msgstr ""
+"Patolojik durumlar mevcut olsa da, kayan noktalı aritmetiğin sıradan "
+"kullanımı için, nihai sonuçlarınızın görüntüsünü beklediğiniz ondalık "
+"basamak sayısına yuvarlarsanız, sonunda beklediğiniz sonucu görürsünüz. :"
+"func:`str` genellikle yeterlidir ve daha ince kontrol için :ref:"
+"`formatstrings` içindeki :meth:`str.format` yönteminin biçim "
+"belirleyicilerine bakın."
 
 #: tutorial/floatingpoint.rst:152
 msgid ""
@@ -196,6 +275,9 @@ msgid ""
 "`decimal` module which implements decimal arithmetic suitable for accounting "
 "applications and high-precision applications."
 msgstr ""
+"Tam ondalık gösterim gerektiren durumlar için, muhasebe uygulamaları ve "
+"yüksek hassasiyetli uygulamalar için uygun ondalık aritmetiği uygulayan :mod:"
+"`decimal` modülünü kullanmayı deneyin."
 
 #: tutorial/floatingpoint.rst:156
 msgid ""
@@ -203,6 +285,9 @@ msgid ""
 "which implements arithmetic based on rational numbers (so the numbers like "
 "1/3 can be represented exactly)."
 msgstr ""
+"Kesin aritmetiğin bir başka biçimi, rasyonel sayılara dayalı aritmetik "
+"uygulayan :mod:`fractions` modülü tarafından desteklenir (böylece 1/3 gibi "
+"sayılar tam olarak temsil edilebilir)."
 
 #: tutorial/floatingpoint.rst:160
 msgid ""
@@ -211,6 +296,9 @@ msgid ""
 "statistical operations supplied by the SciPy project. See <https://scipy."
 "org>."
 msgstr ""
+"Kayan nokta işlemlerinin yoğun bir kullanıcısıysanız, NumPy paketine ve "
+"SciPy projesi tarafından sağlanan matematiksel ve istatistiksel işlemler "
+"için olan birçok pakete göz atmalısınız. <https://scipy.org> adresine bakın."
 
 #: tutorial/floatingpoint.rst:164
 msgid ""
@@ -218,24 +306,35 @@ msgid ""
 "*do* want to know the exact value of a float.  The :meth:`float."
 "as_integer_ratio` method expresses the value of a float as a fraction::"
 msgstr ""
+"Python, bir kayan noktanın tam değerini *gerçekten* bilmek istediğiniz nadir "
+"durumlarda yardımcı olabilecek araçlar sağlar.  Meth:`float."
+"as_integer_ratio` metodu bir kayan noktanın değerini kesir olarak ifade "
+"eder::"
 
 #: tutorial/floatingpoint.rst:173
 msgid ""
 "Since the ratio is exact, it can be used to losslessly recreate the original "
 "value::"
 msgstr ""
+"Oran tam olduğundan, orijinal değeri kayıpsız olarak yeniden oluşturmak için "
+"kullanılabilir::"
 
 #: tutorial/floatingpoint.rst:179
 msgid ""
 "The :meth:`float.hex` method expresses a float in hexadecimal (base 16), "
 "again giving the exact value stored by your computer::"
 msgstr ""
+"Meth:`float.hex` yöntemi bir kayan nokta değerini onaltılık (16 tabanı) "
+"olarak ifade eder ve yine bilgisayarınız tarafından depolanan tam değeri "
+"verir::"
 
 #: tutorial/floatingpoint.rst:185
 msgid ""
 "This precise hexadecimal representation can be used to reconstruct the float "
 "value exactly::"
 msgstr ""
+"Bu hassas onaltılık gösterim, float değerini tam olarak yeniden oluşturmak "
+"için kullanılabilir::"
 
 #: tutorial/floatingpoint.rst:191
 msgid ""
@@ -244,6 +343,10 @@ msgid ""
 "data with other languages that support the same format (such as Java and "
 "C99)."
 msgstr ""
+"Temsil tam olduğundan, değerleri Python'un farklı sürümleri arasında "
+"güvenilir bir şekilde taşımak (platform bağımsızlığı) ve aynı biçimi "
+"destekleyen diğer dillerle (Java ve C99 gibi) veri alışverişi yapmak için "
+"kullanışlıdır."
 
 #: tutorial/floatingpoint.rst:195
 msgid ""
@@ -253,10 +356,15 @@ msgid ""
 "so that the errors do not accumulate to the point where they affect the "
 "final total:"
 msgstr ""
+"Bir başka yararlı araç da toplama sırasında hassasiyet kaybını azaltmaya "
+"yardımcı olan :func:`math.fsum` işlevidir.  Değerler çalışan bir toplam "
+"üzerine eklendikçe \"kayıp rakamları\" izler.  Bu, genel doğrulukta bir fark "
+"yaratabilir, böylece hatalar nihai toplamı etkileyecek noktaya kadar "
+"birikmez:"
 
 #: tutorial/floatingpoint.rst:209
 msgid "Representation Error"
-msgstr ""
+msgstr "Temsil Hatası"
 
 #: tutorial/floatingpoint.rst:211
 msgid ""
@@ -264,6 +372,9 @@ msgid ""
 "perform an exact analysis of cases like this yourself.  Basic familiarity "
 "with binary floating-point representation is assumed."
 msgstr ""
+"Bu bölüm \"0.1\" örneğini ayrıntılı olarak açıklamakta ve bu gibi durumların "
+"tam analizini kendiniz nasıl yapabileceğinizi göstermektedir.  İkili kayan "
+"nokta gösterimine temel düzeyde aşina olunduğu varsayılmaktadır."
 
 #: tutorial/floatingpoint.rst:215
 msgid ""
@@ -273,6 +384,10 @@ msgid ""
 "Fortran, and many others) often won't display the exact decimal number you "
 "expect."
 msgstr ""
+":dfn:`Temsil hatası`, bazı (aslında çoğu) ondalık kesirlerin tam olarak "
+"ikili (taban 2) kesirler olarak temsil edilemeyeceği gerçeğini ifade eder. "
+"Bu, Python'un (veya Perl, C, C++, Java, Fortran ve diğerlerinin) genellikle "
+"beklediğiniz tam ondalık sayıyı göstermemesinin başlıca nedenidir."
 
 #: tutorial/floatingpoint.rst:220
 msgid ""
@@ -283,39 +398,53 @@ msgid ""
 "strives to convert 0.1 to the closest fraction it can of the form *J*/2**\\ "
 "*N* where *J* is an integer containing exactly 53 bits.  Rewriting ::"
 msgstr ""
+"Peki bu neden gerçekleşir?  1/10 tam olarak ikili bir kesir olarak temsil "
+"edilemez. Günümüzde (Kasım 2000) neredeyse tüm makineler IEEE-754 kayan "
+"nokta aritmetiği kullanmaktadır ve neredeyse tüm platformlar Python kayan "
+"noktalarını IEEE-754 “çift duyarlılık” ile eşlemektedir.  754 çift 53 bit "
+"kesinlik içerir, bu nedenle girişte bilgisayar 0.1'i *J*/2**\\ *N* "
+"formundaki en yakın kesre dönüştürmeye çalışır, burada *J* tam olarak 53 bit "
+"içeren bir tamsayıdır.  Yeniden Yazma ::"
 
 #: tutorial/floatingpoint.rst:229
 msgid "as ::"
-msgstr ""
+msgstr "şu şekilde ::"
 
 #: tutorial/floatingpoint.rst:233
 msgid ""
 "and recalling that *J* has exactly 53 bits (is ``>= 2**52`` but ``< "
 "2**53``), the best value for *N* is 56::"
 msgstr ""
+"ve *J*'nin tam olarak 53 bit olduğunu hatırlarsak (``>= 2**52`` ama ``< "
+"2**53``), *N* için en iyi değer 56:'dır:"
 
 #: tutorial/floatingpoint.rst:239
 msgid ""
 "That is, 56 is the only value for *N* that leaves *J* with exactly 53 bits.  "
 "The best possible value for *J* is then that quotient rounded::"
 msgstr ""
+"Yani, *N* için *J*'ye tam olarak 53 bit bırakan tek değer 56'dır.  O halde "
+"*J* için mümkün olan en iyi değer, bu bölümün yuvarlanmış halidir::"
 
 #: tutorial/floatingpoint.rst:246
 msgid ""
 "Since the remainder is more than half of 10, the best approximation is "
 "obtained by rounding up::"
 msgstr ""
+"Kalanın değeri 10'un yarısından fazla olduğu için, en iyi yaklaşım yukarı "
+"yuvarlama ile elde edilir::"
 
 #: tutorial/floatingpoint.rst:252
 msgid ""
 "Therefore the best possible approximation to 1/10 in 754 double precision "
 "is::"
 msgstr ""
+"Bu nedenle 754 çift duyarlılıkta, 1/10'a mümkün olan en iyi yaklaşım şudur ::"
 
 #: tutorial/floatingpoint.rst:256
 msgid ""
 "Dividing both the numerator and denominator by two reduces the fraction to::"
-msgstr ""
+msgstr "Hem pay hem de paydayı ikiye böldüğünüzde kesir şuna indirgenir::"
 
 #: tutorial/floatingpoint.rst:260
 msgid ""
@@ -323,18 +452,25 @@ msgid ""
 "1/10; if we had not rounded up, the quotient would have been a little bit "
 "smaller than 1/10.  But in no case can it be *exactly* 1/10!"
 msgstr ""
+"Aslında bölümü yukarı yuvarladığımız için değerin 1/10'dan biraz daha büyük "
+"olduğuna dikkat edin; yukarı yuvarlamamış olsaydık, bölüm 1/10'dan biraz "
+"daha küçük olurdu.  Ancak hiçbir durumda *tam olarak* 1/10 olamaz!"
 
 #: tutorial/floatingpoint.rst:264
 msgid ""
 "So the computer never \"sees\" 1/10:  what it sees is the exact fraction "
 "given above, the best 754 double approximation it can get::"
 msgstr ""
+"Yani bilgisayar asla 1/10'u \"görmez\": gördüğü şey yukarıda verilen tam "
+"kesirdir, alabileceği en iyi 754 çift yaklaşımıdır::"
 
 #: tutorial/floatingpoint.rst:270
 msgid ""
 "If we multiply that fraction by 10\\*\\*55, we can see the value out to 55 "
 "decimal digits::"
 msgstr ""
+"Bu kesri 10\\*\\*55 ile çarparsak, değeri 55 ondalık basamağa kadar "
+"görebiliriz::"
 
 #: tutorial/floatingpoint.rst:276
 msgid ""
@@ -343,9 +479,14 @@ msgid ""
 "displaying the full decimal value, many languages (including older versions "
 "of Python), round the result to 17 significant digits::"
 msgstr ""
+"Bu da bilgisayarda depolanan gerçek değerin "
+"0.1000000000000000055511151231257827021181583404541015625 kesrine eşit "
+"olduğu anlamına gelir. Python’un eski sürümleri dahil olmak üzere çoğu dil, "
+"tam kesri göstermek yerine sonucu 17 anlamlı basamağa yuvarlar::"
 
 #: tutorial/floatingpoint.rst:284
 msgid ""
 "The :mod:`fractions` and :mod:`decimal` modules make these calculations "
 "easy::"
 msgstr ""
+":mod:`fractions` ve :mod:`decimal` modülleri bu hesaplamaları kolaylaştırır::"

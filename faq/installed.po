@@ -2,27 +2,28 @@
 # Copyright (C) 2001-2021, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-06-18 01:11+0300\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
+"X-Generator: Poedit 2.2\n"
 
 #: faq/installed.rst:3
 msgid "\"Why is Python Installed on my Computer?\" FAQ"
-msgstr ""
+msgstr "\"Python Bilgisayarımda Neden Yüklü?\" SSS"
 
 #: faq/installed.rst:6
 msgid "What is Python?"
-msgstr ""
+msgstr "Python nedir?"
 
 #: faq/installed.rst:8
 msgid ""
@@ -32,22 +33,31 @@ msgid ""
 "professional software developers at places such as Google, NASA, and "
 "Lucasfilm Ltd."
 msgstr ""
+"Python bir programlama dilidir.  Birçok farklı uygulama için kullanılır. "
+"Python'un öğrenilmesi kolay olduğu için bazı lise ve üniversitelerde"
+"programlamaya giriş dili olarak kullanılır, ancak aynı zamanda Google, NASA ve "
+"Lucasfilm Ltd. gibi yerlerde profesyonel yazılım geliştiriciler tarafından "
+"da kullanılır."
 
 #: faq/installed.rst:13
 msgid ""
 "If you wish to learn more about Python, start with the `Beginner's Guide to "
 "Python <https://wiki.python.org/moin/BeginnersGuide>`_."
 msgstr ""
+"Python hakkında daha fazla bilgi edinmek istiyorsanız, `Beginner's Guide to "
+"Python <https://wiki.python.org/moin/BeginnersGuide>`_ ile başlayın."
 
 #: faq/installed.rst:18
 msgid "Why is Python installed on my machine?"
-msgstr ""
+msgstr "Python makinemde neden yüklü?"
 
 #: faq/installed.rst:20
 msgid ""
 "If you find Python installed on your system but don't remember installing "
 "it, there are several possible ways it could have gotten there."
 msgstr ""
+"Python'un sisteminizde yüklü olduğunu görüyor ancak yüklediğinizi "
+"hatırlamıyorsanız, Python'un sisteminize girmesinin birkaç olası yolu vardır."
 
 #: faq/installed.rst:23
 msgid ""
@@ -55,6 +65,9 @@ msgid ""
 "installed it; you'll have to figure out who's been using the machine and "
 "might have installed it."
 msgstr ""
+"Belki de bilgisayardaki başka bir kullanıcı programlama öğrenmek istedi ve "
+"bunu yükledi; makineyi kimin kullandığını ve bunu kimin yüklemiş "
+"olabileceğini bulmanız gerekecek."
 
 #: faq/installed.rst:26
 msgid ""
@@ -63,6 +76,9 @@ msgid ""
 "applications, from GUI programs to network servers and administrative "
 "scripts."
 msgstr ""
+"Makineye yüklenen üçüncü parti bir uygulama Python ile yazılmış ve bir "
+"Python yüklemesi içeriyor olabilir.  GUI programlarından ağ sunucularına ve "
+"yönetim komut dosyalarına kadar bu tür birçok uygulama vardır."
 
 #: faq/installed.rst:29
 msgid ""
@@ -70,6 +86,9 @@ msgid ""
 "aware of computers from Hewlett-Packard and Compaq that include Python.  "
 "Apparently some of HP/Compaq's administrative tools are written in Python."
 msgstr ""
+"Bazı Windows makinelerde Python da yüklüdür.  Bu yazıyı yazarken Hewlett-"
+"Packard ve Compaq'ın Python içeren bilgisayarlarından haberdarız.  Görünüşe "
+"göre HP/Compaq'ın bazı yönetim araçları Python ile yazılmış."
 
 #: faq/installed.rst:32
 msgid ""
@@ -77,20 +96,25 @@ msgid ""
 "distributions, have Python installed by default; it's included in the base "
 "installation."
 msgstr ""
+"MacOS ve bazı Linux dağıtımları gibi Unix uyumlu birçok işletim sisteminde "
+"Python varsayılan olarak yüklüdür; temel kuruluma dahildir."
 
 #: faq/installed.rst:38
 msgid "Can I delete Python?"
-msgstr ""
+msgstr "Python'u silebilir miyim?"
 
 #: faq/installed.rst:40
 msgid "That depends on where Python came from."
-msgstr ""
+msgstr "Bu Python'un nereden geldiğine bağlıdır."
 
 #: faq/installed.rst:42
 msgid ""
 "If someone installed it deliberately, you can remove it without hurting "
 "anything.  On Windows, use the Add/Remove Programs icon in the Control Panel."
 msgstr ""
+"Birisi kasıtlı olarak yüklediyse, hiçbir şeye zarar vermeden "
+"kaldırabilirsiniz.  Windows'ta, Denetim Masası'ndaki Program Ekle/Kaldır "
+"simgesini kullanın."
 
 #: faq/installed.rst:45
 msgid ""
@@ -98,6 +122,9 @@ msgid ""
 "it, but that application will no longer work.  You should use that "
 "application's uninstaller rather than removing Python directly."
 msgstr ""
+"Python üçüncü parti bir uygulama tarafından yüklenmişse, onu da "
+"kaldırabilirsiniz, ancak bu uygulama artık çalışmayacaktır.  Python'u "
+"doğrudan kaldırmak yerine o uygulamanın kaldırıcısını kullanmalısınız."
 
 #: faq/installed.rst:49
 msgid ""
@@ -106,3 +133,7 @@ msgid ""
 "and some of them might be important to you.  Reinstalling the whole system "
 "would then be required to fix things again."
 msgstr ""
+"Python işletim sisteminizle birlikte geliyorsa, kaldırılması önerilmez.  "
+"Kaldırırsanız, Python'da yazılmış olan araçlar artık çalışmayacaktır ve "
+"bunlardan bazıları sizin için önemli olabilir.  Bu durumda işleri tekrar "
+"düzeltmek için tüm sistemi yeniden yüklemek gerekecektir."
