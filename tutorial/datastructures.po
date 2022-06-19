@@ -71,7 +71,7 @@ msgid ""
 "a :exc:`ValueError` if there is no such item."
 msgstr ""
 "Değeri *x*'e eşit olan ilk öğeyi listeden kaldırır.  Böyle bir öğe yoksa "
-"bir :exc:`ValueError` yükseltir."
+":exc:`ValueError` hatası ortaya çıkar."
 
 #: tutorial/datastructures.rst:50
 msgid ""
@@ -99,7 +99,7 @@ msgid ""
 "to *x*. Raises a :exc:`ValueError` if there is no such item."
 msgstr ""
 "Değeri *x*'e eşit olan ilk öğenin listedeki sıfır tabanlı indeksini "
-"döndürür. Böyle bir öğe yoksa bir :exc:`ValueError` yükseltir."
+"döndürür. Böyle bir öğe yoksa :exc:`ValueError` hatası ortaya çıkar."
 
 #: tutorial/datastructures.rst:69
 msgid ""
@@ -809,7 +809,7 @@ msgstr ""
 "unutmayın.  Örneğin, karışık sayısal türler sayısal değerlerine göre "
 "karşılaştırılır, bu nedenle 0 eşittir 0.0, vb.  Bu türler uygun yöntemlere "
 "sahip değillerse, yorumlayıcı rastgele bir sıralama döndürmek yerine :exc:"
-"`TypeError` istisnasını yükseltir."
+"`TypeError` hatası verir."
 
 #: tutorial/datastructures.rst:731
 msgid "Footnotes"
