@@ -3,33 +3,36 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-07-14 15:30+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #: glossary.rst:5
 msgid "Glossary"
-msgstr ""
+msgstr "Sözlük"
 
 #: glossary.rst:10
 msgid "``>>>``"
 msgstr ""
 
 #: glossary.rst:12
+#, fuzzy
 msgid ""
 "The default Python prompt of the interactive shell.  Often seen for code "
 "examples which can be executed interactively in the interpreter."
 msgstr ""
+"Etkileşimli kabuğun varsayılan Python istemi. Genellikle yorumlayıcıda "
+"etkileşimli olarak yürütülebilen kod örnekleri için görülür."
 
 #: glossary.rst:14
 msgid "``...``"
@@ -37,7 +40,7 @@ msgstr ""
 
 #: glossary.rst:16
 msgid "Can refer to:"
-msgstr ""
+msgstr "Şunlara başvurabilir:"
 
 #: glossary.rst:18
 msgid ""
@@ -46,14 +49,18 @@ msgid ""
 "delimiters (parentheses, square brackets, curly braces or triple quotes), or "
 "after specifying a decorator."
 msgstr ""
+"Girintili bir kod bloğu için kod girerken, eşleşen bir çift sol ve sağ "
+"sınırlayıcı (parantez, köşeli parantez, kaşlı ayraç veya üçlü tırnak) "
+"içindeyken veya bir dekoratör belirttikten sonra etkileşimli kabuğun "
+"varsayılan Python istemi."
 
 #: glossary.rst:23
 msgid "The :const:`Ellipsis` built-in constant."
-msgstr ""
+msgstr ":const:`Elipsis` yerleşik sabiti."
 
 #: glossary.rst:24
 msgid "2to3"
-msgstr ""
+msgstr "2to3"
 
 #: glossary.rst:26
 msgid ""
@@ -61,6 +68,9 @@ msgid ""
 "most of the incompatibilities which can be detected by parsing the source "
 "and traversing the parse tree."
 msgstr ""
+"Kaynağı ayrıştırarak ve ayrıştırma ağacında gezinerek tespit edilebilecek "
+"uyumsuzlukların çoğunu işleyerek Python 2.x kodunu Python 3.x koduna "
+"dönüştürmeye çalışan bir araç."
 
 #: glossary.rst:30
 msgid ""
@@ -68,10 +78,12 @@ msgid ""
 "entry point is provided as :file:`Tools/scripts/2to3`.  See :ref:`2to3-"
 "reference`."
 msgstr ""
+"2to3, standart kitaplıkta :mod:`lib2to3'; bağımsız bir giriş noktası şu "
+"şekilde sağlanır:file:`Tools/scripts/2to3`. Bakınız :ref:`2to3-referans`."
 
 #: glossary.rst:33
 msgid "abstract base class"
-msgstr ""
+msgstr "soyut temel sınıf"
 
 #: glossary.rst:35
 msgid ""
@@ -86,16 +98,30 @@ msgid ""
 "module), import finders and loaders (in the :mod:`importlib.abc` module).  "
 "You can create your own ABCs with the :mod:`abc` module."
 msgstr ""
+"Soyut temel sınıflar :term:`duck-typing`i, :func:`hasattr` gibi diğer "
+"teknikler beceriksiz veya tamamen yanlış olduğunda arayüzleri tanımlamanın "
+"bir yolunu sağlayarak tamamlar (örneğin :ref:`sihirli yöntemlerle<special-"
+"lookup>`).  ABC'ler, bir sınıftan miras almayan ancak yine de :func:"
+"`isinstance` ve :func:`issubclass` tarafından tanınan sınıflar olan sanal "
+"alt sınıfları tanıtır; :mod:`abc` modül belgelerine bakın.  Python comes "
+"with many built-in ABCs for data structures (in the :mod:`collections.abc` "
+"module), numbers (in the :mod:`numbers` module), streams (in the :mod:`io` "
+"module), import finders and loaders (in the :mod:`importlib.abc` module).  :"
+"mod:`abc` modülü ile kendi ABC'lerinizi oluşturabilirsiniz."
 
 #: glossary.rst:46
 msgid "annotation"
-msgstr ""
+msgstr "dipnot"
 
 #: glossary.rst:48
+#, fuzzy
 msgid ""
 "A label associated with a variable, a class attribute or a function "
 "parameter or return value, used by convention as a :term:`type hint`."
 msgstr ""
+"Bir değişkenle, bir sınıf niteliğiyle veya bir işlev parametresiyle veya bir "
+"dönüş değeriyle ilişkilendirilen, gelenek tarafından :term:'tür ipucu' "
+"olarak kullanılan bir etiket."
 
 #: glossary.rst:52
 msgid ""
@@ -104,6 +130,10 @@ msgid ""
 "in the :attr:`__annotations__` special attribute of modules, classes, and "
 "functions, respectively."
 msgstr ""
+"Yerel değişkenlerin açıklamalarına çalışma zamanında erişilemez, ancak "
+"global değişkenlerin, sınıf niteliklerinin ve işlevlerin açıklamaları, "
+"sırasıyla modüllerin, sınıfların ve işlevlerin :attr:`__annotations__` özel "
+"özelliğinde saklanır."
 
 #: glossary.rst:58
 msgid ""
@@ -111,16 +141,22 @@ msgid ""
 "and :pep:`526`, which describe this functionality. Also see :ref:"
 "`annotations-howto` for best practices on working with annotations."
 msgstr ""
+"Bu işlevi açıklayan :term:`variable annotation`, :term:`function "
+"annotation`, :pep:`484` ve :pep:`526`'e bakın. Ek açıklamalarla çalışmaya "
+"ilişkin en iyi uygulamalar için ayrıca bkz. :ref:`annotations-howto`."
 
 #: glossary.rst:62
 msgid "argument"
-msgstr ""
+msgstr "argüman"
 
 #: glossary.rst:64
+#, fuzzy
 msgid ""
 "A value passed to a :term:`function` (or :term:`method`) when calling the "
 "function.  There are two kinds of argument:"
 msgstr ""
+"İşlev çağrılırken bir :term:`function`e (veya :term:`method`) geçirilen bir "
+"değer, İki tür argüman vardır:"
 
 #: glossary.rst:67
 msgid ""
@@ -129,6 +165,10 @@ msgid ""
 "by ``**``.  For example, ``3`` and ``5`` are both keyword arguments in the "
 "following calls to :func:`complex`::"
 msgstr ""
+":dfn:`keyword argument`: bir işlev çağrısında bir tanımlayıcının (ör. "
+"``ad=``) önüne geçen veya bir sözlükte ``**`` ile başlayan bir değer olarak "
+"geçirilen bir argüman.  Örneğin, \"3\" ve \"5\", aşağıdaki :func:`complex`: "
+"çağrılarında anahtar kelimenin bağımsız değişkenleridir:"
 
 #: glossary.rst:75
 msgid ""
@@ -137,6 +177,11 @@ msgid ""
 "be passed as elements of an :term:`iterable` preceded by ``*``. For example, "
 "``3`` and ``5`` are both positional arguments in the following calls::"
 msgstr ""
+":dfn:`positional argument`: anahtar kelime argümanı olmayan bir argüman. "
+"Konumsal bağımsız değişkenler, bir bağımsız değişken listesinin başında "
+"görünebilir ve/veya \"*\" ile başlayan bir :term:\"iterable\" öğesinin "
+"öğeleri olarak iletilebilir. Örneğin, \"3\" ve \"5\", aşağıdaki çağrılarda "
+"konumsal bağımsız değişkenlerdir:"
 
 #: glossary.rst:84
 msgid ""
@@ -145,17 +190,25 @@ msgid ""
 "Syntactically, any expression can be used to represent an argument; the "
 "evaluated value is assigned to the local variable."
 msgstr ""
+"Bağımsız değişkenler, bir işlev gövdesindeki adlandırılmış yerel "
+"değişkenlere atanır. Bu atamayı yöneten kurallar için :ref:`calls` bölümüne "
+"bakın. Sözdizimsel olarak, bir argümanı temsil etmek için herhangi bir ifade "
+"kullanılabilir; değerlendirilen değer yerel değişkene atanır."
 
 #: glossary.rst:89
+#, fuzzy
 msgid ""
 "See also the :term:`parameter` glossary entry, the FAQ question on :ref:`the "
 "difference between arguments and parameters <faq-argument-vs-parameter>`, "
 "and :pep:`362`."
 msgstr ""
+"Ayrıca :term:`parameter` sözlüğü girişine, :ref:`argümanlar ve parametreler "
+"arasındaki fark <faq-argument-vs-parameter>` hakkındaki SSS sorusuna ve :pep:"
+"`362`ye bakın."
 
 #: glossary.rst:92
 msgid "asynchronous context manager"
-msgstr ""
+msgstr "asenkron bağlam yöneticisi"
 
 #: glossary.rst:94
 msgid ""
@@ -163,10 +216,13 @@ msgid ""
 "statement by defining :meth:`__aenter__` and :meth:`__aexit__` methods.  "
 "Introduced by :pep:`492`."
 msgstr ""
+":keyword:`async with` ifadesinde görülen ortamı :meth:`__aenter__` ve :meth:"
+"`__aexit__` yöntemlerini tanımlayarak kontrol eden bir nesne.  :pep:`492` de "
+"anlatıldı"
 
 #: glossary.rst:97
 msgid "asynchronous generator"
-msgstr ""
+msgstr "asenkron jeneratör"
 
 #: glossary.rst:99
 msgid ""
@@ -175,6 +231,10 @@ msgid ""
 "that it contains :keyword:`yield` expressions for producing a series of "
 "values usable in an :keyword:`async for` loop."
 msgstr ""
+"Bir :term:`asynchronous generator literatör' döndüren bir işlev.  Bir :"
+"keyword:`async for` döngüsünde kullanılabilen bir dizi değer üretmek için :"
+"keyword:`yield` ifadeleri içermesi dışında :keyword:`async def` ile "
+"tanımlanmış bir eşyordam işlevine benziyor."
 
 #: glossary.rst:104
 msgid ""
@@ -182,20 +242,27 @@ msgid ""
 "*asynchronous generator iterator* in some contexts.  In cases where the "
 "intended meaning isn't clear, using the full terms avoids ambiguity."
 msgstr ""
+"Genellikle bir asenkron üreteç işlevine atıfta bulunur, ancak bazı "
+"bağlamlarda bir *asynchronous generator iterator*e karşılık gelebilir.  "
+"Amaçlanan anlamın net olmadığı durumlarda, tam terimlerin kullanılması "
+"belirsizliği önler."
 
 #: glossary.rst:108
 msgid ""
 "An asynchronous generator function may contain :keyword:`await` expressions "
 "as well as :keyword:`async for`, and :keyword:`async with` statements."
 msgstr ""
+"Bir asynchronous generator function , :keyword:`await` ifadelerinin yanı "
+"sıra :keyword:`async for` ve :keyword:`async with` ifadeleri içerebilir."
 
 #: glossary.rst:111
 msgid "asynchronous generator iterator"
-msgstr ""
+msgstr "asenkron jeneratör yineleyici"
 
 #: glossary.rst:113
 msgid "An object created by a :term:`asynchronous generator` function."
 msgstr ""
+"Bir :term:`asynchronous generator` ` işlevi tarafından oluşturulan bir nesne."
 
 #: glossary.rst:115
 msgid ""
@@ -204,6 +271,9 @@ msgid ""
 "of the asynchronous generator function until the next :keyword:`yield` "
 "expression."
 msgstr ""
+"Bu, :meth:`__anext__` yöntemi kullanılarak çağrıldığında, bir sonraki :"
+"keyword:`yield` ifadesine kadar asynchronous generator işlevinin gövdesini "
+"yürütecek, beklenebilir bir nesne döndüren bir :term:`asynchronous iterator"
 
 #: glossary.rst:120
 msgid ""
@@ -213,10 +283,12 @@ msgid ""
 "with another awaitable returned by :meth:`__anext__`, it picks up where it "
 "left off.  See :pep:`492` and :pep:`525`."
 msgstr ""
+"Her :keyword:`yiald`, konum yürütme durumunu hatırlayarak (yerel değişkenler "
+"ve bekleyen try ifadeleri dahil) işlemeyi geçici olarak askıya alır."
 
 #: glossary.rst:125
 msgid "asynchronous iterable"
-msgstr ""
+msgstr "eşzamansız yinelenebilir"
 
 #: glossary.rst:127
 msgid ""
@@ -224,12 +296,16 @@ msgid ""
 "return an :term:`asynchronous iterator` from its :meth:`__aiter__` method.  "
 "Introduced by :pep:`492`."
 msgstr ""
+"Bir :keyword:`async for` ifadesinde kullanılabilen bir nesne. :meth:"
+"`__aiter__` yönteminden bir :term:`asynchronous iterator` ` döndürmelidir.  :"
+"pep:`492` de tanıtıldı"
 
 #: glossary.rst:130
 msgid "asynchronous iterator"
-msgstr ""
+msgstr "asenkron yineleyici"
 
 #: glossary.rst:132
+#, fuzzy
 msgid ""
 "An object that implements the :meth:`__aiter__` and :meth:`__anext__` "
 "methods.  ``__anext__`` must return an :term:`awaitable` object. :keyword:"
@@ -237,10 +313,15 @@ msgid ""
 "meth:`__anext__` method until it raises a :exc:`StopAsyncIteration` "
 "exception.  Introduced by :pep:`492`."
 msgstr ""
+":meth:`__aiter__` ve :meth:`__anext__` yöntemlerini uygulayan bir nesne.  "
+"``__anext__`` bir :term:`awaitable` nesnesi döndürmelidir. :keyword:`async "
+"for`, bir asynchronous iterator ün :meth:`__anext__` yöntemi tarafından "
+"döndürülen beklenebilirleri bir :exc:`StopAsyncIteration` istisnası "
+"oluşturana kadar çözer."
 
 #: glossary.rst:137
 msgid "attribute"
-msgstr ""
+msgstr "nitelik"
 
 #: glossary.rst:139
 msgid ""
@@ -248,6 +329,9 @@ msgid ""
 "expressions.  For example, if an object *o* has an attribute *a* it would be "
 "referenced as *o.a*."
 msgstr ""
+"Noktalı ifadeler kullanılarak adıyla başvurulan bir nesneyle ilişkili "
+"değer.  Örneğin, *o* nesnesinin *a* özniteliği varsa, bu nesneye *o.a* "
+"olarak başvurulur."
 
 #: glossary.rst:142
 msgid "awaitable"
@@ -259,20 +343,25 @@ msgid ""
 "term:`coroutine` or an object with an :meth:`__await__` method. See also :"
 "pep:`492`."
 msgstr ""
+":keyword:`await` ifadesinde kullanılabilen bir nesne.  Bir :term:`coroutine` "
+"veya :meth:`__await__` yöntemine sahip bir nesne olabilir. Ayrıca bakınız :"
+"pep:`492`."
 
 #: glossary.rst:147
 msgid "BDFL"
-msgstr ""
+msgstr "BDFL"
 
 #: glossary.rst:149
 msgid ""
 "Benevolent Dictator For Life, a.k.a. `Guido van Rossum <https://gvanrossum."
 "github.io/>`_, Python's creator."
 msgstr ""
+"Benevolent Dictator For Life, namı diğer `Guido van Rossum <https://"
+"gvanrossum.github.io/>`_, Python'un yaratıcısı."
 
 #: glossary.rst:151
 msgid "binary file"
-msgstr ""
+msgstr "ikili dosya"
 
 #: glossary.rst:153
 msgid ""
@@ -282,24 +371,37 @@ msgid ""
 "stdout.buffer`, and instances of :class:`io.BytesIO` and :class:`gzip."
 "GzipFile`."
 msgstr ""
+"Bir :term:`dosya nesnesi` :term:`bayt benzeri nesneler <bayt benzeri nesne>` "
+"okuyabilir ve yazabilir. İkili dosya örnekleri, ikili modda açılan "
+"dosyalardır (``'rb'``, ``'wb'`` veya ``'rb+'``), :data:`sys.stdin.buffer`, :"
+"data: \"sys.stdout.buffer\" ve :class:`io.BytesIO` ve :class:`gzip.GzipFile` "
+"örnekleri."
 
 #: glossary.rst:160
 msgid ""
 "See also :term:`text file` for a file object able to read and write :class:"
 "`str` objects."
 msgstr ""
+"Ayrıca :class:`str` nesnelerini okuyabilen ve yazabilen bir dosya nesnesi "
+"için :term:`text file `a bakın."
 
 #: glossary.rst:162
+#, fuzzy
 msgid "borrowed reference"
-msgstr ""
+msgstr "ödünç alınan referans"
 
 #: glossary.rst:164
+#, fuzzy
 msgid ""
 "In Python's C API, a borrowed reference is a reference to an object. It does "
 "not modify the object reference count. It becomes a dangling pointer if the "
 "object is destroyed. For example, a garbage collection can remove the last :"
 "term:`strong reference` to the object and so destroy it."
 msgstr ""
+"Python'un C API'sinde borrowed reference, bir nesneye yapılan bir "
+"referanstır. Nesne referans sayısını değiştirmez. Nesne yok edilirse sarkan "
+"bir işaretçi olur. Örneğin, bir çöp toplama, nesneye yapılan son :term:"
+"`strong reference' kaldırabilir ve böylece onu yok edebilir."
 
 #: glossary.rst:169
 msgid ""
@@ -309,10 +411,15 @@ msgid ""
 "func:`Py_NewRef` function can be used to create a new :term:`strong "
 "reference`."
 msgstr ""
+":term:`borrowed reference` üzerinde :c:func:`Py_INCREF` çağırmak, nesnenin "
+"ödünç alınanın son kullanımından önce yok edilemediği durumlar dışında, onu "
+"yerinde bir :term:`strong reference ` a dönüştürmek için tavsiye edilir. "
+"referans. :c:func:`Py_NewRef` işlevi, yeni bir :term:`strong referencee` "
+"oluşturmak için kullanılabilir."
 
 #: glossary.rst:174
 msgid "bytes-like object"
-msgstr ""
+msgstr "bayt benzeri nesne"
 
 #: glossary.rst:176
 msgid ""
@@ -323,6 +430,12 @@ msgid ""
 "with binary data; these include compression, saving to a binary file, and "
 "sending over a socket."
 msgstr ""
+":ref:`bufferobjects`i destekleyen ve bir C-:term:`contiguous` arabelleğini "
+"dışa aktarabilen bir nesne. Bu, tüm :class:`bytes`, :class:`bytearray` ve :"
+"class:`array.array` nesnelerinin yanı sıra birçok yaygın :class:`memoryview` "
+"nesnesini içerir.  Bayt benzeri nesneler, ikili verilerle çalışan çeşitli "
+"işlemler için kullanılabilir; bunlara sıkıştırma, ikili dosyaya kaydetme ve "
+"bir soket üzerinden gönderme dahildir."
 
 #: glossary.rst:183
 msgid ""
@@ -333,10 +446,17 @@ msgid ""
 "immutable objects (\"read-only bytes-like objects\"); examples of these "
 "include :class:`bytes` and a :class:`memoryview` of a :class:`bytes` object."
 msgstr ""
+"Bazı işlemler, değişken olması için ikili verilere ihtiyaç duyar.  Belgeler "
+"genellikle bunlara \"okuma-yazma bayt benzeri nesneler\" olarak atıfta "
+"bulunur. Örnek değiştirilebilir arabellek nesneleri :class:`bytearray` ve "
+"bir :class:`bytearray` :class:`memoryview` içerir. Diğer işlemler, ikili "
+"verilerin değişmez nesnelerde (\"salt okunur bayt benzeri nesneler\") "
+"depolanmasını gerektirir; bunların örnekleri arasında :class:`bytes` ve bir :"
+"class:`bytes` nesnesinin :class:`memoryview` bulunur."
 
 #: glossary.rst:191
 msgid "bytecode"
-msgstr ""
+msgstr "bayt kodu"
 
 #: glossary.rst:193
 msgid ""
@@ -349,32 +469,46 @@ msgid ""
 "expected to work between different Python virtual machines, nor to be stable "
 "between Python releases."
 msgstr ""
+"Python kaynak kodu, bir Python programının CPython yorumlayıcısındaki dahili "
+"temsili olan bayt kodunda derlenir.  Bayt kodu ayrıca ``.pyc`` dosyalarında "
+"önbelleğe alınır, böylece aynı dosyanın ikinci kez çalıştırılması daha hızlı "
+"olur (kaynaktan bayt koduna yeniden derleme önlenebilir).  Bu \"ara dilin\", "
+"her bir bayt koduna karşılık gelen makine kodunu yürüten bir :term:'sanal "
+"makine' üzerinde çalıştığı söylenir. Bayt kodlarının farklı Python sanal "
+"makineleri arasında çalışması veya Python sürümleri arasında kararlı olması "
+"beklenmediğini unutmayın."
 
 #: glossary.rst:203
 msgid ""
 "A list of bytecode instructions can be found in the documentation for :ref:"
 "`the dis module <bytecodes>`."
 msgstr ""
+"Bayt kodu talimatlarının bir listesi :ref:`dis module <bytecodes>` "
+"belgelerinde bulunabilir."
 
 #: glossary.rst:205
 msgid "callback"
-msgstr ""
+msgstr "geri çağırmak"
 
 #: glossary.rst:207
 msgid ""
 "A subroutine function which is passed as an argument to be executed at some "
 "point in the future."
 msgstr ""
+"Gelecekte bir noktada yürütülecek bir argüman olarak iletilen bir alt "
+"program işlevi."
 
 #: glossary.rst:209
 msgid "class"
-msgstr ""
+msgstr "sınıf"
 
 #: glossary.rst:211
 msgid ""
 "A template for creating user-defined objects. Class definitions normally "
 "contain method definitions which operate on instances of the class."
 msgstr ""
+"Kullanıcı tanımlı nesneler oluşturmak için bir şablon. Sınıf tanımları "
+"normalde sınıfın örnekleri üzerinde çalışan yöntem tanımlarını içerir."
 
 #: glossary.rst:214
 msgid "class variable"
