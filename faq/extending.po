@@ -166,7 +166,8 @@ msgid ""
 msgstr ""
 "Baytlar için, :c:func:`PyBytes_Size` uzunluğunu döndürür ve :c:func:"
 "`PyBytes_AsStringAndSize` değerine ve uzunluğuna bir işaretçi sağlar.  "
-"Python bytes nesnelerinin null byte içerebileceğini unutmayın, bu nedenle "
+"Python bayt nesnelerinin null bayt içerebileceğini unutmayın, bu nedenle "
+
 "C'nin :c:func:`strlen` özelliği kullanılmamalıdır."
 
 #: faq/extending.rst:92
