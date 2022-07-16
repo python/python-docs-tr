@@ -56,10 +56,10 @@ msgid ""
 "or static C++ objects with constructors are probably not a good idea."
 msgstr ""
 "Evet, C++'da bulunan C uyumluluk özelliklerini kullanarak.  ``extern \"C"
-"\" { ... }`` komutunu Python include dosyalarının etrafına yerleştirin ve Python "
-"yorumlayıcısı tarafından çağrılacak her fonksiyonun önüne ``extern \"C\"`` "
-"koyun. Yapıcıları olan global veya statik C++ nesneleri muhtemelen iyi bir "
-"fikir değildir."
+"\" { ... }`` komutunu Python include dosyalarının etrafına yerleştirin ve "
+"Python yorumlayıcısı tarafından çağrılacak her fonksiyonun önüne ``extern \"C"
+"\"`` koyun. Yapıcıları olan global veya statik C++ nesneleri muhtemelen iyi "
+"bir fikir değildir."
 
 #: faq/extending.rst:37
 msgid "Writing C is hard; are there any alternatives?"
@@ -85,7 +85,6 @@ msgstr ""
 "canterbury.ac.nz/greg.ewing/python/Pyrex/>`_ Python'un biraz değiştirilmiş "
 "bir formunu kabul eden ve karşılık gelen C kodunu üreten derleyicilerdir.  "
 "Cython ve Pyrex, Python'un C API'ını öğrenmek zorunda kalmadan bir uzantı "
-
 "yazmayı mümkün kılar."
 
 #: faq/extending.rst:50
@@ -130,7 +129,6 @@ msgstr ""
 msgid "How can I evaluate an arbitrary Python expression from C?"
 msgstr "C'den rastgele Python komutlarını nasıl değerlendirebilirim?"
 
-
 #: faq/extending.rst:74
 msgid ""
 "Call the function :c:func:`PyRun_String` from the previous question with the "
@@ -167,7 +165,6 @@ msgstr ""
 "Baytlar için, :c:func:`PyBytes_Size` uzunluğunu döndürür ve :c:func:"
 "`PyBytes_AsStringAndSize` değerine ve uzunluğuna bir işaretçi sağlar.  "
 "Python bayt nesnelerinin null bayt içerebileceğini unutmayın, bu nedenle "
-
 "C'nin :c:func:`strlen` özelliği kullanılmamalıdır."
 
 #: faq/extending.rst:92
@@ -190,7 +187,6 @@ msgid ""
 "al.) and mappings in the PyMapping APIs."
 msgstr ""
 "Ayrıca Python nesneleri için 'abstract' arayüzü tarafından sağlanan üst "
-
 "düzey bir API de vardır -- daha fazla ayrıntı için ``Include/abstract.h`` "
 "dosyasını okuyun.  C:func:`PySequence_Length`, :c:func:`PySequence_GetItem`, "
 "vb. gibi çağrıları kullanarak her türlü Python dizisi ile arayüz "
@@ -231,8 +227,8 @@ msgid ""
 "return value."
 msgstr ""
 "Bu, ister yerleşik ister kullanıcı tanımlı olsun, yöntemleri olan herhangi "
-"bir nesne için geçerlidir. Sonunda dönüş değerini ::c:func:`Py_DECREF`\\ 'lemekten "
-"siz sorumlusunuz."
+"bir nesne için geçerlidir. Sonunda dönüş değerini ::c:func:`Py_DECREF`\\ "
+"'lemekten siz sorumlusunuz."
 
 #: faq/extending.rst:124
 msgid ""
@@ -283,7 +279,6 @@ msgstr ""
 #: faq/extending.rst:161
 msgid "A custom object to do the same would look like this:"
 msgstr "Aynı şeyi yapan özel bir nesne şöyle görünecektir:"
-
 
 #: faq/extending.rst:182
 msgid "How do I access a module written in Python from C?"
@@ -350,8 +345,8 @@ msgstr "C++ kütüphaneleri için bakınız :ref:`c-wrapper-software`."
 #: faq/extending.rst:216
 msgid "I added a module using the Setup file and the make fails; why?"
 msgstr ""
-"Kurulum dosyasını kullanarak bir modül ekledim ve derleme başarısız oldu; neden?"
-
+"Kurulum dosyasını kullanarak bir modül ekledim ve derleme başarısız oldu; "
+"neden?"
 
 #: faq/extending.rst:218
 msgid ""
@@ -464,18 +459,18 @@ msgid ""
 "using the GNU readline library (you may want to ignore **SIGINT** while "
 "calling readline())::"
 msgstr ""
-"Ancak bazen gömülü Python yorumlayıcısını geri kalan uygulamanızla aynı _thread_ (iş parçacığı) "
-"içerisinde çalıştırmanız gerekir ve :c:func:`PyRun_InteractiveLoop`un "
-
-"kullanıcı girdisini beklerken durmasına izin veremezsiniz. Çözümlerden biri, "
-"alınan dizeyi :c:func:`Py_CompileString` ile derlemeye çalışmaktır. Eğer "
-"hatasız derlenirse, :c:func:`PyEval_EvalCode` çağrısı ile dönen kod "
-"nesnesini çalıştırmayı deneyin. Aksi takdirde girdiyi daha sonrası için "
-"saklayın. Derleme başarısız olursa, bunun bir hata mı olduğunu yoksa daha "
-"fazla girdi mi gerektiğini öğrenin - istisna tuple'ından mesaj string'ini "
-"çıkararak ve \"ayrıştırma sırasında beklenmedik EOF\" dizesiyle "
-"karşılaştırarak.  İşte GNU readline kütüphanesini kullanan tam bir örnek "
-"(readline()'ı çağırırken **SIGINT**'i göz ardı etmek isteyebilirsiniz)::"
+"Ancak bazen gömülü Python yorumlayıcısını geri kalan uygulamanızla aynı "
+"_thread_ (iş parçacığı) içerisinde çalıştırmanız gerekir ve :c:func:"
+"`PyRun_InteractiveLoop`un kullanıcı girdisini beklerken durmasına izin "
+"veremezsiniz. Çözümlerden biri, alınan dizeyi :c:func:`Py_CompileString` ile "
+"derlemeye çalışmaktır. Eğer hatasız derlenirse, :c:func:`PyEval_EvalCode` "
+"çağrısı ile dönen kod nesnesini çalıştırmayı deneyin. Aksi takdirde girdiyi "
+"daha sonrası için saklayın. Derleme başarısız olursa, bunun bir hata mı "
+"olduğunu yoksa daha fazla girdi mi gerektiğini öğrenin - istisna tuple'ından "
+"mesaj string'ini çıkararak ve \"ayrıştırma sırasında beklenmedik EOF\" "
+"dizesiyle karşılaştırarak.  İşte GNU readline kütüphanesini kullanan tam bir "
+"örnek (readline()'ı çağırırken **SIGINT**'i göz ardı etmek "
+"isteyebilirsiniz)::"
 
 #: faq/extending.rst:401
 msgid "How do I find undefined g++ symbols __builtin_new or __pure_virtual?"
