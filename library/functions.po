@@ -751,7 +751,9 @@ msgid ""
 "documentation for information on how to work with AST objects."
 msgstr ""
 "*source* 'ı bir koda veya AST nesnesine derler. Kod nesneleri :func:`exec` "
-"veya :func:`eval` fonksiyonları kullanılarak çalıştırılabilir."
+"veya :func:`eval` fonksiyonları kullanılarak çalıştırılabilir. "
+"*source* normal bir dize, bayt dizesi veya bir AST nesnesi olabilir. "
+"AST nesneleriyle nasıl çalışılacağını öğrenmek için :mod:`ast` modülüne bkz."
 
 #: library/functions.rst:281
 msgid ""
