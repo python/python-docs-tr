@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: 2022-05-27 20:15+0300\n"
+"PO-Revision-Date: 2022-07-19 18:15+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.1\n"
 
 #: library/stdtypes.rst:8
 msgid "Built-in Types"
@@ -2753,6 +2753,9 @@ msgid ""
 "When formatting a number with the ``n`` type, the function sets temporarily "
 "the ``LC_CTYPE`` locale to the ``LC_NUMERIC`` locale in some cases."
 msgstr ""
+"Bir sayıyı ``n`` türüyle biçimlendirirken, fonksiyon bazı durumlarda "
+"``LC_CTYPE`` yerel ayarını geçici olarak ``LC_NUMERIC`` yerel ayarına "
+"ayarlar."
 
 #: library/stdtypes.rst:1674
 msgid ""
@@ -2760,12 +2763,17 @@ msgid ""
 "directly and not copied to a :class:`dict`.  This is useful if for example "
 "``mapping`` is a dict subclass:"
 msgstr ""
+"Str.format(**mapping)`` ile benzerdir, ancak ``mapping`` doğrudan kullanılır "
+"ve bir :class:`dict`e kopyalanmaz.  Örneğin, ``mapping`` bir dict alt sınıfı "
+"ise bu kullanışlıdır:"
 
 #: library/stdtypes.rst:1690
 msgid ""
 "Like :meth:`~str.find`, but raise :exc:`ValueError` when the substring is "
 "not found."
 msgstr ""
+":meth:`~str.find` gibi, ancak alt dize bulunamadığında :exc:`ValueError` "
+"yükseltir."
 
 #: library/stdtypes.rst:1696
 msgid ""
@@ -2774,6 +2782,10 @@ msgid ""
 "alphanumeric if one of the following returns ``True``: ``c.isalpha()``, ``c."
 "isdecimal()``, ``c.isdigit()``, or ``c.isnumeric()``."
 msgstr ""
+"Dizedeki tüm karakterler alfanümerikse ve en az bir karakter varsa ``True``, "
+"aksi takdirde ``False`` döndürür.  Bir ``c`` karakteri, aşağıdakilerden biri "
+"``True`` döndürüyorsa alfasayısaldır: ``c.isalpha()``, ``c.isdecimal()``, "
+"``c.isdigit()`` veya ``c.isnumeric()``."
 
 #: library/stdtypes.rst:1704
 msgid ""
@@ -2784,6 +2796,12 @@ msgid ""
 "\", \"Ll\", or \"Lo\".  Note that this is different from the \"Alphabetic\" "
 "property defined in the Unicode Standard."
 msgstr ""
+"Dizedeki tüm karakterler alfabetikse ve en az bir karakter varsa ``True``, "
+"aksi takdirde ``False`` döndürür.  Alfabetik karakterler, Unicode karakter "
+"veritabanında \"Harf\" olarak tanımlanan karakterlerdir, yani genel kategori "
+"özelliği \"Lm\", \"Lt\", \"Lu\", \"Ll\" veya \"Lo \"dan biri olan "
+"karakterlerdir.  Bunun Unicode Standardında tanımlanan \"Alfabetik\" "
+"özelliğinden farklı olduğunu unutmayın."
 
 #: library/stdtypes.rst:1713
 msgid ""
@@ -2791,6 +2809,9 @@ msgid ""
 "ASCII, ``False`` otherwise. ASCII characters have code points in the range U"
 "+0000-U+007F."
 msgstr ""
+"Dize boşsa veya dizedeki tüm karakterler ASCII ise ``True``, aksi takdirde "
+"``False`` döndürür. ASCII karakterleri U+0000-U+007F aralığında kod "
+"noktalarına sahiptir."
 
 #: library/stdtypes.rst:1722
 msgid ""
@@ -2800,6 +2821,11 @@ msgid ""
 "DIGIT ZERO.  Formally a decimal character is a character in the Unicode "
 "General Category \"Nd\"."
 msgstr ""
+"Dizedeki tüm karakterler ondalık karakter ise ve en az bir karakter varsa "
+"``True``, aksi takdirde ``False`` döndürür. Ondalık karakterler 10 tabanında "
+"sayılar oluşturmak için kullanılabilen karakterlerdir, örneğin U+0660, "
+"ARAPÇA-HİNTÇE RAKAM SIFIR.  Resmi olarak bir ondalık karakter Unicode Genel "
+"Kategorisi \"Nd\" içerisindeki bir karakterdir."
 
 #: library/stdtypes.rst:1732
 msgid ""
@@ -2810,28 +2836,40 @@ msgid ""
 "like the Kharosthi numbers.  Formally, a digit is a character that has the "
 "property value Numeric_Type=Digit or Numeric_Type=Decimal."
 msgstr ""
+"Dizedeki tüm karakterler rakamsa ve en az bir karakter varsa ``True``, aksi "
+"takdirde ``False`` döndürür.  Rakamlar ondalık karakterleri ve özel işlem "
+"gerektiren rakamları (uyumluluk üst simge rakamları gibi) içerir. Bu, "
+"Kharosthi sayıları gibi 10 tabanında sayı oluşturmak için kullanılamayan "
+"rakamları kapsar.  Resmi olarak rakam, Numeric_Type=Digit veya "
+"Numeric_Type=Decimal özellik değerine sahip bir karakterdir."
 
 #: library/stdtypes.rst:1742
 msgid ""
 "Return ``True`` if the string is a valid identifier according to the "
 "language definition, section :ref:`identifiers`."
 msgstr ""
+"ref:`identifiers` bölümüne göre dizge dil tanımına göre geçerli bir "
+"tanımlayıcı ise ``True`` döndürür."
 
 #: library/stdtypes.rst:1745
 msgid ""
 "Call :func:`keyword.iskeyword` to test whether string ``s`` is a reserved "
 "identifier, such as :keyword:`def` and :keyword:`class`."
 msgstr ""
+":func:`keyword.iskeyword` çağrısı yaparak ``s`` dizesinin :keyword:`def` ve :"
+"keyword:`class` gibi ayrılmış bir tanımlayıcı olup olmadığını test eder."
 
 #: library/stdtypes.rst:1748
 msgid "Example: ::"
-msgstr ""
+msgstr "Örnek: ::"
 
 #: library/stdtypes.rst:1761
 msgid ""
 "Return ``True`` if all cased characters [4]_ in the string are lowercase and "
 "there is at least one cased character, ``False`` otherwise."
 msgstr ""
+"Dizedeki tüm büyük harfli karakterler [4]_ küçük harfli ise ve en az bir "
+"büyük harfli karakter varsa ``True``, aksi takdirde ``False`` döndürür."
 
 #: library/stdtypes.rst:1767
 msgid ""
@@ -2842,6 +2880,12 @@ msgid ""
 "characters are those with the property value Numeric_Type=Digit, "
 "Numeric_Type=Decimal or Numeric_Type=Numeric."
 msgstr ""
+"Dizedeki tüm karakterler sayısal karakterlerse ve en az bir karakter varsa "
+"``True``, aksi takdirde ``False`` döndürür. Sayısal karakterler rakam "
+"karakterlerini ve Unicode sayısal değer özelliğine sahip tüm karakterleri "
+"içerir, örneğin U+2155, VULGAR FRAKSİYONU BEŞİNCİ.  Resmi olarak, sayısal "
+"karakterler Numeric_Type=Digit, Numeric_Type=Decimal veya "
+"Numeric_Type=Numeric özellik değerine sahip karakterlerdir."
 
 #: library/stdtypes.rst:1777
 msgid ""
@@ -2853,12 +2897,22 @@ msgid ""
 "when :func:`repr` is invoked on a string.  It has no bearing on the handling "
 "of strings written to :data:`sys.stdout` or :data:`sys.stderr`.)"
 msgstr ""
+"Dizedeki tüm karakterler yazdırılabilirse veya dize boşsa ``True``, aksi "
+"takdirde ``False`` döndürür.  Yazdırılamayan karakterler, yazdırılabilir "
+"olarak kabul edilen ASCII boşluğu (0x20) dışında, Unicode karakter "
+"veritabanında \"Diğer\" veya \"Ayırıcı\" olarak tanımlanan karakterlerdir.  "
+"(Bu bağlamda, yazdırılabilir karakterlerin :func:`repr` bir dize üzerinde "
+"çağrıldığında kaçılmaması gereken karakterler olduğunu unutmayın.  Bunun :"
+"data:`sys.stdout` veya :data:`sys.stderr` dosyalarına yazılan dizelerin "
+"işlenmesiyle bir ilgisi yoktur)"
 
 #: library/stdtypes.rst:1788
 msgid ""
 "Return ``True`` if there are only whitespace characters in the string and "
 "there is at least one character, ``False`` otherwise."
 msgstr ""
+"Dizede yalnızca boşluk karakterleri varsa ve en az bir karakter varsa "
+"``True``, aksi takdirde ``False`` döndürür."
 
 #: library/stdtypes.rst:1791
 msgid ""
@@ -2866,6 +2920,9 @@ msgid ""
 "`unicodedata`), either its general category is ``Zs`` (\"Separator, space"
 "\"), or its bidirectional class is one of ``WS``, ``B``, or ``S``."
 msgstr ""
+"Bir karakter, genel kategorisi ``Zs`` (“Ayırıcı, boşluk”) ya da çift yönlü "
+"sınıfı ``WS``, ``B`` veya ``S``’den biri ise Unicode karakter veritabanında "
+"(bkz. :mod:`unicodedata`) *beyaz boşluk karakteri*’dir."
 
 #: library/stdtypes.rst:1799
 msgid ""
@@ -2874,12 +2931,18 @@ msgid ""
 "characters and lowercase characters only cased ones.  Return ``False`` "
 "otherwise."
 msgstr ""
+"Eğer dizenin yalnızca ilk harfi büyük ise ve en az bir karakter varsa "
+"``True`` döndürür. Örneğin, büyük harfli karakterler sadece küçük harfli "
+"karakterleri ve küçük harfli karakterler sadece büyük harfli karakterleri "
+"takip edebilir.  Aksi takdirde ``False`` döndürür."
 
 #: library/stdtypes.rst:1806
 msgid ""
 "Return ``True`` if all cased characters [4]_ in the string are uppercase and "
 "there is at least one cased character, ``False`` otherwise."
 msgstr ""
+"Dizedeki tüm karakterler [4]_ büyük harfli ise ve en az bir büyük harfli "
+"karakter varsa ``True``, aksi takdirde ``False`` döndürür."
 
 #: library/stdtypes.rst:1822
 msgid ""
@@ -2888,6 +2951,10 @@ msgid ""
 "*iterable*, including :class:`bytes` objects.  The separator between "
 "elements is the string providing this method."
 msgstr ""
+"*iterable* içindeki dizgelerin birleşiminden oluşan bir dizge döndürür. Eğer "
+"*iterable* içinde :class:`bytes` nesneleri de dahil olmak üzere string "
+"olmayan değerler varsa bir :exc:`TypeError` oluşacaktır.  Öğeler arasındaki "
+"ayırıcı, bu yöntemi sağlayan dizedir."
 
 #: library/stdtypes.rst:1830
 msgid ""
@@ -2895,18 +2962,25 @@ msgid ""
 "done using the specified *fillchar* (default is an ASCII space). The "
 "original string is returned if *width* is less than or equal to ``len(s)``."
 msgstr ""
+"*width* uzunluğundaki bir dizeyi sola hizalanmış olarak döndürür. Doldurma, "
+"belirtilen *fillchar* kullanılarak yapılır (varsayılanı bir ASCII "
+"boşluğudur). *width*, ``len(s)`` değerinden küçük veya ona eşitse orijinal "
+"dize döndürülür."
 
 #: library/stdtypes.rst:1837
 msgid ""
 "Return a copy of the string with all the cased characters [4]_ converted to "
 "lowercase."
 msgstr ""
+"Dizenin tüm büyük harfli karakterlerini [4]_ küçük harfe dönüştürerek bir "
+"kopyasını döndürür."
 
 #: library/stdtypes.rst:1840
 msgid ""
 "The lowercasing algorithm used is described in section 3.13 of the Unicode "
 "Standard."
 msgstr ""
+"Harf küçültme algoritması, Unicode Standardının 3.13 bölümünde açıklanmıştır."
 
 #: library/stdtypes.rst:1846
 msgid ""
@@ -2916,18 +2990,28 @@ msgid ""
 "The *chars* argument is not a prefix; rather, all combinations of its values "
 "are stripped::"
 msgstr ""
+"Dizenin baştaki karakterleri çıkarılmış bir kopyasını döndürür.  *chars* "
+"bağımsız değişkeni, kaldırılacak karakter kümesini belirten bir dizedir.  "
+"Atlanırsa veya ``None`` olursa, *chars* bağımsız değişkeni varsayılan olarak "
+"boşlukları kaldırır.  *chars* bağımsız değişkeni bir ön ek değildir; bunun "
+"yerine, değerlerinin tüm kombinasyonları çıkarılır::"
 
 #: library/stdtypes.rst:1856
 msgid ""
 "See :meth:`str.removeprefix` for a method that will remove a single prefix "
 "string rather than all of a set of characters.  For example::"
 msgstr ""
+"Bir karakter kümesinin tüm ön ekleri yerine tek bir ön ek dizesini "
+"kaldıracak bir yöntem için :meth:`str.removeprefix` bölümüne bakın.  "
+"Örneğin::"
 
 #: library/stdtypes.rst:1867
 msgid ""
 "This static method returns a translation table usable for :meth:`str."
 "translate`."
 msgstr ""
+"Bu statik yöntem :meth:`str.translate` için kullanılabilecek bir çeviri "
+"tablosu döndürür."
 
 #: library/stdtypes.rst:1869
 msgid ""
@@ -2936,6 +3020,11 @@ msgid ""
 "strings (of arbitrary lengths) or ``None``.  Character keys will then be "
 "converted to ordinals."
 msgstr ""
+"Yalnızca bir bağımsız değişken varsa, Unicode sıradanlarını (tamsayılar) "
+"veya karakterlerini (1 uzunluğundaki dizeler) Unicode sıradanlarına, "
+"dizelere (isteğe bağlı uzunluklarda) veya ``None`` değerine eşleyen bir "
+"sözlük olmalıdır.  Karakter anahtarları daha sonra sıradanlara "
+"dönüştürülecektir."
 
 #: library/stdtypes.rst:1874
 msgid ""
@@ -2944,6 +3033,10 @@ msgid ""
 "the same position in y.  If there is a third argument, it must be a string, "
 "whose characters will be mapped to ``None`` in the result."
 msgstr ""
+"İki bağımsız değişken varsa, bunlar eşit uzunlukta dizgeler olmalıdır. "
+"Sözlüğün son halinde x'teki her karakter y'de aynı konumdaki karakterle "
+"eşlenecektir. Üçüncü bir bağımsız değişken varsa, karakterleri sonuçta "
+"``None`` ile eşlenecek bir dizge olmalıdır."
 
 #: library/stdtypes.rst:1882
 msgid ""
@@ -2952,12 +3045,18 @@ msgid ""
 "after the separator.  If the separator is not found, return a 3-tuple "
 "containing the string itself, followed by two empty strings."
 msgstr ""
+"Dizeyi *sep* öğesinin ilk geçtiği yerden böler ve ayırıcıdan önceki kısmı, "
+"ayırıcının kendisini ve ayırıcıdan sonraki kısmı içeren bir 3'lü döndürür.  "
+"Ayırıcı bulunamazsa, dizenin kendisini ve ardından iki boş dizeyi içeren bir "
+"3'lü döndürür."
 
 #: library/stdtypes.rst:1890
 msgid ""
 "If the string starts with the *prefix* string, return "
 "``string[len(prefix):]``. Otherwise, return a copy of the original string::"
 msgstr ""
+"Eğer dize *prefix* dizesi ile başlıyorsa, ``dize[len(prefix):]`` döndürür. "
+"Aksi takdirde, orijinal dizgenin bir kopyasını döndürür::"
 
 #: library/stdtypes.rst:1904
 msgid ""
@@ -2965,6 +3064,9 @@ msgid ""
 "return ``string[:-len(suffix)]``. Otherwise, return a copy of the original "
 "string::"
 msgstr ""
+"Dize *suffix* (son ek) dizesiyle bitiyorsa ve bu *suffix* boş değilse, "
+"``dize[:-len(suffix)]`` döndürür. Aksi takdirde, orijinal dizenin bir "
+"kopyasını döndürür::"
 
 #: library/stdtypes.rst:1918
 msgid ""
@@ -2972,6 +3074,9 @@ msgid ""
 "by *new*.  If the optional argument *count* is given, only the first *count* "
 "occurrences are replaced."
 msgstr ""
+"Dizenin, *eski* alt dizesinin tüm oluşumları *yeni* ile değiştirilmiş bir "
+"kopyasını döndürür.  İsteğe bağlı olarak *count* bağımsız değişkeni "
+"verilirse, yalnızca ilk *count* oluşumu değiştirilir."
 
 #: library/stdtypes.rst:1925
 msgid ""
@@ -2979,12 +3084,18 @@ msgid ""
 "that *sub* is contained within ``s[start:end]``.  Optional arguments *start* "
 "and *end* are interpreted as in slice notation.  Return ``-1`` on failure."
 msgstr ""
+"Dizede *sub* alt dizesinin bulunduğu en yüksek dizini döndürür, öyle ki "
+"*sub* ``s[start:end]`` içinde yer alır.  İsteğe bağlı argümanlar *start* ve "
+"*end* dilim gösterimindeki gibi yorumlanır.  Başarısızlık durumunda ``-1`` "
+"döndürür."
 
 #: library/stdtypes.rst:1932
 msgid ""
 "Like :meth:`rfind` but raises :exc:`ValueError` when the substring *sub* is "
 "not found."
 msgstr ""
+":meth:`rfind` gibi, ancak *sub* alt dizesi bulunamadığında :exc:`ValueError` "
+"yükseltir."
 
 #: library/stdtypes.rst:1938
 msgid ""
@@ -2992,6 +3103,10 @@ msgid ""
 "done using the specified *fillchar* (default is an ASCII space). The "
 "original string is returned if *width* is less than or equal to ``len(s)``."
 msgstr ""
+"*width* uzunluğundaki bir dizeyi sağa hizalanmış olarak döndürür. Doldurma, "
+"belirtilen *fillchar* kullanılarak yapılır (varsayılanı bir ASCII "
+"boşluğudur). *width*, ``len(s)`` değerinden küçük veya ona eşitse orijinal "
+"dize döndürülür."
 
 #: library/stdtypes.rst:1945
 msgid ""
@@ -3000,6 +3115,10 @@ msgid ""
 "after the separator.  If the separator is not found, return a 3-tuple "
 "containing two empty strings, followed by the string itself."
 msgstr ""
+"Dizeyi *sep* öğesinin ilk geçtiği yerden böler ve ayırıcıdan önceki kısmı, "
+"ayırıcının kendisini ve ayırıcıdan sonraki kısmı içeren bir 3'lü döndürür.  "
+"Ayırıcı bulunamazsa, dizenin kendisini ve ardından iki boş dizeyi içeren bir "
+"3'lü döndürür."
 
 #: library/stdtypes.rst:1953
 msgid ""
@@ -3009,6 +3128,11 @@ msgid ""
 "string is a separator.  Except for splitting from the right, :meth:`rsplit` "
 "behaves like :meth:`split` which is described in detail below."
 msgstr ""
+"Ayırıcı dizge olarak *sep* kullanarak dizgedeki sözcüklerin bir listesini "
+"döndürür. Eğer *maxsplit* belirtilmişse, *rightmost* olmak üzere en fazla "
+"*maxsplit* bölme yapılır.  Eğer *sep* belirtilmemişse veya ``None`` ise, "
+"herhangi bir boşluk dizesi ayırıcıdır.  Sağdan bölme dışında, :meth:`rsplit` "
+"aşağıda ayrıntılı olarak açıklanan :meth:`split` gibi davranır."
 
 #: library/stdtypes.rst:1962
 msgid ""
@@ -3018,12 +3142,20 @@ msgid ""
 "The *chars* argument is not a suffix; rather, all combinations of its values "
 "are stripped::"
 msgstr ""
+"Dizenin en sondaki karakterleri çıkarılmış bir kopyasını döndürür.  *chars* "
+"bağımsız değişkeni, kaldırılacak karakter kümesini belirten bir dizedir.  "
+"Atlanırsa veya ``None`` olursa, *chars* bağımsız değişkeni varsayılan olarak "
+"boşlukları kaldırır.  *chars* bağımsız değişkeni bir ön ek değildir; bunun "
+"yerine, değerlerinin tüm kombinasyonları çıkarılır::"
 
 #: library/stdtypes.rst:1972
 msgid ""
 "See :meth:`str.removesuffix` for a method that will remove a single suffix "
 "string rather than all of a set of characters.  For example::"
 msgstr ""
+"Bir karakter kümesinin tüm son ekleri yerine tek bir son ek dizesini "
+"kaldıracak bir yöntem için :meth:`str.removeprefix` bölümüne bakın.  "
+"Örneğin::"
 
 #: library/stdtypes.rst:1982
 msgid ""
@@ -3033,6 +3165,11 @@ msgid ""
 "specified or ``-1``, then there is no limit on the number of splits (all "
 "possible splits are made)."
 msgstr ""
+"Ayırıcı dizge olarak *sep* kullanarak dizgedeki sözcüklerin bir listesini "
+"döndürür.  Eğer *maxsplit* belirtilmişse, en fazla *maxsplit* bölme işlemi "
+"yapılır (dolayısıyla, liste en fazla ``maxsplit+1`` elemana sahip olur).  "
+"Eğer *maxsplit* belirtilmemişse veya ``-1`` ise, bölme sayısında bir "
+"sınırlama yoktur (tüm olası bölmeler yapılır)."
 
 #: library/stdtypes.rst:1988
 msgid ""
@@ -3042,6 +3179,11 @@ msgid ""
 "(for example, ``'1<>2<>3'.split('<>')`` returns ``['1', '2', '3']``). "
 "Splitting an empty string with a specified separator returns ``['']``."
 msgstr ""
+"*sep* verilirse, ardışık sınırlayıcılar birlikte gruplanmaz ve boş dizeleri "
+"sınırladıkları kabul edilir (örneğin, ``'1,,2'.split(',')``, ``['1', '', "
+"'2']`` döndürür). *sep* bağımsız değişkeni birden çok karakterden oluşabilir "
+"(örneğin, ``'1<>2<>3'.split('<>')``, ``['1', '2', '3']`` döndürür). Boş bir "
+"dizeyi belirtilen bir ayırıcıyla bölmek ``['']`` döndürür."
 
 #: library/stdtypes.rst:2010 library/stdtypes.rst:2130
 #: library/stdtypes.rst:3043 library/stdtypes.rst:3150
@@ -3049,7 +3191,7 @@ msgstr ""
 #: library/stdtypes.rst:3265 library/stdtypes.rst:3315
 #: library/stdtypes.rst:3384 library/stdtypes.rst:3408
 msgid "For example::"
-msgstr ""
+msgstr "Örneğin: ::"
 
 #: library/stdtypes.rst:2003
 msgid ""
@@ -3060,6 +3202,11 @@ msgid ""
 "string or a string consisting of just whitespace with a ``None`` separator "
 "returns ``[]``."
 msgstr ""
+"Eğer *sep* belirtilmemişse veya ``None`` ise, farklı bir bölme algoritması "
+"uygulanır: ardışık boşluk dizileri tek bir ayırıcı olarak kabul edilir ve "
+"dizgenin başında veya sonunda boşluk varsa, sonucun başında veya sonunda boş "
+"dizeler olmaz. Dolayısıyla, boş bir dizeyi veya sadece beyaz boşluktan "
+"oluşan bir dizeyi ``None`` ayırıcısıyla bölmek ``[]`` döndürür."
 
 #: library/stdtypes.rst:2025
 msgid ""
@@ -3067,112 +3214,117 @@ msgid ""
 "breaks are not included in the resulting list unless *keepends* is given and "
 "true."
 msgstr ""
+"Satır sınırlarında keserek dizedeki satırların bir listesini döndürür.  "
+"Satır sonları için *keepends* belirtilmediği ve true değerinde olmadığı "
+"sürece, satır sonları sonuç listesine dahil edilmez."
 
 #: library/stdtypes.rst:2029
 msgid ""
 "This method splits on the following line boundaries.  In particular, the "
 "boundaries are a superset of :term:`universal newlines`."
 msgstr ""
+"Bu yöntem aşağıdaki satır sınırlarında bölme yapar.  Spesifik olarak, "
+"sınırlar :term:`universal newlines`ın bir üst kümesidir."
 
 #: library/stdtypes.rst:2033
 msgid "Representation"
-msgstr ""
+msgstr "Temsil"
 
 #: library/stdtypes.rst:2033
 msgid "Description"
-msgstr ""
+msgstr "Açıklama"
 
 #: library/stdtypes.rst:2035
 msgid "``\\n``"
-msgstr ""
+msgstr "``\\n``"
 
 #: library/stdtypes.rst:2035
 msgid "Line Feed"
-msgstr ""
+msgstr "Satır Atlama"
 
 #: library/stdtypes.rst:2037
 msgid "``\\r``"
-msgstr ""
+msgstr "``\\r``"
 
 #: library/stdtypes.rst:2037
 msgid "Carriage Return"
-msgstr ""
+msgstr "Satır Başına Alma"
 
 #: library/stdtypes.rst:2039
 msgid "``\\r\\n``"
-msgstr ""
+msgstr "``\\r\\n``"
 
 #: library/stdtypes.rst:2039
 msgid "Carriage Return + Line Feed"
-msgstr ""
+msgstr "Satır Başına Alma + Satır Atlama"
 
 #: library/stdtypes.rst:2041
 msgid "``\\v`` or ``\\x0b``"
-msgstr ""
+msgstr "``\\v`` or ``\\x0b``"
 
 #: library/stdtypes.rst:2041
 msgid "Line Tabulation"
-msgstr ""
+msgstr "Satır Tablolama"
 
 #: library/stdtypes.rst:2043
 msgid "``\\f`` or ``\\x0c``"
-msgstr ""
+msgstr "``\\f`` or ``\\x0c``"
 
 #: library/stdtypes.rst:2043
 msgid "Form Feed"
-msgstr ""
+msgstr "Form Besleme"
 
 #: library/stdtypes.rst:2045
 msgid "``\\x1c``"
-msgstr ""
+msgstr "``\\x1c``"
 
 #: library/stdtypes.rst:2045
 msgid "File Separator"
-msgstr ""
+msgstr "Dosya Ayırıcı"
 
 #: library/stdtypes.rst:2047
 msgid "``\\x1d``"
-msgstr ""
+msgstr "``\\x1d``"
 
 #: library/stdtypes.rst:2047
 msgid "Group Separator"
-msgstr ""
+msgstr "Grup Ayırıcı"
 
 #: library/stdtypes.rst:2049
 msgid "``\\x1e``"
-msgstr ""
+msgstr "``\\x1e``"
 
 #: library/stdtypes.rst:2049
 msgid "Record Separator"
-msgstr ""
+msgstr "Kayıt Ayırıcı"
 
 #: library/stdtypes.rst:2051
 msgid "``\\x85``"
-msgstr ""
+msgstr "``\\x85``"
 
 #: library/stdtypes.rst:2051
 msgid "Next Line (C1 Control Code)"
-msgstr ""
+msgstr "Yeni Satır (C1 Denetim Kodu)"
 
 #: library/stdtypes.rst:2053
 msgid "``\\u2028``"
-msgstr ""
+msgstr "``\\u2028``"
 
 #: library/stdtypes.rst:2053
 msgid "Line Separator"
-msgstr ""
+msgstr "Satır Ayrıcı"
 
 #: library/stdtypes.rst:2055
 msgid "``\\u2029``"
-msgstr ""
+msgstr "``\\u2029``"
 
 #: library/stdtypes.rst:2055
 msgid "Paragraph Separator"
-msgstr ""
+msgstr "Paragraf Ayırıcı"
 
 #: library/stdtypes.rst:2060
 msgid "``\\v`` and ``\\f`` added to list of line boundaries."
-msgstr ""
+msgstr "``\\v`` ve ``\\f`` satır sınırlarına eklenir."
 
 #: library/stdtypes.rst:2069
 msgid ""
@@ -3180,10 +3332,13 @@ msgid ""
 "method returns an empty list for the empty string, and a terminal line break "
 "does not result in an extra line::"
 msgstr ""
+"Bir sınırlayıcı dize *sep* verildiğinde :meth:`~str.split` yönteminden "
+"farklı olarak, bu yöntem boş dize için boş bir liste döndürür ve bir "
+"terminal satır sonu fazladan bir satır ile sonuçlanmaz::"
 
 #: library/stdtypes.rst:2078
 msgid "For comparison, ``split('\\n')`` gives::"
-msgstr ""
+msgstr "Kıyaslayacak olursak ``split(‘\\n’)`` şu değeri verir::"
 
 #: library/stdtypes.rst:2088
 msgid ""
@@ -3192,6 +3347,10 @@ msgid ""
 "optional *start*, test string beginning at that position.  With optional "
 "*end*, stop comparing string at that position."
 msgstr ""
+"Dize *önek* ile başlıyorsa ``True`` döndürür, aksi takdirde ``False`` "
+"döndürür. *prefix* ayrıca aranacak ön eklerin bir tuple'ı da olabilir.  "
+"İsteğe bağlı *start* ile, o konumdan başlayan dizeyi sınar.  İsteğe bağlı "
+"*end* ile, dizeyi o konumda karşılaştırmayı durdurur."
 
 #: library/stdtypes.rst:2096
 msgid ""
@@ -3201,6 +3360,12 @@ msgid ""
 "removing whitespace. The *chars* argument is not a prefix or suffix; rather, "
 "all combinations of its values are stripped::"
 msgstr ""
+"Dizenin baştaki ve sondaki karakterleri çıkarılmış bir kopyasını döndürür. "
+"*chars* bağımsız değişkeni, kaldırılacak karakter kümesini belirten bir "
+"dizedir. Atlanırsa veya ``None`` olursa, *chars* bağımsız değişkeni "
+"varsayılan olarak boşlukları kaldırır. *chars* bağımsız değişkeni bir ön ek "
+"veya son ek değildir; bunun yerine, değerlerinin tüm kombinasyonları "
+"çıkarılır::"
 
 #: library/stdtypes.rst:2107
 msgid ""
@@ -3209,6 +3374,10 @@ msgid ""
 "string character that is not contained in the set of characters in *chars*. "
 "A similar action takes place on the trailing end. For example::"
 msgstr ""
+"En dıştaki ön ve son*chars* bağımsız değişken değerleri dizeden çıkarılır. "
+"Karakterler, *chars* içindeki karakter kümesinde bulunmayan bir dize "
+"karakterine ulaşılana kadar önde gelen uçtan çıkarılır. Benzer bir işlem son "
+"uçta da gerçekleşir. Örneğin::"
 
 #: library/stdtypes.rst:2120
 msgid ""
@@ -3216,12 +3385,17 @@ msgid ""
 "and vice versa. Note that it is not necessarily true that ``s.swapcase()."
 "swapcase() == s``."
 msgstr ""
+"Büyük harf karakterleri küçük harfe dönüştürülmüş veya tam tersi yapılmış "
+"dizenin bir kopyasını döndürür. ``s.swapcase().swapcase() == s`` ifadesinin "
+"mutlaka doğru olması gerekmediğine dikkat edin."
 
 #: library/stdtypes.rst:2127
 msgid ""
 "Return a titlecased version of the string where words start with an "
 "uppercase character and the remaining characters are lowercase."
 msgstr ""
+"Sözcüklerin büyük harfle başladığı ve kalan karakterlerin küçük harf olduğu "
+"dizenin başlıklandırılmış bir sürümünü döndürür."
 
 #: library/stdtypes.rst:3352
 msgid ""
@@ -3230,11 +3404,17 @@ msgid ""
 "means that apostrophes in contractions and possessives form word boundaries, "
 "which may not be the desired result::"
 msgstr ""
+"Algoritma, bir kelimenin ardışık harf grupları olarak dilden bağımsız basit "
+"bir tanımını kullanır.  Bu tanım birçok bağlamda işe yarar, ancak bu, "
+"kısaltmalar ve iyeliklerdeki kesme işaretlerinin kelime sınırları "
+"oluşturduğu anlamına gelir ve bu istenen sonuç olmayabilir::"
 
 #: library/stdtypes.rst:3360
 msgid ""
 "A workaround for apostrophes can be constructed using regular expressions::"
 msgstr ""
+"Kesme işaretleri için geçici bir çözüm düzenli ifadeler kullanılarak "
+"oluşturulabilir::"
 
 #: library/stdtypes.rst:2157
 msgid ""
@@ -3247,6 +3427,15 @@ msgid ""
 "delete the character from the return string; or raise a :exc:`LookupError` "
 "exception, to map the character to itself."
 msgstr ""
+"Her karakterin verilen çeviri tablosu aracılığıyla eşlendiği dizgenin bir "
+"kopyasını döndürür.  Tablo, :meth:`__getitem__` aracılığıyla indeksleme "
+"uygulayan bir nesne, tipik olarak bir :term:`mapping` veya :term:`sequence` "
+"olmalıdır.  Bir Unicode sıra numarası (bir tamsayı) ile indekslendiğinde, "
+"tablo nesnesi aşağıdakilerden herhangi birini yapabilir: karakteri bir veya "
+"daha fazla başka karakterle eşlemek için bir Unicode sıra numarası veya bir "
+"dize döndürmek; karakteri dönüş dizesinden silmek için ``None`` döndürmek; "
+"veya karakteri kendisiyle eşlemek için bir :exc:`LookupError` istisnası "
+"oluşturmak."
 
 #: library/stdtypes.rst:2166
 msgid ""
@@ -3274,6 +3463,7 @@ msgid ""
 "The uppercasing algorithm used is described in section 3.13 of the Unicode "
 "Standard."
 msgstr ""
+"Harf büyütme algoritması, Unicode Standardının 3.13 bölümünde açıklanmıştır."
 
 #: library/stdtypes.rst:2187
 msgid ""
