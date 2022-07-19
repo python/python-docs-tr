@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: 2022-07-19 18:15+0300\n"
+"PO-Revision-Date: 2022-07-19 21:54+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: library/stdtypes.rst:8
 msgid "Built-in Types"
@@ -6155,6 +6155,9 @@ msgid ""
 "However, union objects containing :ref:`parameterized generics <types-"
 "genericalias>` cannot be used::"
 msgstr ""
+"Ancak, :ref:`parameterized <types-genericalias>generics`</types-"
+"genericalias> içeren union nesneleri <types-genericalias>kullanılamaz::</"
+"types-genericalias>"
 
 #: library/stdtypes.rst:5044
 msgid ""
@@ -6162,6 +6165,9 @@ msgid ""
 "UnionType` and used for :func:`isinstance` checks.  An object cannot be "
 "instantiated from the type::"
 msgstr ""
+"Union nesnesinin kullanıcıya açık türüne :data:`types.UnionType` adresinden "
+"erişilebilir ve :func:`isinstance` kontrolleri için kullanılabilir.  Bir "
+"nesne şu türden örneklenemez::"
 
 #: library/stdtypes.rst:5057
 msgid ""
@@ -6169,24 +6175,29 @@ msgid ""
 "``X | Y``.  If a metaclass implements :meth:`__or__`, the Union may override "
 "it::"
 msgstr ""
+"Tür nesneleri için :meth:`__or__` yöntemi, ``X | Y`` sözdizimini desteklemek "
+"için eklendi.  Eğer bir metaclass :meth:`__or__` metodunu uygularsa, Union "
+"bunu geçersiz kılabilir::"
 
 #: library/stdtypes.rst:5075
 msgid ":pep:`604` -- PEP proposing the ``X | Y`` syntax and the Union type."
-msgstr ""
+msgstr ":pep:`604` -- ``X | Y`` sözdizimini ve Birlik türünü öneren PEP."
 
 #: library/stdtypes.rst:5083
 msgid "Other Built-in Types"
-msgstr ""
+msgstr "Diğer Yerleşik Tipler"
 
 #: library/stdtypes.rst:5085
 msgid ""
 "The interpreter supports several other kinds of objects. Most of these "
 "support only one or two operations."
 msgstr ""
+"Yorumlayıcı başka nesne türlerini de destekler. Bunların çoğu yalnızca bir "
+"veya iki işlemi destekler."
 
 #: library/stdtypes.rst:5092
 msgid "Modules"
-msgstr ""
+msgstr "Modüller"
 
 #: library/stdtypes.rst:5094
 msgid ""
@@ -6198,6 +6209,13 @@ msgid ""
 "exist, rather it requires an (external) *definition* for a module named "
 "*foo* somewhere.)"
 msgstr ""
+"Bir modül üzerindeki tek özel işlem öznitelik erişimidir: ``m.name``, burada "
+"*m* bir modüldür ve *name* *m*'nin sembol tablosunda tanımlanan bir isme "
+"erişir. Modül nitelikleri atanabilir.  (:keyword:`import` deyiminin "
+"kesinlikle bir modül nesnesi üzerinde bir işlem olmadığına dikkat edin; "
+"``import foo`` *foo* adında bir modül nesnesinin var olmasını gerektirmez, "
+"bunun yerine bir yerlerde *foo* adında bir modül için (harici) bir "
+"*tanımlama* gerektirir)"
 
 #: library/stdtypes.rst:5101
 msgid ""
@@ -6209,6 +6227,13 @@ msgid ""
 "``m.__dict__ = {}``).  Modifying :attr:`~object.__dict__` directly is not "
 "recommended."
 msgstr ""
+"Her modülün özel bir niteliği :attr:`~object.__dict__`dir. Bu, modülün "
+"sembol tablosunu içeren sözlüktür. Bu sözlüğü değiştirmek aslında modülün "
+"sembol tablosunu değiştirecektir, ancak :attr:`~object.__dict__` niteliğine "
+"doğrudan atama yapmak mümkün değildir (``m.__dict__['a'] = 1`` "
+"yazabilirsiniz, bu ``m.a`` yı ``1`` olarak tanımlar, ancak ``m.__dict__ = {}"
+"`` yazamazsınız).  Attr:`~object.__dict__` öğesinin doğrudan değiştirilmesi "
+"önerilmez."
 
 #: library/stdtypes.rst:5109
 msgid ""
@@ -6216,24 +6241,30 @@ msgid ""
 "'sys' (built-in)>``.  If loaded from a file, they are written as ``<module "
 "'os' from '/usr/local/lib/pythonX.Y/os.pyc'>``."
 msgstr ""
+"Yorumlayıcıda yerleşik olarak bulunan modüller şu şekilde yazılır: ``<module "
+"'sys' (built-in)>``.  Eğer bir dosyadan yüklenmişlerse, ``<module 'os' from "
+"'/usr/local/lib/pythonX.Y/os.pyc'>`` şeklinde yazılırlar."
 
 #: library/stdtypes.rst:5117
 msgid "Classes and Class Instances"
-msgstr ""
+msgstr "Sınıflar ve Sınıf Örnekleri"
 
 #: library/stdtypes.rst:5119
 msgid "See :ref:`objects` and :ref:`class` for these."
-msgstr ""
+msgstr "Bunlar için :ref:`class` ve :ref:`objects`  bakın."
 
 #: library/stdtypes.rst:5125
 msgid "Functions"
-msgstr ""
+msgstr "Fonksiyonlar"
 
 #: library/stdtypes.rst:5127
 msgid ""
 "Function objects are created by function definitions.  The only operation on "
 "a function object is to call it: ``func(argument-list)``."
 msgstr ""
+"Fonksiyon nesneleri fonksiyon tanımları tarafından oluşturulur.  Bir "
+"fonksiyon nesnesi üzerindeki tek işlem onu çağırmaktır: ``func(argument-"
+"list)``."
 
 #: library/stdtypes.rst:5130
 msgid ""
@@ -6242,14 +6273,18 @@ msgid ""
 "function), but the implementation is different, hence the different object "
 "types."
 msgstr ""
+"Fonksiyon nesnelerinin gerçekten iki çeşidi vardır: yerleşik fonksiyonlar ve "
+"kullanıcı tanımlı fonksiyonlar.  Her ikisi de aynı işlemi destekler (işlevi "
+"çağırmak için), ancak uygulama farklıdır, dolayısıyla farklı nesne türleri "
+"vardır."
 
 #: library/stdtypes.rst:5134
 msgid "See :ref:`function` for more information."
-msgstr ""
+msgstr "Daha fazla bilgi için :ref:`function` bölümüne bakınız."
 
 #: library/stdtypes.rst:5140
 msgid "Methods"
-msgstr ""
+msgstr "Yöntemler"
 
 #: library/stdtypes.rst:5144
 msgid ""
@@ -6258,6 +6293,10 @@ msgid ""
 "class instance methods.  Built-in methods are described with the types that "
 "support them."
 msgstr ""
+"Yöntemler, nitelik gösterimi kullanılarak çağrılan işlevlerdir. İki çeşidi "
+"vardır: yerleşik yöntemler (listelerde :meth:`append` gibi) ve sınıf örneği "
+"yöntemleri.  Yerleşik yöntemler, onları destekleyen türlerle birlikte "
+"tanımlanır."
 
 #: library/stdtypes.rst:5149
 msgid ""
@@ -6270,6 +6309,14 @@ msgid ""
 "n)`` is completely equivalent to calling ``m.__func__(m.__self__, arg-1, "
 "arg-2, ..., arg-n)``."
 msgstr ""
+"Bir yönteme (bir sınıf ad alanında tanımlanmış bir fonksiyon) bir örnek "
+"üzerinden erişirseniz, özel bir nesne elde edersiniz: bir :dfn:`bound "
+"method` (ayrıca :dfn:`instance method` olarak da adlandırılır) nesnesi. "
+"Çağrıldığında, ``self`` argümanını argüman listesine ekleyecektir.  Bağlı "
+"metotların iki özel salt okunur niteliği vardır: ``m.__self__`` metodun "
+"üzerinde çalıştığı nesne ve ``m.__func__`` metodu uygulayan fonksiyondur.  "
+"M(arg-1, arg-2, ..., arg-n)`` çağrısı tamamen ``m.__func__(m.__self__, "
+"arg-1, arg-2, ..., arg-n)`` çağrısına eşdeğerdir."
 
 #: library/stdtypes.rst:5158
 msgid ""
@@ -6280,6 +6327,13 @@ msgid ""
 "results in an :exc:`AttributeError` being raised.  In order to set a method "
 "attribute, you need to explicitly set it on the underlying function object::"
 msgstr ""
+"Fonksiyon nesneleri gibi, bağlı metot nesneleri de keyfi nitelikler almayı "
+"destekler.  Ancak, yöntem nitelikleri aslında temel işlev nesnesinde (``meth."
+"__func__``) saklandığından, bağlı yöntemlerde yöntem niteliklerinin "
+"ayarlanmasına izin verilmez.  Bir yöntem üzerinde bir öznitelik ayarlamaya "
+"çalışmak :exc:`AttributeError` ile sonuçlanır.  Bir yöntem özniteliğini "
+"ayarlamak için, bunu temel işlev nesnesi üzerinde açıkça ayarlamanız "
+"gerekir::"
 
 #: library/stdtypes.rst:5209
 msgid "See :ref:`types` for more information."
@@ -6298,6 +6352,12 @@ msgid ""
 "function and can be extracted from function objects through their :attr:"
 "`__code__` attribute. See also the :mod:`code` module."
 msgstr ""
+"Kod nesneleri, uygulama tarafından bir fonksiyon gövdesi gibi \"sözde "
+"derlenmiş\" çalıştırılabilir Python kodunu temsil etmek için kullanılır. "
+"Fonksiyon nesnelerinden farklıdırlar çünkü global yürütme ortamlarına bir "
+"referans içermezler.  Kod nesneleri yerleşik :func:`compile` işlevi "
+"tarafından döndürülür ve  :attr:`__code__` niteliği aracılığıyla işlev "
+"nesnelerinden çıkarılabilir. Ayrıca :mod:`code` modülüne de bakınız."
 
 #: library/stdtypes.rst:5199
 msgid ""
@@ -6317,7 +6377,7 @@ msgstr ""
 
 #: library/stdtypes.rst:5215
 msgid "Type Objects"
-msgstr ""
+msgstr "Type Objects"
 
 #: library/stdtypes.rst:5221
 msgid ""
