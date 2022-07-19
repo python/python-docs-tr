@@ -2,50 +2,57 @@
 # Copyright (C) 2001-2021, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-06-16 15:32+0300\n"
+"Last-Translator: \n"
+"Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1\n"
 
 #: tutorial/datastructures.rst:5
 msgid "Data Structures"
-msgstr ""
+msgstr "Veri Yapıları"
 
 #: tutorial/datastructures.rst:7
 msgid ""
 "This chapter describes some things you've learned about already in more "
 "detail, and adds some new things as well."
 msgstr ""
+"Bu bölüm, daha önce öğrendiğiniz bazı şeyleri daha ayrıntılı olarak "
+"açıklamakta ve bazı yeni şeyler de eklemektedir."
 
 #: tutorial/datastructures.rst:13
 msgid "More on Lists"
-msgstr ""
+msgstr "Listeler Üzerine "
 
 #: tutorial/datastructures.rst:15
 msgid ""
 "The list data type has some more methods.  Here are all of the methods of "
 "list objects:"
 msgstr ""
+"Liste veri türünün bazı yöntemleri daha vardır.  İşte liste nesnelerinin tüm "
+"yöntemleri:"
 
 #: tutorial/datastructures.rst:22
 msgid ""
 "Add an item to the end of the list.  Equivalent to ``a[len(a):] = [x]``."
-msgstr ""
+msgstr "Listenin sonuna bir öğe ekleyin.  ``a[len(a):] = [x]`` ile eşdeğerdir."
 
 #: tutorial/datastructures.rst:28
 msgid ""
 "Extend the list by appending all the items from the iterable.  Equivalent to "
 "``a[len(a):] = iterable``."
 msgstr ""
+"Listeyi iterable'daki tüm öğeleri ekleyerek genişletin.  ``a[len(a):] = "
+"iterable`` ile eşdeğerdir."
 
 #: tutorial/datastructures.rst:35
 msgid ""
@@ -53,12 +60,17 @@ msgid ""
 "element before which to insert, so ``a.insert(0, x)`` inserts at the front "
 "of the list, and ``a.insert(len(a), x)`` is equivalent to ``a.append(x)``."
 msgstr ""
+"Belirli bir konuma bir öğe ekleyin.  İlk argüman eklenecek öğenin "
+"indeksidir, bu nedenle ``a.insert(0, x)`` listenin başına ekler ve ``a."
+"insert(len(a), x)`` ``a.append(x)`` ile eşdeğerdir."
 
 #: tutorial/datastructures.rst:43
 msgid ""
 "Remove the first item from the list whose value is equal to *x*.  It raises "
 "a :exc:`ValueError` if there is no such item."
 msgstr ""
+"Değeri *x*'e eşit olan ilk öğeyi listeden kaldırır.  Böyle bir öğe yoksa "
+"bir :exc:`ValueError` yükseltir."
 
 #: tutorial/datastructures.rst:50
 msgid ""
@@ -69,16 +81,24 @@ msgid ""
 "that position.  You will see this notation frequently in the Python Library "
 "Reference.)"
 msgstr ""
+"Listede verilen konumdaki öğeyi kaldırır ve geri döndürür.  Herhangi bir "
+"indis belirtilmezse, ``a.pop()`` listedeki son öğeyi kaldırır ve döndürür.  "
+"(Yöntem imzasındaki *i* parametresinin etrafındaki köşeli parantezler, "
+"parametrenin isteğe bağlı olduğunu belirtir, o konumda köşeli parantez "
+"yazmanız gerektiğini değil.  Bu gösterimi Python Kütüphane Referansında "
+"sıkça göreceksiniz)"
 
 #: tutorial/datastructures.rst:60
 msgid "Remove all items from the list.  Equivalent to ``del a[:]``."
-msgstr ""
+msgstr "Listeden tüm öğeleri kaldırın.  Del a[:]`` ile eşdeğerdir."
 
 #: tutorial/datastructures.rst:66
 msgid ""
 "Return zero-based index in the list of the first item whose value is equal "
 "to *x*. Raises a :exc:`ValueError` if there is no such item."
 msgstr ""
+"Değeri *x*'e eşit olan ilk öğenin listedeki sıfır tabanlı indeksini "
+"döndürür. Böyle bir öğe yoksa bir :exc:`ValueError` yükseltir."
 
 #: tutorial/datastructures.rst:69
 msgid ""
@@ -87,28 +107,34 @@ msgid ""
 "list.  The returned index is computed relative to the beginning of the full "
 "sequence rather than the *start* argument."
 msgstr ""
+"İsteğe bağlı *start* ve *end* argümanları dilim gösteriminde olduğu gibi "
+"yorumlanır ve aramayı listenin belirli bir alt dizisiyle sınırlamak için "
+"kullanılır.  Döndürülen dizin, *start* bağımsız değişkeni yerine tam dizinin "
+"başlangıcına göre hesaplanır."
 
 #: tutorial/datastructures.rst:78
 msgid "Return the number of times *x* appears in the list."
-msgstr ""
+msgstr "Listede *x* öğesinin kaç kez göründüğünü döndürür."
 
 #: tutorial/datastructures.rst:84
 msgid ""
 "Sort the items of the list in place (the arguments can be used for sort "
 "customization, see :func:`sorted` for their explanation)."
 msgstr ""
+"Listenin öğelerini yerinde sıralayın (argümanlar sıralama özelleştirmesi "
+"için kullanılabilir, açıklamaları için :func:`sorted` dosyasına bakın)."
 
 #: tutorial/datastructures.rst:91
 msgid "Reverse the elements of the list in place."
-msgstr ""
+msgstr "Listenin öğelerini yerinde ters çevirir."
 
 #: tutorial/datastructures.rst:97
 msgid "Return a shallow copy of the list.  Equivalent to ``a[:]``."
-msgstr ""
+msgstr "Listenin sığ bir kopyasını döndürür.  A[:]`` ile eşdeğerdir."
 
 #: tutorial/datastructures.rst:100
 msgid "An example that uses most of the list methods::"
-msgstr ""
+msgstr "Liste yöntemlerinin çoğunu kullanan bir örnek::"
 
 #: tutorial/datastructures.rst:123
 msgid ""
@@ -117,6 +143,10 @@ msgid ""
 "default ``None``. [1]_  This is a design principle for all mutable data "
 "structures in Python."
 msgstr ""
+"Listeyi yalnızca değiştiren ``insert``, ``remove`` veya ``sort`` gibi "
+"yöntemlerin hiçbir dönüş değeri yazdırmadığını fark etmiş olabilirsiniz. "
+"Onlar, varsayılan ``None`` değerini döndürürler. [1]_ Bu, Python'daki tüm "
+"değiştirilebilir veri yapıları için bir tasarım ilkesidir."
 
 #: tutorial/datastructures.rst:128
 msgid ""
@@ -126,10 +156,16 @@ msgid ""
 "types.  Also, there are some types that don't have a defined ordering "
 "relation.  For example, ``3+4j < 5+7j`` isn't a valid comparison."
 msgstr ""
+"Fark edebileceğiniz bir başka şey de tüm verilerin sıralanamayacağı veya "
+"karşılaştırılamayacağıdır.  Örneğin, ``[None, 'hello', 10]`` sıralanamaz "
+"çünkü tamsayılar dizelerle karşılaştırılamaz ve *None* diğer türlerle "
+"karşılaştırılamaz.  Ayrıca, tanımlanmış bir sıralama ilişkisine sahip "
+"olmayan bazı türler de vardır.  Örneğin, ``3+4j < 5+7j`` geçerli bir "
+"karşılaştırma değildir."
 
 #: tutorial/datastructures.rst:139
 msgid "Using Lists as Stacks"
-msgstr ""
+msgstr "Listeleri Yığın Olarak Kullanma"
 
 #: tutorial/datastructures.rst:144
 msgid ""
@@ -139,10 +175,15 @@ msgid ""
 "item from the top of the stack, use :meth:`pop` without an explicit index.  "
 "For example::"
 msgstr ""
+"Liste yöntemleri, bir listeyi, eklenen son öğenin geri alınan ilk öğe olduğu "
+"bir yığın olarak kullanmayı çok kolaylaştırır (\"son giren ilk çıkar\").  "
+"Yığının en üstüne bir öğe eklemek için :meth:`append` kullanın.  Yığının en "
+"üstünden bir öğeyi geri almak için, açık bir indeks olmadan :meth:`pop` "
+"kullanın.  Örneğin::"
 
 #: tutorial/datastructures.rst:169
 msgid "Using Lists as Queues"
-msgstr ""
+msgstr "Listeleri Kuyruk Olarak Kullanma"
 
 #: tutorial/datastructures.rst:173
 msgid ""
@@ -152,16 +193,23 @@ msgid ""
 "are fast, doing inserts or pops from the beginning of a list is slow "
 "(because all of the other elements have to be shifted by one)."
 msgstr ""
+"Bir listeyi, eklenen ilk elemanın alınan ilk eleman olduğu bir kuyruk olarak "
+"kullanmak da mümkündür (\"ilk giren ilk çıkar\"); ancak listeler bu amaç "
+"için verimli değildir.  Listenin sonundan ekleme ve çıkarma işlemleri "
+"hızlıyken, listenin başından ekleme veya çıkarma yapmak yavaştır (çünkü "
+"diğer tüm öğelerin bir adım kaydırılması gerekir)."
 
 #: tutorial/datastructures.rst:179
 msgid ""
 "To implement a queue, use :class:`collections.deque` which was designed to "
 "have fast appends and pops from both ends.  For example::"
 msgstr ""
+"Bir kuyruk uygulamak için, her iki uçtan da hızlı ekleme ve çıkarma yapmak "
+"üzere tasarlanmış :class:`collections.deque` kullanın.  Örneğin::"
 
 #: tutorial/datastructures.rst:197
 msgid "List Comprehensions"
-msgstr ""
+msgstr "Liste Kavramaları"
 
 #: tutorial/datastructures.rst:199
 msgid ""
@@ -170,10 +218,16 @@ msgid ""
 "operations applied to each member of another sequence or iterable, or to "
 "create a subsequence of those elements that satisfy a certain condition."
 msgstr ""
+"Liste kavramaları, listeler oluşturmak için kısa bir yol sağlar. Yaygın "
+"uygulamalar, her bir öğenin başka bir dizinin veya yinelenebilir öğenin "
+"üyelerine uygulanan işlemlerin sonucu olduğu yeni listeler oluşturmak veya "
+"belirli bir koşulu karşılayan öğelerin bir alt dizisini oluşturmaktır."
 
 #: tutorial/datastructures.rst:204
 msgid "For example, assume we want to create a list of squares, like::"
 msgstr ""
+"Örneğin, aşağıdaki gibi bir kareler listesi oluşturmak istediğimizi "
+"varsayalım:"
 
 #: tutorial/datastructures.rst:213
 msgid ""
@@ -181,14 +235,17 @@ msgid ""
 "exists after the loop completes.  We can calculate the list of squares "
 "without any side effects using::"
 msgstr ""
+"Bunun, ``x`` adında bir değişken yarattığına (veya üzerine yazdığına) ve bu "
+"değişkenin döngü tamamlandıktan sonra da var olduğuna dikkat edin.  Kareler "
+"listesini, şunu kullanarak herhangi bir yan etki olmadan hesaplayabiliriz:"
 
 #: tutorial/datastructures.rst:219
 msgid "or, equivalently::"
-msgstr ""
+msgstr "veya aynı şekilde::"
 
 #: tutorial/datastructures.rst:223
 msgid "which is more concise and readable."
-msgstr ""
+msgstr "Ki bu daha kısa ve okunaklıdır."
 
 #: tutorial/datastructures.rst:225
 msgid ""
@@ -199,47 +256,63 @@ msgid ""
 "which follow it. For example, this listcomp combines the elements of two "
 "lists if they are not equal::"
 msgstr ""
+"Bir liste kavrayışı, bir ifade içeren parantezlerden ve ardından bir :"
+"keyword:`!for` cümlesinden, ardından sıfır veya daha fazla :keyword:`!for` "
+"veya :keyword:`!if` cümlesinden oluşur.  Sonuç, ifadenin kendisini takip "
+"eden :keyword:`!for` ve :keyword:`!if` cümleleri bağlamında "
+"değerlendirilmesiyle elde edilen yeni bir listedir. Örneğin, listcomp, eşit "
+"değillerse iki listenin öğelerini birleştirir::"
 
 #: tutorial/datastructures.rst:235
 msgid "and it's equivalent to::"
-msgstr ""
+msgstr "ve şuna eşdeğerdir::"
 
 #: tutorial/datastructures.rst:246
 msgid ""
 "Note how the order of the :keyword:`for` and :keyword:`if` statements is the "
 "same in both these snippets."
 msgstr ""
+"Her iki kod parçacığında da :keyword:`for` ve :keyword:`if` ifadelerinin "
+"sıralamasının aynı olduğuna dikkat edin."
 
 #: tutorial/datastructures.rst:249
 msgid ""
 "If the expression is a tuple (e.g. the ``(x, y)`` in the previous example), "
 "it must be parenthesized. ::"
 msgstr ""
+"Eğer ifade bir veri grubu ise (örneğin önceki örnekteki ``(x, y)``), "
+"parantez içine alınmalıdır. ::"
 
 #: tutorial/datastructures.rst:280
 msgid ""
 "List comprehensions can contain complex expressions and nested functions::"
 msgstr ""
+"Liste kavramaları karmaşık ifadeler ve iç içe geçmiş fonksiyonlar "
+"içerebilir::"
 
 #: tutorial/datastructures.rst:287
 msgid "Nested List Comprehensions"
-msgstr ""
+msgstr "İç İçe Liste Kavramaları"
 
 #: tutorial/datastructures.rst:289
 msgid ""
 "The initial expression in a list comprehension can be any arbitrary "
 "expression, including another list comprehension."
 msgstr ""
+"Bir liste kavrayışındaki ilk ifade, başka bir liste kavrayışı da dahil olmak "
+"üzere rastgele herhangi bir ifade olabilir."
 
 #: tutorial/datastructures.rst:292
 msgid ""
 "Consider the following example of a 3x4 matrix implemented as a list of 3 "
 "lists of length 4::"
 msgstr ""
+"Uzunluğu 4 olan 3 listeden oluşan bir liste olarak uygulanan 3x4'lük bir "
+"matrisin aşağıdaki örneğini düşünün::"
 
 #: tutorial/datastructures.rst:301
 msgid "The following list comprehension will transpose rows and columns::"
-msgstr ""
+msgstr "Aşağıdaki liste kavraması satır ve sütunların yerlerini değiştirir::"
 
 #: tutorial/datastructures.rst:306
 msgid ""
@@ -247,25 +320,33 @@ msgid ""
 "context of the :keyword:`for` that follows it, so this example is equivalent "
 "to::"
 msgstr ""
+"Önceki bölümde gördüğümüz gibi, iç içe geçmiş listcomp, kendisini takip "
+"eden :keyword:`for` bağlamında değerlendirilir, bu nedenle bu örnek şuna "
+"eşdeğerdir::"
 
 #: tutorial/datastructures.rst:317
 msgid "which, in turn, is the same as::"
-msgstr ""
+msgstr "ki bu da şununla aynıdır::"
 
 #: tutorial/datastructures.rst:330
 msgid ""
 "In the real world, you should prefer built-in functions to complex flow "
 "statements. The :func:`zip` function would do a great job for this use case::"
 msgstr ""
+"Gerçek dünyada, karmaşık akış deyimleri yerine yerleşik işlevleri tercih "
+"etmelisiniz. Bu durum için :func:`zip` fonksiyonu harika bir iş "
+"çıkaracaktır::"
 
 #: tutorial/datastructures.rst:336
 msgid ""
 "See :ref:`tut-unpacking-arguments` for details on the asterisk in this line."
 msgstr ""
+"Bu satırdaki yıldız işaretiyle ilgili ayrıntılar için :ref:`tut-unpacking-"
+"arguments` bölümüne bakın."
 
 #: tutorial/datastructures.rst:341
 msgid "The :keyword:`!del` statement"
-msgstr ""
+msgstr ":keyword:`!del` deyimi"
 
 #: tutorial/datastructures.rst:343
 msgid ""
@@ -275,20 +356,28 @@ msgid ""
 "used to remove slices from a list or clear the entire list (which we did "
 "earlier by assignment of an empty list to the slice).  For example::"
 msgstr ""
+"Değer yerine indeksi verilen bir öğeyi listeden kaldırmanın bir yolu "
+"vardır: :keyword:`del` deyimi.  Bu, bir değer döndüren :meth:`pop` "
+"yönteminden farklıdır.  Keyword:`!del` deyimi, bir listeden dilimleri "
+"kaldırmak veya tüm listeyi temizlemek için de kullanılabilir (bunu daha önce "
+"dilime boş bir liste atayarak yapmıştık).  Örneğin::"
 
 #: tutorial/datastructures.rst:360
 msgid ":keyword:`del` can also be used to delete entire variables::"
-msgstr ""
+msgstr ":keyword:`del` değişkenlerin tamamını silmek için de kullanılabilir::"
 
 #: tutorial/datastructures.rst:364
 msgid ""
 "Referencing the name ``a`` hereafter is an error (at least until another "
 "value is assigned to it).  We'll find other uses for :keyword:`del` later."
 msgstr ""
+"Bundan sonra ``a`` ismine referans vermek bir hatadır (en azından ona başka "
+"bir değer atanana kadar).  Daha sonra :keyword:`del` için başka kullanımlar "
+"bulacağız."
 
 #: tutorial/datastructures.rst:371
 msgid "Tuples and Sequences"
-msgstr ""
+msgstr "Veri Grupları ve Sekanslar"
 
 #: tutorial/datastructures.rst:373
 msgid ""
@@ -298,11 +387,16 @@ msgid ""
 "data types may be added.  There is also another standard sequence data type: "
 "the *tuple*."
 msgstr ""
+"Listelerin ve dizelerin indeksleme ve dilimleme işlemleri gibi birçok ortak "
+"özelliğe sahip olduğunu gördük.  Bunlar *sekans* veri tiplerinin iki "
+"örneğidir (bkz. :ref:`typesseq`).  Python gelişen bir dil olduğu için başka "
+"sekans veri tipleri de eklenebilir.  Ayrıca başka bir standart sekans veri "
+"tipi daha vardır: *veri grupları*."
 
 #: tutorial/datastructures.rst:379
 msgid ""
 "A tuple consists of a number of values separated by commas, for instance::"
-msgstr ""
+msgstr "Bir veri grubu, virgülle ayrılmış bir dizi değerden oluşur, örneğin::"
 
 #: tutorial/datastructures.rst:401
 msgid ""
@@ -313,6 +407,12 @@ msgid ""
 "the individual items of a tuple, however it is possible to create tuples "
 "which contain mutable objects, such as lists."
 msgstr ""
+"Gördüğünüz gibi, çıktıda veri grupları her zaman parantez içine alınır, "
+"böylece iç içe geçmiş veri grupları doğru şekilde yorumlanır; parantezli "
+"veya parantezsiz olarak girilebilirler, ancak genellikle parantezler "
+"gereklidir (eğer grup daha büyük bir ifadenin parçasıysa).  Bir veri "
+"grubunun öğelerine tek tek atama yapmak mümkün değildir, ancak listeler gibi "
+"değiştirilebilir nesneler içeren veri grupları oluşturmak mümkündür."
 
 #: tutorial/datastructures.rst:408
 msgid ""
@@ -324,6 +424,13 @@ msgid ""
 "`mutable`, and their elements are usually homogeneous and are accessed by "
 "iterating over the list."
 msgstr ""
+"Veri grupları listelere benzer görünse de, genellikle farklı durumlarda ve "
+"farklı amaçlar için kullanılırlar. Veri grupları :term:`değişmez`dir ve "
+"genellikle paket açma (bu bölümün ilerleyen kısımlarına bakınız) veya "
+"indeksleme (hatta :func:`namedtuples <collections.namedtuple>` durumunda "
+"öznitelik ile) yoluyla erişilen heterojen bir dizi eleman içerir. Listeler :"
+"term:`değiştirilebilir`dir, elemanları genellikle homojendir ve listenin "
+"elemanlarına sırasıyla erişerek ulaşılır."
 
 #: tutorial/datastructures.rst:416
 msgid ""
@@ -333,6 +440,11 @@ msgid ""
 "constructed by following a value with a comma (it is not sufficient to "
 "enclose a single value in parentheses). Ugly, but effective.  For example::"
 msgstr ""
+"Özel bir sorun, 0 veya 1 öğe içeren veri gruplarının oluşturulmasıdır: söz "
+"diziminin bunlar ile başa çıkan bazı ekstra tuhaflıkları vardır.  Boş veri "
+"grupları boş bir parantez çifti ile oluşturulur; bir öğeli bir veri grubu, "
+"bir değeri virgülle takip ederek oluşturulur (tek bir değeri parantez içine "
+"almak yeterli değildir). Çirkin olsa da etkilidir.  Örneğin::"
 
 #: tutorial/datastructures.rst:431
 msgid ""
@@ -340,6 +452,9 @@ msgid ""
 "packing*: the values ``12345``, ``54321`` and ``'hello!'`` are packed "
 "together in a tuple. The reverse operation is also possible::"
 msgstr ""
+"``t = 12345, 54321, ‘hello!’`` ifadesi bir *veri grubu paketleme* örneğidir: "
+"``12345``, ``54321`` ve ``'hello!'`` değerleri bir veri grubu içinde bir "
+"araya getirilmiştir. Bu işlemin tersi de mümkündür::"
 
 #: tutorial/datastructures.rst:437
 msgid ""
@@ -349,10 +464,14 @@ msgid ""
 "in the sequence.  Note that multiple assignment is really just a combination "
 "of tuple packing and sequence unpacking."
 msgstr ""
+"Buna *sekans açma* denir ve sağ taraftaki herhangi bir sekans için çalışır.  "
+"Sekans açma, eşittir işaretinin sol tarafında dizideki eleman sayısı kadar "
+"sekans değişkeni olmasını gerektirir.  Çoklu atamanın aslında veri grubu "
+"paketleme ve sekans açmanın bir kombinasyonu olduğunu unutmayın."
 
 #: tutorial/datastructures.rst:447
 msgid "Sets"
-msgstr ""
+msgstr "Kümeler"
 
 #: tutorial/datastructures.rst:449
 msgid ""
@@ -362,6 +481,11 @@ msgid ""
 "mathematical operations like union, intersection, difference, and symmetric "
 "difference."
 msgstr ""
+"Python ayrıca *kümeler* için bir veri türü içerir.  Bir küme, yinelenen "
+"öğeleri olmayan sırasız bir koleksiyondur.  Temel kullanımları içerisinde "
+"üyelik testi ve yinelenen girdilerin elenmesi yer alır.  Küme nesneleri "
+"ayrıca birleşim, kesişim, fark ve simetrik fark gibi matematiksel işlemleri "
+"de destekler."
 
 #: tutorial/datastructures.rst:454
 msgid ""
@@ -370,20 +494,26 @@ msgid ""
 "creates an empty dictionary, a data structure that we discuss in the next "
 "section."
 msgstr ""
+"Küme oluşturmak için küme parantezleri veya :func:`set` fonksiyonu "
+"kullanılabilir.  Not: boş bir küme oluşturmak için ``{}`` değil ``set()`` "
+"kullanmanız gerekir, çünkü birincisi boş bir sözlük oluşturur, ki bu da bir "
+"sonraki bölümde tartışacağımız bir veri yapısıdır."
 
 #: tutorial/datastructures.rst:458
 msgid "Here is a brief demonstration::"
-msgstr ""
+msgstr "İşte kısa bir gösterim::"
 
 #: tutorial/datastructures.rst:483
 msgid ""
 "Similarly to :ref:`list comprehensions <tut-listcomps>`, set comprehensions "
 "are also supported::"
 msgstr ""
+":ref:`liste kavramaları <tut-listcomps>` gibi küme kavramaları da "
+"desteklenmektedir::"
 
 #: tutorial/datastructures.rst:494
 msgid "Dictionaries"
-msgstr ""
+msgstr "Sözlükler"
 
 #: tutorial/datastructures.rst:496
 msgid ""
@@ -398,6 +528,17 @@ msgid ""
 "in place using index assignments, slice assignments, or methods like :meth:"
 "`append` and :meth:`extend`."
 msgstr ""
+"Python'da yerleşik olarak bulunan bir başka kullanışlı veri türü de "
+"*sözlüktür* (bkz :ref:`typesmapping`). Sözlükler bazen diğer dillerde "
+"\"ilişkisel bellekler\" veya \"ilişkisel diziler\" olarak bulunur.  Bir sayı "
+"aralığı ile indekslenen sekansların aksine, sözlükler herhangi bir değişmez "
+"tip olabilen *anahtarlar* ile indekslenir, ki dizgiler ve sayılar her zaman "
+"birer anahtar olabilir.  Veri grupları yalnızca dizgi, sayı ya da veri grubu "
+"içeriyorsa anahtar olarak kullanılabilir. Ancak bir veri grubu doğrudan ya "
+"da dolaylı olarak değişebilir herhangi bir nesne içeriyorsa anahtar olarak "
+"kullanılamaz. Listeler; dizin atamaları, dilim atamaları veya :meth:`append` "
+"ve :meth:`extend` gibi yöntemler kullanılarak yerinde değiştirilebildiğinden "
+"listeleri anahtar olarak kullanamazsınız."
 
 #: tutorial/datastructures.rst:507
 msgid ""
@@ -407,6 +548,12 @@ msgid ""
 "of key:value pairs within the braces adds initial key:value pairs to the "
 "dictionary; this is also the way dictionaries are written on output."
 msgstr ""
+"Bir sözlüğü *anahtar: değer* çiftleri olarak düşünmek en iyisidir. Bir "
+"sözlük içerisindeki her anahtarın benzersiz olması gerektiğini ise "
+"unutmayın. Bir çift parantez boş bir sözlük oluşturur: ``{}``. Anahtar:değer "
+"çiftlerinin virgülle ayrılmış bir listesini parantezler içine yerleştirmek "
+"sözlüğe ilk anahtar:değer çiftlerini ekler; sözlükler çıktıda da aynı bu "
+"şekilde görünürler."
 
 #: tutorial/datastructures.rst:513
 msgid ""
@@ -416,6 +563,11 @@ msgid ""
 "the old value associated with that key is forgotten.  It is an error to "
 "extract a value using a non-existent key."
 msgstr ""
+"Bir sözlük üzerindeki ana işlemler, bir değeri bir anahtarla depolamak ve "
+"anahtarı verilen değeri geri çıkarmaktır.  Ayrıca ``del`` ile bir anahtar:"
+"değer çiftini silmek de mümkündür. Zaten bir değeri kullanımda olan bir "
+"anahtar kullanarak saklarsanız, bu anahtarla ilişkili eski değer unutulur.  "
+"Var olmayan bir anahtar kullanarak değer çıkarmak bir hatadır."
 
 #: tutorial/datastructures.rst:519
 msgid ""
@@ -424,62 +576,84 @@ msgid ""
 "``sorted(d)`` instead). To check whether a single key is in the dictionary, "
 "use the :keyword:`in` keyword."
 msgstr ""
+"Bir sözlük üzerinde ``list(d)`` işlemini gerçekleştirmek, sözlükte "
+"kullanılan tüm anahtarların bir listesini eklenme sırasına göre döndürür "
+"(başka bir düzenle sıralanmasını istiyorsanız, bunun yerine ``sorted(d)`` "
+"kullanın). Tek bir anahtarın sözlükte olup olmadığını kontrol etmek için :"
+"keyword:`in` anahtar sözcüğünü kullanın."
 
 #: tutorial/datastructures.rst:524
 msgid "Here is a small example using a dictionary::"
-msgstr ""
+msgstr "İşte sözlük kullanılan bir örnek::"
 
 #: tutorial/datastructures.rst:545
 msgid ""
 "The :func:`dict` constructor builds dictionaries directly from sequences of "
 "key-value pairs::"
 msgstr ""
+":func:`dict` yapıcısı, doğrudan anahtar-değer sekanslarından sözlükler "
+"oluşturur::"
 
 #: tutorial/datastructures.rst:551
 msgid ""
 "In addition, dict comprehensions can be used to create dictionaries from "
 "arbitrary key and value expressions::"
 msgstr ""
+"Buna ek olarak, sözlük kavramaları rastgele anahtar ve değer ifadelerinden "
+"sözlükler oluşturmak için de kullanılabilir::"
 
 #: tutorial/datastructures.rst:557
 msgid ""
 "When the keys are simple strings, it is sometimes easier to specify pairs "
 "using keyword arguments::"
 msgstr ""
+"Anahtarlar basit dizgiler olduğunda, anahtar sözcük argümanlarını kullanarak "
+"çiftleri belirtmek bazen daha kolaydır::"
 
 #: tutorial/datastructures.rst:567
 msgid "Looping Techniques"
-msgstr ""
+msgstr "Döngü Teknikleri"
 
 #: tutorial/datastructures.rst:569
 msgid ""
 "When looping through dictionaries, the key and corresponding value can be "
 "retrieved at the same time using the :meth:`items` method. ::"
 msgstr ""
+"Sözlükler arasında döngü yaparken, :meth:`items` yöntemi kullanılarak "
+"anahtar ve karşılık gelen değer aynı anda alınabilir:"
 
 #: tutorial/datastructures.rst:579
 msgid ""
 "When looping through a sequence, the position index and corresponding value "
 "can be retrieved at the same time using the :func:`enumerate` function. ::"
 msgstr ""
+"Bir sekans boyunca döngü yaparken, :func:`enumerate` fonksiyonu kullanılarak "
+"konum indeksi ve karşılık gelen değer aynı anda alınabilir:"
 
 #: tutorial/datastructures.rst:589
 msgid ""
 "To loop over two or more sequences at the same time, the entries can be "
 "paired with the :func:`zip` function. ::"
 msgstr ""
+"Aynı anda iki veya daha fazla sekans üzerinde döngü yapmak için, girdiler :"
+"func:`zip` fonksiyonu ile eşleştirilebilir:"
 
 #: tutorial/datastructures.rst:601
 msgid ""
 "To loop over a sequence in reverse, first specify the sequence in a forward "
 "direction and then call the :func:`reversed` function. ::"
 msgstr ""
+"Bir sekans üzerinde ters yönde döngü yapmak için, önce sekansı ileri yönde "
+"belirtin ve ardından :func:`reversed` fonksiyonunu çağırın:"
 
 #: tutorial/datastructures.rst:613
 msgid ""
 "To loop over a sequence in sorted order, use the :func:`sorted` function "
 "which returns a new sorted list while leaving the source unaltered. ::"
 msgstr ""
+"Bir sekans üzerinde sıralı olarak döngü yapmak için, listenin kaynağını "
+"değiştirmeksizin yeni bir sıralı liste döndüren :func:`sorted` fonksiyonunu "
+"kullanın. ::"
 
 #: tutorial/datastructures.rst:627
 msgid ""
@@ -488,22 +662,31 @@ msgid ""
 "idiomatic way to loop over unique elements of the sequence in sorted "
 "order. ::"
 msgstr ""
+"Bir sekans üzerinde :func:`set` kullanmak yinelenen öğeleri ortadan "
+"kaldırır. Bir sekans üzerinde :func:`set` ile birlikte :func:`sorted` "
+"kullanımı, dizinin benzersiz öğeleri üzerinde sıralı olarak döngü "
+"oluşturmanın deyimsel bir yoludur. ::"
 
 #: tutorial/datastructures.rst:640
 msgid ""
 "It is sometimes tempting to change a list while you are looping over it; "
 "however, it is often simpler and safer to create a new list instead. ::"
 msgstr ""
+"Bazen bir liste üzerinde döngü yaparken listeyi değiştirmek "
+"isteyebilirsiniz, ancak listeyi değiştirmektense yeni bir liste oluşturmak "
+"genellikle daha basit ve güvenlidir."
 
 #: tutorial/datastructures.rst:657
 msgid "More on Conditions"
-msgstr ""
+msgstr "Koşullar Üzerine"
 
 #: tutorial/datastructures.rst:659
 msgid ""
 "The conditions used in ``while`` and ``if`` statements can contain any "
 "operators, not just comparisons."
 msgstr ""
+"``while`` ve ``if`` deyimlerinde kullanılan koşullar sadece karşılaştırma "
+"değil, herhangi bir operatör içerebilir."
 
 #: tutorial/datastructures.rst:662
 msgid ""
@@ -512,12 +695,20 @@ msgid ""
 "whether two objects are really the same object.  All comparison operators "
 "have the same priority, which is lower than that of all numerical operators."
 msgstr ""
+"Karşılaştırma operatörleri ``in`` ve ``not in`` bir değerin bir dizide olup "
+"olmadığını kontrol eder.  ``is`` ve ``is not`` operatörleri iki nesnenin "
+"gerçekten aynı nesne olup olmadığını karşılaştırır.  Tüm karşılaştırma "
+"operatörleri aynı önceliğe sahiptir, bu öncelik ise tüm sayısal "
+"operatörlerden daha düşüktür."
 
 #: tutorial/datastructures.rst:667
 msgid ""
 "Comparisons can be chained.  For example, ``a < b == c`` tests whether ``a`` "
 "is less than ``b`` and moreover ``b`` equals ``c``."
 msgstr ""
+"Karşılaştırmalar art arda zincirlenebilir.  Örneğin, ``a < b == c`` ifadesi "
+"``a`` değerinin ``b`` değerinden küçük olup olmadığını test ederken aynı "
+"zamanda ``b`` değerinin ``c`` değerine eşit olup olmadığını test eder."
 
 #: tutorial/datastructures.rst:670
 msgid ""
@@ -528,6 +719,13 @@ msgid ""
 "lowest, so that ``A and not B or C`` is equivalent to ``(A and (not B)) or "
 "C``. As always, parentheses can be used to express the desired composition."
 msgstr ""
+"Karşılaştırmalar ``and`` ve ``or`` Boole operatörleri kullanılarak "
+"birleştirilebilir ve bir karşılaştırmanın (veya başka bir Boole ifadesinin) "
+"sonucu ``not`` ile olumsuzlanabilir.  Bunlar karşılaştırma operatörlerinden "
+"daha düşük önceliklere sahiptir; aralarında, ``not`` en yüksek önceliğe ve "
+"``or`` en düşük önceliğe sahiptir, böylece ``A ve B değil veya C``, ``(A ve "
+"(B değil)) veya C`` ile eşdeğerdir. Her zaman olduğu gibi, istenen bileşimi "
+"ifade etmek için parantezler kullanılabilir."
 
 #: tutorial/datastructures.rst:677
 msgid ""
@@ -538,12 +736,20 @@ msgid ""
 "expression ``C``.  When used as a general value and not as a Boolean, the "
 "return value of a short-circuit operator is the last evaluated argument."
 msgstr ""
+"Boole operatörleri ``and`` ve ``or`` *kısa devre* operatörleri olarak "
+"adlandırılır: argümanları soldan sağa doğru değerlendirilir ve sonuç "
+"belirlenir belirlenmez değerlendirme durur.  Örneğin, ``A`` ve ``C`` doğru "
+"ancak ``B`` yanlış ise, ``A ve B ve C`` ``C`` ifadesini değerlendirmez.  "
+"Boole olarak değil de genel bir değer olarak kullanıldığında, kısa devre "
+"işlecinin dönüş değeri son değerlendirilen bağımsız değişkendir."
 
 #: tutorial/datastructures.rst:684
 msgid ""
 "It is possible to assign the result of a comparison or other Boolean "
 "expression to a variable.  For example, ::"
 msgstr ""
+"Bir değişkene, bir karşılaştırmanın sonucunu veya başka bir Boole ifadesini "
+"atamak mümkündür. Örneğin::"
 
 #: tutorial/datastructures.rst:692
 msgid ""
@@ -552,10 +758,14 @@ msgid ""
 "an-expression>` ``:=``. This avoids a common class of problems encountered "
 "in C programs: typing ``=`` in an expression when ``==`` was intended."
 msgstr ""
+"Python'da, C'den farklı olarak, ifadelerin içindeki atamanın :ref:`walrus "
+"operatörü <why-can-t-i-use-an-assignment-in-an-expression>:` ``=`` ile "
+"açıkça yapılması gerektiğini unutmayın. Bu, C programlarında karşılaşılan "
+"yaygın bir sorunu önler: ``==`` yazmak isterken ``=`` yazmak."
 
 #: tutorial/datastructures.rst:702
 msgid "Comparing Sequences and Other Types"
-msgstr ""
+msgstr "Sekanslar ile Diğer Veri Tiplerinin Karşılaştırılması"
 
 #: tutorial/datastructures.rst:703
 msgid ""
@@ -572,6 +782,17 @@ msgid ""
 "order individual characters. Some examples of comparisons between sequences "
 "of the same type::"
 msgstr ""
+"Sekans nesneleri tipik olarak aynı sekans türüne sahip diğer nesnelerle "
+"karşılaştırılabilir. Karşılaştırmada *sözlükbilimsel* sıralama kullanılır: "
+"önce ilk iki öğe karşılaştırılır ve farklılarsa bu karşılaştırmanın sonucunu "
+"belirler; eşitlerse, sonraki iki öğe karşılaştırılır ve her iki sekans da "
+"tükenene kadar böyle devam eder. Karşılaştırılacak iki öğenin kendileri de "
+"aynı türden sekanslar ise, sözlükbilimsel karşılaştırma özyinelemeli olarak "
+"gerçekleştirilir.  İki sekansın tüm öğeleri eşit çıkarsa, sekanslar eşit "
+"kabul edilir. Eğer sekanslardan biri diğerinin alt sekansı ise, daha kısa "
+"olan sekans daha küçük (küçük) olandır.  Dizgiler için sözlükbilimsel "
+"sıralama, tek tek karakterleri sıralamak için Unicode kod noktası numarasını "
+"kullanır. Aynı türdeki sekanslar arasındaki karşılaştırmalara bazı örnekler::"
 
 #: tutorial/datastructures.rst:723
 msgid ""
@@ -581,13 +802,21 @@ msgid ""
 "equals 0.0, etc.  Otherwise, rather than providing an arbitrary ordering, "
 "the interpreter will raise a :exc:`TypeError` exception."
 msgstr ""
+"Nesnelerin uygun karşılaştırma yöntemlerine sahip olması koşuluyla, farklı "
+"türlerdeki nesnelerin ``<`` veya ``>`` ile karşılaştırılabileceğini "
+"unutmayın.  Örneğin, karışık sayısal türler sayısal değerlerine göre "
+"karşılaştırılır, bu nedenle 0 eşittir 0.0, vb.  Bu türler uygun yöntemlere "
+"sahip değillerse, yorumlayıcı rastgele bir sıralama döndürmek yerine :exc:"
+"`TypeError` istisnasını yükseltir."
 
 #: tutorial/datastructures.rst:731
 msgid "Footnotes"
-msgstr ""
+msgstr "Dipnotlar"
 
 #: tutorial/datastructures.rst:732
 msgid ""
 "Other languages may return the mutated object, which allows method chaining, "
 "such as ``d->insert(\"a\")->remove(\"b\")->sort();``."
 msgstr ""
+"Diğer diller yöntem zincirlemesine izin veren değiştirilmiş nesneyi "
+"döndürebilir, mesela ``d->insert(\"a\")->remove(\"b\")->sort();`` gibi."

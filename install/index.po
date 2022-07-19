@@ -2,31 +2,32 @@
 # Copyright (C) 2001-2021, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-05-15 21:17+0300\n"
+"Last-Translator: \n"
+"Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: install/index.rst:7
 msgid "Installing Python Modules (Legacy version)"
-msgstr ""
+msgstr "Python Modüllerini Yükleme (Eski sürüm)"
 
 #: install/index.rst:0
 msgid "Author"
-msgstr ""
+msgstr "Yazar"
 
 #: install/index.rst:9
 msgid "Greg Ward"
-msgstr ""
+msgstr "Greg Ward"
 
 #: install/index.rst:15
 msgid ""
@@ -35,16 +36,22 @@ msgid ""
 "removed with the package. See the :ref:`What's New <distutils-deprecated>` "
 "entry for more information."
 msgstr ""
+"Tüm ``distutils`` paketi kullanımdan kaldırıldı ve Python 3.12’de "
+"kaldırılacak. Bu belgeler yalnızca referans olarak tutulur ve paketle "
+"birlikte kaldırılacaktır. Daha fazla bilgi için :ref:`What’s New <distutils-"
+"deprecated>` girişine bakın."
 
 #: install/index.rst:23
 msgid ":ref:`installing-index`"
-msgstr ""
+msgstr ":ref:`installing-index`"
 
 #: install/index.rst:23
 msgid ""
 "The up to date module installation documentation. For regular Python usage, "
 "you almost certainly want that document rather than this one."
 msgstr ""
+"Güncel modül kurulum belgeleri. Normal Python kullanımı için, neredeyse "
+"kesinlikle bu belgeden ziyade o belgeyi istersiniz."
 
 #: distutils/_setuptools_disclaimer.rst:3
 msgid ""
@@ -52,6 +59,9 @@ msgid ""
 "documentation at https://setuptools.readthedocs.io/en/latest/setuptools.html "
 "independently covers all of the relevant information currently included here."
 msgstr ""
+"Bu belge yalnızca https://setuptools.readthedocs.io/en/latest/setuptools."
+"html adresindeki ``setuptools`` belgeleri burada bulunan ilgili tüm "
+"bilgileri bağımsız olarak kapsayana kadar saklanacaktır."
 
 #: install/index.rst:30
 msgid ""
@@ -61,10 +71,16 @@ msgid ""
 "recommendations section <https://packaging.python.org/guides/tool-"
 "recommendations/>`__ in the Python Packaging User Guide for more information."
 msgstr ""
+"Bu kılavuz yalnızca, Python’un bu sürümünün bir parçası olarak sağlanan "
+"uzantıları oluşturmaya ve dağıtmaya yönelik temel araçları kapsar. Üçüncü "
+"taraf araçlar, kullanımı daha kolay ve daha güvenli alternatifler sunar. "
+"Daha fazla bilgi için Python Paketleme Kullanıcı Kılavuzundaki `hızlı "
+"öneriler bölümüne <https://packaging.python.org/guides/tool-recommendations/"
+">`__ bakın."
 
 #: install/index.rst:41
 msgid "Introduction"
-msgstr ""
+msgstr "Giriş"
 
 #: install/index.rst:43
 msgid ""
@@ -74,6 +90,10 @@ msgid ""
 "administrators with a standard way of installing them directly onto target "
 "systems."
 msgstr ""
+"Python 2.0’da``distutils`` API’ı ilk olarak standart kitaplığa eklendi. Bu, "
+"Linux dağıtım yöneticilerine Python projelerini Linux dağıtım paketlerine "
+"dönüştürmenin standart bir yolunu ve sistem yöneticilerine bunları doğrudan "
+"hedef sistemlere yüklemenin standart bir yolunu sağladı."
 
 #: install/index.rst:48
 msgid ""
@@ -83,21 +103,30 @@ msgid ""
 "the ``pip`` package installer and the ``setuptools`` build system, rather "
 "than using ``distutils`` directly."
 msgstr ""
+"Python 2.0’ın piyasaya sürülmesinden bu yana geçen uzun yıllardan bu yana, "
+"yapı sistemi ve paket yükleyiciyi dil çalışma zamanı sürüm döngüsüne sıkı "
+"bir şekilde bağlamak sorunlu hale geldi ve artık projelerin ``pip`` paket "
+"yükleyicisini ve doğrudan ``distutils`` kullanmak yerine ``setuptools`` yapı "
+"sistemi."
 
 #: install/index.rst:54
 msgid ""
 "See :ref:`installing-index` and :ref:`distributing-index` for more details."
 msgstr ""
+"Daha fazla ayrıntı için :ref:`installing-index` ve :ref:`distributing-"
+"index`e bakın."
 
 #: install/index.rst:56
 msgid ""
 "This legacy documentation is being retained only until we're confident that "
 "the ``setuptools`` documentation covers everything needed."
 msgstr ""
+"Bu eski belgeler, yalnızca ``setuptools`` belgelerinin gereken her şeyi "
+"kapsadığından emin olana kadar tutulur."
 
 #: install/index.rst:62
 msgid "Distutils based source distributions"
-msgstr ""
+msgstr "Distutils tabanlı kaynak dağıtımları"
 
 #: install/index.rst:64
 msgid ""
@@ -112,12 +141,24 @@ msgid ""
 "should explain that building and installing the module distribution is a "
 "simple matter of running one command from a terminal::"
 msgstr ""
+"Bir modül kaynak dağıtımı indirirseniz, bunun standart bir şekilde, yani "
+"Distutils kullanılarak paketlenip dağıtılmadığını oldukça hızlı bir şekilde "
+"anlayabilirsiniz. İlk olarak, dağıtımın adı ve sürüm numarası, indirilen "
+"arşivin adında belirgin bir şekilde yer alacaktır, ör. :file:`foo-1.0.tar."
+"gz` veya :file:`widget-0.9.7.zip`. Ardından, arşiv benzer adlı bir dizine "
+"açılır: :file:`foo-1.0` veya :file:`widget-0.9.7`. Ek olarak, dağıtım bir "
+"kurulum komut dosyası :file:`setup.py` ve :file:`README.txt` veya muhtemelen "
+"sadece :file:`README` adlı bir dosya içerecek ve modül dağıtımının "
+"oluşturulmasını ve kurulmasını açıklamalıdır. bir terminalden bir komut "
+"çalıştırmanın basit bir meselesidir:"
 
 #: install/index.rst:77
 msgid ""
 "For Windows, this command should be run from a command prompt window (:"
 "menuselection:`Start --> Accessories`)::"
 msgstr ""
+"Windows için bu komut bir komut istemi penceresinden çalıştırılmalıdır (:"
+"menuselection:`Start —> Accessories`)::"
 
 #: install/index.rst:82
 msgid ""
@@ -127,10 +168,16 @@ msgid ""
 "don't really need this manual.  Or rather, the above command is everything "
 "you need to get out of this manual."
 msgstr ""
+"Tüm bunlar doğruysa, yeni indirdiğiniz modülleri nasıl oluşturacağınızı ve "
+"kuracağınızı zaten biliyorsunuzdur: Yukarıdaki komutu çalıştırın. Standart "
+"olmayan bir şekilde bir şeyler kurmanız veya oluşturma sürecini "
+"özelleştirmeniz gerekmiyorsa, bu kılavuza gerçekten ihtiyacınız yoktur. Veya "
+"daha doğrusu, yukarıdaki komut, bu kılavuzdan çıkmanız için ihtiyacınız olan "
+"her şeydir."
 
 #: install/index.rst:92
 msgid "Standard Build and Install"
-msgstr ""
+msgstr "Standart Derleme ve Yükleme"
 
 #: install/index.rst:94
 msgid ""
@@ -138,10 +185,13 @@ msgid ""
 "module distribution using the Distutils is usually one simple command to run "
 "from a terminal::"
 msgstr ""
+":ref:`inst-new-standard bölümünde açıklandığı gibi, Distutils kullanarak bir "
+"modül dağıtımı oluşturmak ve kurmak genellikle bir terminalden "
+"çalıştırılacak basit bir komuttur::"
 
 #: install/index.rst:104
 msgid "Platform variations"
-msgstr ""
+msgstr "Platform varyasyonları"
 
 #: install/index.rst:106
 msgid ""
@@ -151,6 +201,10 @@ msgid ""
 "source distribution :file:`foo-1.0.tar.gz` onto a Unix system, the normal "
 "thing to do is::"
 msgstr ""
+"Kurulum komutunu her zaman dağıtım kök dizininden, yani modül kaynak "
+"dağıtımının paketini açtığı en üst düzey alt dizinden çalıştırmalısınız. "
+"Örneğin, bir Unix sistemine yeni bir kaynak dağıtımı :file:`foo-1.0.tar.gz` "
+"indirdiyseniz, yapmanız gereken normal şey:"
 
 #: install/index.rst:115
 msgid ""
@@ -161,10 +215,16 @@ msgid ""
 "program:`unzip` or :program:`pkunzip`) to unpack the archive.  Then, open a "
 "command prompt window and run::"
 msgstr ""
+"Windows’ta muhtemelen :file:`foo-1.0.zip` dosyasını indirirsiniz. Arşiv "
+"dosyasını :file:`C:\\\\Temp` konumuna indirdiyseniz, paketinden :file:`C:\\"
+"\\Temp\\\\foo-1.0`; arşivi açmak için grafiksel kullanıcı arabirimli bir "
+"arşiv manipülatörü (WinZip gibi) veya bir komut satırı aracı (örneğin :"
+"program:`unzip` veya :program:`pkunzip`) kullanabilirsiniz. Ardından, bir "
+"komut istemi penceresi açın ve şunu çalıştırın::"
 
 #: install/index.rst:129
 msgid "Splitting the job up"
-msgstr ""
+msgstr "İşi bölmek"
 
 #: install/index.rst:131
 msgid ""
@@ -177,12 +237,22 @@ msgid ""
 "administrator for installation (or do it yourself, with super-user "
 "privileges)."
 msgstr ""
+"``setup.py install`` çalıştırıldığında, tüm modüller tek bir çalıştırmada "
+"oluşturulur ve kurulur. Kademeli olarak çalışmayı tercih ediyorsanız — "
+"özellikle oluşturma sürecini özelleştirmek istiyorsanız veya işler ters "
+"gidiyorsa kullanışlıdır — her seferinde bir şey yapmak için kurulum komut "
+"dosyasını kullanabilirsiniz. Bu, özellikle derleme ve yükleme farklı "
+"kullanıcılar tarafından yapılacaksa yararlıdır — örneğin, bir modül dağıtımı "
+"oluşturmak ve yükleme için bir sistem yöneticisine teslim etmek (veya süper "
+"kullanıcı ayrıcalıklarıyla kendiniz yapmak) isteyebilirsiniz. )."
 
 #: install/index.rst:139
 msgid ""
 "For example, you can build everything in one step, and then install "
 "everything in a second step, by invoking the setup script twice::"
 msgstr ""
+"Örneğin, her şeyi bir adımda oluşturabilir ve ardından kurulum komut "
+"dosyasını iki kez çağırarak her şeyi ikinci bir adımda yükleyebilirsiniz:"
 
 #: install/index.rst:145
 msgid ""
@@ -191,6 +261,10 @@ msgid ""
 "notices that it has nothing to do, since everything in the :file:`build` "
 "directory is up-to-date."
 msgstr ""
+"Bunu yaparsanız, :command:`install` komutunu çalıştırmanın önce :command:"
+"`build` komutunu çalıştırdığını fark edeceksiniz, bu komut —bu durumda —"
+"hızlı bir şekilde ilgisi olmadığını fark edecek, çünkü her şey :file:`build` "
+"dizini günceldir."
 
 #: install/index.rst:150
 msgid ""
@@ -199,10 +273,14 @@ msgid ""
 "advanced tasks.  If you get into distributing your own Python modules and "
 "extensions, you'll run lots of individual Distutils commands on their own."
 msgstr ""
+"Tek yapmanız gereken ağdan indirilen modülleri kurmaksa, işleri parçalamak "
+"için bu yeteneğe ihtiyacınız olmayabilir, ancak daha gelişmiş görevler için "
+"çok kullanışlıdır. Kendi Python modüllerinizi ve uzantılarınızı dağıtmaya "
+"başlarsanız, birçok Distutils komutunu kendi başlarına çalıştıracaksınız."
 
 #: install/index.rst:159
 msgid "How building works"
-msgstr ""
+msgstr "Building nasıl çalışır"
 
 #: install/index.rst:161
 msgid ""
@@ -212,6 +290,11 @@ msgid ""
 "speed, or want to keep the source tree pristine, you can change the build "
 "directory with the :option:`!--build-base` option. For example::"
 msgstr ""
+"Yukarıda belirtildiği gibi, :command:`build` komutu, kurulacak dosyaların "
+"bir *build directory* ye yerleştirilmesinden sorumludur. Varsayılan olarak, "
+"bu, dağıtım kökünün altındaki :file:`build`dir; Hızla aşırı derecede "
+"ilgileniyorsanız veya kaynak ağacı bozulmamış tutmak istiyorsanız, derleme "
+"dizinini :option:`!—build-base` seçeneğiyle değiştirebilirsiniz. Örneğin::"
 
 #: install/index.rst:169
 msgid ""
@@ -219,10 +302,13 @@ msgid ""
 "personal Distutils configuration file; see section :ref:`inst-config-"
 "files`.)  Normally, this isn't necessary."
 msgstr ""
+"(Ya da bunu sisteminizdeki veya kişisel Distutils yapılandırma dosyanızdaki "
+"bir yönerge ile kalıcı olarak yapabilirsiniz; bkz. bölüm :ref:`inst-config-"
+"files.) Normalde, bu gerekli değildir."
 
 #: install/index.rst:173
 msgid "The default layout for the build tree is as follows::"
-msgstr ""
+msgstr "Derleme ağacının varsayılan düzeni aşağıdaki gibidir:"
 
 #: install/index.rst:180
 msgid ""
@@ -237,6 +323,16 @@ msgid ""
 "`lib` (or :file:`lib.{plat}`) directory contains all Python modules (pure "
 "Python and extensions) that will be installed."
 msgstr ""
+"Burada “<plat>” mevcut işletim sistemi/donanım platformunun ve Python "
+"sürümünün kısa bir açıklamasına genişler. Yalnızca bir :file:`lib` dizini "
+"içeren ilk biçim, “saf modül dağıtımları” için kullanılır —yani, yalnızca "
+"salt Python modüllerini içeren modül dağıtımları. Bir modül dağıtımı "
+"herhangi bir uzantı içeriyorsa (C/C++ ile yazılmış modüller), o zaman iki "
+"``<plat>`` dizinli ikinci form kullanılır. Bu durumda, :file:`temp.{plat}` "
+"dizini, derleme/bağlantı işlemi tarafından oluşturulan ve aslında "
+"yüklenmeyen geçici dosyaları tutar. Her iki durumda da, :file:`lib` (veya :"
+"file:`lib.{plat}`) dizini, kurulacak tüm Python modüllerini (saf Python ve "
+"uzantıları) içerir."
 
 #: install/index.rst:190
 msgid ""
@@ -244,10 +340,13 @@ msgid ""
 "documentation, binary executables, and whatever else is needed to handle the "
 "job of installing Python modules and applications."
 msgstr ""
+"Gelecekte, Python komut dosyalarını, belgeleri, ikili yürütülebilir "
+"dosyaları ve Python modüllerini ve uygulamalarını yükleme işini yürütmek "
+"için gereken diğer her şeyi işlemek için daha fazla dizin eklenecektir."
 
 #: install/index.rst:198
 msgid "How installation works"
-msgstr ""
+msgstr "Kurulum nasıl çalışır"
 
 #: install/index.rst:200
 msgid ""
@@ -257,6 +356,11 @@ msgid ""
 "under :file:`build/lib` (or :file:`build/lib.{plat}`) to your chosen "
 "installation directory."
 msgstr ""
+":command:`build` komutu çalıştırıldıktan sonra (ister açık bir şekilde "
+"çalıştırın, ister :command:`install` komutu sizin için yapar), :command:"
+"`install` komutunun çalışması nispeten basittir: sahip olduğu tek şey "
+"yapılacak şey :file:`build/lib` (veya :file:`build/lib.{plat}`) altındaki "
+"her şeyi seçtiğiniz kurulum dizinine kopyalamaktır."
 
 #: install/index.rst:206
 msgid ""
@@ -268,66 +372,73 @@ msgid ""
 "distribution being installed is pure Python or contains extensions (\"non-"
 "pure\"):"
 msgstr ""
+"Bir kurulum dizini seçmezseniz — yani, sadece ``setup.py install``\\ "
+"komutunu çalıştırırsanız — o zaman :command:`install` komutu üçüncü taraf "
+"Python modülleri için standart konuma yüklenir . Bu konum, platforma ve "
+"Python’un kendisini nasıl oluşturduğunuza/kurduğunuza göre değişir. Unix’te "
+"(ve aynı zamanda Unix tabanlı olan macOS’ta), yüklenen modül dağıtımının saf "
+"Python olup olmadığına veya uzantılar (“non pürse”) içerip içermediğine de "
+"bağlıdır:"
 
 #: install/index.rst:216
 msgid "Platform"
-msgstr ""
+msgstr "Platform"
 
 #: install/index.rst:216
 msgid "Standard installation location"
-msgstr ""
+msgstr "Standart kurulum lokasyonu"
 
 #: install/index.rst:216
 msgid "Default value"
-msgstr ""
+msgstr "Varsayılan değer"
 
 #: install/index.rst:742 install/index.rst:754
 msgid "Notes"
-msgstr ""
+msgstr "Notlar"
 
 #: install/index.rst:218
 msgid "Unix (pure)"
-msgstr ""
+msgstr "Unix (pure)"
 
 #: install/index.rst:431
 msgid ":file:`{prefix}/lib/python{X.Y}/site-packages`"
-msgstr ""
+msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
 #: install/index.rst:220
 msgid ":file:`/usr/local/lib/python{X.Y}/site-packages`"
-msgstr ""
+msgstr ":file:`/usr/local/lib/python{X.Y}/site-packages`"
 
 #: install/index.rst:220 install/index.rst:744
 msgid "\\(1)"
-msgstr ""
+msgstr "\\(1)"
 
 #: install/index.rst:220
 msgid "Unix (non-pure)"
-msgstr ""
+msgstr "Unix (non-pure)"
 
 #: install/index.rst:432
 msgid ":file:`{exec-prefix}/lib/python{X.Y}/site-packages`"
-msgstr ""
+msgstr ":file:`{exec-prefix}/lib/python{X.Y}/site-packages`"
 
 #: install/index.rst:222
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: install/index.rst:483
 msgid ":file:`{prefix}\\\\Lib\\\\site-packages`"
-msgstr ""
+msgstr ":file:`{prefix}\\\\Lib\\\\site-packages`"
 
 #: install/index.rst:222
 msgid ":file:`C:\\\\Python{XY}\\\\Lib\\\\site-packages`"
-msgstr ""
+msgstr ":file:`C:\\\\Python{XY}\\\\Lib\\\\site-packages`"
 
 #: install/index.rst:746
 msgid "\\(2)"
-msgstr ""
+msgstr "\\(2)"
 
 #: install/index.rst:766
 msgid "Notes:"
-msgstr ""
+msgstr "Notlar:"
 
 #: install/index.rst:228
 msgid ""
@@ -337,12 +448,19 @@ msgid ""
 "the default :file:`{prefix}` and :file:`{exec-prefix}` are :file:`/usr/"
 "local`."
 msgstr ""
+"Çoğu Linux dağıtımı Python’u sistemin standart bir parçası olarak içerir, bu "
+"nedenle :file:`{prefix}` ve :file:`{exec-prefix}` genellikle Linux’ta :file:"
+"`/usr`dır. Python’u Linux’ta (veya herhangi bir Unix benzeri sistemde) "
+"kendiniz kurarsanız, varsayılan :file:`{prefix}` ve :file:`{exec-prefix}` :"
+"file:`/usr/local` şeklindedir."
 
 #: install/index.rst:234
 msgid ""
 "The default installation directory on Windows was :file:`C:\\\\Program Files"
 "\\\\Python` under Python 1.6a1, 1.5.2, and earlier."
 msgstr ""
+"Windows’ta varsayılan kurulum dizini Python 1.6a1, 1.5.2 ve önceki "
+"sürümlerde :file:`C:\\\\Program Files\\\\Python` idi."
 
 #: install/index.rst:237
 msgid ""
@@ -358,6 +476,17 @@ msgid ""
 "the three Python statements shown below, and get the output as shown, to "
 "find out my :file:`{prefix}` and :file:`{exec-prefix}`:"
 msgstr ""
+":file:`{prefix}` ve :file:`{exec-prefix}` Python’un kurulu olduğu dizinleri "
+"ve çalışma zamanında kitaplıklarını nerede bulduğunu gösterir. Windows "
+"altında her zaman aynıdırlar ve çoğu zaman Unix ve macOS altında aynıdırlar. "
+"Python kurulumunuzun :file:`{prefix}` ve :file:`{exec-prefix}` için ne "
+"kullandığını Python’u etkileşimli modda çalıştırarak ve birkaç basit komut "
+"yazarak öğrenebilirsiniz. Unix altında, kabuk istemine ``python`` yazmanız "
+"yeterlidir. Windows altında, :menuselection:`Başlat —> Programlar —> Python "
+"X.Y —> Python (komut satırı)` öğesini seçin. Yorumlayıcı başlatıldığında, "
+"komut istemine Python kodunu yazarsınız. Örneğin, Linux sistemimde, :file:"
+"`{prefix}` ve :file:`{exec-prefix}` i bulmak için aşağıda gösterilen üç "
+"Python ifadesini yazıyorum ve gösterildiği gibi çıktı alıyorum:"
 
 #: install/index.rst:259
 msgid ""
@@ -369,6 +498,13 @@ msgid ""
 "capitalization are important in the paths; for example, a value that uses "
 "``python3.2`` on UNIX will typically use ``Python32`` on Windows."
 msgstr ""
+"Bu belgede birkaç başka yer tutucu kullanılmıştır: :file:`{X.Y}` Python "
+"sürümünü temsil eder, örneğin ``3.2``; :file:`{abiflags}`, :data:`sys."
+"abiflags` değeri veya ABI bayrakları tanımlamayan platformlar için boş dize "
+"ile değiştirilecektir; :file:`{distname}`, kurulmakta olan modül dağıtımının "
+"adıyla değiştirilecektir. Yollarda noktalar ve büyük harf kullanımı "
+"önemlidir; örneğin, UNIX’te ``python3.2``’yi kullanan bir değer, Windows’ta "
+"genellikle ``Python32``yi kullanır."
 
 #: install/index.rst:267
 msgid ""
@@ -378,10 +514,15 @@ msgid ""
 "your installation directories more heavily, see section :ref:`inst-custom-"
 "install` on custom installations."
 msgstr ""
+"Modülleri standart konuma kurmak istemiyorsanız veya oraya yazma izniniz "
+"yoksa, alternatif kurulumlar hakkında :ref:`inst-alt-install` bölümünde "
+"okumanız gerekir. Kurulum dizinlerinizi daha yoğun bir şekilde özelleştirmek "
+"istiyorsanız, özel kurulumlarla ilgili :ref:`inst-custom-install` bölümüne "
+"bakın."
 
 #: install/index.rst:277
 msgid "Alternate Installation"
-msgstr ""
+msgstr "Alternatif Kurulum"
 
 #: install/index.rst:279
 msgid ""
@@ -394,6 +535,13 @@ msgid ""
 "your existing base of scripts still works with the new version before "
 "actually upgrading."
 msgstr ""
+"Çoğu zaman, modüllerin üçüncü taraf Python modülleri için standart konumdan "
+"farklı bir konuma kurulması gerekli veya istenir. Örneğin, bir Unix "
+"sisteminde standart üçüncü taraf modül dizinine yazma izniniz olmayabilir. "
+"Veya bir modülü yerel Python kurulumunuzun standart bir parçası yapmadan "
+"önce denemek isteyebilirsiniz. Bu özellikle halihazırda mevcut olan bir "
+"dağıtımı yükseltirken geçerlidir: gerçekten yükseltmeden önce mevcut komut "
+"dosyası tabanınızın yeni sürümle hala çalıştığından emin olmak istersiniz."
 
 #: install/index.rst:287
 msgid ""
@@ -405,6 +553,13 @@ msgid ""
 "The details differ across platforms, so read whichever of the following "
 "sections applies to you."
 msgstr ""
+"Distutils :command:`install` komutu, modül dağıtımlarını alternatif bir "
+"konuma yüklemeyi basit ve zahmetsiz hale getirmek için tasarlanmıştır. Temel "
+"fikir, kurulum için bir temel dizin sağlamanız ve :command:`install` "
+"komutunun, dosyaların kurulacağı bu temel dizin altında bir dizi dizini "
+"(*installation scheme* olarak adlandırılır) seçmesidir. Ayrıntılar "
+"platformlar arasında farklılık gösterir, bu nedenle aşağıdaki bölümlerden "
+"hangisi size uyuyorsa onu okuyun."
 
 #: install/index.rst:295
 msgid ""
@@ -413,10 +568,14 @@ msgid ""
 "prefix``, or ``--install-base`` and ``--install-platbase``, but you can't "
 "mix from these groups."
 msgstr ""
+"Çeşitli alternatif kurulum şemalarının birbirini dışladığını unutmayın: ``—"
+"user`` veya ``—home`` veya ``—prefix`` ve ``—exec-prefix`` iletebilirsiniz, "
+"veya ``—install-base`` ve ``—install-platbase`, ancak bu gruplardan "
+"karıştıramazsınız."
 
 #: install/index.rst:304
 msgid "Alternate installation: the user scheme"
-msgstr ""
+msgstr "Alternatif kurulum: kullanıcı şeması"
 
 #: install/index.rst:306
 msgid ""
@@ -424,6 +583,9 @@ msgid ""
 "don't have write permission to the global site-packages directory or don't "
 "want to install into it.  It is enabled with a simple option::"
 msgstr ""
+"Bu şema, global site paketleri dizinine yazma izni olmayan veya içine "
+"yüklemek istemeyen kullanıcılar için en uygun çözüm olacak şekilde "
+"tasarlanmıştır. Basit bir seçenekle etkinleştirilir::"
 
 #: install/index.rst:312
 msgid ""
@@ -432,63 +594,67 @@ msgid ""
 "modules and extension modules in the same location (also known as :data:"
 "`site.USER_SITE`). Here are the values for UNIX, including macOS:"
 msgstr ""
+"Dosyalar :data:`site.USER_BASE` (bundan sonra :file:`{userbase}` şeklinde "
+"yazılacaktır) alt dizinlerine kurulacaktır. Bu şema, saf Python modüllerini "
+"ve uzantı modüllerini aynı konuma kurar (ayrıca :data:`site.USER_SITE` "
+"olarak da bilinir). İşte macOS dahil UNIX değerleri:"
 
 #: install/index.rst:329 install/index.rst:429 install/index.rst:506
 #: install/index.rst:754
 msgid "Type of file"
-msgstr ""
+msgstr "Dosya tipi"
 
 #: install/index.rst:329 install/index.rst:429 install/index.rst:481
 msgid "Installation directory"
-msgstr ""
+msgstr "Kurulum dizini"
 
 #: install/index.rst:331 install/index.rst:483
 msgid "modules"
-msgstr ""
+msgstr "Modüller"
 
 #: install/index.rst:320
 msgid ":file:`{userbase}/lib/python{X.Y}/site-packages`"
-msgstr ""
+msgstr ":file:`{userbase}/lib/python{X.Y}/site-packages`"
 
 #: install/index.rst:332 install/index.rst:433 install/index.rst:511
 msgid "scripts"
-msgstr ""
+msgstr "scriptler"
 
 #: install/index.rst:321
 msgid ":file:`{userbase}/bin`"
-msgstr ""
+msgstr ":file:`{userbase}/bin`"
 
 #: install/index.rst:333 install/index.rst:434 install/index.rst:512
 msgid "data"
-msgstr ""
+msgstr "Data"
 
 #: install/index.rst:333
 msgid ":file:`{userbase}`"
-msgstr ""
+msgstr ":file:`{userbase}`"
 
 #: install/index.rst:334 install/index.rst:435 install/index.rst:513
 msgid "C headers"
-msgstr ""
+msgstr "C başlıkları"
 
 #: install/index.rst:323
 msgid ":file:`{userbase}/include/python{X.Y}{abiflags}/{distname}`"
-msgstr ""
+msgstr ":file:`{userbase}/include/python{X.Y}{abiflags}/{distname}`"
 
 #: install/index.rst:326
 msgid "And here are the values used on Windows:"
-msgstr ""
+msgstr "Windows’ta kullanılan değerler:"
 
 #: install/index.rst:331
 msgid ":file:`{userbase}\\\\Python{XY}\\\\site-packages`"
-msgstr ""
+msgstr ":file:`{userbase}\\\\Python{XY}\\\\site-packages`"
 
 #: install/index.rst:332
 msgid ":file:`{userbase}\\\\Python{XY}\\\\Scripts`"
-msgstr ""
+msgstr ":file:`{userbase}\\\\Python{XY}\\\\Scripts`"
 
 #: install/index.rst:334
 msgid ":file:`{userbase}\\\\Python{XY}\\\\Include\\\\{distname}`"
-msgstr ""
+msgstr ":file:`{userbase}\\\\Python{XY}\\\\Include\\\\{distname}`"
 
 #: install/index.rst:337
 msgid ""
@@ -498,6 +664,11 @@ msgid ""
 "which means that there is no additional step to perform after running the :"
 "file:`setup.py` script to finalize the installation."
 msgstr ""
+"Aşağıda açıklanan diğerlerine kıyasla bu şemayı kullanmanın avantajı, normal "
+"koşullar altında kullanıcı site paketleri dizininin her zaman :data:`sys."
+"path` (daha fazla bilgi için :mod:`site` bölümüne bakın) içinde "
+"bulunmasıdır. bu, kurulumu tamamlamak için :file:`setup.py` betiğini "
+"çalıştırdıktan sonra gerçekleştirilecek ek bir adım olmadığı anlamına gelir."
 
 #: install/index.rst:343
 msgid ""
@@ -506,10 +677,14 @@ msgid ""
 "`{userbase}/lib` to the compiler search path for libraries as well as to the "
 "runtime search path for shared C libraries (rpath)."
 msgstr ""
+":command:`build_ext` komutu ayrıca başlık dosyaları ve :file:`{userbase}/"
+"lib` için derleyici arama yoluna :file:`{userbase}/include` eklemek için bir "
+"``—user`` seçeneğine sahiptir. kitaplıklar için derleyici arama yolunun yanı "
+"sıra paylaşılan C kitaplıkları (rpath) için çalışma zamanı arama yoluna."
 
 #: install/index.rst:352
 msgid "Alternate installation: the home scheme"
-msgstr ""
+msgstr "Alternatif kurulum: ev şeması"
 
 #: install/index.rst:354
 msgid ""
@@ -520,10 +695,16 @@ msgid ""
 "`/usr/local/`. This scheme can be used by anyone, regardless of the "
 "operating system they are installing for."
 msgstr ""
+"“Ev planı”nın arkasındaki fikir, Python modüllerinin kişisel bir zulasını "
+"oluşturmanız ve sürdürmenizdir. Bu şemanın adı, Unix’teki bir “ev” dizini "
+"fikrinden türetilmiştir, çünkü bir Unix kullanıcısının ev dizininin :file:`/"
+"usr/` veya :file:`/usr’ye benzer bir düzene sahip olması alışılmadık bir "
+"durum değildir. /yerel/`. Bu şema, yükledikleri işletim sistemi ne olursa "
+"olsun herkes tarafından kullanılabilir."
 
 #: install/index.rst:361
 msgid "Installing a new module distribution is as simple as ::"
-msgstr ""
+msgstr "Yeni bir modül dağıtımı kurmak şu kadar basittir ::"
 
 #: install/index.rst:365
 msgid ""
@@ -531,6 +712,9 @@ msgid ""
 "option.  On Unix, lazy typists can just type a tilde (``~``); the :command:"
 "`install` command will expand this to your home directory::"
 msgstr ""
+"burada :option:`!—home` seçeneği için istediğiniz dizini sağlayabilirsiniz. "
+"Unix’te tembel daktilo yazarları yalnızca bir yaklaşık işareti (``~``) "
+"yazabilir; :command:`install` komutu bunu ana dizininize genişletecektir::"
 
 #: install/index.rst:371
 msgid ""
@@ -539,6 +723,10 @@ msgid ""
 "`sitecustomize` (see :mod:`site`) to call :func:`site.addsitedir` or edit :"
 "data:`sys.path`."
 msgstr ""
+"Python’un bu şema ile kurulu dağıtımları bulmasını sağlamak için, :ref:"
+"`modify Python’s search path <inst-search-path>` değiştirmeniz veya aramak "
+"için :mod:`sitecustomize` (bkz. :mod:`site`) düzenlemeniz gerekebilir. :func:"
+"`site.addsitedir` veya :data:`sys.path` düzenleyin."
 
 #: install/index.rst:376
 msgid ""
@@ -546,30 +734,34 @@ msgid ""
 "are installed to the following directories under the installation base as "
 "follows:"
 msgstr ""
+":option:`!—home` seçeneği, kurulum temel dizinini tanımlar. Dosyalar, "
+"kurulum tabanının altındaki aşağıdaki dizinlere aşağıdaki şekilde kurulur:"
 
 #: install/index.rst:382
 msgid ":file:`{home}/lib/python`"
-msgstr ""
+msgstr ":file:`{home}/lib/python`"
 
 #: install/index.rst:383
 msgid ":file:`{home}/bin`"
-msgstr ""
+msgstr ":file:`{home}/bin`"
 
 #: install/index.rst:384
 msgid ":file:`{home}`"
-msgstr ""
+msgstr ":file:`{home}`"
 
 #: install/index.rst:385
 msgid ":file:`{home}/include/python/{distname}`"
-msgstr ""
+msgstr ":file:`{home}/include/python/{distname}`"
 
 #: install/index.rst:388
 msgid "(Mentally replace slashes with backslashes if you're on Windows.)"
 msgstr ""
+"(Windows kullanıyorsanız, eğik çizgileri zihinsel olarak ters eğik çizgiyle "
+"değiştirin.)"
 
 #: install/index.rst:394
 msgid "Alternate installation: Unix (the prefix scheme)"
-msgstr ""
+msgstr "Alternatif kurulum: Unix (ön ek (prefix) şeması)"
 
 #: install/index.rst:396
 msgid ""
@@ -581,6 +773,12 @@ msgid ""
 "and home schemes come before.  However, there are at least two known cases "
 "where the prefix scheme will be useful."
 msgstr ""
+"“Prefix şeması”, oluşturma/kurulum işlemini gerçekleştirmek için (yani "
+"kurulum komut dosyasını çalıştırmak için) bir Python kurulumu kullanmak "
+"istediğinizde, ancak modülleri farklı bir Python kurulumunun (veya farklı "
+"bir Python kurulumuna benziyor). Bu kulağa biraz olağandışı geliyorsa, bu—"
+"kullanıcı ve ev şemalarının önce gelmesinin nedeni budur. Bununla birlikte, "
+"prefix şemasının yararlı olacağı bilinen en az iki durum vardır."
 
 #: install/index.rst:403
 msgid ""
@@ -591,6 +789,12 @@ msgid ""
 "source, you probably want them to go in :file:`/usr/local/lib/python2.{X}` "
 "rather than :file:`/usr/lib/python2.{X}`.  This can be done with ::"
 msgstr ""
+"İlk olarak, birçok Linux dağıtımının Python’u daha geleneksel :file:`/usr/"
+"local` yerine :file:`/usr` içine koyduğunu düşünün. Bu tamamen uygundur, "
+"çünkü bu durumlarda Python yerel bir eklentiden ziyade “sistemin” bir "
+"parçasıdır. Ancak, Python modüllerini kaynaktan kuruyorsanız, muhtemelen "
+"bunların :file:`/usr/lib/python2 yerine :file:`/usr/local/lib/python2.{X}` "
+"içine girmesini istersiniz.{X }`. Bu :: ile yapılabilir."
 
 #: install/index.rst:412
 msgid ""
@@ -601,6 +805,12 @@ msgid ""
 "would have to be installed to, say, :file:`/mnt/{@server}/export/lib/python2."
 "{X}`.  This could be done with ::"
 msgstr ""
+"Başka bir olasılık, uzak bir dizine yazmak için kullanılan adın onu okumak "
+"için kullanılan addan farklı olduğu bir ağ dosya sistemidir: örneğin, :file:"
+"`/usr/local/bin/python` olarak erişilen Python yorumlayıcısı için arama "
+"yapabilir. modüller :file:`/usr/local/lib/python2.{X}` dizinindedir, ancak "
+"bu modüllerin örneğin :file:`/mnt/{@server}/export/lib/python2 konumuna "
+"yüklenmesi gerekir. {X}`. Bu :: ile yapılabilir."
 
 #: install/index.rst:421
 msgid ""
@@ -612,26 +822,33 @@ msgid ""
 "supplied, it defaults to :option:`!--prefix`.  Files are installed as "
 "follows:"
 msgstr ""
+"Her iki durumda da, :option:`!—prefix` seçeneği kurulum tabanını tanımlar "
+"ve :option:`!—exec-prefix` seçeneği platforma özel dosyalar için kullanılan "
+"platforma özel kurulum tabanını tanımlar. . (Şu anda, bu yalnızca saf "
+"olmayan modül dağıtımları anlamına gelir, ancak C kitaplıklarına, ikili "
+"yürütülebilir dosyalara vb. genişletilebilir.) :option:`!—exec-prefix` "
+"sağlanmazsa, varsayılan olarak :option:`! —prefix`. Dosyalar aşağıdaki gibi "
+"yüklenir:"
 
 #: install/index.rst:508
 msgid "Python modules"
-msgstr ""
+msgstr "Python modülleri"
 
 #: install/index.rst:509
 msgid "extension modules"
-msgstr ""
+msgstr "extension (uzatma) modülleri"
 
 #: install/index.rst:433
 msgid ":file:`{prefix}/bin`"
-msgstr ""
+msgstr ":file:`{prefix}/bin`"
 
 #: install/index.rst:485
 msgid ":file:`{prefix}`"
-msgstr ""
+msgstr ":file:`{prefix}`"
 
 #: install/index.rst:435
 msgid ":file:`{prefix}/include/python{X.Y}{abiflags}/{distname}`"
-msgstr ""
+msgstr ":file:`{prefix}/include/python{X.Y}{abiflags}/{distname}`"
 
 #: install/index.rst:438
 msgid ""
@@ -639,6 +856,9 @@ msgid ""
 "actually point to an alternate Python installation; if the directories "
 "listed above do not already exist, they are created at installation time."
 msgstr ""
+":option:`!—prefix` veya :option:`!—exec-prefix`in aslında alternatif bir "
+"Python kurulumuna işaret etmesi gerekliliği yoktur; yukarıda listelenen "
+"dizinler zaten mevcut değilse, kurulum sırasında oluşturulurlar."
 
 #: install/index.rst:442
 msgid ""
@@ -649,6 +869,12 @@ msgid ""
 "the prefix scheme, but every time you run ``python setup.py install`` "
 "without any other options, you're using it."
 msgstr ""
+"Bu arada, önek şemasının önemli olmasının gerçek nedeni, standart bir Unix "
+"kurulumunun önek şemasını kullanmasıdır, ancak :option:`!—prefix` ve :option:"
+"`!—exec-prefix` Python’un kendisi tarafından sağlanır. ``sys.prefix`` ve "
+"``sys.exec_prefix`. Bu nedenle, önek şemasını asla kullanmayacağınızı "
+"düşünebilirsiniz, ancak ``python setup.py install`` dosyasını başka bir "
+"seçenek olmadan her çalıştırdığınızda, onu kullanıyorsunuz."
 
 #: install/index.rst:449
 msgid ""
@@ -664,10 +890,22 @@ msgid ""
 "exec-prefix` don't even point to an alternate Python installation, this is "
 "immaterial.)"
 msgstr ""
+"Alternatif bir Python kurulumuna uzantı yüklemenin, bu uzantıların nasıl "
+"oluşturulduğu üzerinde hiçbir etkisi olmadığını unutmayın: özellikle, "
+"kurulum komut dosyasını çalıştırmak için kullanılan Python yorumlayıcısı ile "
+"yüklenen Python başlık dosyaları (:file:`Python.h` ve arkadaşları) "
+"uzantıların derlenmesinde kullanılabilir. Bu şekilde yüklenen uzantıları "
+"çalıştırmak için kullanılan yorumlayıcının, bunları oluşturmak için "
+"kullanılan yorumlayıcıyla uyumlu olmasını sağlamak sizin "
+"sorumluluğunuzdadır. Bunu yapmanın en iyi yolu, iki yorumlayıcının aynı "
+"Python sürümü (muhtemelen farklı yapılar veya muhtemelen aynı yapının "
+"kopyaları) olduğundan emin olmaktır. (Elbette, :option:`!—prefix` ve :option:"
+"`!—exec-prefix` öğeleriniz alternatif bir Python kurulumuna işaret "
+"etmiyorsa, bu önemsizdir.)"
 
 #: install/index.rst:464
 msgid "Alternate installation: Windows (the prefix scheme)"
-msgstr ""
+msgstr "Alternatif kurulum: Windows (ön ek şeması)"
 
 #: install/index.rst:466
 msgid ""
@@ -676,12 +914,17 @@ msgid ""
 "`!--prefix` option has traditionally been used to install additional "
 "packages in separate locations on Windows. ::"
 msgstr ""
+"Windows’ta bir kullanıcının ev dizini kavramı yoktur ve Windows altında "
+"standart Python kurulumu Unix’e göre daha basit olduğundan, :option:`!—"
+"prefix` seçeneği geleneksel olarak Windows’ta ayrı konumlara ek paketler "
+"kurmak için kullanılmıştır. ::"
 
 #: install/index.rst:473
 msgid ""
 "to install modules to the :file:`\\\\Temp\\\\Python` directory on the "
 "current drive."
 msgstr ""
+"modülleri geçerli sürücüdeki :file:`\\\\Temp\\\\Python` dizinine kurmak için."
 
 #: install/index.rst:475
 msgid ""
@@ -690,18 +933,22 @@ msgid ""
 "that pure Python modules and extension modules are installed into the same "
 "location. Files are installed as follows:"
 msgstr ""
+"Kurulum tabanı :option:`!—prefix` seçeneği ile tanımlanır; :option:`!—exec-"
+"prefix` seçeneği Windows’ta desteklenmez, bu da saf Python modüllerinin ve "
+"genişletme modüllerinin aynı konuma kurulu olduğu anlamına gelir. Dosyalar "
+"aşağıdaki gibi yüklenir:"
 
 #: install/index.rst:484
 msgid ":file:`{prefix}\\\\Scripts`"
-msgstr ""
+msgstr ":file:`{prefix}\\\\Scripts`"
 
 #: install/index.rst:486
 msgid ":file:`{prefix}\\\\Include\\\\{distname}`"
-msgstr ""
+msgstr ":file:`{prefix}\\\\Include\\\\{distname}`"
 
 #: install/index.rst:493
 msgid "Custom Installation"
-msgstr ""
+msgstr "Özel Kurulum"
 
 #: install/index.rst:495
 msgid ""
@@ -711,6 +958,11 @@ msgid ""
 "directory, or you might want to completely redefine the installation "
 "scheme.  In either case, you're creating a *custom installation scheme*."
 msgstr ""
+"Bazen, :ref:`inst-alt-install` bölümünde açıklanan alternatif kurulum "
+"şemaları istediğinizi yapmaz. Her şeyi aynı temel dizin altında tutarken "
+"yalnızca bir veya iki dizinde ince ayar yapmak veya kurulum şemasını tamamen "
+"yeniden tanımlamak isteyebilirsiniz. Her iki durumda da *özel bir yükleme "
+"şeması* oluşturuyorsunuz."
 
 #: install/index.rst:501
 msgid ""
@@ -718,38 +970,41 @@ msgid ""
 "schemes and override some of the installation directories used for the "
 "various types of files, using these options:"
 msgstr ""
+"Özel bir kurulum şeması oluşturmak için, alternatif şemalardan biriyle "
+"başlarsınız ve aşağıdaki seçenekleri kullanarak çeşitli dosya türleri için "
+"kullanılan bazı kurulum dizinlerini geçersiz kılarsınız:"
 
 #: install/index.rst:506
 msgid "Override option"
-msgstr ""
+msgstr "Geçersiz kılma seçeneği"
 
 #: install/index.rst:508
 msgid "``--install-purelib``"
-msgstr ""
+msgstr "``—install-purelib``"
 
 #: install/index.rst:509
 msgid "``--install-platlib``"
-msgstr ""
+msgstr "``—install-platlib``"
 
 #: install/index.rst:510
 msgid "all modules"
-msgstr ""
+msgstr "Tüm modüller"
 
 #: install/index.rst:510
 msgid "``--install-lib``"
-msgstr ""
+msgstr "``—install-lib``"
 
 #: install/index.rst:511
 msgid "``--install-scripts``"
-msgstr ""
+msgstr "``—install-scripts``"
 
 #: install/index.rst:512
 msgid "``--install-data``"
-msgstr ""
+msgstr "``—install-data``"
 
 #: install/index.rst:513
 msgid "``--install-headers``"
-msgstr ""
+msgstr "``—install-headers``"
 
 #: install/index.rst:516
 msgid ""
@@ -762,6 +1017,14 @@ msgid ""
 "platlib``, and is recommended for schemes that don't make a difference "
 "between Python and extension modules.)"
 msgstr ""
+"Bu geçersiz kılma seçenekleri göreli, mutlak veya kurulum temel "
+"dizinlerinden biri açısından açıkça tanımlanmış olabilir. (İki kurulum temel "
+"dizini vardır ve bunlar normalde aynıdır — yalnızca Unix ``ön ek şeması`` "
+"kullandığınızda ve farklı ``—prefix`` ve ``—exec-prefix`` seçenekleri "
+"sağladığınızda farklılık gösterirler. ; ``—install-lib`` kullanmak, ``—"
+"install-purelib`` ve ``—install-platlib` için hesaplanan veya verilen "
+"değerleri geçersiz kılar ve fark yaratmayan şemalar için önerilir Python ve "
+"uzatma modülleri arasında.)"
 
 #: install/index.rst:525
 msgid ""
@@ -773,6 +1036,12 @@ msgid ""
 "relative to the installation base directory (your home directory, in this "
 "case)::"
 msgstr ""
+"Örneğin, Unix altında ana dizininize bir modül dağıtımı kurduğunuzu, ancak "
+"komut dosyalarının :file:`~/bin` yerine :file:`~/scripts` içine girmesini "
+"istediğinizi varsayalım. Tahmin edebileceğiniz gibi, bu dizini :option:`!—"
+"install-scripts` seçeneği ile geçersiz kılabilirsiniz; bu durumda, kurulum "
+"temel dizinine (bu durumda ana dizininiz) göre yorumlanacak olan bir göreli "
+"yol sağlamak en mantıklısı olur:"
 
 #: install/index.rst:534
 msgid ""
@@ -782,6 +1051,12 @@ msgid ""
 "want them in :file:`/usr/local/bin` instead, you would supply this absolute "
 "directory for the :option:`!--install-scripts` option::"
 msgstr ""
+"Başka bir Unix örneği: Python kurulumunuzun :file:`/usr/local/python` ön "
+"ekiyle oluşturulduğunu ve kurulduğunu varsayalım, bu nedenle standart bir "
+"kurulum komut dosyaları altında :file:`/usr/local/python/bin olarak "
+"kurulacaktır. `. Bunların yerine :file:`/usr/local/bin` içinde olmasını "
+"istiyorsanız, :option:`!—install-scripts` seçeneği için bu mutlak dizini "
+"sağlarsınız:"
 
 #: install/index.rst:542
 msgid ""
@@ -789,6 +1064,9 @@ msgid ""
 "is whatever your Python interpreter was installed with--- :file:`/usr/local/"
 "python` in this case.)"
 msgstr ""
+"(Bu, “ön ek şemasını” kullanarak bir yükleme gerçekleştirir; burada önek, bu "
+"durumda Python yorumlayıcınız— :file:`/usr/local/python` ile birlikte "
+"yüklenir.)"
 
 #: install/index.rst:546
 msgid ""
@@ -799,6 +1077,12 @@ msgid ""
 "of modules to worry about, Python and extension modules, which can "
 "conveniently be both controlled by one option::"
 msgstr ""
+"Python’u Windows’ta kullanıyorsanız, üçüncü taraf modüllerin doğrudan :file:"
+"`{prefix}` içinde değil, :file:`{prefix}` alt dizininde yaşamasını "
+"isteyebilirsiniz. Bu neredeyse komut dosyası yükleme dizinini özelleştirmek "
+"kadar kolaydır — endişelenmeniz gereken iki tür modül olduğunu hatırlamanız "
+"yeterlidir: Python ve genişletme modülleri, her ikisi de tek bir seçenekle "
+"kolayca kontrol edilebilir:"
 
 #: install/index.rst:555
 msgid ""
@@ -808,6 +1092,11 @@ msgid ""
 "(see :mod:`site`).  See section :ref:`inst-search-path` to find out how to "
 "modify Python's search path."
 msgstr ""
+"Belirtilen kurulum dizini :file:`{prefix}` ile ilişkilidir. Elbette, örneğin "
+"bir site dizinine bir :file:`.pth` dosyası koyarak (bkz. :mod:`site`) bu "
+"dizinin Python’un modül arama yolunda olduğundan emin olmalısınız. Python’un "
+"arama yolunu nasıl değiştireceğinizi öğrenmek için :ref:`inst-search-path` "
+"bölümüne bakın."
 
 #: install/index.rst:561
 msgid ""
@@ -818,10 +1107,16 @@ msgid ""
 "want a separate directory for each platform that you use your home directory "
 "from, you might define the following installation scheme::"
 msgstr ""
+"Tüm bir kurulum şemasını tanımlamak istiyorsanız, tüm kurulum dizini "
+"seçeneklerini sağlamanız yeterlidir. Bunu yapmanın önerilen yolu, göreli "
+"yollar sağlamaktır; örneğin, Python modülü ile ilgili tüm dosyaları ana "
+"dizininizde :file:`python` altında tutmak istiyorsanız ve ana dizininizi "
+"kullandığınız her platform için ayrı bir dizin istiyorsanız, aşağıdaki "
+"kurulum şemasını tanımlayabilirsiniz. ::"
 
 #: install/index.rst:574
 msgid "or, equivalently, ::"
-msgstr ""
+msgstr "Veya eşdeğer olarak, ::"
 
 #: install/index.rst:582
 msgid ""
@@ -829,6 +1124,9 @@ msgid ""
 "by the Distutils as it parses your command line options, just as it does "
 "when parsing your configuration file(s)."
 msgstr ""
+"``$PLAT`` (zorunlu olarak) bir ortam değişkeni değildir — yapılandırma "
+"dosya(lar)ınızı ayrıştırırken yaptığı gibi, komut satırı seçeneklerinizi "
+"ayrıştırırken Distutils tarafından genişletilecektir."
 
 #: install/index.rst:586
 msgid ""
@@ -837,16 +1135,21 @@ msgid ""
 "options into your Distutils config file (see section :ref:`inst-config-"
 "files`):"
 msgstr ""
+"Açıkçası, her yeni modül dağıtımı kurduğunuzda tüm kurulum şemasını "
+"belirtmek çok sıkıcı olacaktır. Böylece, bu seçenekleri Distutils "
+"yapılandırma dosyanıza koyabilirsiniz (bkz. :ref:`inst-config-files` bölümü):"
 
 #: install/index.rst:599
 msgid "or, equivalently,"
-msgstr ""
+msgstr "Veya eşdeğer olarak,"
 
 #: install/index.rst:610
 msgid ""
 "Note that these two are *not* equivalent if you supply a different "
 "installation base directory when you run the setup script.  For example, ::"
 msgstr ""
+"Kurulum komut dosyasını çalıştırırken farklı bir kurulum temel dizini "
+"sağlarsanız, bu ikisinin eşdeğer *değil* olduğunu unutmayın. Örneğin, ::"
 
 #: install/index.rst:615
 msgid ""
@@ -854,6 +1157,9 @@ msgid ""
 "to :file:`/tmp/lib` in the second case.  (For the second case, you probably "
 "want to supply an installation base of :file:`/tmp/python`.)"
 msgstr ""
+"saf modülleri ilk durumda :file:`/tmp/python/lib` dizinine ve ikinci "
+"durumda :file:`/tmp/lib` dizinine kurardı. (İkinci durum için, muhtemelen "
+"bir :file:`/tmp/python` kurulum tabanı sağlamak istersiniz.)"
 
 #: install/index.rst:619
 msgid ""
@@ -867,6 +1173,14 @@ msgid ""
 "variables supplied by the Distutils are the only ones you can use.) See "
 "section :ref:`inst-config-files` for details."
 msgstr ""
+"Örnek yapılandırma dosyası girişinde ``$HOME`` ve ``$PLAT`` kullanıldığını "
+"muhtemelen fark etmişsinizdir. Bunlar, ortam değişkenlerine güçlü bir "
+"benzerlik gösteren Distutils yapılandırma değişkenleridir. Aslında, ortam "
+"değişkenlerini böyle bir kavramı olan platformlarda yapılandırma "
+"dosyalarında kullanabilirsiniz, ancak Distutils ek olarak ``$PLAT`` gibi "
+"ortamınızda olmayabilecek birkaç ekstra değişken tanımlar. (Ve elbette, Mac "
+"OS 9 gibi ortam değişkenlerine sahip olmayan sistemlerde, yalnızca Distutils "
+"tarafından sağlanan yapılandırma değişkenlerini kullanabilirsiniz.) detaylar."
 
 #: install/index.rst:629
 msgid ""
@@ -875,10 +1189,14 @@ msgid ""
 "configuration files to prevent inadvertently installing projects outside of "
 "the virtual environment."
 msgstr ""
+"Bir :ref:`virtual environment <venv-def>` etkinleştirildiğinde, projelerin "
+"yanlışlıkla sanal ortamın dışına kurulmasını önlemek için kurulum yolunu "
+"değiştiren tüm seçenekler tüm distutils yapılandırma dosyalarından yok "
+"sayılır."
 
 #: install/index.rst:643
 msgid "Modifying Python's Search Path"
-msgstr ""
+msgstr "Python’un Arama Yolunu Değiştirme"
 
 #: install/index.rst:645
 msgid ""
@@ -888,11 +1206,16 @@ msgid ""
 "interpreter is built. You can determine the path by importing the :mod:`sys` "
 "module and printing the value of ``sys.path``.   ::"
 msgstr ""
+"Python yorumlayıcısı bir :keyword:`import` ifadesini çalıştırdığında, bir "
+"arama yolu boyunca hem Python kodunu hem de uzantı modüllerini arar. "
+"Yorumlayıcı oluşturulduğunda, yol için varsayılan bir değer Python ikili "
+"dosyasında yapılandırılır. :mod:`sys` modülünü içe aktararak ve``sys.path`` "
+"değerini yazdırarak yolu belirleyebilirsiniz. ::"
 
 #: install/index.rst:662
 msgid ""
 "The null string in ``sys.path`` represents the current working directory."
-msgstr ""
+msgstr "``sys.path`` içindeki boş dize, geçerli çalışma dizinini temsil eder."
 
 #: install/index.rst:664
 msgid ""
@@ -904,6 +1227,13 @@ msgid ""
 "and in order to import them, this directory must be added to ``sys.path``.  "
 "There are several different ways to add the directory."
 msgstr ""
+"Yerel olarak kurulmuş paketler için beklenen kural, onları :file:`{…}/site-"
+"packages/` dizinine koymaktır, ancak Python modüllerini rastgele bir dizine "
+"kurmak isteyebilirsiniz. Örneğin, sitenizin web sunucusuyla ilgili tüm "
+"yazılımları :file:`/www` altında tutma kuralı olabilir. Eklenti Python "
+"modülleri daha sonra :file:`/www/python` klasörüne ait olabilir ve bunları "
+"içe aktarmak için bu dizinin ``sys.path`` klasörüne eklenmesi gerekir. "
+"Dizini eklemenin birkaç farklı yolu vardır."
 
 #: install/index.rst:672
 msgid ""
@@ -915,6 +1245,13 @@ msgid ""
 "directories will not override standard modules.  This means you can't use "
 "this mechanism for installing fixed versions of standard modules.)"
 msgstr ""
+"En uygun yol, zaten Python’un yolunda bulunan bir dizine, genellikle :file:"
+"`…/site-packages/` dizinine bir yol yapılandırma dosyası eklemektir. Yol "
+"yapılandırma dosyalarının uzantısı :file:`.pth`dir ve her satırda ``sys."
+"path`` dosyasına eklenecek tek bir yol bulunmalıdır. (Yeni yollar ``sys."
+"path`` dizinine eklendiğinden, eklenen dizinlerdeki modüller standart "
+"modülleri geçersiz kılmaz. Bu, standart modüllerin sabit sürümlerini kurmak "
+"için bu mekanizmayı kullanamayacağınız anlamına gelir.)"
 
 #: install/index.rst:680
 msgid ""
@@ -922,6 +1259,9 @@ msgid ""
 "directory containing the :file:`.pth` file.  See the documentation of the :"
 "mod:`site` module for more information."
 msgstr ""
+"Yollar mutlak veya göreli olabilir, bu durumda :file:`.pth` dosyasını içeren "
+"dizine göredirler. Daha fazla bilgi için :mod:`site` modülünün belgelerine "
+"bakın."
 
 #: install/index.rst:684
 msgid ""
@@ -931,6 +1271,11 @@ msgid ""
 "option:`-S` switch is supplied to suppress this behaviour.  So you could "
 "simply edit :file:`site.py` and add two lines to it:"
 msgstr ""
+"Biraz daha az kullanışlı bir yol, Python’un standart kitaplığındaki :file:"
+"`site.py` dosyasını düzenlemek ve``sys.path`` değiştirmektir. Bu davranışı "
+"bastırmak için :option:`-S` anahtarı sağlanmadıkça, Python yorumlayıcısı "
+"çalıştırıldığında :file:`site.py` otomatik olarak içe aktarılır. Böylece :"
+"file:`site.py` dosyasını düzenleyebilir ve ona iki satır ekleyebilirsiniz:"
 
 #: install/index.rst:695
 msgid ""
@@ -939,6 +1284,10 @@ msgid ""
 "overwritten by the stock version.  You'd have to remember that it was "
 "modified and save a copy before doing the installation."
 msgstr ""
+"Ancak, Python’un aynı ana sürümünü yeniden yüklerseniz (örneğin, 2.2’den "
+"2.2.2’ye yükseltme yaparken) :file:`site.py` stok sürümü tarafından üzerine "
+"yazılır. Kurulumu yapmadan önce değiştirildiğini hatırlamanız ve bir "
+"kopyasını kaydetmeniz gerekir."
 
 #: install/index.rst:700
 msgid ""
@@ -948,6 +1297,11 @@ msgid ""
 "python``, the search path will be set to ``['', '/www/python/lib/pythonX."
 "Y/', '/www/python/lib/pythonX.Y/plat-linux2', ...]``."
 msgstr ""
+"``sys.path`` değiştirebilen iki ortam değişkeni vardır. :envvar:`PYTHONHOME` "
+"Python kurulumunun öneki için alternatif bir değer ayarlar. Örneğin, :envvar:"
+"`PYTHONHOME`, ``/www/python`` olarak ayarlanırsa, arama yolu ``[‘’, ‘/www/"
+"python/lib/pythonX.Y/‘, ‘ olarak ayarlanır. /www/python/lib/pythonX.Y/plat-"
+"linux2’, …]``."
 
 #: install/index.rst:706
 msgid ""
@@ -958,16 +1312,24 @@ msgid ""
 "order to be added to ``sys.path``; the :mod:`site` module removes paths that "
 "don't exist.)"
 msgstr ""
+":envvar:`PYTHONPATH` değişkeni, ``sys.path`` başına eklenecek bir yol "
+"listesine ayarlanabilir. Örneğin, :envvar:`PYTHONPATH`, ``/www/python:/opt/"
+"py`` olarak ayarlanırsa, arama yolu ``[‘/www/python’, ‘/opt/py’] ile başlar. "
+"``. (``sys.path`` klasörüne eklenmek için dizinlerin var olması gerektiğini "
+"unutmayın; :mod:`site` modülü var olmayan yolları kaldırır.)"
 
 #: install/index.rst:713
 msgid ""
 "Finally, ``sys.path`` is just a regular Python list, so any Python "
 "application can modify it by adding or removing entries."
 msgstr ""
+"Son olarak, ``sys.path`` sadece normal bir Python listesidir, bu nedenle "
+"herhangi bir Python uygulaması, girdiler ekleyerek veya çıkararak onu "
+"değiştirebilir."
 
 #: install/index.rst:720
 msgid "Distutils Configuration Files"
-msgstr ""
+msgstr "Distutils Yapılandırma Dosyaları"
 
 #: install/index.rst:722
 msgid ""
@@ -980,10 +1342,19 @@ msgid ""
 "Furthermore, if multiple configuration files apply, values from \"earlier\" "
 "files are overridden by \"later\" files."
 msgstr ""
+"Yukarıda bahsedildiği gibi, herhangi bir Distutils seçeneği için kişisel "
+"veya site tercihlerini kaydetmek için Distutils konfigürasyon dosyalarını "
+"kullanabilirsiniz. Yani, herhangi bir komutun herhangi bir seçeneği, komut "
+"satırı ayrıştırılmadan önce danışılacak olan (platformunuza bağlı olarak) "
+"iki veya üç yapılandırma dosyasından birinde saklanabilir. Bu, yapılandırma "
+"dosyalarının varsayılan değerleri geçersiz kılacağı ve komut satırının da "
+"yapılandırma dosyalarını geçersiz kılacağı anlamına gelir. Ayrıca, birden "
+"fazla yapılandırma dosyası geçerliyse, “önceki” dosyalardan alınan değerler "
+"“sonraki” dosyalar tarafından geçersiz kılınır."
 
 #: install/index.rst:735
 msgid "Location and names of config files"
-msgstr ""
+msgstr "Yapılandırma dosyalarının konumu ve adları"
 
 #: install/index.rst:737
 msgid ""
@@ -991,64 +1362,69 @@ msgid ""
 "platforms.  On Unix and macOS, the three configuration files (in the order "
 "they are processed) are:"
 msgstr ""
+"Yapılandırma dosyalarının adları ve konumları platformlar arasında biraz "
+"farklılık gösterir. Unix ve macOS’ta üç yapılandırma dosyası (işlendikleri "
+"sırayla):"
 
 #: install/index.rst:754
 msgid "Location and filename"
-msgstr ""
+msgstr "Konum ve dosya adı"
 
 #: install/index.rst:756
 msgid "system"
-msgstr ""
+msgstr "system"
 
 #: install/index.rst:744
 msgid ":file:`{prefix}/lib/python{ver}/distutils/distutils.cfg`"
-msgstr ""
+msgstr ":file:`{prefix}/lib/python{ver}/distutils/distutils.cfg`"
 
 #: install/index.rst:758
 msgid "personal"
-msgstr ""
+msgstr "personal"
 
 #: install/index.rst:746
 msgid ":file:`$HOME/.pydistutils.cfg`"
-msgstr ""
+msgstr ":file:`$HOME/.pydistutils.cfg`"
 
 #: install/index.rst:760
 msgid "local"
-msgstr ""
+msgstr "local"
 
 #: install/index.rst:760
 msgid ":file:`setup.cfg`"
-msgstr ""
+msgstr ":file:`setup.cfg`"
 
 #: install/index.rst:760
 msgid "\\(3)"
-msgstr ""
+msgstr "\\(3)"
 
 #: install/index.rst:751
 msgid "And on Windows, the configuration files are:"
-msgstr ""
+msgstr "Ve Windows’ta yapılandırma dosyaları şunlardır:"
 
 #: install/index.rst:756
 msgid ":file:`{prefix}\\\\Lib\\\\distutils\\\\distutils.cfg`"
-msgstr ""
+msgstr ":file:`{prefix}\\\\Lib\\\\distutils\\\\distutils.cfg`"
 
 #: install/index.rst:756
 msgid "\\(4)"
-msgstr ""
+msgstr "\\(4)"
 
 #: install/index.rst:758
 msgid ":file:`%HOME%\\\\pydistutils.cfg`"
-msgstr ""
+msgstr ":file:`%HOME%\\\\pydistutils.cfg`"
 
 #: install/index.rst:758
 msgid "\\(5)"
-msgstr ""
+msgstr "\\(5)"
 
 #: install/index.rst:763
 msgid ""
 "On all platforms, the \"personal\" file can be temporarily disabled by "
 "passing the `--no-user-cfg` option."
 msgstr ""
+"Tüm platformlarda, `-no-user-cfg seçeneği geçilerek “kişisel” dosya geçici "
+"olarak devre dışı bırakılabilir."
 
 #: install/index.rst:769
 msgid ""
@@ -1058,6 +1434,12 @@ msgid ""
 "file:`{prefix}/lib/python1.5/site-packages/distutils`, so the system "
 "configuration file should be put there under Python 1.5.2."
 msgstr ""
+"Kesin olarak söylemek gerekirse, sistem genelindeki yapılandırma dosyası "
+"Distutils’in kurulu olduğu dizinde bulunur; Python 1.6 altında ve daha sonra "
+"Unix’te bu gösterildiği gibidir. Python 1.5.2 için, Distutils normalde :file:"
+"`{prefix}/lib/python1.5/site-packages/distutils` konumuna yüklenecektir, bu "
+"nedenle sistem yapılandırma dosyası oraya Python 1.5.2 altına "
+"yerleştirilmelidir."
 
 #: install/index.rst:776
 msgid ""
@@ -1066,11 +1448,15 @@ msgid ""
 "from the standard :mod:`pwd` module. This is done by the :func:`os.path."
 "expanduser` function used by Distutils."
 msgstr ""
+"Unix’te, :envvar:`HOME` ortam değişkeni tanımlı değilse, kullanıcının ana "
+"dizini standart :mod:`pwd` modülünden :func:`getpwuid` işleviyle belirlenir. "
+"Bu, Distutils tarafından kullanılan :func:`os.path.expanduser` işlevi "
+"tarafından yapılır."
 
 #: install/index.rst:782
 msgid ""
 "I.e., in the current directory (usually the location of the setup script)."
-msgstr ""
+msgstr "Yani, geçerli dizinde (genellikle kurulum komut dosyasının konumu)."
 
 #: install/index.rst:785
 msgid ""
@@ -1083,6 +1469,14 @@ msgid ""
 "\\distutils\\\\distutils.cfg` in a standard Python 1.5.2 installation under "
 "Windows."
 msgstr ""
+"(Ayrıca not (1)’e bakın.) Python 1.6 ve sonraki sürümlerde, Python’un "
+"varsayılan “kurulum öneki” :file:`C:\\\\Python` şeklindedir, bu nedenle "
+"sistem yapılandırma dosyası normalde :file:`C:\\\\Python\\ şeklindedir. \\Lib"
+"\\\\distutils\\\\distutils.cfg`. Python 1.5.2 altında, varsayılan önek :file:"
+"`C:\\\\Program Files\\\\Python` idi ve Distutils standart kitaplığın parçası "
+"değildi — bu nedenle sistem yapılandırma dosyası :file:`C olacaktır. :\\"
+"\\Program Files\\\\Python\\\\distutils\\\\distutils.cfg` Windows altında "
+"standart bir Python 1.5.2 kurulumunda."
 
 #: install/index.rst:794
 msgid ""
@@ -1091,10 +1485,14 @@ msgid ""
 "tried. This is done by the :func:`os.path.expanduser` function used by "
 "Distutils."
 msgstr ""
+"Windows’ta, :envvar:`HOME` ortam değişkeni tanımlı değilse, :envvar:"
+"`USERPROFILE` :envvar:`HOMEDRIVE` ve :envvar:`HOMEPATH` denenecektir. Bu, "
+"Distutils tarafından kullanılan :func:`os.path.expanduser` işlevi tarafından "
+"yapılır."
 
 #: install/index.rst:803
 msgid "Syntax of config files"
-msgstr ""
+msgstr "Yapılandırma dosyalarının Syntax’ı (sözdizimi)"
 
 #: install/index.rst:805
 msgid ""
@@ -1104,12 +1502,19 @@ msgid ""
 "command.  Each section consists of one option per line, specified as "
 "``option=value``."
 msgstr ""
+"Distutils yapılandırma dosyalarının tümü aynı Syntax’a sahiptir. "
+"Yapılandırma dosyaları bölümlere ayrılmıştır. Her Distutils komutu için bir "
+"bölüm ve ayrıca her komutu etkileyen genel seçenekler için bir “genel” bölüm "
+"vardır. Her bölüm, satır başına ``seçenek=değer`` olarak belirtilen bir "
+"seçenekten oluşur."
 
 #: install/index.rst:810
 msgid ""
 "For example, the following is a complete config file that just forces all "
 "commands to run quietly by default:"
 msgstr ""
+"Örneğin, aşağıdaki, tüm komutları varsayılan olarak sessizce çalışmaya "
+"zorlayan eksiksiz bir yapılandırma dosyasıdır:"
 
 #: install/index.rst:818
 msgid ""
@@ -1120,6 +1525,12 @@ msgid ""
 "And if it is used as the :file:`setup.cfg` for a particular module "
 "distribution, it affects only that distribution."
 msgstr ""
+"Bu, sistem yapılandırma dosyası olarak kurulursa, mevcut sistemdeki herhangi "
+"bir kullanıcı tarafından herhangi bir Python modülü dağıtımının tüm "
+"işlemlerini etkileyecektir. Kişisel yapılandırma dosyanız olarak kurulursa "
+"(onları destekleyen sistemlerde), yalnızca sizin tarafınızdan işlenen modül "
+"dağıtımlarını etkiler. Ve belirli bir modül dağıtımı için :file:`setup.cfg` "
+"olarak kullanılırsa, yalnızca bu dağıtımı etkiler."
 
 #: install/index.rst:825
 msgid ""
@@ -1127,10 +1538,13 @@ msgid ""
 "command:`build\\*` commands always forcibly rebuild all files with the "
 "following:"
 msgstr ""
+"Varsayılan “temel oluşturma” dizinini geçersiz kılabilir ve :command:`build"
+"\\*` komutlarını aşağıdakilerle tüm dosyaları her zaman zorla yeniden "
+"oluşturabilirsiniz:"
 
 #: install/index.rst:835
 msgid "which corresponds to the command-line arguments ::"
-msgstr ""
+msgstr "hangi komut satırı argümanlarına karşılık gelir ::"
 
 #: install/index.rst:839
 msgid ""
@@ -1140,28 +1554,39 @@ msgid ""
 "options in the config file will apply.  (Or if other commands that derive "
 "values from it are run, they will use the values in the config file.)"
 msgstr ""
+":command:`build` komutunun komut satırına eklenmesi, komutun çalıştırılacağı "
+"anlamına gelir. Yapılandırma dosyalarına belirli bir komutu dahil etmenin "
+"böyle bir anlamı yoktur; bu yalnızca komut çalıştırılırsa yapılandırma "
+"dosyasındaki seçeneklerin uygulanacağı anlamına gelir. (Ya da ondan değer "
+"türeten başka komutlar çalıştırılırsa, yapılandırma dosyasındaki değerleri "
+"kullanırlar.)"
 
 #: install/index.rst:845
 msgid ""
 "You can find out the complete list of options for any command using the :"
 "option:`!--help` option, e.g.::"
 msgstr ""
+":option:`!—help` seçeneğini kullanarak herhangi bir komut için seçeneklerin "
+"tam listesini bulabilirsiniz, ör.::"
 
 #: install/index.rst:850
 msgid ""
 "and you can find out the complete list of global options by using :option:"
 "`!--help` without a command::"
 msgstr ""
+"ve komut olmadan :option:`!—help` kullanarak global seçeneklerin tam "
+"listesini bulabilirsiniz::"
 
 #: install/index.rst:855
 msgid ""
 "See also the \"Reference\" section of the \"Distributing Python Modules\" "
 "manual."
 msgstr ""
+"Ayrıca “Python Modüllerini Dağıtma” kılavuzunun “Referans” bölümüne bakın."
 
 #: install/index.rst:861
 msgid "Building Extensions: Tips and Tricks"
-msgstr ""
+msgstr "Bina Uzantıları: İpuçları ve Püf Noktaları"
 
 #: install/index.rst:863
 msgid ""
@@ -1172,10 +1597,17 @@ msgid ""
 "well, but in complicated situations this might be inappropriate.  This "
 "section discusses how to override the usual Distutils behaviour."
 msgstr ""
+"Mümkün olduğunda, Distutils, :file:`setup.py` komut dosyasını çalıştırmak "
+"için kullanılan Python yorumlayıcısı tarafından sağlanan yapılandırma "
+"bilgilerini kullanmaya çalışır. Örneğin, Python’u derlemek için kullanılan "
+"aynı derleyici ve bağlayıcı bayrakları, uzantıları derlemek için de "
+"kullanılacaktır. Genellikle bu iyi çalışır, ancak karmaşık durumlarda bu "
+"uygun olmayabilir. Bu bölüm, olağan Distutils davranışının nasıl geçersiz "
+"kılınacağını tartışır."
 
 #: install/index.rst:874
 msgid "Tweaking compiler/linker flags"
-msgstr ""
+msgstr "Derleyici/bağlayıcı bayraklarında ince ayar yapma"
 
 #: install/index.rst:876
 msgid ""
@@ -1185,6 +1617,11 @@ msgid ""
 "especially true if the extension hasn't been tested on your platform, or if "
 "you're trying to cross-compile Python."
 msgstr ""
+"C veya C++ ile yazılmış bir Python uzantısını derlemek, bazen belirli bir "
+"kitaplığı kullanmak veya özel bir tür nesne kodu üretmek için derleyici ve "
+"bağlayıcı için özel bayraklar belirtmeyi gerektirir. Bu, özellikle uzantı "
+"platformunuzda test edilmemişse veya Python’u çapraz derlemeye "
+"çalışıyorsanız geçerlidir."
 
 #: install/index.rst:882
 msgid ""
@@ -1194,6 +1631,11 @@ msgid ""
 "distribution contains many separate extension modules, or if they often "
 "require elaborate sets of compiler flags in order to work."
 msgstr ""
+"En genel durumda, uzantı yazarı, uzantıları derlemenin karmaşık olacağını "
+"öngörmüş ve düzenlemeniz için bir :file:`Setup` dosyası sağlamış olabilir. "
+"Bu muhtemelen yalnızca modül dağıtımı birçok ayrı genişletme modülü "
+"içeriyorsa veya çalışmak için genellikle ayrıntılı derleyici bayrakları "
+"gerektiriyorsa yapılacaktır."
 
 #: install/index.rst:888
 msgid ""
@@ -1201,10 +1643,13 @@ msgid ""
 "extensions to build.  Each line in a :file:`Setup` describes a single "
 "module.  Lines have the following structure::"
 msgstr ""
+"Bir :file:`Setup` dosyası varsa, oluşturulacak uzantıların bir listesini "
+"almak için ayrıştırılır. :file:`Setup` içindeki her satır tek bir modülü "
+"tanımlar. Hatlar aşağıdaki yapıya sahiptir:"
 
 #: install/index.rst:895
 msgid "Let's examine each of the fields in turn."
-msgstr ""
+msgstr "Alanların her birini sırayla inceleyelim."
 
 #: install/index.rst:897
 msgid ""
@@ -1213,6 +1658,10 @@ msgid ""
 "module (edits to the source code would also be needed), so this should be "
 "left alone."
 msgstr ""
+"*module*, oluşturulacak uzantı modülünün adıdır ve geçerli bir Python "
+"tanımlayıcısı olmalıdır. Bunu sadece bir modülü yeniden adlandırmak için "
+"değiştiremezsiniz (kaynak kodunda da düzenlemeler yapılması gerekir), bu "
+"yüzden bu yalnız bırakılmalıdır."
 
 #: install/index.rst:901
 msgid ""
@@ -1222,18 +1671,27 @@ msgid ""
 "are assumed to be C++, and filenames ending in :file:`.m` or :file:`.mm` are "
 "assumed to be in Objective C."
 msgstr ""
+"*sourcefile*, en azından dosya adına bakılırsa, kaynak kod dosyası olması "
+"muhtemel herhangi bir şeydir. :file:`.c` ile biten dosya adlarının C ile "
+"yazıldığı, :file:`.C`, :file:`.cc` ve :file:`.c++` ile biten dosya adlarının "
+"C++ olduğu varsayılır. ve :file:`.m` veya :file:`.mm` ile biten dosya "
+"adlarının Amaç C’de olduğu varsayılır."
 
 #: install/index.rst:907
 msgid ""
 "*cpparg* is an argument for the C preprocessor,  and is anything starting "
 "with :option:`!-I`, :option:`!-D`, :option:`!-U` or :option:`!-C`."
 msgstr ""
+"*cpparg*, C önişlemcisi için bir argümandır ve :option:`!-I`, :option:`!-"
+"D`, :option:`!-U` veya :option:`!-C ile başlayan herhangi bir şeydir. `."
 
 #: install/index.rst:910
 msgid ""
 "*library* is anything ending in :file:`.a` or beginning with :option:`!-l` "
 "or :option:`!-L`."
 msgstr ""
+"*library* is anything ending in :file:`.a` or beginning with :option:`!-l` "
+"or :option:`!-L`."
 
 #: install/index.rst:913
 msgid ""
@@ -1241,18 +1699,25 @@ msgid ""
 "can add it by editing the :file:`Setup` file and running ``python setup.py "
 "build``. For example, if the module defined by the line ::"
 msgstr ""
+"Belirli bir platform, platformunuzda özel bir kitaplık gerektiriyorsa, bunu :"
+"file:`Setup` dosyasını düzenleyerek ve ``python setup.py build`` "
+"çalıştırarak ekleyebilirsiniz. Örneğin, modül :: satırı ile tanımlanırsa"
 
 #: install/index.rst:919
 msgid ""
 "must be linked with the math library :file:`libm.a` on your platform, simply "
 "add :option:`!-lm` to the line::"
 msgstr ""
+"platformunuzdaki matematik kitaplığı :file:`libm.a` ile bağlantılı "
+"olmalıdır, sadece :option:`!-lm` satırına ekleyin::"
 
 #: install/index.rst:924
 msgid ""
 "Arbitrary switches intended for the compiler or the linker can be supplied "
 "with the :option:`!-Xcompiler` *arg* and :option:`!-Xlinker` *arg* options::"
 msgstr ""
+"Derleyici veya bağlayıcıya yönelik keyfi anahtarlar :option:`!-Xcompiler` "
+"*arg* ve :option:`!-Xlinker` *arg* seçenekleriyle sağlanabilir::"
 
 #: install/index.rst:929
 msgid ""
@@ -1264,6 +1729,13 @@ msgid ""
 "++`` the :file:`Setup` file would have to contain ``-Xcompiler -x -Xcompiler "
 "c++``."
 msgstr ""
+":option:`!-Xcompiler` ve :option:`!-Xlinker`den sonraki sonraki seçenek "
+"uygun komut satırına eklenecektir, bu nedenle yukarıdaki örnekte "
+"derleyiciye :option:`!-o32` seçeneği geçilecektir. , ve bağlayıcı geçirilir :"
+"option:`!-shared`. Derleyici seçeneği bir argüman gerektiriyorsa, birden "
+"çok :option:`!-Xcompiler` seçeneği sağlamanız gerekir; örneğin, `` -x c++`` "
+"geçmek için :file:`Setup` dosyasının `` -Xcompiler -x -Xcompiler c++`` "
+"içermesi gerekir."
 
 #: install/index.rst:936
 msgid ""
@@ -1271,14 +1743,17 @@ msgid ""
 "environment variable.  If set, the contents of :envvar:`CFLAGS` will be "
 "added to the compiler flags specified in the  :file:`Setup` file."
 msgstr ""
+"Derleyici bayrakları, :envvar:`CFLAGS` ortam değişkeni ayarlanarak da "
+"sağlanabilir. Ayarlanırsa, :envvar:`CFLAGS` içeriği :file:`Setup` dosyasında "
+"belirtilen derleyici bayraklarına eklenecektir."
 
 #: install/index.rst:944
 msgid "Using non-Microsoft compilers on Windows"
-msgstr ""
+msgstr "Windows’ta Microsoft’a ait olmayan derleyicileri kullanma"
 
 #: install/index.rst:951
 msgid "Borland/CodeGear C++"
-msgstr ""
+msgstr "Borland/CodeGear C++"
 
 #: install/index.rst:953
 msgid ""
@@ -1290,6 +1765,13 @@ msgid ""
 "format.) For this reason you have to convert Python's library :file:"
 "`python25.lib` into the Borland format.  You can do this as follows:"
 msgstr ""
+"Bu alt bölüm, Distutils’i Borland C++ derleyici sürüm 5.5 ile kullanmak için "
+"gerekli adımları açıklar. Öncelikle Borland’ın nesne dosya formatının (OMF), "
+"Python veya ActiveState web sitesinden indirebileceğiniz Python sürümünün "
+"kullandığı formattan farklı olduğunu bilmelisiniz. (Python, nesne dosya "
+"formatı olarak COFF kullanan Microsoft Visual C++ ile oluşturulmuştur.) Bu "
+"nedenle Python’un :file:`python25.lib` kütüphanesini Borland formatına "
+"dönüştürmeniz gerekmektedir. Bunu aşağıdaki gibi yapabilirsiniz:"
 
 #: install/index.rst:968
 msgid ""
@@ -1298,12 +1780,17 @@ msgid ""
 "installation.  If your extension uses other libraries (zlib, ...) you have "
 "to convert them too."
 msgstr ""
+":file:`coff2omf` programı Borland derleyicisiyle birlikte gelir. :file:"
+"`python25.lib` dosyası, Python kurulumunuzun :file:`Libs` dizinindedir. "
+"Uzantınız başka kitaplıklar (zlib, …) kullanıyorsa, onları da dönüştürmeniz "
+"gerekir."
 
 #: install/index.rst:973
 msgid ""
 "The converted files have to reside in the same directories as the normal "
 "libraries."
 msgstr ""
+"Dönüştürülen dosyalar, normal kitaplıklarla aynı dizinlerde bulunmalıdır."
 
 #: install/index.rst:976
 msgid ""
@@ -1313,12 +1800,19 @@ msgid ""
 "then uses this library.  In the case it doesn't find such a special library "
 "it uses the default name (:file:`foo.lib`.) [#]_"
 msgstr ""
+"Distutils, bu kitaplıkları değişen adlarıyla kullanmayı nasıl başarıyor? "
+"Uzantının bir kitaplığa ihtiyacı varsa (örn. :file:`foo`) Distutils önce :"
+"file:`_bcpp` (örn. :file:`foo_bcpp.lib`) sonekine sahip bir kitaplık bulup "
+"bulmadığını kontrol eder ve ardından bu kitaplığı kullanır. Böyle özel bir "
+"kitaplık bulamazsa, varsayılan adı kullanır (:file:`foo.lib`.) [#]_"
 
 #: install/index.rst:982
 msgid ""
 "To let Distutils compile your extension with Borland C++ you now have to "
 "type::"
 msgstr ""
+"Distutils’in uzantınızı Borland C++ ile derlemesine izin vermek için şimdi "
+"şunu yazmanız gerekir::"
 
 #: install/index.rst:986
 msgid ""
@@ -1326,32 +1820,41 @@ msgid ""
 "specify this in your personal or system-wide configuration file for "
 "Distutils (see section :ref:`inst-config-files`.)"
 msgstr ""
+"Borland C++ derleyicisini varsayılan olarak kullanmak istiyorsanız, bunu "
+"Distutils için kişisel veya sistem genelindeki yapılandırma dosyanızda "
+"belirtebilirsiniz (bkz. :ref:`inst-config-files`.)"
 
 #: install/index.rst:995
 msgid "`C++Builder Compiler <https://www.embarcadero.com/products>`_"
-msgstr ""
+msgstr "`C++Builder Compiler <https://www.embarcadero.com/products>`_"
 
 #: install/index.rst:994
 msgid ""
 "Information about the free C++ compiler from Borland, including links to the "
 "download pages."
 msgstr ""
+"İndirme sayfalarına bağlantılar da dahil olmak üzere Borland’ın ücretsiz C++ "
+"derleyicisi hakkında bilgiler."
 
 #: install/index.rst:998
 msgid ""
 "`Creating Python Extensions Using Borland's Free Compiler <http://www."
 "cyberus.ca/~g_will/pyExtenDL.shtml>`_"
 msgstr ""
+"`Borland’ın Ücretsiz Derleyicisini Kullanarak Python Uzantıları Oluşturma "
+"<http://www.cyberus.ca/~g_will/pyExtenDL.shtml>`_"
 
 #: install/index.rst:998
 msgid ""
 "Document describing how to use Borland's free command-line C++ compiler to "
 "build Python."
 msgstr ""
+"Python’u oluşturmak için Borland’ın ücretsiz komut satırı C++ derleyicisinin "
+"nasıl kullanılacağını açıklayan belge."
 
 #: install/index.rst:1003
 msgid "GNU C / Cygwin / MinGW"
-msgstr ""
+msgstr "GNU C / Cygwin / MinGW"
 
 #: install/index.rst:1005
 msgid ""
@@ -1360,6 +1863,10 @@ msgid ""
 "interpreter that was built with Cygwin, everything should work without any "
 "of these following steps."
 msgstr ""
+"Bu bölüm, Distutils’i GNU C/C++ derleyicileriyle Cygwin ve MinGW "
+"dağıtımlarında kullanmak için gerekli adımları açıklar. [#]_ Cygwin ile "
+"oluşturulmuş bir Python yorumlayıcısı için, aşağıdaki adımlardan herhangi "
+"biri olmadan her şey çalışmalıdır."
 
 #: install/index.rst:1010
 msgid ""
@@ -1367,14 +1874,19 @@ msgid ""
 "Extensions most likely to not work are those that use C++ or depend on "
 "Microsoft Visual C extensions."
 msgstr ""
+"Tüm uzantılar MinGW veya Cygwin ile oluşturulamaz, ancak çoğu yapılabilir. "
+"Çalışmama olasılığı en yüksek olan uzantılar, C++ kullanan veya Microsoft "
+"Visual C uzantılarına bağlı olanlardır."
 
 #: install/index.rst:1014
 msgid "To let Distutils compile your extension with Cygwin you have to type::"
 msgstr ""
+"Distutils’in uzantınızı Cygwin ile derlemesine izin vermek için şunu "
+"yazmanız gerekir::"
 
 #: install/index.rst:1018
 msgid "and for Cygwin in no-cygwin mode [#]_ or for MinGW type::"
-msgstr ""
+msgstr "ve Cygwin olmayan modda [#]_ Cygwin için veya MinGW tipi için::"
 
 #: install/index.rst:1022
 msgid ""
@@ -1382,10 +1894,14 @@ msgid ""
 "consider writing it in your personal or system-wide configuration file for "
 "Distutils (see section :ref:`inst-config-files`.)"
 msgstr ""
+"Bu seçeneklerden/derleyicilerden herhangi birini varsayılan olarak kullanmak "
+"istiyorsanız, bunu Distutils için kişisel veya sistem genelindeki "
+"yapılandırma dosyanıza yazmayı düşünmelisiniz (bkz. :ref:`inst-config-"
+"files`.)"
 
 #: install/index.rst:1027
 msgid "Older Versions of Python and MinGW"
-msgstr ""
+msgstr "Python ve MinGW’nin Eski Sürümleri"
 
 #: install/index.rst:1028
 msgid ""
@@ -1393,6 +1909,9 @@ msgid ""
 "inferior to 2.4.1 with a MinGW inferior to 3.0.0 (with "
 "binutils-2.13.90-20030111-1)."
 msgstr ""
+"Aşağıdaki talimatlar yalnızca, MinGW’si 3.0.0’dan düşük "
+"(binutils-2.13.90-20030111-1 ile) 2.4.1’den düşük bir Python sürümü "
+"kullanıyorsanız geçerlidir."
 
 #: install/index.rst:1032
 msgid ""
@@ -1402,6 +1921,11 @@ msgid ""
 "(You can find a good program for this task at https://sourceforge.net/"
 "projects/mingw/files/MinGW/Extension/pexports/)."
 msgstr ""
+"Bu derleyiciler bazı özel kütüphaneler gerektirir. Bu görev, Borland’ın C+"
+"+’ından daha karmaşıktır çünkü kitaplığı dönüştürecek bir program yoktur. "
+"Öncelikle Python DLL’nin dışa aktardığı bir sembol listesi oluşturmalısınız. "
+"(Bu görev için iyi bir program https://sourceforge.net/projects/mingw/files/"
+"MinGW/Extension/pexports/ adresinde bulabilirsiniz)."
 
 #: install/index.rst:1045
 msgid ""
@@ -1411,11 +1935,17 @@ msgid ""
 "directory.  In a shared installation, it will be located in the system "
 "directory."
 msgstr ""
+"Yüklü bir :file:`python25.dll` dosyasının konumu, yükleme seçeneklerine ve "
+"Windows sürümüne ve diline bağlı olacaktır. “Sadece benim için” kurulumda, "
+"kurulum dizininin kökünde görünecektir. Paylaşılan bir kurulumda, sistem "
+"dizininde bulunur."
 
 #: install/index.rst:1050
 msgid ""
 "Then you can create from these information an import library for gcc. ::"
 msgstr ""
+"Ardından bu bilgilerden gcc için bir içe aktarma kitaplığı "
+"oluşturabilirsiniz. ::"
 
 #: install/index.rst:1054
 msgid ""
@@ -1423,6 +1953,9 @@ msgid ""
 "`python25.lib`. (Should be the :file:`libs` directory under your Python "
 "installation directory.)"
 msgstr ""
+"Ortaya çıkan kitaplık, :file:`python25.lib` ile aynı dizine "
+"yerleştirilmelidir. (Python kurulum dizininizin altındaki :file:`libs` "
+"dizini olmalıdır.)"
 
 #: install/index.rst:1058
 msgid ""
@@ -1430,34 +1963,45 @@ msgid ""
 "them too. The converted files have to reside in the same directories as the "
 "normal libraries do."
 msgstr ""
+"Uzantınız başka kitaplıklar (zlib,…) kullanıyorsa, onları da dönüştürmeniz "
+"gerekebilir. Dönüştürülen dosyalar, normal kitaplıkların yaptığı gibi aynı "
+"dizinlerde bulunmalıdır."
 
 #: install/index.rst:1065
 msgid ""
 "`Building Python modules on MS Windows platform with MinGW <http://old.zope."
 "org/Members/als/tips/win32_mingw_modules>`_"
 msgstr ""
+"`MinGW <http://old.zope.org/Members/als/tips/win32_mingw_modules> ile MS "
+"Windows platformunda Python modülleri oluşturma`_"
 
 #: install/index.rst:1066
 msgid ""
 "Information about building the required libraries for the MinGW environment."
-msgstr ""
+msgstr "MinGW ortamı için gerekli kitaplıkları oluşturmaya ilişkin bilgiler."
 
 #: install/index.rst:1070
 msgid "Footnotes"
-msgstr ""
+msgstr "Dipnotlar"
 
 #: install/index.rst:1071
 msgid ""
 "This also means you could replace all existing COFF-libraries with OMF-"
 "libraries of the same name."
 msgstr ""
+"Bu aynı zamanda mevcut tüm COFF kitaplıklarını aynı adı taşıyan OMF "
+"kitaplıklarıyla değiştirebileceğiniz anlamına gelir."
 
 #: install/index.rst:1074
 msgid "Check https://www.sourceware.org/cygwin/ for more information"
 msgstr ""
+"Daha fazla bilgi için https://www.sourceware.org/cygwin/ adresini kontrol "
+"edin."
 
 #: install/index.rst:1076
 msgid ""
 "Then you have no POSIX emulation available, but you also don't need :file:"
 "`cygwin1.dll`."
 msgstr ""
+"O zaman kullanılabilir POSIX öykünmesine sahip değilsiniz, ancak :file:"
+"`cygwin1.dll`e de ihtiyacınız yok."
