@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: 2022-07-19 21:54+0300\n"
+"PO-Revision-Date: 2022-08-15 20:14+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -5022,19 +5022,19 @@ msgstr ""
 
 #: library/stdtypes.rst:4087
 msgid "A bool indicating whether the memory is C-:term:`contiguous`."
-msgstr ""
+msgstr "Belleğin C-:term:`contiguous` olup olmadığını gösteren bir bool."
 
 #: library/stdtypes.rst:4093
 msgid "A bool indicating whether the memory is Fortran :term:`contiguous`."
-msgstr ""
+msgstr "Belleğin Fortran :term:`contiguous` olup olmadığını gösteren bir bool."
 
 #: library/stdtypes.rst:4099
 msgid "A bool indicating whether the memory is :term:`contiguous`."
-msgstr ""
+msgstr "Belleğin :term:`contiguous` olup olmadığını gösteren bir bool."
 
 #: library/stdtypes.rst:4107
 msgid "Set Types --- :class:`set`, :class:`frozenset`"
-msgstr ""
+msgstr "Set Türleri --- :class:`set`, :class:`frozenset`"
 
 #: library/stdtypes.rst:4111
 msgid ""
@@ -5045,6 +5045,12 @@ msgid ""
 "in :class:`dict`, :class:`list`, and :class:`tuple` classes, and the :mod:"
 "`collections` module.)"
 msgstr ""
+"Bir :dfn:`set` nesnesi, farklı :term:`hashable` nesnelerinin sıralanmamış "
+"bir koleksiyonudur. Yaygın kullanımları arasında üyelik sınaması, bir "
+"diziden yinelenenlerin kaldırılması ve kesişim, birleşim, fark ve simetrik "
+"fark gibi matematiksel işlemlerin hesaplanması yer alır. (Diğer kapsayıcılar "
+"için yerleşik :class:`dict`, :class:`list` ve :class:`tuple` sınıflarına ve :"
+"mod:`collections` modülüne bakın)"
 
 #: library/stdtypes.rst:4118
 msgid ""
@@ -5053,6 +5059,10 @@ msgid ""
 "position or order of insertion.  Accordingly, sets do not support indexing, "
 "slicing, or other sequence-like behavior."
 msgstr ""
+"Diğer koleksiyonlar gibi, kümeler de ``x in set``, ``len(set)``, ve ``for x "
+"in set`` özelliklerini destekler.  Sırasız bir koleksiyon olan kümeler, "
+"eleman konumunu veya ekleme sırasını kaydetmez.  Buna göre, kümeler "
+"dizinleme, dilimleme veya sıra benzeri davranışları desteklemez."
 
 #: library/stdtypes.rst:4123
 msgid ""
@@ -5065,6 +5075,13 @@ msgid ""
 "it is created; it can therefore be used as a dictionary key or as an element "
 "of another set."
 msgstr ""
+"Şu anda iki yerleşik set türü vardır, :class:`set` ve :class:`frozenset`. "
+"Class:`set` türü değişkendir --- içeriği :meth:`~set.add` ve :meth:`~set."
+"remove` gibi yöntemler kullanılarak değiştirilebilir.  Değiştirilebilir "
+"olduğu için hash değeri yoktur ve bir sözlük anahtarı ya da başka bir "
+"kümenin elemanı olarak kullanılamaz.  Class:`frozenset` türü değişmezdir ve :"
+"term:`hashable` --- içeriği oluşturulduktan sonra değiştirilemez; bu nedenle "
+"bir sözlük anahtarı veya başka bir kümenin öğesi olarak kullanılabilir."
 
 #: library/stdtypes.rst:4131
 msgid ""
@@ -5072,10 +5089,13 @@ msgid ""
 "list of elements within braces, for example: ``{'jack', 'sjoerd'}``, in "
 "addition to the :class:`set` constructor."
 msgstr ""
+"Boş olmayan kümeler (frozensetler değil), :class:`set` yapıcısına ek olarak "
+"parantez içine virgülle ayrılmış bir öğe listesi yerleştirilerek "
+"oluşturulabilir, örneğin: ``{'jack', 'sjoerd'}``."
 
 #: library/stdtypes.rst:4135
 msgid "The constructors for both classes work the same:"
-msgstr ""
+msgstr "Her iki sınıfın kurucuları aynı şekilde çalışır:"
 
 #: library/stdtypes.rst:4140
 msgid ""
@@ -5084,91 +5104,112 @@ msgid ""
 "sets of sets, the inner sets must be :class:`frozenset` objects.  If "
 "*iterable* is not specified, a new empty set is returned."
 msgstr ""
+"Elemanları *iterable* öğesinden alınan yeni bir küme veya frozenset nesnesi "
+"döndürür.  Bir kümenin elemanları :term:`hashable` olmalıdır.  Kümelerin "
+"kümelerini temsil etmek için, iç kümeler :class:`frozenset` nesneleri "
+"olmalıdır.  Eğer *iterable* belirtilmemişse, yeni bir boş küme döndürülür."
 
 #: library/stdtypes.rst:4146
 msgid "Sets can be created by several means:"
-msgstr ""
+msgstr "Setler çeşitli yollarla oluşturulabilir:"
 
 #: library/stdtypes.rst:4148
 msgid ""
 "Use a comma-separated list of elements within braces: ``{'jack', 'sjoerd'}``"
 msgstr ""
+"Parantez içinde virgülle ayrılmış bir öğe listesi kullanın: ``{'jack', "
+"'sjoerd'}``"
 
 #: library/stdtypes.rst:4149
 msgid ""
 "Use a set comprehension: ``{c for c in 'abracadabra' if c not in 'abc'}``"
 msgstr ""
+"Bir küme kavrayışı kullanın: ``{c for c in 'abracadabra' if c not in 'abc'}``"
 
 #: library/stdtypes.rst:4150
 msgid ""
 "Use the type constructor: ``set()``, ``set('foobar')``, ``set(['a', 'b', "
 "'foo'])``"
 msgstr ""
+"Tür kurucusunu kullanın: ``set()``, ``set('foobar')``, ``set(['a', 'b', "
+"'foo'])``"
 
 #: library/stdtypes.rst:4152
 msgid ""
 "Instances of :class:`set` and :class:`frozenset` provide the following "
 "operations:"
 msgstr ""
+"Class:`set` ve :class:`frozenset` örnekleri aşağıdaki işlemleri sağlar:"
 
 #: library/stdtypes.rst:4157
 msgid "Return the number of elements in set *s* (cardinality of *s*)."
-msgstr ""
+msgstr "*s* kümesindeki eleman sayısını döndürür (*s*'nin kardinalitesi)."
 
 #: library/stdtypes.rst:4161
 msgid "Test *x* for membership in *s*."
-msgstr ""
+msgstr "*x*'i *s* üyeliği için test edin."
 
 #: library/stdtypes.rst:4165
 msgid "Test *x* for non-membership in *s*."
-msgstr ""
+msgstr "*x*'in *s*'ye üye olup olmadığını test edin."
 
 #: library/stdtypes.rst:4169
 msgid ""
 "Return ``True`` if the set has no elements in common with *other*.  Sets are "
 "disjoint if and only if their intersection is the empty set."
 msgstr ""
+"Kümenin *other* kümelerle ortak hiçbir elemanı yoksa ``True`` döndürür.  "
+"Kümeler, ancak ve ancak kesişimleri boş küme ise ayrıktır."
 
 #: library/stdtypes.rst:4175
 msgid "Test whether every element in the set is in *other*."
-msgstr ""
+msgstr "Kümedeki her elemanın *other* içinde olup olmadığını test edin."
 
 #: library/stdtypes.rst:4179
 msgid ""
 "Test whether the set is a proper subset of *other*, that is, ``set <= other "
 "and set != other``."
 msgstr ""
+"Kümenin *other* kümenin uygun bir alt kümesi olup olmadığını, yani ``set <= "
+"other and set != other`` olup olmadığını test eder."
 
 #: library/stdtypes.rst:4185
 msgid "Test whether every element in *other* is in the set."
-msgstr ""
+msgstr "Kümedeki her elemanın *other* içinde olup olmadığını test edin."
 
 #: library/stdtypes.rst:4189
 msgid ""
 "Test whether the set is a proper superset of *other*, that is, ``set >= "
 "other and set != other``."
 msgstr ""
+"Kümenin *other* kümenin uygun bir üst kümesi olup olmadığını, yani ``set >= "
+"other and set != other`` olup olmadığını test edin."
 
 #: library/stdtypes.rst:4195
 msgid "Return a new set with elements from the set and all others."
 msgstr ""
+"Kümedeki ve diğer tüm kümelerdeki elemanları içeren yeni bir küme döndürür."
 
 #: library/stdtypes.rst:4200
 msgid "Return a new set with elements common to the set and all others."
 msgstr ""
+"Küme ve diğer tüm kümeler için ortak öğeler içeren yeni bir küme döndürür."
 
 #: library/stdtypes.rst:4205
 msgid "Return a new set with elements in the set that are not in the others."
 msgstr ""
+"Küme içinde diğerlerinde olmayan elemanlar içeren yeni bir küme döndürür."
 
 #: library/stdtypes.rst:4210
 msgid ""
 "Return a new set with elements in either the set or *other* but not both."
 msgstr ""
+"Elemanları ya kümede ya da *diğer* kümede olan ancak her ikisinde de olmayan "
+"yeni bir küme döndürür."
 
 #: library/stdtypes.rst:4214
 msgid "Return a shallow copy of the set."
-msgstr ""
+msgstr "Kümenin yüzeysel bir kopyasını döndürür."
 
 #: library/stdtypes.rst:4217
 msgid ""
@@ -5179,6 +5220,14 @@ msgid ""
 "precludes error-prone constructions like ``set('abc') & 'cbs'`` in favor of "
 "the more readable ``set('abc').intersection('cbs')``."
 msgstr ""
+"Not: :meth:`union`, :meth:`intersection`, :meth:`difference`, :meth:"
+"`symmetric_difference`, :meth:`issubset` ve :meth:`issuperset` metotlarının "
+"operatörsüz versiyonları herhangi bir yinelenebiliri argüman olarak kabul "
+"edecektir.  Buna karşılık, operatör tabanlı benzerleri argümanlarının küme "
+"olmasını gerektirir.  Bu, daha okunabilir ``set('abc').intersection('cbs')`` "
+"yerine ``set('abc') & 'cbs'`` gibi hataya açık yapıları engeller.\n"
+"\n"
+"Translated with www.DeepL.com/Translator (free version)"
 
 #: library/stdtypes.rst:4224
 msgid ""
@@ -5189,6 +5238,15 @@ msgid ""
 "is not equal). A set is greater than another set if and only if the first "
 "set is a proper superset of the second set (is a superset, but is not equal)."
 msgstr ""
+"Hem :class:`set` hem de :class:`frozenset` kümeden kümeye karşılaştırmaları "
+"destekler. İki küme, ancak ve ancak her kümenin her elemanı diğerinin içinde "
+"bulunuyorsa (her biri diğerinin alt kümesi ise) eşittir. Bir küme başka bir "
+"kümeden ancak ve ancak birinci küme ikinci kümenin uygun bir alt kümesi ise "
+"(bir alt kümedir, ancak eşit değildir) küçüktür. Bir küme, ancak ve ancak "
+"birinci küme ikinci kümenin uygun bir üst kümesi ise (bir üst kümedir, ancak "
+"eşit değildir) başka bir kümeden büyüktür.\n"
+"\n"
+"Translated with www.DeepL.com/Translator (free version)"
 
 #: library/stdtypes.rst:4231
 msgid ""
@@ -5196,6 +5254,9 @@ msgid ""
 "based on their members.  For example, ``set('abc') == frozenset('abc')`` "
 "returns ``True`` and so does ``set('abc') in set([frozenset('abc')])``."
 msgstr ""
+"class:`set` örnekleri, üyelerine göre :class:`frozenset` örnekleriyle "
+"karşılaştırılır.  Örneğin, ``set('abc') == frozenset('abc')`` ``True`` "
+"döndürür ve ``set('abc') in set([frozenset('abc')])`` de öyle."
 
 #: library/stdtypes.rst:4235
 msgid ""
@@ -5204,16 +5265,22 @@ msgid ""
 "not subsets of each other, so *all* of the following return ``False``: "
 "``a<b``, ``a==b``, or ``a>b``."
 msgstr ""
+"Alt küme ve eşitlik karşılaştırmaları toplam sıralama fonksiyonuna "
+"genelleştirilemez.  Örneğin, boş olmayan herhangi iki ayrık küme eşit "
+"değildir ve birbirinin alt kümesi değildir, bu nedenle aşağıdakilerin *all* "
+"``Yanlış`` döndürür: ``a<b``, ``a==b`` veya ``a>b``."
 
 #: library/stdtypes.rst:4240
 msgid ""
 "Since sets only define partial ordering (subset relationships), the output "
 "of the :meth:`list.sort` method is undefined for lists of sets."
 msgstr ""
+"Kümeler yalnızca kısmi sıralama (alt küme ilişkileri) tanımladığından, :meth:"
+"`list.sort` yönteminin çıktısı küme listeleri için tanımsızdır."
 
 #: library/stdtypes.rst:4243
 msgid "Set elements, like dictionary keys, must be :term:`hashable`."
-msgstr ""
+msgstr "Sözlük anahtarları gibi küme öğeleri de :term:`hashable` olmalıdır."
 
 #: library/stdtypes.rst:4245
 msgid ""
@@ -5221,53 +5288,65 @@ msgid ""
 "return the type of the first operand.  For example: ``frozenset('ab') | "
 "set('bc')`` returns an instance of :class:`frozenset`."
 msgstr ""
+"class:`set` örneklerini :class:`frozenset` ile karıştıran ikili işlemler ilk "
+"işlenenin türünü döndürür.  Örneğin: ``frozenset('ab') | set('bc')`` bir :"
+"class:`frozenset` örneği döndürür."
 
 #: library/stdtypes.rst:4249
 msgid ""
 "The following table lists operations available for :class:`set` that do not "
 "apply to immutable instances of :class:`frozenset`:"
 msgstr ""
+"Aşağıdaki tabloda :class:`set` için kullanılabilen ve :class:`frozenset`in "
+"değişmez örneklerine uygulanmayan işlemler listelenmektedir:"
 
 #: library/stdtypes.rst:4255
 msgid "Update the set, adding elements from all others."
-msgstr ""
+msgstr "Diğer tüm öğeleri ekleyerek seti güncelleyin."
 
 #: library/stdtypes.rst:4260
 msgid "Update the set, keeping only elements found in it and all others."
 msgstr ""
+"Yalnızca içinde bulunan öğeleri ve diğerlerini koruyarak seti güncelleyin."
 
 #: library/stdtypes.rst:4265
 msgid "Update the set, removing elements found in others."
-msgstr ""
+msgstr "Diğerlerinde bulunan öğeleri kaldırarak kümeyi güncelleyin."
 
 #: library/stdtypes.rst:4270
 msgid ""
 "Update the set, keeping only elements found in either set, but not in both."
 msgstr ""
+"Kümeyi güncelleyin, yalnızca her iki kümede de bulunan öğeleri saklayın, "
+"ancak her ikisinde de bulunmayın."
 
 #: library/stdtypes.rst:4274
 msgid "Add element *elem* to the set."
-msgstr ""
+msgstr "Kümeye *elem* öğesini ekleyin."
 
 #: library/stdtypes.rst:4278
 msgid ""
 "Remove element *elem* from the set.  Raises :exc:`KeyError` if *elem* is not "
 "contained in the set."
 msgstr ""
+"Kümeden *elem* elemanını kaldırır.  Eğer *elem* kümede bulunmuyorsa :exc:"
+"`KeyError` değerini yükseltir."
 
 #: library/stdtypes.rst:4283
 msgid "Remove element *elem* from the set if it is present."
-msgstr ""
+msgstr "Eğer varsa *elem* öğesini kümeden kaldırır."
 
 #: library/stdtypes.rst:4287
 msgid ""
 "Remove and return an arbitrary element from the set.  Raises :exc:`KeyError` "
 "if the set is empty."
 msgstr ""
+"Kümeden rastgele bir elemanı kaldırır ve döndürür.  Küme boşsa :exc:"
+"`KeyError` değerini yükseltir."
 
 #: library/stdtypes.rst:4292
 msgid "Remove all elements from the set."
-msgstr ""
+msgstr "Kümeden tüm öğeleri kaldırın."
 
 #: library/stdtypes.rst:4295
 msgid ""
@@ -5276,6 +5355,9 @@ msgid ""
 "`symmetric_difference_update` methods will accept any iterable as an "
 "argument."
 msgstr ""
+"Not: :meth:`update`, :meth:`intersection_update`, :meth:`difference_update` "
+"ve :meth:`symmetric_difference_update` metotlarının operatör olmayan "
+"versiyonları herhangi bir iterable'ı argüman olarak kabul edecektir."
 
 #: library/stdtypes.rst:4300
 msgid ""
@@ -5283,10 +5365,13 @@ msgid ""
 "meth:`discard` methods may be a set.  To support searching for an equivalent "
 "frozenset, a temporary one is created from *elem*."
 msgstr ""
+"Not: :meth:`__contains__`, :meth:`remove` ve :meth:`discard` yöntemlerinin "
+"*elem* argümanı bir küme olabilir.  Eşdeğer bir frozenset aramayı "
+"desteklemek için, *elem*'den geçici bir tane oluşturulur."
 
 #: library/stdtypes.rst:4308
 msgid "Mapping Types --- :class:`dict`"
-msgstr ""
+msgstr "Mapping Types --- :class:`dict`"
 
 #: library/stdtypes.rst:4318
 msgid ""
@@ -5296,6 +5381,11 @@ msgid ""
 "`list`, :class:`set`, and :class:`tuple` classes, and the :mod:`collections` "
 "module.)"
 msgstr ""
+"Bir :term:`mapping` nesnesi :term:`hashable` değerlerini rastgele nesnelere "
+"eşler. Eşlemeler değiştirilebilir nesnelerdir.  Şu anda sadece bir standart "
+"eşleme türü vardır, :dfn:`dictionary`.  (Diğer kapsayıcılar için yerleşik :"
+"class:`list`, :class:`set` ve :class:`tuple` sınıflarına ve :mod:"
+"`collections` modülüne bakın)."
 
 #: library/stdtypes.rst:4324
 msgid ""
@@ -5308,6 +5398,15 @@ msgid ""
 "entry.  (Note however, that since computers store floating-point numbers as "
 "approximations it is usually unwise to use them as dictionary keys.)"
 msgstr ""
+"Bir sözlüğün anahtarları *almost* rastgele değerlerdir.  term:`hashable` "
+"olmayan değerler, yani listeler, sözlükler veya diğer değişebilir türleri "
+"içeren değerler (nesne kimliği yerine değere göre karşılaştırılan) anahtar "
+"olarak kullanılamaz.  Anahtarlar için kullanılan sayısal türler, sayısal "
+"karşılaştırma için normal kurallara uyar: iki sayı eşit karşılaştırılırsa "
+"(örneğin ``1`` ve ``1.0``), aynı sözlük girdisini indekslemek için "
+"birbirlerinin yerine kullanılabilirler.  (Bununla birlikte, bilgisayarlar "
+"kayan noktalı sayıları yaklaşık olarak sakladığından, bunları sözlük "
+"anahtarları olarak kullanmak genellikle akıllıca değildir)."
 
 #: library/stdtypes.rst:4333
 msgid ""
@@ -5315,16 +5414,22 @@ msgid ""
 "value`` pairs within braces, for example: ``{'jack': 4098, 'sjoerd': 4127}`` "
 "or ``{4098: 'jack', 4127: 'sjoerd'}``, or by the :class:`dict` constructor."
 msgstr ""
+"Sözlükler, ``key: value`` çiftlerinin virgülle ayrılmış bir listesini "
+"parantez içine yerleştirerek oluşturulabilir, örneğin: ``{'jack': 4098, "
+"'sjoerd': 4127}`` veya ``{4098: 'jack', 4127: 'sjoerd'}`` veya :class:`dict` "
+"yapıcısı ile oluşturulabilir."
 
 #: library/stdtypes.rst:4341
 msgid ""
 "Return a new dictionary initialized from an optional positional argument and "
 "a possibly empty set of keyword arguments."
 msgstr ""
+"İsteğe bağlı bir konumsal bağımsız değişken ve muhtemelen boş bir anahtar "
+"sözcük bağımsız değişken kümesinden başlatılan yeni bir sözlük döndürür."
 
 #: library/stdtypes.rst:4344
 msgid "Dictionaries can be created by several means:"
-msgstr ""
+msgstr "Sözlükler çeşitli yollarla oluşturulabilir:"
 
 #: library/stdtypes.rst:4346
 msgid ""
@@ -5673,7 +5778,7 @@ msgstr ""
 
 #: library/stdtypes.rst:4698
 msgid "Context Manager Types"
-msgstr ""
+msgstr "Bağlam Yöneticisi Türleri"
 
 #: library/stdtypes.rst:4705
 msgid ""
@@ -5779,7 +5884,7 @@ msgstr ""
 
 #: library/stdtypes.rst:4783
 msgid "Generic Alias Type"
-msgstr ""
+msgstr "Genel Takma Ad Türü"
 
 #: library/stdtypes.rst:4789
 msgid ""
@@ -5787,6 +5892,9 @@ msgid ""
 "container), such as ``list[int]``.  They are intended primarily for :term:"
 "`type annotations <annotation>`."
 msgstr ""
+"``GenericAlias`` nesneleri, ``list[int]`` gibi bir sınıfın (genellikle bir "
+"kapsayıcı) alt kodlanmasıyla oluşturulur.  Bunlar öncelikle :term:`type "
+"annotations <annotation>` için tasarlanmıştır."
 
 #: library/stdtypes.rst:4793
 msgid ""
@@ -5796,6 +5904,11 @@ msgid ""
 "of the class instead. The classmethod :meth:`__class_getitem__` should "
 "return a ``GenericAlias`` object."
 msgstr ""
+"Genellikle, kapsayıcı nesnelerinin :ref:`subscription <subscriptions>`, "
+"nesnenin :meth:`__getitem__` yöntemini çağırır.  Ancak, bazı konteyner "
+"sınıflarının aboneliğinin içinde sınıfın :meth:`__class_getitem__` sınıf "
+"metodunu çağırabilir. :meth:`__class_getitem__` sınıf yöntemi "
+"bir``GenerAlias`` nesnesine döndürmeli."
 
 #: library/stdtypes.rst:4800
 msgid ""
@@ -5803,6 +5916,9 @@ msgid ""
 "precedence over the :meth:`__class_getitem__` defined in the class (see :pep:"
 "`560` for more details)."
 msgstr ""
+"Sınıfın üst sınıfının :meth:`__getitem__`'i mevcutsa, sınıfta tanımlanan :"
+"meth:`__class_getitem__`'e göre öncelikli olacaktır (daha fazla ayrıntı "
+"için :pep:`560`'a bakın)."
 
 #: library/stdtypes.rst:4804
 msgid ""
@@ -5810,6 +5926,9 @@ msgid ""
 "<generic type>`, implementing *parameterized generics* - a specific instance "
 "of a generic which provides the types for container elements."
 msgstr ""
+"GenericAlias`` nesnesi, :term:`generic types <generic type>` için bir vekil "
+"olarak hareket eder, *parametreli jenerikler* uygulamak - kapsayıcı öğeleri "
+"için türler sağlayan belirli bir jenerik örneği."
 
 #: library/stdtypes.rst:4808
 msgid ""
@@ -5817,6 +5936,10 @@ msgid ""
 "class:`types.GenericAlias` and used for :func:`isinstance` checks.  It can "
 "also be used to create ``GenericAlias`` objects directly."
 msgstr ""
+"GenericAlias`` nesnesi için kullanıcıya açık tipe :class:`types."
+"GenericAlias` öğesinden erişilebilir ve :func:`isinstance` kontrolleri için "
+"kullanılabilir.  Ayrıca doğrudan ``GenericAlias`` nesneleri oluşturmak için "
+"de kullanılabilir."
 
 #: library/stdtypes.rst:4814
 msgid ""
@@ -5824,6 +5947,10 @@ msgid ""
 "types *X*, *Y*, and more depending on the ``T`` used. For example, a "
 "function expecting a :class:`list` containing :class:`float` elements::"
 msgstr ""
+"Kullanılan ``T`` türüne bağlı olarak *X*, *Y* ve daha fazla türde öğeler "
+"içeren bir ``T`` türünü temsil eden bir ``GenericAlias`` oluşturur. "
+"Örneğin, :class:`float` elemanları içeren bir :class:`list` bekleyen bir "
+"fonksiyon::"
 
 #: library/stdtypes.rst:4822
 msgid ""
@@ -5832,12 +5959,18 @@ msgid ""
 "the value type.  In this example, the function expects a ``dict`` with keys "
 "of type :class:`str` and values of type :class:`int`::"
 msgstr ""
+"Anahtar türünü ve değer türünü temsil eden iki tür parametresi bekleyen "
+"genel bir tür olan :class:`dict` kullanarak :term:`mapping` nesneleri için "
+"başka bir örnek.  Bu örnekte, fonksiyon :class:`str` türünde anahtarları ve :"
+"class:`int` türünde değerleri olan bir ``dict`` bekler::"
 
 #: library/stdtypes.rst:4830
 msgid ""
 "The builtin functions :func:`isinstance` and :func:`issubclass` do not "
 "accept ``GenericAlias`` types for their second argument::"
 msgstr ""
+"Yerleşik :func:`isinstance` ve :func:`issubclass` işlevleri ikinci "
+"argümanları için ``GenericAlias`` türlerini kabul etmez::"
 
 #: library/stdtypes.rst:4838
 msgid ""
@@ -5847,24 +5980,35 @@ msgid ""
 "their type. For example, the following code is discouraged, but will run "
 "without errors::"
 msgstr ""
+"Python çalışma zamanı :term:`type annotations <annotation>` zorlamaz. "
+"<annotation>Bu, genel türlere ve bunların tür parametrelerine kadar uzanır. "
+"Bir ``GenericAlias`` türünden bir nesne oluştururken, kapsayıcı elemanlar "
+"türlerine göre kontrol edilmez. Örneğin, aşağıdaki kod tavsiye edilmez, "
+"ancak hatasız çalışacaktır::"
 
 #: library/stdtypes.rst:4848
 msgid ""
 "Furthermore, parameterized generics erase type parameters during object "
 "creation::"
 msgstr ""
+"Ayrıca, parametrelendirilmiş jenerikler nesne oluşturma sırasında tip "
+"parametrelerini siler::"
 
 #: library/stdtypes.rst:4859
 msgid ""
 "Calling :func:`repr` or :func:`str` on a generic shows the parameterized "
 "type::"
 msgstr ""
+"Bir jenerik üzerinde :func:`repr` veya :func:`str` çağrısı "
+"parametrelendirilmiş türü gösterir::"
 
 #: library/stdtypes.rst:4867
 msgid ""
 "The :meth:`__getitem__` method of generics will raise an exception to "
 "disallow mistakes like ``dict[str][str]``::"
 msgstr ""
+"Generics'in :meth:`__getitem__` yöntemi, ``dict[str][str]``: gibi hatalara "
+"izin vermemek için bir istisna oluşturacaktır:"
 
 #: library/stdtypes.rst:4875
 msgid ""
@@ -5873,14 +6017,20 @@ msgid ""
 "items in the ``GenericAlias`` object's :attr:`__args__ <genericalias."
 "__args__>`. ::"
 msgstr ""
+"Ancak, bu tür ifadeler :ref:`type variables <generics>` kullanıldığında "
+"geçerlidir. <generics> Dizin, ``GenericAlias`` nesnesinin :attr:`__args__` "
+"öğesindeki tür değişkeni öğeleri kadar öğeye sahip olmalıdır <genericalias.\n"
+"__args__>`. ::"
 
 #: library/stdtypes.rst:4886
 msgid "Standard Generic Collections"
-msgstr ""
+msgstr "Standart Jenerik Koleksiyonlar"
 
 #: library/stdtypes.rst:4888
 msgid "These standard library collections support parameterized generics."
 msgstr ""
+"Bu standart kütüphane koleksiyonları parametrelendirilmiş jenerikleri "
+"destekler."
 
 #: library/stdtypes.rst:4890
 msgid ":class:`tuple`"
