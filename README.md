@@ -32,7 +32,7 @@ Bu proje gönüllü çevirmenler ve python-docs-tr ekibi iş birliğinde sürdü
    - ``git checkout library-functions``
 2. Çevirmek istediğiniz dosyayı poedit ile açın.
 3. Çevirilerinizi kaydedin.
-4. Çevirilerinizi kendi forkunuzda kaydedin.
+4. Çevirilerinizi kendi forkunuzda yükleyin.
    - ``git add library/functions.po``
    - ``git commit -m "Çeviri tamamlandı."``
    - ``git push origin library-functions``
