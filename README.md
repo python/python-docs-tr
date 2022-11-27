@@ -1,4 +1,4 @@
-# Turkish Translation of The Python Documentation
+# Python Dokümantasyonu Türkçe Çevirisi
 
 ## Dokümantasyon Katkı Anlaşması
 
