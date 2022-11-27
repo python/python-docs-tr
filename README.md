@@ -50,7 +50,7 @@ Bu proje gönüllü çevirmenler ve python-docs-tr ekibi iş birliğinde sürdü
 
 1. Çeviri yaparken yararlanabileceğiniz kaynaklar:
    - İmla kuralları ve Türkçe anlamlar: [Türk Dil Kurumu](https://sozluk.gov.tr/)
-   - İngilizce-Türkçe terim çevirileri: [Terminoloji Sözlüğü](http://cayfer.bilkent.edu.tr/~cayfer/bilisim-sozlugu/tbd-ing-trk-sozluk.htm)
+   - İngilizce-Türkçe terim çevirileri: [Bilkent Üniversitesi Bilişim Sözlüğü](http://cayfer.bilkent.edu.tr/~cayfer/bilisim-sozlugu/tbd-ing-trk-sozluk.htm)
    - İngilizce-Türkçe sözlük: [Tureng](https://tureng.com/en/turkish-english)
 2. Çevirilerinizde terimlerin doğru kullanılmasına dikkat edin. Örneğin:
    - ``string`` ve ``str`` terimleri aynı şeyi temsil etmemektedir.
