@@ -31,8 +31,29 @@ Bu proje gönüllü çevirmenler ve python-docs-tr ekibi iş birliğinde sürdü
 1. Doğru branchte olduğunuzdan emin olun.
    - ``git checkout library-functions``
 2. Çevirmek istediğiniz dosyayı poedit ile açın.
-3. Çevirilerinizi kaydedin.
-4. Çevirilerinizi kendi forkunuzda yükleyin.
+3. Çevirilerinizi yapın ve kaydedin.
+4. Çevirilerinizi kendi forkunuza yükleyin.
    - ``git add library/functions.po``
    - ``git commit -m "Çeviri tamamlandı."``
    - ``git push origin library-functions``
+
+
+#### Çeviri tamamlandıktan sonra
+
+1. TRANSLATORS dosyasına isminizi ekleyin. (Çeviri kabul edilirse yaptığınız katkı için övgü toplayabilirsiniz.)
+2. GitHub üzerinden çevirilerinizi göndermek için bir pull request oluşturun.
+3. Çevirilerinizin kabul edilmesini bekleyin.
+   - Bu süreçte çevirileriniz, uygunluğunu ve yazım hatalarını değerlendirmek için birkaç kişi tarafından incelenecektir.
+   - İncelemenin sonucunda bazı değişiklikler yapmanız istenebilir.
+
+### Dikkat Etmeniz Gerekenler
+
+1. Çeviri yaparken yararlanabileceğiniz kaynaklar:
+   - İmla kuralları ve Türkçe anlamlar: [Türk Dil Kurumu](https://sozluk.gov.tr/)
+   - İngilizce-Türkçe terim çevirileri: [Terminoloji Sözlüğü](http://cayfer.bilkent.edu.tr/~cayfer/bilisim-sozlugu/tbd-ing-trk-sozluk.htm)
+   - İngilizce-Türkçe sözlük: [Tureng](https://tureng.com/en/turkish-english)
+2. Çevirilerinizde terimlerin doğru kullanılmasına dikkat edin. Örneğin:
+   - ``string`` ve ``str`` terimleri aynı şeyi temsil etmemektedir.
+   - ``string`` terimi, Python'da metinleri temsil etmek için kullanılan bir veri tipi olup, ``str`` ise bu veri tipiyle ilgili fonksiyonlar ve metotlarda kullanılan bir kısaltmadır.
+3. Çevirilerinizde bir terimin birden fazla çevirisi olması durumunda, önceki çevirilerde kullanılan çeviriyi kullanın.
+   - Örneğin, ``string`` terimi için ``dize`` ve ``metin`` çevirileri kullanılmıştır. Bu durumda ``dize`` terimini tercih edin.
