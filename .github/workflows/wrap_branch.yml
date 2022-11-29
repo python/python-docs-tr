@@ -78,5 +78,4 @@ jobs:
           title: 'Wrap branch: ${{ github.ref_name }}'
           body: Wrapped all translations on branch ${{ github.ref_name }}.
           labels: wrap
-          team-reviewers: reviewers
           draft: false
