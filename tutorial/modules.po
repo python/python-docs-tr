@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-11-30 20:01+0300\n"
 "PO-Revision-Date: 2022-02-27 20:06+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -80,27 +80,29 @@ msgstr ""
 "aktarın::"
 
 #: tutorial/modules.rst:50
+#, fuzzy
 msgid ""
-"This does not enter the names of the functions defined in ``fibo``  directly "
-"in the current symbol table; it only enters the module name ``fibo`` there. "
-"Using the module name you can access the functions::"
+"This does not add the names of the functions defined in ``fibo``  directly "
+"to the current :term:`namespace` (see :ref:`tut-scopes` for more details); "
+"it only adds the module name ``fibo`` there. Using the module name you can "
+"access the functions::"
 msgstr ""
 "Bu, ``fibo`` içinde tanımlanan işlevlerin adlarını doğrudan geçerli sembol "
 "tablosuna girmez; sadece ``fibo`` modül adını oraya girer. Modül adını "
 "kullanarak şu işlevlere erişebilirsiniz::"
 
-#: tutorial/modules.rst:61
+#: tutorial/modules.rst:62
 msgid ""
 "If you intend to use a function often you can assign it to a local name::"
 msgstr ""
 "Bir işlevi sık sık kullanmayı düşünüyorsanız, işlevi yerel bir ada "
 "atayabilirsiniz::"
 
-#: tutorial/modules.rst:71
+#: tutorial/modules.rst:72
 msgid "More on Modules"
 msgstr "Modüller hakkında daha fazla"
 
-#: tutorial/modules.rst:73
+#: tutorial/modules.rst:74
 msgid ""
 "A module can contain executable statements as well as function definitions. "
 "These statements are intended to initialize the module. They are executed "
@@ -112,10 +114,11 @@ msgstr ""
 "import ifadesinde modül adıyla karşılaşıldığında *ilk* kez yürütülürler. "
 "[#]_ (Dosya komut dosyası olarak yürütülürse de çalıştırılırlar.)"
 
-#: tutorial/modules.rst:78
+#: tutorial/modules.rst:79
+#, fuzzy
 msgid ""
-"Each module has its own private symbol table, which is used as the global "
-"symbol table by all functions defined in the module. Thus, the author of a "
+"Each module has its own private namespace, which is used as the global "
+"namespace by all functions defined in the module. Thus, the author of a "
 "module can use global variables in the module without worrying about "
 "accidental clashes with a user's global variables. On the other hand, if you "
 "know what you are doing you can touch a module's global variables with the "
@@ -129,42 +132,45 @@ msgstr ""
 "``modname.itemname`` işlevlerini ifade etmek için kullanılan aynı notasyonla "
 "iletişime geçebilirsiniz."
 
-#: tutorial/modules.rst:85
+#: tutorial/modules.rst:86
+#, fuzzy
 msgid ""
 "Modules can import other modules.  It is customary but not required to place "
 "all :keyword:`import` statements at the beginning of a module (or script, "
-"for that matter).  The imported module names are placed in the importing "
-"module's global symbol table."
+"for that matter).  The imported module names, if placed at the top level of "
+"a module (outside any functions or classes), are added to the module's "
+"global namespace."
 msgstr ""
 "Modüller diğer modülleri içe aktarabilir.  Alışılmıştır, ancak tüm :keyword:"
 "`import` ifadelerini bir modülün (veya komut dosyasının) başına yerleştirmek "
 "gerekli değildir.  İçe aktarılan modül adları, içe aktarma modülünün genel "
 "sembol tablosuna yerleştirilir."
 
-#: tutorial/modules.rst:90
+#: tutorial/modules.rst:91
+#, fuzzy
 msgid ""
 "There is a variant of the :keyword:`import` statement that imports names "
-"from a module directly into the importing module's symbol table.  For "
-"example::"
+"from a module directly into the importing module's namespace.  For example::"
 msgstr ""
 "Bir modülden adları doğrudan içe aktarma modülünün sembol tablosuna içe "
 "alan :keyword:`import` deyiminin bir varyantı vardır.  Mesela::"
 
-#: tutorial/modules.rst:97
+#: tutorial/modules.rst:98
+#, fuzzy
 msgid ""
 "This does not introduce the module name from which the imports are taken in "
-"the local symbol table (so in the example, ``fibo`` is not defined)."
+"the local namespace (so in the example, ``fibo`` is not defined)."
 msgstr ""
 "Bu, yerel sembol tablosunda içe aktarmaların alındığı modül adını tanıtmaz "
 "(bu nedenle örnekte ``fibo`` tanımlanmamıştır)."
 
-#: tutorial/modules.rst:100
+#: tutorial/modules.rst:101
 msgid "There is even a variant to import all names that a module defines::"
 msgstr ""
 "Bir modülün tanımladığı tüm adları içe aktarmak için bir varyant bile "
 "vardır::"
 
-#: tutorial/modules.rst:106
+#: tutorial/modules.rst:107
 msgid ""
 "This imports all names except those beginning with an underscore (``_``). In "
 "most cases Python programmers do not use this facility since it introduces "
@@ -176,7 +182,7 @@ msgstr ""
 "bilinmeyen bir ad kümesi ekler ve muhtemelen önceden tanımladığınız bazı "
 "şeyleri gizler."
 
-#: tutorial/modules.rst:111
+#: tutorial/modules.rst:112
 msgid ""
 "Note that in general the practice of importing ``*`` from a module or "
 "package is frowned upon, since it often causes poorly readable code. "
@@ -187,7 +193,7 @@ msgstr ""
 "edin. Ancak, etkileşimli oturumlarda yazmayı kaydetmek için kullanmak sorun "
 "değildir."
 
-#: tutorial/modules.rst:115
+#: tutorial/modules.rst:116
 msgid ""
 "If the module name is followed by :keyword:`!as`, then the name following :"
 "keyword:`!as` is bound directly to the imported module."
@@ -195,7 +201,7 @@ msgstr ""
 "Modül adının ardından :keyword:`!as` geliyorsa, :keyword:`!as`tan sonraki ad "
 "doğrudan içe aktarılan modüle bağlanır."
 
-#: tutorial/modules.rst:124
+#: tutorial/modules.rst:125
 msgid ""
 "This is effectively importing the module in the same way that ``import "
 "fibo`` will do, with the only difference of it being available as ``fib``."
@@ -203,13 +209,13 @@ msgstr ""
 "Bu, modülün ``import fibo`` 'nun yapacağı şekilde etkin bir şekilde içe "
 "aktarılmasıdır, tek farkı ``fib`` olarak mevcut olmasıdır."
 
-#: tutorial/modules.rst:127
+#: tutorial/modules.rst:128
 msgid ""
 "It can also be used when utilising :keyword:`from` with similar effects::"
 msgstr ""
 "Benzer efektlere sahip :keyword:`from` kullanılırken de kullanılabilir::"
 
-#: tutorial/modules.rst:136
+#: tutorial/modules.rst:137
 msgid ""
 "For efficiency reasons, each module is only imported once per interpreter "
 "session.  Therefore, if you change your modules, you must restart the "
@@ -223,24 +229,24 @@ msgstr ""
 "tek bir modülse, :func:`importlib.reload`, örneğin ``importlib; importlib."
 "reload(modulename)``."
 
-#: tutorial/modules.rst:146
+#: tutorial/modules.rst:147
 msgid "Executing modules as scripts"
 msgstr "Modülleri komut dosyası olarak yürütme"
 
-#: tutorial/modules.rst:148
+#: tutorial/modules.rst:149
 msgid "When you run a Python module with ::"
 msgstr "Bir Python modülünü :: ile çalıştırdığınızda::"
 
-#: tutorial/modules.rst:152
+#: tutorial/modules.rst:153
 msgid ""
 "the code in the module will be executed, just as if you imported it, but "
 "with the ``__name__`` set to ``\"__main__\"``.  That means that by adding "
 "this code at the end of your module::"
 msgstr ""
-"modüldeki kod, içe aktardığınız gibi yürütülür, ancak ``__name__`` ``"
-"\"__main__\"`` olarak ayarlanır. Bu, modülünüzün sonuna bu kodu ekleyerek:"
+"modüldeki kod, içe aktardığınız gibi yürütülür, ancak ``__name__`` "
+"``\"__main__\"`` olarak ayarlanır. Bu, modülünüzün sonuna bu kodu ekleyerek:"
 
-#: tutorial/modules.rst:160
+#: tutorial/modules.rst:161
 msgid ""
 "you can make the file usable as a script as well as an importable module, "
 "because the code that parses the command line only runs if the module is "
@@ -250,11 +256,11 @@ msgstr ""
 "kullanılabilir hale getirebilirsiniz, çünkü komut satırını ayrıştıran kod "
 "yalnızca modül \"main\" dosya olarak yürütülürse çalışır:"
 
-#: tutorial/modules.rst:169
+#: tutorial/modules.rst:170
 msgid "If the module is imported, the code is not run::"
 msgstr "Modül içe aktarılırsa kod çalıştırılmaz::"
 
-#: tutorial/modules.rst:174
+#: tutorial/modules.rst:175
 msgid ""
 "This is often used either to provide a convenient user interface to a "
 "module, or for testing purposes (running the module as a script executes a "
@@ -264,23 +270,25 @@ msgstr ""
 "amacıyla kullanılır (modülü komut dosyası olarak çalıştırmak bir test paketi "
 "yürütür)."
 
-#: tutorial/modules.rst:181
+#: tutorial/modules.rst:182
 msgid "The Module Search Path"
 msgstr "Modül Arama Yolu"
 
-#: tutorial/modules.rst:185
+#: tutorial/modules.rst:186
+#, fuzzy
 msgid ""
 "When a module named :mod:`spam` is imported, the interpreter first searches "
-"for a built-in module with that name. If not found, it then searches for a "
-"file named :file:`spam.py` in a list of directories given by the variable :"
-"data:`sys.path`.  :data:`sys.path` is initialized from these locations:"
+"for a built-in module with that name. These module names are listed in :data:"
+"`sys.builtin_module_names`. If not found, it then searches for a file named :"
+"file:`spam.py` in a list of directories given by the variable :data:`sys."
+"path`.  :data:`sys.path` is initialized from these locations:"
 msgstr ""
 ":mod:`spam` adlı bir modül içe aktarıldığında, yorumlayıcı önce bu ada sahip "
 "yerleşik bir modül arar. Bulunamazsa, `ata:`sys.path:d değişkeni tarafından "
 "verilen dizinlerin listesinde :file:`spam.py` adlı bir dosyayı arar.  :data:"
 "`sys.path` şu konumlardan başlatılır:"
 
-#: tutorial/modules.rst:190
+#: tutorial/modules.rst:192
 msgid ""
 "The directory containing the input script (or the current directory when no "
 "file is specified)."
@@ -288,7 +296,7 @@ msgstr ""
 "Girdi komut dosyasını içeren dizin (veya dosya belirtilmediğinde geçerli "
 "dizin)."
 
-#: tutorial/modules.rst:192
+#: tutorial/modules.rst:194
 msgid ""
 ":envvar:`PYTHONPATH` (a list of directory names, with the same syntax as the "
 "shell variable :envvar:`PATH`)."
@@ -296,7 +304,7 @@ msgstr ""
 ":envvar:`PYTHONPATH` (kabuk değişkeni :envvar:`PATH` ile aynı sözdizimine "
 "sahip dizin adlarının listesi)."
 
-#: tutorial/modules.rst:194
+#: tutorial/modules.rst:196
 msgid ""
 "The installation-dependent default (by convention including a ``site-"
 "packages`` directory, handled by the :mod:`site` module)."
@@ -304,7 +312,11 @@ msgstr ""
 "Kuruluma bağlı varsayılan (kural olarak, :mod:`site` modülü tarafından "
 "işlenen bir \"site-packages\" dizini dahil)."
 
-#: tutorial/modules.rst:198
+#: tutorial/modules.rst:199
+msgid "More details are at :ref:`sys-path-init`."
+msgstr ""
+
+#: tutorial/modules.rst:202
 msgid ""
 "On file systems which support symlinks, the directory containing the input "
 "script is calculated after the symlink is followed. In other words the "
@@ -314,7 +326,7 @@ msgstr ""
 "girdi komut dosyasını içeren dizin hesaplanır. Başka bir deyişle, symlink "
 "içeren dizin modül arama yoluna **not** eklenir."
 
-#: tutorial/modules.rst:202
+#: tutorial/modules.rst:206
 msgid ""
 "After initialization, Python programs can modify :data:`sys.path`.  The "
 "directory containing the script being run is placed at the beginning of the "
@@ -330,11 +342,11 @@ msgstr ""
 "anlamına gelir. Değiştirme amaçlanmadığı sürece bu bir hatadır.  Daha fazla "
 "bilgi için :ref:`tut-standardmodules` bölümüne bakın."
 
-#: tutorial/modules.rst:213
+#: tutorial/modules.rst:219
 msgid "\"Compiled\" Python files"
 msgstr "\"Derlenmiş\" Python dosyaları"
 
-#: tutorial/modules.rst:215
+#: tutorial/modules.rst:221
 msgid ""
 "To speed up loading modules, Python caches the compiled version of each "
 "module in the ``__pycache__`` directory under the name :file:`module."
@@ -352,7 +364,7 @@ msgstr ""
 "alınacaktır. Bu adlandırma kuralı, farklı sürümlerden ve Python'un farklı "
 "sürümlerinden derlenmiş modüllerin bir arada var olmasına izin verir."
 
-#: tutorial/modules.rst:223
+#: tutorial/modules.rst:229
 msgid ""
 "Python checks the modification date of the source against the compiled "
 "version to see if it's out of date and needs to be recompiled.  This is a "
@@ -366,7 +378,7 @@ msgstr ""
 "bağımsızdır, bu nedenle aynı kitaplık farklı mimarilere sahip sistemler "
 "arasında paylaşılabilir."
 
-#: tutorial/modules.rst:228
+#: tutorial/modules.rst:234
 msgid ""
 "Python does not check the cache in two circumstances.  First, it always "
 "recompiles and does not store the result for the module that's loaded "
@@ -381,11 +393,11 @@ msgstr ""
 "(yalnızca derlenmiş) bir dağıtımı desteklemek için, derlenen modül kaynak "
 "dizinde olmalı ve bir kaynak modül olmamalıdır."
 
-#: tutorial/modules.rst:235
+#: tutorial/modules.rst:241
 msgid "Some tips for experts:"
 msgstr "Uzmanlar için bazı ipuçları:"
 
-#: tutorial/modules.rst:237
+#: tutorial/modules.rst:243
 msgid ""
 "You can use the :option:`-O` or :option:`-OO` switches on the Python command "
 "to reduce the size of a compiled module.  The ``-O`` switch removes assert "
@@ -404,7 +416,7 @@ msgstr ""
 "etiketine sahiptir ve genellikle daha küçüktür. Gelecekteki sürümler, "
 "optimizasyonun etkilerini değiştirebilir."
 
-#: tutorial/modules.rst:245
+#: tutorial/modules.rst:251
 msgid ""
 "A program doesn't run any faster when it is read from a ``.pyc`` file than "
 "when it is read from a ``.py`` file; the only thing that's faster about ``."
@@ -414,7 +426,7 @@ msgstr ""
 "okunduğundan daha hızlı çalışmaz; ``.pyc`` dosyaları hakkında daha hızlı "
 "olan tek şey, yüklenme hızlarıdır."
 
-#: tutorial/modules.rst:249
+#: tutorial/modules.rst:255
 msgid ""
 "The module :mod:`compileall` can create .pyc files for all modules in a "
 "directory."
@@ -422,7 +434,7 @@ msgstr ""
 ":mod:`compileall` modülü, bir dizindeki tüm modüller için .pyc dosyaları "
 "oluşturabilir."
 
-#: tutorial/modules.rst:252
+#: tutorial/modules.rst:258
 msgid ""
 "There is more detail on this process, including a flow chart of the "
 "decisions, in :pep:`3147`."
@@ -430,11 +442,11 @@ msgstr ""
 ":pep:`3147`de, kararların bir akış şeması da dahil olmak üzere, bu süreç "
 "hakkında daha fazla ayrıntı bulunmaktadır."
 
-#: tutorial/modules.rst:259
+#: tutorial/modules.rst:265
 msgid "Standard Modules"
 msgstr "Standart modüller"
 
-#: tutorial/modules.rst:263
+#: tutorial/modules.rst:269
 msgid ""
 "Python comes with a library of standard modules, described in a separate "
 "document, the Python Library Reference (\"Library Reference\" hereafter).  "
@@ -460,13 +472,13 @@ msgstr ""
 "`sys`. ``sys.ps1`` ve ``sys.ps2`` değişkenleri, birincil ve ikincil bilgi "
 "istemleri olarak kullanılan dizeleri tanımlar:"
 
-#: tutorial/modules.rst:286
+#: tutorial/modules.rst:292
 msgid ""
 "These two variables are only defined if the interpreter is in interactive "
 "mode."
 msgstr "Bu iki değişken yalnızca yorumlayıcı etkileşimli moddaysa tanımlanır."
 
-#: tutorial/modules.rst:288
+#: tutorial/modules.rst:294
 msgid ""
 "The variable ``sys.path`` is a list of strings that determines the "
 "interpreter's search path for modules. It is initialized to a default path "
@@ -480,11 +492,11 @@ msgstr ""
 "varsayılan bir yola başlatılır. Standart liste işlemlerini kullanarak "
 "değiştirebilirsiniz::"
 
-#: tutorial/modules.rst:301
+#: tutorial/modules.rst:307
 msgid "The :func:`dir` Function"
 msgstr ":func:`dir` Fonksiyonu"
 
-#: tutorial/modules.rst:303
+#: tutorial/modules.rst:309
 msgid ""
 "The built-in function :func:`dir` is used to find out which names a module "
 "defines.  It returns a sorted list of strings::"
@@ -492,20 +504,20 @@ msgstr ""
 "Yerleşik fonksiyon :func:`dir`, bir modülün hangi adları tanımladığını "
 "bulmak için kullanılır. Sıralanmış bir dize listesi döndürür::"
 
-#: tutorial/modules.rst:332
+#: tutorial/modules.rst:338
 msgid ""
 "Without arguments, :func:`dir` lists the names you have defined currently::"
 msgstr ""
 "Argümanlar olmadan, :func:`dir`, şu anda tanımladığınız adları listeler::"
 
-#: tutorial/modules.rst:340
+#: tutorial/modules.rst:346
 msgid ""
 "Note that it lists all types of names: variables, modules, functions, etc."
 msgstr ""
 "Her tür adın listelendiğini unutmayın: değişkenler, modüller, fonksiyonlar "
 "vb."
 
-#: tutorial/modules.rst:344
+#: tutorial/modules.rst:350
 msgid ""
 ":func:`dir` does not list the names of built-in functions and variables.  If "
 "you want a list of those, they are defined in the standard module :mod:"
@@ -515,11 +527,11 @@ msgstr ""
 "Bunların bir listesini istiyorsanız, standart modül :mod:`builtins` 'de "
 "tanımlanırlar::"
 
-#: tutorial/modules.rst:383
+#: tutorial/modules.rst:389
 msgid "Packages"
 msgstr "Paketler"
 
-#: tutorial/modules.rst:385
+#: tutorial/modules.rst:391
 msgid ""
 "Packages are a way of structuring Python's module namespace by using "
 "\"dotted module names\".  For example, the module name :mod:`A.B` designates "
@@ -537,7 +549,7 @@ msgstr ""
 "veya Pillow gibi çok modüllü paketlerin yazarlarını birbirlerinin modül "
 "adları hakkında endişelenmekten kurtarır."
 
-#: tutorial/modules.rst:393
+#: tutorial/modules.rst:399
 msgid ""
 "Suppose you want to design a collection of modules (a \"package\") for the "
 "uniform handling of sound files and sound data.  There are many different "
@@ -563,7 +575,7 @@ msgstr ""
 "akışı yazıyor olacaksınız. İşte paketiniz için olası bir yapı (hiyerarşik "
 "bir dosya sistemi cinsinden ifade edilir):"
 
-#: tutorial/modules.rst:430
+#: tutorial/modules.rst:436
 msgid ""
 "When importing the package, Python searches through the directories on ``sys."
 "path`` looking for the package subdirectory."
@@ -571,7 +583,7 @@ msgstr ""
 "Paketi içe aktarırken Python, paket alt dizinini arayan ``sys.path`` "
 "üzerindeki dizinleri arar."
 
-#: tutorial/modules.rst:433
+#: tutorial/modules.rst:439
 msgid ""
 "The :file:`__init__.py` files are required to make Python treat directories "
 "containing the file as packages.  This prevents directories with a common "
@@ -588,7 +600,7 @@ msgstr ""
 "çalıştırabilir veya daha sonra açıklanacak olan ``__all__`` değişkenini "
 "ayarlayabilir."
 
-#: tutorial/modules.rst:440
+#: tutorial/modules.rst:446
 msgid ""
 "Users of the package can import individual modules from the package, for "
 "example::"
@@ -596,7 +608,7 @@ msgstr ""
 "Paketin kullanıcıları, paketin içindeki ayrı modülleri içe aktarabilir, "
 "örneğin::"
 
-#: tutorial/modules.rst:445
+#: tutorial/modules.rst:451
 msgid ""
 "This loads the submodule :mod:`sound.effects.echo`.  It must be referenced "
 "with its full name. ::"
@@ -604,11 +616,11 @@ msgstr ""
 "Bu, :mod:`sound.effects.echo` alt modülünü yükler. Tam adı ile referans "
 "gösterilmelidir. ::"
 
-#: tutorial/modules.rst:450
+#: tutorial/modules.rst:456
 msgid "An alternative way of importing the submodule is::"
 msgstr "Alt modülü içe aktarmanın alternatif bir yolu::"
 
-#: tutorial/modules.rst:454
+#: tutorial/modules.rst:460
 msgid ""
 "This also loads the submodule :mod:`echo`, and makes it available without "
 "its package prefix, so it can be used as follows::"
@@ -616,7 +628,7 @@ msgstr ""
 "Bu ayrıca :mod:`echo` alt modülünü yükler ve paket öneki olmadan "
 "kullanılabilir hale getirir, böylece aşağıdaki gibi kullanılabilir::"
 
-#: tutorial/modules.rst:459
+#: tutorial/modules.rst:465
 msgid ""
 "Yet another variation is to import the desired function or variable "
 "directly::"
@@ -624,7 +636,7 @@ msgstr ""
 "Yine başka bir varyasyon, istenen işlevi veya değişkeni doğrudan içe "
 "aktarmaktır::"
 
-#: tutorial/modules.rst:463
+#: tutorial/modules.rst:469
 msgid ""
 "Again, this loads the submodule :mod:`echo`, but this makes its function :"
 "func:`echofilter` directly available::"
@@ -632,7 +644,7 @@ msgstr ""
 "Yine, bu, :mod:`echo` alt modülünü yükler, ancak bu, :func:`echofilter` "
 "fonksiyonunu doğrudan kullanılabilir hale getirir::"
 
-#: tutorial/modules.rst:468
+#: tutorial/modules.rst:474
 msgid ""
 "Note that when using ``from package import item``, the item can be either a "
 "submodule (or subpackage) of the package, or some  other name defined in the "
@@ -648,7 +660,7 @@ msgstr ""
 "varsayar ve yüklemeye çalışır. Onu bulamazsa, bir :exc:`ImportError` "
 "istisnası ortaya çıkar."
 
-#: tutorial/modules.rst:475
+#: tutorial/modules.rst:481
 msgid ""
 "Contrarily, when using syntax like ``import item.subitem.subsubitem``, each "
 "item except for the last must be a package; the last item can be a module or "
@@ -660,11 +672,11 @@ msgstr ""
 "olabilir, ancak önceki öğede tanımlanan bir sınıf, fonksiyon veya değişken "
 "olamaz."
 
-#: tutorial/modules.rst:484
+#: tutorial/modules.rst:490
 msgid "Importing \\* From a Package"
 msgstr "Bir Paketten \\* İçe Aktarma"
 
-#: tutorial/modules.rst:488
+#: tutorial/modules.rst:494
 msgid ""
 "Now what happens when the user writes ``from sound.effects import *``?  "
 "Ideally, one would hope that this somehow goes out to the filesystem, finds "
@@ -679,7 +691,7 @@ msgstr ""
 "içe aktarıldığında gerçekleşmesi gereken istenmeyen yan etkilere neden "
 "olabilir."
 
-#: tutorial/modules.rst:494
+#: tutorial/modules.rst:500
 msgid ""
 "The only solution is for the package author to provide an explicit index of "
 "the package.  The :keyword:`import` statement uses the following convention: "
@@ -701,15 +713,16 @@ msgstr ""
 "verebilirler. Örneğin, :file:`sound/effects/__init__.py` dosyası şu kodu "
 "içerebilir:"
 
-#: tutorial/modules.rst:506
+#: tutorial/modules.rst:512
+#, fuzzy
 msgid ""
 "This would mean that ``from sound.effects import *`` would import the three "
-"named submodules of the :mod:`sound` package."
+"named submodules of the :mod:`sound.effects` package."
 msgstr ""
 "Bu, ``from sound.effects import *`` öğesinin :mod:`sound` paketinin "
 "adlandırılmış üç alt modülünü içe aktaracağı anlamına gelir."
 
-#: tutorial/modules.rst:509
+#: tutorial/modules.rst:515
 msgid ""
 "If ``__all__`` is not defined, the statement ``from sound.effects import *`` "
 "does *not* import all submodules from the package :mod:`sound.effects` into "
@@ -730,7 +743,7 @@ msgstr ""
 "Ayrıca, önceki :keyword:'import' ifadeleri tarafından açıkça yüklenen "
 "paketin tüm alt modüllerini de içerir. Bu kodu dikkate alın ::"
 
-#: tutorial/modules.rst:522
+#: tutorial/modules.rst:528
 msgid ""
 "In this example, the :mod:`echo` and :mod:`surround` modules are imported in "
 "the current namespace because they are defined in the :mod:`sound.effects` "
@@ -742,7 +755,7 @@ msgstr ""
 "effects` paketinde tanımlanmışlardır. (Bu aynı zamanda ``__all__`` "
 "tanımlandığında da çalışır.)"
 
-#: tutorial/modules.rst:527
+#: tutorial/modules.rst:533
 msgid ""
 "Although certain modules are designed to export only names that follow "
 "certain patterns when you use ``import *``, it is still considered bad "
@@ -752,7 +765,7 @@ msgstr ""
 "eden adları dışa aktarmak üzere tasarlanmış olsa da, üretim kodunda yine de "
 "kötü uygulama olarak kabul edilir."
 
-#: tutorial/modules.rst:531
+#: tutorial/modules.rst:537
 msgid ""
 "Remember, there is nothing wrong with using ``from package import "
 "specific_submodule``!  In fact, this is the recommended notation unless the "
@@ -763,11 +776,11 @@ msgstr ""
 "tarafı yok! Aslında, içe aktarma modülünün farklı paketlerden aynı ada sahip "
 "alt modülleri kullanması gerekmedikçe, önerilen gösterim budur."
 
-#: tutorial/modules.rst:540
+#: tutorial/modules.rst:546
 msgid "Intra-package References"
 msgstr "Paket İçi Referanslar"
 
-#: tutorial/modules.rst:542
+#: tutorial/modules.rst:548
 msgid ""
 "When packages are structured into subpackages (as with the :mod:`sound` "
 "package in the example), you can use absolute imports to refer to submodules "
@@ -781,7 +794,7 @@ msgstr ""
 "vocoder` modülünün :mod:`sound.effects` paketindeki :mod:`echo` modülünü "
 "kullanması gerekiyorsa, ``from sound.effects import echo`` 'yu kullanabilir."
 
-#: tutorial/modules.rst:548
+#: tutorial/modules.rst:554
 msgid ""
 "You can also write relative imports, with the ``from module import name`` "
 "form of import statement.  These imports use leading dots to indicate the "
@@ -793,7 +806,7 @@ msgstr ""
 "yer alan mevcut ve ana paketleri belirtmek için baştaki noktaları kullanır. "
 "Örneğin :mod:`surround` modülünden şunları kullanabilirsiniz::"
 
-#: tutorial/modules.rst:557
+#: tutorial/modules.rst:563
 msgid ""
 "Note that relative imports are based on the name of the current module.  "
 "Since the name of the main module is always ``\"__main__\"``, modules "
@@ -805,11 +818,11 @@ msgstr ""
 "ana modülü olarak kullanılması amaçlanan modüller her zaman mutlak içe "
 "aktarma kullanmalıdır."
 
-#: tutorial/modules.rst:563
+#: tutorial/modules.rst:569
 msgid "Packages in Multiple Directories"
 msgstr "Birden Çok Dizindeki Paketler"
 
-#: tutorial/modules.rst:565
+#: tutorial/modules.rst:571
 msgid ""
 "Packages support one more special attribute, :attr:`__path__`.  This is "
 "initialized to be a list containing the name of the directory holding the "
@@ -823,7 +836,7 @@ msgstr ""
 "değiştirilebilir; bunu yapmak, pakette bulunan modüller ve alt paketler için "
 "gelecekteki aramaları etkiler."
 
-#: tutorial/modules.rst:571
+#: tutorial/modules.rst:577
 msgid ""
 "While this feature is not often needed, it can be used to extend the set of "
 "modules found in a package."
@@ -831,15 +844,16 @@ msgstr ""
 "Bu özelliğe sıklıkla ihtiyaç duyulmasa da, bir pakette bulunan modül "
 "dizisini genişletmek için kullanılabilir."
 
-#: tutorial/modules.rst:576
+#: tutorial/modules.rst:582
 msgid "Footnotes"
 msgstr "Dipnotlar"
 
-#: tutorial/modules.rst:577
+#: tutorial/modules.rst:583
+#, fuzzy
 msgid ""
 "In fact function definitions are also 'statements' that are 'executed'; the "
-"execution of a module-level function definition enters the function name in "
-"the module's global symbol table."
+"execution of a module-level function definition adds the function name to "
+"the module's global namespace."
 msgstr ""
 "Aslında fonksiyon tanımları da 'yürütülen' 'ifadelerdir'; modül düzeyinde "
 "bir fonksiyon tanımının yürütülmesi, fonksiyonun adını modülün genel sembol "

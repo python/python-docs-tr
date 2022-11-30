@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-11-30 20:01+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,7 +103,7 @@ msgstr ""
 
 #: c-api/tuple.rst:94
 msgid ""
-"This macro \"steals\" a reference to *o*, and, unlike :c:func:"
+"This function \"steals\" a reference to *o*, and, unlike :c:func:"
 "`PyTuple_SetItem`, does *not* discard a reference to any item that is being "
 "replaced; any reference in the tuple at position *pos* will be leaked."
 msgstr ""
@@ -215,7 +215,7 @@ msgstr ""
 #: c-api/tuple.rst:163
 msgid ""
 "Describes a field of a struct sequence. As a struct sequence is modeled as a "
-"tuple, all fields are typed as :c:type:`PyObject*`.  The index in the :attr:"
+"tuple, all fields are typed as :c:expr:`PyObject*`.  The index in the :attr:"
 "`fields` array of the :c:type:`PyStructSequence_Desc` determines which field "
 "of the struct sequence is described."
 msgstr ""
@@ -261,10 +261,12 @@ msgid ""
 "new instances."
 msgstr ""
 
-#: c-api/tuple.rst:222
+#: c-api/tuple.rst:223
 msgid "This function \"steals\" a reference to *o*."
 msgstr ""
 
 #: c-api/tuple.rst:218
-msgid "Macro equivalent of :c:func:`PyStructSequence_SetItem`."
+msgid ""
+"Similar to :c:func:`PyStructSequence_SetItem`, but implemented as a static "
+"inlined function."
 msgstr ""

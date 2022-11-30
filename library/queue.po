@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-11-30 20:01+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,7 +164,7 @@ msgid ""
 msgstr ""
 
 #: library/queue.rst:141
-msgid "Equivalent to ``put(item, False)``."
+msgid "Equivalent to ``put(item, block=False)``."
 msgstr ""
 
 #: library/queue.rst:146
@@ -264,10 +264,19 @@ msgid ""
 "compatibility with :meth:`Queue.put`."
 msgstr ""
 
+#: library/queue.rst:243
+msgid ""
+"This method has a C implementation which is reentrant.  That is, a ``put()`` "
+"or ``get()`` call can be interrupted by another ``put()`` call in the same "
+"thread without deadlocking or corrupting internal state inside the queue.  "
+"This makes it appropriate for use in destructors such as ``__del__`` methods "
+"or :mod:`weakref` callbacks."
+msgstr ""
+
 #: library/queue.rst:252
 msgid ""
-"Equivalent to ``put(item)``, provided for compatibility with :meth:`Queue."
-"put_nowait`."
+"Equivalent to ``put(item, block=False)``, provided for compatibility with :"
+"meth:`Queue.put_nowait`."
 msgstr ""
 
 #: library/queue.rst:258

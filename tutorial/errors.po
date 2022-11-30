@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-11-30 20:01+0300\n"
 "PO-Revision-Date: 2022-02-20 19:35+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -228,29 +228,68 @@ msgstr ""
 "tetiklenir."
 
 #: tutorial/errors.rst:150
+#, fuzzy
 msgid ""
-"All exceptions inherit from :exc:`BaseException`, and so it can be used to "
-"serve as a wildcard. Use this with extreme caution, since it is easy to mask "
-"a real programming error in this way!  It can also be used to print an error "
-"message and then re-raise the exception (allowing a caller to handle the "
-"exception as well)::"
+"When an exception occurs, it may have associated values, also known as the "
+"exception's *arguments*. The presence and types of the arguments depend on "
+"the exception type."
 msgstr ""
-"Tüm özel durumlar :exc:`BaseException` 'dan kalıt alınır ve böylece joker "
-"karakter olarak kullanılabilir. Bunu çok dikkatli kullanın, çünkü gerçek bir "
-"programlama hatasını bu şekilde maskelemek kolaydır!  Ayrıca, bir hata "
-"iletisi yazdırmak ve sonra özel durumu yeniden yükseltmek için de "
-"kullanılabilir (çağıranın özel durumu işlemesine izin vermek)::"
+"Bir istisna oluştuğunda, istisnanın *argümanı* olarak da bilinen ilişkili "
+"bir değeri olabilir. Argümanın varlığı ve türü, istisna türüne bağlıdır."
 
-#: tutorial/errors.rst:169
+#: tutorial/errors.rst:154
+#, fuzzy
 msgid ""
-"Alternatively the last except clause may omit the exception name(s), however "
-"the exception value must then be retrieved from ``sys.exc_info()[1]``."
+"The *except clause* may specify a variable after the exception name.  The "
+"variable is bound to the exception instance which typically has an ``args`` "
+"attribute that stores the arguments. For convenience, builtin exception "
+"types define :meth:`__str__` to print all the arguments without explicitly "
+"accessing ``.args``.  ::"
 msgstr ""
-"Alternatif olarak, son özel durum yan tümcesi özel durum ad(ları)nı "
-"atlayabilir, ancak özel durum değeri daha sonra ``sys.exc_info()[1]`` 'den "
-"alınmalıdır."
+"*except yan tümcesi*, istisna adından sonra bir değişken belirtebilir. "
+"Değişken, ``instance.args`` içinde depolanan bağımsız değişkenlerle bir "
+"istisna örneğine bağlıdır. Kolaylık sağlamak için, istisna örneği :meth:"
+"`__str__` öğesini tanımlar, böylece argümanlar ``.args`` öğesine başvurmak "
+"zorunda kalmadan doğrudan yazdırılabilir. Ayrıca, bir istisna, onu "
+"yükseltmeden önce başlatabilir ve istendiği gibi ona herhangi bir nitelik "
+"ekleyebilir. ::"
 
-#: tutorial/errors.rst:172
+#: tutorial/errors.rst:177
+#, fuzzy
+msgid ""
+"The exception's :meth:`__str__` output is printed as the last part "
+"('detail') of the message for unhandled exceptions."
+msgstr ""
+"Bir istisnanın argümanları varsa, bunlar işlenmeyen istisnalar için mesajın "
+"son kısmı ('ayrıntı') olarak yazdırılır."
+
+#: tutorial/errors.rst:180
+msgid ""
+":exc:`BaseException` is the common base class of all exceptions. One of its "
+"subclasses, :exc:`Exception`, is the base class of all the non-fatal "
+"exceptions. Exceptions which are not subclasses of :exc:`Exception` are not "
+"typically handled, because they are used to indicate that the program should "
+"terminate. They include :exc:`SystemExit` which is raised by :meth:`sys."
+"exit` and :exc:`KeyboardInterrupt` which is raised when a user wishes to "
+"interrupt the program."
+msgstr ""
+
+#: tutorial/errors.rst:188
+msgid ""
+":exc:`Exception` can be used as a wildcard that catches (almost) everything. "
+"However, it is good practice to be as specific as possible with the types of "
+"exceptions that we intend to handle, and to allow any unexpected exceptions "
+"to propagate on."
+msgstr ""
+
+#: tutorial/errors.rst:193
+msgid ""
+"The most common pattern for handling :exc:`Exception` is to print or log the "
+"exception and then re-raise it (allowing a caller to handle the exception as "
+"well)::"
+msgstr ""
+
+#: tutorial/errors.rst:211
 msgid ""
 "The :keyword:`try` ... :keyword:`except` statement has an optional *else "
 "clause*, which, when present, must follow all *except clauses*.  It is "
@@ -262,7 +301,7 @@ msgstr ""
 "izlemelidir.  *try yan tümcesi* bir özel durum oluşturmazsa yürütülmesi "
 "gereken kod için yararlıdır. Mesela::"
 
-#: tutorial/errors.rst:186
+#: tutorial/errors.rst:225
 msgid ""
 "The use of the :keyword:`!else` clause is better than adding additional code "
 "to the :keyword:`try` clause because it avoids accidentally catching an "
@@ -274,55 +313,22 @@ msgstr ""
 "korunan kod tarafından oluşturulmamış bir istisnayı yakalamayı önler. ... :"
 "keyword:`!except` ifadesi."
 
-#: tutorial/errors.rst:191
+#: tutorial/errors.rst:230
+#, fuzzy
 msgid ""
-"When an exception occurs, it may have an associated value, also known as the "
-"exception's *argument*. The presence and type of the argument depend on the "
-"exception type."
-msgstr ""
-"Bir istisna oluştuğunda, istisnanın *argümanı* olarak da bilinen ilişkili "
-"bir değeri olabilir. Argümanın varlığı ve türü, istisna türüne bağlıdır."
-
-#: tutorial/errors.rst:195
-msgid ""
-"The *except clause* may specify a variable after the exception name.  The "
-"variable is bound to an exception instance with the arguments stored in "
-"``instance.args``.  For convenience, the exception instance defines :meth:"
-"`__str__` so the arguments can be printed directly without having to "
-"reference ``.args``.  One may also instantiate an exception first before "
-"raising it and add any attributes to it as desired. ::"
-msgstr ""
-"*except yan tümcesi*, istisna adından sonra bir değişken belirtebilir. "
-"Değişken, ``instance.args`` içinde depolanan bağımsız değişkenlerle bir "
-"istisna örneğine bağlıdır. Kolaylık sağlamak için, istisna örneği :meth:"
-"`__str__` öğesini tanımlar, böylece argümanlar ``.args`` öğesine başvurmak "
-"zorunda kalmadan doğrudan yazdırılabilir. Ayrıca, bir istisna, onu "
-"yükseltmeden önce başlatabilir ve istendiği gibi ona herhangi bir nitelik "
-"ekleyebilir. ::"
-
-#: tutorial/errors.rst:219
-msgid ""
-"If an exception has arguments, they are printed as the last part ('detail') "
-"of the message for unhandled exceptions."
-msgstr ""
-"Bir istisnanın argümanları varsa, bunlar işlenmeyen istisnalar için mesajın "
-"son kısmı ('ayrıntı') olarak yazdırılır."
-
-#: tutorial/errors.rst:222
-msgid ""
-"Exception handlers don't just handle exceptions if they occur immediately in "
-"the *try clause*, but also if they occur inside functions that are called "
+"Exception handlers do not handle only exceptions that occur immediately in "
+"the *try clause*, but also those that occur inside functions that are called "
 "(even indirectly) in the *try clause*. For example::"
 msgstr ""
 "İstisna işleyicileri, istisnaları yalnızca *try yan tümcesinde* hemen ortaya "
 "çıktıklarında değil, aynı zamanda *try yan tümcesinde* çağrılan (dolaylı "
 "olarak bile) işlevlerin içinde ortaya çıktıklarında da ele alırlar. Örneğin::"
 
-#: tutorial/errors.rst:240
+#: tutorial/errors.rst:248
 msgid "Raising Exceptions"
 msgstr "Hata Ortaya Çıkartma"
 
-#: tutorial/errors.rst:242
+#: tutorial/errors.rst:250
 msgid ""
 "The :keyword:`raise` statement allows the programmer to force a specified "
 "exception to occur. For example::"
@@ -330,20 +336,21 @@ msgstr ""
 ":keyword:`raise` ifadesi, programcının belirli bir istisnanın "
 "gerçekleşmesini zorlamasını sağlar. Örneğin::"
 
-#: tutorial/errors.rst:250
+#: tutorial/errors.rst:258
+#, fuzzy
 msgid ""
 "The sole argument to :keyword:`raise` indicates the exception to be raised. "
 "This must be either an exception instance or an exception class (a class "
-"that derives from :class:`Exception`).  If an exception class is passed, it "
-"will be implicitly instantiated by calling its constructor with no "
-"arguments::"
+"that derives from :class:`BaseException`, such as :exc:`Exception` or one of "
+"its subclasses).  If an exception class is passed, it will be implicitly "
+"instantiated by calling its constructor with no arguments::"
 msgstr ""
 ":keyword:`raise` için tek argüman, ortaya çıkacak istisnayı belirtir. Bu, "
 "bir istisna örneği veya bir istisna sınıfı (:class:`Exception` dan türetilen "
 "bir sınıf) olmalıdır. Argüman verilmezse, yapıcısı hiçbir argüman olmadan "
 "çağrılarak örtük olarak başlatılacaktır::"
 
-#: tutorial/errors.rst:257
+#: tutorial/errors.rst:266
 msgid ""
 "If you need to determine whether an exception was raised but don't intend to "
 "handle it, a simpler form of the :keyword:`raise` statement allows you to re-"
@@ -353,44 +360,45 @@ msgstr ""
 "onu işlemeyi düşünmüyorsanız, :keyword:`raise` ifadesinin daha basit bir "
 "biçimi, istisnayı yeniden oluşturmanıza olanak tanır::"
 
-#: tutorial/errors.rst:276
+#: tutorial/errors.rst:285
 msgid "Exception Chaining"
 msgstr "İstisna Zincirleme"
 
-#: tutorial/errors.rst:278
+#: tutorial/errors.rst:287
 msgid ""
-"The :keyword:`raise` statement allows an optional :keyword:`from<raise>` "
-"which enables chaining exceptions. For example::"
+"If an unhandled exception occurs inside an :keyword:`except` section, it "
+"will have the exception being handled attached to it and included in the "
+"error message::"
 msgstr ""
-":keyword:`raise` ifadesi, zincirleme istisnalar sağlayan opsiyonel bir :"
-"keyword:`from<raise>`e izin verir. Örneğin::"
 
-#: tutorial/errors.rst:284
+#: tutorial/errors.rst:306
+msgid ""
+"To indicate that an exception is a direct consequence of another, the :"
+"keyword:`raise` statement allows an optional :keyword:`from<raise>` clause::"
+msgstr ""
+
+#: tutorial/errors.rst:312
 msgid "This can be useful when you are transforming exceptions. For example::"
 msgstr "Bu, özel durumları dönüştürürken yararlı olabilir. Mesela::"
 
-#: tutorial/errors.rst:305
+#: tutorial/errors.rst:333
 msgid ""
-"Exception chaining happens automatically when an exception is raised inside "
-"an :keyword:`except` or :keyword:`finally` section. This can be disabled by "
-"using ``from None`` idiom:"
+"It also allows disabling automatic exception chaining using the ``from "
+"None`` idiom::"
 msgstr ""
-"İstisna zincirlemesi, bir :keyword:`except` veya :keyword:`finally` "
-"bölümünde bir istisna açıldığında otomatik olarak gerçekleşir. Bu, ``from "
-"None`` deyimi kullanılarak devre dışı bırakılabilir:"
 
-#: tutorial/errors.rst:318
+#: tutorial/errors.rst:345
 msgid ""
 "For more information about chaining mechanics, see :ref:`bltin-exceptions`."
 msgstr ""
 "Zincirleme mekaniği hakkında daha fazla bilgi için bkz. :ref:`bltin-"
 "exceptions`."
 
-#: tutorial/errors.rst:324
+#: tutorial/errors.rst:351
 msgid "User-defined Exceptions"
 msgstr "Kullanıcı Tanımlı İstisnalar"
 
-#: tutorial/errors.rst:326
+#: tutorial/errors.rst:353
 msgid ""
 "Programs may name their own exceptions by creating a new exception class "
 "(see :ref:`tut-classes` for more about Python classes).  Exceptions should "
@@ -402,15 +410,13 @@ msgstr ""
 "`tut-classes` ).  Özel durumlar genellikle doğrudan veya dolaylı olarak :exc:"
 "`Exception` sınıfından türetilmelidir."
 
-#: tutorial/errors.rst:330
+#: tutorial/errors.rst:357
+#, fuzzy
 msgid ""
 "Exception classes can be defined which do anything any other class can do, "
 "but are usually kept simple, often only offering a number of attributes that "
 "allow information about the error to be extracted by handlers for the "
-"exception.  When creating a module that can raise several distinct errors, a "
-"common practice is to create a base class for exceptions defined by that "
-"module, and subclass that to create specific exception classes for different "
-"error conditions::"
+"exception."
 msgstr ""
 "İstisna sınıfları, başka bir sınıfın yapabileceği her şeyi yapan "
 "sınıflarolarak tanımlanabilir, ancak genellikle basit tutulur, genellikle "
@@ -421,29 +427,29 @@ msgstr ""
 "koşulları için belirli özel durum sınıfları oluşturmak için bir alt sınıf "
 "oluşturmaktır::"
 
-#: tutorial/errors.rst:368
+#: tutorial/errors.rst:361
 msgid ""
 "Most exceptions are defined with names that end in \"Error\", similar to the "
 "naming of the standard exceptions."
 msgstr ""
-"Çoğu özel durum, standart özel durumların adlandırışına benzer şekilde \"Hata"
-"\" ile biten adlarla tanımlanır."
+"Çoğu özel durum, standart özel durumların adlandırışına benzer şekilde "
+"\"Hata\" ile biten adlarla tanımlanır."
 
-#: tutorial/errors.rst:371
+#: tutorial/errors.rst:364
+#, fuzzy
 msgid ""
 "Many standard modules define their own exceptions to report errors that may "
-"occur in functions they define.  More information on classes is presented in "
-"chapter :ref:`tut-classes`."
+"occur in functions they define."
 msgstr ""
 "Birçok standart modül, tanımladıkları işlevlerde oluşabilecek hataları "
 "bildirmek için kendi istisnalarını tanımlar.  Dersler hakkında daha fazla "
 "bilgi :ref:`tut-classes` bölümünde sunulmaktadır."
 
-#: tutorial/errors.rst:379
+#: tutorial/errors.rst:371
 msgid "Defining Clean-up Actions"
 msgstr "Temizleme Eylemlerini Tanımlama"
 
-#: tutorial/errors.rst:381
+#: tutorial/errors.rst:373
 msgid ""
 "The :keyword:`try` statement has another optional clause which is intended "
 "to define clean-up actions that must be executed under all circumstances.  "
@@ -453,7 +459,7 @@ msgstr ""
 "eylemlerini tanımlamayı amaçlayan başka bir opsiyonel yan tümceye sahiptir.  "
 "Mesela::"
 
-#: tutorial/errors.rst:395
+#: tutorial/errors.rst:387
 msgid ""
 "If a :keyword:`finally` clause is present, the :keyword:`!finally` clause "
 "will execute as the last task before the :keyword:`try` statement completes. "
@@ -467,7 +473,7 @@ msgstr ""
 "oluşturup oluşturmadığından bağımsız çalışır. Aşağıdaki noktalarda, bir "
 "istisna oluştuğunda daha karmaşık durumlar anlatılmaktadır:"
 
-#: tutorial/errors.rst:401
+#: tutorial/errors.rst:393
 msgid ""
 "If an exception occurs during execution of the :keyword:`!try` clause, the "
 "exception may be handled by an :keyword:`except` clause. If the exception is "
@@ -479,7 +485,7 @@ msgstr ""
 "bir :keyword:`!except` yan tümcesi tarafından ele alınmıyorsa, istisna :"
 "keyword:`!finally` yan tümcesi yürütüldükten sonra yeniden oluşturulur."
 
-#: tutorial/errors.rst:407
+#: tutorial/errors.rst:399
 msgid ""
 "An exception could occur during execution of an :keyword:`!except` or :"
 "keyword:`!else` clause. Again, the exception is re-raised after the :keyword:"
@@ -489,7 +495,7 @@ msgstr ""
 "sırasında bir istisna oluşabilir. Yine, istisna, :keyword:`!finally` yan "
 "tümcesi yürütüldükten sonra yeniden oluşturulur."
 
-#: tutorial/errors.rst:411
+#: tutorial/errors.rst:403
 msgid ""
 "If the :keyword:`!finally` clause executes a :keyword:`break`, :keyword:"
 "`continue` or :keyword:`return` statement, exceptions are not re-raised."
@@ -497,7 +503,7 @@ msgstr ""
 ":keyword:`!finally` yan tümcesi bir :keyword:`break`, :keyword:`continue` "
 "veya :keyword:`return` deyimini yürütürse, istisnalar yeniden oluşturulmaz."
 
-#: tutorial/errors.rst:415
+#: tutorial/errors.rst:407
 msgid ""
 "If the :keyword:`!try` statement reaches a :keyword:`break`, :keyword:"
 "`continue` or :keyword:`return` statement, the :keyword:`!finally` clause "
@@ -509,7 +515,7 @@ msgstr ""
 "keyword:`!break`, :keyword:`!continue` veya :keyword:`!return` ifadesinin "
 "yürütülmesinin hemen öncesinde yürütülür."
 
-#: tutorial/errors.rst:421
+#: tutorial/errors.rst:413
 msgid ""
 "If a :keyword:`!finally` clause includes a :keyword:`!return` statement, the "
 "returned value will be the one from the :keyword:`!finally` clause's :"
@@ -521,15 +527,15 @@ msgstr ""
 "return` ifadesindeki değer olacaktır, :keyword:`!try` yan tümcesinin :"
 "keyword:`!return` ifadesindeki değer değil."
 
-#: tutorial/errors.rst:427
+#: tutorial/errors.rst:419
 msgid "For example::"
 msgstr "Mesela::"
 
-#: tutorial/errors.rst:438
+#: tutorial/errors.rst:430
 msgid "A more complicated example::"
 msgstr "Daha karmaşık bir örnek::"
 
-#: tutorial/errors.rst:463
+#: tutorial/errors.rst:455
 msgid ""
 "As you can see, the :keyword:`finally` clause is executed in any event.  "
 "The :exc:`TypeError` raised by dividing two strings is not handled by the :"
@@ -541,7 +547,7 @@ msgstr ""
 "tarafından işlenmez ve bu nedenle :keyword:`!finally` yan tümcesi "
 "yürütüldikten sonra yeniden yükseltilir."
 
-#: tutorial/errors.rst:468
+#: tutorial/errors.rst:460
 msgid ""
 "In real world applications, the :keyword:`finally` clause is useful for "
 "releasing external resources (such as files or network connections), "
@@ -551,11 +557,11 @@ msgstr ""
 "kullanımının başarılı olup olmadığına bakılmaksızın dış kaynakları (dosyalar "
 "veya ağ bağlantıları gibi) serbest bırakmak için yararlıdır."
 
-#: tutorial/errors.rst:476
+#: tutorial/errors.rst:468
 msgid "Predefined Clean-up Actions"
 msgstr "Önceden Tanımlanmış Temizleme Eylemleri"
 
-#: tutorial/errors.rst:478
+#: tutorial/errors.rst:470
 msgid ""
 "Some objects define standard clean-up actions to be undertaken when the "
 "object is no longer needed, regardless of whether or not the operation using "
@@ -567,7 +573,7 @@ msgstr ""
 "standart temizleme eylemlerini tanımlar. Bir dosyayı açmaya ve içeriğini "
 "ekrana yazdırmaya çalışan aşağıdaki örneğe bakın. ::"
 
-#: tutorial/errors.rst:486
+#: tutorial/errors.rst:478
 msgid ""
 "The problem with this code is that it leaves the file open for an "
 "indeterminate amount of time after this part of the code has finished "
@@ -582,7 +588,7 @@ msgstr ""
 "keyword:`with` ifadesi, dosyalar gibi nesnelerin her zaman hızlı ve doğru "
 "temizlenmesini sağlayacak şekilde kullanılmasına izin verir. ::"
 
-#: tutorial/errors.rst:496
+#: tutorial/errors.rst:488
 msgid ""
 "After the statement is executed, the file *f* is always closed, even if a "
 "problem was encountered while processing the lines. Objects which, like "
@@ -592,3 +598,101 @@ msgstr ""
 "İfade çalıştırıldıktan sonra, satırlar işlenirken bir sorunla karşılaşılsa "
 "bile *f* dosyası her zaman kapatılır. Dosyalar gibi önceden tanımlanmış "
 "temizleme eylemleri sağlayan nesneler dokümantasyonlarında bunu gösterir."
+
+#: tutorial/errors.rst:496
+msgid "Raising and Handling Multiple Unrelated Exceptions"
+msgstr ""
+
+#: tutorial/errors.rst:498
+msgid ""
+"There are situations where it is necessary to report several exceptions that "
+"have occurred. This is often the case in concurrency frameworks, when "
+"several tasks may have failed in parallel, but there are also other use "
+"cases where it is desirable to continue execution and collect multiple "
+"errors rather than raise the first exception."
+msgstr ""
+
+#: tutorial/errors.rst:504
+msgid ""
+"The builtin :exc:`ExceptionGroup` wraps a list of exception instances so "
+"that they can be raised together. It is an exception itself, so it can be "
+"caught like any other exception. ::"
+msgstr ""
+
+#: tutorial/errors.rst:530
+msgid ""
+"By using ``except*`` instead of ``except``, we can selectively handle only "
+"the exceptions in the group that match a certain type. In the following "
+"example, which shows a nested exception group, each ``except*`` clause "
+"extracts from the group exceptions of a certain type while letting all other "
+"exceptions propagate to other clauses and eventually to be reraised. ::"
+msgstr ""
+
+#: tutorial/errors.rst:564
+msgid ""
+"Note that the exceptions nested in an exception group must be instances, not "
+"types. This is because in practice the exceptions would typically be ones "
+"that have already been raised and caught by the program, along the following "
+"pattern::"
+msgstr ""
+
+#: tutorial/errors.rst:582
+#, fuzzy
+msgid "Enriching Exceptions with Notes"
+msgstr "Hata Ortaya Çıkartma"
+
+#: tutorial/errors.rst:584
+msgid ""
+"When an exception is created in order to be raised, it is usually "
+"initialized with information that describes the error that has occurred. "
+"There are cases where it is useful to add information after the exception "
+"was caught. For this purpose, exceptions have a method ``add_note(note)`` "
+"that accepts a string and adds it to the exception's notes list. The "
+"standard traceback rendering includes all notes, in the order they were "
+"added, after the exception. ::"
+msgstr ""
+
+#: tutorial/errors.rst:605
+msgid ""
+"For example, when collecting exceptions into an exception group, we may want "
+"to add context information for the individual errors. In the following each "
+"exception in the group has a note indicating when this error has occurred. ::"
+msgstr ""
+
+#~ msgid ""
+#~ "All exceptions inherit from :exc:`BaseException`, and so it can be used "
+#~ "to serve as a wildcard. Use this with extreme caution, since it is easy "
+#~ "to mask a real programming error in this way!  It can also be used to "
+#~ "print an error message and then re-raise the exception (allowing a caller "
+#~ "to handle the exception as well)::"
+#~ msgstr ""
+#~ "Tüm özel durumlar :exc:`BaseException` 'dan kalıt alınır ve böylece joker "
+#~ "karakter olarak kullanılabilir. Bunu çok dikkatli kullanın, çünkü gerçek "
+#~ "bir programlama hatasını bu şekilde maskelemek kolaydır!  Ayrıca, bir "
+#~ "hata iletisi yazdırmak ve sonra özel durumu yeniden yükseltmek için de "
+#~ "kullanılabilir (çağıranın özel durumu işlemesine izin vermek)::"
+
+#~ msgid ""
+#~ "Alternatively the last except clause may omit the exception name(s), "
+#~ "however the exception value must then be retrieved from ``sys.exc_info()"
+#~ "[1]``."
+#~ msgstr ""
+#~ "Alternatif olarak, son özel durum yan tümcesi özel durum ad(ları)nı "
+#~ "atlayabilir, ancak özel durum değeri daha sonra ``sys.exc_info()[1]`` "
+#~ "'den alınmalıdır."
+
+#~ msgid ""
+#~ "The :keyword:`raise` statement allows an optional :keyword:`from<raise>` "
+#~ "which enables chaining exceptions. For example::"
+#~ msgstr ""
+#~ ":keyword:`raise` ifadesi, zincirleme istisnalar sağlayan opsiyonel bir :"
+#~ "keyword:`from<raise>`e izin verir. Örneğin::"
+
+#~ msgid ""
+#~ "Exception chaining happens automatically when an exception is raised "
+#~ "inside an :keyword:`except` or :keyword:`finally` section. This can be "
+#~ "disabled by using ``from None`` idiom:"
+#~ msgstr ""
+#~ "İstisna zincirlemesi, bir :keyword:`except` veya :keyword:`finally` "
+#~ "bölümünde bir istisna açıldığında otomatik olarak gerçekleşir. Bu, ``from "
+#~ "None`` deyimi kullanılarak devre dışı bırakılabilir:"

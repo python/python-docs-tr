@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-11-30 20:01+0300\n"
 "PO-Revision-Date: 2022-01-23 20:04+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -26,9 +26,10 @@ msgid "Invoking the Interpreter"
 msgstr "Yorumlayıcıyı Çağırma"
 
 #: tutorial/interpreter.rst:13
+#, fuzzy
 msgid ""
 "The Python interpreter is usually installed as :file:`/usr/local/bin/"
-"python3.10` on those machines where it is available; putting :file:`/usr/"
+"python3.11` on those machines where it is available; putting :file:`/usr/"
 "local/bin` in your Unix shell's search path makes it possible to start it by "
 "typing the command:"
 msgstr ""
@@ -49,9 +50,10 @@ msgstr ""
 "popüler bir alternatif konumdur.)"
 
 #: tutorial/interpreter.rst:26
+#, fuzzy
 msgid ""
 "On Windows machines where you have installed Python from the :ref:`Microsoft "
-"Store <windows-store>`, the :file:`python3.10` command will be available. If "
+"Store <windows-store>`, the :file:`python3.11` command will be available. If "
 "you have the :ref:`py.exe launcher <launcher>` installed, you can use the :"
 "file:`py` command. See :ref:`setting-envvars` for other ways to launch "
 "Python."
@@ -110,12 +112,13 @@ msgstr ""
 "çağrıldığında, o dosyadan bir *komut dosyası* okur ve yürütür."
 
 #: tutorial/interpreter.rst:51
+#, fuzzy
 msgid ""
 "A second way of starting the interpreter is ``python -c command [arg] ...``, "
 "which executes the statement(s) in *command*, analogous to the shell's :"
 "option:`-c` option.  Since Python statements often contain spaces or other "
 "characters that are special to the shell, it is usually advised to quote "
-"*command* in its entirety with single quotes."
+"*command* in its entirety."
 msgstr ""
 "Yorumlayıcıyı başlatmanın ikinci bir yolu, kabuğun :option:`-c` seçeneğine "
 "benzer şekilde *komut* içindeki ifadeleri yürüten ``python -c *komut* "

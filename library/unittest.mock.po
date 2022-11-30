@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-11-30 20:01+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -261,7 +261,7 @@ msgstr ""
 
 #: library/unittest.mock.rst:265
 msgid ""
-"*unsafe*: By default, accessing any attribute with name starting with "
+"*unsafe*: By default, accessing any attribute whose name starts with "
 "*assert*, *assret*, *asert*, *aseert* or *assrt* will raise an :exc:"
 "`AttributeError`. Passing ``unsafe=True`` will allow access to these "
 "attributes."
@@ -1505,8 +1505,9 @@ msgid ""
 "Both patch_ and patch.object_ correctly patch and restore descriptors: class "
 "methods, static methods and properties. You should patch these on the "
 "*class* rather than an instance. They also work with *some* objects that "
-"proxy attribute access, like the `django settings object <http://www."
-"voidspace.org.uk/python/weblog/arch_d7_2010_12_04.shtml#e1198>`_."
+"proxy attribute access, like the `django settings object <https://web."
+"archive.org/web/20200603181648/http://www.voidspace.org.uk/python/weblog/"
+"arch_d7_2010_12_04.shtml#e1198>`_."
 msgstr ""
 
 #: library/unittest.mock.rst:1951
@@ -1600,10 +1601,9 @@ msgstr ""
 #: library/unittest.mock.rst:2022
 msgid ""
 "The numeric methods (including right hand and in-place variants): "
-"``__add__``, ``__sub__``, ``__mul__``, ``__matmul__``, ``__div__``, "
-"``__truediv__``, ``__floordiv__``, ``__mod__``, ``__divmod__``, "
-"``__lshift__``, ``__rshift__``, ``__and__``, ``__xor__``, ``__or__``, and "
-"``__pow__``"
+"``__add__``, ``__sub__``, ``__mul__``, ``__matmul__``, ``__truediv__``, "
+"``__floordiv__``, ``__mod__``, ``__divmod__``, ``__lshift__``, "
+"``__rshift__``, ``__and__``, ``__xor__``, ``__or__``, and ``__pow__``"
 msgstr ""
 
 #: library/unittest.mock.rst:2026
@@ -1844,7 +1844,7 @@ msgid ""
 msgstr ""
 
 #: library/unittest.mock.rst:2168
-msgid "``__getformat__`` and ``__setformat__``"
+msgid "``__getformat__``"
 msgstr ""
 
 #: library/unittest.mock.rst:2172
@@ -1932,9 +1932,9 @@ msgstr ""
 
 #: library/unittest.mock.rst:2248
 msgid ""
-"``call_list`` is particularly useful for making assertions on \"chained calls"
-"\". A chained call is multiple calls on a single line of code. This results "
-"in multiple entries in :attr:`~Mock.mock_calls` on a mock. Manually "
+"``call_list`` is particularly useful for making assertions on \"chained "
+"calls\". A chained call is multiple calls on a single line of code. This "
+"results in multiple entries in :attr:`~Mock.mock_calls` on a mock. Manually "
 "constructing the sequence of calls can be tedious."
 msgstr ""
 
@@ -2051,10 +2051,10 @@ msgstr ""
 #: library/unittest.mock.rst:2383
 msgid ""
 ":data:`FILTER_DIR` is a module level variable that controls the way mock "
-"objects respond to :func:`dir` (only for Python 2.6 or more recent). The "
-"default is ``True``, which uses the filtering described below, to only show "
-"useful members. If you dislike this filtering, or need to switch it off for "
-"diagnostic purposes, then set ``mock.FILTER_DIR = False``."
+"objects respond to :func:`dir`. The default is ``True``, which uses the "
+"filtering described below, to only show useful members. If you dislike this "
+"filtering, or need to switch it off for diagnostic purposes, then set ``mock."
+"FILTER_DIR = False``."
 msgstr ""
 
 #: library/unittest.mock.rst:2389

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-11-30 20:01+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -135,7 +135,7 @@ msgstr ""
 
 #: library/tarfile.rst:64
 msgid ""
-"Create a tarfile exclusively without compression. Raise an :exc:"
+"Create a tarfile exclusively without compression. Raise a :exc:"
 "`FileExistsError` exception if it already exists."
 msgstr ""
 
@@ -145,7 +145,7 @@ msgstr ""
 
 #: library/tarfile.rst:69
 msgid ""
-"Create a tarfile with gzip compression. Raise an :exc:`FileExistsError` "
+"Create a tarfile with gzip compression. Raise a :exc:`FileExistsError` "
 "exception if it already exists."
 msgstr ""
 
@@ -155,7 +155,7 @@ msgstr ""
 
 #: library/tarfile.rst:73
 msgid ""
-"Create a tarfile with bzip2 compression. Raise an :exc:`FileExistsError` "
+"Create a tarfile with bzip2 compression. Raise a :exc:`FileExistsError` "
 "exception if it already exists."
 msgstr ""
 
@@ -165,7 +165,7 @@ msgstr ""
 
 #: library/tarfile.rst:77
 msgid ""
-"Create a tarfile with lzma compression. Raise an :exc:`FileExistsError` "
+"Create a tarfile with lzma compression. Raise a :exc:`FileExistsError` "
 "exception if it already exists."
 msgstr ""
 
@@ -1029,7 +1029,7 @@ msgid ""
 "large files and stores pathnames in a portable way. Modern tar "
 "implementations, including GNU tar, bsdtar/libarchive and star, fully "
 "support extended *pax* features; some old or unmaintained libraries may not, "
-"but should treat *pax* archives as if they were in the universally-supported "
+"but should treat *pax* archives as if they were in the universally supported "
 "*ustar* format. It is the current default format for new archives."
 msgstr ""
 

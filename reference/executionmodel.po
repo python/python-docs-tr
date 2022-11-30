@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-11-30 20:01+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,7 +92,8 @@ msgstr ""
 #: reference/executionmodel.rst:69
 msgid ""
 "after :keyword:`!as` in a :keyword:`with` statement, :keyword:`except` "
-"clause or in the as-pattern in structural pattern matching,"
+"clause, :keyword:`except* <except_star>` clause, or in the as-pattern in "
+"structural pattern matching,"
 msgstr ""
 
 #: reference/executionmodel.rst:71
@@ -313,12 +314,12 @@ msgstr ""
 msgid ""
 "Exceptions are identified by class instances.  The :keyword:`except` clause "
 "is selected depending on the class of the instance: it must reference the "
-"class of the instance or a base class thereof.  The instance can be received "
-"by the handler and can carry additional information about the exceptional "
-"condition."
+"class of the instance or a :term:`non-virtual base class <abstract base "
+"class>` thereof. The instance can be received by the handler and can carry "
+"additional information about the exceptional condition."
 msgstr ""
 
-#: reference/executionmodel.rst:267
+#: reference/executionmodel.rst:268
 msgid ""
 "Exception messages are not part of the Python API.  Their contents may "
 "change from one version of Python to the next without warning and should not "
@@ -326,17 +327,17 @@ msgid ""
 "interpreter."
 msgstr ""
 
-#: reference/executionmodel.rst:271
+#: reference/executionmodel.rst:272
 msgid ""
 "See also the description of the :keyword:`try` statement in section :ref:"
 "`try` and :keyword:`raise` statement in section :ref:`raise`."
 msgstr ""
 
-#: reference/executionmodel.rst:276
+#: reference/executionmodel.rst:277
 msgid "Footnotes"
 msgstr ""
 
-#: reference/executionmodel.rst:277
+#: reference/executionmodel.rst:278
 msgid ""
 "This limitation occurs because the code that is executed by these operations "
 "is not available at the time the module is compiled."

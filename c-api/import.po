@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-11-30 20:01+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -272,16 +272,22 @@ msgid ""
 "h`, is::"
 msgstr ""
 
-#: c-api/import.rst:264
+#: c-api/import.rst:262
 msgid ""
-"This pointer is initialized to point to an array of :c:type:`struct _frozen` "
+"The new ``is_package`` field indicates whether the module is a package or "
+"not. This replaces setting the ``size`` field to a negative value."
+msgstr ""
+
+#: c-api/import.rst:268
+msgid ""
+"This pointer is initialized to point to an array of :c:struct:`_frozen` "
 "records, terminated by one whose members are all ``NULL`` or zero.  When a "
 "frozen module is imported, it is searched in this table.  Third-party code "
 "could play tricks with this to provide a dynamically created collection of "
 "frozen modules."
 msgstr ""
 
-#: c-api/import.rst:272
+#: c-api/import.rst:276
 msgid ""
 "Add a single module to the existing table of built-in modules.  This is a "
 "convenience wrapper around :c:func:`PyImport_ExtendInittab`, returning "
@@ -291,7 +297,7 @@ msgid ""
 "before :c:func:`Py_Initialize`."
 msgstr ""
 
-#: c-api/import.rst:282
+#: c-api/import.rst:286
 msgid ""
 "Structure describing a single entry in the list of built-in modules.  Each "
 "of these structures gives the name and initialization function for a module "
@@ -301,7 +307,7 @@ msgid ""
 "structure is defined in :file:`Include/import.h` as::"
 msgstr ""
 
-#: c-api/import.rst:297
+#: c-api/import.rst:301
 msgid ""
 "Add a collection of modules to the table of built-in modules.  The *newtab* "
 "array must end with a sentinel entry which contains ``NULL`` for the :attr:"
@@ -312,7 +318,7 @@ msgid ""
 "`Py_Initialize`."
 msgstr ""
 
-#: c-api/import.rst:304
+#: c-api/import.rst:308
 msgid ""
 "If Python is initialized multiple times, :c:func:`PyImport_AppendInittab` "
 "or :c:func:`PyImport_ExtendInittab` must be called before each Python "

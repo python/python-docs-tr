@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-11-30 20:01+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -178,13 +178,13 @@ msgstr ""
 msgid ""
 "The language comes with a large standard library that covers areas such as "
 "string processing (regular expressions, Unicode, calculating differences "
-"between files), internet protocols (HTTP, FTP, SMTP, XML-RPC, POP, IMAP, CGI "
-"programming), software engineering (unit testing, logging, profiling, "
-"parsing Python code), and operating system interfaces (system calls, "
-"filesystems, TCP/IP sockets).  Look at the table of contents for :ref:"
-"`library-index` to get an idea of what's available.  A wide variety of third-"
-"party extensions are also available.  Consult `the Python Package Index "
-"<https://pypi.org>`_ to find packages of interest to you."
+"between files), internet protocols (HTTP, FTP, SMTP, XML-RPC, POP, IMAP), "
+"software engineering (unit testing, logging, profiling, parsing Python "
+"code), and operating system interfaces (system calls, filesystems, TCP/IP "
+"sockets).  Look at the table of contents for :ref:`library-index` to get an "
+"idea of what's available.  A wide variety of third-party extensions are also "
+"available.  Consult `the Python Package Index <https://pypi.org>`_ to find "
+"packages of interest to you."
 msgstr ""
 
 #: faq/general.rst:126
@@ -192,15 +192,31 @@ msgid "How does the Python version numbering scheme work?"
 msgstr ""
 
 #: faq/general.rst:128
+msgid "Python versions are numbered \"A.B.C\" or \"A.B\":"
+msgstr ""
+
+#: faq/general.rst:130
 msgid ""
-"Python versions are numbered A.B.C or A.B.  A is the major version number -- "
-"it is only incremented for really major changes in the language.  B is the "
-"minor version number, incremented for less earth-shattering changes.  C is "
-"the micro-level -- it is incremented for each bugfix release.  See :pep:`6` "
-"for more information about bugfix releases."
+"*A* is the major version number -- it is only incremented for really major "
+"changes in the language."
+msgstr ""
+
+#: faq/general.rst:132
+msgid ""
+"*B* is the minor version number -- it is incremented for less earth-"
+"shattering changes."
 msgstr ""
 
 #: faq/general.rst:134
+msgid ""
+"*C* is the micro version number -- it is incremented for each bugfix release."
+msgstr ""
+
+#: faq/general.rst:136
+msgid "See :pep:`6` for more information about bugfix releases."
+msgstr ""
+
+#: faq/general.rst:138
 msgid ""
 "Not all releases are bugfix releases.  In the run-up to a new major release, "
 "a series of development releases are made, denoted as alpha, beta, or "
@@ -211,17 +227,31 @@ msgid ""
 "except as needed to fix critical bugs."
 msgstr ""
 
-#: faq/general.rst:142
-msgid ""
-"Alpha, beta and release candidate versions have an additional suffix.  The "
-"suffix for an alpha version is \"aN\" for some small number N, the suffix "
-"for a beta version is \"bN\" for some small number N, and the suffix for a "
-"release candidate version is \"rcN\" for some small number N.  In other "
-"words, all versions labeled 2.0aN precede the versions labeled 2.0bN, which "
-"precede versions labeled 2.0rcN, and *those* precede 2.0."
+#: faq/general.rst:146
+msgid "Alpha, beta and release candidate versions have an additional suffix:"
+msgstr ""
+
+#: faq/general.rst:148
+msgid "The suffix for an alpha version is \"aN\" for some small number *N*."
 msgstr ""
 
 #: faq/general.rst:149
+msgid "The suffix for a beta version is \"bN\" for some small number *N*."
+msgstr ""
+
+#: faq/general.rst:150
+msgid ""
+"The suffix for a release candidate version is \"rcN\" for some small number "
+"*N*."
+msgstr ""
+
+#: faq/general.rst:152
+msgid ""
+"In other words, all versions labeled *2.0aN* precede the versions labeled "
+"*2.0bN*, which precede versions labeled *2.0rcN*, and *those* precede 2.0."
+msgstr ""
+
+#: faq/general.rst:155
 msgid ""
 "You may also find version numbers with a \"+\" suffix, e.g. \"2.2+\".  These "
 "are unreleased versions, built directly from the CPython development "
@@ -230,24 +260,24 @@ msgid ""
 "e.g. \"2.4a0\"."
 msgstr ""
 
-#: faq/general.rst:154
+#: faq/general.rst:160
 msgid ""
 "See also the documentation for :data:`sys.version`, :data:`sys.hexversion`, "
 "and :data:`sys.version_info`."
 msgstr ""
 
-#: faq/general.rst:159
+#: faq/general.rst:165
 msgid "How do I obtain a copy of the Python source?"
 msgstr ""
 
-#: faq/general.rst:161
+#: faq/general.rst:167
 msgid ""
 "The latest Python source distribution is always available from python.org, "
 "at https://www.python.org/downloads/.  The latest development sources can be "
 "obtained at https://github.com/python/cpython/."
 msgstr ""
 
-#: faq/general.rst:165
+#: faq/general.rst:171
 msgid ""
 "The source distribution is a gzipped tar file containing the complete C "
 "source, Sphinx-formatted documentation, Python library modules, example "
@@ -255,53 +285,54 @@ msgid ""
 "source will compile and run out of the box on most UNIX platforms."
 msgstr ""
 
-#: faq/general.rst:170
+#: faq/general.rst:176
 msgid ""
 "Consult the `Getting Started section of the Python Developer's Guide "
 "<https://devguide.python.org/setup/>`__ for more information on getting the "
 "source code and compiling it."
 msgstr ""
 
-#: faq/general.rst:176
+#: faq/general.rst:182
 msgid "How do I get documentation on Python?"
 msgstr ""
 
-#: faq/general.rst:180
+#: faq/general.rst:186
 msgid ""
 "The standard documentation for the current stable version of Python is "
 "available at https://docs.python.org/3/.  PDF, plain text, and downloadable "
 "HTML versions are also available at https://docs.python.org/3/download.html."
 msgstr ""
 
-#: faq/general.rst:184
+#: faq/general.rst:190
 msgid ""
 "The documentation is written in reStructuredText and processed by `the "
-"Sphinx documentation tool <http://sphinx-doc.org/>`__.  The reStructuredText "
-"source for the documentation is part of the Python source distribution."
+"Sphinx documentation tool <https://www.sphinx-doc.org/>`__.  The "
+"reStructuredText source for the documentation is part of the Python source "
+"distribution."
 msgstr ""
 
-#: faq/general.rst:190
+#: faq/general.rst:196
 msgid "I've never programmed before. Is there a Python tutorial?"
 msgstr ""
 
-#: faq/general.rst:192
+#: faq/general.rst:198
 msgid ""
 "There are numerous tutorials and books available.  The standard "
 "documentation includes :ref:`tutorial-index`."
 msgstr ""
 
-#: faq/general.rst:195
+#: faq/general.rst:201
 msgid ""
 "Consult `the Beginner's Guide <https://wiki.python.org/moin/"
 "BeginnersGuide>`_ to find information for beginning Python programmers, "
 "including lists of tutorials."
 msgstr ""
 
-#: faq/general.rst:200
+#: faq/general.rst:206
 msgid "Is there a newsgroup or mailing list devoted to Python?"
 msgstr ""
 
-#: faq/general.rst:202
+#: faq/general.rst:208
 msgid ""
 "There is a newsgroup, :newsgroup:`comp.lang.python`, and a mailing list, "
 "`python-list <https://mail.python.org/mailman/listinfo/python-list>`_.  The "
@@ -311,7 +342,7 @@ msgid ""
 "Usenet readers are often more able to cope with this volume."
 msgstr ""
 
-#: faq/general.rst:209
+#: faq/general.rst:215
 msgid ""
 "Announcements of new software releases and events can be found in comp.lang."
 "python.announce, a low-traffic moderated list that receives about five "
@@ -319,17 +350,17 @@ msgid ""
 "<https://mail.python.org/mailman/listinfo/python-announce-list>`_."
 msgstr ""
 
-#: faq/general.rst:214
+#: faq/general.rst:220
 msgid ""
 "More info about other mailing lists and newsgroups can be found at https://"
 "www.python.org/community/lists/."
 msgstr ""
 
-#: faq/general.rst:219
+#: faq/general.rst:225
 msgid "How do I get a beta test version of Python?"
 msgstr ""
 
-#: faq/general.rst:221
+#: faq/general.rst:227
 msgid ""
 "Alpha and beta releases are available from https://www.python.org/"
 "downloads/.  All releases are announced on the comp.lang.python and comp."
@@ -337,30 +368,20 @@ msgid ""
 "python.org/; an RSS feed of news is available."
 msgstr ""
 
-#: faq/general.rst:226
+#: faq/general.rst:232
 msgid ""
 "You can also access the development version of Python through Git.  See `The "
 "Python Developer's Guide <https://devguide.python.org/>`_ for details."
 msgstr ""
 
-#: faq/general.rst:231
+#: faq/general.rst:237
 msgid "How do I submit bug reports and patches for Python?"
 msgstr ""
 
-#: faq/general.rst:233
+#: faq/general.rst:239
 msgid ""
-"To report a bug or submit a patch, please use the Roundup installation at "
-"https://bugs.python.org/."
-msgstr ""
-
-#: faq/general.rst:236
-msgid ""
-"You must have a Roundup account to report bugs; this makes it possible for "
-"us to contact you if we have follow-up questions.  It will also enable "
-"Roundup to send you updates as we act on your bug. If you had previously "
-"used SourceForge to report bugs to Python, you can obtain your Roundup "
-"password through Roundup's `password reset procedure <https://bugs.python."
-"org/user?@template=forgotten>`_."
+"To report a bug or submit a patch, use the issue tracker at https://github."
+"com/python/cpython/issues."
 msgstr ""
 
 #: faq/general.rst:242
@@ -413,7 +434,7 @@ msgstr ""
 #: faq/general.rst:272
 msgid ""
 "The Python project's infrastructure is located all over the world and is "
-"managed by the Python Infrastructure Team. Details `here <http://infra.psf."
+"managed by the Python Infrastructure Team. Details `here <https://infra.psf."
 "io>`__."
 msgstr ""
 
@@ -469,7 +490,7 @@ msgid ""
 "<https://www.python.org/downloads/>`_.  There are two production-ready "
 "versions of Python: 2.x and 3.x. The recommended version is 3.x, which is "
 "supported by most widely used libraries.  Although 2.x is still widely used, "
-"`it is not maintained anymore <https://www.python.org/dev/peps/pep-0373/>`_."
+"`it is not maintained anymore <https://peps.python.org/pep-0373/>`_."
 msgstr ""
 
 #: faq/general.rst:316
@@ -510,8 +531,8 @@ msgstr ""
 #: faq/general.rst:337
 msgid ""
 "High-profile Python projects include `the Mailman mailing list manager "
-"<http://www.list.org>`_ and `the Zope application server <http://www.zope."
-"org>`_.  Several Linux distributions, most notably `Red Hat <https://www."
+"<https://www.list.org>`_ and `the Zope application server <https://www.zope."
+"dev>`_.  Several Linux distributions, most notably `Red Hat <https://www."
 "redhat.com>`_, have written part or all of their installer and system "
 "administration software in Python.  Companies that use Python internally "
 "include Google, Yahoo, and Lucasfilm Ltd."
@@ -523,11 +544,11 @@ msgstr ""
 
 #: faq/general.rst:348
 msgid ""
-"See https://www.python.org/dev/peps/ for the Python Enhancement Proposals "
-"(PEPs). PEPs are design documents describing a suggested new feature for "
-"Python, providing a concise technical specification and a rationale.  Look "
-"for a PEP titled \"Python X.Y Release Schedule\", where X.Y is a version "
-"that hasn't been publicly released yet."
+"See https://peps.python.org/ for the Python Enhancement Proposals (PEPs). "
+"PEPs are design documents describing a suggested new feature for Python, "
+"providing a concise technical specification and a rationale.  Look for a PEP "
+"titled \"Python X.Y Release Schedule\", where X.Y is a version that hasn't "
+"been publicly released yet."
 msgstr ""
 
 #: faq/general.rst:354
@@ -620,12 +641,12 @@ msgstr ""
 #: faq/general.rst:437
 msgid ""
 "There are also good IDEs for Python.  IDLE is a cross-platform IDE for "
-"Python that is written in Python using Tkinter.  PythonWin is a Windows-"
-"specific IDE. Emacs users will be happy to know that there is a very good "
-"Python mode for Emacs.  All of these programming environments provide syntax "
-"highlighting, auto-indenting, and access to the interactive interpreter "
-"while coding.  Consult `the Python wiki <https://wiki.python.org/moin/"
-"PythonEditors>`_ for a full list of Python editing environments."
+"Python that is written in Python using Tkinter. Emacs users will be happy to "
+"know that there is a very good Python mode for Emacs.  All of these "
+"programming environments provide syntax highlighting, auto-indenting, and "
+"access to the interactive interpreter while coding.  Consult `the Python "
+"wiki <https://wiki.python.org/moin/PythonEditors>`_ for a full list of "
+"Python editing environments."
 msgstr ""
 
 #: faq/general.rst:445
