@@ -1,0 +1,125 @@
+# Python Documentation Turkish Translation
+# Copyright (C) 2001-2022, Python Software Foundation
+# This file is distributed under the same license as the Python package.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python 3.11\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-30 20:01+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: c-api/frame.rst:4
+msgid "Frame Objects"
+msgstr ""
+
+#: c-api/frame.rst:8
+msgid "The C structure of the objects used to describe frame objects."
+msgstr ""
+
+#: c-api/frame.rst:10
+msgid "There are no public members in this structure."
+msgstr ""
+
+#: c-api/frame.rst:12
+msgid ""
+"The members of this structure were removed from the public C API. Refer to "
+"the :ref:`What's New entry <pyframeobject-3.11-hiding>` for details."
+msgstr ""
+
+#: c-api/frame.rst:17
+msgid ""
+"The :c:func:`PyEval_GetFrame` and :c:func:`PyThreadState_GetFrame` functions "
+"can be used to get a frame object."
+msgstr ""
+
+#: c-api/frame.rst:20
+msgid "See also :ref:`Reflection <reflection>`."
+msgstr ""
+
+#: c-api/frame.rst:24
+msgid ""
+"The type of frame objects. It is the same object as :py:class:`types."
+"FrameType` in the Python layer."
+msgstr ""
+
+#: c-api/frame.rst:29
+msgid ""
+"Previously, this type was only available after including ``<frameobject.h>``."
+msgstr ""
+
+#: c-api/frame.rst:34
+msgid "Return non-zero if *obj* is a frame object."
+msgstr ""
+
+#: c-api/frame.rst:38
+msgid ""
+"Previously, this function was only available after including ``<frameobject."
+"h>``."
+msgstr ""
+
+#: c-api/frame.rst:43
+msgid "Get the *frame* next outer frame."
+msgstr ""
+
+#: c-api/frame.rst:45
+msgid ""
+"Return a :term:`strong reference`, or ``NULL`` if *frame* has no outer frame."
+msgstr ""
+
+#: c-api/frame.rst:53
+msgid "Get the *frame*'s ``f_builtins`` attribute."
+msgstr ""
+
+#: c-api/frame.rst:86
+msgid "Return a :term:`strong reference`. The result cannot be ``NULL``."
+msgstr ""
+
+#: c-api/frame.rst:62
+msgid "Get the *frame* code."
+msgstr ""
+
+#: c-api/frame.rst:104
+msgid "Return a :term:`strong reference`."
+msgstr ""
+
+#: c-api/frame.rst:66
+msgid "The result (frame code) cannot be ``NULL``."
+msgstr ""
+
+#: c-api/frame.rst:73
+msgid ""
+"Get the generator, coroutine, or async generator that owns this frame, or "
+"``NULL`` if this frame is not owned by a generator. Does not raise an "
+"exception, even if the return value is ``NULL``."
+msgstr ""
+
+#: c-api/frame.rst:77
+msgid "Return a :term:`strong reference`, or ``NULL``."
+msgstr ""
+
+#: c-api/frame.rst:84
+msgid "Get the *frame*'s ``f_globals`` attribute."
+msgstr ""
+
+#: c-api/frame.rst:93
+msgid "Get the *frame*'s ``f_lasti`` attribute."
+msgstr ""
+
+#: c-api/frame.rst:95
+msgid "Returns -1 if ``frame.f_lasti`` is ``None``."
+msgstr ""
+
+#: c-api/frame.rst:102
+msgid "Get the *frame*'s ``f_locals`` attribute (:class:`dict`)."
+msgstr ""
+
+#: c-api/frame.rst:111
+msgid "Return the line number that *frame* is currently executing."
+msgstr ""
