@@ -20,7 +20,7 @@ jobs:
         run: |
           git clone https://github.com/python/cpython.git ../cpython --branch=3.10
           
-      - name: Instalar dependencias
+      - name: Install dependencies
         run: |
           sudo apt update
           sudo apt install -y gettext 
