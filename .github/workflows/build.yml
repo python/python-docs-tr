@@ -1,0 +1,36 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+
+jobs:
+  test:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set Up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - name: Get CPython
+        run: |
+          git clone https://github.com/python/cpython.git ../cpython --branch=3.10
+          
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y gettext 
+          python -m pip install -r requirements.txt
+          python -m pip install -r ../cpython/Doc/requirements.txt
+      
+      - name: Sphinx lint
+        run: |
+          sphinx-lint *.po */*.po
+
+      - name: Build docs
+        run: |
+          PYTHONWARNINGS=ignore::FutureWarning,ignore::RuntimeWarning sphinx-build -j auto -W --keep-going -b html -d ../cpython/Doc/_build/doctree -D language=tr . ../cpython/Doc/_build/html

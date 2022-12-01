@@ -1,0 +1,9 @@
+repos:
+-   repo: local
+    hooks:
+    -   id: lint
+        name: Run sphinx linting
+        entry: sphinx-lint
+        language: python
+        additional_dependencies: ['sphinx-lint==0.6.7']
+        files: \.po$
