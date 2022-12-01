@@ -34,7 +34,7 @@ jobs:
 
       - name: Sphinx lint
         run: |
-          sphinx-lint */*.po *.po
+          sphinx-lint *.po */*.po
         
         # Detect changed files
       - name: Detect changed files

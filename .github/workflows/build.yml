@@ -29,7 +29,7 @@ jobs:
       
       - name: Sphinx lint
         run: |
-          sphinx-lint **/*.po
+          sphinx-lint *.po */*.po
 
       - name: Build docs
         run: |
