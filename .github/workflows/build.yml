@@ -6,19 +6,23 @@ on:
       - "**"
   pull_request:
 
+env:
+  CPYTHON_BRANCH: '3.10'
+  LANGUAGE: 'tr'
+
 jobs:
   test:
     name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Set Up Python 3.10
+      - name: Set Up Python ${{ env.CPYTHON_BRANCH }}
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: "${{ env.CPYTHON_BRANCH }}"
       - name: Get CPython
         run: |
-          git clone https://github.com/python/cpython.git ../cpython --branch=3.10
+          git clone https://github.com/python/cpython.git ../cpython --branch=${{ env.CPYTHON_BRANCH }}
           
       - name: Install dependencies
         run: |
@@ -33,4 +37,4 @@ jobs:
 
       - name: Build docs
         run: |
-          PYTHONWARNINGS=ignore::FutureWarning,ignore::RuntimeWarning sphinx-build -b html -d build/doctrees -a --keep-going -jauto -D locale_dirs=locales -D language=tr -D gettext_compact=0 -D latex_engine=xelatex -D latex_elements.inputenc= -D latex_elements.fontenc= -W ../cpython/Doc ../cpython/Doc/build/html
+          PYTHONWARNINGS=ignore::FutureWarning,ignore::RuntimeWarning make
