@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-12-02 04:25-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,9 +101,9 @@ msgstr ""
 
 #: library/fractions.rst:110
 msgid ""
-"This class method constructs a :class:`Fraction` representing the exact "
-"value of *flt*, which must be a :class:`float`. Beware that ``Fraction."
-"from_float(0.3)`` is not the same value as ``Fraction(3, 10)``."
+"Alternative constructor which only accepts instances of :class:`float` or :"
+"class:`numbers.Integral`. Beware that ``Fraction.from_float(0.3)`` is not "
+"the same value as ``Fraction(3, 10)``."
 msgstr ""
 
 #: library/fractions.rst:116
@@ -114,8 +114,8 @@ msgstr ""
 
 #: library/fractions.rst:122
 msgid ""
-"This class method constructs a :class:`Fraction` representing the exact "
-"value of *dec*, which must be a :class:`decimal.Decimal` instance."
+"Alternative constructor which only accepts instances of :class:`decimal."
+"Decimal` or :class:`numbers.Integral`."
 msgstr ""
 
 #: library/fractions.rst:127

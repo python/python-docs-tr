@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-12-02 04:25-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgstr ""
 #: c-api/type.rst:42
 msgid ""
 "Return the :c:member:`~PyTypeObject.tp_flags` member of *type*. This "
-"function is primarily meant for use with `Py_LIMITED_API`; the individual "
+"function is primarily meant for use with ``Py_LIMITED_API``; the individual "
 "flag bits are guaranteed to be stable across Python releases, but access to :"
 "c:member:`~PyTypeObject.tp_flags` itself is not part of the limited API."
 msgstr ""
@@ -358,7 +358,7 @@ msgid ""
 msgstr ""
 
 #: c-api/type.rst:275
-msgid "Slots in :c:type:`PyBufferProcs` in may be set in the unlimited API."
+msgid "Slots in :c:type:`PyBufferProcs` may be set in the unlimited API."
 msgstr ""
 
 #: c-api/type.rst:279

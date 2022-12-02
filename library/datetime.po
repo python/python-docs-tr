@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-12-02 04:25-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,9 +152,9 @@ msgstr ""
 #: library/datetime.rst:101
 msgid ""
 "An idealized time, independent of any particular day, assuming that every "
-"day has exactly 24\\*60\\*60 seconds.  (There is no notion of \"leap seconds"
-"\" here.) Attributes: :attr:`hour`, :attr:`minute`, :attr:`second`, :attr:"
-"`microsecond`, and :attr:`.tzinfo`."
+"day has exactly 24\\*60\\*60 seconds.  (There is no notion of \"leap "
+"seconds\" here.) Attributes: :attr:`hour`, :attr:`minute`, :attr:`second`, :"
+"attr:`microsecond`, and :attr:`.tzinfo`."
 msgstr ""
 
 #: library/datetime.rst:110
@@ -803,7 +803,7 @@ msgid "``date2 = date1 + timedelta``"
 msgstr ""
 
 #: library/datetime.rst:584
-msgid "*date2* is ``timedelta.days`` days removed from *date1*. (1)"
+msgid "*date2* will be ``timedelta.days`` days after *date1*. (1)"
 msgstr ""
 
 #: library/datetime.rst:587
@@ -2354,8 +2354,8 @@ msgstr ""
 
 #: library/datetime.rst:2248
 msgid ""
-"Name generated from ``offset=timedelta(0)`` is now plain `'UTC'`, not ``'UTC"
-"+00:00'``."
+"Name generated from ``offset=timedelta(0)`` is now plain ``'UTC'``, not "
+"``'UTC+00:00'``."
 msgstr ""
 
 #: library/datetime.rst:2255
@@ -2736,7 +2736,7 @@ msgstr ""
 
 #: library/datetime.rst:2376
 msgid ""
-"Week number of the year (Sunday as the first day of the week) as a zero "
+"Week number of the year (Sunday as the first day of the week) as a zero-"
 "padded decimal number. All days in a new year preceding the first Sunday are "
 "considered to be in week 0."
 msgstr ""
@@ -2755,9 +2755,9 @@ msgstr ""
 
 #: library/datetime.rst:2384
 msgid ""
-"Week number of the year (Monday as the first day of the week) as a decimal "
-"number. All days in a new year preceding the first Monday are considered to "
-"be in week 0."
+"Week number of the year (Monday as the first day of the week) as a zero-"
+"padded decimal number. All days in a new year preceding the first Monday are "
+"considered to be in week 0."
 msgstr ""
 
 #: library/datetime.rst:2392
@@ -3106,8 +3106,8 @@ msgstr ""
 #: library/datetime.rst:2586
 msgid ""
 "See R. H. van Gent's `guide to the mathematics of the ISO 8601 calendar "
-"<https://www.staff.science.uu.nl/~gent0113/calendar/isocalendar.htm>`_ for a "
-"good explanation."
+"<https://web.archive.org/web/20220531051136/https://webspace.science.uu.nl/"
+"~gent0113/calendar/isocalendar.htm>`_ for a good explanation."
 msgstr ""
 
 #: library/datetime.rst:2590

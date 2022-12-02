@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-12-02 04:25-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -314,12 +314,18 @@ msgstr ""
 
 #: howto/sorting.rst:328
 msgid ""
-"The sort routines are guaranteed to use :meth:`__lt__` when making "
-"comparisons between two objects. So, it is easy to add a standard sort order "
-"to a class by defining an :meth:`__lt__` method:"
+"The sort routines use ``<`` when making comparisons between two objects. So, "
+"it is easy to add a standard sort order to a class by defining an :meth:"
+"`__lt__` method:"
 msgstr ""
 
 #: howto/sorting.rst:338
+msgid ""
+"However, note that ``<`` can fall back to using :meth:`__gt__` if :meth:"
+"`__lt__` is not implemented (see :func:`object.__lt__`)."
+msgstr ""
+
+#: howto/sorting.rst:341
 msgid ""
 "Key functions need not depend directly on the objects being sorted. A key "
 "function can also access external resources. For instance, if the student "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-12-02 04:25-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -189,10 +189,10 @@ msgstr ""
 
 #: library/_thread.rst:164
 msgid ""
-"If the integer *waitflag* argument is present, the action depends on its "
-"value: if it is zero, the lock is only acquired if it can be acquired "
-"immediately without waiting, while if it is nonzero, the lock is acquired "
-"unconditionally as above."
+"If the *blocking* argument is present, the action depends on its value: if "
+"it is False, the lock is only acquired if it can be acquired immediately "
+"without waiting, while if it is True, the lock is acquired unconditionally "
+"as above."
 msgstr ""
 
 #: library/_thread.rst:169
@@ -200,7 +200,7 @@ msgid ""
 "If the floating-point *timeout* argument is present and positive, it "
 "specifies the maximum wait time in seconds before returning.  A negative "
 "*timeout* argument specifies an unbounded wait.  You cannot specify a "
-"*timeout* if *waitflag* is zero."
+"*timeout* if *blocking* is False."
 msgstr ""
 
 #: library/_thread.rst:174

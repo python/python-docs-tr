@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-12-02 04:25-0500\n"
 "PO-Revision-Date: 2022-04-10 14:55+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -319,10 +319,11 @@ msgid "Sockets"
 msgstr "Soketler"
 
 #: license.rst:354
+#, fuzzy
 msgid ""
 "The :mod:`socket` module uses the functions, :func:`getaddrinfo`, and :func:"
 "`getnameinfo`, which are coded in separate source files from the WIDE "
-"Project, http://www.wide.ad.jp/. ::"
+"Project, https://www.wide.ad.jp/. ::"
 msgstr ""
 ":mod:`socket` modülü, :func:`getaddrinfo` ve :func:`getnameinfo` işlevlerini "
 "kullanır, bunlar WIDE Projesi'nden http://www.wide.ad.jp/ ayrı kaynak "
@@ -406,12 +407,14 @@ msgid "strtod and dtoa"
 msgstr "strtod ve dtoa"
 
 #: license.rst:626
+#, fuzzy
 msgid ""
 "The file :file:`Python/dtoa.c`, which supplies C functions dtoa and strtod "
 "for conversion of C doubles to and from strings, is derived from the file of "
-"the same name by David M. Gay, currently available from http://www.netlib."
-"org/fp/.  The original file, as retrieved on March 16, 2009, contains the "
-"following copyright and licensing notice::"
+"the same name by David M. Gay, currently available from https://web.archive."
+"org/web/20220517033456/http://www.netlib.org/fp/dtoa.c. The original file, "
+"as retrieved on March 16, 2009, contains the following copyright and "
+"licensing notice::"
 msgstr ""
 "C double'larının dizgilere ve dizgelerden dönüştürülmesi için dtoa ve strtod "
 "C işlevlerini sağlayan :file:`Python/dtoa.c` dosyası, şu anda http://www."
@@ -515,3 +518,12 @@ msgstr ""
 ":mod:`test` paketindeki C14N 2.0 test paketi (``Lib/test/xmltestdata/c14n-20/"
 "``), https://www.w3.org/TR/xml-c14n2-testcases/ adresindeki W3C web "
 "sitesinden alınmıştır ve 3 maddeli BSD lisansı altında dağıtılmaktadır::"
+
+#: license.rst:990
+msgid "Audioop"
+msgstr ""
+
+#: license.rst:992
+msgid ""
+"The audioop module uses the code base in g771.c file of the SoX project::"
+msgstr ""
