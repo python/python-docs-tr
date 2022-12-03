@@ -442,7 +442,7 @@ msgstr ""
 "Bunu C'de yapmanın en kolay yolu :c:func:`PyRun_InteractiveLoop` çağırmak "
 "(belki ayrı bir iş parçacığında) ve Python yorumlayıcısının girdiyi sizin "
 "için işlemesine izin vermektir. Ayrıca :c:func:"
-"`PyOS_ReadlineFunctionPointer`ı özel girdi fonksiyonunuza işaret edecek "
+"`PyOS_ReadlineFunctionPointer` 'ı özel girdi fonksiyonunuza işaret edecek "
 "şekilde ayarlayabilirsiniz. Daha fazla ipucu için ``Modules/readline.c`` ve "
 "``Parser/myreadline.c`` dosyalarına bakın."
 
