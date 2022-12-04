@@ -85,5 +85,9 @@ jobs:
         run: |
           make -C $HOME/cpython/Doc clean-venv
           make -C $HOME/cpython/Doc venv
+      - name: Get latest stable sphinx
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install sphinx
       - name: sphinx-build
         run: make -C $HOME/cpython/Doc SPHINXOPTS="-q -j4 -D locale_dirs=$HOME/locales -D language=tr -D gettext_compact=0" autobuild-dev-html
