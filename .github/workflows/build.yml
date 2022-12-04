@@ -76,17 +76,12 @@ jobs:
           else
             git -C ~/cpython fetch
           fi
+          git -C ~/cpython checkout $(grep ^CPYTHON_CURRENT_COMMIT Makefile| cut -d= -f2)
       - name: Prepare build hierarchy
         run: |
-          sudo apt update && sudo apt install -y gettext
           mkdir -p ~/locales/tr/LC_MESSAGES/
           cp -uv --parents *.po */*.po ~/locales/tr/LC_MESSAGES/
-          # cd ~/locales/tr/LC_MESSAGES/
-          # find . -name "*.po" -execdir msgfmt {} -o {}.mo \;
-          # find . -name "*.po.mo" -execdir bash -c 'mv "$1" "${1%.po.mo}.mo"' _ {} \;
-          # cd ~/work/python-docs-tr/python-docs-tr
           # git -C ~/cpython checkout $(grep ^CPYTHON_CURRENT_COMMIT Makefile| cut -d= -f2)
-          # tree -L 2 ~/locales/tr/LC_MESSAGES/
       - name: Prepare venv
         run: |
           make -C $HOME/cpython/Doc clean-venv
