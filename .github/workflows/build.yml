@@ -87,4 +87,6 @@ jobs:
           make -C $HOME/cpython/Doc clean-venv
           make -C $HOME/cpython/Doc venv
       - name: sphinx-build
-        run: make -C $HOME/cpython/Doc SPHINXOPTS="-q -j4 -D locale_dirs=$HOME/locales -D language=tr -D gettext_compact=0" autobuild-dev-html
+        run: |
+          git -C ~/cpython branch
+          make -C $HOME/cpython/Doc SPHINXOPTS="-q -j4 -D locale_dirs=$HOME/locales -D language=tr -D gettext_compact=0" autobuild-dev-html
