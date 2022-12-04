@@ -1,40 +1,40 @@
-name: Build
+# name: Build
 
-on:
-  push:
-    branches:
-      - "**"
-  pull_request:
+# on:
+#   push:
+#     branches:
+#       - "**"
+#   pull_request:
 
-env:
-  CPYTHON_BRANCH: "3.10"
-  LANGUAGE: "tr"
+# env:
+#   CPYTHON_BRANCH: "3.10"
+#   LANGUAGE: "tr"
 
-jobs:
-  test:
-    name: Build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set Up Python ${{ env.CPYTHON_BRANCH }}
-        uses: actions/setup-python@v4
-        with:
-          python-version: "${{ env.CPYTHON_BRANCH }}"
-      - name: Get CPython
-        run: |
-          git clone https://github.com/python/cpython.git ../cpython --branch=${{ env.CPYTHON_BRANCH }}
+# jobs:
+#   test:
+#     name: Build
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - name: Set Up Python ${{ env.CPYTHON_BRANCH }}
+#         uses: actions/setup-python@v4
+#         with:
+#           python-version: "${{ env.CPYTHON_BRANCH }}"
+#       - name: Get CPython
+#         run: |
+#           git clone https://github.com/python/cpython.git ../cpython --branch=${{ env.CPYTHON_BRANCH }}
           
-      - name: Install dependencies
-        run: |
-          sudo apt update
-          sudo apt install -y gettext 
-          python -m pip install -r requirements.txt
-          python -m pip install -r ../cpython/Doc/requirements.txt
+#       - name: Install dependencies
+#         run: |
+#           sudo apt update
+#           sudo apt install -y gettext 
+#           python -m pip install -r requirements.txt
+#           python -m pip install -r ../cpython/Doc/requirements.txt
       
-      - name: Sphinx lint
-        run: |
-          sphinx-lint *.po */*.po
+#       - name: Sphinx lint
+#         run: |
+#           sphinx-lint *.po */*.po
 
-      - name: Build docs
-        run: |
-          make
+#       - name: Build docs
+#         run: |
+#           make
