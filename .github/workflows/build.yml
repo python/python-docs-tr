@@ -16,7 +16,7 @@ jobs:
           - name: sphinx-lint
             package: sphinx-lint
             command: 'sphinx-lint --enable default-role --ignore .git'
-          - name: SLine length
+          - name: Line length
             command: 'awk ''{if (length($0) > 80 && length(gensub(/[^ ]/, "", "g")) > 1) {print FILENAME ":" FNR, "line too long:", $0; ERRORS+=1}} END {if (ERRORS>0) {exit 1}}'' $CHANGED_PO_FILES'
 
     name: ${{ matrix.tool.name }} (${{ matrix.tool.package }})
