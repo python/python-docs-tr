@@ -78,6 +78,7 @@ jobs:
           fi
       - name: Prepare build hierarchy
         run: |
+          sudo apt update && sudo apt install -y gettext
           mkdir -p ~/locales/tr/LC_MESSAGES/
           cp -uv --parents *.po */*.po ~/locales/tr/LC_MESSAGES/
           cd ~/locales/tr/LC_MESSAGES/
