@@ -80,8 +80,10 @@ jobs:
         run: |
           mkdir -p ~/locales/tr/LC_MESSAGES/
           cp -uv --parents *.po */*.po ~/locales/tr/LC_MESSAGES/
+          $cwd = pwd
           cd ~/locales/tr/LC_MESSAGES/
-          #find . -name \*.po -execdir sh -c 'msgfmt "$0" -o `basename $0 .po`.mo' '{}' \;
+          find . -name '*.po' -execdir msgfmt -o {}.mo {}
+          cd $cwd
           git -C ~/cpython checkout $(grep ^CPYTHON_CURRENT_COMMIT Makefile| cut -d= -f2)
           tree -L 2 ~/locales/tr/LC_MESSAGES/
       - name: Prepare venv
