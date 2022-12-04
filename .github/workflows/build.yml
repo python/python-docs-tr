@@ -1,40 +1,89 @@
-# name: Build
+name: Tests
 
-# on:
-#   push:
-#     branches:
-#       - "**"
-#   pull_request:
+on:
+  push:
+    branches:
+      - '*.*'
+  pull_request:
+    branches:
+      - '*.*'
 
-# env:
-#   CPYTHON_BRANCH: "3.10"
-#   LANGUAGE: "tr"
+jobs:
+  checks:
+    strategy:
+      matrix:
+        tool:
+          - name: sphinx-lint
+            package: sphinx-lint
+            command: 'sphinx-lint --enable default-role --ignore .git'
+          - name: SLine length
+            command: 'awk ''{if (length($0) > 80 && length(gensub(/[^ ]/, "", "g")) > 1) {print FILENAME ":" FNR, "line too long:", $0; ERRORS+=1}} END {if (ERRORS>0) {exit 1}}'' $CHANGED_PO_FILES'
 
-# jobs:
-#   test:
-#     name: Build
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v3
-#       - name: Set Up Python ${{ env.CPYTHON_BRANCH }}
-#         uses: actions/setup-python@v4
-#         with:
-#           python-version: "${{ env.CPYTHON_BRANCH }}"
-#       - name: Get CPython
-#         run: |
-#           git clone https://github.com/python/cpython.git ../cpython --branch=${{ env.CPYTHON_BRANCH }}
-          
-#       - name: Install dependencies
-#         run: |
-#           sudo apt update
-#           sudo apt install -y gettext 
-#           python -m pip install -r requirements.txt
-#           python -m pip install -r ../cpython/Doc/requirements.txt
-      
-#       - name: Sphinx lint
-#         run: |
-#           sphinx-lint *.po */*.po
+    name: ${{ matrix.tool.name }} (${{ matrix.tool.package }})
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lots0logs/gh-action-get-changed-files@2.1.4
+        id: changed_files
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install ${{ matrix.tool.package }}
+        run: |
+          if [ -n "${{ matrix.tool.apt_dependencies }}" ]; then
+              sudo apt-get update && sudo apt-get install -y ${{ matrix.tool.apt_dependencies }}
+          fi
+          if [ -n "${{ matrix.tool.package }}" ]; then
+              python -m pip install --upgrade pip setuptools wheel
+              python -m pip install ${{ matrix.tool.package }}
+          fi
+      - name: Run ${{ matrix.tool.package }}
+        env:
+          ADDED_FILES: ${{ join(fromJSON(steps.changed_files.outputs.added), ' ') }}
+          MODIFIED_FILES: ${{ join(fromJSON(steps.changed_files.outputs.modified), ' ') }}
+        run: |
+          CHANGED_PO_FILES=$(printf "%s %s\n" "$ADDED_FILES" "$MODIFIED_FILES" | tr ' ' '\n' | grep '.po$'; true)
+          if [ -n "$CHANGED_PO_FILES" ]
+          then
+            echo "Running on:" $CHANGED_PO_FILES
+            ${{ matrix.tool.command }}
+          else
+            echo "No changed po files, nothing to check."
+          fi
 
-#       - name: Build docs
-#         run: |
-#           make
+  sphinx:
+    name: 'Generate docs (sphinx)'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
+        with:
+          path: '~/cpython/'
+          key: '1'
+      - uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: '1'
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Clone cpython
+        run: |
+          if [ ! -d ~/cpython ]; then
+            git clone https://github.com/python/cpython ~/cpython/
+          else
+            git -C ~/cpython fetch
+          fi
+      - name: Prepare build hierarchy
+        run: |
+          mkdir -p ~/locales/tr/LC_MESSAGES/
+          cp -uv --parents *.po */*.po ~/locales/tr/LC_MESSAGES/
+          git -C ~/cpython checkout $(grep ^CPYTHON_CURRENT_COMMIT Makefile| cut -d= -f2)
+      - name: Prepare venv
+        run: |
+          make -C $HOME/cpython/Doc clean-venv
+          make -C $HOME/cpython/Doc venv
+      - name: sphinx-build
+        run: make -C $HOME/cpython/Doc SPHINXOPTS="-q -j4 -D locale_dirs=$HOME/locales -D language=tr -D gettext_compact=0" autobuild-dev-html
