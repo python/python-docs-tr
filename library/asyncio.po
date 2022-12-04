@@ -7,24 +7,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-12-02 04:25-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Last-Translator: \n"
+"Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: library/asyncio.rst:66
+#: library/asyncio.rst:65
 msgid "High-level APIs"
 msgstr ""
 
-#: library/asyncio.rst:77
+#: library/asyncio.rst:76
 msgid "Low-level APIs"
 msgstr ""
 
-#: library/asyncio.rst:87
+#: library/asyncio.rst:86
 msgid "Guides and Tutorials"
 msgstr ""
 
@@ -36,58 +36,58 @@ msgstr ""
 msgid "Hello World!"
 msgstr ""
 
-#: library/asyncio.rst:23
+#: library/asyncio.rst:22
 msgid ""
 "asyncio is a library to write **concurrent** code using the **async/await** "
 "syntax."
 msgstr ""
 
-#: library/asyncio.rst:26
+#: library/asyncio.rst:25
 msgid ""
 "asyncio is used as a foundation for multiple Python asynchronous frameworks "
 "that provide high-performance network and web-servers, database connection "
 "libraries, distributed task queues, etc."
 msgstr ""
 
-#: library/asyncio.rst:30
+#: library/asyncio.rst:29
 msgid ""
 "asyncio is often a perfect fit for IO-bound and high-level **structured** "
 "network code."
 msgstr ""
 
-#: library/asyncio.rst:33
+#: library/asyncio.rst:32
 msgid "asyncio provides a set of **high-level** APIs to:"
 msgstr ""
 
-#: library/asyncio.rst:35
+#: library/asyncio.rst:34
 msgid ""
 ":ref:`run Python coroutines <coroutine>` concurrently and have full control "
 "over their execution;"
 msgstr ""
 
-#: library/asyncio.rst:38
+#: library/asyncio.rst:37
 msgid "perform :ref:`network IO and IPC <asyncio-streams>`;"
 msgstr ""
 
-#: library/asyncio.rst:40
+#: library/asyncio.rst:39
 msgid "control :ref:`subprocesses <asyncio-subprocess>`;"
 msgstr ""
 
-#: library/asyncio.rst:42
+#: library/asyncio.rst:41
 msgid "distribute tasks via :ref:`queues <asyncio-queues>`;"
 msgstr ""
 
-#: library/asyncio.rst:44
+#: library/asyncio.rst:43
 msgid ":ref:`synchronize <asyncio-sync>` concurrent code;"
 msgstr ""
 
-#: library/asyncio.rst:46
+#: library/asyncio.rst:45
 msgid ""
 "Additionally, there are **low-level** APIs for *library and framework "
 "developers* to:"
 msgstr ""
 
-#: library/asyncio.rst:49
+#: library/asyncio.rst:48
 msgid ""
 "create and manage :ref:`event loops <asyncio-event-loop>`, which provide "
 "asynchronous APIs for :meth:`networking <loop.create_server>`, running :meth:"
@@ -95,22 +95,22 @@ msgid ""
 "add_signal_handler>`, etc;"
 msgstr ""
 
-#: library/asyncio.rst:54
+#: library/asyncio.rst:53
 msgid ""
 "implement efficient protocols using :ref:`transports <asyncio-transports-"
 "protocols>`;"
 msgstr ""
 
-#: library/asyncio.rst:57
+#: library/asyncio.rst:56
 msgid ""
 ":ref:`bridge <asyncio-futures>` callback-based libraries and code with async/"
 "await syntax."
 msgstr ""
 
-#: library/asyncio.rst:65
+#: library/asyncio.rst:64
 msgid "Reference"
 msgstr ""
 
-#: library/asyncio.rst:96
+#: library/asyncio.rst:95
 msgid "The source code for asyncio can be found in :source:`Lib/asyncio/`."
 msgstr ""

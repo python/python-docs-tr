@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-12-02 04:25-0500\n"
 "PO-Revision-Date: 2022-02-20 19:35+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -93,9 +93,9 @@ msgid ""
 msgstr ""
 "Hata iletisinin son satırı hataya neyin sebep olduğu gösterir. Özel durumlar "
 "farklı türlerde gelir ve tür iletinin bir parçası olarak yazdırılır: "
-"örnekteki türler şunlardır: exc:`ZeroDivisionError`, :exc:`NameError` ve :"
+"örnekteki türler şunlardır :exc:`ZeroDivisionError`, :exc:`NameError` ve :"
 "exc:`TypeError`. Özel durum türü olarak yazdırılan dize, oluşan gömülü özel "
-"durumun adıdır.  Bu, tüm gömülü özel durumlar için geçerlidir, ancak "
+"durumun adıdır. Bu, tüm gömülü özel durumlar için geçerlidir, ancak "
 "kullanıcı tanımlı özel durumlar için doğru olması gerekmez (yararlı bir "
 "kural olmasına rağmen). Standart özel durum adları gömülü tanımlayıcılardır "
 "(ayrılmış anahtar sözcükler değildir)."
@@ -185,7 +185,7 @@ msgid ""
 "message as shown above."
 msgstr ""
 "*except yan tümcesinde* adı geçen özel durumla eşleşmeyen bir özel durum "
-"oluşursa, daha dışarıda olan :keyword:'try' ifadelerine geçirilir; işleyici "
+"oluşursa, daha dışarıda olan :keyword:`try` ifadelerine geçirilir; işleyici "
 "bulunamazsa, bu bir *işlenmeyen özel durum* olur ve yürütme yukarıda "
 "gösterildiği gibi bir iletiyle durur."
 
@@ -359,38 +359,39 @@ msgstr "İstisna Zincirleme"
 
 #: tutorial/errors.rst:278
 msgid ""
-"The :keyword:`raise` statement allows an optional :keyword:`from<raise>` "
-"which enables chaining exceptions. For example::"
+"If an unhandled exception occurs inside an :keyword:`except` section, it "
+"will have the exception being handled attached to it and included in the "
+"error message::"
 msgstr ""
-":keyword:`raise` ifadesi, zincirleme istisnalar sağlayan opsiyonel bir :"
-"keyword:`from<raise>`e izin verir. Örneğin::"
 
-#: tutorial/errors.rst:284
+#: tutorial/errors.rst:297
+msgid ""
+"To indicate that an exception is a direct consequence of another, the :"
+"keyword:`raise` statement allows an optional :keyword:`from<raise>` clause::"
+msgstr ""
+
+#: tutorial/errors.rst:303
 msgid "This can be useful when you are transforming exceptions. For example::"
 msgstr "Bu, özel durumları dönüştürürken yararlı olabilir. Mesela::"
 
-#: tutorial/errors.rst:305
+#: tutorial/errors.rst:324
 msgid ""
-"Exception chaining happens automatically when an exception is raised inside "
-"an :keyword:`except` or :keyword:`finally` section. This can be disabled by "
-"using ``from None`` idiom:"
+"It also allows disabling automatic exception chaining using the ``from "
+"None`` idiom::"
 msgstr ""
-"İstisna zincirlemesi, bir :keyword:`except` veya :keyword:`finally` "
-"bölümünde bir istisna açıldığında otomatik olarak gerçekleşir. Bu, ``from "
-"None`` deyimi kullanılarak devre dışı bırakılabilir:"
 
-#: tutorial/errors.rst:318
+#: tutorial/errors.rst:336
 msgid ""
 "For more information about chaining mechanics, see :ref:`bltin-exceptions`."
 msgstr ""
 "Zincirleme mekaniği hakkında daha fazla bilgi için bkz. :ref:`bltin-"
 "exceptions`."
 
-#: tutorial/errors.rst:324
+#: tutorial/errors.rst:342
 msgid "User-defined Exceptions"
 msgstr "Kullanıcı Tanımlı İstisnalar"
 
-#: tutorial/errors.rst:326
+#: tutorial/errors.rst:344
 msgid ""
 "Programs may name their own exceptions by creating a new exception class "
 "(see :ref:`tut-classes` for more about Python classes).  Exceptions should "
@@ -402,15 +403,13 @@ msgstr ""
 "`tut-classes` ).  Özel durumlar genellikle doğrudan veya dolaylı olarak :exc:"
 "`Exception` sınıfından türetilmelidir."
 
-#: tutorial/errors.rst:330
+#: tutorial/errors.rst:348
+#, fuzzy
 msgid ""
 "Exception classes can be defined which do anything any other class can do, "
 "but are usually kept simple, often only offering a number of attributes that "
 "allow information about the error to be extracted by handlers for the "
-"exception.  When creating a module that can raise several distinct errors, a "
-"common practice is to create a base class for exceptions defined by that "
-"module, and subclass that to create specific exception classes for different "
-"error conditions::"
+"exception."
 msgstr ""
 "İstisna sınıfları, başka bir sınıfın yapabileceği her şeyi yapan "
 "sınıflarolarak tanımlanabilir, ancak genellikle basit tutulur, genellikle "
@@ -421,15 +420,15 @@ msgstr ""
 "koşulları için belirli özel durum sınıfları oluşturmak için bir alt sınıf "
 "oluşturmaktır::"
 
-#: tutorial/errors.rst:368
+#: tutorial/errors.rst:352
 msgid ""
 "Most exceptions are defined with names that end in \"Error\", similar to the "
 "naming of the standard exceptions."
 msgstr ""
-"Çoğu özel durum, standart özel durumların adlandırışına benzer şekilde \"Hata"
-"\" ile biten adlarla tanımlanır."
+"Çoğu özel durum, standart özel durumların adlandırışına benzer şekilde "
+"\"Hata\" ile biten adlarla tanımlanır."
 
-#: tutorial/errors.rst:371
+#: tutorial/errors.rst:355
 msgid ""
 "Many standard modules define their own exceptions to report errors that may "
 "occur in functions they define.  More information on classes is presented in "
@@ -439,21 +438,21 @@ msgstr ""
 "bildirmek için kendi istisnalarını tanımlar.  Dersler hakkında daha fazla "
 "bilgi :ref:`tut-classes` bölümünde sunulmaktadır."
 
-#: tutorial/errors.rst:379
+#: tutorial/errors.rst:363
 msgid "Defining Clean-up Actions"
 msgstr "Temizleme Eylemlerini Tanımlama"
 
-#: tutorial/errors.rst:381
+#: tutorial/errors.rst:365
 msgid ""
 "The :keyword:`try` statement has another optional clause which is intended "
 "to define clean-up actions that must be executed under all circumstances.  "
 "For example::"
 msgstr ""
-":keyword:`!try` deyimi, her koşulda yürütülmesi gereken temizleme "
+":keyword:`try` deyimi, her koşulda yürütülmesi gereken temizleme "
 "eylemlerini tanımlamayı amaçlayan başka bir opsiyonel yan tümceye sahiptir.  "
 "Mesela::"
 
-#: tutorial/errors.rst:395
+#: tutorial/errors.rst:379
 msgid ""
 "If a :keyword:`finally` clause is present, the :keyword:`!finally` clause "
 "will execute as the last task before the :keyword:`try` statement completes. "
@@ -461,13 +460,13 @@ msgid ""
 "statement produces an exception. The following points discuss more complex "
 "cases when an exception occurs:"
 msgstr ""
-"Bir :keyword:`finally` yan tümcesi varsa, :keyword:`finally` yan tümcesi :"
+"Bir :keyword:`finally` yan tümcesi varsa, :keyword:`!finally` yan tümcesi :"
 "keyword:`try` deyimi tamamlanmadan önceki son görev olarak yürütülür. :"
 "keyword:`!finally` yan tümcesi :keyword:`!try` deyiminin bir istisna "
 "oluşturup oluşturmadığından bağımsız çalışır. Aşağıdaki noktalarda, bir "
 "istisna oluştuğunda daha karmaşık durumlar anlatılmaktadır:"
 
-#: tutorial/errors.rst:401
+#: tutorial/errors.rst:385
 msgid ""
 "If an exception occurs during execution of the :keyword:`!try` clause, the "
 "exception may be handled by an :keyword:`except` clause. If the exception is "
@@ -479,7 +478,7 @@ msgstr ""
 "bir :keyword:`!except` yan tümcesi tarafından ele alınmıyorsa, istisna :"
 "keyword:`!finally` yan tümcesi yürütüldükten sonra yeniden oluşturulur."
 
-#: tutorial/errors.rst:407
+#: tutorial/errors.rst:391
 msgid ""
 "An exception could occur during execution of an :keyword:`!except` or :"
 "keyword:`!else` clause. Again, the exception is re-raised after the :keyword:"
@@ -489,7 +488,7 @@ msgstr ""
 "sırasında bir istisna oluşabilir. Yine, istisna, :keyword:`!finally` yan "
 "tümcesi yürütüldükten sonra yeniden oluşturulur."
 
-#: tutorial/errors.rst:411
+#: tutorial/errors.rst:395
 msgid ""
 "If the :keyword:`!finally` clause executes a :keyword:`break`, :keyword:"
 "`continue` or :keyword:`return` statement, exceptions are not re-raised."
@@ -497,7 +496,7 @@ msgstr ""
 ":keyword:`!finally` yan tümcesi bir :keyword:`break`, :keyword:`continue` "
 "veya :keyword:`return` deyimini yürütürse, istisnalar yeniden oluşturulmaz."
 
-#: tutorial/errors.rst:415
+#: tutorial/errors.rst:399
 msgid ""
 "If the :keyword:`!try` statement reaches a :keyword:`break`, :keyword:"
 "`continue` or :keyword:`return` statement, the :keyword:`!finally` clause "
@@ -509,7 +508,7 @@ msgstr ""
 "keyword:`!break`, :keyword:`!continue` veya :keyword:`!return` ifadesinin "
 "yürütülmesinin hemen öncesinde yürütülür."
 
-#: tutorial/errors.rst:421
+#: tutorial/errors.rst:405
 msgid ""
 "If a :keyword:`!finally` clause includes a :keyword:`!return` statement, the "
 "returned value will be the one from the :keyword:`!finally` clause's :"
@@ -521,15 +520,15 @@ msgstr ""
 "return` ifadesindeki değer olacaktır, :keyword:`!try` yan tümcesinin :"
 "keyword:`!return` ifadesindeki değer değil."
 
-#: tutorial/errors.rst:427
+#: tutorial/errors.rst:411
 msgid "For example::"
 msgstr "Mesela::"
 
-#: tutorial/errors.rst:438
+#: tutorial/errors.rst:422
 msgid "A more complicated example::"
 msgstr "Daha karmaşık bir örnek::"
 
-#: tutorial/errors.rst:463
+#: tutorial/errors.rst:447
 msgid ""
 "As you can see, the :keyword:`finally` clause is executed in any event.  "
 "The :exc:`TypeError` raised by dividing two strings is not handled by the :"
@@ -541,21 +540,21 @@ msgstr ""
 "tarafından işlenmez ve bu nedenle :keyword:`!finally` yan tümcesi "
 "yürütüldikten sonra yeniden yükseltilir."
 
-#: tutorial/errors.rst:468
+#: tutorial/errors.rst:452
 msgid ""
 "In real world applications, the :keyword:`finally` clause is useful for "
 "releasing external resources (such as files or network connections), "
 "regardless of whether the use of the resource was successful."
 msgstr ""
-"Gerçek dünyadaki uygulamalarda: keyword:`finally` yan tümcesi, kaynağın "
+"Gerçek dünyadaki uygulamalarda :keyword:`finally` yan tümcesi, kaynağın "
 "kullanımının başarılı olup olmadığına bakılmaksızın dış kaynakları (dosyalar "
 "veya ağ bağlantıları gibi) serbest bırakmak için yararlıdır."
 
-#: tutorial/errors.rst:476
+#: tutorial/errors.rst:460
 msgid "Predefined Clean-up Actions"
 msgstr "Önceden Tanımlanmış Temizleme Eylemleri"
 
-#: tutorial/errors.rst:478
+#: tutorial/errors.rst:462
 msgid ""
 "Some objects define standard clean-up actions to be undertaken when the "
 "object is no longer needed, regardless of whether or not the operation using "
@@ -567,7 +566,7 @@ msgstr ""
 "standart temizleme eylemlerini tanımlar. Bir dosyayı açmaya ve içeriğini "
 "ekrana yazdırmaya çalışan aşağıdaki örneğe bakın. ::"
 
-#: tutorial/errors.rst:486
+#: tutorial/errors.rst:470
 msgid ""
 "The problem with this code is that it leaves the file open for an "
 "indeterminate amount of time after this part of the code has finished "
@@ -582,7 +581,7 @@ msgstr ""
 "keyword:`with` ifadesi, dosyalar gibi nesnelerin her zaman hızlı ve doğru "
 "temizlenmesini sağlayacak şekilde kullanılmasına izin verir. ::"
 
-#: tutorial/errors.rst:496
+#: tutorial/errors.rst:480
 msgid ""
 "After the statement is executed, the file *f* is always closed, even if a "
 "problem was encountered while processing the lines. Objects which, like "
@@ -592,3 +591,19 @@ msgstr ""
 "İfade çalıştırıldıktan sonra, satırlar işlenirken bir sorunla karşılaşılsa "
 "bile *f* dosyası her zaman kapatılır. Dosyalar gibi önceden tanımlanmış "
 "temizleme eylemleri sağlayan nesneler dokümantasyonlarında bunu gösterir."
+
+#~ msgid ""
+#~ "The :keyword:`raise` statement allows an optional :keyword:`from<raise>` "
+#~ "which enables chaining exceptions. For example::"
+#~ msgstr ""
+#~ ":keyword:`raise` ifadesi, zincirleme istisnalar sağlayan opsiyonel bir :"
+#~ "keyword:`raise` 'e izin verir. Örneğin::"
+
+#~ msgid ""
+#~ "Exception chaining happens automatically when an exception is raised "
+#~ "inside an :keyword:`except` or :keyword:`finally` section. This can be "
+#~ "disabled by using ``from None`` idiom:"
+#~ msgstr ""
+#~ "İstisna zincirlemesi, bir :keyword:`except` veya :keyword:`finally` "
+#~ "bölümünde bir istisna açıldığında otomatik olarak gerçekleşir. Bu, ``from "
+#~ "None`` deyimi kullanılarak devre dışı bırakılabilir:"

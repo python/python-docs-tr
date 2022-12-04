@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-12-02 04:25-0500\n"
 "PO-Revision-Date: 2022-03-03 01:11+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -85,8 +85,8 @@ msgid ""
 msgstr ""
 "Yorumlayıcıyı çağırmanın birkaç farklı yolu vardır: Python deyimlerini "
 "içeren bir dizeyi :c:func:`PyRun_SimpleString` öğesine veya bir stdio dosya "
-"işaretçisini ve bir dosya adını (yalnızca hata mesajlarında tanımlama için) "
-":c:func:`PyRun_SimpleFile` 'a iletebilirsiniz. Python nesnelerini oluşturmak "
+"işaretçisini ve bir dosya adını (yalnızca hata mesajlarında tanımlama için) :"
+"c:func:`PyRun_SimpleFile` 'a iletebilirsiniz. Python nesnelerini oluşturmak "
 "ve kullanmak için önceki bölümlerde açıklanan alt düzey işlemleri de "
 "çağırabilirsiniz."
 
@@ -160,7 +160,7 @@ msgstr ""
 "yürütme yeteneği verir, ancak veri değerleri alışverişi en hafif tabirle "
 "oldukça zahmetlidir. Bunu istiyorsanız, daha düşük seviyeli aramalar "
 "kullanmalısınız. Daha fazla C kodu yazmak zorunda kalma pahasına neredeyse "
-"her şeyi başarabilirsiniz. "
+"her şeyi başarabilirsiniz."
 
 #: extending/embedding.rst:100
 msgid ""
@@ -172,7 +172,7 @@ msgstr ""
 "Farklı amaçlara rağmen Python'u genişletmek ve Python'u gömmek tamamen aynı "
 "aktivitedir. Önceki bölümlerde tartışılan konuların çoğu hala geçerlidir. "
 "Bunu göstermek için Python'dan C'ye uzantı kodunun gerçekten ne yaptığını "
-"düşünün: "
+"düşünün:"
 
 #: extending/embedding.rst:105
 msgid "Convert data values from Python to C,"
@@ -189,7 +189,7 @@ msgstr "Çağrıdaki veri değerlerini C'den Python'a çevirin."
 
 #: extending/embedding.rst:111
 msgid "When embedding Python, the interface code does:"
-msgstr "Python'u yerleştirirken, arayüz kodu şunları yapar: "
+msgstr "Python'u yerleştirirken, arayüz kodu şunları yapar:"
 
 #: extending/embedding.rst:113
 msgid "Convert data values from C to Python,"
@@ -205,7 +205,7 @@ msgstr ""
 
 #: extending/embedding.rst:118
 msgid "Convert the data values from the call from Python to C."
-msgstr "Çağrıdaki veri değerlerini C'den Python'a dönüştürün. "
+msgstr "Çağrıdaki veri değerlerini C'den Python'a dönüştürün."
 
 #: extending/embedding.rst:120
 msgid ""
@@ -423,9 +423,10 @@ msgstr ""
 "verecektir:"
 
 #: extending/embedding.rst:304
+#, fuzzy
 msgid ""
-"``pythonX.Y-config --ldflags`` will give you the recommended flags when "
-"linking:"
+"``pythonX.Y-config --ldflags --embed`` will give you the recommended flags "
+"when linking:"
 msgstr ""
 "``pythonX.Y-config --ldflags``, bağlantı kurarken size önerilen bayrakları "
 "verecektir:"

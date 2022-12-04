@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-12-02 04:25-0500\n"
 "PO-Revision-Date: 2022-06-17 01:21+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: tutorial/datastructures.rst:13
 msgid "More on Lists"
-msgstr "Listeler Üzerine "
+msgstr "Listeler Üzerine"
 
 #: tutorial/datastructures.rst:15
 msgid ""
@@ -90,7 +90,7 @@ msgstr ""
 
 #: tutorial/datastructures.rst:60
 msgid "Remove all items from the list.  Equivalent to ``del a[:]``."
-msgstr "Listeden tüm öğeleri kaldırın.  Del a[:]`` ile eşdeğerdir."
+msgstr "Listeden tüm öğeleri kaldırır.  ``del a[:]`` ile eşdeğerdir."
 
 #: tutorial/datastructures.rst:66
 msgid ""
@@ -137,10 +137,11 @@ msgid "An example that uses most of the list methods::"
 msgstr "Liste yöntemlerinin çoğunu kullanan bir örnek::"
 
 #: tutorial/datastructures.rst:123
+#, fuzzy
 msgid ""
 "You might have noticed that methods like ``insert``, ``remove`` or ``sort`` "
 "that only modify the list have no return value printed -- they return the "
-"default ``None``. [1]_  This is a design principle for all mutable data "
+"default ``None``. [#]_  This is a design principle for all mutable data "
 "structures in Python."
 msgstr ""
 "Listeyi yalnızca değiştiren ``insert``, ``remove`` veya ``sort`` gibi "
@@ -358,7 +359,7 @@ msgid ""
 msgstr ""
 "Değer yerine indeksi verilen bir öğeyi listeden kaldırmanın bir yolu "
 "vardır: :keyword:`del` ifadesi.  Bu, bir değer döndüren :meth:`pop` "
-"yönteminden farklıdır.  Keyword:`!del` ifadesi ayrıca bir listeden dilimleri "
+"yönteminden farklıdır. :keyword:`!del` ifadesi ayrıca bir listeden dilimleri "
 "kaldırmak veya tüm listeyi temizlemek için de kullanılabilir (bunu daha önce "
 "dilime boş bir liste atayarak yapmıştık).  Örneğin::"
 
@@ -425,7 +426,7 @@ msgid ""
 "iterating over the list."
 msgstr ""
 "Veri grupları listelere benzer görünse de, genellikle farklı durumlarda ve "
-"farklı amaçlar için kullanılırlar. Veri grupları :term:`değişmez`dir ve "
+"farklı amaçlar için kullanılırlar. Veri grupları :term:`immutable` 'dır ve "
 "genellikle paket açma (bu bölümün ilerleyen kısımlarına bakınız) veya "
 "indeksleme (hatta :func:`namedtuples <collections.namedtuple>` durumunda "
 "öznitelik ile) yoluyla erişilen heterojen bir dizi eleman içerir. Listeler :"
@@ -689,12 +690,14 @@ msgstr ""
 "``while`` ve ``if`` deyimlerinde kullanılan koşullar sadece karşılaştırma "
 "değil, herhangi bir operatör içerebilir."
 
-#: tutorial/datastructures.rst:662
+#: tutorial/datastructures.rst:663
+#, fuzzy
 msgid ""
-"The comparison operators ``in`` and ``not in`` check whether a value occurs "
-"(does not occur) in a sequence.  The operators ``is`` and ``is not`` compare "
-"whether two objects are really the same object.  All comparison operators "
-"have the same priority, which is lower than that of all numerical operators."
+"The comparison operators ``in`` and ``not in`` are membership tests that "
+"determine whether a value is in (or not in) a container.  The operators "
+"``is`` and ``is not`` compare whether two objects are really the same "
+"object.  All comparison operators have the same priority, which is lower "
+"than that of all numerical operators."
 msgstr ""
 "Karşılaştırma operatörleri ``in`` ve ``not in`` bir değerin bir dizide olup "
 "olmadığını kontrol eder.  ``is`` ve ``is not`` operatörleri iki nesnenin "
@@ -702,7 +705,7 @@ msgstr ""
 "operatörleri aynı önceliğe sahiptir, bu öncelik ise tüm sayısal "
 "operatörlerden daha düşüktür."
 
-#: tutorial/datastructures.rst:667
+#: tutorial/datastructures.rst:669
 msgid ""
 "Comparisons can be chained.  For example, ``a < b == c`` tests whether ``a`` "
 "is less than ``b`` and moreover ``b`` equals ``c``."
@@ -711,7 +714,7 @@ msgstr ""
 "``a`` değerinin ``b`` değerinden küçük olup olmadığını test ederken aynı "
 "zamanda ``b`` değerinin ``c`` değerine eşit olup olmadığını test eder."
 
-#: tutorial/datastructures.rst:670
+#: tutorial/datastructures.rst:672
 msgid ""
 "Comparisons may be combined using the Boolean operators ``and`` and ``or``, "
 "and the outcome of a comparison (or of any other Boolean expression) may be "
@@ -728,7 +731,7 @@ msgstr ""
 "veya C``, ``(A ve (B değil)) veya C`` ile eşdeğerdir. Her zaman olduğu gibi, "
 "istenen bileşimi ifade etmek için parantezler kullanılabilir."
 
-#: tutorial/datastructures.rst:677
+#: tutorial/datastructures.rst:679
 msgid ""
 "The Boolean operators ``and`` and ``or`` are so-called *short-circuit* "
 "operators: their arguments are evaluated from left to right, and evaluation "
@@ -744,7 +747,7 @@ msgstr ""
 "Boolean olarak değil de genel bir değer olarak kullanıldığında, kısa devre "
 "işlecinin dönüş değeri son değerlendirilen bağımsız değişkendir."
 
-#: tutorial/datastructures.rst:684
+#: tutorial/datastructures.rst:686
 msgid ""
 "It is possible to assign the result of a comparison or other Boolean "
 "expression to a variable.  For example, ::"
@@ -752,7 +755,7 @@ msgstr ""
 "Bir değişkene, bir karşılaştırmanın sonucunu veya başka bir Boolean "
 "ifadesini atamak mümkündür. Örneğin::"
 
-#: tutorial/datastructures.rst:692
+#: tutorial/datastructures.rst:694
 msgid ""
 "Note that in Python, unlike C, assignment inside expressions must be done "
 "explicitly with the :ref:`walrus operator <why-can-t-i-use-an-assignment-in-"
@@ -760,15 +763,15 @@ msgid ""
 "in C programs: typing ``=`` in an expression when ``==`` was intended."
 msgstr ""
 "Python'da, C'den farklı olarak, ifadelerin içindeki atamanın :ref:`walrus "
-"operatörü <why-can-t-i-use-an-assignment-in-an-expression>:` ``=`` ile "
+"operatörü <why-can-t-i-use-an-assignment-in-an-expression>` ``=`` ile "
 "açıkça yapılması gerektiğini unutmayın. Bu, C programlarında karşılaşılan "
 "yaygın bir sorunu önler: ``==`` yazmak isterken ``=`` yazmak."
 
-#: tutorial/datastructures.rst:702
+#: tutorial/datastructures.rst:704
 msgid "Comparing Sequences and Other Types"
 msgstr "Diziler ile Diğer Veri Tiplerinin Karşılaştırılması"
 
-#: tutorial/datastructures.rst:703
+#: tutorial/datastructures.rst:705
 msgid ""
 "Sequence objects typically may be compared to other objects with the same "
 "sequence type. The comparison uses *lexicographical* ordering: first the "
@@ -795,7 +798,7 @@ msgstr ""
 "karakterleri sıralamak için Unicode kod noktası numarasını kullanır. Aynı "
 "türdeki diziler arasındaki karşılaştırmalara bazı örnekler::"
 
-#: tutorial/datastructures.rst:723
+#: tutorial/datastructures.rst:725
 msgid ""
 "Note that comparing objects of different types with ``<`` or ``>`` is legal "
 "provided that the objects have appropriate comparison methods.  For example, "
@@ -810,11 +813,11 @@ msgstr ""
 "sahip değillerse, yorumlayıcı rastgele bir sıralama döndürmek yerine :exc:"
 "`TypeError` hatası verir."
 
-#: tutorial/datastructures.rst:731
+#: tutorial/datastructures.rst:733
 msgid "Footnotes"
 msgstr "Dipnotlar"
 
-#: tutorial/datastructures.rst:732
+#: tutorial/datastructures.rst:734
 msgid ""
 "Other languages may return the mutated object, which allows method chaining, "
 "such as ``d->insert(\"a\")->remove(\"b\")->sort();``."

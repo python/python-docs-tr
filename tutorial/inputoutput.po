@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-12-02 04:25-0500\n"
 "PO-Revision-Date: 2022-02-24 21:32+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -119,7 +119,7 @@ msgid ""
 msgstr ""
 ":func:`str` işlevi açıkça okunabilir değerlerin gösterimlerini döndürmek "
 "için, :func:`repr` ise yorumlayıcı tarafından okunabilecek gösterimler "
-"oluşturmak içindir (veya eşdeğer bir sözdizimi yoksa :exc: `SyntaxError`ı "
+"oluşturmak içindir (veya eşdeğer bir sözdizimi yoksa :exc:`SyntaxError` 'ı "
 "zorlar).  İnsan tüketimi için belirli bir temsili olmayan nesneler için :"
 "func:`str`, :func:`repr` ile aynı değeri döndürür.  Sayılar veya listeler ve "
 "sözlükler benzeri yapılar gibi birçok değer, her iki işlevi de kullanarak "
@@ -188,21 +188,30 @@ msgstr ""
 
 #: tutorial/inputoutput.rst:136
 msgid ""
-"For a reference on these format specifications, see the reference guide for "
-"the :ref:`formatspec`."
+"The ``=`` specifier can be used to expand an expression to the text of the "
+"expression, an equal sign, then the representation of the evaluated "
+"expression:"
 msgstr ""
-"Bu biçim belirtimleri hakkında bir referans için: ref:`formatspec` için "
+
+#: tutorial/inputoutput.rst:145
+#, fuzzy
+msgid ""
+"See :ref:`self-documenting expressions <bpo-36817-whatsnew>` for more "
+"information on the ``=`` specifier. For a reference on these format "
+"specifications, see the reference guide for the :ref:`formatspec`."
+msgstr ""
+"Bu biçim belirtimleri hakkında bir referans için :ref:`formatspec` için "
 "referans kılavuzuna bakın."
 
-#: tutorial/inputoutput.rst:142
+#: tutorial/inputoutput.rst:152
 msgid "The String format() Method"
 msgstr "String format() Metodu"
 
-#: tutorial/inputoutput.rst:144
+#: tutorial/inputoutput.rst:154
 msgid "Basic usage of the :meth:`str.format` method looks like this::"
 msgstr ":meth:`str.format` metodunun temel kullanımı şöyle görünür::"
 
-#: tutorial/inputoutput.rst:149
+#: tutorial/inputoutput.rst:159
 msgid ""
 "The brackets and characters within them (called format fields) are replaced "
 "with the objects passed into the :meth:`str.format` method.  A number in the "
@@ -214,7 +223,7 @@ msgstr ""
 "değiştirilir.  Köşeli ayraçlardaki bir sayı, :meth:`str.format` yöntemine "
 "geçirilen nesnenin konumuna başvurmak için kullanılabilir. ::"
 
-#: tutorial/inputoutput.rst:159
+#: tutorial/inputoutput.rst:169
 msgid ""
 "If keyword arguments are used in the :meth:`str.format` method, their values "
 "are referred to by using the name of the argument. ::"
@@ -222,13 +231,13 @@ msgstr ""
 "Anahtar sözcük argümanları :meth:`str.format` yönteminde kullanılıyorsa, "
 "değerlerine argümanın adı kullanılarak başvurulmaktadır. ::"
 
-#: tutorial/inputoutput.rst:166
+#: tutorial/inputoutput.rst:176
 msgid "Positional and keyword arguments can be arbitrarily combined::"
 msgstr ""
 "Konumsal ve anahtar sözcük argümanları isteğe bağlı olarak "
 "birleştirilebilir::"
 
-#: tutorial/inputoutput.rst:172
+#: tutorial/inputoutput.rst:182
 msgid ""
 "If you have a really long format string that you don't want to split up, it "
 "would be nice if you could reference the variables to be formatted by name "
@@ -240,15 +249,16 @@ msgstr ""
 "Bu, sadece dict'i geçirerek ve tuşlara erişmek için ``'[]'`` köşeli "
 "ayraçları kullanarak yapılabilir. ::"
 
-#: tutorial/inputoutput.rst:182
+#: tutorial/inputoutput.rst:192
+#, fuzzy
 msgid ""
-"This could also be done by passing the table as keyword arguments with the "
-"'**' notation. ::"
+"This could also be done by passing the ``table`` dictionary as keyword "
+"arguments with the ``**`` notation. ::"
 msgstr ""
 "Bu, tabloyu '**' notasyonuyla anahtar sözcük argümanları olarak geçirerek de "
 "yapılabilir. ::"
 
-#: tutorial/inputoutput.rst:189
+#: tutorial/inputoutput.rst:199
 msgid ""
 "This is particularly useful in combination with the built-in function :func:"
 "`vars`, which returns a dictionary containing all local variables."
@@ -256,15 +266,16 @@ msgstr ""
 "Bu, özellikle tüm yerel değişkenleri içeren bir sözlük döndüren yerleşik "
 "işlev :func:`vars` ile birlikte yararlıdır."
 
-#: tutorial/inputoutput.rst:192
+#: tutorial/inputoutput.rst:202
+#, fuzzy
 msgid ""
-"As an example, the following lines produce a tidily-aligned set of columns "
+"As an example, the following lines produce a tidily aligned set of columns "
 "giving integers and their squares and cubes::"
 msgstr ""
 "Örnek olarak, aşağıdaki satırlar tamsayılar ile kareleri ve küpleri veren "
 "düzenli olarak hizalanmış bir sütun kümesi oluşturur::"
 
-#: tutorial/inputoutput.rst:209
+#: tutorial/inputoutput.rst:219
 msgid ""
 "For a complete overview of string formatting with :meth:`str.format`, see :"
 "ref:`formatstrings`."
@@ -272,15 +283,15 @@ msgstr ""
 ":meth:`str.format` ile dize biçimlendirmeye tam bir genel bakış için bkz. :"
 "ref:`formatstrings`."
 
-#: tutorial/inputoutput.rst:214
+#: tutorial/inputoutput.rst:224
 msgid "Manual String Formatting"
 msgstr "Manuel Dize Biçimlendirmesi"
 
-#: tutorial/inputoutput.rst:216
+#: tutorial/inputoutput.rst:226
 msgid "Here's the same table of squares and cubes, formatted manually::"
 msgstr "Manuel olarak biçimlendirilmiş aynı kare ve küp tablosu aşağıdadır::"
 
-#: tutorial/inputoutput.rst:234
+#: tutorial/inputoutput.rst:244
 msgid ""
 "(Note that the one space between each column was added by the way :func:"
 "`print` works: it always adds spaces between its arguments.)"
@@ -288,7 +299,7 @@ msgstr ""
 "(Her sütun arasındaki tek boşluğun :func:`print` çalışma şekliyle ekli "
 "olduğunu unutmayın: her zaman argümanları arasına boşluk ekler.)"
 
-#: tutorial/inputoutput.rst:237
+#: tutorial/inputoutput.rst:247
 msgid ""
 "The :meth:`str.rjust` method of string objects right-justifies a string in a "
 "field of a given width by padding it with spaces on the left. There are "
@@ -308,7 +319,7 @@ msgstr ""
 "daha iyidir. (Gerçekten kesilme istiyorsanız, ``x.ljust(n)[:n]`` gibi her "
 "zaman bir dilim işlemi ekleyebilirsiniz.)"
 
-#: tutorial/inputoutput.rst:246
+#: tutorial/inputoutput.rst:256
 msgid ""
 "There is another method, :meth:`str.zfill`, which pads a numeric string on "
 "the left with zeros.  It understands about plus and minus signs::"
@@ -316,11 +327,11 @@ msgstr ""
 "Soldaki sayısal bir dizeyi sıfırlarla dolduran başka bir metot vardır: :meth:"
 "`str.zfill`.  Bu metot artı ve eksi işaretlerini anlar::"
 
-#: tutorial/inputoutput.rst:258
+#: tutorial/inputoutput.rst:268
 msgid "Old string formatting"
 msgstr "Eski dize biçimlendirmesi"
 
-#: tutorial/inputoutput.rst:260
+#: tutorial/inputoutput.rst:270
 msgid ""
 "The % operator (modulo) can also be used for string formatting. Given "
 "``'string' % values``, instances of ``%`` in ``string`` are replaced with "
@@ -329,28 +340,30 @@ msgid ""
 msgstr ""
 "% operatör (modulo) dize biçimlendirmesi için de kullanılabilir. ``'string' "
 "% values`` göz önüne alındığında, ``string`` öğesindeki ``%`` örnekleri "
-"sıfır veya daha fazla ``values``öğesiyle değiştirilir. Bu işlem genellikle "
+"sıfır veya daha fazla ``values`` öğesiyle değiştirilir. Bu işlem genellikle "
 "dize enterpolasyonu olarak bilinir. Mesela::"
 
-#: tutorial/inputoutput.rst:269
+#: tutorial/inputoutput.rst:279
 msgid ""
 "More information can be found in the :ref:`old-string-formatting` section."
 msgstr ""
 "Daha fazla bilgiyi :ref:`old-string-formatting` bölümünde bulabilirsiniz."
 
-#: tutorial/inputoutput.rst:275
+#: tutorial/inputoutput.rst:285
 msgid "Reading and Writing Files"
 msgstr "Dosyaları Okuma ve Yazma"
 
-#: tutorial/inputoutput.rst:281
+#: tutorial/inputoutput.rst:291
+#, fuzzy
 msgid ""
 ":func:`open` returns a :term:`file object`, and is most commonly used with "
-"two arguments: ``open(filename, mode)``."
+"two positional arguments and one keyword argument: ``open(filename, mode, "
+"encoding=None)``"
 msgstr ""
-":func:`open` bir :term:`file object`i döndürür ve en sık iki argümanla "
+":func:`open` bir :term:`file object` 'i döndürür ve en sık iki argümanla "
 "kullanılır: ``open(filename, mode)``."
 
-#: tutorial/inputoutput.rst:293
+#: tutorial/inputoutput.rst:304
 msgid ""
 "The first argument is a string containing the filename.  The second argument "
 "is another string containing a few characters describing the way in which "
@@ -369,23 +382,26 @@ msgstr ""
 "eklenir.  ``'r+'`` dosyayı hem okumak hem de yazmak için açar. *mode* "
 "parametresi isteğe bağlıdır; verilmezse ``'r'`` varsayılacaktır."
 
-#: tutorial/inputoutput.rst:302
+#: tutorial/inputoutput.rst:313
+#, fuzzy
 msgid ""
 "Normally, files are opened in :dfn:`text mode`, that means, you read and "
 "write strings from and to the file, which are encoded in a specific "
-"encoding. If encoding is not specified, the default is platform dependent "
-"(see :func:`open`). ``'b'`` appended to the mode opens the file in :dfn:"
-"`binary mode`: now the data is read and written in the form of bytes "
-"objects.  This mode should be used for all files that don't contain text."
+"*encoding*. If *encoding* is not specified, the default is platform "
+"dependent (see :func:`open`). Because UTF-8 is the modern de-facto standard, "
+"``encoding=\"utf-8\"`` is recommended unless you know that you need to use a "
+"different encoding. Appending a ``'b'`` to the mode opens the file in :dfn:"
+"`binary mode`. Binary mode data is read and written as :class:`bytes` "
+"objects. You can not specify *encoding* when opening file in binary mode."
 msgstr ""
-"Normalde, dosyalar :d fn:`text mode` içinde açılır, bu da belirli bir "
+"Normalde, dosyalar :dfn:`text mode` içinde açılır, bu da belirli bir "
 "kodlamada kodlanmış dizeleri dosyadan ve dosyaya okuyup yazdığınız anlamına "
 "gelir. Kodlama belirtilmezse, varsayılan değer platforma bağlıdır (bkz: :"
-"func:`open`). Moda eklenen ``'b'`` dosyayı :dfn:`binary mode`da açar: artık "
+"func:`open`). Moda eklenen ``'b'`` dosyayı :dfn:`binary mode` 'da açar: artık "
 "veriler bayt nesneleri biçiminde okunur ve yazılır.  Bu mod metin içermeyen "
 "tüm dosyalar için kullanılmalıdır."
 
-#: tutorial/inputoutput.rst:309
+#: tutorial/inputoutput.rst:323
 msgid ""
 "In text mode, the default when reading is to convert platform-specific line "
 "endings (``\\n`` on Unix, ``\\r\\n`` on Windows) to just ``\\n``.  When "
@@ -395,8 +411,8 @@ msgid ""
 "file:`JPEG` or :file:`EXE` files.  Be very careful to use binary mode when "
 "reading and writing such files."
 msgstr ""
-"Metin modunda, okurken varsayılan değer platforma özgü satır sonlarını (``"
-"\\n`` on Unix, ``\\r\\n`` on Windows) yalnızca ``\\n`` olarak "
+"Metin modunda, okurken varsayılan değer platforma özgü satır sonlarını "
+"(``\\n`` on Unix, ``\\r\\n`` on Windows) yalnızca ``\\n`` olarak "
 "dönüştürmektir.  Metin modunda yazarken, varsayılan değer ``\\n`` "
 "oluşumlarını platforma özgü satır sonlarına geri dönüştürmektir.  Dosya "
 "verilerinde yapılan bu sahne arkası değişikliği metin dosyaları için iyidir, "
@@ -404,13 +420,13 @@ msgstr ""
 "bozacaktır.  Bu tür dosyaları okurken ve yazarken ikili modu kullanmaya çok "
 "dikkat edin."
 
-#: tutorial/inputoutput.rst:317
+#: tutorial/inputoutput.rst:331
 msgid ""
 "It is good practice to use the :keyword:`with` keyword when dealing with "
 "file objects.  The advantage is that the file is properly closed after its "
 "suite finishes, even if an exception is raised at some point.  Using :"
-"keyword:`!with` is also much shorter than writing equivalent :keyword:`try`"
-"\\ -\\ :keyword:`finally` blocks::"
+"keyword:`!with` is also much shorter than writing equivalent :keyword:"
+"`try`\\ -\\ :keyword:`finally` blocks::"
 msgstr ""
 "Dosya nesneleriyle uğraşırken :keyword:`with` anahtar sözcüğünü kullanmak "
 "iyi bir uygulamadır.  Avantajı, herhangi bir noktada bir hata oluşsa bile, "
@@ -418,7 +434,7 @@ msgstr ""
 "`!with` kullanmak da eşdeğer :keyword:`try` \\ -\\ :keyword:`finally` "
 "blokları yazmaktançok daha kısadır."
 
-#: tutorial/inputoutput.rst:330
+#: tutorial/inputoutput.rst:344
 msgid ""
 "If you're not using the :keyword:`with` keyword, then you should call ``f."
 "close()`` to close the file and immediately free up any system resources "
@@ -428,7 +444,7 @@ msgstr ""
 "kullandığı sistem kaynaklarını hemen boşaltmak için ``f.close()`` metodunu "
 "çağırmalısınız."
 
-#: tutorial/inputoutput.rst:335
+#: tutorial/inputoutput.rst:349
 msgid ""
 "Calling ``f.write()`` without using the :keyword:`!with` keyword or calling "
 "``f.close()`` **might** result in the arguments of ``f.write()`` not being "
@@ -438,7 +454,7 @@ msgstr ""
 "``f.close()`` çağırmak, program başarıyla çıksa bile ``f.write()`` "
 "parametrelerinin diske tamamen yazılmamasıyla sonuçlanabilir."
 
-#: tutorial/inputoutput.rst:343
+#: tutorial/inputoutput.rst:357
 msgid ""
 "After a file object is closed, either by a :keyword:`with` statement or by "
 "calling ``f.close()``, attempts to use the file object will automatically "
@@ -448,11 +464,11 @@ msgstr ""
 "``f.close()`` çağırarak dosya nesnesini kullanma girişimleri otomatik olarak "
 "başarısız olur. ::"
 
-#: tutorial/inputoutput.rst:357
+#: tutorial/inputoutput.rst:371
 msgid "Methods of File Objects"
 msgstr "Dosya Nesnelerinin Metotları"
 
-#: tutorial/inputoutput.rst:359
+#: tutorial/inputoutput.rst:373
 msgid ""
 "The rest of the examples in this section will assume that a file object "
 "called ``f`` has already been created."
@@ -460,7 +476,7 @@ msgstr ""
 "Bu bölümdeki örneklerin geri kalanı, ``f`` adlı bir dosya nesnesinin zaten "
 "oluşturulduğunu varsayar."
 
-#: tutorial/inputoutput.rst:362
+#: tutorial/inputoutput.rst:376
 msgid ""
 "To read a file's contents, call ``f.read(size)``, which reads some quantity "
 "of data and returns it as a string (in text mode) or bytes object (in binary "
@@ -480,10 +496,10 @@ msgstr ""
 "veya *size* bayt (ikili modda) okunur ve döndürülür. Dosyanın sonuna "
 "ulaşıldıysa, ``f.read()`` boş bir dize (``''``) döndürür.  ::"
 
-#: tutorial/inputoutput.rst:376
+#: tutorial/inputoutput.rst:390
 msgid ""
-"``f.readline()`` reads a single line from the file; a newline character (``"
-"\\n``) is left at the end of the string, and is only omitted on the last "
+"``f.readline()`` reads a single line from the file; a newline character "
+"(``\\n``) is left at the end of the string, and is only omitted on the last "
 "line of the file if the file doesn't end in a newline.  This makes the "
 "return value unambiguous; if ``f.readline()`` returns an empty string, the "
 "end of the file has been reached, while a blank line is represented by "
@@ -496,7 +512,7 @@ msgstr ""
 "boş bir satır ise yalnızca tek bir yeni satır içeren bir dize olan ``'\\n'`` "
 "ile temsil edilir.  ::"
 
-#: tutorial/inputoutput.rst:390
+#: tutorial/inputoutput.rst:404
 msgid ""
 "For reading lines from a file, you can loop over the file object. This is "
 "memory efficient, fast, and leads to simple code::"
@@ -505,7 +521,7 @@ msgstr ""
 "oluşturabilirsiniz. Bu bellek verimliliğine, hızlılığına ve basit koda yol "
 "açar::"
 
-#: tutorial/inputoutput.rst:399
+#: tutorial/inputoutput.rst:413
 msgid ""
 "If you want to read all the lines of a file in a list you can also use "
 "``list(f)`` or ``f.readlines()``."
@@ -513,7 +529,7 @@ msgstr ""
 "Listedeki bir dosyanın tüm satırlarını okumak istiyorsanız, ``list(f)`` veya "
 "``f.readlines()`` öğelerini de kullanabilirsiniz."
 
-#: tutorial/inputoutput.rst:402
+#: tutorial/inputoutput.rst:416
 msgid ""
 "``f.write(string)`` writes the contents of *string* to the file, returning "
 "the number of characters written. ::"
@@ -521,7 +537,7 @@ msgstr ""
 "``f.write(string)`` *string* içeriğini dosyaya yazar ve yazılan karakter "
 "sayısını döndürür. ::"
 
-#: tutorial/inputoutput.rst:408
+#: tutorial/inputoutput.rst:422
 msgid ""
 "Other types of objects need to be converted -- either to a string (in text "
 "mode) or a bytes object (in binary mode) -- before writing them::"
@@ -529,7 +545,7 @@ msgstr ""
 "Diğer nesne türlerinin yazmadan önce bir dizeye (metin modunda) veya bayt "
 "nesnesine (ikili modda) dönüştürülmesi gerekir::"
 
-#: tutorial/inputoutput.rst:416
+#: tutorial/inputoutput.rst:430
 msgid ""
 "``f.tell()`` returns an integer giving the file object's current position in "
 "the file represented as number of bytes from the beginning of the file when "
@@ -539,7 +555,7 @@ msgstr ""
 "dosyanın başından itibaren bayt sayısı ve metin modundayken opak bir sayı "
 "olarak veren bir tamsayı döndürür."
 
-#: tutorial/inputoutput.rst:420
+#: tutorial/inputoutput.rst:434
 msgid ""
 "To change the file object's position, use ``f.seek(offset, whence)``.  The "
 "position is computed from adding *offset* to a reference point; the "
@@ -557,7 +573,7 @@ msgstr ""
 "başvuru noktası için dosyanın başlangıcını kullanarak 0 olarak "
 "varsayılabilir. ::"
 
-#: tutorial/inputoutput.rst:439
+#: tutorial/inputoutput.rst:453
 msgid ""
 "In text files (those opened without a ``b`` in the mode string), only seeks "
 "relative to the beginning of the file are allowed (the exception being "
@@ -571,7 +587,7 @@ msgstr ""
 "sıfırdan döndürülen değerlerdir. Başka herhangi bir *offset* değeri tanımsız "
 "davranış üretir."
 
-#: tutorial/inputoutput.rst:445
+#: tutorial/inputoutput.rst:459
 msgid ""
 "File objects have some additional methods, such as :meth:`~file.isatty` and :"
 "meth:`~file.truncate` which are less frequently used; consult the Library "
@@ -581,11 +597,11 @@ msgstr ""
 "truncate` gibi bazı ek metotları vardır; dosya nesneleri için eksiksiz bir "
 "kılavuz için Kütüphane Referansı'na bakın."
 
-#: tutorial/inputoutput.rst:453
+#: tutorial/inputoutput.rst:467
 msgid "Saving structured data with :mod:`json`"
 msgstr "Yapılandırılmış verileri :mod:`json` ile kaydetme"
 
-#: tutorial/inputoutput.rst:457
+#: tutorial/inputoutput.rst:471
 msgid ""
 "Strings can easily be written to and read from a file.  Numbers take a bit "
 "more effort, since the :meth:`read` method only returns strings, which will "
@@ -601,11 +617,12 @@ msgstr ""
 "listeler ve sözlükler gibi daha karmaşık veri türlerini kaydetmek "
 "istediğinizde, elle ayrıştırma ve seri hale getirmek karmaşık hale gelir."
 
-#: tutorial/inputoutput.rst:464
+#: tutorial/inputoutput.rst:478
+#, fuzzy
 msgid ""
 "Rather than having users constantly writing and debugging code to save "
 "complicated data types to files, Python allows you to use the popular data "
-"interchange format called `JSON (JavaScript Object Notation) <http://json."
+"interchange format called `JSON (JavaScript Object Notation) <https://json."
 "org>`_.  The standard module called :mod:`json` can take Python data "
 "hierarchies, and convert them to string representations; this process is "
 "called :dfn:`serializing`.  Reconstructing the data from the string "
@@ -615,16 +632,16 @@ msgid ""
 msgstr ""
 "Python, kullanıcıların karmaşık veri türlerini dosyalara kaydetmek için "
 "sürekli kod yazmasına ve hata ayıklamasına sahip olmak yerine, `JSON "
-"(JavaScript Nesne Gösterimi) <http://json.org>` adı verilen popüler veri "
+"(JavaScript Nesne Gösterimi) <http://json.org>`_ adı verilen popüler veri "
 "değişimi biçimini kullanmanıza izin verir.  :mod:`json` adlı standart modül "
 "Python veri hiyerarşilerini alabilir ve bunları dize gösterimlerine "
 "dönüştürebilir; bu işleme :dfn:`serializing` denir.  Dize gösteriminden "
-"verileri yeniden yapılandırma :dfn:`serisini silme` olarak adlandırılır.  "
+"verileri yeniden yapılandırma :dfn:`deserializing` olarak adlandırılır.  "
 "Seri hale getirmek ve seri hali bozmak arasında, nesneyi temsil eden dize "
 "bir dosyada veya veride depolanmış veya uzak bir makineye ağ bağlantısı "
 "üzerinden gönderilmiş olabilir."
 
-#: tutorial/inputoutput.rst:475
+#: tutorial/inputoutput.rst:489
 msgid ""
 "The JSON format is commonly used by modern applications to allow for data "
 "exchange.  Many programmers are already familiar with it, which makes it a "
@@ -634,7 +651,7 @@ msgstr ""
 "tarafından yaygın olarak kullanılır.  Birçok programcı zaten buna aşinadır, "
 "bu da onu birlikte çalışabilirlik için iyi bir seçim haline getirir."
 
-#: tutorial/inputoutput.rst:479
+#: tutorial/inputoutput.rst:493
 msgid ""
 "If you have an object ``x``, you can view its JSON string representation "
 "with a simple line of code::"
@@ -642,7 +659,7 @@ msgstr ""
 "``x`` nesnesiniz varsa, JSON dize gösterimini basit bir kod satırıyla "
 "görüntüleyebilirsiniz::"
 
-#: tutorial/inputoutput.rst:487
+#: tutorial/inputoutput.rst:501
 msgid ""
 "Another variant of the :func:`~json.dumps` function, called :func:`~json."
 "dump`, simply serializes the object to a :term:`text file`.  So if ``f`` is "
@@ -653,15 +670,22 @@ msgstr ""
 "getirmektedir.  Yani ``f`` bir :term:`text file` nesnesi yazmak için "
 "açılmışsa, bunu yapabiliriz::"
 
-#: tutorial/inputoutput.rst:493
+#: tutorial/inputoutput.rst:507
+#, fuzzy
 msgid ""
-"To decode the object again, if ``f`` is a :term:`text file` object which has "
-"been opened for reading::"
+"To decode the object again, if ``f`` is a :term:`binary file` or :term:`text "
+"file` object which has been opened for reading::"
 msgstr ""
 "Nesnenin kodunu yeniden çözmek için, ``f`` bir :term:`text file` (metin "
 "dosyası) nesnesiyse, okuma için açılmıştır::"
 
-#: tutorial/inputoutput.rst:498
+#: tutorial/inputoutput.rst:513
+msgid ""
+"JSON files must be encoded in UTF-8. Use ``encoding=\"utf-8\"`` when opening "
+"JSON file as a :term:`text file` for both of reading and writing."
+msgstr ""
+
+#: tutorial/inputoutput.rst:516
 msgid ""
 "This simple serialization technique can handle lists and dictionaries, but "
 "serializing arbitrary class instances in JSON requires a bit of extra "
@@ -673,11 +697,11 @@ msgstr ""
 "çaba gerektirir. :mod:`json` modülü için olan örnek bunun bir açıklamasını "
 "içerir."
 
-#: tutorial/inputoutput.rst:504
+#: tutorial/inputoutput.rst:522
 msgid ":mod:`pickle` - the pickle module"
 msgstr ":mod:`pickle` - pickle modülü"
 
-#: tutorial/inputoutput.rst:506
+#: tutorial/inputoutput.rst:524
 msgid ""
 "Contrary to :ref:`JSON <tut-json>`, *pickle* is a protocol which allows the "
 "serialization of arbitrarily complex Python objects.  As such, it is "

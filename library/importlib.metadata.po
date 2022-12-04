@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-12-02 04:25-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Last-Translator: \n"
+"Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -144,9 +144,9 @@ msgstr ""
 msgid ""
 "The ``group`` and ``name`` are arbitrary values defined by the package "
 "author and usually a client will wish to resolve all entry points for a "
-"particular group.  Read `the setuptools docs <https://setuptools.readthedocs."
-"io/en/latest/setuptools.html#dynamic-discovery-of-services-and-plugins>`_ "
-"for more information on entry points, their definition, and usage."
+"particular group.  Read `the setuptools docs <https://setuptools.pypa.io/en/"
+"latest/userguide/entry_point.html>`_ for more information on entry points, "
+"their definition, and usage."
 msgstr ""
 
 #: library/importlib.metadata.rst:142
@@ -262,11 +262,11 @@ msgid ""
 "case of a namespace package) for top-level Python packages or modules::"
 msgstr ""
 
-#: library/importlib.metadata.rst:269
+#: library/importlib.metadata.rst:270
 msgid "Distributions"
 msgstr ""
 
-#: library/importlib.metadata.rst:271
+#: library/importlib.metadata.rst:272
 msgid ""
 "While the above API is the most common and convenient usage, you can get all "
 "of that information from the ``Distribution`` class.  A ``Distribution`` is "
@@ -274,29 +274,29 @@ msgid ""
 "can get the ``Distribution`` instance::"
 msgstr ""
 
-#: library/importlib.metadata.rst:279
+#: library/importlib.metadata.rst:280
 msgid ""
 "Thus, an alternative way to get the version number is through the "
 "``Distribution`` instance::"
 msgstr ""
 
-#: library/importlib.metadata.rst:285
+#: library/importlib.metadata.rst:286
 msgid ""
 "There are all kinds of additional metadata available on the ``Distribution`` "
 "instance::"
 msgstr ""
 
-#: library/importlib.metadata.rst:293
+#: library/importlib.metadata.rst:294
 msgid ""
 "The full set of available metadata is not described here.  See :pep:`566` "
 "for additional details."
 msgstr ""
 
-#: library/importlib.metadata.rst:298
+#: library/importlib.metadata.rst:299
 msgid "Extending the search algorithm"
 msgstr ""
 
-#: library/importlib.metadata.rst:300
+#: library/importlib.metadata.rst:301
 msgid ""
 "Because package metadata is not available through :data:`sys.path` searches, "
 "or package loaders directly, the metadata for a package is found through "
@@ -305,14 +305,14 @@ msgid ""
 "path finders <meta path finder>` on :data:`sys.meta_path`."
 msgstr ""
 
-#: library/importlib.metadata.rst:306
+#: library/importlib.metadata.rst:307
 msgid ""
 "The default ``PathFinder`` for Python includes a hook that calls into "
 "``importlib.metadata.MetadataPathFinder`` for finding distributions loaded "
 "from typical file-system-based paths."
 msgstr ""
 
-#: library/importlib.metadata.rst:310
+#: library/importlib.metadata.rst:311
 msgid ""
 "The abstract class :py:class:`importlib.abc.MetaPathFinder` defines the "
 "interface expected of finders by Python's import system. ``importlib."
@@ -322,22 +322,18 @@ msgid ""
 "base class, which defines this abstract method::"
 msgstr ""
 
-#: library/importlib.metadata.rst:324
+#: library/importlib.metadata.rst:325
 msgid ""
 "The ``DistributionFinder.Context`` object provides ``.path`` and ``.name`` "
 "properties indicating the path to search and name to match and may supply "
 "other relevant context."
 msgstr ""
 
-#: library/importlib.metadata.rst:328
+#: library/importlib.metadata.rst:329
 msgid ""
 "What this means in practice is that to support finding distribution package "
 "metadata in locations other than the file system, subclass ``Distribution`` "
 "and implement the abstract methods. Then from a custom finder, return "
 "instances of this derived ``Distribution`` in the ``find_distributions()`` "
 "method."
-msgstr ""
-
-#: library/importlib.metadata.rst:340
-msgid "Footnotes"
 msgstr ""

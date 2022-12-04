@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 23:20+0300\n"
+"POT-Creation-Date: 2022-12-02 04:25-0500\n"
 "PO-Revision-Date: 2022-01-02 22:55+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -51,9 +51,9 @@ msgid ""
 msgstr ""
 ":mod:`pprint` modülü, hem yerleşik hem de kullanıcı tanımlı nesnelerin "
 "yorumlayıcı tarafından okunabilecek şekilde yazdırılması üzerinde daha "
-"karmaşık kontrol sunar. Sonuç bir satırdan uzun olduğunda, \"pretty printer"
-"\" veri yapısını daha net bir şekilde ortaya çıkarmak için satır sonları ve "
-"girintiler ekler::"
+"karmaşık kontrol sunar. Sonuç bir satırdan uzun olduğunda, \"pretty "
+"printer\" veri yapısını daha net bir şekilde ortaya çıkarmak için satır "
+"sonları ve girintiler ekler::"
 
 #: tutorial/stdlib2.rst:39
 msgid ""
@@ -130,7 +130,7 @@ msgstr ""
 "tarih, görüntü sıra numarası veya dosya biçimi gibi yer tutucular için yüzde "
 "işaretlerini kullanmayı seçebilir::"
 
-#: tutorial/stdlib2.rst:125
+#: tutorial/stdlib2.rst:126
 msgid ""
 "Another application for templating is separating program logic from the "
 "details of multiple output formats.  This makes it possible to substitute "
@@ -141,32 +141,33 @@ msgstr ""
 "raporları ve HTML web raporları için özel şablonların değiştirilmesini "
 "mümkün kılar."
 
-#: tutorial/stdlib2.rst:133
+#: tutorial/stdlib2.rst:134
 msgid "Working with Binary Data Record Layouts"
 msgstr "İkili Veri Kaydı Düzenleriyle Çalışma"
 
-#: tutorial/stdlib2.rst:135
+#: tutorial/stdlib2.rst:136
 msgid ""
 "The :mod:`struct` module provides :func:`~struct.pack` and :func:`~struct."
 "unpack` functions for working with variable length binary record formats.  "
 "The following example shows how to loop through header information in a ZIP "
-"file without using the :mod:`zipfile` module.  Pack codes ``\"H\"`` and ``\"I"
-"\"`` represent two and four byte unsigned numbers respectively.  The ``\"<"
-"\"`` indicates that they are standard size and in little-endian byte order::"
+"file without using the :mod:`zipfile` module.  Pack codes ``\"H\"`` and "
+"``\"I\"`` represent two and four byte unsigned numbers respectively.  The "
+"``\"<\"`` indicates that they are standard size and in little-endian byte "
+"order::"
 msgstr ""
 ":mod:`struct` modülü, değişken uzunluklu ikili kayıt formatlarıyla çalışmak "
 "için :func:`~struct.pack` ve :func:`~struct.unpack` işlevlerini sağlar. "
 "Aşağıdaki örnek, :mod:`zipfile` modülünü kullanmadan bir ZIP dosyasındaki "
-"başlık bilgilerinin nasıl döngüye alınacağını gösterir. Paket kodları ``\"H"
-"\"`` ve ``\"I\"`` sırasıyla iki ve dört baytlık işaretsiz sayıları temsil "
-"eder. ``\"<\"``, standart boyutta ve küçük endian bayt düzeninde olduklarını "
-"gösterir::"
+"başlık bilgilerinin nasıl döngüye alınacağını gösterir. Paket kodları "
+"``\"H\"`` ve ``\"I\"`` sırasıyla iki ve dört baytlık işaretsiz sayıları "
+"temsil eder. ``\"<\"``, standart boyutta ve küçük endian bayt düzeninde "
+"olduklarını gösterir::"
 
-#: tutorial/stdlib2.rst:166
+#: tutorial/stdlib2.rst:167
 msgid "Multi-threading"
 msgstr "Çoklu iş parçacığı"
 
-#: tutorial/stdlib2.rst:168
+#: tutorial/stdlib2.rst:169
 msgid ""
 "Threading is a technique for decoupling tasks which are not sequentially "
 "dependent.  Threads can be used to improve the responsiveness of "
@@ -180,7 +181,7 @@ msgstr ""
 "kullanılabilir. İlgili bir kullanım durumu, başka bir iş parçacığındaki "
 "hesaplamalara paralel olarak I/O çalıştırmaktadır."
 
-#: tutorial/stdlib2.rst:173
+#: tutorial/stdlib2.rst:174
 msgid ""
 "The following code shows how the high level :mod:`threading` module can run "
 "tasks in background while the main program continues to run::"
@@ -189,7 +190,7 @@ msgstr ""
 "`threading` modülünün görevleri arka planda nasıl çalıştırabileceğini "
 "gösterir::"
 
-#: tutorial/stdlib2.rst:197
+#: tutorial/stdlib2.rst:198
 msgid ""
 "The principal challenge of multi-threaded applications is coordinating "
 "threads that share data or other resources.  To that end, the threading "
@@ -201,7 +202,7 @@ msgstr ""
 "parçacığı modülü, kilitler, olaylar, koşul değişkenleri ve semaforlar dahil "
 "olmak üzere bir dizi senkronizasyon ilkesi sağlar."
 
-#: tutorial/stdlib2.rst:202
+#: tutorial/stdlib2.rst:203
 msgid ""
 "While those tools are powerful, minor design errors can result in problems "
 "that are difficult to reproduce.  So, the preferred approach to task "
@@ -220,11 +221,11 @@ msgstr ""
 "kullanan uygulamaların tasarımı daha kolay, daha okunaklı ve daha "
 "güvenilirdir."
 
-#: tutorial/stdlib2.rst:213
+#: tutorial/stdlib2.rst:214
 msgid "Logging"
 msgstr "Günlükleme"
 
-#: tutorial/stdlib2.rst:215
+#: tutorial/stdlib2.rst:216
 msgid ""
 "The :mod:`logging` module offers a full featured and flexible logging "
 "system. At its simplest, log messages are sent to a file or to ``sys."
@@ -234,11 +235,11 @@ msgstr ""
 "basit haliyle, günlük mesajları bir dosyaya veya ``sys.stderr`` adresine "
 "gönderilir::"
 
-#: tutorial/stdlib2.rst:225
+#: tutorial/stdlib2.rst:226
 msgid "This produces the following output:"
 msgstr "Bu, aşağıdaki çıktıyı üretir:"
 
-#: tutorial/stdlib2.rst:233
+#: tutorial/stdlib2.rst:234
 msgid ""
 "By default, informational and debugging messages are suppressed and the "
 "output is sent to standard error.  Other output options include routing "
@@ -254,7 +255,7 @@ msgstr ""
 "`~logging.DEBUG`, :const:`~logging.INFO`, :const:`~logging.WARNING`, :const:"
 "`~logging.ERROR` , ve :const:`~logging.CRITICAL`."
 
-#: tutorial/stdlib2.rst:240
+#: tutorial/stdlib2.rst:241
 msgid ""
 "The logging system can be configured directly from Python or can be loaded "
 "from a user editable configuration file for customized logging without "
@@ -264,22 +265,22 @@ msgstr ""
 "değiştirmeden özelleştirilmiş günlük kaydı için kullanıcı tarafından "
 "düzenlenebilir bir yapılandırma dosyasından yüklenebilir."
 
-#: tutorial/stdlib2.rst:248
+#: tutorial/stdlib2.rst:249
 msgid "Weak References"
 msgstr "Zayıf Başvurular"
 
-#: tutorial/stdlib2.rst:250
+#: tutorial/stdlib2.rst:251
 msgid ""
 "Python does automatic memory management (reference counting for most objects "
 "and :term:`garbage collection` to eliminate cycles).  The memory is freed "
 "shortly after the last reference to it has been eliminated."
 msgstr ""
 "Python otomatik bellek yönetimi yapar (çoğu nesne için referans sayımı ve "
-"döngüleri ortadan kaldırmak için :term: `garbage collection`). Hafıza, ona "
+"döngüleri ortadan kaldırmak için :term:`garbage collection`). Hafıza, ona "
 "yapılan son başvurunun ortadan kaldırılmasından kısa bir süre sonra serbest "
 "bırakılır."
 
-#: tutorial/stdlib2.rst:254
+#: tutorial/stdlib2.rst:255
 msgid ""
 "This approach works fine for most applications but occasionally there is a "
 "need to track objects only as long as they are being used by something else. "
@@ -299,11 +300,11 @@ msgstr ""
 "geri arama tetiklenir. Tipik uygulamalar, oluşturması pahalı olan nesneleri "
 "önbelleğe almayı içerir::"
 
-#: tutorial/stdlib2.rst:289
+#: tutorial/stdlib2.rst:290
 msgid "Tools for Working with Lists"
 msgstr "Listelerle Çalışma Araçları"
 
-#: tutorial/stdlib2.rst:291
+#: tutorial/stdlib2.rst:292
 msgid ""
 "Many data structure needs can be met with the built-in list type. However, "
 "sometimes there is a need for alternative implementations with different "
@@ -313,7 +314,7 @@ msgstr ""
 "bazen farklı performans ödünleşimleri ile alternatif uygulamalara ihtiyaç "
 "duyulmaktadır."
 
-#: tutorial/stdlib2.rst:295
+#: tutorial/stdlib2.rst:296
 msgid ""
 "The :mod:`array` module provides an :class:`~array.array()` object that is "
 "like a list that stores only homogeneous data and stores it more compactly.  "
@@ -324,10 +325,10 @@ msgstr ""
 ":mod:`array` modülü, yalnızca homojen verileri depolayan ve daha kompakt bir "
 "şekilde depolayan bir liste gibi bir :class:`~array.array()` nesnesi sağlar. "
 "Aşağıdaki örnek, normal Python int nesneleri listeleri için giriş başına "
-"olağan 16 bayt yerine iki baytlık işaretsiz ikili sayılar (tür kodu ``\"H"
-"\"``) olarak saklanan bir sayı dizisini gösterir:"
+"olağan 16 bayt yerine iki baytlık işaretsiz ikili sayılar (tür kodu "
+"``\"H\"``) olarak saklanan bir sayı dizisini gösterir:"
 
-#: tutorial/stdlib2.rst:308
+#: tutorial/stdlib2.rst:309
 msgid ""
 "The :mod:`collections` module provides a :class:`~collections.deque()` "
 "object that is like a list with faster appends and pops from the left side "
@@ -339,7 +340,7 @@ msgstr ""
 "`~collections.deque()` nesnesi sağlar. Bu nesneler, kuyruklar uygulamak ve "
 "ilk ağaç aramalarını genişletmek için çok uygundur::"
 
-#: tutorial/stdlib2.rst:329
+#: tutorial/stdlib2.rst:330
 msgid ""
 "In addition to alternative list implementations, the library also offers "
 "other tools such as the :mod:`bisect` module with functions for manipulating "
@@ -349,7 +350,7 @@ msgstr ""
 "listeleri işlemek için işlevlere sahip :mod:`bisect` modülü gibi başka "
 "araçlar da sunar::"
 
-#: tutorial/stdlib2.rst:339
+#: tutorial/stdlib2.rst:340
 msgid ""
 "The :mod:`heapq` module provides functions for implementing heaps based on "
 "regular lists.  The lowest valued entry is always kept at position zero.  "
@@ -361,11 +362,11 @@ msgstr ""
 "Bu, en küçük öğeye tekrar tekrar erişen ancak tam liste sıralamasını "
 "çalıştırmak istemeyen uygulamalar için kullanışlıdır::"
 
-#: tutorial/stdlib2.rst:355
+#: tutorial/stdlib2.rst:356
 msgid "Decimal Floating Point Arithmetic"
 msgstr "Ondalık Kayan Nokta Aritmetiği"
 
-#: tutorial/stdlib2.rst:357
+#: tutorial/stdlib2.rst:358
 msgid ""
 "The :mod:`decimal` module offers a :class:`~decimal.Decimal` datatype for "
 "decimal floating point arithmetic.  Compared to the built-in :class:`float` "
@@ -375,28 +376,28 @@ msgstr ""
 "`~decimal.Decimal` veri tipi sunar. İkili kayan noktanın yerleşik :class:"
 "`float` uygulamasıyla karşılaştırıldığında, sınıf özellikle için yararlıdır"
 
-#: tutorial/stdlib2.rst:361
+#: tutorial/stdlib2.rst:362
 msgid ""
 "financial applications and other uses which require exact decimal "
 "representation,"
 msgstr ""
 "tam ondalık gösterim gerektiren finansal uygulamalar ve diğer kullanımlar,"
 
-#: tutorial/stdlib2.rst:363
+#: tutorial/stdlib2.rst:364
 msgid "control over precision,"
 msgstr "hassasiyet üzerinde kontrol,"
 
-#: tutorial/stdlib2.rst:364
+#: tutorial/stdlib2.rst:365
 msgid "control over rounding to meet legal or regulatory requirements,"
 msgstr ""
 "yasal veya düzenleyici gereklilikleri karşılamak için yuvarlama üzerinde "
 "kontrol,"
 
-#: tutorial/stdlib2.rst:365
+#: tutorial/stdlib2.rst:366
 msgid "tracking of significant decimal places, or"
 msgstr "önemli ondalık basamakların izlenmesi veya"
 
-#: tutorial/stdlib2.rst:366
+#: tutorial/stdlib2.rst:367
 msgid ""
 "applications where the user expects the results to match calculations done "
 "by hand."
@@ -404,7 +405,7 @@ msgstr ""
 "kullanıcının sonuçların elle yapılan hesaplamalarla eşleşmesini beklediği "
 "uygulamalar."
 
-#: tutorial/stdlib2.rst:369
+#: tutorial/stdlib2.rst:370
 msgid ""
 "For example, calculating a 5% tax on a 70 cent phone charge gives different "
 "results in decimal floating point and binary floating point. The difference "
@@ -414,7 +415,7 @@ msgstr ""
 "nokta ve ikili kayan nokta için farklı sonuçlar verir. Sonuçlar en yakın "
 "küsurata yuvarlanırsa fark önemli hale gelir::"
 
-#: tutorial/stdlib2.rst:379
+#: tutorial/stdlib2.rst:380
 msgid ""
 "The :class:`~decimal.Decimal` result keeps a trailing zero, automatically "
 "inferring four place significance from multiplicands with two place "
@@ -428,7 +429,7 @@ msgstr ""
 "ondalık miktarları tam olarak temsil edemediğinde ortaya çıkabilecek "
 "sorunları önler."
 
-#: tutorial/stdlib2.rst:385
+#: tutorial/stdlib2.rst:386
 msgid ""
 "Exact representation enables the :class:`~decimal.Decimal` class to perform "
 "modulo calculations and equality tests that are unsuitable for binary "
@@ -438,7 +439,7 @@ msgstr ""
 "uygun olmayan modlo hesaplamaları ve eşitlik testleri gerçekleştirmesini "
 "sağlar::"
 
-#: tutorial/stdlib2.rst:399
+#: tutorial/stdlib2.rst:400
 msgid ""
 "The :mod:`decimal` module provides arithmetic with as much precision as "
 "needed::"
