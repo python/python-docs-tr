@@ -74,7 +74,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          python -m pip install -r requirements.txt
+          python -m pip install -r requirements.txt -r venv/cpython/Doc/requirements.txt
       - name: Make
         run: make
       # - name: Clone cpython
