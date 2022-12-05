@@ -73,24 +73,3 @@ jobs:
           python -m pip install -r requirements.txt -r venv/cpython/Doc/requirements.txt
       - name: Make
         run: make
-      # - name: Clone cpython
-      #   run: |
-      #     if [ ! -d ~/cpython ]; then
-      #       git clone https://github.com/python/cpython ~/cpython/
-      #     else
-      #       git -C ~/cpython fetch
-      #     fi
-      #     git -C ~/cpython checkout $(grep ^CPYTHON_CURRENT_COMMIT Makefile| cut -d= -f2)
-      # - name: Prepare build hierarchy
-      #   run: |
-      #     mkdir -p ~/locales/tr/LC_MESSAGES/
-      #     cp -uv --parents *.po */*.po ~/locales/tr/LC_MESSAGES/
-      #     # git -C ~/cpython checkout $(grep ^CPYTHON_CURRENT_COMMIT Makefile| cut -d= -f2)
-      # - name: Prepare venv
-      #   run: |
-      #     make -C $HOME/cpython/Doc clean-venv
-      #     make -C $HOME/cpython/Doc venv
-      # - name: sphinx-build
-      #   run: |
-      #     git -C ~/cpython branch
-      #     make -C $HOME/cpython/Doc SPHINXOPTS="-q -j4 -D locale_dirs=$HOME/locales -D language=tr -D gettext_compact=0" autobuild-dev-html
