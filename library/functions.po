@@ -1,12 +1,12 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-02 04:25-0500\n"
+"POT-Creation-Date: 2022-12-05 18:31+0300\n"
 "PO-Revision-Date: 2022-07-10 23:37+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH\n"
@@ -511,8 +511,8 @@ msgstr ""
 "procedure <truth>` kullanılarak boolean veri tipine dönüştürülür. *x* "
 "yanlışsa veya atlanırsa, bu ``False`` döndürür; aksi takdirde, ``True`` "
 "değerini döndürür. :class:`bool` sınıfı :class:`int` öğesinin bir alt "
-"sınıfıdır (bkz. :ref:`typesnumeric`). Daha fazla alt sınıfa ayrılamaz. "
-"Bunun tek örnekleri ``False`` ve ``True`` 'dur (bkz. :ref:`bltin-boolean-values`)."
+"sınıfıdır (bkz. :ref:`typesnumeric`). Daha fazla alt sınıfa ayrılamaz. Bunun "
+"tek örnekleri ``False`` ve ``True`` 'dur (bkz. :ref:`bltin-boolean-values`)."
 
 #: library/functions.rst:675 library/functions.rst:892
 msgid "*x* is now a positional-only parameter."
@@ -833,10 +833,10 @@ msgid ""
 "``__debug__`` is false) or ``2`` (docstrings are removed too)."
 msgstr ""
 "*optimize* argümanı derleyicinin optimizasyon seviyesini belirler; ``-1`` "
-"varsayılan değeri, :option:`-O` seçenekleri tarafından verilen yorumlayıcının "
-"optimizasyon seviyesini seçer. Belli seviyeler: ``0`` (optimizasyon yok; "
-"``__debug__`` doğru), ``1`` (iddialar kaldırılır, ``__debug__`` yanlış) veya "
-"``2`` (Ekstradan doküman dizeleri de kaldırıldı)."
+"varsayılan değeri, :option:`-O` seçenekleri tarafından verilen "
+"yorumlayıcının optimizasyon seviyesini seçer. Belli seviyeler: ``0`` "
+"(optimizasyon yok; ``__debug__`` doğru), ``1`` (iddialar kaldırılır, "
+"``__debug__`` yanlış) veya ``2`` (Ekstradan doküman dizeleri de kaldırıldı)."
 
 #: library/functions.rst:318
 msgid ""
@@ -1385,9 +1385,9 @@ msgid ""
 "spellings for positive infinity."
 msgstr ""
 ":ref:`floating` kısmında açıklanan ``floatnumber``, Python floating-point "
-"tanımının farklı bir biçimidir. Durum önemli değildir, örneğin \"inf\", "
-"\"Inf\", \"INFINITY\" ve \"iNfINity\" hepsi pozitif sonsuz için kabul "
-"edilebilir yazımlardır."
+"tanımının farklı bir biçimidir. Durum önemli değildir, örneğin \"inf\", \"Inf"
+"\", \"INFINITY\" ve \"iNfINity\" hepsi pozitif sonsuz için kabul edilebilir "
+"yazımlardır."
 
 #: library/functions.rst:646
 msgid ""
@@ -2193,9 +2193,9 @@ msgid ""
 "Modes ``'w+'`` and ``'w+b'`` open and truncate the file.  Modes ``'r+'`` and "
 "``'r+b'`` open the file with no truncation."
 msgstr ""
-"Varsayılan mod ``'r'`` (okumaya açık, ``'rt'`` 'nin eşanlamlısı.) 'dir. "
-"``'w+'`` ve ``'w+b'`` modları dosyayı açar ve temizlerler. ``'r+'`` ve "
-"``'r+b'`` modları dosyayı temizlemeden açarlar."
+"Varsayılan mod ``'r'`` (okumaya açık, ``'rt'`` 'nin eşanlamlısı.) 'dir. ``'w"
+"+'`` ve ``'w+b'`` modları dosyayı açar ve temizlerler. ``'r+'`` ve ``'r+b'`` "
+"modları dosyayı temizlemeden açarlar."
 
 #: library/functions.rst:1161
 msgid ""
@@ -2733,9 +2733,9 @@ msgstr ""
 
 #: library/functions.rst:1467
 msgid ""
-"The ``@property`` decorator turns the :meth:`voltage` method into a "
-"\"getter\" for a read-only attribute with the same name, and it sets the "
-"docstring for *voltage* to \"Get the current voltage.\""
+"The ``@property`` decorator turns the :meth:`voltage` method into a \"getter"
+"\" for a read-only attribute with the same name, and it sets the docstring "
+"for *voltage* to \"Get the current voltage.\""
 msgstr ""
 "``@property`` dekoratörü :meth:`voltage` metodunu aynı isimli salt-okunur "
 "bir özellik için \"getter\" metoduna dönüştürür ve *voltage* için doküman "
@@ -2780,8 +2780,9 @@ msgid ""
 "Rather than being a function, :class:`range` is actually an immutable "
 "sequence type, as documented in :ref:`typesseq-range` and :ref:`typesseq`."
 msgstr ""
-"Bir metot olmaktansa, :class:`range` aslında bir değiştirilemez dizi tipidir. "
-"Daha fazla bilgi için :ref:`typesseq-range` ve :ref:`typesseq` 'e bakınız."
+"Bir metot olmaktansa, :class:`range` aslında bir değiştirilemez dizi "
+"tipidir. Daha fazla bilgi için :ref:`typesseq-range` ve :ref:`typesseq` 'e "
+"bakınız."
 
 #: library/functions.rst:1515
 #, fuzzy
@@ -3144,8 +3145,8 @@ msgid ""
 "The *object-or-type* determines the :term:`method resolution order` to be "
 "searched.  The search starts from the class right after the *type*."
 msgstr ""
-"*object-or-type* aranacak :term:`yöntem çözümleme sırası <method resolution order>` 'nı belirler. "
-"Arama *type* 'dan sonraki ilk sınıftan başlar."
+"*object-or-type* aranacak :term:`yöntem çözümleme sırası <method resolution "
+"order>` 'nı belirler. Arama *type* 'dan sonraki ilk sınıftan başlar."
 
 #: library/functions.rst:1724
 msgid ""
@@ -3240,9 +3241,9 @@ msgstr ""
 ":func:`super` 'ın, ``super().__getitem__(name)`` gibi açık noktalı öznitelik "
 "aramaları için bağlayan işlemin bir parçası olarak uygulanır. Sınıfları "
 "işbirlikli çoklu kalıtımı destekleyen tahmin edilebilir bir sırada aramak "
-"için kendi :meth:`__getattribute__` metodunu sağlar. Bu nedenle :func:`super`, ifadeler "
-"veya ``super()[name]`` gibi operatörler kullanarak kesin aramalar için "
-"tanımsızdır."
+"için kendi :meth:`__getattribute__` metodunu sağlar. Bu nedenle :func:"
+"`super`, ifadeler veya ``super()[name]`` gibi operatörler kullanarak kesin "
+"aramalar için tanımsızdır."
 
 #: library/functions.rst:1771
 msgid ""

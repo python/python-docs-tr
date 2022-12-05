@@ -1,12 +1,12 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-02 04:25-0500\n"
+"POT-Creation-Date: 2022-12-05 18:31+0300\n"
 "PO-Revision-Date: 2022-08-15 20:14+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -126,17 +126,18 @@ msgstr "Boolean İşlemleri --- :keyword:`!and`, :keyword:`!or`, :keyword:`!not`
 msgid "These are the Boolean operations, ordered by ascending priority:"
 msgstr "Bunlar artan önceliğe göre sıralanmış Boolean işlemleridir:"
 
-#: library/stdtypes.rst:143 library/stdtypes.rst:364 library/stdtypes.rst:883
-#: library/stdtypes.rst:1088
+#: library/stdtypes.rst:143 library/stdtypes.rst:364
+#: library/stdtypes.rst:883 library/stdtypes.rst:1088
 msgid "Operation"
 msgstr "İşlem"
 
-#: library/stdtypes.rst:275 library/stdtypes.rst:414 library/stdtypes.rst:1088
+#: library/stdtypes.rst:275 library/stdtypes.rst:414
+#: library/stdtypes.rst:1088
 msgid "Result"
 msgstr "Sonuç"
 
-#: library/stdtypes.rst:275 library/stdtypes.rst:883 library/stdtypes.rst:2328
-#: library/stdtypes.rst:3543
+#: library/stdtypes.rst:275 library/stdtypes.rst:883
+#: library/stdtypes.rst:2328 library/stdtypes.rst:3543
 msgid "Notes"
 msgstr "Notlar"
 
@@ -148,8 +149,8 @@ msgstr "``x or y``"
 msgid "if *x* is false, then *y*, else *x*"
 msgstr "*x* yanlışsa, *y*, aksi halde *x*"
 
-#: library/stdtypes.rst:285 library/stdtypes.rst:888 library/stdtypes.rst:2334
-#: library/stdtypes.rst:3549
+#: library/stdtypes.rst:285 library/stdtypes.rst:888
+#: library/stdtypes.rst:2334 library/stdtypes.rst:3549
 msgid "\\(1)"
 msgstr "\\(1)"
 
@@ -161,8 +162,8 @@ msgstr "``x and y``"
 msgid "if *x* is false, then *x*, else *y*"
 msgstr "*x* yanlışsa, *x*, aksi halde *y*"
 
-#: library/stdtypes.rst:288 library/stdtypes.rst:1127 library/stdtypes.rst:2340
-#: library/stdtypes.rst:3555
+#: library/stdtypes.rst:288 library/stdtypes.rst:1127
+#: library/stdtypes.rst:2340 library/stdtypes.rst:3555
 msgid "\\(2)"
 msgstr "\\(2)"
 
@@ -174,14 +175,14 @@ msgstr "``not x``"
 msgid "if *x* is false, then ``True``, else ``False``"
 msgstr "*x* yanlışsa, ``True``, aksi halde ``False``"
 
-#: library/stdtypes.rst:897 library/stdtypes.rst:2342 library/stdtypes.rst:2346
-#: library/stdtypes.rst:3557 library/stdtypes.rst:3561
-#: library/stdtypes.rst:3563
+#: library/stdtypes.rst:897 library/stdtypes.rst:2342
+#: library/stdtypes.rst:2346 library/stdtypes.rst:3557
+#: library/stdtypes.rst:3561 library/stdtypes.rst:3563
 msgid "\\(3)"
 msgstr "\\(3)"
 
-#: library/stdtypes.rst:319 library/stdtypes.rst:934 library/stdtypes.rst:2374
-#: library/stdtypes.rst:3593
+#: library/stdtypes.rst:319 library/stdtypes.rst:934
+#: library/stdtypes.rst:2374 library/stdtypes.rst:3593
 msgid "Notes:"
 msgstr "Notlar:"
 
@@ -603,8 +604,9 @@ msgstr "``pow(x, y)``"
 msgid "*x* to the power *y*"
 msgstr "*x* üzeri *y*"
 
-#: library/stdtypes.rst:312 library/stdtypes.rst:1112 library/stdtypes.rst:2364
-#: library/stdtypes.rst:3576 library/stdtypes.rst:3583
+#: library/stdtypes.rst:312 library/stdtypes.rst:1112
+#: library/stdtypes.rst:2364 library/stdtypes.rst:3576
+#: library/stdtypes.rst:3583
 msgid "\\(5)"
 msgstr "\\(5)"
 
@@ -772,8 +774,8 @@ msgstr "``x | y``"
 msgid "bitwise :dfn:`or` of *x* and *y*"
 msgstr "bit düzeyinde *x* :dfn:`or` *y*"
 
-#: library/stdtypes.rst:419 library/stdtypes.rst:1133 library/stdtypes.rst:2354
-#: library/stdtypes.rst:3569
+#: library/stdtypes.rst:419 library/stdtypes.rst:1133
+#: library/stdtypes.rst:2354 library/stdtypes.rst:3569
 msgid "\\(4)"
 msgstr "\\(4)"
 
@@ -1120,10 +1122,11 @@ msgstr ""
 "verimlilik için (:class:`int`, :class:`float`, :class:`decimal.Decimal` ve :"
 "class:`fractions.Fraction` dahil) Python'un sayısal türler için hash'i, "
 "herhangi bir rasyonel sayı için tanımlanmış tek bir matematiksel fonksiyona "
-"dayanır ve bu nedenle :class:`int` ve :class:`fractions.Fraction` 'ın tüm örnekleri "
-"ve :class:`float` ve :class:`decimal.Decimal` öğelerinin tüm sonlu örnekleri için geçerlidir. Esasen, bu fonksiyon sabit bir asal sayı olan ``P`` için "
-"``reduction modulo`` ``P`` ile verilir. ``P`` değeri Python'a :data:`sys."
-"hash_info` 'nun :attr:`modulus` özelliği olarak sunulur."
+"dayanır ve bu nedenle :class:`int` ve :class:`fractions.Fraction` 'ın tüm "
+"örnekleri ve :class:`float` ve :class:`decimal.Decimal` öğelerinin tüm sonlu "
+"örnekleri için geçerlidir. Esasen, bu fonksiyon sabit bir asal sayı olan "
+"``P`` için ``reduction modulo`` ``P`` ile verilir. ``P`` değeri Python'a :"
+"data:`sys.hash_info` 'nun :attr:`modulus` özelliği olarak sunulur."
 
 #: library/stdtypes.rst:678
 msgid ""
@@ -2367,8 +2370,8 @@ msgstr "Çift tırnak: ``\"katıştırılmış 'tek' tırnaklara izin verir\"``.
 
 #: library/stdtypes.rst:1439
 msgid ""
-"Triple quoted: ``'''Three single quotes'''``, ``\"\"\"Three double "
-"quotes\"\"\"``"
+"Triple quoted: ``'''Three single quotes'''``, ``\"\"\"Three double quotes"
+"\"\"\"``"
 msgstr "Üçlü tırnak: ``'''Üç tek tırnak'''``, ``\"\"\"Üç çift tırnak\"\"\"``"
 
 #: library/stdtypes.rst:1441
@@ -2687,9 +2690,9 @@ msgid ""
 "column is set to zero and the string is examined character by character.  If "
 "the character is a tab (``\\t``), one or more space characters are inserted "
 "in the result until the current column is equal to the next tab position. "
-"(The tab character itself is not copied.)  If the character is a newline "
-"(``\\n``) or return (``\\r``), it is copied and the current column is reset "
-"to zero.  Any other character is copied unchanged and the current column is "
+"(The tab character itself is not copied.)  If the character is a newline (``"
+"\\n``) or return (``\\r``), it is copied and the current column is reset to "
+"zero.  Any other character is copied unchanged and the current column is "
 "incremented by one regardless of how the character is represented when "
 "printed."
 msgstr ""
@@ -2700,10 +2703,10 @@ msgstr ""
 "mevcut sütun sıfıra ayarlanır ve dize karakter karakter incelenir. Karakter "
 "bir tab ise (``\\t``), geçerli sütun sonraki tab konumuna eşit olana kadar "
 "sonuca bir veya daha fazla boşluk karakteri eklenir. (Tab karakterinin "
-"kendisi kopyalanmaz.)  Karakter yeni satırsa (``\\n``) veya dönüşse "
-"(``\\r``), kopyalanır ve mevcut sütun sıfırlanır.  Diğer herhangi bir "
-"karakter değiştirilmeden kopyalanır ve mevcut sütun, karakterin "
-"yazdırıldığında nasıl temsil edildiğine bakılmaksızın bir artırılır."
+"kendisi kopyalanmaz.)  Karakter yeni satırsa (``\\n``) veya dönüşse (``"
+"\\r``), kopyalanır ve mevcut sütun sıfırlanır.  Diğer herhangi bir karakter "
+"değiştirilmeden kopyalanır ve mevcut sütun, karakterin yazdırıldığında nasıl "
+"temsil edildiğine bakılmaksızın bir artırılır."
 
 #: library/stdtypes.rst:1641
 msgid ""
@@ -2812,9 +2815,9 @@ msgid ""
 "Return ``True`` if all characters in the string are alphabetic and there is "
 "at least one character, ``False`` otherwise.  Alphabetic characters are "
 "those characters defined in the Unicode character database as \"Letter\", i."
-"e., those with general category property being one of \"Lm\", \"Lt\", "
-"\"Lu\", \"Ll\", or \"Lo\".  Note that this is different from the "
-"\"Alphabetic\" property defined in the Unicode Standard."
+"e., those with general category property being one of \"Lm\", \"Lt\", \"Lu"
+"\", \"Ll\", or \"Lo\".  Note that this is different from the \"Alphabetic\" "
+"property defined in the Unicode Standard."
 msgstr ""
 "Dizedeki tüm karakterler alfabetikse ve en az bir karakter varsa ``True``, "
 "aksi takdirde ``False`` döndürür.  Alfabetik karakterler, Unicode karakter "
@@ -2826,8 +2829,8 @@ msgstr ""
 #: library/stdtypes.rst:1727
 msgid ""
 "Return ``True`` if the string is empty or all characters in the string are "
-"ASCII, ``False`` otherwise. ASCII characters have code points in the range "
-"U+0000-U+007F."
+"ASCII, ``False`` otherwise. ASCII characters have code points in the range U"
+"+0000-U+007F."
 msgstr ""
 "Dize boşsa veya dizedeki tüm karakterler ASCII ise ``True``, aksi takdirde "
 "``False`` döndürür. ASCII karakterleri U+0000-U+007F aralığında kod "
@@ -2937,8 +2940,8 @@ msgstr ""
 #: library/stdtypes.rst:1805
 msgid ""
 "A character is *whitespace* if in the Unicode character database (see :mod:"
-"`unicodedata`), either its general category is ``Zs`` (\"Separator, "
-"space\"), or its bidirectional class is one of ``WS``, ``B``, or ``S``."
+"`unicodedata`), either its general category is ``Zs`` (\"Separator, space"
+"\"), or its bidirectional class is one of ``WS``, ``B``, or ``S``."
 msgstr ""
 "Bir karakter, genel kategorisi ``Zs`` (“Ayırıcı, boşluk”) ya da çift yönlü "
 "sınıfı ``WS``, ``B`` veya ``S``’den biri ise Unicode karakter veritabanında "
@@ -6439,8 +6442,7 @@ msgstr ""
 msgid ""
 "However, union objects containing :ref:`parameterized generics <types-"
 "genericalias>` cannot be used::"
-msgstr ""
-"Ancak, :ref:`types-genericalias` içeren union nesneleri kullanılamaz::"
+msgstr "Ancak, :ref:`types-genericalias` içeren union nesneleri kullanılamaz::"
 
 #: library/stdtypes.rst:5097
 msgid ""
@@ -6647,8 +6649,8 @@ msgid ""
 "Accessing ``__code__`` raises an :ref:`auditing event <auditing>` ``object."
 "__getattr__`` with arguments ``obj`` and ``\"__code__\"``."
 msgstr ""
-"``__code__`` 'e erişmek,``obj`` ve ``\"__code__\"`` argümanlarıyla "
-":ref:`denetim etkinliği <auditing>` ``object.__getattr__`` oluşturur."
+"``__code__`` 'e erişmek,``obj`` ve ``\"__code__\"`` argümanlarıyla :ref:"
+"`denetim etkinliği <auditing>` ``object.__getattr__`` oluşturur."
 
 #: library/stdtypes.rst:5259
 msgid ""
@@ -6927,8 +6929,8 @@ msgstr ""
 
 #: library/stdtypes.rst:5489
 msgid ""
-"any other string conversion to base 10, for example ``f\"{integer}\"``, "
-"``\"{}\".format(integer)``, or ``b\"%d\" % integer``."
+"any other string conversion to base 10, for example ``f\"{integer}\"``, ``"
+"\"{}\".format(integer)``, or ``b\"%d\" % integer``."
 msgstr ""
 
 #: library/stdtypes.rst:5492
@@ -7091,13 +7093,13 @@ msgstr ""
 
 #: library/stdtypes.rst:5583
 msgid ""
-"Cased characters are those with general category property being one of "
-"\"Lu\" (Letter, uppercase), \"Ll\" (Letter, lowercase), or \"Lt\" (Letter, "
+"Cased characters are those with general category property being one of \"Lu"
+"\" (Letter, uppercase), \"Ll\" (Letter, lowercase), or \"Lt\" (Letter, "
 "titlecase)."
 msgstr ""
-"Harfli karakterler, genel kategori özelliği \"Lu\" (Harf, büyük), "
-"\"Ll\" (Harf, küçük harf) veya \"Lt\" (Harf, başlık) karakterlerinden biri "
-"olan karakterlerdir."
+"Harfli karakterler, genel kategori özelliği \"Lu\" (Harf, büyük), \"Ll"
+"\" (Harf, küçük harf) veya \"Lt\" (Harf, başlık) karakterlerinden biri olan "
+"karakterlerdir."
 
 #: library/stdtypes.rst:5586
 msgid ""
