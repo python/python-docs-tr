@@ -59,20 +59,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/cache@v3
-        with:
-          path: '~/cpython/'
-          key: '1'
-      - uses: actions/cache@v3
-        with:
-          path: ~/.cache/pip
-          key: '1'
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
       - name: Install dependencies
         run: |
+          git clone https://github.com/python/cpython.git venv/cpython/
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install -r requirements.txt -r venv/cpython/Doc/requirements.txt
       - name: Make
