@@ -22,6 +22,7 @@ jobs:
     name: ${{ matrix.tool.name }} (${{ matrix.tool.package }})
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - uses: lots0logs/gh-action-get-changed-files@2.1.4
         id: changed_files
         with:
