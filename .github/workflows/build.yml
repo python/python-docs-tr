@@ -63,8 +63,10 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-      - name: Install dependencies
+      - name: Prepare environment
         run: |
+          pwd
+          tree -L 2
           git clone https://github.com/python/cpython.git venv/cpython/
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install -r requirements.txt -r venv/cpython/Doc/requirements.txt
