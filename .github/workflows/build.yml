@@ -1,40 +1,75 @@
-name: Build
+name: Tests
 
 on:
   push:
     branches:
-      - "**"
+      - '*.*'
   pull_request:
-
-env:
-  CPYTHON_BRANCH: "3.10"
-  LANGUAGE: "tr"
+    branches:
+      - '*.*'
 
 jobs:
-  test:
-    name: Build
+  checks:
+    strategy:
+      matrix:
+        tool:
+          - name: sphinx-lint
+            package: sphinx-lint
+            command: 'sphinx-lint --enable default-role --ignore .git'
+          - name: Line length
+            command: 'awk ''{if (length($0) > 80 && length(gensub(/[^ ]/, "", "g")) > 1) {print FILENAME ":" FNR, "line too long:", $0; ERRORS+=1}} END {if (ERRORS>0) {exit 1}}'' $CHANGED_PO_FILES'
+
+    name: ${{ matrix.tool.name }} (${{ matrix.tool.package }})
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Set Up Python ${{ env.CPYTHON_BRANCH }}
-        uses: actions/setup-python@v4
+      - uses: lots0logs/gh-action-get-changed-files@2.1.4
+        id: changed_files
         with:
-          python-version: "${{ env.CPYTHON_BRANCH }}"
-      - name: Get CPython
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install ${{ matrix.tool.package }}
         run: |
-          git clone https://github.com/python/cpython.git ../cpython --branch=${{ env.CPYTHON_BRANCH }}
-          
-      - name: Install dependencies
+          if [ -n "${{ matrix.tool.apt_dependencies }}" ]; then
+              sudo apt-get update && sudo apt-get install -y ${{ matrix.tool.apt_dependencies }}
+          fi
+          if [ -n "${{ matrix.tool.package }}" ]; then
+              python -m pip install --upgrade pip setuptools wheel
+              python -m pip install ${{ matrix.tool.package }}
+          fi
+      - name: Run ${{ matrix.tool.package }}
+        env:
+          ADDED_FILES: ${{ join(fromJSON(steps.changed_files.outputs.added), ' ') }}
+          MODIFIED_FILES: ${{ join(fromJSON(steps.changed_files.outputs.modified), ' ') }}
         run: |
-          sudo apt update
-          sudo apt install -y gettext 
-          python -m pip install -r requirements.txt
-          python -m pip install -r ../cpython/Doc/requirements.txt
-      
-      - name: Sphinx lint
-        run: |
-          sphinx-lint *.po */*.po
+          CHANGED_PO_FILES=$(printf "%s %s\n" "$ADDED_FILES" "$MODIFIED_FILES" | tr ' ' '\n' | grep '.po$'; true)
+          pwd
+          tree -L 2
+          if [ -n "$CHANGED_PO_FILES" ]
+          then
+            echo "Running on:" $CHANGED_PO_FILES
+            ${{ matrix.tool.command }}
+          else
+            echo "No changed po files, nothing to check."
+          fi
 
-      - name: Build docs
+  sphinx:
+    name: 'Generate docs (sphinx)'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Prepare environment
         run: |
-          make
+          pwd
+          tree -L 2
+          git clone https://github.com/python/cpython.git venv/cpython/
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install -r requirements.txt -r venv/cpython/Doc/requirements.txt
+      - name: Make
+        run: make

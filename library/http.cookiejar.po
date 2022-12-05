@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-02 04:25-0500\n"
+"POT-Creation-Date: 2022-12-05 18:31+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -628,10 +628,10 @@ msgid ""
 "cookie domain to be matched.  For example, ``\"example.com\"`` matches a "
 "blocklist entry of ``\"example.com\"``, but ``\"www.example.com\"`` does "
 "not.  Domains that do start with a dot are matched by more specific domains "
-"too. For example, both ``\"www.example.com\"`` and ``\"www.coyote.example."
-"com\"`` match ``\".example.com\"`` (but ``\"example.com\"`` itself does "
-"not).  IP addresses are an exception, and must match exactly.  For example, "
-"if blocked_domains contains ``\"192.168.1.2\"`` and ``\".168.1.2\"``, "
+"too. For example, both ``\"www.example.com\"`` and ``\"www.coyote.example.com"
+"\"`` match ``\".example.com\"`` (but ``\"example.com\"`` itself does not).  "
+"IP addresses are an exception, and must match exactly.  For example, if "
+"blocked_domains contains ``\"192.168.1.2\"`` and ``\".168.1.2\"``, "
 "192.168.1.2 is blocked, but 193.168.1.2 is not."
 msgstr ""
 

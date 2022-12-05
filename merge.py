@@ -22,7 +22,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--cpython_repo",
-        default=Path("../cpython"),
+        default=Path("venv/cpython"),
         type=Path,
         help="Use this given cpython clone.",
     )
@@ -93,23 +93,6 @@ def update_makefile(cpython_repo: Path) -> None:
     run("git", "add", "Makefile")
 
 
-def git_add_relevant_files():
-    """Add only files with relevant modifications.
-
-    This only add files with actual modifications, not just metadata
-    modifications, to avoid noise in history.
-    """
-    modified_files = run("git", "ls-files", "-m", stdout=PIPE).stdout.split("\n")
-    modified_po_files = [line for line in modified_files if line.endswith(".po")]
-    for file in modified_po_files:
-        diff = run("git", "diff", "-U0", file, stdout=PIPE).stdout
-        if len(diff.split("\n")) > 8:
-            run("git", "add", file)
-        else:
-            run("git", "checkout", "--", file)
-    run("rm", "-f", "whatsnew/changelog.po")  # We don't translate this file.
-
-
 def main():
     args = parse_args()
     setup_repo(args.cpython_repo, args.branch)
@@ -133,8 +116,7 @@ def main():
     shutil.rmtree(pot_path)
     run("powrap", "-m")
     update_makefile(args.cpython_repo)
-    git_add_relevant_files()
-    run("git", "commit", "-m", "Make merge")
+    run("sphinx-lint", "*.po", "*/*.po")
 
 
 if __name__ == "__main__":

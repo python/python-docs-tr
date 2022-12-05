@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-02 04:25-0500\n"
+"POT-Creation-Date: 2022-12-05 18:31+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -302,8 +302,8 @@ msgid ""
 "browser to identify itself -- some HTTP servers only allow requests coming "
 "from common browsers as opposed to scripts. For example, Mozilla Firefox may "
 "identify itself as ``\"Mozilla/5.0 (X11; U; Linux i686) Gecko/20071127 "
-"Firefox/2.0.0.11\"``, while :mod:`urllib`'s default user agent string is "
-"``\"Python-urllib/2.6\"`` (on Python 2.6). All header keys are sent in camel "
+"Firefox/2.0.0.11\"``, while :mod:`urllib`'s default user agent string is ``"
+"\"Python-urllib/2.6\"`` (on Python 2.6). All header keys are sent in camel "
 "case."
 msgstr ""
 
@@ -784,8 +784,8 @@ msgid ""
 "Handle an error of the given protocol.  This will call the registered error "
 "handlers for the given protocol with the given arguments (which are protocol "
 "specific).  The HTTP protocol is a special case which uses the HTTP response "
-"code to determine the specific error handler; refer to the :meth:"
-"`http_error_\\<type\\>` methods of the handler classes."
+"code to determine the specific error handler; refer to the :meth:`http_error_"
+"\\<type\\>` methods of the handler classes."
 msgstr ""
 
 #: library/urllib.request.rst:671

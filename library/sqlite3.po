@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-02 04:25-0500\n"
+"POT-Creation-Date: 2022-12-05 18:31+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -470,8 +470,8 @@ msgstr ""
 #: library/sqlite3.rst:450
 msgid ""
 "String constant stating the type of parameter marker formatting expected by "
-"the :mod:`!sqlite3` module. Required by the DB-API. Hard-coded to "
-"``\"qmark\"``."
+"the :mod:`!sqlite3` module. Required by the DB-API. Hard-coded to ``\"qmark"
+"\"``."
 msgstr ""
 
 #: library/sqlite3.rst:456
@@ -496,8 +496,8 @@ msgstr ""
 #: library/sqlite3.rst:473
 msgid ""
 "Integer constant required by the DB-API, stating the level of thread safety "
-"the :mod:`!sqlite3` module supports. Currently hard-coded to ``1``, meaning "
-"*\"Threads may share the module, but not connections.\"* However, this may "
+"the :mod:`!sqlite3` module supports. Currently hard-coded to ``1``, meaning *"
+"\"Threads may share the module, but not connections.\"* However, this may "
 "not always be true. You can check the underlying SQLite library's compile-"
 "time threaded mode using the following query::"
 msgstr ""

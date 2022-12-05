@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-02 04:25-0500\n"
+"POT-Creation-Date: 2022-12-05 18:31+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -26,13 +26,13 @@ msgstr ""
 
 #: library/venv.rst:21
 msgid ""
-"The :mod:`!venv` module supports creating lightweight \"virtual "
-"environments\", each with their own independent set of Python packages "
-"installed in their :mod:`site` directories. A virtual environment is created "
-"on top of an existing Python installation, known as the virtual "
-"environment's \"base\" Python, and may optionally be isolated from the "
-"packages in the base environment, so only those explicitly installed in the "
-"virtual environment are available."
+"The :mod:`!venv` module supports creating lightweight \"virtual environments"
+"\", each with their own independent set of Python packages installed in "
+"their :mod:`site` directories. A virtual environment is created on top of an "
+"existing Python installation, known as the virtual environment's \"base\" "
+"Python, and may optionally be isolated from the packages in the base "
+"environment, so only those explicitly installed in the virtual environment "
+"are available."
 msgstr ""
 
 #: library/venv.rst:29
@@ -563,8 +563,8 @@ msgstr ""
 
 #: library/venv.rst:313
 msgid ""
-"*path* is the path to a directory that should contain subdirectories "
-"\"common\", \"posix\", \"nt\", each containing scripts destined for the bin "
+"*path* is the path to a directory that should contain subdirectories \"common"
+"\", \"posix\", \"nt\", each containing scripts destined for the bin "
 "directory in the environment.  The contents of \"common\" and the directory "
 "corresponding to :data:`os.name` are copied after some text replacement of "
 "placeholders:"
