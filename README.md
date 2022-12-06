@@ -13,6 +13,7 @@ Bu proje gönüllü çevirmenler ve python-docs-tr ekibi iş birliğinde sürdü
 - Bir [GitHub hesabı](https://github.com)
 - Yüklü bir [Git](https://git-scm.com/) istemcisi
 - ``.po`` dosyalarını düzenlemek için [poedit](https://poedit.net/) gibi bir program
+- Yüklü bir Python ve ``pip`` versiyonu (en son stabil olan versiyon önerilir)
 
 ### Adımlar
 
@@ -24,6 +25,10 @@ Bu proje gönüllü çevirmenler ve python-docs-tr ekibi iş birliğinde sürdü
 3. Çevirmek istediğiniz dosyanın ismiyle bir branch oluşturun.
    - Örneğin, ``library/functions.po`` dosyasını çevirmek istiyorsanız, ``library-functions`` adında bir branch oluşturun.
    - ``git checkout -b library-functions``
+4. Gerekli paketleri yükleyin.
+   - ``python -m pip install --upgrade -r requirements.txt``
+5. Syntax hatalarını commit öncesi otomatik kontrol eden ``pre-commit`` 'i kurun.
+   - ``pre-commit install``
 
 
 #### Çalışma döngüsü
