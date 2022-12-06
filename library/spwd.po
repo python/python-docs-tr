@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid ":mod:`spwd` --- The shadow password database"
 msgstr ""
 
-#: library/spwd.rst:9
+#: library/spwd.rst:12
 msgid ""
 "The :mod:`spwd` module is deprecated (see :pep:`PEP 594 <594#spwd>` for "
 "details and alternatives)."
@@ -32,177 +32,188 @@ msgid ""
 "available on various Unix versions."
 msgstr ""
 
-#: library/spwd.rst:18
+#: includes/wasm-notavail.rst:-1
+msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
+msgstr ""
+
+#: includes/wasm-notavail.rst:5
+msgid ""
+"This module does not work or is not available on WebAssembly platforms "
+"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
+"more information."
+msgstr ""
+
+#: library/spwd.rst:20
 msgid ""
 "You must have enough privileges to access the shadow password database (this "
 "usually means you have to be root)."
 msgstr ""
 
-#: library/spwd.rst:21
+#: library/spwd.rst:23
 msgid ""
 "Shadow password database entries are reported as a tuple-like object, whose "
 "attributes correspond to the members of the ``spwd`` structure (Attribute "
 "field below, see ``<shadow.h>``):"
 msgstr ""
 
-#: library/spwd.rst:26
+#: library/spwd.rst:28
 msgid "Index"
 msgstr ""
 
-#: library/spwd.rst:26
+#: library/spwd.rst:28
 msgid "Attribute"
 msgstr ""
 
-#: library/spwd.rst:26
+#: library/spwd.rst:28
 msgid "Meaning"
 msgstr ""
 
-#: library/spwd.rst:28
+#: library/spwd.rst:30
 msgid "0"
 msgstr ""
 
-#: library/spwd.rst:28
+#: library/spwd.rst:30
 msgid "``sp_namp``"
 msgstr ""
 
-#: library/spwd.rst:28
+#: library/spwd.rst:30
 msgid "Login name"
 msgstr ""
 
-#: library/spwd.rst:30
+#: library/spwd.rst:32
 msgid "1"
 msgstr ""
 
-#: library/spwd.rst:30
+#: library/spwd.rst:32
 msgid "``sp_pwdp``"
 msgstr ""
 
-#: library/spwd.rst:30
+#: library/spwd.rst:32
 msgid "Encrypted password"
 msgstr ""
 
-#: library/spwd.rst:32
+#: library/spwd.rst:34
 msgid "2"
 msgstr ""
 
-#: library/spwd.rst:32
+#: library/spwd.rst:34
 msgid "``sp_lstchg``"
 msgstr ""
 
-#: library/spwd.rst:32
+#: library/spwd.rst:34
 msgid "Date of last change"
 msgstr ""
 
-#: library/spwd.rst:34
+#: library/spwd.rst:36
 msgid "3"
 msgstr ""
 
-#: library/spwd.rst:34
+#: library/spwd.rst:36
 msgid "``sp_min``"
 msgstr ""
 
-#: library/spwd.rst:34
+#: library/spwd.rst:36
 msgid "Minimal number of days between changes"
 msgstr ""
 
-#: library/spwd.rst:37
+#: library/spwd.rst:39
 msgid "4"
 msgstr ""
 
-#: library/spwd.rst:37
+#: library/spwd.rst:39
 msgid "``sp_max``"
 msgstr ""
 
-#: library/spwd.rst:37
+#: library/spwd.rst:39
 msgid "Maximum number of days between changes"
 msgstr ""
 
-#: library/spwd.rst:40
+#: library/spwd.rst:42
 msgid "5"
 msgstr ""
 
-#: library/spwd.rst:40
+#: library/spwd.rst:42
 msgid "``sp_warn``"
 msgstr ""
 
-#: library/spwd.rst:40
+#: library/spwd.rst:42
 msgid "Number of days before password expires to warn user about it"
 msgstr ""
 
-#: library/spwd.rst:43
+#: library/spwd.rst:45
 msgid "6"
 msgstr ""
 
-#: library/spwd.rst:43
+#: library/spwd.rst:45
 msgid "``sp_inact``"
 msgstr ""
 
-#: library/spwd.rst:43
+#: library/spwd.rst:45
 msgid "Number of days after password expires until account is disabled"
 msgstr ""
 
-#: library/spwd.rst:47
+#: library/spwd.rst:49
 msgid "7"
 msgstr ""
 
-#: library/spwd.rst:47
+#: library/spwd.rst:49
 msgid "``sp_expire``"
 msgstr ""
 
-#: library/spwd.rst:47
+#: library/spwd.rst:49
 msgid "Number of days since 1970-01-01 when account expires"
 msgstr ""
 
-#: library/spwd.rst:50
+#: library/spwd.rst:52
 msgid "8"
 msgstr ""
 
-#: library/spwd.rst:50
+#: library/spwd.rst:52
 msgid "``sp_flag``"
 msgstr ""
 
-#: library/spwd.rst:50
+#: library/spwd.rst:52
 msgid "Reserved"
 msgstr ""
 
-#: library/spwd.rst:53
+#: library/spwd.rst:55
 msgid ""
 "The sp_namp and sp_pwdp items are strings, all others are integers. :exc:"
 "`KeyError` is raised if the entry asked for cannot be found."
 msgstr ""
 
-#: library/spwd.rst:56
+#: library/spwd.rst:58
 msgid "The following functions are defined:"
 msgstr ""
 
-#: library/spwd.rst:61
+#: library/spwd.rst:63
 msgid "Return the shadow password database entry for the given user name."
 msgstr ""
 
-#: library/spwd.rst:63
+#: library/spwd.rst:65
 msgid ""
 "Raises a :exc:`PermissionError` instead of :exc:`KeyError` if the user "
 "doesn't have privileges."
 msgstr ""
 
-#: library/spwd.rst:69
+#: library/spwd.rst:71
 msgid ""
 "Return a list of all available shadow password database entries, in "
 "arbitrary order."
 msgstr ""
 
-#: library/spwd.rst:76
+#: library/spwd.rst:78
 msgid "Module :mod:`grp`"
 msgstr ""
 
-#: library/spwd.rst:76
+#: library/spwd.rst:78
 msgid "An interface to the group database, similar to this."
 msgstr ""
 
-#: library/spwd.rst:78
+#: library/spwd.rst:80
 msgid "Module :mod:`pwd`"
 msgstr ""
 
-#: library/spwd.rst:79
+#: library/spwd.rst:81
 msgid "An interface to the normal password database, similar to this."
 msgstr ""

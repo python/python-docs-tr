@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid ":mod:`audioop` --- Manipulate raw audio data"
 msgstr ""
 
-#: library/audioop.rst:8
+#: library/audioop.rst:11
 msgid ""
 "The :mod:`audioop` module is deprecated (see :pep:`PEP 594 <594#audioop>` "
 "for details)."
@@ -137,8 +137,9 @@ msgstr ""
 #: library/audioop.rst:120
 msgid ""
 "Search *fragment* for a slice of length *length* samples (not bytes!) with "
-"maximum energy, i.e., return *i* for which ``rms(fragment[i*2:(i"
-"+length)*2])`` is maximal.  The fragments should both contain 2-byte samples."
+"maximum energy, i.e., return *i* for which ``rms(fragment[i*2:"
+"(i+length)*2])`` is maximal.  The fragments should both contain 2-byte "
+"samples."
 msgstr ""
 
 #: library/audioop.rst:124

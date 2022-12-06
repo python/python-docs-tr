@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -505,10 +505,9 @@ msgstr ""
 
 #: whatsnew/3.7.rst:356
 msgid ""
-"`Measurements <https://www.python.org/dev/peps/pep-0564/#annex-clocks-"
-"resolution-in-python>`_ show that on Linux and Windows the resolution of :"
-"func:`time.time_ns` is approximately 3 times better than that of :func:`time."
-"time`."
+"`Measurements <https://peps.python.org/pep-0564/#annex-clocks-resolution-in-"
+"python>`_ show that on Linux and Windows the resolution of :func:`time."
+"time_ns` is approximately 3 times better than that of :func:`time.time`."
 msgstr ""
 
 #: whatsnew/3.7.rst:362
@@ -1739,8 +1738,8 @@ msgstr ""
 
 #: whatsnew/3.7.rst:1243
 msgid ""
-":func:`re.split` now supports splitting on a pattern like ``r'\\b'``, ``'^"
-"$'`` or ``(?=-)`` that matches an empty string. (Contributed by Serhiy "
+":func:`re.split` now supports splitting on a pattern like ``r'\\b'``, "
+"``'^$'`` or ``(?=-)`` that matches an empty string. (Contributed by Serhiy "
 "Storchaka in :issue:`25054`.)"
 msgstr ""
 
@@ -3482,8 +3481,9 @@ msgstr ""
 #: whatsnew/3.7.rst:2476
 msgid ""
 "The file used to override :data:`sys.path` is now called ``<python-"
-"executable>._pth`` instead of ``'sys.path'``. See :ref:`finding_modules` for "
-"more information. (Contributed by Steve Dower in :issue:`28137`.)"
+"executable>._pth`` instead of ``'sys.path'``. See :ref:"
+"`windows_finding_modules` for more information. (Contributed by Steve Dower "
+"in :issue:`28137`.)"
 msgstr ""
 
 #: whatsnew/3.7.rst:2483

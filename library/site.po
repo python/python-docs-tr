@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -67,9 +67,9 @@ msgid ""
 "If a file named \"pyvenv.cfg\" exists one directory above sys.executable, "
 "sys.prefix and sys.exec_prefix are set to that directory and it is also "
 "checked for site-packages (sys.base_prefix and sys.base_exec_prefix will "
-"always be the \"real\" prefixes of the Python installation). If \"pyvenv.cfg"
-"\" (a bootstrap configuration file) contains the key \"include-system-site-"
-"packages\" set to anything other than \"true\" (case-insensitive), the "
+"always be the \"real\" prefixes of the Python installation). If \"pyvenv."
+"cfg\" (a bootstrap configuration file) contains the key \"include-system-"
+"site-packages\" set to anything other than \"true\" (case-insensitive), the "
 "system-level prefixes will not be searched for site-packages; otherwise they "
 "will."
 msgstr ""
@@ -296,4 +296,8 @@ msgstr ""
 
 #: library/site.rst:279
 msgid ":pep:`370` -- Per user site-packages directory"
+msgstr ""
+
+#: library/site.rst:280
+msgid ":ref:`sys-path-init` -- The initialization of :data:`sys.path`."
 msgstr ""

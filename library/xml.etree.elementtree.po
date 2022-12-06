@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -211,8 +211,7 @@ msgid ""
 "attribute to the rank element::"
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:222
-#: library/xml.etree.elementtree.rst:266
+#: library/xml.etree.elementtree.rst:222 library/xml.etree.elementtree.rst:266
 msgid "Our XML now looks like this:"
 msgstr ""
 
@@ -289,8 +288,7 @@ msgid ""
 "scope of the module."
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:377
-#: library/xml.etree.elementtree.rst:769
+#: library/xml.etree.elementtree.rst:377 library/xml.etree.elementtree.rst:769
 msgid "Example"
 msgstr ""
 
@@ -474,13 +472,11 @@ msgid ""
 "preceded by a tag name."
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:493
-#: library/xml.etree.elementtree.rst:821
+#: library/xml.etree.elementtree.rst:493 library/xml.etree.elementtree.rst:821
 msgid "Reference"
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:498
-#: library/xml.etree.elementtree.rst:826
+#: library/xml.etree.elementtree.rst:498 library/xml.etree.elementtree.rst:826
 msgid "Functions"
 msgstr ""
 
@@ -523,8 +519,7 @@ msgid ""
 "*strip_text*: set to true to strip whitespace before and after text content"
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:532
-#: library/xml.etree.elementtree.rst:534
+#: library/xml.etree.elementtree.rst:532 library/xml.etree.elementtree.rst:534
 msgid "(default: false)"
 msgstr ""
 
@@ -538,8 +533,7 @@ msgstr ""
 msgid "*qname_aware_tags*: a set of qname aware tag names in which prefixes"
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:536
-#: library/xml.etree.elementtree.rst:538
+#: library/xml.etree.elementtree.rst:536 library/xml.etree.elementtree.rst:538
 msgid "should be replaced in text content (default: empty)"
 msgstr ""
 
@@ -638,14 +632,14 @@ msgid ""
 "Parses an XML section into an element tree incrementally, and reports what's "
 "going on to the user.  *source* is a filename or :term:`file object` "
 "containing XML data.  *events* is a sequence of events to report back.  The "
-"supported events are the strings ``\"start\"``, ``\"end\"``, ``\"comment"
-"\"``, ``\"pi\"``, ``\"start-ns\"`` and ``\"end-ns\"`` (the \"ns\" events are "
-"used to get detailed namespace information).  If *events* is omitted, only ``"
-"\"end\"`` events are reported. *parser* is an optional parser instance.  If "
-"not given, the standard :class:`XMLParser` parser is used.  *parser* must be "
-"a subclass of :class:`XMLParser` and can only use the default :class:"
-"`TreeBuilder` as a target.  Returns an :term:`iterator` providing ``(event, "
-"elem)`` pairs."
+"supported events are the strings ``\"start\"``, ``\"end\"``, "
+"``\"comment\"``, ``\"pi\"``, ``\"start-ns\"`` and ``\"end-ns\"`` (the \"ns\" "
+"events are used to get detailed namespace information).  If *events* is "
+"omitted, only ``\"end\"`` events are reported. *parser* is an optional "
+"parser instance.  If not given, the standard :class:`XMLParser` parser is "
+"used.  *parser* must be a subclass of :class:`XMLParser` and can only use "
+"the default :class:`TreeBuilder` as a target.  Returns an :term:`iterator` "
+"providing ``(event, elem)`` pairs."
 msgstr ""
 
 #: library/xml.etree.elementtree.rst:626
@@ -665,8 +659,7 @@ msgid ""
 "present."
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:639
-#: library/xml.etree.elementtree.rst:1469
+#: library/xml.etree.elementtree.rst:639 library/xml.etree.elementtree.rst:1469
 msgid "If you need a fully populated element, look for \"end\" events instead."
 msgstr ""
 
@@ -674,8 +667,7 @@ msgstr ""
 msgid "The *parser* argument."
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:644
-#: library/xml.etree.elementtree.rst:1473
+#: library/xml.etree.elementtree.rst:644 library/xml.etree.elementtree.rst:1473
 msgid "The ``comment`` and ``pi`` events were added."
 msgstr ""
 
@@ -733,20 +725,18 @@ msgid ""
 "subelements.  *element* is an :class:`Element` instance.  *encoding* [1]_ is "
 "the output encoding (default is US-ASCII).  Use ``encoding=\"unicode\"`` to "
 "generate a Unicode string (otherwise, a bytestring is generated).  *method* "
-"is either ``\"xml\"``, ``\"html\"`` or ``\"text\"`` (default is ``\"xml"
-"\"``). *xml_declaration*, *default_namespace* and *short_empty_elements* has "
-"the same meaning as in :meth:`ElementTree.write`. Returns an (optionally) "
-"encoded string containing the XML data."
+"is either ``\"xml\"``, ``\"html\"`` or ``\"text\"`` (default is "
+"``\"xml\"``). *xml_declaration*, *default_namespace* and "
+"*short_empty_elements* has the same meaning as in :meth:`ElementTree.write`. "
+"Returns an (optionally) encoded string containing the XML data."
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:705
-#: library/xml.etree.elementtree.rst:732
+#: library/xml.etree.elementtree.rst:705 library/xml.etree.elementtree.rst:732
 #: library/xml.etree.elementtree.rst:1181
 msgid "The *short_empty_elements* parameter."
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:708
-#: library/xml.etree.elementtree.rst:735
+#: library/xml.etree.elementtree.rst:708 library/xml.etree.elementtree.rst:735
 msgid "The *xml_declaration* and *default_namespace* parameters."
 msgstr ""
 
@@ -762,12 +752,12 @@ msgid ""
 "subelements.  *element* is an :class:`Element` instance.  *encoding* [1]_ is "
 "the output encoding (default is US-ASCII).  Use ``encoding=\"unicode\"`` to "
 "generate a Unicode string (otherwise, a bytestring is generated).  *method* "
-"is either ``\"xml\"``, ``\"html\"`` or ``\"text\"`` (default is ``\"xml"
-"\"``). *xml_declaration*, *default_namespace* and *short_empty_elements* has "
-"the same meaning as in :meth:`ElementTree.write`. Returns a list of "
-"(optionally) encoded strings containing the XML data. It does not guarantee "
-"any specific sequence, except that ``b\"\".join(tostringlist(element)) == "
-"tostring(element)``."
+"is either ``\"xml\"``, ``\"html\"`` or ``\"text\"`` (default is "
+"``\"xml\"``). *xml_declaration*, *default_namespace* and "
+"*short_empty_elements* has the same meaning as in :meth:`ElementTree.write`. "
+"Returns a list of (optionally) encoded strings containing the XML data. It "
+"does not guarantee any specific sequence, except that ``b\"\"."
+"join(tostringlist(element)) == tostring(element)``."
 msgstr ""
 
 #: library/xml.etree.elementtree.rst:738
@@ -854,10 +844,10 @@ msgid ""
 "Default loader. This default loader reads an included resource from disk.  "
 "*href* is a URL. *parse* is for parse mode either \"xml\" or \"text\".  "
 "*encoding* is an optional text encoding.  If not given, encoding is "
-"``utf-8``.  Returns the expanded resource.  If the parse mode is ``\"xml"
-"\"``, this is an ElementTree instance.  If the parse mode is \"text\", this "
-"is a Unicode string.  If the loader fails, it can return None or raise an "
-"exception."
+"``utf-8``.  Returns the expanded resource.  If the parse mode is "
+"``\"xml\"``, this is an ElementTree instance.  If the parse mode is "
+"\"text\", this is a Unicode string.  If the loader fails, it can return None "
+"or raise an exception."
 msgstr ""
 
 #: library/xml.etree.elementtree.rst:843
@@ -927,8 +917,8 @@ msgstr ""
 
 #: library/xml.etree.elementtree.rst:902
 msgid ""
-"To collect the inner text of an element, see :meth:`itertext`, for example ``"
-"\"\".join(element.itertext())``."
+"To collect the inner text of an element, see :meth:`itertext`, for example "
+"``\"\".join(element.itertext())``."
 msgstr ""
 
 #: library/xml.etree.elementtree.rst:905
@@ -1177,21 +1167,22 @@ msgid ""
 "encoding (default is US-ASCII). *xml_declaration* controls if an XML "
 "declaration should be added to the file.  Use ``False`` for never, ``True`` "
 "for always, ``None`` for only if not US-ASCII or UTF-8 or Unicode (default "
-"is ``None``). *default_namespace* sets the default XML namespace (for \"xmlns"
-"\"). *method* is either ``\"xml\"``, ``\"html\"`` or ``\"text\"`` (default "
-"is ``\"xml\"``). The keyword-only *short_empty_elements* parameter controls "
-"the formatting of elements that contain no content.  If ``True`` (the "
-"default), they are emitted as a single self-closed tag, otherwise they are "
-"emitted as a pair of start/end tags."
+"is ``None``). *default_namespace* sets the default XML namespace (for "
+"\"xmlns\"). *method* is either ``\"xml\"``, ``\"html\"`` or ``\"text\"`` "
+"(default is ``\"xml\"``). The keyword-only *short_empty_elements* parameter "
+"controls the formatting of elements that contain no content.  If ``True`` "
+"(the default), they are emitted as a single self-closed tag, otherwise they "
+"are emitted as a pair of start/end tags."
 msgstr ""
 
 #: library/xml.etree.elementtree.rst:1174
 msgid ""
 "The output is either a string (:class:`str`) or binary (:class:`bytes`). "
-"This is controlled by the *encoding* argument.  If *encoding* is ``\"unicode"
-"\"``, the output is a string; otherwise, it's binary.  Note that this may "
-"conflict with the type of *file* if it's an open :term:`file object`; make "
-"sure you do not try to write a string to a binary stream and vice versa."
+"This is controlled by the *encoding* argument.  If *encoding* is "
+"``\"unicode\"``, the output is a string; otherwise, it's binary.  Note that "
+"this may conflict with the type of *file* if it's an open :term:`file "
+"object`; make sure you do not try to write a string to a binary stream and "
+"vice versa."
 msgstr ""
 
 #: library/xml.etree.elementtree.rst:1184
@@ -1378,10 +1369,10 @@ msgid ""
 "similar to that of :class:`XMLParser`, but instead of pushing calls to a "
 "callback target, :class:`XMLPullParser` collects an internal list of parsing "
 "events and lets the user read from it. *events* is a sequence of events to "
-"report back.  The supported events are the strings ``\"start\"``, ``\"end"
-"\"``, ``\"comment\"``, ``\"pi\"``, ``\"start-ns\"`` and ``\"end-ns\"`` (the "
-"\"ns\" events are used to get detailed namespace information).  If *events* "
-"is omitted, only ``\"end\"`` events are reported."
+"report back.  The supported events are the strings ``\"start\"``, "
+"``\"end\"``, ``\"comment\"``, ``\"pi\"``, ``\"start-ns\"`` and ``\"end-"
+"ns\"`` (the \"ns\" events are used to get detailed namespace information).  "
+"If *events* is omitted, only ``\"end\"`` events are reported."
 msgstr ""
 
 #: library/xml.etree.elementtree.rst:1432

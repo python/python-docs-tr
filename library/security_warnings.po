@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -100,4 +100,13 @@ msgstr ""
 msgid ""
 ":mod:`zipfile`: :ref:`maliciously prepared .zip files can cause disk volume "
 "exhaustion <zipfile-resources-limitations>`"
+msgstr ""
+
+#: library/security_warnings.rst:36
+msgid ""
+"The :option:`-I` command line option can be used to run Python in isolated "
+"mode. When it cannot be used, the :option:`-P` option or the :envvar:"
+"`PYTHONSAFEPATH` environment variable can be used to not prepend a "
+"potentially unsafe path to :data:`sys.path` such as the current directory, "
+"the script's directory or an empty string."
 msgstr ""

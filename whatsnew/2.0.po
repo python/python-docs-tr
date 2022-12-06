@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -180,9 +180,9 @@ msgid ""
 "Read the rest of :pep:`1` for the details of the PEP editorial process, "
 "style, and format.  PEPs are kept in the Python CVS tree on SourceForge, "
 "though they're not part of the Python 2.0 distribution, and are also "
-"available in HTML form from https://www.python.org/dev/peps/.  As of "
-"September 2000, there are 25 PEPS, ranging from :pep:`201`, \"Lockstep "
-"Iteration\", to PEP 225, \"Elementwise/Objectwise Operators\"."
+"available in HTML form from https://peps.python.org/.  As of September 2000, "
+"there are 25 PEPS, ranging from :pep:`201`, \"Lockstep Iteration\", to PEP "
+"225, \"Elementwise/Objectwise Operators\"."
 msgstr ""
 
 #: whatsnew/2.0.rst:141
@@ -210,10 +210,11 @@ msgstr ""
 #: whatsnew/2.0.rst:155
 msgid ""
 "In Python source code, Unicode strings are written as ``u\"string\"``.  "
-"Arbitrary Unicode characters can be written using a new escape sequence, ``"
-"\\uHHHH``, where *HHHH* is a 4-digit hexadecimal number from 0000 to FFFF.  "
-"The existing ``\\xHHHH`` escape sequence can also be used, and octal escapes "
-"can be used for characters up to U+01FF, which is represented by ``\\777``."
+"Arbitrary Unicode characters can be written using a new escape sequence, "
+"``\\uHHHH``, where *HHHH* is a 4-digit hexadecimal number from 0000 to "
+"FFFF.  The existing ``\\xHHHH`` escape sequence can also be used, and octal "
+"escapes can be used for characters up to U+01FF, which is represented by "
+"``\\777``."
 msgstr ""
 
 #: whatsnew/2.0.rst:161
@@ -844,8 +845,8 @@ msgstr ""
 msgid ""
 "The ``\\x`` escape in string literals now takes exactly 2 hex digits.  "
 "Previously it would consume all the hex digits following the 'x' and take "
-"the lowest 8 bits of the result, so ``\\x123456`` was equivalent to ``"
-"\\x56``."
+"the lowest 8 bits of the result, so ``\\x123456`` was equivalent to "
+"``\\x56``."
 msgstr ""
 
 #: whatsnew/2.0.rst:688

@@ -20,9 +20,9 @@
 # from which we generated our po files.  We use it here so when we
 # test build, we're building with the .rst files that generated our
 # .po files.
-CPYTHON_CURRENT_COMMIT := e699e5c20fc495952905597edfa82de0c1848f8c
+CPYTHON_CURRENT_COMMIT := 235f5fd2ca4c6acb4b04efeaaa1ecb46d41d5a6d
 LANGUAGE := tr
-BRANCH := 3.10
+BRANCH := 3.11
 
 EXCLUDED := \
 	whatsnew/2.?.po \
@@ -98,7 +98,7 @@ all: ensure_prerequisites
 	  -D latex_elements.inputenc=       \
 	  -D latex_elements.fontenc='       \
 	  $(MODE)
-	@echo "Build success, open file://$(abspath venv/cpython/)/Doc/build/html/index.html or run 'make serve' to see them."
+	@echo "Build success, open file://$(abspath venv/cpython/)/Doc/build/html/index.html or run 'make htmlview' to see them."
 
 
 # We clone cpython/ inside venv/ because venv/ is the only directory
@@ -117,14 +117,9 @@ ensure_prerequisites: venv/cpython/.git/HEAD
 	    exit 1; \
 	fi
 
-
-.PHONY: serve
-serve:
-ifdef SERVE_PORT
-	$(MAKE) -C venv/cpython/Doc/ serve SERVE_PORT=$(SERVE_PORT)
-else
-	$(MAKE) -C venv/cpython/Doc/ serve
-endif
+.PHONY: htmlview
+htmlview: MODE=htmlview
+htmlview: all
 
 .PHONY: todo
 todo: ensure_prerequisites
@@ -142,9 +137,19 @@ DESTS = $(addprefix $(POSPELL_TMP_DIR)/,$(addsuffix .out,$(SRCS)))
 .PHONY: spell
 spell: ensure_prerequisites $(DESTS)
 
+.PHONY: line-length
+line-length:
+	@echo "Searching for long lines..."
+	@awk '{if (length(gensub(/శ్రీనివాస్/, ".", "g", $$0)) > 80 && length(gensub(/[^ ]/, "", "g")) > 1) {print FILENAME ":" FNR, "line too long:", $$0; ERRORS+=1}} END {if (ERRORS>0) {exit 1}}' *.po */*.po
+
+.PHONY: sphinx-lint
+sphinx-lint:
+	@echo "Checking all files using sphinx-lint..."
+	@sphinx-lint --enable all --disable line-too-long *.po */*.po
+
 $(POSPELL_TMP_DIR)/%.po.out: %.po dict
 	@echo "Pospell checking $<..."
-	mkdir -p $(@D)
+	@mkdir -p $(@D)
 	pospell -p dict -l tr_TR $< && touch $@
 
 .PHONY: fuzzy
@@ -152,7 +157,7 @@ fuzzy: ensure_prerequisites
 	potodo -f --exclude venv .venv $(EXCLUDED)
 
 .PHONY: verifs
-verifs: spell
+verifs: spell line-length sphinx-lint
 
 .PHONY: clean
 clean:

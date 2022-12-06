@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -49,42 +49,12 @@ msgid "See also :c:func:`PyThreadState_GetFrame`."
 msgstr ""
 
 #: c-api/reflection.rst:36
-msgid "Get the *frame* next outer frame."
-msgstr ""
-
-#: c-api/reflection.rst:38
-msgid ""
-"Return a :term:`strong reference`, or ``NULL`` if *frame* has no outer frame."
-msgstr ""
-
-#: c-api/reflection.rst:60
-msgid "*frame* must not be ``NULL``."
-msgstr ""
-
-#: c-api/reflection.rst:47
-msgid "Get the *frame* code."
-msgstr ""
-
-#: c-api/reflection.rst:49
-msgid "Return a :term:`strong reference`."
-msgstr ""
-
-#: c-api/reflection.rst:51
-msgid ""
-"*frame* must not be ``NULL``. The result (frame code) cannot be ``NULL``."
-msgstr ""
-
-#: c-api/reflection.rst:58
-msgid "Return the line number that *frame* is currently executing."
-msgstr ""
-
-#: c-api/reflection.rst:65
 msgid ""
 "Return the name of *func* if it is a function, class or instance object, "
 "else the name of *func*\\s type."
 msgstr ""
 
-#: c-api/reflection.rst:71
+#: c-api/reflection.rst:42
 msgid ""
 "Return a description string, depending on the type of *func*. Return values "
 "include \"()\" for functions and methods, \" constructor\", \" instance\", "

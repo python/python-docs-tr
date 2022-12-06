@@ -1,12 +1,12 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: 2022-12-02 23:24+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -562,34 +562,10 @@ msgstr ""
 "örneğinde değil) değiştirilmesi amaçlanan bir değişken."
 
 #: glossary.rst:235
-msgid "coercion"
-msgstr "zorlama"
-
-#: glossary.rst:237
-msgid ""
-"The implicit conversion of an instance of one type to another during an "
-"operation which involves two arguments of the same type.  For example, "
-"``int(3.15)`` converts the floating point number to the integer ``3``, but "
-"in ``3+4.5``, each argument is of a different type (one int, one float), and "
-"both must be converted to the same type before they can be added or it will "
-"raise a :exc:`TypeError`.  Without coercion, all arguments of even "
-"compatible types would have to be normalized to the same value by the "
-"programmer, e.g., ``float(3)+4.5`` rather than just ``3+4.5``."
-msgstr ""
-"Aynı türden iki argüman içeren bir işlem sırasında bir tür örneğinin "
-"diğerine örtük olarak dönüştürülmesi.  Örneğin, ``int(3.15)``, kayan noktalı "
-"sayıyı ``3`` tamsayısına dönüştürür, ancak ``3+4.5`` 'te her argüman farklı "
-"türdedir (bir int, bir kayan nokta), ve her ikisi de eklenmeden önce aynı "
-"türe dönüştürülmelidir, aksi takdirde bir :exc:`TypeError` yükseltir. "
-"Zorlama olmadan, uyumlu türlerin bile tüm argümanlarının programcı "
-"tarafından aynı değere normalleştirilmesi gerekir, örneğin: ``3+4,5`` yerine "
-"``float(3)+4,5``."
-
-#: glossary.rst:245
 msgid "complex number"
 msgstr "karmaşık sayı"
 
-#: glossary.rst:247
+#: glossary.rst:237
 msgid ""
 "An extension of the familiar real number system in which all numbers are "
 "expressed as a sum of a real part and an imaginary part.  Imaginary numbers "
@@ -612,11 +588,11 @@ msgstr ""
 "olan ihtiyacın farkında değilseniz, onları güvenle görmezden gelebileceğiniz "
 "neredeyse kesindir."
 
-#: glossary.rst:257
+#: glossary.rst:247
 msgid "context manager"
 msgstr "bağlam yöneticisi"
 
-#: glossary.rst:259
+#: glossary.rst:249
 msgid ""
 "An object which controls the environment seen in a :keyword:`with` statement "
 "by defining :meth:`__enter__` and :meth:`__exit__` methods. See :pep:`343`."
@@ -625,11 +601,11 @@ msgstr ""
 "`__exit__` yöntemlerini tanımlayarak kontrol eden bir nesne. Bakınız :pep:"
 "`343`."
 
-#: glossary.rst:262
+#: glossary.rst:252
 msgid "context variable"
 msgstr "bağlam değişkeni"
 
-#: glossary.rst:264
+#: glossary.rst:254
 msgid ""
 "A variable which can have different values depending on its context. This is "
 "similar to Thread-Local Storage in which each execution thread may have a "
@@ -645,11 +621,11 @@ msgstr ""
 "bağlam değişkenlerinin ana kullanımı, eşzamanlı zaman uyumsuz görevlerde "
 "değişkenleri izlemektir. Bakınız :mod:`contextvars`."
 
-#: glossary.rst:271
+#: glossary.rst:261
 msgid "contiguous"
 msgstr "bitişik"
 
-#: glossary.rst:275
+#: glossary.rst:265
 msgid ""
 "A buffer is considered contiguous exactly if it is either *C-contiguous* or "
 "*Fortran contiguous*.  Zero-dimensional buffers are C and Fortran "
@@ -667,11 +643,11 @@ msgstr ""
 "şekilde değişir.  Ancak, Fortran bitişik dizilerinde, ilk dizin en hızlı "
 "şekilde değişir."
 
-#: glossary.rst:283
+#: glossary.rst:273
 msgid "coroutine"
 msgstr "eşyordam"
 
-#: glossary.rst:285
+#: glossary.rst:275
 msgid ""
 "Coroutines are a more generalized form of subroutines. Subroutines are "
 "entered at one point and exited at another point.  Coroutines can be "
@@ -683,11 +659,11 @@ msgstr ""
 "birçok farklı noktada girilebilir, çıkılabilir ve devam ettirilebilir.  :"
 "keyword:`async def` ifadesi ile uygulanabilirler.  Ayrıca bakınız :pep:`492`."
 
-#: glossary.rst:290
+#: glossary.rst:280
 msgid "coroutine function"
 msgstr "eşyordam işlevi"
 
-#: glossary.rst:292
+#: glossary.rst:282
 msgid ""
 "A function which returns a :term:`coroutine` object.  A coroutine function "
 "may be defined with the :keyword:`async def` statement, and may contain :"
@@ -699,11 +675,11 @@ msgstr ""
 "`async for` ve :keyword:`async with` anahtar kelimelerini içerebilir.  "
 "Bunlar :pep:`492` tarafından tanıtıldı."
 
-#: glossary.rst:297
+#: glossary.rst:287
 msgid "CPython"
 msgstr "CPython"
 
-#: glossary.rst:299
+#: glossary.rst:289
 msgid ""
 "The canonical implementation of the Python programming language, as "
 "distributed on `python.org <https://www.python.org>`_.  The term \"CPython\" "
@@ -715,11 +691,11 @@ msgstr ""
 "bu uygulamayı Jython veya IronPython gibi diğerlerinden ayırmak için "
 "kullanılır."
 
-#: glossary.rst:303
+#: glossary.rst:293
 msgid "decorator"
 msgstr "dekoratör"
 
-#: glossary.rst:305
+#: glossary.rst:295
 msgid ""
 "A function returning another function, usually applied as a function "
 "transformation using the ``@wrapper`` syntax.  Common examples for "
@@ -729,7 +705,7 @@ msgstr ""
 "uygulanan, başka bir işlevi döndüren bir işlev.  Dekoratörler için yaygın "
 "örnekler şunlardır: :func:`classmethod` ve :func:`staticmethod`."
 
-#: glossary.rst:309
+#: glossary.rst:299
 msgid ""
 "The decorator syntax is merely syntactic sugar, the following two function "
 "definitions are semantically equivalent::"
@@ -737,7 +713,7 @@ msgstr ""
 "Dekoratör sözdizimi yalnızca sözdizimsel şekerdir, aşağıdaki iki işlev "
 "tanımı anlamsal olarak eşdeğerdir:"
 
-#: glossary.rst:320
+#: glossary.rst:310
 msgid ""
 "The same concept exists for classes, but is less commonly used there.  See "
 "the documentation for :ref:`function definitions <function>` and :ref:`class "
@@ -747,11 +723,11 @@ msgstr ""
 "Dekoratörler hakkında daha fazla bilgi için :ref:`function definitions "
 "<function>` ve :ref:`class definitions <class>` belgelerine bakın."
 
-#: glossary.rst:323
+#: glossary.rst:313
 msgid "descriptor"
 msgstr "tanımlayıcı"
 
-#: glossary.rst:325
+#: glossary.rst:315
 msgid ""
 "Any object which defines the methods :meth:`__get__`, :meth:`__set__`, or :"
 "meth:`__delete__`.  When a class attribute is a descriptor, its special "
@@ -773,7 +749,7 @@ msgstr ""
 "özellikler, sınıf yöntemleri, statik yöntemler ve süper sınıflara başvuru "
 "gibi birçok özelliğin temelidir."
 
-#: glossary.rst:335
+#: glossary.rst:325
 msgid ""
 "For more information about descriptors' methods, see :ref:`descriptors` or "
 "the :ref:`Descriptor How To Guide <descriptorhowto>`."
@@ -781,11 +757,11 @@ msgstr ""
 "Tanımlayıcıların yöntemleri hakkında daha fazla bilgi için, bkz. :ref:"
 "`descriptors` veya :ref:`Descriptor How To Guide <descriptorhowto>`."
 
-#: glossary.rst:337
+#: glossary.rst:327
 msgid "dictionary"
 msgstr "sözlük"
 
-#: glossary.rst:339
+#: glossary.rst:329
 msgid ""
 "An associative array, where arbitrary keys are mapped to values.  The keys "
 "can be any object with :meth:`__hash__` and :meth:`__eq__` methods. Called a "
@@ -795,11 +771,11 @@ msgstr ""
 "meth:`__hash__` ve :meth:`__eq__` yöntemleriyle herhangi bir nesne olabilir. "
 "Perl'de karma denir."
 
-#: glossary.rst:342
+#: glossary.rst:332
 msgid "dictionary comprehension"
 msgstr "sözlük anlama"
 
-#: glossary.rst:344
+#: glossary.rst:334
 msgid ""
 "A compact way to process all or part of the elements in an iterable and "
 "return a dictionary with the results. ``results = {n: n ** 2 for n in "
@@ -811,11 +787,11 @@ msgstr ""
 "** 2 for range(10)}``, ``n ** 2`` değerine eşlenmiş ``n`` anahtarını içeren "
 "bir sözlük oluşturur. Bkz. :ref:`comprehensions`."
 
-#: glossary.rst:348
+#: glossary.rst:338
 msgid "dictionary view"
 msgstr "sözlük görünümü"
 
-#: glossary.rst:350
+#: glossary.rst:340
 msgid ""
 "The objects returned from :meth:`dict.keys`, :meth:`dict.values`, and :meth:"
 "`dict.items` are called dictionary views. They provide a dynamic view on the "
@@ -829,11 +805,11 @@ msgstr ""
 "yansıttığı anlamına gelir. Sözlük görünümünü tam liste olmaya zorlamak için "
 "``list(dictview)`` kullanın.  Bakınız :ref:`dict-views`."
 
-#: glossary.rst:356
+#: glossary.rst:346
 msgid "docstring"
 msgstr "belge dizisi"
 
-#: glossary.rst:358
+#: glossary.rst:348
 msgid ""
 "A string literal which appears as the first expression in a class, function "
 "or module.  While ignored when the suite is executed, it is recognized by "
@@ -847,12 +823,12 @@ msgstr ""
 "yerleştirilir.  İç gözlem yoluyla erişilebilir olduğundan, nesnenin "
 "belgelenmesi için kurallı yerdir."
 
-#: glossary.rst:364
+#: glossary.rst:354
 #, fuzzy
 msgid "duck-typing"
 msgstr "ördek yazma"
 
-#: glossary.rst:366
+#: glossary.rst:356
 msgid ""
 "A programming style which does not look at an object's type to determine if "
 "it has the right interface; instead, the method or attribute is simply "
@@ -874,11 +850,11 @@ msgstr ""
 "tamamlanabileceğini unutmayın.)  Bunun yerine, genellikle :func:`hasattr` "
 "testleri veya :term:`EAFP` programlamasını kullanır."
 
-#: glossary.rst:375
+#: glossary.rst:365
 msgid "EAFP"
 msgstr "EAFP"
 
-#: glossary.rst:377
+#: glossary.rst:367
 msgid ""
 "Easier to ask for forgiveness than permission.  This common Python coding "
 "style assumes the existence of valid keys or attributes and catches "
@@ -894,11 +870,11 @@ msgstr ""
 "karakterize edilir.  Teknik, C gibi diğer birçok dilde ortak olan :term:"
 "`LBYL` stiliyle çelişir."
 
-#: glossary.rst:383
+#: glossary.rst:373
 msgid "expression"
 msgstr "ifade (değer döndürür)"
 
-#: glossary.rst:385
+#: glossary.rst:375
 msgid ""
 "A piece of syntax which can be evaluated to some value.  In other words, an "
 "expression is an accumulation of expression elements like literals, names, "
@@ -915,11 +891,11 @@ msgstr ""
 "Ayrıca :keyword:`while` gibi kullanılamayan :term:`ifadeler <statement>` de "
 "vardır.  Atamalar da değer döndürmeyen ifadelerdir (statement)."
 
-#: glossary.rst:392
+#: glossary.rst:382
 msgid "extension module"
 msgstr "uzatma modülü"
 
-#: glossary.rst:394
+#: glossary.rst:384
 msgid ""
 "A module written in C or C++, using Python's C API to interact with the core "
 "and with user code."
@@ -927,11 +903,11 @@ msgstr ""
 "Çekirdekle ve kullanıcı koduyla etkileşim kurmak için Python'un C API'sini "
 "kullanan, C veya C++ ile yazılmış bir modül."
 
-#: glossary.rst:396
+#: glossary.rst:386
 msgid "f-string"
 msgstr "f-string"
 
-#: glossary.rst:398
+#: glossary.rst:388
 msgid ""
 "String literals prefixed with ``'f'`` or ``'F'`` are commonly called \"f-"
 "strings\" which is short for :ref:`formatted string literals <f-strings>`.  "
@@ -941,11 +917,11 @@ msgstr ""
 "olarak adlandırılır; bu, :ref:`formatted string literals <f-strings>` 'ın "
 "kısaltmasıdır.  Ayrıca bkz. :pep:`498`."
 
-#: glossary.rst:401
+#: glossary.rst:391
 msgid "file object"
 msgstr "dosya nesnesi"
 
-#: glossary.rst:403
+#: glossary.rst:393
 msgid ""
 "An object exposing a file-oriented API (with methods such as :meth:`read()` "
 "or :meth:`write()`) to an underlying resource.  Depending on the way it was "
@@ -962,7 +938,7 @@ msgstr ""
 "edebilir. .  Dosya nesneleri ayrıca :dfn:`file-like objects` veya :dfn:"
 "`streams` olarak da adlandırılır."
 
-#: glossary.rst:411
+#: glossary.rst:401
 msgid ""
 "There are actually three categories of file objects: raw :term:`binary files "
 "<binary file>`, buffered :term:`binary files <binary file>` and :term:`text "
@@ -975,19 +951,19 @@ msgstr ""
 "files <text file>`. Arayüzleri :mod:`io` modülünde tanımlanmıştır.  Bir "
 "dosya nesnesi yaratmanın kurallı yolu :func:`open` işlevini kullanmaktır."
 
-#: glossary.rst:416
+#: glossary.rst:406
 msgid "file-like object"
 msgstr "dosya benzeri nesne"
 
-#: glossary.rst:418
+#: glossary.rst:408
 msgid "A synonym for :term:`file object`."
 msgstr ":term:`dosya nesnesi` ile eşanlamlıdır."
 
-#: glossary.rst:419
+#: glossary.rst:409
 msgid "filesystem encoding and error handler"
 msgstr "dosya sistemi kodlaması ve hata işleyicisi"
 
-#: glossary.rst:421
+#: glossary.rst:411
 msgid ""
 "Encoding and error handler used by Python to decode bytes from the operating "
 "system and encode Unicode to the operating system."
@@ -995,7 +971,7 @@ msgstr ""
 "Python tarafından işletim sistemindeki baytların kodunu çözmek ve Unicode'u "
 "işletim sistemine kodlamak için kullanılan kodlama ve hata işleyici."
 
-#: glossary.rst:424
+#: glossary.rst:414
 msgid ""
 "The filesystem encoding must guarantee to successfully decode all bytes "
 "below 128. If the file system encoding fails to provide this guarantee, API "
@@ -1005,7 +981,7 @@ msgstr ""
 "çözmeyi garanti etmelidir. Dosya sistemi kodlaması bu garantiyi "
 "sağlayamazsa, API işlevleri :exc:`UnicodeError` değerini yükseltebilir."
 
-#: glossary.rst:428
+#: glossary.rst:418
 msgid ""
 "The :func:`sys.getfilesystemencoding` and :func:`sys."
 "getfilesystemencodeerrors` functions can be used to get the filesystem "
@@ -1015,7 +991,7 @@ msgstr ""
 "işlevleri, dosya sistemi kodlamasını ve hata işleyicisini almak için "
 "kullanılabilir."
 
-#: glossary.rst:432
+#: glossary.rst:422
 msgid ""
 "The :term:`filesystem encoding and error handler` are configured at Python "
 "startup by the :c:func:`PyConfig_Read` function: see :c:member:`~PyConfig."
@@ -1027,15 +1003,15 @@ msgstr ""
 "filesystem_encoding` ve :c:member:`~PyConfig. filesystem_errors` üyeleri :c:"
 "type:`PyConfig`."
 
-#: glossary.rst:437
+#: glossary.rst:427
 msgid "See also the :term:`locale encoding`."
 msgstr "Ayrıca bkz. :term:`locale encoding`."
 
-#: glossary.rst:438
+#: glossary.rst:428
 msgid "finder"
 msgstr "bulucu"
 
-#: glossary.rst:440
+#: glossary.rst:430
 msgid ""
 "An object that tries to find the :term:`loader` for a module that is being "
 "imported."
@@ -1043,7 +1019,7 @@ msgstr ""
 "İçe aktarılmakta olan bir modül için :term:`loader` 'ı bulmaya çalışan bir "
 "nesne."
 
-#: glossary.rst:443
+#: glossary.rst:433
 msgid ""
 "Since Python 3.3, there are two types of finder: :term:`meta path finders "
 "<meta path finder>` for use with :data:`sys.meta_path`, and :term:`path "
@@ -1054,15 +1030,15 @@ msgstr ""
 "`sys.path_hooks` ile kullanılmak üzere :term:`yol girişi bulucular <path "
 "entry finder>`."
 
-#: glossary.rst:447
+#: glossary.rst:437
 msgid "See :pep:`302`, :pep:`420` and :pep:`451` for much more detail."
 msgstr "Daha fazla ayrıntı için :pep:`302`, :pep:`420` ve :pep:`451` bakın."
 
-#: glossary.rst:448
+#: glossary.rst:438
 msgid "floor division"
 msgstr "kat bölümü"
 
-#: glossary.rst:450
+#: glossary.rst:440
 msgid ""
 "Mathematical division that rounds down to nearest integer.  The floor "
 "division operator is ``//``.  For example, the expression ``11 // 4`` "
@@ -1076,11 +1052,11 @@ msgstr ""
 "``(-11) // 4`` 'ün ``-3`` olduğuna dikkat edin, çünkü bu ``-2.75`` "
 "yuvarlatılmış *aşağı*. Bakınız :pep:`238`."
 
-#: glossary.rst:455
+#: glossary.rst:445
 msgid "function"
 msgstr "fonksiyon"
 
-#: glossary.rst:457
+#: glossary.rst:447
 msgid ""
 "A series of statements which returns some value to a caller. It can also be "
 "passed zero or more :term:`arguments <argument>` which may be used in the "
@@ -1092,17 +1068,17 @@ msgstr ""
 "<argument>` iletilebilir. Ayrıca :term:`parameter`, :term:`method` ve :ref:"
 "`function` bölümüne bakın."
 
-#: glossary.rst:461
+#: glossary.rst:451
 msgid "function annotation"
 msgstr "fonksiyon açıklaması"
 
-#: glossary.rst:463
+#: glossary.rst:453
 msgid "An :term:`annotation` of a function parameter or return value."
 msgstr ""
 "Bir işlev parametresinin veya dönüş değerinin :term:`ek açıklaması "
 "<annotation>`."
 
-#: glossary.rst:465
+#: glossary.rst:455
 msgid ""
 "Function annotations are usually used for :term:`type hints <type hint>`: "
 "for example, this function is expected to take two :class:`int` arguments "
@@ -1112,11 +1088,11 @@ msgstr ""
 "kullanılır: örneğin, bu fonksiyonun iki :class:`int` argüman alması ve "
 "ayrıca bir :class:`int` dönüş değerine sahip olması beklenir ::"
 
-#: glossary.rst:473
+#: glossary.rst:463
 msgid "Function annotation syntax is explained in section :ref:`function`."
 msgstr "İşlev açıklama sözdizimi :ref:`function` bölümünde açıklanmaktadır."
 
-#: glossary.rst:475
+#: glossary.rst:465
 msgid ""
 "See :term:`variable annotation` and :pep:`484`, which describe this "
 "functionality. Also see :ref:`annotations-howto` for best practices on "
@@ -1126,11 +1102,11 @@ msgstr ""
 "açıklamalarla çalışmaya ilişkin en iyi uygulamalar için ayrıca :ref:"
 "`annotations-howto` konusuna bakın."
 
-#: glossary.rst:479
+#: glossary.rst:469
 msgid "__future__"
 msgstr "__future__"
 
-#: glossary.rst:481
+#: glossary.rst:471
 msgid ""
 "A :ref:`future statement <future>`, ``from __future__ import <feature>``, "
 "directs the compiler to compile the current module using syntax or semantics "
@@ -1148,11 +1124,11 @@ msgstr ""
 "özelliğin ne zaman eklendiğini ve ne zaman varsayılan olacağını (ya da "
 "yaptığını) görebilirsiniz:"
 
-#: glossary.rst:492
+#: glossary.rst:482
 msgid "garbage collection"
 msgstr "çöp toplama"
 
-#: glossary.rst:494
+#: glossary.rst:484
 msgid ""
 "The process of freeing memory when it is not used anymore.  Python performs "
 "garbage collection via reference counting and a cyclic garbage collector "
@@ -1164,11 +1140,11 @@ msgstr ""
 "aracılığıyla çöp toplama gerçekleştirir.  Çöp toplayıcı :mod:`gc` modülü "
 "kullanılarak kontrol edilebilir."
 
-#: glossary.rst:500
+#: glossary.rst:490
 msgid "generator"
 msgstr "jeneratör"
 
-#: glossary.rst:502
+#: glossary.rst:492
 msgid ""
 "A function which returns a :term:`generator iterator`.  It looks like a "
 "normal function except that it contains :keyword:`yield` expressions for "
@@ -1180,7 +1156,7 @@ msgstr ""
 "içermesi veya :func:`next` işleviyle birer birer alınabilmesi dışında normal "
 "bir işleve benziyor."
 
-#: glossary.rst:507
+#: glossary.rst:497
 msgid ""
 "Usually refers to a generator function, but may refer to a *generator "
 "iterator* in some contexts.  In cases where the intended meaning isn't "
@@ -1190,15 +1166,15 @@ msgstr ""
 "*jeneratör yineleyicisine* atıfta bulunabilir.  Amaçlanan anlamın net "
 "olmadığı durumlarda, tam terimlerin kullanılması belirsizliği önler."
 
-#: glossary.rst:510
+#: glossary.rst:500
 msgid "generator iterator"
 msgstr "jeneratör yineleyici"
 
-#: glossary.rst:512
+#: glossary.rst:502
 msgid "An object created by a :term:`generator` function."
 msgstr "Bir :term:`generator` işlevi tarafından oluşturulan bir nesne."
 
-#: glossary.rst:514
+#: glossary.rst:504
 msgid ""
 "Each :keyword:`yield` temporarily suspends processing, remembering the "
 "location execution state (including local variables and pending try-"
@@ -1210,11 +1186,11 @@ msgstr ""
 "*jeneratör yineleyici* devam ettiğinde, kaldığı yerden devam eder (her "
 "çağrıda yeniden başlayan işlevlerin aksine)."
 
-#: glossary.rst:521
+#: glossary.rst:511
 msgid "generator expression"
 msgstr "jeneratör ifadesi"
 
-#: glossary.rst:523
+#: glossary.rst:513
 msgid ""
 "An expression that returns an iterator.  It looks like a normal expression "
 "followed by a :keyword:`!for` clause defining a loop variable, range, and an "
@@ -1226,11 +1202,11 @@ msgstr ""
 "tümcesinin takip ettiği normal bir ifadeye benziyor.  Birleştirilmiş ifade, "
 "bir çevreleyen için değerler üretir::"
 
-#: glossary.rst:530
+#: glossary.rst:520
 msgid "generic function"
 msgstr "genel işlev"
 
-#: glossary.rst:532
+#: glossary.rst:522
 msgid ""
 "A function composed of multiple functions implementing the same operation "
 "for different types. Which implementation should be used during a call is "
@@ -1240,7 +1216,7 @@ msgstr ""
 "işlev. Bir çağrı sırasında hangi uygulamanın kullanılması gerektiği, "
 "gönderme algoritması tarafından belirlenir."
 
-#: glossary.rst:536
+#: glossary.rst:526
 msgid ""
 "See also the :term:`single dispatch` glossary entry, the :func:`functools."
 "singledispatch` decorator, and :pep:`443`."
@@ -1248,11 +1224,11 @@ msgstr ""
 "Ayrıca :term:`single dispatch` sözlük girdisine, :func:`functools."
 "singledispatch` dekoratörüne ve :pep:`443` 'e bakın."
 
-#: glossary.rst:538
+#: glossary.rst:528
 msgid "generic type"
 msgstr "genel tip"
 
-#: glossary.rst:540
+#: glossary.rst:530
 msgid ""
 "A :term:`type` that can be parameterized; typically a :ref:`container "
 "class<sequence-types>` such as :class:`list` or :class:`dict`. Used for :"
@@ -1262,7 +1238,7 @@ msgstr ""
 "sınıfı <sequence-types>`, örneğin :class:`list` veya :class:`dict`. :term:"
 "`type hint` ve :term:`annotation` için kullanılır."
 
-#: glossary.rst:545
+#: glossary.rst:535
 msgid ""
 "For more details, see :ref:`generic alias types<types-genericalias>`, :pep:"
 "`483`, :pep:`484`, :pep:`585`, and the :mod:`typing` module."
@@ -1270,19 +1246,19 @@ msgstr ""
 "Daha fazla ayrıntı için :ref:`generic allias types<types-genericalias>`, :"
 "pep:`483`, :pep:`484`, :pep:`585` ve :mod:`typing` modülüne bakın."
 
-#: glossary.rst:547
+#: glossary.rst:537
 msgid "GIL"
 msgstr "GIL"
 
-#: glossary.rst:549
+#: glossary.rst:539
 msgid "See :term:`global interpreter lock`."
 msgstr "Bakınız :term:`global interpreter lock`."
 
-#: glossary.rst:550
+#: glossary.rst:540
 msgid "global interpreter lock"
 msgstr "genel tercüman kilidi"
 
-#: glossary.rst:552
+#: glossary.rst:542
 msgid ""
 "The mechanism used by the :term:`CPython` interpreter to assure that only "
 "one thread executes Python :term:`bytecode` at a time. This simplifies the "
@@ -1300,7 +1276,7 @@ msgstr ""
 "makinelerin sağladığı paralelliğin çoğu pahasına, yorumlayıcının çok iş "
 "parçacıklı olmasını kolaylaştırır."
 
-#: glossary.rst:561
+#: glossary.rst:551
 #, fuzzy
 msgid ""
 "However, some extension modules, either standard or third-party, are "
@@ -1313,7 +1289,7 @@ msgstr ""
 "GIL'yi serbest bırakacak şekilde tasarlanmıştır.  Ayrıca, GIL, G/Ç yaparken "
 "her zaman serbest bırakılır."
 
-#: glossary.rst:566
+#: glossary.rst:556
 msgid ""
 "Past efforts to create a \"free-threaded\" interpreter (one which locks "
 "shared data at a much finer granularity) have not been successful because "
@@ -1327,11 +1303,11 @@ msgstr ""
 "üstesinden gelinmesinin uygulamayı çok daha karmaşık hale getireceğine ve "
 "dolayısıyla bakımını daha maliyetli hale getireceğine inanılmaktadır."
 
-#: glossary.rst:572
+#: glossary.rst:562
 msgid "hash-based pyc"
 msgstr "karma tabanlı pyc"
 
-#: glossary.rst:574
+#: glossary.rst:564
 msgid ""
 "A bytecode cache file that uses the hash rather than the last-modified time "
 "of the corresponding source file to determine its validity. See :ref:`pyc-"
@@ -1341,11 +1317,11 @@ msgstr ""
 "yerine karma değerini kullanan bir bayt kodu önbellek dosyası. Bakınız :ref:"
 "`pyc-invalidation`."
 
-#: glossary.rst:577
+#: glossary.rst:567
 msgid "hashable"
 msgstr "yıkanabilir"
 
-#: glossary.rst:579
+#: glossary.rst:569
 msgid ""
 "An object is *hashable* if it has a hash value which never changes during "
 "its lifetime (it needs a :meth:`__hash__` method), and can be compared to "
@@ -1358,7 +1334,7 @@ msgstr ""
 "*hashable* olur. .  Eşit karşılaştıran Hashable nesneleri aynı karma "
 "değerine sahip olmalıdır."
 
-#: glossary.rst:584
+#: glossary.rst:574
 msgid ""
 "Hashability makes an object usable as a dictionary key and a set member, "
 "because these data structures use the hash value internally."
@@ -1367,7 +1343,7 @@ msgstr ""
 "kullanılabilir hale getirir, çünkü bu veri yapıları hash değerini dahili "
 "olarak kullanır."
 
-#: glossary.rst:587
+#: glossary.rst:577
 msgid ""
 "Most of Python's immutable built-in objects are hashable; mutable containers "
 "(such as lists or dictionaries) are not; immutable containers (such as "
@@ -1383,11 +1359,11 @@ msgstr ""
 "varsayılan olarak hash edilebilirdir.  Hepsi eşit olmayanı karşılaştırır "
 "(kendileriyle hariç) ve hash değerleri :func:`id` 'lerinden türetilir."
 
-#: glossary.rst:594
+#: glossary.rst:584
 msgid "IDLE"
 msgstr "BOŞTA"
 
-#: glossary.rst:596
+#: glossary.rst:586
 #, fuzzy
 msgid ""
 "An Integrated Development and Learning Environment for Python. :ref:`idle` "
@@ -1397,11 +1373,11 @@ msgstr ""
 "Python için Entegre Geliştirme Ortamı.  IDLE, Python'un standart dağıtımıyla "
 "birlikte gelen temel bir düzenleyici ve yorumlayıcı ortamıdır."
 
-#: glossary.rst:599
+#: glossary.rst:589
 msgid "immutable"
 msgstr "değişmez"
 
-#: glossary.rst:601
+#: glossary.rst:591
 msgid ""
 "An object with a fixed value.  Immutable objects include numbers, strings "
 "and tuples.  Such an object cannot be altered.  A new object has to be "
@@ -1415,11 +1391,11 @@ msgstr ""
 "sözlükte anahtar olarak, sabit bir karma değerinin gerekli olduğu yerlerde "
 "önemli bir rol oynarlar."
 
-#: glossary.rst:606
+#: glossary.rst:596
 msgid "import path"
 msgstr "içe aktarım yolu"
 
-#: glossary.rst:608
+#: glossary.rst:598
 msgid ""
 "A list of locations (or :term:`path entries <path entry>`) that are searched "
 "by the :term:`path based finder` for modules to import. During import, this "
@@ -1431,11 +1407,11 @@ msgstr ""
 "sırasında, bu konum listesi genellikle :data:`sys.path` adresinden gelir, "
 "ancak alt paketler için üst paketin ``__path__`` özelliğinden de gelebilir."
 
-#: glossary.rst:613
+#: glossary.rst:603
 msgid "importing"
 msgstr "içe aktarma"
 
-#: glossary.rst:615
+#: glossary.rst:605
 msgid ""
 "The process by which Python code in one module is made available to Python "
 "code in another module."
@@ -1443,11 +1419,11 @@ msgstr ""
 "Bir modüldeki Python kodunun başka bir modüldeki Python koduna sunulması "
 "süreci."
 
-#: glossary.rst:617
+#: glossary.rst:607
 msgid "importer"
 msgstr "içe aktarıcı"
 
-#: glossary.rst:619
+#: glossary.rst:609
 msgid ""
 "An object that both finds and loads a module; both a :term:`finder` and :"
 "term:`loader` object."
@@ -1455,11 +1431,11 @@ msgstr ""
 "Bir modülü hem bulan hem de yükleyen bir nesne; hem bir :term:`finder` hem "
 "de :term:`loader` nesnesi."
 
-#: glossary.rst:621
+#: glossary.rst:611
 msgid "interactive"
 msgstr "etkileşimli"
 
-#: glossary.rst:623
+#: glossary.rst:613
 msgid ""
 "Python has an interactive interpreter which means you can enter statements "
 "and expressions at the interpreter prompt, immediately execute them and see "
@@ -1474,11 +1450,11 @@ msgstr ""
 "menüsünden seçerek). Yeni fikirleri test etmenin veya modülleri ve paketleri "
 "incelemenin çok güçlü bir yoludur (``help(x)`` 'i unutmayın)."
 
-#: glossary.rst:629
+#: glossary.rst:619
 msgid "interpreted"
 msgstr "yorumlanmış"
 
-#: glossary.rst:631
+#: glossary.rst:621
 msgid ""
 "Python is an interpreted language, as opposed to a compiled one, though the "
 "distinction can be blurry because of the presence of the bytecode compiler.  "
@@ -1495,11 +1471,11 @@ msgstr ""
 "sahiptir, ancak programları genellikle daha yavaş çalışır.  Ayrıca bkz. :"
 "term:`interactive`."
 
-#: glossary.rst:638
+#: glossary.rst:628
 msgid "interpreter shutdown"
 msgstr "tercüman kapatma"
 
-#: glossary.rst:640
+#: glossary.rst:630
 msgid ""
 "When asked to shut down, the Python interpreter enters a special phase where "
 "it gradually releases all allocated resources, such as modules and various "
@@ -1519,7 +1495,7 @@ msgstr ""
 "çeşitli istisnalarla karşılaşabilir (yaygın örnekler kitaplık modülleri veya "
 "uyarı makineleridir)."
 
-#: glossary.rst:649
+#: glossary.rst:639
 msgid ""
 "The main reason for interpreter shutdown is that the ``__main__`` module or "
 "the script being run has finished executing."
@@ -1527,18 +1503,19 @@ msgstr ""
 "Yorumlayıcının kapatılmasının ana nedeni, ``__main__`` modülünün veya "
 "çalıştırılan betiğin yürütmeyi bitirmiş olmasıdır."
 
-#: glossary.rst:651
+#: glossary.rst:641
 msgid "iterable"
 msgstr "yinelenebilir"
 
-#: glossary.rst:653
+#: glossary.rst:643
+#, fuzzy
 msgid ""
 "An object capable of returning its members one at a time. Examples of "
 "iterables include all sequence types (such as :class:`list`, :class:`str`, "
 "and :class:`tuple`) and some non-sequence types like :class:`dict`, :term:"
 "`file objects <file object>`, and objects of any classes you define with an :"
 "meth:`__iter__` method or with a :meth:`__getitem__` method that implements :"
-"term:`Sequence <sequence>` semantics."
+"term:`sequence` semantics."
 msgstr ""
 "Üyelerini teker teker döndürebilen bir nesne. Yineleme örnekleri, tüm dizi "
 "türlerini (:class:`list`, :class:`str`, and :class:`tuple` gibi) ve :class:"
@@ -1547,7 +1524,7 @@ msgstr ""
 "uygulayan bir :meth:`__getitem__` yöntemiyle tanımladığınız tüm sınıfların "
 "nesnelerini içerir."
 
-#: glossary.rst:660
+#: glossary.rst:650
 msgid ""
 "Iterables can be used in a :keyword:`for` loop and in many other places "
 "where a sequence is needed (:func:`zip`, :func:`map`, ...).  When an "
@@ -1570,11 +1547,11 @@ msgstr ""
 "oluşturur.  Ayrıca bkz. :term:`iterator`, :term:`sequence` ve :term:"
 "`generator`."
 
-#: glossary.rst:670
+#: glossary.rst:660
 msgid "iterator"
 msgstr "yineleyici"
 
-#: glossary.rst:672
+#: glossary.rst:662
 msgid ""
 "An object representing a stream of data.  Repeated calls to the iterator's :"
 "meth:`~iterator.__next__` method (or passing it to the built-in function :"
@@ -1607,11 +1584,11 @@ msgstr ""
 "yineleyiciyle denemek, önceki yineleme geçişinde kullanılan aynı tükenmiş "
 "yineleyici nesnesini döndürerek boş bir kap gibi görünmesini sağlar."
 
-#: glossary.rst:687
+#: glossary.rst:677
 msgid "More information can be found in :ref:`typeiter`."
 msgstr "Daha fazla bilgi :ref:`typeiter` içinde bulunabilir."
 
-#: glossary.rst:691
+#: glossary.rst:681
 msgid ""
 "CPython does not consistently apply the requirement that an iterator define :"
 "meth:`__iter__`."
@@ -1619,11 +1596,11 @@ msgstr ""
 "CPython, bir yineleyicinin :meth:`__iter__` tanımlaması gereksinimini "
 "tutarlı bir şekilde uygulamaz."
 
-#: glossary.rst:693
+#: glossary.rst:683
 msgid "key function"
 msgstr "anahtar işlev"
 
-#: glossary.rst:695
+#: glossary.rst:685
 msgid ""
 "A key function or collation function is a callable that returns a value used "
 "for sorting or ordering.  For example, :func:`locale.strxfrm` is used to "
@@ -1634,7 +1611,7 @@ msgstr ""
 "strxfrm`, yerel ayara özgü sıralama kurallarının farkında olan bir sıralama "
 "anahtarı üretmek için kullanılır."
 
-#: glossary.rst:700
+#: glossary.rst:690
 msgid ""
 "A number of tools in Python accept key functions to control how elements are "
 "ordered or grouped.  They include :func:`min`, :func:`max`, :func:`sorted`, :"
@@ -1647,16 +1624,16 @@ msgstr ""
 "merge`, :func:`heapq.nsmallest`, :func:`heapq.nlargest` ve :func:`itertools."
 "groupby`."
 
-#: glossary.rst:706
+#: glossary.rst:696
+#, fuzzy
 msgid ""
 "There are several ways to create a key function.  For example. the :meth:"
 "`str.lower` method can serve as a key function for case insensitive sorts.  "
 "Alternatively, a key function can be built from a :keyword:`lambda` "
-"expression such as ``lambda r: (r[0], r[2])``.  Also, the :mod:`operator` "
-"module provides three key function constructors: :func:`~operator."
-"attrgetter`, :func:`~operator.itemgetter`, and :func:`~operator."
-"methodcaller`.  See the :ref:`Sorting HOW TO <sortinghowto>` for examples of "
-"how to create and use key functions."
+"expression such as ``lambda r: (r[0], r[2])``.  Also, :func:`operator."
+"attrgetter`, :func:`operator.itemgetter`, and :func:`operator.methodcaller` "
+"are three key function constructors.  See the :ref:`Sorting HOW TO "
+"<sortinghowto>` for examples of how to create and use key functions."
 msgstr ""
 "Bir tuş işlevi oluşturmanın birkaç yolu vardır.  Örneğin. :meth:`str.lower` "
 "yöntemi, büyük/küçük harfe duyarlı olmayan sıralamalar için bir anahtar "
@@ -1667,19 +1644,19 @@ msgstr ""
 "methodcaller`.  Anahtar işlevlerin nasıl oluşturulacağı ve kullanılacağına "
 "ilişkin örnekler için :ref:`Sorting HOW TO <sortinghowto>` bölümüne bakın."
 
-#: glossary.rst:714
+#: glossary.rst:703
 msgid "keyword argument"
 msgstr "anahtar kelime argümanı"
 
-#: glossary.rst:1005
+#: glossary.rst:994
 msgid "See :term:`argument`."
 msgstr "Bakınız :term:`argument`."
 
-#: glossary.rst:717
+#: glossary.rst:706
 msgid "lambda"
 msgstr "lambda"
 
-#: glossary.rst:719
+#: glossary.rst:708
 msgid ""
 "An anonymous inline function consisting of a single :term:`expression` which "
 "is evaluated when the function is called.  The syntax to create a lambda "
@@ -1689,11 +1666,11 @@ msgstr ""
 "anonim bir satır içi işlev.  Bir lambda işlevi oluşturmak için sözdizimi "
 "``lambda [parametreler]: ifade`` şeklindedir"
 
-#: glossary.rst:722
+#: glossary.rst:711
 msgid "LBYL"
 msgstr "LBYL"
 
-#: glossary.rst:724
+#: glossary.rst:713
 msgid ""
 "Look before you leap.  This coding style explicitly tests for pre-conditions "
 "before making calls or lookups.  This style contrasts with the :term:`EAFP` "
@@ -1704,7 +1681,7 @@ msgstr ""
 "koşulları açıkça test eder.  Bu stil, :term:`EAFP` yaklaşımıyla çelişir ve "
 "birçok :keyword:`if` ifadesinin varlığı ile karakterize edilir."
 
-#: glossary.rst:729
+#: glossary.rst:718
 msgid ""
 "In a multi-threaded environment, the LBYL approach can risk introducing a "
 "race condition between \"the looking\" and \"the leaping\".  For example, "
@@ -1718,43 +1695,46 @@ msgstr ""
 "başka bir iş parçacığı *eşlemeden* *key* kaldırırsa başarısız olabilir. Bu "
 "sorun, kilitlerle veya EAFP yaklaşımı kullanılarak çözülebilir."
 
-#: glossary.rst:734
+#: glossary.rst:723
 msgid "locale encoding"
 msgstr "yerel kodlama"
 
-#: glossary.rst:736
+#: glossary.rst:725
+#, fuzzy
 msgid ""
-"On Unix, it is the encoding of the LC_CTYPE locale. It can be set with "
-"``locale.setlocale(locale.LC_CTYPE, new_locale)``."
+"On Unix, it is the encoding of the LC_CTYPE locale. It can be set with :func:"
+"`locale.setlocale(locale.LC_CTYPE, new_locale) <locale.setlocale>`."
 msgstr ""
 "Unix'te, LC_CTYPE yerel ayarının kodlamasıdır. ``locale.setlocale(locale."
 "LC_CTYPE, new_locale)`` ile ayarlanabilir."
 
-#: glossary.rst:739
-msgid "On Windows, it is the ANSI code page (ex: ``cp1252``)."
+#: glossary.rst:728
+#, fuzzy
+msgid "On Windows, it is the ANSI code page (ex: ``\"cp1252\"``)."
 msgstr "Windows'ta bu, ANSI kod sayfasıdır (ör. ``cp1252``)."
 
-#: glossary.rst:741
+#: glossary.rst:730
 msgid ""
-"``locale.getpreferredencoding(False)`` can be used to get the locale "
-"encoding."
+"On Android and VxWorks, Python uses ``\"utf-8\"`` as the locale encoding."
+msgstr ""
+
+#: glossary.rst:732
+#, fuzzy
+msgid "``locale.getencoding()`` can be used to get the locale encoding."
 msgstr ""
 "``locale.getpreferredencoding(False)`` yerel ayar kodlamasını almak için "
 "kullanılabilir."
 
-#: glossary.rst:744
-msgid ""
-"Python uses the :term:`filesystem encoding and error handler` to convert "
-"between Unicode filenames and bytes filenames."
-msgstr ""
-"Python, Unicode dosya adları ile bayt dosya adları arasında dönüştürme "
-"yapmak için :term:`filesystem encoding and error handler` kullanır."
+#: glossary.rst:734
+#, fuzzy
+msgid "See also the :term:`filesystem encoding and error handler`."
+msgstr "dosya sistemi kodlaması ve hata işleyicisi"
 
-#: glossary.rst:746
+#: glossary.rst:735
 msgid "list"
 msgstr "liste"
 
-#: glossary.rst:748
+#: glossary.rst:737
 msgid ""
 "A built-in Python :term:`sequence`.  Despite its name it is more akin to an "
 "array in other languages than to a linked list since access to elements is "
@@ -1764,11 +1744,11 @@ msgstr ""
 "olduğundan, diğer dillerdeki bir diziye, bağlantılı bir listeden daha "
 "yakındır."
 
-#: glossary.rst:751
+#: glossary.rst:740
 msgid "list comprehension"
 msgstr "liste anlama"
 
-#: glossary.rst:753
+#: glossary.rst:742
 msgid ""
 "A compact way to process all or part of the elements in a sequence and "
 "return a list with the results.  ``result = ['{:#04x}'.format(x) for x in "
@@ -1783,11 +1763,11 @@ msgstr ""
 "tümcesi isteğe bağlıdır.  Atlanırsa, \"aralık(256)\" içindeki tüm öğeler "
 "işlenir."
 
-#: glossary.rst:759
+#: glossary.rst:748
 msgid "loader"
 msgstr "yükleyici"
 
-#: glossary.rst:761
+#: glossary.rst:750
 msgid ""
 "An object that loads a module. It must define a method named :meth:"
 "`load_module`. A loader is typically returned by a :term:`finder`. See :pep:"
@@ -1799,23 +1779,24 @@ msgstr ""
 "Ayrıntılar için :pep:`302` ve bir :term:`soyut temel sınıf` için :class:"
 "`importlib.abc.Loader` bölümüne bakın."
 
-#: glossary.rst:765
+#: glossary.rst:754
 msgid "magic method"
 msgstr "sihirli yöntem"
 
-#: glossary.rst:769
+#: glossary.rst:758
 msgid "An informal synonym for :term:`special method`."
 msgstr ":term:`special method` için gayri resmi bir eşanlamlı."
 
-#: glossary.rst:770
+#: glossary.rst:759
 msgid "mapping"
 msgstr "haritalama"
 
-#: glossary.rst:772
+#: glossary.rst:761
+#, fuzzy
 msgid ""
 "A container object that supports arbitrary key lookups and implements the "
-"methods specified in the :class:`~collections.abc.Mapping` or :class:"
-"`~collections.abc.MutableMapping` :ref:`abstract base classes <collections-"
+"methods specified in the :class:`collections.abc.Mapping` or :class:"
+"`collections.abc.MutableMapping` :ref:`abstract base classes <collections-"
 "abstract-base-classes>`.  Examples include :class:`dict`, :class:"
 "`collections.defaultdict`, :class:`collections.OrderedDict` and :class:"
 "`collections.Counter`."
@@ -1827,11 +1808,11 @@ msgstr ""
 "defaultdict`, :class:`collections.OrderedDict` ve :class:`collections."
 "Counter` sayılabilir."
 
-#: glossary.rst:778
+#: glossary.rst:767
 msgid "meta path finder"
 msgstr "meta yol bulucu"
 
-#: glossary.rst:780
+#: glossary.rst:769
 msgid ""
 "A :term:`finder` returned by a search of :data:`sys.meta_path`.  Meta path "
 "finders are related to, but different from :term:`path entry finders <path "
@@ -1841,7 +1822,7 @@ msgstr ""
 "bulucular, :term:`yol girişi bulucuları <path entry finder>` ile "
 "ilişkilidir, ancak onlardan farklıdır."
 
-#: glossary.rst:784
+#: glossary.rst:773
 msgid ""
 "See :class:`importlib.abc.MetaPathFinder` for the methods that meta path "
 "finders implement."
@@ -1849,11 +1830,11 @@ msgstr ""
 "Meta yol bulucuların uyguladığı yöntemler için :class:`importlib.abc."
 "MetaPathFinder` bölümüne bakın."
 
-#: glossary.rst:786
+#: glossary.rst:775
 msgid "metaclass"
 msgstr "metasınıf"
 
-#: glossary.rst:788
+#: glossary.rst:777
 msgid ""
 "The class of a class.  Class definitions create a class name, a class "
 "dictionary, and a list of base classes.  The metaclass is responsible for "
@@ -1875,15 +1856,15 @@ msgstr ""
 "parçacığı güvenliği eklemek, nesne oluşturmayı izlemek, tekilleri uygulamak "
 "ve diğer birçok görev için kullanılmışlardır."
 
-#: glossary.rst:798
+#: glossary.rst:787
 msgid "More information can be found in :ref:`metaclasses`."
 msgstr "Daha fazla bilgi :ref:`metaclasses` içinde bulunabilir."
 
-#: glossary.rst:799
+#: glossary.rst:788
 msgid "method"
 msgstr "metot"
 
-#: glossary.rst:801
+#: glossary.rst:790
 msgid ""
 "A function which is defined inside a class body.  If called as an attribute "
 "of an instance of that class, the method will get the instance object as its "
@@ -1895,11 +1876,11 @@ msgstr ""
 "(genellikle ``self`` olarak adlandırılır) olarak alır. Bkz. :term:`function` "
 "ve :term:`nested scope`."
 
-#: glossary.rst:805
+#: glossary.rst:794
 msgid "method resolution order"
 msgstr "metot kalite sıralaması"
 
-#: glossary.rst:807
+#: glossary.rst:796
 msgid ""
 "Method Resolution Order is the order in which base classes are searched for "
 "a member during lookup. See `The Python 2.3 Method Resolution Order <https://"
@@ -1911,11 +1892,11 @@ msgstr ""
 "algoritmanın ayrıntıları için bkz. `The Python 2.3 Method Resolution Order "
 "<https://www.python.org/download/releases/2.3/mro/>`_"
 
-#: glossary.rst:811
+#: glossary.rst:800
 msgid "module"
 msgstr "modül"
 
-#: glossary.rst:813
+#: glossary.rst:802
 msgid ""
 "An object that serves as an organizational unit of Python code.  Modules "
 "have a namespace containing arbitrary Python objects.  Modules are loaded "
@@ -1925,15 +1906,15 @@ msgstr ""
 "rastgele Python nesneleri içeren bir ad alanına sahiptir. Modüller, :term:"
 "`importing` işlemiyle Python'a yüklenir."
 
-#: glossary.rst:817
+#: glossary.rst:806
 msgid "See also :term:`package`."
 msgstr "Ayrıca bakınız :term:`package`."
 
-#: glossary.rst:818
+#: glossary.rst:807
 msgid "module spec"
 msgstr "modül özelliği"
 
-#: glossary.rst:820
+#: glossary.rst:809
 msgid ""
 "A namespace containing the import-related information used to load a module. "
 "An instance of :class:`importlib.machinery.ModuleSpec`."
@@ -1941,19 +1922,19 @@ msgstr ""
 "Bir modülü yüklemek için kullanılan içe aktarmayla ilgili bilgileri içeren "
 "bir ad alanı. Bir :class:`importlib.machinery.ModuleSpec` örneği."
 
-#: glossary.rst:822
+#: glossary.rst:811
 msgid "MRO"
 msgstr "MRO"
 
-#: glossary.rst:824
+#: glossary.rst:813
 msgid "See :term:`method resolution order`."
 msgstr "Bakınız :term:`metot çözüm sırası <method resolution order>`."
 
-#: glossary.rst:825
+#: glossary.rst:814
 msgid "mutable"
 msgstr "değiştirilebilir"
 
-#: glossary.rst:827
+#: glossary.rst:816
 msgid ""
 "Mutable objects can change their value but keep their :func:`id`.  See also :"
 "term:`immutable`."
@@ -1961,11 +1942,11 @@ msgstr ""
 "Değiştirilebilir (mutable) nesneler değerlerini değiştirebilir ancak :func:"
 "`idlerini <id>` koruyabilirler. Ayrıca bkz. :term:`immutable`."
 
-#: glossary.rst:829
+#: glossary.rst:818
 msgid "named tuple"
 msgstr "adlandırılmış demet"
 
-#: glossary.rst:831
+#: glossary.rst:820
 msgid ""
 "The term \"named tuple\" applies to any type or class that inherits from "
 "tuple and whose indexable elements are also accessible using named "
@@ -1975,7 +1956,7 @@ msgstr ""
 "adlandırılmış nitelikler kullanılarak erişilebilen herhangi bir tür veya "
 "sınıf için geçerlidir. Tür veya sınıfın başka özellikleri de olabilir."
 
-#: glossary.rst:835
+#: glossary.rst:824
 msgid ""
 "Several built-in types are named tuples, including the values returned by :"
 "func:`time.localtime` and :func:`os.stat`.  Another example is :data:`sys."
@@ -1985,7 +1966,7 @@ msgstr ""
 "tarafından döndürülen değerler de dahil olmak üzere, tanımlama grupları "
 "olarak adlandırılır. Başka bir örnek :data:`sys.float_info`::"
 
-#: glossary.rst:846
+#: glossary.rst:835
 msgid ""
 "Some named tuples are built-in types (such as the above examples). "
 "Alternatively, a named tuple can be created from a regular class definition "
@@ -2002,11 +1983,11 @@ msgstr ""
 "yazılmış veya yerleşik adlandırılmış demetlerde bulunmayan bazı ekstra "
 "yöntemler ekler."
 
-#: glossary.rst:853
+#: glossary.rst:842
 msgid "namespace"
 msgstr "ad alanı"
 
-#: glossary.rst:855
+#: glossary.rst:844
 msgid ""
 "The place where a variable is stored.  Namespaces are implemented as "
 "dictionaries.  There are the local, global and built-in namespaces as well "
@@ -2028,11 +2009,11 @@ msgstr ""
 "yazmak, bu işlevlerin sırasıyla :mod:`random` ve :mod:`itertools` modülleri "
 "tarafından uygulandığını açıkça gösterir."
 
-#: glossary.rst:865
+#: glossary.rst:854
 msgid "namespace package"
 msgstr "ad alanı paketi"
 
-#: glossary.rst:867
+#: glossary.rst:856
 msgid ""
 "A :pep:`420` :term:`package` which serves only as a container for "
 "subpackages.  Namespace packages may have no physical representation, and "
@@ -2044,15 +2025,15 @@ msgstr ""
 "``__init__.py`` dosyası olmadığından özellikle :term:`regular package` gibi "
 "değildirler."
 
-#: glossary.rst:872
+#: glossary.rst:861
 msgid "See also :term:`module`."
 msgstr "Ayrıca bkz. :term:`module`."
 
-#: glossary.rst:873
+#: glossary.rst:862
 msgid "nested scope"
 msgstr "iç içe kapsam"
 
-#: glossary.rst:875
+#: glossary.rst:864
 msgid ""
 "The ability to refer to a variable in an enclosing definition.  For "
 "instance, a function defined inside another function can refer to variables "
@@ -2069,11 +2050,11 @@ msgstr ""
 "global değişkenler global ad alanını okur ve yazar. :keyword:`nonlocal`, dış "
 "kapsamlara yazmaya izin verir."
 
-#: glossary.rst:882
+#: glossary.rst:871
 msgid "new-style class"
 msgstr "yeni stil sınıf"
 
-#: glossary.rst:884
+#: glossary.rst:873
 msgid ""
 "Old name for the flavor of classes now used for all class objects.  In "
 "earlier Python versions, only new-style classes could use Python's newer, "
@@ -2086,11 +2067,11 @@ msgstr ""
 "sınıf yöntemleri ve statik yöntemler gibi daha yeni, çok yönlü özelliklerini "
 "kullanabilirdi."
 
-#: glossary.rst:888
+#: glossary.rst:877
 msgid "object"
 msgstr "obje"
 
-#: glossary.rst:890
+#: glossary.rst:879
 msgid ""
 "Any data with state (attributes or value) and defined behavior (methods).  "
 "Also the ultimate base class of any :term:`new-style class`."
@@ -2099,11 +2080,11 @@ msgstr ""
 "herhangi bir veri. Ayrıca herhangi bir :term:`yeni tarz sınıfın <new-style "
 "class>` nihai temel sınıfı."
 
-#: glossary.rst:893
+#: glossary.rst:882
 msgid "package"
 msgstr "paket"
 
-#: glossary.rst:895
+#: glossary.rst:884
 #, fuzzy
 msgid ""
 "A Python :term:`module` which can contain submodules or recursively, "
@@ -2114,15 +2095,15 @@ msgstr ""
 "`module`. Teknik olarak paket, ``__path__`` özniteliğine sahip bir Python "
 "modülüdür."
 
-#: glossary.rst:899
+#: glossary.rst:888
 msgid "See also :term:`regular package` and :term:`namespace package`."
 msgstr "Ayrıca bkz. :term:`regular package` ve :term:`namespace package`."
 
-#: glossary.rst:900
+#: glossary.rst:889
 msgid "parameter"
 msgstr "parametre"
 
-#: glossary.rst:902
+#: glossary.rst:891
 msgid ""
 "A named entity in a :term:`function` (or method) definition that specifies "
 "an :term:`argument` (or in some cases, arguments) that the function can "
@@ -2132,7 +2113,7 @@ msgstr ""
 "term:`argument` (veya bazı durumlarda, argümanlar) belirten adlandırılmış "
 "bir varlık.  Beş çeşit parametre vardır:"
 
-#: glossary.rst:906
+#: glossary.rst:895
 msgid ""
 ":dfn:`positional-or-keyword`: specifies an argument that can be passed "
 "either :term:`positionally <argument>` or as a :term:`keyword argument "
@@ -2143,7 +2124,7 @@ msgstr ""
 "`keyword argümanı <argument>` olarak iletilebilen bir argüman belirtir. Bu, "
 "varsayılan parametre türüdür, örneğin aşağıdakilerde *foo* ve *bar*::"
 
-#: glossary.rst:915
+#: glossary.rst:904
 msgid ""
 ":dfn:`positional-only`: specifies an argument that can be supplied only by "
 "position. Positional-only parameters can be defined by including a ``/`` "
@@ -2155,7 +2136,7 @@ msgstr ""
 "parametre listesine bir ``/`` karakteri eklenerek tanımlanabilir, örneğin "
 "aşağıdakilerde *posonly1* ve *posonly2*::"
 
-#: glossary.rst:924
+#: glossary.rst:913
 msgid ""
 ":dfn:`keyword-only`: specifies an argument that can be supplied only by "
 "keyword.  Keyword-only parameters can be defined by including a single var-"
@@ -2169,7 +2150,7 @@ msgstr ""
 "parametre veya çıplak ``*`` dahil edilerek tanımlanabilir, örneğin "
 "aşağıdakilerde *kw_only1* ve *kw_only2*::"
 
-#: glossary.rst:932
+#: glossary.rst:921
 msgid ""
 ":dfn:`var-positional`: specifies that an arbitrary sequence of positional "
 "arguments can be provided (in addition to any positional arguments already "
@@ -2183,7 +2164,7 @@ msgstr ""
 "parametre adının başına ``*`` eklenerek tanımlanabilir, örneğin "
 "aşağıdakilerde *args*::"
 
-#: glossary.rst:940
+#: glossary.rst:929
 msgid ""
 ":dfn:`var-keyword`: specifies that arbitrarily many keyword arguments can be "
 "provided (in addition to any keyword arguments already accepted by other "
@@ -2196,7 +2177,7 @@ msgstr ""
 "parametre adının başına ``**``, örneğin yukarıdaki örnekte *kwargs* "
 "eklenerek tanımlanabilir."
 
-#: glossary.rst:946
+#: glossary.rst:935
 msgid ""
 "Parameters can specify both optional and required arguments, as well as "
 "default values for some optional arguments."
@@ -2204,7 +2185,7 @@ msgstr ""
 "Parametreler, hem isteğe bağlı hem de gerekli argümanleri ve ayrıca bazı "
 "isteğe bağlı bağımsız değişkenler için varsayılan değerleri belirtebilir."
 
-#: glossary.rst:949
+#: glossary.rst:938
 msgid ""
 "See also the :term:`argument` glossary entry, the FAQ question on :ref:`the "
 "difference between arguments and parameters <faq-argument-vs-parameter>`, "
@@ -2215,11 +2196,11 @@ msgstr ""
 "arasındaki fark <faq-argument-vs-parameter>`, :class:`inspect.Parameter`, :"
 "ref:`function` ve :pep:`362`."
 
-#: glossary.rst:953
+#: glossary.rst:942
 msgid "path entry"
 msgstr "yol girişi"
 
-#: glossary.rst:955
+#: glossary.rst:944
 msgid ""
 "A single location on the :term:`import path` which the :term:`path based "
 "finder` consults to find modules for importing."
@@ -2227,11 +2208,11 @@ msgstr ""
 ":term:`path based finder` içe aktarma modüllerini bulmak için başvurduğu :"
 "term:`import path` üzerindeki tek bir konum."
 
-#: glossary.rst:957
+#: glossary.rst:946
 msgid "path entry finder"
 msgstr "yol girişi bulucu"
 
-#: glossary.rst:959
+#: glossary.rst:948
 msgid ""
 "A :term:`finder` returned by a callable on :data:`sys.path_hooks` (i.e. a :"
 "term:`path entry hook`) which knows how to locate modules given a :term:"
@@ -2241,7 +2222,7 @@ msgstr ""
 "kancası`) üzerinde bir çağrılabilir tarafından döndürülür ve :term:`path "
 "entry` verilen modüllerin nasıl bulunacağını bilir."
 
-#: glossary.rst:963
+#: glossary.rst:952
 msgid ""
 "See :class:`importlib.abc.PathEntryFinder` for the methods that path entry "
 "finders implement."
@@ -2249,11 +2230,11 @@ msgstr ""
 "Yol girişi bulucularının uyguladığı yöntemler için :class:`importlib.abc."
 "PathEntryFinder` bölümüne bakın."
 
-#: glossary.rst:965
+#: glossary.rst:954
 msgid "path entry hook"
 msgstr "yol giriş kancası"
 
-#: glossary.rst:967
+#: glossary.rst:956
 msgid ""
 "A callable on the :data:`sys.path_hook` list which returns a :term:`path "
 "entry finder` if it knows how to find modules on a specific :term:`path "
@@ -2263,11 +2244,11 @@ msgstr ""
 "entry>` modülleri nasıl bulacağını biliyorsa, bir :term:`yol girişi bulucu "
 "<path entry finder>` döndüren bir çağrılabilir."
 
-#: glossary.rst:970
+#: glossary.rst:959
 msgid "path based finder"
 msgstr "yol tabanlı bulucu"
 
-#: glossary.rst:972
+#: glossary.rst:961
 msgid ""
 "One of the default :term:`meta path finders <meta path finder>` which "
 "searches an :term:`import path` for modules."
@@ -2275,11 +2256,11 @@ msgstr ""
 "Modüller için bir :term:`import path` arayan varsayılan :term:`meta yol "
 "buluculardan <meta path finder>` biri."
 
-#: glossary.rst:974
+#: glossary.rst:963
 msgid "path-like object"
 msgstr "yol benzeri nesne"
 
-#: glossary.rst:976
+#: glossary.rst:965
 msgid ""
 "An object representing a file system path. A path-like object is either a :"
 "class:`str` or :class:`bytes` object representing a path, or an object "
@@ -2299,11 +2280,11 @@ msgstr ""
 "veya :class:`bytes` sonucunu garanti etmek için kullanılabilir. :pep:`519` "
 "tarafından tanıtıldı."
 
-#: glossary.rst:984
+#: glossary.rst:973
 msgid "PEP"
 msgstr "PEP"
 
-#: glossary.rst:986
+#: glossary.rst:975
 msgid ""
 "Python Enhancement Proposal. A PEP is a design document providing "
 "information to the Python community, or describing a new feature for Python "
@@ -2315,7 +2296,7 @@ msgstr ""
 "tasarım belgesidir. PEP'ler, önerilen özellikler için özlü bir teknik "
 "şartname ve bir gerekçe sağlamalıdır."
 
-#: glossary.rst:992
+#: glossary.rst:981
 msgid ""
 "PEPs are intended to be the primary mechanisms for proposing major new "
 "features, for collecting community input on an issue, and for documenting "
@@ -2328,15 +2309,15 @@ msgstr ""
 "birincil mekanizmalar olması amaçlanmıştır. PEP yazarı, topluluk içinde "
 "fikir birliği oluşturmaktan ve muhalif görüşleri belgelemekten sorumludur."
 
-#: glossary.rst:998
+#: glossary.rst:987
 msgid "See :pep:`1`."
 msgstr "Bakınız :pep:`1`."
 
-#: glossary.rst:999
+#: glossary.rst:988
 msgid "portion"
 msgstr "kısım"
 
-#: glossary.rst:1001
+#: glossary.rst:990
 msgid ""
 "A set of files in a single directory (possibly stored in a zip file) that "
 "contribute to a namespace package, as defined in :pep:`420`."
@@ -2344,15 +2325,15 @@ msgstr ""
 ":pep:`420` içinde tanımlandığı gibi, bir ad alanı paketine katkıda bulunan "
 "tek bir dizindeki (muhtemelen bir zip dosyasında depolanan) bir dizi dosya."
 
-#: glossary.rst:1003
+#: glossary.rst:992
 msgid "positional argument"
 msgstr "konumsal argüman"
 
-#: glossary.rst:1006
+#: glossary.rst:995
 msgid "provisional API"
 msgstr "geçici API"
 
-#: glossary.rst:1008
+#: glossary.rst:997
 msgid ""
 "A provisional API is one which has been deliberately excluded from the "
 "standard library's backwards compatibility guarantees.  While major changes "
@@ -2371,7 +2352,7 @@ msgstr ""
 "yalnızca API'nin eklenmesinden önce gözden kaçan ciddi temel kusurlar ortaya "
 "çıkarsa gerçekleşecektir."
 
-#: glossary.rst:1017
+#: glossary.rst:1006
 msgid ""
 "Even for provisional APIs, backwards incompatible changes are seen as a "
 "\"solution of last resort\" - every attempt will still be made to find a "
@@ -2381,7 +2362,7 @@ msgstr ""
 "çözümü\" olarak görülür - tanımlanan herhangi bir soruna geriye dönük uyumlu "
 "bir çözüm bulmak için her türlü girişimde bulunulacaktır."
 
-#: glossary.rst:1021
+#: glossary.rst:1010
 msgid ""
 "This process allows the standard library to continue to evolve over time, "
 "without locking in problematic design errors for extended periods of time.  "
@@ -2391,19 +2372,19 @@ msgstr ""
 "hatalarına kilitlenmeden zaman içinde gelişmeye devam etmesini sağlar. Daha "
 "fazla ayrıntı için bkz. :pep:`411`."
 
-#: glossary.rst:1024
+#: glossary.rst:1013
 msgid "provisional package"
 msgstr "geçici paket"
 
-#: glossary.rst:1026
+#: glossary.rst:1015
 msgid "See :term:`provisional API`."
 msgstr "Bakınız :term:`provisional API`."
 
-#: glossary.rst:1027
+#: glossary.rst:1016
 msgid "Python 3000"
 msgstr "Python 3000"
 
-#: glossary.rst:1029
+#: glossary.rst:1018
 msgid ""
 "Nickname for the Python 3.x release line (coined long ago when the release "
 "of version 3 was something in the distant future.)  This is also abbreviated "
@@ -2413,11 +2394,11 @@ msgstr ""
 "sürülmesi uzak bir gelecekte olduğu zaman ortaya çıktı.) Bu aynı zamanda "
 "\"Py3k\" olarak da kısaltılır."
 
-#: glossary.rst:1032
+#: glossary.rst:1021
 msgid "Pythonic"
 msgstr "Pythonic"
 
-#: glossary.rst:1034
+#: glossary.rst:1023
 msgid ""
 "An idea or piece of code which closely follows the most common idioms of the "
 "Python language, rather than implementing code using concepts common to "
@@ -2433,15 +2414,15 @@ msgstr ""
 "oluşturmaktır. Diğer birçok dilde bu tür bir yapı yoktur, bu nedenle "
 "Python'a aşina olmayan kişiler bazen bunun yerine sayısal bir sayaç kullanır:"
 
-#: glossary.rst:1044
+#: glossary.rst:1033
 msgid "As opposed to the cleaner, Pythonic method::"
 msgstr "Temizleyicinin aksine, Pythonic yöntemi::"
 
-#: glossary.rst:1048
+#: glossary.rst:1037
 msgid "qualified name"
 msgstr "nitelikli isim"
 
-#: glossary.rst:1050
+#: glossary.rst:1039
 msgid ""
 "A dotted name showing the \"path\" from a module's global scope to a class, "
 "function or method defined in that module, as defined in :pep:`3155`.  For "
@@ -2453,7 +2434,7 @@ msgstr ""
 "noktalı ad. Üst düzey işlevler ve sınıflar için nitelikli ad, nesnenin "
 "adıyla aynıdır::"
 
-#: glossary.rst:1067
+#: glossary.rst:1056
 msgid ""
 "When used to refer to modules, the *fully qualified name* means the entire "
 "dotted path to the module, including any parent packages, e.g. ``email.mime."
@@ -2463,18 +2444,18 @@ msgstr ""
 "herhangi bir üst paket de dahil olmak üzere, modüle giden tüm noktalı yol "
 "anlamına gelir, örn. ``email.mime.text``::"
 
-#: glossary.rst:1074
+#: glossary.rst:1063
 msgid "reference count"
 msgstr "referans sayısı"
 
-#: glossary.rst:1076
+#: glossary.rst:1065
+#, fuzzy
 msgid ""
 "The number of references to an object.  When the reference count of an "
 "object drops to zero, it is deallocated.  Reference counting is generally "
 "not visible to Python code, but it is a key element of the :term:`CPython` "
-"implementation.  The :mod:`sys` module defines a :func:`~sys.getrefcount` "
-"function that programmers can call to return the reference count for a "
-"particular object."
+"implementation.  Programmers can call the :func:`sys.getrefcount` function "
+"to return the reference count for a particular object."
 msgstr ""
 "Bir nesneye yapılan başvuruların sayısı. Bir nesnenin referans sayısı sıfıra "
 "düştüğünde, yerinden çıkarılır. Referans sayımı genellikle Python kodunda "
@@ -2483,26 +2464,26 @@ msgstr ""
 "döndürmek üzere çağırabilecekleri bir :func:`~sys.getrefcount` işlevini "
 "tanımlar."
 
-#: glossary.rst:1082
+#: glossary.rst:1071
 msgid "regular package"
 msgstr "sürekli paketleme"
 
-#: glossary.rst:1084
+#: glossary.rst:1073
 msgid ""
 "A traditional :term:`package`, such as a directory containing an ``__init__."
 "py`` file."
 msgstr ""
 "``__init__.py`` dosyası içeren bir dizin gibi geleneksel bir :term:`package`."
 
-#: glossary.rst:1087
+#: glossary.rst:1076
 msgid "See also :term:`namespace package`."
 msgstr "Ayrıca bkz. :term:`ad alanı paketi`."
 
-#: glossary.rst:1088
+#: glossary.rst:1077
 msgid "__slots__"
 msgstr "__slots__"
 
-#: glossary.rst:1090
+#: glossary.rst:1079
 msgid ""
 "A declaration inside a class that saves memory by pre-declaring space for "
 "instance attributes and eliminating instance dictionaries.  Though popular, "
@@ -2516,11 +2497,11 @@ msgstr ""
 "açısından kritik bir uygulamada çok sayıda örneğin bulunduğu nadir durumlar "
 "için ayrılmıştır."
 
-#: glossary.rst:1095
+#: glossary.rst:1084
 msgid "sequence"
 msgstr "dizi"
 
-#: glossary.rst:1097
+#: glossary.rst:1086
 msgid ""
 "An :term:`iterable` which supports efficient element access using integer "
 "indices via the :meth:`__getitem__` special method and defines a :meth:"
@@ -2539,7 +2520,7 @@ msgstr ""
 "`immutable` anahtarları kullandığından bir diziden ziyade bir eşleme olarak "
 "kabul edilir."
 
-#: glossary.rst:1106
+#: glossary.rst:1095
 msgid ""
 "The :class:`collections.abc.Sequence` abstract base class defines a much "
 "richer interface that goes beyond just :meth:`__getitem__` and :meth:"
@@ -2553,11 +2534,11 @@ msgstr ""
 "arayüzü tanımlar. Bu genişletilmiş arabirimi uygulayan türler, :func:`~abc."
 "ABCMeta.register` kullanılarak açıkça kaydedilebilir."
 
-#: glossary.rst:1113
+#: glossary.rst:1102
 msgid "set comprehension"
 msgstr "anlamak"
 
-#: glossary.rst:1115
+#: glossary.rst:1104
 msgid ""
 "A compact way to process all or part of the elements in an iterable and "
 "return a set with the results. ``results = {c for c in 'abracadabra' if c "
@@ -2569,11 +2550,11 @@ msgstr ""
 "for c in 'abracadabra' if c not in 'abc'}``, ``{'r', 'd'}`` dizelerini "
 "oluşturur. Bakınız :ref:`comprehensions`."
 
-#: glossary.rst:1119
+#: glossary.rst:1108
 msgid "single dispatch"
 msgstr "tek sevk"
 
-#: glossary.rst:1121
+#: glossary.rst:1110
 msgid ""
 "A form of :term:`generic function` dispatch where the implementation is "
 "chosen based on the type of a single argument."
@@ -2581,11 +2562,11 @@ msgstr ""
 "Uygulamanın tek bir argüman türüne göre seçildiği bir :term:`generic "
 "function` gönderimi biçimi."
 
-#: glossary.rst:1123
+#: glossary.rst:1112
 msgid "slice"
 msgstr "parçalamak"
 
-#: glossary.rst:1125
+#: glossary.rst:1114
 msgid ""
 "An object usually containing a portion of a :term:`sequence`.  A slice is "
 "created using the subscript notation, ``[]`` with colons between numbers "
@@ -2598,11 +2579,11 @@ msgstr ""
 "gösterimi kullanılarak oluşturulur. Köşeli ayraç (alt simge) gösterimi, "
 "dahili olarak :class:`slice` nesnelerini kullanır."
 
-#: glossary.rst:1129
+#: glossary.rst:1118
 msgid "special method"
 msgstr "özel metod"
 
-#: glossary.rst:1133
+#: glossary.rst:1122
 msgid ""
 "A method that is called implicitly by Python to execute a certain operation "
 "on a type, such as addition.  Such methods have names starting and ending "
@@ -2614,11 +2595,11 @@ msgstr ""
 "çizgi ile başlayan ve biten adları vardır. Özel yöntemler :ref:"
 "`specialnames` içinde belgelenmiştir."
 
-#: glossary.rst:1137
+#: glossary.rst:1126
 msgid "statement"
 msgstr "ifade (değer döndürmez)"
 
-#: glossary.rst:1139
+#: glossary.rst:1128
 msgid ""
 "A statement is part of a suite (a \"block\" of code).  A statement is either "
 "an :term:`expression` or one of several constructs with a keyword, such as :"
@@ -2628,11 +2609,11 @@ msgstr ""
 "`expression` veya :keyword:`if`, :keyword:`while` veya :keyword:`for` gibi "
 "bir anahtar kelimeye sahip birkaç yapıdan biridir."
 
-#: glossary.rst:1142
+#: glossary.rst:1131
 msgid "strong reference"
 msgstr "güçlü referans"
 
-#: glossary.rst:1144
+#: glossary.rst:1133
 msgid ""
 "In Python's C API, a strong reference is a reference to an object which "
 "increments the object's reference count when it is created and decrements "
@@ -2642,7 +2623,7 @@ msgstr ""
 "referans sayısını artıran ve silindiğinde nesnenin referans sayısını azaltan "
 "bir nesneye yapılan referanstır."
 
-#: glossary.rst:1148
+#: glossary.rst:1137
 msgid ""
 "The :c:func:`Py_NewRef` function can be used to create a strong reference to "
 "an object. Usually, the :c:func:`Py_DECREF` function must be called on the "
@@ -2654,25 +2635,25 @@ msgstr ""
 "referansın sızmasını önlemek için güçlü referans kapsamından çıkmadan önce "
 "güçlü referansta çağrılmalıdır."
 
-#: glossary.rst:1153
+#: glossary.rst:1142
 msgid "See also :term:`borrowed reference`."
 msgstr "Ayrıca bkz. :term:`ödünç alınan referans <borrowed reference>`."
 
-#: glossary.rst:1154
+#: glossary.rst:1143
 msgid "text encoding"
 msgstr "yazı çözümleme"
 
-#: glossary.rst:1156
+#: glossary.rst:1145
 msgid ""
-"A string in Python is a sequence of Unicode code points (in range ``U"
-"+0000``--``U+10FFFF``). To store or transfer a string, it needs to be "
+"A string in Python is a sequence of Unicode code points (in range "
+"``U+0000``--``U+10FFFF``). To store or transfer a string, it needs to be "
 "serialized as a sequence of bytes."
 msgstr ""
-"Python'da bir dize, bir Unicode kod noktaları dizisidir (``U+0000``--``U"
-"+10FFFF`` aralığında). Bir dizeyi depolamak veya aktarmak için, bir bayt "
+"Python'da bir dize, bir Unicode kod noktaları dizisidir (``U+0000``--"
+"``U+10FFFF`` aralığında). Bir dizeyi depolamak veya aktarmak için, bir bayt "
 "dizisi olarak seri hale getirilmesi gerekir."
 
-#: glossary.rst:1160
+#: glossary.rst:1149
 msgid ""
 "Serializing a string into a sequence of bytes is known as \"encoding\", and "
 "recreating the string from the sequence of bytes is known as \"decoding\"."
@@ -2681,7 +2662,7 @@ msgstr ""
 "olarak bilinir ve dizeyi bayt dizisinden yeniden oluşturmak \"kod çözme "
 "(decoding)\" olarak bilinir."
 
-#: glossary.rst:1163
+#: glossary.rst:1152
 msgid ""
 "There are a variety of different text serialization :ref:`codecs <standard-"
 "encodings>`, which are collectively referred to as \"text encodings\"."
@@ -2689,11 +2670,11 @@ msgstr ""
 "Toplu olarak \"metin kodlamaları\" olarak adlandırılan çeşitli farklı metin "
 "serileştirme :ref:`kodekleri <standard-encodings>` vardır."
 
-#: glossary.rst:1166
+#: glossary.rst:1155
 msgid "text file"
 msgstr "yazı dosyası"
 
-#: glossary.rst:1168
+#: glossary.rst:1157
 msgid ""
 "A :term:`file object` able to read and write :class:`str` objects. Often, a "
 "text file actually accesses a byte-oriented datastream and handles the :term:"
@@ -2707,7 +2688,7 @@ msgstr ""
 "metin modunda açılan dosyalar (``'r'`` veya ``'w'``), :data:`sys.stdin`, :"
 "data:`sys.stdout` ve :class:`io.StringIO` örnekleri verilebilir."
 
-#: glossary.rst:1175
+#: glossary.rst:1164
 msgid ""
 "See also :term:`binary file` for a file object able to read and write :term:"
 "`bytes-like objects <bytes-like object>`."
@@ -2715,11 +2696,11 @@ msgstr ""
 "Ayrıca :term:`ikili dosyaları <binary file>` okuyabilen ve yazabilen bir "
 "dosya nesnesi için :term:`bayt benzeri nesnelere <bytes-like object>` bakın."
 
-#: glossary.rst:1177
+#: glossary.rst:1166
 msgid "triple-quoted string"
 msgstr "üç tırnaklı dize"
 
-#: glossary.rst:1179
+#: glossary.rst:1168
 msgid ""
 "A string which is bound by three instances of either a quotation mark (\") "
 "or an apostrophe (').  While they don't provide any functionality not "
@@ -2736,11 +2717,11 @@ msgstr ""
 "yayılabilir, bu da onları özellikle belge dizileri yazarken kullanışlı hale "
 "getirir."
 
-#: glossary.rst:1186
+#: glossary.rst:1175
 msgid "type"
 msgstr "tip"
 
-#: glossary.rst:1188
+#: glossary.rst:1177
 msgid ""
 "The type of a Python object determines what kind of object it is; every "
 "object has a type.  An object's type is accessible as its :attr:`~instance."
@@ -2750,15 +2731,15 @@ msgstr ""
 "nesnenin bir türü vardır. Bir nesnenin tipine :attr:`~instance.__class__` "
 "niteliği ile erişilebilir veya ``type(obj)`` ile alınabilir."
 
-#: glossary.rst:1192
+#: glossary.rst:1181
 msgid "type alias"
 msgstr "tip takma adı"
 
-#: glossary.rst:1194
+#: glossary.rst:1183
 msgid "A synonym for a type, created by assigning the type to an identifier."
 msgstr "Bir tanımlayıcıya tür atanarak oluşturulan, bir tür için eş anlamlı."
 
-#: glossary.rst:1196
+#: glossary.rst:1185
 msgid ""
 "Type aliases are useful for simplifying :term:`type hints <type hint>`. For "
 "example::"
@@ -2766,19 +2747,19 @@ msgstr ""
 "Tür takma adları, :term:`tür ipuçlarını <type hint>` basitleştirmek için "
 "kullanışlıdır. Örneğin::"
 
-#: glossary.rst:1203
+#: glossary.rst:1192
 msgid "could be made more readable like this::"
 msgstr "bu şekilde daha okunaklı hale getirilebilir::"
 
-#: glossary.rst:1224
+#: glossary.rst:1213
 msgid "See :mod:`typing` and :pep:`484`, which describe this functionality."
 msgstr "Bu işlevi açıklayan :mod:`typing` ve :pep:`484` bölümlerine bakın."
 
-#: glossary.rst:1211
+#: glossary.rst:1200
 msgid "type hint"
 msgstr "tür ipucu"
 
-#: glossary.rst:1213
+#: glossary.rst:1202
 msgid ""
 "An :term:`annotation` that specifies the expected type for a variable, a "
 "class attribute, or a function parameter or return value."
@@ -2786,7 +2767,7 @@ msgstr ""
 "Bir değişken, bir sınıf niteliği veya bir işlev parametresi veya dönüş "
 "değeri için beklenen türü belirten bir :term:`ek açıklama <annotation>`."
 
-#: glossary.rst:1216
+#: glossary.rst:1205
 msgid ""
 "Type hints are optional and are not enforced by Python but they are useful "
 "to static type analysis tools, and aid IDEs with code completion and "
@@ -2796,7 +2777,7 @@ msgstr ""
 "statik tip analiz araçları için faydalıdır ve kod tamamlama ve yeniden "
 "düzenleme ile IDE'lere yardımcı olur."
 
-#: glossary.rst:1220
+#: glossary.rst:1209
 msgid ""
 "Type hints of global variables, class attributes, and functions, but not "
 "local variables, can be accessed using :func:`typing.get_type_hints`."
@@ -2805,11 +2786,11 @@ msgstr ""
 "yerel değişkenlere değil, :func:`typing.get_type_hints` kullanılarak "
 "erişilebilir."
 
-#: glossary.rst:1225
+#: glossary.rst:1214
 msgid "universal newlines"
 msgstr "evrensel yeni satırlar"
 
-#: glossary.rst:1227
+#: glossary.rst:1216
 msgid ""
 "A manner of interpreting text streams in which all of the following are "
 "recognized as ending a line: the Unix end-of-line convention ``'\\n'``, the "
@@ -2822,23 +2803,23 @@ msgstr ""
 "kuralı ```\\r\\n'``, ve eski Macintosh kuralı ``'\\r'``. Ek bir kullanım "
 "için :pep:`278` ve :pep:`3116` ve ayrıca :func:`bytes.splitlines` bakın."
 
-#: glossary.rst:1232
+#: glossary.rst:1221
 msgid "variable annotation"
 msgstr "değişken açıklama"
 
-#: glossary.rst:1234
+#: glossary.rst:1223
 msgid "An :term:`annotation` of a variable or a class attribute."
 msgstr ""
 "Bir değişkenin veya bir sınıf özniteliğinin :term:`ek açıklaması "
 "<annotation>`."
 
-#: glossary.rst:1236
+#: glossary.rst:1225
 msgid ""
 "When annotating a variable or a class attribute, assignment is optional::"
 msgstr ""
 "Bir değişkene veya sınıf niteliğine açıklama eklerken atama isteğe bağlıdır::"
 
-#: glossary.rst:1241
+#: glossary.rst:1230
 msgid ""
 "Variable annotations are usually used for :term:`type hints <type hint>`: "
 "for example this variable is expected to take :class:`int` values::"
@@ -2846,11 +2827,11 @@ msgstr ""
 "Değişken açıklamaları genellikle :term:`tür ipuçları <type hint>` için "
 "kullanılır: örneğin, bu değişkenin :class:`int` değerlerini alması beklenir::"
 
-#: glossary.rst:1247
+#: glossary.rst:1236
 msgid "Variable annotation syntax is explained in section :ref:`annassign`."
 msgstr "Değişken açıklama sözdizimi :ref:`annassign` bölümünde açıklanmıştır."
 
-#: glossary.rst:1249
+#: glossary.rst:1238
 msgid ""
 "See :term:`function annotation`, :pep:`484` and :pep:`526`, which describe "
 "this functionality. Also see :ref:`annotations-howto` for best practices on "
@@ -2860,11 +2841,11 @@ msgstr ""
 "bölümlerine bakın. Ek açıklamalarla çalışmaya ilişkin en iyi uygulamalar "
 "için ayrıca bkz. :ref:`annotations-howto`."
 
-#: glossary.rst:1253
+#: glossary.rst:1242
 msgid "virtual environment"
 msgstr "sanal ortam"
 
-#: glossary.rst:1255
+#: glossary.rst:1244
 msgid ""
 "A cooperatively isolated runtime environment that allows Python users and "
 "applications to install and upgrade Python distribution packages without "
@@ -2876,15 +2857,15 @@ msgstr ""
 "paketlerini kurmasına ve yükseltmesine olanak tanıyan, işbirliği içinde "
 "yalıtılmış bir çalışma zamanı ortamı."
 
-#: glossary.rst:1260
+#: glossary.rst:1249
 msgid "See also :mod:`venv`."
 msgstr "Ayrıca bakınız :mod:`venv`."
 
-#: glossary.rst:1261
+#: glossary.rst:1250
 msgid "virtual machine"
 msgstr "sanal makine"
 
-#: glossary.rst:1263
+#: glossary.rst:1252
 msgid ""
 "A computer defined entirely in software.  Python's virtual machine executes "
 "the :term:`bytecode` emitted by the bytecode compiler."
@@ -2892,19 +2873,49 @@ msgstr ""
 "Tamamen yazılımla tanımlanmış bir bilgisayar. Python'un sanal makinesi, bayt "
 "kodu derleyicisi tarafından yayınlanan :term:`bytecode` 'u çalıştırır."
 
-#: glossary.rst:1265
+#: glossary.rst:1254
 msgid "Zen of Python"
 msgstr "Python'un Zen'i"
 
-#: glossary.rst:1267
+#: glossary.rst:1256
 msgid ""
 "Listing of Python design principles and philosophies that are helpful in "
 "understanding and using the language.  The listing can be found by typing "
 "\"``import this``\" at the interactive prompt."
 msgstr ""
 "Dili anlamaya ve kullanmaya yardımcı olan Python tasarım ilkeleri ve "
-"felsefelerinin listesi. Liste, etkileşimli komut isteminde \"``import this``"
-"\" yazarak bulunabilir."
+"felsefelerinin listesi. Liste, etkileşimli komut isteminde \"``import "
+"this``\" yazarak bulunabilir."
+
+#~ msgid "coercion"
+#~ msgstr "zorlama"
+
+#~ msgid ""
+#~ "The implicit conversion of an instance of one type to another during an "
+#~ "operation which involves two arguments of the same type.  For example, "
+#~ "``int(3.15)`` converts the floating point number to the integer ``3``, "
+#~ "but in ``3+4.5``, each argument is of a different type (one int, one "
+#~ "float), and both must be converted to the same type before they can be "
+#~ "added or it will raise a :exc:`TypeError`.  Without coercion, all "
+#~ "arguments of even compatible types would have to be normalized to the "
+#~ "same value by the programmer, e.g., ``float(3)+4.5`` rather than just "
+#~ "``3+4.5``."
+#~ msgstr ""
+#~ "Aynı türden iki argüman içeren bir işlem sırasında bir tür örneğinin "
+#~ "diğerine örtük olarak dönüştürülmesi.  Örneğin, ``int(3.15)``, kayan "
+#~ "noktalı sayıyı ``3`` tamsayısına dönüştürür, ancak ``3+4.5`` 'te her "
+#~ "argüman farklı türdedir (bir int, bir kayan nokta), ve her ikisi de "
+#~ "eklenmeden önce aynı türe dönüştürülmelidir, aksi takdirde bir :exc:"
+#~ "`TypeError` yükseltir. Zorlama olmadan, uyumlu türlerin bile tüm "
+#~ "argümanlarının programcı tarafından aynı değere normalleştirilmesi "
+#~ "gerekir, örneğin: ``3+4,5`` yerine ``float(3)+4,5``."
+
+#~ msgid ""
+#~ "Python uses the :term:`filesystem encoding and error handler` to convert "
+#~ "between Unicode filenames and bytes filenames."
+#~ msgstr ""
+#~ "Python, Unicode dosya adları ile bayt dosya adları arasında dönüştürme "
+#~ "yapmak için :term:`filesystem encoding and error handler` kullanır."
 
 #~ msgid "A codec which encodes Unicode strings to bytes."
 #~ msgstr "Unicode dizelerini baytlara kodlayan bir codec bileşeni."

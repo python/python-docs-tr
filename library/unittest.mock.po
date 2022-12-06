@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -261,7 +261,7 @@ msgstr ""
 
 #: library/unittest.mock.rst:265
 msgid ""
-"*unsafe*: By default, accessing any attribute with name starting with "
+"*unsafe*: By default, accessing any attribute whose name starts with "
 "*assert*, *assret*, *asert*, *aseert* or *assrt* will raise an :exc:"
 "`AttributeError`. Passing ``unsafe=True`` will allow access to these "
 "attributes."
@@ -1601,10 +1601,9 @@ msgstr ""
 #: library/unittest.mock.rst:2022
 msgid ""
 "The numeric methods (including right hand and in-place variants): "
-"``__add__``, ``__sub__``, ``__mul__``, ``__matmul__``, ``__div__``, "
-"``__truediv__``, ``__floordiv__``, ``__mod__``, ``__divmod__``, "
-"``__lshift__``, ``__rshift__``, ``__and__``, ``__xor__``, ``__or__``, and "
-"``__pow__``"
+"``__add__``, ``__sub__``, ``__mul__``, ``__matmul__``, ``__truediv__``, "
+"``__floordiv__``, ``__mod__``, ``__divmod__``, ``__lshift__``, "
+"``__rshift__``, ``__and__``, ``__xor__``, ``__or__``, and ``__pow__``"
 msgstr ""
 
 #: library/unittest.mock.rst:2026
@@ -1845,7 +1844,7 @@ msgid ""
 msgstr ""
 
 #: library/unittest.mock.rst:2168
-msgid "``__getformat__`` and ``__setformat__``"
+msgid "``__getformat__``"
 msgstr ""
 
 #: library/unittest.mock.rst:2172
@@ -1933,9 +1932,9 @@ msgstr ""
 
 #: library/unittest.mock.rst:2248
 msgid ""
-"``call_list`` is particularly useful for making assertions on \"chained calls"
-"\". A chained call is multiple calls on a single line of code. This results "
-"in multiple entries in :attr:`~Mock.mock_calls` on a mock. Manually "
+"``call_list`` is particularly useful for making assertions on \"chained "
+"calls\". A chained call is multiple calls on a single line of code. This "
+"results in multiple entries in :attr:`~Mock.mock_calls` on a mock. Manually "
 "constructing the sequence of calls can be tedious."
 msgstr ""
 
@@ -2052,10 +2051,10 @@ msgstr ""
 #: library/unittest.mock.rst:2383
 msgid ""
 ":data:`FILTER_DIR` is a module level variable that controls the way mock "
-"objects respond to :func:`dir` (only for Python 2.6 or more recent). The "
-"default is ``True``, which uses the filtering described below, to only show "
-"useful members. If you dislike this filtering, or need to switch it off for "
-"diagnostic purposes, then set ``mock.FILTER_DIR = False``."
+"objects respond to :func:`dir`. The default is ``True``, which uses the "
+"filtering described below, to only show useful members. If you dislike this "
+"filtering, or need to switch it off for diagnostic purposes, then set ``mock."
+"FILTER_DIR = False``."
 msgstr ""
 
 #: library/unittest.mock.rst:2389

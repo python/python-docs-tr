@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -691,10 +691,21 @@ msgid ""
 "This argument exists primarily for testing the :mod:`warnings` module itself."
 msgstr ""
 
-#: library/warnings.rst:516
+#: library/warnings.rst:514
+msgid ""
+"If the *action* argument is not ``None``, the remaining arguments are passed "
+"to :func:`simplefilter` as if it were called immediately on entering the "
+"context."
+msgstr ""
+
+#: library/warnings.rst:520
 msgid ""
 "The :class:`catch_warnings` manager works by replacing and then later "
 "restoring the module's :func:`showwarning` function and internal list of "
 "filter specifications.  This means the context manager is modifying global "
 "state and therefore is not thread-safe."
+msgstr ""
+
+#: library/warnings.rst:528
+msgid "Added the *action*, *category*, *lineno*, and *append* parameters."
 msgstr ""

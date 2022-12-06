@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -332,90 +332,115 @@ msgid ""
 "`drain` returns immediately."
 msgstr ""
 
-#: library/asyncio-stream.rst:325
+#: library/asyncio-stream.rst:326
+msgid "Upgrade an existing stream-based connection to TLS."
+msgstr ""
+
+#: library/asyncio-stream.rst:328
+msgid "Parameters:"
+msgstr ""
+
+#: library/asyncio-stream.rst:330
+msgid "*sslcontext*: a configured instance of :class:`~ssl.SSLContext`."
+msgstr ""
+
+#: library/asyncio-stream.rst:332
+msgid ""
+"*server_hostname*: sets or overrides the host name that the target server's "
+"certificate will be matched against."
+msgstr ""
+
+#: library/asyncio-stream.rst:335
+msgid ""
+"*ssl_handshake_timeout* is the time in seconds to wait for the TLS handshake "
+"to complete before aborting the connection.  ``60.0`` seconds if ``None`` "
+"(default)."
+msgstr ""
+
+#: library/asyncio-stream.rst:343
 msgid ""
 "Return ``True`` if the stream is closed or in the process of being closed."
 msgstr ""
 
-#: library/asyncio-stream.rst:332
+#: library/asyncio-stream.rst:350
 msgid "Wait until the stream is closed."
 msgstr ""
 
-#: library/asyncio-stream.rst:334
+#: library/asyncio-stream.rst:352
 msgid ""
 "Should be called after :meth:`close` to wait until the underlying connection "
 "is closed."
 msgstr ""
 
-#: library/asyncio-stream.rst:341
+#: library/asyncio-stream.rst:359
 msgid "Examples"
 msgstr ""
 
-#: library/asyncio-stream.rst:346
+#: library/asyncio-stream.rst:364
 msgid "TCP echo client using streams"
 msgstr ""
 
-#: library/asyncio-stream.rst:348
+#: library/asyncio-stream.rst:366
 msgid "TCP echo client using the :func:`asyncio.open_connection` function::"
 msgstr ""
 
-#: library/asyncio-stream.rst:370
+#: library/asyncio-stream.rst:389
 msgid ""
 "The :ref:`TCP echo client protocol "
 "<asyncio_example_tcp_echo_client_protocol>` example uses the low-level :meth:"
 "`loop.create_connection` method."
 msgstr ""
 
-#: library/asyncio-stream.rst:377
+#: library/asyncio-stream.rst:396
 msgid "TCP echo server using streams"
 msgstr ""
 
-#: library/asyncio-stream.rst:379
+#: library/asyncio-stream.rst:398
 msgid "TCP echo server using the :func:`asyncio.start_server` function::"
 msgstr ""
 
-#: library/asyncio-stream.rst:412
+#: library/asyncio-stream.rst:431
 msgid ""
 "The :ref:`TCP echo server protocol "
 "<asyncio_example_tcp_echo_server_protocol>` example uses the :meth:`loop."
 "create_server` method."
 msgstr ""
 
-#: library/asyncio-stream.rst:417
+#: library/asyncio-stream.rst:436
 msgid "Get HTTP headers"
 msgstr ""
 
-#: library/asyncio-stream.rst:419
+#: library/asyncio-stream.rst:438
 msgid ""
 "Simple example querying HTTP headers of the URL passed on the command line::"
 msgstr ""
 
-#: library/asyncio-stream.rst:457
+#: library/asyncio-stream.rst:476
 msgid "Usage::"
 msgstr ""
 
-#: library/asyncio-stream.rst:461
+#: library/asyncio-stream.rst:480
 msgid "or with HTTPS::"
 msgstr ""
 
-#: library/asyncio-stream.rst:469
+#: library/asyncio-stream.rst:488
 msgid "Register an open socket to wait for data using streams"
 msgstr ""
 
-#: library/asyncio-stream.rst:471
+#: library/asyncio-stream.rst:490
 msgid ""
 "Coroutine waiting until a socket receives data using the :func:"
 "`open_connection` function::"
 msgstr ""
 
-#: library/asyncio-stream.rst:505
+#: library/asyncio-stream.rst:524
 msgid ""
 "The :ref:`register an open socket to wait for data using a protocol "
 "<asyncio_example_create_connection>` example uses a low-level protocol and "
 "the :meth:`loop.create_connection` method."
 msgstr ""
 
-#: library/asyncio-stream.rst:509
+#: library/asyncio-stream.rst:528
 msgid ""
 "The :ref:`watch a file descriptor for read events "
 "<asyncio_example_watch_fd>` example uses the low-level :meth:`loop."

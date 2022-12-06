@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -351,8 +351,8 @@ msgstr ""
 
 #: whatsnew/3.3.rst:242
 msgid ""
-"surrogate pairs are not recombined in string literals, so ``'\\uDBFF"
-"\\uDFFF' != '\\U0010FFFF'``;"
+"surrogate pairs are not recombined in string literals, so "
+"``'\\uDBFF\\uDFFF' != '\\U0010FFFF'``;"
 msgstr ""
 
 #: whatsnew/3.3.rst:245
@@ -1767,8 +1767,8 @@ msgid ""
 "A new policy instance, with new settings, is created using the :meth:`~email."
 "policy.Policy.clone` method of policy objects.  ``clone`` takes any of the "
 "above controls as keyword arguments.  Any control not specified in the call "
-"retains its default value.  Thus you can create a policy that uses ``\\r"
-"\\n`` linesep characters like this::"
+"retains its default value.  Thus you can create a policy that uses "
+"``\\r\\n`` linesep characters like this::"
 msgstr ""
 
 #: whatsnew/3.3.rst:1240

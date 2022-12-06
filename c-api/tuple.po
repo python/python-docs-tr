@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -103,7 +103,7 @@ msgstr ""
 
 #: c-api/tuple.rst:94
 msgid ""
-"This macro \"steals\" a reference to *o*, and, unlike :c:func:"
+"This function \"steals\" a reference to *o*, and, unlike :c:func:"
 "`PyTuple_SetItem`, does *not* discard a reference to any item that is being "
 "replaced; any reference in the tuple at position *pos* will be leaked."
 msgstr ""
@@ -261,10 +261,12 @@ msgid ""
 "new instances."
 msgstr ""
 
-#: c-api/tuple.rst:222
+#: c-api/tuple.rst:223
 msgid "This function \"steals\" a reference to *o*."
 msgstr ""
 
 #: c-api/tuple.rst:218
-msgid "Macro equivalent of :c:func:`PyStructSequence_SetItem`."
+msgid ""
+"Similar to :c:func:`PyStructSequence_SetItem`, but implemented as a static "
+"inlined function."
 msgstr ""

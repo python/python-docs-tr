@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -16,15 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: library/asyncio.rst:65
+#: library/asyncio.rst:66
 msgid "High-level APIs"
 msgstr ""
 
-#: library/asyncio.rst:76
+#: library/asyncio.rst:78
 msgid "Low-level APIs"
 msgstr ""
 
-#: library/asyncio.rst:86
+#: library/asyncio.rst:89
 msgid "Guides and Tutorials"
 msgstr ""
 
@@ -32,7 +32,7 @@ msgstr ""
 msgid ":mod:`asyncio` --- Asynchronous I/O"
 msgstr ""
 
-#: library/asyncio.rst:None
+#: library/asyncio.rst:-1
 msgid "Hello World!"
 msgstr ""
 
@@ -107,10 +107,21 @@ msgid ""
 "await syntax."
 msgstr ""
 
-#: library/asyncio.rst:64
+#: includes/wasm-notavail.rst:-1
+msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
+msgstr ""
+
+#: includes/wasm-notavail.rst:5
+msgid ""
+"This module does not work or is not available on WebAssembly platforms "
+"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
+"more information."
+msgstr ""
+
+#: library/asyncio.rst:65
 msgid "Reference"
 msgstr ""
 
-#: library/asyncio.rst:95
+#: library/asyncio.rst:98
 msgid "The source code for asyncio can be found in :source:`Lib/asyncio/`."
 msgstr ""

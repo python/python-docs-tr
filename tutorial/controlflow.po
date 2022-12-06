@@ -1,12 +1,12 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: 2022-11-06 23:50+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -426,13 +426,13 @@ msgstr ""
 
 #: tutorial/controlflow.rst:380
 msgid ""
-"Mapping patterns: ``{\"bandwidth\": b, \"latency\": l}`` captures the ``"
-"\"bandwidth\"`` and ``\"latency\"`` values from a dictionary.  Unlike "
+"Mapping patterns: ``{\"bandwidth\": b, \"latency\": l}`` captures the "
+"``\"bandwidth\"`` and ``\"latency\"`` values from a dictionary.  Unlike "
 "sequence patterns, extra keys are ignored.  An unpacking like ``**rest`` is "
 "also supported.  (But ``**_`` would be redundant, so it is not allowed.)"
 msgstr ""
-"Eşleme kalıpları: ``{\"bandwidth\": b, \"latency\": l}`` bir sözlükten ``"
-"\"bandwidth\"`` ve ``\"latency\"`` değerlerini yakalar.  Sıra kalıplarının "
+"Eşleme kalıpları: ``{\"bandwidth\": b, \"latency\": l}`` bir sözlükten "
+"``\"bandwidth\"`` ve ``\"latency\"`` değerlerini yakalar.  Sıra kalıplarının "
 "aksine, ekstra anahtarlar göz ardı edilir.  ``**rest`` gibi bir paket açma "
 "da desteklenir.  (Ancak ``**_`` gereksiz olacağından buna izin verilmez)"
 
@@ -977,7 +977,7 @@ msgstr ""
 "konumsal argüman olarak ve ``'name'`` anahtar kelime argümanlarında bir "
 "anahtar olarak izin verdiği için mümkündür::"
 
-#: tutorial/controlflow.rst:848
+#: tutorial/controlflow.rst:849
 msgid ""
 "In other words, the names of positional-only parameters can be used in "
 "``**kwds`` without ambiguity."
@@ -985,11 +985,11 @@ msgstr ""
 "Başka bir deyişle, yalnızca konumsal parametrelerin adları ``**kwds`` içinde "
 "belirsizlik olmadan kullanılabilir."
 
-#: tutorial/controlflow.rst:853
+#: tutorial/controlflow.rst:854
 msgid "Recap"
 msgstr "Özet"
 
-#: tutorial/controlflow.rst:855
+#: tutorial/controlflow.rst:856
 msgid ""
 "The use case will determine which parameters to use in the function "
 "definition::"
@@ -997,11 +997,11 @@ msgstr ""
 "Kullanım durumu, fonksiyon tanımında hangi parametrelerin kullanılacağını "
 "belirleyecektir::"
 
-#: tutorial/controlflow.rst:859
+#: tutorial/controlflow.rst:860
 msgid "As guidance:"
 msgstr "Rehber olarak:"
 
-#: tutorial/controlflow.rst:861
+#: tutorial/controlflow.rst:862
 msgid ""
 "Use positional-only if you want the name of the parameters to not be "
 "available to the user. This is useful when parameter names have no real "
@@ -1015,7 +1015,7 @@ msgstr ""
 "zorlamak istediğinizde veya bazı konumsal parametreler ve rastgele anahtar "
 "sözcükler almanız gerektiğinde kullanışlıdır."
 
-#: tutorial/controlflow.rst:866
+#: tutorial/controlflow.rst:867
 msgid ""
 "Use keyword-only when names have meaning and the function definition is more "
 "understandable by being explicit with names or you want to prevent users "
@@ -1025,7 +1025,7 @@ msgstr ""
 "daha anlaşılır olduğunda veya kullanıcıların geçirilen argümanın konumuna "
 "güvenmesini önlemek istediğinizde yalnızca anahtar sözcük kullanın."
 
-#: tutorial/controlflow.rst:869
+#: tutorial/controlflow.rst:870
 msgid ""
 "For an API, use positional-only to prevent breaking API changes if the "
 "parameter's name is modified in the future."
@@ -1033,11 +1033,11 @@ msgstr ""
 "Bir API için, parametrenin adı gelecekte değiştirilirse API "
 "değişikliklerinin bozulmasını önlemek için yalnızca konumsal kullanın."
 
-#: tutorial/controlflow.rst:875
+#: tutorial/controlflow.rst:876
 msgid "Arbitrary Argument Lists"
 msgstr "Keyfi Argüman Listeleri"
 
-#: tutorial/controlflow.rst:880
+#: tutorial/controlflow.rst:881
 msgid ""
 "Finally, the least frequently used option is to specify that a function can "
 "be called with an arbitrary number of arguments.  These arguments will be "
@@ -1049,7 +1049,7 @@ msgstr ""
 "paketlenecektir (bkz :ref:`tut-tuples`).  Değişken argüman sayısından önce, "
 "sıfır veya daha fazla normal argüman olabilir. ::"
 
-#: tutorial/controlflow.rst:889
+#: tutorial/controlflow.rst:890
 #, fuzzy
 msgid ""
 "Normally, these *variadic* arguments will be last in the list of formal "
@@ -1064,11 +1064,11 @@ msgstr ""
 "parametreler \"sadece anahtar kelime\" argümanlarıdır, yani konumsal "
 "argümanlar yerine sadece anahtar kelimeler olarak kullanılabilirler:"
 
-#: tutorial/controlflow.rst:906
+#: tutorial/controlflow.rst:907
 msgid "Unpacking Argument Lists"
 msgstr "Argüman Listelerini Açma"
 
-#: tutorial/controlflow.rst:908
+#: tutorial/controlflow.rst:909
 msgid ""
 "The reverse situation occurs when the arguments are already in a list or "
 "tuple but need to be unpacked for a function call requiring separate "
@@ -1084,7 +1084,7 @@ msgstr ""
 "olarak mevcut değilse, argümanları bir listeden veya tuple'dan çıkarmak için "
 "fonksiyon çağrısını ``*``\\ -operatörü ile yazın::"
 
-#: tutorial/controlflow.rst:924
+#: tutorial/controlflow.rst:925
 msgid ""
 "In the same fashion, dictionaries can deliver keyword arguments with the "
 "``**``\\ -operator::"
@@ -1092,11 +1092,11 @@ msgstr ""
 "Aynı şekilde, sözlükler ``**``\\ -operatörü ile anahtar sözcük argümanları "
 "sunabilir::"
 
-#: tutorial/controlflow.rst:940
+#: tutorial/controlflow.rst:941
 msgid "Lambda Expressions"
 msgstr "Lambda İfadeleri"
 
-#: tutorial/controlflow.rst:942
+#: tutorial/controlflow.rst:943
 msgid ""
 "Small anonymous functions can be created with the :keyword:`lambda` keyword. "
 "This function returns the sum of its two arguments: ``lambda a, b: a+b``. "
@@ -1114,7 +1114,7 @@ msgstr ""
 "şekerdirler.  İç içe işlev tanımları gibi, lambda işlevleri de içeren "
 "kapsamdaki değişkenlere başvurabilir::"
 
-#: tutorial/controlflow.rst:959
+#: tutorial/controlflow.rst:960
 msgid ""
 "The above example uses a lambda expression to return a function.  Another "
 "use is to pass a small function as an argument::"
@@ -1123,11 +1123,11 @@ msgstr ""
 "kullanılmıştır.  Başka bir kullanım da küçük bir fonksiyonu argüman olarak "
 "geçirmektir::"
 
-#: tutorial/controlflow.rst:971
+#: tutorial/controlflow.rst:972
 msgid "Documentation Strings"
 msgstr "Dokümantasyon Stringler'i"
 
-#: tutorial/controlflow.rst:978
+#: tutorial/controlflow.rst:979
 msgid ""
 "Here are some conventions about the content and formatting of documentation "
 "strings."
@@ -1135,7 +1135,7 @@ msgstr ""
 "Belge dizelerinin içeriği ve biçimlendirilmesiyle ilgili bazı kurallar "
 "aşağıda verilmiştir."
 
-#: tutorial/controlflow.rst:981
+#: tutorial/controlflow.rst:982
 msgid ""
 "The first line should always be a short, concise summary of the object's "
 "purpose.  For brevity, it should not explicitly state the object's name or "
@@ -1149,7 +1149,7 @@ msgstr ""
 "bir fiil olması durumu hariç).  Bu satır büyük harfle başlamalı ve nokta ile "
 "bitmelidir."
 
-#: tutorial/controlflow.rst:987
+#: tutorial/controlflow.rst:988
 msgid ""
 "If there are more lines in the documentation string, the second line should "
 "be blank, visually separating the summary from the rest of the description.  "
@@ -1161,7 +1161,7 @@ msgstr ""
 "satırlar, nesnenin çağrı kurallarını, yan etkilerini vb. açıklayan bir veya "
 "daha fazla paragraftan oluşmalıdır."
 
-#: tutorial/controlflow.rst:992
+#: tutorial/controlflow.rst:993
 msgid ""
 "The Python parser does not strip indentation from multi-line string literals "
 "in Python, so tools that process documentation have to strip indentation if "
@@ -1169,11 +1169,11 @@ msgid ""
 "line *after* the first line of the string determines the amount of "
 "indentation for the entire documentation string.  (We can't use the first "
 "line since it is generally adjacent to the string's opening quotes so its "
-"indentation is not apparent in the string literal.)  Whitespace \"equivalent"
-"\" to this indentation is then stripped from the start of all lines of the "
-"string.  Lines that are indented less should not occur, but if they occur "
-"all their leading whitespace should be stripped.  Equivalence of whitespace "
-"should be tested after expansion of tabs (to 8 spaces, normally)."
+"indentation is not apparent in the string literal.)  Whitespace "
+"\"equivalent\" to this indentation is then stripped from the start of all "
+"lines of the string.  Lines that are indented less should not occur, but if "
+"they occur all their leading whitespace should be stripped.  Equivalence of "
+"whitespace should be tested after expansion of tabs (to 8 spaces, normally)."
 msgstr ""
 "Python ayrıştırıcısı, Python'daki çok satırlı dize değişmezlerinden "
 "girintiyi çıkarmaz, bu nedenle belgeleri işleyen araçların istenirse "
@@ -1187,15 +1187,15 @@ msgstr ""
 "çıkarılmalıdır.  Beyaz boşlukların eşdeğerliği sekmelerin genişletilmesinden "
 "sonra test edilmelidir (normalde 8 boşluğa kadar)."
 
-#: tutorial/controlflow.rst:1004
+#: tutorial/controlflow.rst:1005
 msgid "Here is an example of a multi-line docstring::"
 msgstr "İşte çok satırlı bir docstring örneği::"
 
-#: tutorial/controlflow.rst:1022
+#: tutorial/controlflow.rst:1023
 msgid "Function Annotations"
 msgstr "Fonksiyon Ek Açıklamaları"
 
-#: tutorial/controlflow.rst:1030
+#: tutorial/controlflow.rst:1031
 msgid ""
 ":ref:`Function annotations <function>` are completely optional metadata "
 "information about the types used by user-defined functions (see :pep:`3107` "
@@ -1206,7 +1206,7 @@ msgstr ""
 "bilgileridir (daha fazla bilgi için :pep:`3107` ve :pep:`484` sayfalarına "
 "bakınız)."
 
-#: tutorial/controlflow.rst:1034
+#: tutorial/controlflow.rst:1035
 msgid ""
 ":term:`Annotations <function annotation>` are stored in the :attr:"
 "`__annotations__` attribute of the function as a dictionary and have no "
@@ -1227,11 +1227,11 @@ msgstr ""
 "tanımlanır.  Aşağıdaki örnekte bir gerekli argüman, bir isteğe bağlı argüman "
 "ve dönüş değeri ek açıklamalıdır::"
 
-#: tutorial/controlflow.rst:1056
+#: tutorial/controlflow.rst:1057
 msgid "Intermezzo: Coding Style"
 msgstr "Intermezzo: Kodlama Stili"
 
-#: tutorial/controlflow.rst:1061
+#: tutorial/controlflow.rst:1062
 msgid ""
 "Now that you are about to write longer, more complex pieces of Python, it is "
 "a good time to talk about *coding style*.  Most languages can be written (or "
@@ -1246,7 +1246,7 @@ msgstr ""
 "kolaylaştırmak her zaman iyi bir fikirdir ve güzel bir kodlama stili "
 "benimsemek buna çok yardımcı olur."
 
-#: tutorial/controlflow.rst:1067
+#: tutorial/controlflow.rst:1068
 msgid ""
 "For Python, :pep:`8` has emerged as the style guide that most projects "
 "adhere to; it promotes a very readable and eye-pleasing coding style.  Every "
@@ -1258,11 +1258,11 @@ msgstr ""
 "Her Python geliştiricisi bir noktada onu okumalıdır; işte sizin için "
 "çıkarılan en önemli noktalar:"
 
-#: tutorial/controlflow.rst:1072
+#: tutorial/controlflow.rst:1073
 msgid "Use 4-space indentation, and no tabs."
 msgstr "4 aralıklı girinti kullanın ve sekme kullanmayın."
 
-#: tutorial/controlflow.rst:1074
+#: tutorial/controlflow.rst:1075
 msgid ""
 "4 spaces are a good compromise between small indentation (allows greater "
 "nesting depth) and large indentation (easier to read).  Tabs introduce "
@@ -1272,11 +1272,11 @@ msgstr ""
 "girinti (okunması daha kolay) arasında iyi bir uzlaşmadır.  Sekmeler "
 "karışıklığa neden olur ve en iyisi dışarıda bırakmaktır."
 
-#: tutorial/controlflow.rst:1078
+#: tutorial/controlflow.rst:1079
 msgid "Wrap lines so that they don't exceed 79 characters."
 msgstr "Satırları 79 karakteri geçmeyecek şekilde sarın."
 
-#: tutorial/controlflow.rst:1080
+#: tutorial/controlflow.rst:1081
 msgid ""
 "This helps users with small displays and makes it possible to have several "
 "code files side-by-side on larger displays."
@@ -1284,7 +1284,7 @@ msgstr ""
 "Bu, küçük ekranlı kullanıcılara yardımcı olur ve daha büyük ekranlarda "
 "birkaç kod dosyasının yan yana olmasını mümkün kılar."
 
-#: tutorial/controlflow.rst:1083
+#: tutorial/controlflow.rst:1084
 msgid ""
 "Use blank lines to separate functions and classes, and larger blocks of code "
 "inside functions."
@@ -1292,15 +1292,15 @@ msgstr ""
 "Fonksiyonları ve sınıfları ve fonksiyonların içindeki büyük kod bloklarını "
 "ayırmak için boş satırlar kullanın."
 
-#: tutorial/controlflow.rst:1086
+#: tutorial/controlflow.rst:1087
 msgid "When possible, put comments on a line of their own."
 msgstr "Mümkün olduğunda, yorumları kendi başlarına bir satıra koyun."
 
-#: tutorial/controlflow.rst:1088
+#: tutorial/controlflow.rst:1089
 msgid "Use docstrings."
 msgstr "Docstrings kullanın."
 
-#: tutorial/controlflow.rst:1090
+#: tutorial/controlflow.rst:1091
 msgid ""
 "Use spaces around operators and after commas, but not directly inside "
 "bracketing constructs: ``a = f(1, 2) + g(3, 4)``."
@@ -1308,7 +1308,7 @@ msgstr ""
 "Operatörlerin etrafında ve virgüllerden sonra boşluk kullanın, ancak "
 "doğrudan parantez yapılarının içinde kullanmayın: ``a = f(1, 2) + g(3, 4)``."
 
-#: tutorial/controlflow.rst:1093
+#: tutorial/controlflow.rst:1094
 msgid ""
 "Name your classes and functions consistently; the convention is to use "
 "``UpperCamelCase`` for classes and ``lowercase_with_underscores`` for "
@@ -1321,7 +1321,7 @@ msgstr ""
 "olarak her zaman ``self`` kullanın (sınıflar ve yöntemler hakkında daha "
 "fazla bilgi için :ref:`tut-firstclasses` bölümüne bakın)."
 
-#: tutorial/controlflow.rst:1098
+#: tutorial/controlflow.rst:1099
 msgid ""
 "Don't use fancy encodings if your code is meant to be used in international "
 "environments.  Python's default, UTF-8, or even plain ASCII work best in any "
@@ -1331,7 +1331,7 @@ msgstr ""
 "kullanmayın.  Python'un varsayılanı, UTF-8 veya hatta düz ASCII her durumda "
 "en iyi sonucu verir."
 
-#: tutorial/controlflow.rst:1102
+#: tutorial/controlflow.rst:1103
 msgid ""
 "Likewise, don't use non-ASCII characters in identifiers if there is only the "
 "slightest chance people speaking a different language will read or maintain "
@@ -1341,11 +1341,11 @@ msgstr ""
 "etmesi için en ufak bir şans varsa, tanımlayıcılarda ASCII olmayan "
 "karakterler kullanmayın."
 
-#: tutorial/controlflow.rst:1108
+#: tutorial/controlflow.rst:1109
 msgid "Footnotes"
 msgstr "Dipnotlar"
 
-#: tutorial/controlflow.rst:1109
+#: tutorial/controlflow.rst:1110
 msgid ""
 "Actually, *call by object reference* would be a better description, since if "
 "a mutable object is passed, the caller will see any changes the callee makes "

@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -1026,9 +1026,9 @@ msgstr ""
 
 #: whatsnew/2.6.rst:920
 msgid ""
-"Python 3.0 makes this unambiguous by replacing the comma with the word \"as"
-"\".  To catch an exception and store the exception object in the variable "
-"``exc``, you must write::"
+"Python 3.0 makes this unambiguous by replacing the comma with the word "
+"\"as\".  To catch an exception and store the exception object in the "
+"variable ``exc``, you must write::"
 msgstr ""
 
 #: whatsnew/2.6.rst:929
@@ -1452,10 +1452,10 @@ msgstr ""
 
 #: whatsnew/2.6.rst:1337
 msgid ""
-"The :func:`int` and :func:`long` builtins will now accept the \"0o\" and \"0b"
-"\" prefixes when base-8 or base-2 are requested, or when the *base* argument "
-"is zero (signalling that the base used should be determined from the "
-"string)::"
+"The :func:`int` and :func:`long` builtins will now accept the \"0o\" and "
+"\"0b\" prefixes when base-8 or base-2 are requested, or when the *base* "
+"argument is zero (signalling that the base used should be determined from "
+"the string)::"
 msgstr ""
 
 #: whatsnew/2.6.rst:1355
@@ -1706,8 +1706,8 @@ msgstr ""
 #: whatsnew/2.6.rst:1598
 msgid ""
 "Many floating-point features were added.  The :func:`float` function will "
-"now turn the string ``nan`` into an IEEE 754 Not A Number value, and ``"
-"+inf`` and ``-inf`` into positive or negative infinity.  This works on any "
+"now turn the string ``nan`` into an IEEE 754 Not A Number value, and "
+"``+inf`` and ``-inf`` into positive or negative infinity.  This works on any "
 "platform with IEEE 754 semantics.  (Contributed by Christian Heimes; :issue:"
 "`1635`.)"
 msgstr ""
@@ -2614,8 +2614,8 @@ msgid ""
 "The :func:`setitimer` and :func:`getitimer` functions have also been added "
 "(where they're available).  :func:`setitimer` allows setting interval timers "
 "that will cause a signal to be delivered to the process after a specified "
-"time, measured in wall-clock time, consumed process time, or combined process"
-"+system time.  (Contributed by Guilherme Polo; :issue:`2240`.)"
+"time, measured in wall-clock time, consumed process time, or combined "
+"process+system time.  (Contributed by Guilherme Polo; :issue:`2240`.)"
 msgstr ""
 
 #: whatsnew/2.6.rst:2348

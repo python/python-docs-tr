@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -162,6 +162,17 @@ msgid ""
 "``0x030a00f0``."
 msgstr ""
 
-#: c-api/apiabiversion.rst:62
+#: c-api/apiabiversion.rst:61
+msgid "This version is also available via the symbol :data:`Py_Version`."
+msgstr ""
+
+#: c-api/apiabiversion.rst:65
+msgid ""
+"The Python runtime version number encoded in a single constant integer, with "
+"the same format as the :c:macro:`PY_VERSION_HEX` macro. This contains the "
+"Python version used at run time."
+msgstr ""
+
+#: c-api/apiabiversion.rst:71
 msgid "All the given macros are defined in :source:`Include/patchlevel.h`."
 msgstr ""

@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -52,7 +52,7 @@ msgstr ""
 msgid "The :mod:`pathlib` module offers high-level path objects."
 msgstr ""
 
-#: library/glob.rst:44
+#: library/glob.rst:45
 msgid ""
 "Return a possibly empty list of path names that match *pathname*, which must "
 "be a string containing a path specification. *pathname* can be either "
@@ -64,7 +64,7 @@ msgid ""
 "path name for that file be included is unspecified."
 msgstr ""
 
-#: library/glob.rst:53
+#: library/glob.rst:54
 msgid ""
 "If *root_dir* is not ``None``, it should be a :term:`path-like object` "
 "specifying the root directory for searching.  It has the same effect on :"
@@ -72,13 +72,13 @@ msgid ""
 "*pathname* is relative, the result will contain paths relative to *root_dir*."
 msgstr ""
 
-#: library/glob.rst:59
+#: library/glob.rst:60
 msgid ""
 "This function can support :ref:`paths relative to directory descriptors "
 "<dir_fd>` with the *dir_fd* parameter."
 msgstr ""
 
-#: library/glob.rst:65
+#: library/glob.rst:66
 msgid ""
 "If *recursive* is true, the pattern \"``**``\" will match any files and zero "
 "or more directories, subdirectories and symbolic links to directories. If "
@@ -86,39 +86,49 @@ msgid ""
 "will not match."
 msgstr ""
 
-#: library/glob.rst:89
+#: library/glob.rst:71
+msgid ""
+"If *include_hidden* is true, \"``**``\" pattern will match hidden "
+"directories."
+msgstr ""
+
+#: library/glob.rst:29
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``glob.glob`` with arguments "
 "``pathname``, ``recursive``."
 msgstr ""
 
-#: library/glob.rst:90
+#: library/glob.rst:30
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``glob.glob/2`` with arguments "
 "``pathname``, ``recursive``, ``root_dir``, ``dir_fd``."
 msgstr ""
 
-#: library/glob.rst:74
+#: library/glob.rst:77
 msgid ""
 "Using the \"``**``\" pattern in large directory trees may consume an "
 "inordinate amount of time."
 msgstr ""
 
-#: library/glob.rst:92
+#: library/glob.rst:99
 msgid "Support for recursive globs using \"``**``\"."
 msgstr ""
 
-#: library/glob.rst:95
+#: library/glob.rst:102
 msgid "Added the *root_dir* and *dir_fd* parameters."
 msgstr ""
 
-#: library/glob.rst:86
+#: library/glob.rst:105
+msgid "Added the *include_hidden* parameter."
+msgstr ""
+
+#: library/glob.rst:93
 msgid ""
 "Return an :term:`iterator` which yields the same values as :func:`glob` "
 "without actually storing them all simultaneously."
 msgstr ""
 
-#: library/glob.rst:101
+#: library/glob.rst:111
 msgid ""
 "Escape all special characters (``'?'``, ``'*'`` and ``'['``). This is useful "
 "if you want to match an arbitrary literal string that may have special "
@@ -127,7 +137,7 @@ msgid ""
 "c:/Quo vadis[?].txt'``."
 msgstr ""
 
-#: library/glob.rst:110
+#: library/glob.rst:120
 msgid ""
 "For example, consider a directory containing the following files: :file:`1."
 "gif`, :file:`2.txt`, :file:`card.gif` and a subdirectory :file:`sub` which "
@@ -136,17 +146,17 @@ msgid ""
 "preserved. ::"
 msgstr ""
 
-#: library/glob.rst:128
+#: library/glob.rst:138
 msgid ""
 "If the directory contains files starting with ``.`` they won't be matched by "
 "default. For example, consider a directory containing :file:`card.gif` and :"
 "file:`.card.gif`::"
 msgstr ""
 
-#: library/glob.rst:140
+#: library/glob.rst:150
 msgid "Module :mod:`fnmatch`"
 msgstr ""
 
-#: library/glob.rst:141
+#: library/glob.rst:151
 msgid "Shell-style filename (not path) expansion"
 msgstr ""

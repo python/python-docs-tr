@@ -1,12 +1,12 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: 2021-12-27 22:33+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -161,11 +161,20 @@ msgstr ""
 "komutunun belirlediğiniz spesifik Python kurulumunu ve sürümünü "
 "çalıştırmasını sağlar. Mesela:"
 
-#: tutorial/venv.rst:93
+#: tutorial/venv.rst:91
+#, fuzzy
+msgid "To deactivate a virtual environment, type::"
+msgstr "Sanal Ortamlar Oluşturma"
+
+#: tutorial/venv.rst:95
+msgid "into the terminal."
+msgstr ""
+
+#: tutorial/venv.rst:98
 msgid "Managing Packages with pip"
 msgstr "Paketleri pip ile Yönetme"
 
-#: tutorial/venv.rst:95
+#: tutorial/venv.rst:100
 msgid ""
 "You can install, upgrade, and remove packages using a program called :"
 "program:`pip`.  By default ``pip`` will install packages from the Python "
@@ -177,23 +186,23 @@ msgstr ""
 "pypi.org> Python Paket Dizini'nden paketler yükler.  Python Paket Dizini'ne "
 "web tarayıcınızdan giderek göz atabilirsiniz."
 
-#: tutorial/venv.rst:100
+#: tutorial/venv.rst:105
 msgid ""
 "``pip`` has a number of subcommands: \"install\", \"uninstall\", \"freeze\", "
 "etc.  (Consult the :ref:`installing-index` guide for complete documentation "
 "for ``pip``.)"
 msgstr ""
-"``pip`` bir dizi alt komut içerir: \"install\" (yükle), \"uninstall"
-"\" (kaldır), \"freeze\" (dondur), vb.  (``pip`` için eksiksiz dokümantasyon "
-"için :ref:`installing-index` rehberine bakın.)"
+"``pip`` bir dizi alt komut içerir: \"install\" (yükle), "
+"\"uninstall\" (kaldır), \"freeze\" (dondur), vb.  (``pip`` için eksiksiz "
+"dokümantasyon için :ref:`installing-index` rehberine bakın.)"
 
-#: tutorial/venv.rst:104
+#: tutorial/venv.rst:109
 msgid ""
 "You can install the latest version of a package by specifying a package's "
 "name:"
 msgstr "Paketin adını belirterek paketin en son sürümünü yükleyebilirsiniz:"
 
-#: tutorial/venv.rst:115
+#: tutorial/venv.rst:120
 msgid ""
 "You can also install a specific version of a package by giving the package "
 "name  followed by ``==`` and the version number:"
@@ -201,47 +210,54 @@ msgstr ""
 "Paketin belirli bir sürümünü, paket adını ve ardından ``==`` ve sürüm "
 "numarasını vererek de yükleyebilirsiniz:"
 
-#: tutorial/venv.rst:126
+#: tutorial/venv.rst:131
+#, fuzzy
 msgid ""
 "If you re-run this command, ``pip`` will notice that the requested version "
 "is already installed and do nothing.  You can supply a different version "
-"number to get that version, or you can run ``pip install --upgrade`` to "
-"upgrade the package to the latest version:"
+"number to get that version, or you can run ``python -m pip install --"
+"upgrade`` to upgrade the package to the latest version:"
 msgstr ""
 "Bu komutu yeniden çalıştırırsanız, ``pip`` istenen sürümün zaten yüklü "
 "olduğunu fark eder ve hiçbir şey yapmaz.  Bu sürüme erişmek için farklı bir "
 "sürüm numarası edinebilir veya paketi en son sürüme yükseltmek için ``pip "
 "install --upgrade`` komutunu çalıştırabilirsiniz:"
 
-#: tutorial/venv.rst:141
+#: tutorial/venv.rst:146
+#, fuzzy
 msgid ""
-"``pip uninstall`` followed by one or more package names will remove the "
-"packages from the virtual environment."
+"``python -m pip uninstall`` followed by one or more package names will "
+"remove the packages from the virtual environment."
 msgstr ""
 "``pip uninstall`` ve ardından bir veya daha fazla paket adı paketleri sanal "
 "ortamdan kaldırır."
 
-#: tutorial/venv.rst:144
-msgid "``pip show`` will display information about a particular package:"
+#: tutorial/venv.rst:149
+#, fuzzy
+msgid ""
+"``python -m pip show`` will display information about a particular package:"
 msgstr "``pip show`` belirli bir paketle ilgili bilgileri görüntüler:"
 
-#: tutorial/venv.rst:161
+#: tutorial/venv.rst:166
+#, fuzzy
 msgid ""
-"``pip list`` will display all of the packages installed in the virtual "
-"environment:"
+"``python -m pip list`` will display all of the packages installed in the "
+"virtual environment:"
 msgstr "``pip list`` sanal ortamda yüklü tüm paketleri görüntüler:"
 
-#: tutorial/venv.rst:173
+#: tutorial/venv.rst:178
+#, fuzzy
 msgid ""
-"``pip freeze`` will produce a similar list of the installed packages, but "
-"the output uses the format that ``pip install`` expects. A common convention "
-"is to put this list in a ``requirements.txt`` file:"
+"``python -m pip freeze`` will produce a similar list of the installed "
+"packages, but the output uses the format that ``python -m pip install`` "
+"expects. A common convention is to put this list in a ``requirements.txt`` "
+"file:"
 msgstr ""
 "``pip freeze`` yüklü paketlerin benzer bir listesini oluşturur, ancak çıktı "
 "``pip install`` beklediği biçimi kullanır. Genel bir kullanım, bu listeyi "
 "bir ``requirements.txt`` dosyasına koymaktır:"
 
-#: tutorial/venv.rst:185
+#: tutorial/venv.rst:190
 msgid ""
 "The ``requirements.txt`` can then be committed to version control and "
 "shipped as part of an application.  Users can then install all the necessary "
@@ -251,7 +267,7 @@ msgstr ""
 "uygulamanın parçası olarak gönderilebilir.  Kullanıcılar daha sonra gerekli "
 "tüm paketleri ``install -r`` ile yükleyebilir:"
 
-#: tutorial/venv.rst:202
+#: tutorial/venv.rst:207
 msgid ""
 "``pip`` has many more options.  Consult the :ref:`installing-index` guide "
 "for complete documentation for ``pip``.  When you've written a package and "

@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -538,7 +538,7 @@ msgid ""
 msgstr ""
 
 #: whatsnew/3.4.rst:412
-msgid "Module objects are now :mod:`weakref`'able."
+msgid "Module objects are now :ref:`weakly referenceable <mod-weakref>`."
 msgstr ""
 
 #: whatsnew/3.4.rst:414
@@ -1499,8 +1499,8 @@ msgstr ""
 
 #: whatsnew/3.4.rst:1116
 msgid ""
-"mmap objects can now be :mod:`weakref`\\ ed.  (Contributed by Valerie "
-"Lambert in :issue:`4885`.)"
+"mmap objects are now :ref:`weakly referenceable <mod-weakref>`. (Contributed "
+"by Valerie Lambert in :issue:`4885`.)"
 msgstr ""
 
 #: whatsnew/3.4.rst:1121
@@ -3267,9 +3267,9 @@ msgstr ""
 msgid ""
 ":func:`base64.b32decode` now raises a :exc:`binascii.Error` when the input "
 "string contains non-b32-alphabet characters, instead of a :exc:`TypeError`.  "
-"This particular :exc:`TypeError` was missed when the other :exc:`TypeError`"
-"\\ s were converted.  (Contributed by Serhiy Storchaka in :issue:`18011`.)  "
-"Note: this change was also inadvertently applied in Python 3.3.3."
+"This particular :exc:`TypeError` was missed when the other :exc:"
+"`TypeError`\\ s were converted.  (Contributed by Serhiy Storchaka in :issue:"
+"`18011`.)  Note: this change was also inadvertently applied in Python 3.3.3."
 msgstr ""
 
 #: whatsnew/3.4.rst:2373

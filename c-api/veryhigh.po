@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -145,8 +145,8 @@ msgstr ""
 
 #: c-api/veryhigh.rst:122
 msgid ""
-"On Windows, *fp* should be opened as binary mode (e.g. ``fopen(filename, \"rb"
-"\")``). Otherwise, Python may not handle script file with LF line ending "
+"On Windows, *fp* should be opened as binary mode (e.g. ``fopen(filename, "
+"\"rb\")``). Otherwise, Python may not handle script file with LF line ending "
 "correctly."
 msgstr ""
 
@@ -325,17 +325,11 @@ msgstr ""
 
 #: c-api/veryhigh.rst:291
 msgid ""
-"The C structure of the objects used to describe frame objects. The fields of "
-"this type are subject to change at any time."
-msgstr ""
-
-#: c-api/veryhigh.rst:297
-msgid ""
 "Evaluate an execution frame.  This is a simplified interface to :c:func:"
 "`PyEval_EvalFrameEx`, for backward compatibility."
 msgstr ""
 
-#: c-api/veryhigh.rst:303
+#: c-api/veryhigh.rst:297
 msgid ""
 "This is the main, unvarnished function of Python interpretation.  The code "
 "object associated with the execution frame *f* is executed, interpreting "
@@ -345,39 +339,39 @@ msgid ""
 "of generator objects."
 msgstr ""
 
-#: c-api/veryhigh.rst:310
+#: c-api/veryhigh.rst:304
 msgid ""
 "This function now includes a debug assertion to help ensure that it does not "
 "silently discard an active exception."
 msgstr ""
 
-#: c-api/veryhigh.rst:317
+#: c-api/veryhigh.rst:311
 msgid ""
 "This function changes the flags of the current evaluation frame, and returns "
 "true on success, false on failure."
 msgstr ""
 
-#: c-api/veryhigh.rst:325
+#: c-api/veryhigh.rst:319
 msgid ""
 "The start symbol from the Python grammar for isolated expressions; for use "
 "with :c:func:`Py_CompileString`."
 msgstr ""
 
-#: c-api/veryhigh.rst:333
+#: c-api/veryhigh.rst:327
 msgid ""
 "The start symbol from the Python grammar for sequences of statements as read "
 "from a file or other source; for use with :c:func:`Py_CompileString`.  This "
 "is the symbol to use when compiling arbitrarily long Python source code."
 msgstr ""
 
-#: c-api/veryhigh.rst:342
+#: c-api/veryhigh.rst:336
 msgid ""
 "The start symbol from the Python grammar for a single statement; for use "
 "with :c:func:`Py_CompileString`. This is the symbol used for the interactive "
 "interpreter loop."
 msgstr ""
 
-#: c-api/veryhigh.rst:349
+#: c-api/veryhigh.rst:343
 msgid ""
 "This is the structure used to hold compiler flags.  In cases where code is "
 "only being compiled, it is passed as ``int flags``, and in cases where code "
@@ -385,34 +379,34 @@ msgid ""
 "case, ``from __future__ import`` can modify *flags*."
 msgstr ""
 
-#: c-api/veryhigh.rst:354
+#: c-api/veryhigh.rst:348
 msgid ""
 "Whenever ``PyCompilerFlags *flags`` is ``NULL``, :attr:`cf_flags` is treated "
 "as equal to ``0``, and any modification due to ``from __future__ import`` is "
 "discarded."
 msgstr ""
 
-#: c-api/veryhigh.rst:360
+#: c-api/veryhigh.rst:354
 msgid "Compiler flags."
 msgstr ""
 
-#: c-api/veryhigh.rst:364
+#: c-api/veryhigh.rst:358
 msgid ""
 "*cf_feature_version* is the minor Python version. It should be initialized "
 "to ``PY_MINOR_VERSION``."
 msgstr ""
 
-#: c-api/veryhigh.rst:367
+#: c-api/veryhigh.rst:361
 msgid ""
 "The field is ignored by default, it is used if and only if ``PyCF_ONLY_AST`` "
 "flag is set in *cf_flags*."
 msgstr ""
 
-#: c-api/veryhigh.rst:370
+#: c-api/veryhigh.rst:364
 msgid "Added *cf_feature_version* field."
 msgstr ""
 
-#: c-api/veryhigh.rst:376
+#: c-api/veryhigh.rst:370
 msgid ""
 "This bit can be set in *flags* to cause division operator ``/`` to be "
 "interpreted as \"true division\" according to :pep:`238`."

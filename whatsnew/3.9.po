@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -1031,8 +1031,8 @@ msgstr ""
 msgid ""
 "On AIX, :func:`~time.thread_time` is now implemented with "
 "``thread_cputime()`` which has nanosecond resolution, rather than "
-"``clock_gettime(CLOCK_THREAD_CPUTIME_ID)`` which has a resolution of 10 ms. "
-"(Contributed by Batuhan Taskaya in :issue:`40192`)"
+"``clock_gettime(CLOCK_THREAD_CPUTIME_ID)`` which has a resolution of 10 "
+"milliseconds. (Contributed by Batuhan Taskaya in :issue:`40192`)"
 msgstr ""
 
 #: whatsnew/3.9.rst:695
@@ -1794,8 +1794,8 @@ msgid ""
 "Frameworks``, as had been the case on older releases of macOS. If a macOS "
 "SDK is explicitly configured, by using :option:`--enable-universalsdk` or ``-"
 "isysroot``, only the SDK itself is searched. The default behavior can still "
-"be overridden with :option:`--with-tcltk-includes` and :option:`--with-tcltk-"
-"libs`. (Contributed by Ned Deily in :issue:`34956`.)"
+"be overridden with ``--with-tcltk-includes`` and ``--with-tcltk-libs``. "
+"(Contributed by Ned Deily in :issue:`34956`.)"
 msgstr ""
 
 #: whatsnew/3.9.rst:1255

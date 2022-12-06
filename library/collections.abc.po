@@ -1,13 +1,13 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2022-12-06 14:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -516,10 +516,9 @@ msgstr ""
 #: library/collections.abc.rst:302
 msgid ""
 "In CPython, generator-based coroutines (generators decorated with :func:"
-"`types.coroutine` or :func:`asyncio.coroutine`) are *awaitables*, even "
-"though they do not have an :meth:`__await__` method. Using "
-"``isinstance(gencoro, Awaitable)`` for them will return ``False``. Use :func:"
-"`inspect.isawaitable` to detect them."
+"`types.coroutine`) are *awaitables*, even though they do not have an :meth:"
+"`__await__` method. Using ``isinstance(gencoro, Awaitable)`` for them will "
+"return ``False``. Use :func:`inspect.isawaitable` to detect them."
 msgstr ""
 
 #: library/collections.abc.rst:312
@@ -535,10 +534,9 @@ msgstr ""
 #: library/collections.abc.rst:320
 msgid ""
 "In CPython, generator-based coroutines (generators decorated with :func:"
-"`types.coroutine` or :func:`asyncio.coroutine`) are *awaitables*, even "
-"though they do not have an :meth:`__await__` method. Using "
-"``isinstance(gencoro, Coroutine)`` for them will return ``False``. Use :func:"
-"`inspect.isawaitable` to detect them."
+"`types.coroutine`) are *awaitables*, even though they do not have an :meth:"
+"`__await__` method. Using ``isinstance(gencoro, Coroutine)`` for them will "
+"return ``False``. Use :func:`inspect.isawaitable` to detect them."
 msgstr ""
 
 #: library/collections.abc.rst:330
