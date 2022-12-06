@@ -116,7 +116,6 @@ def main():
     shutil.rmtree(pot_path)
     run("powrap", "-m")
     update_makefile(args.cpython_repo)
-    run("sphinx-lint", "*.po", "*/*.po")
 
 
 if __name__ == "__main__":
