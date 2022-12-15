@@ -3,7 +3,7 @@ name: Build and Deploy to GitHub Pages
 on:
   push:
     branches:
-      - '3.11-gh-pages'
+      - '3.11'
 
 jobs:
   sphinx-lint:
