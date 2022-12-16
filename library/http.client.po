@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-06 14:29+0300\n"
+"POT-Creation-Date: 2022-12-17 01:28+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -43,7 +43,7 @@ msgid ""
 "(through the :mod:`ssl` module)."
 msgstr ""
 
-#: includes/wasm-notavail.rst:-1
+#: includes/wasm-notavail.rst:None
 msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
 msgstr ""
 
@@ -406,7 +406,7 @@ msgid ""
 "already have a connection."
 msgstr ""
 
-#: library/http.client.rst:5
+#: library/http.client.rst:382
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``http.client.connect`` with "
 "arguments ``self``, ``host``, ``port``."
@@ -482,7 +482,7 @@ msgid ""
 "`endheaders` method has been called and before :meth:`getresponse` is called."
 msgstr ""
 
-#: library/http.client.rst:5
+#: library/http.client.rst:453
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``http.client.send`` with "
 "arguments ``self``, ``data``."
