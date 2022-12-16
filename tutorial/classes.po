@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-06 14:29+0300\n"
+"POT-Creation-Date: 2022-12-17 01:28+0300\n"
 "PO-Revision-Date: 2022-01-17 22:57+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -272,9 +272,10 @@ msgstr ""
 "En içte bulunan kapsam, ilk aranan olmakla birlikte yerel isimleri içerir."
 
 #: tutorial/classes.rst:121
+#, fuzzy
 msgid ""
 "the scopes of any enclosing functions, which are searched starting with the "
-"nearest enclosing scope, contains non-local, but also non-global names"
+"nearest enclosing scope, contain non-local, but also non-global names"
 msgstr ""
 "En yakın kapsayan kapsamdan başlayarak aranan kapsayan fonksiyonların "
 "kapsamları yerel olmayan, aynı zamanda genel olmayan adlar içerir"
@@ -290,9 +291,10 @@ msgid ""
 msgstr "En dıştaki kapsam (en son aranan), yerleşik adlar içeren ad alanıdır"
 
 #: tutorial/classes.rst:126
+#, fuzzy
 msgid ""
 "If a name is declared global, then all references and assignments go "
-"directly to the middle scope containing the module's global names.  To "
+"directly to the next-to-last scope containing the module's global names.  To "
 "rebind variables found outside of the innermost scope, the :keyword:"
 "`nonlocal` statement can be used; if not declared nonlocal, those variables "
 "are read-only (an attempt to write to such a variable will simply create a "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-06 14:29+0300\n"
+"POT-Creation-Date: 2022-12-17 01:28+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -443,7 +443,8 @@ msgid ""
 msgstr ""
 
 #: library/os.rst:975 library/os.rst:1203 library/os.rst:2035
-#: library/os.rst:3133 library/os.rst:4236 library/os.rst:4365
+#: library/os.rst:None library/os.rst:3747 library/os.rst:4247
+#: library/os.rst:4365
 msgid ":ref:`Availability <availability>`: Unix, Windows."
 msgstr ""
 
@@ -462,11 +463,11 @@ msgid ""
 "``True``."
 msgstr ""
 
-#: library/os.rst:734 library/os.rst:942 library/os.rst:1024
-#: library/os.rst:1242 library/os.rst:1270 library/os.rst:1549
-#: library/os.rst:1611 library/os.rst:2006 library/os.rst:2274
-#: library/os.rst:2962 library/os.rst:3352 library/os.rst:4863
-#: library/os.rst:4894 library/os.rst:4904
+#: library/os.rst:None library/os.rst:920 library/os.rst:963
+#: library/os.rst:1036 library/os.rst:1257 library/os.rst:1339
+#: library/os.rst:1575 library/os.rst:1964 library/os.rst:2019
+#: library/os.rst:2285 library/os.rst:3119 library/os.rst:4854
+#: library/os.rst:4884 library/os.rst:4904
 msgid ":ref:`Availability <availability>`: Unix."
 msgstr ""
 
@@ -537,7 +538,7 @@ msgid ""
 "getpwuid(os.getuid())[0]`` to get the login name of the current real user id."
 msgstr ""
 
-#: library/os.rst:458 library/os.rst:3929 library/os.rst:4458
+#: library/os.rst:458 library/os.rst:3929 library/os.rst:4341
 #: library/os.rst:4627
 msgid ""
 ":ref:`Availability <availability>`: Unix, Windows, not Emscripten, not WASI."
@@ -630,7 +631,7 @@ msgid ""
 "cause memory leaks. Refer to the system documentation for :c:func:`putenv`."
 msgstr ""
 
-#: library/os.rst:18
+#: library/os.rst:553
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.putenv`` with arguments "
 "``key``, ``value``."
@@ -805,7 +806,7 @@ msgid ""
 "items of :data:`os.environ`."
 msgstr ""
 
-#: library/os.rst:12
+#: library/os.rst:753
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.unsetenv`` with argument "
 "``key``."
@@ -965,7 +966,7 @@ msgid ""
 "this is equivalent to ``os.chmod(fd, mode)``."
 msgstr ""
 
-#: library/os.rst:38
+#: library/os.rst:1909 library/os.rst:2003
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.chmod`` with arguments "
 "``path``, ``mode``, ``dir_fd``."
@@ -985,7 +986,7 @@ msgid ""
 "`chown`.  As of Python 3.3, this is equivalent to ``os.chown(fd, uid, gid)``."
 msgstr ""
 
-#: library/os.rst:11
+#: library/os.rst:1931 library/os.rst:2016
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.chown`` with arguments "
 "``path``, ``uid``, ``gid``, ``dir_fd``."
@@ -1066,7 +1067,7 @@ msgid ""
 "truncate(fd, length)``."
 msgstr ""
 
-#: library/os.rst:5
+#: library/os.rst:984
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.truncate`` with arguments "
 "``fd``, ``length``."
@@ -1100,7 +1101,7 @@ msgid ""
 "specifies the section of the file to lock."
 msgstr ""
 
-#: library/os.rst:7
+#: library/os.rst:1021
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.lockf`` with arguments "
 "``fd``, ``cmd``, ``len``."
@@ -1161,7 +1162,7 @@ msgid ""
 "<dir_fd>` with the *dir_fd* parameter."
 msgstr ""
 
-#: library/os.rst:14
+#: library/os.rst:1087
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``open`` with arguments ``path``, "
 "``mode``, ``flags``."
@@ -1346,7 +1347,7 @@ msgstr ""
 msgid "Combine the functionality of :func:`os.readv` and :func:`os.pread`."
 msgstr ""
 
-#: library/os.rst:-1
+#: library/os.rst:None
 msgid ""
 ":ref:`Availability <availability>`: Linux >= 2.6.30, FreeBSD >= 6.0, OpenBSD "
 ">= 2.7, AIX >= 7.1."
@@ -1871,7 +1872,7 @@ msgid ""
 "`FileNotFoundError`, :exc:`PermissionError`, and :exc:`NotADirectoryError`."
 msgstr ""
 
-#: library/os.rst:11
+#: library/os.rst:1962
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.chdir`` with argument "
 "``path``."
@@ -1942,7 +1943,7 @@ msgid ""
 "This function can support :ref:`not following symlinks <follow_symlinks>`."
 msgstr ""
 
-#: library/os.rst:19
+#: library/os.rst:1988
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.chflags`` with arguments "
 "``path``, ``flags``."
@@ -2130,7 +2131,7 @@ msgid ""
 "`not following symlinks <follow_symlinks>`."
 msgstr ""
 
-#: library/os.rst:7
+#: library/os.rst:2032
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.link`` with arguments "
 "``src``, ``dst``, ``src_dir_fd``, ``dst_dir_fd``."
@@ -2171,7 +2172,7 @@ msgid ""
 "<path_fd>`; the file descriptor must refer to a directory."
 msgstr ""
 
-#: library/os.rst:15
+#: library/os.rst:2062
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.listdir`` with argument "
 "``path``."
@@ -2262,7 +2263,7 @@ msgid ""
 "module's :func:`tempfile.mkdtemp` function."
 msgstr ""
 
-#: library/os.rst:24
+#: library/os.rst:2173
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.mkdir`` with arguments "
 "``path``, ``mode``, ``dir_fd``."
@@ -2445,7 +2446,7 @@ msgstr ""
 msgid "This function is semantically identical to :func:`unlink`."
 msgstr ""
 
-#: library/os.rst:14
+#: library/os.rst:2363 library/os.rst:3150
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.remove`` with arguments "
 "``path``, ``dir_fd``."
@@ -2497,7 +2498,7 @@ msgid ""
 "`replace`."
 msgstr ""
 
-#: library/os.rst:20
+#: library/os.rst:2411 library/os.rst:2428
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.rename`` with arguments "
 "``src``, ``dst``, ``src_dir_fd``, ``dst_dir_fd``."
@@ -2543,7 +2544,7 @@ msgid ""
 "rmtree` can be used."
 msgstr ""
 
-#: library/os.rst:9
+#: library/os.rst:2446
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.rmdir`` with arguments "
 "``path``, ``dir_fd``."
@@ -2584,7 +2585,7 @@ msgid ""
 "they will be of type ``str``."
 msgstr ""
 
-#: library/os.rst:27
+#: library/os.rst:2483
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.scandir`` with argument "
 "``path``."
@@ -3312,7 +3313,7 @@ msgid ""
 ":exc:`OSError` is raised when the function is called by an unprivileged user."
 msgstr ""
 
-#: library/os.rst:23
+#: library/os.rst:3093
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.symlink`` with arguments "
 "``src``, ``dst``, ``dir_fd``."
@@ -3338,7 +3339,7 @@ msgid ""
 "bytes in size."
 msgstr ""
 
-#: library/os.rst:6
+#: library/os.rst:3130
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.truncate`` with arguments "
 "``path``, ``length``."
@@ -3393,7 +3394,7 @@ msgid ""
 "func:`utime`."
 msgstr ""
 
-#: library/os.rst:29
+#: library/os.rst:3189
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.utime`` with arguments "
 "``path``, ``times``, ``ns``, ``dir_fd``."
@@ -3496,7 +3497,7 @@ msgid ""
 "deleting a directory before the directory is empty::"
 msgstr ""
 
-#: library/os.rst:88
+#: library/os.rst:3288
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.walk`` with arguments "
 "``top``, ``topdown``, ``onerror``, ``followlinks``."
@@ -3541,7 +3542,7 @@ msgid ""
 "doesn't allow deleting a directory before the directory is empty::"
 msgstr ""
 
-#: library/os.rst:50
+#: library/os.rst:3349
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.fwalk`` with arguments "
 "``top``, ``topdown``, ``onerror``, ``follow_symlinks``, ``dir_fd``."
@@ -3577,7 +3578,7 @@ msgstr ""
 msgid "These flags can be passed to :func:`memfd_create`."
 msgstr ""
 
-#: library/os.rst:-1
+#: library/os.rst:None
 msgid ":ref:`Availability <availability>`: Linux >= 3.17 with glibc >= 2.27"
 msgstr ""
 
@@ -3689,7 +3690,7 @@ msgid ""
 "encoding."
 msgstr ""
 
-#: library/os.rst:9
+#: library/os.rst:3521
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.getxattr`` with arguments "
 "``path``, ``attribute``."
@@ -3707,7 +3708,7 @@ msgid ""
 "the current directory."
 msgstr ""
 
-#: library/os.rst:9
+#: library/os.rst:3537
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.listxattr`` with argument "
 "``path``."
@@ -3721,7 +3722,7 @@ msgid ""
 "`filesystem encoding and error handler`."
 msgstr ""
 
-#: library/os.rst:9
+#: library/os.rst:3553
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.removexattr`` with arguments "
 "``path``, ``attribute``."
@@ -3745,7 +3746,7 @@ msgid ""
 "be ignored on some filesystems."
 msgstr ""
 
-#: library/os.rst:18
+#: library/os.rst:3578
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.setxattr`` with arguments "
 "``path``, ``attribute``, ``value``, ``flags``."
@@ -3821,7 +3822,7 @@ msgid ""
 "DLLs are loaded."
 msgstr ""
 
-#: library/os.rst:14
+#: library/os.rst:3642
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.add_dll_directory`` with "
 "argument ``path``."
@@ -3903,7 +3904,7 @@ msgid ""
 "`NotImplementedError`."
 msgstr ""
 
-#: library/os.rst:43
+#: library/os.rst:3710
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.exec`` with arguments "
 "``path``, ``args``, ``env``."
@@ -4038,7 +4039,7 @@ msgid ""
 "issues when using ``fork()`` from a thread."
 msgstr ""
 
-#: library/os.rst:7
+#: library/os.rst:3877
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.fork`` with no arguments."
 msgstr ""
@@ -4062,7 +4063,7 @@ msgid ""
 "the :mod:`pty` module.  If an error occurs :exc:`OSError` is raised."
 msgstr ""
 
-#: library/os.rst:7
+#: library/os.rst:3898
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.forkpty`` with no arguments."
 msgstr ""
@@ -4093,7 +4094,7 @@ msgstr ""
 msgid "See also :func:`signal.pthread_kill`."
 msgstr ""
 
-#: library/os.rst:18
+#: library/os.rst:3926
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.kill`` with arguments "
 "``pid``, ``sig``."
@@ -4107,7 +4108,7 @@ msgstr ""
 msgid "Send the signal *sig* to the process group *pgid*."
 msgstr ""
 
-#: library/os.rst:7
+#: library/os.rst:3942
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.killpg`` with arguments "
 "``pgid``, ``sig``."
@@ -4310,7 +4311,7 @@ msgid ""
 "`POSIX_SPAWN_SETSCHEDULER` flags."
 msgstr ""
 
-#: library/os.rst:77
+#: library/os.rst:4111
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.posix_spawn`` with arguments "
 "``path``, ``argv``, ``env``."
@@ -4327,7 +4328,7 @@ msgid ""
 "environment variable (in the same way as for ``execvp(3)``)."
 msgstr ""
 
-#: library/os.rst:-1
+#: library/os.rst:None
 msgid ":ref:`Availability <availability>`: POSIX, not Emscripten, not WASI."
 msgstr ""
 
@@ -4451,7 +4452,7 @@ msgid ""
 "are equivalent::"
 msgstr ""
 
-#: library/os.rst:54
+#: library/os.rst:4215
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.spawn`` with arguments "
 "``mode``, ``path``, ``args``, ``env``."
@@ -4552,13 +4553,13 @@ msgid ""
 "function cannot be resolved, :exc:`NotImplementedError` will be raised."
 msgstr ""
 
-#: library/os.rst:37
+#: library/os.rst:4300
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.startfile`` with arguments "
 "``path``, ``operation``."
 msgstr ""
 
-#: library/os.rst:39
+#: library/os.rst:4302
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.startfile/2`` with arguments "
 "``path``, ``operation``, ``arguments``, ``cwd``, ``show_cmd``."
@@ -4611,7 +4612,7 @@ msgid ""
 "code."
 msgstr ""
 
-#: library/os.rst:27
+#: library/os.rst:4339
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.system`` with argument "
 "``command``."

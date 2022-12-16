@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-06 14:29+0300\n"
+"POT-Creation-Date: 2022-12-17 01:28+0300\n"
 "PO-Revision-Date: 2022-07-10 23:37+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH\n"
@@ -541,7 +541,7 @@ msgstr ""
 "func:`breakpoint` otomatik olarak bunu çağırır ve tercih ettiğiniz hata "
 "ayıklayıcıya girmenize izin verir."
 
-#: library/functions.rst:13
+#: library/functions.rst:171
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.breakpoint`` with "
 "argument ``breakpointhook``."
@@ -863,7 +863,7 @@ msgstr ""
 "Python kodunu onun AST temsiline ayrıştırmak isterseniz, :func:`ast.parse` "
 "'a bakınız."
 
-#: library/functions.rst:47
+#: library/functions.rst:334
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``compile`` with arguments "
 "``source``, ``filename``."
@@ -1233,7 +1233,7 @@ msgstr ""
 "değerlendirebilen bir fonksiyon arıyorsanız, :func:`ast.literal_eval` 'a "
 "bakınız."
 
-#: library/functions.rst:43
+#: library/functions.rst:600
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``exec`` with argument "
 "``code_object``."
@@ -1680,7 +1680,7 @@ msgstr ""
 msgid "This is the address of the object in memory."
 msgstr ""
 
-#: library/functions.rst:8
+#: library/functions.rst:851
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.id`` with argument "
 "``id``."
@@ -1708,7 +1708,7 @@ msgstr ""
 "Eğer :mod:`readline` modülü yüklendiyse, :func:`input` ayrıntılı satır "
 "düzenleme ve geçmiş özellikleri sağlamak için onu kullanacaktır."
 
-#: library/functions.rst:14
+#: library/functions.rst:870
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.input`` with argument "
 "``prompt``."
@@ -1724,7 +1724,7 @@ msgstr ""
 "Girişi okumadan önce, ``prompt`` argümanıyla birlikte bir :ref:`denetleme "
 "olayı <auditing>` ``builtins.input`` ortaya çıkartır"
 
-#: library/functions.rst:19
+#: library/functions.rst:875
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.input/result`` with "
 "argument ``result``."
@@ -2510,7 +2510,7 @@ msgstr ""
 "`os`, :mod:`os.path`, :mod:`tempfile`, ve :mod:`shutil` gibi dosya işleme "
 "modüllerine de bkz."
 
-#: library/functions.rst:191
+#: library/functions.rst:1341
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``open`` with arguments ``file``, "
 "``mode``, ``flags``."
