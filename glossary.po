@@ -7,14 +7,14 @@ msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: 2022-12-02 23:24+0300\n"
+"PO-Revision-Date: 2022-12-28 16:02-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: glossary.rst:5
 msgid "Glossary"
@@ -25,7 +25,6 @@ msgid "``>>>``"
 msgstr "``>>>``"
 
 #: glossary.rst:12
-#, fuzzy
 msgid ""
 "The default Python prompt of the interactive shell.  Often seen for code "
 "examples which can be executed interactively in the interpreter."
@@ -113,14 +112,13 @@ msgid "annotation"
 msgstr "dipnot"
 
 #: glossary.rst:48
-#, fuzzy
 msgid ""
 "A label associated with a variable, a class attribute or a function "
 "parameter or return value, used by convention as a :term:`type hint`."
 msgstr ""
-"Bir değişkenle, bir sınıf niteliğiyle veya bir işlev parametresiyle veya bir "
-"dönüş değeriyle ilişkilendirilen, gelenek tarafından :term:`tür ipucu <type "
-"hint>` olarak kullanılan bir etiket."
+"Bir değişkenle, bir sınıf niteliğiyle veya bir fonksiyon parametresiyle veya "
+"bir dönüş değeriyle ilişkilendirilen, gelenek olarak :term:`type hint <type "
+"hint>` biçiminde kullanılan bir etiket."
 
 #: glossary.rst:52
 msgid ""
@@ -149,13 +147,12 @@ msgid "argument"
 msgstr "argüman"
 
 #: glossary.rst:64
-#, fuzzy
 msgid ""
 "A value passed to a :term:`function` (or :term:`method`) when calling the "
 "function.  There are two kinds of argument:"
 msgstr ""
-"İşlev çağrılırken bir :term:`function` 'a (veya :term:`method`) geçirilen "
-"bir değer, İki tür argüman vardır:"
+"Fonksiyon çağrılırken bir :term:`function` 'a (veya :term:`method`) "
+"geçirilen bir değer. İki tür argüman vardır:"
 
 #: glossary.rst:67
 msgid ""
@@ -189,21 +186,20 @@ msgid ""
 "Syntactically, any expression can be used to represent an argument; the "
 "evaluated value is assigned to the local variable."
 msgstr ""
-"argümanler, bir işlev gövdesindeki adlandırılmış yerel değişkenlere atanır. "
-"Bu atamayı yöneten kurallar için :ref:`calls` bölümüne bakın. Sözdizimsel "
-"olarak, bir argümanı temsil etmek için herhangi bir ifade kullanılabilir; "
-"değerlendirilen değer yerel değişkene atanır."
+"Argümanler, bir fonksiyon gövdesindeki adlandırılmış yerel değişkenlere "
+"atanır. Bu atamayı yöneten kurallar için :ref:`calls` bölümüne bakın. "
+"Sözdizimsel olarak, bir argümanı temsil etmek için herhangi bir ifade "
+"kullanılabilir; değerlendirilen değer yerel değişkene atanır."
 
 #: glossary.rst:89
-#, fuzzy
 msgid ""
 "See also the :term:`parameter` glossary entry, the FAQ question on :ref:`the "
 "difference between arguments and parameters <faq-argument-vs-parameter>`, "
 "and :pep:`362`."
 msgstr ""
-"Ayrıca :term:`parameter` sözlüğü girişine, :ref:`argümanlar ve parametreler "
-"arasındaki fark <faq-argument-vs-parameter>` hakkındaki SSS sorusuna ve :pep:"
-"`362` 'ye bakın."
+"Ayrıca :term:`parameter` sözlüğü girişine, :ref:`the difference between "
+"arguments and parameters <faq-argument-vs-parameter>` hakkındaki SSS "
+"sorusuna ve :pep:`362` 'ye bakın."
 
 #: glossary.rst:92
 msgid "asynchronous context manager"
@@ -307,7 +303,6 @@ msgid "asynchronous iterator"
 msgstr "asenkron yineleyici"
 
 #: glossary.rst:132
-#, fuzzy
 msgid ""
 "An object that implements the :meth:`__aiter__` and :meth:`__anext__` "
 "methods.  ``__anext__`` must return an :term:`awaitable` object. :keyword:"
@@ -317,16 +312,15 @@ msgid ""
 msgstr ""
 ":meth:`__aiter__` ve :meth:`__anext__` yöntemlerini uygulayan bir nesne.  "
 "``__anext__`` bir :term:`awaitable` nesnesi döndürmelidir. :keyword:`async "
-"for`, bir asynchronous iterator ün :meth:`__anext__` yöntemi tarafından "
+"for`, bir asenkron yineleyicinin :meth:`__anext__` yöntemi tarafından "
 "döndürülen beklenebilirleri bir :exc:`StopAsyncIteration` istisnası "
-"oluşturana kadar çözer."
+"oluşturana kadar çözer.  :pep:`492` 'de açıklandı."
 
 #: glossary.rst:137
 msgid "attribute"
 msgstr "nitelik"
 
 #: glossary.rst:139
-#, fuzzy
 msgid ""
 "A value associated with an object which is usually referenced by name using "
 "dotted expressions. For example, if an object *o* has an attribute *a* it "
@@ -402,19 +396,17 @@ msgstr ""
 "için :term:`text file` 'a bakın."
 
 #: glossary.rst:169
-#, fuzzy
 msgid "borrowed reference"
 msgstr "ödünç alınan referans"
 
 #: glossary.rst:171
-#, fuzzy
 msgid ""
 "In Python's C API, a borrowed reference is a reference to an object. It does "
 "not modify the object reference count. It becomes a dangling pointer if the "
 "object is destroyed. For example, a garbage collection can remove the last :"
 "term:`strong reference` to the object and so destroy it."
 msgstr ""
-"Python'un C API'sinde borrowed reference, bir nesneye yapılan bir "
+"Python'un C API 'sinde ödünç alınan referans, bir nesneye yapılan bir "
 "referanstır. Nesne referans sayısını değiştirmez. Nesne yok edilirse sarkan "
 "bir işaretçi olur. Örneğin, bir çöp toplama, nesneye yapılan son :term:"
 "`strong reference` kaldırabilir ve böylece onu yok edebilir."
@@ -503,9 +495,8 @@ msgstr ""
 "bulunabilir."
 
 #: glossary.rst:212
-#, fuzzy
 msgid "callable"
-msgstr "geri çağırmak"
+msgstr "çağırılabilir"
 
 #: glossary.rst:214
 msgid ""
@@ -824,7 +815,6 @@ msgstr ""
 "belgelenmesi için kurallı yerdir."
 
 #: glossary.rst:354
-#, fuzzy
 msgid "duck-typing"
 msgstr "ördek yazma"
 
@@ -1277,7 +1267,6 @@ msgstr ""
 "parçacıklı olmasını kolaylaştırır."
 
 #: glossary.rst:551
-#, fuzzy
 msgid ""
 "However, some extension modules, either standard or third-party, are "
 "designed so as to release the GIL when doing computationally intensive tasks "
@@ -1364,14 +1353,13 @@ msgid "IDLE"
 msgstr "BOŞTA"
 
 #: glossary.rst:586
-#, fuzzy
 msgid ""
 "An Integrated Development and Learning Environment for Python. :ref:`idle` "
 "is a basic editor and interpreter environment which ships with the standard "
 "distribution of Python."
 msgstr ""
-"Python için Entegre Geliştirme Ortamı.  IDLE, Python'un standart dağıtımıyla "
-"birlikte gelen temel bir düzenleyici ve yorumlayıcı ortamıdır."
+"Python için Entegre Geliştirme Ortamı. :ref:`idle`, Python'un standart "
+"dağıtımıyla birlikte gelen temel bir düzenleyici ve yorumlayıcı ortamıdır."
 
 #: glossary.rst:589
 msgid "immutable"
@@ -1508,7 +1496,6 @@ msgid "iterable"
 msgstr "yinelenebilir"
 
 #: glossary.rst:643
-#, fuzzy
 msgid ""
 "An object capable of returning its members one at a time. Examples of "
 "iterables include all sequence types (such as :class:`list`, :class:`str`, "
@@ -1518,7 +1505,7 @@ msgid ""
 "term:`sequence` semantics."
 msgstr ""
 "Üyelerini teker teker döndürebilen bir nesne. Yineleme örnekleri, tüm dizi "
-"türlerini (:class:`list`, :class:`str`, and :class:`tuple` gibi) ve :class:"
+"türlerini (:class:`list`, :class:`str`, ve :class:`tuple` gibi) ve :class:"
 "`dict`, :term:`dosya objeleri <file object>` gibi bazı dizi olmayan türleri "
 "ve bir :meth:`__iter__` yöntemiyle veya :term:`dizi <sequence>` semantiğini "
 "uygulayan bir :meth:`__getitem__` yöntemiyle tanımladığınız tüm sınıfların "
@@ -1625,7 +1612,6 @@ msgstr ""
 "groupby`."
 
 #: glossary.rst:696
-#, fuzzy
 msgid ""
 "There are several ways to create a key function.  For example. the :meth:"
 "`str.lower` method can serve as a key function for case insensitive sorts.  "
@@ -1635,14 +1621,15 @@ msgid ""
 "are three key function constructors.  See the :ref:`Sorting HOW TO "
 "<sortinghowto>` for examples of how to create and use key functions."
 msgstr ""
-"Bir tuş işlevi oluşturmanın birkaç yolu vardır.  Örneğin. :meth:`str.lower` "
-"yöntemi, büyük/küçük harfe duyarlı olmayan sıralamalar için bir anahtar "
-"işlev işlevi görebilir.  Alternatif olarak, ``lambda r: (r[0], r[2])`` gibi "
-"bir :keyword:`lambda` ifadesinden bir anahtar işlevi oluşturulabilir.  "
-"Ayrıca, :mod:`operator` modülü üç temel işlev kurucusu sağlar: :func:"
-"`~operator.attrgetter`, :func:`~operator.itemgetter` ve :func:`~operator."
-"methodcaller`.  Anahtar işlevlerin nasıl oluşturulacağı ve kullanılacağına "
-"ilişkin örnekler için :ref:`Sorting HOW TO <sortinghowto>` bölümüne bakın."
+"Bir tuş fonksiyonu oluşturmanın birkaç yolu vardır.  Örneğin. :meth:`str."
+"lower` yöntemi, büyük/küçük harfe duyarlı olmayan sıralamalar için bir "
+"anahtar fonksiyonu işlevi görebilir.  Alternatif olarak, ``lambda r: (r[0], "
+"r[2])`` gibi bir :keyword:`lambda` ifadesinden bir anahtar işlevi "
+"oluşturulabilir.  Ayrıca, :func:`~operator.attrgetter`, :func:`~operator."
+"itemgetter` ve :func:`~operator.methodcaller` fonksiyonları üç anahtar "
+"fonksiyon kurucularıdır.  Anahtar işlevlerin nasıl oluşturulacağı ve "
+"kullanılacağına ilişkin örnekler için :ref:`Sorting HOW TO <sortinghowto>` "
+"bölümüne bakın."
 
 #: glossary.rst:703
 msgid "keyword argument"
@@ -1700,35 +1687,30 @@ msgid "locale encoding"
 msgstr "yerel kodlama"
 
 #: glossary.rst:725
-#, fuzzy
 msgid ""
 "On Unix, it is the encoding of the LC_CTYPE locale. It can be set with :func:"
 "`locale.setlocale(locale.LC_CTYPE, new_locale) <locale.setlocale>`."
 msgstr ""
-"Unix'te, LC_CTYPE yerel ayarının kodlamasıdır. ``locale.setlocale(locale."
-"LC_CTYPE, new_locale)`` ile ayarlanabilir."
+"Unix'te, LC_CTYPE yerel ayarının kodlamasıdır. :func:`locale."
+"setlocale(locale.LC_CTYPE, new_locale) <locale.setlocale>` ile ayarlanabilir."
 
 #: glossary.rst:728
-#, fuzzy
 msgid "On Windows, it is the ANSI code page (ex: ``\"cp1252\"``)."
-msgstr "Windows'ta bu, ANSI kod sayfasıdır (ör. ``cp1252``)."
+msgstr "Windows'ta bu, ANSI kod sayfasıdır (ör. ``\"cp1252\"``)."
 
 #: glossary.rst:730
 msgid ""
 "On Android and VxWorks, Python uses ``\"utf-8\"`` as the locale encoding."
 msgstr ""
+"Android ve VxWorks'te Python, yerel kodlama olarak ``\"utf-8\"`` kullanır."
 
 #: glossary.rst:732
-#, fuzzy
 msgid "``locale.getencoding()`` can be used to get the locale encoding."
-msgstr ""
-"``locale.getpreferredencoding(False)`` yerel ayar kodlamasını almak için "
-"kullanılabilir."
+msgstr "Yerel kodlamayı almak için ``locale.getencoding()`` kullanılabilir."
 
 #: glossary.rst:734
-#, fuzzy
 msgid "See also the :term:`filesystem encoding and error handler`."
-msgstr "dosya sistemi kodlaması ve hata işleyicisi"
+msgstr "Ayrıca :term:`filesystem encoding and error handler` 'ne bakın."
 
 #: glossary.rst:735
 msgid "list"
@@ -1792,7 +1774,6 @@ msgid "mapping"
 msgstr "haritalama"
 
 #: glossary.rst:761
-#, fuzzy
 msgid ""
 "A container object that supports arbitrary key lookups and implements the "
 "methods specified in the :class:`collections.abc.Mapping` or :class:"
@@ -1803,10 +1784,9 @@ msgid ""
 msgstr ""
 "Keyfi anahtar aramalarını destekleyen ve :class:`~collections.abc.Mapping` "
 "veya :class:`~collections.abc.MutableMapping` :ref:`collections-abstract-"
-"base-classes` içinde belirtilen yöntemleri uygulayan bir kapsayıcı nesnesi "
-"temel sınıflar.  Örnekler arasında :class:`dict`, :class:`collections."
-"defaultdict`, :class:`collections.OrderedDict` ve :class:`collections."
-"Counter` sayılabilir."
+"base-classes` içinde belirtilen yöntemleri uygulayan bir kapsayıcı nesnesi. "
+"Örnekler arasında :class:`dict`, :class:`collections.defaultdict`, :class:"
+"`collections.OrderedDict` ve :class:`collections.Counter` sayılabilir."
 
 #: glossary.rst:767
 msgid "meta path finder"
@@ -1890,7 +1870,7 @@ msgstr ""
 "Metot Çözüm Sırası, arama sırasında bir üye için temel sınıfların arandığı "
 "sıradır. 2.3 sürümünden bu yana Python yorumlayıcısı tarafından kullanılan "
 "algoritmanın ayrıntıları için bkz. `The Python 2.3 Method Resolution Order "
-"<https://www.python.org/download/releases/2.3/mro/>`_"
+"<https://www.python.org/download/releases/2.3/mro/>`_."
 
 #: glossary.rst:800
 msgid "module"
@@ -2085,15 +2065,14 @@ msgid "package"
 msgstr "paket"
 
 #: glossary.rst:884
-#, fuzzy
 msgid ""
 "A Python :term:`module` which can contain submodules or recursively, "
 "subpackages.  Technically, a package is a Python module with a ``__path__`` "
 "attribute."
 msgstr ""
 "Alt modüller veya yinelemeli olarak alt paketler içerebilen bir Python :term:"
-"`module`. Teknik olarak paket, ``__path__`` özniteliğine sahip bir Python "
-"modülüdür."
+"`module`. Teknik olarak bir paket, ``__path__`` özniteliğine sahip bir "
+"Python modülüdür."
 
 #: glossary.rst:888
 msgid "See also :term:`regular package` and :term:`namespace package`."
@@ -2449,7 +2428,6 @@ msgid "reference count"
 msgstr "referans sayısı"
 
 #: glossary.rst:1065
-#, fuzzy
 msgid ""
 "The number of references to an object.  When the reference count of an "
 "object drops to zero, it is deallocated.  Reference counting is generally "
@@ -2461,7 +2439,7 @@ msgstr ""
 "düştüğünde, yerinden çıkarılır. Referans sayımı genellikle Python kodunda "
 "görülmez, ancak :term:`CPython` uygulamasının önemli bir öğesidir. :mod:"
 "`sys` modülü, programcıların belirli bir nesne için referans sayısını "
-"döndürmek üzere çağırabilecekleri bir :func:`~sys.getrefcount` işlevini "
+"döndürmek üzere çağırabilecekleri bir :func:`~sys.getrefcount` fonksiyonunu "
 "tanımlar."
 
 #: glossary.rst:1071
