@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: 2022-02-27 20:06+0300\n"
+"PO-Revision-Date: 2022-12-28 23:48+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -80,16 +80,16 @@ msgstr ""
 "aktarın::"
 
 #: tutorial/modules.rst:50
-#, fuzzy
 msgid ""
 "This does not add the names of the functions defined in ``fibo``  directly "
 "to the current :term:`namespace` (see :ref:`tut-scopes` for more details); "
 "it only adds the module name ``fibo`` there. Using the module name you can "
 "access the functions::"
 msgstr ""
-"Bu, ``fibo`` içinde tanımlanan işlevlerin adlarını doğrudan geçerli sembol "
-"tablosuna girmez; sadece ``fibo`` modül adını oraya girer. Modül adını "
-"kullanarak şu işlevlere erişebilirsiniz::"
+"Bu, ``fibo`` 'da tanımlanan işlevlerin adlarını doğrudan geçerli :term:"
+"`namespace` 'e  eklemez (daha fazla ayrıntı için bkz. :ref:`tut-scopes`); "
+"oraya sadece ``fibo`` modül adını ekler. Modül adını kullanarak şu işlevlere "
+"erişebilirsiniz:"
 
 #: tutorial/modules.rst:62
 msgid ""
@@ -115,7 +115,6 @@ msgstr ""
 "[#]_ (Dosya komut dosyası olarak yürütülürse de çalıştırılırlar.)"
 
 #: tutorial/modules.rst:79
-#, fuzzy
 msgid ""
 "Each module has its own private namespace, which is used as the global "
 "namespace by all functions defined in the module. Thus, the author of a "
@@ -124,16 +123,15 @@ msgid ""
 "know what you are doing you can touch a module's global variables with the "
 "same notation used to refer to its functions, ``modname.itemname``."
 msgstr ""
-"Her modülün, modülde tanımlanan tüm fonksiyonlar tarafından genel sembol "
-"tablosu olarak kullanılan kendi özel sembol tablosu vardır. Böylece, bir "
-"modülün yazarı, kullanıcının genel değişkenleriyle yanlışlıkla çakışmalar "
-"konusunda endişelenmeden modüldeki genel değişkenleri kullanabilir. Öte "
-"yandan, ne yaptığınızı biliyorsanız, bir modülün genel değişkenlerine, "
-"``modname.itemname`` işlevlerini ifade etmek için kullanılan aynı notasyonla "
-"iletişime geçebilirsiniz."
+"Her modülün, modülde tanımlanan tüm işlevler tarafından genel ad alanı "
+"olarak kullanılan kendi özel ad alanı vardır. Böylece, bir modülün yazarı, "
+"bir kullanıcının genel değişkenleriyle yanlışlıkla çakışma endişesi "
+"duymadan, modüldeki genel değişkenleri kullanabilir. Öte yandan, ne "
+"yaptığınızı biliyorsanız, bir modülün global değişkenlerine, işlevlerine "
+"atıfta bulunmak için kullanılan ``modname.itemname`` notasyonuyla "
+"dokunabilirsiniz."
 
 #: tutorial/modules.rst:86
-#, fuzzy
 msgid ""
 "Modules can import other modules.  It is customary but not required to place "
 "all :keyword:`import` statements at the beginning of a module (or script, "
@@ -141,28 +139,27 @@ msgid ""
 "a module (outside any functions or classes), are added to the module's "
 "global namespace."
 msgstr ""
-"Modüller diğer modülleri içe aktarabilir.  Alışılmıştır, ancak tüm :keyword:"
-"`import` ifadelerini bir modülün (veya komut dosyasının) başına yerleştirmek "
-"gerekli değildir.  İçe aktarılan modül adları, içe aktarma modülünün genel "
-"sembol tablosuna yerleştirilir."
+"Modüller diğer modülleri içe aktarabilir. Tüm :keyword:`import` ifadelerinin "
+"bir modülün (veya bu konuda betiğin) başına yerleştirilmesi alışılmış bir "
+"durumdur ancak gerekli değildir. İçe aktarılan modül adları, bir modülün en "
+"üst düzeyine yerleştirilirse (herhangi bir işlev veya sınıfın dışında), "
+"modülün genel ad alanına eklenir."
 
 #: tutorial/modules.rst:91
-#, fuzzy
 msgid ""
 "There is a variant of the :keyword:`import` statement that imports names "
 "from a module directly into the importing module's namespace.  For example::"
 msgstr ""
-"Bir modülden adları doğrudan içe aktarma modülünün sembol tablosuna içe "
-"alan :keyword:`import` deyiminin bir varyantı vardır.  Mesela::"
+":keyword:`import` ifadesinin, bir modülden adları doğrudan içe aktaran "
+"modülün ad alanına aktaran bir çeşidi vardır. Örneğin::"
 
 #: tutorial/modules.rst:98
-#, fuzzy
 msgid ""
 "This does not introduce the module name from which the imports are taken in "
 "the local namespace (so in the example, ``fibo`` is not defined)."
 msgstr ""
-"Bu, yerel sembol tablosunda içe aktarmaların alındığı modül adını tanıtmaz "
-"(bu nedenle örnekte ``fibo`` tanımlanmamıştır)."
+"Bu, içe aktarmaların yerel ad alanında alındığı modül adını tanıtmaz(bu "
+"nedenle örnekte ``fibo`` tanımlanmamıştır)."
 
 #: tutorial/modules.rst:101
 msgid "There is even a variant to import all names that a module defines::"
@@ -243,8 +240,8 @@ msgid ""
 "with the ``__name__`` set to ``\"__main__\"``.  That means that by adding "
 "this code at the end of your module::"
 msgstr ""
-"modüldeki kod, içe aktardığınız gibi yürütülür, ancak ``__name__`` "
-"``\"__main__\"`` olarak ayarlanır. Bu, modülünüzün sonuna bu kodu ekleyerek:"
+"modüldeki kod, içe aktardığınız gibi yürütülür, ancak ``__name__`` ``"
+"\"__main__\"`` olarak ayarlanır. Bu, modülünüzün sonuna bu kodu ekleyerek:"
 
 #: tutorial/modules.rst:161
 msgid ""
@@ -275,7 +272,6 @@ msgid "The Module Search Path"
 msgstr "Modül Arama Yolu"
 
 #: tutorial/modules.rst:186
-#, fuzzy
 msgid ""
 "When a module named :mod:`spam` is imported, the interpreter first searches "
 "for a built-in module with that name. These module names are listed in :data:"
@@ -314,7 +310,7 @@ msgstr ""
 
 #: tutorial/modules.rst:199
 msgid "More details are at :ref:`sys-path-init`."
-msgstr ""
+msgstr "Daha fazla ayrıntı :ref:`sys-path-init` adresindedir."
 
 #: tutorial/modules.rst:202
 msgid ""
@@ -337,7 +333,7 @@ msgid ""
 msgstr ""
 "Başlatıldıktan sonra Python programları :data:`sys.path` değiştirebilir.  "
 "Çalıştırılmakta olan komut dosyasını içeren dizin, arama yolunun başına, "
-"standart kütüphane yolunun önüne yerleştirilir. Bu, kütüphane dizininde aynı "
+"standart kitaplık yolunun önüne yerleştirilir. Bu, kitaplık dizininde aynı "
 "ada sahip modüller yerine bu dizindeki komut dosyalarının yüklanacağı "
 "anlamına gelir. Değiştirme amaçlanmadığı sürece bu bir hatadır.  Daha fazla "
 "bilgi için :ref:`tut-standardmodules` bölümüne bakın."
@@ -375,7 +371,7 @@ msgstr ""
 "Python, eski olup olmadığını ve yeniden derlenmesi gerekip gerekmediğini "
 "görmek için kaynağın değişiklik tarihini derlenmiş sürümle karşılaştırır. Bu "
 "tamamen otomatik bir işlemdir. Ayrıca, derlenen modüller platformdan "
-"bağımsızdır, bu nedenle aynı kütüphane farklı mimarilere sahip sistemler "
+"bağımsızdır, bu nedenle aynı kitaplık farklı mimarilere sahip sistemler "
 "arasında paylaşılabilir."
 
 #: tutorial/modules.rst:234
@@ -714,7 +710,6 @@ msgstr ""
 "içerebilir::"
 
 #: tutorial/modules.rst:512
-#, fuzzy
 msgid ""
 "This would mean that ``from sound.effects import *`` would import the three "
 "named submodules of the :mod:`sound.effects` package."
@@ -849,12 +844,11 @@ msgid "Footnotes"
 msgstr "Dipnotlar"
 
 #: tutorial/modules.rst:583
-#, fuzzy
 msgid ""
 "In fact function definitions are also 'statements' that are 'executed'; the "
 "execution of a module-level function definition adds the function name to "
 "the module's global namespace."
 msgstr ""
-"Aslında fonksiyon tanımları da 'yürütülen' 'ifadelerdir'; modül düzeyinde "
-"bir fonksiyon tanımının yürütülmesi, fonksiyonun adını modülün genel sembol "
-"tablosuna girer."
+"Aslında işlev tanımları aynı zamanda 'çalıştırılan' 'ifadelerdir'; modül "
+"düzeyinde bir işlev tanımının çalıştırılması, işlev adını modülün genel ad "
+"alanına ekler."
