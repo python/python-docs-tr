@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: 2021-12-17 22:58+0300\n"
+"PO-Revision-Date: 2022-12-28 11:29+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2\n"
 
 #: bugs.rst:5
 msgid "Dealing with Bugs"
@@ -106,39 +106,38 @@ msgstr ""
 "kılavuz."
 
 #: bugs.rst:38
-#, fuzzy
 msgid ""
 "`Documentation Translations <https://devguide.python.org/documenting/"
 "#translating>`_"
 msgstr ""
-"`Dokümantasyona Yardım Etmek <https://devguide.python.org/docquality/"
-"#helping-with-documentation>`_"
+"`Dokümantasyon Çevirileri <https://devguide.python.org/documenting/"
+"#translating>`_"
 
 #: bugs.rst:39
 msgid ""
 "A list of GitHub pages for documentation translation and their primary "
 "contacts."
 msgstr ""
+"Dokümantasyon çevirilerinin GitHub sayfaları ve bunların iletişim "
+"bilgilerini içeren bir liste."
 
 #: bugs.rst:45
 msgid "Using the Python issue tracker"
 msgstr "Python hata takipçisini kullanmak"
 
 #: bugs.rst:47
-#, fuzzy
 msgid ""
 "Issue reports for Python itself should be submitted via the GitHub issues "
 "tracker (https://github.com/python/cpython/issues). The GitHub issues "
 "tracker offers a web form which allows pertinent information to be entered "
 "and submitted to the developers."
 msgstr ""
-"Python'un kendisi için hata raporları Python Hata Takipçisi (https://bugs."
-"python.org/) aracılığıyla gönderilmelidir.  Hata takipçisi, ilgili "
+"Python'un kendisi için olan hata raporları GitHub issues (https://github.com/"
+"python/cpython/issues) aracılığıyla gönderilmelidir.  Hata takipçisi, ilgili "
 "bilgilerin girilmesini ve geliştiricilere gönderilmesini sağlayan bir web "
 "formu sunar."
 
 #: bugs.rst:52
-#, fuzzy
 msgid ""
 "The first step in filing a report is to determine whether the problem has "
 "already been reported.  The advantage in doing so, aside from saving the "
@@ -151,42 +150,40 @@ msgstr ""
 "Rapor göndermenin ilk adımı, sorunun zaten bildirilmiş olup olmadığını "
 "belirlemektir.  Bunu yapmanın avantajı, geliştiricilere zaman kazandırarak, "
 "düzeltmek için neler yapıldığını öğrenmenizdir; sorun bir sonraki sürüm için "
-"zaten düzeltilmiş olabilir veya ek bilgilere ihtiyaç duyulabilir (bu durumda "
-"yapabilirseniz sağlayabilirsiniz!). Bunu yapmak için, sayfanın üst "
+"zaten düzeltilmiş olabilir veya ek bilgilere ihtiyaç duyulabilir (eğer "
+"mümkünse bilgileri sağlayabilirsiniz!). Bunu yapmak için, sayfanın üst "
 "kısmındaki arama kutusunu kullanarak hata veritabanında arama yapın."
 
 #: bugs.rst:59
-#, fuzzy
 msgid ""
 "If the problem you're reporting is not already in the list, log in to "
 "GitHub. If you don't already have a GitHub account, create a new account "
 "using the \"Sign up\" link. It is not possible to submit a bug report "
 "anonymously."
 msgstr ""
-"Bildirdiğiniz sorun hata takipçisinde değilse, Python hata takipçisine geri "
-"dönün ve oturum açın.  Bir takipçi hesabınız yoksa, \"Kayıt Ol\" "
-"bağlantısına, veya OpenID kullanıyorsanız, kenar çubuğundaki OpenID "
-"sağlayıcısı logolarından birine tıklayın.  Hata raporunu anonim olarak "
+"Bildirdiğiniz sorun listede değilse, GitHub'da oturum açın.  Bir GitHub "
+"hesabınız, \"Kayıt Ol\" bağlantısına tıklayın.  Hata raporunu anonim olarak "
 "göndermek mümkün değildir."
 
 #: bugs.rst:64
-#, fuzzy
 msgid ""
 "Being now logged in, you can submit an issue. Click on the \"New issue\" "
 "button in the top bar to report a new issue."
 msgstr ""
-"Oturum açtıktan sonra bir hata raporu gönderebilirsiniz.  Hata raporlama "
-"formunu açmak için kenar çubuğunda \"Yeni Oluştur\" bağlantısını seçin."
+"Oturum açtıktan sonra bir hata raporu gönderebilirsiniz.  Yeni bir rapor "
+"oluşturmak için sayfanın üst kısmındaki \"New issue\" butonuna tıklayın."
 
 #: bugs.rst:67
 msgid "The submission form has two fields, \"Title\" and \"Comment\"."
-msgstr ""
+msgstr "Form iki kısımdan oluşur. \"Başlık\" ve \"Yorum\"."
 
 #: bugs.rst:69
 msgid ""
 "For the \"Title\" field, enter a *very* short description of the problem; "
 "less than ten words is good."
 msgstr ""
+"\"Başlık\" için hatanın *çok* kısa açıklamasını girin; başlığın on kelimeden "
+"az olması tercih edilir."
 
 #: bugs.rst:72
 msgid ""
@@ -201,14 +198,13 @@ msgstr ""
 "(uygun sürüm bilgileri dahil) eklediğinizden emin olun."
 
 #: bugs.rst:77
-#, fuzzy
 msgid ""
 "Each issue report will be reviewed by a developer who will determine what "
 "needs to be done to correct the problem. You will receive an update each "
 "time an action is taken on the issue."
 msgstr ""
 "Her hata raporu, sorunu düzeltmek için ne yapılması gerektiğini belirleyecek "
-"bir geliştiriciye atanır.  Hata üzerinde her işlem başlatıldığınızda bir "
+"bir geliştiriciye atanır.  Hata üzerinde her işlem başlatıldığında bir "
 "güncelleme alırsınız."
 
 #: bugs.rst:86
