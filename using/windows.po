@@ -1,7 +1,7 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -193,8 +193,8 @@ msgid ""
 "In the latest versions of Windows, this limitation can be expanded to "
 "approximately 32,000 characters. Your administrator will need to activate "
 "the \"Enable Win32 long paths\" group policy, or set ``LongPathsEnabled`` to "
-"``1`` in the registry key ``HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet"
-"\\Control\\FileSystem``."
+"``1`` in the registry key "
+"``HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\FileSystem``."
 msgstr ""
 
 #: using/windows.rst:110
@@ -300,9 +300,9 @@ msgstr ""
 
 #: using/windows.rst:152
 msgid ""
-":file:`%LocalAppData%\\\\\\ Programs\\\\Python\\\\\\ PythonXY` or :file:`"
-"%LocalAppData%\\\\\\ Programs\\\\Python\\\\\\ PythonXY-32` or :file:`"
-"%LocalAppData%\\\\\\ Programs\\\\Python\\\\\\ PythonXY-64`"
+":file:`%LocalAppData%\\\\\\ Programs\\\\Python\\\\\\ PythonXY` or :file:"
+"`%LocalAppData%\\\\\\ Programs\\\\Python\\\\\\ PythonXY-32` or :file:"
+"`%LocalAppData%\\\\\\ Programs\\\\Python\\\\\\ PythonXY-64`"
 msgstr ""
 
 #: using/windows.rst:162
@@ -664,18 +664,19 @@ msgid ""
 "At runtime, Python will use a private copy of well-known Windows folders and "
 "the registry. For example, if the environment variable :envvar:`%APPDATA%` "
 "is :file:`c:\\\\Users\\\\<user>\\\\AppData\\\\`, then when writing to :file:"
-"`C:\\\\Users\\\\<user>\\\\AppData\\\\Local` will write to :file:`C:\\\\Users"
-"\\\\<user>\\\\AppData\\\\Local\\\\Packages\\\\PythonSoftwareFoundation."
-"Python.3.8_qbz5n2kfra8p0\\\\LocalCache\\\\Local\\\\`."
+"`C:\\\\Users\\\\<user>\\\\AppData\\\\Local` will write to :file:`C:\\"
+"\\Users\\\\<user>\\\\AppData\\\\Local\\\\Packages\\"
+"\\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\\\\LocalCache\\\\Local\\"
+"\\`."
 msgstr ""
 
 #: using/windows.rst:357
 msgid ""
 "When reading files, Windows will return the file from the private folder, or "
 "if that does not exist, the real Windows directory. For example reading :"
-"file:`C:\\\\Windows\\\\System32` returns the contents of :file:`C:\\\\Windows"
-"\\\\System32` plus the contents of :file:`C:\\\\Program Files\\\\WindowsApps"
-"\\\\package_name\\\\VFS\\\\SystemX86`."
+"file:`C:\\\\Windows\\\\System32` returns the contents of :file:`C:\\"
+"\\Windows\\\\System32` plus the contents of :file:`C:\\\\Program Files\\"
+"\\WindowsApps\\\\package_name\\\\VFS\\\\SystemX86`."
 msgstr ""
 
 #: using/windows.rst:361
@@ -1061,9 +1062,9 @@ msgstr ""
 
 #: using/windows.rst:625
 msgid ""
-"On the first page of the installer, an option labelled \"Add Python to PATH"
-"\" may be selected to have the installer add the install location into the :"
-"envvar:`PATH`.  The location of the :file:`Scripts\\\\` folder is also "
+"On the first page of the installer, an option labelled \"Add Python to "
+"PATH\" may be selected to have the installer add the install location into "
+"the :envvar:`PATH`.  The location of the :file:`Scripts\\\\` folder is also "
 "added. This allows you to type :command:`python` to run the interpreter, "
 "and :command:`pip` for the package installer. Thus, you can also execute "
 "your scripts with command line options, see :ref:`using-on-cmdline` "
@@ -1544,9 +1545,9 @@ msgstr ""
 msgid ""
 "Python usually stores its library (and thereby your site-packages folder) in "
 "the installation directory.  So, if you had installed Python to :file:`C:\\"
-"\\Python\\\\`, the default library would reside in :file:`C:\\\\Python\\\\Lib"
-"\\\\` and third-party modules should be stored in :file:`C:\\\\Python\\\\Lib"
-"\\\\site-packages\\\\`."
+"\\Python\\\\`, the default library would reside in :file:`C:\\\\Python\\"
+"\\Lib\\\\` and third-party modules should be stored in :file:`C:\\\\Python\\"
+"\\Lib\\\\site-packages\\\\`."
 msgstr ""
 
 #: using/windows.rst:986

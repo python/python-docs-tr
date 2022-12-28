@@ -1,7 +1,7 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -640,9 +640,9 @@ msgstr ""
 #: library/shutil.rst:538
 msgid ""
 "*base_name* is the name of the file to create, including the path, minus any "
-"format-specific extension. *format* is the archive format: one of \"zip"
-"\" (if the :mod:`zlib` module is available), \"tar\", \"gztar\" (if the :mod:"
-"`zlib` module is available), \"bztar\" (if the :mod:`bz2` module is "
+"format-specific extension. *format* is the archive format: one of "
+"\"zip\" (if the :mod:`zlib` module is available), \"tar\", \"gztar\" (if "
+"the :mod:`zlib` module is available), \"bztar\" (if the :mod:`bz2` module is "
 "available), or \"xztar\" (if the :mod:`lzma` module is available)."
 msgstr ""
 
@@ -790,8 +790,8 @@ msgstr ""
 
 #: library/shutil.rst:630
 msgid ""
-"*format* is the archive format: one of \"zip\", \"tar\", \"gztar\", \"bztar"
-"\", or \"xztar\".  Or any other format registered with :func:"
+"*format* is the archive format: one of \"zip\", \"tar\", \"gztar\", "
+"\"bztar\", or \"xztar\".  Or any other format registered with :func:"
 "`register_unpack_format`.  If not provided, :func:`unpack_archive` will use "
 "the archive file name extension and see if an unpacker was registered for "
 "that extension.  In case none is found, a :exc:`ValueError` is raised."

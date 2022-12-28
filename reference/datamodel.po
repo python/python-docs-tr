@@ -1,7 +1,7 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -293,8 +293,8 @@ msgid ""
 "representing the values ``False`` and ``True`` are the only Boolean objects. "
 "The Boolean type is a subtype of the integer type, and Boolean values behave "
 "like the values 0 and 1, respectively, in almost all contexts, the exception "
-"being that when converted to a string, the strings ``\"False\"`` or ``\"True"
-"\"`` are returned, respectively."
+"being that when converted to a string, the strings ``\"False\"`` or "
+"``\"True\"`` are returned, respectively."
 msgstr ""
 
 #: reference/datamodel.rst:240
@@ -1792,10 +1792,10 @@ msgstr ""
 
 #: reference/datamodel.rst:1522
 msgid ""
-"By default, the :meth:`__hash__` values of str and bytes objects are \"salted"
-"\" with an unpredictable random value.  Although they remain constant within "
-"an individual Python process, they are not predictable between repeated "
-"invocations of Python."
+"By default, the :meth:`__hash__` values of str and bytes objects are "
+"\"salted\" with an unpredictable random value.  Although they remain "
+"constant within an individual Python process, they are not predictable "
+"between repeated invocations of Python."
 msgstr ""
 
 #: reference/datamodel.rst:1527
@@ -2010,9 +2010,9 @@ msgid ""
 "The following methods only apply when an instance of the class containing "
 "the method (a so-called *descriptor* class) appears in an *owner* class (the "
 "descriptor must be in either the owner's class dictionary or in the class "
-"dictionary for one of its parents).  In the examples below, \"the attribute"
-"\" refers to the attribute whose name is the key of the property in the "
-"owner class' :attr:`~object.__dict__`."
+"dictionary for one of its parents).  In the examples below, \"the "
+"attribute\" refers to the attribute whose name is the key of the property in "
+"the owner class' :attr:`~object.__dict__`."
 msgstr ""
 
 #: reference/datamodel.rst:1715
@@ -2259,8 +2259,9 @@ msgstr ""
 
 #: reference/datamodel.rst:1879
 msgid ""
-"Nonempty *__slots__* does not work for classes derived from \"variable-length"
-"\" built-in types such as :class:`int`, :class:`bytes` and :class:`tuple`."
+"Nonempty *__slots__* does not work for classes derived from \"variable-"
+"length\" built-in types such as :class:`int`, :class:`bytes` and :class:"
+"`tuple`."
 msgstr ""
 
 #: reference/datamodel.rst:1882
@@ -2998,15 +2999,16 @@ msgstr ""
 
 #: reference/datamodel.rst:2558
 msgid ""
-"These methods are called to implement the binary arithmetic operations (``"
-"+``, ``-``, ``*``, ``@``, ``/``, ``//``, ``%``, :func:`divmod`, :func:`pow`, "
-"``**``, ``<<``, ``>>``, ``&``, ``^``, ``|``).  For instance, to evaluate the "
-"expression ``x + y``, where *x* is an instance of a class that has an :meth:"
-"`__add__` method, ``x.__add__(y)`` is called.  The :meth:`__divmod__` method "
-"should be the equivalent to using :meth:`__floordiv__` and :meth:`__mod__`; "
-"it should not be related to :meth:`__truediv__`.  Note that :meth:`__pow__` "
-"should be defined to accept an optional third argument if the ternary "
-"version of the built-in :func:`pow` function is to be supported."
+"These methods are called to implement the binary arithmetic operations "
+"(``+``, ``-``, ``*``, ``@``, ``/``, ``//``, ``%``, :func:`divmod`, :func:"
+"`pow`, ``**``, ``<<``, ``>>``, ``&``, ``^``, ``|``).  For instance, to "
+"evaluate the expression ``x + y``, where *x* is an instance of a class that "
+"has an :meth:`__add__` method, ``x.__add__(y)`` is called.  The :meth:"
+"`__divmod__` method should be the equivalent to using :meth:`__floordiv__` "
+"and :meth:`__mod__`; it should not be related to :meth:`__truediv__`.  Note "
+"that :meth:`__pow__` should be defined to accept an optional third argument "
+"if the ternary version of the built-in :func:`pow` function is to be "
+"supported."
 msgstr ""
 
 #: reference/datamodel.rst:2569
@@ -3017,9 +3019,9 @@ msgstr ""
 
 #: reference/datamodel.rst:2592
 msgid ""
-"These methods are called to implement the binary arithmetic operations (``"
-"+``, ``-``, ``*``, ``@``, ``/``, ``//``, ``%``, :func:`divmod`, :func:`pow`, "
-"``**``, ``<<``, ``>>``, ``&``, ``^``, ``|``) with reflected (swapped) "
+"These methods are called to implement the binary arithmetic operations "
+"(``+``, ``-``, ``*``, ``@``, ``/``, ``//``, ``%``, :func:`divmod`, :func:"
+"`pow`, ``**``, ``<<``, ``>>``, ``&``, ``^``, ``|``) with reflected (swapped) "
 "operands.  These functions are only called if the left operand does not "
 "support the corresponding operation [#]_ and the operands are of different "
 "types. [#]_ For instance, to evaluate the expression ``x - y``, where *y* is "

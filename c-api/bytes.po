@@ -1,7 +1,7 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -214,9 +214,9 @@ msgstr ""
 
 #: c-api/bytes.rst:102
 msgid ""
-"The hex representation of a C pointer. Mostly equivalent to ``printf(\"%p"
-"\")`` except that it is guaranteed to start with the literal ``0x`` "
-"regardless of what the platform's ``printf`` yields."
+"The hex representation of a C pointer. Mostly equivalent to "
+"``printf(\"%p\")`` except that it is guaranteed to start with the literal "
+"``0x`` regardless of what the platform's ``printf`` yields."
 msgstr ""
 
 #: c-api/bytes.rst:111
@@ -320,7 +320,7 @@ msgid ""
 "address of an existing bytes object as an lvalue (it may be written into), "
 "and the new size desired.  On success, *\\*bytes* holds the resized bytes "
 "object and ``0`` is returned; the address in *\\*bytes* may differ from its "
-"input value.  If the reallocation fails, the original bytes object at *"
-"\\*bytes* is deallocated, *\\*bytes* is set to ``NULL``, :exc:`MemoryError` "
+"input value.  If the reallocation fails, the original bytes object at "
+"*\\*bytes* is deallocated, *\\*bytes* is set to ``NULL``, :exc:`MemoryError` "
 "is set, and ``-1`` is returned."
 msgstr ""
