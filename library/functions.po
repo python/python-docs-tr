@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: 2022-12-28 11:34+0300\n"
+"PO-Revision-Date: 2022-12-28 14:55-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: library/functions.rst:11
 msgid "Built-in Functions"
@@ -986,7 +986,6 @@ msgstr ""
 "`__index__` 'e geri döner."
 
 #: library/functions.rst:402
-#, fuzzy
 msgid ""
 "This is a relative of :func:`setattr`.  The arguments are an object and a "
 "string.  The string must be the name of one of the object's attributes.  The "
@@ -994,10 +993,12 @@ msgid ""
 "example, ``delattr(x, 'foobar')`` is equivalent to ``del x.foobar``. *name* "
 "need not be a Python identifier (see :func:`setattr`)."
 msgstr ""
-":func:`setattr` fonksiyonuna yakındır. Argümanlar bir nesne ve bir dizedir. "
-"Dize nesnenin özelliklerinden birinin adı olmak zorundadır. Fonksiyon "
-"nesnenin izin vermesi koşuluyla, dizede belirtilen bu özelliği siler. Örnek "
-"olarak, ``delattr(x, 'foobar')`` , ``del x.foobar`` 'a eşdeğerdir."
+":func:`setattr` fonksiyonu ile ilişkilidir . Argümanlar bir nesne ve bir "
+"dizedir. Dize nesnenin özelliklerinden birinin adı olmak zorundadır. "
+"Fonksiyon nesnenin izin vermesi koşuluyla, dizede belirtilen bu özelliği "
+"siler. Örnek olarak, ``delattr(x, 'foobar')`` , ``del x.foobar`` 'a "
+"eşdeğerdir. *name* bir Python tanımlayıcısı olmak zorunda değildir (:func:"
+"`setattr` bkz.)."
 
 #: library/functions.rst:415
 msgid ""
@@ -1313,6 +1314,10 @@ msgid ""
 "length of the tuple must exactly match the number of free variables "
 "referenced by the code object."
 msgstr ""
+"*closure* argümanı, bir hücre değişkenleri demeti olan bir kapatmayı "
+"belirtir. Yalnızca *nesne* serbest değişkenler içeren bir kod nesnesi "
+"olduğunda geçerlidir. Demetin uzunluğu, kod nesnesi tarafından başvurulan "
+"serbest değişkenlerin sayısıyla tam olarak eşleşmelidir."
 
 #: library/functions.rst:607
 msgid ""
@@ -1338,9 +1343,8 @@ msgstr ""
 "sözlüğü geçirin."
 
 #: library/functions.rst:618
-#, fuzzy
 msgid "Added the *closure* parameter."
-msgstr "*flush* anahtar kelimesi argümanı eklendi."
+msgstr "*closure* parametresi eklendi."
 
 #: library/functions.rst:624
 msgid ""
@@ -1406,9 +1410,9 @@ msgid ""
 "spellings for positive infinity."
 msgstr ""
 ":ref:`floating` kısmında açıklanan ``floatnumber``, Python floating-point "
-"tanımının farklı bir biçimidir. Durum önemli değildir, örneğin \"inf\", \"Inf"
-"\", \"INFINITY\" ve \"iNfINity\" hepsi pozitif sonsuz için kabul edilebilir "
-"yazımlardır."
+"tanımının farklı bir biçimidir. Durum önemli değildir, örneğin \"inf\", "
+"\"Inf\", \"INFINITY\" ve \"iNfINity\" hepsi pozitif sonsuz için kabul "
+"edilebilir yazımlardır."
 
 #: library/functions.rst:667
 msgid ""
@@ -1513,7 +1517,6 @@ msgstr ""
 "bakabilirsiniz."
 
 #: library/functions.rst:745
-#, fuzzy
 msgid ""
 "Return the value of the named attribute of *object*.  *name* must be a "
 "string. If the string is the name of one of the object's attributes, the "
@@ -1527,7 +1530,8 @@ msgstr ""
 "ise, sonuç bu özelliğin değeri olur. Örnek olarak, ``getattr(x, 'foobar')``, "
 "``x.foobar`` 'a eşittir. Eğer isimlendirilmiş özellik objede bulunmuyorsa, "
 "*default* sağlanmışsa döndürülür, aksi takdirde :exc:`AttributeError` hatası "
-"ortaya çıkar."
+"ortaya çıkar. *name* bir Python tanımlayıcısı olmak zorunda değildir (:func:"
+"`setattr` bkz)."
 
 #: library/functions.rst:754
 msgid ""
@@ -1677,7 +1681,7 @@ msgstr ""
 
 #: library/functions.rst:849
 msgid "This is the address of the object in memory."
-msgstr ""
+msgstr "Bu, bellekteki nesnenin adresidir."
 
 #: library/functions.rst:851
 msgid ""
@@ -1732,13 +1736,12 @@ msgstr ""
 "``builtins.input/result`` ortaya çıkartır."
 
 #: library/functions.rst:877
-#, fuzzy
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.input/result`` with "
 "the result after successfully reading input."
 msgstr ""
-"Girişi başarıyla okuduktan sonra sonuçla birlikte bir ``builtins.input/"
-"result`` denetleme olayı ortaya çıkarır."
+"Girişi başarıyla okuduktan sonra sonuçla birlikte bir :ref:`auditing event "
+"<auditing>` ``builtins.input/result`` denetleme olayı ortaya çıkarır."
 
 #: library/functions.rst:884
 msgid ""
@@ -1804,7 +1807,7 @@ msgstr ":meth:`__int__` tanımlı değilse :meth:`__index__` konumuna geri döne
 
 #: library/functions.rst:922
 msgid "The delegation to :meth:`__trunc__` is deprecated."
-msgstr ""
+msgstr ":meth:`__trunc__` yetkisi kullanımdan kaldırıldı."
 
 #: library/functions.rst:925
 msgid ""
@@ -1815,9 +1818,14 @@ msgid ""
 "ref:`integer string conversion length limitation <int_max_str_digits>` "
 "documentation."
 msgstr ""
+":class:`int` dizi girişleri ve dizi gösterimleri, hizmet reddi "
+"saldırılarından kaçınmaya yardımcı olmak için sınırlandırılabilir. :exc:"
+"`ValueError`, bir *x* dizgesini :class:`int`e dönüştürürken sınır "
+"aşıldığında veya :class:`int`i bir dizgeye dönüştürürken sınırı aştığında "
+"ortaya çıkar. :ref:`integer string conversion length limitation "
+"<int_max_str_digits>` belgelerine bakın."
 
 #: library/functions.rst:935
-#, fuzzy
 msgid ""
 "Return ``True`` if the *object* argument is an instance of the *classinfo* "
 "argument, or of a (direct, indirect, or :term:`virtual <abstract base "
@@ -1836,14 +1844,15 @@ msgstr ""
 "bir demet (veya yinelemeli olarak, bu tür diğer demetler) veya birden çok "
 "türden bir :ref:`types-union` ise, ayrıca *object* bu verilen türlerden "
 "herhangi birinin örneği ise ``True`` döndürür. Eğer *classinfo* bir tür veya "
-"türler içeren bir tuple değilse, :exc:`TypeError` hatası ortaya çıkar."
+"türler içeren bir tuple değilse, :exc:`TypeError` hatası ortaya çıkar. Eğer "
+"önceden yapılmış bir kontrol başarılıysa :exc:`TypeError` geçersiz bir tip "
+"için ortaya çıkmayabilir."
 
 #: library/functions.rst:960
 msgid "*classinfo* can be a :ref:`types-union`."
 msgstr "*classinfo* bir :ref:`types-union` olabilir."
 
 #: library/functions.rst:952
-#, fuzzy
 msgid ""
 "Return ``True`` if *class* is a subclass (direct, indirect, or :term:"
 "`virtual <abstract base class>`) of *classinfo*.  A class is considered a "
@@ -1855,9 +1864,10 @@ msgstr ""
 "Eğer *class*, *classinfo* 'nun bir alt sınıfıysa (doğrudan, dolaylı, veya :"
 "term:`sanal <abstract base class>`), ``True`` döndürür. Bir sınıf kendisinin "
 "alt sınıfı olarak dikkate alınır. *classinfo* sınıf nesnelerinden oluşan bir "
-"demet veya :ref:`types-union` olabilir, bu durumda eğer *class*, *classinfo* "
-"'daki elemanlardan herhangi birinin alt sınıfıysa ``True`` döndürülür. Diğer "
-"her durumda, :exc:`TypeError` hatası ortaya çıkar."
+"demet (veya tekrarlı diğer benzer demetler) veya :ref:`types-union` "
+"olabilir, bu durumda eğer *class*, *classinfo* 'daki elemanlardan herhangi "
+"birinin alt sınıfıysa ``True`` döndürülür. Diğer her durumda, :exc:"
+"`TypeError` hatası ortaya çıkar."
 
 #: library/functions.rst:967
 msgid ""
@@ -1948,7 +1958,6 @@ msgstr ""
 "etkilemeyebilir."
 
 #: library/functions.rst:1026
-#, fuzzy
 msgid ""
 "Return an iterator that applies *function* to every item of *iterable*, "
 "yielding the results.  If additional *iterables* arguments are passed, "
@@ -1957,13 +1966,13 @@ msgid ""
 "the shortest iterable is exhausted.  For cases where the function inputs are "
 "already arranged into argument tuples, see :func:`itertools.starmap`\\."
 msgstr ""
-"*iterable* 'in her elementini *fonksiyon* 'a gönderen bir yineleyici "
-"döndürür ve sonuçları sunar. Eğer ek *iterable* parametreleri verildiyse, "
-"*fonksiyon* o sayıda parametre almalı ve paralel bir şekilde tüm "
-"yinelenebilir nesnelerden tüm elementleri uygulamalıdır. Birden fazla "
-"yinelenebilir nesne ile, yineleyici en kısa yinelenebilir nesne tükendiğinde "
-"durur. Fonksiyon girdilerinin zaten demetler halinde verildiği durumlar "
-"için, :func:`itertools.starmap`\\ 'a bakın."
+"*iterable* 'in her elementini *function* 'a gönderen bir yineleyici döndürür "
+"ve sonuçları sunar. Eğer ek *iterables* parametreleri verildiyse, *function* "
+"o sayıda parametre almalı ve paralel bir şekilde tüm yinelenebilir "
+"nesnelerden tüm elementleri uygulamalıdır. Birden fazla yinelenebilir nesne "
+"ile, yineleyici en kısa yinelenebilir nesne tükendiğinde durur. Fonksiyon "
+"girdilerinin zaten demetler halinde verildiği durumlar için, :func:"
+"`itertools.starmap`\\ 'a bakın."
 
 #: library/functions.rst:1038
 msgid ""
@@ -2128,7 +2137,6 @@ msgstr ""
 "nesnesi kapatıldığında kapatılır."
 
 #: library/functions.rst:1161
-#, fuzzy
 msgid ""
 "*mode* is an optional string that specifies the mode in which the file is "
 "opened.  It defaults to ``'r'`` which means open for reading in text mode. "
@@ -2147,8 +2155,8 @@ msgstr ""
 "ayrıcalıklı oluşturma için ``'x'`` ve dosyaya ekleme yapmak için (*bazı* "
 "Unix sistemlerinde, *hepsi* o anki imleç pozisyonundan bağımsız dosyanın "
 "sonuna ekleme anlamına gelir). Metin modunda, *encoding* belirtilmemiş ise "
-"kullanılan kodlayıcı platforma bağlıdır: ``locale."
-"getpreferredencoding(False)`` geçerli kodlayıcıyı getirmek için çağırılır. "
+"kullanılan kodlayıcı platforma bağlıdır: :func:`locale."
+"getpreferredencoding(False)` geçerli kodlayıcıyı getirmek için çağırılır. "
 "(İşlenmemiş baytlar okumak veya yazmak için ikili modu kullanın ve "
 "*encoding* 'i boş bırakın. Geçerli modlar:"
 
@@ -2222,9 +2230,9 @@ msgid ""
 "Modes ``'w+'`` and ``'w+b'`` open and truncate the file.  Modes ``'r+'`` and "
 "``'r+b'`` open the file with no truncation."
 msgstr ""
-"Varsayılan mod ``'r'`` (okumaya açık, ``'rt'`` 'nin eşanlamlısı.) 'dir. ``'w"
-"+'`` ve ``'w+b'`` modları dosyayı açar ve temizlerler. ``'r+'`` ve ``'r+b'`` "
-"modları dosyayı temizlemeden açarlar."
+"Varsayılan mod ``'r'`` (okumaya açık, ``'rt'`` 'nin eşanlamlısı.) 'dir. "
+"``'w+'`` ve ``'w+b'`` modları dosyayı açar ve temizlerler. ``'r+'`` ve "
+"``'r+b'`` modları dosyayı temizlemeden açarlar."
 
 #: library/functions.rst:1193
 msgid ""
@@ -2255,7 +2263,6 @@ msgstr ""
 "platformdan bağımsızdır."
 
 #: library/functions.rst:1207
-#, fuzzy
 msgid ""
 "*buffering* is an optional integer used to set the buffering policy.  Pass 0 "
 "to switch buffering off (only allowed in binary mode), 1 to select line "
@@ -2267,12 +2274,17 @@ msgid ""
 "for :func:`io.TextIOWrapper.reconfigure`. When no *buffering* argument is "
 "given, the default buffering policy works as follows:"
 msgstr ""
-"*buffering* arabelleğe alma poliçesini düzenlemek için kullanılan opsiyonel "
-"bir tam sayıdır. Arabelleğe almayı kapatmak için 0 veriniz (sadece ikili "
-"modunda izin verilir), sadece satır arabelleğe alınmasını seçmek için 1 "
-"veriniz (sadece metin modunda kullanılabilir), ve sabit boyutlu yığın "
-"arabelleğinin bayt cinsinden boyutunu belirtmek için birden büyük bir "
-"tamsayı veriniz:"
+"*buffering*, arabelleğe alma ilkesini ayarlamak için kullanılan isteğe bağlı "
+"bir tamsayıdır. Arabelleğe almayı kapatmak için 0 (yalnızca ikili modda izin "
+"verilir), satır arabelleğini seçmek için 1 (yalnızca metin modunda "
+"kullanılabilir) ve sabit boyutlu yığın arabelleğinin bayt cinsinden boyutunu "
+"belirtmek için birden büyük bir tam sayı iletin. Bir arabellek boyutunu bu "
+"şekilde belirtmenin ikili arabelleğe alınmış G/Ç için geçerli olduğunu "
+"unutmayın, ancak \"TextIOWrapper\" (yani, \"mode='r+'\" ile açılan dosyalar) "
+"başka bir arabelleğe alır. ``TextIOWrapper`` arabelleğe almayı devre dışı "
+"bırakmak için, :func:`io.TextIOWrapper.reconfigure` için `write_through`` "
+"bayrağını kullanmayı düşünün. *arabelleğe alma* bağımsız değişkeni "
+"verilmediğinde, varsayılan arabelleğe alma ilkesi şu şekilde çalışır:"
 
 #: library/functions.rst:1217
 msgid ""
@@ -2297,7 +2309,6 @@ msgstr ""
 "yukarıda ikili dosyalar için açıklanan poliçeyi kullanırlar."
 
 #: library/functions.rst:1226
-#, fuzzy
 msgid ""
 "*encoding* is the name of the encoding used to decode or encode the file. "
 "This should only be used in text mode.  The default encoding is platform "
@@ -2393,15 +2404,14 @@ msgstr ""
 "``\\N{...}`` kaçış karakterleriyle değiştirir."
 
 #: library/functions.rst:1272
-#, fuzzy
 msgid ""
 "*newline* determines how to parse newline characters from the stream. It can "
 "be ``None``, ``''``, ``'\\n'``, ``'\\r'``, and ``'\\r\\n'``.  It works as "
 "follows:"
 msgstr ""
-"*newline*, :term:`universal newlines` modunun (sadece metin modu için "
-"geçerlidir) nasıl çalışacağını kontrol eder. ``None``, ``''``, ``'\\n'``, "
-"``'\\r'`` ve ``'\\r\\n'`` olabilir. Aşağıdaki gibi çalışır:"
+"*newline* akıştan yeni satır karakterlerinin nasıl ayrıştırılacağını "
+"belirler. ``None``, ``''``, ``\\n'``, `'\\r'`` ve ``'\\r\\n'`` olabilir. "
+"Aşağıdaki gibi çalışır:"
 
 #: library/functions.rst:1276
 msgid ""
@@ -2578,9 +2588,8 @@ msgstr ""
 "bir :class:`io.RawIOBase` alt sınıfını döndürebilir."
 
 #: library/functions.rst:1371
-#, fuzzy
 msgid "The ``'U'`` mode has been removed."
-msgstr "``'x'`` modu eklendi."
+msgstr "``'U'`` modu kaldırıldı."
 
 #: library/functions.rst:1376
 msgid ""
@@ -2750,9 +2759,9 @@ msgstr ""
 
 #: library/functions.rst:1487
 msgid ""
-"The ``@property`` decorator turns the :meth:`voltage` method into a \"getter"
-"\" for a read-only attribute with the same name, and it sets the docstring "
-"for *voltage* to \"Get the current voltage.\""
+"The ``@property`` decorator turns the :meth:`voltage` method into a "
+"\"getter\" for a read-only attribute with the same name, and it sets the "
+"docstring for *voltage* to \"Get the current voltage.\""
 msgstr ""
 "``@property`` dekoratörü :meth:`voltage` metodunu aynı isimli salt-okunur "
 "bir özellik için \"getter\" metoduna dönüştürür ve *voltage* için doküman "
@@ -2802,7 +2811,6 @@ msgstr ""
 "bakınız."
 
 #: library/functions.rst:1535
-#, fuzzy
 msgid ""
 "Return a string containing a printable representation of an object.  For "
 "many types, this function makes an attempt to return a string that would "
@@ -2814,13 +2822,14 @@ msgid ""
 "If :func:`sys.displayhook` is not accessible, this function will raise :exc:"
 "`RuntimeError`."
 msgstr ""
-"Bir nesnenin yazdırılabilir temsilini içeren bir dize döndürür. Çoğu tür "
-"için, bu fonksiyon :func:`eval` 'e verildiğinde aynı değerle bir obje "
-"verecek bir dize döndürme girişiminde bulunur. Aksi takdirde, sonuç "
-"genellikle nesnenin ismini ve adresini içeren ek bilgiyle birlikte nesnenin "
-"türünün ismini içeren açılı ayraçlarla sarılmış bir dize döndürür. Bir "
-"sınıf :meth:`__repr__` metodu tanımlayarak bu metodun örnekleri için ne "
-"döndüreceğini kontrol edebilir."
+"Bir nesnenin yazdırılabilir temsilini içeren bir dize döndürür. Birçok tür "
+"için bu fonksiyon, :func:`eval`; fonksiyonuna iletildiğinde aynı değere "
+"sahip bir nesne verecek bir dize döndürme girişiminde bulunur. Aksi halde "
+"gösterim, genellikle nesnenin adı ve adresini içeren ek bilgilerle birlikte "
+"nesnenin türünün adını içeren açılı ayraçlar içine alınmış bir dizedir. Bir "
+"sınıf, bir :meth:`__repr__` yöntemi tanımlayarak bu işlevin örnekleri için "
+"ne döndürdüğünü kontrol edebilir. :func:`sys.displayhook` erişilebilir "
+"değilse, bu fonksiyon :exc:`RuntimeError` değerini yükseltir."
 
 #: library/functions.rst:1548
 msgid ""
@@ -2925,6 +2934,11 @@ msgid ""
 "whose name is not an identifier will not be accessible using the dot "
 "notation, but is accessible through :func:`getattr` etc.."
 msgstr ""
+"*name*, nesne bunu zorunlu kılmayı seçmedikçe, örneğin özel bir :meth:"
+"`~object.__getattribute__` veya :attr:`~object.__slots__ aracılığıyla, :ref:"
+"`identifiers` içinde tanımlandığı gibi bir Python tanımlayıcısı olmak "
+"zorunda değildir. Adı tanımlayıcı olmayan bir özelliğe nokta kullanılarak "
+"erişilemez, ancak :func:`getattr` vb. aracılığıyla erişilebilir."
 
 #: library/functions.rst:1611
 msgid ""
@@ -3158,34 +3172,31 @@ msgstr ""
 "metotlara erişmek için kullanışlıdır."
 
 #: library/functions.rst:1742
-#, fuzzy
 msgid ""
 "The *object_or_type* determines the :term:`method resolution order` to be "
 "searched.  The search starts from the class right after the *type*."
 msgstr ""
-"*object-or-type* aranacak :term:`yöntem çözümleme sırası <method resolution "
-"order>` 'nı belirler. Arama *type* 'dan sonraki ilk sınıftan başlar."
+"*object_or_type* aranacak :term:`method resolution order` 'nı belirler. "
+"Arama *type* 'dan sonraki ilk sınıftan başlar."
 
 #: library/functions.rst:1746
-#, fuzzy
 msgid ""
 "For example, if :attr:`~class.__mro__` of *object_or_type* is ``D -> B -> C -"
 "> A -> object`` and the value of *type* is ``B``, then :func:`super` "
 "searches ``C -> A -> object``."
 msgstr ""
-"Örnek olarak, eğer *object-or-type* 'ın :attr:`~class.__mro__` özelliği ``D -"
+"Örnek olarak, eğer *object_or_type* 'ın :attr:`~class.__mro__` özelliği ``D -"
 "> B -> C -> A -> object`` ise ve *type* değeri ``B`` ise, :func:`super` ``C -"
 "> A -> object`` 'i arar."
 
 #: library/functions.rst:1750
-#, fuzzy
 msgid ""
 "The :attr:`~class.__mro__` attribute of the *object_or_type* lists the "
 "method resolution search order used by both :func:`getattr` and :func:"
 "`super`.  The attribute is dynamic and can change whenever the inheritance "
 "hierarchy is updated."
 msgstr ""
-"*object-or-type* 'ın :attr:`~class.__mro__` özelliği, hem :func:`getattr` "
+"*object_or_type* 'ın :attr:`~class.__mro__` özelliği, hem :func:`getattr` "
 "hem de :func:`super` tarafından kullanılan yöntem çözümleme arama sırasını "
 "listeler. Özellik dinamiktir ve kalıtım hiyerarşisi her güncellendiğinde "
 "değişebilir."
