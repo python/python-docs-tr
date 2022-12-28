@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: 2022-04-10 14:55+0300\n"
+"PO-Revision-Date: 2022-12-28 16:31-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: license.rst:7
 msgid "History and License"
@@ -319,15 +319,14 @@ msgid "Sockets"
 msgstr "Soketler"
 
 #: license.rst:354
-#, fuzzy
 msgid ""
 "The :mod:`socket` module uses the functions, :func:`getaddrinfo`, and :func:"
 "`getnameinfo`, which are coded in separate source files from the WIDE "
 "Project, https://www.wide.ad.jp/. ::"
 msgstr ""
-":mod:`socket` modülü, :func:`getaddrinfo` ve :func:`getnameinfo` işlevlerini "
-"kullanır, bunlar WIDE Projesi'nden http://www.wide.ad.jp/ ayrı kaynak "
-"dosyalarda kodlanmıştır. ::"
+":mod:`socket` modülü, https://www.wide.ad.jp adresindeki WIDE Projesi'nden "
+"ayrı kaynak dosyalarında kodlanan :func:`getaddrinfo` ve :func:`getnameinfo` "
+"fonksiyonlarını kullanır. /. ::"
 
 #: license.rst:387
 msgid "Asynchronous socket services"
@@ -407,7 +406,6 @@ msgid "strtod and dtoa"
 msgstr "strtod ve dtoa"
 
 #: license.rst:626
-#, fuzzy
 msgid ""
 "The file :file:`Python/dtoa.c`, which supplies C functions dtoa and strtod "
 "for conversion of C doubles to and from strings, is derived from the file of "
@@ -416,11 +414,12 @@ msgid ""
 "as retrieved on March 16, 2009, contains the following copyright and "
 "licensing notice::"
 msgstr ""
-"C double'larının dizgilere ve dizgelerden dönüştürülmesi için dtoa ve strtod "
-"C işlevlerini sağlayan :file:`Python/dtoa.c` dosyası, şu anda http://www."
-"netlib.org/fp/ adresinden erişilebilen David M. Gay'in aynı adlı dosyasından "
-"türetilmiştir. 16 Mart 2009'da alınan orijinal dosya, aşağıdaki telif hakkı "
-"ve lisans bildirimini içerir::"
+"C double'larının dizelere ve dizelerden dönüştürülmesi için dtoa ve strtod C "
+"fonksiyonlarını sağlayan :file:`Python/dtoa.c` dosyası, şu anda https://web."
+"archive.org/web/20220517033456/http://www.netlib.org/fp/dtoa.c 'den "
+"erişilebilen David M. Gay tarafından aynı adlı dosyadan türetilmiştir. 16 "
+"Mart 2009'da alınan orijinal dosya aşağıdaki telif hakkı ve lisans "
+"bildirimini içerir:"
 
 #: license.rst:654
 msgid "OpenSSL"
@@ -521,9 +520,10 @@ msgstr ""
 
 #: license.rst:990
 msgid "Audioop"
-msgstr ""
+msgstr "Audioop"
 
 #: license.rst:992
 msgid ""
 "The audioop module uses the code base in g771.c file of the SoX project::"
 msgstr ""
+"Audioop modülü, SoX projesinin g771.c dosyasındaki kod tabanını kullanır::"
