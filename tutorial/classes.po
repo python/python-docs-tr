@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: 2022-01-17 22:57+0300\n"
+"PO-Revision-Date: 2022-12-28 21:28+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: tutorial/classes.rst:5
 msgid "Classes"
@@ -269,29 +269,27 @@ msgstr ""
 #: tutorial/classes.rst:120
 msgid "the innermost scope, which is searched first, contains the local names"
 msgstr ""
-"En içte bulunan kapsam, ilk aranan olmakla birlikte yerel isimleri içerir."
+"en içte bulunan kapsam, ilk aranan olmakla birlikte yerel isimleri içerir"
 
 #: tutorial/classes.rst:121
-#, fuzzy
 msgid ""
 "the scopes of any enclosing functions, which are searched starting with the "
 "nearest enclosing scope, contain non-local, but also non-global names"
 msgstr ""
-"En yakın kapsayan kapsamdan başlayarak aranan kapsayan fonksiyonların "
+"en yakın kapsayan kapsamdan başlayarak aranan kapsayan fonksiyonların "
 "kapsamları yerel olmayan, aynı zamanda genel olmayan adlar içerir"
 
 #: tutorial/classes.rst:123
 msgid "the next-to-last scope contains the current module's global names"
-msgstr "Sondan bir önceki kapsam, geçerli modülün genel adlarını içerir"
+msgstr "sondan bir önceki kapsam, geçerli modülün genel adlarını içerir"
 
 #: tutorial/classes.rst:124
 msgid ""
 "the outermost scope (searched last) is the namespace containing built-in "
 "names"
-msgstr "En dıştaki kapsam (en son aranan), yerleşik adlar içeren ad alanıdır"
+msgstr "en dıştaki kapsam (en son aranan), yerleşik adlar içeren ad alanıdır"
 
 #: tutorial/classes.rst:126
-#, fuzzy
 msgid ""
 "If a name is declared global, then all references and assignments go "
 "directly to the next-to-last scope containing the module's global names.  To "
@@ -301,7 +299,7 @@ msgid ""
 "*new* local variable in the innermost scope, leaving the identically named "
 "outer variable unchanged)."
 msgstr ""
-"Bir ad genel olarak bildirilirse, tüm başvurular ve atamalar doğrudan "
+"Bir ad global olarak bildirilirse, tüm başvurular ve atamalar doğrudan "
 "modülün genel adlarını içeren orta kapsama gider.  En iç kapsamın dışında "
 "bulunan değişkenleri yeniden bağlamak için :keyword:`nonlocal` ifadesi "
 "kullanılabilir; yerel olarak bildirilmezse de, bu değişkenler salt okunurdur "
@@ -553,7 +551,6 @@ msgstr ""
 "bir metot tanımlayabilir:"
 
 #: tutorial/classes.rst:299
-#, fuzzy
 msgid ""
 "When a class defines an :meth:`__init__` method, class instantiation "
 "automatically invokes :meth:`__init__` for the newly created class "
@@ -562,7 +559,7 @@ msgid ""
 msgstr ""
 "Bir sınıf bir :meth:`__init__` metodunu tanımladığında, örnekleme işlemi "
 "yeni oluşturulan sınıf örneği için otomatik olarak :meth:`__init__` öğesini "
-"çağırır.  Bu örnekte, yeni başlatılmış bir örnek şu şekilde elde edilebilir:"
+"çağırır.  Bu örnekte, yeni başlatılmış bir örnek şu şekilde elde edilebilir::"
 
 #: tutorial/classes.rst:305
 msgid ""
@@ -658,7 +655,7 @@ msgstr ""
 
 #: tutorial/classes.rst:374
 msgid "will continue to print ``hello world`` until the end of time."
-msgstr "daima ``hello world`` yazdırmaya devam edecek"
+msgstr "daima ``hello world`` yazdırmaya devam edecek."
 
 #: tutorial/classes.rst:376
 msgid ""
@@ -687,10 +684,10 @@ msgid ""
 msgstr ""
 "Aslında, cevabı tahmin etmiş olabilirsiniz: yöntemlerle ilgili özel şey, "
 "örnek nesnesinin fonksiyonun ilk argüman olarak geçirilmesidir.  "
-"Örneğimizde, ``x.f()`` çağrısı tam olarak ``MyClass.f(x)`` ile eşdeğerdir.  "
+"Örneğimizde, ``x.f()`` çağrısı tam olarak ``MyClass.f(x)`` ile eş değerdir.  "
 "Genel olarak, *n* tane argümana sahip bir metodu çağırmak, ilk argümandan "
 "önce metodun örnek nesnesi eklenerek oluşturulan bir argüman listesiyle "
-"karşılık gelen fonksiyonu çağırmaya eşdeğerdir."
+"karşılık gelen fonksiyonu çağırmaya eş değerdir."
 
 #: tutorial/classes.rst:389
 msgid ""
@@ -819,7 +816,7 @@ msgstr ""
 "için kesinlikle özel bir anlamı yoktur.  Bununla birlikte, kurala "
 "uymadığınızda kodunuzun diğer Python programcıları tarafından daha az "
 "okunabilir olabileceğini ve yazılabilecek potansiyel bir *sınıf tarayıcısı* "
-"programının bu kurala dayanıyor olabileceğini unutmayın"
+"programının bu kurala dayanıyor olabileceğini unutmayın."
 
 #: tutorial/classes.rst:518
 msgid ""
@@ -842,7 +839,7 @@ msgid ""
 msgstr ""
 "Buradaki ``f``, ``g`` ve ``h`` fonksiyonları nesnelerine başvuran :class:`C` "
 "sınıfının bütün nitelikleridir ve sonuç olarak hepsi :class:`C` --- ``h`` "
-"sınıfının örneklerinin metotları olarak tümüyle ``g`` 'ye eşdeğerdir.  Bu "
+"sınıfının örneklerinin metotları olarak tümüyle ``g`` 'ye eş değerdir.  Bu "
 "kullanım şeklinin genellikle yalnızca bir programı okuyan kişinin kafasını "
 "karıştırmaya yaradığını unutmayın."
 
@@ -1065,7 +1062,7 @@ msgstr ""
 "bir sınıf, üst sınıfının öncelik sırasını etkilemeden alt "
 "sınıflandırılabilir). Birlikte ele alındığında, bu özellikler çoklu kalıtım "
 "ile güvenilir ve genişletilebilir sınıflar tasarlamayı mümkün kılar.  Daha "
-"fazla ayrıntı için bkz. https://www.python.org/download/releases/2.3/mro/"
+"fazla ayrıntı için bkz. https://www.python.org/download/releases/2.3/mro/."
 
 #: tutorial/classes.rst:674
 msgid "Private Variables"

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: 2022-02-20 19:35+0300\n"
+"PO-Revision-Date: 2022-12-28 22:18+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: tutorial/errors.rst:5
 msgid "Errors and Exceptions"
@@ -228,7 +228,6 @@ msgstr ""
 "tetiklenir."
 
 #: tutorial/errors.rst:150
-#, fuzzy
 msgid ""
 "When an exception occurs, it may have associated values, also known as the "
 "exception's *arguments*. The presence and types of the arguments depend on "
@@ -238,7 +237,6 @@ msgstr ""
 "bir değeri olabilir. Argümanın varlığı ve türü, istisna türüne bağlıdır."
 
 #: tutorial/errors.rst:154
-#, fuzzy
 msgid ""
 "The *except clause* may specify a variable after the exception name.  The "
 "variable is bound to the exception instance which typically has an ``args`` "
@@ -246,22 +244,19 @@ msgid ""
 "types define :meth:`__str__` to print all the arguments without explicitly "
 "accessing ``.args``.  ::"
 msgstr ""
-"*except yan tümcesi*, istisna adından sonra bir değişken belirtebilir. "
-"Değişken, ``instance.args`` içinde depolanan bağımsız değişkenlerle bir "
-"istisna örneğine bağlıdır. Kolaylık sağlamak için, istisna örneği :meth:"
-"`__str__` öğesini tanımlar, böylece argümanlar ``.args`` öğesine başvurmak "
-"zorunda kalmadan doğrudan yazdırılabilir. Ayrıca, bir istisna, onu "
-"yükseltmeden önce başlatabilir ve istendiği gibi ona herhangi bir nitelik "
-"ekleyebilir. ::"
+"*except yan tümcesi*, istisna adından sonra bir değişken belirtebilir.  "
+"Değişken, genellikle bağımsız değişkenleri depolayan bir ``args`` "
+"özniteliğine sahip istisna örneğine bağlıdır. Kolaylık sağlamak için, "
+"yerleşik istisna türleri :meth:`__str__`, ``.args`` öğesine açıkça erişmeden "
+"tüm argümanları yazdırmak için tanımlar.  ::"
 
 #: tutorial/errors.rst:177
-#, fuzzy
 msgid ""
 "The exception's :meth:`__str__` output is printed as the last part "
 "('detail') of the message for unhandled exceptions."
 msgstr ""
-"Bir istisnanın argümanları varsa, bunlar işlenmeyen istisnalar için mesajın "
-"son kısmı ('ayrıntı') olarak yazdırılır."
+"İstisnanın :meth:`__str__` çıktısı, işlenmeyen istisnalar için mesajın son "
+"kısmı ('ayrıntı') olarak yazdırılır."
 
 #: tutorial/errors.rst:180
 msgid ""
@@ -273,6 +268,13 @@ msgid ""
 "exit` and :exc:`KeyboardInterrupt` which is raised when a user wishes to "
 "interrupt the program."
 msgstr ""
+":exc:`BaseException`, tüm istisnaların ortak temel sınıfıdır. Alt "
+"sınıflarından biri olan :exc:`Exception`, tüm önemli olmayan istisnaların "
+"temel sınıfıdır. :exc:`Exception` öğesinin alt sınıfları olmayan istisnalar "
+"genellikle işlenmez, çünkü bunlar programın sona ermesi gerektiğini "
+"belirtmek için kullanılır. Bunlar :meth:`sys.exit` tarafından oluşturulan :"
+"exc:`SystemExit` ve bir kullanıcı programı kesmek istediğinde ortaya çıkan :"
+"exc:`KeyboardInterrupt` içerir."
 
 #: tutorial/errors.rst:188
 msgid ""
@@ -281,6 +283,10 @@ msgid ""
 "exceptions that we intend to handle, and to allow any unexpected exceptions "
 "to propagate on."
 msgstr ""
+":exc:`Exception` (neredeyse) her şeyi yakalayan bir joker karakter "
+"(wildcard) olarak kullanılabilir. Ancak, işlemeyi amaçladığımız istisna "
+"türleri konusunda mümkün olduğunca spesifik olmak ve beklenmeyen "
+"istisnaların yayılmasına izin vermek iyi bir uygulamadır."
 
 #: tutorial/errors.rst:193
 msgid ""
@@ -288,6 +294,9 @@ msgid ""
 "exception and then re-raise it (allowing a caller to handle the exception as "
 "well)::"
 msgstr ""
+":exc:`Exception` işlemek için en yaygın model, istisnayı yazdırmak veya "
+"log'a kaydetmek ve ardından yeniden yükseltmektir (arayanın istisnayı da "
+"işlemesine izin verir)::"
 
 #: tutorial/errors.rst:211
 msgid ""
@@ -314,19 +323,18 @@ msgstr ""
 "keyword:`!except` ifadesi."
 
 #: tutorial/errors.rst:230
-#, fuzzy
 msgid ""
 "Exception handlers do not handle only exceptions that occur immediately in "
 "the *try clause*, but also those that occur inside functions that are called "
 "(even indirectly) in the *try clause*. For example::"
 msgstr ""
-"İstisna işleyicileri, istisnaları yalnızca *try yan tümcesinde* hemen ortaya "
-"çıktıklarında değil, aynı zamanda *try yan tümcesinde* çağrılan (dolaylı "
-"olarak bile) işlevlerin içinde ortaya çıktıklarında da ele alırlar. Örneğin::"
+"İstisna işleyicileri, yalnızca *try yan tümcesinde* anında ortaya çıkan "
+"istisnaları değil, aynı zamanda *try yan tümcesinde* çağrılan (dolaylı "
+"olarak da olsa) işlevlerin içinde oluşan istisnaları da işler. Örneğin::"
 
 #: tutorial/errors.rst:248
 msgid "Raising Exceptions"
-msgstr "Hata Ortaya Çıkartma"
+msgstr "Hata Yükseltme"
 
 #: tutorial/errors.rst:250
 msgid ""
@@ -337,7 +345,6 @@ msgstr ""
 "gerçekleşmesini zorlamasını sağlar. Örneğin::"
 
 #: tutorial/errors.rst:258
-#, fuzzy
 msgid ""
 "The sole argument to :keyword:`raise` indicates the exception to be raised. "
 "This must be either an exception instance or an exception class (a class "
@@ -346,9 +353,10 @@ msgid ""
 "instantiated by calling its constructor with no arguments::"
 msgstr ""
 ":keyword:`raise` için tek argüman, ortaya çıkacak istisnayı belirtir. Bu, "
-"bir istisna örneği veya bir istisna sınıfı (:class:`Exception` dan türetilen "
-"bir sınıf) olmalıdır. Argüman verilmezse, yapıcısı hiçbir argüman olmadan "
-"çağrılarak örtük olarak başlatılacaktır::"
+"bir istisna örneği veya bir istisna sınıfı (:class:`BaseException` 'dan "
+"türetilen bir sınıf, örneğin :exc:`Exception` veya alt sınıflarından) "
+"olmalıdır.  Bir istisna sınıfı iletilirse, yapıcısını hiçbir argüman olmadan "
+"çağırarak dolaylı olarak başlatılır::"
 
 #: tutorial/errors.rst:266
 msgid ""
@@ -370,12 +378,18 @@ msgid ""
 "will have the exception being handled attached to it and included in the "
 "error message::"
 msgstr ""
+"Bir :keyword:`except` bölümü içinde işlenmeyen bir istisna meydana gelirse, "
+"istisnanın kendisine eklenmiş olarak işlenmesi ve şu hata mesajına dahil "
+"edilmesi gerekir::"
 
 #: tutorial/errors.rst:306
 msgid ""
 "To indicate that an exception is a direct consequence of another, the :"
 "keyword:`raise` statement allows an optional :keyword:`from<raise>` clause::"
 msgstr ""
+":keyword:`raise` ifadesi, bir istisnanın başka bir istisnanın doğrudan "
+"sonucu olduğunu belirtmek için isteğe bağlı :keyword:`from<raise>` yan "
+"tümcesine izin verir::"
 
 #: tutorial/errors.rst:312
 msgid "This can be useful when you are transforming exceptions. For example::"
@@ -386,6 +400,8 @@ msgid ""
 "It also allows disabling automatic exception chaining using the ``from "
 "None`` idiom::"
 msgstr ""
+"Ayrıca, ``from None`` deyimi kullanılarak otomatik istisna zincirlemenin "
+"devre dışı bırakılmasına izin verir::"
 
 #: tutorial/errors.rst:345
 msgid ""
@@ -411,21 +427,16 @@ msgstr ""
 "`Exception` sınıfından türetilmelidir."
 
 #: tutorial/errors.rst:357
-#, fuzzy
 msgid ""
 "Exception classes can be defined which do anything any other class can do, "
 "but are usually kept simple, often only offering a number of attributes that "
 "allow information about the error to be extracted by handlers for the "
 "exception."
 msgstr ""
-"İstisna sınıfları, başka bir sınıfın yapabileceği her şeyi yapan "
-"sınıflarolarak tanımlanabilir, ancak genellikle basit tutulur, genellikle "
-"yalnızca hata hakkındaki bilgilerin özel durum için işleyiciler tarafından "
-"ayıklanmasına izin veren bir dizi özellik sunar.  Birkaç farklı hata "
-"oluşturabilecek bir modül oluştururken, yaygın bir uygulama, bu modül "
-"tarafından tanımlanan özel durumlar için bir temel sınıf ve farklı hata "
-"koşulları için belirli özel durum sınıfları oluşturmak için bir alt sınıf "
-"oluşturmaktır::"
+"İstisna sınıfları, başka herhangi bir sınıfın yapabileceği her şeyi yapan "
+"tanımlanabilir, ancak genellikle basit tutulur ve çoğu zaman yalnızca "
+"istisna için işleyiciler tarafından hatayla ilgili bilgilerin çıkarılmasına "
+"izin veren bir dizi öznitelik sunar."
 
 #: tutorial/errors.rst:361
 msgid ""
@@ -436,14 +447,12 @@ msgstr ""
 "\"Hata\" ile biten adlarla tanımlanır."
 
 #: tutorial/errors.rst:364
-#, fuzzy
 msgid ""
 "Many standard modules define their own exceptions to report errors that may "
 "occur in functions they define."
 msgstr ""
 "Birçok standart modül, tanımladıkları işlevlerde oluşabilecek hataları "
-"bildirmek için kendi istisnalarını tanımlar.  Dersler hakkında daha fazla "
-"bilgi :ref:`tut-classes` bölümünde sunulmaktadır."
+"raporlamak için kendi istisnalarını tanımlar."
 
 #: tutorial/errors.rst:371
 msgid "Defining Clean-up Actions"
@@ -600,7 +609,7 @@ msgstr ""
 
 #: tutorial/errors.rst:496
 msgid "Raising and Handling Multiple Unrelated Exceptions"
-msgstr ""
+msgstr "Birden Fazla Alakasız İstisna Oluşturma ve İşleme"
 
 #: tutorial/errors.rst:498
 msgid ""
@@ -610,6 +619,11 @@ msgid ""
 "cases where it is desirable to continue execution and collect multiple "
 "errors rather than raise the first exception."
 msgstr ""
+"Meydana gelen birkaç istisnanın rapor edilmesinin gerekli olduğu durumlar "
+"vardır. Bu, genellikle birkaç görevin paralel olarak başarısız olabileceği "
+"eşzamanlılık çerçevelerinde geçerlidir, ancak ilk istisnayı yükseltmek "
+"yerine yürütmeye devam etmenin ve birden çok hata toplamanın istendiği başka "
+"kullanım durumları da vardır."
 
 #: tutorial/errors.rst:504
 msgid ""
@@ -617,6 +631,9 @@ msgid ""
 "that they can be raised together. It is an exception itself, so it can be "
 "caught like any other exception. ::"
 msgstr ""
+"Yerleşik :exc:`ExceptionGroup`, birlikte oluşturulabilmeleri için istisna "
+"örneklerinin bir listesini sarar. Kendisi bir istisnadır, bu nedenle "
+"herhangi bir istisna gibi yakalanabilir. ::"
 
 #: tutorial/errors.rst:530
 msgid ""
@@ -626,6 +643,11 @@ msgid ""
 "extracts from the group exceptions of a certain type while letting all other "
 "exceptions propagate to other clauses and eventually to be reraised. ::"
 msgstr ""
+"``except`` yerine ``except*`` kullanarak, yalnızca gruptaki belirli bir "
+"türle eşleşen istisnaları seçerek işleyebiliriz. İç içe geçmiş bir istisna "
+"grubunu gösteren aşağıdaki örnekte, her bir ``except*`` yan tümcesi, diğer "
+"tüm istisnaların diğer yan tümcelere yayılmasına ve sonunda yeniden ortaya "
+"çıkmasına izin verirken, belirli bir türdeki grup istisnalarını çıkarır. ::"
 
 #: tutorial/errors.rst:564
 msgid ""
@@ -634,11 +656,14 @@ msgid ""
 "that have already been raised and caught by the program, along the following "
 "pattern::"
 msgstr ""
+"Bir istisna grubunda iç içe geçmiş istisnaların türler değil, örnekler "
+"olması gerektiğini unutmayın. Bunun nedeni, pratikte istisnaların tipik "
+"olarak, aşağıdaki kalıp boyunca program tarafından önceden oluşturulmuş ve "
+"yakalanmış olanlar olmasıdır::"
 
 #: tutorial/errors.rst:582
-#, fuzzy
 msgid "Enriching Exceptions with Notes"
-msgstr "Hata Ortaya Çıkartma"
+msgstr "İstisnaları Notlarla Zenginleştirme"
 
 #: tutorial/errors.rst:584
 msgid ""
@@ -650,6 +675,12 @@ msgid ""
 "standard traceback rendering includes all notes, in the order they were "
 "added, after the exception. ::"
 msgstr ""
+"Yükseltilmek üzere bir istisna oluşturulduğunda, genellikle meydana gelen "
+"hatayı açıklayan bilgilerle başlatılır. İstisna yakalandıktan sonra bilgi "
+"eklemenin yararlı olduğu durumlar vardır. Bu amaçla, istisnaların bir "
+"dizgiyi kabul eden ve onu istisnanın notlar listesine ekleyen "
+"``add_note(note)`` metodu vardır. Standart geri işleme (traceback) "
+"oluşturma, tüm notları istisnadan sonra eklendikleri sırayla içerir. ::"
 
 #: tutorial/errors.rst:605
 msgid ""
@@ -657,6 +688,9 @@ msgid ""
 "to add context information for the individual errors. In the following each "
 "exception in the group has a note indicating when this error has occurred. ::"
 msgstr ""
+"Örneğin, istisnaları bir istisna grubuna toplarken, bireysel hatalar için "
+"bağlam bilgisi eklemek isteyebiliriz. Aşağıda, gruptaki her özel durum, bu "
+"hatanın ne zaman oluştuğunu gösteren bir nota sahiptir. ::"
 
 #~ msgid ""
 #~ "All exceptions inherit from :exc:`BaseException`, and so it can be used "
