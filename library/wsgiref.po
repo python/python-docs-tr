@@ -1,7 +1,7 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -71,8 +71,8 @@ msgstr ""
 
 #: library/wsgiref.rst:53
 msgid ""
-"Return a guess for whether ``wsgi.url_scheme`` should be \"http\" or \"https"
-"\", by checking for a ``HTTPS`` environment variable in the *environ* "
+"Return a guess for whether ``wsgi.url_scheme`` should be \"http\" or "
+"\"https\", by checking for a ``HTTPS`` environment variable in the *environ* "
 "dictionary.  The return value is a string."
 msgstr ""
 
@@ -819,11 +819,11 @@ msgstr ""
 
 #: library/wsgiref.rst:744
 msgid ""
-"Transcode CGI variables from ``os.environ`` to :pep:`3333` \"bytes in unicode"
-"\" strings, returning a new dictionary.  This function is used by :class:"
-"`CGIHandler` and :class:`IISCGIHandler` in place of directly using ``os."
-"environ``, which is not necessarily WSGI-compliant on all platforms and web "
-"servers using Python 3 -- specifically, ones where the OS's actual "
+"Transcode CGI variables from ``os.environ`` to :pep:`3333` \"bytes in "
+"unicode\" strings, returning a new dictionary.  This function is used by :"
+"class:`CGIHandler` and :class:`IISCGIHandler` in place of directly using "
+"``os.environ``, which is not necessarily WSGI-compliant on all platforms and "
+"web servers using Python 3 -- specifically, ones where the OS's actual "
 "environment is Unicode (i.e. Windows), or ones where the environment is "
 "bytes, but the system encoding used by Python to decode it is anything other "
 "than ISO-8859-1 (e.g. Unix systems using UTF-8)."

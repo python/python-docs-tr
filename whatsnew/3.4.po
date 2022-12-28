@@ -1,7 +1,7 @@
 # Python Documentation Turkish Translation
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -3267,9 +3267,9 @@ msgstr ""
 msgid ""
 ":func:`base64.b32decode` now raises a :exc:`binascii.Error` when the input "
 "string contains non-b32-alphabet characters, instead of a :exc:`TypeError`.  "
-"This particular :exc:`TypeError` was missed when the other :exc:`TypeError`"
-"\\ s were converted.  (Contributed by Serhiy Storchaka in :issue:`18011`.)  "
-"Note: this change was also inadvertently applied in Python 3.3.3."
+"This particular :exc:`TypeError` was missed when the other :exc:"
+"`TypeError`\\ s were converted.  (Contributed by Serhiy Storchaka in :issue:"
+"`18011`.)  Note: this change was also inadvertently applied in Python 3.3.3."
 msgstr ""
 
 #: whatsnew/3.4.rst:2373
