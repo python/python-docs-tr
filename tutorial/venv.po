@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: 2021-12-27 22:33+0300\n"
+"PO-Revision-Date: 2022-12-28 23:02+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -162,13 +162,12 @@ msgstr ""
 "çalıştırmasını sağlar. Mesela:"
 
 #: tutorial/venv.rst:91
-#, fuzzy
 msgid "To deactivate a virtual environment, type::"
-msgstr "Sanal Ortamlar Oluşturma"
+msgstr "Bir sanal ortamı devre dışı bırakmak için şunu yazın::"
 
 #: tutorial/venv.rst:95
 msgid "into the terminal."
-msgstr ""
+msgstr "terminalin içine."
 
 #: tutorial/venv.rst:98
 msgid "Managing Packages with pip"
@@ -192,9 +191,9 @@ msgid ""
 "etc.  (Consult the :ref:`installing-index` guide for complete documentation "
 "for ``pip``.)"
 msgstr ""
-"``pip`` bir dizi alt komut içerir: \"install\" (yükle), "
-"\"uninstall\" (kaldır), \"freeze\" (dondur), vb.  (``pip`` için eksiksiz "
-"dokümantasyon için :ref:`installing-index` rehberine bakın.)"
+"``pip`` bir dizi alt komut içerir: \"install\" (yükle), \"uninstall"
+"\" (kaldır), \"freeze\" (dondur), vb.  (``pip`` için eksiksiz dokümantasyon "
+"için :ref:`installing-index` rehberine bakın.)"
 
 #: tutorial/venv.rst:109
 msgid ""
@@ -211,51 +210,49 @@ msgstr ""
 "numarasını vererek de yükleyebilirsiniz:"
 
 #: tutorial/venv.rst:131
-#, fuzzy
 msgid ""
 "If you re-run this command, ``pip`` will notice that the requested version "
 "is already installed and do nothing.  You can supply a different version "
 "number to get that version, or you can run ``python -m pip install --"
 "upgrade`` to upgrade the package to the latest version:"
 msgstr ""
-"Bu komutu yeniden çalıştırırsanız, ``pip`` istenen sürümün zaten yüklü "
-"olduğunu fark eder ve hiçbir şey yapmaz.  Bu sürüme erişmek için farklı bir "
-"sürüm numarası edinebilir veya paketi en son sürüme yükseltmek için ``pip "
-"install --upgrade`` komutunu çalıştırabilirsiniz:"
+"Bu komutu tekrar çalıştırırsanız, ``pip`` istenen sürümün kurulu olduğunu "
+"fark edecek ve hiçbir şey yapmayacaktır. Bu sürümü almak için farklı bir "
+"sürüm numarası sağlayabilir veya paketi en son sürüme yükseltmek için "
+"``python -m pip install --upgrade`` komutunu çalıştırabilirsiniz:"
 
 #: tutorial/venv.rst:146
-#, fuzzy
 msgid ""
 "``python -m pip uninstall`` followed by one or more package names will "
 "remove the packages from the virtual environment."
 msgstr ""
-"``pip uninstall`` ve ardından bir veya daha fazla paket adı paketleri sanal "
-"ortamdan kaldırır."
+"``python -m pip uninstall`` ve ardından gelen bir veya daha fazla paket adı, "
+"paketleri sanal ortamdan kaldıracaktır."
 
 #: tutorial/venv.rst:149
-#, fuzzy
 msgid ""
 "``python -m pip show`` will display information about a particular package:"
-msgstr "``pip show`` belirli bir paketle ilgili bilgileri görüntüler:"
+msgstr ""
+"``python -m pip show`` belirli bir paket hakkındaki bilgileri "
+"görüntüleyecektir:"
 
 #: tutorial/venv.rst:166
-#, fuzzy
 msgid ""
 "``python -m pip list`` will display all of the packages installed in the "
 "virtual environment:"
-msgstr "``pip list`` sanal ortamda yüklü tüm paketleri görüntüler:"
+msgstr ""
+"``python -m pip list`` sanal ortamda yüklü olan tüm paketleri gösterecektir:"
 
 #: tutorial/venv.rst:178
-#, fuzzy
 msgid ""
 "``python -m pip freeze`` will produce a similar list of the installed "
 "packages, but the output uses the format that ``python -m pip install`` "
 "expects. A common convention is to put this list in a ``requirements.txt`` "
 "file:"
 msgstr ""
-"``pip freeze`` yüklü paketlerin benzer bir listesini oluşturur, ancak çıktı "
-"``pip install`` beklediği biçimi kullanır. Genel bir kullanım, bu listeyi "
-"bir ``requirements.txt`` dosyasına koymaktır:"
+"``python -m pip freeze`` yüklü paketlerin benzer bir listesini üretecektir, "
+"ancak çıktı ``python -m pip install``'ın beklediği biçimi kullanır. Genel "
+"bir kullanım bu listeyi bir ``requirements.txt`` dosyasına koymaktır:"
 
 #: tutorial/venv.rst:190
 msgid ""
