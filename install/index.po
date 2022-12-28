@@ -478,7 +478,7 @@ msgid ""
 "find out my :file:`{prefix}` and :file:`{exec-prefix}`:"
 msgstr ""
 ":file:`{prefix}` ve :file:`{exec-prefix}` Python'un kurulu olduğu dizinleri "
-"ve çalışma zamanında kitaplıklarını nerede bulduğunu gösterir. Windows "
+"ve çalışma zamanında kütüphanelerini nerede bulduğunu gösterir. Windows "
 "altında her zaman aynıdırlar ve çoğu zaman Unix ve macOS altında aynıdırlar. "
 "Python kurulumunuzun :file:`{prefix}` ve :file:`{exec-prefix}` için ne "
 "kullandığını Python'u etkileşimli modda çalıştırarak ve birkaç basit komut "
@@ -680,8 +680,8 @@ msgid ""
 msgstr ""
 ":command:`build_ext` komutu ayrıca başlık dosyaları ve :file:`{userbase}/"
 "lib` için derleyici arama yoluna :file:`{userbase}/include` eklemek için bir "
-"``--user`` seçeneğine sahiptir. kitaplıklar için derleyici arama yolunun "
-"yanı sıra paylaşılan C kitaplıkları (rpath) için çalışma zamanı arama yoluna."
+"``--user`` seçeneğine sahiptir. kütüphaneler için derleyici arama yolunun "
+"yanı sıra paylaşılan C kütüphaneleri (rpath) için çalışma zamanı arama yoluna."
 
 #: install/index.rst:352
 msgid "Alternate installation: the home scheme"
@@ -826,7 +826,7 @@ msgstr ""
 "Her iki durumda da, :option:`!--prefix` seçeneği kurulum tabanını tanımlar "
 "ve :option:`!--exec-prefix` seçeneği platforma özel dosyalar için kullanılan "
 "platforma özel kurulum tabanını tanımlar. . (Şu anda, bu yalnızca saf "
-"olmayan modül dağıtımları anlamına gelir, ancak C kitaplıklarına, ikili "
+"olmayan modül dağıtımları anlamına gelir, ancak C kütüphanelerine, ikili "
 "yürütülebilir dosyalara vb. genişletilebilir.) :option:`!--exec-prefix` "
 "sağlanmazsa, varsayılan olarak :option:`! --prefix`. Dosyalar aşağıdaki gibi "
 "yüklenir:"
@@ -1118,7 +1118,7 @@ msgstr ""
 
 #: install/index.rst:574
 msgid "or, equivalently, ::"
-msgstr "Veya eşdeğer olarak, ::"
+msgstr "Veya eş değer olarak, ::"
 
 #: install/index.rst:582
 msgid ""
@@ -1143,7 +1143,7 @@ msgstr ""
 
 #: install/index.rst:599
 msgid "or, equivalently,"
-msgstr "Veya eşdeğer olarak,"
+msgstr "Veya eş değer olarak,"
 
 #: install/index.rst:610
 msgid ""
@@ -1151,7 +1151,7 @@ msgid ""
 "installation base directory when you run the setup script.  For example, ::"
 msgstr ""
 "Kurulum komut dosyasını çalıştırırken farklı bir kurulum temel dizini "
-"sağlarsanız, bu ikisinin eşdeğer *değil* olduğunu unutmayın. Örneğin, ::"
+"sağlarsanız, bu ikisinin eş değer *değil* olduğunu unutmayın. Örneğin, ::"
 
 #: install/index.rst:615
 msgid ""
@@ -1703,7 +1703,7 @@ msgid ""
 "can add it by editing the :file:`Setup` file and running ``python setup.py "
 "build``. For example, if the module defined by the line ::"
 msgstr ""
-"Belirli bir platform, platformunuzda özel bir kitaplık gerektiriyorsa, bunu :"
+"Belirli bir platform, platformunuzda özel bir kütüphane gerektiriyorsa, bunu :"
 "file:`Setup` dosyasını düzenleyerek ve ``python setup.py build`` "
 "çalıştırarak ekleyebilirsiniz. Örneğin, modül :: satırı ile tanımlanırsa"
 
@@ -1786,7 +1786,7 @@ msgid ""
 msgstr ""
 ":file:`coff2omf` programı Borland derleyicisiyle birlikte gelir. :file:"
 "`python25.lib` dosyası, Python kurulumunuzun :file:`Libs` dizinindedir. "
-"Uzantınız başka kitaplıklar (zlib, …) kullanıyorsa, onları da dönüştürmeniz "
+"Uzantınız başka kütüphaneler (zlib, …) kullanıyorsa, onları da dönüştürmeniz "
 "gerekir."
 
 #: install/index.rst:973
@@ -1794,7 +1794,7 @@ msgid ""
 "The converted files have to reside in the same directories as the normal "
 "libraries."
 msgstr ""
-"Dönüştürülen dosyalar, normal kitaplıklarla aynı dizinlerde bulunmalıdır."
+"Dönüştürülen dosyalar, normal kütüphanelerle aynı dizinlerde bulunmalıdır."
 
 #: install/index.rst:976
 msgid ""
@@ -1804,11 +1804,11 @@ msgid ""
 "then uses this library.  In the case it doesn't find such a special library "
 "it uses the default name (:file:`foo.lib`.) [#]_"
 msgstr ""
-"Distutils, bu kitaplıkları değişen adlarıyla kullanmayı nasıl başarıyor? "
+"Distutils, bu kütüphaneleri değişen adlarıyla kullanmayı nasıl başarıyor? "
 "Uzantının bir kitaplığa ihtiyacı varsa (örn. :file:`foo`) Distutils önce :"
-"file:`_bcpp` (örn. :file:`foo_bcpp.lib`) sonekine sahip bir kitaplık bulup "
+"file:`_bcpp` (örn. :file:`foo_bcpp.lib`) sonekine sahip bir kütüphane bulup "
 "bulmadığını kontrol eder ve ardından bu kitaplığı kullanır. Böyle özel bir "
-"kitaplık bulamazsa, varsayılan adı kullanır (:file:`foo.lib`.) [#]_"
+"kütüphane bulamazsa, varsayılan adı kullanır (:file:`foo.lib`.) [#]_"
 
 #: install/index.rst:982
 msgid ""
@@ -1957,7 +1957,7 @@ msgid ""
 "`python25.lib`. (Should be the :file:`libs` directory under your Python "
 "installation directory.)"
 msgstr ""
-"Ortaya çıkan kitaplık, :file:`python25.lib` ile aynı dizine "
+"Ortaya çıkan kütüphane, :file:`python25.lib` ile aynı dizine "
 "yerleştirilmelidir. (Python kurulum dizininizin altındaki :file:`libs` "
 "dizini olmalıdır.)"
 
@@ -1967,8 +1967,8 @@ msgid ""
 "them too. The converted files have to reside in the same directories as the "
 "normal libraries do."
 msgstr ""
-"Uzantınız başka kitaplıklar (zlib,…) kullanıyorsa, onları da dönüştürmeniz "
-"gerekebilir. Dönüştürülen dosyalar, normal kitaplıkların yaptığı gibi aynı "
+"Uzantınız başka kütüphaneler (zlib,…) kullanıyorsa, onları da dönüştürmeniz "
+"gerekebilir. Dönüştürülen dosyalar, normal kütüphanelerde olduğu gibi aynı "
 "dizinlerde bulunmalıdır."
 
 #: install/index.rst:1065
@@ -1983,7 +1983,7 @@ msgstr ""
 #: install/index.rst:1066
 msgid ""
 "Information about building the required libraries for the MinGW environment."
-msgstr "MinGW ortamı için gerekli kitaplıkları oluşturmaya ilişkin bilgiler."
+msgstr "MinGW ortamı için gerekli kütüphaneleri oluşturmaya ilişkin bilgiler."
 
 #: install/index.rst:1070
 msgid "Footnotes"
@@ -1994,8 +1994,8 @@ msgid ""
 "This also means you could replace all existing COFF-libraries with OMF-"
 "libraries of the same name."
 msgstr ""
-"Bu aynı zamanda mevcut tüm COFF kitaplıklarını aynı adı taşıyan OMF "
-"kitaplıklarıyla değiştirebileceğiniz anlamına gelir."
+"Bu aynı zamanda mevcut tüm COFF-kütüphanelerini aynı adı taşıyan OMF-"
+"kütüphaneleriyle değiştirebileceğiniz anlamına gelir."
 
 #: install/index.rst:1074
 msgid "Check https://www.sourceware.org/cygwin/ for more information"

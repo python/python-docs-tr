@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: 2022-06-17 01:21+0300\n"
+"PO-Revision-Date: 2022-12-28 21:39+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: tutorial/datastructures.rst:5
 msgid "Data Structures"
@@ -44,7 +44,7 @@ msgstr ""
 #: tutorial/datastructures.rst:22
 msgid ""
 "Add an item to the end of the list.  Equivalent to ``a[len(a):] = [x]``."
-msgstr "Listenin sonuna bir öğe ekleyin. ``a[len(a):] = [x]`` ile eşdeğerdir."
+msgstr "Listenin sonuna bir öğe ekleyin. ``a[len(a):] = [x]`` ile eş değerdir."
 
 #: tutorial/datastructures.rst:28
 msgid ""
@@ -52,7 +52,7 @@ msgid ""
 "``a[len(a):] = iterable``."
 msgstr ""
 "Listeyi iterable'daki tüm öğeleri ekleyerek genişletin.  ``a[len(a):] = "
-"iterable`` ile eşdeğerdir."
+"iterable`` ile eş değerdir."
 
 #: tutorial/datastructures.rst:35
 msgid ""
@@ -62,7 +62,7 @@ msgid ""
 msgstr ""
 "Verilen pozisyona bir öğe ekleyin.  İlk argüman, daha önce ekleyeceğiniz "
 "öğenin indeksidir, bu nedenle ``a.insert(0, x)`` listenin önüne ekler ve ``a."
-"insert(len(a), x)`` komutu ``a.append(x)`` komutu ile eşdeğerdir."
+"insert(len(a), x)`` komutu ``a.append(x)`` komutu ile eş değerdir."
 
 #: tutorial/datastructures.rst:43
 msgid ""
@@ -90,7 +90,7 @@ msgstr ""
 
 #: tutorial/datastructures.rst:60
 msgid "Remove all items from the list.  Equivalent to ``del a[:]``."
-msgstr "Listeden tüm öğeleri kaldırır.  ``del a[:]`` ile eşdeğerdir."
+msgstr "Listeden tüm öğeleri kaldırır.  ``del a[:]`` ile eş değerdir."
 
 #: tutorial/datastructures.rst:66
 msgid ""
@@ -130,14 +130,13 @@ msgstr "Listenin öğelerini yerinde ters çevirir."
 
 #: tutorial/datastructures.rst:97
 msgid "Return a shallow copy of the list.  Equivalent to ``a[:]``."
-msgstr "Listenin yüzeysel bir kopyasını döndürün. ``a[:]`` ile eşdeğerdir."
+msgstr "Listenin yüzeysel bir kopyasını döndürün. ``a[:]`` ile eş değerdir."
 
 #: tutorial/datastructures.rst:100
 msgid "An example that uses most of the list methods::"
 msgstr "Liste yöntemlerinin çoğunu kullanan bir örnek::"
 
 #: tutorial/datastructures.rst:123
-#, fuzzy
 msgid ""
 "You might have noticed that methods like ``insert``, ``remove`` or ``sort`` "
 "that only modify the list have no return value printed -- they return the "
@@ -145,8 +144,8 @@ msgid ""
 "structures in Python."
 msgstr ""
 "Listeyi yalnızca değiştiren ``insert``, ``remove`` veya ``sort`` gibi "
-"yöntemlerin hiçbir dönüş değeri yazdırmadığını fark etmiş olabilirsiniz. "
-"Onlar, varsayılan ``None`` değerini döndürürler. [1]_ Bu, Python'daki tüm "
+"yöntemlerin hiçbir dönüş değeri yazdırmadığını fark etmiş olabilirsiniz -- "
+"onlar varsayılan ``None`` değerini döndürürler. [#]_  Bu, Python'daki tüm "
 "değiştirilebilir veri yapıları için bir tasarım ilkesidir."
 
 #: tutorial/datastructures.rst:128
@@ -246,7 +245,7 @@ msgstr "veya aynı şekilde::"
 
 #: tutorial/datastructures.rst:223
 msgid "which is more concise and readable."
-msgstr "Ki bu daha kısa ve okunaklıdır."
+msgstr "ki bu daha kısa ve okunaklıdır."
 
 #: tutorial/datastructures.rst:225
 msgid ""
@@ -266,7 +265,7 @@ msgstr ""
 
 #: tutorial/datastructures.rst:235
 msgid "and it's equivalent to::"
-msgstr "ve şuna eşdeğerdir::"
+msgstr "ve şuna eş değerdir::"
 
 #: tutorial/datastructures.rst:246
 msgid ""
@@ -316,15 +315,13 @@ msgid "The following list comprehension will transpose rows and columns::"
 msgstr "Aşağıdaki liste kavraması satır ve sütunların yerlerini değiştirir::"
 
 #: tutorial/datastructures.rst:306
-#, fuzzy
 msgid ""
 "As we saw in the previous section, the inner list comprehension is evaluated "
 "in the context of the :keyword:`for` that follows it, so this example is "
 "equivalent to::"
 msgstr ""
-"Önceki bölümde gördüğümüz gibi, iç içe geçmiş listcomp, kendisini takip "
-"eden :keyword:`for` bağlamında değerlendirilir, bu nedenle bu örnek şuna "
-"eşdeğerdir::"
+"Önceki bölümde gördüğümüz gibi, iç liste kavrayışı, onu takip eden :keyword:"
+"`for` bağlamında değerlendirilir, bu nedenle bu örnek şuna eş değerdir::"
 
 #: tutorial/datastructures.rst:317
 msgid "which, in turn, is the same as::"
@@ -692,7 +689,6 @@ msgstr ""
 "değil, herhangi bir operatör içerebilir."
 
 #: tutorial/datastructures.rst:663
-#, fuzzy
 msgid ""
 "The comparison operators ``in`` and ``not in`` are membership tests that "
 "determine whether a value is in (or not in) a container.  The operators "
@@ -729,7 +725,7 @@ msgstr ""
 "ifadesinin) sonucu ``not`` ile olumsuzlanabilir.  Bunlar karşılaştırma "
 "operatörlerinden daha düşük önceliklere sahiptir; aralarında, ``not`` en "
 "yüksek önceliğe ve ``or`` en düşük önceliğe sahiptir, böylece ``A ve B değil "
-"veya C``, ``(A ve (B değil)) veya C`` ile eşdeğerdir. Her zaman olduğu gibi, "
+"veya C``, ``(A ve (B değil)) veya C`` ile eş değerdir. Her zaman olduğu gibi, "
 "istenen bileşimi ifade etmek için parantezler kullanılabilir."
 
 #: tutorial/datastructures.rst:679

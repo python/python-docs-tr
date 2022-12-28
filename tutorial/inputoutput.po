@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: 2022-02-24 21:32+0300\n"
+"PO-Revision-Date: 2022-12-28 22:43+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: tutorial/inputoutput.rst:5
 msgid "Input and Output"
@@ -119,7 +119,7 @@ msgid ""
 msgstr ""
 ":func:`str` işlevi açıkça okunabilir değerlerin gösterimlerini döndürmek "
 "için, :func:`repr` ise yorumlayıcı tarafından okunabilecek gösterimler "
-"oluşturmak içindir (veya eşdeğer bir sözdizimi yoksa :exc:`SyntaxError` 'ı "
+"oluşturmak içindir (veya eş değer bir sözdizimi yoksa :exc:`SyntaxError` 'ı "
 "zorlar).  İnsan tüketimi için belirli bir temsili olmayan nesneler için :"
 "func:`str`, :func:`repr` ile aynı değeri döndürür.  Sayılar veya listeler ve "
 "sözlükler benzeri yapılar gibi birçok değer, her iki işlevi de kullanarak "
@@ -192,16 +192,19 @@ msgid ""
 "expression, an equal sign, then the representation of the evaluated "
 "expression:"
 msgstr ""
+"``=`` belirleyicisi, bir ifadeyi ifadenin metnine, eşittir işaretine ve "
+"ardından değerlendirilen ifadenin temsiline genişletmek için kullanılabilir:"
 
 #: tutorial/inputoutput.rst:145
-#, fuzzy
 msgid ""
 "See :ref:`self-documenting expressions <bpo-36817-whatsnew>` for more "
 "information on the ``=`` specifier. For a reference on these format "
 "specifications, see the reference guide for the :ref:`formatspec`."
 msgstr ""
-"Bu biçim belirtimleri hakkında bir referans için :ref:`formatspec` için "
-"referans kılavuzuna bakın."
+"``=`` belirtici hakkında daha fazla bilgi için :ref:`kendi kendini "
+"belgeleyen ifadeler <bpo-36817-whatsnew>` konusuna bakın. Bu biçim "
+"belirtimleriyle ilgili bir referans için, :ref:`formatspec` için başvuru "
+"kılavuzuna bakın."
 
 #: tutorial/inputoutput.rst:152
 msgid "The String format() Method"
@@ -250,13 +253,12 @@ msgstr ""
 "ayraçları kullanarak yapılabilir. ::"
 
 #: tutorial/inputoutput.rst:192
-#, fuzzy
 msgid ""
 "This could also be done by passing the ``table`` dictionary as keyword "
 "arguments with the ``**`` notation. ::"
 msgstr ""
-"Bu, tabloyu '**' notasyonuyla anahtar sözcük argümanları olarak geçirerek de "
-"yapılabilir. ::"
+"Bu, ``table`` sözlüğünü ``**`` gösterimiyle anahtar kelime bağımsız "
+"değişkenleri olarak ileterek de yapılabilir. ::"
 
 #: tutorial/inputoutput.rst:199
 msgid ""
@@ -267,13 +269,12 @@ msgstr ""
 "işlev :func:`vars` ile birlikte yararlıdır."
 
 #: tutorial/inputoutput.rst:202
-#, fuzzy
 msgid ""
 "As an example, the following lines produce a tidily aligned set of columns "
 "giving integers and their squares and cubes::"
 msgstr ""
-"Örnek olarak, aşağıdaki satırlar tamsayılar ile kareleri ve küpleri veren "
-"düzenli olarak hizalanmış bir sütun kümesi oluşturur::"
+"Örnek olarak, aşağıdaki satırlar, tamsayıları ve bunların karelerini ve "
+"küplerini veren düzenli bir şekilde hizalanmış bir sütun kümesi oluşturur::"
 
 #: tutorial/inputoutput.rst:219
 msgid ""
@@ -354,14 +355,14 @@ msgid "Reading and Writing Files"
 msgstr "Dosyaları Okuma ve Yazma"
 
 #: tutorial/inputoutput.rst:291
-#, fuzzy
 msgid ""
 ":func:`open` returns a :term:`file object`, and is most commonly used with "
 "two positional arguments and one keyword argument: ``open(filename, mode, "
 "encoding=None)``"
 msgstr ""
-":func:`open` bir :term:`file object` 'i döndürür ve en sık iki argümanla "
-"kullanılır: ``open(filename, mode)``."
+":func:`open` bir :term:`file object` döndürür ve en yaygın olarak iki konum "
+"argümanı ve bir anahtar sözcük argümanı ile kullanılır: ``open(filename, "
+"mode, encoding=None)``"
 
 #: tutorial/inputoutput.rst:304
 msgid ""
@@ -383,7 +384,6 @@ msgstr ""
 "parametresi isteğe bağlıdır; verilmezse ``'r'`` varsayılacaktır."
 
 #: tutorial/inputoutput.rst:313
-#, fuzzy
 msgid ""
 "Normally, files are opened in :dfn:`text mode`, that means, you read and "
 "write strings from and to the file, which are encoded in a specific "
@@ -394,12 +394,14 @@ msgid ""
 "`binary mode`. Binary mode data is read and written as :class:`bytes` "
 "objects. You can not specify *encoding* when opening file in binary mode."
 msgstr ""
-"Normalde, dosyalar :dfn:`text mode` içinde açılır, bu da belirli bir "
-"kodlamada kodlanmış dizeleri dosyadan ve dosyaya okuyup yazdığınız anlamına "
-"gelir. Kodlama belirtilmezse, varsayılan değer platforma bağlıdır (bkz: :"
-"func:`open`). Moda eklenen ``'b'`` dosyayı :dfn:`binary mode` 'da açar: "
-"artık veriler bayt nesneleri biçiminde okunur ve yazılır.  Bu mod metin "
-"içermeyen tüm dosyalar için kullanılmalıdır."
+"Normalde dosyalar :dfn:`text mode` 'unda açılır, yani belirli bir *kodlamada "
+"(encoding)* kodlanmış dizeleri dosyadan okur ve dosyaya yazarsınız. "
+"*kodlama* belirtilmezse, varsayılan değer platforma bağlıdır (bakınız :func:"
+"`open`). UTF-8 modern de-fakto standart olduğundan, farklı bir kodlama "
+"kullanmanız gerekmiyorsa ``encoding=\"utf-8\"`` kullanmanız önerilir. Moda "
+"``'b'`` eklemek, dosyayı :dfn:`binary` modunda açar. İkili mod verileri, :"
+"class:`bytes` nesneleri olarak okunur ve yazılır. Dosyayı ikili modda "
+"açarken *kodlama* belirtemezsiniz."
 
 #: tutorial/inputoutput.rst:323
 msgid ""
@@ -431,8 +433,8 @@ msgstr ""
 "Dosya nesneleriyle uğraşırken :keyword:`with` anahtar sözcüğünü kullanmak "
 "iyi bir uygulamadır.  Avantajı, herhangi bir noktada bir hata oluşsa bile, "
 "paketi bittikten sonra dosyanın düzgün bir şekilde kapatılmasıdır.  :keyword:"
-"`!with` kullanmak da eşdeğer :keyword:`try` \\ -\\ :keyword:`finally` "
-"blokları yazmaktançok daha kısadır."
+"`!with` kullanmak da eş değer :keyword:`try` \\ -\\ :keyword:`finally` "
+"blokları yazmaktançok daha kısadır::"
 
 #: tutorial/inputoutput.rst:344
 msgid ""
@@ -618,7 +620,6 @@ msgstr ""
 "istediğinizde, elle ayrıştırma ve seri hale getirmek karmaşık hale gelir."
 
 #: tutorial/inputoutput.rst:478
-#, fuzzy
 msgid ""
 "Rather than having users constantly writing and debugging code to save "
 "complicated data types to files, Python allows you to use the popular data "
@@ -631,15 +632,15 @@ msgid ""
 "file or data, or sent over a network connection to some distant machine."
 msgstr ""
 "Python, kullanıcıların karmaşık veri türlerini dosyalara kaydetmek için "
-"sürekli kod yazmasına ve hata ayıklamasına sahip olmak yerine, `JSON "
-"(JavaScript Nesne Gösterimi) <http://json.org>`_ adı verilen popüler veri "
-"değişimi biçimini kullanmanıza izin verir.  :mod:`json` adlı standart modül "
-"Python veri hiyerarşilerini alabilir ve bunları dize gösterimlerine "
-"dönüştürebilir; bu işleme :dfn:`serializing` denir.  Dize gösteriminden "
-"verileri yeniden yapılandırma :dfn:`deserializing` olarak adlandırılır.  "
-"Seri hale getirmek ve seri hali bozmak arasında, nesneyi temsil eden dize "
-"bir dosyada veya veride depolanmış veya uzak bir makineye ağ bağlantısı "
-"üzerinden gönderilmiş olabilir."
+"sürekli olarak kod yazmasını ve hata ayıklamasını sağlamak yerine, `JSON "
+"(JavaScript Object Notation) <https://json.org>`_ adlı popüler veri değişim "
+"biçimini kullanmanıza olanak tanır.  :mod:`json` adlı standart modül, Python "
+"veri hiyerarşilerini alabilir ve bunları dize temsillerine dönüştürebilir; "
+"bu işleme :dfn:`serializing` adı verilir.  Dize gösteriminden verilerin "
+"yeniden yapılandırılmasına :dfn:`deserializing` denir.  Serileştirme ve seri "
+"durumdan çıkarma arasında, nesneyi temsil eden dizi bir dosyada veya veride "
+"saklanmış olabilir veya bir ağ bağlantısı üzerinden uzaktaki bir makineye "
+"gönderilmiş olabilir."
 
 #: tutorial/inputoutput.rst:489
 msgid ""
@@ -671,19 +672,20 @@ msgstr ""
 "açılmışsa, bunu yapabiliriz::"
 
 #: tutorial/inputoutput.rst:507
-#, fuzzy
 msgid ""
 "To decode the object again, if ``f`` is a :term:`binary file` or :term:`text "
 "file` object which has been opened for reading::"
 msgstr ""
-"Nesnenin kodunu yeniden çözmek için, ``f`` bir :term:`text file` (metin "
-"dosyası) nesnesiyse, okuma için açılmıştır::"
+"Nesnenin kodunu tekrar çözmek için, ``f`` okuma için açılmış bir :term:"
+"`binary file` veya :term:`text file` nesnesiyse::"
 
 #: tutorial/inputoutput.rst:513
 msgid ""
 "JSON files must be encoded in UTF-8. Use ``encoding=\"utf-8\"`` when opening "
 "JSON file as a :term:`text file` for both of reading and writing."
 msgstr ""
+"JSON dosyaları UTF-8'de kodlanmalıdır. Hem okuma hem de yazma için JSON "
+"dosyasını :term:`text file` olarak açarken ``encoding=\"utf-8\"`` kullanın."
 
 #: tutorial/inputoutput.rst:516
 msgid ""
