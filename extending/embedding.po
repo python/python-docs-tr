@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: 2022-03-03 01:11+0300\n"
+"PO-Revision-Date: 2022-12-29 00:34-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: extending/embedding.rst:8
 msgid "Embedding Python in Another Application"
@@ -410,7 +410,7 @@ msgid ""
 "directly useful to you:"
 msgstr ""
 "Gerekli derleyici ve bağlayıcı bayraklarını bulmak için, yükleme işleminin "
-"bir parçası olarak oluşturulan :file:`python{XY}-config` betiğini "
+"bir parçası olarak oluşturulan :file:`python{X.Y}-config` betiğini "
 "çalıştırabilirsiniz (bir :file:`python3-config` betiği de mevcut olabilir). "
 "Bu komut dosyası, size doğrudan yardımcı olacak birkaç seçeneğe sahiptir:"
 
@@ -423,13 +423,12 @@ msgstr ""
 "verecektir:"
 
 #: extending/embedding.rst:304
-#, fuzzy
 msgid ""
 "``pythonX.Y-config --ldflags --embed`` will give you the recommended flags "
 "when linking:"
 msgstr ""
-"``pythonX.Y-config --ldflags``, bağlantı kurarken size önerilen bayrakları "
-"verecektir:"
+"``pythonX.Y-config --ldflags --embed``, bağlantı kurarken size önerilen "
+"bayrakları verecektir:"
 
 #: extending/embedding.rst:313
 msgid ""
