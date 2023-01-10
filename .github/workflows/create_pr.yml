@@ -1,0 +1,13 @@
+
+name: Create PR
+on:
+  schedule:
+    - cron: '0 0 1 * *'
+
+jobs:
+  create_pr:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Run merge.py
+      run: python merge.py
