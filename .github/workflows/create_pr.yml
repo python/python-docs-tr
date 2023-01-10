@@ -15,9 +15,6 @@ jobs:
       
     - name: Install dependencies
       run: pip install -r requirements.txt
-      
-    - name: Clone CPython repo
-      run: git clone https://github.com/python/cpython
     
     - name: Run merge.py
       run: python merge.py branch ${GITHUB_REF##*/}
