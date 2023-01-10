@@ -1,0 +1,22 @@
+name: Create PR
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 1 * *'
+
+
+jobs:
+  create_pr:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+      
+    - name: Clone CPython repo
+      run: git clone https://github.com/python/cpython
+    
+    - name: Run merge.py
+      run: python merge.py branch ${GITHUB_REF##*/}
