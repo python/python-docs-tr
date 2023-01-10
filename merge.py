@@ -22,7 +22,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--cpython_repo",
-        default=Path("cpython/"),
+        default=Path("venv/cpython"),
         type=Path,
         help="Use this given cpython clone.",
     )
