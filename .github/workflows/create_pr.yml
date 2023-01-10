@@ -9,10 +9,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Branch name test
-      run: echo running on branch ${GITHUB_REF##*/}
-    
     - name: Run merge.py
       run: python merge.py
