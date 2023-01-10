@@ -20,4 +20,4 @@ jobs:
       run: git clone https://github.com/python/cpython
     
     - name: Run merge.py
-      run: python merge.py branch ${GITHUB_REF##*/}
+      run: python merge.py ${GITHUB_REF##*/}
