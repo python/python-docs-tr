@@ -17,10 +17,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: extending/index.rst:5
+#, fuzzy
 msgid "Extending and Embedding the Python Interpreter"
-msgstr ""
+msgstr "Python Yorumlayıcısını Genişletme ve Gömme"
 
 #: extending/index.rst:7
+#, fuzzy
 msgid ""
 "This document describes how to write modules in C or C++ to extend the "
 "Python interpreter with new modules.  Those modules can not only define new "
@@ -30,68 +32,115 @@ msgid ""
 "extension modules so that they can be loaded dynamically (at run time) into "
 "the interpreter, if the underlying operating system supports this feature."
 msgstr ""
+"Bu belge, Python yorumlayıcısını yeni modüllerle genişletmek için C veya "
+"C++'da modüllerin nasıl yazılacağını açıklar. Bu modüller sadece yeni "
+"fonksiyonları değil, aynı zamanda yeni nesne tiplerini ve metotlarını da "
+"tanımlayabilir. Belge ayrıca Python yorumlayıcısının bir uzantı dili olarak "
+"kullanılmak üzere başka bir uygulamaya nasıl yerleştirileceğini açıklar. Son"
+" olarak, temeldeki işletim sistemi bu özelliği destekliyorsa, uzantı "
+"modüllerinin yorumlayıcıya dinamik olarak (çalışma zamanında) yüklenebilmesi"
+" için nasıl derleneceğini ve bağlanacağını gösterir."
 
 #: extending/index.rst:15
+#, fuzzy
 msgid ""
 "This document assumes basic knowledge about Python.  For an informal "
 "introduction to the language, see :ref:`tutorial-index`.  :ref:`reference-"
-"index` gives a more formal definition of the language.  :ref:`library-index` "
-"documents the existing object types, functions and modules (both built-in "
+"index` gives a more formal definition of the language.  :ref:`library-index`"
+" documents the existing object types, functions and modules (both built-in "
 "and written in Python) that give the language its wide application range."
 msgstr ""
+"Bu belge, Python hakkında temel bilgileri varsayar. Dile gayri resmi bir "
+"giriş için bkz. :ref:`library-index`. :ref:`library-index`, dilin daha resmi"
+" bir tanımını verir. :ref:`library-index`, dile geniş uygulama yelpazesi "
+"sağlayan mevcut nesne türlerini, işlevleri ve modülleri (hem yerleşik hem de"
+" Python'da yazılmış) belgeler."
 
 #: extending/index.rst:21
+#, fuzzy
 msgid ""
-"For a detailed description of the whole Python/C API, see the separate :ref:"
-"`c-api-index`."
+"For a detailed description of the whole Python/C API, see the separate "
+":ref:`c-api-index`."
 msgstr ""
+"Tüm Python/C API'sinin ayrıntılı açıklaması için ayrı :ref:`c-api-index`'a "
+"bakın."
 
 #: extending/index.rst:26
+#, fuzzy
 msgid "Recommended third party tools"
-msgstr ""
+msgstr "Önerilen üçüncü taraf araçları"
 
 #: extending/index.rst:28
+#, fuzzy
 msgid ""
 "This guide only covers the basic tools for creating extensions provided as "
-"part of this version of CPython. Third party tools like `Cython <https://"
-"cython.org/>`_, `cffi <https://cffi.readthedocs.io>`_, `SWIG <https://www."
-"swig.org>`_ and `Numba <https://numba.pydata.org/>`_ offer both simpler and "
-"more sophisticated approaches to creating C and C++ extensions for Python."
+"part of this version of CPython. Third party tools like `Cython "
+"<https://cython.org/>`_, `cffi <https://cffi.readthedocs.io>`_, `SWIG "
+"<https://www.swig.org>`_ and `Numba <https://numba.pydata.org/>`_ offer both"
+" simpler and more sophisticated approaches to creating C and C++ extensions "
+"for Python."
 msgstr ""
+"Bu kılavuz, yalnızca CPython'un bu sürümünün bir parçası olarak sağlanan "
+"uzantıları oluşturmak için temel araçları kapsar. `Numba "
+"<https://numba.pydata.org/>`_, `Numba <https://numba.pydata.org/>`_, `Numba "
+"<https://numba.pydata.org/>`_ ve `Numba <https://numba.pydata.org/>`_ gibi "
+"üçüncü taraf araçlar, Python için C ve C++ uzantıları oluşturmaya yönelik "
+"hem daha basit hem de daha karmaşık yaklaşımlar sunar."
 
 #: extending/index.rst:40
+#, fuzzy
 msgid ""
-"`Python Packaging User Guide: Binary Extensions <https://packaging.python."
-"org/guides/packaging-binary-extensions/>`_"
+"`Python Packaging User Guide: Binary Extensions "
+"<https://packaging.python.org/guides/packaging-binary-extensions/>`_"
 msgstr ""
+"`Python Packaging User Guide: Binary Extensions "
+"<https://packaging.python.org/guides/packaging-binary-extensions/>`_"
 
 #: extending/index.rst:38
+#, fuzzy
 msgid ""
-"The Python Packaging User Guide not only covers several available tools that "
-"simplify the creation of binary extensions, but also discusses the various "
-"reasons why creating an extension module may be desirable in the first place."
+"The Python Packaging User Guide not only covers several available tools that"
+" simplify the creation of binary extensions, but also discusses the various "
+"reasons why creating an extension module may be desirable in the first "
+"place."
 msgstr ""
+"Python Paketleme Kullanıcı Kılavuzu, yalnızca ikili uzantıların "
+"oluşturulmasını basitleştiren çeşitli mevcut araçları kapsamakla kalmaz, "
+"aynı zamanda bir uzantı modülü oluşturmanın en başta neden istenebileceğinin"
+" çeşitli nedenlerini de tartışır."
 
 #: extending/index.rst:45
+#, fuzzy
 msgid "Creating extensions without third party tools"
-msgstr ""
+msgstr "Üçüncü taraf araçları olmadan uzantılar oluşturma"
 
 #: extending/index.rst:47
+#, fuzzy
 msgid ""
 "This section of the guide covers creating C and C++ extensions without "
 "assistance from third party tools. It is intended primarily for creators of "
 "those tools, rather than being a recommended way to create your own C "
 "extensions."
 msgstr ""
+"Kılavuzun bu bölümü, üçüncü taraf araçlardan yardım almadan C ve C++ "
+"uzantıları oluşturmayı kapsar. Kendi C uzantılarınızı oluşturmanız için "
+"önerilen bir yol olmaktan ziyade, öncelikle bu araçların yaratıcılarına "
+"yöneliktir."
 
 #: extending/index.rst:63
+#, fuzzy
 msgid "Embedding the CPython runtime in a larger application"
-msgstr ""
+msgstr "CPython çalışma zamanını daha büyük bir uygulamaya gömme"
 
 #: extending/index.rst:65
+#, fuzzy
 msgid ""
 "Sometimes, rather than creating an extension that runs inside the Python "
 "interpreter as the main application, it is desirable to instead embed the "
-"CPython runtime inside a larger application. This section covers some of the "
-"details involved in doing that successfully."
+"CPython runtime inside a larger application. This section covers some of the"
+" details involved in doing that successfully."
 msgstr ""
+"Bazen, ana uygulama olarak Python yorumlayıcısının içinde çalışan bir uzantı"
+" oluşturmak yerine, bunun yerine CPython çalışma zamanını daha büyük bir "
+"uygulamanın içine gömmek tercih edilir. Bu bölüm, bunu başarılı bir şekilde "
+"yapmakla ilgili bazı ayrıntıları içerir."
