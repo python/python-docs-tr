@@ -16,7 +16,7 @@ jobs:
       run: pip install -r requirements.txt && sudo apt install gettext
 
     - name: Run merge.py
-      run: python merge.py branch ${GITHUB_REF##*/}
+      run: python merge.py ${GITHUB_REF##*/}
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v4.2.3
