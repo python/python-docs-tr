@@ -1,4 +1,4 @@
-name: Create PR
+name: Update Changes
 on:
   workflow_dispatch:
   schedule:
@@ -26,11 +26,11 @@ jobs:
       with:
         token: ${{ secrets.PAT }}
         commit-message: Translation Update
-        committer: GitHub <noreply@github.com>
+        committer: python-docs-tr <python.docs.tr@gmail.com>
         author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-        signoff: false
+        signoff: true
         branch: translation-update
-        delete-branch: false
+        delete-branch: true
         title: 'Translation Update'
         body: |
           Update report
@@ -42,6 +42,4 @@ jobs:
         reviewers: | 
           egeakman
           ardasak
-        milestone: 1
-        draft: false
 
