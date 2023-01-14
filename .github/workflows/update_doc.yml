@@ -1,9 +1,8 @@
-name: Update Changes
+name: Update Doc
 on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 1 * *'
-
 
 jobs:
   create_pr:
@@ -29,14 +28,13 @@ jobs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v4.2.3
       with:
-        commit-message: Translation Update
+        commit-message: Get changes from CPython Doc for ${{ github.ref_name }}
         author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
         committer: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
         branch: translation-update-${{ github.ref_name }}
         delete-branch: true
         title: Translation Update ${{ github.ref_name }}
-        body: |
-          There are some changes, don't forget to translate them!
+        body: There are some changes, don't forget to translate them!
         labels: |
           update 
         reviewers: | 
