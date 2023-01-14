@@ -30,6 +30,8 @@ jobs:
       uses: peter-evans/create-pull-request@v4.2.3
       with:
         commit-message: Translation Update
+        author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+        committer: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
         branch: translation-update-${{ github.ref_name }}
         delete-branch: true
         title: Translation Update ${{ github.ref_name }}
