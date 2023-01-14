@@ -21,7 +21,7 @@ jobs:
         python-version: "3.11"
 
     - name: Install dependencies
-      run: pip install -r requirements.txt && sudo apt install gettext
+      run: pip install -r requirements.txt && sudo apt install gettext -y
 
     - name: Run merge.py
       run: python merge.py ${GITHUB_REF##*/}
