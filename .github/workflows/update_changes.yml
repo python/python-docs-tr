@@ -14,6 +14,11 @@ jobs:
     
     - name: Clone CPython Repo
       run: git clone https://github.com/python/cpython venv/cpython
+      
+    - name: Set Up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
 
     - name: Install dependencies
       run: pip install -r requirements.txt && sudo apt install gettext
