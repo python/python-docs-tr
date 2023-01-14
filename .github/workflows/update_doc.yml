@@ -1,0 +1,41 @@
+name: Update Doc
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 1 * *'
+
+jobs:
+  create_pr:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Clone CPython Repo
+      run: git clone https://github.com/python/cpython venv/cpython
+      
+    - name: Set Up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt && sudo apt install gettext -y
+
+    - name: Run merge.py
+      run: python merge.py ${GITHUB_REF##*/}
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v4.2.3
+      with:
+        commit-message: Get changes from CPython Doc for ${{ github.ref_name }}
+        author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+        committer: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+        branch: translation-update-${{ github.ref_name }}
+        delete-branch: true
+        title: Translation Update ${{ github.ref_name }}
+        body: There are some changes, don't forget to translate them!
+        labels: update 
+        reviewers: | 
+          egeakman
+          ardasak
