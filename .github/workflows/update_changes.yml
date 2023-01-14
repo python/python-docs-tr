@@ -36,7 +36,7 @@ jobs:
         signoff: true
         branch: translation-update
         delete-branch: true
-        title: 'Translation Update'
+        title: 'Translation Update_${GITHUB_REF##*/}'
         body: |
           Update report
           - Updated with *today's* date
