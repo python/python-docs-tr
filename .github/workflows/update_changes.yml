@@ -34,9 +34,9 @@ jobs:
         committer: python-docs-tr <python.docs.tr@gmail.com>
         author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
         signoff: true
-        branch: translation-update_${{ github.ref_name }}
+        branch: translation-update-${{ github.ref_name }}
         delete-branch: true
-        title: 'Translation Update ${{ github.ref_name }}'
+        title: Translation Update ${{ github.ref_name }}
         body: |
           Update report
           - Updated with *today's* date
