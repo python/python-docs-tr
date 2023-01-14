@@ -35,8 +35,7 @@ jobs:
         delete-branch: true
         title: Translation Update ${{ github.ref_name }}
         body: There are some changes, don't forget to translate them!
-        labels: |
-          update 
+        labels: update 
         reviewers: | 
           egeakman
           ardasak
