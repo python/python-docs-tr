@@ -29,7 +29,7 @@ jobs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v4.2.3
       with:
-        token: ${{ secrets.PAT }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         commit-message: Translation Update
         committer: python-docs-tr <python.docs.tr@gmail.com>
         author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
