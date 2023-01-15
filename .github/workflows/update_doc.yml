@@ -25,6 +25,12 @@ jobs:
     - name: Run merge.py
       run: python merge.py ${GITHUB_REF##*/}
 
+    - name: Commit changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git commit -m "Get changes from CPython Doc for ${{ github.ref_name }}"
+
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v4.2.3
       with:

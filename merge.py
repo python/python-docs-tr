@@ -1,12 +1,16 @@
 """Tool to merge cpython pot files to python-docs-tr po files for a
 given branch.
+
+A CPython clone present in the venv/ directory is required if the --cpython_repo is not specified.
+
+This script is run automatically by the GitHub Actions workflow every first day of the month.
 """
 
 import re
 import shutil
-from pathlib import Path
 import argparse
 import subprocess
+from pathlib import Path
 from subprocess import PIPE
 from tqdm import tqdm
 
@@ -91,6 +95,23 @@ def update_makefile(cpython_repo: Path) -> None:
     run("git", "add", "Makefile")
 
 
+def git_add_relevant_files():
+    """Add only files with relevant modifications.
+
+    This only add files with actual modifications, not just metadata
+    modifications, to avoid noise in history.
+    """
+    modified_files = run("git", "ls-files", "-m", stdout=PIPE).stdout.split("\n")
+    modified_po_files = [line for line in modified_files if line.endswith(".po")]
+    for file in modified_po_files:
+        diff = run("git", "diff", "-U0", file, stdout=PIPE).stdout
+        if len(diff.split("\n")) > 8:
+            run("git", "add", file)
+        else:
+            run("git", "checkout", "--", file)
+    run("rm", "-f", "whatsnew/changelog.po")  # We don't translate this file.
+
+
 def main():
     args = parse_args()
     setup_repo(args.cpython_repo, args.branch)
@@ -106,8 +127,9 @@ def main():
     remove_old_files(downstream - upstream)
     clean_paths((upstream - downstream) | (upstream & downstream))
     shutil.rmtree(pot_path)
-    run("powrap", "-m")
+    run("powrap", "*.po", "*/*.po")
     update_makefile(args.cpython_repo)
+    git_add_relevant_files()
 
 
 if __name__ == "__main__":
