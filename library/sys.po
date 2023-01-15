@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-01-15 23:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -67,7 +67,7 @@ msgid ""
 "mod:`ctypes`) should be completely removed or closely monitored."
 msgstr ""
 
-#: library/sys.rst:47
+#: library/sys.rst:20
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sys.addaudithook`` with no "
 "arguments."
@@ -252,7 +252,7 @@ msgid ""
 "by the time calling code examines the frame."
 msgstr ""
 
-#: library/sys.rst:208
+#: library/sys.rst:14
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sys._current_frames`` with no "
 "arguments."
@@ -270,7 +270,7 @@ msgstr ""
 msgid "This is most useful for statistical profiling."
 msgstr ""
 
-#: library/sys.rst:221
+#: library/sys.rst:10
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sys._current_exceptions`` with "
 "no arguments."
@@ -476,7 +476,7 @@ msgid ""
 "excepthook``."
 msgstr ""
 
-#: library/sys.rst:386
+#: library/sys.rst:10
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sys.excepthook`` with arguments "
 "``hook``, ``type``, ``value``, ``traceback``."
@@ -1161,7 +1161,7 @@ msgid ""
 "stack."
 msgstr ""
 
-#: library/sys.rst:797
+#: library/sys.rst:6
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sys._getframe`` with argument "
 "``frame``."
@@ -1513,7 +1513,7 @@ msgid ""
 "<rlcompleter-config>`."
 msgstr ""
 
-#: library/sys.rst:1053
+#: library/sys.rst:7
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``cpython.run_interactivehook`` "
 "with argument ``hook``."
@@ -1941,7 +1941,7 @@ msgid ""
 "depends on the event type."
 msgstr ""
 
-#: library/sys.rst:1373
+#: library/sys.rst:21
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sys.setprofile`` with no "
 "arguments."
@@ -2151,7 +2151,7 @@ msgstr ""
 msgid "For more information on code and frame objects, refer to :ref:`types`."
 msgstr ""
 
-#: library/sys.rst:1507
+#: library/sys.rst:78
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sys.settrace`` with no "
 "arguments."
@@ -2180,13 +2180,13 @@ msgid ""
 "about to be garbage collected."
 msgstr ""
 
-#: library/sys.rst:1529
+#: library/sys.rst:7
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sys."
 "set_asyncgen_hooks_firstiter`` with no arguments."
 msgstr ""
 
-#: library/sys.rst:1531
+#: library/sys.rst:9
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sys."
 "set_asyncgen_hooks_finalizer`` with no arguments."
@@ -2521,7 +2521,7 @@ msgstr ""
 msgid "See also :func:`excepthook` which handles uncaught exceptions."
 msgstr ""
 
-#: library/sys.rst:1760
+#: library/sys.rst:32
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sys.unraisablehook`` with "
 "arguments ``hook``, ``unraisable``."
@@ -2576,9 +2576,9 @@ msgstr ""
 msgid ""
 "The version number used to form registry keys on Windows platforms. This is "
 "stored as string resource 1000 in the Python DLL.  The value is normally the "
-"first three characters of :const:`version`.  It is provided in the :mod:"
-"`sys` module for informational purposes; modifying this value has no effect "
-"on the registry keys used by Python."
+"major and minor versions of the running Python interpreter.  It is provided "
+"in the :mod:`sys` module for informational purposes; modifying this value "
+"has no effect on the registry keys used by Python."
 msgstr ""
 
 #: library/sys.rst:1817

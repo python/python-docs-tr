@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-01-15 23:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -76,7 +76,7 @@ msgid ""
 "exc:`OSError` exception is raised."
 msgstr ""
 
-#: library/winreg.rst:56
+#: library/winreg.rst:12
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.ConnectRegistry`` with "
 "arguments ``computer_name``, ``key``."
@@ -115,13 +115,13 @@ msgstr ""
 msgid "If the key already exists, this function opens the existing key."
 msgstr ""
 
-#: library/winreg.rst:112
+#: library/winreg.rst:23
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.CreateKey`` with "
 "arguments ``key``, ``sub_key``, ``access``."
 msgstr ""
 
-#: library/winreg.rst:114 library/winreg.rst:324
+#: library/winreg.rst:20 library/winreg.rst:25
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.OpenKey/result`` with "
 "argument ``key``."
@@ -160,7 +160,7 @@ msgid ""
 "removed. If the method fails, an :exc:`OSError` exception is raised."
 msgstr ""
 
-#: library/winreg.rst:168
+#: library/winreg.rst:24
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.DeleteKey`` with "
 "arguments ``key``, ``sub_key``, ``access``."
@@ -193,7 +193,7 @@ msgstr ""
 msgid "*value* is a string that identifies the value to remove."
 msgstr ""
 
-#: library/winreg.rst:185
+#: library/winreg.rst:8
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.DeleteValue`` with "
 "arguments ``key``, ``value``."
@@ -214,7 +214,7 @@ msgid ""
 "indicating, no more values are available."
 msgstr ""
 
-#: library/winreg.rst:201
+#: library/winreg.rst:12
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.EnumKey`` with arguments "
 "``key``, ``index``."
@@ -276,7 +276,7 @@ msgid ""
 "for :meth:`SetValueEx`)"
 msgstr ""
 
-#: library/winreg.rst:236
+#: library/winreg.rst:28
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.EnumValue`` with "
 "arguments ``key``, ``index``."
@@ -288,7 +288,7 @@ msgid ""
 "`REG_EXPAND_SZ`::"
 msgstr ""
 
-#: library/winreg.rst:253
+#: library/winreg.rst:7
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg."
 "ExpandEnvironmentStrings`` with argument ``str``."
@@ -352,7 +352,7 @@ msgid ""
 "specified in *file_name* is relative to the remote computer."
 msgstr ""
 
-#: library/winreg.rst:299
+#: library/winreg.rst:22
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.LoadKey`` with arguments "
 "``key``, ``sub_key``, ``file_name``."
@@ -387,7 +387,7 @@ msgstr ""
 msgid "If the function fails, :exc:`OSError` is raised."
 msgstr ""
 
-#: library/winreg.rst:322
+#: library/winreg.rst:18
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.OpenKey`` with arguments "
 "``key``, ``sub_key``, ``access``."
@@ -415,7 +415,7 @@ msgid ""
 "nanoseconds since Jan 1, 1601."
 msgstr ""
 
-#: library/winreg.rst:356
+#: library/winreg.rst:22
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.QueryInfoKey`` with "
 "argument ``key``."
@@ -441,7 +441,7 @@ msgid ""
 "`QueryValueEx` if possible."
 msgstr ""
 
-#: library/winreg.rst:400
+#: library/winreg.rst:21
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.QueryValue`` with "
 "arguments ``key``, ``sub_key``, ``value_name``."
@@ -497,7 +497,7 @@ msgstr ""
 msgid "This function passes ``NULL`` for *security_attributes* to the API."
 msgstr ""
 
-#: library/winreg.rst:425
+#: library/winreg.rst:21
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.SaveKey`` with arguments "
 "``key``, ``file_name``."
@@ -543,7 +543,7 @@ msgid ""
 "`KEY_SET_VALUE` access."
 msgstr ""
 
-#: library/winreg.rst:483
+#: library/winreg.rst:26
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.SetValue`` with "
 "arguments ``key``, ``sub_key``, ``type``, ``value``."
@@ -599,7 +599,7 @@ msgid ""
 "subkeys."
 msgstr ""
 
-#: library/winreg.rst:501
+#: library/winreg.rst:14
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.DisableReflectionKey`` "
 "with argument ``key``."
@@ -614,7 +614,7 @@ msgid ""
 "Restoring reflection for a key does not affect reflection of any subkeys."
 msgstr ""
 
-#: library/winreg.rst:516
+#: library/winreg.rst:11
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.EnableReflectionKey`` "
 "with argument ``key``."
@@ -628,7 +628,7 @@ msgstr ""
 msgid "Returns ``True`` if reflection is disabled."
 msgstr ""
 
-#: library/winreg.rst:531
+#: library/winreg.rst:11
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.QueryReflectionKey`` "
 "with argument ``key``."
@@ -919,7 +919,7 @@ msgid ""
 "underlying Win32 handle to exist beyond the lifetime of the handle object."
 msgstr ""
 
-#: library/winreg.rst:784
+#: library/winreg.rst:11
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.PyHKEY.Detach`` with "
 "argument ``key``."
