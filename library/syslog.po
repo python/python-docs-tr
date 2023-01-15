@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2023-01-15 23:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -54,7 +54,7 @@ msgid ""
 "func:`openlog` will be called with no arguments."
 msgstr ""
 
-#: library/syslog.rst:34
+#: library/syslog.rst:11
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``syslog.syslog`` with arguments "
 "``priority``, ``message``."
@@ -84,7 +84,7 @@ msgid ""
 "for messages which do not have a facility explicitly encoded."
 msgstr ""
 
-#: library/syslog.rst:55
+#: library/syslog.rst:12
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``syslog.openlog`` with arguments "
 "``ident``, ``logoption``, ``facility``."
@@ -109,7 +109,7 @@ msgid ""
 "`openlog` parameters are reset to defaults."
 msgstr ""
 
-#: library/syslog.rst:71
+#: library/syslog.rst:8
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``syslog.closelog`` with no "
 "arguments."
@@ -125,7 +125,7 @@ msgid ""
 "and including *pri*."
 msgstr ""
 
-#: library/syslog.rst:83
+#: library/syslog.rst:8
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``syslog.setlogmask`` with "
 "argument ``maskpri``."

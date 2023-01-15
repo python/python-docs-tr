@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2023-01-15 23:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -272,15 +272,15 @@ msgstr ""
 #: library/os.rst:1221 library/os.rst:1405 library/os.rst:1437
 #: library/os.rst:1497 library/os.rst:1514 library/os.rst:1798
 #: library/os.rst:1881 library/os.rst:1921 library/os.rst:1949
-#: library/os.rst:2160 library/os.rst:2215 library/os.rst:3046
-#: library/os.rst:3672 library/os.rst:3687 library/os.rst:3701
-#: library/os.rst:3715 library/os.rst:3730 library/os.rst:3745
-#: library/os.rst:3761 library/os.rst:3777 library/os.rst:3791
-#: library/os.rst:3867 library/os.rst:3895 library/os.rst:4059
-#: library/os.rst:4312 library/os.rst:4343 library/os.rst:4413
-#: library/os.rst:4465 library/os.rst:4495 library/os.rst:4518
-#: library/os.rst:4534 library/os.rst:4552 library/os.rst:4707
-#: library/os.rst:4737 library/os.rst:4756
+#: library/os.rst:2160 library/os.rst:2215 library/os.rst:3048
+#: library/os.rst:3674 library/os.rst:3689 library/os.rst:3703
+#: library/os.rst:3717 library/os.rst:3732 library/os.rst:3747
+#: library/os.rst:3763 library/os.rst:3779 library/os.rst:3793
+#: library/os.rst:3869 library/os.rst:3897 library/os.rst:4061
+#: library/os.rst:4314 library/os.rst:4345 library/os.rst:4415
+#: library/os.rst:4467 library/os.rst:4497 library/os.rst:4520
+#: library/os.rst:4536 library/os.rst:4554 library/os.rst:4709
+#: library/os.rst:4739 library/os.rst:4758
 msgid ":ref:`Availability <availability>`: Unix."
 msgstr ""
 
@@ -512,8 +512,8 @@ msgid ""
 msgstr ""
 
 #: library/os.rst:439 library/os.rst:952 library/os.rst:1576
-#: library/os.rst:2238 library/os.rst:3060 library/os.rst:4144
-#: library/os.rst:4249 library/os.rst:4273
+#: library/os.rst:2238 library/os.rst:3062 library/os.rst:4146
+#: library/os.rst:4251 library/os.rst:4275
 msgid ":ref:`Availability <availability>`: Unix, Windows."
 msgstr ""
 
@@ -604,7 +604,7 @@ msgid ""
 "cause memory leaks. Refer to the system documentation for :c:func:`putenv`."
 msgstr ""
 
-#: library/os.rst:531
+#: library/os.rst:18
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.putenv`` with arguments "
 "``key``, ``value``."
@@ -762,7 +762,7 @@ msgstr ""
 msgid ":ref:`Availability <availability>`: recent flavors of Unix."
 msgstr ""
 
-#: library/os.rst:4274
+#: library/os.rst:4276
 msgid ""
 "Return type changed from a tuple to a tuple-like object with named "
 "attributes."
@@ -783,7 +783,7 @@ msgid ""
 "items of :data:`os.environ`."
 msgstr ""
 
-#: library/os.rst:728
+#: library/os.rst:12
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.unsetenv`` with argument "
 "``key``."
@@ -940,7 +940,7 @@ msgid ""
 "this is equivalent to ``os.chmod(fd, mode)``."
 msgstr ""
 
-#: library/os.rst:1842 library/os.rst:1933
+#: library/os.rst:35
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.chmod`` with arguments "
 "``path``, ``mode``, ``dir_fd``."
@@ -953,7 +953,7 @@ msgid ""
 "`chown`.  As of Python 3.3, this is equivalent to ``os.chown(fd, uid, gid)``."
 msgstr ""
 
-#: library/os.rst:1864 library/os.rst:1946
+#: library/os.rst:11
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.chown`` with arguments "
 "``path``, ``uid``, ``gid``, ``dir_fd``."
@@ -1034,13 +1034,13 @@ msgid ""
 "truncate(fd, length)``."
 msgstr ""
 
-#: library/os.rst:949
+#: library/os.rst:5
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.truncate`` with arguments "
 "``fd``, ``length``."
 msgstr ""
 
-#: library/os.rst:3063
+#: library/os.rst:3065
 msgid "Added support for Windows"
 msgstr ""
 
@@ -1068,7 +1068,7 @@ msgid ""
 "specifies the section of the file to lock."
 msgstr ""
 
-#: library/os.rst:983
+#: library/os.rst:7
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.lockf`` with arguments "
 "``fd``, ``cmd``, ``len``."
@@ -1122,7 +1122,7 @@ msgid ""
 "<dir_fd>` with the *dir_fd* parameter."
 msgstr ""
 
-#: library/os.rst:1038
+#: library/os.rst:14
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``open`` with arguments ``path``, "
 "``mode``, ``flags``."
@@ -1140,7 +1140,7 @@ msgstr ""
 msgid "The *dir_fd* argument."
 msgstr ""
 
-#: library/os.rst:1372 library/os.rst:4395
+#: library/os.rst:1372 library/os.rst:4397
 msgid ""
 "If the system call is interrupted and the signal handler does not raise an "
 "exception, the function now retries the system call instead of raising an :"
@@ -1150,8 +1150,8 @@ msgstr ""
 #: library/os.rst:1739 library/os.rst:1802 library/os.rst:1882
 #: library/os.rst:1937 library/os.rst:2009 library/os.rst:2074
 #: library/os.rst:2142 library/os.rst:2205 library/os.rst:2295
-#: library/os.rst:2654 library/os.rst:3066 library/os.rst:3122
-#: library/os.rst:3282 library/os.rst:3644 library/os.rst:4132
+#: library/os.rst:2656 library/os.rst:3068 library/os.rst:3124
+#: library/os.rst:3284 library/os.rst:3646 library/os.rst:4134
 msgid "Accepts a :term:`path-like object`."
 msgstr ""
 
@@ -1211,7 +1211,7 @@ msgid ""
 "more portable approach, use the :mod:`pty` module."
 msgstr ""
 
-#: library/os.rst:1168 library/os.rst:3829
+#: library/os.rst:1168 library/os.rst:3831
 msgid ":ref:`Availability <availability>`: some flavors of Unix."
 msgstr ""
 
@@ -1669,7 +1669,7 @@ msgstr ""
 msgid "Get the \"inheritable\" flag of the specified handle (a boolean)."
 msgstr ""
 
-#: library/os.rst:1631 library/os.rst:4167 library/os.rst:4213
+#: library/os.rst:1631 library/os.rst:4169 library/os.rst:4215
 msgid ":ref:`Availability <availability>`: Windows."
 msgstr ""
 
@@ -1820,7 +1820,7 @@ msgid ""
 "`FileNotFoundError`, :exc:`PermissionError`, and :exc:`NotADirectoryError`."
 msgstr ""
 
-#: library/os.rst:1892
+#: library/os.rst:11
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.chdir`` with argument "
 "``path``."
@@ -1891,7 +1891,7 @@ msgid ""
 "This function can support :ref:`not following symlinks <follow_symlinks>`."
 msgstr ""
 
-#: library/os.rst:1918
+#: library/os.rst:19
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.chflags`` with arguments "
 "``path``, ``flags``."
@@ -1984,7 +1984,7 @@ msgstr ""
 msgid ":data:`stat.S_IXOTH`"
 msgstr ""
 
-#: library/os.rst:1857 library/os.rst:3112
+#: library/os.rst:1857 library/os.rst:3114
 msgid ""
 "This function can support :ref:`specifying a file descriptor <path_fd>`, :"
 "ref:`paths relative to directory descriptors <dir_fd>` and :ref:`not "
@@ -2079,7 +2079,7 @@ msgid ""
 "`not following symlinks <follow_symlinks>`."
 msgstr ""
 
-#: library/os.rst:1962
+#: library/os.rst:7
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.link`` with arguments "
 "``src``, ``dst``, ``src_dir_fd``, ``dst_dir_fd``."
@@ -2093,7 +2093,7 @@ msgstr ""
 msgid "Added the *src_dir_fd*, *dst_dir_fd*, and *follow_symlinks* arguments."
 msgstr ""
 
-#: library/os.rst:2325 library/os.rst:3034
+#: library/os.rst:2327 library/os.rst:3036
 msgid "Accepts a :term:`path-like object` for *src* and *dst*."
 msgstr ""
 
@@ -2114,13 +2114,13 @@ msgid ""
 "circumstances, they will be of type ``str``."
 msgstr ""
 
-#: library/os.rst:2410
+#: library/os.rst:2412
 msgid ""
 "This function can also support :ref:`specifying a file descriptor "
 "<path_fd>`; the file descriptor must refer to a directory."
 msgstr ""
 
-#: library/os.rst:1992
+#: library/os.rst:15
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.listdir`` with argument "
 "``path``."
@@ -2140,7 +2140,7 @@ msgstr ""
 msgid "The *path* parameter became optional."
 msgstr ""
 
-#: library/os.rst:2896
+#: library/os.rst:2898
 msgid "Added support for specifying *path* as an open file descriptor."
 msgstr ""
 
@@ -2169,7 +2169,7 @@ msgid ""
 "<dir_fd>`."
 msgstr ""
 
-#: library/os.rst:2239 library/os.rst:3027
+#: library/os.rst:2239 library/os.rst:3029
 msgid "Added support for Windows 6.0 (Vista) symbolic links."
 msgstr ""
 
@@ -2211,7 +2211,7 @@ msgid ""
 "module's :func:`tempfile.mkdtemp` function."
 msgstr ""
 
-#: library/os.rst:2103
+#: library/os.rst:24
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.mkdir`` with arguments "
 "``path``, ``mode``, ``dir_fd``."
@@ -2320,7 +2320,7 @@ msgid ""
 "included in that mapping, passing an integer for *name* is also accepted."
 msgstr ""
 
-#: library/os.rst:2889 library/os.rst:3055
+#: library/os.rst:2891 library/os.rst:3057
 msgid ""
 "This function can support :ref:`specifying a file descriptor <path_fd>`."
 msgstr ""
@@ -2376,7 +2376,7 @@ msgid ""
 "does not exist, a :exc:`FileNotFoundError` is raised."
 msgstr ""
 
-#: library/os.rst:2373 library/os.rst:3009
+#: library/os.rst:2375 library/os.rst:3011
 msgid ""
 "This function can support :ref:`paths relative to directory descriptors "
 "<dir_fd>`."
@@ -2394,7 +2394,7 @@ msgstr ""
 msgid "This function is semantically identical to :func:`unlink`."
 msgstr ""
 
-#: library/os.rst:2293 library/os.rst:3077
+#: library/os.rst:14
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.remove`` with arguments "
 "``path``, ``dir_fd``."
@@ -2419,10 +2419,13 @@ msgid ""
 msgstr ""
 
 #: library/os.rst:2304
-msgid "On Windows, if *dst* exists a :exc:`FileExistsError` is always raised."
+msgid ""
+"On Windows, if *dst* exists a :exc:`FileExistsError` is always raised. The "
+"operation may fail if *src* and *dst* are on different filesystems. Use :"
+"func:`shutil.move` to support moves to a different filesystem."
 msgstr ""
 
-#: library/os.rst:2306
+#: library/os.rst:2308
 msgid ""
 "On Unix, if *src* is a file and *dst* is a directory or vice-versa, an :exc:"
 "`IsADirectoryError` or a :exc:`NotADirectoryError` will be raised "
@@ -2434,29 +2437,29 @@ msgid ""
 "operation (this is a POSIX requirement)."
 msgstr ""
 
-#: library/os.rst:2355
+#: library/os.rst:2357
 msgid ""
 "This function can support specifying *src_dir_fd* and/or *dst_dir_fd* to "
 "supply :ref:`paths relative to directory descriptors <dir_fd>`."
 msgstr ""
 
-#: library/os.rst:2318
+#: library/os.rst:2320
 msgid ""
 "If you want cross-platform overwriting of the destination, use :func:"
 "`replace`."
 msgstr ""
 
-#: library/os.rst:2341 library/os.rst:2358
+#: library/os.rst:22
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.rename`` with arguments "
 "``src``, ``dst``, ``src_dir_fd``, ``dst_dir_fd``."
 msgstr ""
 
-#: library/os.rst:2322
+#: library/os.rst:2324
 msgid "The *src_dir_fd* and *dst_dir_fd* arguments."
 msgstr ""
 
-#: library/os.rst:2331
+#: library/os.rst:2333
 msgid ""
 "Recursive directory or file renaming function. Works like :func:`rename`, "
 "except creation of any intermediate directories needed to make the new "
@@ -2465,17 +2468,17 @@ msgid ""
 "using :func:`removedirs`."
 msgstr ""
 
-#: library/os.rst:2338
+#: library/os.rst:2340
 msgid ""
 "This function can fail with the new directory structure made if you lack "
 "permissions needed to remove the leaf directory or file."
 msgstr ""
 
-#: library/os.rst:2343
+#: library/os.rst:2345
 msgid "Accepts a :term:`path-like object` for *old* and *new*."
 msgstr ""
 
-#: library/os.rst:2349
+#: library/os.rst:2351
 msgid ""
 "Rename the file or directory *src* to *dst*.  If *dst* is a non-empty "
 "directory, :exc:`OSError` will be raised.  If *dst* exists and is a file, it "
@@ -2484,7 +2487,7 @@ msgid ""
 "renaming will be an atomic operation (this is a POSIX requirement)."
 msgstr ""
 
-#: library/os.rst:2368
+#: library/os.rst:2370
 msgid ""
 "Remove (delete) the directory *path*.  If the directory does not exist or is "
 "not empty, an :exc:`FileNotFoundError` or an :exc:`OSError` is raised "
@@ -2492,17 +2495,17 @@ msgid ""
 "rmtree` can be used."
 msgstr ""
 
-#: library/os.rst:2376
+#: library/os.rst:9
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.rmdir`` with arguments "
 "``path``, ``dir_fd``."
 msgstr ""
 
-#: library/os.rst:3079
+#: library/os.rst:3081
 msgid "The *dir_fd* parameter."
 msgstr ""
 
-#: library/os.rst:2387
+#: library/os.rst:2389
 msgid ""
 "Return an iterator of :class:`os.DirEntry` objects corresponding to the "
 "entries in the directory given by *path*. The entries are yielded in "
@@ -2512,7 +2515,7 @@ msgid ""
 "unspecified."
 msgstr ""
 
-#: library/os.rst:2394
+#: library/os.rst:2396
 msgid ""
 "Using :func:`scandir` instead of :func:`listdir` can significantly increase "
 "the performance of code that also needs file type or file attribute "
@@ -2524,7 +2527,7 @@ msgid ""
 "Unix but only requires one for symbolic links on Windows."
 msgstr ""
 
-#: library/os.rst:2404
+#: library/os.rst:2406
 msgid ""
 "*path* may be a :term:`path-like object`.  If *path* is of type ``bytes`` "
 "(directly or indirectly through the :class:`PathLike` interface), the type "
@@ -2533,30 +2536,30 @@ msgid ""
 "they will be of type ``str``."
 msgstr ""
 
-#: library/os.rst:2413
+#: library/os.rst:27
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.scandir`` with argument "
 "``path``."
 msgstr ""
 
-#: library/os.rst:2415
+#: library/os.rst:2417
 msgid ""
 "The :func:`scandir` iterator supports the :term:`context manager` protocol "
 "and has the following method:"
 msgstr ""
 
-#: library/os.rst:2420
+#: library/os.rst:2422
 msgid "Close the iterator and free acquired resources."
 msgstr ""
 
-#: library/os.rst:2422
+#: library/os.rst:2424
 msgid ""
 "This is called automatically when the iterator is exhausted or garbage "
 "collected, or when an error happens during iterating.  However it is "
 "advisable to call it explicitly or use the :keyword:`with` statement."
 msgstr ""
 
-#: library/os.rst:2429
+#: library/os.rst:2431
 msgid ""
 "The following example shows a simple use of :func:`scandir` to display all "
 "the files (excluding directories) in the given *path* that don't start with "
@@ -2564,7 +2567,7 @@ msgid ""
 "system call::"
 msgstr ""
 
-#: library/os.rst:2441
+#: library/os.rst:2443
 msgid ""
 "On Unix-based systems, :func:`scandir` uses the system's `opendir() <https://"
 "pubs.opengroup.org/onlinepubs/009695399/functions/opendir.html>`_ and "
@@ -2575,7 +2578,7 @@ msgid ""
 "desktop/aa364428(v=vs.85).aspx>`_ functions."
 msgstr ""
 
-#: library/os.rst:2453
+#: library/os.rst:2455
 msgid ""
 "Added support for the :term:`context manager` protocol and the :func:"
 "`~scandir.close()` method.  If a :func:`scandir` iterator is neither "
@@ -2583,28 +2586,28 @@ msgid ""
 "its destructor."
 msgstr ""
 
-#: library/os.rst:2459
+#: library/os.rst:2461
 msgid "The function accepts a :term:`path-like object`."
 msgstr ""
 
-#: library/os.rst:2461
+#: library/os.rst:2463
 msgid "Added support for :ref:`file descriptors <path_fd>` on Unix."
 msgstr ""
 
-#: library/os.rst:2467
+#: library/os.rst:2469
 msgid ""
 "Object yielded by :func:`scandir` to expose the file path and other file "
 "attributes of a directory entry."
 msgstr ""
 
-#: library/os.rst:2470
+#: library/os.rst:2472
 msgid ""
 ":func:`scandir` will provide as much of this information as possible without "
 "making additional system calls. When a ``stat()`` or ``lstat()`` system call "
 "is made, the ``os.DirEntry`` object will cache the result."
 msgstr ""
 
-#: library/os.rst:2474
+#: library/os.rst:2476
 msgid ""
 "``os.DirEntry`` instances are not intended to be stored in long-lived data "
 "structures; if you know the file metadata has changed or if a long time has "
@@ -2612,7 +2615,7 @@ msgid ""
 "up-to-date information."
 msgstr ""
 
-#: library/os.rst:2479
+#: library/os.rst:2481
 msgid ""
 "Because the ``os.DirEntry`` methods can make operating system calls, they "
 "may also raise :exc:`OSError`. If you need very fine-grained control over "
@@ -2620,29 +2623,29 @@ msgid ""
 "methods and handle as appropriate."
 msgstr ""
 
-#: library/os.rst:2484
+#: library/os.rst:2486
 msgid ""
 "To be directly usable as a :term:`path-like object`, ``os.DirEntry`` "
 "implements the :class:`PathLike` interface."
 msgstr ""
 
-#: library/os.rst:2487
+#: library/os.rst:2489
 msgid "Attributes and methods on a ``os.DirEntry`` instance are as follows:"
 msgstr ""
 
-#: library/os.rst:2491
+#: library/os.rst:2493
 msgid ""
 "The entry's base filename, relative to the :func:`scandir` *path* argument."
 msgstr ""
 
-#: library/os.rst:2494
+#: library/os.rst:2496
 msgid ""
 "The :attr:`name` attribute will be ``bytes`` if the :func:`scandir` *path* "
 "argument is of type ``bytes`` and ``str`` otherwise.  Use :func:`~os."
 "fsdecode` to decode byte filenames."
 msgstr ""
 
-#: library/os.rst:2500
+#: library/os.rst:2502
 msgid ""
 "The entry's full path name: equivalent to ``os.path.join(scandir_path, entry."
 "name)`` where *scandir_path* is the :func:`scandir` *path* argument.  The "
@@ -2652,51 +2655,51 @@ msgid ""
 "attribute."
 msgstr ""
 
-#: library/os.rst:2507
+#: library/os.rst:2509
 msgid ""
 "The :attr:`path` attribute will be ``bytes`` if the :func:`scandir` *path* "
 "argument is of type ``bytes`` and ``str`` otherwise.  Use :func:`~os."
 "fsdecode` to decode byte filenames."
 msgstr ""
 
-#: library/os.rst:2513
+#: library/os.rst:2515
 msgid "Return the inode number of the entry."
 msgstr ""
 
-#: library/os.rst:2515
+#: library/os.rst:2517
 msgid ""
 "The result is cached on the ``os.DirEntry`` object. Use ``os.stat(entry."
 "path, follow_symlinks=False).st_ino`` to fetch up-to-date information."
 msgstr ""
 
-#: library/os.rst:2519
+#: library/os.rst:2521
 msgid ""
 "On the first, uncached call, a system call is required on Windows but not on "
 "Unix."
 msgstr ""
 
-#: library/os.rst:2524
+#: library/os.rst:2526
 msgid ""
 "Return ``True`` if this entry is a directory or a symbolic link pointing to "
 "a directory; return ``False`` if the entry is or points to any other kind of "
 "file, or if it doesn't exist anymore."
 msgstr ""
 
-#: library/os.rst:2528
+#: library/os.rst:2530
 msgid ""
 "If *follow_symlinks* is ``False``, return ``True`` only if this entry is a "
 "directory (without following symlinks); return ``False`` if the entry is any "
 "other kind of file or if it doesn't exist anymore."
 msgstr ""
 
-#: library/os.rst:2532
+#: library/os.rst:2534
 msgid ""
 "The result is cached on the ``os.DirEntry`` object, with a separate cache "
 "for *follow_symlinks* ``True`` and ``False``. Call :func:`os.stat` along "
 "with :func:`stat.S_ISDIR` to fetch up-to-date information."
 msgstr ""
 
-#: library/os.rst:2536
+#: library/os.rst:2538
 msgid ""
 "On the first, uncached call, no system call is required in most cases. "
 "Specifically, for non-symlinks, neither Windows or Unix require a system "
@@ -2706,46 +2709,46 @@ msgid ""
 "is ``False``."
 msgstr ""
 
-#: library/os.rst:2573
+#: library/os.rst:2575
 msgid ""
 "This method can raise :exc:`OSError`, such as :exc:`PermissionError`, but :"
 "exc:`FileNotFoundError` is caught and not raised."
 msgstr ""
 
-#: library/os.rst:2548
+#: library/os.rst:2550
 msgid ""
 "Return ``True`` if this entry is a file or a symbolic link pointing to a "
 "file; return ``False`` if the entry is or points to a directory or other non-"
 "file entry, or if it doesn't exist anymore."
 msgstr ""
 
-#: library/os.rst:2552
+#: library/os.rst:2554
 msgid ""
 "If *follow_symlinks* is ``False``, return ``True`` only if this entry is a "
 "file (without following symlinks); return ``False`` if the entry is a "
 "directory or other non-file entry, or if it doesn't exist anymore."
 msgstr ""
 
-#: library/os.rst:2556
+#: library/os.rst:2558
 msgid ""
 "The result is cached on the ``os.DirEntry`` object. Caching, system calls "
 "made, and exceptions raised are as per :func:`~os.DirEntry.is_dir`."
 msgstr ""
 
-#: library/os.rst:2561
+#: library/os.rst:2563
 msgid ""
 "Return ``True`` if this entry is a symbolic link (even if broken); return "
 "``False`` if the entry points to a directory or any kind of file, or if it "
 "doesn't exist anymore."
 msgstr ""
 
-#: library/os.rst:2565
+#: library/os.rst:2567
 msgid ""
 "The result is cached on the ``os.DirEntry`` object. Call :func:`os.path."
 "islink` to fetch up-to-date information."
 msgstr ""
 
-#: library/os.rst:2568
+#: library/os.rst:2570
 msgid ""
 "On the first, uncached call, no system call is required in most cases. "
 "Specifically, neither Windows or Unix require a system call, except on "
@@ -2753,35 +2756,35 @@ msgid ""
 "``dirent.d_type == DT_UNKNOWN``."
 msgstr ""
 
-#: library/os.rst:2578
+#: library/os.rst:2580
 msgid ""
 "Return a :class:`stat_result` object for this entry. This method follows "
 "symbolic links by default; to stat a symbolic link add the "
 "``follow_symlinks=False`` argument."
 msgstr ""
 
-#: library/os.rst:2582
+#: library/os.rst:2584
 msgid ""
 "On Unix, this method always requires a system call. On Windows, it only "
 "requires a system call if *follow_symlinks* is ``True`` and the entry is a "
 "reparse point (for example, a symbolic link or directory junction)."
 msgstr ""
 
-#: library/os.rst:2587
+#: library/os.rst:2589
 msgid ""
 "On Windows, the ``st_ino``, ``st_dev`` and ``st_nlink`` attributes of the :"
 "class:`stat_result` are always set to zero. Call :func:`os.stat` to get "
 "these attributes."
 msgstr ""
 
-#: library/os.rst:2591
+#: library/os.rst:2593
 msgid ""
 "The result is cached on the ``os.DirEntry`` object, with a separate cache "
 "for *follow_symlinks* ``True`` and ``False``. Call :func:`os.stat` to fetch "
 "up-to-date information."
 msgstr ""
 
-#: library/os.rst:2595
+#: library/os.rst:2597
 msgid ""
 "Note that there is a nice correspondence between several attributes and "
 "methods of ``os.DirEntry`` and of :class:`pathlib.Path`.  In particular, the "
@@ -2789,13 +2792,13 @@ msgid ""
 "``is_file()``, ``is_symlink()`` and ``stat()`` methods."
 msgstr ""
 
-#: library/os.rst:2603
+#: library/os.rst:2605
 msgid ""
 "Added support for the :class:`~os.PathLike` interface.  Added support for :"
 "class:`bytes` paths on Windows."
 msgstr ""
 
-#: library/os.rst:2610
+#: library/os.rst:2612
 msgid ""
 "Get the status of a file or a file descriptor. Perform the equivalent of a :"
 "c:func:`stat` system call on the given path. *path* may be specified as "
@@ -2804,19 +2807,19 @@ msgid ""
 "`stat_result` object."
 msgstr ""
 
-#: library/os.rst:2616
+#: library/os.rst:2618
 msgid ""
 "This function normally follows symlinks; to stat a symlink add the argument "
 "``follow_symlinks=False``, or use :func:`lstat`."
 msgstr ""
 
-#: library/os.rst:3444 library/os.rst:3476 library/os.rst:3496
+#: library/os.rst:3446 library/os.rst:3478 library/os.rst:3498
 msgid ""
 "This function can support :ref:`specifying a file descriptor <path_fd>` and :"
 "ref:`not following symlinks <follow_symlinks>`."
 msgstr ""
 
-#: library/os.rst:2622
+#: library/os.rst:2624
 msgid ""
 "On Windows, passing ``follow_symlinks=False`` will disable following all "
 "name-surrogate reparse points, which includes symlinks and directory "
@@ -2830,21 +2833,21 @@ msgid ""
 "junction points, which will raise the usual exceptions."
 msgstr ""
 
-#: library/os.rst:3364
+#: library/os.rst:3366
 msgid "Example::"
 msgstr ""
 
-#: library/os.rst:2648
+#: library/os.rst:2650
 msgid ":func:`fstat` and :func:`lstat` functions."
 msgstr ""
 
-#: library/os.rst:2650
+#: library/os.rst:2652
 msgid ""
 "Added the *dir_fd* and *follow_symlinks* arguments, specifying a file "
 "descriptor instead of a path."
 msgstr ""
 
-#: library/os.rst:2657
+#: library/os.rst:2659
 msgid ""
 "On Windows, all reparse points that can be resolved by the operating system "
 "are now followed, and passing ``follow_symlinks=False`` disables following "
@@ -2854,100 +2857,100 @@ msgid ""
 "of raising an error."
 msgstr ""
 
-#: library/os.rst:2668
+#: library/os.rst:2670
 msgid ""
 "Object whose attributes correspond roughly to the members of the :c:type:"
 "`stat` structure. It is used for the result of :func:`os.stat`, :func:`os."
 "fstat` and :func:`os.lstat`."
 msgstr ""
 
-#: library/os.rst:2672
+#: library/os.rst:2674
 msgid "Attributes:"
 msgstr ""
 
-#: library/os.rst:2676
+#: library/os.rst:2678
 msgid "File mode: file type and file mode bits (permissions)."
 msgstr ""
 
-#: library/os.rst:2680
+#: library/os.rst:2682
 msgid ""
 "Platform dependent, but if non-zero, uniquely identifies the file for a "
 "given value of ``st_dev``. Typically:"
 msgstr ""
 
-#: library/os.rst:2683
+#: library/os.rst:2685
 msgid "the inode number on Unix,"
 msgstr ""
 
-#: library/os.rst:2684
+#: library/os.rst:2686
 msgid ""
 "the `file index <https://msdn.microsoft.com/en-us/library/aa363788>`_ on "
 "Windows"
 msgstr ""
 
-#: library/os.rst:2690
+#: library/os.rst:2692
 msgid "Identifier of the device on which this file resides."
 msgstr ""
 
-#: library/os.rst:2694
+#: library/os.rst:2696
 msgid "Number of hard links."
 msgstr ""
 
-#: library/os.rst:2698
+#: library/os.rst:2700
 msgid "User identifier of the file owner."
 msgstr ""
 
-#: library/os.rst:2702
+#: library/os.rst:2704
 msgid "Group identifier of the file owner."
 msgstr ""
 
-#: library/os.rst:2706
+#: library/os.rst:2708
 msgid ""
 "Size of the file in bytes, if it is a regular file or a symbolic link. The "
 "size of a symbolic link is the length of the pathname it contains, without a "
 "terminating null byte."
 msgstr ""
 
-#: library/os.rst:2710
+#: library/os.rst:2712
 msgid "Timestamps:"
 msgstr ""
 
-#: library/os.rst:2714
+#: library/os.rst:2716
 msgid "Time of most recent access expressed in seconds."
 msgstr ""
 
-#: library/os.rst:2718
+#: library/os.rst:2720
 msgid "Time of most recent content modification expressed in seconds."
 msgstr ""
 
-#: library/os.rst:2738
+#: library/os.rst:2740
 msgid "Platform dependent:"
 msgstr ""
 
-#: library/os.rst:2740
+#: library/os.rst:2742
 msgid "the time of most recent metadata change on Unix,"
 msgstr ""
 
-#: library/os.rst:2725
+#: library/os.rst:2727
 msgid "the time of creation on Windows, expressed in seconds."
 msgstr ""
 
-#: library/os.rst:2729
+#: library/os.rst:2731
 msgid "Time of most recent access expressed in nanoseconds as an integer."
 msgstr ""
 
-#: library/os.rst:2733
+#: library/os.rst:2735
 msgid ""
 "Time of most recent content modification expressed in nanoseconds as an "
 "integer."
 msgstr ""
 
-#: library/os.rst:2741
+#: library/os.rst:2743
 msgid ""
 "the time of creation on Windows, expressed in nanoseconds as an integer."
 msgstr ""
 
-#: library/os.rst:2746
+#: library/os.rst:2748
 msgid ""
 "The exact meaning and resolution of the :attr:`st_atime`, :attr:`st_mtime`, "
 "and :attr:`st_ctime` attributes depend on the operating system and the file "
@@ -2956,7 +2959,7 @@ msgid ""
 "only 1-day resolution.  See your operating system documentation for details."
 msgstr ""
 
-#: library/os.rst:2753
+#: library/os.rst:2755
 msgid ""
 "Similarly, although :attr:`st_atime_ns`, :attr:`st_mtime_ns`, and :attr:"
 "`st_ctime_ns` are always expressed in nanoseconds, many systems do not "
@@ -2967,78 +2970,78 @@ msgid ""
 "attr:`st_atime_ns`, :attr:`st_mtime_ns`, and :attr:`st_ctime_ns`."
 msgstr ""
 
-#: library/os.rst:2762
+#: library/os.rst:2764
 msgid ""
 "On some Unix systems (such as Linux), the following attributes may also be "
 "available:"
 msgstr ""
 
-#: library/os.rst:2767
+#: library/os.rst:2769
 msgid ""
 "Number of 512-byte blocks allocated for file. This may be smaller than :attr:"
 "`st_size`/512 when the file has holes."
 msgstr ""
 
-#: library/os.rst:2772
+#: library/os.rst:2774
 msgid ""
 "\"Preferred\" blocksize for efficient file system I/O. Writing to a file in "
 "smaller chunks may cause an inefficient read-modify-rewrite."
 msgstr ""
 
-#: library/os.rst:2777
+#: library/os.rst:2779
 msgid "Type of device if an inode device."
 msgstr ""
 
-#: library/os.rst:2781
+#: library/os.rst:2783
 msgid "User defined flags for file."
 msgstr ""
 
-#: library/os.rst:2783
+#: library/os.rst:2785
 msgid ""
 "On other Unix systems (such as FreeBSD), the following attributes may be "
 "available (but may be only filled out if root tries to use them):"
 msgstr ""
 
-#: library/os.rst:2788
+#: library/os.rst:2790
 msgid "File generation number."
 msgstr ""
 
-#: library/os.rst:2792
+#: library/os.rst:2794
 msgid "Time of file creation."
 msgstr ""
 
-#: library/os.rst:2794
+#: library/os.rst:2796
 msgid ""
 "On Solaris and derivatives, the following attributes may also be available:"
 msgstr ""
 
-#: library/os.rst:2799
+#: library/os.rst:2801
 msgid ""
 "String that uniquely identifies the type of the filesystem that contains the "
 "file."
 msgstr ""
 
-#: library/os.rst:2802
+#: library/os.rst:2804
 msgid "On macOS systems, the following attributes may also be available:"
 msgstr ""
 
-#: library/os.rst:2806
+#: library/os.rst:2808
 msgid "Real size of the file."
 msgstr ""
 
-#: library/os.rst:2810
+#: library/os.rst:2812
 msgid "Creator of the file."
 msgstr ""
 
-#: library/os.rst:2814
+#: library/os.rst:2816
 msgid "File type."
 msgstr ""
 
-#: library/os.rst:2816
+#: library/os.rst:2818
 msgid "On Windows systems, the following attributes are also available:"
 msgstr ""
 
-#: library/os.rst:2820
+#: library/os.rst:2822
 msgid ""
 "Windows file attributes: ``dwFileAttributes`` member of the "
 "``BY_HANDLE_FILE_INFORMATION`` structure returned by :c:func:"
@@ -3046,21 +3049,21 @@ msgid ""
 "mod:`stat` module."
 msgstr ""
 
-#: library/os.rst:2827
+#: library/os.rst:2829
 msgid ""
 "When :attr:`st_file_attributes` has the ``FILE_ATTRIBUTE_REPARSE_POINT`` "
 "set, this field contains the tag identifying the type of reparse point. See "
 "the ``IO_REPARSE_TAG_*`` constants in the :mod:`stat` module."
 msgstr ""
 
-#: library/os.rst:2831
+#: library/os.rst:2833
 msgid ""
 "The standard module :mod:`stat` defines functions and constants that are "
 "useful for extracting information from a :c:type:`stat` structure. (On "
 "Windows, some items are filled with dummy values.)"
 msgstr ""
 
-#: library/os.rst:2835
+#: library/os.rst:2837
 msgid ""
 "For backward compatibility, a :class:`stat_result` instance is also "
 "accessible as a tuple of at least 10 integers giving the most important (and "
@@ -3072,35 +3075,35 @@ msgid ""
 "class:`stat_result` as a tuple always returns integers."
 msgstr ""
 
-#: library/os.rst:2844
+#: library/os.rst:2846
 msgid ""
 "Added the :attr:`st_atime_ns`, :attr:`st_mtime_ns`, and :attr:`st_ctime_ns` "
 "members."
 msgstr ""
 
-#: library/os.rst:2848
+#: library/os.rst:2850
 msgid "Added the :attr:`st_file_attributes` member on Windows."
 msgstr ""
 
-#: library/os.rst:2851
+#: library/os.rst:2853
 msgid "Windows now returns the file index as :attr:`st_ino` when available."
 msgstr ""
 
-#: library/os.rst:2855
+#: library/os.rst:2857
 msgid "Added the :attr:`st_fstype` member to Solaris/derivatives."
 msgstr ""
 
-#: library/os.rst:2858
+#: library/os.rst:2860
 msgid "Added the :attr:`st_reparse_tag` member on Windows."
 msgstr ""
 
-#: library/os.rst:2861
+#: library/os.rst:2863
 msgid ""
 "On Windows, the :attr:`st_mode` member now identifies special files as :"
 "const:`S_IFCHR`, :const:`S_IFIFO` or :const:`S_IFBLK` as appropriate."
 msgstr ""
 
-#: library/os.rst:2868
+#: library/os.rst:2870
 msgid ""
 "Perform a :c:func:`statvfs` system call on the given path.  The return value "
 "is an object whose attributes describe the filesystem on the given path, and "
@@ -3110,7 +3113,7 @@ msgid ""
 "`f_flag`, :attr:`f_namemax`, :attr:`f_fsid`."
 msgstr ""
 
-#: library/os.rst:2875
+#: library/os.rst:2877
 msgid ""
 "Two module-level constants are defined for the :attr:`f_flag` attribute's "
 "bit-flags: if :const:`ST_RDONLY` is set, the filesystem is mounted read-"
@@ -3118,7 +3121,7 @@ msgid ""
 "are disabled or not supported."
 msgstr ""
 
-#: library/os.rst:2880
+#: library/os.rst:2882
 msgid ""
 "Additional module-level constants are defined for GNU/glibc based systems. "
 "These are :const:`ST_NODEV` (disallow access to device special files), :"
@@ -3131,11 +3134,11 @@ msgid ""
 "relative to mtime/ctime)."
 msgstr ""
 
-#: library/os.rst:2893
+#: library/os.rst:2895
 msgid "The :const:`ST_RDONLY` and :const:`ST_NOSUID` constants were added."
 msgstr ""
 
-#: library/os.rst:2899
+#: library/os.rst:2901
 msgid ""
 "The :const:`ST_NODEV`, :const:`ST_NOEXEC`, :const:`ST_SYNCHRONOUS`, :const:"
 "`ST_MANDLOCK`, :const:`ST_WRITE`, :const:`ST_APPEND`, :const:"
@@ -3143,11 +3146,11 @@ msgid ""
 "`ST_RELATIME` constants were added."
 msgstr ""
 
-#: library/os.rst:2908
+#: library/os.rst:2910
 msgid "Added :attr:`f_fsid`."
 msgstr ""
 
-#: library/os.rst:2914
+#: library/os.rst:2916
 msgid ""
 "A :class:`set` object indicating which functions in the :mod:`os` module "
 "accept an open file descriptor for their *dir_fd* parameter. Different "
@@ -3159,7 +3162,7 @@ msgid ""
 "(Specifying ``None`` for *dir_fd* is always supported on all platforms.)"
 msgstr ""
 
-#: library/os.rst:2924
+#: library/os.rst:2926
 msgid ""
 "To check whether a particular function accepts an open file descriptor for "
 "its *dir_fd* parameter, use the ``in`` operator on ``supports_dir_fd``. As "
@@ -3167,13 +3170,13 @@ msgid ""
 "open file descriptors for *dir_fd* on the local platform::"
 msgstr ""
 
-#: library/os.rst:2931
+#: library/os.rst:2933
 msgid ""
 "Currently *dir_fd* parameters only work on Unix platforms; none of them work "
 "on Windows."
 msgstr ""
 
-#: library/os.rst:2939
+#: library/os.rst:2941
 msgid ""
 "A :class:`set` object indicating whether :func:`os.access` permits "
 "specifying ``True`` for its *effective_ids* parameter on the local platform. "
@@ -3182,19 +3185,19 @@ msgid ""
 "func:`os.access`; otherwise it will be empty."
 msgstr ""
 
-#: library/os.rst:2945
+#: library/os.rst:2947
 msgid ""
 "This expression evaluates to ``True`` if :func:`os.access` supports "
 "``effective_ids=True`` on the local platform::"
 msgstr ""
 
-#: library/os.rst:2950
+#: library/os.rst:2952
 msgid ""
 "Currently *effective_ids* is only supported on Unix platforms; it does not "
 "work on Windows."
 msgstr ""
 
-#: library/os.rst:2958
+#: library/os.rst:2960
 msgid ""
 "A :class:`set` object indicating which functions in the :mod:`os` module "
 "permit specifying their *path* parameter as an open file descriptor on the "
@@ -3203,7 +3206,7 @@ msgid ""
 "*path* arguments is not available on all platforms Python supports."
 msgstr ""
 
-#: library/os.rst:2965
+#: library/os.rst:2967
 msgid ""
 "To determine whether a particular function permits specifying an open file "
 "descriptor for its *path* parameter, use the ``in`` operator on "
@@ -3212,7 +3215,7 @@ msgid ""
 "platform::"
 msgstr ""
 
-#: library/os.rst:2978
+#: library/os.rst:2980
 msgid ""
 "A :class:`set` object indicating which functions in the :mod:`os` module "
 "accept ``False`` for their *follow_symlinks* parameter on the local "
@@ -3225,7 +3228,7 @@ msgid ""
 "on all platforms.)"
 msgstr ""
 
-#: library/os.rst:2988
+#: library/os.rst:2990
 msgid ""
 "To check whether a particular function accepts ``False`` for its "
 "*follow_symlinks* parameter, use the ``in`` operator on "
@@ -3234,11 +3237,11 @@ msgid ""
 "stat` on the local platform::"
 msgstr ""
 
-#: library/os.rst:3001
+#: library/os.rst:3003
 msgid "Create a symbolic link pointing to *src* named *dst*."
 msgstr ""
 
-#: library/os.rst:3003
+#: library/os.rst:3005
 msgid ""
 "On Windows, a symlink represents either a file or a directory, and does not "
 "morph to the target dynamically.  If the target is present, the type of the "
@@ -3248,7 +3251,7 @@ msgid ""
 "ignored."
 msgstr ""
 
-#: library/os.rst:3014
+#: library/os.rst:3016
 msgid ""
 "On newer versions of Windows 10, unprivileged accounts can create symlinks "
 "if Developer Mode is enabled. When Developer Mode is not available/enabled, "
@@ -3256,83 +3259,83 @@ msgid ""
 "must be run as an administrator."
 msgstr ""
 
-#: library/os.rst:3020
+#: library/os.rst:3022
 msgid ""
 ":exc:`OSError` is raised when the function is called by an unprivileged user."
 msgstr ""
 
-#: library/os.rst:3023
+#: library/os.rst:23
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.symlink`` with arguments "
 "``src``, ``dst``, ``dir_fd``."
 msgstr ""
 
-#: library/os.rst:3030
+#: library/os.rst:3032
 msgid ""
 "Added the *dir_fd* argument, and now allow *target_is_directory* on non-"
 "Windows platforms."
 msgstr ""
 
-#: library/os.rst:3037
+#: library/os.rst:3039
 msgid "Added support for unelevated symlinks on Windows with Developer Mode."
 msgstr ""
 
-#: library/os.rst:3043
+#: library/os.rst:3045
 msgid "Force write of everything to disk."
 msgstr ""
 
-#: library/os.rst:3052
+#: library/os.rst:3054
 msgid ""
 "Truncate the file corresponding to *path*, so that it is at most *length* "
 "bytes in size."
 msgstr ""
 
-#: library/os.rst:3057
+#: library/os.rst:6
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.truncate`` with arguments "
 "``path``, ``length``."
 msgstr ""
 
-#: library/os.rst:3072
+#: library/os.rst:3074
 msgid ""
 "Remove (delete) the file *path*.  This function is semantically identical "
 "to :func:`remove`; the ``unlink`` name is its traditional Unix name.  Please "
 "see the documentation for :func:`remove` for further information."
 msgstr ""
 
-#: library/os.rst:3088
+#: library/os.rst:3090
 msgid "Set the access and modified times of the file specified by *path*."
 msgstr ""
 
-#: library/os.rst:3090
+#: library/os.rst:3092
 msgid ""
 ":func:`utime` takes two optional parameters, *times* and *ns*. These specify "
 "the times set on *path* and are used as follows:"
 msgstr ""
 
-#: library/os.rst:3093
+#: library/os.rst:3095
 msgid ""
 "If *ns* is specified, it must be a 2-tuple of the form ``(atime_ns, "
 "mtime_ns)`` where each member is an int expressing nanoseconds."
 msgstr ""
 
-#: library/os.rst:3096
+#: library/os.rst:3098
 msgid ""
 "If *times* is not ``None``, it must be a 2-tuple of the form ``(atime, "
 "mtime)`` where each member is an int or float expressing seconds."
 msgstr ""
 
-#: library/os.rst:3099
+#: library/os.rst:3101
 msgid ""
 "If *times* is ``None`` and *ns* is unspecified, this is equivalent to "
 "specifying ``ns=(atime_ns, mtime_ns)`` where both times are the current time."
 msgstr ""
 
-#: library/os.rst:3103
+#: library/os.rst:3105
 msgid "It is an error to specify tuples for both *times* and *ns*."
 msgstr ""
 
-#: library/os.rst:3105
+#: library/os.rst:3107
 msgid ""
 "Note that the exact times you set here may not be returned by a subsequent :"
 "func:`~os.stat` call, depending on the resolution with which your operating "
@@ -3342,19 +3345,19 @@ msgid ""
 "func:`utime`."
 msgstr ""
 
-#: library/os.rst:3116
+#: library/os.rst:29
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.utime`` with arguments "
 "``path``, ``times``, ``ns``, ``dir_fd``."
 msgstr ""
 
-#: library/os.rst:3118
+#: library/os.rst:3120
 msgid ""
 "Added support for specifying *path* as an open file descriptor, and the "
 "*dir_fd*, *follow_symlinks*, and *ns* parameters."
 msgstr ""
 
-#: library/os.rst:3132
+#: library/os.rst:3134
 msgid ""
 "Generate the file names in a directory tree by walking the tree either top-"
 "down or bottom-up. For each directory in the tree rooted at directory *top* "
@@ -3362,7 +3365,7 @@ msgid ""
 "filenames)``."
 msgstr ""
 
-#: library/os.rst:3137
+#: library/os.rst:3139
 msgid ""
 "*dirpath* is a string, the path to the directory.  *dirnames* is a list of "
 "the names of the subdirectories in *dirpath* (including symlinks to "
@@ -3376,7 +3379,7 @@ msgid ""
 "unspecified."
 msgstr ""
 
-#: library/os.rst:3148
+#: library/os.rst:3150
 msgid ""
 "If optional argument *topdown* is ``True`` or not specified, the triple for "
 "a directory is generated before the triples for any of its subdirectories "
@@ -3387,7 +3390,7 @@ msgid ""
 "its subdirectories are generated."
 msgstr ""
 
-#: library/os.rst:3156
+#: library/os.rst:3158
 msgid ""
 "When *topdown* is ``True``, the caller can modify the *dirnames* list in-"
 "place (perhaps using :keyword:`del` or slice assignment), and :func:`walk` "
@@ -3400,7 +3403,7 @@ msgid ""
 "itself is generated."
 msgstr ""
 
-#: library/os.rst:3165
+#: library/os.rst:3167
 msgid ""
 "By default, errors from the :func:`scandir` call are ignored.  If optional "
 "argument *onerror* is specified, it should be a function; it will be called "
@@ -3410,66 +3413,66 @@ msgid ""
 "object."
 msgstr ""
 
-#: library/os.rst:3171
+#: library/os.rst:3173
 msgid ""
 "By default, :func:`walk` will not walk down into symbolic links that resolve "
 "to directories. Set *followlinks* to ``True`` to visit directories pointed "
 "to by symlinks, on systems that support them."
 msgstr ""
 
-#: library/os.rst:3177
+#: library/os.rst:3179
 msgid ""
 "Be aware that setting *followlinks* to ``True`` can lead to infinite "
 "recursion if a link points to a parent directory of itself. :func:`walk` "
 "does not keep track of the directories it visited already."
 msgstr ""
 
-#: library/os.rst:3183
+#: library/os.rst:3185
 msgid ""
 "If you pass a relative pathname, don't change the current working directory "
 "between resumptions of :func:`walk`.  :func:`walk` never changes the current "
 "directory, and assumes that its caller doesn't either."
 msgstr ""
 
-#: library/os.rst:3248
+#: library/os.rst:3250
 msgid ""
 "This example displays the number of bytes taken by non-directory files in "
 "each directory under the starting directory, except that it doesn't look "
 "under any CVS subdirectory::"
 msgstr ""
 
-#: library/os.rst:3200
+#: library/os.rst:3202
 msgid ""
 "In the next example (simple implementation of :func:`shutil.rmtree`), "
 "walking the tree bottom-up is essential, :func:`rmdir` doesn't allow "
 "deleting a directory before the directory is empty::"
 msgstr ""
 
-#: library/os.rst:3215
+#: library/os.rst:88
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.walk`` with arguments "
 "``top``, ``topdown``, ``onerror``, ``followlinks``."
 msgstr ""
 
-#: library/os.rst:3217
+#: library/os.rst:3219
 msgid ""
 "This function now calls :func:`os.scandir` instead of :func:`os.listdir`, "
 "making it faster by reducing the number of calls to :func:`os.stat`."
 msgstr ""
 
-#: library/os.rst:3231
+#: library/os.rst:3233
 msgid ""
 "This behaves exactly like :func:`walk`, except that it yields a 4-tuple "
 "``(dirpath, dirnames, filenames, dirfd)``, and it supports ``dir_fd``."
 msgstr ""
 
-#: library/os.rst:3234
+#: library/os.rst:3236
 msgid ""
 "*dirpath*, *dirnames* and *filenames* are identical to :func:`walk` output, "
 "and *dirfd* is a file descriptor referring to the directory *dirpath*."
 msgstr ""
 
-#: library/os.rst:3237
+#: library/os.rst:3239
 msgid ""
 "This function always supports :ref:`paths relative to directory descriptors "
 "<dir_fd>` and :ref:`not following symlinks <follow_symlinks>`.  Note however "
@@ -3477,30 +3480,30 @@ msgid ""
 "*follow_symlinks* is ``False``."
 msgstr ""
 
-#: library/os.rst:3244
+#: library/os.rst:3246
 msgid ""
 "Since :func:`fwalk` yields file descriptors, those are only valid until the "
 "next iteration step, so you should duplicate them (e.g. with :func:`dup`) if "
 "you want to keep them longer."
 msgstr ""
 
-#: library/os.rst:3261
+#: library/os.rst:3263
 msgid ""
 "In the next example, walking the tree bottom-up is essential: :func:`rmdir` "
 "doesn't allow deleting a directory before the directory is empty::"
 msgstr ""
 
-#: library/os.rst:3276
+#: library/os.rst:50
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.fwalk`` with arguments "
 "``top``, ``topdown``, ``onerror``, ``follow_symlinks``, ``dir_fd``."
 msgstr ""
 
-#: library/os.rst:3285
+#: library/os.rst:3287
 msgid "Added support for :class:`bytes` paths."
 msgstr ""
 
-#: library/os.rst:3291
+#: library/os.rst:3293
 msgid ""
 "Create an anonymous file and return a file descriptor that refers to it. "
 "*flags* must be one of the ``os.MFD_*`` constants available on the system "
@@ -3508,7 +3511,7 @@ msgid ""
 "descriptor is :ref:`non-inheritable <fd_inheritance>`."
 msgstr ""
 
-#: library/os.rst:3296
+#: library/os.rst:3298
 msgid ""
 "The name supplied in *name* is used as a filename and will be displayed as "
 "the target of the corresponding symbolic link in the directory ``/proc/self/"
@@ -3518,23 +3521,23 @@ msgid ""
 "side effects."
 msgstr ""
 
-#: library/os.rst:3304
+#: library/os.rst:3306
 msgid ""
 ":ref:`Availability <availability>`: Linux 3.17 or newer with glibc 2.27 or "
 "newer."
 msgstr ""
 
-#: library/os.rst:3326
+#: library/os.rst:3328
 msgid "These flags can be passed to :func:`memfd_create`."
 msgstr ""
 
-#: library/os.rst:3330
+#: library/os.rst:3332
 msgid ""
 ":ref:`Availability <availability>`: Linux 3.17 or newer with glibc 2.27 or "
 "newer.  The ``MFD_HUGE*`` flags are only available since Linux 4.14."
 msgstr ""
 
-#: library/os.rst:3336
+#: library/os.rst:3338
 msgid ""
 "Create and return an event file descriptor. The file descriptors supports "
 "raw :func:`read` and :func:`write` with a buffer size of 8, :func:`~select."
@@ -3543,7 +3546,7 @@ msgid ""
 "ref:`non-inheritable <fd_inheritance>`."
 msgstr ""
 
-#: library/os.rst:3342
+#: library/os.rst:3344
 msgid ""
 "*initval* is the initial value of the event counter. The initial value must "
 "be an 32 bit unsigned integer. Please note that the initial value is limited "
@@ -3551,90 +3554,90 @@ msgid ""
 "integer with a maximum value of 2\\ :sup:`64`\\ -\\ 2."
 msgstr ""
 
-#: library/os.rst:3347
+#: library/os.rst:3349
 msgid ""
 "*flags* can be constructed from :const:`EFD_CLOEXEC`, :const:`EFD_NONBLOCK`, "
 "and :const:`EFD_SEMAPHORE`."
 msgstr ""
 
-#: library/os.rst:3350
+#: library/os.rst:3352
 msgid ""
 "If :const:`EFD_SEMAPHORE` is specified and the event counter is non-zero, :"
 "func:`eventfd_read` returns 1 and decrements the counter by one."
 msgstr ""
 
-#: library/os.rst:3353
+#: library/os.rst:3355
 msgid ""
 "If :const:`EFD_SEMAPHORE` is not specified and the event counter is non-"
 "zero, :func:`eventfd_read` returns the current event counter value and "
 "resets the counter to zero."
 msgstr ""
 
-#: library/os.rst:3357
+#: library/os.rst:3359
 msgid ""
 "If the event counter is zero and :const:`EFD_NONBLOCK` is not specified, :"
 "func:`eventfd_read` blocks."
 msgstr ""
 
-#: library/os.rst:3360
+#: library/os.rst:3362
 msgid ""
 ":func:`eventfd_write` increments the event counter. Write blocks if the "
 "write operation would increment the counter to a value larger than 2\\ :sup:"
 "`64`\\ -\\ 2."
 msgstr ""
 
-#: library/os.rst:3382
+#: library/os.rst:3384
 msgid ""
 ":ref:`Availability <availability>`: Linux 2.6.27 or newer with glibc 2.8 or "
 "newer."
 msgstr ""
 
-#: library/os.rst:3387
+#: library/os.rst:3389
 msgid ""
 "Read value from an :func:`eventfd` file descriptor and return a 64 bit "
 "unsigned int. The function does not verify that *fd* is an :func:`eventfd`."
 msgstr ""
 
-#: library/os.rst:3400 library/os.rst:3417
+#: library/os.rst:3402 library/os.rst:3419
 msgid ":ref:`Availability <availability>`: See :func:`eventfd`"
 msgstr ""
 
-#: library/os.rst:3396
+#: library/os.rst:3398
 msgid ""
 "Add value to an :func:`eventfd` file descriptor. *value* must be a 64 bit "
 "unsigned int. The function does not verify that *fd* is an :func:`eventfd`."
 msgstr ""
 
-#: library/os.rst:3405
+#: library/os.rst:3407
 msgid "Set close-on-exec flag for new :func:`eventfd` file descriptor."
 msgstr ""
 
-#: library/os.rst:3413
+#: library/os.rst:3415
 msgid ""
 "Set :const:`O_NONBLOCK` status flag for new :func:`eventfd` file descriptor."
 msgstr ""
 
-#: library/os.rst:3422
+#: library/os.rst:3424
 msgid ""
 "Provide semaphore-like semantics for reads from a :func:`eventfd` file "
 "descriptor. On read the internal counter is decremented by one."
 msgstr ""
 
-#: library/os.rst:3426
+#: library/os.rst:3428
 msgid ""
 ":ref:`Availability <availability>`: Linux 2.6.30 or newer with glibc 2.8 or "
 "newer."
 msgstr ""
 
-#: library/os.rst:3431
+#: library/os.rst:3433
 msgid "Linux extended attributes"
 msgstr ""
 
-#: library/os.rst:3435
+#: library/os.rst:3437
 msgid "These functions are all available on Linux only."
 msgstr ""
 
-#: library/os.rst:3439
+#: library/os.rst:3441
 msgid ""
 "Return the value of the extended filesystem attribute *attribute* for "
 "*path*. *attribute* can be bytes or str (directly or indirectly through the :"
@@ -3642,17 +3645,17 @@ msgid ""
 "encoding."
 msgstr ""
 
-#: library/os.rst:3447
+#: library/os.rst:9
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.getxattr`` with arguments "
 "``path``, ``attribute``."
 msgstr ""
 
-#: library/os.rst:3481 library/os.rst:3506
+#: library/os.rst:3483 library/os.rst:3508
 msgid "Accepts a :term:`path-like object` for *path* and *attribute*."
 msgstr ""
 
-#: library/os.rst:3455
+#: library/os.rst:3457
 msgid ""
 "Return a list of the extended filesystem attributes on *path*.  The "
 "attributes in the list are represented as strings decoded with the "
@@ -3660,13 +3663,13 @@ msgid ""
 "the current directory."
 msgstr ""
 
-#: library/os.rst:3463
+#: library/os.rst:9
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.listxattr`` with argument "
 "``path``."
 msgstr ""
 
-#: library/os.rst:3471
+#: library/os.rst:3473
 msgid ""
 "Removes the extended filesystem attribute *attribute* from *path*. "
 "*attribute* should be bytes or str (directly or indirectly through the :"
@@ -3674,13 +3677,13 @@ msgid ""
 "`filesystem encoding and error handler`."
 msgstr ""
 
-#: library/os.rst:3479
+#: library/os.rst:9
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.removexattr`` with arguments "
 "``path``, ``attribute``."
 msgstr ""
 
-#: library/os.rst:3487
+#: library/os.rst:3489
 msgid ""
 "Set the extended filesystem attribute *attribute* on *path* to *value*. "
 "*attribute* must be a bytes or str with no embedded NULs (directly or "
@@ -3692,45 +3695,45 @@ msgid ""
 "will not be created and ``EEXISTS`` will be raised."
 msgstr ""
 
-#: library/os.rst:3501
+#: library/os.rst:3503
 msgid ""
 "A bug in Linux kernel versions less than 2.6.39 caused the flags argument to "
 "be ignored on some filesystems."
 msgstr ""
 
-#: library/os.rst:3504
+#: library/os.rst:18
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.setxattr`` with arguments "
 "``path``, ``attribute``, ``value``, ``flags``."
 msgstr ""
 
-#: library/os.rst:3512
+#: library/os.rst:3514
 msgid ""
 "The maximum size the value of an extended attribute can be. Currently, this "
 "is 64 KiB on Linux."
 msgstr ""
 
-#: library/os.rst:3518
+#: library/os.rst:3520
 msgid ""
 "This is a possible value for the flags argument in :func:`setxattr`. It "
 "indicates the operation must create an attribute."
 msgstr ""
 
-#: library/os.rst:3524
+#: library/os.rst:3526
 msgid ""
 "This is a possible value for the flags argument in :func:`setxattr`. It "
 "indicates the operation must replace an existing attribute."
 msgstr ""
 
-#: library/os.rst:3531
+#: library/os.rst:3533
 msgid "Process Management"
 msgstr ""
 
-#: library/os.rst:3533
+#: library/os.rst:3535
 msgid "These functions may be used to create and manage processes."
 msgstr ""
 
-#: library/os.rst:3535
+#: library/os.rst:3537
 msgid ""
 "The various :func:`exec\\* <execl>` functions take a list of arguments for "
 "the new program loaded into the process.  In each case, the first of these "
@@ -3741,7 +3744,7 @@ msgid ""
 "standard output; ``foo`` will seem to be ignored."
 msgstr ""
 
-#: library/os.rst:3546
+#: library/os.rst:3548
 msgid ""
 "Generate a :const:`SIGABRT` signal to the current process.  On Unix, the "
 "default behavior is to produce a core dump; on Windows, the process "
@@ -3750,37 +3753,37 @@ msgid ""
 "`SIGABRT` with :func:`signal.signal`."
 msgstr ""
 
-#: library/os.rst:3555
+#: library/os.rst:3557
 msgid "Add a path to the DLL search path."
 msgstr ""
 
-#: library/os.rst:3557
+#: library/os.rst:3559
 msgid ""
 "This search path is used when resolving dependencies for imported extension "
 "modules (the module itself is resolved through :data:`sys.path`), and also "
 "by :mod:`ctypes`."
 msgstr ""
 
-#: library/os.rst:3561
+#: library/os.rst:3563
 msgid ""
 "Remove the directory by calling **close()** on the returned object or using "
 "it in a :keyword:`with` statement."
 msgstr ""
 
-#: library/os.rst:3564
+#: library/os.rst:3566
 msgid ""
 "See the `Microsoft documentation <https://msdn.microsoft."
 "com/44228cf2-6306-466c-8f16-f513cd3ba8b5>`_ for more information about how "
 "DLLs are loaded."
 msgstr ""
 
-#: library/os.rst:3568
+#: library/os.rst:14
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.add_dll_directory`` with "
 "argument ``path``."
 msgstr ""
 
-#: library/os.rst:3572
+#: library/os.rst:3574
 msgid ""
 "Previous versions of CPython would resolve DLLs using the default behavior "
 "for the current process. This led to inconsistencies, such as only sometimes "
@@ -3788,14 +3791,14 @@ msgid ""
 "such as ``AddDllDirectory`` having no effect."
 msgstr ""
 
-#: library/os.rst:3579
+#: library/os.rst:3581
 msgid ""
 "In 3.8, the two primary ways DLLs are loaded now explicitly override the "
 "process-wide behavior to ensure consistency. See the :ref:`porting notes "
 "<bpo-36085-whatsnew>` for information on updating libraries."
 msgstr ""
 
-#: library/os.rst:3594
+#: library/os.rst:3596
 msgid ""
 "These functions all execute a new program, replacing the current process; "
 "they do not return.  On Unix, the new executable is loaded into the current "
@@ -3803,7 +3806,7 @@ msgid ""
 "reported as :exc:`OSError` exceptions."
 msgstr ""
 
-#: library/os.rst:3599
+#: library/os.rst:3601
 msgid ""
 "The current process is replaced immediately. Open file objects and "
 "descriptors are not flushed, so if there may be data buffered on these open "
@@ -3811,7 +3814,7 @@ msgid ""
 "fsync` before calling an :func:`exec\\* <execl>` function."
 msgstr ""
 
-#: library/os.rst:3605
+#: library/os.rst:3607
 msgid ""
 "The \"l\" and \"v\" variants of the :func:`exec\\* <execl>` functions differ "
 "in how command-line arguments are passed.  The \"l\" variants are perhaps "
@@ -3824,7 +3827,7 @@ msgid ""
 "enforced."
 msgstr ""
 
-#: library/os.rst:3614
+#: library/os.rst:3616
 msgid ""
 "The variants which include a \"p\" near the end (:func:`execlp`, :func:"
 "`execlpe`, :func:`execvp`, and :func:`execvpe`) will use the :envvar:`PATH` "
@@ -3837,7 +3840,7 @@ msgid ""
 "absolute or relative path."
 msgstr ""
 
-#: library/os.rst:3624
+#: library/os.rst:3626
 msgid ""
 "For :func:`execle`, :func:`execlpe`, :func:`execve`, and :func:`execvpe` "
 "(note that these all end in \"e\"), the *env* parameter must be a mapping "
@@ -3847,7 +3850,7 @@ msgid ""
 "process to inherit the environment of the current process."
 msgstr ""
 
-#: library/os.rst:3631
+#: library/os.rst:3633
 msgid ""
 "For :func:`execve` on some platforms, *path* may also be specified as an "
 "open file descriptor.  This functionality may not be supported on your "
@@ -3856,31 +3859,31 @@ msgid ""
 "`NotImplementedError`."
 msgstr ""
 
-#: library/os.rst:3636
+#: library/os.rst:43
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.exec`` with arguments "
 "``path``, ``args``, ``env``."
 msgstr ""
 
-#: library/os.rst:3640
+#: library/os.rst:3642
 msgid ""
 "Added support for specifying *path* as an open file descriptor for :func:"
 "`execve`."
 msgstr ""
 
-#: library/os.rst:3649
+#: library/os.rst:3651
 msgid ""
 "Exit the process with status *n*, without calling cleanup handlers, flushing "
 "stdio buffers, etc."
 msgstr ""
 
-#: library/os.rst:3654
+#: library/os.rst:3656
 msgid ""
 "The standard way to exit is ``sys.exit(n)``.  :func:`_exit` should normally "
 "only be used in the child process after a :func:`fork`."
 msgstr ""
 
-#: library/os.rst:3657
+#: library/os.rst:3659
 msgid ""
 "The following exit codes are defined and can be used with :func:`_exit`, "
 "although they are not required.  These are typically used for system "
@@ -3888,123 +3891,123 @@ msgid ""
 "delivery program."
 msgstr ""
 
-#: library/os.rst:3663
+#: library/os.rst:3665
 msgid ""
 "Some of these may not be available on all Unix platforms, since there is "
 "some variation.  These constants are defined where they are defined by the "
 "underlying platform."
 msgstr ""
 
-#: library/os.rst:3670
+#: library/os.rst:3672
 msgid "Exit code that means no error occurred."
 msgstr ""
 
-#: library/os.rst:3677
+#: library/os.rst:3679
 msgid ""
 "Exit code that means the command was used incorrectly, such as when the "
 "wrong number of arguments are given."
 msgstr ""
 
-#: library/os.rst:3685
+#: library/os.rst:3687
 msgid "Exit code that means the input data was incorrect."
 msgstr ""
 
-#: library/os.rst:3692
+#: library/os.rst:3694
 msgid "Exit code that means an input file did not exist or was not readable."
 msgstr ""
 
-#: library/os.rst:3699
+#: library/os.rst:3701
 msgid "Exit code that means a specified user did not exist."
 msgstr ""
 
-#: library/os.rst:3706
+#: library/os.rst:3708
 msgid "Exit code that means a specified host did not exist."
 msgstr ""
 
-#: library/os.rst:3713
+#: library/os.rst:3715
 msgid "Exit code that means that a required service is unavailable."
 msgstr ""
 
-#: library/os.rst:3720
+#: library/os.rst:3722
 msgid "Exit code that means an internal software error was detected."
 msgstr ""
 
-#: library/os.rst:3727
+#: library/os.rst:3729
 msgid ""
 "Exit code that means an operating system error was detected, such as the "
 "inability to fork or create a pipe."
 msgstr ""
 
-#: library/os.rst:3735
+#: library/os.rst:3737
 msgid ""
 "Exit code that means some system file did not exist, could not be opened, or "
 "had some other kind of error."
 msgstr ""
 
-#: library/os.rst:3743
+#: library/os.rst:3745
 msgid "Exit code that means a user specified output file could not be created."
 msgstr ""
 
-#: library/os.rst:3750
+#: library/os.rst:3752
 msgid ""
 "Exit code that means that an error occurred while doing I/O on some file."
 msgstr ""
 
-#: library/os.rst:3757
+#: library/os.rst:3759
 msgid ""
 "Exit code that means a temporary failure occurred.  This indicates something "
 "that may not really be an error, such as a network connection that couldn't "
 "be made during a retryable operation."
 msgstr ""
 
-#: library/os.rst:3766
+#: library/os.rst:3768
 msgid ""
 "Exit code that means that a protocol exchange was illegal, invalid, or not "
 "understood."
 msgstr ""
 
-#: library/os.rst:3774
+#: library/os.rst:3776
 msgid ""
 "Exit code that means that there were insufficient permissions to perform the "
 "operation (but not intended for file system problems)."
 msgstr ""
 
-#: library/os.rst:3782
+#: library/os.rst:3784
 msgid "Exit code that means that some kind of configuration error occurred."
 msgstr ""
 
-#: library/os.rst:3789
+#: library/os.rst:3791
 msgid "Exit code that means something like \"an entry was not found\"."
 msgstr ""
 
-#: library/os.rst:3796
+#: library/os.rst:3798
 msgid ""
 "Fork a child process.  Return ``0`` in the child and the child's process id "
 "in the parent.  If an error occurs :exc:`OSError` is raised."
 msgstr ""
 
-#: library/os.rst:3799
+#: library/os.rst:3801
 msgid ""
 "Note that some platforms including FreeBSD <= 6.3 and Cygwin have known "
 "issues when using ``fork()`` from a thread."
 msgstr ""
 
-#: library/os.rst:3802
+#: library/os.rst:7
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.fork`` with no arguments."
 msgstr ""
 
-#: library/os.rst:3804
+#: library/os.rst:3806
 msgid ""
 "Calling ``fork()`` in a subinterpreter is no longer supported (:exc:"
 "`RuntimeError` is raised)."
 msgstr ""
 
-#: library/os.rst:3810
+#: library/os.rst:3812
 msgid "See :mod:`ssl` for applications that use the SSL module with fork()."
 msgstr ""
 
-#: library/os.rst:3817
+#: library/os.rst:3819
 msgid ""
 "Fork a child process, using a new pseudo-terminal as the child's controlling "
 "terminal. Return a pair of ``(pid, fd)``, where *pid* is ``0`` in the child, "
@@ -4013,24 +4016,24 @@ msgid ""
 "the :mod:`pty` module.  If an error occurs :exc:`OSError` is raised."
 msgstr ""
 
-#: library/os.rst:3823
+#: library/os.rst:7
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.forkpty`` with no arguments."
 msgstr ""
 
-#: library/os.rst:3825
+#: library/os.rst:3827
 msgid ""
 "Calling ``forkpty()`` in a subinterpreter is no longer supported (:exc:"
 "`RuntimeError` is raised)."
 msgstr ""
 
-#: library/os.rst:3838
+#: library/os.rst:3840
 msgid ""
 "Send signal *sig* to the process *pid*.  Constants for the specific signals "
 "available on the host platform are defined in the :mod:`signal` module."
 msgstr ""
 
-#: library/os.rst:3841
+#: library/os.rst:3843
 msgid ""
 "Windows: The :data:`signal.CTRL_C_EVENT` and :data:`signal.CTRL_BREAK_EVENT` "
 "signals are special signals which can only be sent to console processes "
@@ -4040,36 +4043,36 @@ msgid ""
 "version of :func:`kill` additionally takes process handles to be killed."
 msgstr ""
 
-#: library/os.rst:3849
+#: library/os.rst:3851
 msgid "See also :func:`signal.pthread_kill`."
 msgstr ""
 
-#: library/os.rst:3851
+#: library/os.rst:18
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.kill`` with arguments "
 "``pid``, ``sig``."
 msgstr ""
 
-#: library/os.rst:3853
+#: library/os.rst:3855
 msgid "Windows support."
 msgstr ""
 
-#: library/os.rst:3863
+#: library/os.rst:3865
 msgid "Send the signal *sig* to the process group *pgid*."
 msgstr ""
 
-#: library/os.rst:3865
+#: library/os.rst:7
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.killpg`` with arguments "
 "``pgid``, ``sig``."
 msgstr ""
 
-#: library/os.rst:3872
+#: library/os.rst:3874
 msgid ""
 "Add *increment* to the process's \"niceness\".  Return the new niceness."
 msgstr ""
 
-#: library/os.rst:3879
+#: library/os.rst:3881
 msgid ""
 "Return a file descriptor referring to the process *pid*.  This descriptor "
 "can be used to perform process management without races and signals.  The "
@@ -4077,21 +4080,21 @@ msgid ""
 "currently defined."
 msgstr ""
 
-#: library/os.rst:3884
+#: library/os.rst:3886
 msgid "See the :manpage:`pidfd_open(2)` man page for more details."
 msgstr ""
 
-#: library/os.rst:3886
+#: library/os.rst:3888
 msgid ":ref:`Availability <availability>`: Linux 5.3+"
 msgstr ""
 
-#: library/os.rst:3892
+#: library/os.rst:3894
 msgid ""
 "Lock program segments into memory.  The value of *op* (defined in ``<sys/"
 "lock.h>``) determines which segments are locked."
 msgstr ""
 
-#: library/os.rst:3900
+#: library/os.rst:3902
 msgid ""
 "Open a pipe to or from command *cmd*. The return value is an open file "
 "object connected to the pipe, which can be read or written depending on "
@@ -4101,7 +4104,7 @@ msgid ""
 "bytes."
 msgstr ""
 
-#: library/os.rst:3907
+#: library/os.rst:3909
 msgid ""
 "The ``close`` method returns :const:`None` if the subprocess exited "
 "successfully, or the subprocess's return code if there was an error. On "
@@ -4113,43 +4116,43 @@ msgid ""
 "contains the signed integer return code from the child process."
 msgstr ""
 
-#: library/os.rst:3917
+#: library/os.rst:3919
 msgid ""
 "On Unix, :func:`waitstatus_to_exitcode` can be used to convert the ``close`` "
 "method result (exit status) into an exit code if it is not ``None``. On "
 "Windows, the ``close`` method result is directly the exit code (or ``None``)."
 msgstr ""
 
-#: library/os.rst:3922
+#: library/os.rst:3924
 msgid ""
 "This is implemented using :class:`subprocess.Popen`; see that class's "
 "documentation for more powerful ways to manage and communicate with "
 "subprocesses."
 msgstr ""
 
-#: library/os.rst:3931
+#: library/os.rst:3933
 msgid "Wraps the :c:func:`posix_spawn` C library API for use from Python."
 msgstr ""
 
-#: library/os.rst:3933
+#: library/os.rst:3935
 msgid ""
 "Most users should use :func:`subprocess.run` instead of :func:`posix_spawn`."
 msgstr ""
 
-#: library/os.rst:3935
+#: library/os.rst:3937
 msgid ""
 "The positional-only arguments *path*, *args*, and *env* are similar to :func:"
 "`execve`."
 msgstr ""
 
-#: library/os.rst:3938
+#: library/os.rst:3940
 msgid ""
 "The *path* parameter is the path to the executable file.  The *path* should "
 "contain a directory.  Use :func:`posix_spawnp` to pass an executable file "
 "without directory."
 msgstr ""
 
-#: library/os.rst:3942
+#: library/os.rst:3944
 msgid ""
 "The *file_actions* argument may be a sequence of tuples describing actions "
 "to take on specific file descriptors in the child process between the C "
@@ -4158,31 +4161,31 @@ msgid ""
 "describing the remaining tuple elements:"
 msgstr ""
 
-#: library/os.rst:3950
+#: library/os.rst:3952
 msgid "(``os.POSIX_SPAWN_OPEN``, *fd*, *path*, *flags*, *mode*)"
 msgstr ""
 
-#: library/os.rst:3952
+#: library/os.rst:3954
 msgid "Performs ``os.dup2(os.open(path, flags, mode), fd)``."
 msgstr ""
 
-#: library/os.rst:3956
+#: library/os.rst:3958
 msgid "(``os.POSIX_SPAWN_CLOSE``, *fd*)"
 msgstr ""
 
-#: library/os.rst:3958
+#: library/os.rst:3960
 msgid "Performs ``os.close(fd)``."
 msgstr ""
 
-#: library/os.rst:3962
+#: library/os.rst:3964
 msgid "(``os.POSIX_SPAWN_DUP2``, *fd*, *new_fd*)"
 msgstr ""
 
-#: library/os.rst:3964
+#: library/os.rst:3966
 msgid "Performs ``os.dup2(fd, new_fd)``."
 msgstr ""
 
-#: library/os.rst:3966
+#: library/os.rst:3968
 msgid ""
 "These tuples correspond to the C library :c:func:"
 "`posix_spawn_file_actions_addopen`, :c:func:"
@@ -4191,7 +4194,7 @@ msgid ""
 "`posix_spawn` call itself."
 msgstr ""
 
-#: library/os.rst:3972
+#: library/os.rst:3974
 msgid ""
 "The *setpgroup* argument will set the process group of the child to the "
 "value specified. If the value specified is 0, the child's process group ID "
@@ -4200,7 +4203,7 @@ msgid ""
 "corresponds to the C library :c:data:`POSIX_SPAWN_SETPGROUP` flag."
 msgstr ""
 
-#: library/os.rst:3978
+#: library/os.rst:3980
 msgid ""
 "If the *resetids* argument is ``True`` it will reset the effective UID and "
 "GID of the child to the real UID and GID of the parent process. If the "
@@ -4211,7 +4214,7 @@ msgid ""
 "library :c:data:`POSIX_SPAWN_RESETIDS` flag."
 msgstr ""
 
-#: library/os.rst:3986
+#: library/os.rst:3988
 msgid ""
 "If the *setsid* argument is ``True``, it will create a new session ID for "
 "``posix_spawn``. *setsid* requires :c:data:`POSIX_SPAWN_SETSID` or :c:data:"
@@ -4219,7 +4222,7 @@ msgid ""
 "raised."
 msgstr ""
 
-#: library/os.rst:3991
+#: library/os.rst:3993
 msgid ""
 "The *setsigmask* argument will set the signal mask to the signal set "
 "specified. If the parameter is not used, then the child inherits the "
@@ -4227,14 +4230,14 @@ msgid ""
 "`POSIX_SPAWN_SETSIGMASK` flag."
 msgstr ""
 
-#: library/os.rst:3996
+#: library/os.rst:3998
 msgid ""
 "The *sigdef* argument will reset the disposition of all signals in the set "
 "specified. This argument corresponds to the C library :c:data:"
 "`POSIX_SPAWN_SETSIGDEF` flag."
 msgstr ""
 
-#: library/os.rst:4000
+#: library/os.rst:4002
 msgid ""
 "The *scheduler* argument must be a tuple containing the (optional) scheduler "
 "policy and an instance of :class:`sched_param` with the scheduler "
@@ -4244,79 +4247,79 @@ msgid ""
 "`POSIX_SPAWN_SETSCHEDULER` flags."
 msgstr ""
 
-#: library/os.rst:4023
+#: library/os.rst:77
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.posix_spawn`` with arguments "
 "``path``, ``argv``, ``env``."
 msgstr ""
 
-#: library/os.rst:4017
+#: library/os.rst:4019
 msgid "Wraps the :c:func:`posix_spawnp` C library API for use from Python."
 msgstr ""
 
-#: library/os.rst:4019
+#: library/os.rst:4021
 msgid ""
 "Similar to :func:`posix_spawn` except that the system searches for the "
 "*executable* file in the list of directories specified by the :envvar:`PATH` "
 "environment variable (in the same way as for ``execvp(3)``)."
 msgstr ""
 
-#: library/os.rst:4027
+#: library/os.rst:4029
 msgid ""
 ":ref:`Availability <availability>`: See :func:`posix_spawn` documentation."
 msgstr ""
 
-#: library/os.rst:4033
+#: library/os.rst:4035
 msgid ""
 "Register callables to be executed when a new child process is forked using :"
 "func:`os.fork` or similar process cloning APIs. The parameters are optional "
 "and keyword-only. Each specifies a different call point."
 msgstr ""
 
-#: library/os.rst:4038
+#: library/os.rst:4040
 msgid "*before* is a function called before forking a child process."
 msgstr ""
 
-#: library/os.rst:4039
+#: library/os.rst:4041
 msgid ""
 "*after_in_parent* is a function called from the parent process after forking "
 "a child process."
 msgstr ""
 
-#: library/os.rst:4041
+#: library/os.rst:4043
 msgid "*after_in_child* is a function called from the child process."
 msgstr ""
 
-#: library/os.rst:4043
+#: library/os.rst:4045
 msgid ""
 "These calls are only made if control is expected to return to the Python "
 "interpreter.  A typical :mod:`subprocess` launch will not trigger them as "
 "the child is not going to re-enter the interpreter."
 msgstr ""
 
-#: library/os.rst:4047
+#: library/os.rst:4049
 msgid ""
 "Functions registered for execution before forking are called in reverse "
 "registration order.  Functions registered for execution after forking "
 "(either in the parent or in the child) are called in registration order."
 msgstr ""
 
-#: library/os.rst:4052
+#: library/os.rst:4054
 msgid ""
 "Note that :c:func:`fork` calls made by third-party C code may not call those "
 "functions, unless it explicitly calls :c:func:`PyOS_BeforeFork`, :c:func:"
 "`PyOS_AfterFork_Parent` and :c:func:`PyOS_AfterFork_Child`."
 msgstr ""
 
-#: library/os.rst:4056
+#: library/os.rst:4058
 msgid "There is no way to unregister a function."
 msgstr ""
 
-#: library/os.rst:4072
+#: library/os.rst:4074
 msgid "Execute the program *path* in a new process."
 msgstr ""
 
-#: library/os.rst:4074
+#: library/os.rst:4076
 msgid ""
 "(Note that the :mod:`subprocess` module provides more powerful facilities "
 "for spawning new processes and retrieving their results; using that module "
@@ -4324,7 +4327,7 @@ msgid ""
 "`subprocess-replacements` section.)"
 msgstr ""
 
-#: library/os.rst:4079
+#: library/os.rst:4081
 msgid ""
 "If *mode* is :const:`P_NOWAIT`, this function returns the process id of the "
 "new process; if *mode* is :const:`P_WAIT`, returns the process's exit code "
@@ -4333,13 +4336,13 @@ msgid ""
 "handle, so can be used with the :func:`waitpid` function."
 msgstr ""
 
-#: library/os.rst:4085
+#: library/os.rst:4087
 msgid ""
 "Note on VxWorks, this function doesn't return ``-signal`` when the new "
 "process is killed. Instead it raises OSError exception."
 msgstr ""
 
-#: library/os.rst:4088
+#: library/os.rst:4090
 msgid ""
 "The \"l\" and \"v\" variants of the :func:`spawn\\* <spawnl>` functions "
 "differ in how command-line arguments are passed.  The \"l\" variants are "
@@ -4351,7 +4354,7 @@ msgid ""
 "to the child process must start with the name of the command being run."
 msgstr ""
 
-#: library/os.rst:4097
+#: library/os.rst:4099
 msgid ""
 "The variants which include a second \"p\" near the end (:func:`spawnlp`, :"
 "func:`spawnlpe`, :func:`spawnvp`, and :func:`spawnvpe`) will use the :envvar:"
@@ -4364,7 +4367,7 @@ msgid ""
 "appropriate absolute or relative path."
 msgstr ""
 
-#: library/os.rst:4107
+#: library/os.rst:4109
 msgid ""
 "For :func:`spawnle`, :func:`spawnlpe`, :func:`spawnve`, and :func:`spawnvpe` "
 "(note that these all end in \"e\"), the *env* parameter must be a mapping "
@@ -4376,19 +4379,19 @@ msgid ""
 "values will cause the function to fail, with a return value of ``127``."
 msgstr ""
 
-#: library/os.rst:4116
+#: library/os.rst:4118
 msgid ""
 "As an example, the following calls to :func:`spawnlp` and :func:`spawnvpe` "
 "are equivalent::"
 msgstr ""
 
-#: library/os.rst:4125
+#: library/os.rst:54
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.spawn`` with arguments "
 "``mode``, ``path``, ``args``, ``env``."
 msgstr ""
 
-#: library/os.rst:4131
+#: library/os.rst:4133
 msgid ""
 ":ref:`Availability <availability>`: Unix, Windows.  :func:`spawnlp`, :func:"
 "`spawnlpe`, :func:`spawnvp` and :func:`spawnvpe` are not available on "
@@ -4396,7 +4399,7 @@ msgid ""
 "Windows; we advise you to use the :mod:`subprocess` module instead."
 msgstr ""
 
-#: library/os.rst:4139
+#: library/os.rst:4141
 msgid ""
 "Possible values for the *mode* parameter to the :func:`spawn\\* <spawnl>` "
 "family of functions.  If either of these values is given, the :func:"
@@ -4404,7 +4407,7 @@ msgid ""
 "created, with the process id as the return value."
 msgstr ""
 
-#: library/os.rst:4149
+#: library/os.rst:4151
 msgid ""
 "Possible value for the *mode* parameter to the :func:`spawn\\* <spawnl>` "
 "family of functions.  If this is given as *mode*, the :func:`spawn\\*` "
@@ -4413,7 +4416,7 @@ msgid ""
 "signal`` if a signal kills the process."
 msgstr ""
 
-#: library/os.rst:4161
+#: library/os.rst:4163
 msgid ""
 "Possible values for the *mode* parameter to the :func:`spawn\\* <spawnl>` "
 "family of functions.  These are less portable than those listed above. :"
@@ -4423,11 +4426,11 @@ msgid ""
 "function will not return."
 msgstr ""
 
-#: library/os.rst:4172
+#: library/os.rst:4174
 msgid "Start a file with its associated application."
 msgstr ""
 
-#: library/os.rst:4174
+#: library/os.rst:4176
 msgid ""
 "When *operation* is not specified or ``'open'``, this acts like double-"
 "clicking the file in Windows Explorer, or giving the file name as an "
@@ -4436,7 +4439,7 @@ msgid ""
 "associated."
 msgstr ""
 
-#: library/os.rst:4179
+#: library/os.rst:4181
 msgid ""
 "When another *operation* is given, it must be a \"command verb\" that "
 "specifies what should be done with the file. Common verbs documented by "
@@ -4444,28 +4447,28 @@ msgid ""
 "``'explore'`` and ``'find'`` (to be used on directories)."
 msgstr ""
 
-#: library/os.rst:4184
+#: library/os.rst:4186
 msgid ""
 "When launching an application, specify *arguments* to be passed as a single "
 "string. This argument may have no effect when using this function to launch "
 "a document."
 msgstr ""
 
-#: library/os.rst:4188
+#: library/os.rst:4190
 msgid ""
 "The default working directory is inherited, but may be overridden by the "
 "*cwd* argument. This should be an absolute path. A relative *path* will be "
 "resolved against this argument."
 msgstr ""
 
-#: library/os.rst:4192
+#: library/os.rst:4194
 msgid ""
 "Use *show_cmd* to override the default window style. Whether this has any "
 "effect will depend on the application being launched. Values are integers as "
 "supported by the Win32 :c:func:`ShellExecute` function."
 msgstr ""
 
-#: library/os.rst:4196
+#: library/os.rst:4198
 msgid ""
 ":func:`startfile` returns as soon as the associated application is launched. "
 "There is no option to wait for the application to close, and no way to "
@@ -4476,32 +4479,32 @@ msgid ""
 "encoded for Win32."
 msgstr ""
 
-#: library/os.rst:4204
+#: library/os.rst:4206
 msgid ""
 "To reduce interpreter startup overhead, the Win32 :c:func:`ShellExecute` "
 "function is not resolved until this function is first called.  If the "
 "function cannot be resolved, :exc:`NotImplementedError` will be raised."
 msgstr ""
 
-#: library/os.rst:4208
+#: library/os.rst:37
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.startfile`` with arguments "
 "``path``, ``operation``."
 msgstr ""
 
-#: library/os.rst:4210
+#: library/os.rst:39
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.startfile/2`` with arguments "
 "``path``, ``operation``, ``arguments``, ``cwd``, ``show_cmd``."
 msgstr ""
 
-#: library/os.rst:4214
+#: library/os.rst:4216
 msgid ""
 "Added the *arguments*, *cwd* and *show_cmd* arguments, and the ``os."
 "startfile/2`` audit event."
 msgstr ""
 
-#: library/os.rst:4221
+#: library/os.rst:4223
 msgid ""
 "Execute the command (a string) in a subshell.  This is implemented by "
 "calling the Standard C function :c:func:`system`, and has the same "
@@ -4512,13 +4515,13 @@ msgid ""
 "value of the Python function is system-dependent."
 msgstr ""
 
-#: library/os.rst:4229
+#: library/os.rst:4231
 msgid ""
 "On Unix, the return value is the exit status of the process encoded in the "
 "format specified for :func:`wait`."
 msgstr ""
 
-#: library/os.rst:4232
+#: library/os.rst:4234
 msgid ""
 "On Windows, the return value is that returned by the system shell after "
 "running *command*.  The shell is given by the Windows environment variable :"
@@ -4527,7 +4530,7 @@ msgid ""
 "shell documentation."
 msgstr ""
 
-#: library/os.rst:4238
+#: library/os.rst:4240
 msgid ""
 "The :mod:`subprocess` module provides more powerful facilities for spawning "
 "new processes and retrieving their results; using that module is preferable "
@@ -4535,53 +4538,53 @@ msgid ""
 "the :mod:`subprocess` documentation for some helpful recipes."
 msgstr ""
 
-#: library/os.rst:4243
+#: library/os.rst:4245
 msgid ""
 "On Unix, :func:`waitstatus_to_exitcode` can be used to convert the result "
 "(exit status) into an exit code. On Windows, the result is directly the exit "
 "code."
 msgstr ""
 
-#: library/os.rst:4247
+#: library/os.rst:27
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``os.system`` with argument "
 "``command``."
 msgstr ""
 
-#: library/os.rst:4254
+#: library/os.rst:4256
 msgid ""
 "Returns the current global process times. The return value is an object with "
 "five attributes:"
 msgstr ""
 
-#: library/os.rst:4257
+#: library/os.rst:4259
 msgid ":attr:`!user` - user time"
 msgstr ""
 
-#: library/os.rst:4258
+#: library/os.rst:4260
 msgid ":attr:`!system` - system time"
 msgstr ""
 
-#: library/os.rst:4259
+#: library/os.rst:4261
 msgid ":attr:`!children_user` - user time of all child processes"
 msgstr ""
 
-#: library/os.rst:4260
+#: library/os.rst:4262
 msgid ":attr:`!children_system` - system time of all child processes"
 msgstr ""
 
-#: library/os.rst:4261
+#: library/os.rst:4263
 msgid ":attr:`!elapsed` - elapsed real time since a fixed point in the past"
 msgstr ""
 
-#: library/os.rst:4263
+#: library/os.rst:4265
 msgid ""
 "For backwards compatibility, this object also behaves like a five-tuple "
 "containing :attr:`!user`, :attr:`!system`, :attr:`!children_user`, :attr:`!"
 "children_system`, and :attr:`!elapsed` in that order."
 msgstr ""
 
-#: library/os.rst:4267
+#: library/os.rst:4269
 msgid ""
 "See the Unix manual page :manpage:`times(2)` and `times(3) <https://www."
 "freebsd.org/cgi/man.cgi?time(3)>`_ manual page on Unix or `the "
@@ -4591,7 +4594,7 @@ msgid ""
 "attributes are zero."
 msgstr ""
 
-#: library/os.rst:4281
+#: library/os.rst:4283
 msgid ""
 "Wait for completion of a child process, and return a tuple containing its "
 "pid and exit status indication: a 16-bit number, whose low byte is the "
@@ -4600,19 +4603,19 @@ msgid ""
 "if a core file was produced."
 msgstr ""
 
-#: library/os.rst:4392
+#: library/os.rst:4394
 msgid ""
 ":func:`waitstatus_to_exitcode` can be used to convert the exit status into "
 "an exit code."
 msgstr ""
 
-#: library/os.rst:4294
+#: library/os.rst:4296
 msgid ""
 ":func:`waitpid` can be used to wait for the completion of a specific child "
 "process and has more options."
 msgstr ""
 
-#: library/os.rst:4299
+#: library/os.rst:4301
 msgid ""
 "Wait for the completion of one or more child processes. *idtype* can be :"
 "data:`P_PID`, :data:`P_PGID`, :data:`P_ALL`, or :data:`P_PIDFD` on Linux. "
@@ -4625,43 +4628,43 @@ msgid ""
 "`WNOHANG` is specified and there are no children in a waitable state."
 msgstr ""
 
-#: library/os.rst:4319
+#: library/os.rst:4321
 msgid ""
 "These are the possible values for *idtype* in :func:`waitid`. They affect "
 "how *id* is interpreted."
 msgstr ""
 
-#: library/os.rst:4328
+#: library/os.rst:4330
 msgid ""
 "This is a Linux-specific *idtype* that indicates that *id* is a file "
 "descriptor that refers to a process."
 msgstr ""
 
-#: library/os.rst:4332
+#: library/os.rst:4334
 msgid ":ref:`Availability <availability>`: Linux 5.4+"
 msgstr ""
 
-#: library/os.rst:4339
+#: library/os.rst:4341
 msgid ""
 "Flags that can be used in *options* in :func:`waitid` that specify what "
 "child signal to wait for."
 msgstr ""
 
-#: library/os.rst:4354
+#: library/os.rst:4356
 msgid ""
 "These are the possible values for :attr:`si_code` in the result returned by :"
 "func:`waitid`."
 msgstr ""
 
-#: library/os.rst:4361
+#: library/os.rst:4363
 msgid "Added :data:`CLD_KILLED` and :data:`CLD_STOPPED` values."
 msgstr ""
 
-#: library/os.rst:4367
+#: library/os.rst:4369
 msgid "The details of this function differ on Unix and Windows."
 msgstr ""
 
-#: library/os.rst:4369
+#: library/os.rst:4371
 msgid ""
 "On Unix: Wait for completion of a child process given by process id *pid*, "
 "and return a tuple containing its process id and exit status indication "
@@ -4670,7 +4673,7 @@ msgid ""
 "operation."
 msgstr ""
 
-#: library/os.rst:4374
+#: library/os.rst:4376
 msgid ""
 "If *pid* is greater than ``0``, :func:`waitpid` requests status information "
 "for that specific process.  If *pid* is ``0``, the request is for the status "
@@ -4680,13 +4683,13 @@ msgid ""
 "group ``-pid`` (the absolute value of *pid*)."
 msgstr ""
 
-#: library/os.rst:4381
+#: library/os.rst:4383
 msgid ""
 "An :exc:`OSError` is raised with the value of errno when the syscall returns "
 "-1."
 msgstr ""
 
-#: library/os.rst:4384
+#: library/os.rst:4386
 msgid ""
 "On Windows: Wait for completion of a process given by process handle *pid*, "
 "and return a tuple containing *pid*, and its exit status shifted left by 8 "
@@ -4698,7 +4701,7 @@ msgid ""
 "process handles."
 msgstr ""
 
-#: library/os.rst:4403
+#: library/os.rst:4405
 msgid ""
 "Similar to :func:`waitpid`, except no process id argument is given and a 3-"
 "element tuple containing the child's process id, exit status indication, and "
@@ -4707,13 +4710,13 @@ msgid ""
 "argument is the same as that provided to :func:`waitpid` and :func:`wait4`."
 msgstr ""
 
-#: library/os.rst:4424
+#: library/os.rst:4426
 msgid ""
 ":func:`waitstatus_to_exitcode` can be used to convert the exit status into "
 "an exitcode."
 msgstr ""
 
-#: library/os.rst:4418
+#: library/os.rst:4420
 msgid ""
 "Similar to :func:`waitpid`, except a 3-element tuple, containing the child's "
 "process id, exit status indication, and resource usage information is "
@@ -4722,22 +4725,22 @@ msgid ""
 "the same as those provided to :func:`waitpid`."
 msgstr ""
 
-#: library/os.rst:4432
+#: library/os.rst:4434
 msgid "Convert a wait status to an exit code."
 msgstr ""
 
-#: library/os.rst:4434
+#: library/os.rst:4436
 msgid "On Unix:"
 msgstr ""
 
-#: library/os.rst:4436
+#: library/os.rst:4438
 msgid ""
 "If the process exited normally (if ``WIFEXITED(status)`` is true), return "
 "the process exit status (return ``WEXITSTATUS(status)``): result greater "
 "than or equal to 0."
 msgstr ""
 
-#: library/os.rst:4439
+#: library/os.rst:4441
 msgid ""
 "If the process was terminated by a signal (if ``WIFSIGNALED(status)`` is "
 "true), return ``-signum`` where *signum* is the number of the signal that "
@@ -4745,15 +4748,15 @@ msgid ""
 "than 0."
 msgstr ""
 
-#: library/os.rst:4443
+#: library/os.rst:4445
 msgid "Otherwise, raise a :exc:`ValueError`."
 msgstr ""
 
-#: library/os.rst:4445
+#: library/os.rst:4447
 msgid "On Windows, return *status* shifted right by 8 bits."
 msgstr ""
 
-#: library/os.rst:4447
+#: library/os.rst:4449
 msgid ""
 "On Unix, if the process is being traced or if :func:`waitpid` was called "
 "with :data:`WUNTRACED` option, the caller must first check if "
@@ -4761,240 +4764,240 @@ msgid ""
 "``WIFSTOPPED(status)`` is true."
 msgstr ""
 
-#: library/os.rst:4454
+#: library/os.rst:4456
 msgid ""
 ":func:`WIFEXITED`, :func:`WEXITSTATUS`, :func:`WIFSIGNALED`, :func:"
 "`WTERMSIG`, :func:`WIFSTOPPED`, :func:`WSTOPSIG` functions."
 msgstr ""
 
-#: library/os.rst:4462
+#: library/os.rst:4464
 msgid ""
 "The option for :func:`waitpid` to return immediately if no child process "
 "status is available immediately. The function returns ``(0, 0)`` in this "
 "case."
 msgstr ""
 
-#: library/os.rst:4470
+#: library/os.rst:4472
 msgid ""
 "This option causes child processes to be reported if they have been "
 "continued from a job control stop since their status was last reported."
 msgstr ""
 
-#: library/os.rst:4473
+#: library/os.rst:4475
 msgid ":ref:`Availability <availability>`: some Unix systems."
 msgstr ""
 
-#: library/os.rst:4478
+#: library/os.rst:4480
 msgid ""
 "This option causes child processes to be reported if they have been stopped "
 "but their current state has not been reported since they were stopped."
 msgstr ""
 
-#: library/os.rst:4484
+#: library/os.rst:4486
 msgid ""
 "The following functions take a process status code as returned by :func:"
 "`system`, :func:`wait`, or :func:`waitpid` as a parameter.  They may be used "
 "to determine the disposition of a process."
 msgstr ""
 
-#: library/os.rst:4490
+#: library/os.rst:4492
 msgid ""
 "Return ``True`` if a core dump was generated for the process, otherwise "
 "return ``False``."
 msgstr ""
 
-#: library/os.rst:4559
+#: library/os.rst:4561
 msgid "This function should be employed only if :func:`WIFSIGNALED` is true."
 msgstr ""
 
-#: library/os.rst:4500
+#: library/os.rst:4502
 msgid ""
 "Return ``True`` if a stopped child has been resumed by delivery of :data:"
 "`~signal.SIGCONT` (if the process has been continued from a job control "
 "stop), otherwise return ``False``."
 msgstr ""
 
-#: library/os.rst:4504
+#: library/os.rst:4506
 msgid "See :data:`WCONTINUED` option."
 msgstr ""
 
-#: library/os.rst:4511
+#: library/os.rst:4513
 msgid ""
 "Return ``True`` if the process was stopped by delivery of a signal, "
 "otherwise return ``False``."
 msgstr ""
 
-#: library/os.rst:4514
+#: library/os.rst:4516
 msgid ""
 ":func:`WIFSTOPPED` only returns ``True`` if the :func:`waitpid` call was "
 "done using :data:`WUNTRACED` option or when the process is being traced "
 "(see :manpage:`ptrace(2)`)."
 msgstr ""
 
-#: library/os.rst:4522
+#: library/os.rst:4524
 msgid ""
 "Return ``True`` if the process was terminated by a signal, otherwise return "
 "``False``."
 msgstr ""
 
-#: library/os.rst:4530
+#: library/os.rst:4532
 msgid ""
 "Return ``True`` if the process exited terminated normally, that is, by "
 "calling ``exit()`` or ``_exit()``, or by returning from ``main()``; "
 "otherwise return ``False``."
 msgstr ""
 
-#: library/os.rst:4539
+#: library/os.rst:4541
 msgid "Return the process exit status."
 msgstr ""
 
-#: library/os.rst:4541
+#: library/os.rst:4543
 msgid "This function should be employed only if :func:`WIFEXITED` is true."
 msgstr ""
 
-#: library/os.rst:4548
+#: library/os.rst:4550
 msgid "Return the signal which caused the process to stop."
 msgstr ""
 
-#: library/os.rst:4550
+#: library/os.rst:4552
 msgid "This function should be employed only if :func:`WIFSTOPPED` is true."
 msgstr ""
 
-#: library/os.rst:4557
+#: library/os.rst:4559
 msgid "Return the number of the signal that caused the process to terminate."
 msgstr ""
 
-#: library/os.rst:4565
+#: library/os.rst:4567
 msgid "Interface to the scheduler"
 msgstr ""
 
-#: library/os.rst:4567
+#: library/os.rst:4569
 msgid ""
 "These functions control how a process is allocated CPU time by the operating "
 "system. They are only available on some Unix platforms. For more detailed "
 "information, consult your Unix manpages."
 msgstr ""
 
-#: library/os.rst:4573
+#: library/os.rst:4575
 msgid ""
 "The following scheduling policies are exposed if they are supported by the "
 "operating system."
 msgstr ""
 
-#: library/os.rst:4578
+#: library/os.rst:4580
 msgid "The default scheduling policy."
 msgstr ""
 
-#: library/os.rst:4582
+#: library/os.rst:4584
 msgid ""
 "Scheduling policy for CPU-intensive processes that tries to preserve "
 "interactivity on the rest of the computer."
 msgstr ""
 
-#: library/os.rst:4587
+#: library/os.rst:4589
 msgid "Scheduling policy for extremely low priority background tasks."
 msgstr ""
 
-#: library/os.rst:4591
+#: library/os.rst:4593
 msgid "Scheduling policy for sporadic server programs."
 msgstr ""
 
-#: library/os.rst:4595
+#: library/os.rst:4597
 msgid "A First In First Out scheduling policy."
 msgstr ""
 
-#: library/os.rst:4599
+#: library/os.rst:4601
 msgid "A round-robin scheduling policy."
 msgstr ""
 
-#: library/os.rst:4603
+#: library/os.rst:4605
 msgid ""
 "This flag can be OR'ed with any other scheduling policy. When a process with "
 "this flag set forks, its child's scheduling policy and priority are reset to "
 "the default."
 msgstr ""
 
-#: library/os.rst:4610
+#: library/os.rst:4612
 msgid ""
 "This class represents tunable scheduling parameters used in :func:"
 "`sched_setparam`, :func:`sched_setscheduler`, and :func:`sched_getparam`. It "
 "is immutable."
 msgstr ""
 
-#: library/os.rst:4614
+#: library/os.rst:4616
 msgid "At the moment, there is only one possible parameter:"
 msgstr ""
 
-#: library/os.rst:4618
+#: library/os.rst:4620
 msgid "The scheduling priority for a scheduling policy."
 msgstr ""
 
-#: library/os.rst:4623
+#: library/os.rst:4625
 msgid ""
 "Get the minimum priority value for *policy*. *policy* is one of the "
 "scheduling policy constants above."
 msgstr ""
 
-#: library/os.rst:4629
+#: library/os.rst:4631
 msgid ""
 "Get the maximum priority value for *policy*. *policy* is one of the "
 "scheduling policy constants above."
 msgstr ""
 
-#: library/os.rst:4635
+#: library/os.rst:4637
 msgid ""
 "Set the scheduling policy for the process with PID *pid*. A *pid* of 0 means "
 "the calling process. *policy* is one of the scheduling policy constants "
 "above. *param* is a :class:`sched_param` instance."
 msgstr ""
 
-#: library/os.rst:4642
+#: library/os.rst:4644
 msgid ""
 "Return the scheduling policy for the process with PID *pid*. A *pid* of 0 "
 "means the calling process. The result is one of the scheduling policy "
 "constants above."
 msgstr ""
 
-#: library/os.rst:4649
+#: library/os.rst:4651
 msgid ""
 "Set the scheduling parameters for the process with PID *pid*. A *pid* of 0 "
 "means the calling process. *param* is a :class:`sched_param` instance."
 msgstr ""
 
-#: library/os.rst:4655
+#: library/os.rst:4657
 msgid ""
 "Return the scheduling parameters as a :class:`sched_param` instance for the "
 "process with PID *pid*. A *pid* of 0 means the calling process."
 msgstr ""
 
-#: library/os.rst:4661
+#: library/os.rst:4663
 msgid ""
 "Return the round-robin quantum in seconds for the process with PID *pid*. A "
 "*pid* of 0 means the calling process."
 msgstr ""
 
-#: library/os.rst:4667
+#: library/os.rst:4669
 msgid "Voluntarily relinquish the CPU."
 msgstr ""
 
-#: library/os.rst:4672
+#: library/os.rst:4674
 msgid ""
 "Restrict the process with PID *pid* (or the current process if zero) to a "
 "set of CPUs.  *mask* is an iterable of integers representing the set of CPUs "
 "to which the process should be restricted."
 msgstr ""
 
-#: library/os.rst:4679
+#: library/os.rst:4681
 msgid ""
 "Return the set of CPUs the process with PID *pid* (or the current process if "
 "zero) is restricted to."
 msgstr ""
 
-#: library/os.rst:4686
+#: library/os.rst:4688
 msgid "Miscellaneous System Information"
 msgstr ""
 
-#: library/os.rst:4691
+#: library/os.rst:4693
 msgid ""
 "Return string-valued system configuration values. *name* specifies the "
 "configuration value to retrieve; it may be a string which is the name of a "
@@ -5005,13 +5008,13 @@ msgid ""
 "included in that mapping, passing an integer for *name* is also accepted."
 msgstr ""
 
-#: library/os.rst:4699
+#: library/os.rst:4701
 msgid ""
 "If the configuration value specified by *name* isn't defined, ``None`` is "
 "returned."
 msgstr ""
 
-#: library/os.rst:4702
+#: library/os.rst:4704
 msgid ""
 "If *name* is a string and is not known, :exc:`ValueError` is raised.  If a "
 "specific value for *name* is not supported by the host system, even if it is "
@@ -5019,33 +5022,33 @@ msgid ""
 "`errno.EINVAL` for the error number."
 msgstr ""
 
-#: library/os.rst:4712
+#: library/os.rst:4714
 msgid ""
 "Dictionary mapping names accepted by :func:`confstr` to the integer values "
 "defined for those names by the host operating system. This can be used to "
 "determine the set of names known to the system."
 msgstr ""
 
-#: library/os.rst:4721
+#: library/os.rst:4723
 msgid ""
 "Return the number of CPUs in the system. Returns ``None`` if undetermined."
 msgstr ""
 
-#: library/os.rst:4723
+#: library/os.rst:4725
 msgid ""
 "This number is not equivalent to the number of CPUs the current process can "
 "use.  The number of usable CPUs can be obtained with ``len(os."
 "sched_getaffinity(0))``"
 msgstr ""
 
-#: library/os.rst:4733
+#: library/os.rst:4735
 msgid ""
 "Return the number of processes in the system run queue averaged over the "
 "last 1, 5, and 15 minutes or raises :exc:`OSError` if the load average was "
 "unobtainable."
 msgstr ""
 
-#: library/os.rst:4742
+#: library/os.rst:4744
 msgid ""
 "Return integer-valued system configuration values. If the configuration "
 "value specified by *name* isn't defined, ``-1`` is returned.  The comments "
@@ -5054,40 +5057,40 @@ msgid ""
 "``sysconf_names``."
 msgstr ""
 
-#: library/os.rst:4752
+#: library/os.rst:4754
 msgid ""
 "Dictionary mapping names accepted by :func:`sysconf` to the integer values "
 "defined for those names by the host operating system. This can be used to "
 "determine the set of names known to the system."
 msgstr ""
 
-#: library/os.rst:4758
+#: library/os.rst:4760
 msgid ""
 "The following data values are used to support path manipulation operations.  "
 "These are defined for all platforms."
 msgstr ""
 
-#: library/os.rst:4761
+#: library/os.rst:4763
 msgid ""
 "Higher-level operations on pathnames are defined in the :mod:`os.path` "
 "module."
 msgstr ""
 
-#: library/os.rst:4767
+#: library/os.rst:4769
 msgid ""
 "The constant string used by the operating system to refer to the current "
 "directory. This is ``'.'`` for Windows and POSIX. Also available via :mod:"
 "`os.path`."
 msgstr ""
 
-#: library/os.rst:4775
+#: library/os.rst:4777
 msgid ""
 "The constant string used by the operating system to refer to the parent "
 "directory. This is ``'..'`` for Windows and POSIX. Also available via :mod:"
 "`os.path`."
 msgstr ""
 
-#: library/os.rst:4784
+#: library/os.rst:4786
 msgid ""
 "The character used by the operating system to separate pathname components. "
 "This is ``'/'`` for POSIX and ``'\\\\'`` for Windows.  Note that knowing "
@@ -5096,7 +5099,7 @@ msgid ""
 "useful. Also available via :mod:`os.path`."
 msgstr ""
 
-#: library/os.rst:4794
+#: library/os.rst:4796
 msgid ""
 "An alternative character used by the operating system to separate pathname "
 "components, or ``None`` if only one separator character exists.  This is set "
@@ -5104,27 +5107,27 @@ msgid ""
 "via :mod:`os.path`."
 msgstr ""
 
-#: library/os.rst:4803
+#: library/os.rst:4805
 msgid ""
 "The character which separates the base filename from the extension; for "
 "example, the ``'.'`` in :file:`os.py`. Also available via :mod:`os.path`."
 msgstr ""
 
-#: library/os.rst:4811
+#: library/os.rst:4813
 msgid ""
 "The character conventionally used by the operating system to separate search "
 "path components (as in :envvar:`PATH`), such as ``':'`` for POSIX or ``';'`` "
 "for Windows. Also available via :mod:`os.path`."
 msgstr ""
 
-#: library/os.rst:4818
+#: library/os.rst:4820
 msgid ""
 "The default search path used by :func:`exec\\*p\\* <execl>` and :func:"
 "`spawn\\*p\\* <spawnl>` if the environment doesn't have a ``'PATH'`` key. "
 "Also available via :mod:`os.path`."
 msgstr ""
 
-#: library/os.rst:4825
+#: library/os.rst:4827
 msgid ""
 "The string used to separate (or, rather, terminate) lines on the current "
 "platform.  This may be a single character, such as ``'\\n'`` for POSIX, or "
@@ -5133,36 +5136,36 @@ msgid ""
 "default); use a single ``'\\n'`` instead, on all platforms."
 msgstr ""
 
-#: library/os.rst:4834
+#: library/os.rst:4836
 msgid ""
 "The file path of the null device. For example: ``'/dev/null'`` for POSIX, "
 "``'nul'`` for Windows.  Also available via :mod:`os.path`."
 msgstr ""
 
-#: library/os.rst:4845
+#: library/os.rst:4847
 msgid ""
 "Flags for use with the :func:`~sys.setdlopenflags` and :func:`~sys."
 "getdlopenflags` functions.  See the Unix manual page :manpage:`dlopen(3)` "
 "for what the different flags mean."
 msgstr ""
 
-#: library/os.rst:4853
+#: library/os.rst:4855
 msgid "Random numbers"
 msgstr ""
 
-#: library/os.rst:4858
+#: library/os.rst:4860
 msgid ""
 "Get up to *size* random bytes. The function can return less bytes than "
 "requested."
 msgstr ""
 
-#: library/os.rst:4861
+#: library/os.rst:4863
 msgid ""
 "These bytes can be used to seed user-space random number generators or for "
 "cryptographic purposes."
 msgstr ""
 
-#: library/os.rst:4864
+#: library/os.rst:4866
 msgid ""
 "``getrandom()`` relies on entropy gathered from device drivers and other "
 "sources of environmental noise. Unnecessarily reading large quantities of "
@@ -5170,36 +5173,36 @@ msgid ""
 "``/dev/urandom`` devices."
 msgstr ""
 
-#: library/os.rst:4869
+#: library/os.rst:4871
 msgid ""
 "The flags argument is a bit mask that can contain zero or more of the "
 "following values ORed together: :py:data:`os.GRND_RANDOM` and :py:data:"
 "`GRND_NONBLOCK`."
 msgstr ""
 
-#: library/os.rst:4873
+#: library/os.rst:4875
 msgid ""
 "See also the `Linux getrandom() manual page <https://man7.org/linux/man-"
 "pages/man2/getrandom.2.html>`_."
 msgstr ""
 
-#: library/os.rst:4877
+#: library/os.rst:4879
 msgid ":ref:`Availability <availability>`: Linux 3.17 and newer."
 msgstr ""
 
-#: library/os.rst:4882
+#: library/os.rst:4884
 msgid ""
 "Return a bytestring of *size* random bytes suitable for cryptographic use."
 msgstr ""
 
-#: library/os.rst:4884
+#: library/os.rst:4886
 msgid ""
 "This function returns random bytes from an OS-specific randomness source.  "
 "The returned data should be unpredictable enough for cryptographic "
 "applications, though its exact quality depends on the OS implementation."
 msgstr ""
 
-#: library/os.rst:4888
+#: library/os.rst:4890
 msgid ""
 "On Linux, if the ``getrandom()`` syscall is available, it is used in "
 "blocking mode: block until the system urandom entropy pool is initialized "
@@ -5209,57 +5212,57 @@ msgid ""
 "to poll until the system urandom entropy pool is initialized."
 msgstr ""
 
-#: library/os.rst:4895
+#: library/os.rst:4897
 msgid ""
 "On a Unix-like system, random bytes are read from the ``/dev/urandom`` "
 "device. If the ``/dev/urandom`` device is not available or not readable, "
 "the :exc:`NotImplementedError` exception is raised."
 msgstr ""
 
-#: library/os.rst:4899
+#: library/os.rst:4901
 msgid "On Windows, it will use ``CryptGenRandom()``."
 msgstr ""
 
-#: library/os.rst:4902
+#: library/os.rst:4904
 msgid ""
 "The :mod:`secrets` module provides higher level functions. For an easy-to-"
 "use interface to the random number generator provided by your platform, "
 "please see :class:`random.SystemRandom`."
 msgstr ""
 
-#: library/os.rst:4906
+#: library/os.rst:4908
 msgid ""
 "On Linux, ``getrandom()`` is now used in blocking mode to increase the "
 "security."
 msgstr ""
 
-#: library/os.rst:4910
+#: library/os.rst:4912
 msgid ""
 "On Linux, if the ``getrandom()`` syscall blocks (the urandom entropy pool is "
 "not initialized yet), fall back on reading ``/dev/urandom``."
 msgstr ""
 
-#: library/os.rst:4914
+#: library/os.rst:4916
 msgid ""
 "On Linux 3.17 and newer, the ``getrandom()`` syscall is now used when "
 "available.  On OpenBSD 5.6 and newer, the C ``getentropy()`` function is now "
 "used. These functions avoid the usage of an internal file descriptor."
 msgstr ""
 
-#: library/os.rst:4922
+#: library/os.rst:4924
 msgid ""
 "By  default, when reading from ``/dev/random``, :func:`getrandom` blocks if "
 "no random bytes are available, and when reading from ``/dev/urandom``, it "
 "blocks if the entropy pool has not yet been initialized."
 msgstr ""
 
-#: library/os.rst:4926
+#: library/os.rst:4928
 msgid ""
 "If the :py:data:`GRND_NONBLOCK` flag is set, then :func:`getrandom` does not "
 "block in these cases, but instead immediately raises :exc:`BlockingIOError`."
 msgstr ""
 
-#: library/os.rst:4933
+#: library/os.rst:4935
 msgid ""
 "If  this  bit  is  set,  then  random bytes are drawn from the ``/dev/"
 "random`` pool instead of the ``/dev/urandom`` pool."
