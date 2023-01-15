@@ -127,7 +127,6 @@ def main():
     remove_old_files(downstream - upstream)
     clean_paths((upstream - downstream) | (upstream & downstream))
     shutil.rmtree(pot_path)
-    run("powrap", "*.po", "*/*.po")
     update_makefile(args.cpython_repo)
     git_add_relevant_files()
 
