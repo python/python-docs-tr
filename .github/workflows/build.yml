@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - '*.*'
+      - '**'
   pull_request:
     branches:
-      - '*.*'
+      - '**'
 
 jobs:
   checks:
@@ -30,7 +30,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.11'
       - name: Install ${{ matrix.tool.package }}
         run: |
           if [ -n "${{ matrix.tool.apt_dependencies }}" ]; then
@@ -64,7 +64,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.11'
       - name: Prepare environment
         run: |
           pwd
