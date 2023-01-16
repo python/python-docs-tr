@@ -27,8 +27,8 @@ jobs:
 
     - name: Commit changes
       run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
+        git config --local user.email "python.docs.tr@gmail.com"
+        git config --local user.name "python-docs-turkish"
         git commit -m "Get changes from CPython Doc for ${{ github.ref_name }}"
 
     - name: Create Pull Request
