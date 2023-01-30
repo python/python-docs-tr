@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 23:20+0300\n"
-"PO-Revision-Date: 2023-01-30 16:57+0300\n"
+"PO-Revision-Date: 2023-01-30 17:59+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -33,8 +33,8 @@ msgid ""
 "This article explains the new features in Python 3.8, compared to 3.7. For full "
 "details, see the :ref:`changelog <changelog>`."
 msgstr ""
-"Bu makale, 3.7 ile karşılaştırıldığında Python 3.8'deki yeni özellikleri "
-"açıklamaktadır. Tüm ayrıntılar için :bkz:`changelog <changelog>`a bakın."
+"Bu makale, 3.7 ile karşılaştırıldığında Python 3.8 'deki yeni özellikleri "
+"açıklamaktadır. Tüm ayrıntılar için :bkz:`changelog <changelog> `a bakın."
 
 #: whatsnew/3.8.rst:60
 msgid "Summary -- Release highlights"
@@ -560,7 +560,7 @@ msgstr ""
 
 #: whatsnew/3.8.rst:358
 msgid "This is currently provisional. The aim is to make it fully public in Python 3.9."
-msgstr "Bu şu anda geçicidir. Amaç, Python 3.9'da tamamen halka açık hale getirmektir."
+msgstr "Bu şu anda geçicidir. Amaç, Python 3.9 'da tamamen halka açık hale getirmektir."
 
 #: whatsnew/3.8.rst:361
 msgid "See :pep:`590` for a full description."
@@ -572,7 +572,6 @@ msgid ""
 msgstr "(Jeroen Demeyer, Mark Shannon ve Petr Viktorin'in katkılarıyla :issue:`36974`.)"
 
 #: whatsnew/3.8.rst:367
-#, fuzzy
 msgid "Pickle protocol 5 with out-of-band data buffers"
 msgstr "Bant dışı veri tamponlarıyla Pickle protokolü 5"
 
@@ -649,13 +648,13 @@ msgstr ""
 
 #: whatsnew/3.8.rst:405
 msgid "Added support of ``\\N{name}`` escapes in :mod:`regular expressions <re>`::"
-msgstr "Mod:`regular expressions <re>`: içinde ``\\N{name}`` kaçış desteği eklendi:"
+msgstr ":mod:`regular expressions <re>` içine ``\\N{name}`` kaçış desteği eklendi::"
 
 #: whatsnew/3.8.rst:412
 msgid "(Contributed by Jonathan Eunice and Serhiy Storchaka in :issue:`30688`.)"
 msgstr ""
-"(Jonathan Eunice ve Serhiy Storchaka tarafından :issue:`30688`'de katkıda "
-"bulunulmuştur)"
+"(Jonathan Eunice ve Serhiy Storchaka tarafından :issue:`30688` 'de katkıda "
+"bulunulmuştur.)"
 
 #: whatsnew/3.8.rst:414
 msgid ""
@@ -677,7 +676,7 @@ msgstr ""
 "kısıtlandı. Özellikle, ``f((keyword)=arg)`` ifadesine artık izin verilmemektedir. Bir "
 "anahtar kelime argüman atama teriminin sol tarafında çıplak bir isimden daha "
 "fazlasına izin verilmesi asla amaçlanmamıştır. (Benjamin Peterson tarafından :issue:"
-"`34641`'de katkıda bulunulmuştur)"
+"`34641` 'de katkıda bulunulmuştur.)"
 
 #: whatsnew/3.8.rst:423
 msgid ""
@@ -722,7 +721,6 @@ msgstr ""
 "ile katkıda bulunulmuştur)"
 
 #: whatsnew/3.8.rst:451
-#, fuzzy
 msgid ""
 "When the Python interpreter is interrupted by Ctrl-C (SIGINT) and the resulting :exc:"
 "`KeyboardInterrupt` exception is not caught, the Python process now exits via a "
@@ -736,7 +734,7 @@ msgstr ""
 "SIGINT sinyali ile veya çağıran işlemin Ctrl-C nedeniyle öldüğünü algılayabileceği "
 "şekilde doğru çıkış koduyla çıkar.  POSIX ve Windows üzerindeki kabuklar, etkileşimli "
 "oturumlardaki komut dosyalarını düzgün bir şekilde sonlandırmak için bunu kullanır. "
-"(Google tarafından Gregory P. Smith aracılığıyla :issue:`1054041`de katkıda "
+"(Google tarafından Gregory P. Smith aracılığıyla :issue:`1054041` 'de katkıda "
 "bulunulmuştur)"
 
 #: whatsnew/3.8.rst:458
@@ -882,17 +880,15 @@ msgid "(Contributed by Ivan Levkivskyi in :issue:`33416`.)"
 msgstr "(Ivan Levkivskyi'nin :issue:`33416` 'daki katkısıyla.)"
 
 #: whatsnew/3.8.rst:580
-#, fuzzy
 msgid "The :func:`ast.parse` function has some new flags:"
 msgstr ":func:`ast.parse` işlevi bazı yeni bayraklara sahiptir:"
 
 #: whatsnew/3.8.rst:582
-#, fuzzy
 msgid ""
 "``type_comments=True`` causes it to return the text of :pep:`484` and :pep:`526` type "
 "comments associated with certain AST nodes;"
 msgstr ""
-"``type_comments=True``, belirli AST düğümleriyle ilişkili :pep:`484` ve :pep:`526` "
+"``type_comments=True`` , belirli AST düğümleriyle ilişkili :pep:`484` ve :pep:`526` "
 "tipi yorumların metnini döndürmesine neden olur;"
 
 #: whatsnew/3.8.rst:585
@@ -944,7 +940,6 @@ msgstr ""
 "asyncio programlarını çalıştırmak için tercih edilen yol olmalıdır."
 
 #: whatsnew/3.8.rst:630
-#, fuzzy
 msgid "(Contributed by Yury Selivanov in :issue:`32314`.)"
 msgstr "(Yury Selivanov'un :issue:`32314` 'teki katkısıyla.)"
 
@@ -972,9 +967,8 @@ msgid ""
 "`32528`.)"
 msgstr ""
 "İstisna :class:`asyncio.CancelledError` artık :class:`Exception` yerine :class:"
-"`BaseException`'dan miras alıyor ve artık :class:`concurrent.futures."
-"CancelledError`'dan miras almıyor. (Yury Selivanov'un :issue:`32528` 'teki "
-"katkısıyla.)"
+"`BaseException` 'dan miras alıyor ve artık :class:`concurrent.futures.CancelledError` "
+"'dan miras almıyor. (Yury Selivanov'un :issue:`32528` 'teki katkısıyla.)"
 
 #: whatsnew/3.8.rst:654
 msgid ""
@@ -1167,7 +1161,6 @@ msgid "functools"
 msgstr "functools"
 
 #: whatsnew/3.8.rst:764
-#, fuzzy
 msgid ""
 ":func:`functools.lru_cache` can now be used as a straight decorator rather than as a "
 "function returning a decorator.  So both of these are now supported::"
@@ -1192,14 +1185,13 @@ msgid "(Contributed by Carl Meyer in :issue:`21145`)"
 msgstr "(Carl Meyer'ın :issue:`21145` 'teki katkısıyla.)"
 
 #: whatsnew/3.8.rst:794
-#, fuzzy
 msgid ""
 "Added a new :func:`functools.singledispatchmethod` decorator that converts methods "
 "into :term:`generic functions <generic function>` using :term:`single dispatch`::"
 msgstr ""
-"Metotları :term:`single dispatch`: kullanarak :term:`generic functions <generic "
+"Metotları :term:`single dispatch` kullanarak :term:`generic functions <generic "
 "function>` haline dönüştüren yeni bir :func:`functools.singledispatchmethod` "
-"dekoratörü eklendi:"
+"dekoratörü eklendi::"
 
 #: whatsnew/3.8.rst:816
 msgid "(Contributed by Ethan Smith in :issue:`32380`)"
@@ -1284,7 +1276,7 @@ msgstr ""
 "sys.argv'ye eklenir. Ayrıca bir sonraki özelleştirilmiş çalıştırma için kutuda "
 "yeniden görünürler.  Ayrıca normal Shell ana modülünün yeniden başlatılması da "
 "engellenebilir.  (Cheryl Sabella, Terry Jan Reedy ve diğerleri tarafından :issue:"
-"`5680` ve :issue:`37627`'de katkıda bulunulmuştur)"
+"`5680` ve :issue:`37627` 'de katkıda bulunulmuştur)"
 
 #: whatsnew/3.8.rst:861
 msgid ""
@@ -1319,13 +1311,12 @@ msgid "New in 3.8.1:"
 msgstr "3.8.1'deki yenilikler:"
 
 #: whatsnew/3.8.rst:876
-#, fuzzy
 msgid ""
 "Add option to toggle cursor blink off.  (Contributed by Zackery Spytz in :issue:"
 "`4603`.)"
 msgstr ""
-"İmleç yanıp sönmesini kapatmak için seçenek ekleyin.  (Zackery Spytz tarafından :"
-"issue:`4603` içinde katkıda bulunulmuştur)"
+"İmleç yanıp sönmesini kapatmak için seçenek ekleyin.  (Zackery Spytz'in :issue:`4603` "
+"'teki katkısıyla.)"
 
 #: whatsnew/3.8.rst:879
 msgid ""
@@ -1352,14 +1343,13 @@ msgid "inspect"
 msgstr "inspect"
 
 #: whatsnew/3.8.rst:890
-#, fuzzy
 msgid ""
 "The :func:`inspect.getdoc` function can now find docstrings for ``__slots__`` if that "
 "attribute is a :class:`dict` where the values are docstrings. This provides "
 "documentation options similar to what we already have for :func:`property`, :func:"
 "`classmethod`, and :func:`staticmethod`::"
 msgstr ""
-"Func:`inspect.getdoc` fonksiyonu artık ``__slots__`` için doktrin bulabilir, eğer bu "
+":func:`inspect.getdoc` fonksiyonu artık ``__slots__`` için doktrin bulabilir, eğer bu "
 "nitelik değerlerin doktrin olduğu bir :class:`dict` ise. Bu, :func:`property`, :func:"
 "`classmethod` ve :func:`staticmethod` için zaten sahip olduğumuza benzer doktrin "
 "seçenekleri sağlar::"
@@ -1389,12 +1379,11 @@ msgid "itertools"
 msgstr "itertools"
 
 #: whatsnew/3.8.rst:917
-#, fuzzy
 msgid ""
 "The :func:`itertools.accumulate` function added an option *initial* keyword argument "
 "to specify an initial value::"
 msgstr ""
-"Func:`itertools.accumulate` fonksiyonuna bir başlangıç değeri belirtmek için "
+":func:`itertools.accumulate` fonksiyonuna bir başlangıç değeri belirtmek için "
 "*initial* anahtar kelime argümanı seçeneği eklendi::"
 
 #: whatsnew/3.8.rst:924
@@ -1429,7 +1418,6 @@ msgstr ""
 "kapatılır."
 
 #: whatsnew/3.8.rst:942
-#, fuzzy
 msgid ""
 "This solves a long-standing problem.  Once a logger or *basicConfig()* had been "
 "called, subsequent calls to *basicConfig()* were silently ignored. This made it "
@@ -1437,7 +1425,7 @@ msgid ""
 "options using the interactive prompt or a Jupyter notebook."
 msgstr ""
 "Bu, uzun süredir devam eden bir sorunu çözmektedir.  Bir kaydedici veya "
-"*basicConfig()* çağrıldıktan sonra, *basicConfig()*'e yapılan sonraki çağrılar "
+"*basicConfig()* çağrıldıktan sonra, *basicConfig()* 'e yapılan sonraki çağrılar "
 "sessizce yok sayılıyordu. Bu durum, etkileşimli komut istemini veya Jupyter not "
 "defterini kullanarak çeşitli kaydedici yapılandırma seçeneklerini güncellemeyi, "
 "denemeyi veya öğretmeyi zorlaştırıyordu."
@@ -1460,7 +1448,7 @@ msgid ""
 "points.  (Contributed by Raymond Hettinger in :issue:`33089`.)"
 msgstr ""
 "İki nokta arasındaki Öklid mesafesini hesaplamak için yeni :func:`math.dist` "
-"fonksiyonu eklendi.  (Raymond Hettinger'ın :issue:`33089`'daki katkısıyla.)"
+"fonksiyonu eklendi.  (Raymond Hettinger'ın :issue:`33089` 'daki katkısıyla.)"
 
 #: whatsnew/3.8.rst:958
 msgid ""
@@ -1598,15 +1586,14 @@ msgstr ""
 "attr:`stat_result.st_reparse_tag` niteliğini kontrol edin."
 
 #: whatsnew/3.8.rst:1040
-#, fuzzy
 msgid ""
 "On Windows, :func:`os.readlink` is now able to read directory junctions. Note that :"
 "func:`~os.path.islink` will return ``False`` for directory junctions, and so code "
 "that checks ``islink`` first will continue to treat junctions as directories, while "
 "code that handles errors from :func:`os.readlink` may now treat junctions as links."
 msgstr ""
-"Windows üzerinde, :func:`os.readlink` artık dizin bağlantılarını okuyabilmektedir. "
-"Func:`~os.path.islink` dizin bağlantıları için ``Yanlış`` döndürecektir ve bu nedenle "
+"Windows üzerinde, :func:`os.readlink` artık dizin bağlantılarını okuyabilmektedir. :"
+"func:`~os.path.islink` dizin bağlantıları için ``Yanlış`` döndürecektir ve bu nedenle "
 "önce ``islink`` kontrol eden kod bağlantıları dizin olarak ele almaya devam ederken, :"
 "func:`os.readlink` hatalarını işleyen kod artık bağlantıları linkler olarak ele "
 "alabilir."
@@ -1620,7 +1607,6 @@ msgid "os.path"
 msgstr "os.path"
 
 #: whatsnew/3.8.rst:1052
-#, fuzzy
 msgid ""
 ":mod:`os.path` functions that return a boolean result like :func:`~os.path.exists`, :"
 "func:`~os.path.lexists`, :func:`~os.path.isdir`, :func:`~os.path.isfile`, :func:`~os."
@@ -1862,7 +1848,7 @@ msgid ""
 "`statistics.mean()`.  (Contributed by Raymond Hettinger and Steven D'Aprano in :issue:"
 "`35904`.)"
 msgstr ""
-"Eklenen :func:`statistics.fmean`, :func:`statistics.mean()`'in daha hızlı, kayan "
+"Eklenen :func:`statistics.fmean`, :func:`statistics.mean()` 'in daha hızlı, kayan "
 "noktalı bir çeşididir.  (Raymond Hettinger ve Steven D'Aprano 'nun :issue:`35904` "
 "'taki katkılarıyla.)"
 
@@ -2049,7 +2035,6 @@ msgstr ""
 "\"total=False\" belirtin::"
 
 #: whatsnew/3.8.rst:1322
-#, fuzzy
 msgid ""
 "Literal types.  See :pep:`586` and :class:`typing.Literal`. Literal types indicate "
 "that a parameter or return value is constrained to one or more specific literal "
@@ -2117,25 +2102,23 @@ msgid "unittest"
 msgstr "unittest"
 
 #: whatsnew/3.8.rst:1360
-#, fuzzy
 msgid ""
 "Added :class:`~unittest.mock.AsyncMock` to support an asynchronous version of :class:"
 "`~unittest.mock.Mock`.  Appropriate new assert functions for testing have been added "
 "as well. (Contributed by Lisa Roach in :issue:`26467`)."
 msgstr ""
-"Eklenen :class:`~unittest.mock.AsyncMock`, :class:`~unittest.mock.Mock`un asenkron "
+"Eklenen :class:`~unittest.mock.AsyncMock`, :class:`~unittest.mock.Mock` 'un asenkron "
 "versiyonunu desteklemektedir.  Test için uygun yeni savunma fonksiyonları da "
 "eklenmiştir. (Lisa Roach'ın :issue:`26467` 'deki katkısıyla.)"
 
 #: whatsnew/3.8.rst:1365
-#, fuzzy
 msgid ""
 "Added :func:`~unittest.addModuleCleanup()` and :meth:`~unittest.TestCase."
 "addClassCleanup()` to unittest to support cleanups for :func:`~unittest."
 "setUpModule()` and :meth:`~unittest.TestCase.setUpClass()`. (Contributed by Lisa "
 "Roach in :issue:`24412`.)"
 msgstr ""
-"Unittest'e :func:`~unittest.setUpModule()` ve :meth:`~unittest.TestCase.setUpClass()` "
+"Unitteste :func:`~unittest.setUpModule()` ve :meth:`~unittest.TestCase.setUpClass()` "
 "için temizleme işlemlerini desteklemek üzere :func:`~unittest.addModuleCleanup()` ve :"
 "meth:`~unittest.TestCase.addClassCleanup()` eklendi. (Lisa Roach 'un :issue:`24412` "
 "'deki katkısıyla.)"
@@ -2349,7 +2332,7 @@ msgid ""
 "tuple, list, dict) size is reduced 4 or 8 bytes. (Contributed by Inada Naoki in :"
 "issue:`33597`.)"
 msgstr ""
-"Bir ``Py_ssize_t`` üyesi ``PyGC_Head``'den kaldırıldı.  Tüm GC izlenen nesnelerin "
+"Bir ``Py_ssize_t`` üyesi ``PyGC_Head`` 'den kaldırıldı.  Tüm GC izlenen nesnelerin "
 "(örn. tuple, list, dict) boyutu 4 veya 8 bayt azaltıldı. (Inada Naoki'nin :issue:"
 "`33597` 'deki katkısıyla.)"
 
@@ -2672,7 +2655,6 @@ msgstr ""
 "'deki katkısıyla.)"
 
 #: whatsnew/3.8.rst:1639
-#, fuzzy
 msgid ""
 "Deprecated methods ``getchildren()`` and ``getiterator()`` in the :mod:`~xml.etree."
 "ElementTree` module now emit a :exc:`DeprecationWarning` instead of :exc:"
@@ -2692,7 +2674,7 @@ msgid ""
 "(Contributed by Elvis Pranskevichus in :issue:`34075`.)"
 msgstr ""
 "Bir :class:`concurrent.futures.ThreadPoolExecutor` örneği olmayan bir nesneyi :meth:"
-"`loop.set_default_executor() <asyncio.loop.set_default_executor>`'a geçirmek "
+"`loop.set_default_executor() <asyncio.loop.set_default_executor>` 'a geçirmek "
 "kullanımdan kaldırılmıştır ve Python 3.9'da yasaklanacaktır. (Elvis Pranskevichus'un :"
 "issue:`34075` 'teki katkısıyla.)"
 
@@ -2782,7 +2764,7 @@ msgid ""
 "and will be removed in version 3.11. (Contributed by Yury Selivanov in :issue:"
 "`34790`.)"
 msgstr ""
-"Korutin nesnelerinin :func:`asyncio.wait`'e açık bir şekilde aktarılması kullanımdan "
+"Korutin nesnelerinin :func:`asyncio.wait` 'e açık bir şekilde aktarılması kullanımdan "
 "kaldırılmıştır ve 3.11 sürümünde kaldırılacaktır (Yury Selivanov'un :issue:`34790` "
 "'daki katkısıyla.)"
 
@@ -2960,7 +2942,6 @@ msgstr ""
 "betiği kaldırıldı. (Brett Cannon'ın :issue:`25427` 'deki katkısıyla.)"
 
 #: whatsnew/3.8.rst:1772
-#, fuzzy
 msgid ""
 "``parse_qs``, ``parse_qsl``, and ``escape`` are removed from the :mod:`cgi` module.  "
 "They are deprecated in Python 3.2 or older. They should be imported from the ``urllib."
@@ -3050,7 +3031,6 @@ msgid "Changes in Python behavior"
 msgstr "Python davranışındaki değişiklikler"
 
 #: whatsnew/3.8.rst:1813
-#, fuzzy
 msgid ""
 "Yield expressions (both ``yield`` and ``yield from`` clauses) are now disallowed in "
 "comprehensions and generator expressions (aside from the iterable expression in the "
@@ -3058,7 +3038,7 @@ msgid ""
 msgstr ""
 "Yield ifadelerine (hem ``yield`` hem de ``yield from`` cümleleri) artık anlamalarda "
 "ve oluşturucu ifadelerinde (en soldaki :keyword:`!for` cümlesindeki yinelenebilir "
-"ifadesi dışında) izin verilmemektedir. (Serhiy Storchaka'nın :issue:`10544` teki "
+"ifadesi dışında) izin verilmemektedir. (Serhiy Storchaka'nın :issue:`10544` 'teki "
 "katkısıyla.)"
 
 #: whatsnew/3.8.rst:1818
@@ -3085,7 +3065,7 @@ msgid ""
 msgstr ""
 "CPython yorumlayıcısı bazı durumlarda istisnaları yutabilir. Python 3.8'de bu daha az "
 "durumda gerçekleşir.  Özellikle, tip sözlüğünden öznitelik alınırken ortaya çıkan "
-"istisnalar artık göz ardı edilmiyor. (Serhiy Storchaka tarafından :issue:`35459`'da "
+"istisnalar artık göz ardı edilmiyor. (Serhiy Storchaka tarafından :issue:`35459` 'da "
 "katkıda bulunulmuştur)"
 
 #: whatsnew/3.8.rst:1830
@@ -3242,14 +3222,13 @@ msgstr ""
 "tanımlayın. (Serhiy Storchaka tarafından :issue:`29209` içinde katkıda bulunulmuştur)"
 
 #: whatsnew/3.8.rst:1909
-#, fuzzy
 msgid ""
 "A :exc:`RuntimeError` is now raised when the custom metaclass doesn't provide the "
 "``__classcell__`` entry in the namespace passed to ``type.__new__``.  A :exc:"
 "`DeprecationWarning` was emitted in Python 3.6--3.7.  (Contributed by Serhiy "
 "Storchaka in :issue:`23722`.)"
 msgstr ""
-"Özel metaclass, ``type.__new__``'e aktarılan ad alanında ``__classcell__`` girdisini "
+"Özel metaclass, ``type.__new__`` 'e aktarılan ad alanında ``__classcell__`` girdisini "
 "sağlamadığında artık bir :exc:`RuntimeError` ortaya çıkıyor.  Bir :exc:"
 "`DeprecationWarning` Python 3.6--3.7`de yayınlandı (Serhiy Storchaka'nın :issue:"
 "`23722` 'deki katkısıyla.)"
@@ -3321,7 +3300,7 @@ msgstr ""
 "oluşturmaktadır.  Önceden metodun davranışı platforma bağlıydı: başarı durumunda "
 "sıfır olmayan bir değer döndürülüyordu; Windows altında hata durumunda sıfır "
 "döndürülüyordu.  Unix altında başarı durumunda sıfır değeri döndürülürken hata "
-"durumunda bir istisna ortaya çıkıyordu. (Berker Peksag tarafından :issue:`2122`'de "
+"durumunda bir istisna ortaya çıkıyordu. (Berker Peksag tarafından :issue:`2122` 'de "
 "katkıda bulunulmuştur)"
 
 #: whatsnew/3.8.rst:1945
@@ -3425,10 +3404,10 @@ msgid ""
 "(including positional-only arguments). The new ``replace()`` method of :class:`types."
 "CodeType` can be used to make the code future-proof."
 msgstr ""
-"class:`types.CodeType`, :pep:`570`'de tanımlanan sadece pozisyonel argümanları "
+"class:`types.CodeType`, :pep:`570` 'de tanımlanan sadece pozisyonel argümanları "
 "desteklemek için kurucunun ikinci pozisyonunda (*posonlyargcount*) yeni bir "
 "parametreye sahiptir. İlk argüman (*argcount*) artık toplam konumsal argüman sayısını "
-"(sadece konumsal argümanlar dahil) temsil etmektedir. Class:`types.CodeType`'ın yeni "
+"(sadece konumsal argümanlar dahil) temsil etmektedir. Class:`types.CodeType` 'ın yeni "
 "``replace()`` yöntemi, kodu geleceğe hazır hale getirmek için kullanılabilir."
 
 #: whatsnew/3.8.rst:2009
@@ -3504,7 +3483,6 @@ msgstr ""
 "yönetilen koddaki diğer sınıflar gibi davranmasını sağlar."
 
 #: whatsnew/3.8.rst:2044
-#, fuzzy
 msgid ":ref:`Statically allocated types <static-types>` are not affected."
 msgstr ":ref:`Statically allocated types <static-types>` etkilenmez."
 
@@ -3524,7 +3502,7 @@ msgstr ""
 #: whatsnew/3.8.rst:2052
 msgid "To correctly port these types into 3.8, please apply the following changes:"
 msgstr ""
-"Bu türleri 3.8'e doğru bir şekilde taşımak için lütfen aşağıdaki değişiklikleri "
+"Bu türleri 3.8 'e doğru bir şekilde taşımak için lütfen aşağıdaki değişiklikleri "
 "uygulayın:"
 
 #: whatsnew/3.8.rst:2055
@@ -3545,7 +3523,6 @@ msgid "Example:"
 msgstr "Örnek:"
 
 #: whatsnew/3.8.rst:2078
-#, fuzzy
 msgid ""
 "Ensure that all custom ``tp_dealloc`` functions of heap-allocated types decrease the "
 "type's reference count."
@@ -3672,17 +3649,16 @@ msgstr ""
 "tarafından :issue:`33041` ile katkıda bulunulmuştur)"
 
 #: whatsnew/3.8.rst:2161
-#, fuzzy
 msgid ""
 "The :opcode:`MAP_ADD` now expects the value as the first element in the stack and the "
 "key as the second element. This change was made so the key is always evaluated before "
 "the value in dictionary comprehensions, as proposed by :pep:`572`. (Contributed by "
 "Jörn Heissler in :issue:`35224`.)"
 msgstr ""
-"Opcode:`MAP_ADD` artık değeri yığının ilk elemanı ve anahtarı da ikinci eleman olarak "
-"beklemektedir. Bu değişiklik, :pep:`572` tarafından önerildiği gibi, sözlük "
+":opcode:`MAP_ADD` artık değeri yığının ilk elemanı ve anahtarı da ikinci eleman "
+"olarak beklemektedir. Bu değişiklik, :pep:`572` tarafından önerildiği gibi, sözlük "
 "kavramalarında anahtarın her zaman değerden önce değerlendirilmesi için yapılmıştır. "
-"(Jörn Heissler tarafından :issue:`35224` ile katkıda bulunulmuştur)"
+"(Jörn Heissler tarafından :issue:`35224` ile katkıda bulunulmuştur.)"
 
 #: whatsnew/3.8.rst:2168
 msgid "Demos and Tools"
