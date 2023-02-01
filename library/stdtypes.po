@@ -6102,13 +6102,12 @@ msgid "Standard Generic Classes"
 msgstr "Standart Jenerik Koleksiyonlar"
 
 #: library/stdtypes.rst:4961
-#, fuzzy
 msgid ""
 "The following standard library classes support parameterized generics. This "
 "list is non-exhaustive."
 msgstr ""
-"Bu standart kütüphane koleksiyonları parametrelendirilmiş jenerikleri "
-"destekler."
+"Bu standart kütüphane sınıfları parametrelendirilmiş jenerikleri "
+"destekler. Bu liste kapsamlı değildir."
 
 #: library/stdtypes.rst:4964
 msgid ":class:`tuple`"
@@ -6255,39 +6254,34 @@ msgid ":class:`contextlib.AbstractAsyncContextManager`"
 msgstr ":class:`contextlib.AbstractAsyncContextManager`"
 
 #: library/stdtypes.rst:5000
-#, fuzzy
 msgid ":class:`dataclasses.Field`"
-msgstr ":class:`tuple`"
+msgstr ":class:`dataclasses.Field`"
 
 #: library/stdtypes.rst:5001
 msgid ":class:`functools.cached_property`"
-msgstr ""
+msgstr ":class:`functools.cached_property`"
 
 #: library/stdtypes.rst:5002
 msgid ":class:`functools.partialmethod`"
 msgstr ""
 
 #: library/stdtypes.rst:5003
-#, fuzzy
 msgid ":class:`os.PathLike`"
-msgstr ":class:`set`"
+msgstr ":class:`os.PathLike`"
 
 #: library/stdtypes.rst:5004
-#, fuzzy
 msgid ":class:`queue.LifoQueue`"
-msgstr ":class:`frozenset`"
+msgstr ":class:`queue.LifoQueue`"
 
 #: library/stdtypes.rst:5005
-#, fuzzy
 msgid ":class:`queue.Queue`"
-msgstr ":class:`tuple`"
+msgstr ":class:`queue.Queue`"
 
 #: library/stdtypes.rst:5006
 msgid ":class:`queue.PriorityQueue`"
-msgstr ""
+msgstr ":class:`queue.PriorityQueue`"
 
 #: library/stdtypes.rst:5007
-#, fuzzy
 msgid ":class:`queue.SimpleQueue`"
 msgstr ":class:`tuple`"
 
@@ -6301,21 +6295,19 @@ msgstr ":ref:`re.Match <match-objects>`"
 
 #: library/stdtypes.rst:5010
 msgid ":class:`shelve.BsdDbShelf`"
-msgstr ""
+msgstr ":class:`shelve.BsdDbShelf`"
 
 #: library/stdtypes.rst:5011
 msgid ":class:`shelve.DbfilenameShelf`"
-msgstr ""
+msgstr ":class:`shelve.DbfilenameShelf`"
 
 #: library/stdtypes.rst:5012
-#, fuzzy
 msgid ":class:`shelve.Shelf`"
-msgstr ":class:`set`"
+msgstr ":class:`shelve.Shelf`"
 
 #: library/stdtypes.rst:5013
-#, fuzzy
 msgid ":class:`types.MappingProxyType`"
-msgstr ":class:`collections.abc.Mapping`"
+msgstr ":class:`types.MappingProxyType`"
 
 #: library/stdtypes.rst:5014
 msgid ":class:`weakref.WeakKeyDictionary`"
@@ -6326,18 +6318,16 @@ msgid ":class:`weakref.WeakMethod`"
 msgstr ""
 
 #: library/stdtypes.rst:5016
-#, fuzzy
 msgid ":class:`weakref.WeakSet`"
-msgstr ":class:`frozenset`"
+msgstr ":class:`weakref.WeakSet`"
 
 #: library/stdtypes.rst:5017
 msgid ":class:`weakref.WeakValueDictionary`"
 msgstr ""
 
 #: library/stdtypes.rst:5022
-#, fuzzy
 msgid "Special Attributes of ``GenericAlias`` objects"
-msgstr "Genel Takma Adın Özel Öznitelikleri"
+msgstr "``GenericAlias`` objesinin Özel Öznitelikleri"
 
 #: library/stdtypes.rst:5024
 msgid "All parameterized generics implement special read-only attributes."
@@ -6348,14 +6338,14 @@ msgid "This attribute points at the non-parameterized generic class::"
 msgstr "Bu öznitelik, parametrelendirilmemiş genel sınıfa işaret eder::"
 
 #: library/stdtypes.rst:5036
-#, fuzzy
 msgid ""
 "This attribute is a :class:`tuple` (possibly of length 1) of generic types "
 "passed to the original :meth:`~object.__class_getitem__` of the generic "
 "class::"
 msgstr ""
-"Bu öznitelik, genel kabın orijinal :meth:`__class_getitem__` öğesine "
-"geçirilen genel türlerin :class:`tuple` (muhtemelen uzunluğu 1'dir):"
+"Bu öznitelik, jenerik sınıfın orijinal :meth:`~object.__class_getitem__` "
+"öğesine iletilen jenerik tiplerinden bir :class:`tuple` 'dır (muhtemelen 1 "
+"uzunluğunda)::"
 
 #: library/stdtypes.rst:5046
 msgid ""
@@ -6390,9 +6380,8 @@ msgid "Introducing Python's framework for type annotations."
 msgstr ""
 
 #: library/stdtypes.rst:5078
-#, fuzzy
 msgid ":pep:`585` - Type Hinting Generics In Standard Collections"
-msgstr ":pep:`585` -- \"Standart Koleksiyonlarda Tip İma Eden Jenerikler\""
+msgstr ":pep:`585` - Standart Koleksiyonlarda Tip İma Etme (Type Hinting) Jenerikleri"
 
 #: library/stdtypes.rst:5076
 msgid ""
@@ -6936,9 +6925,8 @@ msgid ""
 msgstr ""
 
 #: library/stdtypes.rst:5520
-#, fuzzy
 msgid "Verification:"
-msgstr "İşlem"
+msgstr "Doğrulama"
 
 #: library/stdtypes.rst:5535
 msgid "Affected APIs"
@@ -6995,7 +6983,7 @@ msgstr ""
 #: library/stdtypes.rst:5553
 #, fuzzy
 msgid ":class:`str` to :class:`float`."
-msgstr "Set Türleri --- :class:`set`, :class:`frozenset`"
+msgstr ":class:`str` 'den :class:`float` 'a."
 
 #: library/stdtypes.rst:5554
 msgid ":class:`str` to :class:`decimal.Decimal`."
@@ -7097,9 +7085,8 @@ msgid ""
 msgstr ""
 
 #: library/stdtypes.rst:5613
-#, fuzzy
 msgid "Example::"
-msgstr "Örnek: ::"
+msgstr "Örnek::"
 
 #: library/stdtypes.rst:5625
 msgid "If you need to disable it entirely, set it to ``0``."
