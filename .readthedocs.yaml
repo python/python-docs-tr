@@ -13,4 +13,5 @@ build:
     - python -m pip install --upgrade pip setuptools wheel
     - python -m pip install --upgrade -r requirements.txt -r venv/cpython/Doc/requirements.txt
     - make
+    - mkdir -p _readthedocs/html/
     - cp -r venv/cpython/Doc/build/html/* _readthedocs/html/
