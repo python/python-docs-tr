@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-02-01 22:19+0000\n"
 "PO-Revision-Date: 2022-12-28 21:28+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -1155,16 +1155,17 @@ msgid "Odds and Ends"
 msgstr "Oranlar ve Bitişler"
 
 #: tutorial/classes.rst:739
+#, fuzzy
 msgid ""
 "Sometimes it is useful to have a data type similar to the Pascal \"record\" "
-"or C \"struct\", bundling together a few named data items.  An empty class "
-"definition will do nicely::"
+"or C \"struct\", bundling together a few named data items. The idiomatic "
+"approach is to use :mod:`dataclasses` for this purpose::"
 msgstr ""
 "Bazen, birkaç adlandırılmış veri öğesini bir araya getirerek Pascal "
 "\"kaydı\" veya C \"yapısına\" benzer bir veri türüne sahip olmak "
 "yararlıdır.  Boş bir sınıf tanımı güzel bir şekilde yapacaktır::"
 
-#: tutorial/classes.rst:753
+#: tutorial/classes.rst:759
 msgid ""
 "A piece of Python code that expects a particular abstract data type can "
 "often be passed a class that emulates the methods of that data type "
@@ -1180,7 +1181,7 @@ msgstr ""
 "değişken olarak geçiren :meth:`read` ve :meth:`!readline` yöntemlerine sahip "
 "bir sınıf tanımlayabilirsiniz."
 
-#: tutorial/classes.rst:764
+#: tutorial/classes.rst:770
 msgid ""
 "Instance method objects have attributes, too: ``m.__self__`` is the instance "
 "object with the method :meth:`m`, and ``m.__func__`` is the function object "
@@ -1190,11 +1191,11 @@ msgstr ""
 "örnek nesnedir :meth:`m`, ve ``m.__func__`` yönteme karşılık gelen fonksiyon "
 "nesnesidir."
 
-#: tutorial/classes.rst:772
+#: tutorial/classes.rst:778
 msgid "Iterators"
 msgstr "Yineleyiciler"
 
-#: tutorial/classes.rst:774
+#: tutorial/classes.rst:780
 msgid ""
 "By now you have probably noticed that most container objects can be looped "
 "over using a :keyword:`for` statement::"
@@ -1202,7 +1203,7 @@ msgstr ""
 "Şimdiye kadar büyük olasılıkla çoğu kapsayıcı nesnenin bir :keyword:`for` "
 "deyimi kullanılarak döngüye alınabileceğini fark etmişsinizdir::"
 
-#: tutorial/classes.rst:788
+#: tutorial/classes.rst:794
 msgid ""
 "This style of access is clear, concise, and convenient.  The use of "
 "iterators pervades and unifies Python.  Behind the scenes, the :keyword:"
@@ -1224,7 +1225,7 @@ msgstr ""
 "fonksiyonunu kullanarak :meth:`~iterator.__next__` yöntemini "
 "çağırabilirsiniz; Bu örnek, her şeyin nasıl çalıştığını gösterir::"
 
-#: tutorial/classes.rst:813
+#: tutorial/classes.rst:819
 msgid ""
 "Having seen the mechanics behind the iterator protocol, it is easy to add "
 "iterator behavior to your classes.  Define an :meth:`__iter__` method which "
@@ -1236,11 +1237,11 @@ msgstr ""
 "bir nesne döndüren :meth:`__iter__` metodunu tanımlayın.  Sınıf  :meth:"
 "`__next__` tanımlarsa, :meth:`__iter__`  sadece  ``self`` döndürebilir::"
 
-#: tutorial/classes.rst:850
+#: tutorial/classes.rst:856
 msgid "Generators"
 msgstr "Üreteçler"
 
-#: tutorial/classes.rst:852
+#: tutorial/classes.rst:858
 msgid ""
 ":term:`Generators <generator>` are a simple and powerful tool for creating "
 "iterators.  They are written like regular functions but use the :keyword:"
@@ -1256,7 +1257,7 @@ msgstr ""
 "değerlerini ve hangi deyimin en son yürütüldüğını hatırlar).  Bu örnek, "
 "üreteçlerin oluşturulmasının ne kadar da kolay olabileceğini gösterir::"
 
-#: tutorial/classes.rst:873
+#: tutorial/classes.rst:879
 msgid ""
 "Anything that can be done with generators can also be done with class-based "
 "iterators as described in the previous section.  What makes generators so "
@@ -1268,7 +1269,7 @@ msgstr ""
 "şey: :meth:`__iter__` ve :meth:`~generator.__next__` yöntemlerinin otomatik "
 "olarak oluşturulmasıdır."
 
-#: tutorial/classes.rst:878
+#: tutorial/classes.rst:884
 msgid ""
 "Another key feature is that the local variables and execution state are "
 "automatically saved between calls.  This made the function easier to write "
@@ -1280,7 +1281,7 @@ msgstr ""
 "kolaylaştırdı ve ``self.index`` ve ``self.data`` gibi değişkenleri "
 "kullanmaya kıyasla çok daha net hale getirdi."
 
-#: tutorial/classes.rst:883
+#: tutorial/classes.rst:889
 msgid ""
 "In addition to automatic method creation and saving program state, when "
 "generators terminate, they automatically raise :exc:`StopIteration`. In "
@@ -1292,11 +1293,11 @@ msgstr ""
 "Birlikte, bu özellikler normal bir işlev yazmaktan daha fazla çaba "
 "harcamadan yinelemeler oluşturmayı kolaylaştırır."
 
-#: tutorial/classes.rst:892
+#: tutorial/classes.rst:898
 msgid "Generator Expressions"
 msgstr "Üreteç İfadeleri"
 
-#: tutorial/classes.rst:894
+#: tutorial/classes.rst:900
 msgid ""
 "Some simple generators can be coded succinctly as expressions using a syntax "
 "similar to list comprehensions but with parentheses instead of square "
@@ -1312,15 +1313,15 @@ msgstr ""
 "ancak daha az çok yönlüdür ve aynı özellikle liste anlamalarından daha "
 "bellek dostu olma eğilimindedir."
 
-#: tutorial/classes.rst:901
+#: tutorial/classes.rst:907
 msgid "Examples::"
 msgstr "Örnekler::"
 
-#: tutorial/classes.rst:922
+#: tutorial/classes.rst:928
 msgid "Footnotes"
 msgstr "Dipnotlar"
 
-#: tutorial/classes.rst:923
+#: tutorial/classes.rst:929
 msgid ""
 "Except for one thing.  Module objects have a secret read-only attribute "
 "called :attr:`~object.__dict__` which returns the dictionary used to "
