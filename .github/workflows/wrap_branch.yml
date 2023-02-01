@@ -1,75 +1,47 @@
-name: "Wrap all po files in branch"
+name: "Wrap All"
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 15 * *'
 
 jobs: 
   wrap:
     runs-on: ubuntu-latest
     steps:
-        # Checkout the latest code from the repo
       - name: Checkout repo
         uses: actions/checkout@v3
 
-        # Setup which version of Python to use
       - name: Set Up Python 3.11
         uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
-        # Update pip
-      - name: Update pip
+        # Upgrade pip
+      - name: Upgrade pip
         run: python -m pip install --upgrade pip
-
-        # Install requirements.
-      - name: Install requirements
-        run: python -m pip install --upgrade -r requirements.txt
 
         # Install dependencies
       - name: Install dependencies
-        run: sudo apt install -y gettext
+        run: python -m pip install --upgrade -r requirements.txt && sudo apt install -y gettext
 
         # Wrap all po files
       - name: Wrap
         run: powrap *.po */*.po
 
-      - name: Sphinx lint
-        run: |
-          sphinx-lint *.po */*.po
-        
-        # Detect changed files
-      - name: Detect changed files
-        run: echo "WRAPPED=$(git diff --name-only | tr '\n' ' ')" >> $GITHUB_ENV
-
-        # Commit changes
-      - name: Commit changes
-        run: |
-          array=($WRAPPED)
-          len=${#array[@]}
-          if [[ $len -eq 0 ]]; then
-              echo "No files to commit"
-              echo "WRAPPED=False" >> $GITHUB_ENV
-          else
-              echo "Committing changes"
-              git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-              git config --local user.name "github-actions[bot]"
-              git add ${WRAPPED}
-              git commit -m "Wrap translations"
-              echo "WRAPPED=True" >> $GITHUB_ENV
-          fi
-               
         # Create pull request
       - name: Create Pull Request
-        id: cpr
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v4.2.3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Update report
-          committer: GitHub <noreply@github.com>
-          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-          signoff: false
-          branch: ${{ github.ref_name }}_wrapped
+          token: ${{ secrets.BOT_PAT }}
+          commit-message: 'Wrap all files on: ${{ github.ref_name }}'
+          branch: ${{ github.ref_name }}-wrapped
           delete-branch: true
+          committer: python-docs-turkish <python.docs.tr@gmail.com>
+          author: python-docs-turkish <python.docs.tr@gmail.com>
           title: 'Wrap branch: ${{ github.ref_name }}'
-          body: Wrapped all translations on branch ${{ github.ref_name }}.
+          body: 'Wrapped all files on branch: ${{ github.ref_name }}.'
           labels: wrap
-          draft: false
+          reviewers: |
+            egeakman
+            ardasak
