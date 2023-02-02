@@ -2,37 +2,33 @@
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2023-02-01 17:47-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: installing/index.rst:7
-#, fuzzy
 msgid "Installing Python Modules"
 msgstr "Python Modüllerini Kurmak"
 
 #: installing/index.rst:0
-#, fuzzy
 msgid "Email"
 msgstr "E-posta"
 
 #: installing/index.rst:9
-#, fuzzy
 msgid "distutils-sig@python.org"
 msgstr "distutils-sig@python.org"
 
 #: installing/index.rst:11
-#, fuzzy
 msgid ""
 "As a popular open source development project, Python has an active "
 "supporting community of contributors and users that also make their software "
@@ -44,7 +40,6 @@ msgstr ""
 "bir destekleyici topluluğa sahiptir."
 
 #: installing/index.rst:15
-#, fuzzy
 msgid ""
 "This allows Python users to share and collaborate effectively, benefiting "
 "from the solutions others have already created to common (and sometimes even "
@@ -57,7 +52,6 @@ msgstr ""
 "havuza kendi çözümleriyle katkıda bulunmasına olanak tanır."
 
 #: installing/index.rst:20
-#, fuzzy
 msgid ""
 "This guide covers the installation part of the process. For a guide to "
 "creating and sharing your own Python projects, refer to the :ref:"
@@ -68,7 +62,6 @@ msgstr ""
 "<distributing-index>` 'a bakın."
 
 #: installing/index.rst:26
-#, fuzzy
 msgid ""
 "For corporate and other institutional users, be aware that many "
 "organisations have their own policies around using and contributing to open "
@@ -81,12 +74,10 @@ msgstr ""
 "politikaları dikkate alın."
 
 #: installing/index.rst:33
-#, fuzzy
 msgid "Key terms"
 msgstr "Anahtar terimler"
 
 #: installing/index.rst:35
-#, fuzzy
 msgid ""
 "``pip`` is the preferred installer program. Starting with Python 3.4, it is "
 "included by default with the Python binary installers."
@@ -95,7 +86,6 @@ msgstr ""
 "varsayılan olarak Python ikili yükleyicilerine dahil edilmiştir."
 
 #: installing/index.rst:37
-#, fuzzy
 msgid ""
 "A *virtual environment* is a semi-isolated Python environment that allows "
 "packages to be installed for use by a particular application, rather than "
@@ -106,7 +96,6 @@ msgstr ""
 "bir Python ortamıdır."
 
 #: installing/index.rst:40
-#, fuzzy
 msgid ""
 "``venv`` is the standard tool for creating virtual environments, and has "
 "been part of Python since Python 3.3. Starting with Python 3.4, it defaults "
@@ -117,7 +106,6 @@ msgstr ""
 "'in tüm oluşturulan sanal ortamlara yüklenmesi varsayılandır."
 
 #: installing/index.rst:43
-#, fuzzy
 msgid ""
 "``virtualenv`` is a third party alternative (and predecessor) to ``venv``. "
 "It allows virtual environments to be used on versions of Python prior to "
@@ -130,7 +118,6 @@ msgstr ""
 "kullanılmasına izin verir."
 
 #: installing/index.rst:47
-#, fuzzy
 msgid ""
 "The `Python Package Index <https://pypi.org>`__ is a public repository of "
 "open source licensed packages made available for use by other Python users."
@@ -140,7 +127,6 @@ msgstr ""
 "deposudur."
 
 #: installing/index.rst:50
-#, fuzzy
 msgid ""
 "the `Python Packaging Authority <https://www.pypa.io/>`__ is the group of "
 "developers and documentation authors responsible for the maintenance and "
@@ -157,7 +143,6 @@ msgstr ""
 "izleyicileri bulundururlar."
 
 #: installing/index.rst:57
-#, fuzzy
 msgid ""
 "``distutils`` is the original build and distribution system first added to "
 "the Python standard library in 1998. While direct use of ``distutils`` is "
@@ -175,14 +160,12 @@ msgstr ""
 "için kullanılan posta listesinin adı gibi)."
 
 #: installing/index.rst:65
-#, fuzzy
 msgid ""
 "The use of ``venv`` is now recommended for creating virtual environments."
 msgstr ""
 "Artık sanal ortamlar oluşturmak için ``venv`` 'in kullanılması önerilir."
 
 #: installing/index.rst:70
-#, fuzzy
 msgid ""
 "`Python Packaging User Guide: Creating and using virtual environments "
 "<https://packaging.python.org/installing/#creating-virtual-environments>`__"
@@ -191,12 +174,10 @@ msgstr ""
 "<https://packaging.python.org/installing/#creating-virtual-environments>`__"
 
 #: installing/index.rst:75
-#, fuzzy
 msgid "Basic usage"
 msgstr "Temel kullanım"
 
 #: installing/index.rst:77
-#, fuzzy
 msgid ""
 "The standard packaging tools are all designed to be used from the command "
 "line."
@@ -205,7 +186,6 @@ msgstr ""
 "tasarlanmıştır."
 
 #: installing/index.rst:80
-#, fuzzy
 msgid ""
 "The following command will install the latest version of a module and its "
 "dependencies from the Python Package Index::"
@@ -214,7 +194,6 @@ msgstr ""
 "Paket Dizininden yükleyecektir::"
 
 #: installing/index.rst:87
-#, fuzzy
 msgid ""
 "For POSIX users (including macOS and Linux users), the examples in this "
 "guide assume the use of a :term:`virtual environment`."
@@ -224,7 +203,6 @@ msgstr ""
 "varsayılmıştır."
 
 #: installing/index.rst:90
-#, fuzzy
 msgid ""
 "For Windows users, the examples in this guide assume that the option to "
 "adjust the system PATH environment variable was selected when installing "
@@ -235,7 +213,6 @@ msgstr ""
 "varsayılmaktadır."
 
 #: installing/index.rst:94
-#, fuzzy
 msgid ""
 "It's also possible to specify an exact or minimum version directly on the "
 "command line. When using comparator operators such as ``>``, ``<`` or some "
@@ -248,7 +225,6 @@ msgstr ""
 "çift tırnak içine alınmalıdır::"
 
 #: installing/index.rst:102
-#, fuzzy
 msgid ""
 "Normally, if a suitable module is already installed, attempting to install "
 "it again will have no effect. Upgrading existing modules must be requested "
@@ -258,7 +234,6 @@ msgstr ""
 "etkisi olmaz. Mevcut modüllerin yükseltilmesi açıkça talep edilmelidir::"
 
 #: installing/index.rst:108
-#, fuzzy
 msgid ""
 "More information and resources regarding ``pip`` and its capabilities can be "
 "found in the `Python Packaging User Guide <https://packaging.python.org>`__."
@@ -268,7 +243,6 @@ msgstr ""
 "bulunabilir."
 
 #: installing/index.rst:111
-#, fuzzy
 msgid ""
 "Creation of virtual environments is done through the :mod:`venv` module. "
 "Installing packages into an active virtual environment uses the commands "
@@ -279,7 +253,6 @@ msgstr ""
 "kullanır."
 
 #: installing/index.rst:117
-#, fuzzy
 msgid ""
 "`Python Packaging User Guide: Installing Python Distribution Packages "
 "<https://packaging.python.org/installing/>`__"
@@ -288,22 +261,18 @@ msgstr ""
 "<https://packaging.python.org/installing/>`__"
 
 #: installing/index.rst:122
-#, fuzzy
 msgid "How do I ...?"
 msgstr "Nasıl yapabilirim ...?"
 
 #: installing/index.rst:124
-#, fuzzy
 msgid "These are quick answers or links for some common tasks."
 msgstr "Bunlar, bazı genel görevler için hızlı cevaplar veya bağlantılardır."
 
 #: installing/index.rst:127
-#, fuzzy
 msgid "... install ``pip`` in versions of Python prior to Python 3.4?"
 msgstr "... ``pip`` 'i Python 3.4'ten önceki Python sürümlerinde kurmalı mı?"
 
 #: installing/index.rst:129
-#, fuzzy
 msgid ""
 "Python only started bundling ``pip`` with Python 3.4. For earlier versions, "
 "``pip`` needs to be \"bootstrapped\" as described in the Python Packaging "
@@ -314,7 +283,6 @@ msgstr ""
 "açıklandığı gibi \"önyüklenmesi\" gerekir."
 
 #: installing/index.rst:135
-#, fuzzy
 msgid ""
 "`Python Packaging User Guide: Requirements for Installing Packages <https://"
 "packaging.python.org/installing/#requirements-for-installing-packages>`__"
@@ -324,12 +292,10 @@ msgstr ""
 "packages>`__"
 
 #: installing/index.rst:142
-#, fuzzy
 msgid "... install packages just for the current user?"
 msgstr "... sadece mevcut kullanıcı için paketler kurabilirim?"
 
 #: installing/index.rst:144
-#, fuzzy
 msgid ""
 "Passing the ``--user`` option to ``python -m pip install`` will install a "
 "package just for the current user, rather than for all users of the system."
@@ -339,12 +305,10 @@ msgstr ""
 "yükleyecektir."
 
 #: installing/index.rst:149
-#, fuzzy
 msgid "... install scientific Python packages?"
 msgstr "... bilimsel Python paketleri kurabilirim?"
 
 #: installing/index.rst:151
-#, fuzzy
 msgid ""
 "A number of scientific Python packages have complex binary dependencies, and "
 "aren't currently easy to install using ``pip`` directly. At this point in "
@@ -359,7 +323,6 @@ msgstr ""
 "daha kolay olacaktır."
 
 #: installing/index.rst:159
-#, fuzzy
 msgid ""
 "`Python Packaging User Guide: Installing Scientific Packages <https://"
 "packaging.python.org/science/>`__"
@@ -368,13 +331,11 @@ msgstr ""
 "packaging.python.org/science/>`__"
 
 #: installing/index.rst:164
-#, fuzzy
 msgid "... work with multiple versions of Python installed in parallel?"
 msgstr ""
 "... paralel olarak yüklenmiş birden çok Python sürümüyle çalışabilirim?"
 
 #: installing/index.rst:166
-#, fuzzy
 msgid ""
 "On Linux, macOS, and other POSIX systems, use the versioned Python commands "
 "in combination with the ``-m`` switch to run the appropriate copy of "
@@ -385,12 +346,10 @@ msgstr ""
 "kullanın::"
 
 #: installing/index.rst:175
-#, fuzzy
 msgid "Appropriately versioned ``pip`` commands may also be available."
 msgstr "Uygun sürüme sahip ``pip`` komutları da mevcut olabilir."
 
 #: installing/index.rst:177
-#, fuzzy
 msgid ""
 "On Windows, use the ``py`` Python launcher in combination with the ``-m`` "
 "switch::"
@@ -399,17 +358,14 @@ msgstr ""
 "kullanın::"
 
 #: installing/index.rst:194
-#, fuzzy
 msgid "Common installation issues"
 msgstr "Genel yükleme sorunları"
 
 #: installing/index.rst:197
-#, fuzzy
 msgid "Installing into the system Python on Linux"
 msgstr "Python'u Linux'te sisteme kurmak"
 
 #: installing/index.rst:199
-#, fuzzy
 msgid ""
 "On Linux systems, a Python installation will typically be included as part "
 "of the distribution. Installing into this Python installation requires root "
@@ -424,7 +380,6 @@ msgstr ""
 "bileşenlerinin çalışmasına müdahale edebilir."
 
 #: installing/index.rst:205
-#, fuzzy
 msgid ""
 "On such systems, it is often better to use a virtual environment or a per-"
 "user installation when installing packages with ``pip``."
@@ -433,12 +388,10 @@ msgstr ""
 "kullanıcı başına kurulum kullanmak genellikle daha iyidir."
 
 #: installing/index.rst:210
-#, fuzzy
 msgid "Pip not installed"
 msgstr "Pip yüklü değil"
 
 #: installing/index.rst:212
-#, fuzzy
 msgid ""
 "It is possible that ``pip`` does not get installed by default. One potential "
 "fix is::"
@@ -446,23 +399,20 @@ msgstr ""
 "``pip`` 'in varsayılan olarak yüklenmemesi mümkündür. Bir olası düzeltme::"
 
 #: installing/index.rst:216
-#, fuzzy
 msgid ""
 "There are also additional resources for `installing pip. <https://packaging."
 "python.org/en/latest/tutorials/installing-packages/#ensure-pip-setuptools-"
 "and-wheel-are-up-to-date>`__"
 msgstr ""
 "`pip'i yüklemek  <https://packaging.python.org/en/latest/tutorials/"
-"installing-packages/#ensure-pip-setuptools-and-wheel-are-up-to-date>`__için "
+"installing-packages/#ensure-pip-setuptools-and-wheel-are-up-to-date>`__ için "
 "ek kaynaklar da vardır."
 
 #: installing/index.rst:221
-#, fuzzy
 msgid "Installing binary extensions"
 msgstr "İkili uzantıları yükleme"
 
 #: installing/index.rst:223
-#, fuzzy
 msgid ""
 "Python has typically relied heavily on source based distribution, with end "
 "users being expected to compile extension modules from source as part of the "
@@ -473,7 +423,6 @@ msgstr ""
 "kaynaktan derlemesi beklenir."
 
 #: installing/index.rst:227
-#, fuzzy
 msgid ""
 "With the introduction of support for the binary ``wheel`` format, and the "
 "ability to publish wheels for at least Windows and macOS through the Python "
@@ -488,7 +437,6 @@ msgstr ""
 "azalması bekleniyor."
 
 #: installing/index.rst:233
-#, fuzzy
 msgid ""
 "Some of the solutions for installing `scientific software <https://packaging."
 "python.org/science/>`__ that are not yet available as pre-built ``wheel`` "
@@ -501,7 +449,6 @@ msgstr ""
 "gerek kalmadan edinmeye de yardımcı olabilir."
 
 #: installing/index.rst:240
-#, fuzzy
 msgid ""
 "`Python Packaging User Guide: Binary Extensions <https://packaging.python."
 "org/extensions/>`__"
