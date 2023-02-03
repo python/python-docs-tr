@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: 2023-02-01 16:24+0300\n"
+"PO-Revision-Date: 2023-02-03 17:30+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -651,7 +651,7 @@ msgid ""
 msgstr ""
 "Bir :keyword:`continue` ifadesi, uygulamadaki bir sorun nedeniyle :keyword:"
 "`finally` cümlesinde yasadışı idi.  Python 3.8'de bu kısıtlama kaldırıldı. "
-"(Serhiy Storchaka tarafından :issue:`32489` ile katkıda bulunulmuştur)"
+"(Serhiy Storchaka'nın :issue:`32489` 'daki katkısıyla.)"
 
 #: whatsnew/3.8.rst:393
 msgid ""
@@ -681,8 +681,8 @@ msgstr ""
 ":class:`int`, :class:`float` ve :class:`complex` kurucuları artık :meth:"
 "`~object.__index__` özel yöntemini kullanacak, eğer mevcutsa ve ilgili "
 "yöntem :meth:`~object.__int__`, :meth:`~object.__float__` veya mevcut "
-"değilse :meth:`~object.__complex__` . (Serhiy Storchaka tarafından :issue:"
-"`20092` ile katkıda bulunulmuştur)"
+"değilse :meth:`~object.__complex__` . (Serhiy Storchaka'nın :issue:`20092` "
+"'deki katkısıyla.)"
 
 #: whatsnew/3.8.rst:407
 msgid ""
@@ -703,8 +703,8 @@ msgid ""
 "`reversed`. (Contributed by Rémi Lapeyre in :issue:`33462`.)"
 msgstr ""
 "Dict ve dictviews artık :func:`reversed` kullanılarak tersine çevrilmiş "
-"ekleme sırasına göre yinelenebilir. (Rémi Lapeyre tarafından :issue:`33462` "
-"ile katkıda bulunulmuştur)"
+"ekleme sırasına göre yinelenebilir. (Rémi Lapeyre'nin :issue:`33462` 'deki "
+"katkısıyla.)"
 
 #: whatsnew/3.8.rst:419
 msgid ""
@@ -718,7 +718,7 @@ msgstr ""
 "daha da kısıtlandı. Özellikle, ``f((keyword)=arg)`` ifadesine artık izin "
 "verilmemektedir. Bir anahtar kelime argüman atama teriminin sol tarafında "
 "çıplak bir isimden daha fazlasına izin verilmesi asla amaçlanmamıştır. "
-"(Benjamin Peterson tarafından :issue:`34641` 'de katkıda bulunulmuştur.)"
+"(Benjamin Peterson'un :issue:`34641` 'deki katkısıyla.)"
 
 #: whatsnew/3.8.rst:425
 msgid ""
@@ -879,8 +879,8 @@ msgstr ""
 "``(obj, state)`` imzasına sahip bir çağrılabilirdir.  Bu, belirli bir "
 "nesnenin durum güncelleme davranışı üzerinde doğrudan kontrol sağlar.  Eğer "
 "*None* değilse, bu çağrılabilir öğe nesnenin :meth:`~__setstate__` yöntemine "
-"göre önceliğe sahip olacaktır. (Pierre Glaser ve Olivier Grisel tarafından :"
-"issue:`35900` 'de katkıda bulunulmuştur)"
+"göre önceliğe sahip olacaktır. (Pierre Glaser ve Olivier Grisel'in :issue:"
+"`35900` 'deki katkılarıyla.)"
 
 #: whatsnew/3.8.rst:543
 msgid "New Modules"
@@ -1010,7 +1010,7 @@ msgstr ""
 
 #: whatsnew/3.8.rst:649
 msgid "(Contributed by Yury Selivanov in :issue:`37028`.)"
-msgstr "(Yury Selivanov'un :issue:`37028` 'teki katkısıyla.)"
+msgstr "(Yury Selivanov'un :issue:`37028` 'deki katkısıyla.)"
 
 #: whatsnew/3.8.rst:1967
 msgid ""
@@ -1021,7 +1021,7 @@ msgid ""
 msgstr ""
 "İstisna :class:`asyncio.CancelledError` artık :class:`Exception` yerine :"
 "class:`BaseException` 'dan miras alıyor ve artık :class:`concurrent.futures."
-"CancelledError` 'dan miras almıyor. (Yury Selivanov'un :issue:`32528` 'teki "
+"CancelledError` 'dan miras almıyor. (Yury Selivanov'un :issue:`32528` 'deki "
 "katkısıyla.)"
 
 #: whatsnew/3.8.rst:656
@@ -1048,7 +1048,7 @@ msgid ""
 "`23057`.)"
 msgstr ""
 ":class:`~asyncio.ProactorEventLoop` artık :exc:`KeyboardInterrupt` "
-"(\"CTRL+C\") ile kesilebilir. (Vladimir Matveev'in :issue:`23057` 'teki "
+"(\"CTRL+C\") ile kesilebilir. (Vladimir Matveev'in :issue:`23057` 'deki "
 "katkısıyla.)"
 
 #: whatsnew/3.8.rst:666
@@ -1057,7 +1057,7 @@ msgid ""
 "an :class:`asyncio.Task`. (Contributed by Alex Grönholm in :issue:`36999`.)"
 msgstr ""
 "Bir :class:`asyncio.Task` içindeki sarılmış korutini almak için :meth:"
-"`asyncio.Task.get_coro` eklendi. (Alex Grönholm'ın :issue:`36999` 'teki "
+"`asyncio.Task.get_coro` eklendi. (Alex Grönholm'ın :issue:`36999` 'daki "
 "katkısıyla.)"
 
 #: whatsnew/3.8.rst:670
@@ -1092,7 +1092,7 @@ msgstr ""
 "için iki yeni parametre eklendi: *happy_eyeballs_delay* ve *interleave*. "
 "Happy Eyeballs algoritması, IPv4 ve IPv6'yı destekleyen uygulamalarda, her "
 "ikisini de kullanarak aynı anda bağlanmaya çalışarak yanıt verebilirliği "
-"artırır. (twisteroid ambassador'un :issue:`33530` 'teki katkısıyla.)"
+"artırır. (twisteroid ambassador'un :issue:`33530` 'daki katkısıyla.)"
 
 #: whatsnew/3.8.rst:688
 msgid "builtins"
@@ -1180,8 +1180,8 @@ msgid ""
 "Serhiy Storchaka in :issue:`31680`.)"
 msgstr ""
 "Temel ncurses kütüphanesi için yapılandırılmış sürüm bilgilerini tutan yeni "
-"bir değişken eklendi: :data:`~curses.ncurses_version`. (Serhiy Storchaka "
-"tarafından :issue:`31680` ile katkıda bulunulmuştur)."
+"bir değişken eklendi: :data:`~curses.ncurses_version`. (Serhiy "
+"Storchaka'nın :issue:`31680` 'deki katkısıyla.)"
 
 #: whatsnew/3.8.rst:743
 msgid "ctypes"
@@ -1278,7 +1278,7 @@ msgid ""
 msgstr ""
 ":func:`~gc.get_objects` artık nesnelerin alınacağı nesli belirten isteğe "
 "bağlı bir *nesil* parametresi alabilir. (Pablo Galindo'nun :issue:`36016` "
-"'teki katkılarıyla.)"
+"'daki katkılarıyla.)"
 
 #: whatsnew/3.8.rst:829
 msgid "gettext"
@@ -1302,7 +1302,7 @@ msgid ""
 "output. (Contributed by Guo Ci Teo in :issue:`34898`.)"
 msgstr ""
 "Tekrarlanabilir çıktı için :func:`gzip.compress` dosyasına *mtime* "
-"parametresi eklendi. (Guo Ci Teo'nun :issue:`34898` 'teki katkılarıyla.)"
+"parametresi eklendi. (Guo Ci Teo'nun :issue:`34898` 'deki katkılarıyla.)"
 
 #: whatsnew/3.8.rst:841
 msgid ""
@@ -1364,7 +1364,7 @@ msgstr ""
 "Yapılandırma iletişim kutusunun Genel sekmesinde aksi ayarlanmadığı sürece "
 "pencereler satır numaraları olmadan açılır.  Mevcut bir pencere için satır "
 "numaraları Seçenekler menüsünde gösterilir ve gizlenir. (Tal Einat ve "
-"Saimadhav Heblikar tarafından :issue:`17535` ile katkıda bulunulmuştur)"
+"Saimadhav Heblikar'ın :issue:`17535` 'teki katkılarıyla.)"
 
 #: whatsnew/3.8.rst:869
 msgid ""
@@ -1449,7 +1449,7 @@ msgstr ""
 "Geliştirme modunda (:option:`-X` ``env``) ve :ref:`debug build <debug-"
 "build>` içinde, :class:`io.IOBase` sonlandırıcısı artık ``close()`` yöntemi "
 "başarısız olursa istisnayı kaydeder. Sürüm derlemesinde istisna varsayılan "
-"olarak sessizce yok sayılır. (Victor Stinner'ın :issue:`18748` 'teki "
+"olarak sessizce yok sayılır. (Victor Stinner'ın :issue:`18748` 'deki "
 "katkısıyla.)"
 
 #: whatsnew/3.8.rst:917
@@ -1873,7 +1873,7 @@ msgid ""
 "argument. (Contributed by Josh Bronson in :issue:`20849`.)"
 msgstr ""
 ":func:`shutil.copytree` artık yeni bir ``dirs_exist_ok`` anahtar kelime "
-"argümanını kabul ediyor. (Josh Bronson'ın :issue:`20849` 'teki katkısıyla.)"
+"argümanını kabul ediyor. (Josh Bronson'ın :issue:`20849` 'daki katkısıyla.)"
 
 #: whatsnew/3.8.rst:1157
 msgid ""
@@ -1885,7 +1885,7 @@ msgstr ""
 ":func:`shutil.make_archive` artık taşınabilirliği ve standartlara uygunluğu "
 "artırmak için yeni arşivler için modern pax (POSIX.1-2001) formatını "
 "varsayılan olarak kullanmaktadır, :mod:`tarfile` modülündeki ilgili "
-"değişiklikten miras alınmıştır. (C.A.M. Gerlach'ın :issue:`30661` 'teki "
+"değişiklikten miras alınmıştır. (C.A.M. Gerlach'ın :issue:`30661` 'deki "
 "katkısıyla.)"
 
 #: whatsnew/3.8.rst:1162
@@ -1913,8 +1913,8 @@ msgstr ""
 "Aynı soket üzerinde hem IPv4 hem de IPv6 bağlantılarını kabul etmek de dahil "
 "olmak üzere bir sunucu soketi oluştururken genellikle gerekli görevleri "
 "otomatikleştirmek için :meth:`~socket.create_server()` ve :meth:`~socket."
-"has_dualstack_ipv6()` kolaylık fonksiyonları eklendi.  (Giampaolo Rodolà "
-"tarafından :issue:`17561` ile katkıda bulunulmuştur)"
+"has_dualstack_ipv6()` kolaylık fonksiyonları eklendi.  (Giampaolo "
+"Rodolà'nın :issue:`17561` 'deki katkısıyla.)"
 
 #: whatsnew/3.8.rst:1175
 msgid ""
@@ -1960,8 +1960,8 @@ msgid ""
 "Added :func:`statistics.geometric_mean()` (Contributed by Raymond Hettinger "
 "in :issue:`27181`.)"
 msgstr ""
-":func:`statistics.geometric_mean()` eklendi ( :issue:`27181` 'de Raymond "
-"Hettinger tarafından sağlanmıştır.)"
+":func:`statistics.geometric_mean()` eklendi (Raymond Hettinger'ın :issue:"
+"`27181` 'deki katkısıyla.)"
 
 #: whatsnew/3.8.rst:1199
 msgid ""
@@ -2270,8 +2270,8 @@ msgid ""
 "Brett Cannon in :issue:`32718`.)"
 msgstr ""
 ":mod:`venv` artık PowerShell Core 6.1 altında sanal ortamları etkinleştirmek "
-"için tüm platformlarda bir ``Activate.ps1`` betiği içeriyor (Brett Cannon "
-"tarafından :issue:`32718` ile katkıda bulunulmuştur.)"
+"için tüm platformlarda bir ``Activate.ps1`` dizesi içeriyor (Brett "
+"Cannon'un :issue:`32718` 'deki katkısıyla.)"
 
 #: whatsnew/3.8.rst:1411
 msgid "weakref"
@@ -2417,9 +2417,9 @@ msgstr ""
 "üzerinde :func:`shutil.copyfile` daha büyük bir varsayılan tampon boyutu "
 "kullanır (16 KiB yerine 1 MiB) ve :func:`shutil.copyfileobj` 'nin :func:"
 "`memoryview` tabanlı bir çeşidi kullanılır. Aynı bölüm içinde 512 MiB'lık "
-"bir dosyayı kopyalamak için hızlanma yaklaşık +26% on Linux, +50% on macOS "
-"ve +40% on Windows'tur. Ayrıca, çok daha az CPU döngüsü tüketilir. Bkz :ref:"
-"`shutil-platform-dependent-efficient-copy-operations` bölümü. (Giampaolo "
+"bir dosyayı kopyalamak için hızlanma yaklaşık olarak Linux'te +26%, macOS'da "
+"+50% ve Windows'ta +40%'tır. Ayrıca, çok daha az CPU döngüsü tüketilir. Bkz :"
+"ref:`shutil-platform-dependent-efficient-copy-operations` bölümü. (Giampaolo "
 "Rodolà'nın :issue:`33671` 'deki katkısıyla.)"
 
 #: whatsnew/3.8.rst:1484
@@ -2527,8 +2527,8 @@ msgid ""
 msgstr ""
 "Birçok yerleşik fonksiyon ve metoda aktarılan argümanları dönüştürme yükü "
 "azaltıldı.  Bu, bazı basit yerleşik fonksiyonların ve yöntemlerin "
-"çağrılmasını %20--50'ye kadar hızlandırdı.  (Serhiy Storchaka tarafından :"
-"issue:`23867`, :issue:`35582` ve :issue:`36127` 'de katkıda bulunulmuştur)"
+"çağrılmasını %20--50'ye kadar hızlandırdı.  (Serhiy Storchaka'nın :issue:"
+"`23867`, :issue:`35582` ve :issue:`36127` 'deki katkılarıyla.)"
 
 #: whatsnew/3.8.rst:1528
 msgid ""
@@ -2810,7 +2810,7 @@ msgstr ""
 ":mod:`~xml.etree.ElementTree` modülündeki kullanımdan kaldırılan "
 "``getchildren()`` ve ``getiterator()`` yöntemleri artık :exc:"
 "`PendingDeprecationWarning` yerine bir :exc:`DeprecationWarning` yayıyor. "
-"Python 3.9'da kaldırılacaklar. (Serhiy Storchaka'nın :issue:`29209` 'teki "
+"Python 3.9'da kaldırılacaklar. (Serhiy Storchaka'nın :issue:`29209` 'daki "
 "katkısıyla.)"
 
 #: whatsnew/3.8.rst:1647
@@ -3238,7 +3238,7 @@ msgstr ""
 "CPython yorumlayıcısı bazı durumlarda istisnaları yutabilir. Python 3.8'de "
 "bu daha az durumda gerçekleşir.  Özellikle, tip sözlüğünden öznitelik "
 "alınırken ortaya çıkan istisnalar artık göz ardı edilmiyor. (Serhiy "
-"Storchaka tarafından :issue:`35459` 'da katkıda bulunulmuştur)"
+"Storchaka'nın :issue:`35459` 'daki katkısıyla.)"
 
 #: whatsnew/3.8.rst:1832
 msgid ""
@@ -3285,8 +3285,8 @@ msgstr ""
 "sonlandırarak :c:func:`PyEval_RestoreThread`, :c:func:`Py_END_ALLOW_THREADS` "
 "ve :c:func:`PyGILState_Ensure` ile tutarlı hale geliyor. Bu davranış "
 "istenmiyorsa, :c:func:`_Py_IsFinalizing` veya :c:func:`sys.is_finalizing` "
-"kontrolünü yaparak çağrıyı koruyun. (Joannah Nanjekye tarafından :issue:"
-"`36475` ile katkıda bulunulmuştur)"
+"kontrolünü yaparak çağrıyı koruyun. (Joannah Nanjekye'nin :issue:`36475` "
+"'teki katkısıyla.)"
 
 #: whatsnew/3.8.rst:1855
 msgid "Changes in the Python API"
@@ -3387,7 +3387,7 @@ msgstr ""
 "Bir :mod:`dbm.dumb` veritabanı ``'r'`` bayraklarıyla açıldığında artık salt "
 "okunurdur. :func:`dbm.dumb.open`, ``'r'`` ve ``'w'`` bayraklarıyla artık "
 "mevcut değilse bir veritabanı oluşturmaz. (Serhiy Storchaka'nın :issue:"
-"`32749` 'teki katkısıyla.)"
+"`32749` 'daki katkısıyla.)"
 
 #: whatsnew/3.8.rst:1904
 msgid ""
@@ -3402,8 +3402,8 @@ msgstr ""
 "``doctype()`` yöntemi artık çağrılmayacak ve bir :exc:`DeprecationWarning` "
 "yerine bir :exc:`RuntimeWarning` yayacaktır. Bir XML doctype bildirimini "
 "işlemek için bir hedef üzerinde :meth:`doctype() <xml.etree.ElementTree."
-"TreeBuilder.doctype>` yöntemini tanımlayın. (Serhiy Storchaka tarafından :"
-"issue:`29209` içinde katkıda bulunulmuştur)"
+"TreeBuilder.doctype>` yöntemini tanımlayın. (Serhiy Storchaka'nın :issue:"
+"`29209` 'daki katkısıyla.)"
 
 #: whatsnew/3.8.rst:1911
 msgid ""
@@ -3489,7 +3489,7 @@ msgstr ""
 "başarı durumunda sıfır olmayan bir değer döndürülüyordu; Windows altında "
 "hata durumunda sıfır döndürülüyordu.  Unix altında başarı durumunda sıfır "
 "değeri döndürülürken hata durumunda bir istisna ortaya çıkıyordu. (Berker "
-"Peksag tarafından :issue:`2122` 'de katkıda bulunulmuştur)"
+"Peksağ'ın :issue:`2122` 'deki katkısıyla.)"
 
 #: whatsnew/3.8.rst:1947
 msgid ""
@@ -3522,7 +3522,7 @@ msgstr ""
 "Değişmezler için basitleştirilmiş AST.  Tüm sabitler :class:`ast.Constant` "
 "örnekleri olarak temsil edilecektir.  Eski ``Num``, ``Str``, ``Bytes``, "
 "``NameConstant`` ve ``Ellipsis`` sınıflarını örneklemek bir ``Constant`` "
-"örneği döndürecektir. (Serhiy Storchaka'nın :issue:`32892` 'teki katkısıyla.)"
+"örneği döndürecektir. (Serhiy Storchaka'nın :issue:`32892` 'deki katkısıyla.)"
 
 #: whatsnew/3.8.rst:1972
 msgid ""
@@ -3654,7 +3654,7 @@ msgstr ""
 "kullanıldığında, ``Modules/Setup`` bölümünün ``*shared*`` bölümü tarafından "
 "oluşturulan standart kütüphanenin C uzantıları gibi ``libpython`` ile "
 "bağlantılı olmayan C uzantılarını yüklemek zaten mümkün değildi. (Victor "
-"Stinner'ın  :issue:`21536` 'teki katkısıyla.)"
+"Stinner'ın  :issue:`21536` 'daki katkısıyla.)"
 
 #: whatsnew/3.8.rst:2034
 msgid ""
@@ -3861,7 +3861,7 @@ msgid ""
 msgstr ""
 "Bir :keyword:`async for` döngüsünde bir sonraki öğe beklenirken ortaya çıkan "
 "istisnaları işlemek için yeni :opcode:`END_ASYNC_FOR` kodu eklendi. (Serhiy "
-"Storchaka tarafından :issue:`33041` ile katkıda bulunulmuştur)"
+"Storchaka'nın :issue:`33041` 'deki katkısıyla.)"
 
 #: whatsnew/3.8.rst:2165
 msgid ""
@@ -3878,7 +3878,7 @@ msgstr ""
 
 #: whatsnew/3.8.rst:2172
 msgid "Demos and Tools"
-msgstr "Demos and Tools"
+msgstr "Demolar ve Araçlar"
 
 #: whatsnew/3.8.rst:2174
 msgid ""
@@ -3886,9 +3886,9 @@ msgid ""
 "``Tools/scripts/var_access_benchmark.py``. (Contributed by Raymond Hettinger "
 "in :issue:`35884`.)"
 msgstr ""
-"Added a benchmark script for timing various ways to access variables: "
-"``Tools/scripts/var_access_benchmark.py``. (Contributed by Raymond Hettinger "
-"in :issue:`35884`.)"
+"Değişkenlere erişmenin çeşitli yollarını zamanlamak için bir kıyaslama "
+"dizesi eklendi: ``Tools/scripts/var_access_benchmark.py``. (Raymond "
+"Hettinger'ın :issue:`35884` 'teki katkısıyla.)"
 
 #: whatsnew/3.8.rst:2178
 msgid "Here's a summary of performance improvements since Python 3.3:"
@@ -3927,7 +3927,7 @@ msgstr ""
 "desteklenmemektedir. Bunun nedeni UDP'deki ``SO_REUSEADDR`` soket "
 "seçeneğinin davranışıdır. Daha fazla ayrıntı için ``loop."
 "create_datagram_endpoint()`` belgelerine bakın. (Kyle Stanley, Antoine "
-"Pitrou ve Yury Selivanov tarafından :issue:`37228` 'de katkıda bulunulmuştur)"
+"Pitrou ve Yury Selivanov'un :issue:`37228` 'deki katkılarıyla.)"
 
 #: whatsnew/3.8.rst:2244
 msgid "Notable changes in Python 3.8.8"
@@ -3951,8 +3951,8 @@ msgstr ""
 "yalnızca tek bir ayırıcı anahtara izin verecek şekilde değiştirildi.  Bu "
 "değişiklik aynı zamanda :func:`cgi.parse` ve :func:`cgi.parse_multipart` "
 "fonksiyonlarını da etkilemektedir. Daha fazla ayrıntı için lütfen ilgili "
-"belgelere bakın. (Adam Goldschmidt, Senthil Kumaran ve Ken Jin tarafından :"
-"issue:`42967` ile katkıda bulunulmuştur)"
+"belgelere bakın. (Adam Goldschmidt, Senthil Kumaran ve Ken Jin'in :issue:"
+"`42967` 'deki katkılarıyla.)"
 
 #: whatsnew/3.8.rst:2257
 msgid "Notable changes in Python 3.8.12"
