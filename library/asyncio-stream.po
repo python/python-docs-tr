@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2023-02-04 22:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -295,35 +295,37 @@ msgid "The method closes the stream and the underlying socket."
 msgstr ""
 
 #: library/asyncio-stream.rst:284
-msgid "The method should be used along with the ``wait_closed()`` method::"
+msgid ""
+"The method should be used, though not mandatory, along with the "
+"``wait_closed()`` method::"
 msgstr ""
 
-#: library/asyncio-stream.rst:291
+#: library/asyncio-stream.rst:292
 msgid ""
 "Return ``True`` if the underlying transport supports the :meth:`write_eof` "
 "method, ``False`` otherwise."
 msgstr ""
 
-#: library/asyncio-stream.rst:296
+#: library/asyncio-stream.rst:297
 msgid ""
 "Close the write end of the stream after the buffered write data is flushed."
 msgstr ""
 
-#: library/asyncio-stream.rst:301
+#: library/asyncio-stream.rst:302
 msgid "Return the underlying asyncio transport."
 msgstr ""
 
-#: library/asyncio-stream.rst:305
+#: library/asyncio-stream.rst:306
 msgid ""
 "Access optional transport information; see :meth:`BaseTransport."
 "get_extra_info` for details."
 msgstr ""
 
-#: library/asyncio-stream.rst:310
+#: library/asyncio-stream.rst:311
 msgid "Wait until it is appropriate to resume writing to the stream. Example::"
 msgstr ""
 
-#: library/asyncio-stream.rst:316
+#: library/asyncio-stream.rst:317
 msgid ""
 "This is a flow control method that interacts with the underlying IO write "
 "buffer.  When the size of the buffer reaches the high watermark, *drain()* "
@@ -332,90 +334,91 @@ msgid ""
 "`drain` returns immediately."
 msgstr ""
 
-#: library/asyncio-stream.rst:325
+#: library/asyncio-stream.rst:326
 msgid ""
 "Return ``True`` if the stream is closed or in the process of being closed."
 msgstr ""
 
-#: library/asyncio-stream.rst:332
+#: library/asyncio-stream.rst:333
 msgid "Wait until the stream is closed."
 msgstr ""
 
-#: library/asyncio-stream.rst:334
+#: library/asyncio-stream.rst:335
 msgid ""
 "Should be called after :meth:`close` to wait until the underlying connection "
-"is closed."
+"is closed, ensuring that all data has been flushed before e.g. exiting the "
+"program."
 msgstr ""
 
-#: library/asyncio-stream.rst:341
+#: library/asyncio-stream.rst:343
 msgid "Examples"
 msgstr ""
 
-#: library/asyncio-stream.rst:346
+#: library/asyncio-stream.rst:348
 msgid "TCP echo client using streams"
 msgstr ""
 
-#: library/asyncio-stream.rst:348
+#: library/asyncio-stream.rst:350
 msgid "TCP echo client using the :func:`asyncio.open_connection` function::"
 msgstr ""
 
-#: library/asyncio-stream.rst:370
+#: library/asyncio-stream.rst:373
 msgid ""
 "The :ref:`TCP echo client protocol "
 "<asyncio_example_tcp_echo_client_protocol>` example uses the low-level :meth:"
 "`loop.create_connection` method."
 msgstr ""
 
-#: library/asyncio-stream.rst:377
+#: library/asyncio-stream.rst:380
 msgid "TCP echo server using streams"
 msgstr ""
 
-#: library/asyncio-stream.rst:379
+#: library/asyncio-stream.rst:382
 msgid "TCP echo server using the :func:`asyncio.start_server` function::"
 msgstr ""
 
-#: library/asyncio-stream.rst:412
+#: library/asyncio-stream.rst:416
 msgid ""
 "The :ref:`TCP echo server protocol "
 "<asyncio_example_tcp_echo_server_protocol>` example uses the :meth:`loop."
 "create_server` method."
 msgstr ""
 
-#: library/asyncio-stream.rst:417
+#: library/asyncio-stream.rst:421
 msgid "Get HTTP headers"
 msgstr ""
 
-#: library/asyncio-stream.rst:419
+#: library/asyncio-stream.rst:423
 msgid ""
 "Simple example querying HTTP headers of the URL passed on the command line::"
 msgstr ""
 
-#: library/asyncio-stream.rst:457
+#: library/asyncio-stream.rst:462
 msgid "Usage::"
 msgstr ""
 
-#: library/asyncio-stream.rst:461
+#: library/asyncio-stream.rst:466
 msgid "or with HTTPS::"
 msgstr ""
 
-#: library/asyncio-stream.rst:469
+#: library/asyncio-stream.rst:474
 msgid "Register an open socket to wait for data using streams"
 msgstr ""
 
-#: library/asyncio-stream.rst:471
+#: library/asyncio-stream.rst:476
 msgid ""
 "Coroutine waiting until a socket receives data using the :func:"
 "`open_connection` function::"
 msgstr ""
 
-#: library/asyncio-stream.rst:505
+#: library/asyncio-stream.rst:511
 msgid ""
 "The :ref:`register an open socket to wait for data using a protocol "
 "<asyncio_example_create_connection>` example uses a low-level protocol and "
 "the :meth:`loop.create_connection` method."
 msgstr ""
 
-#: library/asyncio-stream.rst:509
+#: library/asyncio-stream.rst:515
 msgid ""
 "The :ref:`watch a file descriptor for read events "
 "<asyncio_example_watch_fd>` example uses the low-level :meth:`loop."
