@@ -66,6 +66,7 @@ PYTHON := $(shell which python3)
 MODE := html
 POSPELL_TMP_DIR := .pospell/
 JOBS := auto
+ADDITIONAL_ARGS := --keep-going
 SPHINXERRORHANDLING = -W
 
 # Detect OS
@@ -97,7 +98,8 @@ all: ensure_prerequisites
 	  -D gettext_compact=0              \
 	  -D latex_engine=xelatex           \
 	  -D latex_elements.inputenc=       \
-	  -D latex_elements.fontenc='       \
+	  -D latex_elements.fontenc=        \
+	  $(ADDITIONAL_ARGS)'               \
 	  SPHINXERRORHANDLING=$(SPHINXERRORHANDLING) \
 	  $(MODE)
 	@echo "Build success, open file://$(abspath venv/cpython/)/Doc/build/html/index.html or run 'make htmlview' to see them."
