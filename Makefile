@@ -66,7 +66,7 @@ PYTHON := $(shell which python3)
 MODE := html
 POSPELL_TMP_DIR := .pospell/
 JOBS := auto
-ADDITIONAL_ARGS := --keep-going
+ADDITIONAL_ARGS := --keep-going --color
 SPHINXERRORHANDLING = -W
 
 # Detect OS
