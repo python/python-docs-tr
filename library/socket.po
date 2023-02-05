@@ -1,5 +1,5 @@
 # Python Documentation Turkish Translation
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
 #, fuzzy
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2023-02-04 22:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -705,7 +705,7 @@ msgstr ""
 msgid "The newly created socket is :ref:`non-inheritable <fd_inheritance>`."
 msgstr ""
 
-#: library/socket.rst:588
+#: library/socket.rst:22
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.__new__`` with arguments "
 "``self``, ``family``, ``type``, ``protocol``."
@@ -813,7 +813,7 @@ msgstr ""
 #: library/socket.rst:672
 msgid ""
 "*family* should be either :data:`AF_INET` or :data:`AF_INET6`. *backlog* is "
-"the queue size passed to :meth:`socket.listen`; when ``0`` a default "
+"the queue size passed to :meth:`socket.listen`; if not specified , a default "
 "reasonable value is chosen. *reuse_port* dictates whether to set the :data:"
 "`SO_REUSEPORT` socket option."
 msgstr ""
@@ -929,7 +929,7 @@ msgid ""
 "be passed to the :meth:`socket.connect` method."
 msgstr ""
 
-#: library/socket.rst:790
+#: library/socket.rst:30
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.getaddrinfo`` with "
 "arguments ``host``, ``port``, ``family``, ``type``, ``protocol``."
@@ -973,7 +973,7 @@ msgid ""
 "stack support."
 msgstr ""
 
-#: library/socket.rst:842
+#: library/socket.rst:10
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.gethostbyname`` with "
 "argument ``hostname``."
@@ -997,7 +997,7 @@ msgid ""
 "interpreter is currently executing."
 msgstr ""
 
-#: library/socket.rst:850
+#: library/socket.rst:4
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.gethostname`` with no "
 "arguments."
@@ -1020,7 +1020,7 @@ msgid ""
 "`gethostbyaddr` supports both IPv4 and IPv6."
 msgstr ""
 
-#: library/socket.rst:866
+#: library/socket.rst:9
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.gethostbyaddr`` with "
 "argument ``ip_address``."
@@ -1045,7 +1045,7 @@ msgid ""
 "For more information about *flags* you can consult :manpage:`getnameinfo(3)`."
 msgstr ""
 
-#: library/socket.rst:881
+#: library/socket.rst:11
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.getnameinfo`` with "
 "argument ``sockaddr``."
@@ -1067,7 +1067,7 @@ msgid ""
 "``'udp'``, otherwise any protocol will match."
 msgstr ""
 
-#: library/socket.rst:898
+#: library/socket.rst:5
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.getservbyname`` with "
 "arguments ``servicename``, ``protocolname``."
@@ -1080,7 +1080,7 @@ msgid ""
 "``'udp'``, otherwise any protocol will match."
 msgstr ""
 
-#: library/socket.rst:907
+#: library/socket.rst:5
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.getservbyport`` with "
 "arguments ``port``, ``protocolname``."
@@ -1262,7 +1262,7 @@ msgid ""
 "you don't have enough rights."
 msgstr ""
 
-#: library/socket.rst:1088
+#: library/socket.rst:4
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.sethostname`` with "
 "argument ``name``."
@@ -1403,7 +1403,7 @@ msgid ""
 "format of *address* depends on the address family --- see above.)"
 msgstr ""
 
-#: library/socket.rst:1219
+#: library/socket.rst:4
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.bind`` with arguments "
 "``self``, ``address``."
@@ -1455,7 +1455,7 @@ msgid ""
 "(or the exception raised by the signal handler)."
 msgstr ""
 
-#: library/socket.rst:1275
+#: library/socket.rst:11
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.connect`` with arguments "
 "``self``, ``address``."
@@ -1790,7 +1790,7 @@ msgid ""
 "address family --- see above.)"
 msgstr ""
 
-#: library/socket.rst:1617
+#: library/socket.rst:7
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.sendto`` with arguments "
 "``self``, ``address``."
@@ -1823,7 +1823,7 @@ msgid ""
 "mechanism.  See also :meth:`recvmsg`. ::"
 msgstr ""
 
-#: library/socket.rst:1658
+#: library/socket.rst:32
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.sendmsg`` with arguments "
 "``self``, ``address``."

@@ -1,5 +1,5 @@
 # Python Documentation Turkish Translation
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
 #, fuzzy
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2023-02-04 22:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -202,21 +202,29 @@ msgstr ""
 msgid ""
 "The actual representation of values is determined by the machine "
 "architecture (strictly speaking, by the C implementation).  The actual size "
-"can be accessed through the :attr:`itemsize` attribute."
+"can be accessed through the :attr:`array.itemsize` attribute."
 msgstr ""
 
 #: library/array.rst:65
-msgid "The module defines the following type:"
+msgid "The module defines the following item:"
 msgstr ""
 
 #: library/array.rst:70
+msgid "A string with all available type codes."
+msgstr ""
+
+#: library/array.rst:73
+msgid "The module defines the following type:"
+msgstr ""
+
+#: library/array.rst:78
 msgid ""
 "A new array whose items are restricted by *typecode*, and initialized from "
 "the optional *initializer* value, which must be a list, a :term:`bytes-like "
 "object`, or iterable over elements of the appropriate type."
 msgstr ""
 
-#: library/array.rst:75
+#: library/array.rst:83
 msgid ""
 "If given a list or string, the initializer is passed to the new array's :"
 "meth:`fromlist`, :meth:`frombytes`, or :meth:`fromunicode` method (see "
@@ -224,17 +232,7 @@ msgid ""
 "initializer is passed to the :meth:`extend` method."
 msgstr ""
 
-#: library/array.rst:80
-msgid ""
-"Raises an :ref:`auditing event <auditing>` ``array.__new__`` with arguments "
-"``typecode``, ``initializer``."
-msgstr ""
-
-#: library/array.rst:84
-msgid "A string with all available type codes."
-msgstr ""
-
-#: library/array.rst:86
+#: library/array.rst:88
 msgid ""
 "Array objects support the ordinary sequence operations of indexing, slicing, "
 "concatenation, and multiplication.  When using slice assignment, the "
@@ -244,35 +242,37 @@ msgid ""
 "object>` are supported."
 msgstr ""
 
-#: library/array.rst:92
-msgid "The following data items and methods are also supported:"
+#: library/array.rst:17
+msgid ""
+"Raises an :ref:`auditing event <auditing>` ``array.__new__`` with arguments "
+"``typecode``, ``initializer``."
 msgstr ""
 
-#: library/array.rst:96
+#: library/array.rst:99
 msgid "The typecode character used to create the array."
 msgstr ""
 
-#: library/array.rst:101
+#: library/array.rst:104
 msgid "The length in bytes of one array item in the internal representation."
 msgstr ""
 
-#: library/array.rst:106
+#: library/array.rst:109
 msgid "Append a new item with value *x* to the end of the array."
 msgstr ""
 
-#: library/array.rst:111
+#: library/array.rst:114
 msgid ""
 "Return a tuple ``(address, length)`` giving the current memory address and "
 "the length in elements of the buffer used to hold array's contents.  The "
 "size of the memory buffer in bytes can be computed as ``array.buffer_info()"
 "[1] * array.itemsize``.  This is occasionally useful when working with low-"
 "level (and inherently unsafe) I/O interfaces that require memory addresses, "
-"such as certain :c:func:`ioctl` operations.  The returned numbers are valid "
+"such as certain :c:func:`!ioctl` operations.  The returned numbers are valid "
 "as long as the array exists and no length-changing operations are applied to "
 "it."
 msgstr ""
 
-#: library/array.rst:121
+#: library/array.rst:124
 msgid ""
 "When using array objects from code written in C or C++ (the only way to "
 "effectively make use of this information), it makes more sense to use the "
@@ -281,7 +281,7 @@ msgid ""
 "interface is documented in :ref:`bufferobjects`."
 msgstr ""
 
-#: library/array.rst:130
+#: library/array.rst:133
 msgid ""
 "\"Byteswap\" all items of the array.  This is only supported for values "
 "which are 1, 2, 4, or 8 bytes in size; for other types of values, :exc:"
@@ -289,11 +289,11 @@ msgid ""
 "written on a machine with a different byte order."
 msgstr ""
 
-#: library/array.rst:138
+#: library/array.rst:141
 msgid "Return the number of occurrences of *x* in the array."
 msgstr ""
 
-#: library/array.rst:143
+#: library/array.rst:146
 msgid ""
 "Append items from *iterable* to the end of the array.  If *iterable* is "
 "another array, it must have *exactly* the same type code; if not, :exc:"
@@ -301,18 +301,18 @@ msgid ""
 "iterable and its elements must be the right type to be appended to the array."
 msgstr ""
 
-#: library/array.rst:151
+#: library/array.rst:154
 msgid ""
 "Appends items from the string, interpreting the string as an array of "
 "machine values (as if it had been read from a file using the :meth:"
 "`fromfile` method)."
 msgstr ""
 
-#: library/array.rst:154
-msgid ":meth:`fromstring` is renamed to :meth:`frombytes` for clarity."
+#: library/array.rst:157
+msgid ":meth:`!fromstring` is renamed to :meth:`frombytes` for clarity."
 msgstr ""
 
-#: library/array.rst:160
+#: library/array.rst:163
 msgid ""
 "Read *n* items (as machine values) from the :term:`file object` *f* and "
 "append them to the end of the array.  If less than *n* items are available, :"
@@ -320,13 +320,13 @@ msgid ""
 "inserted into the array."
 msgstr ""
 
-#: library/array.rst:168
+#: library/array.rst:171
 msgid ""
 "Append items from the list.  This is equivalent to ``for x in list: a."
 "append(x)`` except that if there is a type error, the array is unchanged."
 msgstr ""
 
-#: library/array.rst:174
+#: library/array.rst:177
 msgid ""
 "Extends this array with data from the given unicode string.  The array must "
 "be a type ``'u'`` array; otherwise a :exc:`ValueError` is raised.  Use "
@@ -334,7 +334,7 @@ msgid ""
 "array of some other type."
 msgstr ""
 
-#: library/array.rst:182
+#: library/array.rst:185
 msgid ""
 "Return the smallest *i* such that *i* is the index of the first occurrence "
 "of *x* in the array.  The optional arguments *start* and *stop* can be "
@@ -342,58 +342,58 @@ msgid ""
 "`ValueError` if *x* is not found."
 msgstr ""
 
-#: library/array.rst:187
+#: library/array.rst:190
 msgid "Added optional *start* and *stop* parameters."
 msgstr ""
 
-#: library/array.rst:192
+#: library/array.rst:196
 msgid ""
 "Insert a new item with value *x* in the array before position *i*. Negative "
 "values are treated as being relative to the end of the array."
 msgstr ""
 
-#: library/array.rst:198
+#: library/array.rst:202
 msgid ""
 "Removes the item with the index *i* from the array and returns it. The "
 "optional argument defaults to ``-1``, so that by default the last item is "
 "removed and returned."
 msgstr ""
 
-#: library/array.rst:205
+#: library/array.rst:209
 msgid "Remove the first occurrence of *x* from the array."
 msgstr ""
 
-#: library/array.rst:210
+#: library/array.rst:214
 msgid "Reverse the order of the items in the array."
 msgstr ""
 
-#: library/array.rst:215
+#: library/array.rst:219
 msgid ""
 "Convert the array to an array of machine values and return the bytes "
 "representation (the same sequence of bytes that would be written to a file "
 "by the :meth:`tofile` method.)"
 msgstr ""
 
-#: library/array.rst:219
-msgid ":meth:`tostring` is renamed to :meth:`tobytes` for clarity."
+#: library/array.rst:223
+msgid ":meth:`!tostring` is renamed to :meth:`tobytes` for clarity."
 msgstr ""
 
-#: library/array.rst:225
+#: library/array.rst:229
 msgid "Write all items (as machine values) to the :term:`file object` *f*."
 msgstr ""
 
-#: library/array.rst:230
+#: library/array.rst:234
 msgid "Convert the array to an ordinary list with the same items."
 msgstr ""
 
-#: library/array.rst:235
+#: library/array.rst:239
 msgid ""
 "Convert the array to a unicode string.  The array must be a type ``'u'`` "
 "array; otherwise a :exc:`ValueError` is raised. Use ``array.tobytes()."
 "decode(enc)`` to obtain a unicode string from an array of some other type."
 msgstr ""
 
-#: library/array.rst:240
+#: library/array.rst:244
 msgid ""
 "When an array object is printed or converted to a string, it is represented "
 "as ``array(typecode, initializer)``.  The *initializer* is omitted if the "
@@ -404,28 +404,28 @@ msgid ""
 "``from array import array``. Examples::"
 msgstr ""
 
-#: library/array.rst:257
+#: library/array.rst:261
 msgid "Module :mod:`struct`"
 msgstr ""
 
-#: library/array.rst:257
+#: library/array.rst:261
 msgid "Packing and unpacking of heterogeneous binary data."
 msgstr ""
 
-#: library/array.rst:261
+#: library/array.rst:265
 msgid "Module :mod:`xdrlib`"
 msgstr ""
 
-#: library/array.rst:260
+#: library/array.rst:264
 msgid ""
 "Packing and unpacking of External Data Representation (XDR) data as used in "
 "some remote procedure call systems."
 msgstr ""
 
-#: library/array.rst:263
+#: library/array.rst:267
 msgid "`NumPy <https://numpy.org/>`_"
 msgstr ""
 
-#: library/array.rst:264
+#: library/array.rst:268
 msgid "The NumPy package defines another array type."
 msgstr ""

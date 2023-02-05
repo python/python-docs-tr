@@ -1,5 +1,5 @@
 # Python Documentation Turkish Translation
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
 #, fuzzy
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 18:31+0300\n"
+"POT-Creation-Date: 2023-02-04 22:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -699,7 +699,13 @@ msgid ""
 "affected by this category."
 msgstr ""
 
-#: library/locale.rst:490
+#: library/locale.rst:487
+msgid ""
+"This value may not be available on operating systems not conforming to the "
+"POSIX standard, most notably Windows."
+msgstr ""
+
+#: library/locale.rst:493
 msgid ""
 "Locale category for formatting numbers.  The functions :func:`.format`, :"
 "func:`atoi`, :func:`atof` and :func:`.str` of the :mod:`locale` module are "
@@ -707,7 +713,7 @@ msgid ""
 "affected."
 msgstr ""
 
-#: library/locale.rst:498
+#: library/locale.rst:501
 msgid ""
 "Combination of all locale settings.  If this flag is used when the locale is "
 "changed, setting the locale for all categories is attempted. If that fails "
@@ -717,21 +723,21 @@ msgid ""
 "settings."
 msgstr ""
 
-#: library/locale.rst:507
+#: library/locale.rst:510
 msgid ""
 "This is a symbolic constant used for different values returned by :func:"
 "`localeconv`."
 msgstr ""
 
-#: library/locale.rst:511
+#: library/locale.rst:514
 msgid "Example::"
 msgstr ""
 
-#: library/locale.rst:524
+#: library/locale.rst:527
 msgid "Background, details, hints, tips and caveats"
 msgstr ""
 
-#: library/locale.rst:526
+#: library/locale.rst:529
 msgid ""
 "The C standard defines the locale as a program-wide property that may be "
 "relatively expensive to change.  On top of that, some implementations are "
@@ -739,7 +745,7 @@ msgid ""
 "This makes the locale somewhat painful to use correctly."
 msgstr ""
 
-#: library/locale.rst:531
+#: library/locale.rst:534
 msgid ""
 "Initially, when a program is started, the locale is the ``C`` locale, no "
 "matter what the user's preferred locale is.  There is one exception: the :"
@@ -749,7 +755,7 @@ msgid ""
 "categories by calling ``setlocale(LC_ALL, '')``."
 msgstr ""
 
-#: library/locale.rst:538
+#: library/locale.rst:541
 msgid ""
 "It is generally a bad idea to call :func:`setlocale` in some library "
 "routine, since as a side effect it affects the entire program.  Saving and "
@@ -757,7 +763,7 @@ msgid ""
 "that happen to run before the settings have been restored."
 msgstr ""
 
-#: library/locale.rst:543
+#: library/locale.rst:546
 msgid ""
 "If, when coding a module for general use, you need a locale independent "
 "version of an operation that is affected by the locale (such as certain "
@@ -768,14 +774,14 @@ msgid ""
 "settings."
 msgstr ""
 
-#: library/locale.rst:550
+#: library/locale.rst:553
 msgid ""
 "The only way to perform numeric operations according to the locale is to use "
 "the special functions defined by this module: :func:`atof`, :func:`atoi`, :"
 "func:`.format`, :func:`.str`."
 msgstr ""
 
-#: library/locale.rst:554
+#: library/locale.rst:557
 msgid ""
 "There is no way to perform case conversions and character classifications "
 "according to the locale.  For (Unicode) text strings these are done "
@@ -786,11 +792,11 @@ msgid ""
 "whitespace."
 msgstr ""
 
-#: library/locale.rst:565
+#: library/locale.rst:568
 msgid "For extension writers and programs that embed Python"
 msgstr ""
 
-#: library/locale.rst:567
+#: library/locale.rst:570
 msgid ""
 "Extension modules should never call :func:`setlocale`, except to find out "
 "what the current locale is.  But since the return value can only be used "
@@ -798,7 +804,7 @@ msgid ""
 "whether or not the locale is ``C``)."
 msgstr ""
 
-#: library/locale.rst:572
+#: library/locale.rst:575
 msgid ""
 "When Python code uses the :mod:`locale` module to change the locale, this "
 "also affects the embedding application.  If the embedding application "
@@ -808,11 +814,11 @@ msgid ""
 "accessible as a shared library."
 msgstr ""
 
-#: library/locale.rst:583
+#: library/locale.rst:586
 msgid "Access to message catalogs"
 msgstr ""
 
-#: library/locale.rst:591
+#: library/locale.rst:594
 msgid ""
 "The locale module exposes the C library's gettext interface on systems that "
 "provide this interface.  It consists of the functions :func:`!gettext`, :"
@@ -823,7 +829,7 @@ msgid ""
 "for locating message catalogs."
 msgstr ""
 
-#: library/locale.rst:598
+#: library/locale.rst:601
 msgid ""
 "Python applications should normally find no need to invoke these functions, "
 "and should use :mod:`gettext` instead.  A known exception to this rule are "
