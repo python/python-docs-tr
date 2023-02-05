@@ -1,28 +1,26 @@
 # Python Documentation Turkish Translation
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2023-02-01 17:48-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: extending/index.rst:5
-#, fuzzy
 msgid "Extending and Embedding the Python Interpreter"
 msgstr "Python Yorumlayıcısını Genişletme ve Gömme"
 
 #: extending/index.rst:7
-#, fuzzy
 msgid ""
 "This document describes how to write modules in C or C++ to extend the "
 "Python interpreter with new modules.  Those modules can not only define new "
@@ -42,7 +40,6 @@ msgstr ""
 "için nasıl derleneceğini ve bağlanacağını gösterir."
 
 #: extending/index.rst:15
-#, fuzzy
 msgid ""
 "This document assumes basic knowledge about Python.  For an informal "
 "introduction to the language, see :ref:`tutorial-index`.  :ref:`reference-"
@@ -57,7 +54,6 @@ msgstr ""
 "(hem yerleşik hem de Python'da yazılmış) belgeler."
 
 #: extending/index.rst:21
-#, fuzzy
 msgid ""
 "For a detailed description of the whole Python/C API, see the separate :ref:"
 "`c-api-index`."
@@ -66,12 +62,10 @@ msgstr ""
 "bakın."
 
 #: extending/index.rst:26
-#, fuzzy
 msgid "Recommended third party tools"
 msgstr "Önerilen üçüncü taraf araçları"
 
 #: extending/index.rst:28
-#, fuzzy
 msgid ""
 "This guide only covers the basic tools for creating extensions provided as "
 "part of this version of CPython. Third party tools like `Cython <https://"
@@ -87,7 +81,6 @@ msgstr ""
 "daha karmaşık yaklaşımlar sunar."
 
 #: extending/index.rst:40
-#, fuzzy
 msgid ""
 "`Python Packaging User Guide: Binary Extensions <https://packaging.python."
 "org/guides/packaging-binary-extensions/>`_"
@@ -96,7 +89,6 @@ msgstr ""
 "python.org/guides/packaging-binary-extensions/>`_"
 
 #: extending/index.rst:38
-#, fuzzy
 msgid ""
 "The Python Packaging User Guide not only covers several available tools that "
 "simplify the creation of binary extensions, but also discusses the various "
@@ -108,12 +100,10 @@ msgstr ""
 "çeşitli nedenlerini de tartışır."
 
 #: extending/index.rst:45
-#, fuzzy
 msgid "Creating extensions without third party tools"
 msgstr "Üçüncü taraf araçları olmadan uzantılar oluşturma"
 
 #: extending/index.rst:47
-#, fuzzy
 msgid ""
 "This section of the guide covers creating C and C++ extensions without "
 "assistance from third party tools. It is intended primarily for creators of "
@@ -126,12 +116,10 @@ msgstr ""
 "yöneliktir."
 
 #: extending/index.rst:63
-#, fuzzy
 msgid "Embedding the CPython runtime in a larger application"
 msgstr "CPython çalışma zamanını daha büyük bir uygulamaya gömme"
 
 #: extending/index.rst:65
-#, fuzzy
 msgid ""
 "Sometimes, rather than creating an extension that runs inside the Python "
 "interpreter as the main application, it is desirable to instead embed the "

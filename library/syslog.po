@@ -1,5 +1,5 @@
 # Python Documentation Turkish Translation
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
 #, fuzzy
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-02-01 22:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -34,7 +34,7 @@ msgid ""
 "handlers` module as :class:`SysLogHandler`."
 msgstr ""
 
-#: includes/wasm-notavail.rst:None
+#: includes/wasm-notavail.rst:-1
 msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
 msgstr ""
 
@@ -65,7 +65,7 @@ msgid ""
 "func:`openlog` will be called with no arguments."
 msgstr ""
 
-#: library/syslog.rst:45
+#: library/syslog.rst:11
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``syslog.syslog`` with arguments "
 "``priority``, ``message``."
@@ -95,7 +95,7 @@ msgid ""
 "for messages which do not have a facility explicitly encoded."
 msgstr ""
 
-#: library/syslog.rst:66
+#: library/syslog.rst:12
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``syslog.openlog`` with arguments "
 "``ident``, ``logoption``, ``facility``."
@@ -120,7 +120,7 @@ msgid ""
 "`openlog` parameters are reset to defaults."
 msgstr ""
 
-#: library/syslog.rst:82
+#: library/syslog.rst:8
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``syslog.closelog`` with no "
 "arguments."
@@ -136,7 +136,7 @@ msgid ""
 "and including *pri*."
 msgstr ""
 
-#: library/syslog.rst:94
+#: library/syslog.rst:8
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``syslog.setlogmask`` with "
 "argument ``maskpri``."

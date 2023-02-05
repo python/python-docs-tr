@@ -1,5 +1,5 @@
 # Python Documentation Turkish Translation
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
 #, fuzzy
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-02-01 22:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -97,27 +97,27 @@ msgstr ""
 msgid ""
 "You can also use :program:`pydoc` to start an HTTP server on the local "
 "machine that will serve documentation to visiting web browsers.  :program:"
-"`pydoc -p 1234` will start a HTTP server on port 1234, allowing you to "
-"browse the documentation at ``http://localhost:1234/`` in your preferred web "
-"browser. Specifying ``0`` as the port number will select an arbitrary unused "
-"port."
+"`python -m pydoc -p 1234` will start a HTTP server on port 1234, allowing "
+"you to browse the documentation at ``http://localhost:1234/`` in your "
+"preferred web browser. Specifying ``0`` as the port number will select an "
+"arbitrary unused port."
 msgstr ""
 
 #: library/pydoc.rst:73
 msgid ""
-":program:`pydoc -n <hostname>` will start the server listening at the given "
-"hostname.  By default the hostname is 'localhost' but if you want the server "
-"to be reached from other machines, you may want to change the host name that "
-"the server responds to.  During development this is especially useful if you "
-"want to run pydoc from within a container."
+":program:`python -m pydoc -n <hostname>` will start the server listening at "
+"the given hostname.  By default the hostname is 'localhost' but if you want "
+"the server to be reached from other machines, you may want to change the "
+"host name that the server responds to.  During development this is "
+"especially useful if you want to run pydoc from within a container."
 msgstr ""
 
 #: library/pydoc.rst:79
 msgid ""
-":program:`pydoc -b` will start the server and additionally open a web "
-"browser to a module index page.  Each served page has a navigation bar at "
-"the top where you can *Get* help on an individual item, *Search* all modules "
-"with a keyword in their synopsis line, and go to the *Module index*, "
+":program:`python -m pydoc -b` will start the server and additionally open a "
+"web browser to a module index page.  Each served page has a navigation bar "
+"at the top where you can *Get* help on an individual item, *Search* all "
+"modules with a keyword in their synopsis line, and go to the *Module index*, "
 "*Topics* and *Keywords* pages."
 msgstr ""
 

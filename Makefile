@@ -20,7 +20,8 @@
 # from which we generated our po files.  We use it here so when we
 # test build, we're building with the .rst files that generated our
 # .po files.
-CPYTHON_CURRENT_COMMIT := 4c810f92baed7562e7f2da0c70e2edac2e89bf75
+
+CPYTHON_CURRENT_COMMIT := 7cbcfbe2fffebfc57c9b50ae937bfbb896401fba
 LANGUAGE := tr
 BRANCH := 3.11
 
@@ -65,7 +66,8 @@ PYTHON := $(shell which python3)
 MODE := html
 POSPELL_TMP_DIR := .pospell/
 JOBS := auto
-SERVE_PORT :=
+ADDITIONAL_ARGS := --keep-going --color
+SPHINXERRORHANDLING = -W
 
 # Detect OS
 
@@ -90,13 +92,15 @@ all: ensure_prerequisites
 	mkdir -p locales/$(LANGUAGE)/LC_MESSAGES/
 	$(CP_CMD) -u --parents *.po */*.po locales/$(LANGUAGE)/LC_MESSAGES/
 	$(MAKE) -C venv/cpython/Doc/ \
-	  SPHINXOPTS='-j$(JOBS)             \
-	  -D locale_dirs=$(abspath locales) \
+	  JOBS='$(JOBS)'             \
+	  SPHINXOPTS='-D locale_dirs=$(abspath locales) \
 	  -D language=$(LANGUAGE)           \
 	  -D gettext_compact=0              \
 	  -D latex_engine=xelatex           \
 	  -D latex_elements.inputenc=       \
-	  -D latex_elements.fontenc='       \
+	  -D latex_elements.fontenc=        \
+	  $(ADDITIONAL_ARGS)'               \
+	  SPHINXERRORHANDLING=$(SPHINXERRORHANDLING) \
 	  $(MODE)
 	@echo "Build success, open file://$(abspath venv/cpython/)/Doc/build/html/index.html or run 'make htmlview' to see them."
 
@@ -162,7 +166,7 @@ verifs: spell line-length sphinx-lint
 .PHONY: clean
 clean:
 	@echo "Cleaning *.mo and $(POSPELL_TMP_DIR)"
-	rm -rf $(POSPELL_TMP_DIR)
+	rm -rf $(POSPELL_TMP_DIR) locales/$(LANGUAGE)/LC_MESSAGES/
 	find -name '*.mo' -delete
 	@echo "Cleaning build directory"
 	$(MAKE) -C venv/cpython/Doc/ clean
