@@ -245,7 +245,7 @@ msgid ""
 "Python as well. Consult the :ref:`removed-in-python-39` section."
 msgstr ""
 "Not: Python'un bu sürümünde önceden var olan bazı kullanımdan kaldırmalar da "
-"kaldırılmıştır. Ref:`removed-in-python-39` bölümüne bakınız."
+"kaldırılmıştır. :ref:`removed-in-python-39` bölümüne bakınız."
 
 #: whatsnew/3.9.rst:1274
 msgid "New Features"
@@ -292,10 +292,10 @@ msgid ""
 msgstr ""
 ":meth:`str.removeprefix(prefix)<str.removeprefix>` ve :meth:`str."
 "removesuffix(suffix)<str.removesuffix>`, gereksiz bir öneki veya bir soneki "
-"bir dizeden kolayca kaldırmak için eklenmiştir. Karşılık gelen \"bytes\", "
-"\"bytearray\" ve \"collections.UserString\" yöntemleri de eklenmiştir. Tam "
-"açıklama için :pep:`616`ya bakın. (Dennis Sweeney tarafından :issue:"
-"`39939`da katılmıştır.)"
+"bir dizeden kolayca kaldırmak için eklenmiştir. Karşılık gelen ``bytes``, "
+"``bytearray`` ve ``collections.UserString`` yöntemleri de eklenmiştir. Tam "
+"açıklama için :pep:`616` 'ya bakın. (Dennis Sweeney tarafından :issue:"
+"`39939` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:173
 msgid "Type Hinting Generics in Standard Collections"
@@ -407,7 +407,7 @@ msgstr ""
 "yollar, geçerli dizin :func:`os.chdir` tarafından değiştirildikten sonra "
 "artık geçerliliğini koruyor. Bir yan etki olarak geri izleme, bu durumda :"
 "mod:`__main__` modül çerçeveleri için mutlak yolu da görüntüler. (Victor "
-"Stinner tarafından :issue:`20443`de katılmıştır.)"
+"Stinner tarafından :issue:`20443` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:232
 msgid ""
@@ -427,10 +427,10 @@ msgid ""
 "the first encoding/decoding error and the *encoding* argument is sometimes "
 "ignored for empty strings. (Contributed by Victor Stinner in :issue:`37388`.)"
 msgstr ""
-"Varsayılan olarak, en iyi performans için *hatalar* bağımsız değişkeni "
+"Varsayılan olarak, en iyi performans için *errors* bağımsız değişkeni "
 "yalnızca ilk kodlama/kod çözme hatasında kontrol edilir ve *encoding* "
 "bağımsız değişkeni bazen boş dizeler için yoksayılır. (Victor Stinner "
-"tarafından :issue:`37388`de katılmıştır.)"
+"tarafından :issue:`37388` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:242
 msgid ""
@@ -439,10 +439,10 @@ msgid ""
 "s)``. There are similar changes for :class:`bytes` and :class:`bytearray` "
 "objects. (Contributed by Serhiy Storchaka in :issue:`28029`.)"
 msgstr ""
-"``\"\".replace(\"\", s, n)`` artık sıfır olmayan tüm \"n\" için boş bir dize "
-"yerine \"s\" döndürür. Artık ``\"\".replace(\"\", s)`` ile tutarlıdır. :"
+"``\"\".replace(\"\", s, n)`` artık sıfır olmayan tüm ``n`` için boş bir dize "
+"yerine ``s`` döndürür. Artık ``\"\".replace(\"\", s)`` ile tutarlıdır. :"
 "class:`bytes` ve :class:`bytearray` nesneleri için benzer değişiklikler "
-"vardır. (Serhiy Storchaka tarafından :issue:`28029`da katılmıştır.)"
+"vardır. (Serhiy Storchaka tarafından :issue:`28029` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:247
 msgid ""
@@ -452,7 +452,7 @@ msgid ""
 msgstr ""
 "Artık herhangi bir geçerli ifade :term:`dekoratör` olarak kullanılabilir. "
 "Önceden, gramer çok daha kısıtlayıcıydı. Ayrıntılar için bkz. :pep:`614`. "
-"(Brandt Bucher tarafından :issue:`39702`de katılmıştır.)"
+"(Brandt Bucher tarafından :issue:`39702` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:251
 msgid ""
@@ -475,10 +475,10 @@ msgid ""
 "running status of the async generator. (Contributed by Yury Selivanov in :"
 "issue:`30773`.)"
 msgstr ""
-":meth:`~agen.aclose` / :meth:`~agen.asend` / :meth:`~agen.athrow`'nın "
+":meth:`~agen.aclose` / :meth:`~agen.asend` / :meth:`~agen.athrow` 'nın "
 "paralel çalışması artık yasaklanmıştır ve ``ag_running`` artık zaman uyumsuz "
 "oluşturucunun gerçek çalışma durumunu yansıtmaktadır. (Yury Selivanov "
-"tarafından :issue:`30773`de katılmıştır.)"
+"tarafından :issue:`30773` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:262
 msgid ""
@@ -501,7 +501,7 @@ msgid ""
 msgstr ""
 "Parantezsiz lambda ifadeleri artık kavramalarda ve üreteç ifadelerinde bir "
 "``if`` yan tümcesinde ifade parçası olamaz. Ayrıntılar için :issue:`41848` "
-"ve :issue:`43755`e bakın."
+"ve :issue:`43755` 'e bakın."
 
 #: whatsnew/3.9.rst:274
 msgid "New Modules"
@@ -553,7 +553,7 @@ msgid ""
 "Hastings in :issue:`17005`.)"
 msgstr ""
 "Grafiklerin topolojik sıralamasını gerçekleştirmek üzere işlevsellik sunmak "
-"için :class:'graphlib.TopologicalSorter' sınıfını içeren :mod:'graphlib' "
+"için :class:`graphlib.TopologicalSorter` sınıfını içeren :mod:`graphlib` "
 "adlı yeni bir modül eklendi. ( :issue:`17005` içinde Pablo Galindo, Tim "
 "Peters ve Larry Hastings'in katkılarıyla.)"
 
@@ -585,7 +585,7 @@ msgstr ""
 ":mod:`ast` modülüne, bir :class:`ast.AST` nesnesini ayrıştırmak ve "
 "ayrıştırıldığında eşdeğer bir :class:`ast.AST` nesnesi üretecek kod içeren "
 "bir dize üretmek için kullanılabilen bir fonksiyon olarak :func:`ast."
-"unparse` eklendi. ( :issue:`38870`de Pablo Galindo ve Batuhan Taskaya'nın "
+"unparse` eklendi. ( :issue:`38870` 'de Pablo Galindo ve Batuhan Taskaya'nın "
 "katkısıyla.)"
 
 #: whatsnew/3.9.rst:340
@@ -594,7 +594,7 @@ msgid ""
 "construct that node. (Contributed by Batuhan Taskaya in :issue:`39638`.)"
 msgstr ""
 "AST düğümlerine, o düğümü oluşturmak için kullanılan ASDL imzasını içeren "
-"doküman dizeleri eklendi. (Batuhan Taşkaya :issue:`39638`de katılmıştır.)"
+"doküman dizeleri eklendi. (Batuhan Taşkaya :issue:`39638` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:344
 msgid "asyncio"
@@ -628,7 +628,7 @@ msgstr ""
 "bekleyen varsayılan yürütücü için bir kapatma programlayan yeni bir :term:"
 "`coroutine` :meth:`~asyncio.loop.shutdown_default_executor` eklendi. "
 "Ayrıca, :func:`asyncio.run` yeni :term:`coroutine` kelimesini kullanacak "
-"şekilde güncellendi. (Kyle Stanley tarafından :issue:`34037`de katılmıştır.)"
+"şekilde güncellendi. (Kyle Stanley tarafından :issue:`34037` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:359
 msgid ""
@@ -650,7 +650,7 @@ msgstr ""
 "engellemekten kaçınmak için GÇ'ye bağlı işlevleri ayrı bir iş parçacığında "
 "çalıştırmak için kullanılır ve temel olarak :meth:`~asyncio.loop."
 "run_in_executor` öğesinin doğrudan anahtar sözcük bağımsız değişkenlerini "
-"alabilen üst düzey bir sürümü olarak çalışır. ( :issue:`32309`da Kyle "
+"alabilen üst düzey bir sürümü olarak çalışır. ( :issue:`32309` 'da Kyle "
 "Stanley ve Yuri Selivanov tarafından katılmıştır.)"
 
 #: whatsnew/3.9.rst:368
@@ -662,7 +662,7 @@ msgid ""
 msgstr ""
 "Bir zaman aşımı nedeniyle görevi iptal ederken, :meth:`asyncio.wait_for` "
 "şimdi, pozitif zaman aşımlarında olduğu gibi *timeout* <= 0 olduğunda da "
-"iptalin tamamlanmasını bekleyecek. ( :issue:`32751`de Elvis Pranskevichus "
+"iptalin tamamlanmasını bekleyecek. ( :issue:`32751` 'de Elvis Pranskevichus "
 "tarafından katılmıştır.)"
 
 #: whatsnew/3.9.rst:373
@@ -716,7 +716,7 @@ msgstr ""
 ":meth:`concurrent.futures.Executor.shutdown` öğesine, yürütücüyü kapatmadan "
 "önce tamamlanmalarını beklemek yerine çalışmaya başlamamış bekleyen tüm "
 "vadeli işlemleri iptal eden yeni bir *cancel_futures* parametresi eklendi. "
-"(Kyle Stanley tarafından :issue:`39349`da katılmıştır.)"
+"(Kyle Stanley tarafından :issue:`39349` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:396
 msgid ""
@@ -726,9 +726,9 @@ msgid ""
 "processes. (Contributed by Kyle Stanley in :issue:`39812`.)"
 msgstr ""
 ":class:`~concurrent.futures.ThreadPoolExecutor` ve :class:`~concurrent."
-"futures.ProcessPoolExecutor`dan arka plan programı konuları kaldırıldı. Bu, "
+"futures.ProcessPoolExecutor` 'dan arka plan programı konuları kaldırıldı. Bu, "
 "alt yorumlayıcılarla uyumluluğu ve kapatma süreçlerinde öngörülebilirliği "
-"geliştirir. (Kyle Stanley tarafından :issue:`39812`de katılmıştır.)"
+"geliştirir. (Kyle Stanley tarafından :issue:`39812` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:401
 msgid ""
@@ -740,7 +740,7 @@ msgstr ""
 ":class:`~concurrent.futures.ProcessPoolExecutor` içindeki çalışanlar artık "
 "talep üzerine, yalnızca yeniden kullanılacak boş çalışan olmadığında ortaya "
 "çıkıyor. Bu, başlatma yükünü optimize eder ve boşta kalan çalışanlar için "
-"kaybedilen CPU süresini azaltır. (Kyle Stanley tarafından :issue:`39207`de "
+"kaybedilen CPU süresini azaltır. (Kyle Stanley tarafından :issue:`39207` 'de "
 "katılmıştır.)"
 
 #: whatsnew/3.9.rst:407
@@ -755,7 +755,7 @@ msgid ""
 msgstr ""
 ":func:`curses.get_escdelay`, :func:`curses.set_escdelay`, :func:`curses."
 "get_tabsize` ve :func:`curses.set_tabsize` işlevleri eklendi. (Anthony "
-"Sottile tarafından :issue:`38312`de katılmıştır.)"
+"Sottile tarafından :issue:`38312` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:414
 msgid "datetime"
@@ -771,7 +771,7 @@ msgstr ""
 ":class:`datetime.date` öğesinin :meth:`~datetime.date.isocalendar()` ve :"
 "class:`datetime.datetime` öğesinin :meth:`~datetime.datetime.isocalendar()` "
 "metotları artık bir :class:`tuple` yerine :func:`~collections.namedtuple` "
-"döndürüyor. (Dong-hee Na tarafından :issue:`24416`da katılmıştır.)"
+"döndürüyor. (Dong-hee Na tarafından :issue:`24416` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:421
 msgid "distutils"
@@ -797,7 +797,7 @@ msgid ""
 "data:`~fcntl.F_OFD_SETLKW`. (Contributed by Dong-hee Na in :issue:`38602`.)"
 msgstr ""
 ":data:`~fcntl.F_OFD_GETLK`, :data:`~fcntl.F_OFD_SETLK` ve :data:`~fcntl."
-"F_OFD_SETLKW` sabitleri eklendi. (Dong-hee Na tarafından :issue:`38602`de "
+"F_OFD_SETLKW` sabitleri eklendi. (Dong-hee Na tarafından :issue:`38602` 'de "
 "katılmıştır.)"
 
 #: whatsnew/3.9.rst:435
@@ -814,7 +814,7 @@ msgstr ""
 ":class:`~ftplib.FTP` ve :class:`~ftplib.FTP_TLS` artık bir :class:"
 "`ValueError` oluşturucuları için verilen zaman aşımı sıfır ise bloke olmayan "
 "bir soketin oluşturulmasını engelliyor. (Dong-hee Na tarafından :issue:"
-"`39259`da katılmıştır.)"
+"`39259` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:442
 msgid "gc"
@@ -831,7 +831,7 @@ msgstr ""
 "Çöp toplayıcı, bazı nesnelerin diriltildiği bir koleksiyon oluşturduğunda "
 "(sonlandırıcılar yürütüldükten sonra yalıtılmış döngülerin dışından "
 "erişilebilirler), hala erişilemeyen tüm nesnelerin toplanmasını "
-"engellemeyin. ( :issue:`38379`da Pablo Galindo ve Tim Peters tarafıdnan "
+"engellemeyin. ( :issue:`38379` 'da Pablo Galindo ve Tim Peters tarafıdnan "
 "eklendi.)"
 
 #: whatsnew/3.9.rst:449
@@ -842,7 +842,7 @@ msgid ""
 msgstr ""
 "Bir nesnenin çöp toplayıcı tarafından sonlandırılıp sonlandırılmadığını "
 "kontrol etmek için :func:`gc.is_finalized` adlı yeni bir işlev eklendi. "
-"(Pablo Galindo tarafından :issue:`39322`de katılmıştır.)"
+"(Pablo Galindo tarafından :issue:`39322` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:454
 msgid "hashlib"
@@ -854,7 +854,7 @@ msgid ""
 "when available. (Contributed by Christian Heimes in :issue:`37630`.)"
 msgstr ""
 ":mod:`hashlib` modülü artık mevcut olduğunda OpenSSL'den SHA3 karmalarını ve "
-"SHAKE XOF'u kullanabilir. (Christian Heimes tarafından :issue:`37630`da "
+"SHAKE XOF'u kullanabilir. (Christian Heimes tarafından :issue:`37630` 'da "
 "katılmıştır.)"
 
 #: whatsnew/3.9.rst:460
@@ -867,8 +867,8 @@ msgstr ""
 "Yerleşik karma modüller, OpenSSL tabanlı uygulamanın kullanımını zorlamak "
 "için artık ``./configure --without-builtin-hashlib-hashes`` ile devre dışı "
 "bırakılabilir veya e.g. ``./configure --with-builtin-hashlib-hashes=sha3,"
-"blake2` ile seçici olarak etkinleştirilebilir. (Christian Heimes tarafından :"
-"issue:`40479`da katılmıştır)"
+"blake2`` ile seçici olarak etkinleştirilebilir. (Christian Heimes tarafından :"
+"issue:`40479` 'da katılmıştır)"
 
 #: whatsnew/3.9.rst:468
 msgid "http"
@@ -882,7 +882,7 @@ msgid ""
 msgstr ""
 "HTTP durum kodları ``103 EARLY_HINTS``, ``418 IM_A_TEAPOT`` ve ``425 "
 "TOO_EARLY`` :class:`http.HTTPStatus` 'a eklendi. ( :issue:`39509` içinde Dong-"
-"hee Na ve :issue:`39507`de Ross Rhodes tarafından katılmıştır.)"
+"hee Na ve :issue:`39507` 'de Ross Rhodes tarafından katılmıştır.)"
 
 #: whatsnew/3.9.rst:474
 msgid "IDLE and idlelib"
@@ -923,7 +923,7 @@ msgid ""
 "`43008`.)"
 msgstr ""
 "IDLE'yi başlatın :func:`sys.excepthook` ('-n' olmadan başlatıldığında). "
-"Kullanıcı kancaları daha önce yok sayılırdı. ( :issue:`43008`de Ken Hilton "
+"Kullanıcı kancaları daha önce yok sayılırdı. ( :issue:`43008` 'de Ken Hilton "
 "tarafından katılmıştır.)"
 
 #: whatsnew/3.9.rst:491
@@ -946,7 +946,7 @@ msgstr ""
 "kutusunu kısaltın. İkincisi, iletişim kutusunu küçük ekranlara daha iyi "
 "sığdırır. ( :issue:`40468` içinde Terry Jan Reedy tarafından katılmıştır.) "
 "Girinti alanı ayarını Yazı Tipi sekmesinden yeni Windows sekmesine taşıyın. "
-"(Mark Roseman ve Terry Jan Reedy tarafından :issue:`33962`de katılmıştır.)"
+"(Mark Roseman ve Terry Jan Reedy tarafından :issue:`33962` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:501
 msgid ""
@@ -974,7 +974,7 @@ msgstr ""
 "IMAP4.open` yöntemi artık bu değişiklikle birlikte isteğe bağlı bir "
 "*timeout* parametresine sahip. Bu değişikliğe geçersiz kılınan :class:"
 "`~imaplib.IMAP4_SSL` ve :class:`~imaplib.IMAP4_stream` yöntemleri uygulandı. "
-"(Dong-hee Na tarafından :issue:`38615`de katılmıştır.)"
+"(Dong-hee Na tarafından :issue:`38615` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:514
 msgid ""
@@ -990,7 +990,7 @@ msgstr ""
 "sunucuyu kimliği doğrulanmış duruma döndürür. Bu komut :meth:`imaplib.IMAP4."
 "close` ile aynı eylemleri gerçekleştirir, tek fark şu anda seçili olan posta "
 "kutusundan hiçbir mesajın kalıcı olarak kaldırılmamasıdır. (Dong-hee Na "
-"tarafından :issue:`40375`de katılmıştır.)"
+"tarafından :issue:`40375` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:522
 msgid "importlib"
@@ -1016,7 +1016,7 @@ msgid ""
 msgstr ""
 "Değişmez modül nesnelerini yayınlayan içe aktarma yükleyicileri artık "
 "bağımsız modüllere ek olarak değişmez paketleri de yayınlayabilir. (Dino "
-"Viehland tarafından :issue:`39336`da katılmıştır.)"
+"Viehland tarafından :issue:`39336` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:533
 msgid ""
@@ -1024,9 +1024,9 @@ msgid ""
 "subdirectories in package data, matching backport in ``importlib_resources`` "
 "version 1.5. (Contributed by Jason R. Coombs in :issue:`39791`.)"
 msgstr ""
-"Değişmez modül nesnelerini yayınlayan içe aktarma yükleyicileri artık "
-"bağımsız modüllere ek olarak değişmez paketleri de yayınlayabilir. (Dino "
-"Viehland tarafından :issue:`39336`da katılmıştır.)"
+"Paket verilerindeki alt dizinleri destekleyen, ``importlib_resources`` "
+"sürüm 1.5'te backport ile eşleşen :func:`importlib.resources.files` "
+"işlevi eklendi. (Jason R. Coombs'un :issue:`39791` 'deki katkılarıyla.)"
 
 #: whatsnew/3.9.rst:538
 msgid ""
@@ -1070,7 +1070,7 @@ msgstr ""
 "Kapsamlı IPv6 adresleri :class:`ipaddress.IPv6Address` kullanılarak "
 "ayrıştırılabilir. Varsa, kapsam bölgesi kimliği :attr:`~ipaddress."
 "IPv6Address.scope_id` özelliği aracılığıyla kullanılabilir. (Oleksandr "
-"Pavliuk tarafından :issue:`34788`de katılmıştır.)"
+"Pavliuk tarafından :issue:`34788` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:555
 msgid ""
@@ -1112,7 +1112,7 @@ msgid ""
 "towards *y*. (Contributed by Victor Stinner in :issue:`39288`.)"
 msgstr ""
 "Eklenen :func:`math.nextafter`: *x*'ten sonra *y*'ye doğru bir sonraki kayan "
-"nokta değerini döndürür. (Victor Stinner tarafından :issue:`39288`de "
+"nokta değerini döndürür. (Victor Stinner tarafından :issue:`39288` 'de "
 "katılmıştır.)"
 
 #: whatsnew/3.9.rst:574
@@ -1121,7 +1121,7 @@ msgid ""
 "float. (Contributed by Victor Stinner in :issue:`39310`.)"
 msgstr ""
 "Eklenen :func:`math.ulp`: bir kayan noktanın en önemsiz bitinin değerini "
-"döndürür. (Victor Stinner tarafından :issue:`39310`da katılmıştır.)"
+"döndürür. (Victor Stinner tarafından :issue:`39310` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:579
 msgid "multiprocessing"
@@ -1135,7 +1135,7 @@ msgid ""
 msgstr ""
 ":class:`multiprocessing.SimpleQueue` sınıfı, kuyruğu açıkça kapatmak için "
 "yeni bir :meth:`~multiprocessing.SimpleQueue.close` yöntemine sahiptir. "
-"(Victor Stinner tarafından :issue:`30966`da katılmıştır.)"
+"(Victor Stinner tarafından :issue:`30966` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:587
 msgid "nntplib"
@@ -1151,7 +1151,7 @@ msgstr ""
 ":class:`~nntplib.NNTP` ve :class:`~nntplib.NNTP_SSL` artık bir :class:"
 "`ValueError` oluşturucuları için verilen zaman aşımı sıfır ise bloke olmayan "
 "bir yuvanın oluşturulmasını engelliyor. (Dong-hee Na tarafından :issue:"
-"`39259`da katılmıştır.)"
+"`39259` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:594
 msgid "os"
@@ -1163,7 +1163,7 @@ msgid ""
 "`si_code`. (Contributed by Dong-hee Na in :issue:`38493`.)"
 msgstr ""
 ":data:`~os.CLD_KILLED` ve :attr:`si_code` için :data:`~os.CLD_STOPPED` "
-"eklendi. (Dong-hee Na tarafından :issue:`38493`de katılmıştır.)"
+"eklendi. (Dong-hee Na tarafından :issue:`38493` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:599
 msgid ""
@@ -1180,7 +1180,7 @@ msgid ""
 "(Contributed by Victor Stinner in :issue:`39413`.)"
 msgstr ""
 ":func:`os.unsetenv` işlevi artık Windows'ta da mevcuttur. (Victor Stinner "
-"tarafından :issue:`39413`de katılmıştır.)"
+"tarafından :issue:`39413` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:606
 msgid ""
@@ -1188,7 +1188,7 @@ msgid ""
 "available. (Contributed by Victor Stinner in :issue:`39395`.)"
 msgstr ""
 ":func:`os.putenv` ve :func:`os.unsetenv` fonksiyonları artık her zaman "
-"kullanılabilir. (Victor Stinner tarafından :issue:`39395`de katılmıştır.)"
+"kullanılabilir. (Victor Stinner tarafından :issue:`39395` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:610
 msgid ""
@@ -1196,7 +1196,7 @@ msgid ""
 "an exit code. (Contributed by Victor Stinner in :issue:`40094`.)"
 msgstr ""
 ":func:`os.waitstatus_to_exitcode` fonksiyonu eklendi: bekleme durumunu çıkış "
-"koduna dönüştürün. (Victor Stinner tarafından :issue:`40094`de katılmıştır.)"
+"koduna dönüştürün. (Victor Stinner tarafından :issue:`40094` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:615
 msgid "pathlib"
@@ -1236,7 +1236,7 @@ msgstr ""
 ":class:`~poplib.POP3` ve :class:`~poplib.POP3_SSL` artık bir :class:"
 "`ValueError` oluşturucuları için verilen zaman aşımı sıfır ise bloke olmayan "
 "bir yuva oluşturulmasını engelliyor. (Dong-hee Na tarafından :issue:"
-"`39259`da katılmıştır.)"
+"`39259` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:635
 msgid "pprint"
@@ -1248,7 +1248,7 @@ msgid ""
 "(Contributed by Carl Bordum Hansen in :issue:`37376`.)"
 msgstr ""
 ":mod:`pprint` artık :class:`types.SimpleNamespace` güzel yazdırabilir. (Carl "
-"Bordum Hansen tarafından :issue:`37376`da katılmıştır.)"
+"Bordum Hansen tarafından :issue:`37376` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:641
 msgid "pydoc"
@@ -1274,7 +1274,7 @@ msgid ""
 "(Contributed by Victor Stinner in :issue:`40286`.)"
 msgstr ""
 "Yeni bir :attr:`random.Random.randbytes` yöntemi eklendi: rastgele baytlar "
-"oluştur. (Victor Stinner tarafından :issue:`40286`da katılmıştır.)"
+"oluştur. (Victor Stinner tarafından :issue:`40286` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:654
 msgid "signal"
@@ -1287,7 +1287,7 @@ msgid ""
 "`38712`)"
 msgstr ""
 "Bir pid yerine bir dosya tanımlayıcı kullanarak bir işleme sinyal göndermek "
-"için Linux'a özgü :func:`signal.pidfd_send_signal` ortaya çıktı. (:sayı:"
+"için Linux'a özgü :func:`signal.pidfd_send_signal` ortaya çıktı. (:issue:"
 "`38712`)"
 
 #: whatsnew/3.9.rst:660
@@ -1304,7 +1304,7 @@ msgstr ""
 ":class:`~smtplib.SMTP` ve :class:`~smtplib.SMTP_SSL` artık bir :class:"
 "`ValueError` oluşturucuları için verilen zaman aşımı sıfır ise bloke olmayan "
 "bir soketin oluşturulmasını engelliyor. (Dong-hee Na tarafından :issue:"
-"`39259`da katılmıştır.)"
+"`39259` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:666
 msgid ""
@@ -1312,7 +1312,7 @@ msgid ""
 "(Contributed by Dong-hee Na in :issue:`39329`.)"
 msgstr ""
 ":class:`~smtplib.LMTP` yapıcısının artık isteğe bağlı bir *timeout* "
-"parametresi var. (Dong-hee Na tarafından :issue:`39329`da katılmıştır.)"
+"parametresi var. (Dong-hee Na tarafından :issue:`39329` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:670
 msgid "socket"
@@ -1326,15 +1326,15 @@ msgid ""
 msgstr ""
 ":mod:`socket` modülü artık Linux 4.1 ve üzeri sürümlerde :data:`~socket."
 "CAN_RAW_JOIN_FILTERS` sabitini dışa aktarıyor. (Stefan Tatschner ve Zackery "
-"Spytz tarafından :issue:`25780`de katılmıştır.)"
+"Spytz tarafından :issue:`25780` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:676
 msgid ""
 "The socket module now supports the :data:`~socket.CAN_J1939` protocol on "
 "platforms that support it.  (Contributed by Karl Ding in :issue:`40291`.)"
-msgstr ""
+msgstr "" '
 "Soket modülü artık onu destekleyen platformlarda :data:`~socket.CAN_J1939` "
-"protokolünü desteklemektedir. (Karl Ding tarafından :issue:`40291`de "
+"protokolünü desteklemektedir. (Karl Ding tarafından :issue:`40291` 'de "
 "katılmıştır.)"
 
 #: whatsnew/3.9.rst:679
@@ -1391,7 +1391,7 @@ msgid ""
 msgstr ""
 "Önceden, :attr:`sys.stderr`, etkileşimli olmadığında blok arabelleğe "
 "alınıyordu. Artık ``stderr`` varsayılan olarak her zaman satır arabelleğe "
-"alınır. ( :issue:`13601`de Jendrik Seipp tarafından katılmıştır.)"
+"alınır. ( :issue:`13601` 'de Jendrik Seipp tarafından katılmıştır.)"
 
 #: whatsnew/3.9.rst:706
 msgid "tracemalloc"
@@ -1405,7 +1405,7 @@ msgid ""
 msgstr ""
 "İzlenen bellek bloklarının tepe boyutunu geçerli boyuta ayarlamak ve belirli "
 "kod parçalarının zirvesini ölçmek için :func:`tracemalloc.reset_peak` "
-"eklendi. (Huon Wilson tarafından :issue:`40630`da katılmıştır.)"
+"eklendi. (Huon Wilson tarafından :issue:`40630` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:1496
 msgid "typing"
@@ -1519,7 +1519,7 @@ msgid ""
 msgstr ""
 "Önceden, bayt kodu değerlendirme döngüsü, ana iş parçacığı sinyalleri "
 "işleyene kadar her komutta kesintiye uğruyordu. (Victor Stinner tarafından :"
-"issue:`40010`da katılmıştır.)"
+"issue:`40010` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:769
 msgid ""
@@ -1528,7 +1528,7 @@ msgid ""
 "Stinner in :issue:`38061`.)"
 msgstr ""
 ":mod:`subprocess` modülünü FreeBSD'de ``closefrom()`` kullanarak optimize "
-"etti. ( :issue:`38061`de Ed Maste, Conrad Meyer, Kyle Evans, Kubilay Koçak "
+"etti. ( :issue:`38061` 'de Ed Maste, Conrad Meyer, Kyle Evans, Kubilay Koçak "
 "ve Victor Stinner'ın katkılarıyla.)"
 
 #: whatsnew/3.9.rst:773
@@ -1538,7 +1538,7 @@ msgid ""
 msgstr ""
 ":c:func:`PyLong_FromDouble`, :c:expr:`long` değerine uyan değerler için "
 "artık 1,87 kata kadar daha hızlı. (Sergey Fedoseev tarafından :issue:"
-"`37986`da katılmıştır.)"
+"`37986` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:777
 msgid ""
@@ -1550,7 +1550,7 @@ msgstr ""
 "Bir dizi Python yerleşik yapısı (:class:`range`, :class:`tuple`, :class:"
 "`set`, :class:`frozenset`, :class:`list`, :class:`dict`) artık :pep:`590` "
 "vectorcall protokolü kullanılarak hızlandırıldı. (Dong-hee Na, Mark Shannon, "
-"Jeroen Demeyer ve Petr Viktorin'in katkılarıyla :sayı:`37207`.)"
+"Jeroen Demeyer ve Petr Viktorin'in :issue:`37207` 'deki katkılarıyla.)"
 
 #: whatsnew/3.9.rst:782
 msgid ""
@@ -1584,7 +1584,7 @@ msgid ""
 msgstr ""
 ":term:`float operasyonunun kat bölümü` artık daha iyi bir performansa sahip. "
 "Ayrıca bu işlem için :exc:`ZeroDivisionError` mesajı güncellenir. (Dong-hee "
-"Na tarafından :issue:`39434`de katılmıştır.)"
+"Na tarafından :issue:`39434` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:796
 msgid ""
@@ -1592,7 +1592,7 @@ msgid ""
 "faster.  (Contributed by Inada Naoki in :issue:`37348`.)"
 msgstr ""
 "UTF-8 ve ascii codec'leriyle kısa ASCII dizilerinin kodunu çözmek artık "
-"yaklaşık %15 daha hızlı. (Inada Naoki tarafından :issue:`37348`de "
+"yaklaşık %15 daha hızlı. (Inada Naoki tarafından :issue:`37348` 'de "
 "katılmıştır.)"
 
 #: whatsnew/3.9.rst:799
@@ -1604,7 +1604,7 @@ msgstr ""
 "bir özeti:"
 
 #: whatsnew/3.9.rst:846
-msgid ""
+msgid ""  
 "These results were generated from the variable access benchmark script at: "
 "``Tools/scripts/var_access_benchmark.py``. The benchmark script displays "
 "timings in nanoseconds.  The benchmarks were measured on an `Intel® Core™ "
@@ -1699,8 +1699,7 @@ msgstr ""
 "değeri olarak kabul ediyor. Ne yazık ki, bu türlerden bazılarının "
 "deterministik bir hash değerine sahip olduğu garanti edilmiyor. Python "
 "3.9'dan sonra, modül tohumlarını :const:`None`, :class:`int`, :class:"
-"`float`, :class:`str`, :class:`bytes` ve :class: ile sınırlayacaktır. "
-"\"bytearray\"."
+"`float`, :class:`str`, :class:`bytes` ve :class:``bytearray`` ile sınırlayacaktır. "
 
 #: whatsnew/3.9.rst:890
 msgid ""
@@ -1734,7 +1733,7 @@ msgid ""
 msgstr ""
 "Eşyordam nesnelerinin açıkça :func:`asyncio.wait` öğesine iletilmesi "
 "kullanımdan kaldırılmıştır ve sürüm 3.11'de kaldırılacaktır. (Yury Selivanov "
-"ve Kyle Stanley tarafından :issue:`34790`da katılmıştır.)"
+"ve Kyle Stanley tarafından :issue:`34790` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:905
 msgid ""
@@ -1755,7 +1754,7 @@ msgstr ":func:`~binascii.rlecode_hqx`, :func:`~binascii.rledecode_hqx`"
 
 #: whatsnew/3.9.rst:911
 msgid "(Contributed by Victor Stinner in :issue:`39353`.)"
-msgstr "(Victor Stinner tarafından :issue:`39353`de katılmıştır.)"
+msgstr "(Victor Stinner tarafından :issue:`39353` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:913
 msgid ""
@@ -1796,7 +1795,7 @@ msgstr ""
 "işlevleri artık kullanımdan kaldırılmıştır ve Python 3.11'de "
 "kaldırılacaktır. :c:func:`PyEval_InitThreads` çağrılması artık hiçbir şey "
 "yapmıyor. :term:`GIL`, Python 3.7'den beri :c:func:`Py_Initialize()` "
-"tarafından başlatılmıştır. (Victor Stinner tarafından :issue:`39877`de "
+"tarafından başlatılmıştır. (Victor Stinner tarafından :issue:`39877` 'de "
 "katılmıştır.)"
 
 #: whatsnew/3.9.rst:932
@@ -1816,7 +1815,7 @@ msgid ""
 msgstr ""
 ":func:`smtpd.MailmanProxy`, harici bir modül olan ``mailman`` olmadan "
 "kullanılamaz olduğundan artık kullanımdan kaldırılmıştır. (Samuel Colvin "
-"tarafından :issue:`35800`de katılmıştır.)"
+"tarafından :issue:`35800` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:938
 msgid ""
@@ -1830,10 +1829,10 @@ msgstr ""
 ":mod:`lib2to3` modülü artık bir :exc:`PendingDeprecationWarning` yayar. "
 "Python 3.9, bir PEG ayrıştırıcısına geçti (bkz. :pep:`617`) ve Python 3.10, "
 "lib2to3'ün LL(1) ayrıştırıcısı tarafından ayrıştırılamayan yeni dil "
-"sözdizimini içerebilir. \"lib2to3\" modülü, gelecekteki bir Python sürümünde "
-"standart kitaplıktan kaldırılabilir. \"LibCST\"_ veya \"parso\"_ gibi üçüncü "
+"sözdizimini içerebilir. ``lib2to3`` modülü, gelecekteki bir Python sürümünde "
+"standart kitaplıktan kaldırılabilir. ``LibCST``_ veya ``parso``_ gibi üçüncü "
 "taraf alternatiflerini göz önünde bulundurun. (Carl Meyer tarafından :issue:"
-"`40360`da katılmıştır.)"
+"`40360` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:946
 msgid ""
@@ -1866,7 +1865,7 @@ msgstr ""
 "bu uzantılar NNTP sunucu yöneticileri tarafından desteklenmez veya "
 "etkinleştirilmez. ``xgtitle()`` için lütfen bunun yerine :meth:`nntplib.NNTP."
 "descriptions` veya :meth:`nntplib.NNTP.description` kullanın. (Dong-hee Na "
-"tarafından :issue:`39366`da katılmıştır.)"
+"tarafından :issue:`39366` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:966
 msgid ""
@@ -1876,8 +1875,8 @@ msgid ""
 msgstr ""
 ":class:`array.array`: ``tostring()`` ve ``fromstring()`` yöntemleri "
 "kaldırıldı. Bunlar, Python 3.2'den beri kullanımda olmayan ``tobytes()`` "
-"ve ``frombytes()'' takma adlarıydı. (Victor Stinner tarafından :issue:"
-"`38916`da katılmıştır.)"
+"ve ``frombytes()`` takma adlarıydı. (Victor Stinner tarafından :issue:"
+"`38916` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:971
 msgid ""
@@ -1889,7 +1888,7 @@ msgstr ""
 "Belgelenmemiş ``sys.callstats()`` fonksiyonu kaldırıldı. Python 3.7'den beri "
 "kullanımdan kaldırıldı ve her zaman :const:`None` döndürdü. Python 3.7'de "
 "zaten kaldırılmış olan \"CALL_PROFILE\" adlı özel bir derleme seçeneği "
-"gerektiriyordu. (Victor Stinner tarafından :issue:`37414`de katılmıştır.)"
+"gerektiriyordu. (Victor Stinner tarafından :issue:`37414` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:976
 msgid ""
@@ -1901,7 +1900,7 @@ msgstr ""
 "\"sys.getcheckinterval()\" ve \"sys.setcheckinterval()\" işlevleri "
 "kaldırıldı. Python 3.2'den beri kullanımdan kaldırıldılar. Bunun yerine :"
 "func:`sys.getswitchinterval` ve :func:`sys.setswitchinterval` kullanın. "
-"(Victor Stinner tarafından :issue:`37392`de katılmıştır.)"
+"(Victor Stinner tarafından :issue:`37392` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:981
 msgid ""
@@ -1911,7 +1910,7 @@ msgid ""
 msgstr ""
 "``PyImport_Cleanup()`` C işlevi kaldırıldı. Şu şekilde belgelenmiştir: "
 "\"Modül tablosunu boşaltın. Yalnızca dahili kullanım için.\" (Victor Stinner "
-"tarafından :issue:`36710`da katılmıştır.)"
+"tarafından :issue:`36710` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:985
 msgid ""
@@ -1921,7 +1920,7 @@ msgid ""
 msgstr ""
 "``_dummy_thread`` ve ``dummy_threading`` modülleri kaldırıldı. Bu modüller, "
 "iş parçacığı desteği gerektiren Python 3.7'den beri kullanımdan "
-"kaldırılmıştır. (Victor Stinner tarafından :issue:`37312`de katılmıştır.)"
+"kaldırılmıştır. (Victor Stinner tarafından :issue:`37312` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:989
 msgid ""
@@ -1931,9 +1930,9 @@ msgid ""
 "Stinner in :issue:`37320`.)"
 msgstr ""
 "``aifc.openfp()`` takma adı ``aifc.open()``, ``sunau.openfp()`` takma adı "
-"`sunau.open()`` ve ``wave.openfp() ` :func:`wave.open()` takma adı "
+"`sunau.open()`` ve ``wave.openfp()`` :func:`wave.open()` takma adı "
 "kaldırıldı. Python 3.7'den beri kullanımdan kaldırıldılar. (Victor Stinner "
-"tarafından :issue:`37320`de katılmıştır.)"
+"tarafından :issue:`37320` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:994
 msgid ""
@@ -1944,7 +1943,7 @@ msgstr ""
 ":meth:`~threading.Thread.isAlive()` :class:`threading.Thread` yöntemi "
 "kaldırıldı. Python 3.8'den beri kullanımdan kaldırılmıştır. Bunun yerine :"
 "meth:`~threading.Thread.is_alive()` kullanın. (Dong-hee Na tarafından :issue:"
-"`37804`de katılmıştır.)"
+"`37804` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:999
 msgid ""
@@ -1974,7 +1973,7 @@ msgstr ""
 "kaldırıldı. :func:`~plistlib.load`, :func:`~plistlib.loads`, :func:"
 "`~plistlib.dump` ve :func:`~plistlib.dumps` işlevlerini kullanın. Ek olarak, "
 "*use_builtin_types* parametresi kaldırıldı, bunun yerine her zaman standart :"
-"class:`bytes` nesneleri kullanıldı. (Jon Janzen tarafından :issue:`36409`da "
+"class:`bytes` nesneleri kullanıldı. (Jon Janzen tarafından :issue:`36409` 'da "
 "katılmıştır.)"
 
 #: whatsnew/3.9.rst:1013
@@ -1987,7 +1986,7 @@ msgstr ""
 "\"PyGen_NeedsFinalizing\" C işlevi kaldırıldı. :pep:`442` uygulandıktan "
 "sonra CPython içinde herhangi bir yerde belgelenmedi, test edilmedi veya "
 "kullanılmadı. Yama Joannah Nanjekye tarafından. (Joannah Nanjekye "
-"tarafından :issue:`15088`de katılmıştır)"
+"tarafından :issue:`15088` 'de katılmıştır)"
 
 #: whatsnew/3.9.rst:1018
 msgid ""
@@ -1999,7 +1998,7 @@ msgstr ""
 "Python 3.1'den beri kullanımdan kaldırılan ``base64.encodestring()`` ve "
 "`base64.decodestring()`` takma adları kaldırıldı: bunun yerine :func:`base64."
 "encodebytes` ve :func:`base64.decodebytes` kullanın. (Victor Stinner "
-"tarafından :issue:`39351`de katılmıştır.)"
+"tarafından :issue:`39351` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1023
 msgid ""
@@ -2009,7 +2008,7 @@ msgid ""
 msgstr ""
 "``fractions.gcd()`` işlevi kaldırıldı, Python 3.5'ten beri kullanımdan "
 "kaldırıldı (:issue:`22486`): bunun yerine :func:`math.gcd` kullanın. (Victor "
-"Stinner tarafından :issue:`39350`de katılmıştır.)"
+"Stinner tarafından :issue:`39350` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1027
 msgid ""
@@ -2021,7 +2020,7 @@ msgstr ""
 ":class:`bz2.BZ2File` öğesinin *buffering* parametresi kaldırıldı. Python "
 "3.0'dan bu yana yok sayıldı ve kullanıldığında bir :exc:`DeprecationWarning` "
 "yaydı. Dosyanın nasıl açılacağını kontrol etmek için bir açık dosya nesnesi "
-"iletin. (Victor Stinner tarafından :issue:`39357`de katılmıştır.)"
+"iletin. (Victor Stinner tarafından :issue:`39357` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1032
 msgid ""
@@ -2045,7 +2044,7 @@ msgstr ""
 "``with (awat asyncio.lock):`` ve ``with (get from asyncio.lock):`` ifadeleri "
 "artık desteklenmemektedir, bunun yerine ``async with lock`` kullanın. Aynı "
 "şey \"asyncio.Condition\" ve \"asyncio.Semaphore\" için de geçerlidir. "
-"(Andrew Svetlov tarafından :issue:`34793`de katılmıştır.)"
+"(Andrew Svetlov tarafından :issue:`34793` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1042
 msgid ""
@@ -2056,7 +2055,7 @@ msgid ""
 "`39489`.)"
 msgstr ""
 "C yapısının :func:`sys.getcounts` işlevi, ``-X showalloccount`` komut satırı "
-"seçeneği ve :c:type:`PyConfig`` show_alloc_count`` alanı kaldırıldı. "
+"seçeneği ve :c:type:`PyConfig` show_alloc_count`` alanı kaldırıldı. "
 "``COUNT_ALLOCS`` makrosu tanımlayarak özel bir Python yapısına ihtiyaç "
 "duydular. (Victor Stinner'ın :issue:`39489` 'daki katkısıyla)"
 
@@ -2080,7 +2079,7 @@ msgid ""
 msgstr ""
 ":meth:`symtable.SymbolTable.has_exec` yöntemi kaldırıldı. 2006'dan beri "
 "kullanımdan kaldırılmıştır ve yalnızca çağrıldığında ``False`` değerini "
-"döndürmektedir. (Batuhan Taşkaya :sayısı:`40208`de katılmıştır)"
+"döndürmektedir. (Batuhan Taşkaya :sayısı:`40208` 'de katılmıştır)"
 
 #: whatsnew/3.9.rst:1057
 msgid ""
@@ -2092,7 +2091,7 @@ msgstr ""
 ":meth:`asyncio.Task.current_task` ve :meth:`asyncio.Task.all_tasks` "
 "kaldırıldı. Python 3.7'den beri kullanımdan kaldırıldılar ve bunun yerine :"
 "func:`asyncio.current_task` ve :func:`asyncio.all_tasks` kullanabilirsiniz. "
-"(Rémi Lapeyre tarafından :issue:`40967`de katılmıştır)"
+"(Rémi Lapeyre tarafından :issue:`40967` 'de katılmıştır)"
 
 #: whatsnew/3.9.rst:1062
 msgid ""
@@ -2149,7 +2148,7 @@ msgid ""
 "`~errno.EBADF` error. (Contributed by Victor Stinner in :issue:`39239`.)"
 msgstr ""
 ":meth:`select.epoll.unregister` yöntemi artık :data:`~errno.EBADF` hatasını "
-"yok saymıyor. (Victor Stinner tarafından :issue:`39239`da katılmıştır.)"
+"yok saymıyor. (Victor Stinner tarafından :issue:`39239` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:1090
 msgid ""
@@ -2159,7 +2158,7 @@ msgid ""
 msgstr ""
 ":class:`bz2.BZ2File` öğesinin *compresslevel* parametresi, *buffering* "
 "parametresi kaldırıldığı için yalnızca anahtar kelime haline geldi. (Victor "
-"Stinner tarafından :issue:`39357`de katılmıştır.)"
+"Stinner tarafından :issue:`39357` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1094
 msgid ""
@@ -2203,7 +2202,7 @@ msgstr ""
 ":meth:`asyncio.loop.shutdown_default_executor`, :class:`~asyncio."
 "AbstractEventLoop` öğesine eklendi, yani ondan devralan alternatif olay "
 "döngülerinde bu yöntem tanımlanmalıdır. (Kyle Stanley tarafından :issue:"
-"`34037`de katılmıştır.)"
+"`34037` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1113
 msgid ""
@@ -2215,7 +2214,7 @@ msgstr ""
 ":mod:`__future__` modülündeki gelecek bayraklarının sabit değerleri, "
 "derleyici bayraklarıyla çarpışmayı önlemek için güncellenir. Daha önce "
 "``PyCF_ALLOW_TOP_LEVEL_AWAIT``, ``CO_FUTURE_DIVISION`` ile çakışıyordu. "
-"(Batuhan Taskaya :sayısı:`39562`de katılmıştır)"
+"(Batuhan Taskaya :sayısı:`39562` 'de katılmıştır)"
 
 #: whatsnew/3.9.rst:1118
 msgid ""
@@ -2227,7 +2226,7 @@ msgstr ""
 "``array('u')`` artık C tipi olarak ``Py_UNICODE`` yerine ``wchar_t`` "
 "kullanıyor. Python 3.3'ten bu yana ``Py_UNICODE`` ``wchar_t`` takma adı "
 "olduğundan, bu değişiklik davranışını etkilemez. (Inada Naoki tarafından :"
-"issue:`34538`de katılmıştır.)"
+"issue:`34538` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1123
 msgid ""
@@ -2253,9 +2252,9 @@ msgid ""
 "This allows creating compatible classes that don't inherit from those "
 "mentioned types. (Contributed by Roger Aiudi in :issue:`34775`)."
 msgstr ""
-":class:`~pathlib.PurePath` 'nın bölümleme işlemi, \"str\" veya :class:"
-"\"~pathlib.PurePath\" örneğinden başka bir şey iletildiğinde bir :exc:"
-"\"TypeError\" yükseltmek yerine artık \"NotImplemented\" döndürüyor. Bu, "
+":class:`~pathlib.PurePath` 'nın bölümleme işlemi, ``str`` veya :class:"
+"``~pathlib.PurePath`` örneğinden başka bir şey iletildiğinde bir :exc:"
+"``TypeError`` yükseltmek yerine artık ``NotImplemented`` döndürüyor. Bu, "
 "belirtilen türlerden miras almayan uyumlu sınıflar oluşturmaya izin verir. "
 "( :issue:`34775` içinde Roger Aiudi tarafından katılmıştır)."
 
@@ -2288,7 +2287,7 @@ msgstr ""
 "normalize_encoding` ile aynı şekilde normalleştirir, ancak :func:`codecs."
 "lookup` ayrıca adı küçük harfe dönüştürür. Örneğin, ``\"latex+latin1\"`` "
 "kodlama adı artık ``\"latex_latin1\"`` olarak normalleştirildi. ( :issue:"
-"`37751`de Jordon Xu tarafından katılmıştır.)"
+"`37751` 'de Jordon Xu tarafından katılmıştır.)"
 
 #: whatsnew/3.9.rst:1152
 msgid "Changes in the C API"
@@ -2391,7 +2390,7 @@ msgstr ""
 
 #: whatsnew/3.9.rst:1222
 msgid "(Contributed by Mark Shannon in :issue:`39156`.)"
-msgstr "(Mark Shannon tarafından :issue:`39156`da katılmıştır.)"
+msgstr "(Mark Shannon tarafından :issue:`39156` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:1226
 msgid "Build Changes"
@@ -2417,7 +2416,7 @@ msgid ""
 "Victor Stinner in :issue:`39489`.)"
 msgstr ""
 "``COUNT_ALLOCS`` özel yapı makrosu kaldırıldı. (Victor Stinner tarafından :"
-"issue:`39489`da katılmıştır.)"
+"issue:`39489` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:1237
 msgid ""
@@ -2427,7 +2426,7 @@ msgid ""
 msgstr ""
 "Windows olmayan platformlarda, Python'u oluşturmak için artık :c:func:"
 "`setenv` ve :c:func:`unsetenv` işlevleri gereklidir. (Victor Stinner "
-"tarafından :issue:`39395`de katılmıştır.)"
+"tarafından :issue:`39395` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1241
 msgid ""
@@ -2521,7 +2520,7 @@ msgid ""
 msgstr ""
 ":c:func:`PyFrame_GetCode` işlevi eklendi: bir çerçeve kodu alın. :c:func:"
 "`PyFrame_GetBack` işlevi eklendi: sonraki dış çerçeveyi alın. (Victor "
-"Stinner tarafından :issue:`40421`de katılmıştır.)"
+"Stinner tarafından :issue:`40421` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1287
 msgid ""
@@ -2529,7 +2528,7 @@ msgid ""
 "Victor Stinner in :issue:`40421`.)"
 msgstr ""
 "Sınırlı C API'sine :c:func:`PyFrame_GetLineNumber` eklendi. (Victor Stinner "
-"tarafından :issue:`40421`de katılmıştır.)"
+"tarafından :issue:`40421` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1290
 msgid ""
@@ -2545,7 +2544,7 @@ msgstr ""
 "geçerli çerçevesini almak için :c:func:`PyThreadState_GetFrame` işlevi "
 "eklendi. :c:func:`PyThreadState_GetID` işlevi eklendi: Python iş parçacığı "
 "durumunun benzersiz tanımlayıcısını alın. (Victor Stinner tarafından :issue:"
-"`39947`de katılmıştır.)"
+"`39947` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1298
 msgid ""
@@ -2557,12 +2556,12 @@ msgstr ""
 "C API'ye herhangi bir bağımsız değişken olmadan çağrılabilir bir Python "
 "nesnesi çağıran yeni bir genel :c:func:`PyObject_CallNoArgs` işlevi eklendi. "
 "Herhangi bir argüman olmadan çağrılabilir bir Python nesnesini çağırmanın en "
-"etkili yolu budur. (Victor Stinner tarafından :issue:`37194`de katılmıştır.)"
+"etkili yolu budur. (Victor Stinner tarafından :issue:`37194` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1421
 msgid "Changes in the limited C API (if ``Py_LIMITED_API`` macro is defined):"
 msgstr ""
-"Sınırlı C API'sindeki değişiklikler (eğer \"Py_LIMITED_API\" makrosu "
+"Sınırlı C API'sindeki değişiklikler (eğer ``Py_LIMITED_API`` makrosu "
 "tanımlanmışsa):"
 
 #: whatsnew/3.9.rst:1305
@@ -2590,7 +2589,7 @@ msgstr ""
 #: whatsnew/3.9.rst:1448
 msgid "(Contributed by Victor Stinner in :issue:`38644` and :issue:`39542`.)"
 msgstr ""
-"(Victor Stinner tarafından :issue:`38644` ve :issue:`39542`de katılmıştır.)"
+"(Victor Stinner tarafından :issue:`38644` ve :issue:`39542` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1316
 msgid ""
@@ -2598,7 +2597,7 @@ msgid ""
 "module. (Contributed by Dong-hee Na in :issue:`40024`.)"
 msgstr ""
 "Bir modüle tür eklenmesine yardımcı olmak için :c:func:`PyModule_AddType` "
-"fonkisoynu eklenir. (Dong-hee Na tarafından :issue:`40024`de katılmıştır.)"
+"fonkisoynu eklenir. (Dong-hee Na tarafından :issue:`40024` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1320
 msgid ""
@@ -2612,7 +2611,7 @@ msgstr ""
 "`PyObject_GC_IsFinalized` işlevleri, Python nesnelerinin şu anda izlenip "
 "izlenmediğini veya çöp toplayıcı tarafından halihazırda sonlandırılıp "
 "sonlandırılmadığını sorgulamaya izin vermek için eklendi. (Pablo Galindo "
-"Salgado tarafından :issue:`40241`de katılmıştır.)"
+"Salgado tarafından :issue:`40241` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1326
 msgid ""
@@ -2641,7 +2640,7 @@ msgid ""
 msgstr ""
 "``PyInterpreterState.eval_frame`` (:pep:`523`) artık yeni bir zorunlu "
 "*tstate* parametresi (``PyThreadState*``) gerektiriyor. (Victor Stinner "
-"tarafından :issue:`38500`de katılmıştır.)"
+"tarafından :issue:`38500` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1342
 msgid ""
@@ -2654,12 +2653,14 @@ msgid ""
 "m_size` is greater than 0 and the module state (as returned by :c:func:"
 "`PyModule_GetState`) is ``NULL``."
 msgstr ""
-"Genişletme modülleri: Modül durumu istenmiş ancak henüz atanmamışsa, B'nin A "
-"işlevleri artık çağrılmaz. Bu, modül oluşturulduktan hemen sonra ve modül "
-"çalıştırılmadan önceki durumdur (:c:data:`Py_mod_exec` işlevi). Daha "
-"doğrusu, :c:member:`~PyModuleDef.m_size` 0'dan büyükse ve modül durumu ( :c:"
-"func:`PyModule_GetState` tarafından döndürülen) ``NULL`` ise, bu "
-"fonksiyonlar çağrılmaz."
+"Genişletme modülleri: :c:member:`~PyModuleDef.m_traverse`, :c:member:"
+"`~PyModuleDef.m_clear` and :c:member:`~PyModuleDef.m_free` functions "
+"of :c:type:`PyModuleDef`, modül durumu talep edilmiş ancak henüz tahsis"
+"edilmemişse artık çağrılmaz. Bu, modül oluşturulduktan hemen sonra ve"
+"modül çalıştırılmadan önceki durumdur (:c:data:`Py_mod_exec` işlevi)."
+"Daha kesin olarak, bu işlevler :c:member:`~PyModuleDef.m_size` 0'dan "
+"büyükse ve modül durumu ( :c:func:`PyModule_GetState` tarafından "
+"döndürülen) ``NULL`` ise çağrılmaz."
 
 #: whatsnew/3.9.rst:1351
 msgid ""
@@ -2678,7 +2679,7 @@ msgstr ""
 "Bir alt yorumlayıcıda :c:func:`Py_AddPendingCall` çağrılırsa, işlev artık "
 "ana yorumlayıcıdan çağrılmak yerine alt yorumlayıcıdan çağrılacak şekilde "
 "programlanır. Her yardımcı tercüman artık kendi planlanmış çağrılar "
-"listesine sahiptir. (Victor Stinner tarafından :issue:`39984`de katılmıştır.)"
+"listesine sahiptir. (Victor Stinner tarafından :issue:`39984` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1359
 msgid ""
@@ -2687,8 +2688,8 @@ msgid ""
 "``0``). This is significant when embedding Python on Windows. (Contributed "
 "by Zackery Spytz in :issue:`8901`.)"
 msgstr ""
-"Windows kayıt defteri, \"-E\" seçeneği kullanıldığında ( :c:member:"
-"\"PyConfig.use_environment\" \"0\" olarak ayarlanmışsa) :data:\"sys.path\" "
+"Windows kayıt defteri ``-E`` seçeneği kullanıldığında ( :c:member:"
+"``PyConfig.use_environment`` ``0`` olarak ayarlanmışsa) :data:``sys.path`` "
 "öğesini başlatmak için artık kullanılmaz. Bu, Python'u Windows'a "
 "yerleştirirken önemlidir. ( :issue:`8901` içinde Zackery Spytz tarafından "
 "katılmıştır.)"
@@ -2710,7 +2711,7 @@ msgid ""
 "`40241`.)"
 msgstr ""
 ":c:type:`PyGC_Head` yapısı artık opaktır. Yalnızca dahili C API'sinde "
-"(``pycore_gc.h``) tanımlanır. (Victor Stinner tarafından :issue:`40241`de "
+"(``pycore_gc.h``) tanımlanır. (Victor Stinner tarafından :issue:`40241` 'de "
 "katılmıştır.)"
 
 #: whatsnew/3.9.rst:1372
@@ -2726,7 +2727,7 @@ msgstr ""
 "``_PyUnicode_AsUnicode``, ve :c:func:`PyUnicode_AsUnicodeAndSize`, C'de "
 "kullanımdan kaldırıldı olarak işaretlenmiştir. Python 3.3'ten beri :pep:"
 "`393` tarafından kullanımdan kaldırılmıştır. (Inada Naoki tarafından :issue:"
-"`36346`da katılmıştır.)"
+"`36346` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:1379
 msgid ""
@@ -2737,7 +2738,7 @@ msgid ""
 msgstr ""
 ":c:func:`Py_FatalError` fonksiyonu, ``Py_LIMITED_API`` makrosu "
 "tanımlanmadığı sürece geçerli fonksiyonun adını otomatik olarak kaydeden bir "
-"makro ile değiştirilir. (Victor Stinner tarafından :issue:`39882`de "
+"makro ile değiştirilir. (Victor Stinner tarafından :issue:`39882` 'de "
 "katılmıştır.)"
 
 #: whatsnew/3.9.rst:1384
@@ -2811,7 +2812,7 @@ msgid ""
 msgstr ""
 "\"pyfpe.h\" dosyasının \"PyFPE_START_PROTECT()\" ve \"PyFPE_END_PROTECT()\" "
 "makroları sınırlı C API'sinden hariç tutuldu. (Victor Stinner tarafından :"
-"issue:`38835`de katılmıştır.)"
+"issue:`38835` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1416
 msgid ""
@@ -2835,7 +2836,7 @@ msgid ""
 "`37878`.)"
 msgstr ""
 "``PyThreadState_DeleteCurrent()`` (Joannah Nanjekye tarafından :issue:"
-"`37878`de katılmıştır.)"
+"`37878` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1427
 msgid "``_Py_CheckRecursionLimit``"
@@ -2920,7 +2921,7 @@ msgstr ""
 "takma ad olan \"_PyThreadState_GetFrame\" makrosu kaldırıldı. Yalnızca "
 "dahili C API'si tarafından açığa çıkarıldılar. Ayrıca "
 "``PyThreadFrameGetter`` türü kaldırıldı. (Victor Stinner tarafından :issue:"
-"`39946`da katılmıştır.)"
+"`39946` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:1455
 msgid ""
@@ -2930,7 +2931,7 @@ msgid ""
 msgstr ""
 "Aşağıdaki fonksiyonlar C API'sinden kaldırıldı. Tüm ücretsiz listeleri "
 "temizlemek için :c:func:`PyGC_Collect` çağırın. (Inada Naoki ve Victor "
-"Stinner tarafından :issue:`37340`, :issue:`38896` ve :issue:`40428`de "
+"Stinner tarafından :issue:`37340` , :issue:`38896` ve :issue:`40428` 'de "
 "katkıda bulunmuştur.)"
 
 #: whatsnew/3.9.rst:1460
@@ -2988,7 +2989,7 @@ msgid ""
 "Stinner in :issue:`39465`.)"
 msgstr ""
 "``_PyUnicode_ClearStaticStrings()`` fonksiyonu kaldırıldı. (Victor Stinner "
-"tarafından :issue:`39465`de katılmıştır.)"
+"tarafından :issue:`39465` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1477
 msgid ""
@@ -2999,7 +3000,7 @@ msgstr ""
 "\"Py_UNICODE_MATCH\" kaldırıldı. :pep:`393` tarafından kullanımdan "
 "kaldırıldı ve Python 3.3'ten beri bozuldu. Bunun yerine :c:func:"
 "`PyUnicode_Tailmatch` fonksiyonu kullanılabilir. (Inada Naoki tarafından :"
-"issue:`36346`da katılmıştır.)"
+"issue:`36346` 'da katılmıştır.)"
 
 #: whatsnew/3.9.rst:1482
 msgid ""
@@ -3160,7 +3161,7 @@ msgid ""
 "Adam Goldschmidt, Senthil Kumaran and Ken Jin in :issue:`42967`.)"
 msgstr ""
 "Önceki Python sürümleri, :func:`urllib.parse.parse_qs` ve :func:`urllib."
-"parse.parse_qsl` içinde sorgu parametresi ayırıcıları olarak hem ```` hem de "
+"parse.parse_qsl` içinde sorgu parametresi ayırıcıları olarak hem ``;`` hem de "
 "``&`` kullanılmasına izin veriyordu. Güvenlik endişeleri nedeniyle ve daha "
 "yeni W3C tavsiyelerine uymak için bu, varsayılan olarak ``&`` ile yalnızca "
 "tek bir ayırıcı anahtara izin verecek şekilde değiştirildi. Bu değişiklik, "
