@@ -1699,7 +1699,8 @@ msgstr ""
 "değeri olarak kabul ediyor. Ne yazık ki, bu türlerden bazılarının "
 "deterministik bir hash değerine sahip olduğu garanti edilmiyor. Python "
 "3.9'dan sonra, modül tohumlarını :const:`None`, :class:`int`, :class:"
-"`float`, :class:`str`, :class:`bytes` ve :class:``bytearray`` ile sınırlayacaktır. "
+"`float`, :class:`str`, :class:`bytes` ve :class:``bytearray`` ile"
+"sınırlayacaktır. "
 
 #: whatsnew/3.9.rst:890
 msgid ""
@@ -2679,7 +2680,8 @@ msgstr ""
 "Bir alt yorumlayıcıda :c:func:`Py_AddPendingCall` çağrılırsa, işlev artık "
 "ana yorumlayıcıdan çağrılmak yerine alt yorumlayıcıdan çağrılacak şekilde "
 "programlanır. Her yardımcı tercüman artık kendi planlanmış çağrılar "
-"listesine sahiptir. (Victor Stinner tarafından :issue:`39984` 'de katılmıştır.)"
+"listesine sahiptir. (Victor Stinner tarafından :issue:`39984`"
+"'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:1359
 msgid ""
