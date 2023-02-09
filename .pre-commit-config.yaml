@@ -1,9 +1,37 @@
 repos:
--   repo: local
+  - repo: local
     hooks:
-    -   id: lint
-        name: Run sphinx linting
+      - id: lint
+        name: Run sphinx-lint on .po files
         entry: sphinx-lint
         language: python
-        additional_dependencies: ['sphinx-lint==0.6.7']
+        additional_dependencies: ["sphinx-lint"]
         files: \.po$
+
+      - id: wrap
+        name: Run powrap on .po files
+        entry: powrap
+        language: python
+        additional_dependencies: ["powrap"]
+        files: \.po$
+
+  - repo: https://github.com/psf/black
+    rev: 23.1.0
+    hooks:
+      - id: black
+        name: Run black on Python files
+        args: ["--line-length=140", "--target-version=py311"]
+        files: \.py$
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v2.7.1
+    hooks:
+      - id: prettier
+        name: Run prettier on .yml and .yaml files
+        types: [yaml]
