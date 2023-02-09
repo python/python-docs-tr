@@ -2,23 +2,23 @@
 # Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2023-02-09 19:07+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: library/tk.rst:5
 msgid "Graphical User Interfaces with Tk"
-msgstr ""
+msgstr "Tk ile Grafik Kullanıcı Arayüzleri"
 
 #: library/tk.rst:13
 msgid ""
@@ -27,6 +27,11 @@ msgid ""
 "programmers using the :mod:`tkinter` package, and its extension, the :mod:"
 "`tkinter.tix` and the :mod:`tkinter.ttk` modules."
 msgstr ""
+"Tk/Tcl uzun zamandır Python'ın ayrılmaz bir parçası olmuştur. Python "
+"programcılarının :mod:`tkinter` paketini ve onun uzantısı olan :mod:`tkinter."
+"tix` ve :mod:`tkinter.ttk` modüllerini kullanarak programcıların "
+"kullanabilecekleri sağlam ve platformdan bağımsız bir pencereleme araç seti "
+"sunar."
 
 #: library/tk.rst:18
 msgid ""
@@ -36,6 +41,11 @@ msgid ""
 "mod:`tkinter` is a set of wrappers that implement the Tk widgets as Python "
 "classes."
 msgstr ""
+"Mod:`tkinter` paketi Tcl/Tk üzerinde ince bir nesne yönelimli katmandır. Mod:"
+"`tkinter` kullanmak için Tcl kodu yazmanıza gerek yoktur, ancak Tk "
+"belgelerine ve bazen de Tcl belgelerine başvurmanız gerekecektir. :mod:"
+"`tkinter`, Tk widget'larını Python sınıfları olarak uygulayan bir dizi "
+"sarmalayıcıdır."
 
 #: library/tk.rst:24
 msgid ""
@@ -48,3 +58,11 @@ msgid ""
 "alternative `GUI frameworks and tools <https://wiki.python.org/moin/"
 "GuiProgramming>`_."
 msgstr ""
+":mod:`tkinter`ın başlıca özellikleri hızlı olması ve genellikle Python ile "
+"birlikte gelmesidir. Standart dokümantasyonu zayıf olmasına rağmen, "
+"referanslar, öğreticiler, bir kitap ve diğer öğeleri içeren iyi bir materyal "
+"mevcuttur. Ayrıca :mod:`tkinter` modası geçmiş ve eski bir görünüme sahip "
+"olmasına rağmen, Tk 8.5'te bu durum büyük ölçüde geliştirilmiştir. Bununla birlikte, "
+"ilginizi çekebilecek başka birçok GUI kütüphanesi vardır. Python wiki, "
+"birkaç alternatif `GUI geliştirme çerçevesi ve aracını <https://wiki.python."
+"org/moin/GuiProgramming>`_ sizler için listeler."
