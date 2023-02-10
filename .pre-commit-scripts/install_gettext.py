@@ -9,7 +9,6 @@ def main():
         try:
             cmd = "Set-ExecutionPolicy RemoteSigned -Scope CurrentUser;irm get.scoop.sh | iex;scoop install gettext"
             return subprocess.run(cmd, shell=True, check=True, executable=shutil.which("powershell"))
-            exit(0)
         except Exception:
             print(
                 NotImplementedError(
