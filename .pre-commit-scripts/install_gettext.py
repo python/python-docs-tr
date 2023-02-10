@@ -21,9 +21,9 @@ https://github.com/python/python-docs-tr/blob/HEAD/wiki/gettext.md for instructi
             )
             exit(0)
     elif sys.platform in ["linux", "linux2"]:
-        cmd = shlex.split("sudo apt update && sudo apt install -y gettext", posix=True)
+        cmd = "sudo apt update && sudo apt install -y gettext"
     else:  # macOS
-        cmd = shlex.split("brew update && brew install gettext", posix=True)
+        cmd = "brew update && brew install gettext"
     return subprocess.run(cmd, shell=True, check=True)
 
 
