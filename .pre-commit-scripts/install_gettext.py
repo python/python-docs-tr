@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import sys
+import shlex
 import shutil
 import subprocess
 
@@ -7,8 +8,9 @@ import subprocess
 def main():
     if sys.platform == "win32":
         try:
-            cmd = "Set-ExecutionPolicy RemoteSigned -Scope CurrentUser;irm get.scoop.sh | iex;scoop install gettext"
-            print("test")
+            cmd = shlex.split(
+                "Set-ExecutionPolicy RemoteSigned -Scope CurrentUser;irm get.scoop.sh | iex;scoop install gettext", posix=False
+            )
             return subprocess.run(cmd, shell=True, check=True, executable=shutil.which("powershell"))
         except Exception:
             print(
@@ -19,11 +21,9 @@ https://github.com/python/python-docs-tr/blob/HEAD/wiki/gettext.md for instructi
             )
             exit(0)
     elif sys.platform in ["linux", "linux2"]:
-        print("test2")
-        cmd = "sudo apt --upgrade && sudo apt install -y gettext"
+        cmd = shlex.split("sudo apt --upgrade && sudo apt install -y gettext", posix=True)
     else:  # macOS
-        print("test3")
-        cmd = "brew update && brew install gettext"
+        cmd = shlex.split("brew update && brew install gettext", posix=True)
     return subprocess.run(cmd, shell=True, check=True)
 
 
