@@ -28,4 +28,4 @@ https://github.com/python/python-docs-tr/blob/HEAD/wiki/gettext.md for instructi
 
 
 if __name__ == "__main__":
-    exit(main())
+    exit(main().returncode)
