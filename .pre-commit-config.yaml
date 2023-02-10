@@ -1,6 +1,12 @@
 repos:
   - repo: local
     hooks:
+      - id: gettext
+        name: Install gettext
+        entry: python .pre-commit-scripts/install_gettext.py
+        language: system
+        verbose: true
+
       - id: lint
         name: Run sphinx-lint on .po files
         entry: sphinx-lint

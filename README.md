@@ -14,13 +14,14 @@ Bu proje gönüllü çevirmenler ve python-docs-tr ekibi iş birliğinde sürdü
 - Yüklü bir [Git](https://git-scm.com/) istemcisi
 - ``.po`` dosyalarını düzenlemek için [poedit](https://poedit.net/) gibi bir program
 - Yüklü bir Python ve ``pip`` versiyonu (en son stabil olan versiyon önerilir)
+- ``gettext`` araçları ([yükleme adımları](https://github.com/python/python-docs-tr/blob/HEAD/wiki/gettext.md))
 
 ### Adımlar
 
 #### Rezervasyon
 
 Çeviri yapmak istediğiniz bir dosyaya rezervasyon oluşturmak için şu adımları izleyin:
-   
+
 1. `Issues > New Issue > Get started` düğmelerini takip ederek rezervasyon formunu açın.
 2. foo/bar.po taslağını, çalışmak istediğiniz dosyanın yolu ile değiştirin.
    - Örnegin, "library/functions.po üzerinde çalışmak istiyorum".
