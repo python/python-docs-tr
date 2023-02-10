@@ -24,7 +24,7 @@ https://github.com/python/python-docs-tr/blob/HEAD/wiki/gettext.md for instructi
         cmd = shlex.split("sudo apt update && sudo apt install -y gettext", posix=True)
     else:  # macOS
         cmd = shlex.split("brew update && brew install gettext", posix=True)
-    return subprocess.run(cmd, shell=False, check=True)
+    return subprocess.run(cmd, shell=True, check=True)
 
 
 if __name__ == "__main__":
