@@ -1,6 +1,16 @@
 repos:
   - repo: local
     hooks:
+      - id: style-print
+        name: style-print
+        entry: "style-print 'This is highly experimental, please report any issues: https://github.com/python/python-docs-tr/issues' 'rUBI{y}'"
+        language: python
+        additional_dependencies: ["style-print"]
+        pass_filenames: false
+        verbose: true
+
+  - repo: local
+    hooks:
       - id: gettext
         name: Install gettext
         entry: python .pre-commit-scripts/install_gettext.py
