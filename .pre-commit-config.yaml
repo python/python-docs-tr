@@ -16,7 +16,7 @@ repos:
 
       - id: wrap
         name: Run powrap on .po files
-        entry: powrap -m
+        entry: powrap
         language: python
         additional_dependencies: ["powrap"]
         files: \.po$

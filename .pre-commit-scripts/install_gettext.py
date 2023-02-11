@@ -15,9 +15,9 @@ def main():
         return p_scoop.returncode or p_install.returncode
 
     elif sys.platform in ["linux", "linux2"]:
-        cmd = "sudo apt update && sudo apt install -y gettext"
+        cmd = "sudo apt update; sudo apt install -y gettext"
     else:  # macOS
-        cmd = "brew update && brew install gettext"
+        cmd = "brew update; brew install gettext"
     return subprocess.run(cmd, shell=True).returncode
 
 
