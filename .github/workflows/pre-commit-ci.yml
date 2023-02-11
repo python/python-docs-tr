@@ -15,11 +15,22 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
+        id: setup_python
         with:
           python-version: "3.11"
+          cache: pip
+
+      - name: Install pre-commit
+        run: pip install --upgrade pre-commit
+
+      - name: Cache pre-commit tools
+        uses: actions/cache@v3
+        with:
+          key: pre-commit-${{ runner.os }}-${{ steps.setup_python.outputs.python-version}}-${{ hashFiles('.pre-commit-config.yaml') }}
+          path: ~/.cache/pre-commit
 
       - name: Run pre-commit
-        uses: pre-commit/action@v3.0.0
+        run: pre-commit run
 
       - name: Run pre-commit-ci
         uses: pre-commit-ci/lite-action@v1.0.1
