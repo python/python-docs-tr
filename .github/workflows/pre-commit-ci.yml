@@ -30,7 +30,7 @@ jobs:
           path: ~/.cache/pre-commit
 
       - name: Run pre-commit
-        run: pre-commit run
+        run: pre-commit run --all-files
 
       - name: Run pre-commit-ci
         uses: pre-commit-ci/lite-action@v1.0.1
