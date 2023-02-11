@@ -81,7 +81,7 @@ if __name__ == "__main__":
         print(f"Weighted progress: {weighted_progress}%\n")
 
         if args.completed:
-            print('Completed files:')
+            print("Completed files:")
             completed_files = [file for file in files if file[1] > min(args.threshold, 100)]
             for file, percentage in completed_files:
                 print(f"{file}: {percentage}%")
