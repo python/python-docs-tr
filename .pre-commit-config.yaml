@@ -24,12 +24,10 @@ repos:
         additional_dependencies: ["sphinx-lint"]
         files: \.po$
 
-      - id: wrap
-        name: Run powrap on .po files
-        entry: powrap
-        language: python
-        additional_dependencies: ["powrap"]
-        files: \.po$
+  - repo: https://github.com/AFPy/powrap
+    rev: v1.0.0
+    hooks:
+    -   id: powrap
 
   - repo: https://github.com/psf/black
     rev: 23.1.0
