@@ -11,7 +11,7 @@ on:
 jobs:
   pre-commit:
     name: "Pre-commit checks"
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
