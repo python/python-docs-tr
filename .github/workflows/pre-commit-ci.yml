@@ -20,8 +20,8 @@ jobs:
           python-version: "3.11"
           cache: pip
 
-      - name: Install pre-commit
-        run: pip install --upgrade pre-commit
+      - name: Install dependencies
+        run: pip install --upgrade -r requirements.txt
 
       - name: Cache pre-commit tools
         uses: actions/cache@v3
