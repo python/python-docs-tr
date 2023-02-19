@@ -210,10 +210,11 @@ msgstr ""
 #: whatsnew/2.0.rst:155
 msgid ""
 "In Python source code, Unicode strings are written as ``u\"string\"``.  "
-"Arbitrary Unicode characters can be written using a new escape sequence, ``"
-"\\uHHHH``, where *HHHH* is a 4-digit hexadecimal number from 0000 to FFFF.  "
-"The existing ``\\xHHHH`` escape sequence can also be used, and octal escapes "
-"can be used for characters up to U+01FF, which is represented by ``\\777``."
+"Arbitrary Unicode characters can be written using a new escape sequence, "
+"``\\uHHHH``, where *HHHH* is a 4-digit hexadecimal number from 0000 to "
+"FFFF.  The existing ``\\xHHHH`` escape sequence can also be used, and octal "
+"escapes can be used for characters up to U+01FF, which is represented by "
+"``\\777``."
 msgstr ""
 
 #: whatsnew/2.0.rst:161
@@ -844,8 +845,8 @@ msgstr ""
 msgid ""
 "The ``\\x`` escape in string literals now takes exactly 2 hex digits.  "
 "Previously it would consume all the hex digits following the 'x' and take "
-"the lowest 8 bits of the result, so ``\\x123456`` was equivalent to ``"
-"\\x56``."
+"the lowest 8 bits of the result, so ``\\x123456`` was equivalent to "
+"``\\x56``."
 msgstr ""
 
 #: whatsnew/2.0.rst:688
