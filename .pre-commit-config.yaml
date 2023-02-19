@@ -2,7 +2,7 @@ repos:
   - repo: local
     hooks:
       - id: style-print
-        name: style-print
+        name: ""
         entry: "style-print 'This is highly experimental, please report any issues: https://github.com/python/python-docs-tr/issues' 'rUBI{y}'"
         language: python
         additional_dependencies: ["style-print"]
@@ -16,6 +16,7 @@ repos:
         entry: python .pre-commit-scripts/install_gettext.py
         language: system
         verbose: true
+        pass_filenames: false
 
       - id: lint
         name: Run sphinx-lint on .po files
@@ -28,6 +29,8 @@ repos:
     rev: v1.0.0
     hooks:
       - id: powrap
+        name: Run powrap on .po files
+        pass_filenames: false
 
   - repo: https://github.com/psf/black
     rev: 23.1.0
