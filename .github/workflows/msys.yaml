@@ -24,4 +24,4 @@ jobs:
           msgcat --version
           msgcat -o library/stdtypes.po library/stdtypes.po
           msgcat -o library/stdtypes.po library/stdtypes.po
-          git diff
+          git diff library/stdtypes.po
