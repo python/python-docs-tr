@@ -1,0 +1,24 @@
+name: MSYS
+on:
+  workflow_dispatch:
+
+jobs:
+  msys2-msys:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: MSYS
+          update: true
+          install: git gettext
+
+      - name: Run msgcat
+        run: |
+          msgcat --version
+          msgcat -o library/stdtypes.po library/stdtypes.po
+          msgcat -o library/stdtypes.po library/stdtypes.po
+          git diff
