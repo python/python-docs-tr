@@ -1,0 +1,38 @@
+name: MSYS
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "line-length"
+
+jobs:
+  msys2-msys:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: MSYS
+          update: true
+          install: git gettext
+
+      - name: Run msgcat
+        run: |
+          msgcat --version
+          msgcat -o library/stdtypes.po library/stdtypes.po
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4.2.3
+        with:
+          token: ${{ secrets.BOT_PAT }}
+          commit-message: "Wrap all files on: ${{ github.ref_name }}"
+          branch: ${{ github.ref_name }}-wrapped
+          delete-branch: true
+          committer: python-docs-turkish <python.docs.tr@gmail.com>
+          author: python-docs-turkish <python.docs.tr@gmail.com>
+          title: "Wrap branch: ${{ github.ref_name }}"
+          body: "Wrapped all files on branch: ${{ github.ref_name }}."
+          labels: wrap
