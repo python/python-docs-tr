@@ -20,9 +20,7 @@ def run(*args: str | Path, **kwargs) -> subprocess.CompletedProcess:
     encoding="UTF-8".
     """
     return subprocess.run(list(args), encoding="UTF-8", check=True, **kwargs)
-
-
-def parse_args():
+def parse_args():  
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--cpython_repo",
