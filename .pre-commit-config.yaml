@@ -25,12 +25,18 @@ repos:
         additional_dependencies: ["sphinx-lint"]
         files: \.po$
 
-  - repo: https://github.com/egeakman/powrap
-    rev: v1.0.1
-    hooks:
       - id: powrap
         name: Run powrap on .po files
+        entry: python .pre-commit-scripts/run_powrap.py
+        language: system
         files: \.po$
+
+  # - repo: https://github.com/egeakman/powrap
+  #   rev: v1.0.2
+  #   hooks:
+  #     - id: powrap
+  #       name: Run powrap on .po files
+  #       files: \.po$
 
   - repo: https://github.com/psf/black
     rev: 23.1.0
