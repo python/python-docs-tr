@@ -22,7 +22,7 @@ jobs:
       - name: Run msgcat
         run: |
           msgcat --version
-          msgcat -o library/stdtypes.po library/stdtypes.po
+          msgcat -o library/stdtypes.po library/stdtypes.po -w 79
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4.2.3
