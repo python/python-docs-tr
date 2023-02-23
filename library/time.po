@@ -134,7 +134,8 @@ msgstr ""
 "diğer Unix karşılıklarından daha iyidir: zamanlar kayan noktalı sayılar "
 "olarak ifade edilirler, :func:`.time` mevcut en doğru zamanı döndürür "
 "(mevcut olduğu yerde Unix :c:func:`gettimeofday` kullanarak), ve :func:"
-"`sleep` sıfıra eşit olmayan kesirli zamanı kabul eder."
+"`sleep` sıfıra eşit olmayan kesirli zamanı kabul eder (Unix :c:func:`select`, "
+"mümkün olduğunda bunu uygulamak için kullanılır)."
 
 #: library/time.rst:78
 msgid ""
