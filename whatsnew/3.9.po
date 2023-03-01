@@ -1355,14 +1355,13 @@ msgid "time"
 msgstr "time"
 
 #: whatsnew/3.9.rst:687
-#, fuzzy
 msgid ""
 "On AIX, :func:`~time.thread_time` is now implemented with "
 "``thread_cputime()`` which has nanosecond resolution, rather than "
 "``clock_gettime(CLOCK_THREAD_CPUTIME_ID)`` which has a resolution of 10 "
 "milliseconds. (Contributed by Batuhan Taskaya in :issue:`40192`)"
 msgstr ""
-"AIX üzerinde :func:`~time.thread_time` artık 10 ms çözünürlüğe sahip "
+"AIX üzerinde :func:`~time.thread_time` artık 10 milisaniye çözünürlüğe sahip "
 "``clock_gettime(CLOCK_THREAD_CPUTIME_ID)`` yerine nanosaniye çözünürlüğe "
 "sahip ``thread_cputime()`` ile uygulanmaktadır. (Batuhan Taşkaya :sayısı:"
 "`40192`de katılmıştır)"
