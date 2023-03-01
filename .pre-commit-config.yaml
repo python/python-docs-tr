@@ -3,20 +3,11 @@ repos:
     hooks:
       - id: style-print
         name: ""
-        entry: "style-print 'This is highly experimental, please report any issues at: https://github.com/python/python-docs-tr/issues' 'rUBI{y}'"
+        entry: "style-print 'Please report any issues at: https://github.com/python/python-docs-tr/issues' 'rUBI{y}'"
         language: python
         additional_dependencies: ["style-print"]
         pass_filenames: false
         verbose: true
-
-  - repo: local
-    hooks:
-      - id: gettext
-        name: Install gettext
-        entry: python .pre-commit-scripts/install_gettext.py
-        language: system
-        verbose: true
-        pass_filenames: false
 
       - id: lint
         name: Run sphinx-lint on .po files
@@ -25,18 +16,11 @@ repos:
         additional_dependencies: ["sphinx-lint"]
         files: \.po$
 
-      - id: powrap
-        name: Run powrap on .po files
-        entry: python .pre-commit-scripts/run_powrap.py
-        language: system
-        files: \.po$
-
-  # - repo: https://github.com/egeakman/powrap
-  #   rev: v1.0.2
-  #   hooks:
-  #     - id: powrap
-  #       name: Run powrap on .po files
-  #       files: \.po$
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+        name: isort (python)
 
   - repo: https://github.com/psf/black
     rev: 23.1.0
