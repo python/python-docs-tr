@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-01 00:18+0000\n"
-"PO-Revision-Date: 2023-01-08 11:23+0300\n"
+"PO-Revision-Date: 2023-03-01 11:48+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -2444,7 +2444,6 @@ msgstr ""
 "`10945`.)"
 
 #: whatsnew/3.9.rst:1244
-#, fuzzy
 msgid ""
 "When building Python on macOS from source, ``_tkinter`` now links with non-"
 "system Tcl and Tk frameworks if they are installed in ``/Library/"
@@ -2459,9 +2458,8 @@ msgstr ""
 "sistem dışı Tcl ve Tk çerçeveleriyle bağlantı kuruyor. Bir macOS SDK, :"
 "option:`--enable-universalsdk` veya ``-isysroot`` kullanılarak açıkça "
 "yapılandırılmışsa, yalnızca SDK'nın kendisi aranır. Varsayılan davranış yine "
-"de :option:`--with-tcltk-includes` ve :option:`--with-tcltk-libs` ile "
-"geçersiz kılınabilir. ( :issue:`34956` içinde Ned Deily tarafından "
-"katılmıştır.)"
+"de ``--with-tcltk-includes`` ve ``--with-tcltk-libs`` ile geçersiz "
+"kılınabilir. ( :issue:`34956` içinde Ned Deily tarafından katılmıştır.)"
 
 #: whatsnew/3.9.rst:1253
 msgid ""

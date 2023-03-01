@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-01 00:18+0000\n"
-"PO-Revision-Date: 2023-02-01 18:21-0500\n"
+"PO-Revision-Date: 2023-03-01 11:37+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH\n"
 "Language: tr\n"
@@ -1347,18 +1347,16 @@ msgid "Added the *closure* parameter."
 msgstr "*closure* parametresi eklendi."
 
 #: library/functions.rst:624
-#, fuzzy
 msgid ""
 "Construct an iterator from those elements of *iterable* for which *function* "
 "is true.  *iterable* may be either a sequence, a container which supports "
 "iteration, or an iterator.  If *function* is ``None``, the identity function "
 "is assumed, that is, all elements of *iterable* that are false are removed."
 msgstr ""
-"*function* 'ın doğru döndürdüğü *iterable* ögelerinden bir yineleyici "
-"oluşturun. *iterable* bir dizi, yinelemeyi destekleyen bir konteyner veya "
-"bir yineleyici olabilir. Eğer *function* ``None`` ise, fonksiyon gelen "
-"parametreler üzerinde bir değişiklik yapmaz. *iterable* 'ın tüm yanlış "
-"elementleri silinir."
+"*fonksiyon*'un doğru olduğu *iterable* öğelerinden bir yineleyici oluşturun. "
+"*iterable* bir dizi, yinelemeyi destekleyen bir kapsayıcı veya bir "
+"yineleyici olabilir. *fonksiyon* ``None`` ise, kimlik işlevi varsayılır, "
+"yani *iterable* öğesinin yanlış olan tüm öğeleri kaldırılır."
 
 #: library/functions.rst:630
 msgid ""
@@ -1373,13 +1371,12 @@ msgstr ""
 "unutmayın."
 
 #: library/functions.rst:635
-#, fuzzy
 msgid ""
 "See :func:`itertools.filterfalse` for the complementary function that "
 "returns elements of *iterable* for which *function* is false."
 msgstr ""
-"*function* 'ın yanlış döndürdüğü *iterable* öğelerini döndüren tamamlayıcı "
-"fonksiyon için :func:`itertools.filterfalse` 'a bakınız.."
+"*fonksiyon*'un yanlış olduğu *iterable* öğelerini döndüren tamamlayıcı "
+"fonksiyon için :func:`itertools.filterfalse` konusuna bakın."
 
 #: library/functions.rst:645
 msgid "Return a floating point number constructed from a number or string *x*."
