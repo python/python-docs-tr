@@ -20,7 +20,7 @@ Bu proje gönüllü çevirmenler ve python-docs-tr ekibi iş birliğinde sürdü
 #### Rezervasyon
 
 Çeviri yapmak istediğiniz bir dosyaya rezervasyon oluşturmak için şu adımları izleyin:
-   
+
 1. `Issues > New Issue > Get started` düğmelerini takip ederek rezervasyon formunu açın.
 2. foo/bar.po taslağını, çalışmak istediğiniz dosyanın yolu ile değiştirin.
    - Örnegin, "library/functions.po üzerinde çalışmak istiyorum".
