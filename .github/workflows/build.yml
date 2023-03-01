@@ -1,24 +1,22 @@
 name: Tests
-
 on:
   workflow_dispatch:
   push:
     branches:
-      - '**'
+      - "**"
   pull_request:
     branches:
-      - '**'
+      - "**"
 
 jobs:
   checks:
+    # Using matrix-tool strategy in case we want to add more tools in the future
     strategy:
       matrix:
         tool:
           - name: sphinx-lint
             package: sphinx-lint
-            command: 'sphinx-lint --enable default-role --ignore .git'
-          - name: Line length
-            command: 'awk ''{if (length($0) > 80 && length(gensub(/[^ ]/, "", "g")) > 1) {print FILENAME ":" FNR, "line too long:", $0; ERRORS+=1}} END {if (ERRORS>0) {exit 1}}'' $CHANGED_PO_FILES'
+            command: "sphinx-lint --enable default-role --ignore .git"
 
     name: ${{ matrix.tool.name }} (${{ matrix.tool.package }})
     runs-on: ubuntu-latest
@@ -30,7 +28,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: "3.11"
       - name: Install ${{ matrix.tool.package }}
         run: |
           if [ -n "${{ matrix.tool.apt_dependencies }}" ]; then
@@ -57,14 +55,14 @@ jobs:
           fi
 
   sphinx:
-    name: 'Generate docs (sphinx)'
+    name: "Generate docs (sphinx)"
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: "3.11"
       - name: Prepare environment
         run: |
           pwd

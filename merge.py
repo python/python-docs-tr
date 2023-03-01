@@ -6,12 +6,13 @@ A CPython clone present in the venv/ directory is required if the --cpython_repo
 This script is run automatically by the GitHub Actions workflow every first day of the month.
 """
 
+import argparse
 import re
 import shutil
-import argparse
 import subprocess
 from pathlib import Path
 from subprocess import PIPE
+
 from tqdm import tqdm
 
 
