@@ -14,7 +14,6 @@ Bu proje gönüllü çevirmenler ve python-docs-tr ekibi iş birliğinde sürdü
 - Yüklü bir [Git](https://git-scm.com/) istemcisi
 - ``.po`` dosyalarını düzenlemek için [poedit](https://poedit.net/) gibi bir program
 - Yüklü bir Python ve ``pip`` versiyonu (en son stabil olan versiyon önerilir)
-- ``gettext`` araçları ([yükleme adımları](wiki/gettext.md))
 
 ### Adımlar
 
