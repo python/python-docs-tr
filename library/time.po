@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-03-01 00:18+0000\n"
 "PO-Revision-Date: 2023-02-23 01:57+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -134,8 +134,8 @@ msgstr ""
 "diğer Unix karşılıklarından daha iyidir: zamanlar kayan noktalı sayılar "
 "olarak ifade edilirler, :func:`.time` mevcut en doğru zamanı döndürür "
 "(mevcut olduğu yerde Unix :c:func:`gettimeofday` kullanarak), ve :func:"
-"`sleep` sıfıra eşit olmayan kesirli zamanı kabul eder (Unix :c:func:`select`, "
-"mümkün olduğunda bunu uygulamak için kullanılır)."
+"`sleep` sıfıra eşit olmayan kesirli zamanı kabul eder (Unix :c:func:"
+"`select`, mümkün olduğunda bunu uygulamak için kullanılır)."
 
 #: library/time.rst:78
 msgid ""
@@ -279,7 +279,7 @@ msgstr ""
 "Geçersiz veya süresi geçmiş bir *thread_id* girişi yapmak, bölümleme hatası "
 "gibi, tanımlanmamış bir davranış ortaya koyabilir."
 
-#: library/time.rst:None
+#: library/time.rst:147
 msgid ":ref:`Availability <availability>`: Unix"
 msgstr ":ref:`Availability <availability>`: Unix"
 
@@ -299,8 +299,8 @@ msgstr ""
 "Belirtilen *clk_id* saatinin netliğini (kesinliğini) döndür. *clk_id*'e "
 "uygun değerlerin bir listesi için :ref:`time-clock-id-constants`'a bakınız."
 
-#: library/time.rst:173 library/time.rst:195 library/time.rst:681
-#: library/time.rst:817 library/time.rst:880
+#: library/time.rst:172 library/time.rst:194 library/time.rst:680
+#: library/time.rst:816 library/time.rst:879
 msgid ":ref:`Availability <availability>`: Unix."
 msgstr ":ref:`Availability <availability>`: Unix."
 
@@ -1311,7 +1311,7 @@ msgstr ""
 ":class:`float` türünün neden olduğu kesinlik kaybını önlemek için :func:"
 "`thread_time_ns` kullanın."
 
-#: library/time.rst:None
+#: library/time.rst:656
 msgid ":ref:`Availability <availability>`: Linux, Unix, Windows."
 msgstr ":ref:`Availability <availability>`: Linux, Unix, Windows."
 
@@ -1474,8 +1474,9 @@ msgstr ""
 "veritabanını kullanmak daha uygundur. Bunu yapmak için, :envvar:`TZ` çevre "
 "değişkenini gerekli saat dilimi veri dosyasının konumuna ayarlayınız, "
 "sistemlerin 'zoneinfo' saat dilimi veritabanının köküne göre, genellikle :"
-"file:`/usr/share/zoneinfo` konumunda bulunur. Örnek olarak, ``'US/Eastern'``, "
-"``'Australia/Melbourne'``, ``'Egypt'`` veya  ``'Europe/Amsterdam'``. ::"
+"file:`/usr/share/zoneinfo` konumunda bulunur. Örnek olarak, ``'US/"
+"Eastern'``, ``'Australia/Melbourne'``, ``'Egypt'`` veya  ``'Europe/"
+"Amsterdam'``. ::"
 
 #: library/time.rst:761
 msgid "Clock ID Constants"
@@ -1510,7 +1511,7 @@ msgstr ""
 "olabilir.) uğraşmadan askıya almanın farkında olan monoton  saat  'ler "
 "yaratmasını sağlar."
 
-#: library/time.rst:777
+#: library/time.rst:776
 msgid ":ref:`Availability <availability>`: Linux >= 2.6.39."
 msgstr ":ref:`Availability <availability>`: Linux >= 2.6.39."
 
@@ -1524,7 +1525,7 @@ msgstr ""
 "yakın kesinlik sağlayabilen bir ``CLOCK_HIGHRES`` zamanlayıcıya sahiptir. "
 "``CLOCK_HIGHRES`` ayarlanamaz, yüksek kesinlikli saattir."
 
-#: library/time.rst:788
+#: library/time.rst:787
 msgid ":ref:`Availability <availability>`: Solaris."
 msgstr ":ref:`Availability <availability>`: Solaris."
 
@@ -1544,7 +1545,7 @@ msgstr ""
 ":data:`CLOCK_MONOTONIC` ile benzer, ama NTP ayarlamalarına tabii olmayan "
 "donanım bazlı ham zamana erişim sağlar."
 
-#: library/time.rst:808
+#: library/time.rst:807
 msgid ":ref:`Availability <availability>`: Linux >= 2.6.28, macOS >= 10.12."
 msgstr ":ref:`Availability <availability>`: Linux >= 2.6.28, macOS >= 10.12."
 
@@ -1552,7 +1553,7 @@ msgstr ":ref:`Availability <availability>`: Linux >= 2.6.28, macOS >= 10.12."
 msgid "High-resolution per-process timer from the CPU."
 msgstr "CPU'dan yüksek kesinlikli işlem başına zamanlayıcısı."
 
-#: library/time.rst:826
+#: library/time.rst:825
 msgid ":ref:`Availability <availability>`: FreeBSD, NetBSD >= 7, OpenBSD."
 msgstr ":ref:`Availability <availability>`: FreeBSD, NetBSD >= 7, OpenBSD."
 
@@ -1573,7 +1574,7 @@ msgstr ""
 "tablosuna sahip olması gerekir.  PTP veya NTP yazılımı artık saniye "
 "tablosunu sürdürebilir."
 
-#: library/time.rst:837
+#: library/time.rst:836
 msgid ":ref:`Availability <availability>`: Linux."
 msgstr ":ref:`Availability <availability>`: Linux."
 
@@ -1589,7 +1590,7 @@ msgstr ""
 "Mutlak değeri sistemin çalıştığı ve askıya alınmadığı süre olan süre, hem "
 "mutlak hem de aralıklı olarak doğru çalışma süresi ölçümü sağlar."
 
-#: library/time.rst:856
+#: library/time.rst:855
 msgid ":ref:`Availability <availability>`: FreeBSD, OpenBSD >= 5.5."
 msgstr ":ref:`Availability <availability>`: FreeBSD, OpenBSD >= 5.5."
 
@@ -1603,7 +1604,7 @@ msgstr ""
 "ediyor, sıklıktan ve zaman ayarlamalarından etkilenmiyor ve sistem "
 "uykudayken artmıyor."
 
-#: library/time.rst:867
+#: library/time.rst:866
 msgid ":ref:`Availability <availability>`: macOS >= 10.12."
 msgstr ":ref:`Availability <availability>`: macOS >= 10.12."
 

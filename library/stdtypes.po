@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 22:19+0000\n"
+"POT-Creation-Date: 2023-03-01 00:18+0000\n"
 "PO-Revision-Date: 2023-02-01 18:55-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -145,8 +145,9 @@ msgid "``x or y``"
 msgstr "``x or y``"
 
 #: library/stdtypes.rst:87
-msgid "if *x* is false, then *y*, else *x*"
-msgstr "*x* yanlışsa, *y*, aksi halde *x*"
+#, fuzzy
+msgid "if *x* is true, then *x*, else *y*"
+msgstr "*x* yanlışsa, *x*, aksi halde *y*"
 
 #: library/stdtypes.rst:285 library/stdtypes.rst:926 library/stdtypes.rst:2377
 #: library/stdtypes.rst:3595
@@ -4838,15 +4839,15 @@ msgstr ""
 
 #: library/stdtypes.rst:3768
 msgid ""
-"One-dimensional memoryviews of hashable (read-only) types with formats 'B', "
-"'b' or 'c' are also hashable. The hash is defined as ``hash(m) == hash(m."
-"tobytes())``::"
+"One-dimensional memoryviews of :term:`hashable` (read-only) types with "
+"formats 'B', 'b' or 'c' are also hashable. The hash is defined as ``hash(m) "
+"== hash(m.tobytes())``::"
 msgstr ""
 
 #: library/stdtypes.rst:3780
 msgid ""
 "One-dimensional memoryviews can now be sliced. One-dimensional memoryviews "
-"with formats 'B', 'b' or 'c' are now hashable."
+"with formats 'B', 'b' or 'c' are now :term:`hashable`."
 msgstr ""
 
 #: library/stdtypes.rst:3784
@@ -5799,12 +5800,13 @@ msgstr ""
 
 #: library/stdtypes.rst:4702
 msgid ""
-"Keys views are set-like since their entries are unique and hashable.  If all "
-"values are hashable, so that ``(key, value)`` pairs are unique and hashable, "
-"then the items view is also set-like.  (Values views are not treated as set-"
-"like since the entries are generally not unique.)  For set-like views, all "
-"of the operations defined for the abstract base class :class:`collections."
-"abc.Set` are available (for example, ``==``, ``<``, or ``^``)."
+"Keys views are set-like since their entries are unique and :term:"
+"`hashable`.  If all values are hashable, so that ``(key, value)`` pairs are "
+"unique and hashable, then the items view is also set-like.  (Values views "
+"are not treated as set-like since the entries are generally not unique.)  "
+"For set-like views, all of the operations defined for the abstract base "
+"class :class:`collections.abc.Set` are available (for example, ``==``, "
+"``<``, or ``^``)."
 msgstr ""
 
 #: library/stdtypes.rst:4709
@@ -7106,6 +7108,9 @@ msgid ""
 msgstr ""
 "Bu nedenle, yalnızca bir tuple(demet) biçimlendirmek için, tek öğesi "
 "biçimlendirilecek tuple(demet) olan tek bir tuple(demet) sağlamanız gerekir."
+
+#~ msgid "if *x* is false, then *y*, else *x*"
+#~ msgstr "*x* yanlışsa, *y*, aksi halde *x*"
 
 #~ msgid ""
 #~ "By default, the *errors* argument is not checked for best performances, "
