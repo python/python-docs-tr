@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 22:19+0000\n"
+"POT-Creation-Date: 2023-03-01 00:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -282,17 +282,17 @@ msgid ""
 "Return the filename corresponding to the controlling terminal of the process."
 msgstr ""
 
-#: library/os.rst:353 library/os.rst:385 library/os.rst:429 library/os.rst:476
-#: library/os.rst:497 library/os.rst:530 library/os.rst:570 library/os.rst:587
-#: library/os.rst:607 library/os.rst:633 library/os.rst:650 library/os.rst:665
-#: library/os.rst:681 library/os.rst:1191 library/os.rst:1454
-#: library/os.rst:1498 library/os.rst:1951 library/os.rst:2208
+#: library/os.rst:353 library/os.rst:384 library/os.rst:429 library/os.rst:475
+#: library/os.rst:496 library/os.rst:529 library/os.rst:570 library/os.rst:586
+#: library/os.rst:607 library/os.rst:633 library/os.rst:649 library/os.rst:665
+#: library/os.rst:681 library/os.rst:1190 library/os.rst:1453
+#: library/os.rst:1497 library/os.rst:1950 library/os.rst:2207
 #: library/os.rst:3757 library/os.rst:3771 library/os.rst:3785
 #: library/os.rst:3799 library/os.rst:3815 library/os.rst:3829
 #: library/os.rst:3846 library/os.rst:3861 library/os.rst:3889
-#: library/os.rst:3946 library/os.rst:3974 library/os.rst:4151
-#: library/os.rst:4422 library/os.rst:4493 library/os.rst:4525
-#: library/os.rst:4549 library/os.rst:4570 library/os.rst:4594
+#: library/os.rst:3946 library/os.rst:3974 library/os.rst:4150
+#: library/os.rst:4421 library/os.rst:4493 library/os.rst:4525
+#: library/os.rst:4548 library/os.rst:4570 library/os.rst:4593
 #: library/os.rst:4655 library/os.rst:4674 library/os.rst:4692
 #: library/os.rst:4710
 msgid ":ref:`Availability <availability>`: Unix, not Emscripten, not WASI."
@@ -442,8 +442,9 @@ msgid ""
 "like to use a different encoding."
 msgstr ""
 
-#: library/os.rst:975 library/os.rst:1203 library/os.rst:2035
-#: library/os.rst:3135 library/os.rst:4238 library/os.rst:4367
+#: library/os.rst:975 library/os.rst:1202 library/os.rst:2034
+#: library/os.rst:3097 library/os.rst:3749 library/os.rst:4249
+#: library/os.rst:4366
 msgid ":ref:`Availability <availability>`: Unix, Windows."
 msgstr ""
 
@@ -462,11 +463,12 @@ msgid ""
 "``True``."
 msgstr ""
 
-#: library/os.rst:734 library/os.rst:942 library/os.rst:1024
-#: library/os.rst:1242 library/os.rst:1270 library/os.rst:1549
-#: library/os.rst:1611 library/os.rst:2006 library/os.rst:2274
-#: library/os.rst:2964 library/os.rst:3354 library/os.rst:4865
-#: library/os.rst:4896 library/os.rst:4906
+#: library/os.rst:371 library/os.rst:733 library/os.rst:908 library/os.rst:942
+#: library/os.rst:999 library/os.rst:1035 library/os.rst:1256
+#: library/os.rst:1338 library/os.rst:1548 library/os.rst:1610
+#: library/os.rst:1964 library/os.rst:2018 library/os.rst:2285
+#: library/os.rst:3120 library/os.rst:4856 library/os.rst:4886
+#: library/os.rst:4905
 msgid ":ref:`Availability <availability>`: Unix."
 msgstr ""
 
@@ -537,8 +539,8 @@ msgid ""
 "getpwuid(os.getuid())[0]`` to get the login name of the current real user id."
 msgstr ""
 
-#: library/os.rst:458 library/os.rst:3931 library/os.rst:4460
-#: library/os.rst:4629
+#: library/os.rst:457 library/os.rst:3930 library/os.rst:4343
+#: library/os.rst:4628
 msgid ""
 ":ref:`Availability <availability>`: Unix, Windows, not Emscripten, not WASI."
 msgstr ""
@@ -902,7 +904,7 @@ msgid ""
 "amount requested."
 msgstr ""
 
-#: library/os.rst:838
+#: library/os.rst:837
 msgid ":ref:`Availability <availability>`: Linux >= 4.5 with glibc >= 2.27."
 msgstr ""
 
@@ -934,7 +936,7 @@ msgid ""
 "stderr), the new file descriptor is :ref:`inheritable <fd_inheritance>`."
 msgstr ""
 
-#: library/os.rst:877
+#: library/os.rst:876
 msgid ":ref:`Availability <availability>`: not WASI."
 msgstr ""
 
@@ -1275,7 +1277,7 @@ msgid ""
 "starting from *offset* and continuing for *len* bytes."
 msgstr ""
 
-#: library/os.rst:1227
+#: library/os.rst:1226
 msgid ":ref:`Availability <availability>`: Unix, not Emscripten."
 msgstr ""
 
@@ -1346,7 +1348,7 @@ msgstr ""
 msgid "Combine the functionality of :func:`os.readv` and :func:`os.pread`."
 msgstr ""
 
-#: library/os.rst:-1
+#: library/os.rst:1365
 msgid ""
 ":ref:`Availability <availability>`: Linux >= 2.6.30, FreeBSD >= 6.0, OpenBSD "
 ">= 2.7, AIX >= 7.1."
@@ -1370,7 +1372,7 @@ msgid ""
 "EAGAIN`."
 msgstr ""
 
-#: library/os.rst:1313
+#: library/os.rst:1312
 msgid ":ref:`Availability <availability>`: Linux >= 4.14."
 msgstr ""
 
@@ -1386,7 +1388,7 @@ msgid ""
 "using the :data:`O_DIRECT` flag."
 msgstr ""
 
-#: library/os.rst:1327
+#: library/os.rst:1326
 msgid ":ref:`Availability <availability>`: Linux >= 4.6."
 msgstr ""
 
@@ -1435,7 +1437,7 @@ msgid ""
 "This flag effect applies only to the data range written by the system call."
 msgstr ""
 
-#: library/os.rst:1388
+#: library/os.rst:1387
 msgid ":ref:`Availability <availability>`: Linux >= 4.7."
 msgstr ""
 
@@ -1455,7 +1457,7 @@ msgid ""
 "*offset* is updated."
 msgstr ""
 
-#: library/os.rst:1402
+#: library/os.rst:1401
 msgid ":ref:`Availability <availability>`: Linux >= 4.16."
 msgstr ""
 
@@ -1571,7 +1573,7 @@ msgid ""
 "the pipe."
 msgstr ""
 
-#: library/os.rst:1525
+#: library/os.rst:1524
 msgid ":ref:`Availability <availability>`: Linux >= 2.6.17 with glibc >= 2.5"
 msgstr ""
 
@@ -1720,7 +1722,7 @@ msgstr ""
 msgid "Get the \"inheritable\" flag of the specified handle (a boolean)."
 msgstr ""
 
-#: library/os.rst:1695 library/os.rst:4261 library/os.rst:4307
+#: library/os.rst:1695 library/os.rst:4261 library/os.rst:4306
 msgid ":ref:`Availability <availability>`: Windows."
 msgstr ""
 
@@ -3572,7 +3574,7 @@ msgid ""
 "side effects."
 msgstr ""
 
-#: library/os.rst:3379
+#: library/os.rst:3378
 msgid ":ref:`Availability <availability>`: Linux >= 3.17 with glibc >= 2.27."
 msgstr ""
 
@@ -3580,7 +3582,7 @@ msgstr ""
 msgid "These flags can be passed to :func:`memfd_create`."
 msgstr ""
 
-#: library/os.rst:-1
+#: library/os.rst:3403
 msgid ":ref:`Availability <availability>`: Linux >= 3.17 with glibc >= 2.27"
 msgstr ""
 
@@ -3637,7 +3639,7 @@ msgid ""
 "`64`\\ -\\ 2."
 msgstr ""
 
-#: library/os.rst:3458
+#: library/os.rst:3457
 msgid ":ref:`Availability <availability>`: Linux >= 2.6.27 with glibc >= 2.8"
 msgstr ""
 
@@ -3647,7 +3649,7 @@ msgid ""
 "unsigned int. The function does not verify that *fd* is an :func:`eventfd`."
 msgstr ""
 
-#: library/os.rst:3476 library/os.rst:3493
+#: library/os.rst:3475 library/os.rst:3492
 msgid ":ref:`Availability <availability>`: Linux >= 2.6.27"
 msgstr ""
 
@@ -3672,7 +3674,7 @@ msgid ""
 "descriptor. On read the internal counter is decremented by one."
 msgstr ""
 
-#: library/os.rst:3502
+#: library/os.rst:3501
 msgid ":ref:`Availability <availability>`: Linux >= 2.6.30"
 msgstr ""
 
@@ -4179,7 +4181,7 @@ msgid ""
 "subprocesses."
 msgstr ""
 
-#: library/os.rst:4007
+#: library/os.rst:4006
 msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
 msgstr ""
 
@@ -4330,7 +4332,7 @@ msgid ""
 "environment variable (in the same way as for ``execvp(3)``)."
 msgstr ""
 
-#: library/os.rst:-1
+#: library/os.rst:4117
 msgid ":ref:`Availability <availability>`: POSIX, not Emscripten, not WASI."
 msgstr ""
 
@@ -5350,7 +5352,7 @@ msgid ""
 "pages/man2/getrandom.2.html>`_."
 msgstr ""
 
-#: library/os.rst:5029
+#: library/os.rst:5028
 msgid ":ref:`Availability <availability>`: Linux >= 3.17."
 msgstr ""
 
