@@ -1,10 +1,11 @@
 import os
 import re
 import sys
+from argparse import ArgumentParser
+from typing import Dict, Tuple
+
 import polib
 from deep_translator import DeeplTranslator, GoogleTranslator
-from typing import Dict, Tuple
-from argparse import ArgumentParser
 
 parser = ArgumentParser()
 parser.add_argument("filename", help="File to translate")

@@ -1,5 +1,5 @@
 # Python Documentation Turkish Translation
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
 #, fuzzy
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-03-01 00:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -439,17 +439,17 @@ msgstr ""
 
 #: c-api/module.rst:391
 msgid ""
-"Create a new module object, given the definition in *module* and the "
-"ModuleSpec *spec*.  This behaves like :c:func:`PyModule_FromDefAndSpec2` "
-"with *module_api_version* set to :const:`PYTHON_API_VERSION`."
+"Create a new module object, given the definition in *def* and the ModuleSpec "
+"*spec*.  This behaves like :c:func:`PyModule_FromDefAndSpec2` with "
+"*module_api_version* set to :const:`PYTHON_API_VERSION`."
 msgstr ""
 
 #: c-api/module.rst:399
 msgid ""
-"Create a new module object, given the definition in *module* and the "
-"ModuleSpec *spec*, assuming the API version *module_api_version*. If that "
-"version does not match the version of the running interpreter, a :exc:"
-"`RuntimeWarning` is emitted."
+"Create a new module object, given the definition in *def* and the ModuleSpec "
+"*spec*, assuming the API version *module_api_version*. If that version does "
+"not match the version of the running interpreter, a :exc:`RuntimeWarning` is "
+"emitted."
 msgstr ""
 
 #: c-api/module.rst:406

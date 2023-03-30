@@ -1,11 +1,11 @@
-import collections
-import os
 import argparse
+import collections
 import contextlib
 import glob
-import polib
+import os
 from pprint import pprint
 
+import polib
 
 parser = argparse.ArgumentParser()
 parser.add_argument("subject", nargs="?", default=None, help="Subject to check (file or directory)")

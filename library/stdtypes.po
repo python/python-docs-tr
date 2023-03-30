@@ -1,12 +1,12 @@
 # Python Documentation Turkish Translation
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 22:19+0000\n"
+"POT-Creation-Date: 2023-03-01 00:18+0000\n"
 "PO-Revision-Date: 2023-02-01 18:55-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -145,8 +145,8 @@ msgid "``x or y``"
 msgstr "``x or y``"
 
 #: library/stdtypes.rst:87
-msgid "if *x* is false, then *y*, else *x*"
-msgstr "*x* yanlışsa, *y*, aksi halde *x*"
+msgid "if *x* is true, then *x*, else *y*"
+msgstr "*x* doğruysa, *x*, aksi halde *y*"
 
 #: library/stdtypes.rst:285 library/stdtypes.rst:926 library/stdtypes.rst:2377
 #: library/stdtypes.rst:3595
@@ -896,7 +896,7 @@ msgid ""
 "of the integer. This is also known as the population count. Example::"
 msgstr ""
 "Tam sayının mutlak değerinin ikili gösterimindeki birlerin sayısını "
-"döndürün. Buna nüfus sayımı da denir. Örneğin::"
+"döndürür. Buna nüfus sayımı da denir. Örneğin::"
 
 #: library/stdtypes.rst:505
 msgid "Return an array of bytes representing an integer."
@@ -1213,7 +1213,7 @@ msgid ""
 "lies in ``range(-2**(sys.hash_info.width - 1), 2**(sys.hash_info.width - "
 "1))``.  Again, if the result is ``-1``, it's replaced with ``-2``."
 msgstr ""
-"Bir :class:`complex` sayı ``z`` için, gerçek ve sanal parçaların ```hash`` "
+"Bir :class:`complex` sayı ``z`` için, gerçek ve sanal parçaların hash "
 "değerleri, ``hash(z.real) + sys.hash_info.imag * hash(z.imag)`` , ``reduced "
 "modulo`` ``2**sys.hash_info.width`` hesaplanarak birleştirilir, böylece "
 "``range(-2**(sys.hash_info.width - 1), 2**(sys.hash_info.width - 1))`` 'de "
@@ -1567,7 +1567,7 @@ msgid ""
 "not copied; they are referenced multiple times.  This often haunts new "
 "Python programmers; consider::"
 msgstr ""
-"*n* 'nin ```0`` 'dan küçük değerleri ``0`` olarak değerlendirilir (bu, *s* "
+"*n* 'nin ``0`` 'dan küçük değerleri ``0`` olarak değerlendirilir (bu, *s* "
 "ile aynı türde boş bir dizi verir). *s* dizisindeki öğeler kopyalanmaz, "
 "birden çok kez referans gösterilir (kullanılır).  Bu, çoğunlukla yeni Python "
 "programcılarına musallat olur; şunu düşünün::"
@@ -1610,7 +1610,7 @@ msgid ""
 "*j* is omitted or ``None``, use ``len(s)``.  If *i* is greater than or equal "
 "to *j*, the slice is empty."
 msgstr ""
-"*s* 'nin *i* ile *j* arasındaki dilimi, ```i <= k < j`` olacak şekilde *k* "
+"*s* 'nin *i* ile *j* arasındaki dilimi, ``i <= k < j`` olacak şekilde *k* "
 "indeksine sahip öğelerin dizisi olarak tanımlanır.  *i* veya *j* ``len(s)`` "
 "'den büyükse,``len(s)`` kullanın.  *i* atlanırsa veya ``None`` ise, ``0`` "
 "kullanın.  *j* atlanırsa veya ``None`` ise, ``len(s)`` kullanın. *i*, *j* "
@@ -1941,7 +1941,7 @@ msgid ""
 msgstr ""
 "*n* değeri bir tam sayıdır veya :meth:`~object.__index__` uygulayan bir "
 "nesnedir.  *n* 'nin sıfır ve negatif değerleri diziyi temizler.  Dizideki "
-"öğeler kopyalanmaz; :ref:`typesseq-common` altında ```s * n`` için "
+"öğeler kopyalanmaz; :ref:`typesseq-common` altında ``s * n`` için "
 "açıklandığı gibi, bunlara birden çok kez başvurulur."
 
 #: library/stdtypes.rst:1213
@@ -2699,8 +2699,8 @@ msgid ""
 "With optional *start*, test beginning at that position.  With optional "
 "*end*, stop comparing at that position."
 msgstr ""
-"Dize belirtilen *suffix* ile bitiyorsa ``True``, aksi takdirde ```False`` "
-"döndürün. *suffix* ayrıca aranacak bir son ek grubu da olabilir. İsteğe "
+"Dize belirtilen *suffix* ile bitiyorsa ``True``, aksi takdirde ``False`` "
+"döndürür. *suffix* ayrıca aranacak bir son ek grubu da olabilir. İsteğe "
 "bağlı *start* ile, o konumdan başlayarak test edin. İsteğe bağlı *end* ile, "
 "o konumda karşılaştırmayı bırakın."
 
@@ -2720,7 +2720,7 @@ msgid ""
 "printed."
 msgstr ""
 "Geçerli sütuna ve verilen tab boyutuna bağlı olarak, tüm tab karakterlerinin "
-"bir veya daha fazla boşlukla değiştirildiği dizenin bir kopyasını döndürün.  "
+"bir veya daha fazla boşlukla değiştirildiği dizenin bir kopyasını döndürür.  "
 "Tab konumları her *tab boyutu* karakterinde oluşur (varsayılan 8'dir, 0, 8, "
 "16 ve benzeri sütunlarda tab konumları verilir).  Dizeyi genişletmek için "
 "mevcut sütun sıfıra ayarlanır ve dize karakter karakter incelenir. Karakter "
@@ -4838,15 +4838,15 @@ msgstr ""
 
 #: library/stdtypes.rst:3768
 msgid ""
-"One-dimensional memoryviews of hashable (read-only) types with formats 'B', "
-"'b' or 'c' are also hashable. The hash is defined as ``hash(m) == hash(m."
-"tobytes())``::"
+"One-dimensional memoryviews of :term:`hashable` (read-only) types with "
+"formats 'B', 'b' or 'c' are also hashable. The hash is defined as ``hash(m) "
+"== hash(m.tobytes())``::"
 msgstr ""
 
 #: library/stdtypes.rst:3780
 msgid ""
 "One-dimensional memoryviews can now be sliced. One-dimensional memoryviews "
-"with formats 'B', 'b' or 'c' are now hashable."
+"with formats 'B', 'b' or 'c' are now :term:`hashable`."
 msgstr ""
 
 #: library/stdtypes.rst:3784
@@ -5799,12 +5799,13 @@ msgstr ""
 
 #: library/stdtypes.rst:4702
 msgid ""
-"Keys views are set-like since their entries are unique and hashable.  If all "
-"values are hashable, so that ``(key, value)`` pairs are unique and hashable, "
-"then the items view is also set-like.  (Values views are not treated as set-"
-"like since the entries are generally not unique.)  For set-like views, all "
-"of the operations defined for the abstract base class :class:`collections."
-"abc.Set` are available (for example, ``==``, ``<``, or ``^``)."
+"Keys views are set-like since their entries are unique and :term:"
+"`hashable`.  If all values are hashable, so that ``(key, value)`` pairs are "
+"unique and hashable, then the items view is also set-like.  (Values views "
+"are not treated as set-like since the entries are generally not unique.)  "
+"For set-like views, all of the operations defined for the abstract base "
+"class :class:`collections.abc.Set` are available (for example, ``==``, "
+"``<``, or ``^``)."
 msgstr ""
 
 #: library/stdtypes.rst:4709
@@ -7106,6 +7107,9 @@ msgid ""
 msgstr ""
 "Bu nedenle, yalnızca bir tuple(demet) biçimlendirmek için, tek öğesi "
 "biçimlendirilecek tuple(demet) olan tek bir tuple(demet) sağlamanız gerekir."
+
+#~ msgid "if *x* is false, then *y*, else *x*"
+#~ msgstr "*x* yanlışsa, *y*, aksi halde *x*"
 
 #~ msgid ""
 #~ "By default, the *errors* argument is not checked for best performances, "
