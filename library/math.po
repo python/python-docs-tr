@@ -2,29 +2,31 @@
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2023-03-31 00:00+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: library/math.rst:2
 msgid ":mod:`math` --- Mathematical functions"
-msgstr ""
+msgstr ":mod:`math` --- Matematiksel fonksiyonlar"
 
 #: library/math.rst:13
 msgid ""
 "This module provides access to the mathematical functions defined by the C "
 "standard."
 msgstr ""
+"Bu modül, C standardı tarafından tanımlanan matematiksel fonksiyonlara "
+"erişim sağlar."
 
 #: library/math.rst:16
 msgid ""
@@ -37,16 +39,26 @@ msgid ""
 "of the unexpected complex number used as a parameter, so that the programmer "
 "can determine how and why it was generated in the first place."
 msgstr ""
+"Bu fonksiyonlar karmaşık sayılarla kullanılamaz; karmaşık sayılar için "
+"desteğe ihtiyacınız varsa :mod:`cmath` modülündeki aynı isimli fonksiyonları "
+"kullanın. Karmaşık sayıları destekleyen ve desteklemeyen fonksiyonlar "
+"arasındaki ayrım, çoğu kullanıcının karmaşık sayıları anlamak için gereken "
+"kadar matematik öğrenmek istememesi nedeniyle yapılmıştır. Karmaşık bir "
+"sonuç yerine bir istisna almak, parametre olarak kullanılan beklenmedik "
+"karmaşık sayının daha erken tespit edilmesini sağlar, böylece programcı ilk "
+"etapta nasıl ve neden üretildiğini belirleyebilir."
 
 #: library/math.rst:25
 msgid ""
 "The following functions are provided by this module.  Except when explicitly "
 "noted otherwise, all return values are floats."
 msgstr ""
+"Aşağıdaki fonksiyonlar bu modül tarafından sağlanır. Aksi açıkça "
+"belirtilmedikçe, tüm dönüş değerleri floattır."
 
 #: library/math.rst:30
 msgid "Number-theoretic and representation functions"
-msgstr ""
+msgstr "Sayı teorisi ve temsil fonksiyonları"
 
 #: library/math.rst:34
 msgid ""
@@ -54,30 +66,41 @@ msgid ""
 "*x*. If *x* is not a float, delegates to :meth:`x.__ceil__ <object."
 "__ceil__>`, which should return an :class:`~numbers.Integral` value."
 msgstr ""
+"*x*'in tavanını, yani *x*'ten büyük veya ona eşit en küçük tamsayıyı "
+"döndürür. Eğer *x* bir float değilse, bir :class:`~numbers.Integral` değeri "
+"döndürmesi gereken :meth:`x.__ceil__ <object.__ceil__>`'e delege eder."
 
 #: library/math.rst:41
 msgid ""
 "Return the number of ways to choose *k* items from *n* items without "
 "repetition and without order."
 msgstr ""
+"Tekrarlama ve sıralama olmaksızın *n* öğe arasından *k* öğeyi seçmenin "
+"yollarının sayısını döndürür."
 
 #: library/math.rst:44
 msgid ""
 "Evaluates to ``n! / (k! * (n - k)!)`` when ``k <= n`` and evaluates to zero "
 "when ``k > n``."
 msgstr ""
+"``n! / (k! * (n - k)!)`` değerini ``k <= n`` olduğunda verir ve ``k > n`` "
+"olduğunda sıfır olarak değerlendirir."
 
 #: library/math.rst:47
 msgid ""
 "Also called the binomial coefficient because it is equivalent to the "
 "coefficient of k-th term in polynomial expansion of ``(1 + x)ⁿ``."
 msgstr ""
+"Binom katsayısı olarak da adlandırılır. Çünkü ``(1 + x)ⁿ`` polinom "
+"açılımındaki k. terimin katsayısına eşittir."
 
 #: library/math.rst:260
 msgid ""
 "Raises :exc:`TypeError` if either of the arguments are not integers. Raises :"
 "exc:`ValueError` if either of the arguments are negative."
 msgstr ""
+"Herhangi bir argümanın tamsayı olmaması durumunda :exc:TypeError fırlatır. "
+"Herhangi bir argümanın negatif olması durumunda :exc:ValueError fırlatır."
 
 #: library/math.rst:59
 msgid ""
@@ -85,20 +108,27 @@ msgid ""
 "*y*.  On platforms that support signed zeros, ``copysign(1.0, -0.0)`` "
 "returns *-1.0*."
 msgstr ""
+"Büyüklüğü (mutlak değeri) *x* olan ancak işareti *y* olan bir ondalıklı sayı "
+"döndürür.  İşaretli sıfırları destekleyen platformlarda, ``copysign(1.0, "
+"-0.0)`` *-1.0* döndürür."
 
 #: library/math.rst:66
 msgid "Return the absolute value of *x*."
-msgstr ""
+msgstr "*x*'in mutlak değerini döndürür."
 
 #: library/math.rst:71
 msgid ""
 "Return *n* factorial as an integer.  Raises :exc:`ValueError` if *n* is not "
 "integral or is negative."
 msgstr ""
+"*n* faktöriyeli tamsayı olarak döndürür. *n* tamsayı değil veya negatifse :"
+"exc:ValueError fırlatır."
 
 #: library/math.rst:74
 msgid "Accepting floats with integral values (like ``5.0``) is deprecated."
 msgstr ""
+"Tam sayı değerlere sahip ondalıklı değerlerin kabul edilmesi (``5.0`` gibi) "
+"kullanımdan kaldırılmıştır."
 
 #: library/math.rst:80
 msgid ""
@@ -106,6 +136,10 @@ msgid ""
 "*x* is not a float, delegates to :meth:`x.__floor__ <object.__floor__>`, "
 "which should return an :class:`~numbers.Integral` value."
 msgstr ""
+"x*'ten küçük veya ona eşit en büyük tamsayı olan *x*'in tabanını döndürür.  "
+"Eğer *x* bir ondalıklı sayı değilse, bir :class:`~numbers.Integral` değeri "
+"döndürmesi gereken :meth:`x.__floor__ <object.__floor__>` değerini "
+"vermelidir."
 
 #: library/math.rst:87
 msgid ""
@@ -122,6 +156,19 @@ msgid ""
 "generally preferred when working with floats, while Python's ``x % y`` is "
 "preferred when working with integers."
 msgstr ""
+"Platform C kütüphanesi tarafından tanımlandığı gibi ``fmod(x, y)`` döndürür. "
+"Python ifadesinin ``x % y`` aynı sonucu döndürmeyebileceğini unutmayın.  C "
+"standardının amacı, ``fmod(x, y)`` ifadesinin tam olarak (matematiksel "
+"olarak; sonsuz hassasiyette) *n* tamsayısı için ``x - n*y`` değerine eşit "
+"olmasıdır, böylece sonuç *x* ile aynı işarete ve ``abs(y)`` değerinden daha "
+"küçük bir büyüklüğe sahip olur.  Python'un ``x % y`` değeri bunun yerine *y* "
+"işaretine sahip bir sonuç döndürür ve ondalıklı sayı bağımsız değişkenler "
+"için tam olarak hesaplanabilir olmayabilir. Örneğin, ``fmod(-1e-100, "
+"1e100)`` sonucu ``-1e-100``dür, ancak Python`un ``-1e-100 % 1e100`` sonucu "
+"``1e100-1e-100``dür, bu da tam olarak bir ondalıklı sayı olarak gösterilemez "
+"ve şaşırtıcı ``1e100`` değerine yuvarlanır.  Bu nedenle, floatlarla "
+"çalışırken genellikle :func:`fmod` fonksiyonu tercih edilirken, tamsayılarla "
+"çalışırken Python'un ``x % y`` fonksiyonu tercih edilir."
 
 #: library/math.rst:102
 msgid ""
@@ -130,12 +177,19 @@ msgid ""
 "zero, returns ``(0.0, 0)``, otherwise ``0.5 <= abs(m) < 1``.  This is used "
 "to \"pick apart\" the internal representation of a float in a portable way."
 msgstr ""
+"x*'in mantissa ve üssünü ``(m, e)`` çifti olarak döndürür.  *m* bir "
+"ondalıklı sayı ve *e* bir tamsayıdır, bu yüzden ``x == m * 2**e`` doğru "
+"olarak eşittir. Eğer *x* sıfır ise ``(0.0, 0)``, aksi takdirde ``0.5 <= "
+"abs(m) < 1`` döndürür.  Bu, bir ondalıklı sayının iç temsilini taşınabilir "
+"bir şekilde \"ayırmak\" için kullanılır."
 
 #: library/math.rst:110
 msgid ""
 "Return an accurate floating point sum of values in the iterable.  Avoids "
 "loss of precision by tracking multiple intermediate partial sums::"
 msgstr ""
+"Iterable içindeki değerlerin doğru bir kayan noktalı toplamını döndür. "
+"Birden fazla ara toplamı takip ederek hassasiyet kaybını önler:"
 
 #: library/math.rst:118
 msgid ""
@@ -145,6 +199,11 @@ msgid ""
 "occasionally double-round an intermediate sum causing it to be off in its "
 "least significant bit."
 msgstr ""
+"Algoritmanın doğruluğu IEEE-754 aritmetik garantilerine ve yuvarlama modunun "
+"yarı-çift olduğu tipik duruma bağlıdır.  Bazı Windows dışı yapılarda, temel "
+"C kütüphanesi genişletilmiş hassasiyetli toplama kullanır ve bazen bir ara "
+"toplamı çift yuvarlayarak en az anlamlı bitinde eksik olmasına neden "
+"olabilir."
 
 #: library/math.rst:124
 msgid ""
@@ -152,6 +211,9 @@ msgid ""
 "cookbook recipes for accurate floating point summation <https://code."
 "activestate.com/recipes/393090/>`_\\."
 msgstr ""
+"Daha fazla tartışma ve iki alternatif yaklaşım için, `ASPN cookbook recipes "
+"for accurate floating point summation <https://code.activestate.com/"
+"recipes/393090/>`_ sayfasına bakın."
 
 #: library/math.rst:131
 msgid ""
@@ -161,24 +223,35 @@ msgid ""
 "zero, then the returned value is ``0``.  ``gcd()`` without arguments returns "
 "``0``."
 msgstr ""
+"Belirtilen tamsayı bağımsız değişkenlerinin en büyük ortak bölenini "
+"döndürür. Bağımsız değişkenlerden herhangi biri sıfır değilse, döndürülen "
+"değer tüm bağımsız değişkenlerin bölenleri olan en büyük pozitif "
+"tamsayıdır.  Tüm bağımsız değişkenler sıfırsa, döndürülen değer ``0`` olur.  "
+"bağımsız değişkenler olmadan ``gcd()`` fonksiyonu ``0`` değerini döndürür."
 
 #: library/math.rst:139
 msgid ""
 "Added support for an arbitrary number of arguments. Formerly, only two "
 "arguments were supported."
 msgstr ""
+"İsteğe bağlı sayıda bağımsız değişken için destek eklendi. Önceden sadece "
+"iki argüman destekleniyordu."
 
 #: library/math.rst:146
 msgid ""
 "Return ``True`` if the values *a* and *b* are close to each other and "
 "``False`` otherwise."
 msgstr ""
+"Eğer *a* ve *b* değerleri birbirine yakınsa ``True``, değilse ``False`` "
+"döndürür."
 
 #: library/math.rst:149
 msgid ""
 "Whether or not two values are considered close is determined according to "
 "given absolute and relative tolerances."
 msgstr ""
+"İki değerin yakın kabul edilip edilmeyeceği, verilen mutlak ve göreceli "
+"toleranslara göre belirlenir."
 
 #: library/math.rst:152
 msgid ""
@@ -188,18 +261,27 @@ msgid ""
 "tolerance is ``1e-09``, which assures that the two values are the same "
 "within about 9 decimal digits.  *rel_tol* must be greater than zero."
 msgstr ""
+"*rel_tol* göreli toleranstır - *a* veya *b*'nin daha büyük mutlak değerine "
+"göre *a* ve *b* arasında izin verilen maksimum farktır. Örneğin, %5'lik bir "
+"tolerans ayarlamak için ``rel_tol=0.05`` değerini girin.  Varsayılan "
+"tolerans, iki değerin yaklaşık 9 ondalık basamak içinde aynı olmasını "
+"sağlayan ``1e-09`` değeridir.  *rel_tol* sıfırdan büyük olmalıdır."
 
 #: library/math.rst:158
 msgid ""
 "*abs_tol* is the minimum absolute tolerance -- useful for comparisons near "
 "zero. *abs_tol* must be at least zero."
 msgstr ""
+"*abs_tol* minimum mutlak toleranstır -- sıfıra yakın karşılaştırmalar için "
+"kullanışlıdır. *abs_tol* en az sıfır olmalıdır."
 
 #: library/math.rst:161
 msgid ""
 "If no errors occur, the result will be: ``abs(a-b) <= max(rel_tol * "
 "max(abs(a), abs(b)), abs_tol)``."
 msgstr ""
+"Herhangi bir hata oluşmazsa, sonuç şöyle olacaktır: ``abs(a-b) <= "
+"max(rel_tol * max(abs(a), abs(b)), abs_tol)``."
 
 #: library/math.rst:164
 msgid ""
@@ -208,27 +290,36 @@ msgid ""
 "close to any other value, including ``NaN``.  ``inf`` and ``-inf`` are only "
 "considered close to themselves."
 msgstr ""
+"IEEE 754 özel değerleri olan ``NaN``, ``inf`` ve ``-inf`` IEEE kurallarına "
+"göre ele alınacaktır.  Özellikle, ``NaN``, ``NaN`` dahil olmak üzere başka "
+"hiçbir değere yakın kabul edilmez.  ``inf`` ve ``-inf`` yalnızca kendilerine "
+"yakın kabul edilir."
 
 #: library/math.rst:173
 msgid ":pep:`485` -- A function for testing approximate equality"
-msgstr ""
+msgstr ":pep:`485` -- Yaklaşık eşitliği test etmek için bir fonksiyon"
 
 #: library/math.rst:178
 msgid ""
 "Return ``True`` if *x* is neither an infinity nor a NaN, and ``False`` "
 "otherwise.  (Note that ``0.0`` *is* considered finite.)"
 msgstr ""
+"Eğer *x* ne bir sonsuz ne de bir NaN ise ``True``, aksi takdirde ``False`` "
+"döndürür.  (``0.0`` *sonlu olarak kabul edilir.)"
 
 #: library/math.rst:186
 msgid ""
 "Return ``True`` if *x* is a positive or negative infinity, and ``False`` "
 "otherwise."
 msgstr ""
+"Eğer *x* pozitif veya negatif bir sonsuz ise ``True``, aksi takdirde "
+"``False`` döndürür."
 
 #: library/math.rst:192
 msgid ""
 "Return ``True`` if *x* is a NaN (not a number), and ``False`` otherwise."
 msgstr ""
+"Eğer *x* bir NaN (sayı değil) ise ``True``, aksi takdirde ``False`` döndürür."
 
 #: library/math.rst:197
 msgid ""
@@ -236,6 +327,9 @@ msgid ""
 "floor of the exact square root of *n*, or equivalently the greatest integer "
 "*a* such that *a*\\ ² |nbsp| ≤ |nbsp| *n*."
 msgstr ""
+"Negatif olmayan *n* tamsayısının tamsayı karekökünü döndürür. Bu, *n* tam "
+"karekökünün tabanıdır veya eşdeğer olarak *a*\\ ² |nbsp| ≤ |nbsp| *n* olacak "
+"şekilde en büyük *a* tamsayısıdır."
 
 #: library/math.rst:201
 msgid ""
@@ -244,6 +338,10 @@ msgid ""
 "the exact square root of *n*. For positive *n*, this can be computed using "
 "``a = 1 + isqrt(n - 1)``."
 msgstr ""
+"Bazı uygulamalar için, *n* |nbsp| ≤ |nbsp| *a*\\ ² olacak şekilde en küçük "
+"*a* tamsayısına veya başka bir deyişle *n*'nin tam karekökünün tavanına "
+"sahip olmak daha uygun olabilir. Pozitif *n* için bu, ``a = 1 + isqrt(n - "
+"1)`` kullanılarak hesaplanabilir."
 
 #: library/math.rst:211
 msgid ""
@@ -253,74 +351,92 @@ msgid ""
 "zero, then the returned value is ``0``.  ``lcm()`` without arguments returns "
 "``1``."
 msgstr ""
+"Belirtilen tamsayı bağımsız değişkenlerinin en küçük ortak katını döndürür. "
+"Tüm bağımsız değişkenler sıfır değilse, döndürülen değer tüm bağımsız "
+"değişkenlerin katı olan en küçük pozitif tamsayıdır.  Bağımsız "
+"değişkenlerden herhangi biri sıfırsa, döndürülen değer ``0`` olur.  Bağımsız "
+"değişkenler olmadan ``lcm()`` işlevi ``1`` değerini döndürür."
 
 #: library/math.rst:222
 msgid ""
 "Return ``x * (2**i)``.  This is essentially the inverse of function :func:"
 "`frexp`."
 msgstr ""
+"x * (2**i)`` döndürür.  Bu aslında :func:`frexp` fonksiyonunun tersidir."
 
 #: library/math.rst:228
 msgid ""
 "Return the fractional and integer parts of *x*.  Both results carry the sign "
 "of *x* and are floats."
 msgstr ""
+"x*'in kesirli ve tamsayı kısımlarını döndürür.  Her iki sonuç da *x* "
+"işaretini taşır ve kayan değerdir."
 
 #: library/math.rst:234
 msgid "Return the next floating-point value after *x* towards *y*."
 msgstr ""
+"x* değerinden sonra *y* değerine doğru bir sonraki kayan noktalı değeri "
+"döndürür."
 
 #: library/math.rst:236
 msgid "If *x* is equal to *y*, return *y*."
-msgstr ""
+msgstr "Eğer *x*, *y*'ye eşitse, *y* değerini döndürür."
 
 #: library/math.rst:238
 msgid "Examples:"
-msgstr ""
+msgstr "Örnekler:"
 
 #: library/math.rst:240
 msgid "``math.nextafter(x, math.inf)`` goes up: towards positive infinity."
-msgstr ""
+msgstr "``math.nextafter(x, math.inf)`` yukarı gider: pozitif sonsuza doğru."
 
 #: library/math.rst:241
 msgid "``math.nextafter(x, -math.inf)`` goes down: towards minus infinity."
-msgstr ""
+msgstr "``math.nextafter(x, -math.inf)`` aşağı iner: eksi sonsuza doğru."
 
 #: library/math.rst:242
 msgid "``math.nextafter(x, 0.0)`` goes towards zero."
-msgstr ""
+msgstr "``math.nextafter(x, 0.0)`` sıfıra doğru gider."
 
 #: library/math.rst:243
 msgid "``math.nextafter(x, math.copysign(math.inf, x))`` goes away from zero."
-msgstr ""
+msgstr "``math.nextafter(x, math.copysign(math.inf, x))`` sıfırdan uzaklaşır."
 
 #: library/math.rst:245
 msgid "See also :func:`math.ulp`."
-msgstr ""
+msgstr "Ayrıca bakınız :func:`math.ulp`."
 
 #: library/math.rst:251
 msgid ""
 "Return the number of ways to choose *k* items from *n* items without "
 "repetition and with order."
 msgstr ""
+"Tekrarlama olmadan ve sırayla *n* öğe arasından *k* öğeyi seçmenin "
+"yollarının sayısını döndürür."
 
 #: library/math.rst:254
 msgid ""
 "Evaluates to ``n! / (n - k)!`` when ``k <= n`` and evaluates to zero when "
 "``k > n``."
 msgstr ""
+"``n! / (k! * (n - k)!)`` değerini ``k <= n`` olduğunda verir ve ``k > n`` "
+"olduğunda sıfır olarak değerlendirir."
 
 #: library/math.rst:257
 msgid ""
 "If *k* is not specified or is None, then *k* defaults to *n* and the "
 "function returns ``n!``."
 msgstr ""
+"Eğer *k* belirtilmemişse veya None ise, *k* varsayılan olarak *n* değerini "
+"alır ve fonksiyon ``n!`` döndürür."
 
 #: library/math.rst:268
 msgid ""
 "Calculate the product of all the elements in the input *iterable*. The "
 "default *start* value for the product is ``1``."
 msgstr ""
+"Girdi *iterable* içindeki tüm elemanların çarpımını hesaplar. Çarpım için "
+"varsayılan *başlangıç* değeri ``1``dir."
 
 #: library/math.rst:271
 msgid ""
@@ -328,6 +444,9 @@ msgid ""
 "intended specifically for use with numeric values and may reject non-numeric "
 "types."
 msgstr ""
+"Yinelenebilir boş olduğunda, başlangıç değerini döndürür.  Bu fonksiyon "
+"özellikle sayısal değerlerle kullanılmak üzere tasarlanmıştır ve sayısal "
+"olmayan türleri reddedebilir."
 
 #: library/math.rst:280
 msgid ""
@@ -338,6 +457,12 @@ msgid ""
 "*even* integer is used for ``n``.  The remainder ``r = remainder(x, y)`` "
 "thus always satisfies ``abs(r) <= 0.5 * abs(y)``."
 msgstr ""
+"x*'in *y*'ye göre IEEE 754 tarzı kalanını döndürür.  Sonlu *x* ve sonlu "
+"sıfır olmayan *y* için bu, ``x - n*y`` farkıdır; burada ``n``, ``x / y`` "
+"bölümünün tam değerine en yakın tamsayıdır.  Eğer ``x / y`` ardışık iki "
+"tamsayının tam ortası ise, ``n`` için en yakın *çift* tamsayı kullanılır.  "
+"Kalan ``r = remainder(x, y)`` böylece her zaman ``abs(r) <= 0.5 * abs(y)`` "
+"sağlar."
 
 #: library/math.rst:287
 msgid ""
@@ -346,12 +471,19 @@ msgid ""
 "x)`` raise :exc:`ValueError` for any non-NaN *x*. If the result of the "
 "remainder operation is zero, that zero will have the same sign as *x*."
 msgstr ""
+"Özel durumlar IEEE 754'ü takip eder: özellikle, ``remainder(x, math.inf)`` "
+"herhangi bir sonlu *x* için *x*'dir ve ``remainder(x, 0)`` ve "
+"``remainder(math.inf, x)`` NaN olmayan herhangi bir *x* için :exc:"
+"`ValueError` yükseltir. Eğer kalan işleminin sonucu sıfır ise, bu sıfır *x* "
+"ile aynı işarete sahip olacaktır."
 
 #: library/math.rst:293
 msgid ""
 "On platforms using IEEE 754 binary floating-point, the result of this "
 "operation is always exactly representable: no rounding error is introduced."
 msgstr ""
+"IEEE 754 ikili kayan nokta kullanan platformlarda, bu işlemin sonucu her "
+"zaman tam olarak gösterilebilir: yuvarlama hatası oluşmaz."
 
 #: library/math.rst:301
 msgid ""
@@ -361,22 +493,28 @@ msgid ""
 "delegates to :meth:`x.__trunc__ <object.__trunc__>`, which should return an :"
 "class:`~numbers.Integral` value."
 msgstr ""
+"Kesirli kısmı çıkarılmış ve tamsayı kısmı bırakılmış *x* döndürür.  Bu 0'a "
+"yuvarlanır: ``trunc()`` pozitif *x* için :func:`floor` ve negatif *x* için :"
+"func:`ceil` ile eşdeğerdir. Eğer *x* bir float değilse, bir :class:`~numbers."
+"Integral` değeri döndürmesi gereken :meth:`x.__trunc__ <object.__trunc__>`'a "
+"delege eder."
 
 #: library/math.rst:309
 msgid "Return the value of the least significant bit of the float *x*:"
-msgstr ""
+msgstr "float *x* öğesinin en az anlamlı bitinin değerini döndürür:"
 
 #: library/math.rst:311
 msgid "If *x* is a NaN (not a number), return *x*."
 msgstr ""
+"Eğer *x* bir NaN (sayı değil) ise ``True``, aksi takdirde ``False`` döndürür."
 
 #: library/math.rst:312
 msgid "If *x* is negative, return ``ulp(-x)``."
-msgstr ""
+msgstr "Eğer *x* negatif ise, ``ulp(-x)`` döndürür."
 
 #: library/math.rst:313
 msgid "If *x* is a positive infinity, return *x*."
-msgstr ""
+msgstr "Eğer *x* pozitif bir sonsuzluk ise, *x* değerini döndürür."
 
 #: library/math.rst:314
 msgid ""
@@ -384,6 +522,9 @@ msgid ""
 "representable float (smaller than the minimum positive *normalized* float, :"
 "data:`sys.float_info.min <sys.float_info>`)."
 msgstr ""
+"Eğer *x* sıfıra eşitse, temsil edilebilir en küçük pozitif *normalize* "
+"floatı döndürür (minimum pozitif *normalize* floattan daha küçük, :data:`sys."
+"float_info.min <sys.float_info>`)."
 
 #: library/math.rst:317
 msgid ""
@@ -391,6 +532,9 @@ msgid ""
 "value of the least significant bit of *x*, such that the first float smaller "
 "than *x* is ``x - ulp(x)``."
 msgstr ""
+"Eğer *x* pozitif olarak temsil edilebilen en büyük float değerine eşitse, "
+"*x* değerinden küçük olan ilk float değeri ``x - ulp(x)`` olacak şekilde *x* "
+"değerinin en küçük anlamlı bitinin değerini döndürür."
 
 #: library/math.rst:320
 msgid ""
@@ -398,16 +542,20 @@ msgid ""
 "significant bit of *x*, such that the first float bigger than *x* is ``x + "
 "ulp(x)``."
 msgstr ""
+"Aksi takdirde (*x* pozitif bir sonlu sayıdır), *x*'in en az anlamlı bitinin "
+"değerini döndürür, öyle ki *x*'ten büyük ilk float ``x + ulp(x)`` olur."
 
 #: library/math.rst:324
 msgid "ULP stands for \"Unit in the Last Place\"."
-msgstr ""
+msgstr "ULP, \"Son Yerdeki Birim\" anlamına gelmektedir."
 
 #: library/math.rst:326
 msgid ""
 "See also :func:`math.nextafter` and :data:`sys.float_info.epsilon <sys."
 "float_info>`."
 msgstr ""
+"Ayrıca bakınız :func:`math.nextafter` ve :data:`sys.float_info.epsilon <sys."
+"float_info>`."
 
 #: library/math.rst:332
 msgid ""
@@ -416,6 +564,10 @@ msgid ""
 "pair of values, rather than returning their second return value through an "
 "'output parameter' (there is no such thing in Python)."
 msgstr ""
+"func:`frexp` ve :func:`modf`'un C'deki eşdeğerlerinden farklı bir çağrı/"
+"çağrı modeline sahip olduğuna dikkat edin: tek bir argüman alırlar ve ikinci "
+"dönüş değerlerini bir 'çıktı parametresi' aracılığıyla döndürmek yerine bir "
+"çift değer döndürürler (Python'da böyle bir şey yoktur)."
 
 #: library/math.rst:337
 msgid ""
@@ -425,14 +577,20 @@ msgid ""
 "(the same as the platform C double type), in which case any float *x* with "
 "``abs(x) >= 2**52`` necessarily has no fractional bits."
 msgstr ""
+"func:`ceil`, :func:`floor` ve :func:`modf` fonksiyonları için, yeterince "
+"büyük büyüklükteki *tüm* kayan noktalı sayıların tam tamsayı olduğunu "
+"unutmayın. Python kayan noktalı sayıları tipik olarak 53 bitten fazla "
+"hassasiyet taşımaz (C platformundaki double tipiyle aynıdır), bu durumda "
+"``abs(x) >= 2**52`` olan herhangi bir *x* kayan noktalı sayısı zorunlu "
+"olarak kesirli bitlere sahip değildir."
 
 #: library/math.rst:345
 msgid "Power and logarithmic functions"
-msgstr ""
+msgstr "Güç ve logaritmik fonksiyonlar"
 
 #: library/math.rst:349
 msgid "Return the cube root of *x*."
-msgstr ""
+msgstr "x*'in küp kökünü döndürür."
 
 #: library/math.rst:356
 msgid ""
@@ -440,10 +598,13 @@ msgid ""
 "natural logarithms.  This is usually more accurate than ``math.e ** x`` or "
 "``pow(math.e, x)``."
 msgstr ""
+"*e*'yi *x* kuvvetine yükseltilmiş olarak döndürür, burada *e* = 2.718281... "
+"doğal logaritma tabanıdır.  Bu genellikle ``math.e ** x`` veya ``pow(math.e, "
+"x)`` değerinden daha doğrudur."
 
 #: library/math.rst:363
 msgid "Return *2* raised to the power *x*."
-msgstr ""
+msgstr "*2*'nin *x* kuvvetine yükseltilmiş halini döndürür."
 
 #: library/math.rst:370
 msgid ""
@@ -453,40 +614,57 @@ msgid ""
 "wiki/Loss_of_significance>`_\\; the :func:`expm1` function provides a way to "
 "compute this quantity to full precision::"
 msgstr ""
+"x* kuvvetine yükseltilmiş *e* döndürür, eksi 1.  Burada *e* doğal logaritma "
+"tabanıdır.  Küçük kayan değerler *x* için, ``exp(x) - 1`` çıkarma işlemi "
+"`önemli bir hassasiyet kaybına <https://en.wikipedia.org/wiki/"
+"Loss_of_significance>`_\\ neden olabilir; :func:`expm1` fonksiyonu bu "
+"miktarı tam hassasiyetle hesaplamak için bir yol sağlar::"
 
 #: library/math.rst:387
 msgid "With one argument, return the natural logarithm of *x* (to base *e*)."
 msgstr ""
+"Bir bağımsız değişkenle, *x*'in doğal logaritmasını döndürür (*e* tabanına "
+"göre)."
 
 #: library/math.rst:389
 msgid ""
 "With two arguments, return the logarithm of *x* to the given *base*, "
 "calculated as ``log(x)/log(base)``."
 msgstr ""
+"İki bağımsız değişkenle, ``log(x)/log(taban)`` şeklinde hesaplanan *x* "
+"değerinin verilen *taban* değerine göre logaritmasını döndürür."
 
 #: library/math.rst:395
 msgid ""
 "Return the natural logarithm of *1+x* (base *e*). The result is calculated "
 "in a way which is accurate for *x* near zero."
 msgstr ""
+"*1+x*'in (*e* tabanı) doğal logaritmasını döndürür. Sonuç, sıfıra yakın *x* "
+"için doğru olacak şekilde hesaplanır."
 
 #: library/math.rst:401
 msgid ""
 "Return the base-2 logarithm of *x*. This is usually more accurate than "
 "``log(x, 2)``."
 msgstr ""
+"x*'in 2 taban logaritmasını döndürür. Bu genellikle ``log(x, 2)`` değerinden "
+"daha doğrudur."
 
 #: library/math.rst:408
 msgid ""
 ":meth:`int.bit_length` returns the number of bits necessary to represent an "
 "integer in binary, excluding the sign and leading zeros."
 msgstr ""
+":meth:`int.bit_length`, işaret ve baştaki sıfırlar hariç olmak üzere, bir "
+"tamsayıyı ikili olarak temsil etmek için gerekli bit sayısını döndürür."
 
 #: library/math.rst:414
 msgid ""
 "Return the base-10 logarithm of *x*.  This is usually more accurate than "
 "``log(x, 10)``."
 msgstr ""
+"*x*'in 10 tabanında logaritmasını döndürür.  Bu genellikle ``log(x, 10)``dan "
+"daha doğrudur."
 
 #: library/math.rst:420
 msgid ""
@@ -496,6 +674,11 @@ msgid ""
 "If both ``x`` and ``y`` are finite, ``x`` is negative, and ``y`` is not an "
 "integer then ``pow(x, y)`` is undefined, and raises :exc:`ValueError`."
 msgstr ""
+"x`in ``y`` kuvvetine yükseltilmiş halini döndürür.  İstisnai durumlar mümkün "
+"olduğunca IEEE 754 standardını takip eder.  Özellikle, ``pow(1.0, x)`` ve "
+"``pow(x, 0.0)``, ``x`` sıfır veya NaN olsa bile her zaman ``1.0`` döndürür.  "
+"Eğer hem ``x`` hem de ``y`` sonlu ise, ``x`` negatif ise ve ``y`` bir "
+"tamsayı değilse, ``pow(x, y)`` tanımsızdır ve :exc:`ValueError` yükseltir."
 
 #: library/math.rst:427
 msgid ""
@@ -503,6 +686,9 @@ msgid ""
 "arguments to type :class:`float`.  Use ``**`` or the built-in :func:`pow` "
 "function for computing exact integer powers."
 msgstr ""
+"Yerleşik ``**`` operatörünün aksine, :func:`math.pow` her iki argümanını da :"
+"class:`float` türüne dönüştürür.  Tam sayı kuvvetlerini hesaplamak için "
+"``**`` veya yerleşik :func:`pow` fonksiyonunu kullanın."
 
 #: library/math.rst:431
 msgid ""
@@ -510,32 +696,41 @@ msgid ""
 "return ``inf`` instead of raising :exc:`ValueError`, for consistency with "
 "IEEE 754."
 msgstr ""
+"Özel durumlar ``pow(0.0, -inf)`` ve ``pow(-0.0, -inf)``, IEEE 754 ile "
+"tutarlılık için :exc:`ValueError`` yükseltmek yerine ``inf`` döndürmek üzere "
+"değiştirildi."
 
 #: library/math.rst:439
 msgid "Return the square root of *x*."
-msgstr ""
+msgstr "*x*'in karekökünü döndürür."
 
 #: library/math.rst:443
 msgid "Trigonometric functions"
-msgstr ""
+msgstr "Trigonometrik fonksiyonlar"
 
 #: library/math.rst:447
 msgid ""
 "Return the arc cosine of *x*, in radians. The result is between ``0`` and "
 "``pi``."
 msgstr ""
+"Radyan cinsinden *x*'in yay kosinüsünü döndürür. Sonuç ``0`` ile ``pi`` "
+"arasındadır."
 
 #: library/math.rst:453
 msgid ""
 "Return the arc sine of *x*, in radians. The result is between ``-pi/2`` and "
 "``pi/2``."
 msgstr ""
+"Radyan cinsinden *x*'in yay sinüsünü döndürür. Sonuç ``-pi/2`` ile ``pi/2`` "
+"arasındadır."
 
 #: library/math.rst:459
 msgid ""
 "Return the arc tangent of *x*, in radians. The result is between ``-pi/2`` "
 "and ``pi/2``."
 msgstr ""
+"Radyan cinsinden *x*'in yay tanjantını döndürür. Sonuç ``-pi/2`` ile "
+"``pi/2`` arasındadır."
 
 #: library/math.rst:465
 msgid ""
@@ -546,10 +741,16 @@ msgid ""
 "for the angle. For example, ``atan(1)`` and ``atan2(1, 1)`` are both "
 "``pi/4``, but ``atan2(-1, -1)`` is ``-3*pi/4``."
 msgstr ""
+"Radyan cinsinden ``atan(y / x)`` döndürür. Sonuç ``-pi`` ile ``pi`` "
+"arasındadır. Düzlemde orijinden ``(x, y)`` noktasına kadar olan vektör, "
+"pozitif X ekseni ile bu açıyı yapar. func:`atan2`nin amacı, her iki girdinin "
+"de işaretlerinin bilinmesidir, böylece açı için doğru kadranı "
+"hesaplayabilir. Örneğin, ``atan(1)`` ve ``atan2(1, 1)`` her ikisi de "
+"``pi/4``tür, ancak ``atan2(-1, -1)`` ``-3*pi/4``tür."
 
 #: library/math.rst:475
 msgid "Return the cosine of *x* radians."
-msgstr ""
+msgstr "*x* radyanın kosinüsünü döndürür."
 
 #: library/math.rst:480
 msgid ""
@@ -557,10 +758,13 @@ msgid ""
 "a sequence (or iterable) of coordinates.  The two points must have the same "
 "dimension."
 msgstr ""
+"Her biri bir koordinat dizisi (veya yinelenebilir) olarak verilen iki *p* ve "
+"*q* noktası arasındaki Öklid mesafesini döndürür.  İki nokta aynı boyuta "
+"sahip olmalıdır."
 
 #: library/math.rst:484
 msgid "Roughly equivalent to::"
-msgstr ""
+msgstr "Kabaca şuna eşdeğerdir::"
 
 #: library/math.rst:493
 msgid ""
@@ -568,6 +772,8 @@ msgid ""
 "the length of the vector from the origin to the point given by the "
 "coordinates."
 msgstr ""
+"Öklid normunu döndürür, ``sqrt(sum(x**2 for x in coordinates))``. Bu, "
+"vektörün orijinden koordinatlar tarafından verilen noktaya olan uzunluğudur."
 
 #: library/math.rst:497
 msgid ""
@@ -575,12 +781,16 @@ msgid ""
 "hypotenuse of a right triangle using the Pythagorean theorem, ``sqrt(x*x + "
 "y*y)``."
 msgstr ""
+"İki boyutlu bir ``(x, y)`` noktası için bu, Pisagor teoremi ``sqrt(x*x + "
+"y*y)`` kullanılarak bir dik üçgenin hipotenüsünün hesaplanmasına eşdeğerdir."
 
 #: library/math.rst:501
 msgid ""
 "Added support for n-dimensional points. Formerly, only the two dimensional "
 "case was supported."
 msgstr ""
+"n boyutlu noktalar için destek eklendi. Önceden sadece iki boyutlu durum "
+"destekleniyordu."
 
 #: library/math.rst:505
 msgid ""
@@ -588,30 +798,33 @@ msgid ""
 "(unit in the last place).  More typically, the result is almost always "
 "correctly rounded to within 1/2 ulp."
 msgstr ""
+"Algoritmanın doğruluğu, maksimum hata 1 ulp'nin (son sıradaki birim) altında "
+"olacak şekilde geliştirildi.  Daha tipik olarak, sonuç neredeyse her zaman "
+"1/2 ulp içinde doğru şekilde yuvarlanır."
 
 #: library/math.rst:513
 msgid "Return the sine of *x* radians."
-msgstr ""
+msgstr "*x* radyanın sinüsünü döndürür."
 
 #: library/math.rst:518
 msgid "Return the tangent of *x* radians."
-msgstr ""
+msgstr "*x* radyanın tanjantını döndürür."
 
 #: library/math.rst:522
 msgid "Angular conversion"
-msgstr ""
+msgstr "Açısal dönüşüm"
 
 #: library/math.rst:526
 msgid "Convert angle *x* from radians to degrees."
-msgstr ""
+msgstr "Açıyı *x* radyandan dereceye dönüştürür."
 
 #: library/math.rst:531
 msgid "Convert angle *x* from degrees to radians."
-msgstr ""
+msgstr "Açıyı *x* dereceden radyana dönüştürür."
 
 #: library/math.rst:535
 msgid "Hyperbolic functions"
-msgstr ""
+msgstr "Hiberbolik fonksiyonlar"
 
 #: library/math.rst:537
 msgid ""
@@ -619,40 +832,45 @@ msgid ""
 "are analogs of trigonometric functions that are based on hyperbolas instead "
 "of circles."
 msgstr ""
+"`Hiperbolik fonksiyonlar <https://en.wikipedia.org/wiki/"
+"Hyperbolic_function>`_ trigonometrik fonksiyonların çemberler yerine "
+"hiperbollere dayanan analoglarıdır."
 
 #: library/math.rst:543
 msgid "Return the inverse hyperbolic cosine of *x*."
-msgstr ""
+msgstr "*x*'in ters hiperbolik kosinüsünü döndürür."
 
 #: library/math.rst:548
 msgid "Return the inverse hyperbolic sine of *x*."
-msgstr ""
+msgstr "*x*'in ters hiperbolik sinüsünü döndürür."
 
 #: library/math.rst:553
 msgid "Return the inverse hyperbolic tangent of *x*."
-msgstr ""
+msgstr "*x*'in ters hiperbolik tanjantını döndürür."
 
 #: library/math.rst:558
 msgid "Return the hyperbolic cosine of *x*."
-msgstr ""
+msgstr "*x*'in hiperbolik kosinüsünü döndürür."
 
 #: library/math.rst:563
 msgid "Return the hyperbolic sine of *x*."
-msgstr ""
+msgstr "*x*'in hiperbolik sinüsünü döndürür."
 
 #: library/math.rst:568
 msgid "Return the hyperbolic tangent of *x*."
-msgstr ""
+msgstr "*x*'in hiperbolik tanjantını döndürür."
 
 #: library/math.rst:572
 msgid "Special functions"
-msgstr ""
+msgstr "Özel fonksiyonlar"
 
 #: library/math.rst:576
 msgid ""
 "Return the `error function <https://en.wikipedia.org/wiki/Error_function>`_ "
 "at *x*."
 msgstr ""
+"x* adresindeki <https://en.wikipedia.org/wiki/Error_function>`_ hata "
+"işlevini döndürür."
 
 #: library/math.rst:579
 msgid ""
@@ -660,6 +878,9 @@ msgid ""
 "functions such as the `cumulative standard normal distribution <https://en."
 "wikipedia.org/wiki/Normal_distribution#Cumulative_distribution_functions>`_::"
 msgstr ""
+"func:`erf` fonksiyonu, `kümülatif standart normal dağılım <https://en."
+"wikipedia.org/wiki/Normal_distribution#Cumulative_distribution_functions>`_: "
+"gibi geleneksel istatistiksel fonksiyonları hesaplamak için kullanılabilir:"
 
 #: library/math.rst:592
 msgid ""
@@ -669,30 +890,38 @@ msgid ""
 "from one would cause a `loss of significance <https://en.wikipedia.org/wiki/"
 "Loss_of_significance>`_\\."
 msgstr ""
+"x*'de tamamlayıcı hata fonksiyonunu döndürür.  Tamamlayıcı hata fonksiyonu "
+"<https://en.wikipedia.org/wiki/Error_function>`_ ``1.0 - erf(x)`` olarak "
+"tanımlanır.  Birden çıkarmanın <https://en.wikipedia.org/wiki/"
+"Loss_of_significance>`_\\ anlamlılık kaybına neden olacağı büyük *x* "
+"değerleri için kullanılır."
 
 #: library/math.rst:603
 msgid ""
 "Return the `Gamma function <https://en.wikipedia.org/wiki/Gamma_function>`_ "
 "at *x*."
 msgstr ""
+"*x* adresindeki `Gamma fonksiyonunu <https://en.wikipedia.org/wiki/"
+"Gamma_function>`_ döndürür."
 
 #: library/math.rst:611
 msgid ""
 "Return the natural logarithm of the absolute value of the Gamma function at "
 "*x*."
 msgstr ""
+"Gama fonksiyonunun *x*'deki mutlak değerinin doğal logaritmasını döndürür."
 
 #: library/math.rst:618
 msgid "Constants"
-msgstr ""
+msgstr "Sabitler"
 
 #: library/math.rst:622
 msgid "The mathematical constant *π* = 3.141592..., to available precision."
-msgstr ""
+msgstr "Matematiksel sabit *π* = 3.141592..., mevcut hassasiyete göre."
 
 #: library/math.rst:627
 msgid "The mathematical constant *e* = 2.718281..., to available precision."
-msgstr ""
+msgstr "Matematiksel sabit *e* = 2,718281..., mevcut hassasiyete göre."
 
 #: library/math.rst:632
 msgid ""
@@ -702,12 +931,20 @@ msgid ""
 "(still) Wrong <https://www.youtube.com/watch?v=jG7vhMMXagQ>`_, and start "
 "celebrating `Tau day <https://tauday.com/>`_ by eating twice as much pie!"
 msgstr ""
+"Matematiksel sabit *τ* = 6.283185..., mevcut hassasiyete göre. Tau, bir "
+"dairenin çevresinin yarıçapına oranı olan 2\\ *π*'ye eşit bir daire "
+"sabitidir. Tau hakkında daha fazla bilgi edinmek için Vi Hart'ın `Pi (hala) "
+"Yanlış <https://www.youtube.com/watch?v=jG7vhMMXagQ>`_ videosuna göz atın ve "
+"`Tau gününü <https://tauday.com/>`_ iki kat daha fazla turta yiyerek "
+"kutlamaya başlayın!"
 
 #: library/math.rst:643
 msgid ""
 "A floating-point positive infinity.  (For negative infinity, use ``-math."
 "inf``.)  Equivalent to the output of ``float('inf')``."
 msgstr ""
+"Bir kayan noktalı pozitif sonsuzluk.  (Negatif sonsuzluk için ``-math.inf`` "
+"kullanın.) ``float('inf')`` çıktısına eşdeğerdir."
 
 #: library/math.rst:651
 msgid ""
@@ -718,10 +955,16 @@ msgid ""
 "check whether a number is a NaN, use the :func:`isnan` function to test for "
 "NaNs instead of ``is`` or ``==``. Example::"
 msgstr ""
+"Bir kayan noktalı \"sayı değil\" (NaN) değeri. ``float('nan')`` çıktısına "
+"eşdeğerdir. IEEE-754 standardının <https://en.wikipedia.org/wiki/IEEE_754>`_ "
+"gereklilikleri nedeniyle, ``math.nan`` ve ``float('nan')`` kendileri de "
+"dahil olmak üzere başka hiçbir sayısal değere eşit kabul edilmez. Bir "
+"sayının NaN olup olmadığını kontrol etmek için, ``is`` veya ``==`` yerine "
+"NaN'leri test etmek için :func:`isnan` fonksiyonunu kullanın. Örnek::"
 
 #: library/math.rst:669
 msgid "It is now always available."
-msgstr ""
+msgstr "Artık her zaman kullanılabilir."
 
 #: library/math.rst:677
 msgid ""
@@ -737,6 +980,17 @@ msgid ""
 "are some exceptions to this rule, for example ``pow(float('nan'), 0.0)`` or "
 "``hypot(float('nan'), float('inf'))``."
 msgstr ""
+"mod:`math` modülü çoğunlukla platform C matematik kütüphanesi fonksiyonları "
+"etrafındaki ince sarmalayıcılardan oluşur.  İstisnai durumlarda davranış, "
+"uygun olan yerlerde C99 standardının Ek F'sini takip eder.  Mevcut uygulama, "
+"``sqrt(-1.0)`` veya ``log(0.0)`` gibi geçersiz işlemler için :exc:"
+"`ValueError` (C99 Annex F geçersiz işlem veya sıfıra bölme sinyalini önerir) "
+"ve taşan sonuçlar için :exc:`OverflowError` (örneğin, ``exp(1000.0)``) "
+"yükseltir.  Girdi argümanlarından biri veya daha fazlası NaN olmadığı sürece "
+"yukarıdaki fonksiyonların hiçbirinden NaN döndürülmeyecektir; bu durumda, "
+"çoğu fonksiyon bir NaN döndürecektir, ancak (yine C99 Ek F'yi takip ederek) "
+"bu kuralın bazı istisnaları vardır, örneğin ``pow(float('nan'), 0.0)`` veya "
+"``hypot(float('nan'), float('inf'))``."
 
 #: library/math.rst:689
 msgid ""
@@ -744,11 +998,14 @@ msgid ""
 "NaNs, and behavior for signaling NaNs remains unspecified. Typical behavior "
 "is to treat all NaNs as though they were quiet."
 msgstr ""
+"Python'un sinyal veren NaN'ları sessiz NaN'lardan ayırt etmek için hiçbir "
+"çaba göstermediğini ve sinyal veren NaN'lar için davranışın belirtilmediğini "
+"unutmayın. Tipik davranış, tüm NaN'lara sessizmiş gibi davranmaktır."
 
 #: library/math.rst:696
 msgid "Module :mod:`cmath`"
-msgstr ""
+msgstr "Modül :mod:`cmath`"
 
 #: library/math.rst:697
 msgid "Complex number versions of many of these functions."
-msgstr ""
+msgstr "Bu fonksiyonların çoğunun karmaşık sayı versiyonları."
