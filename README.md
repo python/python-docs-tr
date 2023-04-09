@@ -1,4 +1,4 @@
-# Python Dokümantasyonu Türkçe Çevirisi
+# Python Dokümantasyonu Türkçe Çevirisi 
 
 ## Dokümantasyon Katkı Anlaşması
 
@@ -6,6 +6,8 @@ Bu proje gönüllü çevirmenler ve python-docs-tr ekibi iş birliğinde sürdü
 
 Çalışmanızı dokümantasyona dahil edilmek üzere PSF'e göndererek bu anlaşmayı kabul etmiş sayılırsınız.
 
+### Bize Ulaşabileceğiniz Platformlar
+- ![ alt text ](https://img.shields.io/badge/Discord-pythondocstr-5865F2?style=for-the-badge&logo=Discord)
 ## Çeviriye Katkıda Bulunmak
 
 ### Gereklilikler
