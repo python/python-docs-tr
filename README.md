@@ -8,6 +8,8 @@ Bu proje gönüllü çevirmenler ve python-docs-tr ekibi iş birliğinde sürdü
 
 ### Bize Ulaşabileceğiniz Platformlar
 - ![ alt text ](https://img.shields.io/badge/Discord-pythondocstr-5865F2?style=for-the-badge&logo=Discord)
+- ![ alt text ](https://img.shields.io/badge/LinkedIn-pythondocstr-0A66C2?style=for-the-badge&logo=LinkedIn)
+- ![ alt text ](https://img.shields.io/badge/GMail-pythondocstr-EA4335?style=for-the-badge&logo=Gmail)
 ## Çeviriye Katkıda Bulunmak
 
 ### Gereklilikler
