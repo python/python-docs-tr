@@ -2,29 +2,31 @@
 # Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 22:19+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2023-03-01 00:18+0000\n"
+"PO-Revision-Date: 2023-03-01 11:44+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: library/time.rst:2
 msgid ":mod:`time` --- Time access and conversions"
-msgstr ""
+msgstr ":mod:`time` --- Zaman erişimi ve dönüşümleri"
 
 #: library/time.rst:9
 msgid ""
 "This module provides various time-related functions. For related "
 "functionality, see also the :mod:`datetime` and :mod:`calendar` modules."
 msgstr ""
+"Bu modül zamanla alakalı çeşitli fonksiyonlar sağlar. Alakalı fonksiyonellik "
+"için, :mod:`datetime` ve :mod:`calendar` modüllerine göz atın."
 
 #: library/time.rst:12
 msgid ""
@@ -34,16 +36,23 @@ msgid ""
 "consult the platform documentation, because the semantics of these functions "
 "varies among platforms."
 msgstr ""
+"Bu modül her zaman kullanılabilir olmasına rağmen, bütün fonksiyonlar bütün "
+"platformlarda kullanılamaz. Bu modülde tanımlanmış fonksiyonlar çoğu aynı "
+"isimli C platform kütüphanesinin fonksiyonlarını çağırır. Fonksiyonların "
+"anlamları platformlar arasında değiştiğinden bazen platform dokümantasyonuna "
+"başvurmak yardımcı olabilir."
 
 #: library/time.rst:18
 msgid "An explanation of some terminology and conventions is in order."
-msgstr ""
+msgstr "Sırada biraz terminoloji ve kural açıklamaları var."
 
 #: library/time.rst:24
 msgid ""
 "The :dfn:`epoch` is the point where the time starts, the return value of "
 "``time.gmtime(0)``. It is January 1, 1970, 00:00:00 (UTC) on all platforms."
 msgstr ""
+":dfn:`epoch` zamanın başladığı noktadır, ``time.gmtime(0)``'nun dönüş "
+"değeridir. Bütün platformlarda 1 Ocak, 1970, 00:00:00 (UTC) şeklindedir."
 
 #: library/time.rst:31
 msgid ""
@@ -51,6 +60,9 @@ msgid ""
 "elapsed seconds since the epoch, typically excluding `leap seconds`_.  Leap "
 "seconds are excluded from this total on all POSIX-compliant platforms."
 msgstr ""
+":dfn:`seconds since the epoch` terimi başlangıçtan beri geçen toplam "
+"saniyeyi ifade eder, tipik olarak `leap seconds`_ hariç. Artık saniyeler "
+"POSIX-uyumlu tüm platformlardan çıkarılmıştır."
 
 #: library/time.rst:38
 msgid ""
@@ -58,6 +70,10 @@ msgid ""
 "epoch_ or far in the future.  The cut-off point in the future is determined "
 "by the C library; for 32-bit systems, it is typically in 2038."
 msgstr ""
+"Bu modüldeki fonksiyonlar epoch_ 'den önce olan veya çok uzak gelecekte olan "
+"tarihleri ve zamanları çalıştıramayabilirler. Sona erme noktası 32-bit "
+"sistemler için C kütüphanesi tarafından belirlenmiştir, tipik olarak "
+"2038'dir."
 
 #: library/time.rst:45
 msgid ""
@@ -66,6 +82,10 @@ msgid ""
 "POSIX and ISO C standards: values 69--99 are mapped to 1969--1999, and "
 "values 0--68 are mapped to 2000--2068."
 msgstr ""
+":func:`strptime` fonksiyonu ``%y`` biçimi verildiğinde 2 haneli yılları "
+"ayrıştırabilir. 2 haneli yıllar ayrıştırıldığında, POSIX ve ISO C "
+"standartlarına göre dönüştürülürler; 69--99 değerleri 1969--1999 "
+"değerlerine, 0--68 değerleri 2000--2068 değerlerine eşlenirler."
 
 #: library/time.rst:55
 msgid ""
@@ -73,6 +93,9 @@ msgid ""
 "GMT).  The acronym UTC is not a mistake but a compromise between English and "
 "French."
 msgstr ""
+"UTC, Koordineli Evrensel Zaman (eski haliyle Greenwich Ortalama Zamanı, ya "
+"da GMT) anlamına gelir. UTC kısaltması bir hata değil, İngilizce ve "
+"Fransızca arasında bir uzlaşmadır."
 
 #: library/time.rst:61
 msgid ""
@@ -82,6 +105,11 @@ msgid ""
 "local rules (often it is read from a system file for flexibility) and is the "
 "only source of True Wisdom in this respect."
 msgstr ""
+"DST, Yaz Saati Uygulaması, yılın bir kısmında saat diliminin (genellikle) "
+"bir saat ayarlanmasına denir. DST kuralları büyülüdür (yerel yasalar "
+"tarafından belirlenir) ve yıldan yıla değişebilir. C kütüphanesi yerel "
+"kuralları (genellikle esneklik için bir sistem dosyasından okunur) içeren "
+"bir tabloya sahiptir ve Gerçek Bilgeliğin tek kaynağıdır."
 
 #: library/time.rst:67
 msgid ""
@@ -89,6 +117,9 @@ msgid ""
 "by the units in which their value or argument is expressed. E.g. on most "
 "Unix systems, the clock \"ticks\" only 50 or 100 times a second."
 msgstr ""
+"Çeşitli gerçek-zamanlı fonksiyonların hassasiyeti birimlerin değerlerinin "
+"veya argümanlarının ifade edildiği önerilerden daha az olabilir. Örneği çoğu "
+"Unix sistemlerinde, saat yalnızca 50 veya 100 defa \"çalışır\"."
 
 #: library/time.rst:71
 msgid ""
@@ -99,6 +130,12 @@ msgid ""
 "with a nonzero fraction (Unix :c:func:`select` is used to implement this, "
 "where available)."
 msgstr ""
+"Öte yandan, :func:`.time` ve :func:`sleep` fonksiyonlarının hassasiyetleri "
+"diğer Unix karşılıklarından daha iyidir: zamanlar kayan noktalı sayılar "
+"olarak ifade edilirler, :func:`.time` mevcut en doğru zamanı döndürür "
+"(mevcut olduğu yerde Unix :c:func:`gettimeofday` kullanarak), ve :func:"
+"`sleep` sıfıra eşit olmayan kesirli zamanı kabul eder (Unix :c:func:"
+"`select`, mümkün olduğunda bunu uygulamak için kullanılır)."
 
 #: library/time.rst:78
 msgid ""
@@ -108,10 +145,16 @@ msgid ""
 "`gmtime`, :func:`localtime`, and :func:`strptime` also offer attribute names "
 "for individual fields."
 msgstr ""
+":func:`gmtime`, :func:`localtime`, ve :func:`strptime`, tarafından "
+"döndürülen ve :func:`asctime`, :func:`mktime` ve :func:`strftime`, "
+"tarafından kabul edilen zaman değeri 9 tam sayılık bir dizidir. :func:"
+"`gmtime`, :func:`localtime`, ve :func:`strptime` tarafından döndürülen "
+"değerler ayrıca ayrı alanlar için ayrı öznitelik isimleri sunar."
 
 #: library/time.rst:84
 msgid "See :class:`struct_time` for a description of these objects."
 msgstr ""
+"Bu nesnelerin açıklamalarını görmek için :class:`struct_time`'a göz at."
 
 #: library/time.rst:86
 msgid ""
@@ -119,60 +162,67 @@ msgid ""
 "and :attr:`tm_zone` attributes when platform supports corresponding ``struct "
 "tm`` members."
 msgstr ""
+":class:`struct_time` türü :attr:`tm_gmtoff` ve :attr:`tm_zone` "
+"özniteliklerini platform ``struct tm``'e ilişkin üyeleri desteklediğinde "
+"sağlayabilmek için genişletilmiştir."
 
 #: library/time.rst:91
 msgid ""
 "The :class:`struct_time` attributes :attr:`tm_gmtoff` and :attr:`tm_zone` "
 "are now available on all platforms."
 msgstr ""
+":class:`struct_time` öznitelikleri :attr:`tm_gmtoff` ve :attr:`tm_zone` "
+"artık bütün platformlarda mevcut."
 
 #: library/time.rst:95
 msgid "Use the following functions to convert between time representations:"
 msgstr ""
+"Zaman temsilleri arasında dönüşüm yapmak için belirtilen fonksiyonları "
+"kullanın:"
 
 #: library/time.rst:98
 msgid "From"
-msgstr ""
+msgstr "Den"
 
 #: library/time.rst:98
 msgid "To"
-msgstr ""
+msgstr "Karşı"
 
 #: library/time.rst:98
 msgid "Use"
-msgstr ""
+msgstr "Kullan"
 
 #: library/time.rst:103 library/time.rst:109
 msgid "seconds since the epoch"
-msgstr ""
+msgstr "zamanın başlangıcından beri geçen saniye"
 
 #: library/time.rst:106
 msgid ":class:`struct_time` in UTC"
-msgstr ""
+msgstr "UTC içinde :class:`struct_time`"
 
 #: library/time.rst:100
 msgid ":func:`gmtime`"
-msgstr ""
+msgstr ":func:`gmtime`"
 
 #: library/time.rst:109
 msgid ":class:`struct_time` in local time"
-msgstr ""
+msgstr "yerel zaman içinde :class:`struct_time`"
 
 #: library/time.rst:103
 msgid ":func:`localtime`"
-msgstr ""
+msgstr ":func:`localtime`"
 
 #: library/time.rst:106
 msgid ":func:`calendar.timegm`"
-msgstr ""
+msgstr ":func:`calendar.timegm`"
 
 #: library/time.rst:109
 msgid ":func:`mktime`"
-msgstr ""
+msgstr ":func:`mktime`"
 
 #: library/time.rst:117
 msgid "Functions"
-msgstr ""
+msgstr "Fonksiyonlar"
 
 #: library/time.rst:121
 msgid ""
@@ -181,24 +231,34 @@ msgid ""
 "Jun 20 23:21:05 1993'``. The day field is two characters long and is space "
 "padded if the day is a single digit, e.g.: ``'Wed Jun  9 04:26:40 1993'``."
 msgstr ""
+":func:`gmtime` veya :func:`localtime` tarafından döndürülen bir zamanı "
+"temsil eden bir demet veya :class:`struct_time` öğesini şu forma sahip bir "
+"dizeye dönüştürün: ``'Sun Jun 20 23:21:05 1993'``. Gün alanı iki karakter "
+"uzunluğundadır ve gün tek harfliyse boşluk karakteriyle doldurulur, örnek: "
+"``'Wed Jun  9 04:26:40 1993'``."
 
 #: library/time.rst:127
 msgid ""
 "If *t* is not provided, the current time as returned by :func:`localtime` is "
 "used. Locale information is not used by :func:`asctime`."
 msgstr ""
+"Eğer *t* sağlanmamışsa, :func:`localtime` tarafından döndürülen şimdiki "
+"zaman kullanılır. Yerel bilgi :func:`asctime` tarafından kullanılmaz."
 
 #: library/time.rst:132
 msgid ""
 "Unlike the C function of the same name, :func:`asctime` does not add a "
 "trailing newline."
 msgstr ""
+"Aynı isimli C fonksiyonunun aksine, :func:`asctime` sona yeni satır eklemez."
 
 #: library/time.rst:137
 msgid ""
 "Return the *clk_id* of the thread-specific CPU-time clock for the specified "
 "*thread_id*."
 msgstr ""
+"Belirtilen *thread_id* için iş parçacığına özgü CPU-zaman saatinin *clk_id* "
+"değerini döndürür."
 
 #: library/time.rst:139
 msgid ""
@@ -206,65 +266,85 @@ msgid ""
 "attribute of :class:`threading.Thread` objects to get a suitable value for "
 "*thread_id*."
 msgstr ""
+"*thread_id* için uygun bir değer elde etmek için :func:`threading.get_ident` "
+"veya :class:`threading.Thread` nesnelerinin :attr:`~threading.Thread.ident` "
+"özniteliğini kullanın."
 
 #: library/time.rst:144
 msgid ""
 "Passing an invalid or expired *thread_id* may result in undefined behavior, "
 "such as segmentation fault."
 msgstr ""
+"Geçersiz veya süresi geçmiş bir *thread_id* girişi yapmak, bölümleme hatası "
+"gibi, tanımlanmamış bir davranış ortaya koyabilir."
 
-#: library/time.rst:-1
+#: library/time.rst:147
 msgid ":ref:`Availability <availability>`: Unix"
-msgstr ""
+msgstr ":ref:`Availability <availability>`: Unix"
 
 #: library/time.rst:149
 msgid ""
 "See the man page for :manpage:`pthread_getcpuclockid(3)` for further "
 "information."
 msgstr ""
+"Daha fazla bilgi için :manpage:`pthread_getcpuclockid(3)` el kitabına göz "
+"atın."
 
 #: library/time.rst:156
 msgid ""
 "Return the resolution (precision) of the specified clock *clk_id*.  Refer "
 "to :ref:`time-clock-id-constants` for a list of accepted values for *clk_id*."
 msgstr ""
+"Belirtilen *clk_id* saatinin netliğini (kesinliğini) döndür. *clk_id*'e "
+"uygun değerlerin bir listesi için :ref:`time-clock-id-constants`'a bakınız."
 
-#: library/time.rst:173 library/time.rst:195 library/time.rst:681
-#: library/time.rst:817 library/time.rst:880
+#: library/time.rst:172 library/time.rst:194 library/time.rst:680
+#: library/time.rst:816 library/time.rst:879
 msgid ":ref:`Availability <availability>`: Unix."
-msgstr ""
+msgstr ":ref:`Availability <availability>`: Unix."
 
 #: library/time.rst:166
 msgid ""
 "Return the time of the specified clock *clk_id*.  Refer to :ref:`time-clock-"
 "id-constants` for a list of accepted values for *clk_id*."
 msgstr ""
+"Belirtilen *clk_id* saatinin zamanını döndür. *clk_id*'e uygun değerlerin "
+"bir listesi için :ref:`time-clock-id-constants`'a bakınız."
 
 #: library/time.rst:169
 msgid ""
 "Use :func:`clock_gettime_ns` to avoid the precision loss caused by the :"
 "class:`float` type."
 msgstr ""
+":class:`float` türü sebebiyle oluşan kesinlik kaybından kaçınmak için :func:"
+"`clock_gettime_ns` kullanın."
 
 #: library/time.rst:179
 msgid "Similar to :func:`clock_gettime` but return time as nanoseconds."
 msgstr ""
+":func:`clock_gettime`'a benzer şekilde ama zamanı nanosaniyeler şeklinde "
+"döndürür."
 
 #: library/time.rst:188
 msgid ""
 "Set the time of the specified clock *clk_id*.  Currently, :data:"
 "`CLOCK_REALTIME` is the only accepted value for *clk_id*."
 msgstr ""
+"Belirtilen *clk_id* saatinin zamanını ayarla. Şu anda, *clk_id* için kabul "
+"edilen tek değer :data:`CLOCK_REALTIME`'dır."
 
 #: library/time.rst:191
 msgid ""
 "Use :func:`clock_settime_ns` to avoid the precision loss caused by the :"
 "class:`float` type."
 msgstr ""
+":class:`float` türü sebebiyle oluşan kesinlik kaybından kaçınmak için :func:"
+"`clock_settime_ns` kullanın."
 
 #: library/time.rst:201
 msgid "Similar to :func:`clock_settime` but set time with nanoseconds."
 msgstr ""
+":func:`clock_settime`'a benzer şekilde ama zamanı nanosaniyeler ile ayarlar."
 
 #: library/time.rst:210
 msgid ""
@@ -273,6 +353,10 @@ msgid ""
 "characters long and is space padded if the day is a single digit, e.g.: "
 "``'Wed Jun  9 04:26:40 1993'``."
 msgstr ""
+"epoch_ 'dan bu yana saniye cinsinden ifade edilen bir süreyi bir biçim "
+"dizisine dönüştürün: yerel zamanı temsil eden ``'Sun Jun 20 23:21:05 "
+"1993'``. Gün alanı iki karakter uzunluğundadır ve gün tek basamaklıysa "
+"boşluk bırakılır, örneğin: ``'Wed Jun  9 04:26:40 1993'``."
 
 #: library/time.rst:215
 msgid ""
@@ -281,57 +365,69 @@ msgid ""
 "``asctime(localtime(secs))``. Locale information is not used by :func:"
 "`ctime`."
 msgstr ""
+"*secs* veya :const:`None` sağlanmamışsa, :func:`.time` tarafından döndürülen "
+"mevcut zaman kullanılır. ``ctime(secs)`` ``asctime(localtime(secs))``'e "
+"karşılıktır. Yerel ayar bilgisi :func:`ctime` tarafından kullanılmaz."
 
 #: library/time.rst:223
 msgid ""
 "Get information on the specified clock as a namespace object. Supported "
 "clock names and the corresponding functions to read their value are:"
 msgstr ""
+"Belirtilen saat için namespace nesnesi şeklinde bilgi edinin. Desteklenen "
+"saat isimleri ve onların değerlerini okumaya ilişkin fonksiyonlar şunlardır:"
 
 #: library/time.rst:227
 msgid "``'monotonic'``: :func:`time.monotonic`"
-msgstr ""
+msgstr "``'monotonic'``: :func:`time.monotonic`"
 
 #: library/time.rst:228
 msgid "``'perf_counter'``: :func:`time.perf_counter`"
-msgstr ""
+msgstr "``'perf_counter'``: :func:`time.perf_counter`"
 
 #: library/time.rst:229
 msgid "``'process_time'``: :func:`time.process_time`"
-msgstr ""
+msgstr "``'process_time'``: :func:`time.process_time`"
 
 #: library/time.rst:230
 msgid "``'thread_time'``: :func:`time.thread_time`"
-msgstr ""
+msgstr "``'thread_time'``: :func:`time.thread_time`"
 
 #: library/time.rst:231
 msgid "``'time'``: :func:`time.time`"
-msgstr ""
+msgstr "``'time'``: :func:`time.time`"
 
 #: library/time.rst:233
 msgid "The result has the following attributes:"
-msgstr ""
+msgstr "Sonuç şu özniteliklere sahiptir:"
 
 #: library/time.rst:235
 msgid ""
 "*adjustable*: ``True`` if the clock can be changed automatically (e.g. by a "
 "NTP daemon) or manually by the system administrator, ``False`` otherwise"
 msgstr ""
+"Saat otomatik bir şekilde (örneğin bir NTP daemon tarafından) veya sistem "
+"yöneticisi tarafından değiştirilebiliyorsa *adjustable*: ``True``, tersi "
+"için ``False``"
 
 #: library/time.rst:237
 msgid ""
 "*implementation*: The name of the underlying C function used to get the "
 "clock value.  Refer to :ref:`time-clock-id-constants` for possible values."
 msgstr ""
+"*implementation*: Saat değerini elde etmek için kullanılan temel C "
+"fonksiyonunun ismidir. Muhtemel değerler için :ref:`time-clock-id-"
+"constants`'a bakınız."
 
 #: library/time.rst:239
 msgid ""
 "*monotonic*: ``True`` if the clock cannot go backward, ``False`` otherwise"
 msgstr ""
+"*monotonic*: Saat geriye doğru gidemiyorsa ``True``, aksi halde ``False``"
 
 #: library/time.rst:241
 msgid "*resolution*: The resolution of the clock in seconds (:class:`float`)"
-msgstr ""
+msgstr "*resolution*: Saatin saniyeler halindeki netliği (:class:`float`)"
 
 #: library/time.rst:248
 msgid ""
@@ -342,6 +438,12 @@ msgid ""
 "the :class:`struct_time` object. See :func:`calendar.timegm` for the inverse "
 "of this function."
 msgstr ""
+"epoch_ 'dan bu yana saniye olarak ifade edilen bir zamanı, dst bayrağının "
+"her zaman sıfır olduğu UTC'de bir :class:`struct_time`'a dönüştürün.  *secs* "
+"sağlanmazsa veya :const:`None`, :func:`.time` tarafından döndürülen geçerli "
+"zaman kullanılır.  Saniyenin kesirleri dikkate alınmaz.  :class:"
+"`struct_time` nesnesinin açıklaması için yukarıya bakın. Bu fonksiyonun "
+"tersi için :func:`calendar.timegm` konusuna bakın."
 
 #: library/time.rst:258
 msgid ""
@@ -349,6 +451,10 @@ msgid ""
 "or :const:`None`, the current time as returned by :func:`.time` is used.  "
 "The dst flag is set to ``1`` when DST applies to the given time."
 msgstr ""
+":func:`gmtime` gibi ama yerel zamana dönüştürür.  Eğer *secs* sağlanmazsa "
+"veya :const:`None` ise, :func:`.time` tarafından döndürülen şimdiki zaman "
+"kullanılır.  Belirli bir süre için DST uygulandığında dst bayrağı ``1`` "
+"olarak ayarlanır."
 
 #: library/time.rst:262
 msgid ""
@@ -358,6 +464,11 @@ msgid ""
 "c:func:`gmtime` failure. It's common for this to be restricted to years "
 "between 1970 and 2038."
 msgstr ""
+"Eğer zaman damgası C :c:func:`localtime` veya :c:func:`gmtime` fonksiyonları "
+"tarafından sağlanan değer aralıkları içerisinde değilse :func:`localtime` :"
+"exc:`OverflowError` yükseltebilir, ve :c:func:`localtime` üzerinde :exc:"
+"`OSError` veya :c:func:`gmtime` hatasını. Bunun 1970 ile 2038 arasındaki "
+"yıllarla sınırlı olması yaygın bir durumdur."
 
 #: library/time.rst:271
 msgid ""
@@ -371,6 +482,14 @@ msgid ""
 "libraries). The earliest date for which it can generate a time is platform-"
 "dependent."
 msgstr ""
+"Bu, :func:`localtime`'ın ters fonksiyonudur.  Argümanı :class:`struct_time` "
+"veya tam 9-demet (dst bayrağı gerekli olduğundan; bilinmiyorsa dst bayrağı "
+"olarak ``-1`` kullanın), zamanı *local* zamanda ifade eder, UTC değil.  :"
+"func:`.time` ile uyumluluk için bir kayan noktalı sayı döndürür. Giriş "
+"değeri geçerli bir zaman olarak gösterilemiyorsa, :exc:`OverflowError` veya :"
+"exc:`ValueError` yükseltilir (geçersiz değerin Python veya temel C "
+"kitaplıkları tarafından yakalanıp yakalanmadığına bağlıdır). Bir zaman "
+"oluşturabileceği en erken tarih, platforma bağlıdır."
 
 #: library/time.rst:283
 msgid ""
@@ -379,24 +498,32 @@ msgid ""
 "updates. The reference point of the returned value is undefined, so that "
 "only the difference between the results of two calls is valid."
 msgstr ""
+"Monoton bir saatin değerini (kesirli saniye cinsinden) döndürür, yani bir "
+"geri gidemeyen bir saat.  Saat sistem saat güncellemelerinden etkilenmez. "
+"Döndürülen değerin referans noktası tanımlanmamıştır, böylece sadece iki "
+"aramanın sonuçları arasındaki fark geçerlidir."
 
 #: library/time.rst:288
 msgid ""
 "Use :func:`monotonic_ns` to avoid the precision loss caused by the :class:"
 "`float` type."
 msgstr ""
+":class:`float` türünün sebep olduğu kesinlik kaybından kaçınmak için :func:"
+"`monotonic_ns` kullanın."
 
 #: library/time.rst:293
 msgid "The function is now always available and always system-wide."
-msgstr ""
+msgstr "Fonksiyon artık her zaman mevcut ve her zaman sistem çapında."
 
 #: library/time.rst:296
 msgid "On macOS, the function is now system-wide."
-msgstr ""
+msgstr "macOS için, fonksiyon artık sistem çapında."
 
 #: library/time.rst:302
 msgid "Similar to :func:`monotonic`, but return time as nanoseconds."
 msgstr ""
+":func:`monotonic`'e benzer şekilde, ama zamanı nanosaniyeler şeklinde "
+"döndürür."
 
 #: library/time.rst:311
 msgid ""
@@ -406,20 +533,29 @@ msgid ""
 "point of the returned value is undefined, so that only the difference "
 "between the results of two calls is valid."
 msgstr ""
+"Bir performans sayacının değerini (kesirli saniye cinsinden) döndürür, örnek "
+"olarak kısa bir süreyi ölçmek için mümkün olan en yüksek kesinliğe sahip bir "
+"saat.  Uyku sırasında geçen süreyi içerir ve sistem çapındadır.  Döndürülen "
+"değerin referans noktası tanımsızdır, yani sadece iki çağrının sonuçları "
+"arasındaki fark geçerlidir."
 
 #: library/time.rst:317
 msgid ""
 "Use :func:`perf_counter_ns` to avoid the precision loss caused by the :class:"
 "`float` type."
 msgstr ""
+":class:`float` türü sebebiyle oluşan kesinlik kaybından kaçınmak için :func:"
+"`perf_counter_ns` kullanın."
 
 #: library/time.rst:322
 msgid "On Windows, the function is now system-wide."
-msgstr ""
+msgstr "Windows için, fonksiyon artık sistem çapında."
 
 #: library/time.rst:327
 msgid "Similar to :func:`perf_counter`, but return time as nanoseconds."
 msgstr ""
+":func:`perf_counter`'a benzer şekilde, ama zamanı nanosaniyeler şeklinde "
+"döndürür."
 
 #: library/time.rst:339
 msgid ""
@@ -429,16 +565,24 @@ msgid ""
 "returned value is undefined, so that only the difference between the results "
 "of two calls is valid."
 msgstr ""
+"Geçerli işlemin sistem ve kullanıcı CPU zamanının toplamının değerini "
+"(kesirli saniye cinsinden) döndürür.  Uykuda geçen süreyi dahil etmez.  "
+"Tanım gereği işlem çapındadır.  Döndürülen değerin referans noktası "
+"tanımsızdır, yani sadece iki çağrının sonuçları arasındaki fark geçerlidir."
 
 #: library/time.rst:345
 msgid ""
 "Use :func:`process_time_ns` to avoid the precision loss caused by the :class:"
 "`float` type."
 msgstr ""
+":class:`float` türü sebebiyle oluşan kesinlik kaybından kaçınmak için :func:"
+"`process_time_ns` kullanın."
 
 #: library/time.rst:352
 msgid "Similar to :func:`process_time` but return time as nanoseconds."
 msgstr ""
+":func:`process_time`'a benzer şekilde, ama zamanı nanosaniyeler şeklinde "
+"döndürür."
 
 #: library/time.rst:358
 msgid ""
@@ -446,18 +590,27 @@ msgid ""
 "argument may be a floating point number to indicate a more precise sleep "
 "time."
 msgstr ""
+"Çağıran iş parçacığının yürütülmesini verilen saniye sayısı kadar askıya "
+"alın. Argüman, daha kesin bir uyku zamanını belirtmek için kayan noktalı bir "
+"sayı olabilir."
 
 #: library/time.rst:362
 msgid ""
 "If the sleep is interrupted by a signal and no exception is raised by the "
 "signal handler, the sleep is restarted with a recomputed timeout."
 msgstr ""
+"Eğer uyku bir sinyal tarafından kesintiye uğrarsa ve sinyal işleyicisi "
+"tarafından herhangi bir istisna yükseltilmezse, uyku yeniden hesaplanmış bir "
+"zaman aşımıyla tekrar başlar."
 
 #: library/time.rst:365
 msgid ""
 "The suspension time may be longer than requested by an arbitrary amount, "
 "because of the scheduling of other activity in the system."
 msgstr ""
+"Askıya alma süresi isteğe bağlı bir değer ile istenilenden daha uzun "
+"tutulabilir, sebebiyse diğer aktivitelerin sistem içerisindeki "
+"planlanmasıdır."
 
 #: library/time.rst:368
 msgid ""
@@ -469,28 +622,40 @@ msgid ""
 "drivers/kernel/high-resolution-timers>`_ which provides resolution of 100 "
 "nanoseconds. If *secs* is zero, ``Sleep(0)`` is used."
 msgstr ""
+"Windows'ta *secs* sıfırsa, iş parçacığı zaman diliminin geri kalanını "
+"çalışmaya hazır olan başka bir iş parçacığına bırakır. Çalışmaya hazır başka "
+"iş parçacığı yoksa fonksiyon hemen geri döner ve iş parçacığı çalışmaya "
+"devam eder.  Windows 8.1 ve daha yeni sürümlerde uygulama, 100 nanosaniyenin "
+"kesinliğini sağlayan bir `high-resolution timer <https://docs.microsoft.com/"
+"en-us/windows-hardware/drivers/kernel/high-Definition-timers>`_ kullanır. "
+"*secs* sıfırsa, ``Sleep(0)`` kullanılır."
 
 #: library/time.rst:376
 msgid "Unix implementation:"
-msgstr ""
+msgstr "Unix uyarlaması:"
 
 #: library/time.rst:378
 msgid "Use ``clock_nanosleep()`` if available (resolution: 1 nanosecond);"
 msgstr ""
+"Kullanılabilirse ``clock_nanosleep()`` kullanın (netlik: 1 nanosaniye);"
 
 #: library/time.rst:379
 msgid "Or use ``nanosleep()`` if available (resolution: 1 nanosecond);"
 msgstr ""
+"Ya da kullanılabiliyorsa ``nanosleep()`` kullanın (netlik: 1 nanosaniye);"
 
 #: library/time.rst:380
 msgid "Or use ``select()`` (resolution: 1 microsecond)."
-msgstr ""
+msgstr "Ya da ``select()`` kullanın (netlik: 1 mikrosaniye)."
 
 #: library/time.rst:382
 msgid ""
 "On Unix, the ``clock_nanosleep()`` and ``nanosleep()`` functions are now "
 "used if available. On Windows, a waitable timer is now used."
 msgstr ""
+"Unix'de, ``clock_nanosleep()`` ve ``nanosleep()`` fonksiyonları artık "
+"kullanılabiliyor. Windows'da, artık beklenebilir bir zamanlayıcı "
+"kullanılıyor."
 
 #: library/time.rst:386
 msgid ""
@@ -498,6 +663,9 @@ msgid ""
 "a signal, except if the signal handler raises an exception (see :pep:`475` "
 "for the rationale)."
 msgstr ""
+"Fonksiyon artık bir sinyal tarafından kesilirse bile *secs* süresince uyur, "
+"sinyal işleyicisi tarafından bir istisna yükseltilmesi durumu hariç "
+"(açıklaması için :pep:`475`'e göz atın)."
 
 #: library/time.rst:397
 msgid ""
@@ -507,12 +675,20 @@ msgid ""
 "`localtime` is used.  *format* must be a string.  :exc:`ValueError` is "
 "raised if any field in *t* is outside of the allowed range."
 msgstr ""
+":func:`gmtime` veya :func:`localtime` tarafından döndürülen bir zamanı "
+"temsil eden bir demet veya :class:`struct_time`'ı *format* bağımsız "
+"değişkeni tarafından belirtilen bir dizeye dönüştürün.  *t* sağlanmazsa, :"
+"func:`localtime` tarafından döndürülen geçerli saat kullanılır.  *format* "
+"bir dize olmalıdır.  :exc:`ValueError`, *t* içindeki herhangi bir alan izin "
+"verilen aralığın dışındaysa yükseltilir."
 
 #: library/time.rst:403
 msgid ""
 "0 is a legal argument for any position in the time tuple; if it is normally "
 "illegal the value is forced to a correct one."
 msgstr ""
+"0 zaman demeti içerisindeki herhangi bir pozisyon için geçerli bir "
+"argümandır; normalde geçersiz ise, değer doğru bir değere zorlanır."
 
 #: library/time.rst:406
 msgid ""
@@ -520,134 +696,137 @@ msgid ""
 "shown without the optional field width and precision specification, and are "
 "replaced by the indicated characters in the :func:`strftime` result:"
 msgstr ""
+"Aşağıdaki direktifler *format* dizesine gömülebilir. İsteğe bağlı alan "
+"genişliği ve kesinlik belirtimi olmadan gösterilirler ve :func:`strftime` "
+"sonucunda belirtilen karakterlerle değiştirilirler:"
 
 #: library/time.rst:411
 msgid "Directive"
-msgstr ""
+msgstr "Yönerge"
 
 #: library/time.rst:411
 msgid "Meaning"
-msgstr ""
+msgstr "Anlamı"
 
 #: library/time.rst:411
 msgid "Notes"
-msgstr ""
+msgstr "Notlar"
 
 #: library/time.rst:413
 msgid "``%a``"
-msgstr ""
+msgstr "``%a``"
 
 #: library/time.rst:413
 msgid "Locale's abbreviated weekday name."
-msgstr ""
+msgstr "Yerel ayarın kısaltılmış hafta içi ismi."
 
 #: library/time.rst:416
 msgid "``%A``"
-msgstr ""
+msgstr "``%A``"
 
 #: library/time.rst:416
 msgid "Locale's full weekday name."
-msgstr ""
+msgstr "Yerel ayarın tam hafta içi ismi."
 
 #: library/time.rst:418
 msgid "``%b``"
-msgstr ""
+msgstr "``%b``"
 
 #: library/time.rst:418
 msgid "Locale's abbreviated month name."
-msgstr ""
+msgstr "Yerel ayarın kısaltılmış ay ismi."
 
 #: library/time.rst:421
 msgid "``%B``"
-msgstr ""
+msgstr "``%B``"
 
 #: library/time.rst:421
 msgid "Locale's full month name."
-msgstr ""
+msgstr "Yerel ayarın tam ay ismi."
 
 #: library/time.rst:423
 msgid "``%c``"
-msgstr ""
+msgstr "``%c``"
 
 #: library/time.rst:423
 msgid "Locale's appropriate date and time representation."
-msgstr ""
+msgstr "Yerel ayarın uygun tarih ve zaman gösterimi."
 
 #: library/time.rst:426
 msgid "``%d``"
-msgstr ""
+msgstr "``%d``"
 
 #: library/time.rst:426
 msgid "Day of the month as a decimal number [01,31]."
-msgstr ""
+msgstr "Onluk sayı şeklinde ayın günü [01,31]."
 
 #: library/time.rst:429
 msgid "``%H``"
-msgstr ""
+msgstr "``%H``"
 
 #: library/time.rst:429
 msgid "Hour (24-hour clock) as a decimal number [00,23]."
-msgstr ""
+msgstr "Onluk sayı şeklinde saat (24-saatlik sistem) [00,23]."
 
 #: library/time.rst:432
 msgid "``%I``"
-msgstr ""
+msgstr "``%I``"
 
 #: library/time.rst:432
 msgid "Hour (12-hour clock) as a decimal number [01,12]."
-msgstr ""
+msgstr "Onluk sayı şeklinde saat (12-saatlik sistem) [01,12]."
 
 #: library/time.rst:435
 msgid "``%j``"
-msgstr ""
+msgstr "``%j``"
 
 #: library/time.rst:435
 msgid "Day of the year as a decimal number [001,366]."
-msgstr ""
+msgstr "Onluk sayı şeklinde yılın günü [001,366]."
 
 #: library/time.rst:438
 msgid "``%m``"
-msgstr ""
+msgstr "``%m``"
 
 #: library/time.rst:438
 msgid "Month as a decimal number [01,12]."
-msgstr ""
+msgstr "Onluk sayı şeklinde ay [01,12]."
 
 #: library/time.rst:441
 msgid "``%M``"
-msgstr ""
+msgstr "``%M``"
 
 #: library/time.rst:441
 msgid "Minute as a decimal number [00,59]."
-msgstr ""
+msgstr "Onluk sayı şeklinde dakika [00,59]."
 
 #: library/time.rst:444
 msgid "``%p``"
-msgstr ""
+msgstr "``%p``"
 
 #: library/time.rst:444
 msgid "Locale's equivalent of either AM or PM."
-msgstr ""
+msgstr "Yerel ayarın AM veya PM'e göre karşılığı."
 
 #: library/time.rst:444
 msgid "\\(1)"
-msgstr ""
+msgstr "\\(1)"
 
 #: library/time.rst:447
 msgid "``%S``"
-msgstr ""
+msgstr "``%S``"
 
 #: library/time.rst:447
 msgid "Second as a decimal number [00,61]."
-msgstr ""
+msgstr "Onluk sayı şeklinde saniye [00,61]."
 
 #: library/time.rst:447
 msgid "\\(2)"
-msgstr ""
+msgstr "\\(2)"
 
 #: library/time.rst:450
 msgid "``%U``"
-msgstr ""
+msgstr "``%U``"
 
 #: library/time.rst:450
 msgid ""
@@ -655,22 +834,25 @@ msgid ""
 "number [00,53]. All days in a new year preceding the first Sunday are "
 "considered to be in week 0."
 msgstr ""
+"Onluk sayı şeklinde yılın (Pazar haftanın ilk günü olacak şekilde) hafta "
+"numarası [00,53]. Yeni bir yılın ilk Pazar gününden önceki tüm günleri 0. "
+"hafta olarak kabul edilir."
 
 #: library/time.rst:461
 msgid "\\(3)"
-msgstr ""
+msgstr "\\(3)"
 
 #: library/time.rst:458
 msgid "``%w``"
-msgstr ""
+msgstr "``%w``"
 
 #: library/time.rst:458
 msgid "Weekday as a decimal number [0(Sunday),6]."
-msgstr ""
+msgstr "Onluk sayı şeklinde hafta içi [0(Sunday),6]."
 
 #: library/time.rst:461
 msgid "``%W``"
-msgstr ""
+msgstr "``%W``"
 
 #: library/time.rst:461
 msgid ""
@@ -678,42 +860,45 @@ msgid ""
 "number [00,53]. All days in a new year preceding the first Monday are "
 "considered to be in week 0."
 msgstr ""
+"Onluk sayı şeklinde yılın (Pazartesi haftanın ilk günü olacak şekilde) hafta "
+"numarası [00,53]. Yeni bir yılın ilk Pazartesi gününden önceki tüm günleri "
+"0. hafta olarak kabul edilir."
 
 #: library/time.rst:469
 msgid "``%x``"
-msgstr ""
+msgstr "``%x``"
 
 #: library/time.rst:469
 msgid "Locale's appropriate date representation."
-msgstr ""
+msgstr "Yerel ayarın uygun tarih gösterimi."
 
 #: library/time.rst:472
 msgid "``%X``"
-msgstr ""
+msgstr "``%X``"
 
 #: library/time.rst:472
 msgid "Locale's appropriate time representation."
-msgstr ""
+msgstr "Yerel ayarın uygun zaman gösterimi."
 
 #: library/time.rst:475
 msgid "``%y``"
-msgstr ""
+msgstr "``%y``"
 
 #: library/time.rst:475
 msgid "Year without century as a decimal number [00,99]."
-msgstr ""
+msgstr "Onluk sayı şeklinde yüzyıl olmadan yıl [00,99]."
 
 #: library/time.rst:478
 msgid "``%Y``"
-msgstr ""
+msgstr "``%Y``"
 
 #: library/time.rst:478
 msgid "Year with century as a decimal number."
-msgstr ""
+msgstr "Onluk sayı şeklinde yüzyıl ile birlikte yıl."
 
 #: library/time.rst:481
 msgid "``%z``"
-msgstr ""
+msgstr "``%z``"
 
 #: library/time.rst:481
 msgid ""
@@ -721,26 +906,31 @@ msgid ""
 "GMT of the form +HHMM or -HHMM, where H represents decimal hour digits and M "
 "represents decimal minute digits [-23:59, +23:59]. [1]_"
 msgstr ""
+"+HHMM veya -HHMM biçimindeki UTC/GMT'den pozitif veya negatif bir zaman "
+"farkını gösteren saat dilimi farkı, burada H ondalık saat hanelerini ve M "
+"ondalık dakika hanelerini temsil eder [-23:59, +23:59]. [1]_"
 
 #: library/time.rst:487
 msgid "``%Z``"
-msgstr ""
+msgstr "``%Z``"
 
 #: library/time.rst:487
 msgid "Time zone name (no characters if no time zone exists). Deprecated. [1]_"
 msgstr ""
+"Yerel zaman ismi (yerel zaman bulunmuyorsa karakter girmeyin). Kullanımdan "
+"kaldırıldı. [1]_"
 
 #: library/time.rst:490
 msgid "``%%``"
-msgstr ""
+msgstr "``%%``"
 
 #: library/time.rst:490
 msgid "A literal ``'%'`` character."
-msgstr ""
+msgstr "Gerçek bir ``'%'`` karakteri."
 
 #: library/time.rst:493
 msgid "Notes:"
-msgstr ""
+msgstr "Notlar:"
 
 #: library/time.rst:496
 msgid ""
@@ -748,6 +938,9 @@ msgid ""
 "affects the output hour field if the ``%I`` directive is used to parse the "
 "hour."
 msgstr ""
+":func:`strptime` işleviyle kullanıldığında, ``%p`` yönergesi yalnızca, saati "
+"ayrıştırmak için ``%I`` yönergesi kullanılıyorsa, çıkış saati alanını "
+"etkiler."
 
 #: library/time.rst:500
 msgid ""
@@ -755,18 +948,25 @@ msgid ""
 "representing `leap seconds`_ and value ``61`` is supported for historical "
 "reasons."
 msgstr ""
+"Aralık gerçekten de ``0``'dan ``61``'e kadardır; ``60`` değeri `leap "
+"seconds`_ 'u temsil eden zaman damgalarında geçerlidir ve ``61`` değeriyse "
+"tarihsel nedenlerden ötürü desteklenmektedir."
 
 #: library/time.rst:505
 msgid ""
 "When used with the :func:`strptime` function, ``%U`` and ``%W`` are only "
 "used in calculations when the day of the week and the year are specified."
 msgstr ""
+"``%U`` ve ``%W`` ifadeleri, :func:`strptime` fonksiyonu ile kullanıldığında, "
+"yalnızca haftanın günü ve yıl belirtilmişse hesaplamalarda kullanılır."
 
 #: library/time.rst:508
 msgid ""
 "Here is an example, a format for dates compatible with that specified  in "
 "the :rfc:`2822` Internet email standard.  [1]_ ::"
 msgstr ""
+"İşte bir örnek, :rfc:`2822` İnternet e-posta standardında belirtilenle "
+"uyumlu tarih biçimi.  [1]_ ::"
 
 #: library/time.rst:515
 msgid ""
@@ -775,6 +975,10 @@ msgid ""
 "of format codes supported on your platform, consult the :manpage:"
 "`strftime(3)` documentation."
 msgstr ""
+"Belirli platformlarda ek yönergeler desteklenebilir, ancak yalnızca burada "
+"listelenenlerin ANSI C tarafından standartlaştırılmış bir anlamı vardır.  "
+"Platformunuzda desteklenen tüm biçim kodlarını görmek için :manpage:"
+"`strftime(3)` belgelerine bakın."
 
 #: library/time.rst:520
 msgid ""
@@ -783,12 +987,19 @@ msgid ""
 "order; this is also not portable. The field width is normally 2 except for "
 "``%j`` where it is 3."
 msgstr ""
+"Bazı platformlarda, isteğe bağlı bir alan genişliği ve kesinlik belirtimi, "
+"bir yönergenin ilk ``'%'`` ifadesini aşağıdaki sırayla hemen takip edebilir; "
+"bu da taşınabilir değil. Alan genişliği, 3 olduğu ``%j`` dışında normalde "
+"2'dir."
 
 #: library/time.rst:531
 msgid ""
 "Parse a string representing a time according to a format.  The return value "
 "is a :class:`struct_time` as returned by :func:`gmtime` or :func:`localtime`."
 msgstr ""
+"Bir biçime göre bir zamanı temsil eden bir dizeyi ayrıştırın.  Dönüş "
+"değeri, :func:`gmtime` veya :func:`localtime` tarafından döndürülen bir :"
+"class:`struct_time` şeklindedir."
 
 #: library/time.rst:535
 msgid ""
@@ -800,10 +1011,18 @@ msgid ""
 "accurate values cannot be inferred are ``(1900, 1, 1, 0, 0, 0, 0, 1, -1)``. "
 "Both *string* and *format* must be strings."
 msgstr ""
+"*format* parametresi, :func:`strftime` tarafından kullanılanlarla aynı "
+"yönergeleri kullanır; varsayılan olarak :func:`ctime` tarafından döndürülen "
+"biçimlendirmeyle eşleşen ``\"%a %b %d %H:%M:%S %Y\"`` şeklindedir. *string* "
+"*format*'a göre ayrıştırılamazsa veya ayrıştırma sonrasında fazla veriye "
+"sahipse :exc:`ValueError` yükseltilir. Daha doğru değerler çıkarılamadığında "
+"eksik verileri doldurmak için kullanılan varsayılan değerler ``(1900, 1, 1, "
+"0, 0, 0, 0, 1, -1)`` şeklindedir. Hem *string* hem de *format* dize "
+"olmalıdır."
 
 #: library/time.rst:543
 msgid "For example:"
-msgstr ""
+msgstr "Örnek olarak:"
 
 #: library/time.rst:550
 msgid ""
@@ -812,6 +1031,10 @@ msgid ""
 "platform-specific except for recognizing UTC and GMT which are always known "
 "(and are considered to be non-daylight savings timezones)."
 msgstr ""
+"``%Z`` yönergesi için destek, ``tzname`` içinde bulunan değerlere ve "
+"``daylight`` ifadesinin doğru olup olmadığına bağlıdır.  Bu nedenle, her "
+"zaman bilinen (ve gün ışığından yararlanma saat dilimleri olarak kabul "
+"edilen) UTC ve GMT'yi tanımak dışında platforma özgüdür."
 
 #: library/time.rst:555
 msgid ""
@@ -821,6 +1044,10 @@ msgid ""
 "platform and thus does not necessarily support all directives available that "
 "are not documented as supported."
 msgstr ""
+"Yalnızca belgelerde belirtilen yönergeler desteklenir.  ``strftime()`` "
+"platform başına uygulandığından, bazen listelenenlerden daha fazla yönerge "
+"sunabilir.  Ancak ``strptime()`` herhangi bir platformdan bağımsızdır ve bu "
+"nedenle desteklendiği belgelenmeyen mevcut tüm yönergeleri desteklemeyebilir."
 
 #: library/time.rst:564
 msgid ""
@@ -829,152 +1056,158 @@ msgid ""
 "tuple` interface: values can be accessed by index and by attribute name.  "
 "The following values are present:"
 msgstr ""
+":func:`gmtime`, :func:`localtime` ve :func:`strptime` tarafından döndürülen "
+"zaman değeri dizisinin türü.  :term:`named tuple` arayüzüne sahip bir "
+"nesnedir: değerlere dizin ve öznitelik adıyla erişilebilir.  Aşağıdaki "
+"değerler mevcuttur:"
 
 #: library/time.rst:570
 msgid "Index"
-msgstr ""
+msgstr "Dizin"
 
 #: library/time.rst:570
 msgid "Attribute"
-msgstr ""
+msgstr "Öznitelik"
 
 #: library/time.rst:570
 msgid "Values"
-msgstr ""
+msgstr "Değerler"
 
 #: library/time.rst:572
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: library/time.rst:572
 msgid ":attr:`tm_year`"
-msgstr ""
+msgstr ":attr:`tm_year`"
 
 #: library/time.rst:572
 msgid "(for example, 1993)"
-msgstr ""
+msgstr "(örnek olarak, 1993)"
 
 #: library/time.rst:574
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: library/time.rst:574
 msgid ":attr:`tm_mon`"
-msgstr ""
+msgstr ":attr:`tm_mon`"
 
 #: library/time.rst:574
 msgid "range [1, 12]"
-msgstr ""
+msgstr "[1, 12] aralığı"
 
 #: library/time.rst:576
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: library/time.rst:576
 msgid ":attr:`tm_mday`"
-msgstr ""
+msgstr ":attr:`tm_mday`"
 
 #: library/time.rst:576
 msgid "range [1, 31]"
-msgstr ""
+msgstr "[1, 31] aralığı"
 
 #: library/time.rst:578
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: library/time.rst:578
 msgid ":attr:`tm_hour`"
-msgstr ""
+msgstr ":attr:`tm_hour`"
 
 #: library/time.rst:578
 msgid "range [0, 23]"
-msgstr ""
+msgstr "[0, 23] aralığı"
 
 #: library/time.rst:580
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: library/time.rst:580
 msgid ":attr:`tm_min`"
-msgstr ""
+msgstr ":attr:`tm_min`"
 
 #: library/time.rst:580
 msgid "range [0, 59]"
-msgstr ""
+msgstr "[0, 59] aralığa"
 
 #: library/time.rst:582
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: library/time.rst:582
 msgid ":attr:`tm_sec`"
-msgstr ""
+msgstr ":attr:`tm_sec`"
 
 #: library/time.rst:582
 msgid "range [0, 61]; see **(2)** in :func:`strftime` description"
-msgstr ""
+msgstr "[0, 61] aralığı; :func:`strftime` içinde **(2)** açıklamasına göz atın"
 
 #: library/time.rst:585
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: library/time.rst:585
 msgid ":attr:`tm_wday`"
-msgstr ""
+msgstr ":attr:`tm_wday`"
 
 #: library/time.rst:585
 msgid "range [0, 6], Monday is 0"
-msgstr ""
+msgstr "[0, 6] aralığı, Pazartesi 0'dır"
 
 #: library/time.rst:587
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: library/time.rst:587
 msgid ":attr:`tm_yday`"
-msgstr ""
+msgstr ":attr:`tm_yday`"
 
 #: library/time.rst:587
 msgid "range [1, 366]"
-msgstr ""
+msgstr "[1, 366] aralığı"
 
 #: library/time.rst:589
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: library/time.rst:589
 msgid ":attr:`tm_isdst`"
-msgstr ""
+msgstr ":attr:`tm_isdst`"
 
 #: library/time.rst:589
 msgid "0, 1 or -1; see below"
-msgstr ""
+msgstr "0, 1 veya -1; aşağıya bakınız"
 
 #: library/time.rst:593
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 #: library/time.rst:591
 msgid ":attr:`tm_zone`"
-msgstr ""
+msgstr ":attr:`tm_zone`"
 
 #: library/time.rst:591
 msgid "abbreviation of timezone name"
-msgstr ""
+msgstr "saat diliminin adının kısaltması"
 
 #: library/time.rst:593
 msgid ":attr:`tm_gmtoff`"
-msgstr ""
+msgstr ":attr:`tm_gmtoff`"
 
 #: library/time.rst:593
 msgid "offset east of UTC in seconds"
-msgstr ""
+msgstr "UTC'nin doğusundaki saniye farkı"
 
 #: library/time.rst:596
 msgid ""
 "Note that unlike the C structure, the month value is a range of [1, 12], not "
 "[0, 11]."
 msgstr ""
+"C yapısından farklı olarak, ay değerinin menzili [1, 12] arasındadır, [0, "
+"11] değil."
 
 #: library/time.rst:599
 msgid ""
@@ -983,6 +1216,9 @@ msgid ""
 "that this is not known, and will usually result in the correct state being "
 "filled in."
 msgstr ""
+":func:`mktime` çağrılarında, :attr:`tm_isdst` yaz saati uygulaması etkinken "
+"1, etkin değilken 0 olarak ayarlanabilir.  -1 değeri bunun bilinmediğini "
+"gösterir ve genellikle doğru durumun doldurulmasıyla sonuçlanır."
 
 #: library/time.rst:603
 msgid ""
@@ -990,6 +1226,9 @@ msgid ""
 "class:`struct_time`, or having elements of the wrong type, a :exc:"
 "`TypeError` is raised."
 msgstr ""
+":class:`struct_time` bekleyen bir fonksiyona yanlış uzunluğa sahip bir demet "
+"iletildiğinde, veya yanlış türde elemanlara sahip olmak, bir :exc:"
+"`TypeError` yükseltir."
 
 #: library/time.rst:609
 msgid ""
@@ -999,6 +1238,11 @@ msgid ""
 "the epoch_. This is commonly referred to as `Unix time <https://en.wikipedia."
 "org/wiki/Unix_time>`_."
 msgstr ""
+"epoch_ 'dan bu yana geçen süreyi kayan noktalı bir sayı olarak saniye "
+"cinsinden döndürür. `leap seconds`_ 'ın ele alınması platforma bağlıdır. "
+"Windows'ta ve çoğu Unix sisteminde, artık saniyeler, epoch_'dan bu yana "
+"saniye cinsinden süreye dahil edilmez. Bu genellikle `Unix time <https://en."
+"wikipedia.org/wiki/Unix_time>`_ olarak anılır."
 
 #: library/time.rst:615
 msgid ""
@@ -1008,6 +1252,10 @@ msgid ""
 "lower value than a previous call if the system clock has been set back "
 "between the two calls."
 msgstr ""
+"Zamanın her zaman bir kayan noktalı sayı olarak döndürülmesine rağmen, tüm "
+"sistemlerin zamanı 1 saniyeden daha iyi kesinlikte sağlamadığını unutmayın. "
+"Bu fonksiyon normalde azalmayan değerler döndürürken, sistem saati iki çağrı "
+"arasında geri ayarlanmışsa önceki çağrıdan daha düşük bir değer döndürebilir."
 
 #: library/time.rst:621
 msgid ""
@@ -1018,18 +1266,27 @@ msgid ""
 "returned, from which the components of the calendar date may be accessed as "
 "attributes."
 msgstr ""
+":func:`.time` tarafından döndürülen sayı UTC'de :func:`gmtime` fonksiyonuna "
+"geçirerek veya yerel saatte :func:`localtime` fonksiyonuna geçirerek daha "
+"yaygın bir zaman biçimine döndürülebilir (yıl, ay, gün, saat vb. gibi). Her "
+"iki durumda da, takvim tarihinin bileşenlerine nitelikler olarak "
+"erişilebilen bir :class:`struct_time` nesnesi döndürülür."
 
 #: library/time.rst:628
 msgid ""
 "Use :func:`time_ns` to avoid the precision loss caused by the :class:`float` "
 "type."
 msgstr ""
+":class:`float` türünden kaynaklanan kesinlik kaybından kaçınmak için :func:"
+"`time_ns` kullanınız."
 
 #: library/time.rst:634
 msgid ""
 "Similar to :func:`~time.time` but returns time as an integer number of "
 "nanoseconds since the epoch_."
 msgstr ""
+":func:`~time.time`'ye benzer, ancak zamanı, epoch_ 'den bu yana geçen "
+"nanosaniyelerin tamsayısı olarak döndürür."
 
 #: library/time.rst:647
 msgid ""
@@ -1039,24 +1296,33 @@ msgid ""
 "returned value is undefined, so that only the difference between the results "
 "of two calls in the same thread is valid."
 msgstr ""
+"Geçerli iş parçacığının sistem ve kullanıcı CPU zamanının toplamının "
+"değerini (kesirli saniye cinsinden) döndürür.  Uykuda geçen süreyi dahil "
+"etmez.  Tanım gereği iş parçacığı çapındadır.  Döndürülen değerin referans "
+"noktası tanımsızdır, böylece sadece aynı iş parçacığındaki iki çağrının "
+"sonuçları arasındaki fark geçerlidir."
 
 #: library/time.rst:653
 msgid ""
 "Use :func:`thread_time_ns` to avoid the precision loss caused by the :class:"
 "`float` type."
 msgstr ""
+":class:`float` türünün neden olduğu kesinlik kaybını önlemek için :func:"
+"`thread_time_ns` kullanın."
 
-#: library/time.rst:-1
+#: library/time.rst:656
 msgid ":ref:`Availability <availability>`: Linux, Unix, Windows."
-msgstr ""
+msgstr ":ref:`Availability <availability>`: Linux, Unix, Windows."
 
 #: library/time.rst:658
 msgid "Unix systems supporting ``CLOCK_THREAD_CPUTIME_ID``."
-msgstr ""
+msgstr "Unix sistemler ``CLOCK_THREAD_CPUTIME_ID`` destekliyor."
 
 #: library/time.rst:665
 msgid "Similar to :func:`thread_time` but return time as nanoseconds."
 msgstr ""
+":func:`thread_time` ile benzer şekilde ama zamanı nanosaniyeler şeklinde "
+"döndürür."
 
 #: library/time.rst:672
 msgid ""
@@ -1068,6 +1334,14 @@ msgid ""
 "saving time rules, or to nonzero if there is a time, past, present or future "
 "when daylight saving time applies)."
 msgstr ""
+"Kütüphane rutinleri tarafından kullanılan zaman dönüştürme kurallarını "
+"sıfırlayın. :envvar:`TZ` ortam değişkeni bunun nasıl yapıldığını belirtir. "
+"Ayrıca tzname ( :envvar:`TZ` ortam değişkeninden), ``timezone`` (UTC'nin "
+"batısındaki DST olmayan saniyeler), ``altzone`` (UTC'nin batısındaki DST "
+"saniyeleri) değişkenlerini de ayarlayacaktır. ) ve ``daylight`` (bu saat "
+"diliminde herhangi bir yaz saati uygulaması kuralı yoksa 0'a veya gün "
+"ışığından yararlanma saatinin uygulandığı geçmiş, şimdi veya gelecek bir "
+"zaman varsa sıfırdan farklı)."
 
 #: library/time.rst:684
 msgid ""
@@ -1075,34 +1349,41 @@ msgid ""
 "affect the output of functions like :func:`localtime` without calling :func:"
 "`tzset`, this behavior should not be relied on."
 msgstr ""
+"Çoğu durumda, :envvar:`TZ` ortam değişkenini değiştirmek, :func:`localtime` "
+"gibi işlevlerin çıktısını :func:`tzset` çağırmadan etkileyebilirse de, bu "
+"davranışa güvenilmemelidir."
 
 #: library/time.rst:688
 msgid "The :envvar:`TZ` environment variable should contain no whitespace."
-msgstr ""
+msgstr ":envvar:`TZ` çevre değişkeni boşluk karakteri içermemelidir."
 
 #: library/time.rst:690
 msgid ""
 "The standard format of the :envvar:`TZ` environment variable is (whitespace "
 "added for clarity)::"
 msgstr ""
+":envvar:`TZ` çevre değişkeninin standart biçimi (boşluk karakteri açıklık "
+"için eklenmiştir)::"
 
 #: library/time.rst:695
 msgid "Where the components are:"
-msgstr ""
+msgstr "Bileşenlerin olduğu yerde:"
 
 #: library/time.rst:699
 msgid "``std`` and ``dst``"
-msgstr ""
+msgstr "``std`` ve ``dst``"
 
 #: library/time.rst:698
 msgid ""
 "Three or more alphanumerics giving the timezone abbreviations. These will be "
 "propagated into time.tzname"
 msgstr ""
+"Üç veya daha fazla harfler ve sayılar saat dilimi kısaltmalarını veriyor. "
+"Bunlar time.tzname içine yayılacaktır"
 
 #: library/time.rst:705
 msgid "``offset``"
-msgstr ""
+msgstr "``offset``"
 
 #: library/time.rst:702
 msgid ""
@@ -1111,40 +1392,51 @@ msgid ""
 "of the Prime Meridian; otherwise, it is west. If no offset follows dst, "
 "summer time is assumed to be one hour ahead of standard time."
 msgstr ""
+"Göreli konum şu biçimdedir: ``± hh[:mm[:ss]]``. Bu, UTC'ye varmak için yerel "
+"saate eklenen değeri gösterir.  Başında '-' varsa, saat dilimi Başlangıç "
+"Meridyeni'nin doğusundadır; aksi halde batıdır. dst'yi takip eden herhangi "
+"bir sapma yoksa, yaz saatinin standart saatten bir saat ileri olduğu "
+"varsayılır."
 
 #: library/time.rst:727
 msgid "``start[/time], end[/time]``"
-msgstr ""
+msgstr "``start[/time], end[/time]``"
 
 #: library/time.rst:708
 msgid ""
 "Indicates when to change to and back from DST. The format of the start and "
 "end dates are one of the following:"
 msgstr ""
+"DST'ye ne zaman geçileceğini ve DST'den geri dönüleceğini gösterir. "
+"Başlangıç ve bitiş tarihlerinin biçimi aşağıdakilerden biridir:"
 
 #: library/time.rst:713
 msgid ":samp:`J{n}`"
-msgstr ""
+msgstr ":samp:`J{n}`"
 
 #: library/time.rst:712
 msgid ""
 "The Julian day *n* (1 <= *n* <= 365). Leap days are not counted, so in all "
 "years February 28 is day 59 and March 1 is day 60."
 msgstr ""
+"Jülyen günü *n* (1 <= *n* <= 365). Artık günler sayılmaz, yani bütün "
+"yıllarda 28 Şubat 59. gün ve 1 Mart 60. gündür."
 
 #: library/time.rst:717
 msgid ":samp:`{n}`"
-msgstr ""
+msgstr ":samp:`{n}`"
 
 #: library/time.rst:716
 msgid ""
 "The zero-based Julian day (0 <= *n* <= 365). Leap days are counted, and it "
 "is possible to refer to February 29."
 msgstr ""
+"Sıfır tabanlı Jülyen günü (0 <= *n* <= 365). Artık günler dahil edilmiştir, "
+"ve 29 Şubat'tan bahsetmek mümkündür."
 
 #: library/time.rst:724
 msgid ":samp:`M{m}.{n}.{d}`"
-msgstr ""
+msgstr ":samp:`M{m}.{n}.{d}`"
 
 #: library/time.rst:720
 msgid ""
@@ -1153,12 +1445,18 @@ msgid ""
 "*m*\" which may occur in either the fourth or the fifth week). Week 1 is the "
 "first week in which the *d*'th day occurs. Day zero is a Sunday."
 msgstr ""
+"Yılın *m* ayının *n* haftasının *d*'inci günü (0 <= *d* <= 6) (1 <= *n* <= "
+"5, 1 <= *m* <= 12, burada 5. hafta \"the last *d* day in month *m*\" "
+"anlamına gelir ve dördüncü veya beşinci haftada olabilir)."
 
 #: library/time.rst:726
 msgid ""
 "``time`` has the same format as ``offset`` except that no leading sign ('-' "
 "or '+') is allowed. The default, if time is not given, is 02:00:00."
 msgstr ""
+"``time``, ``offset`` ile ('-' or '+') ön işaretlerine izin verilmemesi "
+"haricinde aynı biçime sahiptir. Zaman verilmemişse, varsayılan olarak "
+"02:00:00'dır."
 
 #: library/time.rst:740
 msgid ""
@@ -1170,22 +1468,34 @@ msgid ""
 "located at :file:`/usr/share/zoneinfo`. For example,  ``'US/Eastern'``, "
 "``'Australia/Melbourne'``, ``'Egypt'`` or  ``'Europe/Amsterdam'``. ::"
 msgstr ""
+"Bir çok Unix sisteminde (\\*BSD, Linux, Solaris, ve Darwin dahil), saat "
+"dilimi kurallarını belirlemek için sistemin zoneinfo (:manpage:`tzfile(5)`) "
+"veritabanını kullanmak daha uygundur. Bunu yapmak için, :envvar:`TZ` çevre "
+"değişkenini gerekli saat dilimi veri dosyasının konumuna ayarlayınız, "
+"sistemlerin 'zoneinfo' saat dilimi veritabanının köküne göre, genellikle :"
+"file:`/usr/share/zoneinfo` konumunda bulunur. Örnek olarak, ``'US/"
+"Eastern'``, ``'Australia/Melbourne'``, ``'Egypt'`` veya  ``'Europe/"
+"Amsterdam'``. ::"
 
 #: library/time.rst:761
 msgid "Clock ID Constants"
-msgstr ""
+msgstr "Saat Kimliği Sabitleri"
 
 #: library/time.rst:763
 msgid ""
 "These constants are used as parameters for :func:`clock_getres` and :func:"
 "`clock_gettime`."
 msgstr ""
+"Şu sabitler :func:`clock_getres` ve :func:`clock_gettime` için parametre "
+"olarak kullanılırlar."
 
 #: library/time.rst:768
 msgid ""
 "Identical to :data:`CLOCK_MONOTONIC`, except it also includes any time that "
 "the system is suspended."
 msgstr ""
+":data:`CLOCK_MONOTONIC` ile aynı şekilde, ancak o sistemin askıya alındığı "
+"herhangi bir zamanı da içerir."
 
 #: library/time.rst:771
 msgid ""
@@ -1194,10 +1504,14 @@ msgid ""
 "have  discontinuities if the time is changed using ``settimeofday()`` or "
 "similar."
 msgstr ""
+"Bu, uygulamaların :data:`CLOCK_REALTIME` komplikasyonları ile uğraşmak "
+"zorunda kalmadan, zaman ``settimeofday()`` veya benzeri kullanılarak "
+"değiştirildiğinde süreksizliklere sahip olabilecek, askıya alma farkında "
+"monoton bir saat elde etmelerini sağlar."
 
-#: library/time.rst:777
+#: library/time.rst:776
 msgid ":ref:`Availability <availability>`: Linux >= 2.6.39."
-msgstr ""
+msgstr ":ref:`Availability <availability>`: Linux >= 2.6.39."
 
 #: library/time.rst:783
 msgid ""
@@ -1205,64 +1519,78 @@ msgid ""
 "hardware source, and may give close to nanosecond resolution. "
 "``CLOCK_HIGHRES`` is the nonadjustable, high-resolution clock."
 msgstr ""
+"Solaris OS, en uygun donanım kaynağını kullanmaya çalışan ve nanosaniyeye "
+"yakın kesinlik sağlayabilen bir ``CLOCK_HIGHRES`` zamanlayıcıya sahiptir. "
+"``CLOCK_HIGHRES`` ayarlanamaz, yüksek kesinlikli saattir."
 
-#: library/time.rst:788
+#: library/time.rst:787
 msgid ":ref:`Availability <availability>`: Solaris."
-msgstr ""
+msgstr ":ref:`Availability <availability>`: Solaris."
 
 #: library/time.rst:794
 msgid ""
 "Clock that cannot be set and represents monotonic time since some "
 "unspecified starting point."
 msgstr ""
+"Belirsiz başlangıç noktasından beri ayarlanamayan ve monoton zamanı temsil "
+"eden saat."
 
 #: library/time.rst:804
 msgid ""
 "Similar to :data:`CLOCK_MONOTONIC`, but provides access to a raw hardware-"
 "based time that is not subject to NTP adjustments."
 msgstr ""
+":data:`CLOCK_MONOTONIC` ile benzer, ama NTP ayarlamalarına tabii olmayan "
+"donanım bazlı ham zamana erişim sağlar."
 
-#: library/time.rst:808
+#: library/time.rst:807
 msgid ":ref:`Availability <availability>`: Linux >= 2.6.28, macOS >= 10.12."
-msgstr ""
+msgstr ":ref:`Availability <availability>`: Linux >= 2.6.28, macOS >= 10.12."
 
 #: library/time.rst:823
 msgid "High-resolution per-process timer from the CPU."
-msgstr ""
+msgstr "CPU'dan yüksek kesinlikli işlem başına zamanlayıcısı."
 
-#: library/time.rst:826
+#: library/time.rst:825
 msgid ":ref:`Availability <availability>`: FreeBSD, NetBSD >= 7, OpenBSD."
-msgstr ""
+msgstr ":ref:`Availability <availability>`: FreeBSD, NetBSD >= 7, OpenBSD."
 
 #: library/time.rst:831
 msgid ""
 "`International Atomic Time <https://www.nist.gov/pml/time-and-frequency-"
 "division/nist-time-frequently-asked-questions-faq#tai>`_"
 msgstr ""
+"`International Atomic Time <https://www.nist.gov/pml/time-and-frequency-"
+"division/nist-time-frequently-asked-questions-faq#tai>`_"
 
 #: library/time.rst:833
 msgid ""
 "The system must have a current leap second table in order for this to give "
 "the correct answer.  PTP or NTP software can maintain a leap second table."
 msgstr ""
+"Bunun doğru cevabı verebilmesi için sistemin güncel bir artık saniye "
+"tablosuna sahip olması gerekir.  PTP veya NTP yazılımı artık saniye "
+"tablosunu sürdürebilir."
 
-#: library/time.rst:837
+#: library/time.rst:836
 msgid ":ref:`Availability <availability>`: Linux."
-msgstr ""
+msgstr ":ref:`Availability <availability>`: Linux."
 
 #: library/time.rst:842
 msgid "Thread-specific CPU-time clock."
-msgstr ""
+msgstr "İş parçacığına özgü CPU zamanlayıcı saati."
 
 #: library/time.rst:851
 msgid ""
 "Time whose absolute value is the time the system has been running and not "
 "suspended, providing accurate uptime measurement, both absolute and interval."
 msgstr ""
+"Mutlak değeri sistemin çalıştığı ve askıya alınmadığı süre olan süre, hem "
+"mutlak hem de aralıklı olarak doğru çalışma süresi ölçümü sağlar."
 
-#: library/time.rst:856
+#: library/time.rst:855
 msgid ":ref:`Availability <availability>`: FreeBSD, OpenBSD >= 5.5."
-msgstr ""
+msgstr ":ref:`Availability <availability>`: FreeBSD, OpenBSD >= 5.5."
 
 #: library/time.rst:862
 msgid ""
@@ -1270,26 +1598,32 @@ msgid ""
 "point, unaffected by frequency or time adjustments and not incremented while "
 "the system is asleep."
 msgstr ""
+"Monoton bir şekilde artan saat, istenilen bir noktadan itibaren zamanı takip "
+"ediyor, sıklıktan ve zaman ayarlamalarından etkilenmiyor ve sistem "
+"uykudayken artmıyor."
 
-#: library/time.rst:867
+#: library/time.rst:866
 msgid ":ref:`Availability <availability>`: macOS >= 10.12."
-msgstr ""
+msgstr ":ref:`Availability <availability>`: macOS >= 10.12."
 
 #: library/time.rst:870
 msgid ""
 "The following constant is the only parameter that can be sent to :func:"
 "`clock_settime`."
 msgstr ""
+"Aşağıdaki sabit :func:`clock_settime`'a gönderilebilecek tek parametredir."
 
 #: library/time.rst:876
 msgid ""
 "System-wide real-time clock.  Setting this clock requires appropriate "
 "privileges."
 msgstr ""
+"Sistem çapında gerçek zamanlı saat.  Bu saati ayarlamak uygun izinleri "
+"gerektirir."
 
 #: library/time.rst:887
 msgid "Timezone Constants"
-msgstr ""
+msgstr "Saat dilimi Sabitleri"
 
 #: library/time.rst:891
 msgid ""
@@ -1298,10 +1632,16 @@ msgid ""
 "Western Europe, including the UK).  Only use this if ``daylight`` is "
 "nonzero.  See note below."
 msgstr ""
+"Tanımlanmışsa, yerel DST saat diliminin UTC'nin batısındaki saniye cinsinden "
+"farkı. Yerel DST saat dilimi UTC'nin doğusundaysa (Britanya dahil Batı "
+"Avrupa'da olduğu gibi) bu negatiftir.  Bunu yalnızca ``daylight`` sıfır "
+"değilse kullanın.  Aşağıdaki nota bakın."
 
 #: library/time.rst:897
 msgid "Nonzero if a DST timezone is defined.  See note below."
 msgstr ""
+"Sıfırdan farklı, eğer bir DST saat dilimi tanımlanmışsa.  Aşağıdaki nota göz "
+"atın."
 
 #: library/time.rst:901
 msgid ""
@@ -1309,6 +1649,9 @@ msgid ""
 "in most of Western Europe, positive in the US, zero in the UK).  See note "
 "below."
 msgstr ""
+"Yerel (DST olmayan) saat diliminin farkı, UTC'nin batısında saniye cinsinden "
+"farkı (Batı Avrupa'nın çoğunda negatif, ABD'de pozitif, Birleşik Krallık'ta "
+"sıfır).  Aşağıdaki nota bakın."
 
 #: library/time.rst:906
 msgid ""
@@ -1316,6 +1659,9 @@ msgid ""
 "the second is the name of the local DST timezone.  If no DST timezone is "
 "defined, the second string should not be used.  See note below."
 msgstr ""
+"İki dizeden oluşan bir demet: ilki yerel DST olmayan saat diliminin ismi, "
+"ikincisi yerel DST saat diliminin ismi.  DST saat dilimi tanımlanmamışsa, "
+"ikinci dize kullanılmamalı.  Aşağıdaki nota bakın."
 
 #: library/time.rst:912
 msgid ""
@@ -1326,18 +1672,24 @@ msgid ""
 "attr:`tm_gmtoff` and :attr:`tm_zone` results from :func:`localtime` to "
 "obtain timezone information."
 msgstr ""
+"Yukarıdaki Saat Dilimi sabitleri için (:data:`altzone`, :data:`daylight`, :"
+"data:`timezone` ve :data:`tzname`), değer, modül yükleme zamanında geçerli "
+"olan saat dilimi kurallarına göre belirlenir veya son kez :func:`tzset` "
+"çağrılır ve geçmişteki zamanlar için yanlış olabilir.  Saat dilimi bilgisi "
+"almak için :func:`localtime`'den :attr:`tm_gmtoff` ve :attr:`tm_zone` "
+"sonuçlarının kullanılması önerilir."
 
 #: library/time.rst:922
 msgid "Module :mod:`datetime`"
-msgstr ""
+msgstr ":mod:`datetime` modülü"
 
 #: library/time.rst:922
 msgid "More object-oriented interface to dates and times."
-msgstr ""
+msgstr "Tarihler ve zamanlar için daha fazla nesne tabanlı arayüz."
 
 #: library/time.rst:926
 msgid "Module :mod:`locale`"
-msgstr ""
+msgstr ":mod:`locale` modülü"
 
 #: library/time.rst:925
 msgid ""
@@ -1345,20 +1697,24 @@ msgid ""
 "interpretation of many format specifiers in :func:`strftime` and :func:"
 "`strptime`."
 msgstr ""
+"Uluslararasılaştırma servisleri.  Yerel ayar, :func:`strftime` ve :func:"
+"`strptime` içindeki birçok biçim belirticisinin yorumlanmasını etkiler."
 
 #: library/time.rst:929
 msgid "Module :mod:`calendar`"
-msgstr ""
+msgstr ":mod:`calendar` modülü"
 
 #: library/time.rst:929
 msgid ""
 "General calendar-related functions.   :func:`~calendar.timegm` is the "
 "inverse of :func:`gmtime` from this module."
 msgstr ""
+"Genel takvim ile alakalı fonksiyonlar.   :func:`~calendar.timegm` bu "
+"modüldeki :func:`gmtime`'in tersidir."
 
 #: library/time.rst:933
 msgid "Footnotes"
-msgstr ""
+msgstr "Dipnotlar"
 
 #: library/time.rst:934
 msgid ""
@@ -1370,3 +1726,10 @@ msgid ""
 "the 4-digit year has been first recommended by :rfc:`1123` and then mandated "
 "by :rfc:`2822`."
 msgstr ""
+"``%Z`` kullanımı artık kullanımdan kaldırıldı, ancak tercih edilen saat/"
+"dakika farkına genişleyen ``%z`` çıkışı, tüm ANSI C kütüphaneleri tarafından "
+"desteklenmez. Ayrıca, orijinal 1982 :rfc:`822` standardının katı bir "
+"okuması, iki basamaklı bir yıl gerektirir (``%y`` yerine ``%y``), ancak "
+"uygulama 2000 yılından çok önce 4 basamaklı yıllara taşındı.  Bundan sonra :"
+"rfc:`822` geçerliliğini yitirdi ve 4 basamaklı yıl önce :rfc:`1123` "
+"tarafından önerildi ve ardından :rfc:`2822` tarafından zorunlu kılındı."

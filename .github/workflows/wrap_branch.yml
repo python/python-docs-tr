@@ -1,11 +1,10 @@
 name: "Wrap All"
-
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 15 * *'
+    - cron: "0 0 15 * *"
 
-jobs: 
+jobs:
   wrap:
     runs-on: ubuntu-latest
     steps:
@@ -31,16 +30,16 @@ jobs:
 
         # Create pull request
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4.2.3
+        uses: peter-evans/create-pull-request@v5.0.0
         with:
           token: ${{ secrets.BOT_PAT }}
-          commit-message: 'Wrap all files on: ${{ github.ref_name }}'
+          commit-message: "Wrap all files on: ${{ github.ref_name }}"
           branch: ${{ github.ref_name }}-wrapped
           delete-branch: true
           committer: python-docs-turkish <python.docs.tr@gmail.com>
           author: python-docs-turkish <python.docs.tr@gmail.com>
-          title: 'Wrap branch: ${{ github.ref_name }}'
-          body: 'Wrapped all files on branch: ${{ github.ref_name }}.'
+          title: "Wrap branch: ${{ github.ref_name }}"
+          body: "Wrapped all files on branch: ${{ github.ref_name }}."
           labels: wrap
           reviewers: |
             egeakman

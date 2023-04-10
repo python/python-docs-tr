@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 22:19+0000\n"
+"POT-Creation-Date: 2023-03-01 00:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -364,7 +364,9 @@ msgid "The type of :ref:`union type expressions<types-union>`."
 msgstr ""
 
 #: library/types.rst:323
-msgid "The type of traceback objects such as found in ``sys.exc_info()[2]``."
+msgid ""
+"The type of traceback objects such as found in ``sys.exception()."
+"__traceback__``."
 msgstr ""
 
 #: library/types.rst:325
@@ -534,7 +536,8 @@ msgid ""
 "`coroutine function` which returns a generator-based coroutine. The "
 "generator-based coroutine is still a :term:`generator iterator`, but is also "
 "considered to be a :term:`coroutine` object and is :term:`awaitable`.  "
-"However, it may not necessarily implement the :meth:`__await__` method."
+"However, it may not necessarily implement the :meth:`~object.__await__` "
+"method."
 msgstr ""
 
 #: library/types.rst:485
