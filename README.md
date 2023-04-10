@@ -1,4 +1,4 @@
-# Python Dokümantasyonu Türkçe Çevirisi 
+# Python Dokümantasyonu Türkçe Çevirisi
 
 [![discord](https://img.shields.io/badge/Discord-python--docs--tr-5865F2?style=for-the-badge&logo=Discord)](https://discord.gg/Af5z7JHshX) [![linkedin](https://img.shields.io/badge/LinkedIn-python--docs--tr-0A66C2?style=for-the-badge&logo=LinkedIn)](https://www.linkedin.com/company/python-docs-tr) [![gmail](https://img.shields.io/badge/GMail-python--docs--tr-EA4335?style=for-the-badge&logo=Gmail)](mailto:python.docs.tr@gmail.com)
 
