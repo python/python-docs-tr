@@ -4,7 +4,7 @@
 
 ## Dokümantasyon Katkı Anlaşması
 
-Bu proje gönüllü çevirmenler ve python-docs-tr ekibi iş birliğinde sürdürülmektedir. Bu anlaşma, çeviri sürecindeki tüm katılımcıların haklarını ve sorumluluklarını tanımlamaktadır. Projeyi GitHub ve diğer halka açık mecralarda yayınlayarak ve projeye katkı veya iyileştirme yaparak, katkılarınızı CC0 lisansı altında PSF'in kullanımına sunmuş olursunuz. Karşılığında, çeviri yaptığınız kısım için halka açık olarak övgü toplayabilirsiniz. Eğer çeviriniz PSF tarafından kabul edilirse, (eğer isterseniz) TRANSLATORS dosyasına isminizi ekleyerek bir yama gönderebilirsiniz. Yaptığınız katkı metinsel olmasa bile Python topluluğuna katılımınızı memnuniyetle karşılıyor ve herkesi katkı sağlamaya davet ediyoruz.
+Bu proje gönüllü çevirmenler ve python-docs-tr ekibi iş birliğinde sürdürülmektedir. Bu anlaşma, çeviri sürecindeki tüm katılımcıların haklarını ve sorumluluklarını tanımlamaktadır. Projeyi GitHub ve diğer halka açık mecralarda yayınlayarak ve projeye katkı veya iyileştirme yaparak, katkılarınızı CC0 lisansı altında PSF'in kullanımına sunmuş olursunuz. Karşılığında, çeviri yaptığınız kısım için halka açık olarak övgü toplayabilirsiniz. Eğer çeviriniz PSF tarafından kabul edilirse, (eğer isterseniz) [TRANSLATORS](TRANSLATORS) dosyasına isminizi ekleyerek bir yama gönderebilirsiniz. Yaptığınız katkı metinsel olmasa bile Python topluluğuna katılımınızı memnuniyetle karşılıyor ve herkesi katkı sağlamaya davet ediyoruz.
 
 Çalışmanızı dokümantasyona dahil edilmek üzere PSF'e göndererek bu anlaşmayı kabul etmiş sayılırsınız.
 
