@@ -85,7 +85,9 @@ def update_makefile(cpython_repo: Path) -> None:
     used to generate the `po` files.
     """
     makefile = Path("Makefile").read_text(encoding="UTF-8")
-    head = run("git", "-C", cpython_repo, "rev-parse", "HEAD", stdout=PIPE).stdout.strip()
+    head = run(
+        "git", "-C", cpython_repo, "rev-parse", "HEAD", stdout=PIPE
+    ).stdout.strip()
     makefile = re.sub(
         "^CPYTHON_CURRENT_COMMIT :=.*$",
         f"CPYTHON_CURRENT_COMMIT := {head}",
@@ -121,8 +123,14 @@ def main():
         cwd=args.cpython_repo / "Doc",
     )
     pot_path = args.cpython_repo / "pot"
-    upstream = {file.relative_to(pot_path).with_suffix(".po") for file in pot_path.glob("**/*.pot")}
-    downstream = {Path(po) for po in run("git", "ls-files", "*.po", stdout=PIPE).stdout.splitlines()}
+    upstream = {
+        file.relative_to(pot_path).with_suffix(".po")
+        for file in pot_path.glob("**/*.pot")
+    }
+    downstream = {
+        Path(po)
+        for po in run("git", "ls-files", "*.po", stdout=PIPE).stdout.splitlines()
+    }
     copy_new_files(upstream - downstream, pot_path=pot_path)
     update_known_files(upstream & downstream, pot_path=pot_path)
     remove_old_files(downstream - upstream)

@@ -8,7 +8,12 @@ from pprint import pprint
 import polib
 
 parser = argparse.ArgumentParser()
-parser.add_argument("subject", nargs="?", default=None, help="Subject to check (file or directory)")
+parser.add_argument(
+    "path",
+    nargs="?",
+    default=None,
+    help="Path to the .po file or directory containing .po files",
+)
 parser.add_argument("-t", "--threshold", type=int, default=85)
 args = parser.parse_args()
 
@@ -28,7 +33,11 @@ with contextlib.suppress(TypeError):
 
     elif os.path.isfile(args.subject):
         is_file = True
-        subject = args.subject if os.path.isabs(args.subject) else os.path.join(subject, args.subject)
+        subject = (
+            args.subject
+            if os.path.isabs(args.subject)
+            else os.path.join(subject, args.subject)
+        )
 
     else:
         print("Invalid subject, showing all files.")
@@ -56,7 +65,9 @@ def main(subject):
                 wordsid = [word for word in entry.msgid.split() if has_delimiters(word)]
 
             if has_delimiters(entry.msgstr):
-                wordsstr = [word for word in entry.msgstr.split() if has_delimiters(word)]
+                wordsstr = [
+                    word for word in entry.msgstr.split() if has_delimiters(word)
+                ]
 
             if len(wordsid) != len(wordsstr):
                 key = pofilename
