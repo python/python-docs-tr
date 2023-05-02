@@ -9,7 +9,13 @@ from deep_translator import DeeplTranslator, GoogleTranslator
 
 parser = ArgumentParser()
 parser.add_argument("filename", help="File to translate")
-parser.add_argument("-t", "--translator", choices=["google", "deepl"], default="deepl", help="Translator to use")
+parser.add_argument(
+    "-t",
+    "--translator",
+    choices=["google", "deepl"],
+    default="deepl",
+    help="Translator to use",
+)
 parser.add_argument(
     "-a",
     "--api-key",
@@ -18,7 +24,13 @@ parser.add_argument(
 )
 parser.add_argument("-v", "--verbose", action="store_true", help="Verbose mode")
 parser.add_argument("-d", "--debug", action="store_true", help="Debug mode")
-parser.add_argument("-s", "--skip-translated-entries", choices=[True, False], default=True, help="Skip already translated entries")
+parser.add_argument(
+    "-s",
+    "--skip-translated-entries",
+    choices=[True, False],
+    default=True,
+    help="Skip already translated entries",
+)
 
 args = parser.parse_args()
 
@@ -117,7 +129,9 @@ if __name__ == "__main__":
     if args.translator.lower() == "google":
         translator = GoogleTranslator(source="en", target="tr")
     elif args.translator.lower() == "deepl":
-        translator = DeeplTranslator(api_key=args.api_key, source="en", target="tr", use_free_api=True)
+        translator = DeeplTranslator(
+            api_key=args.api_key, source="en", target="tr", use_free_api=True
+        )
     else:
         raise ValueError("Invalid translator")
 
