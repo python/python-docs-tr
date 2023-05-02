@@ -1,7 +1,7 @@
 import os
 from argparse import ArgumentParser
 from functools import lru_cache
-from subprocess import CalledProcessError, check_output
+from subprocess import check_output
 
 import polib
 
