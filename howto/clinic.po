@@ -2,35 +2,36 @@
 # Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-01 22:19+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2023-05-02 01:31+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: howto/clinic.rst:7
 msgid "Argument Clinic How-To"
-msgstr ""
+msgstr "Argüman Kliniği Nasıl Yapılır"
 
 #: howto/clinic.rst:0
 msgid "author"
-msgstr ""
+msgstr "yazar"
 
 #: howto/clinic.rst:9
 msgid "Larry Hastings"
-msgstr ""
+msgstr "Larry Hastings"
 
 #: howto/clinic.rst:-1
 msgid "Abstract"
-msgstr ""
+msgstr "Soyut"
 
 #: howto/clinic.rst:14
 msgid ""
@@ -40,6 +41,12 @@ msgid ""
 "to work with Argument Clinic, and then introduces some advanced topics on "
 "Argument Clinic usage."
 msgstr ""
+"Argüman Kliniği CPython C dosyaları için bir ön işlemcidir. Amacı, "
+"\"builtins\" için argüman ayrıştırma kodunun yazılmasıyla ilgili tüm "
+"boilerplate'i otomatikleştirmektir. Bu dokümantasyon size ilk C "
+"fonksiyonunuzu Argüman Kliniği ile çalışacak şekilde nasıl dönüştüreceğinizi "
+"gösterir ve ardından Argüman Kliniği kullanımıyla ilgili bazı ileri düzey "
+"konuları tanıtır."
 
 #: howto/clinic.rst:21
 msgid ""
@@ -51,10 +58,17 @@ msgid ""
 "Argument Clinic that ships with the next version of CPython *could* be "
 "totally incompatible and break all your code."
 msgstr ""
+"Şu anda Argüman Kliniği CPython için dahili olarak kabul edilmektedir.  "
+"CPython dışındaki dosyalar için kullanımı desteklenmemektedir ve gelecek "
+"sürümler için geriye dönük uyumluluk konusunda herhangi bir garanti "
+"verilmemektedir.  Başka bir deyişle: CPython için harici bir C uzantısına "
+"sahipseniz, Argüman Kliniği'ni kendi kodunuzda deneyebilirsiniz.  Ancak "
+"CPython'un bir sonraki sürümüyle birlikte gelen Argüman Kliniği sürümü * "
+"tamamen uyumsuz olabilir ve tüm kodunuzu bozabilir."
 
 #: howto/clinic.rst:31
 msgid "The Goals Of Argument Clinic"
-msgstr ""
+msgstr "Argüman Kliniğinin Hedefleri"
 
 #: howto/clinic.rst:33
 msgid ""
@@ -66,6 +80,14 @@ msgid ""
 "gets called at the bottom, with ``PyObject *args`` (and maybe ``PyObject "
 "*kwargs``) magically converted into the C variables and types you need."
 msgstr ""
+"Argüman Kliniği'nin birincil amacı CPython içindeki tüm argüman ayrıştırma "
+"kodunun sorumluluğunu üstlenmektir.  Bu, bir fonksiyonu Argüman Kliniği ile "
+"çalışacak şekilde dönüştürdüğünüzde, bu fonksiyonun artık kendi argüman "
+"ayrıştırmasını yapmaması gerektiği anlamına gelir - Argüman Kliniği "
+"tarafından üretilen kod sizin için bir \"kara kutu\" olmalıdır, CPython "
+"üstte çağırır ve kodunuz altta çağrılır, ``PyObject *args`` (ve belki "
+"``PyObject *kwargs``) sihirli bir şekilde ihtiyacınız olan C değişkenlerine "
+"ve türlerine dönüştürülür."
 
 #: howto/clinic.rst:43
 msgid ""
@@ -74,6 +96,11 @@ msgid ""
 "chore, requiring maintaining redundant information in a surprising number of "
 "places. When you use Argument Clinic, you don't have to repeat yourself."
 msgstr ""
+"Argüman Kliniği'nin birincil amacına ulaşabilmesi için kullanımının kolay "
+"olması gerekir.  Şu anda, CPython'un argüman ayrıştırma kütüphanesi ile "
+"çalışmak, şaşırtıcı sayıda yerde gereksiz bilgileri korumayı gerektiren bir "
+"angarya. Argüman Kliniği'ni kullandığınızda, kendinizi tekrar etmek zorunda "
+"kalmazsınız."
 
 #: howto/clinic.rst:49
 msgid ""
@@ -86,6 +113,14 @@ msgid ""
 "parsing code, rather than calling the general-purpose CPython argument "
 "parsing library.  That would make for the fastest argument parsing possible!)"
 msgstr ""
+"Açıkçası, hiç kimse Argüman Kliniği'ni kendi sorununu çözmedikçe ve kendi "
+"başına yeni sorunlar yaratmadıkça kullanmak istemeyecektir. Bu yüzden "
+"Argüman Kliniği'nin doğru kod üretmesi çok önemlidir. Kodun daha hızlı "
+"olması da güzel olurdu, ancak en azından büyük bir hız gerilemesi "
+"getirmemelidir.  (Sonunda Argüman Kliniği *büyük bir hızlanmayı mümkün "
+"kılmalıdır* - genel amaçlı CPython argüman ayrıştırma kütüphanesini çağırmak "
+"yerine, özel argüman ayrıştırma kodu üretmek için kod oluşturucusunu yeniden "
+"yazabiliriz.  Bu, mümkün olan en hızlı argüman ayrıştırmasını sağlayacaktır!)"
 
 #: howto/clinic.rst:61
 msgid ""
@@ -93,6 +128,10 @@ msgid ""
 "approach to argument parsing.  Python has some functions with some very "
 "strange parsing behaviors; Argument Clinic's goal is to support all of them."
 msgstr ""
+"Ek olarak, Argüman Kliniği argüman ayrıştırmaya yönelik herhangi bir "
+"yaklaşımla çalışabilecek kadar esnek olmalıdır.  Python'un çok garip "
+"ayrıştırma davranışlarına sahip bazı fonksiyonları vardır; Argüman "
+"Kliniği'nin amacı bunların hepsini desteklemektir."
 
 #: howto/clinic.rst:66
 msgid ""
@@ -101,6 +140,10 @@ msgid ""
 "introspection query functions would throw an exception if you passed in a "
 "builtin.  With Argument Clinic, that's a thing of the past!"
 msgstr ""
+"Son olarak, Argüman Kliniği'nin asıl motivasyonu CPython yerleşik "
+"bileşenleri için iç gözlem \"imzaları\" sağlamaktı. Eskiden, iç gözlem sorgu "
+"işlevleri, bir yerleşik geçerseniz bir istisna atardı.  Argüman Kliniği ile "
+"bu geçmişte kaldı!"
 
 #: howto/clinic.rst:72
 msgid ""
@@ -110,28 +153,39 @@ msgid ""
 "more sophisticated, and it should be able to do many interesting and smart "
 "things with all the information you give it."
 msgstr ""
+"Argüman Kliniği ile çalışırken aklınızda tutmanız gereken bir fikir var: Ona "
+"ne kadar çok bilgi verirseniz, o kadar iyi iş çıkaracaktır. Argüman Kliniği "
+"kuşkusuz şu anda nispeten basittir.  Ancak geliştikçe daha sofistike hale "
+"gelecek ve ona verdiğiniz tüm bilgilerle birçok ilginç ve akıllıca şey "
+"yapabilecektir."
 
 #: howto/clinic.rst:82
 msgid "Basic Concepts And Usage"
-msgstr ""
+msgstr "Temel Kavramlar ve Kullanım"
 
 #: howto/clinic.rst:84
 msgid ""
 "Argument Clinic ships with CPython; you'll find it in ``Tools/clinic/clinic."
 "py``. If you run that script, specifying a C file as an argument:"
 msgstr ""
+"Argüman Kliniği CPython ile birlikte gelir; ``Tools/clinic/clinic.py`` "
+"içinde bulabilirsiniz. Bu dizeyi çalıştırırsanız, argüman olarak bir C "
+"dosyası belirtirseniz:"
 
 #: howto/clinic.rst:91
 msgid ""
 "Argument Clinic will scan over the file looking for lines that look exactly "
 "like this:"
 msgstr ""
+"Argüman Kliniği dosyayı tarayarak tam olarak buna benzeyen satırları "
+"arayacaktır:"
 
 #: howto/clinic.rst:98
 msgid ""
 "When it finds one, it reads everything up to a line that looks exactly like "
 "this:"
 msgstr ""
+"Bir tane bulduğunda, tam olarak buna benzeyen bir satıra kadar her şeyi okur:"
 
 #: howto/clinic.rst:105
 msgid ""
@@ -139,6 +193,9 @@ msgid ""
 "these lines, including the beginning and ending comment lines, are "
 "collectively called an Argument Clinic \"block\"."
 msgstr ""
+"Bu iki satır arasındaki her şey Argüman Kliniği için girdidir. Başlangıç ve "
+"bitiş yorum satırları da dahil olmak üzere tüm bu satırlara topluca Argüman "
+"Kliniği \"bloğu\" denir."
 
 #: howto/clinic.rst:109
 msgid ""
@@ -147,6 +204,10 @@ msgid ""
 "a comment containing a checksum. The Argument Clinic block now looks like "
 "this:"
 msgstr ""
+"Argüman Kliniği bu bloklardan birini ayrıştırdığında çıktı üretir.  Bu "
+"çıktı, bloktan hemen sonra C dosyasına yeniden yazılır ve ardından bir "
+"sağlama toplamı içeren bir yorum eklenir. Argüman Kliniği bloğu şimdi şöyle "
+"görünür:"
 
 #: howto/clinic.rst:122
 msgid ""
@@ -155,6 +216,10 @@ msgid ""
 "checksum line.  However, if the input hasn't changed, the output won't "
 "change either."
 msgstr ""
+"Argüman Kliniği'ni aynı dosya üzerinde ikinci kez çalıştırırsanız, Argüman "
+"Kliniği eski çıktıyı atacak ve yeni çıktıyı yeni bir sağlama toplamı "
+"satırıyla birlikte yazacaktır.  Ancak, girdi değişmemişse, çıktı da "
+"değişmeyecektir."
 
 #: howto/clinic.rst:126
 msgid ""
@@ -164,37 +229,47 @@ msgid ""
 "these edits would be lost the next time Argument Clinic writes out fresh "
 "output.)"
 msgstr ""
+"Bir Argüman Kliniği bloğunun çıktı kısmını asla değiştirmemelisiniz.  Bunun "
+"yerine, istediğiniz çıktıyı üretene kadar girdiyi değiştirin.  (Sağlama "
+"toplamının amacı budur - birisinin çıktıyı değiştirip değiştirmediğini "
+"tespit etmek, çünkü bu düzenlemeler Argüman Kliniği bir sonraki sefer yeni "
+"çıktı yazdığında kaybolacaktır)"
 
 #: howto/clinic.rst:131
 msgid ""
 "For the sake of clarity, here's the terminology we'll use with Argument "
 "Clinic:"
 msgstr ""
+"Açıklık getirmek adına, Argüman Kliniği ile ilgili kullanacağımız "
+"terminolojiyi burada bulabilirsiniz:"
 
 #: howto/clinic.rst:133
 msgid ""
 "The first line of the comment (``/*[clinic input]``) is the *start line*."
-msgstr ""
+msgstr "Yorumun ilk satırı (``/*[clinic input]``) *başlangıç satırıdır*."
 
 #: howto/clinic.rst:134
 msgid ""
 "The last line of the initial comment (``[clinic start generated code]*/``) "
 "is the *end line*."
 msgstr ""
+"İlk yorumun son satırı (``[clinic start generated code]*/``) *son satırdır*."
 
 #: howto/clinic.rst:135
 msgid ""
 "The last line (``/*[clinic end generated code: checksum=...]*/``) is the "
 "*checksum line*."
 msgstr ""
+"Son satır (``/*[clinic end generated code: checksum=...]*/``) *checksum "
+"line*."
 
 #: howto/clinic.rst:136
 msgid "In between the start line and the end line is the *input*."
-msgstr ""
+msgstr "Yorumun ilk satırı (``/*[clinic input]``) *başlangıç satırıdır*."
 
 #: howto/clinic.rst:137
 msgid "In between the end line and the checksum line is the *output*."
-msgstr ""
+msgstr "Bitiş satırı ile sağlama toplamı satırı arasında *çıktı* bulunur."
 
 #: howto/clinic.rst:138
 msgid ""
@@ -203,10 +278,14 @@ msgid ""
 "processed by Argument Clinic yet doesn't have output or a checksum line, but "
 "it's still considered a block.)"
 msgstr ""
+"Başlangıç satırından sağlama toplamı satırına kadar tüm metin toplu olarak "
+"*blok*'tur.  (Argüman Kliniği tarafından henüz başarılı bir şekilde "
+"işlenmemiş bir bloğun çıktısı veya sağlama satırı yoktur, ancak yine de bir "
+"blok olarak kabul edilir)"
 
 #: howto/clinic.rst:145
 msgid "Converting Your First Function"
-msgstr ""
+msgstr "İlk Fonksiyonunuzu Dönüştürme"
 
 #: howto/clinic.rst:147
 msgid ""
@@ -218,16 +297,26 @@ msgid ""
 "document (like \"return converters\" and \"self converters\"). But we'll "
 "keep it simple for this walkthrough so you can learn."
 msgstr ""
+"Argüman Kliniği'nin nasıl çalıştığını anlamanın en iyi yolu, bir fonksiyonu "
+"onunla çalışacak şekilde dönüştürmektir.  O halde burada, bir fonksiyonu "
+"Argüman Kliniği ile çalışacak şekilde dönüştürmek için izlemeniz gereken "
+"asgari adımlar yer almaktadır.  CPython'da kontrol etmeyi planladığınız kod "
+"için, belgede daha sonra göreceğiniz bazı gelişmiş kavramları (\"dönüş "
+"dönüştürücüler\" ve \"öz dönüştürücüler\" gibi) kullanarak dönüştürmeyi "
+"gerçekten daha ileri götürmeniz gerektiğini unutmayın. Ancak öğrenebilmeniz "
+"için bu kılavuz için basit tutacağız."
 
 #: howto/clinic.rst:156
 msgid "Let's dive in!"
-msgstr ""
+msgstr "Hadi dalalım!"
 
 #: howto/clinic.rst:158
 msgid ""
 "Make sure you're working with a freshly updated checkout of the CPython "
 "trunk."
 msgstr ""
+"CPython trunk'ın yeni güncellenmiş bir checkout'u ile çalıştığınızdan emin "
+"olun."
 
 #: howto/clinic.rst:161
 msgid ""
@@ -235,12 +324,18 @@ msgid ""
 "func:`PyArg_ParseTupleAndKeywords`, and hasn't been converted to work with "
 "Argument Clinic yet. For my example I'm using ``_pickle.Pickler.dump()``."
 msgstr ""
+":c:func:`PyArg_ParseTuple` veya :c:func:`PyArg_ParseTupleAndKeywords` "
+"çağıran ve henüz Argüman Kliniği ile çalışmak üzere dönüştürülmemiş bir "
+"Python yerleşik bileşeni bulun. Benim örneğim için ``_pickle.Pickler."
+"dump()`` kullanıyorum."
 
 #: howto/clinic.rst:166
 msgid ""
 "If the call to the ``PyArg_Parse`` function uses any of the following format "
 "units:"
 msgstr ""
+"Eğer ``PyArg_Parse`` fonksiyonuna yapılan çağrı aşağıdaki format "
+"birimlerinden herhangi birini kullanıyorsa:"
 
 #: howto/clinic.rst:178
 msgid ""
@@ -249,6 +344,10 @@ msgid ""
 "scenarios.  But these are advanced topics—let's do something simpler for "
 "your first function."
 msgstr ""
+"veya :c:func:`PyArg_ParseTuple` için birden fazla çağrı varsa, farklı bir "
+"işlev seçmelisiniz.  Argüman Kliniği bu senaryoların tümünü *destekler*.  "
+"Ancak bunlar ileri düzey konulardır - ilk fonksiyonunuz için daha basit bir "
+"şey yapalım."
 
 #: howto/clinic.rst:183
 msgid ""
@@ -259,10 +358,17 @@ msgid ""
 "to Argument Clinic.  Argument Clinic doesn't support generic functions or "
 "polymorphic parameters."
 msgstr ""
+"Ayrıca, fonksiyonun aynı argüman için farklı türleri desteklediği :c:func:"
+"`PyArg_ParseTuple` veya :c:func:`PyArg_ParseTupleAndKeywords` için birden "
+"fazla çağrısı varsa veya fonksiyon argümanlarını ayrıştırmak için "
+"PyArg_Parse fonksiyonları dışında bir şey kullanıyorsa, muhtemelen Argüman "
+"Kliniğine dönüştürmek için uygun değildir.  Argüman Kliniği genel "
+"fonksiyonları veya çok biçimli parametreleri desteklemez."
 
 #: howto/clinic.rst:190
 msgid "Add the following boilerplate above the function, creating our block::"
 msgstr ""
+"Bloğumuzu oluşturmak için fonksiyonun üzerine aşağıdaki şablonu ekleyin::"
 
 #: howto/clinic.rst:195
 msgid ""
@@ -271,6 +377,11 @@ msgid ""
 "should have just the text, based at the left margin, with no line wider than "
 "80 characters. (Argument Clinic will preserve indents inside the docstring.)"
 msgstr ""
+"Doküman dizesini kesin ve ``[clinic]`` satırları arasına yapıştırın, düzgün "
+"bir şekilde alıntılanmış bir C dizesi haline getiren tüm gereksiz şeyleri "
+"kaldırın. İşiniz bittiğinde, 80 karakterden daha geniş bir satır olmadan, "
+"sol kenar boşluğuna dayalı olarak yalnızca metne sahip olmalısınız. (Argüman "
+"Kliniği, doküman dizesi içindeki girintileri koruyacaktır.)"
 
 #: howto/clinic.rst:201
 msgid ""
@@ -279,11 +390,15 @@ msgid ""
 "``help()`` on your builtin in the future, the first line will be built "
 "automatically based on the function's signature.)"
 msgstr ""
+"Eğer eski dokümanda fonksiyon imzasına benzeyen bir ilk satır varsa, o "
+"satırı atın.  (Doküman dizesinin artık buna ihtiyacı yoktur - gelecekte "
+"yerleşik öğenizde ``help()`` kullandığınızda, ilk satır işlevin imzasına "
+"göre otomatik olarak oluşturulacaktır)."
 
 #: howto/clinic.rst:228 howto/clinic.rst:310 howto/clinic.rst:377
 #: howto/clinic.rst:535
 msgid "Sample::"
-msgstr ""
+msgstr "Örnek::"
 
 #: howto/clinic.rst:213
 msgid ""
@@ -292,12 +407,18 @@ msgid ""
 "paragraph consisting of a single 80-column line at the beginning of the "
 "docstring."
 msgstr ""
+"Eğer doküman dizinizde bir \"özet\" satırı yoksa Argüman Kliniği şikayet "
+"edecektir.  Bu yüzden bir tane olduğundan emin olalım.  \"Özet\" satırı, "
+"doküman dizesinin başında 80 sütunlu tek bir satırdan oluşan bir paragraf "
+"olmalıdır."
 
 #: howto/clinic.rst:218
 msgid ""
 "(Our example docstring consists solely of a summary line, so the sample code "
 "doesn't have to change for this step.)"
 msgstr ""
+"(Örnek doküman dizimiz yalnızca bir özet satırından oluşmaktadır, bu nedenle "
+"örnek kodun bu adım için değişmesi gerekmez.)"
 
 #: howto/clinic.rst:221
 msgid ""
@@ -307,6 +428,10 @@ msgid ""
 "module, include any sub-modules, and if the function is a method on a class "
 "it should include the class name too."
 msgstr ""
+"Döküman dizisinin üstüne fonksiyonun adını girin ve ardından boş bir satır "
+"ekleyin.  Bu, işlevin Python adı olmalı ve işlevin tam noktalı yolu "
+"olmalıdır - modülün adıyla başlamalı, tüm alt modülleri içermeli ve işlev "
+"bir sınıf üzerindeki bir yöntemse sınıf adını da içermelidir."
 
 #: howto/clinic.rst:236
 msgid ""
@@ -317,6 +442,12 @@ msgid ""
 "statics go at the top.  (In our sample code we'll just show the two blocks "
 "next to each other.)"
 msgstr ""
+"Eğer bu modül veya sınıf bu C dosyasında Argüman Kliniği ile ilk kez "
+"kullanılıyorsa, modülü ve/veya sınıfı bildirmeniz gerekir.  Uygun Argüman "
+"Kliniği hijyeni, bunları C dosyasının üst kısmına yakın bir yerde ayrı bir "
+"blokta bildirmeyi tercih eder, aynı şekilde include dosyaları ve statikler "
+"de en üstte yer alır. (Örnek kodumuzda sadece iki bloğu yan yana "
+"göstereceğiz)."
 
 #: howto/clinic.rst:244
 msgid ""
@@ -324,6 +455,9 @@ msgid ""
 "Python.  Check the name defined in the :c:type:`PyModuleDef` or :c:type:"
 "`PyTypeObject` as appropriate."
 msgstr ""
+"Sınıfın ve modülün adı Python tarafından görülenle aynı olmalıdır. :c:type:"
+"`PyModuleDef` veya :c:type:`PyTypeObject` içinde tanımlanan ismi kontrol "
+"edin."
 
 #: howto/clinic.rst:248
 msgid ""
@@ -331,6 +465,9 @@ msgid ""
 "C: the type declaration you'd use for a pointer to an instance of this "
 "class, and a pointer to the :c:type:`PyTypeObject` for this class."
 msgstr ""
+"Bir sınıfı bildirdiğinizde, C'deki türünün iki yönünü de belirtmeniz "
+"gerekir: bu sınıfın bir örneğine bir işaretçi için kullanacağınız tür "
+"bildirimi ve bu sınıf için :c:type:`PyTypeObject` işaretçisi."
 
 #: howto/clinic.rst:268
 msgid ""
@@ -338,14 +475,18 @@ msgid ""
 "its own line.  All the parameter lines should be indented from the function "
 "name and the docstring."
 msgstr ""
+"Her bir parametreyi fonksiyona ilan edin.  Her parametre kendi satırını "
+"almalıdır.  Tüm parametre satırları fonksiyon adından ve döküman dizisinden "
+"girintili olmalıdır."
 
 #: howto/clinic.rst:272
 msgid "The general form of these parameter lines is as follows:"
-msgstr ""
+msgstr "Bu parametre satırlarının genel formu aşağıdaki gibidir:"
 
 #: howto/clinic.rst:278
 msgid "If the parameter has a default value, add that after the converter:"
 msgstr ""
+"Parametrenin varsayılan bir değeri varsa, bunu dönüştürücüden sonra ekleyin:"
 
 #: howto/clinic.rst:285
 msgid ""
@@ -353,10 +494,13 @@ msgid ""
 "please see :ref:`the section below on default values <default_values>` for "
 "more information."
 msgstr ""
+"Argüman Kliniğinin \"varsayılan değerler\" desteği oldukça karmaşıktır; daha "
+"fazla bilgi için lütfen :ref:`the section below on default values "
+"<default_values>` bölümüne bakın."
 
 #: howto/clinic.rst:289
 msgid "Add a blank line below the parameters."
-msgstr ""
+msgstr "Parametrelerin altına boş bir satır ekleyin."
 
 #: howto/clinic.rst:291
 msgid ""
@@ -366,6 +510,11 @@ msgid ""
 "convenience syntax intended to make porting old code into Argument Clinic "
 "easier."
 msgstr ""
+"\"Dönüştürücü\" nedir?  Hem C'de kullanılan değişkenin türünü hem de Python "
+"değerini çalışma zamanında C değerine dönüştürme yöntemini belirler. "
+"Şimdilik \"eski dönüştürücü\" denilen şeyi kullanacaksınız - eski kodu "
+"Argüman Kliniği'ne taşımayı kolaylaştırmak için tasarlanmış bir kolaylık "
+"dizesi."
 
 #: howto/clinic.rst:298
 msgid ""
@@ -376,12 +525,21 @@ msgid ""
 "parsing function what the type of the variable is and how to convert it.  "
 "For more on format units please see :ref:`arg-parsing`.)"
 msgstr ""
+"Her parametre için, ``PyArg_Parse()`` format argümanından o parametrenin "
+"\"format birimini\" kopyalayın ve dönüştürücü olarak *bunu* tırnaklı bir "
+"dize olarak belirtin.  (\"format unit\", ``format`` parametresinin bir ila "
+"üç karakterlik alt dizesinin resmi adıdır ve argüman ayrıştırma fonksiyonuna "
+"değişkenin türünün ne olduğunu ve nasıl dönüştürüleceğini söyler.  Biçim "
+"birimleri hakkında daha fazla bilgi için lütfen :ref:`arg-parsing` bölümüne "
+"bakın)"
 
 #: howto/clinic.rst:307
 msgid ""
 "For multicharacter format units like ``z#``, use the entire two-or-three "
 "character string."
 msgstr ""
+"``z#`` gibi çok karakterli format birimleri için iki veya üç karakterli "
+"dizenin tamamını kullanın."
 
 #: howto/clinic.rst:325
 msgid ""
@@ -389,6 +547,10 @@ msgid ""
 "have default values, you can ignore it.  Argument Clinic infers which "
 "parameters are optional based on whether or not they have default values."
 msgstr ""
+"Eğer fonksiyonunuzun biçim dizesinde ``|`` varsa, yani bazı parametrelerin "
+"varsayılan değerleri varsa, bunu yok sayabilirsiniz.  Argüman Kliniği, "
+"varsayılan değerlere sahip olup olmadıklarına göre hangi parametrelerin "
+"isteğe bağlı olduğunu çıkarır."
 
 #: howto/clinic.rst:330
 msgid ""
@@ -396,10 +558,16 @@ msgid ""
 "only arguments, specify ``*`` on a line by itself before the first keyword-"
 "only argument, indented the same as the parameter lines."
 msgstr ""
+"İşlevinizin biçim dizesinde ``$`` varsa, yani yalnızca anahtar sözcüklerden "
+"oluşan bağımsız değişkenler alıyorsa, ``*`` ifadesini yalnızca anahtar "
+"sözcüklerden oluşan ilk bağımsız değişkenden önce, parametre satırlarıyla "
+"aynı şekilde girintili olarak tek başına bir satırda belirtin."
 
 #: howto/clinic.rst:335
 msgid "(``_pickle.Pickler.dump`` has neither, so our sample is unchanged.)"
 msgstr ""
+"(``_pickle.Pickler.dump`` ikisine de sahip değildir, bu nedenle örneğimiz "
+"değişmemiştir.)"
 
 #: howto/clinic.rst:338
 msgid ""
@@ -407,6 +575,9 @@ msgid ""
 "c:func:`PyArg_ParseTupleAndKeywords`), then all its arguments are positional-"
 "only."
 msgstr ""
+"Eğer mevcut C fonksiyonu :c:func:`PyArg_ParseTuple` (:c:func:"
+"`PyArg_ParseTupleAndKeywords` yerine) çağrısı yapıyorsa, tüm argümanları "
+"sadece konumsaldır."
 
 #: howto/clinic.rst:342
 msgid ""
@@ -414,6 +585,9 @@ msgid ""
 "a line by itself after the last parameter, indented the same as the "
 "parameter lines."
 msgstr ""
+"Argüman Kliniğinde tüm parametreleri sadece konumsal olarak işaretlemek "
+"için, son parametreden sonra tek başına bir satıra parametre satırlarıyla "
+"aynı şekilde girintili bir ``/`` ekleyin."
 
 #: howto/clinic.rst:346
 msgid ""
@@ -421,12 +595,17 @@ msgid ""
 "or none of them are.  (In the future Argument Clinic may relax this "
 "restriction.)"
 msgstr ""
+"Şu anda bu ya hep ya hiçtir; ya tüm parametreler yalnızca konumsaldır ya da "
+"hiçbiri değildir.  (Gelecekte Argüman Kliniği bu kısıtlamayı gevşetebilir)"
 
 #: howto/clinic.rst:366
 msgid ""
 "It's helpful to write a per-parameter docstring for each parameter. But per-"
 "parameter docstrings are optional; you can skip this step if you prefer."
 msgstr ""
+"Her parametre için parametre başına bir doküman yazmak faydalıdır. Ancak "
+"parametre başına dokümanlar isteğe bağlıdır; isterseniz bu adımı "
+"atlayabilirsiniz."
 
 #: howto/clinic.rst:370
 msgid ""
@@ -437,6 +616,12 @@ msgid ""
 "amount.  You can write as much text as you like, across multiple lines if "
 "you wish."
 msgstr ""
+"Parametre başına doküman dizisinin nasıl ekleneceği aşağıda açıklanmıştır.  "
+"Parametre başına doküman dizesinin ilk satırı parametre tanımından daha "
+"fazla girintili olmalıdır.  Bu ilk satırın sol kenar boşluğu, parametre "
+"başına doküman dizesinin tamamı için sol kenar boşluğunu belirler; "
+"yazdığınız tüm metin bu miktarda girintili olacaktır.  Dilerseniz birden "
+"fazla satıra istediğiniz kadar metin yazabilirsiniz."
 
 #: howto/clinic.rst:394
 msgid ""
@@ -444,6 +629,10 @@ msgid ""
 "luck everything worked---your block now has output, and a ``.c.h`` file has "
 "been generated! Reopen the file in your text editor to see::"
 msgstr ""
+"Dosyayı kaydedin ve kapatın, ardından ``Tools/clinic/clinic.py`` dosyasını "
+"çalıştırın.  Şansınız varsa her şey işe yaradı--- bloğunuzun artık bir "
+"çıktısı var ve bir ``.c.h`` dosyası oluşturuldu! Görmek için dosyayı metin "
+"düzenleyicinizde yeniden açın::"
 
 #: howto/clinic.rst:413
 msgid ""
@@ -451,6 +640,9 @@ msgid ""
 "found an error in your input.  Keep fixing your errors and retrying until "
 "Argument Clinic processes your file without complaint."
 msgstr ""
+"Açıkçası, Argüman Kliniği herhangi bir çıktı üretmediyse, bunun nedeni "
+"girdinizde bir hata bulmasıdır.  Argüman Kliniği dosyanızı şikayet etmeden "
+"işleyene kadar hatalarınızı düzeltmeye ve yeniden denemeye devam edin."
 
 #: howto/clinic.rst:417
 msgid ""
@@ -458,12 +650,17 @@ msgid ""
 "file.  You'll need to include that in your original ``.c`` file, typically "
 "right after the clinic module block::"
 msgstr ""
+"Okunabilirlik için, tutkal kodunun çoğu bir ``.c.h`` dosyasında "
+"oluşturulmuştur.  Bunu orijinal ``.c`` dosyanıza eklemeniz gerekir, tipik "
+"olarak klinik modül bloğundan hemen sonra::"
 
 #: howto/clinic.rst:423
 msgid ""
 "Double-check that the argument-parsing code Argument Clinic generated looks "
 "basically the same as the existing code."
 msgstr ""
+"Argüman Kliniği'nin ürettiği argüman ayrıştırma kodunun temelde mevcut kodla "
+"aynı göründüğünü iki kez kontrol edin."
 
 #: howto/clinic.rst:426
 msgid ""
@@ -472,6 +669,11 @@ msgid ""
 "`PyArg_ParseTupleAndKeywords`; ensure that the code generated by Argument "
 "Clinic calls the *exact* same function."
 msgstr ""
+"İlk olarak, her iki yerin de aynı argüman ayrıştırma işlevini kullandığından "
+"emin olun. Mevcut kod :c:func:`PyArg_ParseTuple` veya :c:func:"
+"`PyArg_ParseTupleAndKeywords` fonksiyonlarından birini çağırmalıdır; Argüman "
+"Kliniği tarafından oluşturulan kodun *tam olarak* aynı fonksiyonu "
+"çağırdığından emin olun."
 
 #: howto/clinic.rst:432
 msgid ""
@@ -479,6 +681,10 @@ msgid ""
 "`PyArg_ParseTupleAndKeywords` should be *exactly* the same as the hand-"
 "written one in the existing function, up to the colon or semi-colon."
 msgstr ""
+"İkinci olarak, :c:func:`PyArg_ParseTuple` veya :c:func:"
+"`PyArg_ParseTupleAndKeywords` işlevine aktarılan biçim dizesi, iki nokta üst "
+"üste veya noktalı virgülüne kadar mevcut işlevde elle yazılmış olanla *tam "
+"olarak* aynı olmalıdır."
 
 #: howto/clinic.rst:437
 msgid ""
@@ -486,6 +692,9 @@ msgid ""
 "by the name of the function.  If the existing code's format string ends with "
 "``;``, to provide usage help, this change is harmless—don't worry about it.)"
 msgstr ""
+"(Argüman Kliniği, biçim dizelerini her zaman ``:`` ve ardından işlevin adı "
+"ile oluşturur.  Mevcut kodun biçim dizesi, kullanım yardımı sağlamak için ``;"
+"`` ile bitiyorsa, bu değişiklik zararsızdır - bu konuda endişelenmeyin)"
 
 #: howto/clinic.rst:442
 msgid ""
@@ -494,6 +703,10 @@ msgid ""
 "function), ensure that the second argument is *exactly* the same between the "
 "two invocations."
 msgstr ""
+"Üçüncü olarak, biçim birimleri iki bağımsız değişken gerektiren parametreler "
+"için (uzunluk değişkeni veya kodlama dizesi veya dönüştürme işlevine "
+"işaretçi gibi), ikinci bağımsız değişkenin iki çağırma arasında *tam olarak* "
+"aynı olduğundan emin olun."
 
 #: howto/clinic.rst:447
 msgid ""
@@ -501,12 +714,17 @@ msgid ""
 "macro defining the appropriate static :c:type:`PyMethodDef` structure for "
 "this builtin::"
 msgstr ""
+"Dördüncü olarak, bloğun çıktı kısmının içinde bu yerleşik: için uygun "
+"statik :c:type:`PyMethodDef` yapısını tanımlayan bir önişlemci makrosu "
+"bulacaksınız:"
 
 #: howto/clinic.rst:454
 msgid ""
 "This static structure should be *exactly* the same as the existing static :c:"
 "type:`PyMethodDef` structure for this builtin."
 msgstr ""
+"Bu statik yapı, bu yerleşik için mevcut statik :c:type:`PyMethodDef` yapısı "
+"ile *tam olarak* aynı olmalıdır."
 
 #: howto/clinic.rst:457
 msgid ""
@@ -514,6 +732,9 @@ msgid ""
 "function specification and rerun ``Tools/clinic/clinic.py`` until they *are* "
 "the same."
 msgstr ""
+"Bu öğelerden herhangi biri *herhangi bir şekilde* farklıysa, Argüman Kliniği "
+"işlev belirtiminizi ayarlayın ve *aynı* olana kadar ``Tools/clinic/clinic."
+"py`` dosyasını yeniden çalıştırın."
 
 #: howto/clinic.rst:462
 msgid ""
@@ -525,12 +746,20 @@ msgid ""
 "arguments are now arguments to this impl function; if the implementation "
 "used different names for these variables, fix it."
 msgstr ""
+"Çıktısının son satırının \"impl\" fonksiyonunuzun bildirimi olduğuna dikkat "
+"edin.  Bu, yerleşik uygulamanın gittiği yerdir. Değiştirdiğiniz fonksiyonun "
+"mevcut prototipini silin, ancak açılış küme parantezini bırakın.  Şimdi "
+"argüman ayrıştırma kodunu ve argümanları içine attığı tüm değişkenlerin "
+"bildirimlerini silin. Python argümanlarının artık bu impl fonksiyonunun "
+"argümanları olduğuna dikkat edin; eğer uygulama bu değişkenler için farklı "
+"isimler kullandıysa, bunu düzeltin."
 
 #: howto/clinic.rst:470
 msgid ""
 "Let's reiterate, just because it's kind of weird.  Your code should now look "
 "like this::"
 msgstr ""
+"Biraz garip olduğu için tekrarlayalım.  Kodunuz şimdi şöyle görünmelidir::"
 
 #: howto/clinic.rst:479
 msgid ""
@@ -538,6 +767,9 @@ msgid ""
 "above it.  You should write the opening (and closing) curly braces for the "
 "function, and the implementation inside."
 msgstr ""
+"Argüman Kliniği sağlama toplamı satırını ve hemen üstünde fonksiyon "
+"prototipini oluşturdu.  Fonksiyonun açılış (ve kapanış) küme parantezlerini "
+"ve içindeki uygulamayı yazmalısınız."
 
 #: howto/clinic.rst:524
 msgid ""
@@ -548,6 +780,12 @@ msgid ""
 "builtin is a class method, this will probably be below but relatively near "
 "to the implementation.)"
 msgstr ""
+"Bu fonksiyon için :c:type:`PyMethodDef` yapısına sahip makroyu hatırlıyor "
+"musunuz?  Bu fonksiyon için mevcut :c:type:`PyMethodDef` yapısını bulun ve "
+"makroya bir referans ile değiştirin.  (Yerleşik modül kapsamındaysa, bu "
+"muhtemelen dosyanın sonuna çok yakın olacaktır; yerleşik bir sınıf "
+"yöntemiyse, bu muhtemelen uygulamanın altında ancak nispeten yakınında "
+"olacaktır)"
 
 #: howto/clinic.rst:531
 msgid ""
@@ -555,6 +793,9 @@ msgid ""
 "replace the existing static :c:type:`PyMethodDef` structure with the macro, "
 "*don't* add a comma to the end."
 msgstr ""
+"Makronun gövdesinin sonda bir virgül içerdiğine dikkat edin.  Bu nedenle, "
+"mevcut statik :c:type:`PyMethodDef` yapısını makro ile değiştirdiğinizde, "
+"*sonuna virgül eklemeyin*."
 
 #: howto/clinic.rst:544
 msgid ""
@@ -562,66 +803,82 @@ msgid ""
 "change should not introduce any new compile-time warnings or errors, and "
 "there should be no externally visible change to Python's behavior."
 msgstr ""
+"Derleyin, ardından regresyon testi paketinin ilgili bölümlerini çalıştırın. "
+"Bu değişiklik herhangi bir yeni derleme zamanı uyarısı veya hatası "
+"getirmemeli ve Python'un davranışında dışarıdan görülebilir bir değişiklik "
+"olmamalıdır."
 
 #: howto/clinic.rst:548
 msgid ""
 "Well, except for one difference: ``inspect.signature()`` run on your "
 "function should now provide a valid signature!"
 msgstr ""
+"Tek bir fark dışında: fonksiyonunuz üzerinde çalıştırılan ``inspect."
+"signature()`` artık geçerli bir imza sağlamalıdır!"
 
 #: howto/clinic.rst:551
 msgid ""
 "Congratulations, you've ported your first function to work with Argument "
 "Clinic!"
 msgstr ""
+"Tebrikler, ilk fonksiyonunuzu Argüman Kliniği ile çalışmak üzere taşıdınız!"
 
 #: howto/clinic.rst:554
 msgid "Advanced Topics"
-msgstr ""
+msgstr "İleri Düzey Konular"
 
 #: howto/clinic.rst:556
 msgid ""
 "Now that you've had some experience working with Argument Clinic, it's time "
 "for some advanced topics."
 msgstr ""
+"Argüman Kliniği ile çalışma konusunda biraz deneyim kazandığınıza göre, bazı "
+"ileri düzey konuların zamanı geldi."
 
 #: howto/clinic.rst:561
 msgid "Symbolic default values"
-msgstr ""
+msgstr "Sembolik varsayılan değerler"
 
 #: howto/clinic.rst:563
 msgid ""
 "The default value you provide for a parameter can't be any arbitrary "
 "expression.  Currently the following are explicitly supported:"
 msgstr ""
+"Bir parametre için sağladığınız varsayılan değer rastgele bir ifade olamaz.  "
+"Şu anda aşağıdakiler açıkça desteklenmektedir:"
 
 #: howto/clinic.rst:566
 msgid "Numeric constants (integer and float)"
-msgstr ""
+msgstr "Sayısal sabitler (integer ve float)"
 
 #: howto/clinic.rst:567
 msgid "String constants"
-msgstr ""
+msgstr "Dize sabitleri"
 
 #: howto/clinic.rst:568
 msgid "``True``, ``False``, and ``None``"
-msgstr ""
+msgstr "``True``, ``False`` ve ``None``"
 
 #: howto/clinic.rst:569
 msgid ""
 "Simple symbolic constants like ``sys.maxsize``, which must start with the "
 "name of the module"
 msgstr ""
+"Modülün adıyla başlaması gereken ``sys.maxsize`` gibi basit sembolik sabitler"
 
 #: howto/clinic.rst:572
 msgid ""
 "(In the future, this may need to get even more elaborate, to allow full "
 "expressions like ``CONSTANT - 1``.)"
 msgstr ""
+"(Gelecekte, ``CONSTANT - 1`` gibi tam ifadelere izin vermek için bunun daha "
+"da ayrıntılı hale getirilmesi gerekebilir.)"
 
 #: howto/clinic.rst:577
 msgid "Renaming the C functions and variables generated by Argument Clinic"
 msgstr ""
+"Argüman Kliniği tarafından oluşturulan C işlevlerini ve değişkenlerini "
+"yeniden adlandırma"
 
 #: howto/clinic.rst:579
 msgid ""
@@ -634,18 +891,30 @@ msgid ""
 "function, then add ``\"_impl\"`` to the end and use that for the name of the "
 "impl function."
 msgstr ""
+"Argüman Kliniği sizin için ürettiği fonksiyonlara otomatik olarak isim "
+"verir. Bazen, oluşturulan ad mevcut bir C işlevinin adıyla çakışırsa bu bir "
+"soruna neden olabilir.  Bunun kolay bir çözümü vardır: C fonksiyonları için "
+"kullanılan isimleri geçersiz kılın.  Fonksiyon bildirim satırınıza "
+"``\"as\"`` anahtar sözcüğünü ve ardından kullanmak istediğiniz fonksiyon "
+"adını eklemeniz yeterlidir. Argument Clinic, temel (oluşturulan) işlev için "
+"bu işlev adını kullanacak, ardından sonuna ``\"_impl\"`` ekleyecek ve impl "
+"işlevinin adı için bunu kullanacaktır."
 
 #: howto/clinic.rst:587
 msgid ""
 "For example, if we wanted to rename the C function names generated for "
 "``pickle.Pickler.dump``, it'd look like this::"
 msgstr ""
+"Örneğin, ``pickle.Pickler.dump`` için oluşturulan C fonksiyon adlarını "
+"yeniden adlandırmak istersek, şöyle görünecektir::"
 
 #: howto/clinic.rst:595
 msgid ""
 "The base function would now be named ``pickler_dumper()``, and the impl "
 "function would now be named ``pickler_dumper_impl()``."
 msgstr ""
+"Temel işlev artık ``pickler_dumper()`` olarak adlandırılacak ve impl işlevi "
+"artık ``pickler_dumper_impl()`` olarak adlandırılacaktır."
 
 #: howto/clinic.rst:599
 msgid ""
@@ -654,20 +923,27 @@ msgid ""
 "Clinic allows you to give a parameter different names in Python and in C, "
 "using the same ``\"as\"`` syntax::"
 msgstr ""
+"Benzer şekilde, bir parametreye belirli bir Python adı vermek istediğinizde "
+"bir sorunla karşılaşabilirsiniz, ancak bu ad C'de uygun olmayabilir. "
+"Argument Clinic, aynı ``\"as\"`` sözdizimini kullanarak bir parametreye "
+"Python'da ve C'de farklı adlar vermenize olanak tanır::"
 
 #: howto/clinic.rst:613
 msgid ""
 "Here, the name used in Python (in the signature and the ``keywords`` array) "
 "would be ``file``, but the C variable would be named ``file_obj``."
 msgstr ""
+"Burada, Python'da kullanılan isim (imzada ve ``keywords`` dizisinde) "
+"``file`` olacaktır, ancak C değişkeni ``file_obj`` olarak adlandırılacaktır."
 
 #: howto/clinic.rst:616
 msgid "You can use this to rename the ``self`` parameter too!"
 msgstr ""
+"Bunu ``self`` parametresini yeniden adlandırmak için de kullanabilirsiniz!"
 
 #: howto/clinic.rst:620
 msgid "Converting functions using PyArg_UnpackTuple"
-msgstr ""
+msgstr "PyArg_UnpackTuple kullanarak fonksiyonları dönüştürme"
 
 #: howto/clinic.rst:622
 msgid ""
@@ -677,16 +953,24 @@ msgid ""
 "appropriate.  All arguments should be marked positional-only (add a ``/`` on "
 "a line by itself after the last argument)."
 msgstr ""
+"Argümanlarını :c:func:`PyArg_UnpackTuple` ile ayrıştıran bir fonksiyonu "
+"dönüştürmek için, her birini bir ``object`` olarak belirterek tüm "
+"argümanları yazmanız yeterlidir.  Türü uygun şekilde dökmek için ``type`` "
+"argümanını belirtebilirsiniz.  Tüm argümanlar sadece konumsal olarak "
+"işaretlenmelidir (son argümandan sonra kendi başına bir satıra ``/`` "
+"ekleyin)."
 
 #: howto/clinic.rst:628
 msgid ""
 "Currently the generated code will use :c:func:`PyArg_ParseTuple`, but this "
 "will change soon."
 msgstr ""
+"Şu anda oluşturulan kod :c:func:`PyArg_ParseTuple` kullanacaktır, ancak bu "
+"yakında değişecektir."
 
 #: howto/clinic.rst:632
 msgid "Optional Groups"
-msgstr ""
+msgstr "İsteğe Bağlı Gruplar"
 
 #: howto/clinic.rst:634
 msgid ""
@@ -698,6 +982,13 @@ msgid ""
 "optional arguments back before :c:func:`PyArg_ParseTupleAndKeywords` was "
 "created."
 msgstr ""
+"Bazı eski fonksiyonların argümanlarını ayrıştırmak için zor bir yaklaşımı "
+"vardır: konumsal argümanların sayısını sayarlar, ardından kaç tane konumsal "
+"argüman olduğuna bağlı olarak birkaç farklı :c:func:`PyArg_ParseTuple` "
+"çağrısından birini çağırmak için bir ``switch`` deyimi kullanırlar.  (Bu "
+"fonksiyonlar sadece anahtar kelime argümanlarını kabul edemez.) Bu yaklaşım :"
+"c:func:`PyArg_ParseTupleAndKeywords` oluşturulmadan önce isteğe bağlı "
+"argümanları simüle etmek için kullanılıyordu."
 
 #: howto/clinic.rst:641
 msgid ""
@@ -712,6 +1003,18 @@ msgid ""
 "the function passing in ``x``, you must also pass in ``y``—and if you don't "
 "pass in ``x`` you may not pass in ``y`` either.)"
 msgstr ""
+"Bu yaklaşımı kullanan fonksiyonlar genellikle :c:func:"
+"`PyArg_ParseTupleAndKeywords`, isteğe bağlı argümanlar ve varsayılan "
+"değerleri kullanacak şekilde dönüştürülebilse de, bu her zaman mümkün "
+"değildir.  Bu eski fonksiyonlardan bazıları :c:func:"
+"`PyArg_ParseTupleAndKeywords` fonksiyonunun doğrudan desteklemediği "
+"davranışlara sahiptir. En bariz örnek, gerekli argümanının *sol* tarafında "
+"isteğe bağlı bir argümana sahip olan yerleşik ``range()`` fonksiyonudur! "
+"Diğer bir örnek ise her zaman birlikte belirtilmesi gereken iki argümandan "
+"oluşan bir gruba sahip olan ``curses.window.addch()`` fonksiyonudur.  "
+"(Argümanlar ``x`` ve ``y`` olarak adlandırılır; fonksiyonu ``x`` değerini "
+"girerek çağırırsanız, ``y`` değerini de girmeniz gerekir ve ``x`` değerini "
+"girmezseniz ``y`` değerini de giremezsiniz)"
 
 #: howto/clinic.rst:653
 msgid ""
@@ -722,6 +1025,13 @@ msgid ""
 "all be passed in together. They can be to the left or the right of the "
 "required arguments.  They can *only* be used with positional-only parameters."
 msgstr ""
+"Her durumda, Argüman Kliniği'nin amacı, anlamlarını değiştirmeden mevcut tüm "
+"CPython yerleşik bileşenleri için argüman ayrıştırmayı desteklemektir. Bu "
+"nedenle Argüman Kliniği *isteğe bağlı gruplar* olarak adlandırılan bu "
+"alternatif ayrıştırma yaklaşımını destekler. İsteğe bağlı gruplar, hepsi "
+"birlikte geçirilmesi gereken argüman gruplarıdır. Gerekli argümanların "
+"sağında veya solunda olabilirler.  Yalnızca *konumsal* parametrelerle "
+"kullanılabilirler."
 
 #: howto/clinic.rst:661
 msgid ""
@@ -733,6 +1043,14 @@ msgid ""
 "doesn't understand the concept.  Please avoid using optional groups wherever "
 "possible."
 msgstr ""
+"İsteğe bağlı gruplar *sadece* :c:func:`PyArg_ParseTuple`'a birden fazla çağrı "
+"yapan fonksiyonları dönüştürürken kullanılmak üzere tasarlanmıştır! "
+"Argümanları ayrıştırmak için *herhangi* bir başka yaklaşım kullanan "
+"fonksiyonlar *neredeyse hiçbir zaman* isteğe bağlı gruplar kullanılarak "
+"Argüman Kliniğine dönüştürülmemelidir.  İsteğe bağlı gruplar kullanan "
+"fonksiyonlar şu anda Python'da doğru imzalara sahip olamaz, çünkü Python bu "
+"kavramı anlamıyor.  Lütfen mümkün olan her yerde isteğe bağlı grupları "
+"kullanmaktan kaçının."
 
 #: howto/clinic.rst:670
 msgid ""
@@ -742,10 +1060,15 @@ msgid ""
 "optional groups to make the first two parameters and the last parameter "
 "optional::"
 msgstr ""
+"İsteğe bağlı bir grup belirtmek için, birlikte gruplamak istediğiniz "
+"parametrelerden önce tek başına bir satıra ``[`` ve bu parametrelerden sonra "
+"tek başına bir satıra ``]`` ekleyin.  Örnek olarak, ``curses.window.addch`` "
+"ilk iki parametreyi ve son parametreyi isteğe bağlı yapmak için isteğe bağlı "
+"grupları nasıl kullanır::"
 
 #: howto/clinic.rst:699
 msgid "Notes:"
-msgstr ""
+msgstr "Notlar:"
 
 #: howto/clinic.rst:701
 msgid ""
@@ -759,32 +1082,49 @@ msgid ""
 "was unused, and set to non-zero if this group was used. (By used or unused, "
 "I mean whether or not the parameters received arguments in this invocation.)"
 msgstr ""
+"Her isteğe bağlı grup için, grubu temsil eden impl fonksiyonuna bir ek "
+"parametre aktarılacaktır.  Parametre ``group_{direction}_{number}`` adında "
+"bir int olacaktır; burada ``{direction}`` grubun gerekli parametrelerden "
+"önce veya sonra olmasına bağlı olarak ``right`` veya ``left`` şeklindedir ve "
+"``{number}`` grubun gerekli parametrelerden ne kadar uzakta olduğunu gösteren "
+"monoton olarak artan bir sayıdır (1'den başlayarak).  impl çağrıldığında, bu "
+"parametre, bu grup kullanılmamışsa sıfıra, bu grup kullanılmışsa sıfır "
+"olmayana ayarlanacaktır. (Kullanılmış veya kullanılmamış derken, "
+"parametrelerin bu çağrıda argüman alıp almadığını kastediyorum.)"
 
 #: howto/clinic.rst:712
 msgid ""
 "If there are no required arguments, the optional groups will behave as if "
 "they're to the right of the required arguments."
 msgstr ""
+"Gerekli argümanlar yoksa, isteğe bağlı gruplar gerekli argümanların "
+"sağındaymış gibi davranacaktır."
 
 #: howto/clinic.rst:715
 msgid ""
 "In the case of ambiguity, the argument parsing code favors parameters on the "
 "left (before the required parameters)."
 msgstr ""
+"Belirsizlik durumunda, argüman ayrıştırma kodu soldaki parametreleri "
+"(gerekli parametrelerden önce) tercih eder."
 
 #: howto/clinic.rst:718
 msgid "Optional groups can only contain positional-only parameters."
-msgstr ""
+msgstr "İsteğe bağlı gruplar yalnızca konumsal parametreler içerebilir."
 
 #: howto/clinic.rst:720
 msgid ""
 "Optional groups are *only* intended for legacy code.  Please do not use "
 "optional groups for new code."
 msgstr ""
+"İsteğe bağlı gruplar *sadece* eski kod için tasarlanmıştır.  Lütfen yeni kod "
+"için isteğe bağlı grupları kullanmayın."
 
 #: howto/clinic.rst:725
 msgid "Using real Argument Clinic converters, instead of \"legacy converters\""
 msgstr ""
+"\"Eski dönüştürücüler\" yerine gerçek Argüman Kliniği dönüştürücülerinin "
+"kullanılması"
 
 #: howto/clinic.rst:727
 msgid ""
@@ -794,17 +1134,27 @@ msgid ""
 "explicitly to make porting existing code to Argument Clinic easier.  And to "
 "be clear, their use is acceptable when porting code for Python 3.4."
 msgstr ""
+"Zamandan tasarruf etmek ve Argüman Kliniğine ilk portunuzu gerçekleştirmek "
+"için ne kadar çok şey öğrenmeniz gerektiğini en aza indirmek için, "
+"yukarıdaki kılavuz size \"eski dönüştürücüleri\" kullanmanızı söyler.  "
+"\"Eski dönüştürücüler\", mevcut kodun Argüman Kliniği'ne taşınmasını "
+"kolaylaştırmak için tasarlanmış bir kolaylıktır.  Ve açık olmak gerekirse, "
+"Python 3.4 için kod taşırken kullanımları kabul edilebilir."
 
 #: howto/clinic.rst:734
 msgid ""
 "However, in the long term we probably want all our blocks to use Argument "
 "Clinic's real syntax for converters.  Why?  A couple reasons:"
 msgstr ""
+"Ancak, uzun vadede muhtemelen tüm bloklarımızın Argüman Kliniği'nin "
+"dönüştürücüler için gerçek sözdizimini kullanmasını istiyoruz.  Neden mi?  "
+"Birkaç nedeni var:"
 
 #: howto/clinic.rst:738
 msgid ""
 "The proper converters are far easier to read and clearer in their intent."
 msgstr ""
+"Uygun dönüştürücülerin okunması çok daha kolay ve amaçları daha nettir."
 
 #: howto/clinic.rst:739
 msgid ""
@@ -812,6 +1162,9 @@ msgid ""
 "because they require arguments, and the legacy converter syntax doesn't "
 "support specifying arguments."
 msgstr ""
+"\"Eski dönüştürücüler\" olarak desteklenmeyen bazı biçim birimleri vardır, "
+"çünkü bunlar argüman gerektirir ve eski dönüştürücü sözdizimi argüman "
+"belirtmeyi desteklemez."
 
 #: howto/clinic.rst:742
 msgid ""
@@ -819,12 +1172,17 @@ msgid ""
 "restricted to what :c:func:`PyArg_ParseTuple` supports; this flexibility "
 "won't be available to parameters using legacy converters."
 msgstr ""
+"Gelecekte :c:func:`PyArg_ParseTuple`'ın desteklediğiyle sınırlı olmayan yeni "
+"bir argüman ayrıştırma kütüphanemiz olabilir; bu esneklik eski "
+"dönüştürücüleri kullanan parametreler için mevcut olmayacaktır."
 
 #: howto/clinic.rst:746
 msgid ""
 "Therefore, if you don't mind a little extra effort, please use the normal "
 "converters instead of legacy converters."
 msgstr ""
+"Bu nedenle, biraz fazladan çaba harcamaktan çekinmiyorsanız, lütfen eski "
+"dönüştürücüler yerine normal dönüştürücüleri kullanın."
 
 #: howto/clinic.rst:749
 msgid ""
@@ -833,16 +1191,24 @@ msgid ""
 "the function (all functions take their default values), you may omit the "
 "parentheses.  Thus ``bool`` and ``bool()`` are exactly the same converters."
 msgstr ""
+"Özetle, Argüman Kliniği (eski olmayan) dönüştürücüler için sözdizimi bir "
+"Python işlev çağrısı gibi görünür.  Ancak, fonksiyon için açık bir argüman "
+"yoksa (tüm fonksiyonlar varsayılan değerlerini alır), parantezleri "
+"atlayabilirsiniz.  Böylece ``bool`` ve ``bool()`` tamamen aynı "
+"dönüştürücülerdir."
 
 #: howto/clinic.rst:755
 msgid ""
 "All arguments to Argument Clinic converters are keyword-only. All Argument "
 "Clinic converters accept the following arguments:"
 msgstr ""
+"Argüman Kliniği dönüştürücülerinin tüm bağımsız değişkenleri yalnızca "
+"anahtar sözcüktür. Tüm Argüman Kliniği dönüştürücüleri aşağıdaki bağımsız "
+"değişkenleri kabul eder:"
 
 #: howto/clinic.rst:1313
 msgid "``c_default``"
-msgstr ""
+msgstr "``c_default``"
 
 #: howto/clinic.rst:759
 msgid ""
@@ -851,26 +1217,35 @@ msgid ""
 "function\".  See :ref:`the section on default values <default_values>` for "
 "how to use this. Specified as a string."
 msgstr ""
+"C'de tanımlandığında bu parametre için varsayılan değer. Özellikle, bu "
+"\"parse fonksiyonu\" içinde bildirilen değişken için başlatıcı olacaktır.  "
+"Bunun nasıl kullanılacağını öğrenmek için :ref:`varsayılan değerler "
+"<default_values>` bölümüne bakınız. Bir dize olarak belirtilir."
 
 #: howto/clinic.rst:768
 msgid "``annotation``"
-msgstr ""
+msgstr "``annotation``"
 
 #: howto/clinic.rst:766
 msgid ""
 "The annotation value for this parameter.  Not currently supported, because :"
 "pep:`8` mandates that the Python library may not use annotations."
 msgstr ""
+"Bu parametre için ek açıklama değeri.  Şu anda desteklenmemektedir, çünkü :"
+"pep:`8` Python kütüphanesinin ek açıklamaları kullanamayacağını "
+"belirtmektedir."
 
 #: howto/clinic.rst:770
 msgid ""
 "In addition, some converters accept additional arguments.  Here is a list of "
 "these arguments, along with their meanings:"
 msgstr ""
+"Buna ek olarak, bazı dönüştürücüler ek bağımsız değişkenler kabul eder.  "
+"İşte anlamlarıyla birlikte bu bağımsız değişkenlerin bir listesi:"
 
 #: howto/clinic.rst:779
 msgid "``accept``"
-msgstr ""
+msgstr "``accept``"
 
 #: howto/clinic.rst:774
 msgid ""
@@ -879,14 +1254,18 @@ msgid ""
 "purpose facility; as a rule it only supports specific lists of types as "
 "shown in the legacy converter table.)"
 msgstr ""
+"Bir Python türleri (ve muhtemelen sözde türler) kümesi; bu, izin verilen "
+"Python argümanını bu türlerin değerleriyle sınırlar. (Bu genel amaçlı bir "
+"olanak değildir; kural olarak yalnızca eski dönüştürücü tablosunda "
+"gösterilen belirli tür listelerini destekler)."
 
 #: howto/clinic.rst:779
 msgid "To accept ``None``, add ``NoneType`` to this set."
-msgstr ""
+msgstr "``None`` kabul etmek için bu kümeye ``NoneType`` ekleyin."
 
 #: howto/clinic.rst:784
 msgid "``bitwise``"
-msgstr ""
+msgstr "``bitwise``"
 
 #: howto/clinic.rst:782
 msgid ""
@@ -894,10 +1273,13 @@ msgid ""
 "Python argument will be written to the parameter without any range checking, "
 "even for negative values."
 msgstr ""
+"Yalnızca işaretsiz tamsayılar için desteklenir.  Bu Python argümanının doğal "
+"tamsayı değeri, negatif değerler için bile herhangi bir aralık kontrolü "
+"yapılmadan parametreye yazılacaktır."
 
 #: howto/clinic.rst:1327
 msgid "``converter``"
-msgstr ""
+msgstr "``converter``"
 
 #: howto/clinic.rst:787
 msgid ""
@@ -905,30 +1287,38 @@ msgid ""
 "\"converter function\" <o_ampersand>` to use to convert this object to a "
 "native type."
 msgstr ""
+"Sadece ``object`` dönüştürücü tarafından desteklenir.  Bu nesneyi yerel bir "
+"türe dönüştürmek için kullanılacak :ref:`C \"converter function\" "
+"<o_ampersand>` adını belirtir."
 
 #: howto/clinic.rst:794
 msgid "``encoding``"
-msgstr ""
+msgstr "``encoding``"
 
 #: howto/clinic.rst:792
 msgid ""
 "Only supported for strings.  Specifies the encoding to use when converting "
 "this string from a Python str (Unicode) value into a C ``char *`` value."
 msgstr ""
+"Yalnızca dizeler için desteklenir.  Bu dizeyi bir Python str (Unicode) "
+"değerinden bir C ``char *`` değerine dönüştürürken kullanılacak kodlamayı "
+"belirtir."
 
 #: howto/clinic.rst:798
 msgid "``subclass_of``"
-msgstr ""
+msgstr "``subclass_of``"
 
 #: howto/clinic.rst:797
 msgid ""
 "Only supported for the ``object`` converter.  Requires that the Python value "
 "be a subclass of a Python type, as expressed in C."
 msgstr ""
+"Yalnızca ``object`` dönüştürücü için desteklenir.  Python değerinin C'de "
+"ifade edildiği gibi bir Python türünün alt sınıfı olmasını gerektirir."
 
 #: howto/clinic.rst:1299
 msgid "``type``"
-msgstr ""
+msgstr "``type``"
 
 #: howto/clinic.rst:801
 msgid ""
@@ -936,10 +1326,13 @@ msgid ""
 "type that will be used to declare the variable.  Default value is "
 "``\"PyObject *\"``."
 msgstr ""
+"Sadece ``object`` ve ``self`` dönüştürücüleri için desteklenir.  Değişkeni "
+"bildirmek için kullanılacak C türünü belirtir.  Varsayılan değer "
+"``\"PyObject *\"`` şeklindedir."
 
 #: howto/clinic.rst:809
 msgid "``zeroes``"
-msgstr ""
+msgstr "``zeroes``"
 
 #: howto/clinic.rst:806
 msgid ""
@@ -948,6 +1341,10 @@ msgid ""
 "the impl function, just after the string parameter, as a parameter named "
 "``<parameter_name>_length``."
 msgstr ""
+"Yalnızca dizeler için desteklenir.  Eğer true ise, değerin içinde gömülü NUL "
+"baytlarına (``'\\\\0'``) izin verilir.  Dizenin uzunluğu impl fonksiyonuna, "
+"dize parametresinden hemen sonra, ``<parameter_name>_length`` adlı bir "
+"parametre olarak aktarılır."
 
 #: howto/clinic.rst:811
 msgid ""
@@ -959,6 +1356,13 @@ msgid ""
 "any existing format unit.  So Argument Clinic doesn't support it.  (Or, at "
 "least, not yet.)"
 msgstr ""
+"Lütfen her olası argüman kombinasyonunun çalışmayacağını unutmayın. "
+"Genellikle bu argümanlar belirli davranışlara sahip belirli "
+"``PyArg_ParseTuple`` *format birimleri* tarafından uygulanır.  Örneğin, şu "
+"anda ``bitwise=True`` belirtmeden ``unsigned_short`` çağıramazsınız. Bunun "
+"işe yarayacağını düşünmek tamamen mantıklı olsa da, bu anlamlar mevcut "
+"herhangi bir biçim birimiyle eşleşmez.  Bu yüzden Argüman Kliniği bunu "
+"desteklemez.  (Ya da, en azından, henüz değil.)"
 
 #: howto/clinic.rst:819
 msgid ""
@@ -966,342 +1370,349 @@ msgid ""
 "Clinic converters.  On the left is the legacy converter, on the right is the "
 "text you'd replace it with."
 msgstr ""
+"Aşağıda, eski dönüştürücülerin gerçek Argüman Kliniği dönüştürücülerine "
+"eşlenmesini gösteren bir tablo bulunmaktadır.  Solda eski dönüştürücü, sağda "
+"ise onu değiştireceğiniz metin yer almaktadır."
 
 #: howto/clinic.rst:824
 msgid "``'B'``"
-msgstr ""
+msgstr "``'B'``"
 
 #: howto/clinic.rst:824
 msgid "``unsigned_char(bitwise=True)``"
-msgstr ""
+msgstr "``unsigned_char(bitwise=True)``"
 
 #: howto/clinic.rst:825
 msgid "``'b'``"
-msgstr ""
+msgstr "``'b'``"
 
 #: howto/clinic.rst:825
 msgid "``unsigned_char``"
-msgstr ""
+msgstr "``unsigned_char``"
 
 #: howto/clinic.rst:826
 msgid "``'c'``"
-msgstr ""
+msgstr "``'c'``"
 
 #: howto/clinic.rst:826
 msgid "``char``"
-msgstr ""
+msgstr "``char``"
 
 #: howto/clinic.rst:827
 msgid "``'C'``"
-msgstr ""
+msgstr "``'C'``"
 
 #: howto/clinic.rst:827
 msgid "``int(accept={str})``"
-msgstr ""
+msgstr "``int(accept={str})``"
 
 #: howto/clinic.rst:828
 msgid "``'d'``"
-msgstr ""
+msgstr "``'d'``"
 
 #: howto/clinic.rst:828
 msgid "``double``"
-msgstr ""
+msgstr "``double``"
 
 #: howto/clinic.rst:829
 msgid "``'D'``"
-msgstr ""
+msgstr "``'D'``"
 
 #: howto/clinic.rst:829
 msgid "``Py_complex``"
-msgstr ""
+msgstr "``Py_complex``"
 
 #: howto/clinic.rst:830
 msgid "``'es'``"
-msgstr ""
+msgstr "``'es'``"
 
 #: howto/clinic.rst:830
 msgid "``str(encoding='name_of_encoding')``"
-msgstr ""
+msgstr "``str(encoding='name_of_encoding')``"
 
 #: howto/clinic.rst:831
 msgid "``'es#'``"
-msgstr ""
+msgstr "``'es#'``"
 
 #: howto/clinic.rst:831
 msgid "``str(encoding='name_of_encoding', zeroes=True)``"
-msgstr ""
+msgstr "``str(encoding='name_of_encoding', zeroes=True)``"
 
 #: howto/clinic.rst:832
 msgid "``'et'``"
-msgstr ""
+msgstr "``'et'``"
 
 #: howto/clinic.rst:832
 msgid "``str(encoding='name_of_encoding', accept={bytes, bytearray, str})``"
-msgstr ""
+msgstr "``str(encoding='name_of_encoding', accept={bytes, bytearray, str})``"
 
 #: howto/clinic.rst:833
 msgid "``'et#'``"
-msgstr ""
+msgstr "``'et#'``"
 
 #: howto/clinic.rst:833
 msgid ""
 "``str(encoding='name_of_encoding', accept={bytes, bytearray, str}, "
 "zeroes=True)``"
 msgstr ""
+"``str(encoding='name_of_encoding', accept={bytes, bytearray, str}, "
+"zeroes=True)``"
 
 #: howto/clinic.rst:834
 msgid "``'f'``"
-msgstr ""
+msgstr "``'f'``"
 
 #: howto/clinic.rst:834
 msgid "``float``"
-msgstr ""
+msgstr "``float``"
 
 #: howto/clinic.rst:835
 msgid "``'h'``"
-msgstr ""
+msgstr "``'h'``"
 
 #: howto/clinic.rst:835
 msgid "``short``"
-msgstr ""
+msgstr "``short``"
 
 #: howto/clinic.rst:836
 msgid "``'H'``"
-msgstr ""
+msgstr "``'H'``"
 
 #: howto/clinic.rst:836
 msgid "``unsigned_short(bitwise=True)``"
-msgstr ""
+msgstr "``unsigned_short(bitwise=True)``"
 
 #: howto/clinic.rst:837
 msgid "``'i'``"
-msgstr ""
+msgstr "``'i'``"
 
 #: howto/clinic.rst:837
 msgid "``int``"
-msgstr ""
+msgstr "``int``"
 
 #: howto/clinic.rst:838
 msgid "``'I'``"
-msgstr ""
+msgstr "``'I'``"
 
 #: howto/clinic.rst:838
 msgid "``unsigned_int(bitwise=True)``"
-msgstr ""
+msgstr "``unsigned_int(bitwise=True)``"
 
 #: howto/clinic.rst:839
 msgid "``'k'``"
-msgstr ""
+msgstr "``'k'``"
 
 #: howto/clinic.rst:839
 msgid "``unsigned_long(bitwise=True)``"
-msgstr ""
+msgstr "``unsigned_long(bitwise=True)``"
 
 #: howto/clinic.rst:840
 msgid "``'K'``"
-msgstr ""
+msgstr "``'K'``"
 
 #: howto/clinic.rst:840
 msgid "``unsigned_long_long(bitwise=True)``"
-msgstr ""
+msgstr "``unsigned_long_long(bitwise=True)``"
 
 #: howto/clinic.rst:841
 msgid "``'l'``"
-msgstr ""
+msgstr "``'l'``"
 
 #: howto/clinic.rst:841
 msgid "``long``"
-msgstr ""
+msgstr "``long``"
 
 #: howto/clinic.rst:842
 msgid "``'L'``"
-msgstr ""
+msgstr "``'L'``"
 
 #: howto/clinic.rst:842
 msgid "``long long``"
-msgstr ""
+msgstr "``long long``"
 
 #: howto/clinic.rst:843
 msgid "``'n'``"
-msgstr ""
+msgstr "``'n'``"
 
 #: howto/clinic.rst:843
 msgid "``Py_ssize_t``"
-msgstr ""
+msgstr "``Py_ssize_t``"
 
 #: howto/clinic.rst:844
 msgid "``'O'``"
-msgstr ""
+msgstr "``'O'``"
 
 #: howto/clinic.rst:844
 msgid "``object``"
-msgstr ""
+msgstr "``object``"
 
 #: howto/clinic.rst:845
 msgid "``'O!'``"
-msgstr ""
+msgstr "``'O!'``"
 
 #: howto/clinic.rst:845
 msgid "``object(subclass_of='&PySomething_Type')``"
-msgstr ""
+msgstr "``object(subclass_of='&PySomething_Type')``"
 
 #: howto/clinic.rst:846
 msgid "``'O&'``"
-msgstr ""
+msgstr "``'O&'``"
 
 #: howto/clinic.rst:846
 msgid "``object(converter='name_of_c_function')``"
-msgstr ""
+msgstr "``object(converter='name_of_c_function')``"
 
 #: howto/clinic.rst:847
 msgid "``'p'``"
-msgstr ""
+msgstr "``'p'``"
 
 #: howto/clinic.rst:847
 msgid "``bool``"
-msgstr ""
+msgstr "``bool``"
 
 #: howto/clinic.rst:848
 msgid "``'S'``"
-msgstr ""
+msgstr "``'S'``"
 
 #: howto/clinic.rst:848
 msgid "``PyBytesObject``"
-msgstr ""
+msgstr "``PyBytesObject``"
 
 #: howto/clinic.rst:849
 msgid "``'s'``"
-msgstr ""
+msgstr "``'s'``"
 
 #: howto/clinic.rst:849
 msgid "``str``"
-msgstr ""
+msgstr "``str``"
 
 #: howto/clinic.rst:850
 msgid "``'s#'``"
-msgstr ""
+msgstr "``'s#'``"
 
 #: howto/clinic.rst:850
 msgid "``str(zeroes=True)``"
-msgstr ""
+msgstr "``str(zeroes=True)``"
 
 #: howto/clinic.rst:851
 msgid "``'s*'``"
-msgstr ""
+msgstr "``'s*'``"
 
 #: howto/clinic.rst:851
 msgid "``Py_buffer(accept={buffer, str})``"
-msgstr ""
+msgstr "``Py_buffer(accept={buffer, str})``"
 
 #: howto/clinic.rst:852
 msgid "``'U'``"
-msgstr ""
+msgstr "``'U'``"
 
 #: howto/clinic.rst:852
 msgid "``unicode``"
-msgstr ""
+msgstr "``unicode``"
 
 #: howto/clinic.rst:853
 msgid "``'u'``"
-msgstr ""
+msgstr "``'u'``"
 
 #: howto/clinic.rst:853
 msgid "``Py_UNICODE``"
-msgstr ""
+msgstr "``Py_UNICODE``"
 
 #: howto/clinic.rst:854
 msgid "``'u#'``"
-msgstr ""
+msgstr "``'u#'``"
 
 #: howto/clinic.rst:854
 msgid "``Py_UNICODE(zeroes=True)``"
-msgstr ""
+msgstr "``Py_UNICODE(zeroes=True)``"
 
 #: howto/clinic.rst:855
 msgid "``'w*'``"
-msgstr ""
+msgstr "``'w*'``"
 
 #: howto/clinic.rst:855
 msgid "``Py_buffer(accept={rwbuffer})``"
-msgstr ""
+msgstr "``Py_buffer(accept={rwbuffer})``"
 
 #: howto/clinic.rst:856
 msgid "``'Y'``"
-msgstr ""
+msgstr "``'Y'``"
 
 #: howto/clinic.rst:856
 msgid "``PyByteArrayObject``"
-msgstr ""
+msgstr "``PyByteArrayObject``"
 
 #: howto/clinic.rst:857
 msgid "``'y'``"
-msgstr ""
+msgstr "``'y'``"
 
 #: howto/clinic.rst:857
 msgid "``str(accept={bytes})``"
-msgstr ""
+msgstr "``str(accept={bytes})``"
 
 #: howto/clinic.rst:858
 msgid "``'y#'``"
-msgstr ""
+msgstr "``'y#'``"
 
 #: howto/clinic.rst:858
 msgid "``str(accept={robuffer}, zeroes=True)``"
-msgstr ""
+msgstr "``str(accept={robuffer}, zeroes=True)``"
 
 #: howto/clinic.rst:859
 msgid "``'y*'``"
-msgstr ""
+msgstr "``'y*'``"
 
 #: howto/clinic.rst:859
 msgid "``Py_buffer``"
-msgstr ""
+msgstr "``Py_buffer``"
 
 #: howto/clinic.rst:860
 msgid "``'Z'``"
-msgstr ""
+msgstr "``'Z'``"
 
 #: howto/clinic.rst:860
 msgid "``Py_UNICODE(accept={str, NoneType})``"
-msgstr ""
+msgstr "``Py_UNICODE(accept={str, NoneType})``"
 
 #: howto/clinic.rst:861
 msgid "``'Z#'``"
-msgstr ""
+msgstr "``'Z#'``"
 
 #: howto/clinic.rst:861
 msgid "``Py_UNICODE(accept={str, NoneType}, zeroes=True)``"
-msgstr ""
+msgstr "``Py_UNICODE(accept={str, NoneType}, zeroes=True)``"
 
 #: howto/clinic.rst:862
 msgid "``'z'``"
-msgstr ""
+msgstr "``'z'``"
 
 #: howto/clinic.rst:862
 msgid "``str(accept={str, NoneType})``"
-msgstr ""
+msgstr "``str(accept={str, NoneType})``"
 
 #: howto/clinic.rst:863
 msgid "``'z#'``"
-msgstr ""
+msgstr "``'z#'``"
 
 #: howto/clinic.rst:863
 msgid "``str(accept={str, NoneType}, zeroes=True)``"
-msgstr ""
+msgstr "``str(accept={str, NoneType}, zeroes=True)``"
 
 #: howto/clinic.rst:864
 msgid "``'z*'``"
-msgstr ""
+msgstr "``'z*'``"
 
 #: howto/clinic.rst:864
 msgid "``Py_buffer(accept={buffer, str, NoneType})``"
-msgstr ""
+msgstr "``Py_buffer(accept={buffer, str, NoneType})``"
 
 #: howto/clinic.rst:867
 msgid ""
 "As an example, here's our sample ``pickle.Pickler.dump`` using the proper "
 "converter::"
 msgstr ""
+"Örnek olarak, uygun dönüştürücüyü kullanan ``pickle.Pickler.dump`` "
+"örneğimiz::"
 
 #: howto/clinic.rst:880
 msgid ""
@@ -1311,6 +1722,11 @@ msgid ""
 "default behavior performs range checking on the value, and they won't accept "
 "negative numbers.  You just can't do that with a legacy converter!"
 msgstr ""
+"Gerçek dönüştürücülerin bir avantajı, eski dönüştürücülere göre daha esnek "
+"olmalarıdır.  Örneğin, ``unsigned_int`` dönüştürücüsü (ve tüm ``unsigned_`` "
+"dönüştürücüleri) ``bitwise=True`` olmadan belirtilebilir.  Varsayılan "
+"davranışları değer üzerinde aralık denetimi yapar ve negatif sayıları kabul "
+"etmezler.  Bunu eski bir dönüştürücü ile yapamazsınız!"
 
 #: howto/clinic.rst:886
 msgid ""
@@ -1319,10 +1735,14 @@ msgid ""
 "default value for each parameter. Just run ``Tools/clinic/clinic.py --"
 "converters`` to see the full list."
 msgstr ""
+"Argüman Kliniği size mevcut tüm dönüştürücüleri gösterecektir.  Her "
+"dönüştürücü için, kabul ettiği tüm parametreleri ve her parametre için "
+"varsayılan değeri gösterecektir. Tam listeyi görmek için ``Tools/clinic/"
+"clinic.py --converters`` komutunu çalıştırmanız yeterlidir."
 
 #: howto/clinic.rst:892
 msgid "Py_buffer"
-msgstr ""
+msgstr "Py_buffer"
 
 #: howto/clinic.rst:894
 msgid ""
@@ -1331,16 +1751,22 @@ msgid ""
 "`PyBuffer_Release` on the provided buffer. Argument Clinic generates code "
 "that does it for you (in the parsing function)."
 msgstr ""
+"``Py_buffer`` dönüştürücüsünü (veya ``'s*'``, ``'w*'``, ``'*y'`` veya "
+"``'z*'`` eski dönüştürücülerini) kullanırken, sağlanan tampon üzerinde :c:"
+"func:`PyBuffer_Release` çağrısı yapmamanız gerekir. Argument Clinic bunu "
+"sizin için yapan kodu üretir (ayrıştırma işlevinde)."
 
 #: howto/clinic.rst:902
 msgid "Advanced converters"
-msgstr ""
+msgstr "Gelişmiş dönüştürücüler"
 
 #: howto/clinic.rst:904
 msgid ""
 "Remember those format units you skipped for your first time because they "
 "were advanced?  Here's how to handle those too."
 msgstr ""
+"İlk seferinizde ileri düzey oldukları için atladığınız format ünitelerini "
+"hatırlıyor musunuz?  İşte onları da nasıl halledeceğiniz."
 
 #: howto/clinic.rst:907
 msgid ""
@@ -1352,6 +1778,13 @@ msgid ""
 "``O&``), ``subclass_of`` (for ``O!``), or ``encoding`` (for all the format "
 "units that start with ``e``)."
 msgstr ""
+"İşin püf noktası, tüm bu format birimlerinin argüman almasıdır - ya "
+"dönüştürme fonksiyonları, ya tipler ya da kodlama belirten dizeler. (Ancak "
+"\"eski dönüştürücüler\" argümanları desteklemez.  Bu yüzden ilk "
+"fonksiyonunuz için onları atladık).  Biçim birimine belirttiğiniz argüman "
+"artık dönüştürücünün bir argümanıdır; bu argüman ya ``converter`` (``O&`` "
+"için), ``subclass_of`` (``O!`` için) ya da ``encoding`` (``e`` ile başlayan "
+"tüm biçim birimleri için) şeklindedir."
 
 #: howto/clinic.rst:915
 msgid ""
@@ -1361,6 +1794,12 @@ msgid ""
 "is a subclass of ``PyUnicode_Type``, you probably want to use the converter "
 "``object(type='PyUnicodeObject *', subclass_of='&PyUnicode_Type')``."
 msgstr ""
+"``subclass_of`` kullanırken, ``object()`` için diğer özel bağımsız değişkeni "
+"de kullanmak isteyebilirsiniz: ``type``, parametre için gerçekte kullanılan "
+"türü ayarlamanızı sağlar.  Örneğin, nesnenin ``PyUnicode_Type`` türünün bir "
+"alt sınıfı olduğundan emin olmak istiyorsanız, muhtemelen "
+"``object(type='PyUnicodeObject *', subclass_of='&PyUnicode_Type')`` "
+"dönüştürücüsünü kullanmak istersiniz."
 
 #: howto/clinic.rst:921
 msgid ""
@@ -1374,30 +1813,44 @@ msgid ""
 "unreasonable; CPython itself always passes in static hard-coded encoding "
 "strings for parameters whose format units start with ``e``."
 msgstr ""
+"Argüman Kliniği kullanımıyla ilgili olası bir sorun: ``e`` ile başlayan "
+"biçim birimleri için bazı olası esneklikleri ortadan kaldırır.  Elle bir "
+"``PyArg_Parse`` çağrısı yazarken, teorik olarak :c:func:`PyArg_ParseTuple`'a "
+"hangi kodlama dizgesini aktaracağınıza çalışma zamanında karar "
+"verebilirsiniz.   Ancak şimdi bu dizge Argüman Kliniği-önişleme zamanında "
+"sabit kodlanmalıdır.  Bu sınırlama kasıtlıdır; bu format birimini "
+"desteklemeyi çok daha kolay hale getirdi ve gelecekteki optimizasyonlara "
+"izin verebilir. Bu kısıtlama mantıksız görünmüyor; CPython'un kendisi, biçim "
+"birimleri ``e`` ile başlayan parametreler için her zaman statik sabit kodlu "
+"kodlama dizeleri geçirir."
 
 #: howto/clinic.rst:934
 msgid "Parameter default values"
-msgstr ""
+msgstr "Parametre varsayılan değerleri"
 
 #: howto/clinic.rst:936
 msgid ""
 "Default values for parameters can be any of a number of values. At their "
 "simplest, they can be string, int, or float literals:"
 msgstr ""
+"Parametreler için varsayılan değerler bir dizi değerden herhangi biri "
+"olabilir. En basit haliyle string, int veya float değişmezleri olabilirler:"
 
 #: howto/clinic.rst:945
 msgid "They can also use any of Python's built-in constants:"
-msgstr ""
+msgstr "Python'un yerleşik sabitlerinden herhangi birini de kullanabilirler:"
 
 #: howto/clinic.rst:953
 msgid ""
 "There's also special support for a default value of ``NULL``, and for simple "
 "expressions, documented in the following sections."
 msgstr ""
+"Ayrıca ``NULL`` varsayılan değeri ve aşağıdaki bölümlerde belgelenen basit "
+"ifadeler için özel bir destek de vardır."
 
 #: howto/clinic.rst:958
 msgid "The ``NULL`` default value"
-msgstr ""
+msgstr "Varsayılan değer ``NULL``"
 
 #: howto/clinic.rst:960
 msgid ""
@@ -1408,10 +1861,16 @@ msgid ""
 "behaves like a default value of ``None``, but the C variable is initialized "
 "with ``NULL``."
 msgstr ""
+"Dize ve nesne parametreleri için, varsayılan olmadığını belirtmek için "
+"bunları ``None`` olarak ayarlayabilirsiniz.  Ancak bu, C değişkeninin "
+"``Py_None`` olarak başlatılacağı anlamına gelir.  Kolaylık olması açısından, "
+"sadece bu nedenle ``NULL`` adında özel bir değer vardır: Python'un bakış "
+"açısından varsayılan değer ``None`` gibi davranır, ancak C değişkeni "
+"``NULL`` ile başlatılır."
 
 #: howto/clinic.rst:968
 msgid "Expressions specified as default values"
-msgstr ""
+msgstr "Varsayılan değerler olarak belirtilen ifadeler"
 
 #: howto/clinic.rst:970
 msgid ""
@@ -1420,10 +1879,14 @@ msgid ""
 "on objects.  However, this support isn't exactly simple, because of some non-"
 "obvious semantics."
 msgstr ""
+"Bir parametre için varsayılan değer, gerçek bir değerden daha fazlası "
+"olabilir. Matematik operatörlerini kullanan ve nesnelerdeki öznitelikleri "
+"arayan bütün bir ifade olabilir.  Ancak bu destek, bazı açık olmayan "
+"anlamlar nedeniyle tam olarak basit değildir."
 
 #: howto/clinic.rst:975
 msgid "Consider the following example:"
-msgstr ""
+msgstr "Aşağıdaki örneği ele alalım:"
 
 #: howto/clinic.rst:981
 msgid ""
@@ -1432,6 +1895,10 @@ msgid ""
 "it in C.  So it stores the default in such a way that it will get evaluated "
 "at runtime, when the user asks for the function's signature."
 msgstr ""
+"``sys.maxsize`` farklı platformlarda farklı değerlere sahip olabilir.  Bu "
+"nedenle Argument Clinic bu ifadeyi yerel olarak değerlendiremez ve C'de "
+"sabit kodlayamaz. Bu nedenle varsayılanı, kullanıcı işlevin imzasını "
+"istediğinde çalışma zamanında değerlendirilecek şekilde saklar."
 
 #: howto/clinic.rst:986
 msgid ""
@@ -1439,6 +1906,9 @@ msgid ""
 "evaluated in the context of the module the builtin came from.  So, if your "
 "module has an attribute called \"``max_widgets``\", you may simply use it:"
 msgstr ""
+"İfade değerlendirildiğinde hangi ad alanı kullanılabilir?  Yerleşik öğenin "
+"geldiği modül bağlamında değerlendirilir.  Dolayısıyla, modülünüzün "
+"\"``max_widgets``\" adlı bir niteliği varsa, bunu kullanabilirsiniz:"
 
 #: howto/clinic.rst:994
 msgid ""
@@ -1448,6 +1918,11 @@ msgid ""
 "interpreter, it's best to restrict yourself to modules that are preloaded by "
 "Python itself.)"
 msgstr ""
+"Eğer sembol mevcut modülde bulunamazsa, ``sys.modules`` içinde aramaya devam "
+"eder.  Örneğin ``sys.maxsize`` bu şekilde bulunabilir.  (Kullanıcının "
+"yorumlayıcısına hangi modülleri yükleyeceğini önceden bilemeyeceğiniz için, "
+"kendinizi Python'un kendisi tarafından önceden yüklenmiş modüllerle "
+"sınırlamak en iyisidir)."
 
 #: howto/clinic.rst:999
 msgid ""
@@ -1456,6 +1931,11 @@ msgid ""
 "explicitly. When you use an expression, you must also specify the equivalent "
 "expression in C, using the ``c_default`` parameter to the converter:"
 msgstr ""
+"Varsayılan değerlerin yalnızca çalışma zamanında değerlendirilmesi, Argüman "
+"Kliniği'nin doğru eşdeğer C varsayılan değerini hesaplayamayacağı anlamına "
+"gelir.  Bu yüzden ona açıkça söylemeniz gerekir. Bir ifade kullandığınızda, "
+"dönüştürücüye ``c_default`` parametresini kullanarak C'deki eşdeğer ifadeyi "
+"de belirtmeniz gerekir:"
 
 #: howto/clinic.rst:1008
 msgid ""
@@ -1464,6 +1944,10 @@ msgid ""
 "legal, but it can't *actually* know.  You must be very careful when using "
 "expressions to specify values that are guaranteed to be valid at runtime!"
 msgstr ""
+"Başka bir komplikasyon: Argüman Kliniği, sağladığınız ifadenin geçerli olup "
+"olmadığını önceden bilemez.  Yasal göründüğünden emin olmak için ayrıştırır, "
+"ancak *gerçekten* bilemez.  Çalışma zamanında geçerli olacağı garanti edilen "
+"değerleri belirtmek için ifadeleri kullanırken çok dikkatli olmalısınız!"
 
 #: howto/clinic.rst:1013
 msgid ""
@@ -1471,30 +1955,33 @@ msgid ""
 "are many restrictions on legal expressions.  Here's a list of Python "
 "features you're not permitted to use:"
 msgstr ""
+"Son olarak, ifadelerin statik C değerleri olarak gösterilebilir olması "
+"gerektiğinden, yasal ifadeler üzerinde birçok kısıtlama vardır.  İşte "
+"kullanmanıza izin verilmeyen Python özelliklerinin bir listesi:"
 
 #: howto/clinic.rst:1017
 msgid "Function calls."
-msgstr ""
+msgstr "Fonksiyon çağrıları."
 
 #: howto/clinic.rst:1018
 msgid "Inline if statements (``3 if foo else 5``)."
-msgstr ""
+msgstr "Satır içi if ifadeleri (``3 if foo else 5``)."
 
 #: howto/clinic.rst:1019
 msgid "Automatic sequence unpacking (``*[1, 2, 3]``)."
-msgstr ""
+msgstr "Otomatik dizi açma (``*[1, 2, 3]``)."
 
 #: howto/clinic.rst:1020
 msgid "List/set/dict comprehensions and generator expressions."
-msgstr ""
+msgstr "Liste/set/dict kavramaları ve üretici ifadeleri."
 
 #: howto/clinic.rst:1021
 msgid "Tuple/list/set/dict literals."
-msgstr ""
+msgstr "Tuple/list/set/dict değişmezleri."
 
 #: howto/clinic.rst:1026
 msgid "Using a return converter"
-msgstr ""
+msgstr "Dönüş dönüştürücüsü kullanma"
 
 #: howto/clinic.rst:1028
 msgid ""
@@ -1505,6 +1992,11 @@ msgid ""
 "have it convert your return value from a native C type into a Python type "
 "too?"
 msgstr ""
+"Argüman Kliniği'nin sizin için oluşturduğu impl fonksiyonu varsayılan olarak "
+"``PyObject *`` döndürür. Ancak C fonksiyonunuz genellikle bir C tipini "
+"hesaplar, sonra son anda onu ``PyObject *``'e dönüştürür.  Argüman Kliniği "
+"girdilerinizi Python türlerinden yerel C türlerine dönüştürür - neden dönüş "
+"değerinizi de yerel bir C türünden bir Python türüne dönüştürmesin?"
 
 #: howto/clinic.rst:1034
 msgid ""
@@ -1512,6 +2004,9 @@ msgid ""
 "return some C type, then adds code to the generated (non-impl) function to "
 "handle converting that value into the appropriate ``PyObject *``."
 msgstr ""
+"\"Dönüş dönüştürücüsü\" de bunu yapar.  Bir C tipi döndürmek için impl "
+"fonksiyonunuzu değiştirir, ardından bu değeri uygun ``PyObject *``'e "
+"dönüştürmek için oluşturulan (impl olmayan) fonksiyona kod ekler."
 
 #: howto/clinic.rst:1038
 msgid ""
@@ -1522,12 +2017,20 @@ msgid ""
 "you're not changing any of the default arguments you can omit the "
 "parentheses."
 msgstr ""
+"Dönüş dönüştürücüleri için sözdizimi parametre dönüştürücülerine benzer. "
+"Dönüş dönüştürücüsünü fonksiyonun kendisindeki bir dönüş ek açıklaması gibi "
+"belirtirsiniz.  Dönüş dönüştürücüleri parametre dönüştürücüleriyle aynı "
+"şekilde davranır; argüman alırlar, argümanların tümü yalnızca anahtar "
+"sözcüktür ve varsayılan argümanlardan herhangi birini değiştirmiyorsanız "
+"parantezleri atlayabilirsiniz."
 
 #: howto/clinic.rst:1044
 msgid ""
 "(If you use both ``\"as\"`` *and* a return converter for your function, the "
 "``\"as\"`` should come before the return converter.)"
 msgstr ""
+"(Fonksiyonunuz için hem ``\"as\"`` * hem de * return dönüştürücü "
+"kullanıyorsanız, ``\"as\"`` return dönüştürücüden önce gelmelidir.)"
 
 #: howto/clinic.rst:1047
 msgid ""
@@ -1541,10 +2044,22 @@ msgid ""
 "generated code will propagate the error.  Otherwise it will encode the value "
 "you return like normal."
 msgstr ""
+"Geri dönüş dönüştürücülerini kullanırken ek bir karmaşıklık vardır: bir hata "
+"oluştuğunu nasıl belirtirsiniz?  Normalde, bir fonksiyon başarı için geçerli "
+"(``NULL`` olmayan) bir işaretçi döndürür ve başarısızlık için ``NULL`` "
+"döndürür.  Ancak bir tamsayı dönüş dönüştürücüsü kullanırsanız, tüm "
+"tamsayılar geçerlidir.  Argüman Kliniği bir hatayı nasıl tespit edebilir?  "
+"Çözümü: her geri dönüş dönüştürücüsü örtük olarak bir hatayı gösteren özel "
+"bir değer arar.  Bu değeri döndürürseniz ve bir hata ayarlanmışsa "
+"(``PyErr_Occurred()`` doğru bir değer döndürür), oluşturulan kod hatayı "
+"yayacaktır.  Aksi takdirde, döndürdüğünüz değeri normal şekilde "
+"kodlayacaktır."
 
 #: howto/clinic.rst:1056
 msgid "Currently Argument Clinic supports only a few return converters:"
 msgstr ""
+"Şu anda Argüman Kliniği yalnızca birkaç dönüş dönüştürücüsünü "
+"desteklemektedir:"
 
 #: howto/clinic.rst:1071
 msgid ""
@@ -1552,6 +2067,9 @@ msgid ""
 "error.  For ``DecodeFSDefault``, the return type is ``const char *``; return "
 "a ``NULL`` pointer to indicate an error."
 msgstr ""
+"Bunların hiçbiri parametre almaz.  İlk üçü için, hatayı belirtmek üzere -1 "
+"döndürülür.  ``DecodeFSDefault`` için dönüş türü ``const char *``'dır; bir "
+"hata belirtmek için ``NULL`` işaretçisi döndürür."
 
 #: howto/clinic.rst:1075
 msgid ""
@@ -1560,6 +2078,10 @@ msgid ""
 "the reference count on ``Py_None``.  I'm not sure it adds enough clarity to "
 "be worth using.)"
 msgstr ""
+"(Ayrıca, ``Py_None`` referans sayısını artırmak zorunda kalmadan, başarı "
+"durumunda ``Py_None`` veya başarısızlık durumunda ``NULL`` döndürmenizi "
+"sağlayan deneysel bir ``NoneType`` dönüştürücü de vardır.  Kullanmaya "
+"değecek kadar netlik kattığından emin değilim.)"
 
 #: howto/clinic.rst:1080
 msgid ""
@@ -1567,56 +2089,66 @@ msgid ""
 "parameters (if any), just run ``Tools/clinic/clinic.py --converters`` for "
 "the full list."
 msgstr ""
+"Argüman Kliniği'nin desteklediği tüm dönüş dönüştürücülerini "
+"parametreleriyle (varsa) birlikte görmek için, tam liste için ``Tools/clinic/"
+"clinic.py --converters`` komutunu çalıştırmanız yeterlidir."
 
 #: howto/clinic.rst:1086
 msgid "Cloning existing functions"
-msgstr ""
+msgstr "Mevcut fonksiyonları klonlama"
 
 #: howto/clinic.rst:1088
 msgid ""
 "If you have a number of functions that look similar, you may be able to use "
 "Clinic's \"clone\" feature.  When you clone an existing function, you reuse:"
 msgstr ""
+"Birbirine benzeyen çok sayıda fonksiyonunuz varsa, Kliniğin \"clone\" "
+"özelliğini kullanabilirsiniz.  Mevcut bir işlevi klonladığınızda, yeniden "
+"kullanırsınız:"
 
 #: howto/clinic.rst:1092
 msgid "its parameters, including"
-msgstr ""
+msgstr "parametreleri, dahil olmak üzere"
 
 #: howto/clinic.rst:1094
 msgid "their names,"
-msgstr ""
+msgstr "isimleri,"
 
 #: howto/clinic.rst:1096
 msgid "their converters, with all parameters,"
-msgstr ""
+msgstr "dönüştürücüleri, tüm parametrelerle birlikte,"
 
 #: howto/clinic.rst:1098
 msgid "their default values,"
-msgstr ""
+msgstr "varsayılan değerleri,"
 
 #: howto/clinic.rst:1100
 msgid "their per-parameter docstrings,"
-msgstr ""
+msgstr "parametre başına dokümanları,"
 
 #: howto/clinic.rst:1102
 msgid ""
 "their *kind* (whether they're positional only, positional or keyword, or "
 "keyword only), and"
 msgstr ""
+"türleri* (yalnızca konumsal, konumsal veya anahtar sözcük ya da yalnızca "
+"anahtar sözcük olup olmadıkları) ve"
 
 #: howto/clinic.rst:1105
 msgid "its return converter."
-msgstr ""
+msgstr "dönüş dönüştürücüsü."
 
 #: howto/clinic.rst:1107
 msgid ""
 "The only thing not copied from the original function is its docstring; the "
 "syntax allows you to specify a new docstring."
 msgstr ""
+"Orijinal fonksiyondan kopyalanmayan tek şey onun docstring'idir; sözdizimi "
+"yeni bir docstring belirtmenize izin verir."
 
 #: howto/clinic.rst:1110
 msgid "Here's the syntax for cloning a function::"
-msgstr ""
+msgstr "Bir fonksiyonu klonlamak için sözdizimi şöyledir::"
 
 #: howto/clinic.rst:1118
 msgid ""
@@ -1624,22 +2156,30 @@ msgid ""
 "class`` in the sample just to illustrate that you must use the full path to "
 "*both* functions.)"
 msgstr ""
+"(Fonksiyonlar farklı modüllerde veya sınıflarda olabilir.  Örnekte ``module."
+"class`` yazdım, sadece *her iki* fonksiyon için de tam yolu kullanmanız "
+"gerektiğini göstermek için.)"
 
 #: howto/clinic.rst:1122
 msgid ""
 "Sorry, there's no syntax for partially cloning a function, or cloning a "
 "function then modifying it.  Cloning is an all-or nothing proposition."
 msgstr ""
+"Üzgünüz, bir fonksiyonu kısmen klonlamak veya bir fonksiyonu klonladıktan "
+"sonra değiştirmek için bir sözdizimi yoktur.  Klonlama bir ya hep ya hiç "
+"önermesidir."
 
 #: howto/clinic.rst:1125
 msgid ""
 "Also, the function you are cloning from must have been previously defined in "
 "the current file."
 msgstr ""
+"Ayrıca, klonladığınız fonksiyonun mevcut dosyada daha önce tanımlanmış "
+"olması gerekir."
 
 #: howto/clinic.rst:1129
 msgid "Calling Python code"
-msgstr ""
+msgstr "Python kodunu çağırma"
 
 #: howto/clinic.rst:1131
 msgid ""
@@ -1647,12 +2187,17 @@ msgid ""
 "inside your C file and modifies Argument Clinic's runtime state.  This is "
 "simple: you simply define a Python block."
 msgstr ""
+"İleri düzey konuların geri kalanı, C dosyanızın içinde yaşayan ve Argüman "
+"Kliniği'nin çalışma zamanı durumunu değiştiren Python kodu yazmanızı "
+"gerektirir.  Bu basittir: sadece bir Python bloğu tanımlarsınız."
 
 #: howto/clinic.rst:1135
 msgid ""
 "A Python block uses different delimiter lines than an Argument Clinic "
 "function block.  It looks like this::"
 msgstr ""
+"Bir Python bloğu, Argüman Kliniği işlev bloğundan farklı sınırlayıcı "
+"satırlar kullanır.  Şöyle görünür::"
 
 #: howto/clinic.rst:1142
 msgid ""
@@ -1660,16 +2205,20 @@ msgid ""
 "All text written to stdout inside the block is redirected into the "
 "\"output\" after the block."
 msgstr ""
+"Python bloğunun içindeki tüm kod ayrıştırıldığı anda çalıştırılır.  Blok "
+"içinde stdout'a yazılan tüm metin, bloktan sonra \"çıktı \"ya yönlendirilir."
 
 #: howto/clinic.rst:1146
 msgid ""
 "As an example, here's a Python block that adds a static integer variable to "
 "the C code::"
 msgstr ""
+"Örnek olarak, işte C koduna statik bir tamsayı değişkeni ekleyen bir Python "
+"bloğu::"
 
 #: howto/clinic.rst:1157
 msgid "Using a \"self converter\""
-msgstr ""
+msgstr "\"Kendi kendine dönüştürücü\" kullanma"
 
 #: howto/clinic.rst:1159
 msgid ""
@@ -1681,12 +2230,22 @@ msgid ""
 "block, and ensure that its converter is an instance of ``self_converter`` or "
 "a subclass thereof."
 msgstr ""
+"Argüman Kliniği, varsayılan bir dönüştürücü kullanarak sizin için otomatik "
+"olarak bir \"self\" parametresi ekler.  Bu parametrenin ``type`` değerini "
+"otomatik olarak, türü bildirirken belirttiğiniz \"bir örneğe işaretçi\" "
+"olarak ayarlar.  Ancak, Argüman Kliniği'nin dönüştürücüsünü geçersiz "
+"kılabilir ve kendiniz bir dönüştürücü belirleyebilirsiniz. Sadece kendi "
+"``self`` parametrenizi bir bloktaki ilk parametre olarak ekleyin ve "
+"dönüştürücüsünün ``self_converter`` veya onun bir alt sınıfının bir örneği "
+"olduğundan emin olun."
 
 #: howto/clinic.rst:1168
 msgid ""
 "What's the point?  This lets you override the type of ``self``, or give it a "
 "different default name."
 msgstr ""
+"Ne anlamı var?  Bu, ``self`` türünü geçersiz kılmanıza veya ona farklı bir "
+"varsayılan ad vermenize olanak tanır."
 
 #: howto/clinic.rst:1171
 msgid ""
@@ -1695,6 +2254,10 @@ msgid ""
 "use Argument Clinic's existing ``self`` converter, passing in the type you "
 "want to use as the ``type`` parameter::"
 msgstr ""
+"``self`` için döküm yapmak istediğiniz özel türü nasıl belirlersiniz? Eğer "
+"``self`` için aynı tipe sahip sadece bir veya iki fonksiyonunuz varsa, "
+"kullanmak istediğiniz tipi ``type`` parametresi olarak girerek Argüman "
+"Kliniğinin mevcut ``self`` dönüştürücüsünü doğrudan kullanabilirsiniz::"
 
 #: howto/clinic.rst:1187
 msgid ""
@@ -1702,10 +2265,13 @@ msgid ""
 "type for ``self``, it's best to create your own converter, subclassing "
 "``self_converter`` but overwriting the ``type`` member::"
 msgstr ""
+"Öte yandan, ``self`` için aynı türü kullanacak çok sayıda işleviniz varsa, "
+"en iyisi ``self_converter`` alt sınıfını kullanarak, ancak ``type`` üyesinin "
+"üzerine yazarak kendi dönüştürücünüzü oluşturmaktır::"
 
 #: howto/clinic.rst:1209
 msgid "Using a \"defining class\" converter"
-msgstr ""
+msgstr "\"Sınıf tanımlama\" dönüştürücüsü kullanma"
 
 #: howto/clinic.rst:1211
 msgid ""
@@ -1716,24 +2282,36 @@ msgid ""
 "`PyType_GetModuleState` on the defining class to fetch the module state, for "
 "example from a module method."
 msgstr ""
+"Argüman Kliniği, bir metodun tanımlayıcı sınıfına erişim sağlamayı "
+"kolaylaştırır. Bu, modül düzeyinde durum getirmesi gereken :ref:`heap type "
+"<heap-types>` yöntemleri için kullanışlıdır.  Yeni bir heap tipini bir modül "
+"ile ilişkilendirmek için :c:func:`PyType_FromModuleAndSpec` kullanın.  Artık "
+"modül durumunu, örneğin bir modül yönteminden almak için tanımlayıcı sınıf "
+"üzerinde :c:func:`PyType_GetModuleState` kullanabilirsiniz."
 
 #: howto/clinic.rst:1217
 msgid ""
 "Example from ``Modules/zlibmodule.c``.  First, ``defining_class`` is added "
 "to the clinic input::"
 msgstr ""
+"``Modules/zlibmodule.c`` den örnek.  İlk olarak, ``defining_class`` klinik "
+"girdisine eklenir::"
 
 #: howto/clinic.rst:1229
 msgid ""
 "After running the Argument Clinic tool, the following function signature is "
 "generated::"
 msgstr ""
+"Argüman Kliniği aracını çalıştırdıktan sonra aşağıdaki fonksiyon imzası "
+"oluşturulur::"
 
 #: howto/clinic.rst:1239
 msgid ""
 "The following code can now use ``PyType_GetModuleState(cls)`` to fetch the "
 "module state::"
 msgstr ""
+"Aşağıdaki kod artık modül durumunu almak için ``PyType_GetModuleState(cls)`` "
+"kullanabilir::"
 
 #: howto/clinic.rst:1245
 msgid ""
@@ -1742,12 +2320,18 @@ msgid ""
 "The argument will be of type ``PyTypeObject *``.  The argument will not "
 "appear in the ``__text_signature__``."
 msgstr ""
+"Bu dönüştürücüyü kullanan her yöntemin yalnızca bir argümanı olabilir ve bu "
+"argüman ``self`` öğesinden sonra veya ``self`` öğesi kullanılmamışsa ilk "
+"argüman olarak görünmelidir.  Argüman ``PyTypeObject *`` tipinde olacaktır.  "
+"Argüman ``__text_signature__`` içinde görünmeyecektir."
 
 #: howto/clinic.rst:1250
 msgid ""
 "The ``defining_class`` converter is not compatible with ``__init__`` and "
 "``__new__`` methods, which cannot use the ``METH_METHOD`` convention."
 msgstr ""
+"``defining_class`` dönüştürücüsü, ``METH_METHOD`` kuralını kullanamayan "
+"``__init__`` ve ``__new__`` yöntemleriyle uyumlu değildir."
 
 #: howto/clinic.rst:1253
 msgid ""
@@ -1757,14 +2341,19 @@ msgid ""
 "`PyModule_GetState` to fetch the module state.  Example from the "
 "``setattro`` slot method in ``Modules/_threadmodule.c``::"
 msgstr ""
+"Slot metotları ile ``defining_class`` kullanmak mümkün değildir.  Bu tür "
+"yöntemlerden modül durumunu almak için, modülü aramak için :c:func:"
+"`PyType_GetModuleByDef` ve ardından modül durumunu almak için :c:func:"
+"`PyModule_GetState` kullanın. ``Modules/_threadmodule.c`` içindeki "
+"``setattro`` slot yönteminden örnek::"
 
 #: howto/clinic.rst:1268
 msgid "See also :pep:`573`."
-msgstr ""
+msgstr "Bkz: :pep:`573`."
 
 #: howto/clinic.rst:1272
 msgid "Writing a custom converter"
-msgstr ""
+msgstr "Özel bir dönüştürücü yazma"
 
 #: howto/clinic.rst:1274
 msgid ""
@@ -1774,6 +2363,11 @@ msgid ""
 "parameter using the ``O&`` format unit—parsing this parameter means calling "
 "a :c:func:`PyArg_ParseTuple` \"converter function\"."
 msgstr ""
+"Önceki bölümde ima ettiğimiz gibi... kendi dönüştürücülerinizi "
+"yazabilirsiniz! Bir dönüştürücü basitçe ``CConverter``'dan miras alan bir "
+"Python sınıfıdır. Özel bir dönüştürücünün ana amacı, ``O&`` biçimini "
+"kullanan bir parametreniz varsa, bu parametreyi birim ayrıştırmak, bir :c:"
+"func:`PyArg_ParseTuple` \"dönüştürücü işlevi\" çağırmak anlamına gelir."
 
 #: howto/clinic.rst:1280
 msgid ""
@@ -1783,6 +2377,10 @@ msgid ""
 "with the ``_converter`` suffix stripped off.  (This is accomplished with a "
 "metaclass.)"
 msgstr ""
+"Dönüştürücü sınıfınızın adı ``*something*_converter`` olmalıdır. İsim bu "
+"kurala uygunsa, dönüştürücü sınıfınız Argüman Kliniği'ne otomatik olarak "
+"kaydedilecektir; adı, ``_converter`` son eki çıkarılmış sınıfınızın adı "
+"olacaktır.  (Bu bir meta sınıf ile gerçekleştirilir.)"
 
 #: howto/clinic.rst:1286
 msgid ""
@@ -1792,12 +2390,20 @@ msgid ""
 "only.  Any arguments passed in to the converter in Argument Clinic will be "
 "passed along to your ``converter_init()``."
 msgstr ""
+"``CConverter.__init__`` alt sınıfını kullanmamalısınız.  Bunun yerine, bir "
+"``converter_init()`` fonksiyonu yazmalısınız.  ``converter_init()`` her "
+"zaman bir ``self`` parametresi kabul eder; bundan sonra, tüm ek parametreler "
+"*mutlaka* yalnızca anahtar kelime olmalıdır.  Argüman Kliniği`nde "
+"dönüştürücüye aktarılan tüm argümanlar ``converter_init()`` fonksiyonunuza "
+"aktarılacaktır."
 
 #: howto/clinic.rst:1293
 msgid ""
 "There are some additional members of ``CConverter`` you may wish to specify "
 "in your subclass.  Here's the current list:"
 msgstr ""
+"Alt sınıfınızda belirtmek isteyebileceğiniz bazı ek ``CConverter`` üyeleri "
+"vardır.  İşte mevcut liste:"
 
 #: howto/clinic.rst:1297
 msgid ""
@@ -1805,36 +2411,45 @@ msgid ""
 "specifying the type, e.g. ``int``. If this is a pointer type, the type "
 "string should end with ``' *'``."
 msgstr ""
+"Bu değişken için kullanılacak C türü. ``type`` türü belirten bir Python "
+"dizesi olmalıdır, örneğin ``int``. Eğer bu bir gösterici tipiyse, tip dizesi "
+"``' *'`` ile bitmelidir."
 
 #: howto/clinic.rst:1303
 msgid "``default``"
-msgstr ""
+msgstr "``default``"
 
 #: howto/clinic.rst:1302
 msgid ""
 "The Python default value for this parameter, as a Python value. Or the magic "
 "value ``unspecified`` if there is no default."
 msgstr ""
+"Bir Python değeri olarak bu parametre için Python varsayılan değeri. Veya "
+"varsayılan değer yoksa ``unspecified`` sihirli değeri."
 
 #: howto/clinic.rst:1308
 msgid "``py_default``"
-msgstr ""
+msgstr "``py_default``"
 
 #: howto/clinic.rst:1306
 msgid ""
 "``default`` as it should appear in Python code, as a string. Or ``None`` if "
 "there is no default."
 msgstr ""
+"``default`` Python kodunda görünmesi gerektiği gibi, bir string olarak. Veya "
+"varsayılan yoksa ``None``."
 
 #: howto/clinic.rst:1311
 msgid ""
 "``default`` as it should appear in C code, as a string. Or ``None`` if there "
 "is no default."
 msgstr ""
+"C kodunda görünmesi gerektiği gibi, bir dize olarak ``default``. Veya "
+"varsayılan yoksa ``None``."
 
 #: howto/clinic.rst:1324
 msgid "``c_ignored_default``"
-msgstr ""
+msgstr "``c_ignored_default``"
 
 #: howto/clinic.rst:1316
 msgid ""
@@ -1846,36 +2461,50 @@ msgid ""
 "about the \"use\" of the uninitialized value.  This value should always be a "
 "non-empty string."
 msgstr ""
+"Varsayılan bir değer olmadığında C değişkenini başlatmak için kullanılan "
+"varsayılan değerdir, ancak varsayılan bir değer belirtilmemesi "
+"\"başlatılmamış değişken\" uyarısına neden olabilir.  Bu durum, seçenek "
+"grupları kullanıldığında kolaylıkla meydana gelebilir; doğru yazılmış kod bu "
+"değeri hiçbir zaman kullanmayacak olsa da, değişken impl'ye aktarılır ve C "
+"derleyicisi başlatılmamış değerin \"kullanımından\" şikayet eder.  Bu değer "
+"her zaman boş olmayan bir dize olmalıdır."
 
 #: howto/clinic.rst:1327
 msgid "The name of the C converter function, as a string."
-msgstr ""
+msgstr "C dönüştürücü işlevinin bir dize olarak adı."
 
 #: howto/clinic.rst:1332
 msgid "``impl_by_reference``"
-msgstr ""
+msgstr "``impl_by_reference``"
 
 #: howto/clinic.rst:1330
 msgid ""
 "A boolean value.  If true, Argument Clinic will add a ``&`` in front of the "
 "name of the variable when passing it into the impl function."
 msgstr ""
+"Boolean bir değer.  Eğer true ise, Argüman Kliniği değişkeni impl "
+"fonksiyonuna aktarırken değişkenin isminin önüne bir ``&`` ekler."
 
 #: howto/clinic.rst:1338
 msgid "``parse_by_reference``"
-msgstr ""
+msgstr "``parse_by_reference``"
 
 #: howto/clinic.rst:1335
 msgid ""
 "A boolean value.  If true, Argument Clinic will add a ``&`` in front of the "
 "name of the variable when passing it into :c:func:`PyArg_ParseTuple`."
 msgstr ""
+"Boolean bir değer.  Eğer true ise, Argüman Kliniği :c:func:"
+"`PyArg_ParseTuple` içine aktarırken değişkenin isminin önüne bir ``&`` "
+"ekleyecektir."
 
 #: howto/clinic.rst:1340
 msgid ""
 "Here's the simplest example of a custom converter, from ``Modules/zlibmodule."
 "c``::"
 msgstr ""
+"İşte ``Modules/zlibmodule.c`` adresinden özel bir dönüştürücünün en basit "
+"örneği::"
 
 #: howto/clinic.rst:1351
 msgid ""
@@ -1885,6 +2514,11 @@ msgid ""
 "call the ``ssize_t_converter`` converter function.  ``ssize_t`` variables "
 "automatically support default values."
 msgstr ""
+"Bu blok Argüman Kliniğine ``ssize_t`` adında bir dönüştürücü ekler.  "
+"``ssize_t`` olarak bildirilen parametreler :c:type:`Py_ssize_t` türünde "
+"bildirilecek ve ``'O&'`` biçim birimi tarafından ayrıştırılacak ve "
+"``ssize_t_converter`` dönüştürücü işlevini çağıracaktır.  ``ssize_t`` "
+"değişkenleri otomatik olarak varsayılan değerleri destekler."
 
 #: howto/clinic.rst:1357
 msgid ""
@@ -1892,10 +2526,14 @@ msgid ""
 "initialization and cleanup. You can see more examples of custom converters "
 "in the CPython source tree; grep the C files for the string ``CConverter``."
 msgstr ""
+"Daha sofistike özel dönüştürücüler, başlatma ve temizleme işlemlerini "
+"gerçekleştirmek için özel C kodu ekleyebilir. CPython kaynak ağacında daha "
+"fazla özel dönüştürücü örneği görebilirsiniz; ``CConverter`` dizesi için C "
+"dosyalarını grepleyin."
 
 #: howto/clinic.rst:1363
 msgid "Writing a custom return converter"
-msgstr ""
+msgstr "Özel bir dönüş dönüştürücü yazma"
 
 #: howto/clinic.rst:1365
 msgid ""
@@ -1903,6 +2541,9 @@ msgid ""
 "Except it's somewhat simpler, because return converters are themselves much "
 "simpler."
 msgstr ""
+"Özel bir return dönüştürücü yazmak, özel bir dönüştürücü yazmaya çok "
+"benzer.  Biraz basit olması dışında, çünkü geri dönüş dönüştürücülerinin "
+"kendileri çok daha basittir."
 
 #: howto/clinic.rst:1369
 msgid ""
@@ -1912,10 +2553,15 @@ msgid ""
 "clinic.py``, specifically the implementation of ``CReturnConverter`` and all "
 "its subclasses."
 msgstr ""
+"Dönüş dönüştürücüleri ``CReturnConverter`` alt sınıfına sahip olmalıdır. "
+"Henüz yaygın olarak kullanılmadıkları için özel dönüş dönüştürücüleri için "
+"henüz bir örnek yoktur.  Kendi dönüş dönüştürücünüzü yazmak istiyorsanız, "
+"lütfen ``Tools/clinic/clinic.py`` dosyasını, özellikle ``CReturnConverter`` "
+"ve tüm alt sınıflarının uygulamasını okuyun."
 
 #: howto/clinic.rst:1377
 msgid "METH_O and METH_NOARGS"
-msgstr ""
+msgstr "METH_O ve METH_NOARGS"
 
 #: howto/clinic.rst:1379
 msgid ""
@@ -1923,28 +2569,38 @@ msgid ""
 "argument is using the ``object`` converter, and mark the arguments as "
 "positional-only::"
 msgstr ""
+"Bir fonksiyonu ``METH_O`` kullanarak dönüştürmek için, fonksiyonun tek "
+"argümanının ``object`` dönüştürücüsünü kullandığından emin olun ve "
+"argümanları sadece pozisyonel olarak işaretleyin::"
 
 #: howto/clinic.rst:1391
 msgid ""
 "To convert a function using ``METH_NOARGS``, just don't specify any "
 "arguments."
 msgstr ""
+"Bir fonksiyonu ``METH_NOARGS`` kullanarak dönüştürmek için herhangi bir "
+"argüman belirtmemeniz yeterlidir."
 
 #: howto/clinic.rst:1394
 msgid ""
 "You can still use a self converter, a return converter, and specify a "
 "``type`` argument to the object converter for ``METH_O``."
 msgstr ""
+"Yine de bir self dönüştürücü, bir return dönüştürücü kullanabilir ve "
+"``METH_O`` için nesne dönüştürücüye bir ``type`` argümanı belirtebilirsiniz."
 
 #: howto/clinic.rst:1398
 msgid "tp_new and tp_init functions"
-msgstr ""
+msgstr "tp_new ve tp_init fonksiyonları"
 
 #: howto/clinic.rst:1400
 msgid ""
 "You can convert ``tp_new`` and ``tp_init`` functions.  Just name them "
 "``__new__`` or ``__init__`` as appropriate.  Notes:"
 msgstr ""
+"``tp_new`` ve ``tp_init`` fonksiyonlarını dönüştürebilirsiniz.  Bunları "
+"uygun şekilde ``__new__`` veya ``__init__`` olarak adlandırmanız "
+"yeterlidir.  Notlar:"
 
 #: howto/clinic.rst:1403
 msgid ""
@@ -1952,18 +2608,21 @@ msgid ""
 "it would by default.  It's just the name of the class, converted into a "
 "valid C identifier."
 msgstr ""
+"``__new__`` için oluşturulan işlev adı, varsayılan olarak olduğu gibi "
+"``__new__`` ile bitmez.  Bu sadece geçerli bir C tanımlayıcısına "
+"dönüştürülmüş sınıf adıdır."
 
 #: howto/clinic.rst:1407
 msgid "No ``PyMethodDef`` ``#define`` is generated for these functions."
-msgstr ""
+msgstr "Bu fonksiyonlar için ``PyMethodDef`` ``#define`` oluşturulmaz."
 
 #: howto/clinic.rst:1409
 msgid "``__init__`` functions return ``int``, not ``PyObject *``."
-msgstr ""
+msgstr "``__init__`` fonksiyonları ``PyObject *`` değil ``int`` döndürür."
 
 #: howto/clinic.rst:1411
 msgid "Use the docstring as the class docstring."
-msgstr ""
+msgstr "Doküman dizesini sınıf doküman dizesi olarak kullanın."
 
 #: howto/clinic.rst:1413
 msgid ""
@@ -1973,10 +2632,16 @@ msgid ""
 "support keywords, the parsing function generated will throw an exception if "
 "it receives any.)"
 msgstr ""
+"Her ne kadar ``__new__`` ve ``__init__`` fonksiyonları her zaman hem "
+"``args`` hem de ``kwargs`` nesnelerini kabul etmek zorunda olsa da, "
+"dönüştürme yaparken bu fonksiyonlar için istediğiniz imzayı "
+"belirtebilirsiniz. (İşleviniz anahtar sözcükleri desteklemiyorsa, "
+"oluşturulan ayrıştırma işlevi herhangi bir anahtar sözcük alırsa bir istisna "
+"atacaktır)."
 
 #: howto/clinic.rst:1420
 msgid "Changing and redirecting Clinic's output"
-msgstr ""
+msgstr "Kliniğin çıktısını değiştirme ve yönlendirme"
 
 #: howto/clinic.rst:1422
 msgid ""
@@ -1986,6 +2651,11 @@ msgid ""
 "to a separate file.  You can also add a prefix or suffix to every line of "
 "Clinic's generated output."
 msgstr ""
+"Kliniğin çıktısının geleneksel elle düzenlenmiş C kodunuzun arasına "
+"serpiştirilmesi rahatsız edici olabilir.  Neyse ki, Klinik "
+"yapılandırılabilir: çıktısını daha sonra (veya daha önce!) yazdırmak için "
+"tamponlayabilir veya çıktısını ayrı bir dosyaya yazabilirsiniz.  Ayrıca "
+"Kliniğin ürettiği çıktının her satırına bir önek veya sonek ekleyebilirsiniz."
 
 #: howto/clinic.rst:1428
 msgid ""
@@ -1998,14 +2668,23 @@ msgid ""
 "many people consider this hampers readability, it will never require "
 "rearranging your code to fix definition-before-use problems.)"
 msgstr ""
+"Kliniğin çıktısını bu şekilde değiştirmek okunabilirlik için bir nimet olsa "
+"da, Klinik kodunun tanımlanmadan önce türleri kullanmasına veya kodunuzun "
+"tanımlanmadan önce Klinik tarafından oluşturulan kodu kullanmaya çalışmasına "
+"neden olabilir. Bu sorunlar, dosyanızdaki bildirimleri yeniden düzenleyerek "
+"veya Kliniğin ürettiği kodun yerini değiştirerek kolayca çözülebilir.  (Bu "
+"nedenle Kliniğin varsayılan davranışı her şeyi geçerli bloğa çıktı olarak "
+"vermektir; birçok kişi bunun okunabilirliği engellediğini düşünse de, "
+"kullanımdan önce tanımlama sorunlarını düzeltmek için kodunuzu yeniden "
+"düzenlemenizi asla gerektirmez)."
 
 #: howto/clinic.rst:1437
 msgid "Let's start with defining some terminology:"
-msgstr ""
+msgstr "Bazı terminolojileri tanımlamakla başlayalım:"
 
 #: howto/clinic.rst:1464
 msgid "*field*"
-msgstr ""
+msgstr "*field*"
 
 #: howto/clinic.rst:1440
 msgid ""
@@ -2014,6 +2693,10 @@ msgid ""
 "``methoddef_define``.  Clinic has seven different fields it can output per "
 "function definition:"
 msgstr ""
+"Bu bağlamda bir alan, Kliniğin çıktısının bir alt bölümüdür. Örneğin, "
+"``PyMethodDef`` yapısı için ``#define`` , ``methoddef_define`` olarak "
+"adlandırılan bir alandır.  Kliniğin fonksiyon tanımı başına çıktı "
+"verebileceği yedi farklı alan vardır:"
 
 #: howto/clinic.rst:1455
 msgid ""
@@ -2027,30 +2710,40 @@ msgid ""
 "(``\"methoddef\"`` is special, it's the only one that ends with "
 "``\"_define\"``, representing that it's a preprocessor #define.)"
 msgstr ""
+"Tüm adlar ``\"<a>_<b>\"`` biçimindedir, burada ``\"<a>\"`` temsil edilen "
+"semantik nesnedir (ayrıştırma işlevi, impl işlevi, docstring veya methoddef "
+"yapısı) ve ``\"<b>\"`` alanın ne tür bir ifade olduğunu temsil eder. "
+"``\"_prototype\"`` ile biten alan adları, o şeyin gerçek gövdesi/verileri "
+"olmadan ileriye dönük bildirimlerini temsil eder; ``\"_definition\"`` ile "
+"biten alan adları, o şeyin gövdesi/verileri ile birlikte o şeyin gerçek "
+"tanımını temsil eder. (``\"methoddef\"`` özeldir, ``\"_define\"`` ile biten "
+"tek metottur, #define önişlemcisi olduğunu gösterir.)"
 
 #: howto/clinic.rst:1498
 msgid "*destination*"
-msgstr ""
+msgstr "*destination*"
 
 #: howto/clinic.rst:1467
 msgid ""
 "A destination is a place Clinic can write output to.  There are five built-"
 "in destinations:"
 msgstr ""
+"Hedef, Kliniğin çıktı yazabileceği bir yerdir.  Beş adet yerleşik hedef "
+"vardır:"
 
 #: howto/clinic.rst:1547 howto/clinic.rst:1625
 msgid "``block``"
-msgstr ""
+msgstr "``block````block``"
 
 #: howto/clinic.rst:1471
 msgid ""
 "The default destination: printed in the output section of the current Clinic "
 "block."
-msgstr ""
+msgstr "Varsayılan hedef: geçerli Klinik bloğunun çıktı bölümünde yazdırılır."
 
 #: howto/clinic.rst:1574 howto/clinic.rst:1628
 msgid "``buffer``"
-msgstr ""
+msgstr "``buffer``"
 
 #: howto/clinic.rst:1475
 msgid ""
@@ -2058,10 +2751,13 @@ msgid ""
 "to the end of any existing text.  It's an error to have any text left in the "
 "buffer when Clinic finishes processing a file."
 msgstr ""
+"Metni daha sonra kullanmak üzere kaydedebileceğiniz bir metin arabelleği.  "
+"Buraya gönderilen metin, mevcut metnin sonuna eklenir.  Klinik bir dosyayı "
+"işlemeyi bitirdiğinde tamponda herhangi bir metin kalması bir hatadır."
 
 #: howto/clinic.rst:1560 howto/clinic.rst:1654
 msgid "``file``"
-msgstr ""
+msgstr "``file``"
 
 #: howto/clinic.rst:1481
 msgid ""
@@ -2071,16 +2767,23 @@ msgid ""
 "splitext()`` run on the current file.  (Example: the ``file`` destination "
 "for ``_pickle.c`` would be written to ``_pickle.clinic.c``.)"
 msgstr ""
+"Klinik tarafından otomatik olarak oluşturulacak ayrı bir \"klinik dosyası\". "
+"Dosya için seçilen dosya adı ``{basename}.clinic{extension}`` şeklindedir, "
+"burada ``basename`` ve ``extension`` mevcut dosya üzerinde çalıştırılan ``os."
+"path.splitext()`` çıktısına atanmıştır.  (Örnek: ``_pickle.c`` için "
+"``dosya`` hedefi ``_pickle.clinic.c`` olarak yazılacaktır)."
 
 #: howto/clinic.rst:1488
 msgid ""
 "**Important: When using a** ``file`` **destination, you** *must check in* "
 "**the generated file!**"
 msgstr ""
+"**Önemli: Bir ** ``dosya`` **hedefi kullanırken, **oluşturulan dosyayı** "
+"**mutlaka** kontrol etmelisiniz!"
 
 #: howto/clinic.rst:1587 howto/clinic.rst:1658
 msgid "``two-pass``"
-msgstr ""
+msgstr "``two-pass``"
 
 #: howto/clinic.rst:1492
 msgid ""
@@ -2088,22 +2791,28 @@ msgid ""
 "once, and it prints out all text sent to it during all processing, even from "
 "Clinic blocks *after* the dumping point."
 msgstr ""
+"Arabellek ``buffer`` gibi bir arabellektir.  Bununla birlikte, iki geçişli "
+"bir tampon yalnızca bir kez boşaltılabilir ve boşaltma noktasından *sonraki* "
+"Klinik bloklardan bile tüm işlem sırasında kendisine gönderilen tüm metni "
+"yazdırır."
 
 #: howto/clinic.rst:1621
 msgid "``suppress``"
-msgstr ""
+msgstr "``suppress``"
 
 #: howto/clinic.rst:1497
 msgid "The text is suppressed—thrown away."
-msgstr ""
+msgstr "Metin bastırılmış, bir kenara atılmıştır."
 
 #: howto/clinic.rst:1500
 msgid "Clinic defines five new directives that let you reconfigure its output."
 msgstr ""
+"Klinik, çıktısını yeniden yapılandırmanıza olanak tanıyan beş yeni yönerge "
+"tanımlar."
 
 #: howto/clinic.rst:1502
 msgid "The first new directive is ``dump``:"
-msgstr ""
+msgstr "İlk yeni yönerge ``dump``:"
 
 #: howto/clinic.rst:1508
 msgid ""
@@ -2111,12 +2820,15 @@ msgid ""
 "the current block, and empties it.  This only works with ``buffer`` and "
 "``two-pass`` destinations."
 msgstr ""
+"Bu, adlandırılmış hedefin mevcut içeriğini geçerli bloğun çıktısına döker ve "
+"boşaltır.  Bu sadece ``buffer`` ve ``two-pass`` hedefleri ile çalışır."
 
 #: howto/clinic.rst:1512
 msgid ""
 "The second new directive is ``output``.  The most basic form of ``output`` "
 "is like this:"
 msgstr ""
+"İkinci yeni yönerge ise ``output``.  En temel ``output`` biçimi şöyledir:"
 
 #: howto/clinic.rst:1519
 msgid ""
@@ -2124,10 +2836,13 @@ msgid ""
 "supports a special meta-destination, called ``everything``, which tells "
 "Clinic to output *all* fields to that *destination*."
 msgstr ""
+"Bu, Kliniğe *alan* çıktısını *hedefe* vermesini söyler.  ``output`` ayrıca "
+"``everything`` adı verilen ve Kliniğe *tüm* alanların çıktısını bu *hedefe* "
+"vermesini söyleyen özel bir meta hedefi de destekler."
 
 #: howto/clinic.rst:1523
 msgid "``output`` has a number of other functions:"
-msgstr ""
+msgstr "``output`` bir dizi başka işleve sahiptir:"
 
 #: howto/clinic.rst:1532
 msgid ""
@@ -2137,24 +2852,36 @@ msgid ""
 "Simply push before your change to save the current configuration, then pop "
 "when you wish to restore the previous configuration."
 msgstr ""
+"``output push`` ve ``output pop`` dahili bir yapılandırma yığınında "
+"yapılandırmaları itmenize ve açmanıza izin verir, böylece çıkış "
+"yapılandırmasını geçici olarak değiştirebilir ve ardından önceki "
+"yapılandırmayı kolayca geri yükleyebilirsiniz.  Geçerli yapılandırmayı "
+"kaydetmek için değişikliğinizden önce push yapmanız, ardından önceki "
+"yapılandırmayı geri yüklemek istediğinizde pop yapmanız yeterlidir."
 
 #: howto/clinic.rst:1539
 msgid ""
 "``output preset`` sets Clinic's output to one of several built-in preset "
 "configurations, as follows:"
 msgstr ""
+"``output preset`` Kliniğin çıkışını aşağıdaki gibi çeşitli yerleşik ön ayar "
+"yapılandırmalarından birine ayarlar:"
 
 #: howto/clinic.rst:1543
 msgid ""
 "Clinic's original starting configuration.  Writes everything immediately "
 "after the input block."
 msgstr ""
+"Kliniğin orijinal başlangıç yapılandırması.  Giriş bloğundan hemen sonra her "
+"şeyi yazar."
 
 #: howto/clinic.rst:1546
 msgid ""
 "Suppress the ``parser_prototype`` and ``docstring_prototype``, write "
 "everything else to ``block``."
 msgstr ""
+"Suppress the ``parser_prototype`` and ``docstring_prototype``, write "
+"everything else to ``block``."
 
 #: howto/clinic.rst:1550
 msgid ""
@@ -2163,16 +2890,25 @@ msgid ""
 "your file to make this work, though usually this just means creating forward "
 "declarations for various ``typedef`` and ``PyTypeObject`` definitions."
 msgstr ""
+"Yapabildiği her şeyi \"klinik dosyasına\" yazmak için tasarlanmıştır. Daha "
+"sonra bu dosyayı dosyanızın en üstüne yakın bir yere ``#include`` edersiniz. "
+"Bunun çalışması için dosyanızı yeniden düzenlemeniz gerekebilir, ancak "
+"genellikle bu sadece çeşitli ``typedef`` ve ``PyTypeObject`` tanımları için "
+"ileri bildirimler oluşturmak anlamına gelir."
 
 #: howto/clinic.rst:1556
 msgid ""
 "Suppress the ``parser_prototype`` and ``docstring_prototype``, write the "
 "``impl_definition`` to ``block``, and write everything else to ``file``."
 msgstr ""
+"``parser_prototype`` ve ``docstring_prototype`` öğelerini bastırın, "
+"``impl_definition`` öğesini ``block`` öğesine yazın ve diğer her şeyi "
+"``file`` öğesine yazın."
 
 #: howto/clinic.rst:1560
 msgid "The default filename is ``\"{dirname}/clinic/{basename}.h\"``."
 msgstr ""
+"Varsayılan dosya adı ``\"{dirname}/clinic/{basename}.h\"`` şeklindedir."
 
 #: howto/clinic.rst:1563
 msgid ""
@@ -2183,6 +2919,12 @@ msgid ""
 "``buffer`` may require even more editing than ``file``, if your file has "
 "static ``PyMethodDef`` arrays defined in the middle of the file."
 msgstr ""
+"Clinic'ten gelen çıktının çoğunu, sonuna yakın dosyanıza yazılmak üzere "
+"kaydedin.  Modülleri veya yerleşik tipleri uygulayan Python dosyaları için, "
+"tamponu modülünüz veya yerleşik tipiniz için statik yapıların hemen üzerine "
+"boşaltmanız önerilir; bunlar normalde sona çok yakındır.  Dosyanızın "
+"ortasında tanımlanmış statik ``PyMethodDef`` dizileri varsa, ``buffer`` "
+"kullanmak ``file`` kullanmaktan daha fazla düzenleme gerektirebilir."
 
 #: howto/clinic.rst:1572
 msgid ""
@@ -2190,6 +2932,9 @@ msgid ""
 "``docstring_prototype``, write the ``impl_definition`` to ``block``, and "
 "write everything else to ``file``."
 msgstr ""
+"``parser_prototype``, ``impl_prototype`` ve ``docstring_prototype`` "
+"öğelerini bastırın, ``impl_definition`` öğesini ``block`` öğesine yazın ve "
+"diğer her şeyi ``file`` öğesine yazın."
 
 #: howto/clinic.rst:1577
 msgid ""
@@ -2199,6 +2944,11 @@ msgid ""
 "the ``two-pass`` buffer near the top of your file, and dump the ``buffer`` "
 "near the end just like you would when using the ``buffer`` preset."
 msgstr ""
+"Bu ``buffer`` ön ayarına benzer, ancak ileri bildirimleri ``two-pass`` "
+"tamponuna ve tanımları ``buffer`` tamponuna yazar. Bu ``buffer`` ön ayarına "
+"benzer, ancak ``buffer``'dan daha az düzenleme gerektirebilir.  Dosyanızın "
+"üst kısmına yakın ``two-pass`` tamponunu boşaltın ve ``buffer`` ön ayarını "
+"kullanırken yaptığınız gibi sonuna yakın ``buffer``'ı boşaltın."
 
 #: howto/clinic.rst:1584
 msgid ""
@@ -2206,10 +2956,13 @@ msgid ""
 "``block``, write ``docstring_prototype``, ``methoddef_define``, and "
 "``parser_prototype`` to ``two-pass``, write everything else to ``buffer``."
 msgstr ""
+"``impl_prototype``'ı bastırır, ``impl_definition``'ı ``block``'a yazar, "
+"``docstring_prototype``, ``methoddef_define`` ve ``parser_prototype``'ı ``two-"
+"pass``'a yazar, diğer her şeyi ``buffer``'a yazar."
 
 #: howto/clinic.rst:1598
 msgid "``partial-buffer``"
-msgstr ""
+msgstr "``partial-buffer``"
 
 #: howto/clinic.rst:1590
 msgid ""
@@ -2220,110 +2973,124 @@ msgid ""
 "``buffer`` near the end, just like you would when using the ``buffer`` "
 "preset."
 msgstr ""
+"``buffer`` ön ayarına benzer, ancak ``block``'a daha fazla şey yazar, "
+"yalnızca oluşturulan kodun gerçekten büyük parçalarını ``buffer``'a yazar. "
+"Bu, bloğun çıktısında biraz daha fazla şey olması gibi küçük bir maliyetle, "
+"``buffer``'ın kullanımdan önce tanımlama sorununu tamamen ortadan kaldırır. "
+"Tıpkı ``buffer`` ön ayarını kullanırken yaptığınız gibi, ``buffer``'ı sonuna "
+"doğru boşaltın."
 
 #: howto/clinic.rst:1597
 msgid ""
 "Suppresses the ``impl_prototype``, write the ``docstring_definition`` and "
 "``parser_definition`` to ``buffer``, write everything else to ``block``."
 msgstr ""
+"``impl_prototype`` ı bastırır, ``docstring_definition`` ve "
+"``parser_definition`` ı ``buffer`` a yazar, diğer her şeyi ``block`` a yazar."
 
 #: howto/clinic.rst:1600
 msgid "The third new directive is ``destination``:"
-msgstr ""
+msgstr "Üçüncü yeni yönerge ``destination`` dır:"
 
 #: howto/clinic.rst:1606
 msgid "This performs an operation on the destination named ``name``."
-msgstr ""
+msgstr "Bu, ``name`` adlı hedef üzerinde bir işlem gerçekleştirir."
 
 #: howto/clinic.rst:1608
 msgid "There are two defined subcommands: ``new`` and ``clear``."
-msgstr ""
+msgstr "Tanımlanmış iki alt komut vardır: ``new`` ve ``clear``."
 
 #: howto/clinic.rst:1610
 msgid "The ``new`` subcommand works like this:"
-msgstr ""
+msgstr "``new`` alt komutu şu şekilde çalışır:"
 
 #: howto/clinic.rst:1616
 msgid ""
 "This creates a new destination with name ``<name>`` and type ``<type>``."
-msgstr ""
+msgstr "Bu, adı ``<name>`` ve türü ``<type>`` olan yeni bir hedef oluşturur."
 
 #: howto/clinic.rst:1618
 msgid "There are five destination types:"
-msgstr ""
+msgstr "Beş hedef türü vardır:"
 
 #: howto/clinic.rst:1621
 msgid "Throws the text away."
-msgstr ""
+msgstr "Metni atıyor."
 
 #: howto/clinic.rst:1624
 msgid ""
 "Writes the text to the current block.  This is what Clinic originally did."
-msgstr ""
+msgstr "Metni geçerli bloğa yazar.  Kliniğin başlangıçta yaptığı budur."
 
 #: howto/clinic.rst:1628
 msgid "A simple text buffer, like the \"buffer\" builtin destination above."
-msgstr ""
+msgstr "Yukarıdaki \"buffer\" yerleşik hedefi gibi basit bir metin tamponu."
 
 #: howto/clinic.rst:1631
 msgid ""
 "A text file.  The file destination takes an extra argument, a template to "
 "use for building the filename, like so:"
 msgstr ""
+"Bir metin dosyası.  Dosya hedefi, dosya adını oluşturmak için kullanılacak "
+"bir şablon olan ekstra bir argüman alır, aşağıdaki gibi:"
 
 #: howto/clinic.rst:1634
 msgid "destination <name> new <type> <file_template>"
-msgstr ""
+msgstr "hedef <isim> yeni <tip> <dosya_şablonu>"
 
 #: howto/clinic.rst:1636
 msgid ""
 "The template can use three strings internally that will be replaced by bits "
 "of the filename:"
 msgstr ""
+"Şablon dahili olarak dosya adının bitleriyle değiştirilecek üç dizge "
+"kullanabilir:"
 
 #: howto/clinic.rst:1639
 msgid "{path}"
-msgstr ""
+msgstr "{path}"
 
 #: howto/clinic.rst:1640
 msgid "The full path to the file, including directory and full filename."
-msgstr ""
+msgstr "Dizin ve tam dosya adı dahil olmak üzere dosyanın tam yolu."
 
 #: howto/clinic.rst:1641
 msgid "{dirname}"
-msgstr ""
+msgstr "{dirname}"
 
 #: howto/clinic.rst:1642
 msgid "The name of the directory the file is in."
-msgstr ""
+msgstr "Dosyanın içinde bulunduğu dizinin adı."
 
 #: howto/clinic.rst:1643
 msgid "{basename}"
-msgstr ""
+msgstr "{basename}"
 
 #: howto/clinic.rst:1644
 msgid "Just the name of the file, not including the directory."
-msgstr ""
+msgstr "Sadece dosyanın adı, dizin dahil değil."
 
 #: howto/clinic.rst:1646
 msgid "{basename_root}"
-msgstr ""
+msgstr "{basename_root}"
 
 #: howto/clinic.rst:1646
 msgid ""
 "Basename with the extension clipped off (everything up to but not including "
 "the last '.')."
-msgstr ""
+msgstr "Uzantısı kırpılmış temel ad (son '.' dahil olmak üzere her şey)."
 
 #: howto/clinic.rst:1650
 msgid "{basename_extension}"
-msgstr ""
+msgstr "{basename_extension}"
 
 #: howto/clinic.rst:1649
 msgid ""
 "The last '.' and everything after it.  If the basename does not contain a "
 "period, this will be the empty string."
 msgstr ""
+"Son '.' ve ondan sonraki her şey.  Ana ad nokta içermiyorsa, bu boş bir dize "
+"olacaktır."
 
 #: howto/clinic.rst:1652
 msgid ""
@@ -2331,14 +3098,17 @@ msgid ""
 "same, and {extension} is empty.  \"{basename}{extension}\" is always exactly "
 "the same as \"{filename}\".\""
 msgstr ""
+"Dosya adında nokta yoksa, {basename} ve {filename} aynıdır ve {extension} "
+"boştur.  \"{basename}{extension}\" her zaman \"{filename}\" ile tamamen "
+"aynıdır.\""
 
 #: howto/clinic.rst:1657
 msgid "A two-pass buffer, like the \"two-pass\" builtin destination above."
-msgstr ""
+msgstr "Yukarıdaki \"iki geçişli\" yerleşik hedef gibi iki geçişli bir tampon."
 
 #: howto/clinic.rst:1660
 msgid "The ``clear`` subcommand works like this:"
-msgstr ""
+msgstr "``clear`` alt komutu şu şekilde çalışır:"
 
 #: howto/clinic.rst:1666
 msgid ""
@@ -2346,10 +3116,13 @@ msgid ""
 "don't know what you'd need this for, but I thought maybe it'd be useful "
 "while someone's experimenting.)"
 msgstr ""
+"Hedefte bu noktaya kadar birikmiş tüm metni kaldırır. (Buna ne için ihtiyaç "
+"duyacağınızı bilmiyorum, ancak birileri deneme yaparken belki yararlı "
+"olabileceğini düşündüm)."
 
 #: howto/clinic.rst:1670
 msgid "The fourth new directive is ``set``:"
-msgstr ""
+msgstr "Dördüncü yeni yönerge ``set``'tir:"
 
 #: howto/clinic.rst:1677
 msgid ""
@@ -2358,34 +3131,40 @@ msgid ""
 "``line_suffix`` is a string that will be appended to every line of Clinic's "
 "output."
 msgstr ""
+"``set`` Klinikte iki dahili değişkeni ayarlamanızı sağlar. ``line_prefix``, "
+"Kliniğin çıktısının her satırına eklenecek bir dizedir; ``line_suffix``, "
+"Kliniğin çıktısının her satırına eklenecek bir dizedir."
 
 #: howto/clinic.rst:1681
 msgid "Both of these support two format strings:"
-msgstr ""
+msgstr "Bunların her ikisi de iki biçim dizesini destekler:"
 
 #: howto/clinic.rst:1684
 msgid "``{block comment start}``"
-msgstr ""
+msgstr "``{block comment start}``"
 
 #: howto/clinic.rst:1684
 msgid ""
 "Turns into the string ``/*``, the start-comment text sequence for C files."
 msgstr ""
+"C dosyaları için başlangıç-yorum metin dizisi olan ``/*`` dizesine dönüşür."
 
 #: howto/clinic.rst:1687
 msgid "``{block comment end}``"
-msgstr ""
+msgstr "``{block comment end}``"
 
 #: howto/clinic.rst:1687
 msgid ""
 "Turns into the string ``*/``, the end-comment text sequence for C files."
-msgstr ""
+msgstr "C dosyaları için yorum sonu metin dizisi olan ``*/`` dizesine dönüşür."
 
 #: howto/clinic.rst:1689
 msgid ""
 "The final new directive is one you shouldn't need to use directly, called "
 "``preserve``:"
 msgstr ""
+"Son yeni yönerge doğrudan kullanmanız gerekmeyen bir yönerge olup "
+"``preserve`` olarak adlandırılmıştır:"
 
 #: howto/clinic.rst:1696
 msgid ""
@@ -2395,10 +3174,15 @@ msgid ""
 "checksum functionality to ensure the file was not modified by hand before it "
 "gets overwritten."
 msgstr ""
+"Bu, Clinic'e çıktının mevcut içeriğinin değiştirilmeden tutulması "
+"gerektiğini söyler. Bu, çıktıyı ``file`` dosyalarına dökerken Clinic "
+"tarafından dahili olarak kullanılır; bunu bir Clinic bloğuna sarmak, "
+"dosyanın üzerine yazılmadan önce elle değiştirilmediğinden emin olmak için "
+"Clinic'in mevcut sağlama toplamı işlevini kullanmasını sağlar."
 
 #: howto/clinic.rst:1703
 msgid "The #ifdef trick"
-msgstr ""
+msgstr "#ifdef hilesi"
 
 #: howto/clinic.rst:1705
 msgid ""
@@ -2406,24 +3190,31 @@ msgid ""
 "there's a trick you can use to make life a little easier.  The existing code "
 "probably looks like this::"
 msgstr ""
+"Tüm platformlarda bulunmayan bir fonksiyonu dönüştürüyorsanız, hayatı biraz "
+"daha kolaylaştırmak için kullanabileceğiniz bir numara var.  Mevcut kod "
+"muhtemelen şuna benzer::"
 
 #: howto/clinic.rst:1716
 msgid ""
 "And then in the ``PyMethodDef`` structure at the bottom the existing code "
 "will have:"
-msgstr ""
+msgstr "Ve sonra alttaki ``PyMethodDef`` yapısında mevcut kod olacaktır:"
 
 #: howto/clinic.rst:1725
 msgid ""
 "In this scenario, you should enclose the body of your impl function inside "
 "the ``#ifdef``, like so::"
 msgstr ""
+"Bu senaryoda, impl fonksiyonunuzun gövdesini aşağıdaki gibi ``#ifdef`` içine "
+"almalısınız::"
 
 #: howto/clinic.rst:1739
 msgid ""
 "Then, remove those three lines from the ``PyMethodDef`` structure, replacing "
 "them with the macro Argument Clinic generated:"
 msgstr ""
+"Ardından, bu üç satırı ``PyMethodDef`` yapısından kaldırın ve bunların "
+"yerine Argument Clinic makrosunu oluşturun:"
 
 #: howto/clinic.rst:1746
 msgid ""
@@ -2432,12 +3223,18 @@ msgid ""
 "first line of your block, but with periods changed to underscores, "
 "uppercased, and ``\"_METHODDEF\"`` added to the end.)"
 msgstr ""
+"(Bu makronun gerçek adını oluşturulan kodun içinde bulabilirsiniz. Ya da "
+"kendiniz hesaplayabilirsiniz: bloğunuzun ilk satırında tanımlanan "
+"fonksiyonunuzun adıdır, ancak noktalar alt çizgi olarak değiştirilir, büyük "
+"harfle yazılır ve sonuna ``\"_METHODDEF\"`` eklenir)"
 
 #: howto/clinic.rst:1751
 msgid ""
 "Perhaps you're wondering: what if ``HAVE_FUNCTIONNAME`` isn't defined? The "
 "``MODULE_FUNCTIONNAME_METHODDEF`` macro won't be defined either!"
 msgstr ""
+"Belki de merak ediyorsunuzdur: ``HAVE_FUNCTIONNAME`` tanımlanmamışsa ne "
+"olur? ''MODULE_FUNCTIONNAME_METHODDEF'' makrosu da tanımlanmayacaktır!"
 
 #: howto/clinic.rst:1754
 msgid ""
@@ -2445,6 +3242,9 @@ msgid ""
 "Argument Clinic block might be deactivated by the ``#ifdef``.  When that "
 "happens, it generates a little extra code that looks like this::"
 msgstr ""
+"Argüman Kliniği burada çok akıllıca davranır.  Aslında Argüman Kliniği "
+"bloğunun ``#ifdef`` tarafından devre dışı bırakılabileceğini algılar.  Bu "
+"olduğunda, şuna benzeyen küçük bir ekstra kod oluşturur::"
 
 #: howto/clinic.rst:1762
 msgid ""
@@ -2452,6 +3252,9 @@ msgid ""
 "into the correct structure, including the trailing comma.  If the function "
 "is undefined, this turns into nothing."
 msgstr ""
+"Bu, makronun her zaman çalıştığı anlamına gelir.  İşlev tanımlıysa, bu, "
+"sondaki virgül de dahil olmak üzere doğru yapıya dönüşür.  İşlev "
+"tanımlanmamışsa, bu hiçbir şeye dönüşmez."
 
 #: howto/clinic.rst:1766
 msgid ""
@@ -2460,12 +3263,18 @@ msgid ""
 "output block, because that could be deactivated by the ``#ifdef``.  (That's "
 "the whole point!)"
 msgstr ""
+"Ancak bu, can sıkıcı bir soruna neden olmaktadır: Argüman Kliniği \"blok\" "
+"çıktı ön ayarını kullanırken bu ekstra kodu nereye koymalıdır?  Çıkış "
+"bloğuna koyulamaz, çünkü ``#ifdef`` tarafından devre dışı bırakılabilir.  "
+"(Bütün mesele bu!)"
 
 #: howto/clinic.rst:1770
 msgid ""
 "In this situation, Argument Clinic writes the extra code to the \"buffer\" "
 "destination. This may mean that you get a complaint from Argument Clinic:"
 msgstr ""
+"Bu durumda, Argüman Kliniği ekstra kodu \"tampon\" hedefine yazar. Bu, "
+"Argüman Kliniği'nden bir şikayet almanız anlamına gelebilir:"
 
 #: howto/clinic.rst:1778
 msgid ""
@@ -2473,10 +3282,13 @@ msgid ""
 "Argument Clinic added to your file (it'll be at the very bottom), then move "
 "it above the ``PyMethodDef`` structure where that macro is used."
 msgstr ""
+"Bu olduğunda, dosyanızı açın, Argüman Kliniği'nin dosyanıza eklediği ``dump "
+"buffer`` bloğunu bulun (en altta olacaktır), ardından bu makronun "
+"kullanıldığı ``PyMethodDef`` yapısının üzerine taşıyın."
 
 #: howto/clinic.rst:1785
 msgid "Using Argument Clinic in Python files"
-msgstr ""
+msgstr "Python dosyalarında Argüman Kliniği kullanma"
 
 #: howto/clinic.rst:1787
 msgid ""
@@ -2485,9 +3297,16 @@ msgid ""
 "wouldn't make any sense to the Python interpreter.  But using Argument "
 "Clinic to run Python blocks lets you use Python as a Python preprocessor!"
 msgstr ""
+"Aslında Python dosyalarını önceden işlemek için Argüman Kliniği kullanmak "
+"mümkündür. Argüman Kliniği bloklarını kullanmanın bir anlamı yok elbette, "
+"çünkü çıktı Python yorumlayıcısı için bir anlam ifade etmeyecektir.  Ancak "
+"Python bloklarını çalıştırmak için Argüman Kliniği'ni kullanmak Python'u bir "
+"Python önişlemcisi olarak kullanmanızı sağlar!"
 
 #: howto/clinic.rst:1792
 msgid ""
 "Since Python comments are different from C comments, Argument Clinic blocks "
 "embedded in Python files look slightly different.  They look like this:"
 msgstr ""
+"Python yorumları C yorumlarından farklı olduğu için, Python dosyalarına "
+"gömülü Argüman Kliniği blokları biraz farklı görünür.  Şöyle görünürler:"
