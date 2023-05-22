@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: lots0logs/gh-action-get-changed-files@2.1.4
+      - uses: lots0logs/gh-action-get-changed-files@2.2.2
         id: changed_files
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
