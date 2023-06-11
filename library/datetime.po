@@ -2,80 +2,86 @@
 # Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-01 00:18+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2023-06-11 21:35+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: library/datetime.rst:2
 msgid ":mod:`datetime` --- Basic date and time types"
-msgstr ""
+msgstr ":mod:`datetime` --- Temel tarih ve zaman türleri"
 
 #: library/datetime.rst:11
 msgid "**Source code:** :source:`Lib/datetime.py`"
-msgstr ""
+msgstr "**Kaynak kod:** :source:`Lib/datetime.py`"
 
 #: library/datetime.rst:17
 msgid ""
 "The :mod:`datetime` module supplies classes for manipulating dates and times."
-msgstr ""
+msgstr ":mod:`datetime` modülü tarih ve zaman işlemleri için sınıflar sağlar."
 
 #: library/datetime.rst:19
 msgid ""
 "While date and time arithmetic is supported, the focus of the implementation "
 "is on efficient attribute extraction for output formatting and manipulation."
 msgstr ""
+"Tarih ve saat aritmetiği desteklenirken, uygulamanın odak noktası çıktı "
+"biçimlendirme ve manipülasyon için verimli öznitelik çıkarımıdır."
 
 #: library/datetime.rst:25
 msgid "Module :mod:`calendar`"
-msgstr ""
+msgstr "Modül :mod:`calendar`"
 
 #: library/datetime.rst:25
 msgid "General calendar related functions."
-msgstr ""
+msgstr "Takvimle ilgili genel fonksiyonlar."
 
 #: library/datetime.rst:28
 msgid "Module :mod:`time`"
-msgstr ""
+msgstr "Modül :mod:`time`"
 
 #: library/datetime.rst:28
 msgid "Time access and conversions."
-msgstr ""
+msgstr "Zamana erişim ve dönüşümler."
 
 #: library/datetime.rst:31
 msgid "Module :mod:`zoneinfo`"
-msgstr ""
+msgstr "Modül :mod:`zoneinfo`"
 
 #: library/datetime.rst:31
 msgid "Concrete time zones representing the IANA time zone database."
-msgstr ""
+msgstr "IANA zaman dilimi veritabanını temsil eden somut zaman dilimleri."
 
 #: library/datetime.rst:33
 msgid "Package `dateutil <https://dateutil.readthedocs.io/en/stable/>`_"
-msgstr ""
+msgstr "Paket `dateutil <https://dateutil.readthedocs.io/en/stable/>`_"
 
 #: library/datetime.rst:34
 msgid "Third-party library with expanded time zone and parsing support."
 msgstr ""
+"Genişletilmiş saat dilimi ve ayrıştırma desteğine sahip üçüncü-parti "
+"kütüphane."
 
 #: library/datetime.rst:39
 msgid "Aware and Naive Objects"
-msgstr ""
+msgstr "Bilinçli ve Bilinçsiz (Aware ve Naive) Nesneler"
 
 #: library/datetime.rst:41
 msgid ""
 "Date and time objects may be categorized as \"aware\" or \"naive\" depending "
 "on whether or not they include timezone information."
 msgstr ""
+"Tarih ve zaman nesneleri, zaman dilimi içerip içermediklerine göre "
+"\"bilinçli\" veya \"bilinçsiz\" olarak kategorize edilebilir."
 
 #: library/datetime.rst:44
 msgid ""
@@ -85,6 +91,10 @@ msgid ""
 "object represents a specific moment in time that is not open to "
 "interpretation. [#]_"
 msgstr ""
+"Saat dilimi ve yaz saati uygulaması gibi geçerli algoritmik ve politik zaman "
+"ayarlamaları hakkında yeterli bilgiye sahip olan bir **bilinçli** nesne, "
+"kendisini diğer farkında nesnelere göre konumlandırabilir. Bilinçli bir "
+"nesne, zaman içinde yoruma açık olmayan belirli bir anı temsil eder. [#]_"
 
 #: library/datetime.rst:50
 msgid ""
@@ -96,6 +106,13 @@ msgid ""
 "objects are easy to understand and to work with, at the cost of ignoring "
 "some aspects of reality."
 msgstr ""
+"**Bilinçsiz** bir nesne, kendisini diğer tarih/zaman nesnelerine göre açık "
+"bir şekilde konumlandırmak için yeterli bilgi içermez. Bilinçsiz bir "
+"nesnenin Koordineli Evrensel Zamanı (UTC), yerel zamanı veya başka bir zaman "
+"dilimindeki zamanı temsil edip etmediği tamamen programa bağlıdır, tıpkı "
+"belirli bir sayının metreyi mi, mili mi yoksa kütleyi mi temsil ettiğinin "
+"programa bağlı olması gibi. Bilinçsiz nesnelerin anlaşılması ve üzerinde "
+"çalışılması, gerçekliğin bazı yönlerini göz ardı etme pahasına kolaydır."
 
 #: library/datetime.rst:57
 msgid ""
@@ -106,6 +123,12 @@ msgid ""
 "offset from UTC time, the time zone name, and whether daylight saving time "
 "is in effect."
 msgstr ""
+"Bilinçli nesneler gerektiren uygulamalar için, :class:`.datetime` ve :class:"
+"`.time` nesneleri, soyut :class:`tzinfo` sınıfının bir alt sınıfının "
+"örneğine ayarlanabilen isteğe bağlı bir saat dilimi bilgisi özniteliğine, :"
+"attr:`!tzinfo` sahiptir. :class:`tzinfo` nesneleri UTC zamanından sapma, "
+"saat dilimi adı ve yaz saati uygulamasının geçerli olup olmadığına ilişkin "
+"bilgileri yakalar."
 
 #: library/datetime.rst:63
 msgid ""
