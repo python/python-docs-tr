@@ -21,7 +21,7 @@ jobs:
     name: ${{ matrix.tool.name }} (${{ matrix.tool.package }})
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: lots0logs/gh-action-get-changed-files@2.2.2
         id: changed_files
         with:
@@ -59,7 +59,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
         with:
           python-version: "3.11"
