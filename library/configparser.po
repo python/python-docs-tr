@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 19:05+0000\n"
+"POT-Creation-Date: 2023-09-18 22:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -764,7 +764,7 @@ msgid ""
 "implicitly converted to strings."
 msgstr ""
 
-#: library/configparser.rst:1262
+#: library/configparser.rst:1240
 msgid ""
 "The default *dict_type* is :class:`dict`, since it now preserves insertion "
 "order."
@@ -1024,39 +1024,17 @@ msgid ""
 msgstr ""
 
 #: library/configparser.rst:1217
-msgid "Use :meth:`read_file` instead."
-msgstr ""
-
-#: library/configparser.rst:1220
-msgid ""
-":meth:`readfp` now iterates on *fp* instead of calling ``fp.readline()``."
-msgstr ""
-
-#: library/configparser.rst:1223
-msgid ""
-"For existing code calling :meth:`readfp` with arguments which don't support "
-"iteration, the following generator may be used as a wrapper around the file-"
-"like object::"
-msgstr ""
-
-#: library/configparser.rst:1233
-msgid ""
-"Instead of ``parser.readfp(fp)`` use ``parser."
-"read_file(readline_generator(fp))``."
-msgstr ""
-
-#: library/configparser.rst:1239
 msgid ""
 "The maximum depth for recursive interpolation for :meth:`get` when the *raw* "
 "parameter is false.  This is relevant only when the default *interpolation* "
 "is used."
 msgstr ""
 
-#: library/configparser.rst:1247
+#: library/configparser.rst:1225
 msgid "RawConfigParser Objects"
 msgstr ""
 
-#: library/configparser.rst:1257
+#: library/configparser.rst:1235
 msgid ""
 "Legacy variant of the :class:`ConfigParser`.  It has interpolation disabled "
 "by default and allows for non-string section names, option names, and values "
@@ -1064,27 +1042,27 @@ msgid ""
 "``defaults=`` keyword argument handling."
 msgstr ""
 
-#: library/configparser.rst:1267
+#: library/configparser.rst:1245
 msgid ""
 "Consider using :class:`ConfigParser` instead which checks types of the "
 "values to be stored internally.  If you don't want interpolation, you can "
 "use ``ConfigParser(interpolation=None)``."
 msgstr ""
 
-#: library/configparser.rst:1274
+#: library/configparser.rst:1252
 msgid ""
 "Add a section named *section* to the instance.  If a section by the given "
 "name already exists, :exc:`DuplicateSectionError` is raised.  If the "
 "*default section* name is passed, :exc:`ValueError` is raised."
 msgstr ""
 
-#: library/configparser.rst:1278
+#: library/configparser.rst:1256
 msgid ""
 "Type of *section* is not checked which lets users create non-string named "
 "sections.  This behaviour is unsupported and may cause internal errors."
 msgstr ""
 
-#: library/configparser.rst:1284
+#: library/configparser.rst:1262
 msgid ""
 "If the given section exists, set the given option to the specified value; "
 "otherwise raise :exc:`NoSectionError`.  While it is possible to use :class:"
@@ -1094,7 +1072,7 @@ msgid ""
 "string values."
 msgstr ""
 
-#: library/configparser.rst:1291
+#: library/configparser.rst:1269
 msgid ""
 "This method lets users assign non-string values to keys internally.  This "
 "behaviour is unsupported and will cause errors when attempting to write to a "
@@ -1102,32 +1080,32 @@ msgid ""
 "not allow such assignments to take place."
 msgstr ""
 
-#: library/configparser.rst:1298
+#: library/configparser.rst:1276
 msgid "Exceptions"
 msgstr ""
 
-#: library/configparser.rst:1302
+#: library/configparser.rst:1280
 msgid "Base class for all other :mod:`configparser` exceptions."
 msgstr ""
 
-#: library/configparser.rst:1307
+#: library/configparser.rst:1285
 msgid "Exception raised when a specified section is not found."
 msgstr ""
 
-#: library/configparser.rst:1312
+#: library/configparser.rst:1290
 msgid ""
 "Exception raised if :meth:`add_section` is called with the name of a section "
 "that is already present or in strict parsers when a section if found more "
 "than once in a single input file, string or dictionary."
 msgstr ""
 
-#: library/configparser.rst:1316
+#: library/configparser.rst:1294
 msgid ""
 "Optional ``source`` and ``lineno`` attributes and arguments to :meth:"
 "`__init__` were added."
 msgstr ""
 
-#: library/configparser.rst:1323
+#: library/configparser.rst:1301
 msgid ""
 "Exception raised by strict parsers if a single option appears twice during "
 "reading from a single file, string or dictionary. This catches misspellings "
@@ -1135,58 +1113,58 @@ msgid ""
 "representing the same case-insensitive configuration key."
 msgstr ""
 
-#: library/configparser.rst:1331
+#: library/configparser.rst:1309
 msgid ""
 "Exception raised when a specified option is not found in the specified "
 "section."
 msgstr ""
 
-#: library/configparser.rst:1337
+#: library/configparser.rst:1315
 msgid ""
 "Base class for exceptions raised when problems occur performing string "
 "interpolation."
 msgstr ""
 
-#: library/configparser.rst:1343
+#: library/configparser.rst:1321
 msgid ""
 "Exception raised when string interpolation cannot be completed because the "
 "number of iterations exceeds :const:`MAX_INTERPOLATION_DEPTH`.  Subclass of :"
 "exc:`InterpolationError`."
 msgstr ""
 
-#: library/configparser.rst:1350
+#: library/configparser.rst:1328
 msgid ""
 "Exception raised when an option referenced from a value does not exist. "
 "Subclass of :exc:`InterpolationError`."
 msgstr ""
 
-#: library/configparser.rst:1356
+#: library/configparser.rst:1334
 msgid ""
 "Exception raised when the source text into which substitutions are made does "
 "not conform to the required syntax.  Subclass of :exc:`InterpolationError`."
 msgstr ""
 
-#: library/configparser.rst:1362
+#: library/configparser.rst:1340
 msgid ""
 "Exception raised when attempting to parse a file which has no section "
 "headers."
 msgstr ""
 
-#: library/configparser.rst:1368
+#: library/configparser.rst:1346
 msgid "Exception raised when errors occur attempting to parse a file."
 msgstr ""
 
-#: library/configparser.rst:1370
+#: library/configparser.rst:1348
 msgid ""
-"The ``filename`` attribute and :meth:`__init__` argument were renamed to "
-"``source`` for consistency."
+"The ``filename`` attribute and :meth:`__init__` constructor argument were "
+"removed.  They have been available using the name ``source`` since 3.2."
 msgstr ""
 
-#: library/configparser.rst:1376
+#: library/configparser.rst:1353
 msgid "Footnotes"
 msgstr ""
 
-#: library/configparser.rst:1377
+#: library/configparser.rst:1354
 msgid ""
 "Config parsers allow for heavy customization.  If you are interested in "
 "changing the behaviour outlined by the footnote reference, consult the "

@@ -4,9 +4,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 19:05+0000\n"
+"POT-Creation-Date: 2023-09-18 22:33+0300\n"
 "PO-Revision-Date: 2022-12-28 22:25+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -17,16 +17,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.2.2\n"
 
-#: tutorial/floatingpoint.rst:9
+#: tutorial/floatingpoint.rst:10
 msgid "Floating Point Arithmetic:  Issues and Limitations"
 msgstr "Kayan Nokta Aritmetiği: Sorunlar ve Sınırlamalar"
 
-#: tutorial/floatingpoint.rst:14
+#: tutorial/floatingpoint.rst:16
+#, fuzzy
 msgid ""
 "Floating-point numbers are represented in computer hardware as base 2 "
-"(binary) fractions.  For example, the **decimal** fraction ``0.125`` has "
-"value 1/10 + 2/100 + 5/1000, and in the same way the **binary** fraction "
-"``0.001`` has value 0/2 + 0/4 + 1/8. These two fractions have identical "
+"(binary) fractions.  For example, the **decimal** fraction ``0.625`` has "
+"value 6/10 + 2/100 + 5/1000, and in the same way the **binary** fraction "
+"``0.101`` has value 1/2 + 0/4 + 1/8. These two fractions have identical "
 "values, the only real difference being that the first is written in base 10 "
 "fractional notation, and the second in base 2."
 msgstr ""
@@ -37,7 +38,7 @@ msgstr ""
 "sahiptir, tek gerçek fark, birincisinin 10 tabanlı kesirli gösterimde ve "
 "ikincisinin 2 tabanlı olarak yazılmasıdır."
 
-#: tutorial/floatingpoint.rst:21
+#: tutorial/floatingpoint.rst:23
 msgid ""
 "Unfortunately, most decimal fractions cannot be represented exactly as "
 "binary fractions.  A consequence is that, in general, the decimal floating-"
@@ -49,7 +50,7 @@ msgstr ""
 "kayan noktalı sayılar, makinede gerçekte depolanan ikili kayan noktalı "
 "sayılar tarafından yalnızca yaklaşık olarak gösterilir."
 
-#: tutorial/floatingpoint.rst:26
+#: tutorial/floatingpoint.rst:28
 msgid ""
 "The problem is easier to understand at first in base 10.  Consider the "
 "fraction 1/3.  You can approximate that as a base 10 fraction::"
@@ -58,11 +59,11 @@ msgstr ""
 "düşünün.  Bunu 10 tabanında bir kesir olarak yaklaşık olarak "
 "hesaplayabilirsiniz::"
 
-#: tutorial/floatingpoint.rst:35
+#: tutorial/floatingpoint.rst:37
 msgid "or, better, ::"
 msgstr "ya da daha iyisi ::"
 
-#: tutorial/floatingpoint.rst:39
+#: tutorial/floatingpoint.rst:41
 msgid ""
 "and so on.  No matter how many digits you're willing to write down, the "
 "result will never be exactly 1/3, but will be an increasingly better "
@@ -72,7 +73,7 @@ msgstr ""
 "tam olarak 1/3 olmayacak, ancak 1/3'ün giderek daha iyi bir yaklaşımı "
 "olacaktır."
 
-#: tutorial/floatingpoint.rst:43
+#: tutorial/floatingpoint.rst:45
 msgid ""
 "In the same way, no matter how many base 2 digits you're willing to use, the "
 "decimal value 0.1 cannot be represented exactly as a base 2 fraction.  In "
@@ -82,7 +83,7 @@ msgstr ""
 "ondalık değeri tam olarak 2 tabanı kesri olarak gösterilemez.  Taban 2'de "
 "1/10 sonsuza kadar tekrar eden bir kesirdir ::"
 
-#: tutorial/floatingpoint.rst:49
+#: tutorial/floatingpoint.rst:51
 msgid ""
 "Stop at any finite number of bits, and you get an approximation.  On most "
 "machines today, floats are approximated using a binary fraction with the "
@@ -98,13 +99,14 @@ msgstr ""
 "gerçek değerine yakın ancak tam olarak eşit olmayan ``3602879701896397 / 2 "
 "** 55`` şeklindedir."
 
-#: tutorial/floatingpoint.rst:56
+#: tutorial/floatingpoint.rst:58
+#, fuzzy
 msgid ""
 "Many users are not aware of the approximation because of the way values are "
 "displayed.  Python only prints a decimal approximation to the true decimal "
 "value of the binary approximation stored by the machine.  On most machines, "
 "if Python were to print the true decimal value of the binary approximation "
-"stored for 0.1, it would have to display ::"
+"stored for 0.1, it would have to display::"
 msgstr ""
 "Birçok kullanıcı, değerlerin görüntülenme şekli nedeniyle bu yaklaşımın "
 "farkında değildir.  Python, makine tarafından depolanan ikili yaklaşımın "
@@ -112,16 +114,17 @@ msgstr ""
 "makinede, Python 0.1 için saklanan ikili yaklaşımın gerçek ondalık değerini "
 "yazdıracak olsaydı, ::"
 
-#: tutorial/floatingpoint.rst:65
+#: tutorial/floatingpoint.rst:67
+#, fuzzy
 msgid ""
 "That is more digits than most people find useful, so Python keeps the number "
-"of digits manageable by displaying a rounded value instead ::"
+"of digits manageable by displaying a rounded value instead:"
 msgstr ""
 "Bu çoğu insanın kullanışlı bulacağı seviyeden çok daha fazla basamak olurdu. "
 "Dolayısıyla, Python sayıları yuvarlayarak basamak sayısını kontrol "
 "edilebilir seviyede tutar ::"
 
-#: tutorial/floatingpoint.rst:71
+#: tutorial/floatingpoint.rst:75
 msgid ""
 "Just remember, even though the printed result looks like the exact value of "
 "1/10, the actual stored value is the nearest representable binary fraction."
@@ -129,7 +132,7 @@ msgstr ""
 "Unutmayın, yazdırılan sonuç 1/10'un tam değeri gibi görünse de, saklanan "
 "gerçek değer temsil edilebilir olan en yakın ikili kesirdir."
 
-#: tutorial/floatingpoint.rst:74
+#: tutorial/floatingpoint.rst:78
 msgid ""
 "Interestingly, there are many different decimal numbers that share the same "
 "nearest approximate binary fraction.  For example, the numbers ``0.1`` and "
@@ -146,7 +149,7 @@ msgstr ""
 "değerlerin tümü aynı yaklaşımı paylaştığından, ``eval(repr(x)) == x`` "
 "değişmezi korunarak bunlardan herhangi biri görüntülenebilir."
 
-#: tutorial/floatingpoint.rst:82
+#: tutorial/floatingpoint.rst:86
 msgid ""
 "Historically, the Python prompt and built-in :func:`repr` function would "
 "choose the one with 17 significant digits, ``0.10000000000000001``.   "
@@ -158,7 +161,7 @@ msgstr ""
 "itibaren, Python (çoğu sistemde) artık bunlardan en kısa olanı seçebilmekte "
 "ve basitçe ``0.1`` 'i görüntüleyebilmektedir."
 
-#: tutorial/floatingpoint.rst:87
+#: tutorial/floatingpoint.rst:91
 msgid ""
 "Note that this is in the very nature of binary floating-point: this is not a "
 "bug in Python, and it is not a bug in your code either.  You'll see the same "
@@ -171,15 +174,16 @@ msgstr ""
 "noktalı aritmetiğini destekleyen tüm dillerde aynı şeyi göreceksiniz (bazı "
 "diller varsayılan olarak veya tüm çıktı modlarında farkı *göstermeyebilir*)."
 
-#: tutorial/floatingpoint.rst:93
+#: tutorial/floatingpoint.rst:97
+#, fuzzy
 msgid ""
 "For more pleasant output, you may wish to use string formatting to produce a "
-"limited number of significant digits::"
+"limited number of significant digits:"
 msgstr ""
 "Daha hoş bir çıktı için, sınırlı sayıda anlamlı hane üretmek üzere dize "
 "biçimlendirmesini kullanmak isteyebilirsiniz::"
 
-#: tutorial/floatingpoint.rst:105
+#: tutorial/floatingpoint.rst:111
 msgid ""
 "It's important to realize that this is, in a real sense, an illusion: you're "
 "simply rounding the *display* of the true machine value."
@@ -187,35 +191,43 @@ msgstr ""
 "Bunun gerçek anlamda bir yanılsama olduğunun farkına varmak önemlidir: "
 "gerçek makine değerinin *görüntüsünü* yuvarlıyorsunuz."
 
-#: tutorial/floatingpoint.rst:108
+#: tutorial/floatingpoint.rst:114
+#, fuzzy
 msgid ""
 "One illusion may beget another.  For example, since 0.1 is not exactly 1/10, "
-"summing three values of 0.1 may not yield exactly 0.3, either::"
+"summing three values of 0.1 may not yield exactly 0.3, either:"
 msgstr ""
 "Bir yanılsama diğerini doğurabilir.  Örneğin, 0,1 tam olarak 1/10 "
 "olmadığından, 0,1'in üç değerini toplamak da tam olarak 0,3 vermeyebilir::"
 
-#: tutorial/floatingpoint.rst:114
+#: tutorial/floatingpoint.rst:122
+#, fuzzy
 msgid ""
 "Also, since the 0.1 cannot get any closer to the exact value of 1/10 and 0.3 "
 "cannot get any closer to the exact value of 3/10, then pre-rounding with :"
-"func:`round` function cannot help::"
+"func:`round` function cannot help:"
 msgstr ""
 "Ayrıca, 0,1 tam 1/10 değerine ve 0,3 tam 3/10 değerine daha fazla "
 "yaklaşamayacağından, :func:`round` fonksiyonu ile ön yuvarlama yapmak "
 "yardımcı olamaz::"
 
-#: tutorial/floatingpoint.rst:121
+#: tutorial/floatingpoint.rst:131
+#, fuzzy
 msgid ""
 "Though the numbers cannot be made closer to their intended exact values, "
-"the :func:`round` function can be useful for post-rounding so that results "
-"with inexact values become comparable to one another::"
+"the :func:`math.isclose` function can be useful for comparing inexact values:"
 msgstr ""
 "Sayılar amaçlanan tam değerlere yaklaştırılamasa da, :func:`round` işlevi, "
 "kesin olmayan değerlere sahip sonuçların birbiriyle karşılaştırılabilir hale "
 "gelmesi için sonradan yuvarlama yapmaya yarayabilir::"
 
-#: tutorial/floatingpoint.rst:128
+#: tutorial/floatingpoint.rst:139
+msgid ""
+"Alternatively, the :func:`round` function can be used to compare rough "
+"approximations::"
+msgstr ""
+
+#: tutorial/floatingpoint.rst:147
 #, fuzzy
 msgid ""
 "Binary floating-point arithmetic holds many surprises like this.  The "
@@ -233,7 +245,7 @@ msgstr ""
 "`The Perils of Floating Point <https://www.lahey.com/float.htm>`_ bölümüne "
 "bakınız."
 
-#: tutorial/floatingpoint.rst:137
+#: tutorial/floatingpoint.rst:156
 msgid ""
 "As that says near the end, \"there are no easy answers.\"  Still, don't be "
 "unduly wary of floating-point!  The errors in Python float operations are "
@@ -251,7 +263,7 @@ msgstr ""
 "işleminin yeni bir yuvarlama hatasına maruz kalabileceğini aklınızda "
 "bulundurmanız gerekir."
 
-#: tutorial/floatingpoint.rst:144
+#: tutorial/floatingpoint.rst:163
 msgid ""
 "While pathological cases do exist, for most casual use of floating-point "
 "arithmetic you'll see the result you expect in the end if you simply round "
@@ -266,7 +278,7 @@ msgstr ""
 "`formatstrings` içindeki :meth:`str.format` yönteminin biçim "
 "belirleyicilerine bakın."
 
-#: tutorial/floatingpoint.rst:150
+#: tutorial/floatingpoint.rst:169
 msgid ""
 "For use cases which require exact decimal representation, try using the :mod:"
 "`decimal` module which implements decimal arithmetic suitable for accounting "
@@ -276,7 +288,7 @@ msgstr ""
 "yüksek hassasiyetli uygulamalar için uygun ondalık aritmetiği uygulayan :mod:"
 "`decimal` modülünü kullanmayı deneyin."
 
-#: tutorial/floatingpoint.rst:154
+#: tutorial/floatingpoint.rst:173
 msgid ""
 "Another form of exact arithmetic is supported by the :mod:`fractions` module "
 "which implements arithmetic based on rational numbers (so the numbers like "
@@ -286,7 +298,7 @@ msgstr ""
 "uygulayan :mod:`fractions` modülü tarafından desteklenir (böylece 1/3 gibi "
 "sayılar tam olarak temsil edilebilir)."
 
-#: tutorial/floatingpoint.rst:158
+#: tutorial/floatingpoint.rst:177
 #, fuzzy
 msgid ""
 "If you are a heavy user of floating-point operations you should take a look "
@@ -298,43 +310,47 @@ msgstr ""
 "SciPy projesi tarafından sağlanan matematiksel ve istatistiksel işlemler "
 "için olan birçok pakete göz atmalısınız. <https://scipy.org> adresine bakın."
 
-#: tutorial/floatingpoint.rst:162
+#: tutorial/floatingpoint.rst:181
+#, fuzzy
 msgid ""
 "Python provides tools that may help on those rare occasions when you really "
 "*do* want to know the exact value of a float.  The :meth:`float."
-"as_integer_ratio` method expresses the value of a float as a fraction::"
+"as_integer_ratio` method expresses the value of a float as a fraction:"
 msgstr ""
 "Python, bir kayan noktanın tam değerini *gerçekten* bilmek istediğiniz nadir "
 "durumlarda yardımcı olabilecek araçlar sağlar.  :meth:`float."
 "as_integer_ratio` metodu bir kayan noktanın değerini kesir olarak ifade "
 "eder::"
 
-#: tutorial/floatingpoint.rst:171
+#: tutorial/floatingpoint.rst:192
+#, fuzzy
 msgid ""
 "Since the ratio is exact, it can be used to losslessly recreate the original "
-"value::"
+"value:"
 msgstr ""
 "Oran tam olduğundan, orijinal değeri kayıpsız olarak yeniden oluşturmak için "
 "kullanılabilir::"
 
-#: tutorial/floatingpoint.rst:177
+#: tutorial/floatingpoint.rst:200
+#, fuzzy
 msgid ""
 "The :meth:`float.hex` method expresses a float in hexadecimal (base 16), "
-"again giving the exact value stored by your computer::"
+"again giving the exact value stored by your computer:"
 msgstr ""
 ":meth:`float.hex` yöntemi bir kayan nokta değerini onaltılık (16 tabanı) "
 "olarak ifade eder ve yine bilgisayarınız tarafından depolanan tam değeri "
 "verir::"
 
-#: tutorial/floatingpoint.rst:183
+#: tutorial/floatingpoint.rst:208
+#, fuzzy
 msgid ""
 "This precise hexadecimal representation can be used to reconstruct the float "
-"value exactly::"
+"value exactly:"
 msgstr ""
 "Bu hassas onaltılık gösterim, float değerini tam olarak yeniden oluşturmak "
 "için kullanılabilir::"
 
-#: tutorial/floatingpoint.rst:189
+#: tutorial/floatingpoint.rst:216
 msgid ""
 "Since the representation is exact, it is useful for reliably porting values "
 "across different versions of Python (platform independence) and exchanging "
@@ -346,13 +362,14 @@ msgstr ""
 "destekleyen diğer dillerle (Java ve C99 gibi) veri alışverişi yapmak için "
 "kullanışlıdır."
 
-#: tutorial/floatingpoint.rst:193
+#: tutorial/floatingpoint.rst:220
+#, fuzzy
 msgid ""
-"Another helpful tool is the :func:`math.fsum` function which helps mitigate "
-"loss-of-precision during summation.  It tracks \"lost digits\" as values are "
-"added onto a running total.  That can make a difference in overall accuracy "
-"so that the errors do not accumulate to the point where they affect the "
-"final total:"
+"Another helpful tool is the :func:`sum` function which helps mitigate loss-"
+"of-precision during summation.  It uses extended precision for intermediate "
+"rounding steps as values are added onto a running total. That can make a "
+"difference in overall accuracy so that the errors do not accumulate to the "
+"point where they affect the final total:"
 msgstr ""
 "Bir başka yararlı araç da toplama sırasında hassasiyet kaybını azaltmaya "
 "yardımcı olan :func:`math.fsum` işlevidir.  Değerler çalışan bir toplam "
@@ -360,11 +377,20 @@ msgstr ""
 "yaratabilir, böylece hatalar nihai toplamı etkileyecek noktaya kadar "
 "birikmez:"
 
-#: tutorial/floatingpoint.rst:207
+#: tutorial/floatingpoint.rst:233
+msgid ""
+"The :func:`math.fsum()` goes further and tracks all of the \"lost digits\" "
+"as values are added onto a running total so that the result has only a "
+"single rounding.  This is slower than :func:`sum` but will be more accurate "
+"in uncommon cases where large magnitude inputs mostly cancel each other out "
+"leaving a final sum near zero:"
+msgstr ""
+
+#: tutorial/floatingpoint.rst:260
 msgid "Representation Error"
 msgstr "Temsil Hatası"
 
-#: tutorial/floatingpoint.rst:209
+#: tutorial/floatingpoint.rst:262
 msgid ""
 "This section explains the \"0.1\" example in detail, and shows how you can "
 "perform an exact analysis of cases like this yourself.  Basic familiarity "
@@ -374,7 +400,7 @@ msgstr ""
 "tam analizini kendiniz nasıl yapabileceğinizi göstermektedir.  İkili kayan "
 "nokta gösterimine temel düzeyde aşina olunduğu varsayılmaktadır."
 
-#: tutorial/floatingpoint.rst:213
+#: tutorial/floatingpoint.rst:266
 msgid ""
 ":dfn:`Representation error` refers to the fact that some (most, actually) "
 "decimal fractions cannot be represented exactly as binary (base 2) "
@@ -387,7 +413,7 @@ msgstr ""
 "Bu, Python'un (veya Perl, C, C++, Java, Fortran ve diğerlerinin) genellikle "
 "beklediğiniz tam ondalık sayıyı göstermemesinin başlıca nedenidir."
 
-#: tutorial/floatingpoint.rst:218
+#: tutorial/floatingpoint.rst:271
 #, fuzzy
 msgid ""
 "Why is that?  1/10 is not exactly representable as a binary fraction.  Since "
@@ -406,35 +432,38 @@ msgstr ""
 "formundaki en yakın kesre dönüştürmeye çalışır, burada *J* tam olarak 53 bit "
 "içeren bir tamsayıdır.  Yeniden Yazma ::"
 
-#: tutorial/floatingpoint.rst:229
+#: tutorial/floatingpoint.rst:282
 msgid "as ::"
 msgstr "şu şekilde ::"
 
-#: tutorial/floatingpoint.rst:233
+#: tutorial/floatingpoint.rst:286
+#, fuzzy
 msgid ""
 "and recalling that *J* has exactly 53 bits (is ``>= 2**52`` but ``< "
-"2**53``), the best value for *N* is 56::"
+"2**53``), the best value for *N* is 56:"
 msgstr ""
 "ve *J*'nin tam olarak 53 bit olduğunu hatırlarsak (``>= 2**52`` ama ``< "
 "2**53``), *N* için en iyi değer 56:'dır:"
 
-#: tutorial/floatingpoint.rst:239
+#: tutorial/floatingpoint.rst:294
+#, fuzzy
 msgid ""
 "That is, 56 is the only value for *N* that leaves *J* with exactly 53 bits.  "
-"The best possible value for *J* is then that quotient rounded::"
+"The best possible value for *J* is then that quotient rounded:"
 msgstr ""
 "Yani, *N* için *J*'ye tam olarak 53 bit bırakan tek değer 56'dır.  O halde "
 "*J* için mümkün olan en iyi değer, bu bölümün yuvarlanmış halidir::"
 
-#: tutorial/floatingpoint.rst:246
+#: tutorial/floatingpoint.rst:303
+#, fuzzy
 msgid ""
 "Since the remainder is more than half of 10, the best approximation is "
-"obtained by rounding up::"
+"obtained by rounding up:"
 msgstr ""
 "Kalanın değeri 10'un yarısından fazla olduğu için, en iyi yaklaşım yukarı "
 "yuvarlama ile elde edilir::"
 
-#: tutorial/floatingpoint.rst:252
+#: tutorial/floatingpoint.rst:313
 #, fuzzy
 msgid ""
 "Therefore the best possible approximation to 1/10 in IEEE 754 double "
@@ -442,12 +471,12 @@ msgid ""
 msgstr ""
 "Bu nedenle 754 çift duyarlılıkta, 1/10'a mümkün olan en iyi yaklaşım şudur ::"
 
-#: tutorial/floatingpoint.rst:257
+#: tutorial/floatingpoint.rst:318
 msgid ""
 "Dividing both the numerator and denominator by two reduces the fraction to::"
 msgstr "Hem pay hem de paydayı ikiye böldüğünüzde kesir şuna indirgenir::"
 
-#: tutorial/floatingpoint.rst:261
+#: tutorial/floatingpoint.rst:322
 msgid ""
 "Note that since we rounded up, this is actually a little bit larger than "
 "1/10; if we had not rounded up, the quotient would have been a little bit "
@@ -457,7 +486,7 @@ msgstr ""
 "olduğuna dikkat edin; yukarı yuvarlamamış olsaydık, bölüm 1/10'dan biraz "
 "daha küçük olurdu.  Ancak hiçbir durumda *tam olarak* 1/10 olamaz!"
 
-#: tutorial/floatingpoint.rst:265
+#: tutorial/floatingpoint.rst:326
 #, fuzzy
 msgid ""
 "So the computer never \"sees\" 1/10:  what it sees is the exact fraction "
@@ -466,30 +495,32 @@ msgstr ""
 "Yani bilgisayar asla 1/10'u \"görmez\": gördüğü şey yukarıda verilen tam "
 "kesirdir, alabileceği en iyi 754 çift yaklaşımıdır::"
 
-#: tutorial/floatingpoint.rst:271
+#: tutorial/floatingpoint.rst:334
+#, fuzzy
 msgid ""
 "If we multiply that fraction by 10\\*\\*55, we can see the value out to 55 "
-"decimal digits::"
+"decimal digits:"
 msgstr ""
 "Bu kesri 10\\*\\*55 ile çarparsak, değeri 55 ondalık basamağa kadar "
 "görebiliriz::"
 
-#: tutorial/floatingpoint.rst:277
+#: tutorial/floatingpoint.rst:342
+#, fuzzy
 msgid ""
 "meaning that the exact number stored in the computer is equal to the decimal "
 "value 0.1000000000000000055511151231257827021181583404541015625. Instead of "
 "displaying the full decimal value, many languages (including older versions "
-"of Python), round the result to 17 significant digits::"
+"of Python), round the result to 17 significant digits:"
 msgstr ""
 "bu da bilgisayarda depolanan gerçek değerin "
 "0.1000000000000000055511151231257827021181583404541015625 kesrine eşit "
 "olduğu anlamına gelir. Python’un eski sürümleri dahil olmak üzere çoğu dil, "
 "tam kesri göstermek yerine sonucu 17 anlamlı basamağa yuvarlar::"
 
-#: tutorial/floatingpoint.rst:285
+#: tutorial/floatingpoint.rst:352
+#, fuzzy
 msgid ""
-"The :mod:`fractions` and :mod:`decimal` modules make these calculations "
-"easy::"
+"The :mod:`fractions` and :mod:`decimal` modules make these calculations easy:"
 msgstr ""
 ":mod:`fractions` ve :mod:`decimal` modülleri bu hesaplamaları kolaylaştırır::"
 

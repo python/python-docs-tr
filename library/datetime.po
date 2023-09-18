@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 19:05+0000\n"
+"POT-Creation-Date: 2023-09-18 22:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -367,7 +367,7 @@ msgid ""
 "example::"
 msgstr ""
 
-#: library/datetime.rst:560 library/datetime.rst:1684 library/datetime.rst:2286
+#: library/datetime.rst:560 library/datetime.rst:1692 library/datetime.rst:2294
 msgid "Class attributes:"
 msgstr ""
 
@@ -393,7 +393,7 @@ msgid ""
 "``-timedelta.max`` is not representable as a :class:`timedelta` object."
 msgstr ""
 
-#: library/datetime.rst:578 library/datetime.rst:1704
+#: library/datetime.rst:578 library/datetime.rst:1712
 msgid "Instance attributes (read-only):"
 msgstr ""
 
@@ -429,15 +429,15 @@ msgstr ""
 msgid "Between 0 and 999999 inclusive"
 msgstr ""
 
-#: library/datetime.rst:595 library/datetime.rst:1138
+#: library/datetime.rst:595 library/datetime.rst:1146
 msgid "Supported operations:"
 msgstr ""
 
-#: library/datetime.rst:598 library/datetime.rst:1141
+#: library/datetime.rst:598 library/datetime.rst:1149
 msgid "Operation"
 msgstr ""
 
-#: library/datetime.rst:598 library/datetime.rst:1141
+#: library/datetime.rst:598 library/datetime.rst:1149
 msgid "Result"
 msgstr ""
 
@@ -581,7 +581,7 @@ msgid ""
 "constructor call with canonical attribute values."
 msgstr ""
 
-#: library/datetime.rst:612 library/datetime.rst:2509
+#: library/datetime.rst:612 library/datetime.rst:2525
 msgid "Notes:"
 msgstr ""
 
@@ -654,7 +654,7 @@ msgid ""
 "and only if it isn't equal to ``timedelta(0)``."
 msgstr ""
 
-#: library/datetime.rst:641 library/datetime.rst:1812
+#: library/datetime.rst:641 library/datetime.rst:1820
 msgid "Instance methods:"
 msgstr ""
 
@@ -718,12 +718,12 @@ msgstr ""
 msgid "``1 <= day <= number of days in the given month and year``"
 msgstr ""
 
-#: library/datetime.rst:855
+#: library/datetime.rst:856
 msgid ""
 "If an argument outside those ranges is given, :exc:`ValueError` is raised."
 msgstr ""
 
-#: library/datetime.rst:860
+#: library/datetime.rst:861
 msgid "Other constructors, all class methods:"
 msgstr ""
 
@@ -802,15 +802,15 @@ msgid ""
 "``timedelta(days=1)``."
 msgstr ""
 
-#: library/datetime.rst:1089
+#: library/datetime.rst:1097
 msgid "Between :const:`MINYEAR` and :const:`MAXYEAR` inclusive."
 msgstr ""
 
-#: library/datetime.rst:1094
+#: library/datetime.rst:1102
 msgid "Between 1 and 12 inclusive."
 msgstr ""
 
-#: library/datetime.rst:1099
+#: library/datetime.rst:1107
 msgid "Between 1 and the number of days in the given month of the given year."
 msgstr ""
 
@@ -834,7 +834,7 @@ msgstr ""
 msgid "``timedelta = date1 - date2``"
 msgstr ""
 
-#: library/datetime.rst:1147
+#: library/datetime.rst:1155
 msgid "\\(3)"
 msgstr ""
 
@@ -891,11 +891,11 @@ msgid ""
 "values by whichever keyword arguments are specified."
 msgstr ""
 
-#: library/datetime.rst:1855
+#: library/datetime.rst:1863
 msgid "Example::"
 msgstr ""
 
-#: library/datetime.rst:1325
+#: library/datetime.rst:1333
 msgid ""
 "Return a :class:`time.struct_time` such as returned by :func:`time."
 "localtime`."
@@ -905,7 +905,7 @@ msgstr ""
 msgid "The hours, minutes and seconds are 0, and the DST flag is -1."
 msgstr ""
 
-#: library/datetime.rst:1327
+#: library/datetime.rst:1335
 msgid "``d.timetuple()`` is equivalent to::"
 msgstr ""
 
@@ -979,7 +979,7 @@ msgstr ""
 msgid "Return a string representing the date::"
 msgstr ""
 
-#: library/datetime.rst:1511
+#: library/datetime.rst:1519
 msgid "``d.ctime()`` is equivalent to::"
 msgstr ""
 
@@ -1014,21 +1014,21 @@ msgstr ""
 msgid "Example of counting days to an event::"
 msgstr ""
 
-#: library/datetime.rst:780
+#: library/datetime.rst:781
 msgid "More examples of working with :class:`date`:"
 msgstr ""
 
-#: library/datetime.rst:829
+#: library/datetime.rst:830
 msgid ":class:`.datetime` Objects"
 msgstr ""
 
-#: library/datetime.rst:831
+#: library/datetime.rst:832
 msgid ""
 "A :class:`.datetime` object is a single object containing all the "
 "information from a :class:`date` object and a :class:`.time` object."
 msgstr ""
 
-#: library/datetime.rst:834
+#: library/datetime.rst:835
 msgid ""
 "Like a :class:`date` object, :class:`.datetime` assumes the current "
 "Gregorian calendar extended in both directions; like a :class:`.time` "
@@ -1036,76 +1036,76 @@ msgid ""
 "every day."
 msgstr ""
 
-#: library/datetime.rst:838
+#: library/datetime.rst:839
 msgid "Constructor:"
 msgstr ""
 
-#: library/datetime.rst:842
+#: library/datetime.rst:843
 msgid ""
 "The *year*, *month* and *day* arguments are required. *tzinfo* may be "
 "``None``, or an instance of a :class:`tzinfo` subclass. The remaining "
 "arguments must be integers in the following ranges:"
 msgstr ""
 
-#: library/datetime.rst:846
+#: library/datetime.rst:847
 msgid "``MINYEAR <= year <= MAXYEAR``,"
 msgstr ""
 
-#: library/datetime.rst:847
+#: library/datetime.rst:848
 msgid "``1 <= month <= 12``,"
 msgstr ""
 
-#: library/datetime.rst:848
+#: library/datetime.rst:849
 msgid "``1 <= day <= number of days in the given month and year``,"
 msgstr ""
 
-#: library/datetime.rst:1675
+#: library/datetime.rst:1683
 msgid "``0 <= hour < 24``,"
 msgstr ""
 
-#: library/datetime.rst:1676
+#: library/datetime.rst:1684
 msgid "``0 <= minute < 60``,"
 msgstr ""
 
-#: library/datetime.rst:1677
+#: library/datetime.rst:1685
 msgid "``0 <= second < 60``,"
 msgstr ""
 
-#: library/datetime.rst:1678
+#: library/datetime.rst:1686
 msgid "``0 <= microsecond < 1000000``,"
 msgstr ""
 
-#: library/datetime.rst:1679
+#: library/datetime.rst:1687
 msgid "``fold in [0, 1]``."
 msgstr ""
 
-#: library/datetime.rst:1246 library/datetime.rst:1822
+#: library/datetime.rst:1254 library/datetime.rst:1830
 msgid "Added the ``fold`` argument."
 msgstr ""
 
-#: library/datetime.rst:864
+#: library/datetime.rst:865
 msgid "Return the current local datetime, with :attr:`.tzinfo` ``None``."
 msgstr ""
 
-#: library/datetime.rst:866
+#: library/datetime.rst:867
 msgid "Equivalent to::"
 msgstr ""
 
-#: library/datetime.rst:870
+#: library/datetime.rst:871
 msgid "See also :meth:`now`, :meth:`fromtimestamp`."
 msgstr ""
 
-#: library/datetime.rst:872
+#: library/datetime.rst:873
 msgid ""
 "This method is functionally equivalent to :meth:`now`, but without a ``tz`` "
 "parameter."
 msgstr ""
 
-#: library/datetime.rst:877
+#: library/datetime.rst:878
 msgid "Return the current local date and time."
 msgstr ""
 
-#: library/datetime.rst:879
+#: library/datetime.rst:880
 msgid ""
 "If optional argument *tz* is ``None`` or not specified, this is like :meth:"
 "`today`, but, if possible, supplies more precision than can be gotten from "
@@ -1113,28 +1113,28 @@ msgid ""
 "possible on platforms supplying the C :c:func:`gettimeofday` function)."
 msgstr ""
 
-#: library/datetime.rst:885
+#: library/datetime.rst:886
 msgid ""
 "If *tz* is not ``None``, it must be an instance of a :class:`tzinfo` "
 "subclass, and the current date and time are converted to *tz*’s time zone."
 msgstr ""
 
-#: library/datetime.rst:888
+#: library/datetime.rst:889
 msgid "This function is preferred over :meth:`today` and :meth:`utcnow`."
 msgstr ""
 
-#: library/datetime.rst:893
+#: library/datetime.rst:894
 msgid "Return the current UTC date and time, with :attr:`.tzinfo` ``None``."
 msgstr ""
 
-#: library/datetime.rst:895
+#: library/datetime.rst:896
 msgid ""
 "This is like :meth:`now`, but returns the current UTC date and time, as a "
 "naive :class:`.datetime` object. An aware current UTC datetime can be "
 "obtained by calling ``datetime.now(timezone.utc)``. See also :meth:`now`."
 msgstr ""
 
-#: library/datetime.rst:901
+#: library/datetime.rst:902
 msgid ""
 "Because naive ``datetime`` objects are treated by many ``datetime`` methods "
 "as local times, it is preferred to use aware datetimes to represent times in "
@@ -1143,6 +1143,10 @@ msgid ""
 msgstr ""
 
 #: library/datetime.rst:909
+msgid "Use :meth:`datetime.now` with :attr:`UTC` instead."
+msgstr ""
+
+#: library/datetime.rst:914
 msgid ""
 "Return the local date and time corresponding to the POSIX timestamp, such as "
 "is returned by :func:`time.time`. If optional argument *tz* is ``None`` or "
@@ -1150,13 +1154,13 @@ msgid ""
 "time, and the returned :class:`.datetime` object is naive."
 msgstr ""
 
-#: library/datetime.rst:914
+#: library/datetime.rst:919
 msgid ""
 "If *tz* is not ``None``, it must be an instance of a :class:`tzinfo` "
 "subclass, and the timestamp is converted to *tz*’s time zone."
 msgstr ""
 
-#: library/datetime.rst:917
+#: library/datetime.rst:922
 msgid ""
 ":meth:`fromtimestamp` may raise :exc:`OverflowError`, if the timestamp is "
 "out of the range of values supported by the platform C :c:func:`localtime` "
@@ -1169,7 +1173,7 @@ msgid ""
 "preferred over :meth:`utcfromtimestamp`."
 msgstr ""
 
-#: library/datetime.rst:928
+#: library/datetime.rst:933
 msgid ""
 "Raise :exc:`OverflowError` instead of :exc:`ValueError` if the timestamp is "
 "out of the range of values supported by the platform C :c:func:`localtime` "
@@ -1177,17 +1181,17 @@ msgid ""
 "`ValueError` on :c:func:`localtime` or :c:func:`gmtime` failure."
 msgstr ""
 
-#: library/datetime.rst:935
+#: library/datetime.rst:940
 msgid ":meth:`fromtimestamp` may return instances with :attr:`.fold` set to 1."
 msgstr ""
 
-#: library/datetime.rst:940
+#: library/datetime.rst:945
 msgid ""
 "Return the UTC :class:`.datetime` corresponding to the POSIX timestamp, "
 "with :attr:`.tzinfo` ``None``.  (The resulting object is naive.)"
 msgstr ""
 
-#: library/datetime.rst:943
+#: library/datetime.rst:948
 msgid ""
 "This may raise :exc:`OverflowError`, if the timestamp is out of the range of "
 "values supported by the platform C :c:func:`gmtime` function, and :exc:"
@@ -1195,23 +1199,23 @@ msgid ""
 "to years in 1970 through 2038."
 msgstr ""
 
-#: library/datetime.rst:948
+#: library/datetime.rst:953
 msgid "To get an aware :class:`.datetime` object, call :meth:`fromtimestamp`::"
 msgstr ""
 
-#: library/datetime.rst:952
+#: library/datetime.rst:957
 msgid ""
 "On the POSIX compliant platforms, it is equivalent to the following "
 "expression::"
 msgstr ""
 
-#: library/datetime.rst:957
+#: library/datetime.rst:962
 msgid ""
 "except the latter formula always supports the full years range: between :"
 "const:`MINYEAR` and :const:`MAXYEAR` inclusive."
 msgstr ""
 
-#: library/datetime.rst:962
+#: library/datetime.rst:967
 msgid ""
 "Because naive ``datetime`` objects are treated by many ``datetime`` methods "
 "as local times, it is preferred to use aware datetimes to represent times in "
@@ -1220,7 +1224,7 @@ msgid ""
 "tz=timezone.utc)``."
 msgstr ""
 
-#: library/datetime.rst:968
+#: library/datetime.rst:973
 msgid ""
 "Raise :exc:`OverflowError` instead of :exc:`ValueError` if the timestamp is "
 "out of the range of values supported by the platform C :c:func:`gmtime` "
@@ -1228,7 +1232,11 @@ msgid ""
 "`gmtime` failure."
 msgstr ""
 
-#: library/datetime.rst:977
+#: library/datetime.rst:981
+msgid "Use :meth:`datetime.fromtimestamp` with :attr:`UTC` instead."
+msgstr ""
+
+#: library/datetime.rst:986
 msgid ""
 "Return the :class:`.datetime` corresponding to the proleptic Gregorian "
 "ordinal, where January 1 of year 1 has ordinal 1. :exc:`ValueError` is "
@@ -1237,59 +1245,60 @@ msgid ""
 "is ``None``."
 msgstr ""
 
-#: library/datetime.rst:985
+#: library/datetime.rst:994
 msgid ""
 "Return a new :class:`.datetime` object whose date components are equal to "
 "the given :class:`date` object's, and whose time components are equal to the "
 "given :class:`.time` object's. If the *tzinfo* argument is provided, its "
 "value is used to set the :attr:`.tzinfo` attribute of the result, otherwise "
-"the :attr:`~.time.tzinfo` attribute of the *time* argument is used."
+"the :attr:`~.time.tzinfo` attribute of the *time* argument is used.  If the "
+"*date* argument is a :class:`.datetime` object, its time components and :"
+"attr:`.tzinfo` attributes are ignored."
 msgstr ""
 
-#: library/datetime.rst:992
+#: library/datetime.rst:1002
 msgid ""
 "For any :class:`.datetime` object *d*, ``d == datetime.combine(d.date(), d."
-"time(), d.tzinfo)``. If date is a :class:`.datetime` object, its time "
-"components and :attr:`.tzinfo` attributes are ignored."
+"time(), d.tzinfo)``."
 msgstr ""
 
-#: library/datetime.rst:997
+#: library/datetime.rst:1005
 msgid "Added the *tzinfo* argument."
 msgstr ""
 
-#: library/datetime.rst:1003
+#: library/datetime.rst:1011
 msgid ""
 "Return a :class:`.datetime` corresponding to a *date_string* in any valid "
 "ISO 8601 format, with the following exceptions:"
 msgstr ""
 
-#: library/datetime.rst:1778
+#: library/datetime.rst:1786
 msgid "Time zone offsets may have fractional seconds."
 msgstr ""
 
-#: library/datetime.rst:1007
+#: library/datetime.rst:1015
 msgid "The ``T`` separator may be replaced by any single unicode character."
 msgstr ""
 
-#: library/datetime.rst:1008
+#: library/datetime.rst:1016
 msgid "Ordinal dates are not currently supported."
 msgstr ""
 
-#: library/datetime.rst:1783
+#: library/datetime.rst:1791
 msgid "Fractional hours and minutes are not supported."
 msgstr ""
 
-#: library/datetime.rst:1440 library/datetime.rst:1785
+#: library/datetime.rst:1448 library/datetime.rst:1793
 msgid "Examples::"
 msgstr ""
 
-#: library/datetime.rst:1035
+#: library/datetime.rst:1043
 msgid ""
 "Previously, this method only supported formats that could be emitted by :"
 "meth:`date.isoformat()` or :meth:`datetime.isoformat()`."
 msgstr ""
 
-#: library/datetime.rst:1042
+#: library/datetime.rst:1050
 msgid ""
 "Return a :class:`.datetime` corresponding to the ISO calendar date specified "
 "by year, week and day. The non-date components of the datetime are populated "
@@ -1297,19 +1306,19 @@ msgid ""
 "`datetime.isocalendar`."
 msgstr ""
 
-#: library/datetime.rst:1051
+#: library/datetime.rst:1059
 msgid ""
 "Return a :class:`.datetime` corresponding to *date_string*, parsed according "
 "to *format*."
 msgstr ""
 
-#: library/datetime.rst:1054
+#: library/datetime.rst:1062
 msgid ""
 "If *format* does not contain microseconds or timezone information, this is "
 "equivalent to::"
 msgstr ""
 
-#: library/datetime.rst:1058
+#: library/datetime.rst:1066
 msgid ""
 ":exc:`ValueError` is raised if the date_string and format can't be parsed "
 "by :func:`time.strptime` or if it returns a value which isn't a time tuple.  "
@@ -1317,43 +1326,43 @@ msgid ""
 "fromisoformat`."
 msgstr ""
 
-#: library/datetime.rst:1069
+#: library/datetime.rst:1077
 msgid ""
 "The earliest representable :class:`.datetime`, ``datetime(MINYEAR, 1, 1, "
 "tzinfo=None)``."
 msgstr ""
 
-#: library/datetime.rst:1075
+#: library/datetime.rst:1083
 msgid ""
 "The latest representable :class:`.datetime`, ``datetime(MAXYEAR, 12, 31, 23, "
 "59, 59, 999999, tzinfo=None)``."
 msgstr ""
 
-#: library/datetime.rst:1081
+#: library/datetime.rst:1089
 msgid ""
 "The smallest possible difference between non-equal :class:`.datetime` "
 "objects, ``timedelta(microseconds=1)``."
 msgstr ""
 
-#: library/datetime.rst:1708
+#: library/datetime.rst:1716
 msgid "In ``range(24)``."
 msgstr ""
 
-#: library/datetime.rst:1114 library/datetime.rst:1718
+#: library/datetime.rst:1122 library/datetime.rst:1726
 msgid "In ``range(60)``."
 msgstr ""
 
-#: library/datetime.rst:1723
+#: library/datetime.rst:1731
 msgid "In ``range(1000000)``."
 msgstr ""
 
-#: library/datetime.rst:1124
+#: library/datetime.rst:1132
 msgid ""
 "The object passed as the *tzinfo* argument to the :class:`.datetime` "
 "constructor, or ``None`` if none was passed."
 msgstr ""
 
-#: library/datetime.rst:1734
+#: library/datetime.rst:1742
 msgid ""
 "In ``[0, 1]``. Used to disambiguate wall times during a repeated interval. "
 "(A repeated interval occurs when clocks are rolled back at the end of "
@@ -1362,36 +1371,36 @@ msgid ""
 "(later) of the two moments with the same wall time representation."
 msgstr ""
 
-#: library/datetime.rst:1143
+#: library/datetime.rst:1151
 msgid "``datetime2 = datetime1 + timedelta``"
 msgstr ""
 
-#: library/datetime.rst:2344 library/datetime.rst:2361
-#: library/datetime.rst:2426 library/datetime.rst:2435
+#: library/datetime.rst:2352 library/datetime.rst:2369
+#: library/datetime.rst:2434 library/datetime.rst:2443
 msgid "\\(1)"
 msgstr ""
 
-#: library/datetime.rst:1145
+#: library/datetime.rst:1153
 msgid "``datetime2 = datetime1 - timedelta``"
 msgstr ""
 
-#: library/datetime.rst:2377
+#: library/datetime.rst:2385
 msgid "\\(2)"
 msgstr ""
 
-#: library/datetime.rst:1147
+#: library/datetime.rst:1155
 msgid "``timedelta = datetime1 - datetime2``"
 msgstr ""
 
-#: library/datetime.rst:1149
+#: library/datetime.rst:1157
 msgid "``datetime1 < datetime2``"
 msgstr ""
 
-#: library/datetime.rst:1149
+#: library/datetime.rst:1157
 msgid "Compares :class:`.datetime` to :class:`.datetime`. (4)"
 msgstr ""
 
-#: library/datetime.rst:1154
+#: library/datetime.rst:1162
 msgid ""
 "datetime2 is a duration of timedelta removed from datetime1, moving forward "
 "in time if ``timedelta.days`` > 0, or backward if ``timedelta.days`` < 0. "
@@ -1402,7 +1411,7 @@ msgid ""
 "the input is an aware object."
 msgstr ""
 
-#: library/datetime.rst:1163
+#: library/datetime.rst:1171
 msgid ""
 "Computes the datetime2 such that datetime2 + timedelta == datetime1. As for "
 "addition, the result has the same :attr:`~.datetime.tzinfo` attribute as the "
@@ -1410,14 +1419,14 @@ msgid ""
 "aware."
 msgstr ""
 
-#: library/datetime.rst:1168
+#: library/datetime.rst:1176
 msgid ""
 "Subtraction of a :class:`.datetime` from a :class:`.datetime` is defined "
 "only if both operands are naive, or if both are aware. If one is aware and "
 "the other is naive, :exc:`TypeError` is raised."
 msgstr ""
 
-#: library/datetime.rst:1172
+#: library/datetime.rst:1180
 msgid ""
 "If both are naive, or both are aware and have the same :attr:`~.datetime."
 "tzinfo` attribute, the :attr:`~.datetime.tzinfo` attributes are ignored, and "
@@ -1425,7 +1434,7 @@ msgid ""
 "datetime1``. No time zone adjustments are done in this case."
 msgstr ""
 
-#: library/datetime.rst:1177
+#: library/datetime.rst:1185
 msgid ""
 "If both are aware and have different :attr:`~.datetime.tzinfo` attributes, "
 "``a-b`` acts as if *a* and *b* were first converted to naive UTC datetimes "
@@ -1434,20 +1443,20 @@ msgid ""
 "overflows."
 msgstr ""
 
-#: library/datetime.rst:1183
+#: library/datetime.rst:1191
 msgid ""
 "*datetime1* is considered less than *datetime2* when *datetime1* precedes "
 "*datetime2* in time."
 msgstr ""
 
-#: library/datetime.rst:1186
+#: library/datetime.rst:1194
 msgid ""
 "If one comparand is naive and the other is aware, :exc:`TypeError` is raised "
 "if an order comparison is attempted. For equality comparisons, naive "
 "instances are never equal to aware instances."
 msgstr ""
 
-#: library/datetime.rst:1190
+#: library/datetime.rst:1198
 msgid ""
 "If both comparands are aware, and have the same :attr:`~.datetime.tzinfo` "
 "attribute, the common :attr:`~.datetime.tzinfo` attribute is ignored and the "
@@ -1457,13 +1466,13 @@ msgid ""
 "utcoffset()``)."
 msgstr ""
 
-#: library/datetime.rst:1196
+#: library/datetime.rst:1204
 msgid ""
 "Equality comparisons between aware and naive :class:`.datetime` instances "
 "don't raise :exc:`TypeError`."
 msgstr ""
 
-#: library/datetime.rst:1202
+#: library/datetime.rst:1210
 msgid ""
 "In order to stop comparison from falling back to the default scheme of "
 "comparing object addresses, datetime comparison normally raises :exc:"
@@ -1476,27 +1485,27 @@ msgid ""
 "cases return :const:`False` or :const:`True`, respectively."
 msgstr ""
 
-#: library/datetime.rst:1216
+#: library/datetime.rst:1224
 msgid "Return :class:`date` object with same year, month and day."
 msgstr ""
 
-#: library/datetime.rst:1221
+#: library/datetime.rst:1229
 msgid ""
 "Return :class:`.time` object with same hour, minute, second, microsecond and "
 "fold. :attr:`.tzinfo` is ``None``. See also method :meth:`timetz`."
 msgstr ""
 
-#: library/datetime.rst:1233
+#: library/datetime.rst:1241
 msgid "The fold value is copied to the returned :class:`.time` object."
 msgstr ""
 
-#: library/datetime.rst:1230
+#: library/datetime.rst:1238
 msgid ""
 "Return :class:`.time` object with same hour, minute, second, microsecond, "
 "fold, and tzinfo attributes. See also method :meth:`time`."
 msgstr ""
 
-#: library/datetime.rst:1241
+#: library/datetime.rst:1249
 msgid ""
 "Return a datetime with the same attributes, except for those attributes "
 "given new values by whichever keyword arguments are specified. Note that "
@@ -1504,21 +1513,21 @@ msgid ""
 "datetime with no conversion of date and time data."
 msgstr ""
 
-#: library/datetime.rst:1252
+#: library/datetime.rst:1260
 msgid ""
 "Return a :class:`.datetime` object with new :attr:`.tzinfo` attribute *tz*, "
 "adjusting the date and time data so the result is the same UTC time as "
 "*self*, but in *tz*'s local time."
 msgstr ""
 
-#: library/datetime.rst:1256
+#: library/datetime.rst:1264
 msgid ""
 "If provided, *tz* must be an instance of a :class:`tzinfo` subclass, and "
 "its :meth:`utcoffset` and :meth:`dst` methods must not return ``None``. If "
 "*self* is naive, it is presumed to represent time in the system timezone."
 msgstr ""
 
-#: library/datetime.rst:1260
+#: library/datetime.rst:1268
 msgid ""
 "If called without arguments (or with ``tz=None``) the system local timezone "
 "is assumed for the target timezone. The ``.tzinfo`` attribute of the "
@@ -1526,7 +1535,7 @@ msgid ""
 "with the zone name and offset obtained from the OS."
 msgstr ""
 
-#: library/datetime.rst:1265
+#: library/datetime.rst:1273
 msgid ""
 "If ``self.tzinfo`` is *tz*, ``self.astimezone(tz)`` is equal to *self*:  no "
 "adjustment of date or time data is performed. Else the result is local time "
@@ -1535,7 +1544,7 @@ msgid ""
 "date and time data as ``dt - dt.utcoffset()``."
 msgstr ""
 
-#: library/datetime.rst:1271
+#: library/datetime.rst:1279
 msgid ""
 "If you merely want to attach a time zone object *tz* to a datetime *dt* "
 "without adjustment of date and time data, use ``dt.replace(tzinfo=tz)``. If "
@@ -1543,54 +1552,54 @@ msgid ""
 "without conversion of date and time data, use ``dt.replace(tzinfo=None)``."
 msgstr ""
 
-#: library/datetime.rst:1276
+#: library/datetime.rst:1284
 msgid ""
 "Note that the default :meth:`tzinfo.fromutc` method can be overridden in a :"
 "class:`tzinfo` subclass to affect the result returned by :meth:`astimezone`. "
 "Ignoring error cases, :meth:`astimezone` acts like::"
 msgstr ""
 
-#: library/datetime.rst:1288
+#: library/datetime.rst:1296
 msgid "*tz* now can be omitted."
 msgstr ""
 
-#: library/datetime.rst:1291
+#: library/datetime.rst:1299
 msgid ""
 "The :meth:`astimezone` method can now be called on naive instances that are "
 "presumed to represent system local time."
 msgstr ""
 
-#: library/datetime.rst:1298
+#: library/datetime.rst:1306
 msgid ""
 "If :attr:`.tzinfo` is ``None``, returns ``None``, else returns ``self.tzinfo."
 "utcoffset(self)``, and raises an exception if the latter doesn't return "
 "``None`` or a :class:`timedelta` object with magnitude less than one day."
 msgstr ""
 
-#: library/datetime.rst:1895 library/datetime.rst:2246
-#: library/datetime.rst:2562
+#: library/datetime.rst:1903 library/datetime.rst:2254
+#: library/datetime.rst:2578
 msgid "The UTC offset is not restricted to a whole number of minutes."
 msgstr ""
 
-#: library/datetime.rst:1308
+#: library/datetime.rst:1316
 msgid ""
 "If :attr:`.tzinfo` is ``None``, returns ``None``, else returns ``self.tzinfo."
 "dst(self)``, and raises an exception if the latter doesn't return ``None`` "
 "or a :class:`timedelta` object with magnitude less than one day."
 msgstr ""
 
-#: library/datetime.rst:1905 library/datetime.rst:2055
+#: library/datetime.rst:1913 library/datetime.rst:2063
 msgid "The DST offset is not restricted to a whole number of minutes."
 msgstr ""
 
-#: library/datetime.rst:1318
+#: library/datetime.rst:1326
 msgid ""
 "If :attr:`.tzinfo` is ``None``, returns ``None``, else returns ``self.tzinfo."
 "tzname(self)``, raises an exception if the latter doesn't return ``None`` or "
 "a string object,"
 msgstr ""
 
-#: library/datetime.rst:1333
+#: library/datetime.rst:1341
 msgid ""
 "where ``yday = d.toordinal() - date(d.year, 1, 1).toordinal() + 1`` is the "
 "day number within the current year starting with ``1`` for January 1st. The :"
@@ -1600,14 +1609,14 @@ msgid ""
 "attr:`tm_isdst` is set to ``1``; else :attr:`tm_isdst` is set to ``0``."
 msgstr ""
 
-#: library/datetime.rst:1344
+#: library/datetime.rst:1352
 msgid ""
 "If :class:`.datetime` instance *d* is naive, this is the same as ``d."
 "timetuple()`` except that :attr:`tm_isdst` is forced to 0 regardless of what "
 "``d.dst()`` returns. DST is never in effect for a UTC time."
 msgstr ""
 
-#: library/datetime.rst:1348
+#: library/datetime.rst:1356
 msgid ""
 "If *d* is aware, *d* is normalized to UTC time, by subtracting ``d."
 "utcoffset()``, and a :class:`time.struct_time` for the normalized time is "
@@ -1616,7 +1625,7 @@ msgid ""
 "spills over a year boundary."
 msgstr ""
 
-#: library/datetime.rst:1357
+#: library/datetime.rst:1365
 msgid ""
 "Because naive ``datetime`` objects are treated by many ``datetime`` methods "
 "as local times, it is preferred to use aware datetimes to represent times in "
@@ -1626,40 +1635,41 @@ msgid ""
 "meth:`.datetime.timetuple`."
 msgstr ""
 
-#: library/datetime.rst:1366
+#: library/datetime.rst:1374
 msgid ""
 "Return the proleptic Gregorian ordinal of the date. The same as ``self."
 "date().toordinal()``."
 msgstr ""
 
-#: library/datetime.rst:1371
+#: library/datetime.rst:1379
 msgid ""
 "Return POSIX timestamp corresponding to the :class:`.datetime` instance. The "
 "return value is a :class:`float` similar to that returned by :func:`time."
 "time`."
 msgstr ""
 
-#: library/datetime.rst:1375
+#: library/datetime.rst:1383
 msgid ""
 "Naive :class:`.datetime` instances are assumed to represent local time and "
 "this method relies on the platform C :c:func:`mktime` function to perform "
 "the conversion. Since :class:`.datetime` supports wider range of values "
 "than :c:func:`mktime` on many platforms, this method may raise :exc:"
-"`OverflowError` for times far in the past or far in the future."
+"`OverflowError` or :exc:`OSError` for times far in the past or far in the "
+"future."
 msgstr ""
 
-#: library/datetime.rst:1382
+#: library/datetime.rst:1390
 msgid ""
 "For aware :class:`.datetime` instances, the return value is computed as::"
 msgstr ""
 
-#: library/datetime.rst:1389
+#: library/datetime.rst:1397
 msgid ""
 "The :meth:`timestamp` method uses the :attr:`.fold` attribute to "
 "disambiguate the times during a repeated interval."
 msgstr ""
 
-#: library/datetime.rst:1395
+#: library/datetime.rst:1403
 msgid ""
 "There is no method to obtain the POSIX timestamp directly from a naive :"
 "class:`.datetime` instance representing UTC time. If your application uses "
@@ -1667,145 +1677,145 @@ msgid ""
 "the POSIX timestamp by supplying ``tzinfo=timezone.utc``::"
 msgstr ""
 
-#: library/datetime.rst:1403
+#: library/datetime.rst:1411
 msgid "or by calculating the timestamp directly::"
 msgstr ""
 
-#: library/datetime.rst:1409
+#: library/datetime.rst:1417
 msgid ""
 "Return the day of the week as an integer, where Monday is 0 and Sunday is 6. "
 "The same as ``self.date().weekday()``. See also :meth:`isoweekday`."
 msgstr ""
 
-#: library/datetime.rst:1415
+#: library/datetime.rst:1423
 msgid ""
 "Return the day of the week as an integer, where Monday is 1 and Sunday is 7. "
 "The same as ``self.date().isoweekday()``. See also :meth:`weekday`, :meth:"
 "`isocalendar`."
 msgstr ""
 
-#: library/datetime.rst:1422
+#: library/datetime.rst:1430
 msgid ""
 "Return a :term:`named tuple` with three components: ``year``, ``week`` and "
 "``weekday``. The same as ``self.date().isocalendar()``."
 msgstr ""
 
-#: library/datetime.rst:1428
+#: library/datetime.rst:1436
 msgid "Return a string representing the date and time in ISO 8601 format:"
 msgstr ""
 
-#: library/datetime.rst:1430
+#: library/datetime.rst:1438
 msgid "``YYYY-MM-DDTHH:MM:SS.ffffff``, if :attr:`microsecond` is not 0"
 msgstr ""
 
-#: library/datetime.rst:1431
+#: library/datetime.rst:1439
 msgid "``YYYY-MM-DDTHH:MM:SS``, if :attr:`microsecond` is 0"
 msgstr ""
 
-#: library/datetime.rst:1433
+#: library/datetime.rst:1441
 msgid ""
 "If :meth:`utcoffset` does not return ``None``, a string is appended, giving "
 "the UTC offset:"
 msgstr ""
 
-#: library/datetime.rst:1436
+#: library/datetime.rst:1444
 msgid ""
 "``YYYY-MM-DDTHH:MM:SS.ffffff+HH:MM[:SS[.ffffff]]``, if :attr:`microsecond` "
 "is not 0"
 msgstr ""
 
-#: library/datetime.rst:1438
+#: library/datetime.rst:1446
 msgid ""
 "``YYYY-MM-DDTHH:MM:SS+HH:MM[:SS[.ffffff]]``,  if :attr:`microsecond` is 0"
 msgstr ""
 
-#: library/datetime.rst:1448
+#: library/datetime.rst:1456
 msgid ""
 "The optional argument *sep* (default ``'T'``) is a one-character separator, "
 "placed between the date and time portions of the result. For example::"
 msgstr ""
 
-#: library/datetime.rst:1835
+#: library/datetime.rst:1843
 msgid ""
 "The optional argument *timespec* specifies the number of additional "
 "components of the time to include (the default is ``'auto'``). It can be one "
 "of the following:"
 msgstr ""
 
-#: library/datetime.rst:1839
+#: library/datetime.rst:1847
 msgid ""
 "``'auto'``: Same as ``'seconds'`` if :attr:`microsecond` is 0, same as "
 "``'microseconds'`` otherwise."
 msgstr ""
 
-#: library/datetime.rst:1841
+#: library/datetime.rst:1849
 msgid "``'hours'``: Include the :attr:`hour` in the two-digit ``HH`` format."
 msgstr ""
 
-#: library/datetime.rst:1842
+#: library/datetime.rst:1850
 msgid ""
 "``'minutes'``: Include :attr:`hour` and :attr:`minute` in ``HH:MM`` format."
 msgstr ""
 
-#: library/datetime.rst:1843
+#: library/datetime.rst:1851
 msgid ""
 "``'seconds'``: Include :attr:`hour`, :attr:`minute`, and :attr:`second` in "
 "``HH:MM:SS`` format."
 msgstr ""
 
-#: library/datetime.rst:1845
+#: library/datetime.rst:1853
 msgid ""
 "``'milliseconds'``: Include full time, but truncate fractional second part "
 "to milliseconds. ``HH:MM:SS.sss`` format."
 msgstr ""
 
-#: library/datetime.rst:1847
+#: library/datetime.rst:1855
 msgid "``'microseconds'``: Include full time in ``HH:MM:SS.ffffff`` format."
 msgstr ""
 
-#: library/datetime.rst:1851
+#: library/datetime.rst:1859
 msgid "Excluded time components are truncated, not rounded."
 msgstr ""
 
-#: library/datetime.rst:1480
+#: library/datetime.rst:1488
 msgid ":exc:`ValueError` will be raised on an invalid *timespec* argument::"
 msgstr ""
 
-#: library/datetime.rst:1866
+#: library/datetime.rst:1874
 msgid "Added the *timespec* argument."
 msgstr ""
 
-#: library/datetime.rst:1496
+#: library/datetime.rst:1504
 msgid ""
 "For a :class:`.datetime` instance *d*, ``str(d)`` is equivalent to ``d."
 "isoformat(' ')``."
 msgstr ""
 
-#: library/datetime.rst:1502
+#: library/datetime.rst:1510
 msgid "Return a string representing the date and time::"
 msgstr ""
 
-#: library/datetime.rst:1508
+#: library/datetime.rst:1516
 msgid ""
 "The output string will *not* include time zone information, regardless of "
 "whether the input is aware or naive."
 msgstr ""
 
-#: library/datetime.rst:1515
+#: library/datetime.rst:1523
 msgid ""
 "on platforms where the native C :c:func:`ctime` function (which :func:`time."
 "ctime` invokes, but which :meth:`datetime.ctime` does not invoke) conforms "
 "to the C standard."
 msgstr ""
 
-#: library/datetime.rst:1522
+#: library/datetime.rst:1530
 msgid ""
 "Return a string representing the date and time, controlled by an explicit "
 "format string. See also :ref:`strftime-strptime-behavior` and :meth:"
 "`datetime.isoformat`."
 msgstr ""
 
-#: library/datetime.rst:1529
+#: library/datetime.rst:1537
 msgid ""
 "Same as :meth:`.datetime.strftime`. This makes it possible to specify a "
 "format string for a :class:`.datetime` object in :ref:`formatted string "
@@ -1813,70 +1823,70 @@ msgid ""
 "`strftime-strptime-behavior` and :meth:`datetime.isoformat`."
 msgstr ""
 
-#: library/datetime.rst:1536
+#: library/datetime.rst:1544
 msgid "Examples of Usage: :class:`.datetime`"
 msgstr ""
 
-#: library/datetime.rst:1538
+#: library/datetime.rst:1546
 msgid "Examples of working with :class:`~datetime.datetime` objects:"
 msgstr ""
 
-#: library/datetime.rst:1591
+#: library/datetime.rst:1599
 msgid ""
 "The example below defines a :class:`tzinfo` subclass capturing time zone "
 "information for Kabul, Afghanistan, which used +4 UTC until 1945 and then "
 "+4:30 UTC thereafter::"
 msgstr ""
 
-#: library/datetime.rst:1638
+#: library/datetime.rst:1646
 msgid "Usage of ``KabulTz`` from above::"
 msgstr ""
 
-#: library/datetime.rst:1664
+#: library/datetime.rst:1672
 msgid ":class:`.time` Objects"
 msgstr ""
 
-#: library/datetime.rst:1666
+#: library/datetime.rst:1674
 msgid ""
 "A :class:`time` object represents a (local) time of day, independent of any "
 "particular day, and subject to adjustment via a :class:`tzinfo` object."
 msgstr ""
 
-#: library/datetime.rst:1671
+#: library/datetime.rst:1679
 msgid ""
 "All arguments are optional. *tzinfo* may be ``None``, or an instance of a :"
 "class:`tzinfo` subclass. The remaining arguments must be integers in the "
 "following ranges:"
 msgstr ""
 
-#: library/datetime.rst:1681
+#: library/datetime.rst:1689
 msgid ""
 "If an argument outside those ranges is given, :exc:`ValueError` is raised. "
 "All default to ``0`` except *tzinfo*, which defaults to :const:`None`."
 msgstr ""
 
-#: library/datetime.rst:1689
+#: library/datetime.rst:1697
 msgid "The earliest representable :class:`.time`, ``time(0, 0, 0, 0)``."
 msgstr ""
 
-#: library/datetime.rst:1694
+#: library/datetime.rst:1702
 msgid "The latest representable :class:`.time`, ``time(23, 59, 59, 999999)``."
 msgstr ""
 
-#: library/datetime.rst:1699
+#: library/datetime.rst:1707
 msgid ""
 "The smallest possible difference between non-equal :class:`.time` objects, "
 "``timedelta(microseconds=1)``, although note that arithmetic on :class:`."
 "time` objects is not supported."
 msgstr ""
 
-#: library/datetime.rst:1728
+#: library/datetime.rst:1736
 msgid ""
 "The object passed as the tzinfo argument to the :class:`.time` constructor, "
 "or ``None`` if none was passed."
 msgstr ""
 
-#: library/datetime.rst:1742
+#: library/datetime.rst:1750
 msgid ""
 ":class:`.time` objects support comparison of :class:`.time` to :class:`."
 "time`, where *a* is considered less than *b* when *a* precedes *b* in time. "
@@ -1885,7 +1895,7 @@ msgid ""
 "instances are never equal to aware instances."
 msgstr ""
 
-#: library/datetime.rst:1748
+#: library/datetime.rst:1756
 msgid ""
 "If both comparands are aware, and have the same :attr:`~time.tzinfo` "
 "attribute, the common :attr:`~time.tzinfo` attribute is ignored and the base "
@@ -1899,18 +1909,18 @@ msgid ""
 "respectively."
 msgstr ""
 
-#: library/datetime.rst:1758
+#: library/datetime.rst:1766
 msgid ""
 "Equality comparisons between aware and naive :class:`~datetime.time` "
 "instances don't raise :exc:`TypeError`."
 msgstr ""
 
-#: library/datetime.rst:1762
+#: library/datetime.rst:1770
 msgid ""
 "In Boolean contexts, a :class:`.time` object is always considered to be true."
 msgstr ""
 
-#: library/datetime.rst:1764
+#: library/datetime.rst:1772
 msgid ""
 "Before Python 3.5, a :class:`.time` object was considered to be false if it "
 "represented midnight in UTC. This behavior was considered obscure and error-"
@@ -1918,35 +1928,35 @@ msgid ""
 "details."
 msgstr ""
 
-#: library/datetime.rst:1771
+#: library/datetime.rst:1779
 msgid "Other constructor:"
 msgstr ""
 
-#: library/datetime.rst:1775
+#: library/datetime.rst:1783
 msgid ""
 "Return a :class:`.time` corresponding to a *time_string* in any valid ISO "
 "8601 format, with the following exceptions:"
 msgstr ""
 
-#: library/datetime.rst:1779
+#: library/datetime.rst:1787
 msgid ""
 "The leading ``T``, normally required in cases where there may be ambiguity "
 "between a date and a time, is not required."
 msgstr ""
 
-#: library/datetime.rst:1781
+#: library/datetime.rst:1789
 msgid ""
 "Fractional seconds may have any number of digits (anything beyond 6 will be "
 "truncated)."
 msgstr ""
 
-#: library/datetime.rst:1807
+#: library/datetime.rst:1815
 msgid ""
 "Previously, this method only supported formats that could be emitted by :"
 "meth:`time.isoformat()`."
 msgstr ""
 
-#: library/datetime.rst:1817
+#: library/datetime.rst:1825
 msgid ""
 "Return a :class:`.time` with the same value, except for those attributes "
 "given new values by whichever keyword arguments are specified. Note that "
@@ -1954,46 +1964,46 @@ msgid ""
 "aware :class:`.time`, without conversion of the time data."
 msgstr ""
 
-#: library/datetime.rst:1828
+#: library/datetime.rst:1836
 msgid "Return a string representing the time in ISO 8601 format, one of:"
 msgstr ""
 
-#: library/datetime.rst:1830
+#: library/datetime.rst:1838
 msgid "``HH:MM:SS.ffffff``, if :attr:`microsecond` is not 0"
 msgstr ""
 
-#: library/datetime.rst:1831
+#: library/datetime.rst:1839
 msgid "``HH:MM:SS``, if :attr:`microsecond` is 0"
 msgstr ""
 
-#: library/datetime.rst:1832
+#: library/datetime.rst:1840
 msgid ""
 "``HH:MM:SS.ffffff+HH:MM[:SS[.ffffff]]``, if :meth:`utcoffset` does not "
 "return ``None``"
 msgstr ""
 
-#: library/datetime.rst:1833
+#: library/datetime.rst:1841
 msgid ""
 "``HH:MM:SS+HH:MM[:SS[.ffffff]]``, if :attr:`microsecond` is 0 and :meth:"
 "`utcoffset` does not return ``None``"
 msgstr ""
 
-#: library/datetime.rst:1853
+#: library/datetime.rst:1861
 msgid ":exc:`ValueError` will be raised on an invalid *timespec* argument."
 msgstr ""
 
-#: library/datetime.rst:1872
+#: library/datetime.rst:1880
 msgid "For a time *t*, ``str(t)`` is equivalent to ``t.isoformat()``."
 msgstr ""
 
-#: library/datetime.rst:1877
+#: library/datetime.rst:1885
 msgid ""
 "Return a string representing the time, controlled by an explicit format "
 "string.  See also :ref:`strftime-strptime-behavior` and :meth:`time."
 "isoformat`."
 msgstr ""
 
-#: library/datetime.rst:1883
+#: library/datetime.rst:1891
 msgid ""
 "Same as :meth:`.time.strftime`. This makes it possible to specify a format "
 "string for a :class:`.time` object in :ref:`formatted string literals <f-"
@@ -2001,47 +2011,47 @@ msgid ""
 "strptime-behavior` and :meth:`time.isoformat`."
 msgstr ""
 
-#: library/datetime.rst:1891
+#: library/datetime.rst:1899
 msgid ""
 "If :attr:`.tzinfo` is ``None``, returns ``None``, else returns ``self.tzinfo."
 "utcoffset(None)``, and raises an exception if the latter doesn't return "
 "``None`` or a :class:`timedelta` object with magnitude less than one day."
 msgstr ""
 
-#: library/datetime.rst:1901
+#: library/datetime.rst:1909
 msgid ""
 "If :attr:`.tzinfo` is ``None``, returns ``None``, else returns ``self.tzinfo."
 "dst(None)``, and raises an exception if the latter doesn't return ``None``, "
 "or a :class:`timedelta` object with magnitude less than one day."
 msgstr ""
 
-#: library/datetime.rst:1910
+#: library/datetime.rst:1918
 msgid ""
 "If :attr:`.tzinfo` is ``None``, returns ``None``, else returns ``self.tzinfo."
 "tzname(None)``, or raises an exception if the latter doesn't return ``None`` "
 "or a string object."
 msgstr ""
 
-#: library/datetime.rst:1915
+#: library/datetime.rst:1923
 msgid "Examples of Usage: :class:`.time`"
 msgstr ""
 
-#: library/datetime.rst:1917
+#: library/datetime.rst:1925
 msgid "Examples of working with a :class:`.time` object::"
 msgstr ""
 
-#: library/datetime.rst:1948
+#: library/datetime.rst:1956
 msgid ":class:`tzinfo` Objects"
 msgstr ""
 
-#: library/datetime.rst:1952
+#: library/datetime.rst:1960
 msgid ""
 "This is an abstract base class, meaning that this class should not be "
 "instantiated directly.  Define a subclass of :class:`tzinfo` to capture "
 "information about a particular time zone."
 msgstr ""
 
-#: library/datetime.rst:1956
+#: library/datetime.rst:1964
 msgid ""
 "An instance of (a concrete subclass of) :class:`tzinfo` can be passed to the "
 "constructors for :class:`.datetime` and :class:`.time` objects. The latter "
@@ -2051,7 +2061,7 @@ msgid ""
 "object passed to them."
 msgstr ""
 
-#: library/datetime.rst:1962
+#: library/datetime.rst:1970
 msgid ""
 "You need to derive a concrete subclass, and (at least) supply "
 "implementations of the standard :class:`tzinfo` methods needed by the :class:"
@@ -2061,7 +2071,7 @@ msgid ""
 "American EST and EDT."
 msgstr ""
 
-#: library/datetime.rst:1969
+#: library/datetime.rst:1977
 msgid ""
 "Special requirement for pickling:  A :class:`tzinfo` subclass must have an :"
 "meth:`__init__` method that can be called with no arguments, otherwise it "
@@ -2069,20 +2079,20 @@ msgid ""
 "requirement that may be relaxed in the future."
 msgstr ""
 
-#: library/datetime.rst:1974
+#: library/datetime.rst:1982
 msgid ""
 "A concrete subclass of :class:`tzinfo` may need to implement the following "
 "methods. Exactly which methods are needed depends on the uses made of aware :"
 "mod:`datetime` objects. If in doubt, simply implement all of them."
 msgstr ""
 
-#: library/datetime.rst:1981
+#: library/datetime.rst:1989
 msgid ""
 "Return offset of local time from UTC, as a :class:`timedelta` object that is "
 "positive east of UTC. If local time is west of UTC, this should be negative."
 msgstr ""
 
-#: library/datetime.rst:1984
+#: library/datetime.rst:1992
 msgid ""
 "This represents the *total* offset from UTC; for example, if a :class:"
 "`tzinfo` object represents both time zone and DST adjustments, :meth:"
@@ -2093,25 +2103,25 @@ msgid ""
 "meth:`utcoffset` will probably look like one of these two::"
 msgstr ""
 
-#: library/datetime.rst:1995
+#: library/datetime.rst:2003
 msgid ""
 "If :meth:`utcoffset` does not return ``None``, :meth:`dst` should not return "
 "``None`` either."
 msgstr ""
 
-#: library/datetime.rst:1998
+#: library/datetime.rst:2006
 msgid ""
 "The default implementation of :meth:`utcoffset` raises :exc:"
 "`NotImplementedError`."
 msgstr ""
 
-#: library/datetime.rst:2007
+#: library/datetime.rst:2015
 msgid ""
 "Return the daylight saving time (DST) adjustment, as a :class:`timedelta` "
 "object or ``None`` if DST information isn't known."
 msgstr ""
 
-#: library/datetime.rst:2011
+#: library/datetime.rst:2019
 msgid ""
 "Return ``timedelta(0)`` if DST is not in effect. If DST is in effect, return "
 "the offset as a :class:`timedelta` object (see :meth:`utcoffset` for "
@@ -2124,17 +2134,17 @@ msgid ""
 "DST changes when crossing time zones."
 msgstr ""
 
-#: library/datetime.rst:2021
+#: library/datetime.rst:2029
 msgid ""
 "An instance *tz* of a :class:`tzinfo` subclass that models both standard and "
 "daylight times must be consistent in this sense:"
 msgstr ""
 
-#: library/datetime.rst:2024
+#: library/datetime.rst:2032
 msgid "``tz.utcoffset(dt) - tz.dst(dt)``"
 msgstr ""
 
-#: library/datetime.rst:2026
+#: library/datetime.rst:2034
 msgid ""
 "must return the same result for every :class:`.datetime` *dt* with ``dt."
 "tzinfo == tz``  For sane :class:`tzinfo` subclasses, this expression yields "
@@ -2147,22 +2157,22 @@ msgid ""
 "regardless."
 msgstr ""
 
-#: library/datetime.rst:2035
+#: library/datetime.rst:2043
 msgid ""
 "Most implementations of :meth:`dst` will probably look like one of these "
 "two::"
 msgstr ""
 
-#: library/datetime.rst:2041
+#: library/datetime.rst:2049
 msgid "or::"
 msgstr ""
 
-#: library/datetime.rst:2053
+#: library/datetime.rst:2061
 msgid ""
 "The default implementation of :meth:`dst` raises :exc:`NotImplementedError`."
 msgstr ""
 
-#: library/datetime.rst:2061
+#: library/datetime.rst:2069
 msgid ""
 "Return the time zone name corresponding to the :class:`.datetime` object "
 "*dt*, as a string. Nothing about string names is defined by the :mod:"
@@ -2175,13 +2185,13 @@ msgid ""
 "if the :class:`tzinfo` class is accounting for daylight time."
 msgstr ""
 
-#: library/datetime.rst:2071
+#: library/datetime.rst:2079
 msgid ""
 "The default implementation of :meth:`tzname` raises :exc:"
 "`NotImplementedError`."
 msgstr ""
 
-#: library/datetime.rst:2074
+#: library/datetime.rst:2082
 msgid ""
 "These methods are called by a :class:`.datetime` or :class:`.time` object, "
 "in response to their methods of the same names. A :class:`.datetime` object "
@@ -2191,7 +2201,7 @@ msgid ""
 "datetime`."
 msgstr ""
 
-#: library/datetime.rst:2080
+#: library/datetime.rst:2088
 msgid ""
 "When ``None`` is passed, it's up to the class designer to decide the best "
 "response. For example, returning ``None`` is appropriate if the class wishes "
@@ -2200,7 +2210,7 @@ msgid ""
 "offset, as there is no other convention for discovering the standard offset."
 msgstr ""
 
-#: library/datetime.rst:2086
+#: library/datetime.rst:2094
 msgid ""
 "When a :class:`.datetime` object is passed in response to a :class:`."
 "datetime` method, ``dt.tzinfo`` is the same object as *self*. :class:"
@@ -2210,13 +2220,13 @@ msgid ""
 "timezones."
 msgstr ""
 
-#: library/datetime.rst:2092
+#: library/datetime.rst:2100
 msgid ""
 "There is one more :class:`tzinfo` method that a subclass may wish to "
 "override:"
 msgstr ""
 
-#: library/datetime.rst:2097
+#: library/datetime.rst:2105
 msgid ""
 "This is called from the default :class:`datetime.astimezone()` "
 "implementation. When called from that, ``dt.tzinfo`` is *self*, and *dt*'s "
@@ -2225,7 +2235,7 @@ msgid ""
 "equivalent datetime in *self*'s local time."
 msgstr ""
 
-#: library/datetime.rst:2103
+#: library/datetime.rst:2111
 msgid ""
 "Most :class:`tzinfo` subclasses should be able to inherit the default :meth:"
 "`fromutc` implementation without problems. It's strong enough to handle "
@@ -2239,19 +2249,19 @@ msgid ""
 "result is one of the hours straddling the moment the standard offset changes."
 msgstr ""
 
-#: library/datetime.rst:2114
+#: library/datetime.rst:2122
 msgid ""
 "Skipping code for error cases, the default :meth:`fromutc` implementation "
 "acts like::"
 msgstr ""
 
-#: library/datetime.rst:2132
+#: library/datetime.rst:2140
 msgid ""
 "In the following :download:`tzinfo_examples.py <../includes/tzinfo_examples."
 "py>` file there are some examples of :class:`tzinfo` classes:"
 msgstr ""
 
-#: library/datetime.rst:2138
+#: library/datetime.rst:2146
 msgid ""
 "Note that there are unavoidable subtleties twice per year in a :class:"
 "`tzinfo` subclass accounting for both standard and daylight time, at the DST "
@@ -2260,7 +2270,7 @@ msgid ""
 "ends the minute after 1:59 (EDT) on the first Sunday in November::"
 msgstr ""
 
-#: library/datetime.rst:2152
+#: library/datetime.rst:2160
 msgid ""
 "When DST starts (the \"start\" line), the local wall clock leaps from 1:59 "
 "to 3:00. A wall time of the form 2:MM doesn't really make sense on that day, "
@@ -2269,7 +2279,7 @@ msgid ""
 "get::"
 msgstr ""
 
-#: library/datetime.rst:2171
+#: library/datetime.rst:2179
 msgid ""
 "When DST ends (the \"end\" line), there's a potentially worse problem: "
 "there's an hour that can't be spelled unambiguously in local wall time: the "
@@ -2284,13 +2294,13 @@ msgid ""
 "transition of 2016, we get::"
 msgstr ""
 
-#: library/datetime.rst:2193
+#: library/datetime.rst:2201
 msgid ""
 "Note that the :class:`.datetime` instances that differ only by the value of "
 "the :attr:`~datetime.fold` attribute are considered equal in comparisons."
 msgstr ""
 
-#: library/datetime.rst:2196
+#: library/datetime.rst:2204
 msgid ""
 "Applications that can't bear wall-time ambiguities should explicitly check "
 "the value of the :attr:`~datetime.fold` attribute or avoid using hybrid :"
@@ -2300,28 +2310,28 @@ msgid ""
 "offset -4 hours))."
 msgstr ""
 
-#: library/datetime.rst:2210
+#: library/datetime.rst:2218
 msgid ":mod:`zoneinfo`"
 msgstr ""
 
-#: library/datetime.rst:2205
+#: library/datetime.rst:2213
 msgid ""
 "The :mod:`datetime` module has a basic :class:`timezone` class (for handling "
 "arbitrary fixed offsets from UTC) and its :attr:`timezone.utc` attribute (a "
 "UTC timezone instance)."
 msgstr ""
 
-#: library/datetime.rst:2209
+#: library/datetime.rst:2217
 msgid ""
 "``zoneinfo`` brings the *IANA timezone database* (also known as the Olson "
 "database) to Python, and its usage is recommended."
 msgstr ""
 
-#: library/datetime.rst:2216
+#: library/datetime.rst:2224
 msgid "`IANA timezone database <https://www.iana.org/time-zones>`_"
 msgstr ""
 
-#: library/datetime.rst:2213
+#: library/datetime.rst:2221
 msgid ""
 "The Time Zone Database (often called tz, tzdata or zoneinfo) contains code "
 "and data that represent the history of local time for many representative "
@@ -2330,24 +2340,24 @@ msgid ""
 "saving rules."
 msgstr ""
 
-#: library/datetime.rst:2223
+#: library/datetime.rst:2231
 msgid ":class:`timezone` Objects"
 msgstr ""
 
-#: library/datetime.rst:2225
+#: library/datetime.rst:2233
 msgid ""
 "The :class:`timezone` class is a subclass of :class:`tzinfo`, each instance "
 "of which represents a timezone defined by a fixed offset from UTC."
 msgstr ""
 
-#: library/datetime.rst:2229
+#: library/datetime.rst:2237
 msgid ""
 "Objects of this class cannot be used to represent timezone information in "
 "the locations where different offsets are used in different days of the year "
 "or where historical changes have been made to civil time."
 msgstr ""
 
-#: library/datetime.rst:2236
+#: library/datetime.rst:2244
 msgid ""
 "The *offset* argument must be specified as a :class:`timedelta` object "
 "representing the difference between the local time and UTC. It must be "
@@ -2355,25 +2365,25 @@ msgid ""
 "otherwise :exc:`ValueError` is raised."
 msgstr ""
 
-#: library/datetime.rst:2241
+#: library/datetime.rst:2249
 msgid ""
 "The *name* argument is optional. If specified it must be a string that will "
 "be used as the value returned by the :meth:`datetime.tzname` method."
 msgstr ""
 
-#: library/datetime.rst:2263
+#: library/datetime.rst:2271
 msgid ""
 "Return the fixed value specified when the :class:`timezone` instance is "
 "constructed."
 msgstr ""
 
-#: library/datetime.rst:2255
+#: library/datetime.rst:2263
 msgid ""
 "The *dt* argument is ignored. The return value is a :class:`timedelta` "
 "instance equal to the difference between the local time and UTC."
 msgstr ""
 
-#: library/datetime.rst:2266
+#: library/datetime.rst:2274
 msgid ""
 "If *name* is not provided in the constructor, the name returned by "
 "``tzname(dt)`` is generated from the value of the ``offset`` as follows. If "
@@ -2382,144 +2392,144 @@ msgid ""
 "are two digits of ``offset.hours`` and ``offset.minutes`` respectively."
 msgstr ""
 
-#: library/datetime.rst:2272
+#: library/datetime.rst:2280
 msgid ""
 "Name generated from ``offset=timedelta(0)`` is now plain ``'UTC'``, not "
 "``'UTC+00:00'``."
 msgstr ""
 
-#: library/datetime.rst:2279
+#: library/datetime.rst:2287
 msgid "Always returns ``None``."
 msgstr ""
 
-#: library/datetime.rst:2283
+#: library/datetime.rst:2291
 msgid ""
 "Return ``dt + offset``. The *dt* argument must be an aware :class:`."
 "datetime` instance, with ``tzinfo`` set to ``self``."
 msgstr ""
 
-#: library/datetime.rst:2290
+#: library/datetime.rst:2298
 msgid "The UTC timezone, ``timezone(timedelta(0))``."
 msgstr ""
 
-#: library/datetime.rst:2299
+#: library/datetime.rst:2307
 msgid ":meth:`strftime` and :meth:`strptime` Behavior"
 msgstr ""
 
-#: library/datetime.rst:2301
+#: library/datetime.rst:2309
 msgid ""
 ":class:`date`, :class:`.datetime`, and :class:`.time` objects all support a "
 "``strftime(format)`` method, to create a string representing the time under "
 "the control of an explicit format string."
 msgstr ""
 
-#: library/datetime.rst:2305
+#: library/datetime.rst:2313
 msgid ""
 "Conversely, the :meth:`datetime.strptime` class method creates a :class:`."
 "datetime` object from a string representing a date and time and a "
 "corresponding format string."
 msgstr ""
 
-#: library/datetime.rst:2309
+#: library/datetime.rst:2317
 msgid ""
 "The table below provides a high-level comparison of :meth:`strftime` versus :"
 "meth:`strptime`:"
 msgstr ""
 
-#: library/datetime.rst:2313
+#: library/datetime.rst:2321
 msgid "``strftime``"
 msgstr ""
 
-#: library/datetime.rst:2313
+#: library/datetime.rst:2321
 msgid "``strptime``"
 msgstr ""
 
-#: library/datetime.rst:2315
+#: library/datetime.rst:2323
 msgid "Usage"
 msgstr ""
 
-#: library/datetime.rst:2315
+#: library/datetime.rst:2323
 msgid "Convert object to a string according to a given format"
 msgstr ""
 
-#: library/datetime.rst:2315
+#: library/datetime.rst:2323
 msgid ""
 "Parse a string into a :class:`.datetime` object given a corresponding format"
 msgstr ""
 
-#: library/datetime.rst:2317
+#: library/datetime.rst:2325
 msgid "Type of method"
 msgstr ""
 
-#: library/datetime.rst:2317
+#: library/datetime.rst:2325
 msgid "Instance method"
 msgstr ""
 
-#: library/datetime.rst:2317
+#: library/datetime.rst:2325
 msgid "Class method"
 msgstr ""
 
-#: library/datetime.rst:2319
+#: library/datetime.rst:2327
 msgid "Method of"
 msgstr ""
 
-#: library/datetime.rst:2319
+#: library/datetime.rst:2327
 msgid ":class:`date`; :class:`.datetime`; :class:`.time`"
 msgstr ""
 
-#: library/datetime.rst:2319
+#: library/datetime.rst:2327
 msgid ":class:`.datetime`"
 msgstr ""
 
-#: library/datetime.rst:2321
+#: library/datetime.rst:2329
 msgid "Signature"
 msgstr ""
 
-#: library/datetime.rst:2321
+#: library/datetime.rst:2329
 msgid "``strftime(format)``"
 msgstr ""
 
-#: library/datetime.rst:2321
+#: library/datetime.rst:2329
 msgid "``strptime(date_string, format)``"
 msgstr ""
 
-#: library/datetime.rst:2328
+#: library/datetime.rst:2336
 msgid ":meth:`strftime` and :meth:`strptime` Format Codes"
 msgstr ""
 
-#: library/datetime.rst:2330
+#: library/datetime.rst:2338
 msgid ""
 "These methods accept format codes that can be used to parse and format "
 "dates::"
 msgstr ""
 
-#: library/datetime.rst:2338
+#: library/datetime.rst:2346
 msgid ""
 "The following is a list of all the format codes that the 1989 C standard "
 "requires, and these work on all platforms with a standard C implementation."
 msgstr ""
 
-#: library/datetime.rst:2445
+#: library/datetime.rst:2453
 msgid "Directive"
 msgstr ""
 
-#: library/datetime.rst:2445
+#: library/datetime.rst:2453
 msgid "Meaning"
 msgstr ""
 
-#: library/datetime.rst:2445
+#: library/datetime.rst:2453
 msgid "Example"
 msgstr ""
 
-#: library/datetime.rst:2445
+#: library/datetime.rst:2453
 msgid "Notes"
 msgstr ""
 
-#: library/datetime.rst:2344
+#: library/datetime.rst:2352
 msgid "``%a``"
 msgstr ""
 
-#: library/datetime.rst:2344
+#: library/datetime.rst:2352
 msgid "Weekday as locale's abbreviated name."
 msgstr ""
 
@@ -2531,11 +2541,11 @@ msgstr ""
 msgid "So, Mo, ..., Sa (de_DE)"
 msgstr ""
 
-#: library/datetime.rst:2349
+#: library/datetime.rst:2357
 msgid "``%A``"
 msgstr ""
 
-#: library/datetime.rst:2349
+#: library/datetime.rst:2357
 msgid "Weekday as locale's full name."
 msgstr ""
 
@@ -2547,40 +2557,40 @@ msgstr ""
 msgid "Sonntag, Montag, ..., Samstag (de_DE)"
 msgstr ""
 
-#: library/datetime.rst:2354
+#: library/datetime.rst:2362
 msgid "``%w``"
 msgstr ""
 
-#: library/datetime.rst:2354
+#: library/datetime.rst:2362
 msgid "Weekday as a decimal number, where 0 is Sunday and 6 is Saturday."
 msgstr ""
 
-#: library/datetime.rst:2354
+#: library/datetime.rst:2362
 msgid "0, 1, ..., 6"
 msgstr ""
 
-#: library/datetime.rst:2358
+#: library/datetime.rst:2366
 msgid "``%d``"
 msgstr ""
 
-#: library/datetime.rst:2358
+#: library/datetime.rst:2366
 msgid "Day of the month as a zero-padded decimal number."
 msgstr ""
 
-#: library/datetime.rst:2358
+#: library/datetime.rst:2366
 msgid "01, 02, ..., 31"
 msgstr ""
 
-#: library/datetime.rst:2371 library/datetime.rst:2380
-#: library/datetime.rst:2389 library/datetime.rst:2407
+#: library/datetime.rst:2379 library/datetime.rst:2388
+#: library/datetime.rst:2397 library/datetime.rst:2415
 msgid "\\(9)"
 msgstr ""
 
-#: library/datetime.rst:2361
+#: library/datetime.rst:2369
 msgid "``%b``"
 msgstr ""
 
-#: library/datetime.rst:2361
+#: library/datetime.rst:2369
 msgid "Month as locale's abbreviated name."
 msgstr ""
 
@@ -2592,11 +2602,11 @@ msgstr ""
 msgid "Jan, Feb, ..., Dez (de_DE)"
 msgstr ""
 
-#: library/datetime.rst:2366
+#: library/datetime.rst:2374
 msgid "``%B``"
 msgstr ""
 
-#: library/datetime.rst:2366
+#: library/datetime.rst:2374
 msgid "Month as locale's full name."
 msgstr ""
 
@@ -2608,67 +2618,67 @@ msgstr ""
 msgid "Januar, Februar, ..., Dezember (de_DE)"
 msgstr ""
 
-#: library/datetime.rst:2371
+#: library/datetime.rst:2379
 msgid "``%m``"
 msgstr ""
 
-#: library/datetime.rst:2371
+#: library/datetime.rst:2379
 msgid "Month as a zero-padded decimal number."
 msgstr ""
 
-#: library/datetime.rst:2383
+#: library/datetime.rst:2391
 msgid "01, 02, ..., 12"
 msgstr ""
 
-#: library/datetime.rst:2374
+#: library/datetime.rst:2382
 msgid "``%y``"
 msgstr ""
 
-#: library/datetime.rst:2374
+#: library/datetime.rst:2382
 msgid "Year without century as a zero-padded decimal number."
 msgstr ""
 
-#: library/datetime.rst:2374
+#: library/datetime.rst:2382
 msgid "00, 01, ..., 99"
 msgstr ""
 
-#: library/datetime.rst:2377
+#: library/datetime.rst:2385
 msgid "``%Y``"
 msgstr ""
 
-#: library/datetime.rst:2377
+#: library/datetime.rst:2385
 msgid "Year with century as a decimal number."
 msgstr ""
 
-#: library/datetime.rst:2447
+#: library/datetime.rst:2455
 msgid "0001, 0002, ..., 2013, 2014, ..., 9998, 9999"
 msgstr ""
 
-#: library/datetime.rst:2380
+#: library/datetime.rst:2388
 msgid "``%H``"
 msgstr ""
 
-#: library/datetime.rst:2380
+#: library/datetime.rst:2388
 msgid "Hour (24-hour clock) as a zero-padded decimal number."
 msgstr ""
 
-#: library/datetime.rst:2380
+#: library/datetime.rst:2388
 msgid "00, 01, ..., 23"
 msgstr ""
 
-#: library/datetime.rst:2383
+#: library/datetime.rst:2391
 msgid "``%I``"
 msgstr ""
 
-#: library/datetime.rst:2383
+#: library/datetime.rst:2391
 msgid "Hour (12-hour clock) as a zero-padded decimal number."
 msgstr ""
 
-#: library/datetime.rst:2386
+#: library/datetime.rst:2394
 msgid "``%p``"
 msgstr ""
 
-#: library/datetime.rst:2386
+#: library/datetime.rst:2394
 msgid "Locale's equivalent of either AM or PM."
 msgstr ""
 
@@ -2680,127 +2690,127 @@ msgstr ""
 msgid "am, pm (de_DE)"
 msgstr ""
 
-#: library/datetime.rst:2386
+#: library/datetime.rst:2394
 msgid "\\(1), \\(3)"
 msgstr ""
 
-#: library/datetime.rst:2389
+#: library/datetime.rst:2397
 msgid "``%M``"
 msgstr ""
 
-#: library/datetime.rst:2389
+#: library/datetime.rst:2397
 msgid "Minute as a zero-padded decimal number."
 msgstr ""
 
-#: library/datetime.rst:2392
+#: library/datetime.rst:2400
 msgid "00, 01, ..., 59"
 msgstr ""
 
-#: library/datetime.rst:2392
+#: library/datetime.rst:2400
 msgid "``%S``"
 msgstr ""
 
-#: library/datetime.rst:2392
+#: library/datetime.rst:2400
 msgid "Second as a zero-padded decimal number."
 msgstr ""
 
-#: library/datetime.rst:2392
+#: library/datetime.rst:2400
 msgid "\\(4), \\(9)"
 msgstr ""
 
-#: library/datetime.rst:2395
+#: library/datetime.rst:2403
 msgid "``%f``"
 msgstr ""
 
-#: library/datetime.rst:2395
+#: library/datetime.rst:2403
 msgid "Microsecond as a decimal number, zero-padded to 6 digits."
 msgstr ""
 
-#: library/datetime.rst:2395
+#: library/datetime.rst:2403
 msgid "000000, 000001, ..., 999999"
 msgstr ""
 
-#: library/datetime.rst:2395
+#: library/datetime.rst:2403
 msgid "\\(5)"
 msgstr ""
 
-#: library/datetime.rst:2560
+#: library/datetime.rst:2576
 msgid "``%z``"
 msgstr ""
 
-#: library/datetime.rst:2399
+#: library/datetime.rst:2407
 msgid ""
 "UTC offset in the form ``±HHMM[SS[.ffffff]]`` (empty string if the object is "
 "naive)."
 msgstr ""
 
-#: library/datetime.rst:2399
+#: library/datetime.rst:2407
 msgid "(empty), +0000, -0400, +1030, +063415, -030712.345216"
 msgstr ""
 
-#: library/datetime.rst:2404
+#: library/datetime.rst:2412 library/datetime.rst:2469
 msgid "\\(6)"
 msgstr ""
 
-#: library/datetime.rst:2584
+#: library/datetime.rst:2604
 msgid "``%Z``"
 msgstr ""
 
-#: library/datetime.rst:2404
+#: library/datetime.rst:2412
 msgid "Time zone name (empty string if the object is naive)."
 msgstr ""
 
-#: library/datetime.rst:2404
+#: library/datetime.rst:2412
 msgid "(empty), UTC, GMT"
 msgstr ""
 
-#: library/datetime.rst:2407
+#: library/datetime.rst:2415
 msgid "``%j``"
 msgstr ""
 
-#: library/datetime.rst:2407
+#: library/datetime.rst:2415
 msgid "Day of the year as a zero-padded decimal number."
 msgstr ""
 
-#: library/datetime.rst:2407
+#: library/datetime.rst:2415
 msgid "001, 002, ..., 366"
 msgstr ""
 
-#: library/datetime.rst:2410
+#: library/datetime.rst:2418
 msgid "``%U``"
 msgstr ""
 
-#: library/datetime.rst:2410
+#: library/datetime.rst:2418
 msgid ""
 "Week number of the year (Sunday as the first day of the week) as a zero-"
 "padded decimal number. All days in a new year preceding the first Sunday are "
 "considered to be in week 0."
 msgstr ""
 
-#: library/datetime.rst:2418
+#: library/datetime.rst:2426
 msgid "00, 01, ..., 53"
 msgstr ""
 
-#: library/datetime.rst:2418
+#: library/datetime.rst:2426
 msgid "\\(7), \\(9)"
 msgstr ""
 
-#: library/datetime.rst:2418
+#: library/datetime.rst:2426
 msgid "``%W``"
 msgstr ""
 
-#: library/datetime.rst:2418
+#: library/datetime.rst:2426
 msgid ""
 "Week number of the year (Monday as the first day of the week) as a zero-"
 "padded decimal number. All days in a new year preceding the first Monday are "
 "considered to be in week 0."
 msgstr ""
 
-#: library/datetime.rst:2426
+#: library/datetime.rst:2434
 msgid "``%c``"
 msgstr ""
 
-#: library/datetime.rst:2426
+#: library/datetime.rst:2434
 msgid "Locale's appropriate date and time representation."
 msgstr ""
 
@@ -2812,11 +2822,11 @@ msgstr ""
 msgid "Di 16 Aug 21:30:00 1988 (de_DE)"
 msgstr ""
 
-#: library/datetime.rst:2431
+#: library/datetime.rst:2439
 msgid "``%x``"
 msgstr ""
 
-#: library/datetime.rst:2431
+#: library/datetime.rst:2439
 msgid "Locale's appropriate date representation."
 msgstr ""
 
@@ -2832,11 +2842,11 @@ msgstr ""
 msgid "16.08.1988 (de_DE)"
 msgstr ""
 
-#: library/datetime.rst:2435
+#: library/datetime.rst:2443
 msgid "``%X``"
 msgstr ""
 
-#: library/datetime.rst:2435
+#: library/datetime.rst:2443
 msgid "Locale's appropriate time representation."
 msgstr ""
 
@@ -2848,69 +2858,83 @@ msgstr ""
 msgid "21:30:00 (de_DE)"
 msgstr ""
 
-#: library/datetime.rst:2438
+#: library/datetime.rst:2446
 msgid "``%%``"
 msgstr ""
 
-#: library/datetime.rst:2438
+#: library/datetime.rst:2446
 msgid "A literal ``'%'`` character."
 msgstr ""
 
-#: library/datetime.rst:2438
+#: library/datetime.rst:2446
 msgid "%"
 msgstr ""
 
-#: library/datetime.rst:2441
+#: library/datetime.rst:2449
 msgid ""
 "Several additional directives not required by the C89 standard are included "
 "for convenience. These parameters all correspond to ISO 8601 date values."
 msgstr ""
 
-#: library/datetime.rst:2447
+#: library/datetime.rst:2455
 msgid "``%G``"
 msgstr ""
 
-#: library/datetime.rst:2447
+#: library/datetime.rst:2455
 msgid ""
 "ISO 8601 year with century representing the year that contains the greater "
 "part of the ISO week (``%V``)."
 msgstr ""
 
-#: library/datetime.rst:2447
+#: library/datetime.rst:2455
 msgid "\\(8)"
 msgstr ""
 
-#: library/datetime.rst:2452
+#: library/datetime.rst:2460
 msgid "``%u``"
 msgstr ""
 
-#: library/datetime.rst:2452
+#: library/datetime.rst:2460
 msgid "ISO 8601 weekday as a decimal number where 1 is Monday."
 msgstr ""
 
-#: library/datetime.rst:2452
+#: library/datetime.rst:2460
 msgid "1, 2, ..., 7"
 msgstr ""
 
-#: library/datetime.rst:2455
+#: library/datetime.rst:2463
 msgid "``%V``"
 msgstr ""
 
-#: library/datetime.rst:2455
+#: library/datetime.rst:2463
 msgid ""
 "ISO 8601 week as a decimal number with Monday as the first day of the week. "
 "Week 01 is the week containing Jan 4."
 msgstr ""
 
-#: library/datetime.rst:2455
+#: library/datetime.rst:2463
 msgid "01, 02, ..., 53"
 msgstr ""
 
-#: library/datetime.rst:2455
+#: library/datetime.rst:2463
 msgid "\\(8), \\(9)"
 msgstr ""
 
-#: library/datetime.rst:2462
+#: library/datetime.rst:2590
+msgid "``%:z``"
+msgstr ""
+
+#: library/datetime.rst:2469
+msgid ""
+"UTC offset in the form ``±HH:MM[:SS[.ffffff]]`` (empty string if the object "
+"is naive)."
+msgstr ""
+
+#: library/datetime.rst:2469
+msgid "(empty), +00:00, -04:00, +10:30, +06:34:15, -03:07:12.345216"
+msgstr ""
+
+#: library/datetime.rst:2475
 msgid ""
 "These may not be available on all platforms when used with the :meth:"
 "`strftime` method. The ISO 8601 year and ISO 8601 week directives are not "
@@ -2919,7 +2943,7 @@ msgid ""
 "a :exc:`ValueError`."
 msgstr ""
 
-#: library/datetime.rst:2467
+#: library/datetime.rst:2480
 msgid ""
 "The full set of format codes supported varies across platforms, because "
 "Python calls the platform C library's :func:`strftime` function, and "
@@ -2929,40 +2953,44 @@ msgid ""
 "unsupported format specifiers."
 msgstr ""
 
-#: library/datetime.rst:2473
+#: library/datetime.rst:2486
 msgid "``%G``, ``%u`` and ``%V`` were added."
 msgstr ""
 
-#: library/datetime.rst:2477
+#: library/datetime.rst:2489
+msgid "``%:z`` was added."
+msgstr ""
+
+#: library/datetime.rst:2493
 msgid "Technical Detail"
 msgstr ""
 
-#: library/datetime.rst:2479
+#: library/datetime.rst:2495
 msgid ""
 "Broadly speaking, ``d.strftime(fmt)`` acts like the :mod:`time` module's "
 "``time.strftime(fmt, d.timetuple())`` although not all objects support a :"
 "meth:`timetuple` method."
 msgstr ""
 
-#: library/datetime.rst:2483
+#: library/datetime.rst:2499
 msgid ""
 "For the :meth:`datetime.strptime` class method, the default value is "
 "``1900-01-01T00:00:00.000``: any components not specified in the format "
 "string will be pulled from the default value. [#]_"
 msgstr ""
 
-#: library/datetime.rst:2487
+#: library/datetime.rst:2503
 msgid "Using ``datetime.strptime(date_string, format)`` is equivalent to::"
 msgstr ""
 
-#: library/datetime.rst:2491
+#: library/datetime.rst:2507
 msgid ""
 "except when the format includes sub-second components or timezone offset "
 "information, which are supported in ``datetime.strptime`` but are discarded "
 "by ``time.strptime``."
 msgstr ""
 
-#: library/datetime.rst:2495
+#: library/datetime.rst:2511
 msgid ""
 "For :class:`.time` objects, the format codes for year, month, and day should "
 "not be used, as :class:`time` objects have no such values. If they're used "
@@ -2970,14 +2998,14 @@ msgid ""
 "day."
 msgstr ""
 
-#: library/datetime.rst:2499
+#: library/datetime.rst:2515
 msgid ""
 "For :class:`date` objects, the format codes for hours, minutes, seconds, and "
 "microseconds should not be used, as :class:`date` objects have no such "
 "values. If they're used anyway, ``0`` is substituted for them."
 msgstr ""
 
-#: library/datetime.rst:2503
+#: library/datetime.rst:2519
 msgid ""
 "For the same reason, handling of format strings containing Unicode code "
 "points that can't be represented in the charset of the current locale is "
@@ -2986,7 +3014,7 @@ msgid ""
 "`UnicodeError` or return an empty string instead."
 msgstr ""
 
-#: library/datetime.rst:2512
+#: library/datetime.rst:2528
 msgid ""
 "Because the format depends on the current locale, care should be taken when "
 "making assumptions about the output value. Field orderings will vary (for "
@@ -2994,37 +3022,37 @@ msgid ""
 "contain non-ASCII characters."
 msgstr ""
 
-#: library/datetime.rst:2518
+#: library/datetime.rst:2534
 msgid ""
 "The :meth:`strptime` method can parse years in the full [1, 9999] range, but "
 "years < 1000 must be zero-filled to 4-digit width."
 msgstr ""
 
-#: library/datetime.rst:2521
+#: library/datetime.rst:2537
 msgid ""
 "In previous versions, :meth:`strftime` method was restricted to years >= "
 "1900."
 msgstr ""
 
-#: library/datetime.rst:2525
+#: library/datetime.rst:2541
 msgid ""
 "In version 3.2, :meth:`strftime` method was restricted to years >= 1000."
 msgstr ""
 
-#: library/datetime.rst:2530
+#: library/datetime.rst:2546
 msgid ""
 "When used with the :meth:`strptime` method, the ``%p`` directive only "
 "affects the output hour field if the ``%I`` directive is used to parse the "
 "hour."
 msgstr ""
 
-#: library/datetime.rst:2534
+#: library/datetime.rst:2550
 msgid ""
 "Unlike the :mod:`time` module, the :mod:`datetime` module does not support "
 "leap seconds."
 msgstr ""
 
-#: library/datetime.rst:2538
+#: library/datetime.rst:2554
 msgid ""
 "When used with the :meth:`strptime` method, the ``%f`` directive accepts "
 "from one to six digits and zero pads on the right. ``%f`` is an extension to "
@@ -3032,17 +3060,17 @@ msgid ""
 "in datetime objects, and therefore always available)."
 msgstr ""
 
-#: library/datetime.rst:2545
+#: library/datetime.rst:2561
 msgid ""
-"For a naive object, the ``%z`` and ``%Z`` format codes are replaced by empty "
-"strings."
+"For a naive object, the ``%z``, ``%:z`` and ``%Z`` format codes are replaced "
+"by empty strings."
 msgstr ""
 
-#: library/datetime.rst:2548
+#: library/datetime.rst:2564
 msgid "For an aware object:"
 msgstr ""
 
-#: library/datetime.rst:2551
+#: library/datetime.rst:2567
 msgid ""
 ":meth:`utcoffset` is transformed into a string of the form ``±HHMM[SS[."
 "ffffff]]``, where ``HH`` is a 2-digit string giving the number of UTC offset "
@@ -3056,7 +3084,7 @@ msgid ""
 "``'-0330'``."
 msgstr ""
 
-#: library/datetime.rst:2565
+#: library/datetime.rst:2581
 msgid ""
 "When the ``%z`` directive is provided to the  :meth:`strptime` method, the "
 "UTC offsets can have a colon as a separator between hours, minutes and "
@@ -3064,47 +3092,53 @@ msgid ""
 "hour. In addition, providing ``'Z'`` is identical to ``'+00:00'``."
 msgstr ""
 
-#: library/datetime.rst:2573
+#: library/datetime.rst:2589
+msgid ""
+"Behaves exactly as ``%z``, but has a colon separator added between hours, "
+"minutes and seconds."
+msgstr ""
+
+#: library/datetime.rst:2593
 msgid ""
 "In :meth:`strftime`, ``%Z`` is replaced by an empty string if :meth:`tzname` "
 "returns ``None``; otherwise ``%Z`` is replaced by the returned value, which "
 "must be a string."
 msgstr ""
 
-#: library/datetime.rst:2577
+#: library/datetime.rst:2597
 msgid ":meth:`strptime` only accepts certain values for ``%Z``:"
 msgstr ""
 
-#: library/datetime.rst:2579
+#: library/datetime.rst:2599
 msgid "any value in ``time.tzname`` for your machine's locale"
 msgstr ""
 
-#: library/datetime.rst:2580
+#: library/datetime.rst:2600
 msgid "the hard-coded values ``UTC`` and ``GMT``"
 msgstr ""
 
-#: library/datetime.rst:2582
+#: library/datetime.rst:2602
 msgid ""
 "So someone living in Japan may have ``JST``, ``UTC``, and ``GMT`` as valid "
 "values, but probably not ``EST``. It will raise ``ValueError`` for invalid "
 "values."
 msgstr ""
 
-#: library/datetime.rst:2586
+#: library/datetime.rst:2606
 msgid ""
 "When the ``%z`` directive is provided to the :meth:`strptime` method, an "
 "aware :class:`.datetime` object will be produced. The ``tzinfo`` of the "
 "result will be set to a :class:`timezone` instance."
 msgstr ""
 
-#: library/datetime.rst:2592
+#: library/datetime.rst:2612
 msgid ""
 "When used with the :meth:`strptime` method, ``%U`` and ``%W`` are only used "
 "in calculations when the day of the week and the calendar year (``%Y``) are "
 "specified."
 msgstr ""
 
-#: library/datetime.rst:2597
+#: library/datetime.rst:2617
 msgid ""
 "Similar to ``%U`` and ``%W``, ``%V`` is only used in calculations when the "
 "day of the week and the ISO year (``%G``) are specified in a :meth:"
@@ -3112,22 +3146,22 @@ msgid ""
 "interchangeable."
 msgstr ""
 
-#: library/datetime.rst:2603
+#: library/datetime.rst:2623
 msgid ""
 "When used with the :meth:`strptime` method, the leading zero is optional "
 "for  formats ``%d``, ``%m``, ``%H``, ``%I``, ``%M``, ``%S``, ``%j``, ``%U``, "
 "``%W``, and ``%V``. Format ``%y`` does require a leading zero."
 msgstr ""
 
-#: library/datetime.rst:2608
+#: library/datetime.rst:2628
 msgid "Footnotes"
 msgstr ""
 
-#: library/datetime.rst:2609
+#: library/datetime.rst:2629
 msgid "If, that is, we ignore the effects of Relativity"
 msgstr ""
 
-#: library/datetime.rst:2611
+#: library/datetime.rst:2631
 msgid ""
 "This matches the definition of the \"proleptic Gregorian\" calendar in "
 "Dershowitz and Reingold's book *Calendrical Calculations*, where it's the "
@@ -3136,23 +3170,23 @@ msgid ""
 "systems."
 msgstr ""
 
-#: library/datetime.rst:2617
+#: library/datetime.rst:2637
 msgid ""
 "See R. H. van Gent's `guide to the mathematics of the ISO 8601 calendar "
 "<https://web.archive.org/web/20220531051136/https://webspace.science.uu.nl/"
 "~gent0113/calendar/isocalendar.htm>`_ for a good explanation."
 msgstr ""
 
-#: library/datetime.rst:2621
+#: library/datetime.rst:2641
 msgid ""
 "Passing ``datetime.strptime('Feb 29', '%b %d')`` will fail since ``1900`` is "
 "not a leap year."
 msgstr ""
 
-#: library/datetime.rst:2293
+#: library/datetime.rst:2301
 msgid "% (percent)"
 msgstr ""
 
-#: library/datetime.rst:2293
+#: library/datetime.rst:2301
 msgid "datetime format"
 msgstr ""

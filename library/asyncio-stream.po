@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-01 00:18+0000\n"
+"POT-Creation-Date: 2023-09-18 22:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -93,6 +93,7 @@ msgid "Removed the *loop* parameter."
 msgstr ""
 
 #: library/asyncio-stream.rst:128 library/asyncio-stream.rst:190
+#: library/asyncio-stream.rst:368
 msgid "Added the *ssl_shutdown_timeout* parameter."
 msgstr ""
 
@@ -373,91 +374,98 @@ msgid ""
 "(default)."
 msgstr ""
 
-#: library/asyncio-stream.rst:366
+#: library/asyncio-stream.rst:362
+msgid ""
+"*ssl_shutdown_timeout* is the time in seconds to wait for the SSL shutdown "
+"to complete before aborting the connection. ``30.0`` seconds if ``None`` "
+"(default)."
+msgstr ""
+
+#: library/asyncio-stream.rst:374
 msgid ""
 "Return ``True`` if the stream is closed or in the process of being closed."
 msgstr ""
 
-#: library/asyncio-stream.rst:373
+#: library/asyncio-stream.rst:381
 msgid "Wait until the stream is closed."
 msgstr ""
 
-#: library/asyncio-stream.rst:375
+#: library/asyncio-stream.rst:383
 msgid ""
 "Should be called after :meth:`close` to wait until the underlying connection "
 "is closed, ensuring that all data has been flushed before e.g. exiting the "
 "program."
 msgstr ""
 
-#: library/asyncio-stream.rst:383
+#: library/asyncio-stream.rst:391
 msgid "Examples"
 msgstr ""
 
-#: library/asyncio-stream.rst:388
+#: library/asyncio-stream.rst:396
 msgid "TCP echo client using streams"
 msgstr ""
 
-#: library/asyncio-stream.rst:390
+#: library/asyncio-stream.rst:398
 msgid "TCP echo client using the :func:`asyncio.open_connection` function::"
 msgstr ""
 
-#: library/asyncio-stream.rst:414
+#: library/asyncio-stream.rst:422
 msgid ""
 "The :ref:`TCP echo client protocol "
 "<asyncio_example_tcp_echo_client_protocol>` example uses the low-level :meth:"
 "`loop.create_connection` method."
 msgstr ""
 
-#: library/asyncio-stream.rst:421
+#: library/asyncio-stream.rst:429
 msgid "TCP echo server using streams"
 msgstr ""
 
-#: library/asyncio-stream.rst:423
+#: library/asyncio-stream.rst:431
 msgid "TCP echo server using the :func:`asyncio.start_server` function::"
 msgstr ""
 
-#: library/asyncio-stream.rst:457
+#: library/asyncio-stream.rst:465
 msgid ""
 "The :ref:`TCP echo server protocol "
 "<asyncio_example_tcp_echo_server_protocol>` example uses the :meth:`loop."
 "create_server` method."
 msgstr ""
 
-#: library/asyncio-stream.rst:462
+#: library/asyncio-stream.rst:470
 msgid "Get HTTP headers"
 msgstr ""
 
-#: library/asyncio-stream.rst:464
+#: library/asyncio-stream.rst:472
 msgid ""
 "Simple example querying HTTP headers of the URL passed on the command line::"
 msgstr ""
 
-#: library/asyncio-stream.rst:503
+#: library/asyncio-stream.rst:511
 msgid "Usage::"
 msgstr ""
 
-#: library/asyncio-stream.rst:507
+#: library/asyncio-stream.rst:515
 msgid "or with HTTPS::"
 msgstr ""
 
-#: library/asyncio-stream.rst:515
+#: library/asyncio-stream.rst:523
 msgid "Register an open socket to wait for data using streams"
 msgstr ""
 
-#: library/asyncio-stream.rst:517
+#: library/asyncio-stream.rst:525
 msgid ""
 "Coroutine waiting until a socket receives data using the :func:"
 "`open_connection` function::"
 msgstr ""
 
-#: library/asyncio-stream.rst:552
+#: library/asyncio-stream.rst:560
 msgid ""
 "The :ref:`register an open socket to wait for data using a protocol "
 "<asyncio_example_create_connection>` example uses a low-level protocol and "
 "the :meth:`loop.create_connection` method."
 msgstr ""
 
-#: library/asyncio-stream.rst:556
+#: library/asyncio-stream.rst:564
 msgid ""
 "The :ref:`watch a file descriptor for read events "
 "<asyncio_example_watch_fd>` example uses the low-level :meth:`loop."

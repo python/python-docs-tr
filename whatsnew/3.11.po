@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 19:05+0000\n"
+"POT-Creation-Date: 2023-09-18 22:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -2711,7 +2711,7 @@ msgid "The :ref:`entire distutils package <distutils-deprecated>`"
 msgstr ""
 
 #: whatsnew/3.11.rst:1883
-msgid "The :mod:`imp` module"
+msgid "The :mod:`!imp` module"
 msgstr ""
 
 #: whatsnew/3.11.rst:1884
@@ -2727,23 +2727,23 @@ msgid ":func:`!cgi.log`"
 msgstr ""
 
 #: whatsnew/3.11.rst:1887
-msgid ":func:`importlib.find_loader`"
+msgid ":func:`!importlib.find_loader`"
 msgstr ""
 
 #: whatsnew/3.11.rst:1888
-msgid ":meth:`importlib.abc.Loader.module_repr`"
+msgid ":meth:`!importlib.abc.Loader.module_repr`"
 msgstr ""
 
 #: whatsnew/3.11.rst:1889
-msgid ":meth:`importlib.abc.MetaPathFinder.find_module`"
+msgid ":meth:`!importlib.abc.MetaPathFinder.find_module`"
 msgstr ""
 
 #: whatsnew/3.11.rst:1890
-msgid ":meth:`importlib.abc.PathEntryFinder.find_loader`"
+msgid ":meth:`!importlib.abc.PathEntryFinder.find_loader`"
 msgstr ""
 
 #: whatsnew/3.11.rst:1891
-msgid ":meth:`importlib.abc.PathEntryFinder.find_module`"
+msgid ":meth:`!importlib.abc.PathEntryFinder.find_module`"
 msgstr ""
 
 #: whatsnew/3.11.rst:1892
@@ -2771,7 +2771,7 @@ msgid ":meth:`!importlib.machinery.FrozenLoader.module_repr`"
 msgstr ""
 
 #: whatsnew/3.11.rst:1898
-msgid ":meth:`importlib.machinery.PathFinder.find_module`"
+msgid ":meth:`!importlib.machinery.PathFinder.find_module`"
 msgstr ""
 
 #: whatsnew/3.11.rst:1899
@@ -2779,7 +2779,7 @@ msgid ":meth:`!importlib.machinery.WindowsRegistryFinder.find_module`"
 msgstr ""
 
 #: whatsnew/3.11.rst:1900
-msgid ":func:`importlib.util.module_for_loader`"
+msgid ":func:`!importlib.util.module_for_loader`"
 msgstr ""
 
 #: whatsnew/3.11.rst:1901
@@ -2791,11 +2791,11 @@ msgid ":func:`!importlib.util.set_package_wrapper`"
 msgstr ""
 
 #: whatsnew/3.11.rst:1903
-msgid ":class:`pkgutil.ImpImporter`"
+msgid ":class:`!pkgutil.ImpImporter`"
 msgstr ""
 
 #: whatsnew/3.11.rst:1904
-msgid ":class:`pkgutil.ImpLoader`"
+msgid ":class:`!pkgutil.ImpLoader`"
 msgstr ""
 
 #: whatsnew/3.11.rst:1905
@@ -3286,7 +3286,7 @@ msgstr ""
 #: whatsnew/3.11.rst:2156
 msgid ""
 "Freelists for object structs can now be disabled. A new :program:`configure` "
-"option :option:`!--without-freelists` can be used to disable all freelists "
+"option :option:`--without-freelists` can be used to disable all freelists "
 "except empty tuple singleton. (Contributed by Christian Heimes in :issue:"
 "`45522`.)"
 msgstr ""
@@ -4073,7 +4073,7 @@ msgid "the ``Py_MARSHAL_VERSION`` macro"
 msgstr ""
 
 #: whatsnew/3.11.rst:2657
-msgid "These are not part of the :ref:`limited API <stable-abi-list>`."
+msgid "These are not part of the :ref:`limited API <limited-api-list>`."
 msgstr ""
 
 #: whatsnew/3.11.rst:2659
@@ -4168,36 +4168,4 @@ msgstr ""
 msgid ""
 "See :pep:`624` for details and :pep:`migration guidance <624#alternative-"
 "apis>`. (Contributed by Inada Naoki in :issue:`44029`.)"
-msgstr ""
-
-#: whatsnew/3.11.rst:2704
-msgid "Notable Changes in 3.11.4"
-msgstr ""
-
-#: whatsnew/3.11.rst:2707
-msgid "tarfile"
-msgstr ""
-
-#: whatsnew/3.11.rst:2709
-msgid ""
-"The extraction methods in :mod:`tarfile`, and :func:`shutil.unpack_archive`, "
-"have a new a *filter* argument that allows limiting tar features than may be "
-"surprising or dangerous, such as creating files outside the destination "
-"directory. See :ref:`tarfile-extraction-filter` for details. In Python 3.12, "
-"use without the *filter* argument will show a :exc:`DeprecationWarning`. In "
-"Python 3.14, the default will switch to ``'data'``. (Contributed by Petr "
-"Viktorin in :pep:`706`.)"
-msgstr ""
-
-#: whatsnew/3.11.rst:2721
-msgid "Notable Changes in 3.11.5"
-msgstr ""
-
-#: whatsnew/3.11.rst:2724
-msgid "OpenSSL"
-msgstr ""
-
-#: whatsnew/3.11.rst:2726
-msgid ""
-"Windows builds and macOS installers from python.org now use OpenSSL 3.0."
 msgstr ""

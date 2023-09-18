@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 19:05+0000\n"
+"POT-Creation-Date: 2023-09-18 22:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -1428,7 +1428,7 @@ msgid ""
 "instances for *queue*."
 msgstr ""
 
-#: library/logging.handlers.rst:1046 library/logging.handlers.rst:1129
+#: library/logging.handlers.rst:1046 library/logging.handlers.rst:1135
 msgid ""
 "If you are using :mod:`multiprocessing`, you should avoid using :class:"
 "`~queue.SimpleQueue` and instead use :class:`multiprocessing.Queue`."
@@ -1490,11 +1490,18 @@ msgid ""
 "customized queue implementation."
 msgstr ""
 
-#: library/logging.handlers.rst:1100
+#: library/logging.handlers.rst:1097
+msgid ""
+"When created via configuration using :func:`~logging.config.dictConfig`, "
+"this attribute will contain a :class:`QueueListener` instance for use with "
+"this handler. Otherwise, it will be ``None``."
+msgstr ""
+
+#: library/logging.handlers.rst:1106
 msgid "QueueListener"
 msgstr ""
 
-#: library/logging.handlers.rst:1104
+#: library/logging.handlers.rst:1110
 msgid ""
 "The :class:`QueueListener` class, located in the :mod:`logging.handlers` "
 "module, supports receiving logging messages from a queue, such as those "
@@ -1505,7 +1512,7 @@ msgid ""
 "works hand-in-hand with :class:`QueueHandler`."
 msgstr ""
 
-#: library/logging.handlers.rst:1112
+#: library/logging.handlers.rst:1118
 msgid ""
 "Along with the :class:`QueueHandler` class, :class:`QueueListener` can be "
 "used to let handlers do their work on a separate thread from the one which "
@@ -1515,7 +1522,7 @@ msgid ""
 "an email via :class:`SMTPHandler`) are done on a separate thread."
 msgstr ""
 
-#: library/logging.handlers.rst:1121
+#: library/logging.handlers.rst:1127
 msgid ""
 "Returns a new instance of the :class:`QueueListener` class. The instance is "
 "initialized with the queue to send messages to and a list of handlers which "
@@ -1526,7 +1533,7 @@ msgid ""
 "class:`~queue.SimpleQueue` instances for *queue*."
 msgstr ""
 
-#: library/logging.handlers.rst:1132
+#: library/logging.handlers.rst:1138
 msgid ""
 "If ``respect_handler_level`` is ``True``, a handler's level is respected "
 "(compared with the level for the message) when deciding whether to pass "
@@ -1534,82 +1541,82 @@ msgid ""
 "versions - to always pass each message to each handler."
 msgstr ""
 
-#: library/logging.handlers.rst:1137
+#: library/logging.handlers.rst:1143
 msgid "The ``respect_handler_level`` argument was added."
 msgstr ""
 
-#: library/logging.handlers.rst:1142
+#: library/logging.handlers.rst:1148
 msgid "Dequeues a record and return it, optionally blocking."
 msgstr ""
 
-#: library/logging.handlers.rst:1144
+#: library/logging.handlers.rst:1150
 msgid ""
 "The base implementation uses ``get()``. You may want to override this method "
 "if you want to use timeouts or work with custom queue implementations."
 msgstr ""
 
-#: library/logging.handlers.rst:1150
+#: library/logging.handlers.rst:1156
 msgid "Prepare a record for handling."
 msgstr ""
 
-#: library/logging.handlers.rst:1152
+#: library/logging.handlers.rst:1158
 msgid ""
 "This implementation just returns the passed-in record. You may want to "
 "override this method if you need to do any custom marshalling or "
 "manipulation of the record before passing it to the handlers."
 msgstr ""
 
-#: library/logging.handlers.rst:1158
+#: library/logging.handlers.rst:1164
 msgid "Handle a record."
 msgstr ""
 
-#: library/logging.handlers.rst:1160
+#: library/logging.handlers.rst:1166
 msgid ""
 "This just loops through the handlers offering them the record to handle. The "
 "actual object passed to the handlers is that which is returned from :meth:"
 "`prepare`."
 msgstr ""
 
-#: library/logging.handlers.rst:1166
+#: library/logging.handlers.rst:1172
 msgid "Starts the listener."
 msgstr ""
 
-#: library/logging.handlers.rst:1168
+#: library/logging.handlers.rst:1174
 msgid ""
 "This starts up a background thread to monitor the queue for LogRecords to "
 "process."
 msgstr ""
 
-#: library/logging.handlers.rst:1173
+#: library/logging.handlers.rst:1179
 msgid "Stops the listener."
 msgstr ""
 
-#: library/logging.handlers.rst:1175
+#: library/logging.handlers.rst:1181
 msgid ""
 "This asks the thread to terminate, and then waits for it to do so. Note that "
 "if you don't call this before your application exits, there may be some "
 "records still left on the queue, which won't be processed."
 msgstr ""
 
-#: library/logging.handlers.rst:1181
+#: library/logging.handlers.rst:1187
 msgid ""
 "Writes a sentinel to the queue to tell the listener to quit. This "
 "implementation uses ``put_nowait()``.  You may want to override this method "
 "if you want to use timeouts or work with custom queue implementations."
 msgstr ""
 
-#: library/logging.handlers.rst:1192
+#: library/logging.handlers.rst:1198
 msgid "Module :mod:`logging`"
 msgstr ""
 
-#: library/logging.handlers.rst:1192
+#: library/logging.handlers.rst:1198
 msgid "API reference for the logging module."
 msgstr ""
 
-#: library/logging.handlers.rst:1194
+#: library/logging.handlers.rst:1200
 msgid "Module :mod:`logging.config`"
 msgstr ""
 
-#: library/logging.handlers.rst:1195
+#: library/logging.handlers.rst:1201
 msgid "Configuration API for the logging module."
 msgstr ""
