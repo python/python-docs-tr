@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: 2022-12-28 16:31-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -319,9 +319,10 @@ msgid "Sockets"
 msgstr "Soketler"
 
 #: license.rst:354
+#, fuzzy
 msgid ""
-"The :mod:`socket` module uses the functions, :func:`getaddrinfo`, and :func:"
-"`getnameinfo`, which are coded in separate source files from the WIDE "
+"The :mod:`socket` module uses the functions, :c:func:`!getaddrinfo`, and :c:"
+"func:`!getnameinfo`, which are coded in separate source files from the WIDE "
 "Project, https://www.wide.ad.jp/. ::"
 msgstr ""
 ":mod:`socket` modülü, https://www.wide.ad.jp adresindeki WIDE Projesi'nden "
@@ -376,7 +377,8 @@ msgid "test_epoll"
 msgstr "test_epoll"
 
 #: license.rst:540
-msgid "The :mod:`test_epoll` module contains the following notice::"
+#, fuzzy
+msgid "The :mod:`!test.test_epoll` module contains the following notice::"
 msgstr ":mod:`test_epoll` modülü aşağıdaki uyarıyı içerir::"
 
 #: license.rst:564
@@ -426,12 +428,14 @@ msgid "OpenSSL"
 msgstr "OpenSSL"
 
 #: license.rst:656
+#, fuzzy
 msgid ""
 "The modules :mod:`hashlib`, :mod:`posix`, :mod:`ssl`, :mod:`crypt` use the "
 "OpenSSL library for added performance if made available by the operating "
 "system. Additionally, the Windows and macOS installers for Python may "
 "include a copy of the OpenSSL libraries, so we include a copy of the OpenSSL "
-"license here::"
+"license here. For the OpenSSL 3.0 release, and later releases derived from "
+"that, the Apache License v2 applies::"
 msgstr ""
 ":mod:`hashlib`, :mod:`posix`, :mod:`ssl`, :mod:`crypt` modülleri, işletim "
 "sistemi tarafından sağlanmışsa ek performans için OpenSSL kütüphanesini "
@@ -439,24 +443,26 @@ msgstr ""
 "kütüphanelerinin bir kopyasını içerebilir, bu nedenle buraya OpenSSL "
 "lisansının bir kopyasını ekliyoruz::"
 
-#: license.rst:791
+#: license.rst:843
 msgid "expat"
 msgstr "expat"
 
-#: license.rst:793
+#: license.rst:845
+#, fuzzy
 msgid ""
-"The :mod:`pyexpat` extension is built using an included copy of the expat "
-"sources unless the build is configured ``--with-system-expat``::"
+"The :mod:`pyexpat <xml.parsers.expat>` extension is built using an included "
+"copy of the expat sources unless the build is configured ``--with-system-"
+"expat``::"
 msgstr ""
 ":mod:`pyexpat` uzantısı, derleme ``--with-system-expat`` şeklinde "
 "yapılandırılmadığı sürece, expat kaynaklarının dahil edildiği bir kopya "
 "kullanılarak oluşturulur::"
 
-#: license.rst:820
+#: license.rst:872
 msgid "libffi"
 msgstr "libffi"
 
-#: license.rst:822
+#: license.rst:874
 msgid ""
 "The :mod:`_ctypes` extension is built using an included copy of the libffi "
 "sources unless the build is configured ``--with-system-libffi``::"
@@ -465,11 +471,11 @@ msgstr ""
 "yapılandırılmadığı sürece libffi kaynaklarının dahil edildiği bir kopya "
 "kullanılarak oluşturulur::"
 
-#: license.rst:849
+#: license.rst:901
 msgid "zlib"
 msgstr "zlib"
 
-#: license.rst:851
+#: license.rst:903
 msgid ""
 "The :mod:`zlib` extension is built using an included copy of the zlib "
 "sources if the zlib version found on the system is too old to be used for "
@@ -479,11 +485,11 @@ msgstr ""
 "kullanılamayacak kadar eskiyse, zlib kaynaklarının dahil edildiği bir kopya "
 "kullanılarak oluşturulur::"
 
-#: license.rst:880
+#: license.rst:932
 msgid "cfuhash"
 msgstr "cfuhash"
 
-#: license.rst:882
+#: license.rst:934
 msgid ""
 "The implementation of the hash table used by the :mod:`tracemalloc` is based "
 "on the cfuhash project::"
@@ -491,11 +497,11 @@ msgstr ""
 ":mod:`tracemalloc` tarafından kullanılan hash tablosunun uygulanması cfuhash "
 "projesine dayanmaktadır::"
 
-#: license.rst:921
+#: license.rst:973
 msgid "libmpdec"
 msgstr "libmpdec"
 
-#: license.rst:923
+#: license.rst:975
 msgid ""
 "The :mod:`_decimal` module is built using an included copy of the libmpdec "
 "library unless the build is configured ``--with-system-libmpdec``::"
@@ -504,11 +510,11 @@ msgstr ""
 "yapılandırılmadığı sürece libmpdec kitaplığının dahil edildiği bir kopya "
 "kullanılarak oluşturulur::"
 
-#: license.rst:953
+#: license.rst:1005
 msgid "W3C C14N test suite"
 msgstr "W3C C14N test paketi"
 
-#: license.rst:955
+#: license.rst:1007
 msgid ""
 "The C14N 2.0 test suite in the :mod:`test` package (``Lib/test/xmltestdata/"
 "c14n-20/``) was retrieved from the W3C website at https://www.w3.org/TR/xml-"
@@ -518,11 +524,11 @@ msgstr ""
 "``), https://www.w3.org/TR/xml-c14n2-testcases/ adresindeki W3C web "
 "sitesinden alınmıştır ve 3 maddeli BSD lisansı altında dağıtılmaktadır::"
 
-#: license.rst:990
+#: license.rst:1042
 msgid "Audioop"
 msgstr "Audioop"
 
-#: license.rst:992
+#: license.rst:1044
 msgid ""
 "The audioop module uses the code base in g771.c file of the SoX project::"
 msgstr ""

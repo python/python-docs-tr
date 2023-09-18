@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-04 22:37+0000\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -60,8 +60,8 @@ msgid ""
 "extreme care."
 msgstr ""
 
-#: c-api/code.rst:55
-msgid "Added ``exceptiontable`` parameter."
+#: c-api/code.rst:45
+msgid "Added ``qualname`` and ``exceptiontable`` parameters."
 msgstr ""
 
 #: c-api/code.rst:50
@@ -69,6 +69,10 @@ msgid ""
 "Similar to :c:func:`PyCode_New`, but with an extra \"posonlyargcount\" for "
 "positional-only arguments. The same caveats that apply to ``PyCode_New`` "
 "also apply to this function."
+msgstr ""
+
+#: c-api/code.rst:55
+msgid "Added ``qualname`` and  ``exceptiontable`` parameters."
 msgstr ""
 
 #: c-api/code.rst:60
@@ -137,4 +141,16 @@ msgid ""
 "Equivalent to the Python code ``getattr(co, 'co_freevars')``. Returns a new "
 "reference to a :c:type:`PyTupleObject` containing the names of the free "
 "variables. On error, ``NULL`` is returned and an exception is raised."
+msgstr ""
+
+#: c-api/code.rst:3
+msgid "object"
+msgstr ""
+
+#: c-api/code.rst:3
+msgid "code"
+msgstr ""
+
+#: c-api/code.rst:3
+msgid "code object"
 msgstr ""

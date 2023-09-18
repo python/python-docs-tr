@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 22:19+0000\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -57,13 +57,13 @@ msgid ""
 "Lock part of a file based on file descriptor *fd* from the C runtime.  "
 "Raises :exc:`OSError` on failure.  The locked region of the file extends "
 "from the current file position for *nbytes* bytes, and may continue beyond "
-"the end of the file.  *mode* must be one of the :const:`LK_\\*` constants "
+"the end of the file.  *mode* must be one of the :const:`!LK_\\*` constants "
 "listed below. Multiple regions in a file may be locked at the same time, but "
 "may not overlap.  Adjacent regions are not merged; they must be unlocked "
 "individually."
 msgstr ""
 
-#: library/msvcrt.rst:8
+#: library/msvcrt.rst:45
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``msvcrt.locking`` with arguments "
 "``fd``, ``mode``, ``nbytes``."
@@ -101,7 +101,7 @@ msgid ""
 "as a parameter to :func:`os.fdopen` to create a file object."
 msgstr ""
 
-#: library/msvcrt.rst:6
+#: library/msvcrt.rst:82
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``msvcrt.open_osfhandle`` with "
 "arguments ``handle``, ``flags``."
@@ -113,7 +113,7 @@ msgid ""
 "if *fd* is not recognized."
 msgstr ""
 
-#: library/msvcrt.rst:4
+#: library/msvcrt.rst:90
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``msvcrt.get_osfhandle`` with "
 "argument ``fd``."

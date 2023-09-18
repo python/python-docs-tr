@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: 2022-12-28 22:43+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -36,11 +36,13 @@ msgid "Fancier Output Formatting"
 msgstr "Güzel Çıktı Biçimlendirmesi"
 
 #: tutorial/inputoutput.rst:17
+#, fuzzy
 msgid ""
 "So far we've encountered two ways of writing values: *expression statements* "
-"and the :func:`print` function.  (A third way is using the :meth:`write` "
-"method of file objects; the standard output file can be referenced as ``sys."
-"stdout``. See the Library Reference for more information on this.)"
+"and the :func:`print` function.  (A third way is using the :meth:`~io."
+"TextIOBase.write` method of file objects; the standard output file can be "
+"referenced as ``sys.stdout``. See the Library Reference for more information "
+"on this.)"
 msgstr ""
 "Şimdiye kadar iki değer yazma yolu ile karşılaştık: *expression statements* "
 "ve :func:`print` fonksiyonu.  (Üçüncü bir yol, dosya nesnelerinin :meth:"
@@ -590,10 +592,11 @@ msgstr ""
 "davranış üretir."
 
 #: tutorial/inputoutput.rst:459
+#, fuzzy
 msgid ""
-"File objects have some additional methods, such as :meth:`~file.isatty` and :"
-"meth:`~file.truncate` which are less frequently used; consult the Library "
-"Reference for a complete guide to file objects."
+"File objects have some additional methods, such as :meth:`~io.IOBase.isatty` "
+"and :meth:`~io.IOBase.truncate` which are less frequently used; consult the "
+"Library Reference for a complete guide to file objects."
 msgstr ""
 "Dosya nesnelerinin daha az kullanılan :meth:`~file.isatty` ve :meth:`~file."
 "truncate` gibi bazı ek metotları vardır; dosya nesneleri için eksiksiz bir "
@@ -604,13 +607,14 @@ msgid "Saving structured data with :mod:`json`"
 msgstr "Yapılandırılmış verileri :mod:`json` ile kaydetme"
 
 #: tutorial/inputoutput.rst:471
+#, fuzzy
 msgid ""
 "Strings can easily be written to and read from a file.  Numbers take a bit "
-"more effort, since the :meth:`read` method only returns strings, which will "
-"have to be passed to a function like :func:`int`, which takes a string like "
-"``'123'`` and returns its numeric value 123.  When you want to save more "
-"complex data types like nested lists and dictionaries, parsing and "
-"serializing by hand becomes complicated."
+"more effort, since the :meth:`~io.TextIOBase.read` method only returns "
+"strings, which will have to be passed to a function like :func:`int`, which "
+"takes a string like ``'123'`` and returns its numeric value 123.  When you "
+"want to save more complex data types like nested lists and dictionaries, "
+"parsing and serializing by hand becomes complicated."
 msgstr ""
 "Dizeler bir dosyaya kolayca yazılabilir ve dosyadan okunabilir.  Sayılar "
 "biraz daha fazla çaba gerektirir, çünkü :meth:`read` yöntemi yalnızca "
@@ -719,3 +723,27 @@ msgstr ""
 "güvensizdir: güvenilmeyen bir kaynaktan gelen pickle verilerinin dizilerinin "
 "seri halden çıkarılması, veriler yetenekli bir saldırgan tarafından "
 "hazırlanmışsa rasgele kod yürütebilir."
+
+#: tutorial/inputoutput.rst:287
+msgid "built-in function"
+msgstr ""
+
+#: tutorial/inputoutput.rst:287
+msgid "open"
+msgstr ""
+
+#: tutorial/inputoutput.rst:287
+msgid "object"
+msgstr ""
+
+#: tutorial/inputoutput.rst:287
+msgid "file"
+msgstr ""
+
+#: tutorial/inputoutput.rst:469
+msgid "module"
+msgstr ""
+
+#: tutorial/inputoutput.rst:469
+msgid "json"
+msgstr ""

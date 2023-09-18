@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-01 00:18+0000\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: 2023-03-01 11:48+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -794,9 +794,11 @@ msgid "fcntl"
 msgstr "fcntl"
 
 #: whatsnew/3.9.rst:430
+#, fuzzy
 msgid ""
-"Added constants :data:`~fcntl.F_OFD_GETLK`, :data:`~fcntl.F_OFD_SETLK` and :"
-"data:`~fcntl.F_OFD_SETLKW`. (Contributed by Dong-hee Na in :issue:`38602`.)"
+"Added constants :const:`~fcntl.F_OFD_GETLK`, :const:`~fcntl.F_OFD_SETLK` "
+"and :const:`~fcntl.F_OFD_SETLKW`. (Contributed by Dong-hee Na in :issue:"
+"`38602`.)"
 msgstr ""
 ":data:`~fcntl.F_OFD_GETLK`, :data:`~fcntl.F_OFD_SETLK` ve :data:`~fcntl."
 "F_OFD_SETLKW` sabitleri eklendi. (Dong-hee Na tarafından :issue:`38602` 'de "
@@ -1160,16 +1162,18 @@ msgid "os"
 msgstr "os"
 
 #: whatsnew/3.9.rst:596
+#, fuzzy
 msgid ""
-"Added :data:`~os.CLD_KILLED` and :data:`~os.CLD_STOPPED` for :attr:"
+"Added :const:`~os.CLD_KILLED` and :const:`~os.CLD_STOPPED` for :attr:"
 "`si_code`. (Contributed by Dong-hee Na in :issue:`38493`.)"
 msgstr ""
 ":data:`~os.CLD_KILLED` ve :attr:`si_code` için :data:`~os.CLD_STOPPED` "
 "eklendi. (Dong-hee Na tarafından :issue:`38493` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:599
+#, fuzzy
 msgid ""
-"Exposed the Linux-specific :func:`os.pidfd_open` (:issue:`38692`) and :data:"
+"Exposed the Linux-specific :func:`os.pidfd_open` (:issue:`38692`) and :const:"
 "`os.P_PIDFD` (:issue:`38713`) for process management with file descriptors."
 msgstr ""
 "Dosya tanımlayıcılarla süreç yönetimi için Linux'a özgü :func:`os."
@@ -1322,8 +1326,9 @@ msgid "socket"
 msgstr "socket"
 
 #: whatsnew/3.9.rst:672
+#, fuzzy
 msgid ""
-"The :mod:`socket` module now exports the :data:`~socket."
+"The :mod:`socket` module now exports the :const:`~socket."
 "CAN_RAW_JOIN_FILTERS` constant on Linux 4.1 and greater. (Contributed by "
 "Stefan Tatschner and Zackery Spytz in :issue:`25780`.)"
 msgstr ""
@@ -1332,8 +1337,9 @@ msgstr ""
 "Spytz tarafından :issue:`25780` 'de katılmıştır.)"
 
 #: whatsnew/3.9.rst:676
+#, fuzzy
 msgid ""
-"The socket module now supports the :data:`~socket.CAN_J1939` protocol on "
+"The socket module now supports the :const:`~socket.CAN_J1939` protocol on "
 "platforms that support it.  (Contributed by Karl Ding in :issue:`40291`.)"
 msgstr ""
 "Soket modülü artık onu destekleyen platformlarda :data:`~socket.CAN_J1939` "
@@ -1371,8 +1377,9 @@ msgid "sys"
 msgstr "sys"
 
 #: whatsnew/3.9.rst:695
+#, fuzzy
 msgid ""
-"Added a new :attr:`sys.platlibdir` attribute: name of the platform-specific "
+"Added a new :data:`sys.platlibdir` attribute: name of the platform-specific "
 "library directory. It is used to build the path of standard library and the "
 "paths of installed extension modules. It is equal to ``\"lib\"`` on most "
 "platforms.  On Fedora and SuSE, it is equal to ``\"lib64\"`` on 64-bit "
@@ -1387,8 +1394,9 @@ msgstr ""
 "katkılarıyla :issue:`1294959`.)"
 
 #: whatsnew/3.9.rst:701
+#, fuzzy
 msgid ""
-"Previously, :attr:`sys.stderr` was block-buffered when non-interactive. Now "
+"Previously, :data:`sys.stderr` was block-buffered when non-interactive. Now "
 "``stderr`` defaults to always being line-buffered. (Contributed by Jendrik "
 "Seipp in :issue:`13601`.)"
 msgstr ""
@@ -1607,6 +1615,7 @@ msgstr ""
 "bir özeti:"
 
 #: whatsnew/3.9.rst:846
+#, fuzzy
 msgid ""
 "These results were generated from the variable access benchmark script at: "
 "``Tools/scripts/var_access_benchmark.py``. The benchmark script displays "
@@ -1614,7 +1623,7 @@ msgid ""
 "i7-4960HQ processor <https://ark.intel.com/content/www/us/en/ark/"
 "products/76088/intel-core-i7-4960hq-processor-6m-cache-up-to-3-80-ghz."
 "html>`_ running the macOS 64-bit builds found at `python.org <https://www."
-"python.org/downloads/mac-osx/>`_."
+"python.org/downloads/macos/>`_."
 msgstr ""
 "Bu sonuçlar, ``Tools/scripts/var_access_benchmark.py`` adresindeki değişken "
 "erişim kıyaslama betiğinden oluşturulmuştur. Kıyaslama komut dosyası, "
@@ -1666,10 +1675,11 @@ msgstr ""
 "(AST) oluşturma ve derleme aşamasından yararlanabilir."
 
 #: whatsnew/3.9.rst:873
+#, fuzzy
 msgid ""
-"The Public C API functions :c:func:`PyParser_SimpleParseStringFlags`, :c:"
-"func:`PyParser_SimpleParseStringFlagsFilename`, :c:func:"
-"`PyParser_SimpleParseFileFlags` and :c:func:`PyNode_Compile` are deprecated "
+"The Public C API functions :c:func:`!PyParser_SimpleParseStringFlags`, :c:"
+"func:`!PyParser_SimpleParseStringFlagsFilename`, :c:func:`!"
+"PyParser_SimpleParseFileFlags` and :c:func:`!PyNode_Compile` are deprecated "
 "and will be removed in Python 3.10 together with the old parser."
 msgstr ""
 "Genel C API işlevleri :c:func:`PyParser_SimpleParseStringFlags`, :c:func:"
@@ -1790,12 +1800,13 @@ msgstr ""
 "katkılarıyla.)"
 
 #: whatsnew/3.9.rst:926
+#, fuzzy
 msgid ""
-"The :c:func:`PyEval_InitThreads` and :c:func:`PyEval_ThreadsInitialized` "
+"The :c:func:`!PyEval_InitThreads` and :c:func:`!PyEval_ThreadsInitialized` "
 "functions are now deprecated and will be removed in Python 3.11. Calling :c:"
-"func:`PyEval_InitThreads` now does nothing. The :term:`GIL` is initialized "
-"by :c:func:`Py_Initialize()` since Python 3.7. (Contributed by Victor "
-"Stinner in :issue:`39877`.)"
+"func:`!PyEval_InitThreads` now does nothing. The :term:`GIL` is initialized "
+"by :c:func:`Py_Initialize` since Python 3.7. (Contributed by Victor Stinner "
+"in :issue:`39877`.)"
 msgstr ""
 ":c:func:`PyEval_InitThreads` ve :c:func:`PyEval_ThreadsInitialized` "
 "işlevleri artık kullanımdan kaldırılmıştır ve Python 3.11'de "
@@ -2149,8 +2160,9 @@ msgstr ""
 "ayarlandığında artık özel durum değildir."
 
 #: whatsnew/3.9.rst:1086
+#, fuzzy
 msgid ""
-"The :meth:`select.epoll.unregister` method no longer ignores the :data:"
+"The :meth:`select.epoll.unregister` method no longer ignores the :const:"
 "`~errno.EBADF` error. (Contributed by Victor Stinner in :issue:`39239`.)"
 msgstr ""
 ":meth:`select.epoll.unregister` yöntemi artık :data:`~errno.EBADF` hatasını "
@@ -2223,11 +2235,12 @@ msgstr ""
 "(Batuhan Taskaya :issue:`39562` 'de katılmıştır)"
 
 #: whatsnew/3.9.rst:1118
+#, fuzzy
 msgid ""
-"``array('u')`` now uses ``wchar_t`` as C type instead of ``Py_UNICODE``. "
-"This change doesn't affect to its behavior because ``Py_UNICODE`` is alias "
-"of ``wchar_t`` since Python 3.3. (Contributed by Inada Naoki in :issue:"
-"`34538`.)"
+"``array('u')`` now uses :c:type:`wchar_t` as C type instead of "
+"``Py_UNICODE``. This change doesn't affect to its behavior because "
+"``Py_UNICODE`` is alias of :c:type:`wchar_t` since Python 3.3. (Contributed "
+"by Inada Naoki in :issue:`34538`.)"
 msgstr ""
 "``array('u')`` artık C tipi olarak ``Py_UNICODE`` yerine ``wchar_t`` "
 "kullanıyor. Python 3.3'ten bu yana ``Py_UNICODE`` ``wchar_t`` takma adı "
@@ -2403,10 +2416,11 @@ msgid "Build Changes"
 msgstr "Yapı Değişiklikleri"
 
 #: whatsnew/3.9.rst:1228
+#, fuzzy
 msgid ""
 "Added ``--with-platlibdir`` option to the ``configure`` script: name of the "
-"platform-specific library directory, stored in the new :attr:`sys."
-"platlibdir` attribute. See :attr:`sys.platlibdir` attribute for more "
+"platform-specific library directory, stored in the new :data:`sys."
+"platlibdir` attribute. See :data:`sys.platlibdir` attribute for more "
 "information. (Contributed by Jan Matějek, Matěj Cepl, Charalampos Stratakis "
 "and Victor Stinner in :issue:`1294959`.)"
 msgstr ""
@@ -2503,10 +2517,11 @@ msgid "C API Changes"
 msgstr "C API'sindeki değişiklikler"
 
 #: whatsnew/3.9.rst:1276
+#, fuzzy
 msgid ""
 ":pep:`573`: Added :c:func:`PyType_FromModuleAndSpec` to associate a module "
 "with a class; :c:func:`PyType_GetModule` and :c:func:`PyType_GetModuleState` "
-"to retrieve the module and its state; and :c:data:`PyCMethod` and :c:data:"
+"to retrieve the module and its state; and :c:type:`PyCMethod` and :c:macro:"
 "`METH_METHOD` to allow a method to access the class it was defined in. "
 "(Contributed by Marcel Plch and Petr Viktorin in :issue:`38787`.)"
 msgstr ""
@@ -2721,10 +2736,11 @@ msgstr ""
 "katılmıştır.)"
 
 #: whatsnew/3.9.rst:1372
+#, fuzzy
 msgid ""
 "The ``Py_UNICODE_COPY``, ``Py_UNICODE_FILL``, ``PyUnicode_WSTR_LENGTH``, :c:"
-"func:`PyUnicode_FromUnicode`, :c:func:`PyUnicode_AsUnicode`, "
-"``_PyUnicode_AsUnicode``, and :c:func:`PyUnicode_AsUnicodeAndSize` are "
+"func:`!PyUnicode_FromUnicode`, :c:func:`!PyUnicode_AsUnicode`, "
+"``_PyUnicode_AsUnicode``, and :c:func:`!PyUnicode_AsUnicodeAndSize` are "
 "marked as deprecated in C.  They have been deprecated by :pep:`393` since "
 "Python 3.3. (Contributed by Inada Naoki in :issue:`36346`.)"
 msgstr ""
@@ -2767,11 +2783,12 @@ msgid ":c:func:`PyObject_IS_GC` macro was converted to a function."
 msgstr ":c:func:`PyObject_IS_GC` makrosu bir fonksiyona dönüştürüldü."
 
 #: whatsnew/3.9.rst:1391
+#, fuzzy
 msgid ""
-"The :c:func:`PyObject_NEW` macro becomes an alias to the :c:func:"
+"The :c:func:`PyObject_NEW` macro becomes an alias to the :c:macro:"
 "`PyObject_New` macro, and the :c:func:`PyObject_NEW_VAR` macro becomes an "
-"alias to the :c:func:`PyObject_NewVar` macro. They no longer access directly "
-"the :c:member:`PyTypeObject.tp_basicsize` member."
+"alias to the :c:macro:`PyObject_NewVar` macro. They no longer access "
+"directly the :c:member:`PyTypeObject.tp_basicsize` member."
 msgstr ""
 ":c:func:`PyObject_NEW` makrosu :c:func:`PyObject_New` makrosunun takma adı "
 "olur ve :c:func:`PyObject_NEW_VAR` makrosu :c:func:`PyObject_NewVar` "

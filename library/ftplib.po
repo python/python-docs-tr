@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-01 00:18+0000\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -112,7 +112,7 @@ msgstr ""
 #: library/ftplib.rst:108
 msgid ""
 "The class now supports hostname check with :attr:`ssl.SSLContext."
-"check_hostname` and *Server Name Indication* (see :data:`ssl.HAS_SNI`)."
+"check_hostname` and *Server Name Indication* (see :const:`ssl.HAS_SNI`)."
 msgstr ""
 
 #: library/ftplib.rst:115
@@ -207,7 +207,7 @@ msgid ""
 "port)`` for the socket to bind to as its source address before connecting."
 msgstr ""
 
-#: library/ftplib.rst:13
+#: library/ftplib.rst:223
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``ftplib.connect`` with arguments "
 "``self``, ``host``, ``port``."
@@ -243,7 +243,7 @@ msgid ""
 "Send a simple command string to the server and return the response string."
 msgstr ""
 
-#: library/ftplib.rst:5
+#: library/ftplib.rst:267
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``ftplib.sendcmd`` with arguments "
 "``self``, ``cmd``."
@@ -438,7 +438,7 @@ msgid ""
 msgstr ""
 
 #: library/ftplib.rst:441
-msgid "The SSL version to use (defaults to :attr:`ssl.PROTOCOL_SSLv23`)."
+msgid "The SSL version to use (defaults to :data:`ssl.PROTOCOL_SSLv23`)."
 msgstr ""
 
 #: library/ftplib.rst:445
@@ -450,7 +450,7 @@ msgstr ""
 #: library/ftplib.rst:448
 msgid ""
 "The method now supports hostname check with :attr:`ssl.SSLContext."
-"check_hostname` and *Server Name Indication* (see :data:`ssl.HAS_SNI`)."
+"check_hostname` and *Server Name Indication* (see :const:`ssl.HAS_SNI`)."
 msgstr ""
 
 #: library/ftplib.rst:455
@@ -466,4 +466,16 @@ msgstr ""
 
 #: library/ftplib.rst:467
 msgid "Set up clear text data connection."
+msgstr ""
+
+#: library/ftplib.rst:9
+msgid "FTP"
+msgstr ""
+
+#: library/ftplib.rst:9
+msgid "protocol"
+msgstr ""
+
+#: library/ftplib.rst:9
+msgid "ftplib (standard module)"
 msgstr ""

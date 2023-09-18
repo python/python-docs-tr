@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-01 00:18+0000\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -110,7 +110,7 @@ msgstr ""
 msgid "If the :c:func:`fcntl` fails, an :exc:`OSError` is raised."
 msgstr ""
 
-#: library/fcntl.rst:20
+#: library/fcntl.rst:90
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``fcntl.fcntl`` with arguments "
 "``fd``, ``cmd``, ``arg``."
@@ -176,7 +176,7 @@ msgstr ""
 msgid "An example::"
 msgstr ""
 
-#: library/fcntl.rst:47
+#: library/fcntl.rst:141
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``fcntl.ioctl`` with arguments "
 "``fd``, ``request``, ``arg``."
@@ -194,7 +194,7 @@ msgstr ""
 msgid "If the :c:func:`flock` fails, an :exc:`OSError` exception is raised."
 msgstr ""
 
-#: library/fcntl.rst:8
+#: library/fcntl.rst:153
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``fcntl.flock`` with arguments "
 "``fd``, ``operation``."
@@ -240,16 +240,15 @@ msgid ""
 msgstr ""
 
 #: library/fcntl.rst:169
-msgid ":const:`0` -- relative to the start of the file (:data:`os.SEEK_SET`)"
+msgid "``0`` -- relative to the start of the file (:const:`os.SEEK_SET`)"
 msgstr ""
 
 #: library/fcntl.rst:170
-msgid ""
-":const:`1` -- relative to the current buffer position (:data:`os.SEEK_CUR`)"
+msgid "``1`` -- relative to the current buffer position (:const:`os.SEEK_CUR`)"
 msgstr ""
 
 #: library/fcntl.rst:171
-msgid ":const:`2` -- relative to the end of the file (:data:`os.SEEK_END`)"
+msgid "``2`` -- relative to the end of the file (:const:`os.SEEK_END`)"
 msgstr ""
 
 #: library/fcntl.rst:173
@@ -259,7 +258,7 @@ msgid ""
 "file.  The default for *whence* is also 0."
 msgstr ""
 
-#: library/fcntl.rst:31
+#: library/fcntl.rst:188
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``fcntl.lockf`` with arguments "
 "``fd``, ``cmd``, ``len``, ``start``, ``whence``."
@@ -283,7 +282,19 @@ msgstr ""
 
 #: library/fcntl.rst:198
 msgid ""
-"If the locking flags :data:`~os.O_SHLOCK` and :data:`~os.O_EXLOCK` are "
+"If the locking flags :const:`~os.O_SHLOCK` and :const:`~os.O_EXLOCK` are "
 "present in the :mod:`os` module (on BSD only), the :func:`os.open` function "
 "provides an alternative to the :func:`lockf` and :func:`flock` functions."
+msgstr ""
+
+#: library/fcntl.rst:10
+msgid "UNIX"
+msgstr ""
+
+#: library/fcntl.rst:10
+msgid "file control"
+msgstr ""
+
+#: library/fcntl.rst:10
+msgid "I/O control"
 msgstr ""

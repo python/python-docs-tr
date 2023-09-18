@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-01 00:18+0000\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -153,7 +153,7 @@ msgstr ""
 #: library/importlib.resources.abc.rst:126
 msgid ""
 "When opening as text, accepts encoding parameters such as those accepted by :"
-"attr:`io.TextIOWrapper`."
+"class:`io.TextIOWrapper`."
 msgstr ""
 
 #: library/importlib.resources.abc.rst:131
@@ -167,11 +167,10 @@ msgstr ""
 #: library/importlib.resources.abc.rst:140
 msgid ""
 "An abstract base class for resource readers capable of serving the :meth:"
-"`importlib.resources.files` interface. Subclasses :class:`importlib."
-"resources.abc.ResourceReader` and provides concrete implementations of the :"
-"class:`importlib.resources.abc.ResourceReader`'s abstract methods. "
-"Therefore, any loader supplying :class:`importlib.abc.TraversableResources` "
-"also supplies ResourceReader."
+"`importlib.resources.files` interface. Subclasses :class:`ResourceReader` "
+"and provides concrete implementations of the :class:`!ResourceReader`'s "
+"abstract methods. Therefore, any loader supplying :class:`!"
+"TraversableResources` also supplies :class:`!ResourceReader`."
 msgstr ""
 
 #: library/importlib.resources.abc.rst:147

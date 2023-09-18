@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-01 00:18+0000\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -119,9 +119,9 @@ msgstr ""
 
 #: faq/programming.rst:64
 msgid ""
-"Static type checkers such as `Mypy <http://mypy-lang.org/>`_, `Pyre <https://"
-"pyre-check.org/>`_, and `Pytype <https://github.com/google/pytype>`_ can "
-"check type hints in Python source code."
+"Static type checkers such as `Mypy <https://mypy-lang.org/>`_, `Pyre "
+"<https://pyre-check.org/>`_, and `Pytype <https://github.com/google/"
+"pytype>`_ can check type hints in Python source code."
 msgstr ""
 
 #: faq/programming.rst:73
@@ -575,9 +575,9 @@ msgstr ""
 
 #: faq/programming.rst:457
 msgid ""
-"After the call to :meth:`~list.append`, the content of the mutable object "
-"has changed from ``[]`` to ``[10]``.  Since both the variables refer to the "
-"same object, using either name accesses the modified value ``[10]``."
+"After the call to :meth:`!append`, the content of the mutable object has "
+"changed from ``[]`` to ``[10]``.  Since both the variables refer to the same "
+"object, using either name accesses the modified value ``[10]``."
 msgstr ""
 
 #: faq/programming.rst:461
@@ -1542,9 +1542,8 @@ msgid ""
 "an :meth:`~object.__iadd__` magic method, it gets called when the ``+=`` "
 "augmented assignment is executed, and its return value is what gets used in "
 "the assignment statement; and (b) for lists, :meth:`!__iadd__` is equivalent "
-"to calling :meth:`~list.extend` on the list and returning the list.  That's "
-"why we say that for lists, ``+=`` is a \"shorthand\" for :meth:`!list."
-"extend`::"
+"to calling :meth:`!extend` on the list and returning the list.  That's why "
+"we say that for lists, ``+=`` is a \"shorthand\" for :meth:`!list.extend`::"
 msgstr ""
 
 #: faq/programming.rst:1409
@@ -2038,7 +2037,7 @@ msgstr ""
 
 #: faq/programming.rst:1905
 msgid ""
-"For example, here is the implementation of :meth:`collections.abc.Sequence."
+"For example, here is the implementation of :meth:`!collections.abc.Sequence."
 "__contains__`::"
 msgstr ""
 
@@ -2371,4 +2370,20 @@ msgstr ""
 msgid ""
 "The nature of the problem is made clear if you print out the \"identity\" of "
 "the class objects::"
+msgstr ""
+
+#: faq/programming.rst:408
+msgid "argument"
+msgstr ""
+
+#: faq/programming.rst:408
+msgid "difference from parameter"
+msgstr ""
+
+#: faq/programming.rst:408
+msgid "parameter"
+msgstr ""
+
+#: faq/programming.rst:408
+msgid "difference from argument"
 msgstr ""

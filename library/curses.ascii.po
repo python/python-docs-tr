@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -39,20 +39,8 @@ msgstr ""
 msgid "Meaning"
 msgstr ""
 
-#: library/curses.ascii.rst:21
-msgid ":const:`NUL`"
-msgstr ""
-
-#: library/curses.ascii.rst:23
-msgid ":const:`SOH`"
-msgstr ""
-
 #: library/curses.ascii.rst:23
 msgid "Start of heading, console interrupt"
-msgstr ""
-
-#: library/curses.ascii.rst:25
-msgid ":const:`STX`"
 msgstr ""
 
 #: library/curses.ascii.rst:25
@@ -60,15 +48,7 @@ msgid "Start of text"
 msgstr ""
 
 #: library/curses.ascii.rst:27
-msgid ":const:`ETX`"
-msgstr ""
-
-#: library/curses.ascii.rst:27
 msgid "End of text"
-msgstr ""
-
-#: library/curses.ascii.rst:29
-msgid ":const:`EOT`"
 msgstr ""
 
 #: library/curses.ascii.rst:29
@@ -76,15 +56,7 @@ msgid "End of transmission"
 msgstr ""
 
 #: library/curses.ascii.rst:31
-msgid ":const:`ENQ`"
-msgstr ""
-
-#: library/curses.ascii.rst:31
 msgid "Enquiry, goes with :const:`ACK` flow control"
-msgstr ""
-
-#: library/curses.ascii.rst:33
-msgid ":const:`ACK`"
 msgstr ""
 
 #: library/curses.ascii.rst:33
@@ -92,15 +64,7 @@ msgid "Acknowledgement"
 msgstr ""
 
 #: library/curses.ascii.rst:35
-msgid ":const:`BEL`"
-msgstr ""
-
-#: library/curses.ascii.rst:35
 msgid "Bell"
-msgstr ""
-
-#: library/curses.ascii.rst:37
-msgid ":const:`BS`"
 msgstr ""
 
 #: library/curses.ascii.rst:37
@@ -108,15 +72,7 @@ msgid "Backspace"
 msgstr ""
 
 #: library/curses.ascii.rst:39
-msgid ":const:`TAB`"
-msgstr ""
-
-#: library/curses.ascii.rst:39
 msgid "Tab"
-msgstr ""
-
-#: library/curses.ascii.rst:41
-msgid ":const:`HT`"
 msgstr ""
 
 #: library/curses.ascii.rst:41
@@ -124,15 +80,7 @@ msgid "Alias for :const:`TAB`: \"Horizontal tab\""
 msgstr ""
 
 #: library/curses.ascii.rst:43
-msgid ":const:`LF`"
-msgstr ""
-
-#: library/curses.ascii.rst:43
 msgid "Line feed"
-msgstr ""
-
-#: library/curses.ascii.rst:45
-msgid ":const:`NL`"
 msgstr ""
 
 #: library/curses.ascii.rst:45
@@ -140,15 +88,7 @@ msgid "Alias for :const:`LF`: \"New line\""
 msgstr ""
 
 #: library/curses.ascii.rst:47
-msgid ":const:`VT`"
-msgstr ""
-
-#: library/curses.ascii.rst:47
 msgid "Vertical tab"
-msgstr ""
-
-#: library/curses.ascii.rst:49
-msgid ":const:`FF`"
 msgstr ""
 
 #: library/curses.ascii.rst:49
@@ -156,15 +96,7 @@ msgid "Form feed"
 msgstr ""
 
 #: library/curses.ascii.rst:51
-msgid ":const:`CR`"
-msgstr ""
-
-#: library/curses.ascii.rst:51
 msgid "Carriage return"
-msgstr ""
-
-#: library/curses.ascii.rst:53
-msgid ":const:`SO`"
 msgstr ""
 
 #: library/curses.ascii.rst:53
@@ -172,15 +104,7 @@ msgid "Shift-out, begin alternate character set"
 msgstr ""
 
 #: library/curses.ascii.rst:55
-msgid ":const:`SI`"
-msgstr ""
-
-#: library/curses.ascii.rst:55
 msgid "Shift-in, resume default character set"
-msgstr ""
-
-#: library/curses.ascii.rst:57
-msgid ":const:`DLE`"
 msgstr ""
 
 #: library/curses.ascii.rst:57
@@ -188,15 +112,7 @@ msgid "Data-link escape"
 msgstr ""
 
 #: library/curses.ascii.rst:59
-msgid ":const:`DC1`"
-msgstr ""
-
-#: library/curses.ascii.rst:59
 msgid "XON, for flow control"
-msgstr ""
-
-#: library/curses.ascii.rst:61
-msgid ":const:`DC2`"
 msgstr ""
 
 #: library/curses.ascii.rst:61
@@ -204,15 +120,7 @@ msgid "Device control 2, block-mode flow control"
 msgstr ""
 
 #: library/curses.ascii.rst:63
-msgid ":const:`DC3`"
-msgstr ""
-
-#: library/curses.ascii.rst:63
 msgid "XOFF, for flow control"
-msgstr ""
-
-#: library/curses.ascii.rst:65
-msgid ":const:`DC4`"
 msgstr ""
 
 #: library/curses.ascii.rst:65
@@ -220,15 +128,7 @@ msgid "Device control 4"
 msgstr ""
 
 #: library/curses.ascii.rst:67
-msgid ":const:`NAK`"
-msgstr ""
-
-#: library/curses.ascii.rst:67
 msgid "Negative acknowledgement"
-msgstr ""
-
-#: library/curses.ascii.rst:69
-msgid ":const:`SYN`"
 msgstr ""
 
 #: library/curses.ascii.rst:69
@@ -236,15 +136,7 @@ msgid "Synchronous idle"
 msgstr ""
 
 #: library/curses.ascii.rst:71
-msgid ":const:`ETB`"
-msgstr ""
-
-#: library/curses.ascii.rst:71
 msgid "End transmission block"
-msgstr ""
-
-#: library/curses.ascii.rst:73
-msgid ":const:`CAN`"
 msgstr ""
 
 #: library/curses.ascii.rst:73
@@ -252,15 +144,7 @@ msgid "Cancel"
 msgstr ""
 
 #: library/curses.ascii.rst:75
-msgid ":const:`EM`"
-msgstr ""
-
-#: library/curses.ascii.rst:75
 msgid "End of medium"
-msgstr ""
-
-#: library/curses.ascii.rst:77
-msgid ":const:`SUB`"
 msgstr ""
 
 #: library/curses.ascii.rst:77
@@ -268,15 +152,7 @@ msgid "Substitute"
 msgstr ""
 
 #: library/curses.ascii.rst:79
-msgid ":const:`ESC`"
-msgstr ""
-
-#: library/curses.ascii.rst:79
 msgid "Escape"
-msgstr ""
-
-#: library/curses.ascii.rst:81
-msgid ":const:`FS`"
 msgstr ""
 
 #: library/curses.ascii.rst:81
@@ -284,15 +160,7 @@ msgid "File separator"
 msgstr ""
 
 #: library/curses.ascii.rst:83
-msgid ":const:`GS`"
-msgstr ""
-
-#: library/curses.ascii.rst:83
 msgid "Group separator"
-msgstr ""
-
-#: library/curses.ascii.rst:85
-msgid ":const:`RS`"
 msgstr ""
 
 #: library/curses.ascii.rst:85
@@ -300,23 +168,11 @@ msgid "Record separator, block-mode terminator"
 msgstr ""
 
 #: library/curses.ascii.rst:87
-msgid ":const:`US`"
-msgstr ""
-
-#: library/curses.ascii.rst:87
 msgid "Unit separator"
 msgstr ""
 
 #: library/curses.ascii.rst:89
-msgid ":const:`SP`"
-msgstr ""
-
-#: library/curses.ascii.rst:89
 msgid "Space"
-msgstr ""
-
-#: library/curses.ascii.rst:91
-msgid ":const:`DEL`"
 msgstr ""
 
 #: library/curses.ascii.rst:91
@@ -467,4 +323,16 @@ msgid ""
 "A 33-element string array that contains the ASCII mnemonics for the thirty-"
 "two ASCII control characters from 0 (NUL) to 0x1f (US), in order, plus the "
 "mnemonic ``SP`` for the space character."
+msgstr ""
+
+#: library/curses.ascii.rst:212
+msgid "^ (caret)"
+msgstr ""
+
+#: library/curses.ascii.rst:212
+msgid "in curses module"
+msgstr ""
+
+#: library/curses.ascii.rst:212
+msgid "! (exclamation)"
 msgstr ""

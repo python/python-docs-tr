@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 22:19+0000\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -806,7 +806,7 @@ msgid ""
 "settings, and installed packages. The standard library is included as pre-"
 "compiled and optimized ``.pyc`` files in a ZIP, and ``python3.dll``, "
 "``python37.dll``, ``python.exe`` and ``pythonw.exe`` are all provided. Tcl/"
-"tk (including all dependants, such as Idle), pip and the Python "
+"tk (including all dependents, such as Idle), pip and the Python "
 "documentation are not included."
 msgstr ""
 
@@ -913,7 +913,7 @@ msgid ""
 msgstr ""
 
 #: using/windows.rst:532
-msgid "`ActivePython <https://www.activestate.com/activepython/>`_"
+msgid "`ActivePython <https://www.activestate.com/products/python/>`_"
 msgstr ""
 
 #: using/windows.rst:532
@@ -1906,7 +1906,7 @@ msgid ""
 "Modules specified in the registry under ``Modules`` (not ``PythonPath``) may "
 "be imported by :class:`importlib.machinery.WindowsRegistryFinder`. This "
 "finder is enabled on Windows in 3.6.0 and earlier, but may need to be "
-"explicitly added to :attr:`sys.meta_path` in the future."
+"explicitly added to :data:`sys.meta_path` in the future."
 msgstr ""
 
 #: using/windows.rst:1194
@@ -1991,18 +1991,17 @@ msgstr ""
 
 #: using/windows.rst:1236
 msgid ""
-"`cx_Freeze <https://cx-freeze.readthedocs.io/en/latest/>`_ is a :mod:"
-"`distutils` extension (see :ref:`extending-distutils`) which wraps Python "
+"`cx_Freeze <https://cx-freeze.readthedocs.io/en/latest/>`_ wraps Python "
 "scripts into executable Windows programs (:file:`{*}.exe` files).  When you "
 "have done this, you can distribute your application without requiring your "
 "users to install Python."
 msgstr ""
 
-#: using/windows.rst:1244
+#: using/windows.rst:1243
 msgid "Compiling Python on Windows"
 msgstr ""
 
-#: using/windows.rst:1246
+#: using/windows.rst:1245
 msgid ""
 "If you want to compile CPython yourself, first thing you should do is get "
 "the `source <https://www.python.org/downloads/source/>`_. You can download "
@@ -2010,48 +2009,48 @@ msgid ""
 "devguide.python.org/setup/#get-the-source-code>`_."
 msgstr ""
 
-#: using/windows.rst:1251
+#: using/windows.rst:1250
 msgid ""
 "The source tree contains a build solution and project files for Microsoft "
 "Visual Studio, which is the compiler used to build the official Python "
 "releases. These files are in the :file:`PCbuild` directory."
 msgstr ""
 
-#: using/windows.rst:1255
+#: using/windows.rst:1254
 msgid ""
 "Check :file:`PCbuild/readme.txt` for general information on the build "
 "process."
 msgstr ""
 
-#: using/windows.rst:1257
+#: using/windows.rst:1256
 msgid "For extension modules, consult :ref:`building-on-windows`."
 msgstr ""
 
-#: using/windows.rst:1261
+#: using/windows.rst:1260
 msgid "Other Platforms"
 msgstr ""
 
-#: using/windows.rst:1263
+#: using/windows.rst:1262
 msgid ""
 "With ongoing development of Python, some platforms that used to be supported "
 "earlier are no longer supported (due to the lack of users or developers). "
 "Check :pep:`11` for details on all unsupported platforms."
 msgstr ""
 
-#: using/windows.rst:1267
+#: using/windows.rst:1266
 msgid ""
 "`Windows CE <https://pythonce.sourceforge.net/>`_ is `no longer supported "
 "<https://github.com/python/cpython/issues/71542>`__ since Python 3 (if it "
 "ever was)."
 msgstr ""
 
-#: using/windows.rst:1270
+#: using/windows.rst:1269
 msgid ""
 "The `Cygwin <https://cygwin.com/>`_ installer offers to install the `Python "
 "interpreter <https://cygwin.com/packages/summary/python3.html>`__ as well"
 msgstr ""
 
-#: using/windows.rst:1274
+#: using/windows.rst:1273
 msgid ""
 "See `Python for Windows <https://www.python.org/downloads/windows/>`_ for "
 "detailed information about platforms with pre-compiled installers."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 22:19+0000\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -96,7 +96,7 @@ msgid ""
 "(see below)."
 msgstr ""
 
-#: library/marshal.rst:11
+#: library/marshal.rst:101
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``marshal.dumps`` with arguments "
 "``value``, ``version``."
@@ -110,7 +110,7 @@ msgid ""
 "file must be a readable :term:`binary file`."
 msgstr ""
 
-#: library/marshal.rst:6
+#: library/marshal.rst:79
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``marshal.load`` with no "
 "arguments."
@@ -148,7 +148,7 @@ msgid ""
 "bytes in the input are ignored."
 msgstr ""
 
-#: library/marshal.rst:5
+#: library/marshal.rst:110
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``marshal.loads`` with argument "
 "``bytes``."
@@ -183,4 +183,28 @@ msgid ""
 "shipping of data around in a self-contained form. Strictly speaking, \"to "
 "marshal\" means to convert some data from internal to external form (in an "
 "RPC buffer for instance) and \"unmarshalling\" for the reverse process."
+msgstr ""
+
+#: library/marshal.rst:17
+msgid "module"
+msgstr ""
+
+#: library/marshal.rst:17
+msgid "pickle"
+msgstr ""
+
+#: library/marshal.rst:17
+msgid "shelve"
+msgstr ""
+
+#: library/marshal.rst:37
+msgid "object"
+msgstr ""
+
+#: library/marshal.rst:37
+msgid "code"
+msgstr ""
+
+#: library/marshal.rst:37
+msgid "code object"
 msgstr ""

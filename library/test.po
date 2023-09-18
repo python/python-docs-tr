@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -477,7 +477,7 @@ msgid "Return ``True`` if Python was not built with ``-O0`` or ``-Og``."
 msgstr ""
 
 #: library/test.rst:421
-msgid "Return :data:`_testcapi.WITH_PYMALLOC`."
+msgid "Return :const:`_testcapi.WITH_PYMALLOC`."
 msgstr ""
 
 #: library/test.rst:426
@@ -995,7 +995,7 @@ msgstr ""
 
 #: library/test.rst:975
 msgid ""
-"On UNIX, :func:`resource.setrlimit` is used to set :attr:`resource."
+"On UNIX, :func:`resource.setrlimit` is used to set :const:`resource."
 "RLIMIT_CORE`'s soft limit to 0 to prevent coredump file creation."
 msgstr ""
 
@@ -1664,12 +1664,20 @@ msgstr ""
 
 #: library/test.rst:1636
 msgid ""
+"Suppress warnings that are instances of *category*, which must be :exc:"
+"`Warning` or a subclass. Roughly equivalent to :func:`warnings."
+"catch_warnings` with :meth:`warnings.simplefilter('ignore', "
+"category=category) <warnings.simplefilter>`. For example::"
+msgstr ""
+
+#: library/test.rst:1651
+msgid ""
 "Context manager to check that no :exc:`ResourceWarning` was raised.  You "
 "must remove the object which may emit :exc:`ResourceWarning` before the end "
 "of the context manager."
 msgstr ""
 
-#: library/test.rst:1643
+#: library/test.rst:1658
 msgid ""
 "Test for syntax warning in *statement* by attempting to compile *statement*. "
 "Test also that the :exc:`SyntaxWarning` is emitted only once, and that it "
@@ -1681,7 +1689,7 @@ msgid ""
 "``None``, compares to the offset of the exception."
 msgstr ""
 
-#: library/test.rst:1657
+#: library/test.rst:1672
 msgid ""
 "A convenience wrapper for :func:`warnings.catch_warnings()` that makes it "
 "easier to test that a warning was correctly raised.  It is approximately "
@@ -1690,7 +1698,7 @@ msgid ""
 "automatically validate the results that are recorded."
 msgstr ""
 
-#: library/test.rst:1663
+#: library/test.rst:1678
 msgid ""
 "``check_warnings`` accepts 2-tuples of the form ``(\"message regexp\", "
 "WarningCategory)`` as positional arguments. If one or more *filters* are "
@@ -1702,15 +1710,15 @@ msgid ""
 "*quiet* to ``True``."
 msgstr ""
 
-#: library/test.rst:1672
+#: library/test.rst:1687
 msgid "If no arguments are specified, it defaults to::"
 msgstr ""
 
-#: library/test.rst:1676
+#: library/test.rst:1691
 msgid "In this case all warnings are caught and no errors are raised."
 msgstr ""
 
-#: library/test.rst:1678
+#: library/test.rst:1693
 msgid ""
 "On entry to the context manager, a :class:`WarningRecorder` instance is "
 "returned. The underlying warnings list from :func:`~warnings.catch_warnings` "
@@ -1722,39 +1730,39 @@ msgid ""
 "return ``None``."
 msgstr ""
 
-#: library/test.rst:1687
+#: library/test.rst:1702
 msgid ""
 "The recorder object also has a :meth:`reset` method, which clears the "
 "warnings list."
 msgstr ""
 
-#: library/test.rst:1690
+#: library/test.rst:1705
 msgid "The context manager is designed to be used like this::"
 msgstr ""
 
-#: library/test.rst:1697
+#: library/test.rst:1712
 msgid ""
 "In this case if either warning was not raised, or some other warning was "
 "raised, :func:`check_warnings` would raise an error."
 msgstr ""
 
-#: library/test.rst:1700
+#: library/test.rst:1715
 msgid ""
 "When a test needs to look more deeply into the warnings, rather than just "
 "checking whether or not they occurred, code like this can be used::"
 msgstr ""
 
-#: library/test.rst:1714
+#: library/test.rst:1729
 msgid ""
 "Here all warnings will be caught, and the test code tests the captured "
 "warnings directly."
 msgstr ""
 
-#: library/test.rst:1717
+#: library/test.rst:1732
 msgid "New optional arguments *filters* and *quiet*."
 msgstr ""
 
-#: library/test.rst:1723
+#: library/test.rst:1738
 msgid ""
 "Class used to record warnings for unit tests. See documentation of :func:"
 "`check_warnings` above for more details."

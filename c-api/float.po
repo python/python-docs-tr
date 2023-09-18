@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -57,15 +57,15 @@ msgstr ""
 #: c-api/float.rst:47
 msgid ""
 "Return a C :c:expr:`double` representation of the contents of *pyfloat*.  If "
-"*pyfloat* is not a Python floating point object but has a :meth:`__float__` "
-"method, this method will first be called to convert *pyfloat* into a float. "
-"If ``__float__()`` is not defined then it falls back to :meth:`__index__`. "
-"This method returns ``-1.0`` upon failure, so one should call :c:func:"
-"`PyErr_Occurred` to check for errors."
+"*pyfloat* is not a Python floating point object but has a :meth:`~object."
+"__float__` method, this method will first be called to convert *pyfloat* "
+"into a float. If :meth:`!__float__` is not defined then it falls back to :"
+"meth:`~object.__index__`. This method returns ``-1.0`` upon failure, so one "
+"should call :c:func:`PyErr_Occurred` to check for errors."
 msgstr ""
 
 #: c-api/float.rst:54
-msgid "Use :meth:`__index__` if available."
+msgid "Use :meth:`~object.__index__` if available."
 msgstr ""
 
 #: c-api/float.rst:60
@@ -134,9 +134,9 @@ msgid ""
 "The pack routines write 2, 4 or 8 bytes, starting at *p*. *le* is an :c:expr:"
 "`int` argument, non-zero if you want the bytes string in little-endian "
 "format (exponent last, at ``p+1``, ``p+3``, or ``p+6`` ``p+7``), zero if you "
-"want big-endian format (exponent first, at *p*). The :c:data:`PY_BIG_ENDIAN` "
-"constant can be used to use the native endian: it is equal to ``1`` on big "
-"endian processor, or ``0`` on little endian processor."
+"want big-endian format (exponent first, at *p*). The :c:macro:"
+"`PY_BIG_ENDIAN` constant can be used to use the native endian: it is equal "
+"to ``1`` on big endian processor, or ``0`` on little endian processor."
 msgstr ""
 
 #: c-api/float.rst:116
@@ -178,9 +178,9 @@ msgid ""
 "The unpack routines read 2, 4 or 8 bytes, starting at *p*.  *le* is an :c:"
 "expr:`int` argument, non-zero if the bytes string is in little-endian format "
 "(exponent last, at ``p+1``, ``p+3`` or ``p+6`` and ``p+7``), zero if big-"
-"endian (exponent first, at *p*). The :c:data:`PY_BIG_ENDIAN` constant can be "
-"used to use the native endian: it is equal to ``1`` on big endian processor, "
-"or ``0`` on little endian processor."
+"endian (exponent first, at *p*). The :c:macro:`PY_BIG_ENDIAN` constant can "
+"be used to use the native endian: it is equal to ``1`` on big endian "
+"processor, or ``0`` on little endian processor."
 msgstr ""
 
 #: c-api/float.rst:147
@@ -206,4 +206,12 @@ msgstr ""
 
 #: c-api/float.rst:164
 msgid "Unpack the IEEE 754 binary64 double precision format as a C double."
+msgstr ""
+
+#: c-api/float.rst:8
+msgid "object"
+msgstr ""
+
+#: c-api/float.rst:8
+msgid "floating point"
 msgstr ""

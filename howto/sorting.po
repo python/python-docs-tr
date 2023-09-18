@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: 2023-04-19 21:42+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -400,19 +400,21 @@ msgstr ""
 "kez kullanılarak da simüle edilebilir:"
 
 #: howto/sorting.rst:274
+#, fuzzy
 msgid ""
 "The sort routines use ``<`` when making comparisons between two objects. So, "
 "it is easy to add a standard sort order to a class by defining an :meth:"
-"`__lt__` method:"
+"`~object.__lt__` method:"
 msgstr ""
 "Sıralama rutinleri, iki nesne arasında karşılaştırma yaparken ``<`` "
 "kullanır. Bu nedenle, bir :meth:`__lt__` yöntemi tanımlayarak, bir sınıfa "
 "standart bir sıralama düzeni eklemek kolaydır:"
 
 #: howto/sorting.rst:284
+#, fuzzy
 msgid ""
-"However, note that ``<`` can fall back to using :meth:`__gt__` if :meth:"
-"`__lt__` is not implemented (see :func:`object.__lt__`)."
+"However, note that ``<`` can fall back to using :meth:`~object.__gt__` if :"
+"meth:`~object.__lt__` is not implemented (see :func:`object.__lt__`)."
 msgstr ""
 "Ancak, :meth:`__lt__` uygulanmamışsa, ``<``'ın :meth:`__gt__` kullanımına "
 "geri dönebileceğini unutmayın (bkz. :func:`object.__lt__`)."
