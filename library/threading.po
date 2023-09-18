@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-01 00:18+0000\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -318,7 +318,7 @@ msgstr ""
 #: library/threading.rst:256
 msgid ""
 "For more details and extensive examples, see the documentation string of "
-"the :mod:`_threading_local` module."
+"the :mod:`!_threading_local` module: :source:`Lib/_threading_local.py`."
 msgstr ""
 
 #: library/threading.rst:263
@@ -331,8 +331,8 @@ msgid ""
 "thread of control.  There are two ways to specify the activity: by passing a "
 "callable object to the constructor, or by overriding the :meth:`~Thread.run` "
 "method in a subclass.  No other methods (except for the constructor) should "
-"be overridden in a subclass.  In other words, *only*  override the :meth:"
-"`~Thread.__init__` and :meth:`~Thread.run` methods of this class."
+"be overridden in a subclass.  In other words, *only*  override the "
+"``__init__()`` and :meth:`~Thread.run` methods of this class."
 msgstr ""
 
 #: library/threading.rst:272
@@ -412,8 +412,8 @@ msgstr ""
 
 #: library/threading.rst:321
 msgid ""
-"*group* should be ``None``; reserved for future extension when a :class:"
-"`ThreadGroup` class is implemented."
+"*group* should be ``None``; reserved for future extension when a :class:`!"
+"ThreadGroup` class is implemented."
 msgstr ""
 
 #: library/threading.rst:324
@@ -1255,11 +1255,11 @@ msgstr ""
 
 #: library/threading.rst:994
 msgid ""
-"Timers are started, as with threads, by calling their :meth:`~Timer.start` "
-"method.  The timer can be stopped (before its action has begun) by calling "
-"the :meth:`~Timer.cancel` method.  The interval the timer will wait before "
-"executing its action may not be exactly the same as the interval specified "
-"by the user."
+"Timers are started, as with threads, by calling their :meth:`Timer.start "
+"<Thread.start>` method.  The timer can be stopped (before its action has "
+"begun) by calling the :meth:`~Timer.cancel` method.  The interval the timer "
+"will wait before executing its action may not be exactly the same as the "
+"interval specified by the user."
 msgstr ""
 
 #: library/threading.rst:1000
@@ -1396,11 +1396,11 @@ msgstr ""
 
 #: library/threading.rst:1132
 msgid ""
-"All of the objects provided by this module that have :meth:`acquire` and :"
-"meth:`release` methods can be used as context managers for a :keyword:`with` "
-"statement.  The :meth:`acquire` method will be called when the block is "
-"entered, and :meth:`release` will be called when the block is exited.  "
-"Hence, the following snippet::"
+"All of the objects provided by this module that have ``acquire`` and "
+"``release`` methods can be used as context managers for a :keyword:`with` "
+"statement.  The ``acquire`` method will be called when the block is entered, "
+"and ``release`` will be called when the block is exited.  Hence, the "
+"following snippet::"
 msgstr ""
 
 #: library/threading.rst:1141
@@ -1412,4 +1412,16 @@ msgid ""
 "Currently, :class:`Lock`, :class:`RLock`, :class:`Condition`, :class:"
 "`Semaphore`, and :class:`BoundedSemaphore` objects may be used as :keyword:"
 "`with` statement context managers."
+msgstr ""
+
+#: library/threading.rst:164
+msgid "trace function"
+msgstr ""
+
+#: library/threading.rst:164
+msgid "debugger"
+msgstr ""
+
+#: library/threading.rst:184
+msgid "profile function"
 msgstr ""

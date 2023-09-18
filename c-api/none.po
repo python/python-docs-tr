@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -24,8 +24,8 @@ msgstr ""
 msgid ""
 "Note that the :c:type:`PyTypeObject` for ``None`` is not directly exposed in "
 "the Python/C API.  Since ``None`` is a singleton, testing for object "
-"identity (using ``==`` in C) is sufficient. There is no :c:func:"
-"`PyNone_Check` function for the same reason."
+"identity (using ``==`` in C) is sufficient. There is no :c:func:`!"
+"PyNone_Check` function for the same reason."
 msgstr ""
 
 #: c-api/none.rst:18
@@ -39,4 +39,12 @@ msgstr ""
 msgid ""
 "Properly handle returning :c:data:`Py_None` from within a C function (that "
 "is, increment the reference count of ``None`` and return it.)"
+msgstr ""
+
+#: c-api/none.rst:8
+msgid "object"
+msgstr ""
+
+#: c-api/none.rst:8
+msgid "None"
 msgstr ""

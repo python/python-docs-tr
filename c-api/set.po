@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -126,8 +126,8 @@ msgstr ""
 #: c-api/set.rst:112
 msgid ""
 "Return the length of a :class:`set` or :class:`frozenset` object. Equivalent "
-"to ``len(anyset)``.  Raises a :exc:`PyExc_SystemError` if *anyset* is not a :"
-"class:`set`, :class:`frozenset`, or an instance of a subtype."
+"to ``len(anyset)``.  Raises a :exc:`SystemError` if *anyset* is not a :class:"
+"`set`, :class:`frozenset`, or an instance of a subtype."
 msgstr ""
 
 #: c-api/set.rst:119
@@ -137,11 +137,11 @@ msgstr ""
 #: c-api/set.rst:124
 msgid ""
 "Return ``1`` if found, ``0`` if not found, and ``-1`` if an error is "
-"encountered.  Unlike the Python :meth:`__contains__` method, this function "
-"does not automatically convert unhashable sets into temporary frozensets.  "
-"Raise a :exc:`TypeError` if the *key* is unhashable. Raise :exc:"
-"`PyExc_SystemError` if *anyset* is not a :class:`set`, :class:`frozenset`, "
-"or an instance of a subtype."
+"encountered.  Unlike the Python :meth:`~object.__contains__` method, this "
+"function does not automatically convert unhashable sets into temporary "
+"frozensets.  Raise a :exc:`TypeError` if the *key* is unhashable. Raise :exc:"
+"`SystemError` if *anyset* is not a :class:`set`, :class:`frozenset`, or an "
+"instance of a subtype."
 msgstr ""
 
 #: c-api/set.rst:133
@@ -167,9 +167,8 @@ msgid ""
 "``-1`` if an error is encountered.  Does not raise :exc:`KeyError` for "
 "missing keys.  Raise a :exc:`TypeError` if the *key* is unhashable.  Unlike "
 "the Python :meth:`~set.discard` method, this function does not automatically "
-"convert unhashable sets into temporary frozensets. Raise :exc:"
-"`PyExc_SystemError` if *set* is not an instance of :class:`set` or its "
-"subtype."
+"convert unhashable sets into temporary frozensets. Raise :exc:`SystemError` "
+"if *set* is not an instance of :class:`set` or its subtype."
 msgstr ""
 
 #: c-api/set.rst:158
@@ -182,4 +181,24 @@ msgstr ""
 
 #: c-api/set.rst:166
 msgid "Empty an existing set of all elements."
+msgstr ""
+
+#: c-api/set.rst:11
+msgid "object"
+msgstr ""
+
+#: c-api/set.rst:11
+msgid "set"
+msgstr ""
+
+#: c-api/set.rst:11
+msgid "frozenset"
+msgstr ""
+
+#: c-api/set.rst:110
+msgid "built-in function"
+msgstr ""
+
+#: c-api/set.rst:110
+msgid "len"
 msgstr ""

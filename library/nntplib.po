@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-01 00:18+0000\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -81,13 +81,13 @@ msgid ""
 "close the NNTP connection when done, e.g.:"
 msgstr ""
 
-#: library/nntplib.rst:24
+#: library/nntplib.rst:131
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``nntplib.connect`` with "
 "arguments ``self``, ``host``, ``port``."
 msgstr ""
 
-#: library/nntplib.rst:26
+#: library/nntplib.rst:133
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``nntplib.putline`` with "
 "arguments ``self``, ``line``."
@@ -567,4 +567,16 @@ msgid ""
 "*header_str* must be a :class:`str` object.  The unescaped value is "
 "returned.  Using this function is recommended to display some headers in a "
 "human readable form::"
+msgstr ""
+
+#: library/nntplib.rst:10
+msgid "NNTP"
+msgstr ""
+
+#: library/nntplib.rst:10
+msgid "protocol"
+msgstr ""
+
+#: library/nntplib.rst:10
+msgid "Network News Transfer Protocol"
 msgstr ""

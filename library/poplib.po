@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-01 00:18+0000\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -73,13 +73,13 @@ msgid ""
 "timeout setting will be used)."
 msgstr ""
 
-#: library/poplib.rst:13
+#: library/poplib.rst:81
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``poplib.connect`` with arguments "
 "``self``, ``host``, ``port``."
 msgstr ""
 
-#: library/poplib.rst:15
+#: library/poplib.rst:83
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``poplib.putline`` with arguments "
 "``self``, ``line``."
@@ -123,7 +123,7 @@ msgstr ""
 #: library/poplib.rst:81
 msgid ""
 "The class now supports hostname check with :attr:`ssl.SSLContext."
-"check_hostname` and *Server Name Indication* (see :data:`ssl.HAS_SNI`)."
+"check_hostname` and *Server Name Indication* (see :const:`ssl.HAS_SNI`)."
 msgstr ""
 
 #: library/poplib.rst:88
@@ -207,7 +207,7 @@ msgstr ""
 #: library/poplib.rst:158
 msgid ""
 "Send password, response includes message count and mailbox size. Note: the "
-"mailbox on the server is locked until :meth:`~poplib.quit` is called."
+"mailbox on the server is locked until :meth:`~POP3.quit` is called."
 msgstr ""
 
 #: library/poplib.rst:164
@@ -301,7 +301,7 @@ msgstr ""
 #: library/poplib.rst:249
 msgid ""
 "This method supports hostname checking via :attr:`ssl.SSLContext."
-"check_hostname` and *Server Name Indication* (see :data:`ssl.HAS_SNI`)."
+"check_hostname` and *Server Name Indication* (see :const:`ssl.HAS_SNI`)."
 msgstr ""
 
 #: library/poplib.rst:256
@@ -324,4 +324,12 @@ msgstr ""
 msgid ""
 "At the end of the module, there is a test section that contains a more "
 "extensive example of usage."
+msgstr ""
+
+#: library/poplib.rst:12
+msgid "POP3"
+msgstr ""
+
+#: library/poplib.rst:12
+msgid "protocol"
 msgstr ""

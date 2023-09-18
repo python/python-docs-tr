@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -307,7 +307,7 @@ msgstr ""
 
 #: whatsnew/3.6.rst:240
 msgid ""
-"Tools that use or will use the new syntax: `mypy <http://www.mypy-lang.org/"
+"Tools that use or will use the new syntax: `mypy <https://www.mypy-lang.org/"
 ">`_, `pytype <https://github.com/google/pytype>`_, PyCharm, etc."
 msgstr ""
 
@@ -755,8 +755,9 @@ msgstr ""
 #: whatsnew/3.6.rst:652
 msgid ""
 "Check that the :term:`GIL <global interpreter lock>` is held when allocator "
-"functions of :c:data:`PYMEM_DOMAIN_OBJ` (ex: :c:func:`PyObject_Malloc`) and :"
-"c:data:`PYMEM_DOMAIN_MEM` (ex: :c:func:`PyMem_Malloc`) domains are called."
+"functions of :c:macro:`PYMEM_DOMAIN_OBJ` (ex: :c:func:`PyObject_Malloc`) "
+"and :c:macro:`PYMEM_DOMAIN_MEM` (ex: :c:func:`PyMem_Malloc`) domains are "
+"called."
 msgstr ""
 
 #: whatsnew/3.6.rst:656
@@ -1768,7 +1769,7 @@ msgstr ""
 
 #: whatsnew/3.6.rst:1391
 msgid ""
-"When specifying paths to add to :attr:`sys.path` in a ``.pth`` file, you may "
+"When specifying paths to add to :data:`sys.path` in a ``.pth`` file, you may "
 "now specify file paths on top of directories (e.g. zip files). (Contributed "
 "by Wolfgang Langner in :issue:`26587`)."
 msgstr ""
@@ -1789,7 +1790,7 @@ msgstr ""
 
 #: whatsnew/3.6.rst:1406
 msgid ""
-"The :func:`~socket.socket.ioctl` function now supports the :data:`~socket."
+"The :func:`~socket.socket.ioctl` function now supports the :const:`~socket."
 "SIO_LOOPBACK_FAST_PATH` control code. (Contributed by Daniel Stokes in :"
 "issue:`26536`.)"
 msgstr ""
@@ -1810,7 +1811,7 @@ msgstr ""
 
 #: whatsnew/3.6.rst:1418
 msgid ""
-"The socket module now supports the address family :data:`~socket.AF_ALG` to "
+"The socket module now supports the address family :const:`~socket.AF_ALG` to "
 "interface with Linux Kernel crypto API. ``ALG_*``, ``SOL_ALG`` and :meth:"
 "`~socket.socket.sendmsg_afalg` were added. (Contributed by Christian Heimes "
 "in :issue:`27744` with support from Victor Stinner.)"
@@ -2356,7 +2357,7 @@ msgstr ""
 
 #: whatsnew/3.6.rst:1824
 msgid ""
-"Allocator functions of the :c:func:`PyMem_Malloc` domain (:c:data:"
+"Allocator functions of the :c:func:`PyMem_Malloc` domain (:c:macro:"
 "`PYMEM_DOMAIN_MEM`) now use the :ref:`pymalloc memory allocator <pymalloc>` "
 "instead of :c:func:`malloc` function of the C library. The pymalloc "
 "allocator is optimized for objects smaller or equal to 512 bytes with a "
@@ -2439,8 +2440,9 @@ msgstr ""
 #: whatsnew/3.6.rst:1876
 msgid ""
 "The :term:`GIL <global interpreter lock>` must now be held when allocator "
-"functions of :c:data:`PYMEM_DOMAIN_OBJ` (ex: :c:func:`PyObject_Malloc`) and :"
-"c:data:`PYMEM_DOMAIN_MEM` (ex: :c:func:`PyMem_Malloc`) domains are called."
+"functions of :c:macro:`PYMEM_DOMAIN_OBJ` (ex: :c:func:`PyObject_Malloc`) "
+"and :c:macro:`PYMEM_DOMAIN_MEM` (ex: :c:func:`PyMem_Malloc`) domains are "
+"called."
 msgstr ""
 
 #: whatsnew/3.6.rst:1880
@@ -2619,7 +2621,7 @@ msgstr ""
 #: whatsnew/3.6.rst:2012
 msgid ""
 "The :class:`importlib.machinery.WindowsRegistryFinder` class is now "
-"deprecated. As of 3.6.0, it is still added to :attr:`sys.meta_path` by "
+"deprecated. As of 3.6.0, it is still added to :data:`sys.meta_path` by "
 "default (on Windows), but this may change in future releases."
 msgstr ""
 
@@ -2682,9 +2684,9 @@ msgstr ""
 
 #: whatsnew/3.6.rst:2069
 msgid ""
-"Undocumented functions :c:func:`PyUnicode_AsEncodedObject`, :c:func:"
-"`PyUnicode_AsDecodedObject`, :c:func:`PyUnicode_AsEncodedUnicode` and :c:"
-"func:`PyUnicode_AsDecodedUnicode` are deprecated now. Use the :ref:`generic "
+"Undocumented functions :c:func:`!PyUnicode_AsEncodedObject`, :c:func:`!"
+"PyUnicode_AsDecodedObject`, :c:func:`!PyUnicode_AsEncodedUnicode` and :c:"
+"func:`!PyUnicode_AsDecodedUnicode` are deprecated now. Use the :ref:`generic "
 "codec based API <codec-registry>` instead."
 msgstr ""
 

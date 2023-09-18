@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: 2022-12-28 16:25-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -44,23 +44,35 @@ msgid "Deprecated since version {deprecated}, removed in version {removed}"
 msgstr ""
 "Sürüm {deprecated} 'den beri kullanım dışı, sürüm {removed} 'da kaldırıldı"
 
+#: tools/templates/dummy.html:12
+msgid "Return value: Always NULL."
+msgstr ""
+
 #: tools/templates/dummy.html:13
+msgid "Return value: New reference."
+msgstr ""
+
+#: tools/templates/dummy.html:14
+msgid "Return value: Borrowed reference."
+msgstr ""
+
+#: tools/templates/dummy.html:18
 msgid "in development"
 msgstr "geliştirme aşamasında"
 
-#: tools/templates/dummy.html:14
+#: tools/templates/dummy.html:19
 msgid "pre-release"
 msgstr "önsürüm"
 
-#: tools/templates/dummy.html:15
+#: tools/templates/dummy.html:20
 msgid "stable"
 msgstr "kararlı"
 
-#: tools/templates/dummy.html:16
+#: tools/templates/dummy.html:21
 msgid "security-fixes"
 msgstr "güvenlik düzeltmeleri"
 
-#: tools/templates/dummy.html:17
+#: tools/templates/dummy.html:22
 msgid "EOL"
 msgstr "EOL"
 
@@ -233,6 +245,11 @@ msgstr "Python'un tarihçesi ve Lisansı"
 msgid "Copyright"
 msgstr "Telif Hakkı"
 
+#: tools/templates/indexcontent.html:65
+#, fuzzy
+msgid "Download the documentation"
+msgstr "Bu dokümanları indir"
+
 #: tools/templates/indexsidebar.html:1
 msgid "Download"
 msgstr "İndir"
@@ -282,13 +299,27 @@ msgid "Python Developer’s Guide"
 msgstr "Python Geliştirici Rehberi"
 
 #: tools/templates/layout.html:6
+#, fuzzy
 msgid ""
 "This document is for an old version of Python that is no longer supported.\n"
-"    You should upgrade, and read the "
+"    You should upgrade, and read the"
 msgstr ""
 "Bu belge, Python'un artık desteklenmeyen eski bir sürümü içindir.\n"
 "    Güncellemeli, ve"
 
 #: tools/templates/layout.html:8
-msgid " Python documentation for the current stable release"
+#, fuzzy
+msgid "Python documentation for the current stable release"
+msgstr " Mevcut kararlı sürüm için olan Python dokümantasyonunu okumalısın"
+
+#: tools/templates/layout.html:14
+msgid ""
+"This is a deploy preview created from a <a href=\"%(repository_url)s/pull/"
+"%(pr_id)s\">pull request</a>.\n"
+"  For authoritative documentation, see"
+msgstr ""
+
+#: tools/templates/layout.html:16
+#, fuzzy
+msgid "the current stable release"
 msgstr " Mevcut kararlı sürüm için olan Python dokümantasyonunu okumalısın"

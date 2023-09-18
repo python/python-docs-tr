@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 22:19+0000\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -207,7 +207,7 @@ msgstr ""
 
 #: library/random.rst:143
 msgid ""
-"The exception raised for non-integral values such as ``randrange(10.5)`` or "
+"The exception raised for non-integer values such as ``randrange(10.5)`` or "
 "``randrange('10')`` will be changed from :exc:`ValueError` to :exc:"
 "`TypeError`."
 msgstr ""
@@ -418,22 +418,23 @@ msgstr ""
 
 #: library/random.rst:313
 msgid ""
-"Gamma distribution.  (*Not* the gamma function!)  Conditions on the "
-"parameters are ``alpha > 0`` and ``beta > 0``."
+"Gamma distribution.  (*Not* the gamma function!)  The shape and scale "
+"parameters, *alpha* and *beta*, must have positive values. (Calling "
+"conventions vary and some sources define 'beta' as the inverse of the scale)."
 msgstr ""
 
-#: library/random.rst:316
+#: library/random.rst:318
 msgid "The probability distribution function is::"
 msgstr ""
 
-#: library/random.rst:325
+#: library/random.rst:327
 msgid ""
-"Normal distribution, also called the Gaussian distribution.  *mu* is the "
+"Normal distribution, also called the Gaussian distribution. *mu* is the "
 "mean, and *sigma* is the standard deviation.  This is slightly faster than "
 "the :func:`normalvariate` function defined below."
 msgstr ""
 
-#: library/random.rst:329
+#: library/random.rst:332
 msgid ""
 "Multithreading note:  When two threads call this function simultaneously, it "
 "is possible that they will receive the same return value.  This can be "
@@ -442,11 +443,11 @@ msgid ""
 "but thread-safe :func:`normalvariate` function instead."
 msgstr ""
 
-#: library/random.rst:352
+#: library/random.rst:355
 msgid "*mu* and *sigma* now have default arguments."
 msgstr ""
 
-#: library/random.rst:342
+#: library/random.rst:345
 msgid ""
 "Log normal distribution.  If you take the natural logarithm of this "
 "distribution, you'll get a normal distribution with mean *mu* and standard "
@@ -454,13 +455,13 @@ msgid ""
 "than zero."
 msgstr ""
 
-#: library/random.rst:350
+#: library/random.rst:353
 msgid ""
 "Normal distribution.  *mu* is the mean, and *sigma* is the standard "
 "deviation."
 msgstr ""
 
-#: library/random.rst:358
+#: library/random.rst:361
 msgid ""
 "*mu* is the mean angle, expressed in radians between 0 and 2\\*\\ *pi*, and "
 "*kappa* is the concentration parameter, which must be greater than or equal "
@@ -468,34 +469,34 @@ msgid ""
 "uniform random angle over the range 0 to 2\\*\\ *pi*."
 msgstr ""
 
-#: library/random.rst:366
+#: library/random.rst:369
 msgid "Pareto distribution.  *alpha* is the shape parameter."
 msgstr ""
 
-#: library/random.rst:371
+#: library/random.rst:374
 msgid ""
 "Weibull distribution.  *alpha* is the scale parameter and *beta* is the "
 "shape parameter."
 msgstr ""
 
-#: library/random.rst:376
+#: library/random.rst:379
 msgid "Alternative Generator"
 msgstr ""
 
-#: library/random.rst:380
+#: library/random.rst:383
 msgid ""
 "Class that implements the default pseudo-random number generator used by "
 "the :mod:`random` module."
 msgstr ""
 
-#: library/random.rst:383
+#: library/random.rst:386
 msgid ""
 "In the future, the *seed* must be one of the following types: :class:"
 "`NoneType`, :class:`int`, :class:`float`, :class:`str`, :class:`bytes`, or :"
 "class:`bytearray`."
 msgstr ""
 
-#: library/random.rst:390
+#: library/random.rst:393
 msgid ""
 "Class that uses the :func:`os.urandom` function for generating random "
 "numbers from sources provided by the operating system. Not available on all "
@@ -505,11 +506,11 @@ msgid ""
 "`NotImplementedError` if called."
 msgstr ""
 
-#: library/random.rst:399
+#: library/random.rst:402
 msgid "Notes on Reproducibility"
 msgstr ""
 
-#: library/random.rst:401
+#: library/random.rst:404
 msgid ""
 "Sometimes it is useful to be able to reproduce the sequences given by a "
 "pseudo-random number generator.  By re-using a seed value, the same sequence "
@@ -517,44 +518,44 @@ msgid ""
 "running."
 msgstr ""
 
-#: library/random.rst:405
+#: library/random.rst:408
 msgid ""
 "Most of the random module's algorithms and seeding functions are subject to "
 "change across Python versions, but two aspects are guaranteed not to change:"
 msgstr ""
 
-#: library/random.rst:408
+#: library/random.rst:411
 msgid ""
 "If a new seeding method is added, then a backward compatible seeder will be "
 "offered."
 msgstr ""
 
-#: library/random.rst:411
+#: library/random.rst:414
 msgid ""
 "The generator's :meth:`~Random.random` method will continue to produce the "
 "same sequence when the compatible seeder is given the same seed."
 msgstr ""
 
-#: library/random.rst:417
+#: library/random.rst:420
 msgid "Examples"
 msgstr ""
 
-#: library/random.rst:419
+#: library/random.rst:422
 msgid "Basic examples::"
 msgstr ""
 
-#: library/random.rst:447
+#: library/random.rst:450
 msgid "Simulations::"
 msgstr ""
 
-#: library/random.rst:475
+#: library/random.rst:478
 msgid ""
 "Example of `statistical bootstrapping <https://en.wikipedia.org/wiki/"
 "Bootstrapping_(statistics)>`_ using resampling with replacement to estimate "
 "a confidence interval for the mean of a sample::"
 msgstr ""
 
-#: library/random.rst:488
+#: library/random.rst:491
 msgid ""
 "Example of a `resampling permutation test <https://en.wikipedia.org/wiki/"
 "Resampling_(statistics)#Permutation_tests>`_ to determine the statistical "
@@ -562,12 +563,12 @@ msgid ""
 "observed difference between the effects of a drug versus a placebo::"
 msgstr ""
 
-#: library/random.rst:515
+#: library/random.rst:518
 msgid ""
 "Simulation of arrival times and service deliveries for a multiserver queue::"
 msgstr ""
 
-#: library/random.rst:544
+#: library/random.rst:547
 msgid ""
 "`Statistics for Hackers <https://www.youtube.com/watch?v=Iq9DzN6mvYA>`_ a "
 "video tutorial by `Jake Vanderplas <https://us.pycon.org/2016/speaker/"
@@ -575,7 +576,7 @@ msgid ""
 "concepts including simulation, sampling, shuffling, and cross-validation."
 msgstr ""
 
-#: library/random.rst:550
+#: library/random.rst:553
 msgid ""
 "`Economics Simulation <https://nbviewer.jupyter.org/url/norvig.com/ipython/"
 "Economics.ipynb>`_ a simulation of a marketplace by `Peter Norvig <https://"
@@ -584,7 +585,7 @@ msgid ""
 "choice, triangular, and randrange)."
 msgstr ""
 
-#: library/random.rst:557
+#: library/random.rst:560
 msgid ""
 "`A Concrete Introduction to Probability (using Python) <https://nbviewer."
 "jupyter.org/url/norvig.com/ipython/Probability.ipynb>`_ a tutorial by `Peter "
@@ -593,17 +594,17 @@ msgid ""
 "Python."
 msgstr ""
 
-#: library/random.rst:565
+#: library/random.rst:568
 msgid "Recipes"
 msgstr ""
 
-#: library/random.rst:567
+#: library/random.rst:570
 msgid ""
 "These recipes show how to efficiently make random selections from the "
 "combinatoric iterators in the :mod:`itertools` module:"
 msgstr ""
 
-#: library/random.rst:598
+#: library/random.rst:602
 msgid ""
 "The default :func:`.random` returns multiples of 2⁻⁵³ in the range *0.0 ≤ x "
 "< 1.0*.  All such numbers are evenly spaced and are exactly representable as "
@@ -612,7 +613,7 @@ msgid ""
 "integer multiple of 2⁻⁵³."
 msgstr ""
 
-#: library/random.rst:604
+#: library/random.rst:608
 msgid ""
 "The following recipe takes a different approach.  All floats in the interval "
 "are possible selections.  The mantissa comes from a uniform distribution of "
@@ -621,13 +622,13 @@ msgid ""
 "often as the next larger exponent."
 msgstr ""
 
-#: library/random.rst:626
+#: library/random.rst:630
 msgid ""
 "All :ref:`real valued distributions <real-valued-distributions>` in the "
 "class will use the new method::"
 msgstr ""
 
-#: library/random.rst:635
+#: library/random.rst:639
 msgid ""
 "The recipe is conceptually equivalent to an algorithm that chooses from all "
 "the multiples of 2⁻¹⁰⁷⁴ in the range *0.0 ≤ x < 1.0*.  All such numbers are "
@@ -636,7 +637,7 @@ msgid ""
 "and is equal to ``math.ulp(0.0)``.)"
 msgstr ""
 
-#: library/random.rst:644
+#: library/random.rst:648
 msgid ""
 "`Generating Pseudo-random Floating-Point Values <https://allendowney.com/"
 "research/rand/downey07randfloat.pdf>`_ a paper by Allen B. Downey describing "

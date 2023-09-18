@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -947,10 +947,10 @@ msgstr ""
 #: reference/lexical_analysis.rst:759
 msgid ""
 "The result is then formatted using the :func:`format` protocol.  The format "
-"specifier is passed to the :meth:`__format__` method of the expression or "
-"conversion result.  An empty string is passed when the format specifier is "
-"omitted.  The formatted result is then included in the final value of the "
-"whole string."
+"specifier is passed to the :meth:`~object.__format__` method of the "
+"expression or conversion result.  An empty string is passed when the format "
+"specifier is omitted.  The formatted result is then included in the final "
+"value of the whole string."
 msgstr ""
 
 #: reference/lexical_analysis.rst:765
@@ -1137,4 +1137,418 @@ msgstr ""
 
 #: reference/lexical_analysis.rst:1012
 msgid "https://www.unicode.org/Public/11.0.0/ucd/NameAliases.txt"
+msgstr ""
+
+#: reference/lexical_analysis.rst:8
+msgid "lexical analysis"
+msgstr ""
+
+#: reference/lexical_analysis.rst:8
+msgid "parser"
+msgstr ""
+
+#: reference/lexical_analysis.rst:8
+msgid "token"
+msgstr ""
+
+#: reference/lexical_analysis.rst:25
+msgid "line structure"
+msgstr ""
+
+#: reference/lexical_analysis.rst:35
+msgid "logical line"
+msgstr ""
+
+#: reference/lexical_analysis.rst:35 reference/lexical_analysis.rst:115
+#: reference/lexical_analysis.rst:529
+msgid "physical line"
+msgstr ""
+
+#: reference/lexical_analysis.rst:35 reference/lexical_analysis.rst:115
+msgid "line joining"
+msgstr ""
+
+#: reference/lexical_analysis.rst:35
+msgid "NEWLINE token"
+msgstr ""
+
+#: reference/lexical_analysis.rst:67
+msgid "comment"
+msgstr ""
+
+#: reference/lexical_analysis.rst:67
+msgid "hash character"
+msgstr ""
+
+#: reference/lexical_analysis.rst:67 reference/lexical_analysis.rst:81
+msgid "# (hash)"
+msgstr ""
+
+#: reference/lexical_analysis.rst:81
+msgid "source character set"
+msgstr ""
+
+#: reference/lexical_analysis.rst:81
+msgid "encoding declarations (source file)"
+msgstr ""
+
+#: reference/lexical_analysis.rst:81
+msgid "source encoding declaration"
+msgstr ""
+
+#: reference/lexical_analysis.rst:115
+msgid "line continuation"
+msgstr ""
+
+#: reference/lexical_analysis.rst:115
+msgid "backslash character"
+msgstr ""
+
+#: reference/lexical_analysis.rst:160
+msgid "blank line"
+msgstr ""
+
+#: reference/lexical_analysis.rst:175
+msgid "indentation"
+msgstr ""
+
+#: reference/lexical_analysis.rst:175
+msgid "leading whitespace"
+msgstr ""
+
+#: reference/lexical_analysis.rst:175
+msgid "space"
+msgstr ""
+
+#: reference/lexical_analysis.rst:175
+msgid "tab"
+msgstr ""
+
+#: reference/lexical_analysis.rst:175
+msgid "grouping"
+msgstr ""
+
+#: reference/lexical_analysis.rst:175
+msgid "statement grouping"
+msgstr ""
+
+#: reference/lexical_analysis.rst:203
+msgid "INDENT token"
+msgstr ""
+
+#: reference/lexical_analysis.rst:203
+msgid "DEDENT token"
+msgstr ""
+
+#: reference/lexical_analysis.rst:278
+msgid "identifier"
+msgstr ""
+
+#: reference/lexical_analysis.rst:278
+msgid "name"
+msgstr ""
+
+#: reference/lexical_analysis.rst:335 reference/lexical_analysis.rst:359
+msgid "keyword"
+msgstr ""
+
+#: reference/lexical_analysis.rst:335
+msgid "reserved word"
+msgstr ""
+
+#: reference/lexical_analysis.rst:359
+msgid "soft keyword"
+msgstr ""
+
+#: reference/lexical_analysis.rst:374
+msgid "_, identifiers"
+msgstr ""
+
+#: reference/lexical_analysis.rst:374
+msgid "__, identifiers"
+msgstr ""
+
+#: reference/lexical_analysis.rst:430
+msgid "literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:430
+msgid "constant"
+msgstr ""
+
+#: reference/lexical_analysis.rst:435 reference/lexical_analysis.rst:476
+msgid "string literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:435 reference/lexical_analysis.rst:487
+msgid "bytes literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:435
+msgid "ASCII"
+msgstr ""
+
+#: reference/lexical_analysis.rst:435
+msgid "' (single quote)"
+msgstr ""
+
+#: reference/lexical_analysis.rst:435
+msgid "\" (double quote)"
+msgstr ""
+
+#: reference/lexical_analysis.rst:435
+msgid "u'"
+msgstr ""
+
+#: reference/lexical_analysis.rst:435
+msgid "u\""
+msgstr ""
+
+#: reference/lexical_analysis.rst:476
+msgid "triple-quoted string"
+msgstr ""
+
+#: reference/lexical_analysis.rst:476
+msgid "Unicode Consortium"
+msgstr ""
+
+#: reference/lexical_analysis.rst:476
+msgid "raw string"
+msgstr ""
+
+#: reference/lexical_analysis.rst:476
+msgid "\"\"\""
+msgstr ""
+
+#: reference/lexical_analysis.rst:476
+msgid "'''"
+msgstr ""
+
+#: reference/lexical_analysis.rst:487
+msgid "b'"
+msgstr ""
+
+#: reference/lexical_analysis.rst:487
+msgid "b\""
+msgstr ""
+
+#: reference/lexical_analysis.rst:496
+msgid "r'"
+msgstr ""
+
+#: reference/lexical_analysis.rst:496
+msgid "raw string literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:496
+msgid "r\""
+msgstr ""
+
+#: reference/lexical_analysis.rst:516
+msgid "f'"
+msgstr ""
+
+#: reference/lexical_analysis.rst:516 reference/lexical_analysis.rst:682
+msgid "formatted string literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:516
+msgid "f\""
+msgstr ""
+
+#: reference/lexical_analysis.rst:529
+msgid "escape sequence"
+msgstr ""
+
+#: reference/lexical_analysis.rst:529
+msgid "Standard C"
+msgstr ""
+
+#: reference/lexical_analysis.rst:529
+msgid "C"
+msgstr ""
+
+#: reference/lexical_analysis.rst:529
+msgid "\\ (backslash)"
+msgstr ""
+
+#: reference/lexical_analysis.rst:529
+msgid "\\\\"
+msgstr ""
+
+#: reference/lexical_analysis.rst:529
+msgid "\\a"
+msgstr ""
+
+#: reference/lexical_analysis.rst:529
+msgid "\\b"
+msgstr ""
+
+#: reference/lexical_analysis.rst:529
+msgid "\\f"
+msgstr ""
+
+#: reference/lexical_analysis.rst:529
+msgid "\\n"
+msgstr ""
+
+#: reference/lexical_analysis.rst:529
+msgid "\\r"
+msgstr ""
+
+#: reference/lexical_analysis.rst:529
+msgid "\\t"
+msgstr ""
+
+#: reference/lexical_analysis.rst:529
+msgid "\\v"
+msgstr ""
+
+#: reference/lexical_analysis.rst:529
+msgid "\\x"
+msgstr ""
+
+#: reference/lexical_analysis.rst:529
+msgid "\\N"
+msgstr ""
+
+#: reference/lexical_analysis.rst:529
+msgid "\\u"
+msgstr ""
+
+#: reference/lexical_analysis.rst:529
+msgid "\\U"
+msgstr ""
+
+#: reference/lexical_analysis.rst:635
+msgid "unrecognized escape sequence"
+msgstr ""
+
+#: reference/lexical_analysis.rst:682
+msgid "interpolated string literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:682
+msgid "string"
+msgstr ""
+
+#: reference/lexical_analysis.rst:682
+msgid "formatted literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:682
+msgid "interpolated literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:682
+msgid "f-string"
+msgstr ""
+
+#: reference/lexical_analysis.rst:682
+msgid "fstring"
+msgstr ""
+
+#: reference/lexical_analysis.rst:682
+msgid "{} (curly brackets)"
+msgstr ""
+
+#: reference/lexical_analysis.rst:682
+msgid "in formatted string literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:682
+msgid "! (exclamation)"
+msgstr ""
+
+#: reference/lexical_analysis.rst:682
+msgid ": (colon)"
+msgstr ""
+
+#: reference/lexical_analysis.rst:682
+msgid "= (equals)"
+msgstr ""
+
+#: reference/lexical_analysis.rst:682
+msgid "for help in debugging using string literals"
+msgstr ""
+
+#: reference/lexical_analysis.rst:845
+msgid "number"
+msgstr ""
+
+#: reference/lexical_analysis.rst:845
+msgid "numeric literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:845 reference/lexical_analysis.rst:858
+msgid "integer literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:845
+msgid "floating point literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:845
+msgid "hexadecimal literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:845
+msgid "octal literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:845
+msgid "binary literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:845
+msgid "decimal literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:845
+msgid "imaginary literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:845
+msgid "complex literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:858
+msgid "0b"
+msgstr ""
+
+#: reference/lexical_analysis.rst:858
+msgid "0o"
+msgstr ""
+
+#: reference/lexical_analysis.rst:858
+msgid "0x"
+msgstr ""
+
+#: reference/lexical_analysis.rst:858 reference/lexical_analysis.rst:904
+msgid "_ (underscore)"
+msgstr ""
+
+#: reference/lexical_analysis.rst:858 reference/lexical_analysis.rst:904
+#: reference/lexical_analysis.rst:936
+msgid "in numeric literal"
+msgstr ""
+
+#: reference/lexical_analysis.rst:904
+msgid ". (dot)"
+msgstr ""
+
+#: reference/lexical_analysis.rst:904
+msgid "e"
+msgstr ""
+
+#: reference/lexical_analysis.rst:936
+msgid "j"
+msgstr ""
+
+#: reference/lexical_analysis.rst:962
+msgid "operators"
+msgstr ""
+
+#: reference/lexical_analysis.rst:979
+msgid "delimiters"
 msgstr ""

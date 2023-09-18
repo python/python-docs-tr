@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: 2023-03-08 10:14-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -588,10 +588,11 @@ msgstr ""
 "tasarlanmıştır. Basit bir seçenekle etkinleştirilir::"
 
 #: install/index.rst:312
+#, fuzzy
 msgid ""
-"Files will be installed into subdirectories of :data:`site.USER_BASE` "
+"Files will be installed into subdirectories of :const:`site.USER_BASE` "
 "(written as :file:`{userbase}` hereafter).  This scheme installs pure Python "
-"modules and extension modules in the same location (also known as :data:"
+"modules and extension modules in the same location (also known as :const:"
 "`site.USER_SITE`). Here are the values for UNIX, including macOS:"
 msgstr ""
 "Dosyalar :data:`site.USER_BASE` (bundan sonra :file:`{userbase}` şeklinde "
@@ -718,10 +719,11 @@ msgstr ""
 "yazabilir; :command:`install` komutu bunu ana dizininize genişletecektir::"
 
 #: install/index.rst:371
+#, fuzzy
 msgid ""
 "To make Python find the distributions installed with this scheme, you may "
-"have to :ref:`modify Python's search path <inst-search-path>` or edit :mod:"
-"`sitecustomize` (see :mod:`site`) to call :func:`site.addsitedir` or edit :"
+"have to :ref:`modify Python's search path <inst-search-path>` or edit :mod:`!"
+"sitecustomize` (see :mod:`site`) to call :func:`site.addsitedir` or edit :"
 "data:`sys.path`."
 msgstr ""
 "Python'un bu şema ile kurulu dağıtımları bulmasını sağlamak için, :ref:"
@@ -1281,8 +1283,9 @@ msgstr ""
 "file:`site.py` dosyasını düzenleyebilir ve ona iki satır ekleyebilirsiniz:"
 
 #: install/index.rst:695
+#, fuzzy
 msgid ""
-"However, if you reinstall the same major version of Python (perhaps when "
+"However, if you reinstall the same minor version of Python (perhaps when "
 "upgrading from 2.2 to 2.2.2, for example) :file:`site.py` will be "
 "overwritten by the stock version.  You'd have to remember that it was "
 "modified and save a copy before doing the installation."
@@ -1445,11 +1448,12 @@ msgstr ""
 "yerleştirilmelidir."
 
 #: install/index.rst:776
+#, fuzzy
 msgid ""
 "On Unix, if the :envvar:`HOME` environment variable is not defined, the "
-"user's home directory will be determined with the :func:`getpwuid` function "
-"from the standard :mod:`pwd` module. This is done by the :func:`os.path."
-"expanduser` function used by Distutils."
+"user's home directory will be determined with the :func:`~pwd.getpwuid` "
+"function from the standard :mod:`pwd` module. This is done by the :func:`os."
+"path.expanduser` function used by Distutils."
 msgstr ""
 "Unix'te, :envvar:`HOME` ortam değişkeni tanımlı değilse, kullanıcının ana "
 "dizini standart :mod:`pwd` modülünden :func:`getpwuid` işleviyle belirlenir. "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -840,8 +840,8 @@ msgstr ""
 
 #: whatsnew/2.4.rst:758
 msgid ""
-"The code for these functions came from the GLib library (https://developer."
-"gnome.org/glib/stable/), whose developers kindly relicensed the relevant "
+"The code for these functions came from the GLib library (https://developer-"
+"old.gnome.org/glib/2.26/), whose developers kindly relicensed the relevant "
 "functions and donated them to the Python Software Foundation.  The :mod:"
 "`locale` module  can now change the numeric locale, letting extensions such "
 "as GTK+  produce the correct results."
@@ -1664,8 +1664,8 @@ msgstr ""
 
 #: whatsnew/2.4.rst:1470
 msgid ""
-"C code can avoid unnecessary locking by using the new :c:func:"
-"`PyEval_ThreadsInitialized` function to tell  if any thread operations have "
+"C code can avoid unnecessary locking by using the new :c:func:`!"
+"PyEval_ThreadsInitialized` function to tell  if any thread operations have "
 "been performed.  If this function  returns false, no lock operations are "
 "needed. (Contributed by Nick Coghlan.)"
 msgstr ""
@@ -1679,7 +1679,7 @@ msgstr ""
 
 #: whatsnew/2.4.rst:1479
 msgid ""
-"A new method flag, :const:`METH_COEXISTS`, allows a function defined in "
+"A new method flag, :c:macro:`METH_COEXIST`, allows a function defined in "
 "slots to co-exist with a :c:type:`PyCFunction` having the same name.  This "
 "can halve the access time for a method such as :meth:`set.__contains__`.  "
 "(Contributed by Raymond Hettinger.)"
@@ -1700,7 +1700,7 @@ msgstr ""
 
 #: whatsnew/2.4.rst:1494
 msgid ""
-"The :c:type:`tracebackobject` type has been renamed to :c:type:"
+"The :c:type:`!tracebackobject` type has been renamed to :c:type:"
 "`PyTracebackObject`."
 msgstr ""
 
@@ -1800,4 +1800,12 @@ msgid ""
 "suggestions, corrections and assistance with various drafts of this article: "
 "Koray Can, Hye-Shik Chang, Michael Dyck, Raymond Hettinger, Brian Hurt, "
 "Hamish Lawson, Fredrik Lundh, Sean Reifschneider, Sadruddin Rejeb."
+msgstr ""
+
+#: whatsnew/2.4.rst:414
+msgid "universal newlines"
+msgstr ""
+
+#: whatsnew/2.4.rst:414
+msgid "What's new"
 msgstr ""

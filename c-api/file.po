@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 22:19+0000\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -112,7 +112,7 @@ msgstr ""
 msgid "This function is safe to call before :c:func:`Py_Initialize`."
 msgstr ""
 
-#: c-api/file.rst:21
+#: c-api/file.rst:85
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``setopencodehook`` with no "
 "arguments."
@@ -121,13 +121,29 @@ msgstr ""
 #: c-api/file.rst:95
 msgid ""
 "Write object *obj* to file object *p*.  The only supported flag for *flags* "
-"is :const:`Py_PRINT_RAW`; if given, the :func:`str` of the object is written "
-"instead of the :func:`repr`.  Return ``0`` on success or ``-1`` on failure; "
-"the appropriate exception will be set."
+"is :c:macro:`Py_PRINT_RAW`; if given, the :func:`str` of the object is "
+"written instead of the :func:`repr`.  Return ``0`` on success or ``-1`` on "
+"failure; the appropriate exception will be set."
 msgstr ""
 
 #: c-api/file.rst:103
 msgid ""
 "Write string *s* to file object *p*.  Return ``0`` on success or ``-1`` on "
 "failure; the appropriate exception will be set."
+msgstr ""
+
+#: c-api/file.rst:8
+msgid "object"
+msgstr ""
+
+#: c-api/file.rst:8
+msgid "file"
+msgstr ""
+
+#: c-api/file.rst:50
+msgid "EOFError (built-in exception)"
+msgstr ""
+
+#: c-api/file.rst:93
+msgid "Py_PRINT_RAW"
 msgstr ""

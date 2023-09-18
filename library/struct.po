@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -476,7 +476,7 @@ msgid "``n``"
 msgstr ""
 
 #: library/struct.rst:234
-msgid ":c:expr:`ssize_t`"
+msgid ":c:type:`ssize_t`"
 msgstr ""
 
 #: library/struct.rst:236
@@ -488,7 +488,7 @@ msgid "``N``"
 msgstr ""
 
 #: library/struct.rst:236
-msgid ":c:expr:`size_t`"
+msgid ":c:type:`size_t`"
 msgstr ""
 
 #: library/struct.rst:238
@@ -577,12 +577,12 @@ msgstr ""
 #: library/struct.rst:268
 msgid ""
 "When attempting to pack a non-integer using any of the integer conversion "
-"codes, if the non-integer has a :meth:`__index__` method then that method is "
-"called to convert the argument to an integer before packing."
+"codes, if the non-integer has a :meth:`~object.__index__` method then that "
+"method is called to convert the argument to an integer before packing."
 msgstr ""
 
 #: library/struct.rst:272
-msgid "Added use of the :meth:`__index__` method for non-integers."
+msgid "Added use of the :meth:`~object.__index__` method for non-integers."
 msgstr ""
 
 #: library/struct.rst:276
@@ -908,4 +908,52 @@ msgstr ""
 msgid ""
 "The calculated size of the struct (and hence of the bytes object produced by "
 "the :meth:`pack` method) corresponding to :attr:`format`."
+msgstr ""
+
+#: library/struct.rst:9
+msgid "C"
+msgstr ""
+
+#: library/struct.rst:9
+msgid "structures"
+msgstr ""
+
+#: library/struct.rst:9
+msgid "packing"
+msgstr ""
+
+#: library/struct.rst:9
+msgid "binary"
+msgstr ""
+
+#: library/struct.rst:9
+msgid "data"
+msgstr ""
+
+#: library/struct.rst:132
+msgid "@ (at)"
+msgstr ""
+
+#: library/struct.rst:261 library/struct.rst:348
+msgid "in struct format strings"
+msgstr ""
+
+#: library/struct.rst:132
+msgid "= (equals)"
+msgstr ""
+
+#: library/struct.rst:132
+msgid "< (less)"
+msgstr ""
+
+#: library/struct.rst:132
+msgid "> (greater)"
+msgstr ""
+
+#: library/struct.rst:132
+msgid "! (exclamation)"
+msgstr ""
+
+#: library/struct.rst:348
+msgid "? (question mark)"
 msgstr ""

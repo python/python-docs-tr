@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-01 00:18+0000\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -140,7 +140,7 @@ msgstr ""
 #: library/imaplib.rst:112
 msgid ""
 "The class now supports hostname check with :attr:`ssl.SSLContext."
-"check_hostname` and *Server Name Indication* (see :data:`ssl.HAS_SNI`)."
+"check_hostname` and *Server Name Indication* (see :const:`ssl.HAS_SNI`)."
 msgstr ""
 
 #: library/imaplib.rst:119
@@ -427,7 +427,7 @@ msgid ""
 "method."
 msgstr ""
 
-#: library/imaplib.rst:11
+#: library/imaplib.rst:392
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``imaplib.open`` with arguments "
 "``self``, ``host``, ``port``."
@@ -499,7 +499,7 @@ msgstr ""
 msgid "Sends ``data`` to the remote server. You may override this method."
 msgstr ""
 
-#: library/imaplib.rst:3
+#: library/imaplib.rst:465
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``imaplib.send`` with arguments "
 "``self``, ``data``."
@@ -566,7 +566,7 @@ msgstr ""
 #: library/imaplib.rst:513
 msgid ""
 "The method now supports hostname check with :attr:`ssl.SSLContext."
-"check_hostname` and *Server Name Indication* (see :data:`ssl.HAS_SNI`)."
+"check_hostname` and *Server Name Indication* (see :const:`ssl.HAS_SNI`)."
 msgstr ""
 
 #: library/imaplib.rst:521
@@ -683,4 +683,20 @@ msgstr ""
 msgid ""
 "Here is a minimal example (without error checking) that opens a mailbox and "
 "retrieves and prints all messages::"
+msgstr ""
+
+#: library/imaplib.rst:16
+msgid "IMAP4"
+msgstr ""
+
+#: library/imaplib.rst:16
+msgid "protocol"
+msgstr ""
+
+#: library/imaplib.rst:16
+msgid "IMAP4_SSL"
+msgstr ""
+
+#: library/imaplib.rst:16
+msgid "IMAP4_stream"
 msgstr ""

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: 2022-12-29 00:51-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -84,10 +84,11 @@ msgstr ""
 "olmayacaktır."
 
 #: faq/gui.rst:45
+#, fuzzy
 msgid ""
 "One solution is to ship the application with the Tcl and Tk libraries, and "
-"point to them at run-time using the :envvar:`TCL_LIBRARY` and :envvar:"
-"`TK_LIBRARY` environment variables."
+"point to them at run-time using the :envvar:`!TCL_LIBRARY` and :envvar:`!"
+"TK_LIBRARY` environment variables."
 msgstr ""
 "Çözümlerden biri, uygulamayı Tcl ve Tk kütüphaneleri ile birlikte göndermek "
 "ve çalışma zamanında :envvar:`TCL_LIBRARY` ve :envvar:`TK_LIBRARY` ortam "
@@ -120,10 +121,11 @@ msgid "Can I have Tk events handled while waiting for I/O?"
 msgstr "G/Ç'yi beklerken Tk olaylarını işleyebilir miyim?"
 
 #: faq/gui.rst:63
+#, fuzzy
 msgid ""
 "On platforms other than Windows, yes, and you don't even need threads!  But "
 "you'll have to restructure your I/O code a bit.  Tk has the equivalent of "
-"Xt's :c:func:`XtAddInput()` call, which allows you to register a callback "
+"Xt's :c:func:`!XtAddInput` call, which allows you to register a callback "
 "function which will be called from the Tk mainloop when I/O is possible on a "
 "file descriptor.  See :ref:`tkinter-file-handlers`."
 msgstr ""
@@ -138,15 +140,16 @@ msgid "I can't get key bindings to work in Tkinter: why?"
 msgstr "Tkinter'da çalışmak için anahtar bağlamalarını alamıyorum: neden?"
 
 #: faq/gui.rst:73
+#, fuzzy
 msgid ""
-"An often-heard complaint is that event handlers bound to events with the :"
-"meth:`bind` method don't get handled even when the appropriate key is "
-"pressed."
+"An often-heard complaint is that event handlers :ref:`bound <bindings-and-"
+"events>` to events with the :meth:`!bind` method don't get handled even when "
+"the appropriate key is pressed."
 msgstr ""
 "Sıkça duyulan bir şikayet, :meth:`bind` yöntemiyle olaylara bağlanan "
 "işleyicilerin uygun tuşa basıldığında bile işlenmemesidir."
 
-#: faq/gui.rst:76
+#: faq/gui.rst:77
 msgid ""
 "The most common cause is that the widget to which the binding applies "
 "doesn't have \"keyboard focus\".  Check out the Tk documentation for the "

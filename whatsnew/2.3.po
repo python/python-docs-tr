@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -220,10 +220,10 @@ msgstr ""
 #: whatsnew/2.3.rst:220
 msgid ""
 "The idea of generators comes from other programming languages, especially "
-"Icon (https://www.cs.arizona.edu/icon/), where the idea of generators is "
+"Icon (https://www2.cs.arizona.edu/icon/), where the idea of generators is "
 "central.  In Icon, every expression and function call behaves like a "
 "generator.  One example from \"An Overview of the Icon Programming "
-"Language\" at https://www.cs.arizona.edu/icon/docs/ipd266.htm gives an idea "
+"Language\" at https://www2.cs.arizona.edu/icon/docs/ipd266.htm gives an idea "
 "of what this looks like::"
 msgstr ""
 
@@ -1438,7 +1438,7 @@ msgstr ""
 #: whatsnew/2.3.rst:1334
 msgid ""
 "The IDLE integrated development environment has been updated using the code "
-"from the IDLEfork project (http://idlefork.sourceforge.net).  The most "
+"from the IDLEfork project (https://idlefork.sourceforge.net).  The most "
 "notable feature is that the code being developed is now executed in a "
 "subprocess, meaning that there's no longer any need for manual ``reload()`` "
 "operations. IDLE's core code has been incorporated into the standard library "
@@ -1634,7 +1634,7 @@ msgstr ""
 
 #: whatsnew/2.3.rst:1477
 msgid ""
-"The value of the C :const:`PYTHON_API_VERSION` macro is now exposed at the "
+"The value of the C :c:macro:`PYTHON_API_VERSION` macro is now exposed at the "
 "Python level as ``sys.api_version``.  The current exception can be cleared "
 "by calling the new :func:`sys.exc_clear` function."
 msgstr ""
@@ -2003,8 +2003,8 @@ msgstr ""
 
 #: whatsnew/2.3.rst:1849
 msgid ""
-"To allocate and free Python objects, use the \"object\" family :c:func:"
-"`PyObject_New`, :c:func:`PyObject_NewVar`, and :c:func:`PyObject_Del`."
+"To allocate and free Python objects, use the \"object\" family :c:macro:"
+"`PyObject_New`, :c:macro:`PyObject_NewVar`, and :c:func:`PyObject_Del`."
 msgstr ""
 
 #: whatsnew/2.3.rst:1852
@@ -2061,10 +2061,11 @@ msgstr ""
 
 #: whatsnew/2.3.rst:1889
 msgid ""
-"The :c:macro:`DL_EXPORT` and :c:macro:`DL_IMPORT` macros are now deprecated. "
-"Initialization functions for Python extension modules should now be declared "
-"using the new macro :c:macro:`PyMODINIT_FUNC`, while the Python core will "
-"generally use the :c:macro:`PyAPI_FUNC` and :c:macro:`PyAPI_DATA` macros."
+"The :c:macro:`!DL_EXPORT` and :c:macro:`!DL_IMPORT` macros are now "
+"deprecated. Initialization functions for Python extension modules should now "
+"be declared using the new macro :c:macro:`PyMODINIT_FUNC`, while the Python "
+"core will generally use the :c:macro:`PyAPI_FUNC` and :c:macro:`PyAPI_DATA` "
+"macros."
 msgstr ""
 
 #: whatsnew/2.3.rst:1894
@@ -2078,13 +2079,13 @@ msgstr ""
 
 #: whatsnew/2.3.rst:1900
 msgid ""
-"The :c:func:`PyArg_NoArgs` macro is now deprecated, and code that uses it "
+"The :c:func:`!PyArg_NoArgs` macro is now deprecated, and code that uses it "
 "should be changed.  For Python 2.2 and later, the method definition table "
-"can specify the :const:`METH_NOARGS` flag, signalling that there are no "
+"can specify the :c:macro:`METH_NOARGS` flag, signalling that there are no "
 "arguments, and the argument checking can then be removed.  If compatibility "
 "with pre-2.2 versions of Python is important, the code could use "
 "``PyArg_ParseTuple(args, \"\")`` instead, but this will be slower than "
-"using :const:`METH_NOARGS`."
+"using :c:macro:`METH_NOARGS`."
 msgstr ""
 
 #: whatsnew/2.3.rst:1907
@@ -2112,8 +2113,8 @@ msgstr ""
 #: whatsnew/2.3.rst:1920
 msgid ""
 "It's now possible to define class and static methods for a C extension type "
-"by setting either the :const:`METH_CLASS` or :const:`METH_STATIC` flags in a "
-"method's :c:type:`PyMethodDef` structure."
+"by setting either the :c:macro:`METH_CLASS` or :c:macro:`METH_STATIC` flags "
+"in a method's :c:type:`PyMethodDef` structure."
 msgstr ""
 
 #: whatsnew/2.3.rst:1924
@@ -2343,4 +2344,12 @@ msgid ""
 "Löwis, Andrew MacIntyre, Lalo Martins, Chad Netzer, Gustavo Niemeyer, Neal "
 "Norwitz, Hans Nowak, Chris Reedy, Francesco Ricciardi, Vinay Sajip, Neil "
 "Schemenauer, Roman Suzi, Jason Tishler, Just van Rossum."
+msgstr ""
+
+#: whatsnew/2.3.rst:371
+msgid "universal newlines"
+msgstr ""
+
+#: whatsnew/2.3.rst:371
+msgid "What's new"
 msgstr ""

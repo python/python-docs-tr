@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -67,9 +67,9 @@ msgstr ""
 #: library/pprint.rst:47
 msgid ""
 "*stream* (default ``sys.stdout``) is a :term:`file-like object` to which the "
-"output will be written by calling its :meth:`write` method. If both *stream* "
-"and ``sys.stdout`` are ``None``, then :meth:`~PrettyPrinter.pprint` silently "
-"returns."
+"output will be written by calling its :meth:`!write` method. If both "
+"*stream* and ``sys.stdout`` are ``None``, then :meth:`~PrettyPrinter.pprint` "
+"silently returns."
 msgstr ""
 
 #: library/pprint.rst:52
@@ -284,4 +284,20 @@ msgstr ""
 msgid ""
 "Additionally, maximum character *width* can be suggested. If a long object "
 "cannot be split, the specified width will be exceeded::"
+msgstr ""
+
+#: library/pprint.rst:39
+msgid "..."
+msgstr ""
+
+#: library/pprint.rst:39
+msgid "placeholder"
+msgstr ""
+
+#: library/pprint.rst:217
+msgid "built-in function"
+msgstr ""
+
+#: library/pprint.rst:217
+msgid "eval"
 msgstr ""
