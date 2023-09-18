@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -537,7 +537,7 @@ msgstr ""
 #: library/mailbox.rst:688 library/mailbox.rst:739
 msgid ""
 "Three locking mechanisms are used---dot locking and, if available, the :c:"
-"func:`flock` and :c:func:`lockf` system calls."
+"func:`!flock` and :c:func:`!lockf` system calls."
 msgstr ""
 
 #: library/mailbox.rst:486
@@ -662,8 +662,8 @@ msgstr ""
 #: library/mailbox.rst:590
 msgid ""
 "Three locking mechanisms are used---dot locking and, if available, the :c:"
-"func:`flock` and :c:func:`lockf` system calls. For MH mailboxes, locking the "
-"mailbox means locking the :file:`.mh_sequences` file and, only for the "
+"func:`!flock` and :c:func:`!lockf` system calls. For MH mailboxes, locking "
+"the mailbox means locking the :file:`.mh_sequences` file and, only for the "
 "duration of any operations that affect them, locking individual message "
 "files."
 msgstr ""

@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 22:19+0000\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -111,9 +111,9 @@ msgstr ""
 
 #: library/sched.rst:118
 msgid ""
-"Run all scheduled events. This method will wait  (using the :func:"
-"`delayfunc` function passed to the constructor) for the next event, then "
-"execute it and so on until there are no more scheduled events."
+"Run all scheduled events. This method will wait  (using the *delayfunc* "
+"function passed to the constructor) for the next event, then execute it and "
+"so on until there are no more scheduled events."
 msgstr ""
 
 #: library/sched.rst:122
@@ -148,4 +148,8 @@ msgid ""
 "Read-only attribute returning a list of upcoming events in the order they "
 "will be run.  Each event is shown as a :term:`named tuple` with the "
 "following fields:  time, priority, action, argument, kwargs."
+msgstr ""
+
+#: library/sched.rst:11
+msgid "event scheduling"
 msgstr ""

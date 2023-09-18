@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 22:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -33,7 +33,7 @@ msgstr ""
 #: library/statistics.rst:24
 msgid ""
 "The module is not intended to be a competitor to third-party libraries such "
-"as `NumPy <https://numpy.org>`_, `SciPy <https://www.scipy.org/>`_, or "
+"as `NumPy <https://numpy.org>`_, `SciPy <https://scipy.org/>`_, or "
 "proprietary full-featured statistics packages aimed at professional "
 "statisticians such as Minitab, SAS and Matlab. It is aimed at the level of "
 "graphing and scientific calculators."
@@ -223,7 +223,7 @@ msgid ":func:`correlation`"
 msgstr ""
 
 #: library/statistics.rst:107
-msgid "Pearson's correlation coefficient for two variables."
+msgid "Pearson and Spearman's correlation coefficients."
 msgstr ""
 
 #: library/statistics.rst:108
@@ -575,7 +575,7 @@ msgstr ""
 msgid "Raises :exc:`StatisticsError` if *data* is empty."
 msgstr ""
 
-#: library/statistics.rst:531 library/statistics.rst:663
+#: library/statistics.rst:531 library/statistics.rst:635
 msgid "Examples:"
 msgstr ""
 
@@ -743,18 +743,42 @@ msgid ""
 "Return the `Pearson's correlation coefficient <https://en.wikipedia.org/wiki/"
 "Pearson_correlation_coefficient>`_ for two inputs. Pearson's correlation "
 "coefficient *r* takes values between -1 and +1. It measures the strength and "
-"direction of the linear relationship, where +1 means very strong, positive "
-"linear relationship, -1 very strong, negative linear relationship, and 0 no "
-"linear relationship."
+"direction of a linear relationship."
 msgstr ""
 
-#: library/statistics.rst:660
+#: library/statistics.rst:659
+msgid ""
+"If *method* is \"ranked\", computes `Spearman's rank correlation coefficient "
+"<https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient>`_ "
+"for two inputs. The data is replaced by ranks.  Ties are averaged so that "
+"equal values receive the same rank.  The resulting coefficient measures the "
+"strength of a monotonic relationship."
+msgstr ""
+
+#: library/statistics.rst:665
+msgid ""
+"Spearman's correlation coefficient is appropriate for ordinal data or for "
+"continuous data that doesn't meet the linear proportion requirement for "
+"Pearson's correlation coefficient."
+msgstr ""
+
+#: library/statistics.rst:669
 msgid ""
 "Both inputs must be of the same length (no less than two), and need not to "
 "be constant, otherwise :exc:`StatisticsError` is raised."
 msgstr ""
 
-#: library/statistics.rst:678
+#: library/statistics.rst:672
+msgid ""
+"Example with `Kepler's laws of planetary motion <https://en.wikipedia.org/"
+"wiki/Kepler's_laws_of_planetary_motion>`_:"
+msgstr ""
+
+#: library/statistics.rst:699
+msgid "Added support for Spearman's rank correlation coefficient."
+msgstr ""
+
+#: library/statistics.rst:704
 msgid ""
 "Return the slope and intercept of `simple linear regression <https://en."
 "wikipedia.org/wiki/Simple_linear_regression>`_ parameters estimated using "
@@ -763,11 +787,11 @@ msgid ""
 "this linear function:"
 msgstr ""
 
-#: library/statistics.rst:684
+#: library/statistics.rst:710
 msgid "*y = slope \\* x + intercept + noise*"
 msgstr ""
 
-#: library/statistics.rst:686
+#: library/statistics.rst:712
 msgid ""
 "where ``slope`` and ``intercept`` are the regression parameters that are "
 "estimated, and ``noise`` represents the variability of the data that was not "
@@ -775,14 +799,14 @@ msgid ""
 "predicted and actual values of the dependent variable)."
 msgstr ""
 
-#: library/statistics.rst:692
+#: library/statistics.rst:718
 msgid ""
 "Both inputs must be of the same length (no less than two), and the "
 "independent variable *x* cannot be constant; otherwise a :exc:"
 "`StatisticsError` is raised."
 msgstr ""
 
-#: library/statistics.rst:696
+#: library/statistics.rst:722
 msgid ""
 "For example, we can use the `release dates of the Monty Python films "
 "<https://en.wikipedia.org/wiki/Monty_Python#Films>`_ to predict the "
@@ -790,7 +814,7 @@ msgid ""
 "2019 assuming that they had kept the pace."
 msgstr ""
 
-#: library/statistics.rst:710
+#: library/statistics.rst:736
 msgid ""
 "If *proportional* is true, the independent variable *x* and the dependent "
 "variable *y* are assumed to be directly proportional. The data is fit to a "
@@ -798,31 +822,31 @@ msgid ""
 "the underlying linear function simplifies to:"
 msgstr ""
 
-#: library/statistics.rst:716
+#: library/statistics.rst:742
 msgid "*y = slope \\* x + noise*"
 msgstr ""
 
-#: library/statistics.rst:720
+#: library/statistics.rst:746
 msgid "Added support for *proportional*."
 msgstr ""
 
-#: library/statistics.rst:724
+#: library/statistics.rst:750
 msgid "Exceptions"
 msgstr ""
 
-#: library/statistics.rst:726
+#: library/statistics.rst:752
 msgid "A single exception is defined:"
 msgstr ""
 
-#: library/statistics.rst:730
+#: library/statistics.rst:756
 msgid "Subclass of :exc:`ValueError` for statistics-related exceptions."
 msgstr ""
 
-#: library/statistics.rst:734
+#: library/statistics.rst:760
 msgid ":class:`NormalDist` objects"
 msgstr ""
 
-#: library/statistics.rst:736
+#: library/statistics.rst:762
 msgid ""
 ":class:`NormalDist` is a tool for creating and manipulating normal "
 "distributions of a `random variable <http://www.stat.yale.edu/"
@@ -830,62 +854,62 @@ msgid ""
 "standard deviation of data measurements as a single entity."
 msgstr ""
 
-#: library/statistics.rst:742
+#: library/statistics.rst:768
 msgid ""
 "Normal distributions arise from the `Central Limit Theorem <https://en."
 "wikipedia.org/wiki/Central_limit_theorem>`_ and have a wide range of "
 "applications in statistics."
 msgstr ""
 
-#: library/statistics.rst:748
+#: library/statistics.rst:774
 msgid ""
 "Returns a new *NormalDist* object where *mu* represents the `arithmetic mean "
 "<https://en.wikipedia.org/wiki/Arithmetic_mean>`_ and *sigma* represents the "
 "`standard deviation <https://en.wikipedia.org/wiki/Standard_deviation>`_."
 msgstr ""
 
-#: library/statistics.rst:753
+#: library/statistics.rst:779
 msgid "If *sigma* is negative, raises :exc:`StatisticsError`."
 msgstr ""
 
-#: library/statistics.rst:757
+#: library/statistics.rst:783
 msgid ""
 "A read-only property for the `arithmetic mean <https://en.wikipedia.org/wiki/"
 "Arithmetic_mean>`_ of a normal distribution."
 msgstr ""
 
-#: library/statistics.rst:763
+#: library/statistics.rst:789
 msgid ""
 "A read-only property for the `median <https://en.wikipedia.org/wiki/"
 "Median>`_ of a normal distribution."
 msgstr ""
 
-#: library/statistics.rst:769
+#: library/statistics.rst:795
 msgid ""
 "A read-only property for the `mode <https://en.wikipedia.org/wiki/"
 "Mode_(statistics)>`_ of a normal distribution."
 msgstr ""
 
-#: library/statistics.rst:775
+#: library/statistics.rst:801
 msgid ""
 "A read-only property for the `standard deviation <https://en.wikipedia.org/"
 "wiki/Standard_deviation>`_ of a normal distribution."
 msgstr ""
 
-#: library/statistics.rst:781
+#: library/statistics.rst:807
 msgid ""
 "A read-only property for the `variance <https://en.wikipedia.org/wiki/"
 "Variance>`_ of a normal distribution. Equal to the square of the standard "
 "deviation."
 msgstr ""
 
-#: library/statistics.rst:787
+#: library/statistics.rst:813
 msgid ""
 "Makes a normal distribution instance with *mu* and *sigma* parameters "
 "estimated from the *data* using :func:`fmean` and :func:`stdev`."
 msgstr ""
 
-#: library/statistics.rst:790
+#: library/statistics.rst:816
 msgid ""
 "The *data* can be any :term:`iterable` and should consist of values that can "
 "be converted to type :class:`float`.  If *data* does not contain at least "
@@ -894,20 +918,20 @@ msgid ""
 "dispersion."
 msgstr ""
 
-#: library/statistics.rst:798
+#: library/statistics.rst:824
 msgid ""
 "Generates *n* random samples for a given mean and standard deviation. "
 "Returns a :class:`list` of :class:`float` values."
 msgstr ""
 
-#: library/statistics.rst:801
+#: library/statistics.rst:827
 msgid ""
 "If *seed* is given, creates a new instance of the underlying random number "
 "generator.  This is useful for creating reproducible results, even in a "
 "multi-threading context."
 msgstr ""
 
-#: library/statistics.rst:807
+#: library/statistics.rst:833
 msgid ""
 "Using a `probability density function (pdf) <https://en.wikipedia.org/wiki/"
 "Probability_density_function>`_, compute the relative likelihood that a "
@@ -915,7 +939,7 @@ msgid ""
 "the limit of the ratio ``P(x <= X < x+dx) / dx`` as *dx* approaches zero."
 msgstr ""
 
-#: library/statistics.rst:813
+#: library/statistics.rst:839
 msgid ""
 "The relative likelihood is computed as the probability of a sample occurring "
 "in a narrow range divided by the width of the range (hence the word "
@@ -923,7 +947,7 @@ msgid ""
 "can be greater than ``1.0``."
 msgstr ""
 
-#: library/statistics.rst:820
+#: library/statistics.rst:846
 msgid ""
 "Using a `cumulative distribution function (cdf) <https://en.wikipedia.org/"
 "wiki/Cumulative_distribution_function>`_, compute the probability that a "
@@ -931,7 +955,7 @@ msgid ""
 "is written ``P(X <= x)``."
 msgstr ""
 
-#: library/statistics.rst:827
+#: library/statistics.rst:853
 msgid ""
 "Compute the inverse cumulative distribution function, also known as the "
 "`quantile function <https://en.wikipedia.org/wiki/Quantile_function>`_ or "
@@ -940,34 +964,34 @@ msgid ""
 "function.  Mathematically, it is written ``x : P(X <= x) = p``."
 msgstr ""
 
-#: library/statistics.rst:833
+#: library/statistics.rst:859
 msgid ""
 "Finds the value *x* of the random variable *X* such that the probability of "
 "the variable being less than or equal to that value equals the given "
 "probability *p*."
 msgstr ""
 
-#: library/statistics.rst:839
+#: library/statistics.rst:865
 msgid ""
 "Measures the agreement between two normal probability distributions. Returns "
 "a value between 0.0 and 1.0 giving `the overlapping area for the two "
 "probability density functions <https://www.rasch.org/rmt/rmt101r.htm>`_."
 msgstr ""
 
-#: library/statistics.rst:846
+#: library/statistics.rst:872
 msgid ""
 "Divide the normal distribution into *n* continuous intervals with equal "
 "probability.  Returns a list of (n - 1) cut points separating the intervals."
 msgstr ""
 
-#: library/statistics.rst:850
+#: library/statistics.rst:876
 msgid ""
 "Set *n* to 4 for quartiles (the default).  Set *n* to 10 for deciles. Set "
 "*n* to 100 for percentiles which gives the 99 cuts points that separate the "
 "normal distribution into 100 equal sized groups."
 msgstr ""
 
-#: library/statistics.rst:856
+#: library/statistics.rst:882
 msgid ""
 "Compute the `Standard Score <https://www.statisticshowto.com/probability-and-"
 "statistics/z-score/>`_ describing *x* in terms of the number of standard "
@@ -975,20 +999,20 @@ msgid ""
 "mean) / stdev``."
 msgstr ""
 
-#: library/statistics.rst:864
+#: library/statistics.rst:890
 msgid ""
 "Instances of :class:`NormalDist` support addition, subtraction, "
 "multiplication and division by a constant.  These operations are used for "
 "translation and scaling.  For example:"
 msgstr ""
 
-#: library/statistics.rst:874
+#: library/statistics.rst:900
 msgid ""
 "Dividing a constant by an instance of :class:`NormalDist` is not supported "
 "because the result wouldn't be normally distributed."
 msgstr ""
 
-#: library/statistics.rst:877
+#: library/statistics.rst:903
 msgid ""
 "Since normal distributions arise from additive effects of independent "
 "variables, it is possible to `add and subtract two independent normally "
@@ -997,15 +1021,19 @@ msgid ""
 "class:`NormalDist`.  For example:"
 msgstr ""
 
-#: library/statistics.rst:897
+#: library/statistics.rst:923
 msgid ":class:`NormalDist` Examples and Recipes"
 msgstr ""
 
-#: library/statistics.rst:899
+#: library/statistics.rst:927
+msgid "Classic probability problems"
+msgstr ""
+
+#: library/statistics.rst:929
 msgid ":class:`NormalDist` readily solves classic probability problems."
 msgstr ""
 
-#: library/statistics.rst:901
+#: library/statistics.rst:931
 msgid ""
 "For example, given `historical data for SAT exams <https://nces.ed.gov/"
 "programs/digest/d17/tables/dt17_226.40.asp>`_ showing that scores are "
@@ -1014,27 +1042,35 @@ msgid ""
 "after rounding to the nearest whole number:"
 msgstr ""
 
-#: library/statistics.rst:914
+#: library/statistics.rst:944
 msgid ""
 "Find the `quartiles <https://en.wikipedia.org/wiki/Quartile>`_ and `deciles "
 "<https://en.wikipedia.org/wiki/Decile>`_ for the SAT scores:"
 msgstr ""
 
-#: library/statistics.rst:924
+#: library/statistics.rst:956
+msgid "Monte Carlo inputs for simulations"
+msgstr ""
+
+#: library/statistics.rst:958
 msgid ""
 "To estimate the distribution for a model than isn't easy to solve "
 "analytically, :class:`NormalDist` can generate input samples for a `Monte "
 "Carlo simulation <https://en.wikipedia.org/wiki/Monte_Carlo_method>`_:"
 msgstr ""
 
-#: library/statistics.rst:940
+#: library/statistics.rst:975
+msgid "Approximating binomial distributions"
+msgstr ""
+
+#: library/statistics.rst:977
 msgid ""
 "Normal distributions can be used to approximate `Binomial distributions "
 "<https://mathworld.wolfram.com/BinomialDistribution.html>`_ when the sample "
 "size is large and when the probability of a successful trial is near 50%."
 msgstr ""
 
-#: library/statistics.rst:945
+#: library/statistics.rst:982
 msgid ""
 "For example, an open source conference has 750 attendees and two rooms with "
 "a 500 person capacity.  There is a talk about Python and another about Ruby. "
@@ -1043,11 +1079,15 @@ msgid ""
 "probability that the Python room will stay within its capacity limits?"
 msgstr ""
 
-#: library/statistics.rst:976
+#: library/statistics.rst:1016
+msgid "Naive bayesian classifier"
+msgstr ""
+
+#: library/statistics.rst:1018
 msgid "Normal distributions commonly arise in machine learning problems."
 msgstr ""
 
-#: library/statistics.rst:978
+#: library/statistics.rst:1020
 msgid ""
 "Wikipedia has a `nice example of a Naive Bayesian Classifier <https://en."
 "wikipedia.org/wiki/Naive_Bayes_classifier#Person_classification>`_. The "
@@ -1055,20 +1095,20 @@ msgid ""
 "distributed features including height, weight, and foot size."
 msgstr ""
 
-#: library/statistics.rst:983
+#: library/statistics.rst:1025
 msgid ""
 "We're given a training dataset with measurements for eight people.  The "
 "measurements are assumed to be normally distributed, so we summarize the "
 "data with :class:`NormalDist`:"
 msgstr ""
 
-#: library/statistics.rst:996
+#: library/statistics.rst:1038
 msgid ""
 "Next, we encounter a new person whose feature measurements are known but "
 "whose gender is unknown:"
 msgstr ""
 
-#: library/statistics.rst:1005
+#: library/statistics.rst:1047
 msgid ""
 "Starting with a 50% `prior probability <https://en.wikipedia.org/wiki/"
 "Prior_probability>`_ of being male or female, we compute the posterior as "
@@ -1076,9 +1116,45 @@ msgid ""
 "given the gender:"
 msgstr ""
 
-#: library/statistics.rst:1020
+#: library/statistics.rst:1062
 msgid ""
 "The final prediction goes to the largest posterior. This is known as the "
 "`maximum a posteriori <https://en.wikipedia.org/wiki/"
 "Maximum_a_posteriori_estimation>`_ or MAP:"
+msgstr ""
+
+#: library/statistics.rst:1073
+msgid "Kernel density estimation"
+msgstr ""
+
+#: library/statistics.rst:1075
+msgid ""
+"It is possible to estimate a continuous probability density function from a "
+"fixed number of discrete samples."
+msgstr ""
+
+#: library/statistics.rst:1078
+msgid ""
+"The basic idea is to smooth the data using `a kernel function such as a "
+"normal distribution, triangular distribution, or uniform distribution "
+"<https://en.wikipedia.org/wiki/"
+"Kernel_(statistics)#Kernel_functions_in_common_use>`_. The degree of "
+"smoothing is controlled by a single parameter, ``h``, representing the "
+"variance of the kernel function."
+msgstr ""
+
+#: library/statistics.rst:1097
+msgid ""
+"`Wikipedia has an example <https://en.wikipedia.org/wiki/"
+"Kernel_density_estimation#Example>`_ where we can use the ``kde_normal()`` "
+"recipe to generate and plot a probability density function estimated from a "
+"small sample:"
+msgstr ""
+
+#: library/statistics.rst:1109
+msgid "The points in ``xarr`` and ``yarr`` can be used to make a PDF plot:"
+msgstr ""
+
+#: library/statistics.rst:-1
+msgid "Scatter plot of the estimated probability density function."
 msgstr ""

@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -41,18 +41,19 @@ msgid ""
 "An object frequently used to represent the absence of a value, as when "
 "default arguments are not passed to a function. Assignments to ``None`` are "
 "illegal and raise a :exc:`SyntaxError`. ``None`` is the sole instance of "
-"the :data:`NoneType` type."
+"the :data:`~types.NoneType` type."
 msgstr ""
 
 #: library/constants.rst:30
 msgid ""
 "A special value which should be returned by the binary special methods (e."
-"g. :meth:`__eq__`, :meth:`__lt__`, :meth:`__add__`, :meth:`__rsub__`, etc.) "
-"to indicate that the operation is not implemented with respect to the other "
-"type; may be returned by the in-place binary special methods (e.g. :meth:"
-"`__imul__`, :meth:`__iand__`, etc.) for the same purpose. It should not be "
-"evaluated in a boolean context. ``NotImplemented`` is the sole instance of "
-"the :data:`types.NotImplementedType` type."
+"g. :meth:`~object.__eq__`, :meth:`~object.__lt__`, :meth:`~object.__add__`, :"
+"meth:`~object.__rsub__`, etc.) to indicate that the operation is not "
+"implemented with respect to the other type; may be returned by the in-place "
+"binary special methods (e.g. :meth:`~object.__imul__`, :meth:`~object."
+"__iand__`, etc.) for the same purpose. It should not be evaluated in a "
+"boolean context. ``NotImplemented`` is the sole instance of the :data:`types."
+"NotImplementedType` type."
 msgstr ""
 
 #: library/constants.rst:40
@@ -134,4 +135,12 @@ msgid ""
 "Object that when printed, prints the message \"Type license() to see the "
 "full license text\", and when called, displays the full license text in a "
 "pager-like fashion (one screen at a time)."
+msgstr ""
+
+#: library/constants.rst:61
+msgid "..."
+msgstr ""
+
+#: library/constants.rst:61
+msgid "ellipsis literal"
 msgstr ""

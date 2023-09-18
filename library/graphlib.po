@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-01 00:18+0000\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -138,8 +138,8 @@ msgstr ""
 
 #: library/graphlib.rst:118
 msgid ""
-"The :meth:`~TopologicalSorter.__bool__` method of this class defers to this "
-"function, so instead of::"
+"The :meth:`~object.__bool__` method of this class defers to this function, "
+"so instead of::"
 msgstr ""
 
 #: library/graphlib.rst:124
@@ -221,7 +221,7 @@ msgstr ""
 #: library/graphlib.rst:207
 msgid ""
 "The detected cycle can be accessed via the second element in the :attr:"
-"`~CycleError.args` attribute of the exception instance and consists in a "
+"`~BaseException.args` attribute of the exception instance and consists in a "
 "list of nodes, such that each node is, in the graph, an immediate "
 "predecessor of the next node in the list. In the reported list, the first "
 "and the last node will be the same, to make it clear that it is cyclic."

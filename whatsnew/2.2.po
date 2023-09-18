@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -702,10 +702,10 @@ msgstr ""
 #: whatsnew/2.2.rst:634
 msgid ""
 "The idea of generators comes from other programming languages, especially "
-"Icon (https://www.cs.arizona.edu/icon/), where the idea of generators is "
+"Icon (https://www2.cs.arizona.edu/icon/), where the idea of generators is "
 "central.  In Icon, every expression and function call behaves like a "
 "generator.  One example from \"An Overview of the Icon Programming "
-"Language\" at https://www.cs.arizona.edu/icon/docs/ipd266.htm gives an idea "
+"Language\" at https://www2.cs.arizona.edu/icon/docs/ipd266.htm gives an idea "
 "of what this looks like::"
 msgstr ""
 
@@ -1261,7 +1261,7 @@ msgid ""
 msgstr ""
 
 #: whatsnew/2.2.rst:1081
-msgid "Rename :c:func:`Py_TPFLAGS_GC` to :c:func:`PyTPFLAGS_HAVE_GC`."
+msgid "Rename :c:macro:`!Py_TPFLAGS_GC` to :c:macro:`Py_TPFLAGS_HAVE_GC`."
 msgstr ""
 
 #: whatsnew/2.2.rst:1084
@@ -1273,21 +1273,19 @@ msgstr ""
 msgid "objects, and :c:func:`PyObject_GC_Del` to deallocate them."
 msgstr ""
 
-#: whatsnew/2.2.rst:1087
-msgid "Rename :c:func:`PyObject_GC_Init` to :c:func:`PyObject_GC_Track` and"
-msgstr ""
-
-#: whatsnew/2.2.rst:1087
-msgid ":c:func:`PyObject_GC_Fini` to :c:func:`PyObject_GC_UnTrack`."
+#: whatsnew/2.2.rst:1086
+msgid ""
+"Rename :c:func:`!PyObject_GC_Init` to :c:func:`PyObject_GC_Track` and :c:"
+"func:`!PyObject_GC_Fini` to :c:func:`PyObject_GC_UnTrack`."
 msgstr ""
 
 #: whatsnew/2.2.rst:1089
-msgid "Remove :c:func:`PyGC_HEAD_SIZE` from object size calculations."
+msgid "Remove :c:macro:`!PyGC_HEAD_SIZE` from object size calculations."
 msgstr ""
 
 #: whatsnew/2.2.rst:1091
 msgid ""
-"Remove calls to :c:func:`PyObject_AS_GC` and :c:func:`PyObject_FROM_GC`."
+"Remove calls to :c:func:`!PyObject_AS_GC` and :c:func:`!PyObject_FROM_GC`."
 msgstr ""
 
 #: whatsnew/2.2.rst:1093
@@ -1313,11 +1311,11 @@ msgstr ""
 
 #: whatsnew/2.2.rst:1108
 msgid ""
-"Two new flags :const:`METH_NOARGS` and :const:`METH_O` are available in "
+"Two new flags :c:macro:`METH_NOARGS` and :c:macro:`METH_O` are available in "
 "method definition tables to simplify implementation of methods with no "
 "arguments or a single untyped argument. Calling such methods is more "
-"efficient than calling a corresponding method that uses :const:"
-"`METH_VARARGS`.  Also, the old :const:`METH_OLDARGS` style of writing C "
+"efficient than calling a corresponding method that uses :c:macro:"
+"`METH_VARARGS`.  Also, the old :c:macro:`!METH_OLDARGS` style of writing C "
 "methods is  now officially deprecated."
 msgstr ""
 
@@ -1457,7 +1455,7 @@ msgid ""
 "operator, but these features were rarely used and therefore buggy.  The :"
 "meth:`tolist` method and the :attr:`start`, :attr:`stop`, and :attr:`step` "
 "attributes are also being deprecated.  At the C level, the fourth argument "
-"to the :c:func:`PyRange_New` function, ``repeat``, has also been deprecated."
+"to the :c:func:`!PyRange_New` function, ``repeat``, has also been deprecated."
 msgstr ""
 
 #: whatsnew/2.2.rst:1224

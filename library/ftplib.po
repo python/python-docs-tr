@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-01 00:18+0000\n"
+"POT-Creation-Date: 2023-09-18 22:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -78,11 +78,11 @@ msgstr ""
 msgid "Support for the :keyword:`with` statement was added."
 msgstr ""
 
-#: library/ftplib.rst:105 library/ftplib.rst:214
+#: library/ftplib.rst:102 library/ftplib.rst:207
 msgid "*source_address* parameter was added."
 msgstr ""
 
-#: library/ftplib.rst:120
+#: library/ftplib.rst:110
 msgid ""
 "If the *timeout* parameter is set to be zero, it will raise a :class:"
 "`ValueError` to prevent the creation of a non-blocking socket. The "
@@ -90,7 +90,7 @@ msgid ""
 "UTF-8 to follow :rfc:`2640`."
 msgstr ""
 
-#: library/ftplib.rst:90
+#: library/ftplib.rst:91
 msgid ""
 "A :class:`FTP` subclass which adds TLS support to FTP as described in :rfc:"
 "`4217`. Connect as usual to port 21 implicitly securing the FTP control "
@@ -102,54 +102,44 @@ msgid ""
 "best practices."
 msgstr ""
 
-#: library/ftplib.rst:99
-msgid ""
-"*keyfile* and *certfile* are a legacy alternative to *context* -- they can "
-"point to PEM-formatted private key and certificate chain files "
-"(respectively) for the SSL connection."
-msgstr ""
-
-#: library/ftplib.rst:108
+#: library/ftplib.rst:105
 msgid ""
 "The class now supports hostname check with :attr:`ssl.SSLContext."
-"check_hostname` and *Server Name Indication* (see :data:`ssl.HAS_SNI`)."
+"check_hostname` and *Server Name Indication* (see :const:`ssl.HAS_SNI`)."
 msgstr ""
 
-#: library/ftplib.rst:115
-msgid ""
-"*keyfile* and *certfile* are deprecated in favor of *context*. Please use :"
-"meth:`ssl.SSLContext.load_cert_chain` instead, or let :func:`ssl."
-"create_default_context` select the system's trusted CA certificates for you."
+#: library/ftplib.rst:116
+msgid "The deprecated *keyfile* and *certfile* parameters have been removed."
 msgstr ""
 
-#: library/ftplib.rst:126
+#: library/ftplib.rst:119
 msgid "Here's a sample session using the :class:`FTP_TLS` class::"
 msgstr ""
 
-#: library/ftplib.rst:139
+#: library/ftplib.rst:132
 msgid "Exception raised when an unexpected reply is received from the server."
 msgstr ""
 
-#: library/ftplib.rst:144
+#: library/ftplib.rst:137
 msgid ""
 "Exception raised when an error code signifying a temporary error (response "
 "codes in the range 400--499) is received."
 msgstr ""
 
-#: library/ftplib.rst:150
+#: library/ftplib.rst:143
 msgid ""
 "Exception raised when an error code signifying a permanent error (response "
 "codes in the range 500--599) is received."
 msgstr ""
 
-#: library/ftplib.rst:156
+#: library/ftplib.rst:149
 msgid ""
 "Exception raised when a reply is received from the server that does not fit "
 "the response specifications of the File Transfer Protocol, i.e. begin with a "
 "digit in the range 1--5."
 msgstr ""
 
-#: library/ftplib.rst:163
+#: library/ftplib.rst:156
 msgid ""
 "The set of all exceptions (as a tuple) that methods of :class:`FTP` "
 "instances may raise as a result of problems with the FTP connection (as "
@@ -157,22 +147,22 @@ msgid ""
 "four exceptions listed above as well as :exc:`OSError` and :exc:`EOFError`."
 msgstr ""
 
-#: library/ftplib.rst:173
+#: library/ftplib.rst:166
 msgid "Module :mod:`netrc`"
 msgstr ""
 
-#: library/ftplib.rst:172
+#: library/ftplib.rst:165
 msgid ""
 "Parser for the :file:`.netrc` file format.  The file :file:`.netrc` is "
 "typically used by FTP clients to load user authentication information before "
 "prompting the user."
 msgstr ""
 
-#: library/ftplib.rst:180
+#: library/ftplib.rst:173
 msgid "FTP Objects"
 msgstr ""
 
-#: library/ftplib.rst:182
+#: library/ftplib.rst:175
 msgid ""
 "Several methods are available in two flavors: one for handling text files "
 "and another for binary files.  These are named for the command which is used "
@@ -180,11 +170,11 @@ msgid ""
 "version."
 msgstr ""
 
-#: library/ftplib.rst:186
+#: library/ftplib.rst:179
 msgid ":class:`FTP` instances have the following methods:"
 msgstr ""
 
-#: library/ftplib.rst:191
+#: library/ftplib.rst:184
 msgid ""
 "Set the instance's debugging level.  This controls the amount of debugging "
 "output printed.  The default, ``0``, produces no debugging output.  A value "
@@ -194,7 +184,7 @@ msgid ""
 "connection."
 msgstr ""
 
-#: library/ftplib.rst:200
+#: library/ftplib.rst:193
 msgid ""
 "Connect to the given host and port.  The default port number is ``21``, as "
 "specified by the FTP protocol specification.  It is rarely needed to specify "
@@ -207,20 +197,20 @@ msgid ""
 "port)`` for the socket to bind to as its source address before connecting."
 msgstr ""
 
-#: library/ftplib.rst:13
+#: library/ftplib.rst:216
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``ftplib.connect`` with arguments "
 "``self``, ``host``, ``port``."
 msgstr ""
 
-#: library/ftplib.rst:220
+#: library/ftplib.rst:213
 msgid ""
 "Return the welcome message sent by the server in reply to the initial "
 "connection.  (This message sometimes contains disclaimers or help "
 "information that may be relevant to the user.)"
 msgstr ""
 
-#: library/ftplib.rst:227
+#: library/ftplib.rst:220
 msgid ""
 "Log in as the given *user*.  The *passwd* and *acct* parameters are optional "
 "and default to the empty string.  If no *user* is specified, it defaults to "
@@ -232,31 +222,31 @@ msgid ""
 "parameter supplies \"accounting information\"; few systems implement this."
 msgstr ""
 
-#: library/ftplib.rst:239
+#: library/ftplib.rst:232
 msgid ""
 "Abort a file transfer that is in progress.  Using this does not always work, "
 "but it's worth a try."
 msgstr ""
 
-#: library/ftplib.rst:245
+#: library/ftplib.rst:238
 msgid ""
 "Send a simple command string to the server and return the response string."
 msgstr ""
 
-#: library/ftplib.rst:5
+#: library/ftplib.rst:260
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``ftplib.sendcmd`` with arguments "
 "``self``, ``cmd``."
 msgstr ""
 
-#: library/ftplib.rst:252
+#: library/ftplib.rst:245
 msgid ""
 "Send a simple command string to the server and handle the response.  Return "
 "nothing if a response code corresponding to success (codes in the range "
 "200--299) is received.  Raise :exc:`error_reply` otherwise."
 msgstr ""
 
-#: library/ftplib.rst:261
+#: library/ftplib.rst:254
 msgid ""
 "Retrieve a file in binary transfer mode.  *cmd* should be an appropriate "
 "``RETR`` command: ``'RETR filename'``. The *callback* function is called for "
@@ -268,7 +258,7 @@ msgid ""
 "`transfercmd` method."
 msgstr ""
 
-#: library/ftplib.rst:273
+#: library/ftplib.rst:266
 msgid ""
 "Retrieve a file or directory listing in the encoding specified by the "
 "*encoding* parameter at initialization. *cmd* should be an appropriate "
@@ -280,13 +270,13 @@ msgid ""
 "*callback* prints the line to ``sys.stdout``."
 msgstr ""
 
-#: library/ftplib.rst:286
+#: library/ftplib.rst:279
 msgid ""
 "Enable \"passive\" mode if *val* is true, otherwise disable passive mode. "
 "Passive mode is on by default."
 msgstr ""
 
-#: library/ftplib.rst:292
+#: library/ftplib.rst:285
 msgid ""
 "Store a file in binary transfer mode.  *cmd* should be an appropriate "
 "``STOR`` command: ``\"STOR filename\"``. *fp* is a :term:`file object` "
@@ -297,11 +287,11 @@ msgid ""
 "*rest* means the same thing as in the :meth:`transfercmd` method."
 msgstr ""
 
-#: library/ftplib.rst:300
+#: library/ftplib.rst:293
 msgid "*rest* parameter added."
 msgstr ""
 
-#: library/ftplib.rst:306
+#: library/ftplib.rst:299
 msgid ""
 "Store a file in line mode.  *cmd* should be an appropriate ``STOR`` command "
 "(see :meth:`storbinary`).  Lines are read until EOF from the :term:`file "
@@ -310,7 +300,7 @@ msgid ""
 "parameter callable that is called on each line after it is sent."
 msgstr ""
 
-#: library/ftplib.rst:315
+#: library/ftplib.rst:308
 msgid ""
 "Initiate a transfer over the data connection.  If the transfer is active, "
 "send an ``EPRT`` or  ``PORT`` command and the transfer command specified by "
@@ -319,7 +309,7 @@ msgid ""
 "command.  Either way, return the socket for the connection."
 msgstr ""
 
-#: library/ftplib.rst:321
+#: library/ftplib.rst:314
 msgid ""
 "If optional *rest* is given, a ``REST`` command is sent to the server, "
 "passing *rest* as an argument.  *rest* is usually a byte offset into the "
@@ -332,7 +322,7 @@ msgid ""
 "simply call :meth:`transfercmd` without a *rest* argument."
 msgstr ""
 
-#: library/ftplib.rst:334
+#: library/ftplib.rst:327
 msgid ""
 "Like :meth:`transfercmd`, but returns a tuple of the data connection and the "
 "expected size of the data.  If the expected size could not be computed, "
@@ -340,7 +330,7 @@ msgid ""
 "same thing as in :meth:`transfercmd`."
 msgstr ""
 
-#: library/ftplib.rst:342
+#: library/ftplib.rst:335
 msgid ""
 "List a directory in a standardized format by using ``MLSD`` command (:rfc:"
 "`3659`).  If *path* is omitted the current directory is assumed. *facts* is "
@@ -352,7 +342,7 @@ msgid ""
 "but server is not guaranteed to return all requested facts."
 msgstr ""
 
-#: library/ftplib.rst:356
+#: library/ftplib.rst:349
 msgid ""
 "Return a list of file names as returned by the ``NLST`` command.  The "
 "optional *argument* is a directory to list (default is the current server "
@@ -360,11 +350,11 @@ msgid ""
 "the ``NLST`` command."
 msgstr ""
 
-#: library/ftplib.rst:373
+#: library/ftplib.rst:366
 msgid "If your server supports the command, :meth:`mlsd` offers a better API."
 msgstr ""
 
-#: library/ftplib.rst:366
+#: library/ftplib.rst:359
 msgid ""
 "Produce a directory listing as returned by the ``LIST`` command, printing it "
 "to standard output.  The optional *argument* is a directory to list (default "
@@ -374,34 +364,34 @@ msgid ""
 "default prints to ``sys.stdout``.  This method returns ``None``."
 msgstr ""
 
-#: library/ftplib.rst:378
+#: library/ftplib.rst:371
 msgid "Rename file *fromname* on the server to *toname*."
 msgstr ""
 
-#: library/ftplib.rst:383
+#: library/ftplib.rst:376
 msgid ""
 "Remove the file named *filename* from the server.  If successful, returns "
 "the text of the response, otherwise raises :exc:`error_perm` on permission "
 "errors or :exc:`error_reply` on other errors."
 msgstr ""
 
-#: library/ftplib.rst:390
+#: library/ftplib.rst:383
 msgid "Set the current directory on the server."
 msgstr ""
 
-#: library/ftplib.rst:395
+#: library/ftplib.rst:388
 msgid "Create a new directory on the server."
 msgstr ""
 
-#: library/ftplib.rst:400
+#: library/ftplib.rst:393
 msgid "Return the pathname of the current directory on the server."
 msgstr ""
 
-#: library/ftplib.rst:405
+#: library/ftplib.rst:398
 msgid "Remove the directory named *dirname* on the server."
 msgstr ""
 
-#: library/ftplib.rst:410
+#: library/ftplib.rst:403
 msgid ""
 "Request the size of the file named *filename* on the server.  On success, "
 "the size of the file is returned as an integer, otherwise ``None`` is "
@@ -409,7 +399,7 @@ msgid ""
 "supported by many common server implementations."
 msgstr ""
 
-#: library/ftplib.rst:418
+#: library/ftplib.rst:411
 msgid ""
 "Send a ``QUIT`` command to the server and close the connection. This is the "
 "\"polite\" way to close a connection, but it may raise an exception if the "
@@ -418,7 +408,7 @@ msgid ""
 "for subsequent calls (see below)."
 msgstr ""
 
-#: library/ftplib.rst:427
+#: library/ftplib.rst:420
 msgid ""
 "Close the connection unilaterally.  This should not be applied to an already "
 "closed connection such as after a successful call to :meth:`~FTP.quit`. "
@@ -427,43 +417,55 @@ msgid ""
 "connection by issuing another :meth:`login` method)."
 msgstr ""
 
-#: library/ftplib.rst:435
+#: library/ftplib.rst:428
 msgid "FTP_TLS Objects"
 msgstr ""
 
-#: library/ftplib.rst:437
+#: library/ftplib.rst:430
 msgid ""
 ":class:`FTP_TLS` class inherits from :class:`FTP`, defining these additional "
 "objects:"
 msgstr ""
 
-#: library/ftplib.rst:441
-msgid "The SSL version to use (defaults to :attr:`ssl.PROTOCOL_SSLv23`)."
+#: library/ftplib.rst:434
+msgid "The SSL version to use (defaults to :data:`ssl.PROTOCOL_SSLv23`)."
 msgstr ""
 
-#: library/ftplib.rst:445
+#: library/ftplib.rst:438
 msgid ""
 "Set up a secure control connection by using TLS or SSL, depending on what is "
 "specified in the :attr:`ssl_version` attribute."
 msgstr ""
 
-#: library/ftplib.rst:448
+#: library/ftplib.rst:441
 msgid ""
 "The method now supports hostname check with :attr:`ssl.SSLContext."
-"check_hostname` and *Server Name Indication* (see :data:`ssl.HAS_SNI`)."
+"check_hostname` and *Server Name Indication* (see :const:`ssl.HAS_SNI`)."
 msgstr ""
 
-#: library/ftplib.rst:455
+#: library/ftplib.rst:448
 msgid ""
 "Revert control channel back to plaintext.  This can be useful to take "
 "advantage of firewalls that know how to handle NAT with non-secure FTP "
 "without opening fixed ports."
 msgstr ""
 
-#: library/ftplib.rst:463
+#: library/ftplib.rst:456
 msgid "Set up secure data connection."
 msgstr ""
 
-#: library/ftplib.rst:467
+#: library/ftplib.rst:460
 msgid "Set up clear text data connection."
+msgstr ""
+
+#: library/ftplib.rst:9
+msgid "FTP"
+msgstr ""
+
+#: library/ftplib.rst:9
+msgid "protocol"
+msgstr ""
+
+#: library/ftplib.rst:9
+msgid "ftplib (standard module)"
 msgstr ""

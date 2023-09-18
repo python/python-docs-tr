@@ -9,12 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Set Up Python 3.11
+      - name: Set Up Python 3.12
         uses: actions/setup-python@v4
         with:
-          python-version: "3.11"
+          python-version: "3.12-dev"
 
         # Upgrade pip
       - name: Upgrade pip
@@ -30,7 +30,7 @@ jobs:
 
         # Create pull request
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5.0.1
+        uses: peter-evans/create-pull-request@v5.0.2
         with:
           token: ${{ secrets.BOT_PAT }}
           commit-message: "Wrap all files on: ${{ github.ref_name }}"

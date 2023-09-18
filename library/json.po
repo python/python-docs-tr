@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -183,8 +183,8 @@ msgstr ""
 #: library/json.rst:194
 msgid ""
 "To use a custom :class:`JSONEncoder` subclass (e.g. one that overrides the :"
-"meth:`default` method to serialize additional types), specify it with the "
-"*cls* kwarg; otherwise :class:`JSONEncoder` is used."
+"meth:`~JSONEncoder.default` method to serialize additional types), specify "
+"it with the *cls* kwarg; otherwise :class:`JSONEncoder` is used."
 msgstr ""
 
 #: library/json.rst:277
@@ -489,9 +489,9 @@ msgstr ""
 #: library/json.rst:424
 msgid ""
 "To extend this to recognize other objects, subclass and implement a :meth:"
-"`default` method with another method that returns a serializable object for "
-"``o`` if possible, otherwise it should call the superclass implementation "
-"(to raise :exc:`TypeError`)."
+"`~JSONEncoder.default` method with another method that returns a "
+"serializable object for ``o`` if possible, otherwise it should call the "
+"superclass implementation (to raise :exc:`TypeError`)."
 msgstr ""
 
 #: library/json.rst:429
@@ -534,7 +534,7 @@ msgstr ""
 #: library/json.rst:485
 msgid ""
 "For example, to support arbitrary iterators, you could implement :meth:"
-"`default` like this::"
+"`~JSONEncoder.default` like this::"
 msgstr ""
 
 #: library/json.rst:501
@@ -769,7 +769,7 @@ msgstr ""
 #: library/json.rst:685
 msgid ""
 "If the optional ``infile`` and ``outfile`` arguments are not specified, :"
-"attr:`sys.stdin` and :attr:`sys.stdout` will be used respectively:"
+"data:`sys.stdin` and :data:`sys.stdout` will be used respectively:"
 msgstr ""
 
 #: library/json.rst:697
@@ -787,13 +787,13 @@ msgid "The JSON file to be validated or pretty-printed:"
 msgstr ""
 
 #: library/json.rst:724
-msgid "If *infile* is not specified, read from :attr:`sys.stdin`."
+msgid "If *infile* is not specified, read from :data:`sys.stdin`."
 msgstr ""
 
 #: library/json.rst:728
 msgid ""
 "Write the output of the *infile* to the given *outfile*. Otherwise, write it "
-"to :attr:`sys.stdout`."
+"to :data:`sys.stdout`."
 msgstr ""
 
 #: library/json.rst:733

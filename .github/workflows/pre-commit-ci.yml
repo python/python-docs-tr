@@ -13,11 +13,11 @@ jobs:
     name: "Pre-commit checks"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
         id: setup_python
         with:
-          python-version: "3.11"
+          python-version: "3.12-dev"
           cache: pip
 
       - name: Install pre-commit

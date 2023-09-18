@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -110,7 +110,7 @@ msgstr ""
 #: library/filecmp.rst:75
 msgid ""
 "Construct a new directory comparison object, to compare the directories *a* "
-"and *b*.  *ignore* is a list of names to ignore, and defaults to :attr:"
+"and *b*.  *ignore* is a list of names to ignore, and defaults to :const:"
 "`filecmp.DEFAULT_IGNORES`.  *hide* is a list of names to hide, and defaults "
 "to ``[os.curdir, os.pardir]``."
 msgstr ""
@@ -149,9 +149,9 @@ msgstr ""
 
 #: library/filecmp.rst:103
 msgid ""
-"Note that via :meth:`__getattr__` hooks, all attributes are computed lazily, "
-"so there is no speed penalty if only those attributes which are lightweight "
-"to compute are used."
+"Note that via :meth:`~object.__getattr__` hooks, all attributes are computed "
+"lazily, so there is no speed penalty if only those attributes which are "
+"lightweight to compute are used."
 msgstr ""
 
 #: library/filecmp.rst:110

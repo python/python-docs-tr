@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -80,7 +80,7 @@ msgstr ""
 #: c-api/complex.rst:66
 msgid ""
 "If *divisor* is null, this method returns zero and sets :c:data:`errno` to :"
-"c:data:`EDOM`."
+"c:macro:`!EDOM`."
 msgstr ""
 
 #: c-api/complex.rst:72
@@ -92,7 +92,7 @@ msgstr ""
 #: c-api/complex.rst:75
 msgid ""
 "If *num* is null and *exp* is not a positive real number, this method "
-"returns zero and sets :c:data:`errno` to :c:data:`EDOM`."
+"returns zero and sets :c:data:`errno` to :c:macro:`!EDOM`."
 msgstr ""
 
 #: c-api/complex.rst:80
@@ -146,14 +146,22 @@ msgstr ""
 
 #: c-api/complex.rst:130
 msgid ""
-"If *op* is not a Python complex number object but has a :meth:`__complex__` "
-"method, this method will first be called to convert *op* to a Python complex "
-"number object.  If ``__complex__()`` is not defined then it falls back to :"
-"meth:`__float__`.  If ``__float__()`` is not defined then it falls back to :"
-"meth:`__index__`.  Upon failure, this method returns ``-1.0`` as a real "
-"value."
+"If *op* is not a Python complex number object but has a :meth:`~object."
+"__complex__` method, this method will first be called to convert *op* to a "
+"Python complex number object.  If :meth:`!__complex__` is not defined then "
+"it falls back to :meth:`~object.__float__`.  If :meth:`!__float__` is not "
+"defined then it falls back to :meth:`~object.__index__`.  Upon failure, this "
+"method returns ``-1.0`` as a real value."
 msgstr ""
 
 #: c-api/complex.rst:137
-msgid "Use :meth:`__index__` if available."
+msgid "Use :meth:`~object.__index__` if available."
+msgstr ""
+
+#: c-api/complex.rst:8
+msgid "object"
+msgstr ""
+
+#: c-api/complex.rst:8
+msgid "complex number"
 msgstr ""

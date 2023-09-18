@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 22:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -1799,15 +1799,15 @@ msgstr ""
 
 #: whatsnew/3.7.rst:1283
 msgid ""
-"The :mod:`socket` module now exposes the :data:`socket.TCP_CONGESTION` "
-"(Linux 2.6.13), :data:`socket.TCP_USER_TIMEOUT` (Linux 2.6.37), and :data:"
+"The :mod:`socket` module now exposes the :const:`socket.TCP_CONGESTION` "
+"(Linux 2.6.13), :const:`socket.TCP_USER_TIMEOUT` (Linux 2.6.37), and :const:"
 "`socket.TCP_NOTSENT_LOWAT` (Linux 3.12) constants. (Contributed by Omar "
 "Sandoval in :issue:`26273` and Nathaniel J. Smith in :issue:`29728`.)"
 msgstr ""
 
 #: whatsnew/3.7.rst:1289
 msgid ""
-"Support for :data:`socket.AF_VSOCK` sockets has been added to allow "
+"Support for :const:`socket.AF_VSOCK` sockets has been added to allow "
 "communication between virtual machines and their hosts. (Contributed by "
 "Cathy Avery in :issue:`27584`.)"
 msgstr ""
@@ -1960,7 +1960,7 @@ msgstr ""
 msgid ""
 "The :func:`subprocess.run` function accepts the new *capture_output* keyword "
 "argument.  When true, stdout and stderr will be captured. This is equivalent "
-"to passing :data:`subprocess.PIPE` as *stdout* and *stderr* arguments. "
+"to passing :const:`subprocess.PIPE` as *stdout* and *stderr* arguments. "
 "(Contributed by Bo Bayles in :issue:`32102`.)"
 msgstr ""
 
@@ -2032,20 +2032,20 @@ msgstr ""
 
 #: whatsnew/3.7.rst:1456
 msgid ""
-":data:`time.CLOCK_BOOTTIME` (Linux): Identical to :data:`time."
+":const:`time.CLOCK_BOOTTIME` (Linux): Identical to :const:`time."
 "CLOCK_MONOTONIC`, except it also includes any time that the system is "
 "suspended."
 msgstr ""
 
 #: whatsnew/3.7.rst:1459
 msgid ""
-":data:`time.CLOCK_PROF` (FreeBSD, NetBSD and OpenBSD): High-resolution per-"
+":const:`time.CLOCK_PROF` (FreeBSD, NetBSD and OpenBSD): High-resolution per-"
 "process CPU timer."
 msgstr ""
 
 #: whatsnew/3.7.rst:1461
 msgid ""
-":data:`time.CLOCK_UPTIME` (FreeBSD, OpenBSD): Time whose absolute value is "
+":const:`time.CLOCK_UPTIME` (FreeBSD, OpenBSD): Time whose absolute value is "
 "the time the system has been running and not suspended, providing accurate "
 "uptime measurement."
 msgstr ""
@@ -2368,9 +2368,9 @@ msgstr ""
 
 #: whatsnew/3.7.rst:1677
 msgid ""
-"The fields :c:member:`name` and :c:member:`doc` of structures :c:type:"
+"The fields :c:member:`!name` and :c:member:`!doc` of structures :c:type:"
 "`PyMemberDef`, :c:type:`PyGetSetDef`, :c:type:`PyStructSequence_Field`, :c:"
-"type:`PyStructSequence_Desc`, and :c:type:`wrapperbase` are now of type "
+"type:`PyStructSequence_Desc`, and :c:struct:`wrapperbase` are now of type "
 "``const char *`` rather of ``char *``.  (Contributed by Serhiy Storchaka in :"
 "issue:`28761`.)"
 msgstr ""
@@ -2727,7 +2727,7 @@ msgstr ""
 
 #: whatsnew/3.7.rst:1909
 msgid ""
-"The :mod:`distutils` ``upload`` command no longer tries to change CR end-of-"
+"The ``distutils`` ``upload`` command no longer tries to change CR end-of-"
 "line characters to CRLF.  This fixes a corruption issue with sdists that "
 "ended with a byte equivalent to CR. (Contributed by Bo Bayles in :issue:"
 "`32304`.)"
@@ -2830,10 +2830,10 @@ msgstr ""
 
 #: whatsnew/3.7.rst:2006
 msgid ""
-"Methods :meth:`MetaPathFinder.find_module() <importlib.abc.MetaPathFinder."
+"Methods :meth:`MetaPathFinder.find_module() <!importlib.abc.MetaPathFinder."
 "find_module>` (replaced by :meth:`MetaPathFinder.find_spec() <importlib.abc."
-"MetaPathFinder.find_spec>`) and :meth:`PathEntryFinder.find_loader() "
-"<importlib.abc.PathEntryFinder.find_loader>` (replaced by :meth:"
+"MetaPathFinder.find_spec>`) and :meth:`PathEntryFinder.find_loader() <!"
+"importlib.abc.PathEntryFinder.find_loader>` (replaced by :meth:"
 "`PathEntryFinder.find_spec() <importlib.abc.PathEntryFinder.find_spec>`) "
 "both deprecated in Python 3.4 now emit :exc:`DeprecationWarning`. "
 "(Contributed by Matthias Bussonnier in :issue:`29576`)"
@@ -3076,7 +3076,7 @@ msgstr ""
 
 #: whatsnew/3.7.rst:2184
 msgid ""
-"The unused :mod:`distutils` ``install_misc`` command has been removed. "
+"The unused ``distutils`` ``install_misc`` command has been removed. "
 "(Contributed by Eric N. Vander Weele in :issue:`29218`.)"
 msgstr ""
 

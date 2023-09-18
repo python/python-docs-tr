@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 22:19+0000\n"
+"POT-Creation-Date: 2023-09-18 22:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -61,7 +61,7 @@ msgid ""
 "symlinks are included in the results (as in the shell). Whether or not the "
 "results are sorted depends on the file system.  If a file that satisfies "
 "conditions is removed or added during the call of this function, whether a "
-"path name for that file be included is unspecified."
+"path name for that file will be included is unspecified."
 msgstr ""
 
 #: library/glob.rst:54
@@ -92,13 +92,13 @@ msgid ""
 "directories."
 msgstr ""
 
-#: library/glob.rst:29
+#: library/glob.rst:96
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``glob.glob`` with arguments "
 "``pathname``, ``recursive``."
 msgstr ""
 
-#: library/glob.rst:30
+#: library/glob.rst:97
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``glob.glob/2`` with arguments "
 "``pathname``, ``recursive``, ``root_dir``, ``dir_fd``."
@@ -159,4 +159,44 @@ msgstr ""
 
 #: library/glob.rst:151
 msgid "Shell-style filename (not path) expansion"
+msgstr ""
+
+#: library/glob.rst:9
+msgid "filenames"
+msgstr ""
+
+#: library/glob.rst:9
+msgid "pathname expansion"
+msgstr ""
+
+#: library/glob.rst:13
+msgid "* (asterisk)"
+msgstr ""
+
+#: library/glob.rst:63
+msgid "in glob-style wildcards"
+msgstr ""
+
+#: library/glob.rst:13
+msgid "? (question mark)"
+msgstr ""
+
+#: library/glob.rst:13
+msgid "[] (square brackets)"
+msgstr ""
+
+#: library/glob.rst:13
+msgid "! (exclamation)"
+msgstr ""
+
+#: library/glob.rst:13
+msgid "- (minus)"
+msgstr ""
+
+#: library/glob.rst:13
+msgid ". (dot)"
+msgstr ""
+
+#: library/glob.rst:63
+msgid "**"
 msgstr ""

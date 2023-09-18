@@ -4,9 +4,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: 2022-12-28 22:18+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -237,12 +237,13 @@ msgstr ""
 "bir değeri olabilir. Argümanın varlığı ve türü, istisna türüne bağlıdır."
 
 #: tutorial/errors.rst:154
+#, fuzzy
 msgid ""
 "The *except clause* may specify a variable after the exception name.  The "
 "variable is bound to the exception instance which typically has an ``args`` "
 "attribute that stores the arguments. For convenience, builtin exception "
-"types define :meth:`__str__` to print all the arguments without explicitly "
-"accessing ``.args``.  ::"
+"types define :meth:`~object.__str__` to print all the arguments without "
+"explicitly accessing ``.args``.  ::"
 msgstr ""
 "*except yan tümcesi*, istisna adından sonra bir değişken belirtebilir.  "
 "Değişken, genellikle bağımsız değişkenleri depolayan bir ``args`` "
@@ -251,8 +252,9 @@ msgstr ""
 "tüm argümanları yazdırmak için tanımlar.  ::"
 
 #: tutorial/errors.rst:177
+#, fuzzy
 msgid ""
-"The exception's :meth:`__str__` output is printed as the last part "
+"The exception's :meth:`~object.__str__` output is printed as the last part "
 "('detail') of the message for unhandled exceptions."
 msgstr ""
 "İstisnanın :meth:`__str__` çıktısı, işlenmeyen istisnalar için mesajın son "
@@ -649,7 +651,7 @@ msgstr ""
 "tüm istisnaların diğer yan tümcelere yayılmasına ve sonunda yeniden ortaya "
 "çıkmasına izin verirken, belirli bir türdeki grup istisnalarını çıkarır. ::"
 
-#: tutorial/errors.rst:564
+#: tutorial/errors.rst:573
 msgid ""
 "Note that the exceptions nested in an exception group must be instances, not "
 "types. This is because in practice the exceptions would typically be ones "
@@ -661,11 +663,11 @@ msgstr ""
 "olarak, aşağıdaki kalıp boyunca program tarafından önceden oluşturulmuş ve "
 "yakalanmış olanlar olmasıdır::"
 
-#: tutorial/errors.rst:582
+#: tutorial/errors.rst:593
 msgid "Enriching Exceptions with Notes"
 msgstr "İstisnaları Notlarla Zenginleştirme"
 
-#: tutorial/errors.rst:584
+#: tutorial/errors.rst:595
 msgid ""
 "When an exception is created in order to be raised, it is usually "
 "initialized with information that describes the error that has occurred. "
@@ -682,7 +684,7 @@ msgstr ""
 "``add_note(note)`` metodu vardır. Standart geri işleme (traceback) "
 "oluşturma, tüm notları istisnadan sonra eklendikleri sırayla içerir. ::"
 
-#: tutorial/errors.rst:605
+#: tutorial/errors.rst:616
 msgid ""
 "For example, when collecting exceptions into an exception group, we may want "
 "to add context information for the individual errors. In the following each "

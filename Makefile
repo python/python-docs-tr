@@ -10,9 +10,7 @@
 # - make clean # To remove build artifacts
 # - make fuzzy  # To find fuzzy strings
 #
-# Modes are: autobuild-stable, autobuild-dev, and autobuild-html,
-# documented in gen/src/3.6/Doc/Makefile as we're only delegating the
-# real work to the Python Doc Makefile.
+# Modes are: autobuild-stable, autobuild-dev, and autobuild-html.
 
 # Configuration
 
@@ -21,42 +19,13 @@
 # test build, we're building with the .rst files that generated our
 # .po files.
 
-CPYTHON_CURRENT_COMMIT := d01cf5072be5511595b6d0c35ace6c1b07716f8d
+CPYTHON_CURRENT_COMMIT := 74a7f5d2dacd4c05aad0e64a275dae97d18f5355
 LANGUAGE := tr
-BRANCH := 3.11
+BRANCH := 3.12
 
 EXCLUDED := \
 	whatsnew/2.?.po \
-	whatsnew/3.[0-8].po \
-	c-api/ \
-	distutils/ \
-	install/ \
-	library/2to3.po \
-	library/distutils.po \
-	library/imp.po \
-	library/tkinter.tix.po \
-	library/test.po \
-	library/aifc.po \
-	library/asynchat.po \
-	library/asyncore.po \
-	library/audioop.po \
-	library/cgi.po \
-	library/cgitb.po \
-	library/chunk.po \
-	library/crypt.po \
-	library/imghdr.po \
-	library/msilib.po \
-	library/nntplib.po \
-	library/nis.po \
-	library/ossaudiodev.po \
-	library/pipes.po \
-	library/smtpd.po \
-	library/sndhdr.po \
-	library/spwd.po \
-	library/sunau.po \
-	library/telnetlib.po \
-	library/uu.po \
-	library/xdrlib.po
+	whatsnew/3.[0-10].po
 
 # Internal variables
 

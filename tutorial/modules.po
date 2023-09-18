@@ -4,9 +4,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: 2022-12-29 00:15+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -272,8 +272,9 @@ msgid "The Module Search Path"
 msgstr "Modül Arama Yolu"
 
 #: tutorial/modules.rst:186
+#, fuzzy
 msgid ""
-"When a module named :mod:`spam` is imported, the interpreter first searches "
+"When a module named :mod:`!spam` is imported, the interpreter first searches "
 "for a built-in module with that name. These module names are listed in :data:"
 "`sys.builtin_module_names`. If not found, it then searches for a file named :"
 "file:`spam.py` in a list of directories given by the variable :data:`sys."
@@ -529,14 +530,15 @@ msgid "Packages"
 msgstr "Paketler"
 
 #: tutorial/modules.rst:391
+#, fuzzy
 msgid ""
 "Packages are a way of structuring Python's module namespace by using "
-"\"dotted module names\".  For example, the module name :mod:`A.B` designates "
-"a submodule named ``B`` in a package named ``A``.  Just like the use of "
-"modules saves the authors of different modules from having to worry about "
-"each other's global variable names, the use of dotted module names saves the "
-"authors of multi-module packages like NumPy or Pillow from having to worry "
-"about each other's module names."
+"\"dotted module names\".  For example, the module name :mod:`!A.B` "
+"designates a submodule named ``B`` in a package named ``A``.  Just like the "
+"use of modules saves the authors of different modules from having to worry "
+"about each other's global variable names, the use of dotted module names "
+"saves the authors of multi-module packages like NumPy or Pillow from having "
+"to worry about each other's module names."
 msgstr ""
 "Paketler, \"noktalı modül adlarını\" kullanarak Python'un modül ad alanını "
 "yapılandırmanın bir yoludur. Örneğin, modül adı :mod:`A.B`, \"A\" adlı bir "
@@ -581,13 +583,14 @@ msgstr ""
 "üzerindeki dizinleri arar."
 
 #: tutorial/modules.rst:439
+#, fuzzy
 msgid ""
 "The :file:`__init__.py` files are required to make Python treat directories "
 "containing the file as packages.  This prevents directories with a common "
-"name, such as ``string``, unintentionally hiding valid modules that occur "
-"later on the module search path. In the simplest case, :file:`__init__.py` "
-"can just be an empty file, but it can also execute initialization code for "
-"the package or set the ``__all__`` variable, described later."
+"name, such as ``string``, from unintentionally hiding valid modules that "
+"occur later on the module search path. In the simplest case, :file:`__init__."
+"py` can just be an empty file, but it can also execute initialization code "
+"for the package or set the ``__all__`` variable, described later."
 msgstr ""
 "Python'un dosyayı içeren dizinleri paketler olarak ele alması için :file:"
 "`__init__.py` dosyaları gereklidir. Bu, ``string`` gibi ortak bir ada sahip "
@@ -606,8 +609,9 @@ msgstr ""
 "örneğin::"
 
 #: tutorial/modules.rst:451
+#, fuzzy
 msgid ""
-"This loads the submodule :mod:`sound.effects.echo`.  It must be referenced "
+"This loads the submodule :mod:`!sound.effects.echo`.  It must be referenced "
 "with its full name. ::"
 msgstr ""
 "Bu, :mod:`sound.effects.echo` alt modülünü yükler. Tam adı ile referans "
@@ -618,8 +622,9 @@ msgid "An alternative way of importing the submodule is::"
 msgstr "Alt modülü içe aktarmanın alternatif bir yolu::"
 
 #: tutorial/modules.rst:460
+#, fuzzy
 msgid ""
-"This also loads the submodule :mod:`echo`, and makes it available without "
+"This also loads the submodule :mod:`!echo`, and makes it available without "
 "its package prefix, so it can be used as follows::"
 msgstr ""
 "Bu ayrıca :mod:`echo` alt modülünü yükler ve paket öneki olmadan "
@@ -634,9 +639,10 @@ msgstr ""
 "aktarmaktır::"
 
 #: tutorial/modules.rst:469
+#, fuzzy
 msgid ""
-"Again, this loads the submodule :mod:`echo`, but this makes its function :"
-"func:`echofilter` directly available::"
+"Again, this loads the submodule :mod:`!echo`, but this makes its function :"
+"func:`!echofilter` directly available::"
 msgstr ""
 "Yine, bu, :mod:`echo` alt modülünü yükler, ancak bu, :func:`echofilter` "
 "fonksiyonunu doğrudan kullanılabilir hale getirir::"
@@ -711,24 +717,36 @@ msgstr ""
 "içerebilir::"
 
 #: tutorial/modules.rst:512
+#, fuzzy
 msgid ""
 "This would mean that ``from sound.effects import *`` would import the three "
-"named submodules of the :mod:`sound.effects` package."
+"named submodules of the :mod:`!sound.effects` package."
 msgstr ""
 "Bu, ``from sound.effects import *`` öğesinin :mod:`sound` paketinin "
 "adlandırılmış üç alt modülünü içe aktaracağı anlamına gelir."
 
 #: tutorial/modules.rst:515
 msgid ""
+"Be aware that submodules might become shadowed by locally defined names. For "
+"example, if you added a ``reverse`` function to the :file:`sound/effects/"
+"__init__.py` file, the ``from sound.effects import *`` would only import the "
+"two submodules ``echo`` and ``surround``, but *not* the ``reverse`` "
+"submodule, because it is shadowed by the locally defined ``reverse`` "
+"function::"
+msgstr ""
+
+#: tutorial/modules.rst:531
+#, fuzzy
+msgid ""
 "If ``__all__`` is not defined, the statement ``from sound.effects import *`` "
-"does *not* import all submodules from the package :mod:`sound.effects` into "
-"the current namespace; it only ensures that the package :mod:`sound.effects` "
-"has been imported (possibly running any initialization code in :file:"
-"`__init__.py`) and then imports whatever names are defined in the package.  "
-"This includes any names defined (and submodules explicitly loaded) by :file:"
-"`__init__.py`.  It also includes any submodules of the package that were "
-"explicitly loaded by previous :keyword:`import` statements.  Consider this "
-"code::"
+"does *not* import all submodules from the package :mod:`!sound.effects` into "
+"the current namespace; it only ensures that the package :mod:`!sound."
+"effects` has been imported (possibly running any initialization code in :"
+"file:`__init__.py`) and then imports whatever names are defined in the "
+"package.  This includes any names defined (and submodules explicitly loaded) "
+"by :file:`__init__.py`.  It also includes any submodules of the package that "
+"were explicitly loaded by previous :keyword:`import` statements.  Consider "
+"this code::"
 msgstr ""
 "``__all__`` tanımlı değilse, ``from sound.effects import *`` ifadesi :mod:"
 "`sound.effects` paketindeki tüm alt modülleri geçerli ad alanına *almaz*; "
@@ -739,19 +757,20 @@ msgstr ""
 "Ayrıca, önceki :keyword:`import` ifadeleri tarafından açıkça yüklenen "
 "paketin tüm alt modüllerini de içerir. Bu kodu dikkate alın ::"
 
-#: tutorial/modules.rst:528
+#: tutorial/modules.rst:544
+#, fuzzy
 msgid ""
-"In this example, the :mod:`echo` and :mod:`surround` modules are imported in "
-"the current namespace because they are defined in the :mod:`sound.effects` "
-"package when the ``from...import`` statement is executed.  (This also works "
-"when ``__all__`` is defined.)"
+"In this example, the :mod:`!echo` and :mod:`!surround` modules are imported "
+"in the current namespace because they are defined in the :mod:`!sound."
+"effects` package when the ``from...import`` statement is executed.  (This "
+"also works when ``__all__`` is defined.)"
 msgstr ""
 "Bu örnekte, :mod:`echo` ve :mod:`surround` modülleri geçerli ad alanına "
 "aktarılır, çünkü bunlar ``from...import`` ifadesi yürütüldüğünde :mod:`sound."
 "effects` paketinde tanımlanmışlardır. (Bu aynı zamanda ``__all__`` "
 "tanımlandığında da çalışır.)"
 
-#: tutorial/modules.rst:533
+#: tutorial/modules.rst:549
 msgid ""
 "Although certain modules are designed to export only names that follow "
 "certain patterns when you use ``import *``, it is still considered bad "
@@ -761,7 +780,7 @@ msgstr ""
 "eden adları dışa aktarmak üzere tasarlanmış olsa da, üretim kodunda yine de "
 "kötü uygulama olarak kabul edilir."
 
-#: tutorial/modules.rst:537
+#: tutorial/modules.rst:553
 msgid ""
 "Remember, there is nothing wrong with using ``from package import "
 "specific_submodule``!  In fact, this is the recommended notation unless the "
@@ -772,16 +791,17 @@ msgstr ""
 "tarafı yok! Aslında, içe aktarma modülünün farklı paketlerden aynı ada sahip "
 "alt modülleri kullanması gerekmedikçe, önerilen gösterim budur."
 
-#: tutorial/modules.rst:546
+#: tutorial/modules.rst:562
 msgid "Intra-package References"
 msgstr "Paket İçi Referanslar"
 
-#: tutorial/modules.rst:548
+#: tutorial/modules.rst:564
+#, fuzzy
 msgid ""
-"When packages are structured into subpackages (as with the :mod:`sound` "
+"When packages are structured into subpackages (as with the :mod:`!sound` "
 "package in the example), you can use absolute imports to refer to submodules "
-"of siblings packages.  For example, if the module :mod:`sound.filters."
-"vocoder` needs to use the :mod:`echo` module in the :mod:`sound.effects` "
+"of siblings packages.  For example, if the module :mod:`!sound.filters."
+"vocoder` needs to use the :mod:`!echo` module in the :mod:`!sound.effects` "
 "package, it can use ``from sound.effects import echo``."
 msgstr ""
 "Paketler alt paketler halinde yapılandırıldığında (örnekteki :mod:`sound` "
@@ -790,19 +810,20 @@ msgstr ""
 "vocoder` modülünün :mod:`sound.effects` paketindeki :mod:`echo` modülünü "
 "kullanması gerekiyorsa, ``from sound.effects import echo`` 'yu kullanabilir."
 
-#: tutorial/modules.rst:554
+#: tutorial/modules.rst:570
+#, fuzzy
 msgid ""
 "You can also write relative imports, with the ``from module import name`` "
 "form of import statement.  These imports use leading dots to indicate the "
 "current and parent packages involved in the relative import.  From the :mod:"
-"`surround` module for example, you might use::"
+"`!surround` module for example, you might use::"
 msgstr ""
 "Ayrıca, içe aktarma ifadesinin ``from module import name`` formuyla göreli "
 "içe aktarmaları da yazabilirsiniz. Bu içe aktarmalar, göreli içe aktarmada "
 "yer alan mevcut ve ana paketleri belirtmek için baştaki noktaları kullanır. "
 "Örneğin :mod:`surround` modülünden şunları kullanabilirsiniz::"
 
-#: tutorial/modules.rst:563
+#: tutorial/modules.rst:579
 msgid ""
 "Note that relative imports are based on the name of the current module.  "
 "Since the name of the main module is always ``\"__main__\"``, modules "
@@ -814,11 +835,11 @@ msgstr ""
 "ana modülü olarak kullanılması amaçlanan modüller her zaman mutlak içe "
 "aktarma kullanmalıdır."
 
-#: tutorial/modules.rst:569
+#: tutorial/modules.rst:585
 msgid "Packages in Multiple Directories"
 msgstr "Birden Çok Dizindeki Paketler"
 
-#: tutorial/modules.rst:571
+#: tutorial/modules.rst:587
 msgid ""
 "Packages support one more special attribute, :attr:`__path__`.  This is "
 "initialized to be a list containing the name of the directory holding the "
@@ -832,7 +853,7 @@ msgstr ""
 "değiştirilebilir; bunu yapmak, pakette bulunan modüller ve alt paketler için "
 "gelecekteki aramaları etkiler."
 
-#: tutorial/modules.rst:577
+#: tutorial/modules.rst:593
 msgid ""
 "While this feature is not often needed, it can be used to extend the set of "
 "modules found in a package."
@@ -840,11 +861,11 @@ msgstr ""
 "Bu özelliğe sıklıkla ihtiyaç duyulmasa da, bir pakette bulunan modül "
 "dizisini genişletmek için kullanılabilir."
 
-#: tutorial/modules.rst:582
+#: tutorial/modules.rst:598
 msgid "Footnotes"
 msgstr "Dipnotlar"
 
-#: tutorial/modules.rst:583
+#: tutorial/modules.rst:599
 msgid ""
 "In fact function definitions are also 'statements' that are 'executed'; the "
 "execution of a module-level function definition adds the function name to "
@@ -853,3 +874,28 @@ msgstr ""
 "Aslında işlev tanımları aynı zamanda 'çalıştırılan' 'ifadelerdir'; modül "
 "düzeyinde bir işlev tanımının çalıştırılması, işlev adını modülün genel ad "
 "alanına ekler."
+
+#: tutorial/modules.rst:267 tutorial/modules.rst:348
+#, fuzzy
+msgid "module"
+msgstr "Modüller"
+
+#: tutorial/modules.rst:184
+msgid "search"
+msgstr ""
+
+#: tutorial/modules.rst:184
+msgid "path"
+msgstr ""
+
+#: tutorial/modules.rst:267
+msgid "sys"
+msgstr ""
+
+#: tutorial/modules.rst:348
+msgid "builtins"
+msgstr ""
+
+#: tutorial/modules.rst:492
+msgid "__all__"
+msgstr ""

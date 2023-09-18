@@ -4,9 +4,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: 2022-12-29 00:43-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -73,8 +73,9 @@ msgstr ""
 "dizi alternatifi vardır."
 
 #: faq/extending.rst:44
+#, fuzzy
 msgid ""
-"`Cython <https://cython.org>`_ and its relative `Pyrex <https://www.cosc."
+"`Cython <https://cython.org>`_ and its relative `Pyrex <https://www.csse."
 "canterbury.ac.nz/greg.ewing/python/Pyrex/>`_ are compilers that accept a "
 "slightly modified form of Python and generate the corresponding C code.  "
 "Cython and Pyrex make it possible to write an extension without having to "
@@ -143,10 +144,11 @@ msgid "How do I extract C values from a Python object?"
 msgstr "Bir Python nesnesinden C değerlerini nasıl çıkarabilirim?"
 
 #: faq/extending.rst:82
+#, fuzzy
 msgid ""
 "That depends on the object's type.  If it's a tuple, :c:func:`PyTuple_Size` "
 "returns its length and :c:func:`PyTuple_GetItem` returns the item at a "
-"specified index.  Lists have similar functions, :c:func:`PyListSize` and :c:"
+"specified index.  Lists have similar functions, :c:func:`PyList_Size` and :c:"
 "func:`PyList_GetItem`."
 msgstr ""
 "Bu, nesnenin türüne bağlıdır.  Eğer bir tuple ise, :c:func:`PyTuple_Size` "
@@ -155,11 +157,12 @@ msgstr ""
 "ve :c:func:`PyList_GetItem`."
 
 #: faq/extending.rst:87
+#, fuzzy
 msgid ""
 "For bytes, :c:func:`PyBytes_Size` returns its length and :c:func:"
 "`PyBytes_AsStringAndSize` provides a pointer to its value and its length.  "
-"Note that Python bytes objects may contain null bytes so C's :c:func:"
-"`strlen` should not be used."
+"Note that Python bytes objects may contain null bytes so C's :c:func:`!"
+"strlen` should not be used."
 msgstr ""
 "Baytlar için, :c:func:`PyBytes_Size` uzunluğunu döndürür ve :c:func:"
 "`PyBytes_AsStringAndSize` değerine ve uzunluğuna bir işaretçi sağlar.  "

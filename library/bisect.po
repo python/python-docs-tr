@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 22:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -28,18 +28,26 @@ msgstr ""
 msgid ""
 "This module provides support for maintaining a list in sorted order without "
 "having to sort the list after each insertion.  For long lists of items with "
-"expensive comparison operations, this can be an improvement over the more "
-"common approach.  The module is called :mod:`bisect` because it uses a basic "
-"bisection algorithm to do its work.  The source code may be most useful as a "
-"working example of the algorithm (the boundary conditions are already "
-"right!)."
+"expensive comparison operations, this can be an improvement over linear "
+"searches or frequent resorting."
 msgstr ""
 
-#: library/bisect.rst:21
+#: library/bisect.rst:19
+msgid ""
+"The module is called :mod:`bisect` because it uses a basic bisection "
+"algorithm to do its work.  Unlike other bisection tools that search for a "
+"specific value, the functions in this module are designed to locate an "
+"insertion point. Accordingly, the functions never call an :meth:`__eq__` "
+"method to determine whether a value has been found.  Instead, the functions "
+"only call the :meth:`__lt__` method and will return an insertion point "
+"between values in an array."
+msgstr ""
+
+#: library/bisect.rst:29
 msgid "The following functions are provided:"
 msgstr ""
 
-#: library/bisect.rst:26
+#: library/bisect.rst:34
 msgid ""
 "Locate the insertion point for *x* in *a* to maintain sorted order. The "
 "parameters *lo* and *hi* may be used to specify a subset of the list which "
@@ -49,120 +57,122 @@ msgid ""
 "parameter to ``list.insert()`` assuming that *a* is already sorted."
 msgstr ""
 
-#: library/bisect.rst:33
+#: library/bisect.rst:41
 msgid ""
-"The returned insertion point *i* partitions the array *a* into two halves so "
-"that ``all(val < x for val in a[lo : i])`` for the left side and ``all(val "
-">= x for val in a[i : hi])`` for the right side."
+"The returned insertion point *ip* partitions the array *a* into two slices "
+"such that ``all(elem < x for elem in a[lo : ip])`` is true for the left "
+"slice and ``all(elem >= x for elem in a[ip : hi])`` is true for the right "
+"slice."
 msgstr ""
 
-#: library/bisect.rst:58
+#: library/bisect.rst:46
 msgid ""
 "*key* specifies a :term:`key function` of one argument that is used to "
 "extract a comparison key from each element in the array.  To support "
 "searching complex records, the key function is not applied to the *x* value."
 msgstr ""
 
-#: library/bisect.rst:62
+#: library/bisect.rst:50
 msgid ""
-"If *key* is ``None``, the elements are compared directly with no intervening "
-"function call."
+"If *key* is ``None``, the elements are compared directly and no key function "
+"is called."
 msgstr ""
 
-#: library/bisect.rst:65 library/bisect.rst:103
+#: library/bisect.rst:67 library/bisect.rst:105
 msgid "Added the *key* parameter."
 msgstr ""
 
-#: library/bisect.rst:51
+#: library/bisect.rst:60
 msgid ""
-"Similar to :func:`bisect_left`, but returns an insertion point which comes "
-"after (to the right of) any existing entries of *x* in *a*."
+"Similar to :py:func:`~bisect.bisect_left`, but returns an insertion point "
+"which comes after (to the right of) any existing entries of *x* in *a*."
 msgstr ""
 
-#: library/bisect.rst:54
+#: library/bisect.rst:63
 msgid ""
-"The returned insertion point *i* partitions the array *a* into two halves so "
-"that ``all(val <= x for val in a[lo : i])`` for the left side and ``all(val "
-"> x for val in a[i : hi])`` for the right side."
-msgstr ""
-
-#: library/bisect.rst:71
-msgid "Insert *x* in *a* in sorted order."
+"The returned insertion point *ip* partitions the array *a* into two slices "
+"such that ``all(elem <= x for elem in a[lo : ip])`` is true for the left "
+"slice and ``all(elem > x for elem in a[ip : hi])`` is true for the right "
+"slice."
 msgstr ""
 
 #: library/bisect.rst:73
-msgid ""
-"This function first runs :func:`bisect_left` to locate an insertion point. "
-"Next, it runs the :meth:`insert` method on *a* to insert *x* at the "
-"appropriate position to maintain sort order."
+msgid "Insert *x* in *a* in sorted order."
 msgstr ""
 
-#: library/bisect.rst:97
+#: library/bisect.rst:75
+msgid ""
+"This function first runs :py:func:`~bisect.bisect_left` to locate an "
+"insertion point. Next, it runs the :meth:`insert` method on *a* to insert "
+"*x* at the appropriate position to maintain sort order."
+msgstr ""
+
+#: library/bisect.rst:99
 msgid ""
 "To support inserting records in a table, the *key* function (if any) is "
 "applied to *x* for the search step but not for the insertion step."
 msgstr ""
 
-#: library/bisect.rst:100
+#: library/bisect.rst:102
 msgid ""
 "Keep in mind that the ``O(log n)`` search is dominated by the slow O(n) "
 "insertion step."
 msgstr ""
 
-#: library/bisect.rst:90
+#: library/bisect.rst:92
 msgid ""
-"Similar to :func:`insort_left`, but inserting *x* in *a* after any existing "
-"entries of *x*."
+"Similar to :py:func:`~bisect.insort_left`, but inserting *x* in *a* after "
+"any existing entries of *x*."
 msgstr ""
 
-#: library/bisect.rst:93
+#: library/bisect.rst:95
 msgid ""
-"This function first runs :func:`bisect_right` to locate an insertion point. "
-"Next, it runs the :meth:`insert` method on *a* to insert *x* at the "
-"appropriate position to maintain sort order."
-msgstr ""
-
-#: library/bisect.rst:108
-msgid "Performance Notes"
+"This function first runs :py:func:`~bisect.bisect_right` to locate an "
+"insertion point. Next, it runs the :meth:`insert` method on *a* to insert "
+"*x* at the appropriate position to maintain sort order."
 msgstr ""
 
 #: library/bisect.rst:110
+msgid "Performance Notes"
+msgstr ""
+
+#: library/bisect.rst:112
 msgid ""
 "When writing time sensitive code using *bisect()* and *insort()*, keep these "
 "thoughts in mind:"
 msgstr ""
 
-#: library/bisect.rst:113
+#: library/bisect.rst:115
 msgid ""
 "Bisection is effective for searching ranges of values. For locating specific "
 "values, dictionaries are more performant."
 msgstr ""
 
-#: library/bisect.rst:116
+#: library/bisect.rst:118
 msgid ""
 "The *insort()* functions are ``O(n)`` because the logarithmic search step is "
 "dominated by the linear time insertion step."
 msgstr ""
 
-#: library/bisect.rst:119
+#: library/bisect.rst:121
 msgid ""
 "The search functions are stateless and discard key function results after "
 "they are used.  Consequently, if the search functions are used in a loop, "
 "the key function may be called again and again on the same array elements. "
-"If the key function isn't fast, consider wrapping it with :func:`functools."
-"cache` to avoid duplicate computations.  Alternatively, consider searching "
-"an array of precomputed keys to locate the insertion point (as shown in the "
-"examples section below)."
+"If the key function isn't fast, consider wrapping it with :py:func:"
+"`functools.cache` to avoid duplicate computations.  Alternatively, consider "
+"searching an array of precomputed keys to locate the insertion point (as "
+"shown in the examples section below)."
 msgstr ""
 
-#: library/bisect.rst:129
+#: library/bisect.rst:131
 msgid ""
 "`Sorted Collections <https://grantjenks.com/docs/sortedcollections/>`_ is a "
 "high performance module that uses *bisect* to managed sorted collections of "
 "data."
 msgstr ""
 
-#: library/bisect.rst:133
+#: library/bisect.rst:135
 msgid ""
 "The `SortedCollection recipe <https://code.activestate.com/recipes/577197-"
 "sortedcollection/>`_ uses bisect to build a full-featured collection class "
@@ -171,38 +181,38 @@ msgid ""
 "searches."
 msgstr ""
 
-#: library/bisect.rst:141
+#: library/bisect.rst:143
 msgid "Searching Sorted Lists"
 msgstr ""
 
-#: library/bisect.rst:143
+#: library/bisect.rst:145
 msgid ""
-"The above :func:`bisect` functions are useful for finding insertion points "
-"but can be tricky or awkward to use for common searching tasks. The "
-"following five functions show how to transform them into the standard "
-"lookups for sorted lists::"
+"The above `bisect functions`_ are useful for finding insertion points but "
+"can be tricky or awkward to use for common searching tasks. The following "
+"five functions show how to transform them into the standard lookups for "
+"sorted lists::"
 msgstr ""
 
-#: library/bisect.rst:185
+#: library/bisect.rst:187
 msgid "Examples"
 msgstr ""
 
-#: library/bisect.rst:189
+#: library/bisect.rst:191
 msgid ""
-"The :func:`bisect` function can be useful for numeric table lookups. This "
-"example uses :func:`bisect` to look up a letter grade for an exam score "
-"(say) based on a set of ordered numeric breakpoints: 90 and up is an 'A', 80 "
-"to 89 is a 'B', and so on::"
+"The :py:func:`~bisect.bisect` function can be useful for numeric table "
+"lookups. This example uses :py:func:`~bisect.bisect` to look up a letter "
+"grade for an exam score (say) based on a set of ordered numeric breakpoints: "
+"90 and up is an 'A', 80 to 89 is a 'B', and so on::"
 msgstr ""
 
-#: library/bisect.rst:201
+#: library/bisect.rst:203
 msgid ""
-"The :func:`bisect` and :func:`insort` functions also work with lists of "
-"tuples.  The *key* argument can serve to extract the field used for ordering "
-"records in a table::"
+"The :py:func:`~bisect.bisect` and :py:func:`~bisect.insort` functions also "
+"work with lists of tuples.  The *key* argument can serve to extract the "
+"field used for ordering records in a table::"
 msgstr ""
 
-#: library/bisect.rst:235
+#: library/bisect.rst:237
 msgid ""
 "If the key function is expensive, it is possible to avoid repeated function "
 "calls by searching a list of precomputed keys to find the index of a record::"

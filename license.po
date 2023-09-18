@@ -4,9 +4,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 22:33+0300\n"
 "PO-Revision-Date: 2022-12-28 16:31-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -305,95 +305,100 @@ msgid "Mersenne Twister"
 msgstr "Mersenne Twister'ı"
 
 #: license.rst:305
+#, fuzzy
 msgid ""
-"The :mod:`_random` module includes code based on a download from http://www."
-"math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/emt19937ar.html. The following "
-"are the verbatim comments from the original code::"
+"The :mod:`!_random` C extension underlying the :mod:`random` module includes "
+"code based on a download from http://www.math.sci.hiroshima-u.ac.jp/~m-mat/"
+"MT/MT2002/emt19937ar.html. The following are the verbatim comments from the "
+"original code::"
 msgstr ""
 ":mod:`_random` modülü, http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/"
 "MT2002/emt19937ar.html adresinden indirilen kodu temel alır. Orijinal koddan "
 "kelimesi kelimesine yorumlar aşağıdadır::"
 
-#: license.rst:352
+#: license.rst:353
 msgid "Sockets"
 msgstr "Soketler"
 
-#: license.rst:354
+#: license.rst:355
+#, fuzzy
 msgid ""
-"The :mod:`socket` module uses the functions, :func:`getaddrinfo`, and :func:"
-"`getnameinfo`, which are coded in separate source files from the WIDE "
+"The :mod:`socket` module uses the functions, :c:func:`!getaddrinfo`, and :c:"
+"func:`!getnameinfo`, which are coded in separate source files from the WIDE "
 "Project, https://www.wide.ad.jp/. ::"
 msgstr ""
 ":mod:`socket` modülü, https://www.wide.ad.jp adresindeki WIDE Projesi'nden "
 "ayrı kaynak dosyalarında kodlanan :func:`getaddrinfo` ve :func:`getnameinfo` "
 "fonksiyonlarını kullanır. /. ::"
 
-#: license.rst:387
+#: license.rst:388
 msgid "Asynchronous socket services"
 msgstr "Asenkron soket hizmetleri"
 
-#: license.rst:389
+#: license.rst:390
+#, fuzzy
 msgid ""
-"The :mod:`asynchat` and :mod:`asyncore` modules contain the following "
-"notice::"
+"The :mod:`!test.support.asynchat` and :mod:`!test.support.asyncore` modules "
+"contain the following notice::"
 msgstr ""
 ":mod:`asynchat` ve :mod:`asyncore` modülleri aşağıdaki uyarıyı içerir::"
 
-#: license.rst:414
+#: license.rst:416
 msgid "Cookie management"
 msgstr "Çerez yönetimi"
 
-#: license.rst:416
+#: license.rst:418
 msgid "The :mod:`http.cookies` module contains the following notice::"
 msgstr ":mod:`http.cookies` modülü aşağıdaki uyarıyı içerir::"
 
-#: license.rst:442
+#: license.rst:444
 msgid "Execution tracing"
 msgstr "Çalıştırma izleme"
 
-#: license.rst:444
+#: license.rst:446
 msgid "The :mod:`trace` module contains the following notice::"
 msgstr ":mod:`trace` modülü aşağıdaki uyarıyı içerir::"
 
-#: license.rst:475
+#: license.rst:477
 msgid "UUencode and UUdecode functions"
 msgstr "UUencode ve UUdecode fonksiyonları"
 
-#: license.rst:477
+#: license.rst:479
 msgid "The :mod:`uu` module contains the following notice::"
 msgstr ":mod:`uu` modülü aşağıdaki uyarıyı içerir::"
 
-#: license.rst:505
+#: license.rst:507
 msgid "XML Remote Procedure Calls"
 msgstr "XML Uzaktan Yordam Çağrıları"
 
-#: license.rst:507
+#: license.rst:509
 msgid "The :mod:`xmlrpc.client` module contains the following notice::"
 msgstr ":mod:`xmlrpc.client` modülü aşağıdaki uyarıyı içerir::"
 
-#: license.rst:538
+#: license.rst:540
 msgid "test_epoll"
 msgstr "test_epoll"
 
-#: license.rst:540
-msgid "The :mod:`test_epoll` module contains the following notice::"
+#: license.rst:542
+#, fuzzy
+msgid "The :mod:`!test.test_epoll` module contains the following notice::"
 msgstr ":mod:`test_epoll` modülü aşağıdaki uyarıyı içerir::"
 
-#: license.rst:564
+#: license.rst:566
 msgid "Select kqueue"
 msgstr "kqueue seçin"
 
-#: license.rst:566
+#: license.rst:568
 msgid ""
 "The :mod:`select` module contains the following notice for the kqueue "
 "interface::"
 msgstr ":mod:`select` modülü, kqueue arayüzü için aşağıdaki uyarıyı içerir::"
 
-#: license.rst:595
+#: license.rst:597
 msgid "SipHash24"
 msgstr "SipHash24"
 
-#: license.rst:597
+#: license.rst:599
 msgid ""
 "The file :file:`Python/pyhash.c` contains Marek Majkowski' implementation of "
 "Dan Bernstein's SipHash24 algorithm. It contains the following note::"
@@ -401,11 +406,11 @@ msgstr ""
 ":file:`Python/pyhash.c` dosyası, Dan Bernstein'ın SipHash24 algoritmasının "
 "Marek Majkowski uygulamasını içerir. Burada aşağıdaki not yer alır::"
 
-#: license.rst:624
+#: license.rst:626
 msgid "strtod and dtoa"
 msgstr "strtod ve dtoa"
 
-#: license.rst:626
+#: license.rst:628
 msgid ""
 "The file :file:`Python/dtoa.c`, which supplies C functions dtoa and strtod "
 "for conversion of C doubles to and from strings, is derived from the file of "
@@ -421,17 +426,19 @@ msgstr ""
 "Mart 2009'da alınan orijinal dosya aşağıdaki telif hakkı ve lisans "
 "bildirimini içerir:"
 
-#: license.rst:654
+#: license.rst:656
 msgid "OpenSSL"
 msgstr "OpenSSL"
 
-#: license.rst:656
+#: license.rst:658
+#, fuzzy
 msgid ""
 "The modules :mod:`hashlib`, :mod:`posix`, :mod:`ssl`, :mod:`crypt` use the "
 "OpenSSL library for added performance if made available by the operating "
 "system. Additionally, the Windows and macOS installers for Python may "
 "include a copy of the OpenSSL libraries, so we include a copy of the OpenSSL "
-"license here::"
+"license here. For the OpenSSL 3.0 release, and later releases derived from "
+"that, the Apache License v2 applies::"
 msgstr ""
 ":mod:`hashlib`, :mod:`posix`, :mod:`ssl`, :mod:`crypt` modülleri, işletim "
 "sistemi tarafından sağlanmışsa ek performans için OpenSSL kütüphanesini "
@@ -439,37 +446,41 @@ msgstr ""
 "kütüphanelerinin bir kopyasını içerebilir, bu nedenle buraya OpenSSL "
 "lisansının bir kopyasını ekliyoruz::"
 
-#: license.rst:791
+#: license.rst:845
 msgid "expat"
 msgstr "expat"
 
-#: license.rst:793
+#: license.rst:847
+#, fuzzy
 msgid ""
-"The :mod:`pyexpat` extension is built using an included copy of the expat "
-"sources unless the build is configured ``--with-system-expat``::"
+"The :mod:`pyexpat <xml.parsers.expat>` extension is built using an included "
+"copy of the expat sources unless the build is configured ``--with-system-"
+"expat``::"
 msgstr ""
 ":mod:`pyexpat` uzantısı, derleme ``--with-system-expat`` şeklinde "
 "yapılandırılmadığı sürece, expat kaynaklarının dahil edildiği bir kopya "
 "kullanılarak oluşturulur::"
 
-#: license.rst:820
+#: license.rst:874
 msgid "libffi"
 msgstr "libffi"
 
-#: license.rst:822
+#: license.rst:876
+#, fuzzy
 msgid ""
-"The :mod:`_ctypes` extension is built using an included copy of the libffi "
-"sources unless the build is configured ``--with-system-libffi``::"
+"The :mod:`!_ctypes` C extension underlying the :mod:`ctypes` module is built "
+"using an included copy of the libffi sources unless the build is configured "
+"``--with-system-libffi``::"
 msgstr ""
 ":mod:`_ctypes` uzantısı, yapı ``--with-system-libffi`` olarak "
 "yapılandırılmadığı sürece libffi kaynaklarının dahil edildiği bir kopya "
 "kullanılarak oluşturulur::"
 
-#: license.rst:849
+#: license.rst:904
 msgid "zlib"
 msgstr "zlib"
 
-#: license.rst:851
+#: license.rst:906
 msgid ""
 "The :mod:`zlib` extension is built using an included copy of the zlib "
 "sources if the zlib version found on the system is too old to be used for "
@@ -479,11 +490,11 @@ msgstr ""
 "kullanılamayacak kadar eskiyse, zlib kaynaklarının dahil edildiği bir kopya "
 "kullanılarak oluşturulur::"
 
-#: license.rst:880
+#: license.rst:935
 msgid "cfuhash"
 msgstr "cfuhash"
 
-#: license.rst:882
+#: license.rst:937
 msgid ""
 "The implementation of the hash table used by the :mod:`tracemalloc` is based "
 "on the cfuhash project::"
@@ -491,24 +502,26 @@ msgstr ""
 ":mod:`tracemalloc` tarafından kullanılan hash tablosunun uygulanması cfuhash "
 "projesine dayanmaktadır::"
 
-#: license.rst:921
+#: license.rst:976
 msgid "libmpdec"
 msgstr "libmpdec"
 
-#: license.rst:923
+#: license.rst:978
+#, fuzzy
 msgid ""
-"The :mod:`_decimal` module is built using an included copy of the libmpdec "
-"library unless the build is configured ``--with-system-libmpdec``::"
+"The :mod:`!_decimal` C extension underlying the :mod:`decimal` module is "
+"built using an included copy of the libmpdec library unless the build is "
+"configured ``--with-system-libmpdec``::"
 msgstr ""
 ":mod:`_decimal` modülü, yapı ``--with-system-libmpdec`` şeklinde "
 "yapılandırılmadığı sürece libmpdec kitaplığının dahil edildiği bir kopya "
 "kullanılarak oluşturulur::"
 
-#: license.rst:953
+#: license.rst:1009
 msgid "W3C C14N test suite"
 msgstr "W3C C14N test paketi"
 
-#: license.rst:955
+#: license.rst:1011
 msgid ""
 "The C14N 2.0 test suite in the :mod:`test` package (``Lib/test/xmltestdata/"
 "c14n-20/``) was retrieved from the W3C website at https://www.w3.org/TR/xml-"
@@ -518,11 +531,11 @@ msgstr ""
 "``), https://www.w3.org/TR/xml-c14n2-testcases/ adresindeki W3C web "
 "sitesinden alınmıştır ve 3 maddeli BSD lisansı altında dağıtılmaktadır::"
 
-#: license.rst:990
+#: license.rst:1046
 msgid "Audioop"
 msgstr "Audioop"
 
-#: license.rst:992
+#: license.rst:1048
 msgid ""
 "The audioop module uses the code base in g771.c file of the SoX project::"
 msgstr ""

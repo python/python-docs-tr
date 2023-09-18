@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: library/idle.rst:4
+#: library/idle.rst:10
 msgid "IDLE"
 msgstr ""
 
@@ -242,7 +242,7 @@ msgstr ""
 msgid "Select the entire contents of the current window."
 msgstr ""
 
-#: library/idle.rst:370
+#: library/idle.rst:355 library/idle.rst:370
 msgid "Cut"
 msgstr ""
 
@@ -251,7 +251,7 @@ msgid ""
 "Copy selection into the system-wide clipboard; then delete the selection."
 msgstr ""
 
-#: library/idle.rst:373
+#: library/idle.rst:355 library/idle.rst:373
 msgid "Copy"
 msgstr ""
 
@@ -259,7 +259,7 @@ msgstr ""
 msgid "Copy selection into the system-wide clipboard."
 msgstr ""
 
-#: library/idle.rst:376
+#: library/idle.rst:355 library/idle.rst:376
 msgid "Paste"
 msgstr ""
 
@@ -917,7 +917,7 @@ msgstr ""
 msgid ""
 "Any selection becomes a search target.  However, only selections within a "
 "line work because searches are only performed within lines with the terminal "
-"newline removed.  If ``[x] Regular expresion`` is checked, the target is "
+"newline removed.  If ``[x] Regular expression`` is checked, the target is "
 "interpreted according to the Python re module."
 msgstr ""
 
@@ -1629,4 +1629,36 @@ msgid ""
 "maps IDLE menu items to the code that implements the item. Except for files "
 "listed under 'Startup', the idlelib code is 'private' in sense that feature "
 "changes can be backported (see :pep:`434`)."
+msgstr ""
+
+#: library/idle.rst:10
+msgid "Python Editor"
+msgstr ""
+
+#: library/idle.rst:10
+msgid "Integrated Development Environment"
+msgstr ""
+
+#: library/idle.rst:70
+msgid "Module browser"
+msgstr ""
+
+#: library/idle.rst:70
+msgid "Path browser"
+msgstr ""
+
+#: library/idle.rst:212
+msgid "Run script"
+msgstr ""
+
+#: library/idle.rst:279
+msgid "debugger"
+msgstr ""
+
+#: library/idle.rst:279
+msgid "stack viewer"
+msgstr ""
+
+#: library/idle.rst:355
+msgid "breakpoints"
 msgstr ""

@@ -4,9 +4,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: 2022-12-29 00:34-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -350,10 +350,11 @@ msgstr ""
 "c:func:`Py_Initialize`: çağrısından önce aşağıdaki iki ifadeyi ekleyin::"
 
 #: extending/embedding.rst:252
+#, fuzzy
 msgid ""
-"These two lines initialize the ``numargs`` variable, and make the :func:`emb."
-"numargs` function accessible to the embedded Python interpreter. With these "
-"extensions, the Python script can do things like"
+"These two lines initialize the ``numargs`` variable, and make the :func:`!"
+"emb.numargs` function accessible to the embedded Python interpreter. With "
+"these extensions, the Python script can do things like"
 msgstr ""
 "Bu iki satır ``numargs`` değişkenini başlatır ve :func:`emb.numargs` "
 "fonksiyonunu gömülü Python yorumlayıcısı için erişilebilir kılar. Bu "

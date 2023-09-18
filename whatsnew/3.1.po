@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -436,7 +436,7 @@ msgid ""
 msgstr ""
 
 #: whatsnew/3.1.rst:373
-msgid "The :attr:`sys.version_info` tuple is now a named tuple::"
+msgid "The :data:`sys.version_info` tuple is now a named tuple::"
 msgstr ""
 
 #: whatsnew/3.1.rst:378
@@ -611,7 +611,7 @@ msgstr ""
 msgid ""
 "Apart from the performance improvements this change should be invisible to "
 "end users, with one exception: for testing and debugging purposes there's a "
-"new :attr:`sys.int_info` that provides information about the internal "
+"new :data:`sys.int_info` that provides information about the internal "
 "format, giving the number of bits per digit and the size in bytes of the C "
 "type used to store each digit::"
 msgstr ""
@@ -632,7 +632,7 @@ msgstr ""
 
 #: whatsnew/3.1.rst:504
 msgid ""
-"Deprecated :c:func:`PyNumber_Int`.  Use :c:func:`PyNumber_Long` instead."
+"Deprecated :c:func:`!PyNumber_Int`.  Use :c:func:`PyNumber_Long` instead."
 msgstr ""
 
 #: whatsnew/3.1.rst:506
@@ -642,8 +642,8 @@ msgstr ""
 #: whatsnew/3.1.rst:508
 msgid ""
 "Added a new :c:func:`PyOS_string_to_double` function to replace the "
-"deprecated functions :c:func:`PyOS_ascii_strtod` and :c:func:"
-"`PyOS_ascii_atof`."
+"deprecated functions :c:func:`!PyOS_ascii_strtod` and :c:func:`!"
+"PyOS_ascii_atof`."
 msgstr ""
 
 #: whatsnew/3.1.rst:511
@@ -652,7 +652,7 @@ msgstr ""
 
 #: whatsnew/3.1.rst:513
 msgid ""
-"Added :c:type:`PyCapsule` as a replacement for the :c:type:`PyCObject` API. "
+"Added :c:type:`PyCapsule` as a replacement for the :c:type:`!PyCObject` API. "
 "The principal difference is that the new type has a well defined interface "
 "for passing typing safety information and a less complicated signature for "
 "calling a destructor.  The old type had a problematic API and is now "

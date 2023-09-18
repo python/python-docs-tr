@@ -4,9 +4,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 22:19+0000\n"
+"POT-Creation-Date: 2023-09-18 22:33+0300\n"
 "PO-Revision-Date: 2023-02-02 02:32+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -197,12 +197,14 @@ msgstr ""
 "ad alanını paylaşmaları! [#]_"
 
 #: tutorial/classes.rst:90
+#, fuzzy
 msgid ""
 "Attributes may be read-only or writable.  In the latter case, assignment to "
 "attributes is possible.  Module attributes are writable: you can write "
 "``modname.the_answer = 42``.  Writable attributes may also be deleted with "
 "the :keyword:`del` statement.  For example, ``del modname.the_answer`` will "
-"remove the attribute :attr:`the_answer` from the object named by ``modname``."
+"remove the attribute :attr:`!the_answer` from the object named by "
+"``modname``."
 msgstr ""
 "Nitelikler salt okunur veya düzenlenebilir olabilir.  İkinci durumda, "
 "niteliklere atama yapmak mümkündür.  Modül nitelikleri düzenlenebilir: "
@@ -466,14 +468,15 @@ msgstr ""
 "fonksiyonların adını buraya bağlar."
 
 #: tutorial/classes.rst:247
+#, fuzzy
 msgid ""
 "When a class definition is left normally (via the end), a *class object* is "
 "created.  This is basically a wrapper around the contents of the namespace "
 "created by the class definition; we'll learn more about class objects in the "
 "next section.  The original local scope (the one in effect just before the "
 "class definition was entered) is reinstated, and the class object is bound "
-"here to the class name given in the class definition header (:class:"
-"`ClassName` in the example)."
+"here to the class name given in the class definition header (:class:`!"
+"ClassName` in the example)."
 msgstr ""
 "Bir sınıf tanımı normal olarak bırakıldığında (uç aracılığıyla), bir *sınıf "
 "nesnesi* oluşturulur.  Bu temelde sınıf tanımı tarafından oluşturulan ad "
@@ -507,11 +510,12 @@ msgstr ""
 "Yani, sınıf tanımı şöyle görünüyorsa::"
 
 #: tutorial/classes.rst:276
+#, fuzzy
 msgid ""
 "then ``MyClass.i`` and ``MyClass.f`` are valid attribute references, "
 "returning an integer and a function object, respectively. Class attributes "
 "can also be assigned to, so you can change the value of ``MyClass.i`` by "
-"assignment. :attr:`__doc__` is also a valid attribute, returning the "
+"assignment. :attr:`!__doc__` is also a valid attribute, returning the "
 "docstring belonging to the class: ``\"A simple example class\"``."
 msgstr ""
 "bu durumda ``MyClass.i`` ve ``MyClass.f`` geçerli nitelik referanslarıdır ve "
@@ -539,11 +543,12 @@ msgstr ""
 "değişkenine atar."
 
 #: tutorial/classes.rst:291
+#, fuzzy
 msgid ""
 "The instantiation operation (\"calling\" a class object) creates an empty "
 "object. Many classes like to create objects with instances customized to a "
 "specific initial state. Therefore a class may define a special method named :"
-"meth:`__init__`, like this::"
+"meth:`~object.__init__`, like this::"
 msgstr ""
 "Örnekleme işlemi (\"sınıf nesnesi çağırma\") boş bir nesne oluşturur. Birçok "
 "sınıf, belirli bir başlangıç durumuna göre özelleştirilmiş örneklerle "
@@ -551,9 +556,10 @@ msgstr ""
 "bir metot tanımlayabilir:"
 
 #: tutorial/classes.rst:299
+#, fuzzy
 msgid ""
-"When a class defines an :meth:`__init__` method, class instantiation "
-"automatically invokes :meth:`__init__` for the newly created class "
+"When a class defines an :meth:`~object.__init__` method, class instantiation "
+"automatically invokes :meth:`!__init__` for the newly created class "
 "instance.  So in this example, a new, initialized instance can be obtained "
 "by::"
 msgstr ""
@@ -562,10 +568,11 @@ msgstr ""
 "çağırır.  Bu örnekte, yeni başlatılmış bir örnek şu şekilde elde edilebilir::"
 
 #: tutorial/classes.rst:305
+#, fuzzy
 msgid ""
-"Of course, the :meth:`__init__` method may have arguments for greater "
-"flexibility.  In that case, arguments given to the class instantiation "
-"operator are passed on to :meth:`__init__`.  For example, ::"
+"Of course, the :meth:`~object.__init__` method may have arguments for "
+"greater flexibility.  In that case, arguments given to the class "
+"instantiation operator are passed on to :meth:`!__init__`.  For example, ::"
 msgstr ""
 "Tabii ki, :meth:`__init__` yöntemi daha fazla esneklik için argümanlara "
 "sahip olabilir.  Bu durumda, sınıf örnekleme işlecine verilen bağımsız "
@@ -586,11 +593,12 @@ msgstr ""
 "veri nitelikleri ve metotları."
 
 #: tutorial/classes.rst:328
+#, fuzzy
 msgid ""
 "*data attributes* correspond to \"instance variables\" in Smalltalk, and to "
 "\"data members\" in C++.  Data attributes need not be declared; like local "
 "variables, they spring into existence when they are first assigned to.  For "
-"example, if ``x`` is the instance of :class:`MyClass` created above, the "
+"example, if ``x`` is the instance of :class:`!MyClass` created above, the "
 "following piece of code will print the value ``16``, without leaving a "
 "trace::"
 msgstr ""
@@ -643,8 +651,9 @@ msgid "Usually, a method is called right after it is bound::"
 msgstr "Genellikle, bir metot bağlandıktan hemen sonra çağrılır::"
 
 #: tutorial/classes.rst:366
+#, fuzzy
 msgid ""
-"In the :class:`MyClass` example, this will return the string ``'hello "
+"In the :class:`!MyClass` example, this will return the string ``'hello "
 "world'``. However, it is not necessary to call a method right away: ``x.f`` "
 "is a method object, and can be stored away and called at a later time.  For "
 "example::"
@@ -658,10 +667,11 @@ msgid "will continue to print ``hello world`` until the end of time."
 msgstr "daima ``hello world`` yazdırmaya devam edecek."
 
 #: tutorial/classes.rst:376
+#, fuzzy
 msgid ""
 "What exactly happens when a method is called?  You may have noticed that ``x."
 "f()`` was called without an argument above, even though the function "
-"definition for :meth:`f` specified an argument.  What happened to the "
+"definition for :meth:`!f` specified an argument.  What happened to the "
 "argument? Surely Python raises an exception when a function that requires an "
 "argument is called without any --- even if the argument isn't actually "
 "used..."
@@ -831,11 +841,12 @@ msgstr ""
 "nesnesi atamak da uygundur.  Mesela::"
 
 #: tutorial/classes.rst:535
+#, fuzzy
 msgid ""
-"Now ``f``, ``g`` and ``h`` are all attributes of class :class:`C` that refer "
-"to function objects, and consequently they are all methods of instances of :"
-"class:`C` --- ``h`` being exactly equivalent to ``g``.  Note that this "
-"practice usually only serves to confuse the reader of a program."
+"Now ``f``, ``g`` and ``h`` are all attributes of class :class:`!C` that "
+"refer to function objects, and consequently they are all methods of "
+"instances of :class:`!C` --- ``h`` being exactly equivalent to ``g``.  Note "
+"that this practice usually only serves to confuse the reader of a program."
 msgstr ""
 "Buradaki ``f``, ``g`` ve ``h`` fonksiyonları nesnelerine başvuran :class:`C` "
 "sınıfının bütün nitelikleridir ve sonuç olarak hepsi :class:`C` --- ``h`` "
@@ -895,18 +906,19 @@ msgstr ""
 "olmaz.  Türetilmiş sınıf tanımının söz dizimi şöyle görünür::"
 
 #: tutorial/classes.rst:584
+#, fuzzy
 msgid ""
-"The name :class:`BaseClassName` must be defined in a scope containing the "
-"derived class definition.  In place of a base class name, other arbitrary "
-"expressions are also allowed.  This can be useful, for example, when the "
-"base class is defined in another module::"
+"The name :class:`!BaseClassName` must be defined in a namespace accessible "
+"from the scope containing the derived class definition.  In place of a base "
+"class name, other arbitrary expressions are also allowed.  This can be "
+"useful, for example, when the base class is defined in another module::"
 msgstr ""
 ":class:`BaseClassName` adı, türetilmiş sınıf tanımını içeren bir kapsamda "
 "tanımlanmalıdır.  Temel sınıf adı yerine, diğer rasgele ifadelere de izin "
 "verilir.  Bu, örneğin, temel sınıf başka bir modülde tanımlandığında yararlı "
 "olabilir::"
 
-#: tutorial/classes.rst:591
+#: tutorial/classes.rst:592
 msgid ""
 "Execution of a derived class definition proceeds the same as for a base "
 "class. When the class object is constructed, the base class is remembered.  "
@@ -921,7 +933,7 @@ msgstr ""
 "arama temel sınıfa bakmaya devam eder.  Temel sınıfın kendisi başka bir "
 "sınıftan türetilmişse, bu kural özyinelemeli olarak uygulanır."
 
-#: tutorial/classes.rst:597
+#: tutorial/classes.rst:598
 msgid ""
 "There's nothing special about instantiation of derived classes: "
 "``DerivedClassName()`` creates a new instance of the class.  Method "
@@ -935,7 +947,7 @@ msgstr ""
 "gerekirse temel sınıflar zincirinin aşağısına inilir ve bu bir fonksiyon "
 "nesnesi veriyorsa metot başvurusu geçerlidir."
 
-#: tutorial/classes.rst:603
+#: tutorial/classes.rst:604
 msgid ""
 "Derived classes may override methods of their base classes.  Because methods "
 "have no special privileges when calling other methods of the same object, a "
@@ -950,7 +962,7 @@ msgstr ""
 "çağırabilir.  (C++ programcıları için: Python'daki tüm yöntemler etkili bir "
 "şekilde ``sanal``.)"
 
-#: tutorial/classes.rst:609
+#: tutorial/classes.rst:610
 msgid ""
 "An overriding method in a derived class may in fact want to extend rather "
 "than simply replace the base class method of the same name. There is a "
@@ -966,11 +978,11 @@ msgstr ""
 "için de yararlıdır.  (Bunun yalnızca temel sınıfa genel kapsamda "
 "``BaseClassName`` olarak erişilebiliyorsa çalıştığını unutmayın.)"
 
-#: tutorial/classes.rst:616
+#: tutorial/classes.rst:617
 msgid "Python has two built-in functions that work with inheritance:"
 msgstr "Python'un kalıtımla çalışan iki yerleşik fonksiyonu vardır:"
 
-#: tutorial/classes.rst:618
+#: tutorial/classes.rst:619
 msgid ""
 "Use :func:`isinstance` to check an instance's type: ``isinstance(obj, int)`` "
 "will be ``True`` only if ``obj.__class__`` is :class:`int` or some class "
@@ -980,7 +992,7 @@ msgstr ""
 "``isinstance(obj, int)`` yalnızca ``obj.__class__`` :class:`int` veya :class:"
 "`int` sınıfından türetilmiş bir sınıfsa ``True`` olacaktır."
 
-#: tutorial/classes.rst:622
+#: tutorial/classes.rst:623
 msgid ""
 "Use :func:`issubclass` to check class inheritance: ``issubclass(bool, int)`` "
 "is ``True`` since :class:`bool` is a subclass of :class:`int`.  However, "
@@ -992,11 +1004,11 @@ msgstr ""
 "'in bir alt sınıfıdır.  Ancak, ``issubclass(float, int)`` ``False`` "
 "olduğundan :class:`float`, :class:`int` alt sınıfı değildir."
 
-#: tutorial/classes.rst:632
+#: tutorial/classes.rst:633
 msgid "Multiple Inheritance"
 msgstr "Çoklu Kalıtım"
 
-#: tutorial/classes.rst:634
+#: tutorial/classes.rst:635
 msgid ""
 "Python supports a form of multiple inheritance as well.  A class definition "
 "with multiple base classes looks like this::"
@@ -1004,15 +1016,16 @@ msgstr ""
 "Python, çoklu kalıtım biçimini de destekler.  Birden çok temel sınıf içeren "
 "bir sınıf tanımı şöyle görünür::"
 
-#: tutorial/classes.rst:644
+#: tutorial/classes.rst:645
+#, fuzzy
 msgid ""
 "For most purposes, in the simplest cases, you can think of the search for "
 "attributes inherited from a parent class as depth-first, left-to-right, not "
 "searching twice in the same class where there is an overlap in the "
-"hierarchy. Thus, if an attribute is not found in :class:`DerivedClassName`, "
-"it is searched for in :class:`Base1`, then (recursively) in the base classes "
-"of :class:`Base1`, and if it was not found there, it was searched for in :"
-"class:`Base2`, and so on."
+"hierarchy. Thus, if an attribute is not found in :class:`!DerivedClassName`, "
+"it is searched for in :class:`!Base1`, then (recursively) in the base "
+"classes of :class:`!Base1`, and if it was not found there, it was searched "
+"for in :class:`!Base2`, and so on."
 msgstr ""
 "Basitçe, bir üst sınıftan devralınan nitelikleri aramayı, hiyerarşide "
 "çakışmanın olduğu aynı sınıfta iki kez arama yapmadan, derinlik öncelikli, "
@@ -1021,7 +1034,7 @@ msgstr ""
 "(özyinelemeli olarak) :class:`Base1` temel sınıflarında aranır ve orada "
 "bulunamazsa :class:`Base2` vb."
 
-#: tutorial/classes.rst:651
+#: tutorial/classes.rst:652
 msgid ""
 "In fact, it is slightly more complex than that; the method resolution order "
 "changes dynamically to support cooperative calls to :func:`super`.  This "
@@ -1035,7 +1048,7 @@ msgstr ""
 "olarak bilinir ve tekli kalıtım dillerinde bulunan süper çağrıdan daha "
 "güçlüdür."
 
-#: tutorial/classes.rst:657
+#: tutorial/classes.rst:658
 msgid ""
 "Dynamic ordering is necessary because all cases of multiple inheritance "
 "exhibit one or more diamond relationships (where at least one of the parent "
@@ -1064,11 +1077,11 @@ msgstr ""
 "ile güvenilir ve genişletilebilir sınıflar tasarlamayı mümkün kılar.  Daha "
 "fazla ayrıntı için bkz. https://www.python.org/download/releases/2.3/mro/."
 
-#: tutorial/classes.rst:674
+#: tutorial/classes.rst:675
 msgid "Private Variables"
 msgstr "Özel Değişkenler"
 
-#: tutorial/classes.rst:676
+#: tutorial/classes.rst:677
 msgid ""
 "\"Private\" instance variables that cannot be accessed except from inside an "
 "object don't exist in Python.  However, there is a convention that is "
@@ -1084,7 +1097,7 @@ msgstr ""
 "veya veri üyesi olsun).  Bir uygulama detayıdır ve önceden haber "
 "verilmeksizin değiştirilebilir."
 
-#: tutorial/classes.rst:686
+#: tutorial/classes.rst:687
 msgid ""
 "Since there is a valid use-case for class-private members (namely to avoid "
 "name clashes of names with names defined by subclasses), there is limited "
@@ -1103,7 +1116,7 @@ msgstr ""
 "değiştirilir;  Bu mangling, bir sınıfın tanımı içinde gerçekleştiği sürece "
 "tanımlayıcının söz dizimsel konumuna bakılmaksızın yapılır."
 
-#: tutorial/classes.rst:695
+#: tutorial/classes.rst:696
 msgid ""
 "Name mangling is helpful for letting subclasses override methods without "
 "breaking intraclass method calls.  For example::"
@@ -1111,7 +1124,7 @@ msgstr ""
 "Ad mangling, alt sınıfların sınıf içi metot çağrılarını kesmeden metotları "
 "geçersiz kılmasına izin vermek için yararlıdır.  Mesela::"
 
-#: tutorial/classes.rst:717
+#: tutorial/classes.rst:718
 msgid ""
 "The above example would work even if ``MappingSubclass`` were to introduce a "
 "``__update`` identifier since it is replaced with ``_Mapping__update`` in "
@@ -1123,7 +1136,7 @@ msgstr ""
 "``_MappingSubclass__update`` ile değiştirildiği için ``__update`` "
 "tanımlayıcısı tanıtsa bile çalışır."
 
-#: tutorial/classes.rst:722
+#: tutorial/classes.rst:723
 msgid ""
 "Note that the mangling rules are designed mostly to avoid accidents; it "
 "still is possible to access or modify a variable that is considered "
@@ -1135,7 +1148,7 @@ msgstr ""
 "hala mümkündür.  Bu, hata ayıklayıcı gibi özel durumlarda bile yararlı "
 "olabilir."
 
-#: tutorial/classes.rst:726
+#: tutorial/classes.rst:727
 msgid ""
 "Notice that code passed to ``exec()`` or ``eval()`` does not consider the "
 "classname of the invoking class to be the current class; this is similar to "
@@ -1150,11 +1163,11 @@ msgstr ""
 "benzer.  Aynı kısıtlama ``getattr()``, ``setattr()`` ve ``delattr()`` ve "
 "doğrudan ``__dict__`` atıfta bulunurken de geçerlidir."
 
-#: tutorial/classes.rst:737
+#: tutorial/classes.rst:738
 msgid "Odds and Ends"
 msgstr "Oranlar ve Bitişler"
 
-#: tutorial/classes.rst:739
+#: tutorial/classes.rst:740
 msgid ""
 "Sometimes it is useful to have a data type similar to the Pascal \"record\" "
 "or C \"struct\", bundling together a few named data items. The idiomatic "
@@ -1164,14 +1177,15 @@ msgstr ""
 "'u veya C *struct* 'ına benzer bir veri türüne sahip olmak yararlıdır. "
 "Deyimsel yaklaşım, bu amaç için :mod:`dataclasses` kullanmaktır::"
 
-#: tutorial/classes.rst:759
+#: tutorial/classes.rst:760
+#, fuzzy
 msgid ""
 "A piece of Python code that expects a particular abstract data type can "
 "often be passed a class that emulates the methods of that data type "
 "instead.  For instance, if you have a function that formats some data from a "
-"file object, you can define a class with methods :meth:`read` and :meth:`!"
-"readline` that get the data from a string buffer instead, and pass it as an "
-"argument."
+"file object, you can define a class with methods :meth:`~io.TextIOBase.read` "
+"and :meth:`~io.TextIOBase.readline` that get the data from a string buffer "
+"instead, and pass it as an argument."
 msgstr ""
 "Belirli bir soyut veri türünü bekleyen Python kodunun bir parçası genellikle "
 "bunun yerine bu veri türünün yöntemlerine öykünen bir sınıfa geçirilebilir.  "
@@ -1180,21 +1194,22 @@ msgstr ""
 "değişken olarak geçiren :meth:`read` ve :meth:`!readline` yöntemlerine sahip "
 "bir sınıf tanımlayabilirsiniz."
 
-#: tutorial/classes.rst:770
+#: tutorial/classes.rst:772
+#, fuzzy
 msgid ""
 "Instance method objects have attributes, too: ``m.__self__`` is the instance "
-"object with the method :meth:`m`, and ``m.__func__`` is the function object "
+"object with the method :meth:`!m`, and ``m.__func__`` is the function object "
 "corresponding to the method."
 msgstr ""
 "Örnek yöntem nesnelerinin de nitelikleri vardır: ``m.__self__`` yöntemi olan "
 "örnek nesnedir :meth:`m`, ve ``m.__func__`` yönteme karşılık gelen fonksiyon "
 "nesnesidir."
 
-#: tutorial/classes.rst:778
+#: tutorial/classes.rst:780
 msgid "Iterators"
 msgstr "Yineleyiciler"
 
-#: tutorial/classes.rst:780
+#: tutorial/classes.rst:782
 msgid ""
 "By now you have probably noticed that most container objects can be looped "
 "over using a :keyword:`for` statement::"
@@ -1202,7 +1217,7 @@ msgstr ""
 "Şimdiye kadar büyük olasılıkla çoğu kapsayıcı nesnenin bir :keyword:`for` "
 "deyimi kullanılarak döngüye alınabileceğini fark etmişsinizdir::"
 
-#: tutorial/classes.rst:794
+#: tutorial/classes.rst:796
 msgid ""
 "This style of access is clear, concise, and convenient.  The use of "
 "iterators pervades and unifies Python.  Behind the scenes, the :keyword:"
@@ -1224,23 +1239,25 @@ msgstr ""
 "fonksiyonunu kullanarak :meth:`~iterator.__next__` yöntemini "
 "çağırabilirsiniz; Bu örnek, her şeyin nasıl çalıştığını gösterir::"
 
-#: tutorial/classes.rst:819
+#: tutorial/classes.rst:821
+#, fuzzy
 msgid ""
 "Having seen the mechanics behind the iterator protocol, it is easy to add "
-"iterator behavior to your classes.  Define an :meth:`__iter__` method which "
-"returns an object with a :meth:`~iterator.__next__` method.  If the class "
-"defines :meth:`__next__`, then :meth:`__iter__` can just return ``self``::"
+"iterator behavior to your classes.  Define an :meth:`~container.__iter__` "
+"method which returns an object with a :meth:`~iterator.__next__` method.  If "
+"the class defines :meth:`!__next__`, then :meth:`!__iter__` can just return "
+"``self``::"
 msgstr ""
 "Yineleme protokolünün arkasındaki mekaniği gördükten sonra, sınıflarınıza "
 "yineleme davranışı eklemek kolaydır.  :meth:`~iterator.__next__` metodu ile "
 "bir nesne döndüren :meth:`__iter__` metodunu tanımlayın.  Sınıf  :meth:"
 "`__next__` tanımlarsa, :meth:`__iter__`  sadece  ``self`` döndürebilir::"
 
-#: tutorial/classes.rst:856
+#: tutorial/classes.rst:858
 msgid "Generators"
 msgstr "Üreteçler"
 
-#: tutorial/classes.rst:858
+#: tutorial/classes.rst:860
 msgid ""
 ":term:`Generators <generator>` are a simple and powerful tool for creating "
 "iterators.  They are written like regular functions but use the :keyword:"
@@ -1256,19 +1273,20 @@ msgstr ""
 "değerlerini ve hangi deyimin en son yürütüldüğını hatırlar).  Bu örnek, "
 "üreteçlerin oluşturulmasının ne kadar da kolay olabileceğini gösterir::"
 
-#: tutorial/classes.rst:879
+#: tutorial/classes.rst:881
+#, fuzzy
 msgid ""
 "Anything that can be done with generators can also be done with class-based "
 "iterators as described in the previous section.  What makes generators so "
-"compact is that the :meth:`__iter__` and :meth:`~generator.__next__` methods "
-"are created automatically."
+"compact is that the :meth:`~iterator.__iter__` and :meth:`~generator."
+"__next__` methods are created automatically."
 msgstr ""
 "Üreteçlerle yapılabilecek her şey, önceki bölümde açıklandığı gibi sınıf "
 "tabanlı yineleyicilerle de yapılabilir.  Üreteçleri bu kadar kompakt yapan "
 "şey: :meth:`__iter__` ve :meth:`~generator.__next__` yöntemlerinin otomatik "
 "olarak oluşturulmasıdır."
 
-#: tutorial/classes.rst:884
+#: tutorial/classes.rst:886
 msgid ""
 "Another key feature is that the local variables and execution state are "
 "automatically saved between calls.  This made the function easier to write "
@@ -1280,7 +1298,7 @@ msgstr ""
 "kolaylaştırdı ve ``self.index`` ve ``self.data`` gibi değişkenleri "
 "kullanmaya kıyasla çok daha net hale getirdi."
 
-#: tutorial/classes.rst:889
+#: tutorial/classes.rst:891
 msgid ""
 "In addition to automatic method creation and saving program state, when "
 "generators terminate, they automatically raise :exc:`StopIteration`. In "
@@ -1292,11 +1310,11 @@ msgstr ""
 "Birlikte, bu özellikler normal bir işlev yazmaktan daha fazla çaba "
 "harcamadan yinelemeler oluşturmayı kolaylaştırır."
 
-#: tutorial/classes.rst:898
+#: tutorial/classes.rst:900
 msgid "Generator Expressions"
 msgstr "Üreteç İfadeleri"
 
-#: tutorial/classes.rst:900
+#: tutorial/classes.rst:902
 msgid ""
 "Some simple generators can be coded succinctly as expressions using a syntax "
 "similar to list comprehensions but with parentheses instead of square "
@@ -1312,15 +1330,15 @@ msgstr ""
 "ancak daha az çok yönlüdür ve aynı özellikle liste anlamalarından daha "
 "bellek dostu olma eğilimindedir."
 
-#: tutorial/classes.rst:907
+#: tutorial/classes.rst:909
 msgid "Examples::"
 msgstr "Örnekler::"
 
-#: tutorial/classes.rst:928
+#: tutorial/classes.rst:930
 msgid "Footnotes"
 msgstr "Dipnotlar"
 
-#: tutorial/classes.rst:929
+#: tutorial/classes.rst:931
 msgid ""
 "Except for one thing.  Module objects have a secret read-only attribute "
 "called :attr:`~object.__dict__` which returns the dictionary used to "
@@ -1335,3 +1353,20 @@ msgstr ""
 "global bir isim değildir. Kuşkusuz, bu durum ad alanlarının soyutlanış "
 "özelliklerine aykırı, dolayısıyla sadece programın durması sonrası çalışan "
 "hata ayıklayıcılar gibilerinin kullanımına kısıtlanmalı."
+
+#: tutorial/classes.rst:347
+#, fuzzy
+msgid "object"
+msgstr "Metot Nesneleri"
+
+#: tutorial/classes.rst:347
+msgid "method"
+msgstr ""
+
+#: tutorial/classes.rst:684
+msgid "name"
+msgstr ""
+
+#: tutorial/classes.rst:684
+msgid "mangling"
+msgstr ""

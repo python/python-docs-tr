@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-09-18 19:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -91,7 +91,7 @@ msgstr ""
 msgid ""
 "The *name* parameter must compare exactly to the name stored in the capsule. "
 "If the name stored in the capsule is ``NULL``, the *name* passed in must "
-"also be ``NULL``.  Python uses the C function :c:func:`strcmp` to compare "
+"also be ``NULL``.  Python uses the C function :c:func:`!strcmp` to compare "
 "capsule names."
 msgstr ""
 
@@ -164,8 +164,8 @@ msgstr ""
 #: c-api/capsule.rst:123
 msgid ""
 "In other words, if :c:func:`PyCapsule_IsValid` returns a true value, calls "
-"to any of the accessors (any function starting with :c:func:`PyCapsule_Get`) "
-"are guaranteed to succeed."
+"to any of the accessors (any function starting with ``PyCapsule_Get``) are "
+"guaranteed to succeed."
 msgstr ""
 
 #: c-api/capsule.rst:127
@@ -198,4 +198,12 @@ msgstr ""
 msgid ""
 "Set the void pointer inside *capsule* to *pointer*.  The pointer may not be "
 "``NULL``."
+msgstr ""
+
+#: c-api/capsule.rst:8
+msgid "object"
+msgstr ""
+
+#: c-api/capsule.rst:8
+msgid "Capsule"
 msgstr ""
