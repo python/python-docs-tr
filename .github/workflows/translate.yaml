@@ -25,7 +25,7 @@ jobs:
         run: pip install -r requirements.txt && sudo apt update && sudo apt install gettext -y
 
       - name: Run translate.py
-        run: python translate.py ${{ github.event.inputs.file }} -t google -s
+        run: python scripts/translate.py ${{ github.event.inputs.file }} -t google -s
 
       - name: Commit changes
         run: |

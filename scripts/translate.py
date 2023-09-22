@@ -27,8 +27,7 @@ parser.add_argument("-d", "--debug", action="store_true", help="Debug mode")
 parser.add_argument(
     "-s",
     "--skip-translated-entries",
-    choices=[True, False],
-    default=True,
+    action="store_true",
     help="Skip already translated entries",
 )
 
