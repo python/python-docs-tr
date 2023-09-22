@@ -12,10 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
-      - name: Clone CPython Repo
-        run: git clone https://github.com/python/cpython venv/cpython
-
+      
       - name: Set Up Python 3.12
         uses: actions/setup-python@v4
         with:
@@ -31,6 +28,7 @@ jobs:
         run: |
           git config --local user.email "python.docs.tr@gmail.com"
           git config --local user.name "python-docs-turkish"
+          git add ${{ github.event.inputs.file }}
           git commit -m "Translate ${{ github.event.inputs.file }}"
 
       - name: Create Pull Request
