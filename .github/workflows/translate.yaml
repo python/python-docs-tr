@@ -1,0 +1,47 @@
+name: Translate
+on:
+  workflow_dispatch:
+    inputs:
+      file:
+        description: "File to translate"
+        required: true
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Clone CPython Repo
+        run: git clone https://github.com/python/cpython venv/cpython
+
+      - name: Set Up Python 3.12
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12-dev"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt && sudo apt update && sudo apt install gettext -y
+
+      - name: Run translate.py
+        run: python translate.py ${{ github.event.inputs.file }} -t google -s
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "python.docs.tr@gmail.com"
+          git config --local user.name "python-docs-turkish"
+          git commit -m "Translate ${{ github.event.inputs.file }}"
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5.0.2
+        with:
+          token: ${{ secrets.BOT_PAT }}
+          commit-message: Translate ${{ github.event.inputs.file }}
+          author: python-docs-turkish <python.docs.tr@gmail.com>
+          committer: python-docs-turkish <python.docs.tr@gmail.com>
+          branch: translate-${{ github.event.inputs.file }}
+          delete-branch: true
+          title: Translate Translate ${{ github.event.inputs.file }}
+          body: "Translated: ${{ github.event.inputs.file }}"
+          labels: new-translation
