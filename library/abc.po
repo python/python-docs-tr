@@ -2,27 +2,27 @@
 # Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-01 00:18+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2023-08-09 13:48+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: library/abc.rst:2
 msgid ":mod:`abc` --- Abstract Base Classes"
-msgstr ""
+msgstr ":mod:`abc` --- Soyut Temel Sınıflar"
 
 #: library/abc.rst:11
 msgid "**Source code:** :source:`Lib/abc.py`"
-msgstr ""
+msgstr "**Kaynak kodu:** :kaynak:`Lib/abc.py`"
 
 #: library/abc.rst:15
 msgid ""
@@ -31,6 +31,11 @@ msgid ""
 "see the PEP for why this was added to Python. (See also :pep:`3141` and the :"
 "mod:`numbers` module regarding a type hierarchy for numbers based on ABCs.)"
 msgstr ""
+"Bu modül, Python'da :term:`soyut temel sınıfları <abstract base class>` "
+"(ABC'ler) tanımlaması için altyapıyı sağlar, :pep:`3119`; bunun Python'a "
+"neden eklendiğini öğrenmek için PEP'e bakın. (Ayrıca ABC'lere dayalı sayılar "
+"için tür hiyerarşisi ile ilgili :pep:`3141` ve :mod:`numbers` modülüne "
+"bakın.)"
 
 #: library/abc.rst:20
 msgid ""
@@ -40,12 +45,20 @@ msgid ""
 "class or instance provides a particular interface, for example, if it is :"
 "term:`hashable` or if it is a mapping."
 msgstr ""
+":mod:`collections` modülü, ABC'lerden türetilen bazı somut sınıflara "
+"sahiptir; bunlar elbette daha fazla türetilebilir. Ek olarak, :mod:"
+"`collections.abc` alt modülü, bir sınıfın veya örneğin belirli bir arayüzü "
+"sağlayıp sağlamadığını test etmek için kullanılabilecek bazı ABC'lere "
+"sahiptir; örneğin, :term:`hashable` veya bir eşleme olup olmadığı ."
 
 #: library/abc.rst:27
 msgid ""
 "This module provides the metaclass :class:`ABCMeta` for defining ABCs and a "
 "helper class :class:`ABC` to alternatively define ABCs through inheritance:"
 msgstr ""
+"Bu modül, ABC'leri tanımlamak için :class:'ABCMeta' metasınıfını ve kalıtım "
+"yoluyla ABC'leri alternatif olarak tanımlamak için :class:'ABC' yardımcı "
+"sınıfını sağlar:"
 
 #: library/abc.rst:32
 msgid ""
@@ -53,6 +66,9 @@ msgid ""
 "an abstract base class can be created by simply deriving from :class:`ABC` "
 "avoiding sometimes confusing metaclass usage, for example::"
 msgstr ""
+"Meta sınıfı olarak :class:`ABCMeta` olan bir yardımcı sınıf. Bu sınıfla, "
+"bazen kafa karıştırıcı metasınıf kullanımından kaçınarak, basitçe :class:"
+"`ABC` türetilerek soyut bir temel sınıf oluşturulabilir, örneğin::"
 
 #: library/abc.rst:41
 msgid ""
@@ -62,10 +78,15 @@ msgid ""
 "One may also define an abstract base class by passing the metaclass keyword "
 "and using :class:`ABCMeta` directly, for example::"
 msgstr ""
+":class:`ABC` türünün hala :class:`ABCMeta` olduğunu unutmayın, bu nedenle :"
+"class:`ABC`den devralma, çoklu kalıtım metasınıf çakışmalarına yol "
+"açabileceğinden, metasınıf kullanımına ilişkin olağan önlemleri gerektirir. "
+"Metaclass anahtar sözcüğünü ileterek ve doğrudan :class:`ABCMeta` kullanarak "
+"soyut bir temel sınıf da tanımlanabilir, örneğin::"
 
 #: library/abc.rst:57
 msgid "Metaclass for defining Abstract Base Classes (ABCs)."
-msgstr ""
+msgstr "Soyut Temel Sınıfları (ABC'ler) tanımlamak için metasınıf."
 
 #: library/abc.rst:59
 msgid ""
@@ -78,35 +99,51 @@ msgid ""
 "will method implementations defined by the registering ABC be callable (not "
 "even via :func:`super`). [#]_"
 msgstr ""
+"Bir ABC oluşturmak için bu metasınıfı kullanın. Bir ABC doğrudan alt "
+"sınıflara ayrılabilir ve daha sonra karma bir sınıf olarak işlev görür. "
+"Ayrıca ilgisiz somut sınıfları (hatta yerleşik sınıfları) ve ilgisiz "
+"ABC'leri \"sanal alt sınıflar\" olarak kaydedebilirsiniz -- bunlar ve "
+"onların alt sınıfları, yerleşik :func:`issubclass` işlevi tarafından kayıt "
+"yapan ABC'nin alt sınıfları olarak kabul edilecektir, ancak kaydeden ABC, "
+"MRO'larında (Yöntem Çözüm Sırası) görünmeyecek ve kaydeden ABC tarafından "
+"tanımlanan yöntem uygulamaları çağrılabilir olmayacaktır ( :func:`super` "
+"yoluyla bile değil). [#]_"
 
 #: library/abc.rst:68
 msgid ""
 "Classes created with a metaclass of :class:`ABCMeta` have the following "
 "method:"
 msgstr ""
+":class:`ABCMeta` metasınıfı ile oluşturulan sınıflar aşağıdaki yönteme "
+"sahiptir:"
 
 #: library/abc.rst:72
 msgid ""
 "Register *subclass* as a \"virtual subclass\" of this ABC. For example::"
 msgstr ""
+"*alt sınıfı* bu ABC'nin \"sanal alt sınıfı\" olarak kaydedin. Örneğin::"
 
 #: library/abc.rst:85
 msgid "Returns the registered subclass, to allow usage as a class decorator."
 msgstr ""
+"Sınıf dekoratörü olarak kullanıma izin vermek için kayıtlı alt sınıfı "
+"döndürür."
 
 #: library/abc.rst:88
 msgid ""
 "To detect calls to :meth:`register`, you can use the :func:`get_cache_token` "
 "function."
 msgstr ""
+":meth:`register` çağrılarını algılamak için :func:`get_cache_token` işlevini "
+"kullanabilirsiniz."
 
 #: library/abc.rst:92
 msgid "You can also override this method in an abstract base class:"
-msgstr ""
+msgstr "Bu yöntemi soyut bir temel sınıfta da geçersiz kılabilirsiniz:"
 
 #: library/abc.rst:96
 msgid "(Must be defined as a class method.)"
-msgstr ""
+msgstr "(Bir sınıf yöntemi olarak tanımlanmalıdır.)"
 
 #: library/abc.rst:98
 msgid ""
@@ -116,6 +153,11 @@ msgid ""
 "of the ABC.  (This class method is called from the :meth:`__subclasscheck__` "
 "method of the ABC.)"
 msgstr ""
+"*alt sınıfın* bu ABC'nin bir alt sınıfı olarak kabul edilip edilmediğini "
+"kontrol edin. Bu, ABC'nin bir alt sınıfı olarak kabul etmek istediğiniz her "
+"sınıfta :meth:'register' çağırmaya gerek kalmadan \"issubclass\" davranışını "
+"daha fazla özelleştirebileceğiniz anlamına gelir. (Bu sınıf yöntemi, "
+"ABC'nin :meth:`__subclasscheck__` yönteminden çağrılır.)"
 
 #: library/abc.rst:104
 msgid ""
@@ -125,11 +167,16 @@ msgid ""
 "even if it would normally be one.  If it returns ``NotImplemented``, the "
 "subclass check is continued with the usual mechanism."
 msgstr ""
+"Bu yöntem \"True\", \"False\" veya \"NotImplemented\" döndürmelidir. "
+"``True`` döndürürse, *alt sınıf* bu ABC'nin bir alt sınıfı olarak kabul "
+"edilir. ``False`` değerini döndürürse, *alt sınıf*, normalde öyle olsa bile, "
+"bu ABC'nin bir alt sınıfı olarak kabul edilmez. ``NotImplemented`` "
+"döndürürse, alt sınıf kontrolü olağan mekanizma ile devam eder."
 
 #: library/abc.rst:114
 msgid ""
 "For a demonstration of these concepts, look at this example ABC definition::"
-msgstr ""
+msgstr "Bu kavramların bir gösterimi için şu örnek ABC tanımına bakın:"
 
 #: library/abc.rst:143
 msgid ""
@@ -139,6 +186,11 @@ msgid ""
 "also part of the ``MyIterable`` abstract base class, but it does not have to "
 "be overridden in non-abstract derived classes."
 msgstr ""
+"ABC ``MyIterable``, standart yinelenebilir yöntemi :meth:`~iterator."
+"__iter__` soyut bir yöntem olarak tanımlar. Burada verilen uygulama yine de "
+"alt sınıflardan çağrılabilir. :meth:`get_iterator` yöntemi ayrıca "
+"``MyIterable`` soyut temel sınıfının bir parçasıdır, ancak soyut olmayan "
+"türetilmiş sınıflarda geçersiz kılınması gerekmez."
 
 #: library/abc.rst:149
 msgid ""
@@ -147,6 +199,10 @@ msgid ""
 "__dict__` (or in that of one of its base classes, accessed via the :attr:"
 "`~class.__mro__` list) is considered a ``MyIterable`` too."
 msgstr ""
+"Burada tanımlanan :meth:`__subclasshook__` sınıf yöntemi, :attr:`~object."
+"__dict__` (veya temel sınıflarından birinin sınıfında) :meth:`~iterator."
+"__iter__` yöntemine sahip herhangi bir sınıfın, :attr:`~class.__mro__` "
+"listesi aracılığıyla erişilen) de bir ``MyIterable`` olarak kabul edilir."
 
 #: library/abc.rst:154
 msgid ""
@@ -156,14 +212,19 @@ msgid ""
 "meth:`__getitem__`).  Note that this will not make ``get_iterator`` "
 "available as a method of ``Foo``, so it is provided separately."
 msgstr ""
+"Son olarak, bir :meth:`~iterator.__iter__` yöntemi tanımlamasa da son satır "
+"``Foo``yu ``MyIterable``ın sanal bir alt sınıfı yapar (eski stil "
+"yinelenebilir protokolü kullanır, :meth:`__len__` ve :meth:`__getitem__` "
+"terimleri). Bunun, ``get_iterator``ı bir ``Foo`` yöntemi olarak "
+"kullanılabilir kılmayacağına dikkat edin, bu nedenle ayrı olarak sağlanır."
 
 #: library/abc.rst:163
 msgid "The :mod:`abc` module also provides the following decorator:"
-msgstr ""
+msgstr ":mod:`abc` modülü ayrıca aşağıdaki dekoratörü sağlar:"
 
 #: library/abc.rst:167
 msgid "A decorator indicating abstract methods."
-msgstr ""
+msgstr "Soyut yöntemleri gösteren bir dekoratör."
 
 #: library/abc.rst:169
 msgid ""
@@ -174,6 +235,13 @@ msgid ""
 "the normal 'super' call mechanisms.  :func:`abstractmethod` may be used to "
 "declare abstract methods for properties and descriptors."
 msgstr ""
+"Bu dekoratörü kullanmak, sınıfın metasınıfının :class:`ABCMeta` olmasını "
+"veya ondan türetilmesini gerektirir. :class:`ABCMeta` öğesinden türetilmiş "
+"bir metasınıfı olan bir sınıf, tüm soyut yöntemleri ve özellikleri geçersiz "
+"kılınmadıkça örneklendirilemez. Soyut yöntemler, normal 'süper' çağrı "
+"mekanizmalarından herhangi biri kullanılarak çağrılabilir. :func:"
+"`abstractmethod`, özellikler ve tanımlayıcılar için soyut yöntemleri "
+"bildirmek için kullanılabilir."
 
 #: library/abc.rst:176
 msgid ""
@@ -184,6 +252,12 @@ msgid ""
 "\"virtual subclasses\" registered with the ABC's :meth:`register` method are "
 "not affected."
 msgstr ""
+"Bir sınıfa dinamik olarak soyut yöntemler eklemek veya oluşturulduktan sonra "
+"bir yöntemin veya sınıfın soyutlama durumunu değiştirmeye çalışmak, "
+"yalnızca :func:`update_abstractmethods` işlevi kullanılarak desteklenir. :"
+"func:`abstractmethod` yalnızca normal kalıtım kullanılarak türetilen alt "
+"sınıfları etkiler; ABC'nin :meth:`register` yöntemiyle kaydedilen \"sanal "
+"alt sınıflar\" etkilenmez."
 
 #: library/abc.rst:183
 msgid ""
@@ -191,6 +265,9 @@ msgid ""
 "descriptors, it should be applied as the innermost decorator, as shown in "
 "the following usage examples::"
 msgstr ""
+":func:`abstractmethod` diğer yöntem tanımlayıcılarla birlikte "
+"uygulandığında, aşağıdaki kullanım örneklerinde gösterildiği gibi en içteki "
+"dekoratör olarak uygulanmalıdır::"
 
 #: library/abc.rst:217
 msgid ""
@@ -200,6 +277,11 @@ msgid ""
 "of the methods used to compose the descriptor are abstract. For example, "
 "Python's built-in :class:`property` does the equivalent of::"
 msgstr ""
+"Soyut temel sınıf mekanizmasıyla doğru şekilde birlikte çalışabilmek için, "
+"tanımlayıcı :attr:`__isabstractmethod__` kullanarak kendisini soyut olarak "
+"tanımlamalıdır. Genel olarak, tanımlayıcıyı oluşturmak için kullanılan "
+"yöntemlerden herhangi biri soyutsa, bu öznitelik ``True`` olmalıdır. "
+"Örneğin, Python'un yerleşik :class:`property` şuna eşdeğerdir::"
 
 #: library/abc.rst:232
 msgid ""
@@ -209,46 +291,64 @@ msgid ""
 "point for a super-call in a framework that uses cooperative multiple-"
 "inheritance."
 msgstr ""
+"Java soyut yöntemlerinin aksine, bu soyut yöntemlerin bir uygulaması "
+"olabilir. Bu uygulama, onu geçersiz kılan sınıftan :func:`super` mekanizması "
+"aracılığıyla çağrılabilir. Bu, işbirlikçi çoklu kalıtımı kullanan bir "
+"çerçevede bir süper çağrı için son nokta olarak yararlı olabilir."
 
 #: library/abc.rst:239
 msgid "The :mod:`abc` module also supports the following legacy decorators:"
-msgstr ""
+msgstr ":mod:`abc` modülü ayrıca aşağıdaki eski dekoratörleri de destekler:"
 
 #: library/abc.rst:244
 msgid ""
 "It is now possible to use :class:`classmethod` with :func:`abstractmethod`, "
 "making this decorator redundant."
 msgstr ""
+"Artık :class:`classmethod` ile :func:`abstractmethod` kullanmak mümkündür, "
+"bu dekoratörü gereksiz kılar."
 
 #: library/abc.rst:248
 msgid ""
 "A subclass of the built-in :func:`classmethod`, indicating an abstract "
 "classmethod. Otherwise it is similar to :func:`abstractmethod`."
 msgstr ""
+"Soyut bir sınıf yöntemini gösteren yerleşik :func:`classmethod` alt sınıfı. "
+"Aksi takdirde :func:`abstractmethod`a benzer."
 
 #: library/abc.rst:251
 msgid ""
 "This special case is deprecated, as the :func:`classmethod` decorator is now "
 "correctly identified as abstract when applied to an abstract method::"
 msgstr ""
+":func:`classmethod` dekoratörü, bir soyut yönteme uygulandığında artık doğru "
+"bir şekilde soyut olarak tanımlandığından, bu özel durum kullanımdan "
+"kaldırılmıştır::"
 
 #: library/abc.rst:265
 msgid ""
 "It is now possible to use :class:`staticmethod` with :func:`abstractmethod`, "
 "making this decorator redundant."
 msgstr ""
+"Artık :class:`staticmethod` ile :func:`abstractmethod` kullanmak mümkündür, "
+"bu dekoratörü gereksiz kılar."
 
 #: library/abc.rst:269
 msgid ""
 "A subclass of the built-in :func:`staticmethod`, indicating an abstract "
 "staticmethod. Otherwise it is similar to :func:`abstractmethod`."
 msgstr ""
+"Yerleşik :func:`staticmethod` alt sınıfı, soyut bir staticmethod belirtir. "
+"Aksi takdirde :func:`abstractmethod`a benzer."
 
 #: library/abc.rst:272
 msgid ""
 "This special case is deprecated, as the :func:`staticmethod` decorator is "
 "now correctly identified as abstract when applied to an abstract method::"
 msgstr ""
+":func:`staticmethod` dekoratörü, bir soyut yönteme uygulandığında artık "
+"doğru bir şekilde soyut olarak tanımlandığından, bu özel durum kullanımdan "
+"kaldırılmıştır::"
 
 #: library/abc.rst:285
 msgid ""
@@ -256,17 +356,23 @@ msgid ""
 "`property.setter` and :meth:`property.deleter` with :func:`abstractmethod`, "
 "making this decorator redundant."
 msgstr ""
+"Bu dekoratörü yapmak için :class:`property`, :meth:`property.getter`, :meth:"
+"`property.setter` ve :meth:`property.deleter` :func:`abstractmethod` ile "
+"kullanmak artık mümkün gereksiz."
 
 #: library/abc.rst:290
 msgid ""
 "A subclass of the built-in :func:`property`, indicating an abstract property."
-msgstr ""
+msgstr "Yerleşik :func:`property` alt sınıfı, soyut bir özelliği belirtir."
 
 #: library/abc.rst:293
 msgid ""
 "This special case is deprecated, as the :func:`property` decorator is now "
 "correctly identified as abstract when applied to an abstract method::"
 msgstr ""
+":func:`property` dekoratörü, bir soyut yönteme uygulandığında artık doğru "
+"bir şekilde soyut olarak tanımlandığından, bu özel durum kullanımdan "
+"kaldırılmıştır::"
 
 #: library/abc.rst:303
 msgid ""
@@ -274,20 +380,25 @@ msgid ""
 "write abstract property by appropriately marking one or more of the "
 "underlying methods as abstract::"
 msgstr ""
+"Yukarıdaki örnek salt okunur bir özelliği tanımlar; temel alınan "
+"yöntemlerden birini veya daha fazlasını uygun şekilde abstract olarak "
+"işaretleyerek bir read-write abstract özelliği de tanımlayabilirsiniz:"
 
 #: library/abc.rst:317
 msgid ""
 "If only some components are abstract, only those components need to be "
 "updated to create a concrete property in a subclass::"
 msgstr ""
+"Yalnızca bazı bileşenler soyutsa, bir alt sınıfta somut bir özellik "
+"oluşturmak için yalnızca bu bileşenlerin güncellenmesi gerekir::"
 
 #: library/abc.rst:326
 msgid "The :mod:`abc` module also provides the following functions:"
-msgstr ""
+msgstr ":mod:`abc` modülü ayrıca aşağıdaki işlevleri sağlar:"
 
 #: library/abc.rst:330
 msgid "Returns the current abstract base class cache token."
-msgstr ""
+msgstr "Geçerli soyut temel sınıf önbellek belirtecini döndürür."
 
 #: library/abc.rst:332
 msgid ""
@@ -295,6 +406,10 @@ msgid ""
 "the current version of the abstract base class cache for virtual subclasses. "
 "The token changes with every call to :meth:`ABCMeta.register` on any ABC."
 msgstr ""
+"Belirteç, sanal alt sınıflar için soyut temel sınıf önbelleğinin geçerli "
+"sürümünü tanımlayan opak bir nesnedir (eşitlik testini destekler). Belirteç, "
+"herhangi bir ABC'de :meth:`ABCMeta.register` öğesine yapılan her çağrıda "
+"değişir."
 
 #: library/abc.rst:340
 msgid ""
@@ -303,27 +418,35 @@ msgid ""
 "implemented or changed after it was created. Usually, this function should "
 "be called from within a class decorator."
 msgstr ""
+"Soyut bir sınıfın soyutlama durumunu yeniden hesaplama işlevi. Bu işlev, bir "
+"sınıfın soyut yöntemleri oluşturulduktan sonra uygulanmış veya "
+"değiştirilmişse çağrılmalıdır. Genellikle, bu işlev bir sınıf dekoratörü "
+"içinden çağrılmalıdır."
 
 #: library/abc.rst:345
 msgid "Returns *cls*, to allow usage as a class decorator."
-msgstr ""
+msgstr "Sınıf dekoratörü olarak kullanıma izin vermek için *cls* döndürür."
 
 #: library/abc.rst:347
 msgid "If *cls* is not an instance of :class:`ABCMeta`, does nothing."
-msgstr ""
+msgstr "*cls* bir :class:`ABCMeta` örneği değilse hiçbir şey yapmaz."
 
 #: library/abc.rst:351
 msgid ""
 "This function assumes that *cls*'s superclasses are already updated. It does "
 "not update any subclasses."
 msgstr ""
+"Bu işlev, *cls*'nin üst sınıflarının halihazırda güncellendiğini varsayar. "
+"Herhangi bir alt sınıfı güncellemez."
 
 #: library/abc.rst:357
 msgid "Footnotes"
-msgstr ""
+msgstr "Dipnotlar"
 
 #: library/abc.rst:358
 msgid ""
 "C++ programmers should note that Python's virtual base class concept is not "
 "the same as C++'s."
 msgstr ""
+"C++ programcıları, Python'un sanal temel sınıf konseptinin C++ ile aynı "
+"olmadığını unutmamalıdır."
