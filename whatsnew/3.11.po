@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 22:33+0300\n"
+"POT-Creation-Date: 2023-10-01 00:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -30,11 +30,9 @@ msgstr ""
 
 #: whatsnew/3.11.rst:47
 msgid ""
-"This article explains the new features in Python 3.11, compared to 3.10."
-msgstr ""
-
-#: whatsnew/3.11.rst:49
-msgid "For full details, see the :ref:`changelog <changelog>`."
+"This article explains the new features in Python 3.11, compared to 3.10. "
+"Python 3.11 was released on October 24, 2022. For full details, see the :ref:"
+"`changelog <changelog>`."
 msgstr ""
 
 #: whatsnew/3.11.rst:55
@@ -247,9 +245,10 @@ msgstr ""
 msgid ""
 "The copy of the :ref:`launcher` included with Python 3.11 has been "
 "significantly updated. It now supports company/tag syntax as defined in :pep:"
-"`514` using the ``-V:<company>/<tag>`` argument instead of the limited ``-"
-"<major>.<minor>``. This allows launching distributions other than "
-"``PythonCore``, the one hosted on `python.org <https://www.python.org>`_."
+"`514` using the :samp:`-V:{<company>}/{<tag>}` argument instead of the "
+"limited :samp:`-{<major>}.{<minor>}`. This allows launching distributions "
+"other than ``PythonCore``, the one hosted on `python.org <https://www.python."
+"org>`_."
 msgstr ""
 
 #: whatsnew/3.11.rst:225
@@ -262,14 +261,14 @@ msgstr ""
 
 #: whatsnew/3.11.rst:230
 msgid ""
-"When using the legacy ``-<major>``, ``-<major>.<minor>``, ``-<major>-"
-"<bitness>`` or ``-<major>.<minor>-<bitness>`` arguments, all existing "
-"behaviour should be preserved from past versions, and only releases from "
-"``PythonCore`` will be selected. However, the ``-64`` suffix now implies "
-"\"not 32-bit\" (not necessarily x86-64), as there are multiple supported 64-"
-"bit platforms. 32-bit runtimes are detected by checking the runtime's tag "
-"for a ``-32`` suffix. All releases of Python since 3.5 have included this in "
-"their 32-bit builds."
+"When using the legacy :samp:`-{<major>}`, :samp:`-{<major>}.{<minor>}`, :"
+"samp:`-{<major>}-{<bitness>}` or :samp:`-{<major>}.{<minor>}-{<bitness>}` "
+"arguments, all existing behaviour should be preserved from past versions, "
+"and only releases from ``PythonCore`` will be selected. However, the ``-64`` "
+"suffix now implies \"not 32-bit\" (not necessarily x86-64), as there are "
+"multiple supported 64-bit platforms. 32-bit runtimes are detected by "
+"checking the runtime's tag for a ``-32`` suffix. All releases of Python "
+"since 3.5 have included this in their 32-bit builds."
 msgstr ""
 
 #: whatsnew/3.11.rst:244
@@ -537,7 +536,7 @@ msgid ""
 "The special methods :meth:`~object.__complex__` for :class:`complex` and :"
 "meth:`~object.__bytes__` for :class:`bytes` are implemented to support the :"
 "class:`typing.SupportsComplex` and :class:`typing.SupportsBytes` protocols. "
-"(Contributed by Mark Dickinson and Dong-hee Na in :issue:`24234`.)"
+"(Contributed by Mark Dickinson and Donghee Na in :issue:`24234`.)"
 msgstr ""
 
 #: whatsnew/3.11.rst:504
@@ -1036,7 +1035,7 @@ msgstr ""
 #: whatsnew/3.11.rst:898
 msgid ""
 "On Windows, :func:`os.urandom` now uses ``BCryptGenRandom()``, instead of "
-"``CryptGenRandom()`` which is deprecated. (Contributed by Dong-hee Na in :"
+"``CryptGenRandom()`` which is deprecated. (Contributed by Donghee Na in :"
 "issue:`44611`.)"
 msgstr ""
 
@@ -1271,8 +1270,9 @@ msgid ""
 "on `high-resolution timers <https://docs.microsoft.com/en-us/windows-"
 "hardware/drivers/kernel/high-resolution-timers>`_ which has a resolution of "
 "100 nanoseconds (10\\ :sup:`-7` seconds). Previously, it had a resolution of "
-"1 millisecond (10\\ :sup:`-3` seconds). (Contributed by Benjamin Szőke, Dong-"
-"hee Na, Eryk Sun and Victor Stinner in :issue:`21302` and :issue:`45429`.)"
+"1 millisecond (10\\ :sup:`-3` seconds). (Contributed by Benjamin Szőke, "
+"Donghee Na, Eryk Sun and Victor Stinner in :issue:`21302` and :issue:"
+"`45429`.)"
 msgstr ""
 
 #: whatsnew/3.11.rst:1098
@@ -1564,7 +1564,7 @@ msgstr ""
 #: whatsnew/3.11.rst:1306
 msgid ""
 ":func:`unicodedata.normalize` now normalizes pure-ASCII strings in constant "
-"time. (Contributed by Dong-hee Na in :issue:`44987`.)"
+"time. (Contributed by Donghee Na in :issue:`44987`.)"
 msgstr ""
 
 #: whatsnew/3.11.rst:1314
@@ -1792,7 +1792,7 @@ msgid "10%"
 msgstr ""
 
 #: whatsnew/3.11.rst:1454
-msgid "Mark Shannon, Dong-hee Na, Brandt Bucher, Dennis Sweeney"
+msgid "Mark Shannon, Donghee Na, Brandt Bucher, Dennis Sweeney"
 msgstr ""
 
 #: whatsnew/3.11.rst:1460
@@ -2628,7 +2628,7 @@ msgstr ""
 msgid ""
 ":class:`!webbrowser.MacOSX` is deprecated and will be removed in Python "
 "3.13. It is untested, undocumented, and not used by :mod:`webbrowser` "
-"itself. (Contributed by Dong-hee Na in :issue:`42255`.)"
+"itself. (Contributed by Donghee Na in :issue:`42255`.)"
 msgstr ""
 
 #: whatsnew/3.11.rst:1844
@@ -3035,7 +3035,7 @@ msgid ""
 "output_charset` and :meth:`!NullTranslations.set_output_charset` methods, "
 "and the *codeset* parameter of :func:`!translation` and :func:`!install`, "
 "since they are only used for the :func:`!l*gettext` functions. (Contributed "
-"by Dong-hee Na and Serhiy Storchaka in :issue:`44235`.)"
+"by Donghee Na and Serhiy Storchaka in :issue:`44235`.)"
 msgstr ""
 
 #: whatsnew/3.11.rst:1989
@@ -3077,7 +3077,7 @@ msgstr ""
 msgid ""
 "Removed the :class:`!MailmanProxy` class in the :mod:`smtpd` module, as it "
 "is unusable without the external :mod:`!mailman` package. (Contributed by "
-"Dong-hee Na in :issue:`35800`.)"
+"Donghee Na in :issue:`35800`.)"
 msgstr ""
 
 #: whatsnew/3.11.rst:2014
@@ -3279,7 +3279,7 @@ msgstr ""
 msgid ""
 "CPython can now be built with the `ThinLTO <https://clang.llvm.org/docs/"
 "ThinLTO.html>`_ option via passing ``thin`` to :option:`--with-lto`, i.e. "
-"``--with-lto=thin``. (Contributed by Dong-hee Na and Brett Holman in :issue:"
+"``--with-lto=thin``. (Contributed by Donghee Na and Brett Holman in :issue:"
 "`44340`.)"
 msgstr ""
 

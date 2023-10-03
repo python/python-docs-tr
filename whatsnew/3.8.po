@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 22:33+0300\n"
+"POT-Creation-Date: 2023-10-01 00:18+0000\n"
 "PO-Revision-Date: 2023-02-03 17:30+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -685,8 +685,10 @@ msgstr ""
 "'deki katkısıyla.)"
 
 #: whatsnew/3.8.rst:407
+#, fuzzy
 msgid ""
-"Added support of ``\\N{name}`` escapes in :mod:`regular expressions <re>`::"
+"Added support of :samp:`\\\\N\\\\{{name}\\\\}` escapes in :mod:`regular "
+"expressions <re>`::"
 msgstr ""
 ":mod:`regular expressions <re>` içine ``\\N{name}`` kaçış desteği eklendi::"
 
@@ -1511,8 +1513,9 @@ msgstr ""
 "seçeneklerini güncellemeyi, denemeyi veya öğretmeyi zorlaştırıyordu."
 
 #: whatsnew/3.8.rst:950
+#, fuzzy
 msgid ""
-"(Suggested by Raymond Hettinger, implemented by Dong-hee Na, and reviewed by "
+"(Suggested by Raymond Hettinger, implemented by Donghee Na, and reviewed by "
 "Vinay Sajip in :issue:`33897`.)"
 msgstr ""
 "(Raymond Hettinger tarafından önerildi, Dong-hee Na tarafından uygulandı ve :"
@@ -2963,9 +2966,10 @@ msgstr ""
 "kaldırılmıştır. (Serhiy Storchaka'nın :issue:`33710` 'daki katkısıyla.)"
 
 #: whatsnew/3.8.rst:1715
+#, fuzzy
 msgid ""
 "The :meth:`~threading.Thread.isAlive()` method of :class:`threading.Thread` "
-"has been deprecated. (Contributed by Dong-hee Na in :issue:`35283`.)"
+"has been deprecated. (Contributed by Donghee Na in :issue:`35283`.)"
 msgstr ""
 ":class:`threading.Thread` metodunun :meth:`~threading.Thread.isAlive()` "
 "metodu kullanımdan kaldırılmıştır. (Dong-hee Na'nın :issue:`35283` 'teki "
