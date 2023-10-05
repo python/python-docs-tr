@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-01 00:18+0000\n"
+"POT-Creation-Date: 2023-10-05 21:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -31,8 +31,8 @@ msgstr ""
 #: whatsnew/3.12.rst:48
 msgid ""
 "This article explains the new features in Python 3.12, compared to 3.11. "
-"Python 3.12 will be released on October 2, 2023. For full details, see the :"
-"ref:`changelog <changelog>`."
+"Python 3.12 was released on October 2, 2023. For full details, see the :ref:"
+"`changelog <changelog>`."
 msgstr ""
 
 #: whatsnew/3.12.rst:54
@@ -163,7 +163,7 @@ msgstr ""
 #: whatsnew/3.12.rst:123
 msgid ""
 "Due to the changes in :ref:`PEP 701 <whatsnew312-pep701>`, producing tokens "
-"via the :mod:`tokenize` module is up to up to 64% faster."
+"via the :mod:`tokenize` module is up to 64% faster."
 msgstr ""
 
 #: whatsnew/3.12.rst:126
@@ -392,8 +392,8 @@ msgstr ""
 #: whatsnew/3.12.rst:305
 msgid ""
 "As a positive side-effect of how this feature has been implemented (by "
-"parsing f-strings with :pep:`the PEG parser <617>`, now error messages for f-"
-"strings are more precise and include the exact location of the error. For "
+"parsing f-strings with :pep:`the PEG parser <617>`), now error messages for "
+"f-strings are more precise and include the exact location of the error. For "
 "example, in Python 3.11, the following f-string raises a :exc:`SyntaxError`:"
 msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 22:33+0300\n"
+"POT-Creation-Date: 2023-10-05 21:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -2153,10 +2153,11 @@ msgid ""
 "manager does nothing."
 msgstr ""
 
-#: library/sqlite3.rst:2410
+#: library/sqlite3.rst:2409
 msgid ""
 "The context manager neither implicitly opens a new transaction nor closes "
-"the connection."
+"the connection. If you need a closing context manager, consider using :meth:"
+"`contextlib.closing`."
 msgstr ""
 
 #: library/sqlite3.rst:2443
