@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-01 00:18+0000\n"
+"POT-Creation-Date: 2023-11-04 18:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -16,15 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: library/asyncio.rst:78
+#: library/asyncio.rst:80
 msgid "High-level APIs"
 msgstr ""
 
-#: library/asyncio.rst:90
+#: library/asyncio.rst:92
 msgid "Low-level APIs"
 msgstr ""
 
-#: library/asyncio.rst:101
+#: library/asyncio.rst:103
 msgid "Guides and Tutorials"
 msgstr ""
 
@@ -90,9 +90,9 @@ msgstr ""
 #: library/asyncio.rst:48
 msgid ""
 "create and manage :ref:`event loops <asyncio-event-loop>`, which provide "
-"asynchronous APIs for :meth:`networking <loop.create_server>`, running :meth:"
-"`subprocesses <loop.subprocess_exec>`, handling :meth:`OS signals <loop."
-"add_signal_handler>`, etc;"
+"asynchronous APIs for :ref:`networking <loop_create_server>`, running :ref:"
+"`subprocesses <loop_subprocess_exec>`, handling :ref:`OS signals "
+"<loop_add_signal_handler>`, etc;"
 msgstr ""
 
 #: library/asyncio.rst:53
@@ -107,7 +107,7 @@ msgid ""
 "await syntax."
 msgstr ""
 
-#: library/asyncio.rst:59
+#: library/asyncio.rst:61
 msgid "You can experiment with an ``asyncio`` concurrent context in the REPL:"
 msgstr ""
 
@@ -122,10 +122,10 @@ msgid ""
 "more information."
 msgstr ""
 
-#: library/asyncio.rst:77
+#: library/asyncio.rst:79
 msgid "Reference"
 msgstr ""
 
-#: library/asyncio.rst:110
+#: library/asyncio.rst:112
 msgid "The source code for asyncio can be found in :source:`Lib/asyncio/`."
 msgstr ""

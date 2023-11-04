@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 22:33+0300\n"
+"POT-Creation-Date: 2023-11-04 18:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -3254,7 +3254,7 @@ msgstr ""
 
 #: reference/datamodel.rst:2942
 msgid ""
-"Note that :meth:`__exit__` methods should not reraise the passed-in "
+"Note that :meth:`~object.__exit__` methods should not reraise the passed-in "
 "exception; this is the caller's responsibility."
 msgstr ""
 
@@ -3577,14 +3577,14 @@ msgstr ""
 
 #: reference/datamodel.rst:3260
 msgid ""
-"Semantically similar to :meth:`__enter__`, the only difference being that it "
-"must return an *awaitable*."
+"Semantically similar to :meth:`~object.__enter__`, the only difference being "
+"that it must return an *awaitable*."
 msgstr ""
 
 #: reference/datamodel.rst:3265
 msgid ""
-"Semantically similar to :meth:`__exit__`, the only difference being that it "
-"must return an *awaitable*."
+"Semantically similar to :meth:`~object.__exit__`, the only difference being "
+"that it must return an *awaitable*."
 msgstr ""
 
 #: reference/datamodel.rst:3268

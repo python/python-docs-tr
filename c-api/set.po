@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 19:05+0000\n"
+"POT-Creation-Date: 2023-11-04 18:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -180,7 +180,10 @@ msgid ""
 msgstr ""
 
 #: c-api/set.rst:166
-msgid "Empty an existing set of all elements."
+msgid ""
+"Empty an existing set of all elements. Return ``0`` on success. Return "
+"``-1`` and raise :exc:`SystemError` if *set* is not an instance of :class:"
+"`set` or its subtype."
 msgstr ""
 
 #: c-api/set.rst:11
