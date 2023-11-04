@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 19:05+0000\n"
+"POT-Creation-Date: 2023-11-04 18:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -259,8 +259,8 @@ msgstr ""
 #: library/operator.rst:308
 msgid ""
 "Return a callable object that fetches *item* from its operand using the "
-"operand's :meth:`__getitem__` method.  If multiple items are specified, "
-"returns a tuple of lookup values.  For example:"
+"operand's :meth:`~object.__getitem__` method.  If multiple items are "
+"specified, returns a tuple of lookup values.  For example:"
 msgstr ""
 
 #: library/operator.rst:312
@@ -275,9 +275,9 @@ msgstr ""
 
 #: library/operator.rst:329
 msgid ""
-"The items can be any type accepted by the operand's :meth:`__getitem__` "
-"method.  Dictionaries accept any :term:`hashable` value.  Lists, tuples, and "
-"strings accept an index or a slice:"
+"The items can be any type accepted by the operand's :meth:`~object."
+"__getitem__` method.  Dictionaries accept any :term:`hashable` value.  "
+"Lists, tuples, and strings accept an index or a slice:"
 msgstr ""
 
 #: library/operator.rst:343

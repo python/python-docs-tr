@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 22:33+0300\n"
+"POT-Creation-Date: 2023-11-04 18:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -302,7 +302,7 @@ msgid ""
 msgstr ""
 
 #: library/asyncio-task.rst:472 library/asyncio-task.rst:703
-#: library/asyncio-task.rst:772 library/asyncio-task.rst:869
+#: library/asyncio-task.rst:769 library/asyncio-task.rst:869
 msgid "Example::"
 msgstr ""
 
@@ -387,8 +387,8 @@ msgid ""
 "Example of coroutine displaying the current date every second for 5 seconds::"
 msgstr ""
 
-#: library/asyncio-task.rst:521 library/asyncio-task.rst:767
-#: library/asyncio-task.rst:849 library/asyncio-task.rst:875
+#: library/asyncio-task.rst:521 library/asyncio-task.rst:794
+#: library/asyncio-task.rst:875
 msgid "Removed the *loop* parameter."
 msgstr ""
 
@@ -714,10 +714,14 @@ msgstr ""
 msgid "If the wait is cancelled, the future *aw* is also cancelled."
 msgstr ""
 
-#: library/asyncio-task.rst:792
+#: library/asyncio-task.rst:789
 msgid ""
 "When *aw* is cancelled due to a timeout, ``wait_for`` waits for *aw* to be "
 "cancelled.  Previously, it raised :exc:`TimeoutError` immediately."
+msgstr ""
+
+#: library/asyncio-task.rst:797
+msgid "Raises :exc:`TimeoutError` instead of :exc:`asyncio.TimeoutError`."
 msgstr ""
 
 #: library/asyncio-task.rst:802
