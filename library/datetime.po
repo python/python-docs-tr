@@ -84,13 +84,13 @@ msgid ""
 "Third-party library that introduces distinct static types to e.g. allow "
 "static type checkers to differentiate between naive and aware datetimes."
 msgstr ""
-"Statik tip denetleyicilerinin naif ve bilinçli tarih zamanları arasında "
-"ayrım yapmasına izin vermek için farklı statik tipler sunan üçüncü taraf "
-"kütüphanesi."
+"Statik tür denetleyicilerinin bilinçli ve bilinçsiz tarih zamanları arasında "
+"ayrım yapmasına izin vermek için farklı statik türler sunan üçüncü taraf "
+"bir kütüphane."
 
 #: library/datetime.rst:47
 msgid "Aware and Naive Objects"
-msgstr "Bilinçli ve Naif Nesneler"
+msgstr "Bilinçli ve Bilinçsiz Nesneler"
 
 #: library/datetime.rst:49
 msgid ""
@@ -177,18 +177,18 @@ msgstr ":mod:`datetime` modülü aşağıdaki sabitleri dışa aktarır:"
 #: library/datetime.rst:86
 msgid ""
 "The smallest year number allowed in a :class:`date` or :class:`.datetime` "
-"object. :const:`MINYEAR` is ``1`` ."
+"object. :const:`MINYEAR` is ``1``."
 msgstr ""
 "Bir :class:`date` veya :class:`.datetime` nesnesinde izin verilen en küçük "
-"yıl sayısı. :const:`MINYEAR` ``1`` 'dir."
+"yıl sayısı. :const:`MINYEAR`, ``1``'e eşittir."
 
 #: library/datetime.rst:92
 msgid ""
 "The largest year number allowed in a :class:`date` or :class:`.datetime` "
-"object. :const:`MAXYEAR` is ``9999`` ."
+"object. :const:`MAXYEAR` is ``9999``."
 msgstr ""
 "Bir :class:`date` veya :class:`.datetime` nesnesinde izin verilen en büyük "
-"yıl sayısı. :const:`MAXYEAR` ``9999`` 'dur."
+"yıl sayısı. :const:`MAXYEAR`, ``9999``'a eşittir."
 
 #: library/datetime.rst:97
 msgid "Alias for the UTC timezone singleton :attr:`datetime.timezone.utc`."
@@ -197,7 +197,7 @@ msgstr ""
 
 #: library/datetime.rst:102
 msgid "Available Types"
-msgstr "Mevcut Tipler"
+msgstr "Mevcut Türler"
 
 #: library/datetime.rst:107
 msgid ""
@@ -206,7 +206,7 @@ msgid ""
 "attr:`day`."
 msgstr ""
 "Geçerli Miladi takvimin her zaman yürürlükte olduğu ve her zaman yürürlükte "
-"olacağı varsayılarak idealleştirilmiş naif bir tarih. Öznitelikler: :attr:"
+"olacağı varsayılarak idealleştirilmiş bilinçsiz bir tarih. Öznitelikler: :attr:"
 "`year`, :attr:`month`, ve :attr:`day`."
 
 #: library/datetime.rst:115
@@ -297,18 +297,18 @@ msgstr ""
 
 #: library/datetime.rst:176
 msgid "Determining if an Object is Aware or Naive"
-msgstr "Bir Nesnenin Farkında veya Naif Olduğunu Belirleme"
+msgstr "Bir Nesnenin Bilinçli veya Bilinçsiz Olduğunu Belirleme"
 
 #: library/datetime.rst:178
 msgid "Objects of the :class:`date` type are always naive."
-msgstr ":class:`date` türündeki nesneler her zaman naiftir."
+msgstr ":class:`date` türündeki nesneler her zaman bilinçsizdir."
 
 #: library/datetime.rst:180
 msgid ""
 "An object of type :class:`.time` or :class:`.datetime` may be aware or naive."
 msgstr ""
 ":class:`.time` veya :class:`.datetime` türündeki bir nesne bilinçli veya "
-"naif olabilir."
+"bilinçsiz olabilir."
 
 #: library/datetime.rst:182
 msgid "A :class:`.datetime` object *d* is aware if both of the following hold:"
