@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 19:05+0000\n"
+"POT-Creation-Date: 2023-11-04 18:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -154,11 +154,12 @@ msgstr ""
 
 #: reference/introduction.rst:93
 msgid ""
-"The descriptions of lexical analysis and syntax use a modified BNF grammar "
-"notation.  This uses the following style of definition:"
+"The descriptions of lexical analysis and syntax use a modified `Backus–Naur "
+"form (BNF) <https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form>`_ "
+"grammar notation.  This uses the following style of definition:"
 msgstr ""
 
-#: reference/introduction.rst:100
+#: reference/introduction.rst:101
 msgid ""
 "The first line says that a ``name`` is an ``lc_letter`` followed by a "
 "sequence of zero or more ``lc_letter``\\ s and underscores.  An "
@@ -167,7 +168,7 @@ msgid ""
 "and grammar rules in this document.)"
 msgstr ""
 
-#: reference/introduction.rst:105
+#: reference/introduction.rst:106
 msgid ""
 "Each rule begins with a name (which is the name defined by the rule) and ``::"
 "=``.  A vertical bar (``|``) is used to separate alternatives; it is the "
@@ -182,7 +183,7 @@ msgid ""
 "line after the first beginning with a vertical bar."
 msgstr ""
 
-#: reference/introduction.rst:119
+#: reference/introduction.rst:120
 msgid ""
 "In lexical definitions (as the example above), two more conventions are "
 "used: Two literal characters separated by three dots mean a choice of any "
@@ -192,7 +193,7 @@ msgid ""
 "'control character' if needed."
 msgstr ""
 
-#: reference/introduction.rst:126
+#: reference/introduction.rst:127
 msgid ""
 "Even though the notation used is almost the same, there is a big difference "
 "between the meaning of lexical and syntactic definitions: a lexical "
@@ -219,10 +220,10 @@ msgstr ""
 msgid "notation"
 msgstr ""
 
-#: reference/introduction.rst:117
+#: reference/introduction.rst:118
 msgid "lexical definitions"
 msgstr ""
 
-#: reference/introduction.rst:117
+#: reference/introduction.rst:118
 msgid "ASCII"
 msgstr ""

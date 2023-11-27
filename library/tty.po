@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 22:33+0300\n"
+"POT-Creation-Date: 2023-11-04 18:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -31,27 +31,31 @@ msgid ""
 msgstr ""
 
 #: library/tty.rst:18
+msgid ":ref:`Availability <availability>`: Unix."
+msgstr ""
+
+#: library/tty.rst:20
 msgid ""
 "Because it requires the :mod:`termios` module, it will work only on Unix."
 msgstr ""
 
-#: library/tty.rst:20
+#: library/tty.rst:22
 msgid "The :mod:`tty` module defines the following functions:"
 msgstr ""
 
-#: library/tty.rst:25
+#: library/tty.rst:27
 msgid ""
 "Convert the tty attribute list *mode*, which is a list like the one returned "
 "by :func:`termios.tcgetattr`, to that of a tty in raw mode."
 msgstr ""
 
-#: library/tty.rst:33
+#: library/tty.rst:35
 msgid ""
 "Convert the tty attribute list *mode*, which is a list like the one returned "
 "by :func:`termios.tcgetattr`, to that of a tty in cbreak mode."
 msgstr ""
 
-#: library/tty.rst:41
+#: library/tty.rst:43
 msgid ""
 "Change the mode of the file descriptor *fd* to raw. If *when* is omitted, it "
 "defaults to :const:`termios.TCSAFLUSH`, and is passed to :func:`termios."
@@ -59,7 +63,11 @@ msgid ""
 "setting *fd* to raw mode; this value is returned."
 msgstr ""
 
-#: library/tty.rst:49
+#: library/tty.rst:59
+msgid "The return value is now the original tty attributes, instead of None."
+msgstr ""
+
+#: library/tty.rst:54
 msgid ""
 "Change the mode of file descriptor *fd* to cbreak. If *when* is omitted, it "
 "defaults to :const:`termios.TCSAFLUSH`, and is passed to :func:`termios."
@@ -67,10 +75,10 @@ msgid ""
 "setting *fd* to cbreak mode; this value is returned."
 msgstr ""
 
-#: library/tty.rst:57
+#: library/tty.rst:65
 msgid "Module :mod:`termios`"
 msgstr ""
 
-#: library/tty.rst:58
+#: library/tty.rst:66
 msgid "Low-level terminal control interface."
 msgstr ""

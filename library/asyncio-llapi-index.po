@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2023-10-05 21:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -945,34 +945,33 @@ msgid "Subprocess Protocols"
 msgstr ""
 
 #: library/asyncio-llapi-index.rst:487
-msgid ""
-"``callback`` :meth:`pipe_data_received() <SubprocessProtocol."
-"pipe_data_received>`"
+msgid "``callback`` :meth:`~SubprocessProtocol.pipe_data_received`"
 msgstr ""
 
-#: library/asyncio-llapi-index.rst:489
+#: library/asyncio-llapi-index.rst:488
 msgid ""
 "Called when the child process writes data into its *stdout* or *stderr* pipe."
 msgstr ""
 
-#: library/asyncio-llapi-index.rst:492
-msgid ""
-"``callback`` :meth:`pipe_connection_lost() <SubprocessProtocol."
-"pipe_connection_lost>`"
+#: library/asyncio-llapi-index.rst:491
+msgid "``callback`` :meth:`~SubprocessProtocol.pipe_connection_lost`"
 msgstr ""
 
-#: library/asyncio-llapi-index.rst:494
+#: library/asyncio-llapi-index.rst:492
 msgid ""
 "Called when one of the pipes communicating with the child process is closed."
 msgstr ""
 
-#: library/asyncio-llapi-index.rst:497
+#: library/asyncio-llapi-index.rst:495
 msgid ""
 "``callback`` :meth:`process_exited() <SubprocessProtocol.process_exited>`"
 msgstr ""
 
-#: library/asyncio-llapi-index.rst:499
-msgid "Called when the child process has exited."
+#: library/asyncio-llapi-index.rst:497
+msgid ""
+"Called when the child process has exited. It can be called before :meth:"
+"`~SubprocessProtocol.pipe_data_received` and :meth:`~SubprocessProtocol."
+"pipe_connection_lost` methods."
 msgstr ""
 
 #: library/asyncio-llapi-index.rst:503
