@@ -7,14 +7,14 @@ msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-01 00:18+0000\n"
-"PO-Revision-Date: 2023-06-11 21:35+0300\n"
+"PO-Revision-Date: 2023-11-26 17:49-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.1\n"
 
 #: library/datetime.rst:2
 msgid ":mod:`datetime` --- Basic date and time types"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: library/datetime.rst:24
 msgid "Skip to :ref:`the format codes <format-codes>`."
-msgstr ""
+msgstr ":ref:`Biçim kodları <format-codes>` kısmına atlayın."
 
 #: library/datetime.rst:29
 msgid "Module :mod:`calendar`"
@@ -77,17 +77,20 @@ msgstr ""
 
 #: library/datetime.rst:41
 msgid "Package `DateType <https://pypi.org/project/datetype/>`_"
-msgstr ""
+msgstr "Paket `DateType <https://pypi.org/project/datetype/>`_"
 
 #: library/datetime.rst:41
 msgid ""
 "Third-party library that introduces distinct static types to e.g. allow "
 "static type checkers to differentiate between naive and aware datetimes."
 msgstr ""
+"Statik tür denetleyicilerinin bilinçli ve bilinçsiz tarih zamanları arasında "
+"ayrım yapmasına izin vermek için farklı statik türler sunan üçüncü taraf "
+"bir kütüphane."
 
 #: library/datetime.rst:47
 msgid "Aware and Naive Objects"
-msgstr ""
+msgstr "Bilinçli ve Bilinçsiz Nesneler"
 
 #: library/datetime.rst:49
 msgid ""
@@ -154,34 +157,47 @@ msgid ""
 "across the world are more political than rational, change frequently, and "
 "there is no standard suitable for every application aside from UTC."
 msgstr ""
+"Sadece bir somut :class:`tzinfo` sınıfı, :class:`timezone` sınıfı, :mod:"
+"`datetime` modülü tarafından sağlanır. :class:`timezone` sınıfı, UTC'nin "
+"kendisi veya Kuzey Amerika EST ve EDT zaman dilimleri gibi UTC'den sabit "
+"uzaklıklara sahip basit zaman dilimlerini temsil edebilir. Daha derin "
+"ayrıntı seviyelerinde zaman dilimlerini desteklemek uygulamaya bağlıdır. "
+"Dünya genelinde zaman ayarlaması için kurallar rasyonel olmaktan çok "
+"politiktir, sık sık değişir ve UTC dışında her uygulama için uygun bir "
+"standart yoktur."
 
 #: library/datetime.rst:80
 msgid "Constants"
-msgstr ""
+msgstr "Sabitler"
 
 #: library/datetime.rst:82
 msgid "The :mod:`datetime` module exports the following constants:"
-msgstr ""
+msgstr ":mod:`datetime` modülü aşağıdaki sabitleri dışa aktarır:"
 
 #: library/datetime.rst:86
 msgid ""
 "The smallest year number allowed in a :class:`date` or :class:`.datetime` "
 "object. :const:`MINYEAR` is ``1``."
 msgstr ""
+"Bir :class:`date` veya :class:`.datetime` nesnesinde izin verilen en küçük "
+"yıl sayısı. :const:`MINYEAR`, ``1``'e eşittir."
 
 #: library/datetime.rst:92
 msgid ""
 "The largest year number allowed in a :class:`date` or :class:`.datetime` "
 "object. :const:`MAXYEAR` is ``9999``."
 msgstr ""
+"Bir :class:`date` veya :class:`.datetime` nesnesinde izin verilen en büyük "
+"yıl sayısı. :const:`MAXYEAR`, ``9999``'a eşittir."
 
 #: library/datetime.rst:97
 msgid "Alias for the UTC timezone singleton :attr:`datetime.timezone.utc`."
 msgstr ""
+"UTC zaman dilimi singleton :attr:`datetime.timezone.utc` için takma ad."
 
 #: library/datetime.rst:102
 msgid "Available Types"
-msgstr ""
+msgstr "Mevcut Türler"
 
 #: library/datetime.rst:107
 msgid ""
@@ -189,6 +205,9 @@ msgid ""
 "and always will be, in effect. Attributes: :attr:`year`, :attr:`month`, and :"
 "attr:`day`."
 msgstr ""
+"Geçerli Miladi takvimin her zaman yürürlükte olduğu ve her zaman yürürlükte "
+"olacağı varsayılarak idealleştirilmiş bilinçsiz bir tarih. Öznitelikler: :attr:"
+"`year`, :attr:`month`, ve :attr:`day`."
 
 #: library/datetime.rst:115
 msgid ""
@@ -197,6 +216,10 @@ msgid ""
 "seconds\" here.) Attributes: :attr:`hour`, :attr:`minute`, :attr:`second`, :"
 "attr:`microsecond`, and :attr:`.tzinfo`."
 msgstr ""
+"Her günün tam olarak 24\\*60\\*60 saniye olduğu varsayılarak, belirli bir "
+"günden bağımsız idealleştirilmiş bir zaman.  (Burada \"artık saniye\" "
+"kavramı yoktur.) Öznitelikler: :attr:`hour`, :attr:`minute`, :attr:"
+"`second`, :attr:`microsecond`, ve :attr:`.tzinfo`."
 
 #: library/datetime.rst:124
 msgid ""
@@ -204,12 +227,17 @@ msgid ""
 "`month`, :attr:`day`, :attr:`hour`, :attr:`minute`, :attr:`second`, :attr:"
 "`microsecond`, and :attr:`.tzinfo`."
 msgstr ""
+"Tarih ve saatin bir kombinasyonu. Öznitelikler: :attr:`year`, :attr:"
+"`month`, :attr:`day`, :attr:`hour`, :attr:`minute`, :attr:`second`, :attr:"
+"`microsecond` ve :attr:`.tzinfo`."
 
 #: library/datetime.rst:132
 msgid ""
 "A duration expressing the difference between two :class:`date`, :class:`."
 "time`, or :class:`.datetime` instances to microsecond resolution."
 msgstr ""
+"İki :class:`date`, :class:`.time` veya :class:`.datetime` örneği arasındaki "
+"farkı mikrosaniye çözünürlüğünde ifade eden bir süre."
 
 #: library/datetime.rst:139
 msgid ""
@@ -218,55 +246,69 @@ msgid ""
 "notion of time adjustment (for example, to account for time zone and/or "
 "daylight saving time)."
 msgstr ""
+"Zaman dilimi bilgi nesneleri için soyut bir temel sınıf. Bunlar :class:`."
+"datetime` ve :class:`.time` sınıfları tarafından özelleştirilebilir bir "
+"zaman ayarlaması sağlamak için kullanılır (örneğin, saat dilimini ve/veya "
+"yaz saati uygulamasını hesaba katmak için)."
 
 #: library/datetime.rst:147
 msgid ""
 "A class that implements the :class:`tzinfo` abstract base class as a fixed "
 "offset from the UTC."
 msgstr ""
+"UTC'den sabit bir ofset olarak :class:`tzinfo` soyut temel sınıfını "
+"uygulayan bir sınıf."
 
 #: library/datetime.rst:170
 msgid "Objects of these types are immutable."
-msgstr ""
+msgstr "Bu türdeki nesneler değiştirilemezdir."
 
 #: library/datetime.rst:154
 msgid "Subclass relationships::"
-msgstr ""
+msgstr "Alt sınıf ilişkileri::"
 
 #: library/datetime.rst:165
 msgid "Common Properties"
-msgstr ""
+msgstr "Ortak Özellikler"
 
 #: library/datetime.rst:167
 msgid ""
 "The :class:`date`, :class:`.datetime`, :class:`.time`, and :class:`timezone` "
 "types share these common features:"
 msgstr ""
+":class:`date`, :class:`.datetime`, :class:`.time` ve :class:`timezone` "
+"türleri bu ortak özellikleri paylaşır:"
 
 #: library/datetime.rst:171
 msgid ""
 "Objects of these types are :term:`hashable`, meaning that they can be used "
 "as dictionary keys."
 msgstr ""
+"Bu türdeki nesneler :term:`hashable` 'dır, yani sözlük anahtarları olarak "
+"kullanılabilirler."
 
 #: library/datetime.rst:173
 msgid ""
 "Objects of these types support efficient pickling via the :mod:`pickle` "
 "module."
 msgstr ""
+"Bu tür nesneler :mod:`pickle` modülü aracılığıyla verimli pickling işlemini "
+"destekler."
 
 #: library/datetime.rst:176
 msgid "Determining if an Object is Aware or Naive"
-msgstr ""
+msgstr "Bir Nesnenin Bilinçli veya Bilinçsiz Olduğunu Belirleme"
 
 #: library/datetime.rst:178
 msgid "Objects of the :class:`date` type are always naive."
-msgstr ""
+msgstr ":class:`date` türündeki nesneler her zaman bilinçsizdir."
 
 #: library/datetime.rst:180
 msgid ""
 "An object of type :class:`.time` or :class:`.datetime` may be aware or naive."
 msgstr ""
+":class:`.time` veya :class:`.datetime` türündeki bir nesne bilinçli veya "
+"bilinçsiz olabilir."
 
 #: library/datetime.rst:182
 msgid "A :class:`.datetime` object *d* is aware if both of the following hold:"
