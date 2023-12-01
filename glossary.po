@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-04 18:33+0000\n"
+"POT-Creation-Date: 2023-12-01 14:57+0000\n"
 "PO-Revision-Date: 2022-12-28 16:12-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -2603,10 +2603,21 @@ msgstr ""
 "bir anahtar kelimeye sahip birkaç yapıdan biridir."
 
 #: glossary.rst:1134
+msgid "static type checker"
+msgstr ""
+
+#: glossary.rst:1136
+msgid ""
+"An external tool that reads Python code and analyzes it, looking for issues "
+"such as incorrect types. See also :term:`type hints <type hint>` and the :"
+"mod:`typing` module."
+msgstr ""
+
+#: glossary.rst:1139
 msgid "strong reference"
 msgstr "güçlü referans"
 
-#: glossary.rst:1136
+#: glossary.rst:1141
 #, fuzzy
 msgid ""
 "In Python's C API, a strong reference is a reference to an object which is "
@@ -2618,7 +2629,7 @@ msgstr ""
 "referans sayısını artıran ve silindiğinde nesnenin referans sayısını azaltan "
 "bir nesneye yapılan referanstır."
 
-#: glossary.rst:1142
+#: glossary.rst:1147
 msgid ""
 "The :c:func:`Py_NewRef` function can be used to create a strong reference to "
 "an object. Usually, the :c:func:`Py_DECREF` function must be called on the "
@@ -2630,15 +2641,15 @@ msgstr ""
 "referansın sızmasını önlemek için güçlü referans kapsamından çıkmadan önce "
 "güçlü referansta çağrılmalıdır."
 
-#: glossary.rst:1147
+#: glossary.rst:1152
 msgid "See also :term:`borrowed reference`."
 msgstr "Ayrıca bkz. :term:`ödünç alınan referans <borrowed reference>`."
 
-#: glossary.rst:1148
+#: glossary.rst:1153
 msgid "text encoding"
 msgstr "yazı çözümleme"
 
-#: glossary.rst:1150
+#: glossary.rst:1155
 msgid ""
 "A string in Python is a sequence of Unicode code points (in range "
 "``U+0000``--``U+10FFFF``). To store or transfer a string, it needs to be "
@@ -2648,7 +2659,7 @@ msgstr ""
 "``U+10FFFF`` aralığında). Bir dizeyi depolamak veya aktarmak için, bir bayt "
 "dizisi olarak seri hale getirilmesi gerekir."
 
-#: glossary.rst:1154
+#: glossary.rst:1159
 msgid ""
 "Serializing a string into a sequence of bytes is known as \"encoding\", and "
 "recreating the string from the sequence of bytes is known as \"decoding\"."
@@ -2657,7 +2668,7 @@ msgstr ""
 "olarak bilinir ve dizeyi bayt dizisinden yeniden oluşturmak \"kod çözme "
 "(decoding)\" olarak bilinir."
 
-#: glossary.rst:1157
+#: glossary.rst:1162
 msgid ""
 "There are a variety of different text serialization :ref:`codecs <standard-"
 "encodings>`, which are collectively referred to as \"text encodings\"."
@@ -2665,11 +2676,11 @@ msgstr ""
 "Toplu olarak \"metin kodlamaları\" olarak adlandırılan çeşitli farklı metin "
 "serileştirme :ref:`kodekleri <standard-encodings>` vardır."
 
-#: glossary.rst:1160
+#: glossary.rst:1165
 msgid "text file"
 msgstr "yazı dosyası"
 
-#: glossary.rst:1162
+#: glossary.rst:1167
 msgid ""
 "A :term:`file object` able to read and write :class:`str` objects. Often, a "
 "text file actually accesses a byte-oriented datastream and handles the :term:"
@@ -2683,7 +2694,7 @@ msgstr ""
 "metin modunda açılan dosyalar (``'r'`` veya ``'w'``), :data:`sys.stdin`, :"
 "data:`sys.stdout` ve :class:`io.StringIO` örnekleri verilebilir."
 
-#: glossary.rst:1169
+#: glossary.rst:1174
 msgid ""
 "See also :term:`binary file` for a file object able to read and write :term:"
 "`bytes-like objects <bytes-like object>`."
@@ -2691,11 +2702,11 @@ msgstr ""
 "Ayrıca :term:`ikili dosyaları <binary file>` okuyabilen ve yazabilen bir "
 "dosya nesnesi için :term:`bayt benzeri nesnelere <bytes-like object>` bakın."
 
-#: glossary.rst:1171
+#: glossary.rst:1176
 msgid "triple-quoted string"
 msgstr "üç tırnaklı dize"
 
-#: glossary.rst:1173
+#: glossary.rst:1178
 msgid ""
 "A string which is bound by three instances of either a quotation mark (\") "
 "or an apostrophe (').  While they don't provide any functionality not "
@@ -2712,11 +2723,11 @@ msgstr ""
 "yayılabilir, bu da onları özellikle belge dizileri yazarken kullanışlı hale "
 "getirir."
 
-#: glossary.rst:1180
+#: glossary.rst:1185
 msgid "type"
 msgstr "tip"
 
-#: glossary.rst:1182
+#: glossary.rst:1187
 msgid ""
 "The type of a Python object determines what kind of object it is; every "
 "object has a type.  An object's type is accessible as its :attr:`~instance."
@@ -2726,15 +2737,15 @@ msgstr ""
 "nesnenin bir türü vardır. Bir nesnenin tipine :attr:`~instance.__class__` "
 "niteliği ile erişilebilir veya ``type(obj)`` ile alınabilir."
 
-#: glossary.rst:1186
+#: glossary.rst:1191
 msgid "type alias"
 msgstr "tip takma adı"
 
-#: glossary.rst:1188
+#: glossary.rst:1193
 msgid "A synonym for a type, created by assigning the type to an identifier."
 msgstr "Bir tanımlayıcıya tür atanarak oluşturulan, bir tür için eş anlamlı."
 
-#: glossary.rst:1190
+#: glossary.rst:1195
 msgid ""
 "Type aliases are useful for simplifying :term:`type hints <type hint>`. For "
 "example::"
@@ -2742,19 +2753,19 @@ msgstr ""
 "Tür takma adları, :term:`tür ipuçlarını <type hint>` basitleştirmek için "
 "kullanışlıdır. Örneğin::"
 
-#: glossary.rst:1197
+#: glossary.rst:1202
 msgid "could be made more readable like this::"
 msgstr "bu şekilde daha okunaklı hale getirilebilir::"
 
-#: glossary.rst:1218
+#: glossary.rst:1223
 msgid "See :mod:`typing` and :pep:`484`, which describe this functionality."
 msgstr "Bu işlevi açıklayan :mod:`typing` ve :pep:`484` bölümlerine bakın."
 
-#: glossary.rst:1205
+#: glossary.rst:1210
 msgid "type hint"
 msgstr "tür ipucu"
 
-#: glossary.rst:1207
+#: glossary.rst:1212
 msgid ""
 "An :term:`annotation` that specifies the expected type for a variable, a "
 "class attribute, or a function parameter or return value."
@@ -2762,17 +2773,18 @@ msgstr ""
 "Bir değişken, bir sınıf niteliği veya bir işlev parametresi veya dönüş "
 "değeri için beklenen türü belirten bir :term:`ek açıklama <annotation>`."
 
-#: glossary.rst:1210
+#: glossary.rst:1215
+#, fuzzy
 msgid ""
 "Type hints are optional and are not enforced by Python but they are useful "
-"to static type analysis tools, and aid IDEs with code completion and "
-"refactoring."
+"to :term:`static type checkers <static type checker>`. They can also aid "
+"IDEs with code completion and refactoring."
 msgstr ""
 "Tür ipuçları isteğe bağlıdır ve Python tarafından uygulanmaz, ancak bunlar "
 "statik tip analiz araçları için faydalıdır ve kod tamamlama ve yeniden "
 "düzenleme ile IDE'lere yardımcı olur."
 
-#: glossary.rst:1214
+#: glossary.rst:1219
 msgid ""
 "Type hints of global variables, class attributes, and functions, but not "
 "local variables, can be accessed using :func:`typing.get_type_hints`."
@@ -2781,11 +2793,11 @@ msgstr ""
 "yerel değişkenlere değil, :func:`typing.get_type_hints` kullanılarak "
 "erişilebilir."
 
-#: glossary.rst:1219
+#: glossary.rst:1224
 msgid "universal newlines"
 msgstr "evrensel yeni satırlar"
 
-#: glossary.rst:1221
+#: glossary.rst:1226
 msgid ""
 "A manner of interpreting text streams in which all of the following are "
 "recognized as ending a line: the Unix end-of-line convention ``'\\n'``, the "
@@ -2798,23 +2810,23 @@ msgstr ""
 "kuralı ``'\\r\\n'``, ve eski Macintosh kuralı ``'\\r'``. Ek bir kullanım "
 "için :pep:`278` ve :pep:`3116` ve ayrıca :func:`bytes.splitlines` bakın."
 
-#: glossary.rst:1226
+#: glossary.rst:1231
 msgid "variable annotation"
 msgstr "değişken açıklama"
 
-#: glossary.rst:1228
+#: glossary.rst:1233
 msgid "An :term:`annotation` of a variable or a class attribute."
 msgstr ""
 "Bir değişkenin veya bir sınıf özniteliğinin :term:`ek açıklaması "
 "<annotation>`."
 
-#: glossary.rst:1230
+#: glossary.rst:1235
 msgid ""
 "When annotating a variable or a class attribute, assignment is optional::"
 msgstr ""
 "Bir değişkene veya sınıf niteliğine açıklama eklerken atama isteğe bağlıdır::"
 
-#: glossary.rst:1235
+#: glossary.rst:1240
 msgid ""
 "Variable annotations are usually used for :term:`type hints <type hint>`: "
 "for example this variable is expected to take :class:`int` values::"
@@ -2822,11 +2834,11 @@ msgstr ""
 "Değişken açıklamaları genellikle :term:`tür ipuçları <type hint>` için "
 "kullanılır: örneğin, bu değişkenin :class:`int` değerlerini alması beklenir::"
 
-#: glossary.rst:1241
+#: glossary.rst:1246
 msgid "Variable annotation syntax is explained in section :ref:`annassign`."
 msgstr "Değişken açıklama sözdizimi :ref:`annassign` bölümünde açıklanmıştır."
 
-#: glossary.rst:1243
+#: glossary.rst:1248
 msgid ""
 "See :term:`function annotation`, :pep:`484` and :pep:`526`, which describe "
 "this functionality. Also see :ref:`annotations-howto` for best practices on "
@@ -2836,11 +2848,11 @@ msgstr ""
 "bölümlerine bakın. Ek açıklamalarla çalışmaya ilişkin en iyi uygulamalar "
 "için ayrıca bkz. :ref:`annotations-howto`."
 
-#: glossary.rst:1247
+#: glossary.rst:1252
 msgid "virtual environment"
 msgstr "sanal ortam"
 
-#: glossary.rst:1249
+#: glossary.rst:1254
 msgid ""
 "A cooperatively isolated runtime environment that allows Python users and "
 "applications to install and upgrade Python distribution packages without "
@@ -2852,15 +2864,15 @@ msgstr ""
 "paketlerini kurmasına ve yükseltmesine olanak tanıyan, işbirliği içinde "
 "yalıtılmış bir çalışma zamanı ortamı."
 
-#: glossary.rst:1254
+#: glossary.rst:1259
 msgid "See also :mod:`venv`."
 msgstr "Ayrıca bakınız :mod:`venv`."
 
-#: glossary.rst:1255
+#: glossary.rst:1260
 msgid "virtual machine"
 msgstr "sanal makine"
 
-#: glossary.rst:1257
+#: glossary.rst:1262
 msgid ""
 "A computer defined entirely in software.  Python's virtual machine executes "
 "the :term:`bytecode` emitted by the bytecode compiler."
@@ -2868,11 +2880,11 @@ msgstr ""
 "Tamamen yazılımla tanımlanmış bir bilgisayar. Python'un sanal makinesi, bayt "
 "kodu derleyicisi tarafından yayınlanan :term:`bytecode` 'u çalıştırır."
 
-#: glossary.rst:1259
+#: glossary.rst:1264
 msgid "Zen of Python"
 msgstr "Python'un Zen'i"
 
-#: glossary.rst:1261
+#: glossary.rst:1266
 msgid ""
 "Listing of Python design principles and philosophies that are helpful in "
 "understanding and using the language.  The listing can be found by typing "
