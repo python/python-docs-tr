@@ -1,3 +1,8 @@
+ci:
+  autofix_prs: false
+  autoupdate_branch: "pre-commit-autoupdate"
+  autoupdate_schedule: weekly
+
 repos:
   - repo: local
     hooks:
@@ -10,12 +15,12 @@ repos:
         verbose: true
 
   - repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 23.9.1
+    rev: 23.12.1
     hooks:
       - id: black
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
       - id: check-case-conflict
       - id: check-merge-conflict
@@ -24,6 +29,6 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/sphinx-contrib/sphinx-lint
-    rev: v0.6.8
+    rev: v0.9.1
     hooks:
       - id: sphinx-lint
