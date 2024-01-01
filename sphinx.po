@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 19:05+0000\n"
+"POT-Creation-Date: 2024-01-01 00:16+0000\n"
 "PO-Revision-Date: 2022-12-28 16:25-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -45,34 +45,78 @@ msgstr ""
 "Sürüm {deprecated} 'den beri kullanım dışı, sürüm {removed} 'da kaldırıldı"
 
 #: tools/templates/dummy.html:12
-msgid "Return value: Always NULL."
-msgstr ""
+#, fuzzy
+msgid " Part of the "
+msgstr "Belgelerin bölümleri:"
 
 #: tools/templates/dummy.html:13
-msgid "Return value: New reference."
+msgid "Limited API"
 msgstr ""
 
 #: tools/templates/dummy.html:14
-msgid "Return value: Borrowed reference."
+#, fuzzy
+msgid "Stable ABI"
+msgstr "Kararlı"
+
+#: tools/templates/dummy.html:15
+msgid " (as an opaque struct)"
 msgstr ""
 
+#: tools/templates/dummy.html:16
+msgid " (including all members)"
+msgstr ""
+
+#: tools/templates/dummy.html:17
+#, fuzzy
+msgid " since version %s"
+msgstr "Tüm sürümler"
+
 #: tools/templates/dummy.html:18
-msgid "in development"
-msgstr "geliştirme aşamasında"
+msgid " (Only some members are part of the stable ABI.)"
+msgstr ""
 
 #: tools/templates/dummy.html:19
-msgid "pre-release"
-msgstr "önsürüm"
+msgid "This is "
+msgstr ""
 
 #: tools/templates/dummy.html:20
-msgid "stable"
+#, fuzzy
+msgid "Unstable API"
 msgstr "kararlı"
 
 #: tools/templates/dummy.html:21
+msgid ". It may change without warning in minor releases."
+msgstr ""
+
+#: tools/templates/dummy.html:22
+msgid "Return value: Always NULL."
+msgstr ""
+
+#: tools/templates/dummy.html:23
+msgid "Return value: New reference."
+msgstr ""
+
+#: tools/templates/dummy.html:24
+msgid "Return value: Borrowed reference."
+msgstr ""
+
+#: tools/templates/dummy.html:28
+msgid "in development"
+msgstr "geliştirme aşamasında"
+
+#: tools/templates/dummy.html:29
+msgid "pre-release"
+msgstr "önsürüm"
+
+#: tools/templates/dummy.html:30
+msgid "stable"
+msgstr "kararlı"
+
+#: tools/templates/dummy.html:31
 msgid "security-fixes"
 msgstr "güvenlik düzeltmeleri"
 
-#: tools/templates/dummy.html:22
+#: tools/templates/dummy.html:32
 msgid "EOL"
 msgstr "EOL"
 

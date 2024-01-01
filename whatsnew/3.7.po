@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 22:33+0300\n"
+"POT-Creation-Date: 2024-01-01 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -748,9 +748,9 @@ msgstr ""
 #: whatsnew/3.7.rst:526
 msgid ""
 "In order to better support dynamic creation of stack traces, :class:`types."
-"TracebackType` can now be instantiated from Python code, and the ``tb_next`` "
-"attribute on :ref:`tracebacks <traceback-objects>` is now writable. "
-"(Contributed by Nathaniel J. Smith in :issue:`30579`.)"
+"TracebackType` can now be instantiated from Python code, and the :attr:"
+"`~traceback.tb_next` attribute on :ref:`tracebacks <traceback-objects>` is "
+"now writable. (Contributed by Nathaniel J. Smith in :issue:`30579`.)"
 msgstr ""
 
 #: whatsnew/3.7.rst:532
@@ -2702,9 +2702,9 @@ msgstr ""
 #: whatsnew/3.7.rst:1892
 msgid ""
 "Trace hooks may now opt out of receiving the ``line`` and opt into receiving "
-"the ``opcode`` events from the interpreter by setting the corresponding new "
-"``f_trace_lines`` and ``f_trace_opcodes`` attributes on the frame being "
-"traced. (Contributed by Nick Coghlan in :issue:`31344`.)"
+"the ``opcode`` events from the interpreter by setting the corresponding new :"
+"attr:`~frame.f_trace_lines` and :attr:`~frame.f_trace_opcodes` attributes on "
+"the frame being traced. (Contributed by Nick Coghlan in :issue:`31344`.)"
 msgstr ""
 
 #: whatsnew/3.7.rst:1897
@@ -3020,9 +3020,8 @@ msgstr ""
 
 #: whatsnew/3.7.rst:2147
 msgid ""
-"The ``splitunc()`` function in the :mod:`ntpath` module was deprecated in "
-"Python 3.1, and has now been removed.  Use the :func:`~os.path.splitdrive` "
-"function instead."
+"The :func:`!ntpath.splitunc` function was deprecated in Python 3.1, and has "
+"now been removed.  Use :func:`~os.path.splitdrive` instead."
 msgstr ""
 
 #: whatsnew/3.7.rst:2151
