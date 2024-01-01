@@ -86,7 +86,7 @@ ensure_prerequisites: venv/cpython/.git/HEAD
 	    git -C venv/cpython/ checkout $(BRANCH); \
 	    echo "You're missing dependencies please install:"; \
 	    echo ""; \
-	    echo "  python -m pip install -r requirements.txt -r venv/cpython/Doc/requirements.txt"; \
+	    echo "  python -m pip install -r venv/cpython/Doc/requirements.txt"; \
 	    exit 1; \
 	fi
 

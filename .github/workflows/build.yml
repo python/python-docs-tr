@@ -1,12 +1,5 @@
 name: Tests
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - "**"
-  pull_request:
-    branches:
-      - "**"
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   checks:
@@ -28,15 +21,14 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12-dev"
+          python-version: "3.12"
       - name: Install ${{ matrix.tool.package }}
         run: |
           if [ -n "${{ matrix.tool.apt_dependencies }}" ]; then
               sudo apt-get update && sudo apt-get install -y ${{ matrix.tool.apt_dependencies }}
           fi
           if [ -n "${{ matrix.tool.package }}" ]; then
-              python -m pip install --upgrade pip setuptools wheel
-              python -m pip install ${{ matrix.tool.package }}
+              pip install ${{ matrix.tool.package }}
           fi
       - name: Run ${{ matrix.tool.package }}
         env:
@@ -62,13 +54,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12-dev"
+          python-version: "3.12"
       - name: Prepare environment
         run: |
           pwd
           tree -L 2
           git clone https://github.com/python/cpython.git venv/cpython/
-          python -m pip install --upgrade pip setuptools wheel
-          python -m pip install -r requirements.txt -r venv/cpython/Doc/requirements.txt
+          pip install -r venv/cpython/Doc/requirements.txt
       - name: Make
         run: make
