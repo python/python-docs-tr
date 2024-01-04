@@ -19,7 +19,7 @@
 # test build, we're building with the .rst files that generated our
 # .po files.
 
-CPYTHON_CURRENT_COMMIT := 4f919cf8b9ed07964e8b7b87a5a3e25b09b1ed9e
+CPYTHON_CURRENT_COMMIT := d3f2051eec6039811ae42e4382e8b292a983edc1
 LANGUAGE := tr
 BRANCH := 3.12
 
@@ -86,7 +86,7 @@ ensure_prerequisites: venv/cpython/.git/HEAD
 	    git -C venv/cpython/ checkout $(BRANCH); \
 	    echo "You're missing dependencies please install:"; \
 	    echo ""; \
-	    echo "  python -m pip install -r requirements.txt -r venv/cpython/Doc/requirements.txt"; \
+	    echo "  python -m pip install -r venv/cpython/Doc/requirements.txt"; \
 	    exit 1; \
 	fi
 

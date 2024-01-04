@@ -1,5 +1,5 @@
 # Python Documentation Turkish Translation
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
 #, fuzzy
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-04 18:33+0000\n"
+"POT-Creation-Date: 2024-01-01 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -1339,11 +1339,11 @@ msgstr ""
 msgid ""
 "It's now illegal to mix iterating over a file  with ``for line in file`` and "
 "calling  the file object's :meth:`read`/:meth:`readline`/:meth:`readlines` "
-"methods.  Iteration uses an internal buffer and the  :meth:`read\\*` methods "
-"don't use that buffer.   Instead they would return the data following the "
-"buffer, causing the data to appear out of order.  Mixing iteration and these "
-"methods will now trigger a :exc:`ValueError` from the :meth:`read\\*` "
-"method. (Implemented by Thomas Wouters.)"
+"methods.  Iteration uses an internal buffer and the  :meth:`!read\\*` "
+"methods don't use that buffer.   Instead they would return the data "
+"following the buffer, causing the data to appear out of order.  Mixing "
+"iteration and these methods will now trigger a :exc:`ValueError` from the :"
+"meth:`!read\\*` method. (Implemented by Thomas Wouters.)"
 msgstr ""
 
 #: whatsnew/2.5.rst:1178

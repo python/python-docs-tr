@@ -1,12 +1,12 @@
 # Python Documentation Turkish Translation
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 22:33+0300\n"
+"POT-Creation-Date: 2024-01-04 03:14+0300\n"
 "PO-Revision-Date: 2022-12-28 16:31-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -305,31 +305,30 @@ msgid "Mersenne Twister"
 msgstr "Mersenne Twister'ı"
 
 #: license.rst:305
-#, fuzzy
 msgid ""
 "The :mod:`!_random` C extension underlying the :mod:`random` module includes "
 "code based on a download from http://www.math.sci.hiroshima-u.ac.jp/~m-mat/"
 "MT/MT2002/emt19937ar.html. The following are the verbatim comments from the "
 "original code::"
 msgstr ""
-":mod:`_random` modülü, http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/"
-"MT2002/emt19937ar.html adresinden indirilen kodu temel alır. Orijinal koddan "
-"kelimesi kelimesine yorumlar aşağıdadır::"
+":mod:`random` modülünün altyapsını oluşturan :mod:`!_random` C uzantısı, "
+"http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/emt19937ar.html "
+"adresinden indirilen kodu temel alır. Orijinal koddan kelimesi kelimesine "
+"yorumlar aşağıdadır::"
 
 #: license.rst:353
 msgid "Sockets"
 msgstr "Soketler"
 
 #: license.rst:355
-#, fuzzy
 msgid ""
 "The :mod:`socket` module uses the functions, :c:func:`!getaddrinfo`, and :c:"
 "func:`!getnameinfo`, which are coded in separate source files from the WIDE "
 "Project, https://www.wide.ad.jp/. ::"
 msgstr ""
-":mod:`socket` modülü, https://www.wide.ad.jp adresindeki WIDE Projesi'nden "
-"ayrı kaynak dosyalarında kodlanan :func:`getaddrinfo` ve :func:`getnameinfo` "
-"fonksiyonlarını kullanır. /. ::"
+":mod:`socket` modülü, https://www.wide.ad.jp/ adresindeki WIDE Projesi'nden "
+"ayrı kaynak dosyalarında kodlanan :c:func:`!getaddrinfo` ve :c:func:`!"
+"getnameinfo` fonksiyonlarını kullanır. ::"
 
 #: license.rst:388
 msgid "Asynchronous socket services"
@@ -380,9 +379,8 @@ msgid "test_epoll"
 msgstr "test_epoll"
 
 #: license.rst:542
-#, fuzzy
 msgid "The :mod:`!test.test_epoll` module contains the following notice::"
-msgstr ":mod:`test_epoll` modülü aşağıdaki uyarıyı içerir::"
+msgstr ":mod:`!test.test_epoll` modülü aşağıdaki uyarıyı içerir::"
 
 #: license.rst:566
 msgid "Select kqueue"
@@ -424,7 +422,7 @@ msgstr ""
 "archive.org/web/20220517033456/http://www.netlib.org/fp/dtoa.c 'den "
 "erişilebilen David M. Gay tarafından aynı adlı dosyadan türetilmiştir. 16 "
 "Mart 2009'da alınan orijinal dosya aşağıdaki telif hakkı ve lisans "
-"bildirimini içerir:"
+"bildirimini içerir::"
 
 #: license.rst:656
 msgid "OpenSSL"
@@ -466,15 +464,14 @@ msgid "libffi"
 msgstr "libffi"
 
 #: license.rst:876
-#, fuzzy
 msgid ""
 "The :mod:`!_ctypes` C extension underlying the :mod:`ctypes` module is built "
 "using an included copy of the libffi sources unless the build is configured "
 "``--with-system-libffi``::"
 msgstr ""
-":mod:`_ctypes` uzantısı, yapı ``--with-system-libffi`` olarak "
-"yapılandırılmadığı sürece libffi kaynaklarının dahil edildiği bir kopya "
-"kullanılarak oluşturulur::"
+":mod:`ctypes` modülünün altyapsını oluşturan :mod:`!_ctypes` C uzantısı, ``--"
+"with-system-libffi`` olarak yapılandırılmadığı sürece libffi kaynaklarının "
+"dahil edildiği bir kopya kullanılarak oluşturulur::"
 
 #: license.rst:904
 msgid "zlib"

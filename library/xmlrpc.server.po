@@ -1,5 +1,5 @@
 # Python Documentation Turkish Translation
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
 #, fuzzy
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-01 00:18+0000\n"
+"POT-Creation-Date: 2024-01-01 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -105,8 +105,8 @@ msgstr ""
 #: library/xmlrpc.server.rst:299
 msgid ""
 "Register a function that can respond to XML-RPC requests.  If *name* is "
-"given, it will be the method name associated with *function*, otherwise "
-"``function.__name__`` will be used.  *name* is a string, and may contain "
+"given, it will be the method name associated with *function*, otherwise :"
+"attr:`function.__name__` will be used.  *name* is a string, and may contain "
 "characters not legal in Python identifiers, including the period character."
 msgstr ""
 
@@ -114,7 +114,7 @@ msgstr ""
 msgid ""
 "This method can also be used as a decorator.  When used as a decorator, "
 "*name* can only be given as a keyword argument to register *function* under "
-"*name*.  If no *name* is given, ``function.__name__`` will be used."
+"*name*.  If no *name* is given, :attr:`function.__name__` will be used."
 msgstr ""
 
 #: library/xmlrpc.server.rst:308

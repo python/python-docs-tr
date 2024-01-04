@@ -17,10 +17,10 @@ jobs:
       - name: Set Up Python 3.12
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12-dev"
+          python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt && sudo apt install gettext -y
+        run: pip install tqdm poutils -r venv/cpython/Doc/requirements.txt && sudo apt install gettext -y
 
       - name: Run merge.py
         run: python merge.py ${GITHUB_REF##*/}

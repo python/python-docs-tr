@@ -1,5 +1,5 @@
 # Python Documentation Turkish Translation
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
 #, fuzzy
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-01 14:57+0000\n"
+"POT-Creation-Date: 2024-01-01 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -459,10 +459,10 @@ msgstr ""
 
 #: library/unittest.rst:348
 msgid ""
-"Python 3.11 dropped the :term:`namespace packages <namespace package>` "
-"support. It has been broken since Python 3.7. Start directory and "
-"subdirectories containing tests must be regular package that have ``__init__."
-"py`` file."
+":mod:`unittest` dropped the :term:`namespace packages <namespace package>` "
+"support in Python 3.11. It has been broken since Python 3.7. Start directory "
+"and subdirectories containing tests must be regular package that have "
+"``__init__.py`` file."
 msgstr ""
 
 #: library/unittest.rst:354
@@ -501,11 +501,11 @@ msgstr ""
 
 #: library/unittest.rst:393
 msgid ""
-"Note that in order to test something, we use one of the :meth:`assert\\*` "
-"methods provided by the :class:`TestCase` base class.  If the test fails, an "
-"exception will be raised with an explanatory message, and :mod:`unittest` "
-"will identify the test case as a :dfn:`failure`.  Any other exceptions will "
-"be treated as :dfn:`errors`."
+"Note that in order to test something, we use one of the :ref:`assert\\* "
+"methods <assert-methods>` provided by the :class:`TestCase` base class.  If "
+"the test fails, an exception will be raised with an explanatory message, "
+"and :mod:`unittest` will identify the test case as a :dfn:`failure`.  Any "
+"other exceptions will be treated as :dfn:`errors`."
 msgstr ""
 
 #: library/unittest.rst:399
@@ -1953,7 +1953,7 @@ msgstr ""
 #: library/unittest.rst:1727
 msgid ""
 "Tests grouped by a :class:`TestSuite` are always accessed by iteration. "
-"Subclasses can lazily provide tests by overriding :meth:`__iter__`. Note "
+"Subclasses can lazily provide tests by overriding :meth:`!__iter__`. Note "
 "that this method may be called several times on a single suite (for example "
 "when counting tests or comparing for equality) so the tests returned by "
 "repeated iterations before :meth:`TestSuite.run` must be the same for each "
@@ -1965,8 +1965,8 @@ msgstr ""
 #: library/unittest.rst:1737
 msgid ""
 "In earlier versions the :class:`TestSuite` accessed tests directly rather "
-"than through iteration, so overriding :meth:`__iter__` wasn't sufficient for "
-"providing tests."
+"than through iteration, so overriding :meth:`!__iter__` wasn't sufficient "
+"for providing tests."
 msgstr ""
 
 #: library/unittest.rst:1742
@@ -2210,14 +2210,13 @@ msgstr ""
 
 #: library/unittest.rst:1935
 msgid ""
-"This affects :meth:`getTestCaseNames` and all the :meth:`loadTestsFrom\\*` "
-"methods."
+"This affects :meth:`getTestCaseNames` and all the ``loadTestsFrom*`` methods."
 msgstr ""
 
 #: library/unittest.rst:1941
 msgid ""
 "Function to be used to compare method names when sorting them in :meth:"
-"`getTestCaseNames` and all the :meth:`loadTestsFrom\\*` methods."
+"`getTestCaseNames` and all the ``loadTestsFrom*`` methods."
 msgstr ""
 
 #: library/unittest.rst:1947
@@ -2228,7 +2227,7 @@ msgid ""
 msgstr ""
 
 #: library/unittest.rst:1964
-msgid "This affects all the :meth:`loadTestsFrom\\*` methods."
+msgid "This affects all the ``loadTestsFrom*`` methods."
 msgstr ""
 
 #: library/unittest.rst:1955
@@ -2285,7 +2284,7 @@ msgstr ""
 msgid ""
 "A list containing 2-tuples of :class:`TestCase` instances and strings "
 "holding formatted tracebacks. Each tuple represents a test where a failure "
-"was explicitly signalled using the :meth:`TestCase.assert\\*` methods."
+"was explicitly signalled using the :ref:`assert\\* methods <assert-methods>`."
 msgstr ""
 
 #: library/unittest.rst:2002

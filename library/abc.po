@@ -1,5 +1,5 @@
 # Python Documentation Turkish Translation
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
 #, fuzzy
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-04 18:33+0000\n"
+"POT-Creation-Date: 2024-01-01 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -38,7 +38,7 @@ msgid ""
 "ABCs; these can, of course, be further derived. In addition, the :mod:"
 "`collections.abc` submodule has some ABCs that can be used to test whether a "
 "class or instance provides a particular interface, for example, if it is :"
-"term:`hashable` or if it is a mapping."
+"term:`hashable` or if it is a :term:`mapping`."
 msgstr ""
 
 #: library/abc.rst:27
@@ -50,17 +50,17 @@ msgstr ""
 #: library/abc.rst:32
 msgid ""
 "A helper class that has :class:`ABCMeta` as its metaclass.  With this class, "
-"an abstract base class can be created by simply deriving from :class:`ABC` "
+"an abstract base class can be created by simply deriving from :class:`!ABC` "
 "avoiding sometimes confusing metaclass usage, for example::"
 msgstr ""
 
 #: library/abc.rst:41
 msgid ""
-"Note that the type of :class:`ABC` is still :class:`ABCMeta`, therefore "
-"inheriting from :class:`ABC` requires the usual precautions regarding "
+"Note that the type of :class:`!ABC` is still :class:`ABCMeta`, therefore "
+"inheriting from :class:`!ABC` requires the usual precautions regarding "
 "metaclass usage, as multiple inheritance may lead to metaclass conflicts. "
 "One may also define an abstract base class by passing the metaclass keyword "
-"and using :class:`ABCMeta` directly, for example::"
+"and using :class:`!ABCMeta` directly, for example::"
 msgstr ""
 
 #: library/abc.rst:57
@@ -81,7 +81,7 @@ msgstr ""
 
 #: library/abc.rst:68
 msgid ""
-"Classes created with a metaclass of :class:`ABCMeta` have the following "
+"Classes created with a metaclass of :class:`!ABCMeta` have the following "
 "method:"
 msgstr ""
 
@@ -96,8 +96,8 @@ msgstr ""
 
 #: library/abc.rst:88
 msgid ""
-"To detect calls to :meth:`register`, you can use the :func:`get_cache_token` "
-"function."
+"To detect calls to :meth:`!register`, you can use the :func:"
+"`get_cache_token` function."
 msgstr ""
 
 #: library/abc.rst:92
@@ -111,10 +111,10 @@ msgstr ""
 #: library/abc.rst:98
 msgid ""
 "Check whether *subclass* is considered a subclass of this ABC.  This means "
-"that you can customize the behavior of ``issubclass`` further without the "
-"need to call :meth:`register` on every class you want to consider a subclass "
-"of the ABC.  (This class method is called from the :meth:`__subclasscheck__` "
-"method of the ABC.)"
+"that you can customize the behavior of :func:`issubclass` further without "
+"the need to call :meth:`register` on every class you want to consider a "
+"subclass of the ABC.  (This class method is called from the :meth:`~class."
+"__subclasscheck__` method of the ABC.)"
 msgstr ""
 
 #: library/abc.rst:104
@@ -135,7 +135,7 @@ msgstr ""
 msgid ""
 "The ABC ``MyIterable`` defines the standard iterable method, :meth:"
 "`~iterator.__iter__`, as an abstract method.  The implementation given here "
-"can still be called from subclasses.  The :meth:`get_iterator` method is "
+"can still be called from subclasses.  The :meth:`!get_iterator` method is "
 "also part of the ``MyIterable`` abstract base class, but it does not have to "
 "be overridden in non-abstract derived classes."
 msgstr ""
@@ -152,13 +152,14 @@ msgstr ""
 msgid ""
 "Finally, the last line makes ``Foo`` a virtual subclass of ``MyIterable``, "
 "even though it does not define an :meth:`~iterator.__iter__` method (it uses "
-"the old-style iterable protocol, defined in terms of :meth:`__len__` and :"
-"meth:`~object.__getitem__`).  Note that this will not make ``get_iterator`` "
-"available as a method of ``Foo``, so it is provided separately."
+"the old-style iterable protocol, defined in terms of :meth:`~object.__len__` "
+"and :meth:`~object.__getitem__`).  Note that this will not make "
+"``get_iterator`` available as a method of ``Foo``, so it is provided "
+"separately."
 msgstr ""
 
 #: library/abc.rst:163
-msgid "The :mod:`abc` module also provides the following decorator:"
+msgid "The :mod:`!abc` module also provides the following decorator:"
 msgstr ""
 
 #: library/abc.rst:167
@@ -168,10 +169,10 @@ msgstr ""
 #: library/abc.rst:169
 msgid ""
 "Using this decorator requires that the class's metaclass is :class:`ABCMeta` "
-"or is derived from it.  A class that has a metaclass derived from :class:"
-"`ABCMeta` cannot be instantiated unless all of its abstract methods and "
+"or is derived from it.  A class that has a metaclass derived from :class:`!"
+"ABCMeta` cannot be instantiated unless all of its abstract methods and "
 "properties are overridden.  The abstract methods can be called using any of "
-"the normal 'super' call mechanisms.  :func:`abstractmethod` may be used to "
+"the normal 'super' call mechanisms.  :func:`!abstractmethod` may be used to "
 "declare abstract methods for properties and descriptors."
 msgstr ""
 
@@ -179,15 +180,15 @@ msgstr ""
 msgid ""
 "Dynamically adding abstract methods to a class, or attempting to modify the "
 "abstraction status of a method or class once it is created, are only "
-"supported using the :func:`update_abstractmethods` function.  The :func:"
-"`abstractmethod` only affects subclasses derived using regular inheritance; "
-"\"virtual subclasses\" registered with the ABC's :meth:`register` method are "
-"not affected."
+"supported using the :func:`update_abstractmethods` function.  The :func:`!"
+"abstractmethod` only affects subclasses derived using regular inheritance; "
+"\"virtual subclasses\" registered with the ABC's :meth:`~ABCMeta.register` "
+"method are not affected."
 msgstr ""
 
 #: library/abc.rst:183
 msgid ""
-"When :func:`abstractmethod` is applied in combination with other method "
+"When :func:`!abstractmethod` is applied in combination with other method "
 "descriptors, it should be applied as the innermost decorator, as shown in "
 "the following usage examples::"
 msgstr ""
@@ -195,8 +196,8 @@ msgstr ""
 #: library/abc.rst:217
 msgid ""
 "In order to correctly interoperate with the abstract base class machinery, "
-"the descriptor must identify itself as abstract using :attr:"
-"`__isabstractmethod__`. In general, this attribute should be ``True`` if any "
+"the descriptor must identify itself as abstract using :attr:`!"
+"__isabstractmethod__`. In general, this attribute should be ``True`` if any "
 "of the methods used to compose the descriptor are abstract. For example, "
 "Python's built-in :class:`property` does the equivalent of::"
 msgstr ""
@@ -211,7 +212,7 @@ msgid ""
 msgstr ""
 
 #: library/abc.rst:239
-msgid "The :mod:`abc` module also supports the following legacy decorators:"
+msgid "The :mod:`!abc` module also supports the following legacy decorators:"
 msgstr ""
 
 #: library/abc.rst:244
@@ -282,7 +283,7 @@ msgid ""
 msgstr ""
 
 #: library/abc.rst:326
-msgid "The :mod:`abc` module also provides the following functions:"
+msgid "The :mod:`!abc` module also provides the following functions:"
 msgstr ""
 
 #: library/abc.rst:330

@@ -1,5 +1,5 @@
 # Python Documentation Turkish Translation
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
 #, fuzzy
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-01 00:18+0000\n"
+"POT-Creation-Date: 2024-01-04 05:12+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -1853,9 +1853,9 @@ msgstr ""
 
 #: whatsnew/3.4.rst:1372
 msgid ""
-"The :class:`~smtpd.SMTPServer` and :class:`~smtpd.SMTPChannel` classes now "
-"accept a *map* keyword argument which, if specified, is passed in to :class:"
-"`asynchat.async_chat` as its *map* argument.  This allows an application to "
+"The :class:`!SMTPServer` and :class:`!SMTPChannel` classes now accept a "
+"*map* keyword argument which, if specified, is passed in to :class:`!"
+"asynchat.async_chat` as its *map* argument.  This allows an application to "
 "avoid affecting the global socket map.  (Contributed by Vinay Sajip in :"
 "issue:`11959`.)"
 msgstr ""
@@ -2627,7 +2627,7 @@ msgid ""
 "The :ref:`python <using-on-cmdline>` command has a new :ref:`option <using-"
 "on-misc-options>`, ``-I``, which causes it to run in \"isolated mode\", "
 "which means that :data:`sys.path` contains neither the script's directory "
-"nor the user's ``site-packages`` directory, and all :envvar:`PYTHON*` "
+"nor the user's ``site-packages`` directory, and all :envvar:`!PYTHON*` "
 "environment variables are ignored (it implies both ``-s`` and ``-E``).  "
 "Other restrictions may also be applied in the future, with the goal being to "
 "isolate the execution of a script from the user's environment.  This is "
@@ -3332,8 +3332,8 @@ msgstr ""
 #: whatsnew/3.4.rst:2407
 msgid ""
 "Parameter names in ``__annotations__`` dicts are now mangled properly, "
-"similarly to ``__kwdefaults__``.  (Contributed by Yury Selivanov in :issue:"
-"`20625`.)"
+"similarly to :attr:`~function.__kwdefaults__`. (Contributed by Yury "
+"Selivanov in :issue:`20625`.)"
 msgstr ""
 
 #: whatsnew/3.4.rst:2411

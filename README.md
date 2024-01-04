@@ -37,7 +37,7 @@ Bu proje gönüllü çevirmenler ve python-docs-tr ekibi iş birliğinde sürdü
    - Örneğin, ``library/functions.po`` dosyasını çevirmek istiyorsanız, ``library-functions`` adında bir branch oluşturun.
    - ``git checkout -b library-functions``
 4. Gerekli paketleri yükleyin.
-   - ``python -m pip install --upgrade -r requirements.txt``
+   - ``python -m pip install --upgrade -r requirements-dev.txt``
 5. Syntax hatalarını commit öncesi otomatik kontrol eden ``pre-commit`` 'i kurun.
    - ``pre-commit install``
 

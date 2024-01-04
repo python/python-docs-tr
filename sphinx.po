@@ -1,12 +1,12 @@
 # Python Documentation Turkish Translation
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 19:05+0000\n"
+"POT-Creation-Date: 2024-01-04 05:12+0300\n"
 "PO-Revision-Date: 2022-12-28 16:25-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -45,34 +45,74 @@ msgstr ""
 "Sürüm {deprecated} 'den beri kullanım dışı, sürüm {removed} 'da kaldırıldı"
 
 #: tools/templates/dummy.html:12
-msgid "Return value: Always NULL."
-msgstr ""
+msgid "Part of the"
+msgstr "Bir parçası"
 
 #: tools/templates/dummy.html:13
-msgid "Return value: New reference."
-msgstr ""
+msgid "Limited API"
+msgstr "Sınırlı API"
 
 #: tools/templates/dummy.html:14
-msgid "Return value: Borrowed reference."
-msgstr ""
+msgid "Stable ABI"
+msgstr "Kararlı ABI"
+
+#: tools/templates/dummy.html:15
+msgid "(as an opaque struct)"
+msgstr "(bir opak yapı olarak)"
+
+#: tools/templates/dummy.html:16
+msgid "(including all members)"
+msgstr "(tüm üyeler dahil)"
+
+#: tools/templates/dummy.html:17
+msgid "since version %s"
+msgstr "%s sürümünden beri"
 
 #: tools/templates/dummy.html:18
+msgid "(Only some members are part of the stable ABI.)"
+msgstr "(Sadece bazı üyeler kararlı ABI'ın bir parçasıdır.)"
+
+#: tools/templates/dummy.html:19
+msgid "This is"
+msgstr "Bu"
+
+#: tools/templates/dummy.html:20
+msgid "Unstable API"
+msgstr "Kararsız API"
+
+#: tools/templates/dummy.html:21
+msgid ". It may change without warning in minor releases."
+msgstr ". Bu, küçük (minor) sürümlerde uyarı olmadan değişebilir."
+
+#: tools/templates/dummy.html:22
+msgid "Return value: Always NULL."
+msgstr "Döndürdüğü değer: Her zaman NULL."
+
+#: tools/templates/dummy.html:23
+msgid "Return value: New reference."
+msgstr "Döndürdüğü değer: Yeni referans."
+
+#: tools/templates/dummy.html:24
+msgid "Return value: Borrowed reference."
+msgstr "Döndürdüğü değer: Ödünç alınmış referans."
+
+#: tools/templates/dummy.html:28
 msgid "in development"
 msgstr "geliştirme aşamasında"
 
-#: tools/templates/dummy.html:19
+#: tools/templates/dummy.html:29
 msgid "pre-release"
 msgstr "önsürüm"
 
-#: tools/templates/dummy.html:20
+#: tools/templates/dummy.html:30
 msgid "stable"
 msgstr "kararlı"
 
-#: tools/templates/dummy.html:21
+#: tools/templates/dummy.html:31
 msgid "security-fixes"
 msgstr "güvenlik düzeltmeleri"
 
-#: tools/templates/dummy.html:22
+#: tools/templates/dummy.html:32
 msgid "EOL"
 msgstr "EOL"
 
@@ -84,7 +124,7 @@ msgstr ""
 
 #: tools/templates/indexcontent.html:10
 msgid "Parts of the documentation:"
-msgstr "Belgelerin bölümleri:"
+msgstr "Dokümantasyonun bölümleri:"
 
 #: tools/templates/indexcontent.html:13
 msgid "What's new in Python %(version)s?"
@@ -94,7 +134,7 @@ msgstr "Python %(version)s sürümündeki yenilikler nelerdir?"
 msgid ""
 "or <a href=\"%(whatsnew_index)s\">all \"What's new\" documents</a> since 2.0"
 msgstr ""
-"veya 2.0 'dan bu yana <a href=\"%(whatsnew_index)s\">tüm \"Yenilikler\" "
+"veya 2.0'dan bu yana <a href=\"%(whatsnew_index)s\">tüm \"Yenilikler\" "
 "belgeleri</a>"
 
 #: tools/templates/indexcontent.html:15
@@ -143,7 +183,7 @@ msgstr "Python Modüllerini Yükleme"
 
 #: tools/templates/indexcontent.html:27
 msgid "installing from the Python Package Index &amp; other sources"
-msgstr "Python Paket Dizini 'nden yükleme &amp; diğer kaynaklar"
+msgstr "Python Paket Dizini'nden yükleme &amp; diğer kaynaklar"
 
 #: tools/templates/indexcontent.html:28
 msgid "Distributing Python Modules"
@@ -203,7 +243,7 @@ msgstr "Sözlük"
 
 #: tools/templates/indexcontent.html:47
 msgid "the most important terms explained"
-msgstr "açıklanan en önemli terimler"
+msgstr "en önemli terimler, açıklamalarıyla birlikte"
 
 #: tools/templates/indexcontent.html:49
 msgid "Search page"
@@ -231,7 +271,7 @@ msgstr "Hataları bildirme"
 
 #: tools/templates/indexcontent.html:60
 msgid "Contributing to Docs"
-msgstr "Dokümanlara Katkıda Bulunma"
+msgstr "Dokümantasyona Katkıda Bulunma"
 
 #: tools/templates/indexcontent.html:61
 msgid "About the documentation"
@@ -246,9 +286,8 @@ msgid "Copyright"
 msgstr "Telif Hakkı"
 
 #: tools/templates/indexcontent.html:65
-#, fuzzy
 msgid "Download the documentation"
-msgstr "Bu dokümanları indir"
+msgstr "Dokümantasyonu indir"
 
 #: tools/templates/indexsidebar.html:1
 msgid "Download"
@@ -256,7 +295,7 @@ msgstr "İndir"
 
 #: tools/templates/indexsidebar.html:2
 msgid "Download these documents"
-msgstr "Bu dokümanları indir"
+msgstr "Bu belgeleri indir"
 
 #: tools/templates/indexsidebar.html:3
 msgid "Docs by version"
@@ -299,7 +338,6 @@ msgid "Python Developer’s Guide"
 msgstr "Python Geliştirici Rehberi"
 
 #: tools/templates/layout.html:6
-#, fuzzy
 msgid ""
 "This document is for an old version of Python that is no longer supported.\n"
 "    You should upgrade, and read the"
@@ -308,9 +346,8 @@ msgstr ""
 "    Güncellemeli, ve"
 
 #: tools/templates/layout.html:8
-#, fuzzy
 msgid "Python documentation for the current stable release"
-msgstr " Mevcut kararlı sürüm için olan Python dokümantasyonunu okumalısın"
+msgstr "mevcut kararlı sürüm için olan Python dokümantasyonunu okumalısınız"
 
 #: tools/templates/layout.html:14
 msgid ""
@@ -318,8 +355,10 @@ msgid ""
 "%(pr_id)s\">pull request</a>.\n"
 "  For authoritative documentation, see"
 msgstr ""
+"Bu, <a href=\"%(repository_url)s/pull/%(pr_id)s\">pull request</a>'ten "
+"oluşturulan bir dağıtım önizlemesidir.\n"
+"  Asıl dokümantasyon için, bkz."
 
 #: tools/templates/layout.html:16
-#, fuzzy
 msgid "the current stable release"
-msgstr " Mevcut kararlı sürüm için olan Python dokümantasyonunu okumalısın"
+msgstr "mevcut kararlı sürüm"
