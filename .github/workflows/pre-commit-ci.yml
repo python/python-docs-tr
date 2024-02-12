@@ -25,5 +25,5 @@ jobs:
         run: pre-commit run --all-files --show-diff-on-failure
 
       - name: Run pre-commit-ci-lite
-        uses: pre-commit-ci/lite-action@v1.0.1
+        uses: pre-commit-ci/lite-action@v1.0.2
         if: always()
