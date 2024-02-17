@@ -8,17 +8,18 @@ msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-01 00:16+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2024-02-17 13:11+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: library/exceptions.rst:4
 msgid "Built-in Exceptions"
-msgstr ""
+msgstr "Gömülü İstisnalar"
 
 #: library/exceptions.rst:10
 msgid ""
@@ -29,6 +30,13 @@ msgid ""
 "from which *it* is derived).  Two exception classes that are not related via "
 "subclassing are never equivalent, even if they have the same name."
 msgstr ""
+"Python'da tüm istisnalar(exceptions) :class:`BaseException` sınıfından "
+"türeyen bir sınıfın örnekleri olmalıdır.  Belirli bir sınıftan bahseden :"
+"keyword:`except` cümlesine sahip bir :keyword:`try` deyiminde, bu cümle aynı "
+"zamanda o sınıftan türetilen istisna sınıflarını da ele alır (ancak *onun* "
+"türetildiği istisna sınıflarını değil).  Alt sınıflandırma yoluyla ilişkili "
+"olmayan iki istisna sınıfı, aynı ada sahip olsalar bile asla eşdeğer "
+"değildir."
 
 #: library/exceptions.rst:19
 msgid ""
@@ -39,6 +47,13 @@ msgid ""
 "explaining the code).  The associated value is usually passed as arguments "
 "to the exception class's constructor."
 msgstr ""
+"Aşağıda listelenen gömülü istisnalar(built-in exception) "
+"yorumlayıcı(interpreter) veya gömülü fonksiyonlar tarafından "
+"oluşturulabilir.  Belirtilen yerler dışında, hatanın ayrıntılı nedenini "
+"gösteren bir \"ilişkili değere\" sahiptirler.  Bu bir dize veya birkaç bilgi "
+"öğesinden oluşan bir demet(tuple) olabilir (örneğin, bir hata kodu ve kodu "
+"açıklayan bir dize).  İlişkili değer genellikle istisnalar sınıfının "
+"kurucusuna argüman olarak aktarılır."
 
 #: library/exceptions.rst:26
 msgid ""
@@ -48,6 +63,11 @@ msgid ""
 "that there is nothing to prevent user code from raising an inappropriate "
 "error."
 msgstr ""
+"Kullanıcı kodu gömülü istisnaları oluşturabilir.  Bu, bir istisna "
+"işleyicileri test etmek veya yorumlayıcının aynı istisnayı ortaya çıkardığı "
+"duruma \"benzer\" bir hata durumunu bildirmek için kullanılabilir; ancak "
+"kullanıcı kodunun uygun olmayan bir hata oluşturmasını engelleyecek hiçbir "
+"şey olmadığına dikkat edin."
 
 #: library/exceptions.rst:31
 msgid ""
@@ -57,16 +77,23 @@ msgid ""
 "`BaseException`.  More information on defining exceptions is available in "
 "the Python Tutorial under :ref:`tut-userexceptions`."
 msgstr ""
+"Gömülü istisna sınıfları yeni istisnalar tanımlamak için alt sınıflara "
+"ayrılabilir; programcıların yeni istisnaları :exc:`BaseException` sınıfından "
+"değil, :exc:`Exception` sınıfından veya onun alt sınıflarından birinden "
+"türetmeleri önerilir.  İstisnaların tanımlanmasıyla ilgili daha fazla bilgi "
+"Python Öğreticisi'nde :ref:`tut-userexceptions` başlığı altında mevcuttur."
 
 #: library/exceptions.rst:39
 msgid "Exception context"
-msgstr ""
+msgstr "İstisna bağlamı"
 
 #: library/exceptions.rst:46
 msgid ""
 "Three attributes on exception objects provide information about the context "
 "in which the exception was raised:"
 msgstr ""
+"İstisna nesnelerindeki üç öznitelik, istisnanın ortaya çıktığı bağlam "
+"hakkında bilgi sağlar:"
 
 #: library/exceptions.rst:53
 msgid ""
@@ -76,12 +103,18 @@ msgid ""
 "`except` or :keyword:`finally` clause, or a :keyword:`with` statement, is "
 "used."
 msgstr ""
+"Başka bir istisna zaten işlenirken yeni bir istisna yükseltirken, yeni "
+"istisnanın :attr:`!__context__` niteliği otomatik olarak işlenen istisnaya "
+"ayarlanır.  Bir :keyword:`except` veya :keyword:`finally` cümlesi veya bir :"
+"keyword:`with` deyimi kullanıldığında bir istisna ele alınabilir."
 
 #: library/exceptions.rst:59
 msgid ""
 "This implicit exception context can be supplemented with an explicit cause "
 "by using :keyword:`!from` with :keyword:`raise`::"
 msgstr ""
+"Bu örtük istisna bağlamı(implicit exception context), :keyword:`!from` ile :"
+"keyword:`raise`: kullanılarak açık bir neden ile desteklenebilir:"
 
 #: library/exceptions.rst:65
 msgid ""
@@ -94,6 +127,15 @@ msgid ""
 "while leaving the old exception available in :attr:`!__context__` for "
 "introspection when debugging."
 msgstr ""
+"Bu keyword:`from<raise>` ifadesini takip eden ifade bir istisna veya "
+"``None`` olmalıdır. Ortaya çıkan istisna üzerinde :attr:`!__cause__` olarak "
+"ayarlanacaktır. attr:`!__cause__` ayarı aynı zamanda :attr:`!"
+"__suppress_context__` niteliğini de örtük(implicit) olarak ``True`` olarak "
+"ayarlar, böylece ``raise new_exc from None`` kullanımı görüntüleme amacıyla "
+"eski istisnayı yenisiyle değiştirirken (örneğin :exc:`KeyError` ifadesini :"
+"exc:`AttributeError` ifadesine dönüştürmek), hata ayıklama sırasında iç "
+"gözlem için eski istisnayı :attr:`!__context__` içinde kullanılabilir "
+"bırakır."
 
 #: library/exceptions.rst:74
 msgid ""
@@ -103,6 +145,12 @@ msgid ""
 "chained exception in :attr:`!__context__` is shown only if :attr:`!"
 "__cause__` is :const:`None` and :attr:`!__suppress_context__` is false."
 msgstr ""
+"Varsayılan geri izleme görüntüleme kodu(default traceback display code), "
+"istisnanın geri izlemesine ek olarak bu zincirleme istisnaları da gösterir. "
+"attr:`!__cause__` içinde açıkça zincirlenmiş bir istisna mevcut olduğunda "
+"her zaman gösterilir. attr:`!__context__` içindeki dolaylı zincirleme "
+"istisna yalnızca :attr:`!__cause__` :const:`None` ve :attr:`!"
+"__suppress_context__` false ise gösterilir."
 
 #: library/exceptions.rst:80
 msgid ""
@@ -110,10 +158,13 @@ msgid ""
 "exceptions so that the final line of the traceback always shows the last "
 "exception that was raised."
 msgstr ""
+"Her iki durumda da, istisnanın kendisi her zaman zincirleme istisnalardan "
+"sonra gösterilir, böylece geri izlemenin(traceback) son satırı her zaman "
+"oluşturulan son istisnayı gösterir."
 
 #: library/exceptions.rst:86
 msgid "Inheriting from built-in exceptions"
-msgstr ""
+msgstr "Gömülü istisnalardan miras alma"
 
 #: library/exceptions.rst:88
 msgid ""
@@ -122,6 +173,11 @@ msgid ""
 "possible conflicts between how the bases handle the ``args`` attribute, as "
 "well as due to possible memory layout incompatibilities."
 msgstr ""
+"Kullanıcı kodu, bir istisna türünden miras alan alt sınıflar oluşturabilir. "
+"Tabanların ``args`` niteliğini işleme biçimleri arasındaki olası "
+"çakışmaların yanı sıra olası bellek düzeni uyumsuzluklarından kaçınmak için "
+"bir seferde yalnızca bir istisna türünün alt sınıfının oluşturulması "
+"önerilir."
 
 #: library/exceptions.rst:95
 msgid ""
@@ -132,16 +188,25 @@ msgid ""
 "between Python versions, leading to new conflicts in the future.  Therefore, "
 "it's recommended to avoid subclassing multiple exception types altogether."
 msgstr ""
+"Çoğu gömülü istisna, verimlilik için C dilinde uygulanmıştır, bkz: :source:"
+"`Objects/exceptions.c`.  Bazılarının özel bellek düzenleri vardır, bu da "
+"birden fazla istisna türünden miras alan bir alt sınıf oluşturmayı imkansız "
+"kılar. Bir türün bellek düzeni bir uygulama detayıdır ve Python sürümleri "
+"arasında değişebilir, bu da gelecekte yeni çakışmalara yol açabilir.  Bu "
+"nedenle, birden fazla istisna türünün alt sınıfını oluşturmaktan tamamen "
+"kaçınmanız önerilir."
 
 #: library/exceptions.rst:105
 msgid "Base classes"
-msgstr ""
+msgstr "Temel sınıflar"
 
 #: library/exceptions.rst:107
 msgid ""
 "The following exceptions are used mostly as base classes for other "
 "exceptions."
 msgstr ""
+"Aşağıdaki istisnalar çoğunlukla diğer istisnalar için temel sınıflar olarak "
+"kullanılır."
 
 #: library/exceptions.rst:111
 msgid ""
@@ -151,6 +216,11 @@ msgid ""
 "argument(s) to the instance are returned, or the empty string when there "
 "were no arguments."
 msgstr ""
+"Tüm gömülü istisnalar için temel sınıf.  Kullanıcı tanımlı sınıflar "
+"tarafından doğrudan miras alınması amaçlanmamıştır (bunun için :exc:"
+"`Exception` kullanın).  Bu sınıfın bir örneği üzerinde :func:`str` "
+"çağrılırsa, örneğin argüman(lar)ının gösterimi veya argüman yoksa boş dize "
+"döndürülür."
 
 #: library/exceptions.rst:119
 msgid ""
@@ -159,6 +229,10 @@ msgid ""
 "assign a special meaning to the elements of this tuple, while others are "
 "usually called only with a single string giving an error message."
 msgstr ""
+"İstisna kurucusuna verilen argümanlar demeti.  Bazı gömülü istisnalar (:exc:"
+"`OSError` gibi) belirli sayıda argüman bekler ve bu ikilinin elemanlarına "
+"özel bir anlam atarken, diğerleri genellikle yalnızca bir hata mesajı veren "
+"tek bir dizeyle çağrılır."
 
 #: library/exceptions.rst:126
 msgid ""
@@ -171,12 +245,22 @@ msgid ""
 "happened to the traceback of the original ``SomeException`` had we allowed "
 "it to propagate to the caller. ::"
 msgstr ""
+"Bu yöntem *tb* öğesini istisna için yeni geri izleme olarak ayarlar ve "
+"istisna nesnesini döndürür.  Daha çok :pep:`3134` istisna zincirleme "
+"özellikleri kullanıma sunulmadan önce kullanılıyordu.  Aşağıdaki örnek, bir "
+"``SomeException`` örneğini geri izlemeyi koruyarak nasıl bir "
+"``OtherException`` örneğine dönüştürebileceğimizi göstermektedir.  Bir kez "
+"oluşturulduğunda, geçerli kare, orijinal ``SomeException``ın geri "
+"izlemesinde olduğu gibi, ``OtherException``ın geri izlemesine itilir, eğer "
+"arayan kişiye yayılmasına izin verseydik:"
 
 #: library/exceptions.rst:143
 msgid ""
 "A writable field that holds the :ref:`traceback object <traceback-objects>` "
 "associated with this exception. See also: :ref:`raise`."
 msgstr ""
+"Bu istisna ile ilişkili :ref:`traceback nesnesini <traceback-objects>` tutan "
+"yazılabilir bir alan. Ayrıca bakınız: :ref:`raise`."
 
 #: library/exceptions.rst:149
 msgid ""
@@ -184,18 +268,26 @@ msgid ""
 "standard traceback after the exception string. A :exc:`TypeError` is raised "
 "if ``note`` is not a string."
 msgstr ""
+"İstisna dizesinden sonra standart geri dönüşte görünen istisna notlarına "
+"``note`` dizesini ekleyin. Eğer ``note`` bir string değilse bir :exc:"
+"`TypeError` oluşur."
 
 #: library/exceptions.rst:157
 msgid ""
 "A list of the notes of this exception, which were added with :meth:"
 "`add_note`. This attribute is created when :meth:`add_note` is called."
 msgstr ""
+"Bu istisnanın :meth:`add_note` ile eklenen notlarının bir listesi. Bu "
+"nitelik :meth:`add_note` çağrıldığında oluşturulur."
 
 #: library/exceptions.rst:165
 msgid ""
 "All built-in, non-system-exiting exceptions are derived from this class.  "
 "All user-defined exceptions should also be derived from this class."
 msgstr ""
+"Tüm gömülü, sistemden çıkmayan istisnalar(non-system-exiting exceptions) bu "
+"sınıftan türetilir.  Kullanıcı tanımlı tüm istisnalar da bu sınıftan "
+"türetilmelidir."
 
 #: library/exceptions.rst:171
 msgid ""
@@ -203,12 +295,17 @@ msgid ""
 "arithmetic errors: :exc:`OverflowError`, :exc:`ZeroDivisionError`, :exc:"
 "`FloatingPointError`."
 msgstr ""
+"Çeşitli aritmetik hatalar için oluşturulan gömülü istisnalar için temel "
+"sınıf: :exc:`OverflowError`, :exc:`ZeroDivisionError`, :exc:"
+"`FloatingPointError`."
 
 #: library/exceptions.rst:178
 msgid ""
 "Raised when a :ref:`buffer <bufferobjects>` related operation cannot be "
 "performed."
 msgstr ""
+"Bu ref:`buffer <bufferobjects>` ile ilgili bir işlem "
+"gerçekleştirilemediğinde oluşturulur."
 
 #: library/exceptions.rst:184
 msgid ""
@@ -216,18 +313,21 @@ msgid ""
 "on a mapping or sequence is invalid: :exc:`IndexError`, :exc:`KeyError`.  "
 "This can be raised directly by :func:`codecs.lookup`."
 msgstr ""
+"Bir eşleme veya dizide kullanılan bir anahtar veya dizin geçersiz olduğunda "
+"ortaya çıkan istisnalar için temel sınıf: :exc:`IndexError`, :exc:"
+"`KeyError`.  Bu doğrudan :func:`codecs.lookup` tarafından oluşturulabilir."
 
 #: library/exceptions.rst:190
 msgid "Concrete exceptions"
-msgstr ""
+msgstr "Somut istisnalar (Concrete exceptions)"
 
 #: library/exceptions.rst:192
 msgid "The following exceptions are the exceptions that are usually raised."
-msgstr ""
+msgstr "Aşağıdaki istisnalar genellikle ortaya çıkan istisnalardır."
 
 #: library/exceptions.rst:198
 msgid "Raised when an :keyword:`assert` statement fails."
-msgstr ""
+msgstr "Bir :keyword:assert ifadesi başarısız(fail) olduğunda ortaya çıkar."
 
 #: library/exceptions.rst:203
 msgid ""
@@ -235,6 +335,9 @@ msgid ""
 "assignment fails.  (When an object does not support attribute references or "
 "attribute assignments at all, :exc:`TypeError` is raised.)"
 msgstr ""
+"Bir öznitelik referansı (bkz. :ref:`attribute-references`) veya ataması "
+"başarısız olduğunda ortaya çıkar. (Bir nesne öznitelik referanslarını veya "
+"öznitelik atamalarını hiç desteklemiyorsa, :exc:`TypeError` yükseltilir)"
 
 #: library/exceptions.rst:207
 msgid ""
@@ -243,10 +346,14 @@ msgid ""
 "attribute that was attempted to be accessed and the object that was accessed "
 "for said attribute, respectively."
 msgstr ""
+"Attr:`name` ve :attr:`obj` öznitelikleri, kurucuya(constructor) yalnızca "
+"anahtar kelime argümanları kullanılarak ayarlanabilir. Ayarlandıklarında, "
+"sırasıyla erişilmeye çalışılan özniteliğin adını ve söz konusu öznitelik "
+"için erişilen nesneyi temsil ederler."
 
 #: library/exceptions.rst:212
 msgid "Added the :attr:`name` and :attr:`obj` attributes."
-msgstr ""
+msgstr "Attr:`name` ve :attr:`obj` nitelikleri eklendi."
 
 #: library/exceptions.rst:217
 msgid ""
@@ -254,10 +361,14 @@ msgid ""
 "without reading any data. (N.B.: the :meth:`io.IOBase.read` and :meth:`io."
 "IOBase.readline` methods return an empty string when they hit EOF.)"
 msgstr ""
+"Func:`input` fonksiyonu herhangi bir veri okumadan dosya sonu koşuluna (end-"
+"of-file EOF) ulaştığında ortaya çıkar. (Not: :meth:`io.IOBase.read` ve :meth:"
+"`io.IOBase.readline` yöntemleri EOF'ye ulaştıklarında boş bir dize "
+"döndürürler)"
 
 #: library/exceptions.rst:224
 msgid "Not currently used."
-msgstr ""
+msgstr "Şu anda kullanılmıyor."
 
 #: library/exceptions.rst:229
 msgid ""
@@ -266,6 +377,10 @@ msgid ""
 "exc:`BaseException` instead of :exc:`Exception` since it is technically not "
 "an error."
 msgstr ""
+"Bir :term:`generator` veya :term:`coroutine` kapatıldığında ortaya çıkar; "
+"bkz :meth:`generator.close` ve :meth:`coroutine.close`. Teknik olarak bir "
+"hata olmadığı için :exc:`Exception` yerine doğrudan :exc:`BaseException`dan "
+"miras alınır."
 
 #: library/exceptions.rst:237
 msgid ""
@@ -273,24 +388,29 @@ msgid ""
 "module.  Also raised when the \"from list\" in ``from ... import`` has a "
 "name that cannot be found."
 msgstr ""
+"Bir :keyword:`import` deyimi bir modülü yüklemeye çalışırken sorun "
+"yaşadığında ortaya çıkar. Ayrıca ``from ... import`` içindeki \"from list\" "
+"bulunamayan bir isme sahip olduğunda da oluşur."
 
 #: library/exceptions.rst:241
 msgid ""
 "The optional *name* and *path* keyword-only arguments set the corresponding "
 "attributes:"
 msgstr ""
+"İsteğe bağlı *name* ve *path* anahtar sözcük, bağımsız değişkenleri ilgili "
+"öznitelikleri ayarlar:"
 
 #: library/exceptions.rst:246
 msgid "The name of the module that was attempted to be imported."
-msgstr ""
+msgstr "İçe aktarılmaya çalışılan modülün adı."
 
 #: library/exceptions.rst:250
 msgid "The path to any file which triggered the exception."
-msgstr ""
+msgstr "İstisnayı tetikleyen herhangi bir dosyanın yolu."
 
 #: library/exceptions.rst:252
 msgid "Added the :attr:`name` and :attr:`path` attributes."
-msgstr ""
+msgstr "attr:`name` ve :attr:`path` nitelikleri eklendi."
 
 #: library/exceptions.rst:257
 msgid ""
@@ -298,6 +418,9 @@ msgid ""
 "module could not be located.  It is also raised when ``None`` is found in :"
 "data:`sys.modules`."
 msgstr ""
+"Bir modül bulunamadığında :keyword:`import` tarafından ortaya çıkarılan :exc:"
+"`ImportError` alt sınıfı.  Ayrıca :data:`sys.modules` içinde ``None`` "
+"bulunduğunda da ortaya çıkar."
 
 #: library/exceptions.rst:266
 msgid ""
@@ -305,12 +428,17 @@ msgid ""
 "silently truncated to fall in the allowed range; if an index is not an "
 "integer, :exc:`TypeError` is raised.)"
 msgstr ""
+"Bir dizi alt simgesi aralık dışında olduğunda yükseltilir. (Dilim "
+"indeksleri(slice indices) sessizce izin verilen aralığa düşecek şekilde "
+"kırpılır; bir indeks bir tamsayı değilse, :exc:TypeError oluşur.)."
 
 #: library/exceptions.rst:275
 msgid ""
 "Raised when a mapping (dictionary) key is not found in the set of existing "
 "keys."
 msgstr ""
+"Bir eşleme(mapping) sözlük(dictionary) anahtarı mevcut anahtarlar kümesinde "
+"bulunamadığında ortaya çıkar."
 
 #: library/exceptions.rst:282
 msgid ""
@@ -320,6 +448,11 @@ msgid ""
 "accidentally caught by code that catches :exc:`Exception` and thus prevent "
 "the interpreter from exiting."
 msgstr ""
+"Kullanıcı kesme(interrupt) tuşuna bastığında oluşur (normalde :kbd:`Control-"
+"C` veya :kbd:`Delete`). Yürütme sırasında düzenli olarak kesme kontrolü "
+"yapılır. İstisna, :exc:`Exception` kodunu yakalayan kod tarafından "
+"yanlışlıkla yakalanmamak ve böylece yorumlayıcının çıkmasını önlemek için :"
+"exc:`BaseException` kodundan miras alır."
 
 #: library/exceptions.rst:290
 msgid ""
@@ -329,6 +462,12 @@ msgid ""
 "allow :exc:`KeyboardInterrupt` to end the program as quickly as possible or "
 "avoid raising it entirely. (See :ref:`handlers-and-exceptions`.)"
 msgstr ""
+"Bir :exc:`KeyboardInterrupt` yakalamak özel dikkat gerektirir. Tahmin "
+"edilemeyen noktalarda yükseltilebildiğinden, bazı durumlarda çalışan "
+"programı tutarsız bir durumda bırakabilir. Genellikle en iyisi :exc:"
+"`KeyboardInterrupt`ın programı mümkün olduğunca çabuk sonlandırmasına izin "
+"vermek veya tamamen yükseltilmesinden kaçınmaktır. (Bkz. :ref:`handlers-and-"
+"exceptions`.)"
 
 #: library/exceptions.rst:300
 msgid ""
@@ -340,6 +479,13 @@ msgid ""
 "recover from this situation; it nevertheless raises an exception so that a "
 "stack traceback can be printed, in case a run-away program was the cause."
 msgstr ""
+"Bir işlemin belleği tükendiğinde ancak durum hala kurtarılabildiğinde (bazı "
+"nesneleri silerek) yükseltilir. İlişkili değer, ne tür bir (dahili) işlemin "
+"belleğinin tükendiğini gösteren bir dizedir. Altta yatan bellek yönetim "
+"mimarisi (C'nin :c:func:`malloc` fonksiyonu) nedeniyle, yorumlayıcının bu "
+"durumdan her zaman tamamen kurtulamayabileceğini unutmayın; yine de bir "
+"istisna yükseltir, böylece kaçan bir programın neden olması durumunda bir "
+"yığın geri dönüşü yazdırılabilir."
 
 #: library/exceptions.rst:311
 msgid ""
@@ -347,6 +493,8 @@ msgid ""
 "unqualified names.  The associated value is an error message that includes "
 "the name that could not be found."
 msgstr ""
+"Yerel veya genel bir ad bulunamadığında oluşur. Bu yalnızca niteliksiz adlar "
+"için geçerlidir. İlişkili değer, bulunamayan adı içeren bir hata mesajıdır."
 
 #: library/exceptions.rst:315
 msgid ""
@@ -354,10 +502,13 @@ msgid ""
 "constructor. When set it represent the name of the variable that was "
 "attempted to be accessed."
 msgstr ""
+"attr:`name` özniteliği, yapıcıya yalnızca bir anahtar sözcük argümanı "
+"kullanılarak ayarlanabilir. Ayarlandığında, erişilmeye çalışılan değişkenin "
+"adını temsil eder."
 
 #: library/exceptions.rst:319
 msgid "Added the :attr:`name` attribute."
-msgstr ""
+msgstr "attr:`name` niteliği eklendi."
 
 #: library/exceptions.rst:325
 msgid ""
@@ -366,6 +517,10 @@ msgid ""
 "derived classes to override the method, or while the class is being "
 "developed to indicate that the real implementation still needs to be added."
 msgstr ""
+"Bu istisna :exc:`RuntimeError`'dan türetilmiştir. Kullanıcı tanımlı temel "
+"sınıflarda, soyut yöntemler, türetilmiş sınıfların yöntemi geçersiz "
+"kılmasını gerektirdiğinde veya sınıf geliştirilirken gerçek uygulamanın hala "
+"eklenmesi gerektiğini belirtmek için bu istisnayı yükseltmelidir."
 
 #: library/exceptions.rst:332
 msgid ""
@@ -373,6 +528,9 @@ msgid ""
 "be supported at all -- in that case either leave the operator / method "
 "undefined or, if a subclass, set it to :data:`None`."
 msgstr ""
+"Bu, bir operatörün veya yöntemin hiç desteklenmemesi gerektiğini belirtmek "
+"için kullanılmamalıdır - bu durumda, ya operatörü / yöntemi tanımlanmamış "
+"bırakın ya da bir alt sınıfsa :data:`None`. olarak ayarlayın."
 
 #: library/exceptions.rst:338
 msgid ""
@@ -380,6 +538,10 @@ msgid ""
 "though they have similar names and purposes.  See :data:`NotImplemented` for "
 "details on when to use it."
 msgstr ""
+"``NotImplementedError`` ve ``NotImplemented`` benzer isimlere ve amaçlara "
+"sahip olsalar da birbirlerinin yerine kullanılamazlar. Ne zaman "
+"kullanılacağına ilişkin ayrıntılar için :data:`NotImplemented` bölümüne "
+"bakın."
 
 #: library/exceptions.rst:347
 msgid ""
@@ -387,6 +549,10 @@ msgid ""
 "error, including I/O failures such as \"file not found\" or \"disk "
 "full\" (not for illegal argument types or other incidental errors)."
 msgstr ""
+"Bu istisna, bir sistem işlevi \"dosya bulunamadı\" veya \"disk dolu\" gibi G/"
+"Ç hataları da dahil olmak üzere sistemle ilgili bir hata döndürdüğünde "
+"ortaya çıkar (illegal argüman bağımsız değişken türleri veya diğer tesadüfi "
+"hatalar için değil)."
 
 #: library/exceptions.rst:351
 msgid ""
@@ -396,6 +562,11 @@ msgid ""
 "`~BaseException.args` attribute contains only a 2-tuple of the first two "
 "constructor arguments."
 msgstr ""
+"Kurucunun(constructor) ikinci formu, aşağıda açıklanan ilgili nitelikleri "
+"ayarlar. Öznitelikler belirtilmezse varsayılan olarak :const:`None` olur. "
+"Geriye dönük uyumluluk için, üç argüman geçilirse, :attr:`~BaseException."
+"args` niteliği yalnızca ilk iki kurucu argümanının 2'li bir çiftini(tuple) "
+"içerir."
 
 #: library/exceptions.rst:357
 msgid ""
@@ -405,10 +576,15 @@ msgid ""
 "exc:`OSError` directly or via an alias, and is not inherited when "
 "subclassing."
 msgstr ""
+"Kurucu genellikle aşağıda `OS istisnaları`_ bölümünde açıklandığı gibi :exc:"
+"`OSError` alt sınıfını döndürür. Belirli alt sınıf son :attr:`.errno` "
+"değerine bağlıdır. Bu davranış yalnızca :exc:`OSError` doğrudan veya bir "
+"takma ad aracılığıyla oluşturulurken ortaya çıkar ve alt sınıf "
+"oluşturulurken miras alınmaz."
 
 #: library/exceptions.rst:365
 msgid "A numeric error code from the C variable :c:data:`errno`."
-msgstr ""
+msgstr "C değişkeni :c:data:`errno`dan alınan sayısal bir hata kodu."
 
 #: library/exceptions.rst:369
 msgid ""
@@ -416,6 +592,9 @@ msgid ""
 "errno` attribute is then an approximate translation, in POSIX terms, of that "
 "native error code."
 msgstr ""
+"Windows altında, bu size yerel Windows hata kodunu verir. O halde :attr:`."
+"errno` niteliği bu yerel hata kodunun POSIX terimleriyle yaklaşık bir "
+"çevirisidir."
 
 #: library/exceptions.rst:373
 msgid ""
@@ -424,6 +603,10 @@ msgid ""
 "*errno* argument is ignored.  On other platforms, the *winerror* argument is "
 "ignored, and the :attr:`winerror` attribute does not exist."
 msgstr ""
+"Windows altında, *winerror* kurucu bağımsız değişkeni bir tamsayı ise, :attr:"
+"`.errno` özniteliği Windows hata kodundan belirlenir ve *errno* bağımsız "
+"değişkeni yok sayılır. Diğer platformlarda, *winerror* argümanı yok sayılır "
+"ve :attr:`winerror` niteliği mevcut değildir."
 
 #: library/exceptions.rst:381
 msgid ""
@@ -431,6 +614,9 @@ msgid ""
 "formatted by the C functions :c:func:`perror` under POSIX, and :c:func:"
 "`FormatMessage` under Windows."
 msgstr ""
+"İşletim sistemi tarafından sağlanan ilgili hata mesajı. POSIX altında :c:"
+"func:`perror` ve Windows altında :c:func:`FormatMessage` C işlevleri "
+"tarafından biçimlendirilir."
 
 #: library/exceptions.rst:389
 msgid ""
@@ -440,6 +626,10 @@ msgid ""
 "rename`), :attr:`filename2` corresponds to the second file name passed to "
 "the function."
 msgstr ""
+"Bir dosya sistemi yolu içeren istisnalar için (örneğin :func:`open` veya :"
+"func:`os.unlink`), :attr:`filename` fonksiyona aktarılan dosya adıdır. İki "
+"dosya sistemi yolu içeren fonksiyonlar için (:func:`os.rename` gibi), :attr:"
+"`filename2` fonksiyona aktarılan ikinci dosya adına karşılık gelir."
 
 #: library/exceptions.rst:396
 msgid ""
@@ -447,6 +637,9 @@ msgid ""
 "error`, :exc:`select.error` and :exc:`mmap.error` have been merged into :exc:"
 "`OSError`, and the constructor may return a subclass."
 msgstr ""
+":exc:`EnvironmentError`, :exc:`IOError`, :exc:`WindowsError`, :exc:`socket."
+"error`, :exc:`select.error` ve :exc:`mmap.error`, :exc:`OSError` ile "
+"birleştirilmiştir ve kurucu bir alt sınıf döndürebilir."
 
 #: library/exceptions.rst:402
 msgid ""
@@ -455,6 +648,9 @@ msgid ""
 "`filesystem encoding and error handler`. Also, the *filename2* constructor "
 "argument and attribute was added."
 msgstr ""
+"attr:`filename` özniteliği artık :term:`filesystem encoding and error "
+"handler` ile kodlanan veya kodu çözülen ad yerine işleve aktarılan orijinal "
+"dosya adıdır. Ayrıca, *filename2* kurucu argümanı ve niteliği eklenmiştir."
 
 #: library/exceptions.rst:411
 msgid ""
@@ -465,6 +661,13 @@ msgid ""
 "Because of the lack of standardization of floating point exception handling "
 "in C, most floating point operations are not checked."
 msgstr ""
+"Bir aritmetik işlemin sonucu gösterilemeyecek kadar büyük olduğunda ortaya "
+"çıkar. Bu durum tamsayılar için oluşmaz (tamsayılar vazgeçmektense :exc:"
+"`MemoryError` yükseltmeyi tercih ederler). Bununla birlikte, tarihsel "
+"nedenlerden dolayı, OverflowError bazen gerekli bir aralığın dışında kalan "
+"tamsayılar için yükseltilir. C'de kayan nokta istisna işlemlerinin(floating "
+"point exception handling) standartlaştırılmaması nedeniyle, çoğu kayan nokta "
+"işlemi kontrol edilmez."
 
 #: library/exceptions.rst:421
 msgid ""
@@ -472,10 +675,13 @@ msgid ""
 "interpreter detects that the maximum recursion depth (see :func:`sys."
 "getrecursionlimit`) is exceeded."
 msgstr ""
+"Bu istisna :exc:`RuntimeError` öğesinden türetilmiştir. Yorumlayıcı maksimum "
+"özyineleme derinliğinin(recursion depth) (bkz. :func:`sys."
+"getrecursionlimit`) aşıldığını tespit ettiğinde ortaya çıkar."
 
 #: library/exceptions.rst:425
 msgid "Previously, a plain :exc:`RuntimeError` was raised."
-msgstr ""
+msgstr "Önceden, düz bir :exc:`RuntimeError` oluşturulurdu."
 
 #: library/exceptions.rst:431
 msgid ""
@@ -484,6 +690,11 @@ msgid ""
 "after it has been garbage collected. For more information on weak "
 "references, see the :mod:`weakref` module."
 msgstr ""
+"Bu istisna, :func:`weakref.proxy` fonksiyonu tarafından oluşturulan bir "
+"zayıf referans proxy'si(weak reference proxy), çöp toplandıktan(garbage "
+"collect) sonra referansın bir niteliğine erişmek için kullanıldığında ortaya "
+"çıkar. Zayıf referanslar hakkında daha fazla bilgi için :mod:`weakref` "
+"modülüne bakın."
 
 #: library/exceptions.rst:439
 msgid ""
@@ -491,6 +702,9 @@ msgid ""
 "categories.  The associated value is a string indicating what precisely went "
 "wrong."
 msgstr ""
+"Diğer kategorilerden herhangi birine girmeyen bir hata tespit edildiğinde "
+"oluşturulur. İlişkili değer, tam olarak neyin yanlış gittiğini gösteren bir "
+"dizedir."
 
 #: library/exceptions.rst:446
 msgid ""
@@ -498,6 +712,9 @@ msgid ""
 "`~iterator.__next__` method to signal that there are no further items "
 "produced by the iterator."
 msgstr ""
+"Yerleşik işlev :func:`next` ve bir :term:`iterator`ün :meth:`~iterator."
+"__next__` yöntemi tarafından yineleyici tarafından üretilen başka öğe "
+"olmadığını bildirmek için yükseltilir."
 
 #: library/exceptions.rst:452
 msgid ""
@@ -505,6 +722,9 @@ msgid ""
 "as an argument when constructing the exception, and defaults to :const:"
 "`None`."
 msgstr ""
+"İstisna nesnesinin tek bir :attr:`!value` özelliği vardır; bu özellik "
+"istisna oluşturulurken argüman olarak verilir ve varsayılan olarak :const:"
+"`None` değerini alır."
 
 #: library/exceptions.rst:456
 msgid ""
@@ -512,6 +732,10 @@ msgid ""
 "`StopIteration` instance is raised, and the value returned by the function "
 "is used as the :attr:`value` parameter to the constructor of the exception."
 msgstr ""
+"Bir :term:`generator` veya :term:`coroutine` fonksiyonu döndüğünde, yeni "
+"bir :exc:`StopIteration` örneği oluşturulur ve fonksiyon tarafından "
+"döndürülen değer, istisnanın yapıcısı için :attr:`value` parametresi olarak "
+"kullanılır."
 
 #: library/exceptions.rst:461
 msgid ""
@@ -519,30 +743,43 @@ msgid ""
 "is converted into a :exc:`RuntimeError` (retaining the :exc:`StopIteration` "
 "as the new exception's cause)."
 msgstr ""
+"Bir generator(işleyici) kodu doğrudan veya dolaylı olarak :exc:"
+"`StopIteration` değerini oluşturunca, :exc:`RuntimeError` değerine "
+"dönüştürülür (yeni istisnanın nedeni olarak :exc:`StopIteration` değeri "
+"korunur)."
 
 #: library/exceptions.rst:465
 msgid ""
 "Added ``value`` attribute and the ability for generator functions to use it "
 "to return a value."
 msgstr ""
+"``value`` niteliği ve generator işlevlerin bir değer döndürmek için bunu "
+"kullanabilmesi özelliği eklendi."
 
 #: library/exceptions.rst:469
 msgid ""
 "Introduced the RuntimeError transformation via ``from __future__ import "
 "generator_stop``, see :pep:`479`."
 msgstr ""
+"RuntimeError dönüşümü ``from __future__ import generator_stop`` aracılığıyla "
+"tanıtıldı, bkz :pep:`479`."
 
 #: library/exceptions.rst:473
 msgid ""
 "Enable :pep:`479` for all code by default: a :exc:`StopIteration` error "
 "raised in a generator is transformed into a :exc:`RuntimeError`."
 msgstr ""
+"Varsayılan olarak tüm kodlar için :pep:`479` özelliğini etkinleştirin: bir "
+"generator'da ortaya çıkan :exc:`StopIteration` hatası bir :exc:"
+"`RuntimeError` hatasına dönüştürülür."
 
 #: library/exceptions.rst:479
 msgid ""
 "Must be raised by :meth:`~object.__anext__` method of an :term:`asynchronous "
 "iterator` object to stop the iteration."
 msgstr ""
+"Yinelemeyi durdurmak için bir :term:`asynchronous iterator` nesnesinin :meth:"
+"`~object.__anext__` yöntemi tarafından oluşturulmalıdır."
 
 #: library/exceptions.rst:486
 msgid ""
@@ -551,44 +788,58 @@ msgid ""
 "`compile`, :func:`exec`, or :func:`eval`, or when reading the initial script "
 "or standard input (also interactively)."
 msgstr ""
+"Ayrıştırıcı bir sözdizimi hatasıyla karşılaştığında ortaya çıkar. Bu, bir :"
+"keyword:`import` deyiminde, yerleşik :func:`compile`, :func:`exec` veya :"
+"func:`eval` işlevlerine yapılan bir çağrıda veya ilk kod veya standart girdi "
+"okunurken (etkileşimli olarak da) meydana gelebilir."
 
 #: library/exceptions.rst:492
 msgid ""
 "The :func:`str` of the exception instance returns only the error message. "
 "Details is a tuple whose members are also available as separate attributes."
 msgstr ""
+"İstisna örneğinin :func:`str` öğesi yalnızca hata mesajını döndürür. "
+"Details, üyeleri ayrı nitelikler olarak da kullanılabilen bir tuple'dır."
 
 #: library/exceptions.rst:497
 msgid "The name of the file the syntax error occurred in."
-msgstr ""
+msgstr "Sözdizimi hatasının oluştuğu dosyanın adı."
 
 #: library/exceptions.rst:501
 msgid ""
 "Which line number in the file the error occurred in. This is 1-indexed: the "
 "first line in the file has a ``lineno`` of 1."
 msgstr ""
+"Hatanın dosyadaki hangi satır numarasında meydana geldiği. Bu 1 indekslidir: "
+"dosyadaki ilk satırın ``lineno`` değeri 1'dir."
 
 #: library/exceptions.rst:506
 msgid ""
 "The column in the line where the error occurred. This is 1-indexed: the "
 "first character in the line has an ``offset`` of 1."
 msgstr ""
+"Hatanın meydana geldiği satırdaki sütun. Bu 1 indekslidir: satırdaki ilk "
+"karakter 1 ``offset`` değerine sahiptir."
 
 #: library/exceptions.rst:511
 msgid "The source code text involved in the error."
-msgstr ""
+msgstr "Hataya dahil olan kaynak kod metni."
 
 #: library/exceptions.rst:515
 msgid ""
 "Which line number in the file the error occurred ends in. This is 1-indexed: "
 "the first line in the file has a ``lineno`` of 1."
 msgstr ""
+"Hatanın meydana geldiği dosyadaki satır numarası. Bu, 1 indekslidir: "
+"Dosyanın ilk satırının lineno değeri 1'dir."
 
 #: library/exceptions.rst:520
 msgid ""
 "The column in the end line where the error occurred finishes. This is 1-"
 "indexed: the first character in the line has an ``offset`` of 1."
 msgstr ""
+"Hatanın meydana geldiği son satırdaki sütun numarası. Bu, 1 indekslidir: "
+"Satırdaki ilk karakterin offset değeri 1'dir."
 
 #: library/exceptions.rst:523
 msgid ""
@@ -597,22 +848,30 @@ msgid ""
 "expression.  For example, compiling f'Bad {a b} field' results in this args "
 "attribute: ('f-string: ...', ('', 1, 2, '(a b)\\n', 1, 5))."
 msgstr ""
+"f-string alanlarındaki hatalar için mesajın önüne \"f-string: \" ile başlar "
+"ve ofsetler, değiştirme ifadesinden oluşturulan bir metindeki ofsetlerdir. "
+"Örneğin, f'Bad {a b} field' derlendiğinde şu args özniteliği elde edilir: "
+"('f-string: ...', ('', 1, 2, '(a b)\\n', 1, 5))."
 
 #: library/exceptions.rst:528
 msgid "Added the :attr:`end_lineno` and :attr:`end_offset` attributes."
-msgstr ""
+msgstr "attr:`end_lineno` ve :attr:`end_offset` nitelikleri eklendi."
 
 #: library/exceptions.rst:533
 msgid ""
 "Base class for syntax errors related to incorrect indentation.  This is a "
 "subclass of :exc:`SyntaxError`."
 msgstr ""
+"Yanlış girintileme ile ilgili sözdizimi hataları için temel sınıf. Bu, :exc:"
+"`SyntaxError` alt sınıfıdır."
 
 #: library/exceptions.rst:539
 msgid ""
 "Raised when indentation contains an inconsistent use of tabs and spaces. "
 "This is a subclass of :exc:`IndentationError`."
 msgstr ""
+"Girintileme tutarsız sekme ve boşluk kullanımı içerdiğinde ortaya çıkar. "
+"Bu, :exc:`IndentationError` öğesinin bir alt sınıfıdır."
 
 #: library/exceptions.rst:545
 msgid ""
@@ -620,6 +879,9 @@ msgid ""
 "not look so serious to cause it to abandon all hope. The associated value is "
 "a string indicating what went wrong (in low-level terms)."
 msgstr ""
+"Yorumlayıcı dahili bir hata bulduğunda, ancak durum tüm umutlarını "
+"yitirmesine neden olacak kadar ciddi görünmediğinde yükseltilir. İlişkili "
+"değer, neyin yanlış gittiğini gösteren bir dizedir (düşük seviye terimlerle)."
 
 #: library/exceptions.rst:549
 msgid ""
@@ -629,6 +891,11 @@ msgid ""
 "session), the exact error message (the exception's associated value) and if "
 "possible the source of the program that triggered the error."
 msgstr ""
+"Bunu Python yorumlayıcınızın yazarına veya geliştiricisine bildirmelisiniz. "
+"Python yorumlayıcısının sürümünü (``sys.version``; etkileşimli bir Python "
+"oturumunun başlangıcında da yazdırılır), tam hata mesajını (istisnanın "
+"ilişkili değeri) ve mümkünse hatayı tetikleyen programın kaynağını "
+"bildirdiğinizden emin olun."
 
 #: library/exceptions.rst:558
 msgid ""
@@ -643,6 +910,16 @@ msgid ""
 "is zero; if it has another type (such as a string), the object's value is "
 "printed and the exit status is one."
 msgstr ""
+"Bu istisna :func:`sys.exit` işlevi tarafından ortaya çıkartılır. "
+"Yanlışlıkla :exc:`Exception` kodunu yakalayan kod tarafından yakalanmaması "
+"için :exc:`Exception` yerine :exc:`BaseException` kodundan miras alır. Bu, "
+"istisnanın düzgün bir şekilde yayılmasını ve yorumlayıcının çıkmasına neden "
+"olmasını sağlar. İşlenmediğinde, Python yorumlayıcısı çıkar; herhangi bir "
+"yığın geri dönüşü yazdırılmaz. Kurucu, :func:`sys.exit` öğesine aktarılan "
+"isteğe bağlı argümanın aynısını kabul eder. Değer bir tamsayı ise, sistem "
+"çıkış durumunu belirtir (C'nin :c:func:`exit` fonksiyonuna aktarılır); "
+"``None`` ise, çıkış durumu sıfırdır; başka bir türe sahipse (string gibi), "
+"nesnenin değeri yazdırılır ve çıkış durumu birdir."
 
 #: library/exceptions.rst:569
 msgid ""
@@ -653,12 +930,20 @@ msgid ""
 "absolutely positively necessary to exit immediately (for example, in the "
 "child process after a call to :func:`os.fork`)."
 msgstr ""
+"Bir :func:`sys.exit` çağrısı bir istisnaya çevrilir, böylece temizleme "
+"işleyicileri(clean-up handlers) (:keyword:`try` deyimlerinin :keyword:"
+"`finally` cümleleri) çalıştırılabilir ve böylece bir hata ayıklayıcı "
+"kontrolü kaybetme riski olmadan bir betiği çalıştırabilir. Hemen çıkmak "
+"kesinlikle gerekliyse :func:`os._exit` fonksiyonu kullanılabilir (örneğin, :"
+"func:`os.fork` çağrısından sonra alt süreçte)."
 
 #: library/exceptions.rst:578
 msgid ""
 "The exit status or error message that is passed to the constructor. "
 "(Defaults to ``None``.)"
 msgstr ""
+"Yapıcıya aktarılan çıkış durumu veya hata mesajı. (Varsayılan değer "
+"``None``.)"
 
 #: library/exceptions.rst:584
 msgid ""
@@ -666,6 +951,9 @@ msgid ""
 "inappropriate type.  The associated value is a string giving details about "
 "the type mismatch."
 msgstr ""
+"Bir işlem veya fonksiyon uygun olmayan türdeki bir nesneye uygulandığında "
+"oluşur. İlişkili değer, tür uyuşmazlığı hakkında ayrıntılar veren bir "
+"dizedir."
 
 #: library/exceptions.rst:587
 msgid ""
@@ -674,6 +962,11 @@ msgid ""
 "object is meant to support a given operation but has not yet provided an "
 "implementation, :exc:`NotImplementedError` is the proper exception to raise."
 msgstr ""
+"Bu istisna, bir nesne üzerinde denenen bir işlemin desteklenmediğini ve "
+"desteklenmesinin amaçlanmadığını belirtmek için kullanıcı kodu tarafından "
+"oluşur. Bir nesnenin belirli bir işlemi desteklemesi gerekiyorsa ancak henüz "
+"bir uygulama sağlamamışsa, :exc:`NotImplementedError` oluşması gereken uygun "
+"istisnadır."
 
 #: library/exceptions.rst:592
 msgid ""
@@ -682,6 +975,10 @@ msgid ""
 "arguments with the wrong value (e.g. a number outside expected boundaries) "
 "should result in a :exc:`ValueError`."
 msgstr ""
+"Yanlış türde argümanlar geçirmek (örneğin bir :class:`int` beklenirken bir :"
+"class:`list` geçirmek) bir :exc:`TypeError` ile sonuçlanmalıdır, ancak "
+"yanlış değere sahip argümanlar geçirmek (örneğin beklenen sınırların dışında "
+"bir sayı) bir :exc:`ValueError` ile sonuçlanmalıdır."
 
 #: library/exceptions.rst:599
 msgid ""
@@ -689,12 +986,17 @@ msgid ""
 "but no value has been bound to that variable.  This is a subclass of :exc:"
 "`NameError`."
 msgstr ""
+"Bir işlev veya yöntemde yerel(local) bir değişkene referans yapıldığında, "
+"ancak bu değişkene herhangi bir değer bağlanmadığında ortaya çıkar. Bu, :exc:"
+"`NameError` alt sınıfıdır."
 
 #: library/exceptions.rst:606
 msgid ""
 "Raised when a Unicode-related encoding or decoding error occurs.  It is a "
 "subclass of :exc:`ValueError`."
 msgstr ""
+"Unicode ile ilgili bir kodlama veya kod çözme hatası oluştuğunda ortaya "
+"çıkar. Bu, :exc:`ValueError` alt sınıfıdır."
 
 #: library/exceptions.rst:609
 msgid ""
@@ -702,44 +1004,53 @@ msgid ""
 "error.  For example, ``err.object[err.start:err.end]`` gives the particular "
 "invalid input that the codec failed on."
 msgstr ""
+":exc:`UnicodeError` kodlama(encoding) veya kod çözme(decoding) hatasını "
+"tanımlayan özniteliklere sahiptir. Örneğin, ``err.object[err.start:err."
+"end]`` codec'in başarısız olduğu belirli geçersiz girdiyi verir."
 
 #: library/exceptions.rst:615
 msgid "The name of the encoding that raised the error."
-msgstr ""
+msgstr "Hataya neden olan kodlamanın adı."
 
 #: library/exceptions.rst:619
 msgid "A string describing the specific codec error."
-msgstr ""
+msgstr "Belirli kodek hatasını açıklayan bir dize."
 
 #: library/exceptions.rst:623
 msgid "The object the codec was attempting to encode or decode."
-msgstr ""
+msgstr "Kodek'in kodlamaya veya kodunu çözmeye çalıştığı nesne."
 
 #: library/exceptions.rst:627
 msgid "The first index of invalid data in :attr:`object`."
-msgstr ""
+msgstr "attr:`object` içindeki geçersiz verilerin ilk indeksi."
 
 #: library/exceptions.rst:631
 msgid "The index after the last invalid data in :attr:`object`."
-msgstr ""
+msgstr "attr:`object` içindeki son geçersiz veriden sonraki dizin."
 
 #: library/exceptions.rst:636
 msgid ""
 "Raised when a Unicode-related error occurs during encoding.  It is a "
 "subclass of :exc:`UnicodeError`."
 msgstr ""
+"Kodlama sırasında Unicode ile ilgili bir hata oluştuğunda ortaya çıkar. Bu :"
+"exc:`UnicodeError` alt sınıfıdır."
 
 #: library/exceptions.rst:642
 msgid ""
 "Raised when a Unicode-related error occurs during decoding.  It is a "
 "subclass of :exc:`UnicodeError`."
 msgstr ""
+"Kod çözme sırasında Unicode ile ilgili bir hata oluştuğunda ortaya çıkar. "
+"Bu :exc:`UnicodeError` alt sınıfıdır."
 
 #: library/exceptions.rst:648
 msgid ""
 "Raised when a Unicode-related error occurs during translating.  It is a "
 "subclass of :exc:`UnicodeError`."
 msgstr ""
+"Çeviri sırasında Unicode ile ilgili bir hata oluştuğunda ortaya çıkar. Bu :"
+"exc:`UnicodeError` alt sınıfıdır."
 
 #: library/exceptions.rst:654
 msgid ""
@@ -747,6 +1058,9 @@ msgid ""
 "type but an inappropriate value, and the situation is not described by a "
 "more precise exception such as :exc:`IndexError`."
 msgstr ""
+"Bir işlem veya fonksiyon doğru türde ancak uygun olmayan bir değere sahip "
+"bir argüman aldığında ve durum :exc:`IndexError` gibi daha kesin bir istisna "
+"ile tanımlanmadığında ortaya çıkar."
 
 #: library/exceptions.rst:661
 msgid ""
@@ -754,26 +1068,33 @@ msgid ""
 "The associated value is a string indicating the type of the operands and the "
 "operation."
 msgstr ""
+"Bir bölme veya modulo işleminin ikinci bağımsız değişkeni sıfır olduğunda "
+"ortaya çıkar. İlişkili değer, işlenenlerin ve işlemin türünü belirten bir "
+"dizedir."
 
 #: library/exceptions.rst:666
 msgid ""
 "The following exceptions are kept for compatibility with previous versions; "
 "starting from Python 3.3, they are aliases of :exc:`OSError`."
 msgstr ""
+"Aşağıdaki istisnalar önceki sürümlerle uyumluluk için tutulur; Python "
+"3.3'ten başlayarak, :exc:`OSError` takma adlarıdır."
 
 #: library/exceptions.rst:675
 msgid "Only available on Windows."
-msgstr ""
+msgstr "Yalnızca Windows'ta kullanılabilir."
 
 #: library/exceptions.rst:679
 msgid "OS exceptions"
-msgstr ""
+msgstr "İşletim sistemi istisnaları(ES exceptions)"
 
 #: library/exceptions.rst:681
 msgid ""
 "The following exceptions are subclasses of :exc:`OSError`, they get raised "
 "depending on the system error code."
 msgstr ""
+"Aşağıdaki istisnalar :exc:`OSError` alt sınıflarıdır, sistem hata koduna "
+"bağlı olarak ortaya çıkarlar."
 
 #: library/exceptions.rst:686
 msgid ""
@@ -782,12 +1103,18 @@ msgid ""
 "EAGAIN`, :py:const:`~errno.EALREADY`, :py:const:`~errno.EWOULDBLOCK` and :py:"
 "const:`~errno.EINPROGRESS`."
 msgstr ""
+"Bir işlem, bloklanmayan işlem(non-blocking operation) için ayarlanmış bir "
+"nesne (örn. soket) üzerinde bloklandığında ortaya çıkar. c:data:`errno` :py:"
+"const:`~errno.EAGAIN`, :py:const:`~errno.EALREADY`, :py:const:`~errno."
+"EWOULDBLOCK` ve :py:const:`~errno.EINPROGRESS` değerlerine karşılık gelir."
 
 #: library/exceptions.rst:691
 msgid ""
 "In addition to those of :exc:`OSError`, :exc:`BlockingIOError` can have one "
 "more attribute:"
 msgstr ""
+"exc:`OSError` özelliğine ek olarak, :exc:`BlockingIOError` bir özelliğe daha "
+"sahip olabilir:"
 
 #: library/exceptions.rst:696
 msgid ""
@@ -795,22 +1122,29 @@ msgid ""
 "it blocked.  This attribute is available when using the buffered I/O classes "
 "from the :mod:`io` module."
 msgstr ""
+"\"Bu öznitelik, :mod:io modülünden gelen arabellekli I/O sınıflarını "
+"kullanırken, akışa yazılmadan önce engellendiğinde yazılan karakterlerin "
+"sayısını içeren bir tamsayı içerir.\""
 
 #: library/exceptions.rst:702
 msgid ""
 "Raised when an operation on a child process failed. Corresponds to :c:data:"
 "`errno` :py:const:`~errno.ECHILD`."
 msgstr ""
+"Bir alt süreç(child process) üzerindeki bir işlem başarısız olduğunda "
+"yükseltilir. Karşılığı :c:data:`errno` :py:const:`~errno.ECHILD`."
 
 #: library/exceptions.rst:707
 msgid "A base class for connection-related issues."
-msgstr ""
+msgstr "Bağlantı ile ilgili konular için bir temel sınıf."
 
 #: library/exceptions.rst:709
 msgid ""
 "Subclasses are :exc:`BrokenPipeError`, :exc:`ConnectionAbortedError`, :exc:"
 "`ConnectionRefusedError` and :exc:`ConnectionResetError`."
 msgstr ""
+"Alt sınıflar :exc:`BrokenPipeError`, :exc:`ConnectionAbortedError`, :exc:"
+"`ConnectionRefusedError` ve :exc:`ConnectionResetError`."
 
 #: library/exceptions.rst:714
 msgid ""
@@ -819,6 +1153,10 @@ msgid ""
 "has been shutdown for writing. Corresponds to :c:data:`errno` :py:const:"
 "`~errno.EPIPE` and :py:const:`~errno.ESHUTDOWN`."
 msgstr ""
+"exc:`ConnectionError` alt sınıfı, diğer ucu kapatılmış bir pipe'ın üzerine "
+"yazmaya çalışıldığında veya yazmaya kapatılmış bir soket üzerine yazmaya "
+"çalışıldığında ortaya çıkar. c:data:`errno` :py:const:`~errno.EPIPE` ve :py:"
+"const:`~errno.ESHUTDOWN` değerlerine karşılık gelir."
 
 #: library/exceptions.rst:721
 msgid ""
@@ -826,6 +1164,9 @@ msgid ""
 "aborted by the peer. Corresponds to :c:data:`errno` :py:const:`~errno."
 "ECONNABORTED`."
 msgstr ""
+"Bir bağlantı girişimi eş(peer) tarafından iptal edildiğinde ortaya çıkan :"
+"exc:`ConnectionError` alt sınıfı. Karşılığı :c:data:`errno` :py:const:"
+"`~errno.ECONNABORTED`."
 
 #: library/exceptions.rst:727
 msgid ""
@@ -833,30 +1174,42 @@ msgid ""
 "refused by the peer. Corresponds to :c:data:`errno` :py:const:`~errno."
 "ECONNREFUSED`."
 msgstr ""
+"Bir bağlantı girişimi eş(peer) tarafından reddedildiğinde ortaya çıkan :exc:"
+"`ConnectionError` alt sınıfı. Karşılığı :c:data:`errno` :py:const:`~errno."
+"ECONNREFUSED`."
 
 #: library/exceptions.rst:733
 msgid ""
 "A subclass of :exc:`ConnectionError`, raised when a connection is reset by "
 "the peer. Corresponds to :c:data:`errno` :py:const:`~errno.ECONNRESET`."
 msgstr ""
+"Bir bağlantı eş(peer) tarafından sıfırlandığında ortaya çıkan :exc:"
+"`ConnectionError` alt sınıfı. Karşılığı :c:data:`errno` :py:const:`~errno."
+"ECONNRESET`."
 
 #: library/exceptions.rst:739
 msgid ""
 "Raised when trying to create a file or directory which already exists. "
 "Corresponds to :c:data:`errno` :py:const:`~errno.EEXIST`."
 msgstr ""
+"Zaten var olan bir dosya veya dizin oluşturulmaya çalışıldığında ortaya "
+"çıkar. Karşılığı :c:data:`errno` :py:const:`~errno.EEXIST`."
 
 #: library/exceptions.rst:744
 msgid ""
 "Raised when a file or directory is requested but doesn't exist. Corresponds "
 "to :c:data:`errno` :py:const:`~errno.ENOENT`."
 msgstr ""
+"Bir dosya veya dizin isteğinde(request) ancak mevcut olmadığında ortaya "
+"çıakr. Karşılığı :c:data:`errno` :py:const:`~errno.ENOENT`."
 
 #: library/exceptions.rst:749
 msgid ""
 "Raised when a system call is interrupted by an incoming signal. Corresponds "
 "to :c:data:`errno` :py:const:`~errno.EINTR`."
 msgstr ""
+"Bir sistem çağrısı gelen bir sinyal tarafından kesintiye uğradığında ortaya "
+"çıkar. Karşılığı :c:data:`errno` :py:const:`~errno.EINTR`."
 
 #: library/exceptions.rst:752
 msgid ""
@@ -864,12 +1217,17 @@ msgid ""
 "except if the signal handler raises an exception (see :pep:`475` for the "
 "rationale), instead of raising :exc:`InterruptedError`."
 msgstr ""
+"Python bir system calls tarafından kesildiğinde, sinyal işleyicinin bir "
+"istisna yükseltmesi dışında (gerekçe için :pep:`475`e bakın), :exc:"
+"`InterruptedError` yükseltmek yerine sistem çağrılarını yeniden dener."
 
 #: library/exceptions.rst:759
 msgid ""
 "Raised when a file operation (such as :func:`os.remove`) is requested on a "
 "directory. Corresponds to :c:data:`errno` :py:const:`~errno.EISDIR`."
 msgstr ""
+"Bir dizin üzerinde bir dosya işlemi (örneğin :func:`os.remove`) istendiğinde "
+"ortaya çıkar. Karşılığı :c:data:`errno` :py:const:`~errno.EISDIR`."
 
 #: library/exceptions.rst:765
 msgid ""
@@ -879,6 +1237,10 @@ msgid ""
 "as if it were a directory. Corresponds to :c:data:`errno` :py:const:`~errno."
 "ENOTDIR`."
 msgstr ""
+"Dizin olmayan bir şey üzerinde bir dizin işlemi (örneğin :func:`os.listdir`) "
+"istendiğinde ortaya çıakr. Çoğu POSIX platformunda, bir işlem dizin olmayan "
+"bir dosyayı bir dizinmiş gibi açmaya veya geçmeye çalışırsa da ortaya "
+"çıkabilir. Karşılığı :c:data:`errno` :py:const:`~errno.ENOTDIR`."
 
 #: library/exceptions.rst:773
 msgid ""
@@ -887,56 +1249,72 @@ msgid ""
 "`~errno.EACCES`, :py:const:`~errno.EPERM`, and :py:const:`~errno."
 "ENOTCAPABLE`."
 msgstr ""
+"Yeterli erişim hakları (örneğin dosya sistemi izinleri) olmadan bir işlem "
+"çalıştırılmaya çalışıldığında ortaya çıkar. c:data:`errno` :py:const:`~errno."
+"EACCES`, :py:const:`~errno.EPERM` ve :py:const:`~errno.ENOTCAPABLE` "
+"değerlerine karşılık gelir."
 
 #: library/exceptions.rst:778
 msgid ""
 "WASI's :py:const:`~errno.ENOTCAPABLE` is now mapped to :exc:"
 "`PermissionError`."
 msgstr ""
+"WASI'nin :py:const:`~errno.ENOTCAPABLE` ifadesi artık :exc:`PermissionError` "
+"ile eşleştirilmiştir."
 
 #: library/exceptions.rst:784
 msgid ""
 "Raised when a given process doesn't exist. Corresponds to :c:data:`errno` :"
 "py:const:`~errno.ESRCH`."
 msgstr ""
+"Belirli bir süreç mevcut olmadığında ortaya çıkar. Karşılığı :c:data:"
+"`errno` :py:const:`~errno.ESRCH`."
 
 #: library/exceptions.rst:789
 msgid ""
 "Raised when a system function timed out at the system level. Corresponds to :"
 "c:data:`errno` :py:const:`~errno.ETIMEDOUT`."
 msgstr ""
+"Bir sistem işlevi sistem düzeyinde zaman aşımına uğradığında ortaya çıkar. "
+"Karşılığı :c:data:`errno` :py:const:`~errno.ETIMEDOUT`."
 
 #: library/exceptions.rst:792
 msgid "All the above :exc:`OSError` subclasses were added."
-msgstr ""
+msgstr "Yukarıdaki tüm :exc:`OSError` alt sınıfları eklendi."
 
 #: library/exceptions.rst:798
 msgid ":pep:`3151` - Reworking the OS and IO exception hierarchy"
 msgstr ""
+":pep:`3151` - İşletim sistemi ve IO istisna hiyerarşisinin yeniden "
+"düzenlenmesi"
 
 #: library/exceptions.rst:804
 msgid "Warnings"
-msgstr ""
+msgstr "Uyarılar"
 
 #: library/exceptions.rst:806
 msgid ""
 "The following exceptions are used as warning categories; see the :ref:"
 "`warning-categories` documentation for more details."
 msgstr ""
+"Aşağıdaki istisnalar uyarı kategorileri olarak kullanılır; daha fazla "
+"ayrıntı için :ref:`warning-categories` belgesine bakın."
 
 #: library/exceptions.rst:811
 msgid "Base class for warning categories."
-msgstr ""
+msgstr "Uyarı kategorileri için temel sınıf."
 
 #: library/exceptions.rst:816
 msgid "Base class for warnings generated by user code."
-msgstr ""
+msgstr "Kullanıcı kodu tarafından oluşturulan uyarılar için temel sınıf."
 
 #: library/exceptions.rst:821
 msgid ""
 "Base class for warnings about deprecated features when those warnings are "
 "intended for other Python developers."
 msgstr ""
+"Kullanımdan kaldırılan özelliklerle ilgili uyarılar diğer Python "
+"geliştiricilerine yönelik olduğunda bu uyarılar için temel sınıf."
 
 #: library/exceptions.rst:824
 msgid ""
@@ -944,16 +1322,21 @@ msgid ""
 "pep:`565`). Enabling the :ref:`Python Development Mode <devmode>` shows this "
 "warning."
 msgstr ""
+"``__main__`` modülü (:pep:`565`) dışında varsayılan uyarı filtreleri "
+"tarafından yok sayılır. ref:`Python Geliştirme Modu <devmode>` "
+"etkinleştirildiğinde bu uyarı gösterilir."
 
 #: library/exceptions.rst:844
 msgid "The deprecation policy is described in :pep:`387`."
-msgstr ""
+msgstr "Kullanımdan kaldırma politikası :pep:`387` bölümünde açıklanmaktadır."
 
 #: library/exceptions.rst:833
 msgid ""
 "Base class for warnings about features which are obsolete and expected to be "
 "deprecated in the future, but are not deprecated at the moment."
 msgstr ""
+"Eski olan ve gelecekte kullanımdan kaldırılması beklenen, ancak şu anda "
+"kullanımdan kaldırılmayan özelliklerle ilgili uyarılar için temel sınıf."
 
 #: library/exceptions.rst:837
 msgid ""
@@ -961,55 +1344,67 @@ msgid ""
 "deprecation is unusual, and :exc:`DeprecationWarning` is preferred for "
 "already active deprecations."
 msgstr ""
+"Bu sınıf nadiren kullanılır çünkü yaklaşan olası bir kullanımdan kaldırma "
+"hakkında bir uyarı yayınlamak alışılmadık bir durumdur ve :exc:"
+"`DeprecationWarning` zaten aktif olan kullanımdan kaldırmalar için tercih "
+"edilir."
 
 #: library/exceptions.rst:867 library/exceptions.rst:894
 msgid ""
 "Ignored by the default warning filters. Enabling the :ref:`Python "
 "Development Mode <devmode>` shows this warning."
 msgstr ""
+"Varsayılan uyarı filtreleri tarafından yok sayılır. ref:`Python Geliştirme "
+"Modu <devmode>` etkinleştirildiğinde bu uyarı gösterilir."
 
 #: library/exceptions.rst:849
 msgid "Base class for warnings about dubious syntax."
-msgstr ""
+msgstr "Şüpheli sözdizimiyle ilgili uyarılar için temel sınıf."
 
 #: library/exceptions.rst:854
 msgid "Base class for warnings about dubious runtime behavior."
 msgstr ""
+"Şüpheli çalışma zamanı davranışları hakkındaki uyarılar için temel sınıf."
 
 #: library/exceptions.rst:859
 msgid ""
 "Base class for warnings about deprecated features when those warnings are "
 "intended for end users of applications that are written in Python."
 msgstr ""
+"Kullanımdan kaldırılan özelliklerle ilgili uyarılar Python'da yazılmış "
+"uygulamaların son kullanıcılarına yönelik olduğunda bu uyarılar için temel "
+"sınıf."
 
 #: library/exceptions.rst:865
 msgid "Base class for warnings about probable mistakes in module imports."
 msgstr ""
+"Modül içe aktarmalarındaki olası hatalar hakkında uyarılar için temel sınıf."
 
 #: library/exceptions.rst:873
 msgid "Base class for warnings related to Unicode."
-msgstr ""
+msgstr "Unicode ile ilgili uyarılar için temel sınıf."
 
 #: library/exceptions.rst:878
 msgid "Base class for warnings related to encodings."
-msgstr ""
+msgstr "Kodlamalarla ilgili uyarılar için temel sınıf."
 
 #: library/exceptions.rst:880
 msgid "See :ref:`io-encoding-warning` for details."
-msgstr ""
+msgstr "Ayrıntılar için :ref:`io-encoding-warning` sayfasına bakın."
 
 #: library/exceptions.rst:887
 msgid ""
 "Base class for warnings related to :class:`bytes` and :class:`bytearray`."
 msgstr ""
+"class:`bytes` ve :class:`bytearray` ile ilgili uyarılar için temel sınıf."
 
 #: library/exceptions.rst:892
 msgid "Base class for warnings related to resource usage."
-msgstr ""
+msgstr "Kaynak kullanımıyla ilgili uyarılar için temel sınıf."
 
 #: library/exceptions.rst:903
 msgid "Exception groups"
-msgstr ""
+msgstr "İstisna grupları"
 
 #: library/exceptions.rst:905
 msgid ""
@@ -1019,6 +1414,11 @@ msgid ""
 "recognised by :keyword:`except*<except_star>`, which matches their subgroups "
 "based on the types of the contained exceptions."
 msgstr ""
+"Aşağıdakiler, birden fazla ilgisiz istisnayı yükseltmek gerektiğinde "
+"kullanılır. Bunlar istisna hiyerarşisinin bir parçasıdır, bu nedenle diğer "
+"tüm istisnalar gibi :keyword:`except` ile ele alınabilirler. Ayrıca, "
+"içerdikleri istisnaların türlerine göre alt gruplarını eşleştiren :keyword:"
+"`except*<except_star>` tarafından tanınırlar."
 
 #: library/exceptions.rst:914
 msgid ""
@@ -1030,6 +1430,13 @@ msgid ""
 "is so that ``except Exception`` catches an :exc:`ExceptionGroup` but not :"
 "exc:`BaseExceptionGroup`."
 msgstr ""
+"Bu istisna türlerinin her ikisi de istisnaları ``excs`` dizisine sarar. "
+"msg`` parametresi bir string olmalıdır. İki sınıf arasındaki fark, :exc:"
+"`BaseExceptionGroup`, :exc:`BaseException`'ı genişletir ve herhangi bir "
+"istisnayı sarabilirken, :exc:`ExceptionGroup`, :exc:`Exception`'ı genişletir "
+"ve yalnızca :exc:`Exception`'ın alt sınıflarını sarabilir. Bu tasarım "
+"sayesinde ``except Exception`` bir :exc:`ExceptionGroup`u yakalar ancak :exc:"
+"`BaseExceptionGroup`u yakalayamaz."
 
 #: library/exceptions.rst:922
 msgid ""
@@ -1039,22 +1446,32 @@ msgid ""
 "The :exc:`ExceptionGroup` constructor, on the other hand, raises a :exc:"
 "`TypeError` if any contained exception is not an :exc:`Exception` subclass."
 msgstr ""
+"İçerdiği tüm istisnalar :exc:`Exception` örneğiyse, :exc:"
+"`BaseExceptionGroup` yapıcısı bir :exc:`BaseExceptionGroup` yerine bir :exc:"
+"`ExceptionGroup` döndürür, böylece seçimi otomatik hale getirmek için "
+"kullanılabilir. Öte yandan, :exc:`ExceptionGroup` kurucusu, içerdiği "
+"herhangi bir istisna bir :exc:`Exception` alt sınıfı değilse bir :exc:"
+"`TypeError` yükseltir."
 
 #: library/exceptions.rst:931
 msgid "The ``msg`` argument to the constructor. This is a read-only attribute."
-msgstr ""
+msgstr "Kurucunun ``msg`` argümanı. Bu salt okunur bir niteliktir."
 
 #: library/exceptions.rst:935
 msgid ""
 "A tuple of the exceptions in the ``excs`` sequence given to the constructor. "
 "This is a read-only attribute."
 msgstr ""
+"Yapıcıya verilen ``excs`` dizisindeki istisnaların bir demeti(tuple). Bu "
+"salt okunur bir özniteliktir."
 
 #: library/exceptions.rst:940
 msgid ""
 "Returns an exception group that contains only the exceptions from the "
 "current group that match *condition*, or ``None`` if the result is empty."
 msgstr ""
+"Yalnızca geçerli gruptaki *condition* ile eşleşen istisnaları içeren bir "
+"istisna grubu veya sonuç boşsa ``None`` döndürür."
 
 #: library/exceptions.rst:943
 msgid ""
@@ -1063,6 +1480,11 @@ msgid ""
 "type or a tuple of exception types, which is used to check for a match using "
 "the same check that is used in an ``except`` clause."
 msgstr ""
+"Koşul, bir istisnayı kabul eden ve alt grupta olması gerekenler için true "
+"döndüren bir fonksiyon olabileceği gibi, bir ``except`` cümlesinde "
+"kullanılan kontrolün aynısını kullanarak bir eşleşme olup olmadığını kontrol "
+"etmek için kullanılan bir istisna türü veya istisna türleri demeti(tuple) de "
+"olabilir."
 
 #: library/exceptions.rst:948
 msgid ""
@@ -1072,6 +1494,11 @@ msgid ""
 "__context__` and :attr:`~BaseException.__notes__` fields. Empty nested "
 "groups are omitted from the result."
 msgstr ""
+"Mevcut istisna içindeki iç içe geçme yapısı sonuçta korunur, ayrıca :attr:"
+"`message`, :attr:`~BaseException.__traceback__`, :attr:`~BaseException."
+"__cause__`, :attr:`~BaseException.__context__` ve :attr:`~BaseException."
+"__notes__` alanlarının değerleri de korunur. Boş iç içe gruplar sonuçtan "
+"çıkarılır."
 
 #: library/exceptions.rst:955
 msgid ""
@@ -1079,6 +1506,9 @@ msgid ""
 "including the top-level and any nested exception groups. If the condition is "
 "true for such an exception group, it is included in the result in full."
 msgstr ""
+"Koşul(condition), üst düzey ve iç içe geçmiş istisna grupları dahil olmak "
+"üzere, iç içe geçmiş istisna grubundaki tüm istisnalar için kontrol edilir. "
+"Koşul böyle bir istisna grubu için doğruysa, sonuca tam olarak dahil edilir."
 
 #: library/exceptions.rst:961
 msgid ""
@@ -1086,12 +1516,16 @@ msgid ""
 "``match`` is ``subgroup(condition)`` and ``rest`` is the remaining non-"
 "matching part."
 msgstr ""
+"meth:`subgroup` gibi, ancak ``(match, rest)`` çiftini döndürür; burada "
+"``match`` ``subgroup(condition)`` ve ``rest`` kalan eşleşmeyen kısımdır."
 
 #: library/exceptions.rst:967
 msgid ""
 "Returns an exception group with the same :attr:`message`, but which wraps "
 "the exceptions in ``excs``."
 msgstr ""
+"Aynı :attr:`message` ile bir istisna grubu döndürür, ancak istisnaları "
+"``excs`` içine sarar."
 
 #: library/exceptions.rst:970
 msgid ""
@@ -1099,6 +1533,10 @@ msgid ""
 "to override it in order to make :meth:`subgroup` and :meth:`split` return "
 "instances of the subclass rather than :exc:`ExceptionGroup`."
 msgstr ""
+"Bu yöntem :meth:`subgroup` ve :meth:`split` tarafından kullanılır. Bir alt "
+"sınıfın :meth:`subgroup` ve :meth:`split` metotlarının :exc:`ExceptionGroup` "
+"yerine alt sınıfın örneklerini döndürmesini sağlamak için bu metodu geçersiz "
+"kılması gerekir."
 
 #: library/exceptions.rst:975
 msgid ""
@@ -1108,6 +1546,11 @@ msgid ""
 "exception group to the one returned by :meth:`derive`, so these fields do "
 "not need to be updated by :meth:`derive`."
 msgstr ""
+":meth:`subgroup` ve :meth:`split`, :attr:`~BaseException.__traceback__`, :"
+"attr:`~BaseException.__cause__`, :attr:`~BaseException.__context__` ve :attr:"
+"`~BaseException.__notes__` alanlarını orijinal istisna grubundan :meth:"
+"`derive` tarafından döndürülene kopyalar, böylece bu alanların :meth:"
+"`derive` tarafından güncellenmesi gerekmez."
 
 #: library/exceptions.rst:1008
 msgid ""
@@ -1117,6 +1560,11 @@ msgid ""
 "exception group subclass which accepts an exit_code and and constructs the "
 "group's message from it. ::"
 msgstr ""
+"exc:`BaseExceptionGroup` öğesinin :meth:`~object.__new__` öğesini "
+"tanımladığına dikkat edin, bu nedenle farklı bir kurucu imzasına ihtiyaç "
+"duyan alt sınıfların :meth:`~object.__init__` yerine bunu geçersiz kılmaları "
+"gerekir. Örneğin, aşağıda bir exit_code kabul eden ve grubun mesajını bundan "
+"oluşturan bir istisna grubu alt sınıfı tanımlanmaktadır:"
 
 #: library/exceptions.rst:1023
 msgid ""
@@ -1124,59 +1572,62 @@ msgid ""
 "is also a subclass of :exc:`Exception` can only wrap instances of :exc:"
 "`Exception`."
 msgstr ""
+"Tıpkı :exc:`ExceptionGroup` gibi, :exc:`BaseExceptionGroup` alt sınıfı olan :"
+"exc:`Exception` alt sınıfı da yalnızca :exc:`Exception` örneklerini "
+"sarabilir."
 
 #: library/exceptions.rst:1031
 msgid "Exception hierarchy"
-msgstr ""
+msgstr "İstisna hiyerarşisi"
 
 #: library/exceptions.rst:1033
 msgid "The class hierarchy for built-in exceptions is:"
-msgstr ""
+msgstr "Gömülü istisnalar için sınıf hiyerarşisi şöyledir:"
 
 #: library/exceptions.rst:17 library/exceptions.rst:196
 msgid "statement"
-msgstr ""
+msgstr "statement"
 
 #: library/exceptions.rst:6
 msgid "try"
-msgstr ""
+msgstr "try"
 
 #: library/exceptions.rst:6
 msgid "except"
-msgstr ""
+msgstr "except"
 
 #: library/exceptions.rst:17
 msgid "raise"
-msgstr ""
+msgstr "raise"
 
 #: library/exceptions.rst:41
 msgid "exception"
-msgstr ""
+msgstr "exception"
 
 #: library/exceptions.rst:41
 msgid "chaining"
-msgstr ""
+msgstr "chaining"
 
 #: library/exceptions.rst:41
 msgid "__cause__ (exception attribute)"
-msgstr ""
+msgstr "__cause__ (exception attribute)"
 
 #: library/exceptions.rst:41
 msgid "__context__ (exception attribute)"
-msgstr ""
+msgstr "__context__ (exception attribute)"
 
 #: library/exceptions.rst:41
 msgid "__suppress_context__ (exception attribute)"
-msgstr ""
+msgstr "__suppress_context__ (exception attribute)"
 
 #: library/exceptions.rst:196
 msgid "assert"
-msgstr ""
+msgstr "assert"
 
 #: library/exceptions.rst:345
 msgid "module"
-msgstr ""
+msgstr "module"
 
 #: library/exceptions.rst:345
 msgid "errno"
-msgstr ""
+msgstr "errno"
