@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-04 03:14+0300\n"
+"POT-Creation-Date: 2024-02-24 17:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -258,7 +258,7 @@ msgid ""
 "write() method."
 msgstr ""
 
-#: faq/design.rst:207
+#: faq/design.rst:189
 msgid "https://mail.python.org/pipermail/python-3000/2006-November/004643.html"
 msgstr ""
 
@@ -596,8 +596,8 @@ msgid ""
 "differs by a single bit, could hash to ``1142331976``.  The hash code is "
 "then used to calculate a location in an internal array where the value will "
 "be stored.  Assuming that you're storing keys that all have different hash "
-"values, this means that dictionaries take constant time -- O(1), in Big-O "
-"notation -- to retrieve a key."
+"values, this means that dictionaries take constant time -- *O*\\ (1), in Big-"
+"O notation -- to retrieve a key."
 msgstr ""
 
 #: faq/design.rst:458

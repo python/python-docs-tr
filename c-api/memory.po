@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-04 18:33+0000\n"
+"POT-Creation-Date: 2024-02-24 17:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -322,16 +322,16 @@ msgstr ""
 #: c-api/memory.rst:269
 msgid ""
 "Same as :c:func:`PyMem_Malloc`, but allocates ``(n * sizeof(TYPE))`` bytes "
-"of memory.  Returns a pointer cast to :c:expr:`TYPE*`.  The memory will not "
-"have been initialized in any way."
+"of memory.  Returns a pointer cast to ``TYPE*``.  The memory will not have "
+"been initialized in any way."
 msgstr ""
 
 #: c-api/memory.rst:276
 msgid ""
 "Same as :c:func:`PyMem_Realloc`, but the memory block is resized to ``(n * "
-"sizeof(TYPE))`` bytes.  Returns a pointer cast to :c:expr:`TYPE*`. On "
-"return, *p* will be a pointer to the new memory area, or ``NULL`` in the "
-"event of failure."
+"sizeof(TYPE))`` bytes.  Returns a pointer cast to ``TYPE*``. On return, *p* "
+"will be a pointer to the new memory area, or ``NULL`` in the event of "
+"failure."
 msgstr ""
 
 #: c-api/memory.rst:281
@@ -1066,17 +1066,17 @@ msgid ""
 msgstr ""
 
 #: c-api/memory.rst:43
-msgid "malloc()"
+msgid "malloc (C function)"
 msgstr ""
 
 #: c-api/memory.rst:43
-msgid "calloc()"
+msgid "calloc (C function)"
 msgstr ""
 
 #: c-api/memory.rst:43
-msgid "realloc()"
+msgid "realloc (C function)"
 msgstr ""
 
 #: c-api/memory.rst:43
-msgid "free()"
+msgid "free (C function)"
 msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-05 21:24+0000\n"
+"POT-Creation-Date: 2024-02-24 17:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -565,8 +565,9 @@ msgstr ""
 
 #: library/asyncio-protocol.rst:420
 msgid ""
-"On POSIX systems, this method sends SIGTERM to the subprocess. On Windows, "
-"the Windows API function TerminateProcess() is called to stop the subprocess."
+"On POSIX systems, this method sends :py:const:`~signal.SIGTERM` to the "
+"subprocess. On Windows, the Windows API function :c:func:`!TerminateProcess` "
+"is called to stop the subprocess."
 msgstr ""
 
 #: library/asyncio-protocol.rst:424

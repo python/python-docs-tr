@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-04 03:14+0300\n"
+"POT-Creation-Date: 2024-02-24 17:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -1086,15 +1086,15 @@ msgid ""
 "probability that the Python room will stay within its capacity limits?"
 msgstr ""
 
-#: library/statistics.rst:1035
+#: library/statistics.rst:1032
 msgid "Naive bayesian classifier"
 msgstr ""
 
-#: library/statistics.rst:1037
+#: library/statistics.rst:1034
 msgid "Normal distributions commonly arise in machine learning problems."
 msgstr ""
 
-#: library/statistics.rst:1039
+#: library/statistics.rst:1036
 msgid ""
 "Wikipedia has a `nice example of a Naive Bayesian Classifier <https://en."
 "wikipedia.org/wiki/Naive_Bayes_classifier#Person_classification>`_. The "
@@ -1102,20 +1102,20 @@ msgid ""
 "distributed features including height, weight, and foot size."
 msgstr ""
 
-#: library/statistics.rst:1044
+#: library/statistics.rst:1041
 msgid ""
 "We're given a training dataset with measurements for eight people.  The "
 "measurements are assumed to be normally distributed, so we summarize the "
 "data with :class:`NormalDist`:"
 msgstr ""
 
-#: library/statistics.rst:1057
+#: library/statistics.rst:1054
 msgid ""
 "Next, we encounter a new person whose feature measurements are known but "
 "whose gender is unknown:"
 msgstr ""
 
-#: library/statistics.rst:1066
+#: library/statistics.rst:1063
 msgid ""
 "Starting with a 50% `prior probability <https://en.wikipedia.org/wiki/"
 "Prior_probability>`_ of being male or female, we compute the posterior as "
@@ -1123,34 +1123,34 @@ msgid ""
 "given the gender:"
 msgstr ""
 
-#: library/statistics.rst:1081
+#: library/statistics.rst:1078
 msgid ""
 "The final prediction goes to the largest posterior. This is known as the "
 "`maximum a posteriori <https://en.wikipedia.org/wiki/"
 "Maximum_a_posteriori_estimation>`_ or MAP:"
 msgstr ""
 
-#: library/statistics.rst:1092
+#: library/statistics.rst:1089
 msgid "Kernel density estimation"
 msgstr ""
 
-#: library/statistics.rst:1094
+#: library/statistics.rst:1091
 msgid ""
 "It is possible to estimate a continuous probability density function from a "
 "fixed number of discrete samples."
 msgstr ""
 
-#: library/statistics.rst:1097
+#: library/statistics.rst:1094
 msgid ""
 "The basic idea is to smooth the data using `a kernel function such as a "
 "normal distribution, triangular distribution, or uniform distribution "
 "<https://en.wikipedia.org/wiki/"
 "Kernel_(statistics)#Kernel_functions_in_common_use>`_. The degree of "
-"smoothing is controlled by a single parameter, ``h``, representing the "
-"variance of the kernel function."
+"smoothing is controlled by a scaling parameter, ``h``, which is called the "
+"*bandwidth*."
 msgstr ""
 
-#: library/statistics.rst:1116
+#: library/statistics.rst:1111
 msgid ""
 "`Wikipedia has an example <https://en.wikipedia.org/wiki/"
 "Kernel_density_estimation#Example>`_ where we can use the ``kde_normal()`` "
@@ -1158,10 +1158,10 @@ msgid ""
 "small sample:"
 msgstr ""
 
-#: library/statistics.rst:1128
+#: library/statistics.rst:1123
 msgid "The points in ``xarr`` and ``yarr`` can be used to make a PDF plot:"
 msgstr ""
 
-#: library/statistics.rst:None
+#: library/statistics.rst:-1
 msgid "Scatter plot of the estimated probability density function."
 msgstr ""
