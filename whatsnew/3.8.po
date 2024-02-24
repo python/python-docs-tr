@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-04 05:12+0300\n"
+"POT-Creation-Date: 2024-02-24 17:22+0000\n"
 "PO-Revision-Date: 2023-02-03 17:30+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -1212,12 +1212,13 @@ msgid "datetime"
 msgstr "datetime"
 
 #: whatsnew/3.8.rst:756
+#, fuzzy
 msgid ""
 "Added new alternate constructors :meth:`datetime.date.fromisocalendar` and :"
-"meth:`datetime.datetime.fromisocalendar`, which construct :class:`date` and :"
-"class:`datetime` objects respectively from ISO year, week number, and "
-"weekday; these are the inverse of each class's ``isocalendar`` method. "
-"(Contributed by Paul Ganssle in :issue:`36004`.)"
+"meth:`datetime.datetime.fromisocalendar`, which construct :class:`~datetime."
+"date` and :class:`~datetime.datetime` objects respectively from ISO year, "
+"week number, and weekday; these are the inverse of each class's "
+"``isocalendar`` method. (Contributed by Paul Ganssle in :issue:`36004`.)"
 msgstr ""
 "ISO yılı, hafta numarası ve haftanın gününden sırasıyla :class:`date` ve :"
 "class:`datetime` nesnelerini oluşturan yeni alternatif kurucular :meth:"
@@ -2015,7 +2016,7 @@ msgstr ""
 "çıkardığında veya çöp toplama sırasında (:func:`gc.collect`). (Victor "
 "Stinner'ın :issue:`36829` 'daki katkısıyla.)"
 
-#: whatsnew/3.8.rst:1250
+#: whatsnew/3.8.rst:2351
 msgid "tarfile"
 msgstr "tarfile"
 
@@ -2772,9 +2773,10 @@ msgstr ""
 "Elizondo'nun :issue:`35810` 'daki katkısıyla.)"
 
 #: whatsnew/3.8.rst:1626
+#, fuzzy
 msgid ""
-"The new function :c:func:`PyCode_NewWithPosOnlyArgs` allows to create code "
-"objects like :c:func:`PyCode_New`, but with an extra *posonlyargcount* "
+"The new function :c:func:`!PyCode_NewWithPosOnlyArgs` allows to create code "
+"objects like :c:func:`!PyCode_New`, but with an extra *posonlyargcount* "
 "parameter for indicating the number of positional-only arguments. "
 "(Contributed by Pablo Galindo in :issue:`37221`.)"
 msgstr ""
@@ -3300,7 +3302,7 @@ msgstr ""
 "kontrolünü yaparak çağrıyı koruyun. (Joannah Nanjekye'nin :issue:`36475` "
 "'teki katkısıyla.)"
 
-#: whatsnew/3.8.rst:1858
+#: whatsnew/3.8.rst:2321
 msgid "Changes in the Python API"
 msgstr "Python API'sindeki değişiklikler"
 
@@ -3948,10 +3950,35 @@ msgstr ""
 "Pitrou ve Yury Selivanov'un :issue:`37228` 'deki katkılarıyla.)"
 
 #: whatsnew/3.8.rst:2247
+#, fuzzy
+msgid "Notable changes in Python 3.8.2"
+msgstr "Python 3.8.12'deki önemli değişiklikler"
+
+#: whatsnew/3.8.rst:2249
+msgid ""
+"Fixed a regression with the ``ignore`` callback of :func:`shutil.copytree`. "
+"The argument types are now str and List[str] again. (Contributed by Manuel "
+"Barkhau and Giampaolo Rodola in :gh:`83571`.)"
+msgstr ""
+
+#: whatsnew/3.8.rst:2254
+#, fuzzy
+msgid "Notable changes in Python 3.8.3"
+msgstr "Python 3.8.1'deki önemli değişiklikler"
+
+#: whatsnew/3.8.rst:2256
+msgid ""
+"The constant values of future flags in the :mod:`__future__` module are "
+"updated in order to prevent collision with compiler flags. Previously "
+"``PyCF_ALLOW_TOP_LEVEL_AWAIT`` was clashing with ``CO_FUTURE_DIVISION``. "
+"(Contributed by Batuhan Taskaya in :gh:`83743`)"
+msgstr ""
+
+#: whatsnew/3.8.rst:2262
 msgid "Notable changes in Python 3.8.8"
 msgstr "Python 3.8.8'deki önemli değişiklikler"
 
-#: whatsnew/3.8.rst:2249
+#: whatsnew/3.8.rst:2264
 msgid ""
 "Earlier Python versions allowed using both ``;`` and ``&`` as query "
 "parameter separators in :func:`urllib.parse.parse_qs` and :func:`urllib."
@@ -3972,11 +3999,68 @@ msgstr ""
 "belgelere bakın. (Adam Goldschmidt, Senthil Kumaran ve Ken Jin'in :issue:"
 "`42967` 'deki katkılarıyla.)"
 
-#: whatsnew/3.8.rst:2260
+#: whatsnew/3.8.rst:2275
+#, fuzzy
+msgid "Notable changes in Python 3.8.9"
+msgstr "Python 3.8.1'deki önemli değişiklikler"
+
+#: whatsnew/3.8.rst:2277
+msgid ""
+"A security fix alters the :class:`ftplib.FTP` behavior to not trust the IPv4 "
+"address sent from the remote server when setting up a passive data channel.  "
+"We reuse the ftp server IP address instead.  For unusual code requiring the "
+"old behavior, set a ``trust_server_pasv_ipv4_address`` attribute on your FTP "
+"instance to ``True``.  (See :gh:`87451`)"
+msgstr ""
+
+#: whatsnew/3.8.rst:2304
+#, fuzzy
+msgid "Notable changes in Python 3.8.10"
+msgstr "Python 3.8.1'deki önemli değişiklikler"
+
+#: whatsnew/3.8.rst:2287
+msgid "macOS 11.0 (Big Sur) and Apple Silicon Mac support"
+msgstr ""
+
+#: whatsnew/3.8.rst:2289
+msgid ""
+"As of 3.8.10, Python now supports building and running on macOS 11 (Big Sur) "
+"and on Apple Silicon Macs (based on the ``ARM64`` architecture). A new "
+"universal build variant, ``universal2``, is now available to natively "
+"support both ``ARM64`` and ``Intel 64`` in one set of executables. Note that "
+"support for \"weaklinking\", building binaries targeted for newer versions "
+"of macOS that will also run correctly on older versions by testing at "
+"runtime for missing features, is not included in this backport from Python "
+"3.9; to support a range of macOS versions, continue to target for and build "
+"on the oldest version in the range."
+msgstr ""
+
+#: whatsnew/3.8.rst:2299
+msgid ""
+"(Originally contributed by Ronald Oussoren and Lawrence D'Anna in :gh:"
+"`85272`, with fixes by FX Coudert and Eli Rykoff, and backported to 3.8 by "
+"Maxime Bélanger and Ned Deily)"
+msgstr ""
+
+#: whatsnew/3.8.rst:2307
+msgid "urllib.parse"
+msgstr ""
+
+#: whatsnew/3.8.rst:2309
+msgid ""
+"The presence of newline or tab characters in parts of a URL allows for some "
+"forms of attacks. Following the WHATWG specification that updates :rfc:"
+"`3986`, ASCII newline ``\\n``, ``\\r`` and tab ``\\t`` characters are "
+"stripped from the URL by the parser in :mod:`urllib.parse` preventing such "
+"attacks. The removal characters are controlled by a new module level "
+"variable ``urllib.parse._UNSAFE_URL_BYTES_TO_REMOVE``. (See :issue:`43882`)"
+msgstr ""
+
+#: whatsnew/3.8.rst:2318
 msgid "Notable changes in Python 3.8.12"
 msgstr "Python 3.8.12'deki önemli değişiklikler"
 
-#: whatsnew/3.8.rst:2262
+#: whatsnew/3.8.rst:2323
 msgid ""
 "Starting with Python 3.8.12 the :mod:`ipaddress` module no longer accepts "
 "any leading zeros in IPv4 address strings. Leading zeros are ambiguous and "
@@ -3992,13 +4076,48 @@ msgstr ""
 "sıfırları sekizli gösterim olarak ele alır. Modern :func:`~socket.inet_pton` "
 "glibc uygulaması baştaki sıfırları kabul etmez."
 
-#: whatsnew/3.8.rst:2269
+#: whatsnew/3.8.rst:2330
 msgid ""
 "(Originally contributed by Christian Heimes in :issue:`36384`, and "
 "backported to 3.8 by Achraf Merzouki.)"
 msgstr ""
 "(Aslen :issue:`36384` içinde Christian Heimes tarafından katkıda "
 "bulunulmuştur ve Achraf Merzouki tarafından 3.8'e geri aktarılmıştır.)"
+
+#: whatsnew/3.8.rst:2334
+#, fuzzy
+msgid "Notable security feature in 3.8.14"
+msgstr "Python 3.8.1'deki önemli değişiklikler"
+
+#: whatsnew/3.8.rst:2336
+msgid ""
+"Converting between :class:`int` and :class:`str` in bases other than 2 "
+"(binary), 4, 8 (octal), 16 (hexadecimal), or 32 such as base 10 (decimal) "
+"now raises a :exc:`ValueError` if the number of digits in string form is "
+"above a limit to avoid potential denial of service attacks due to the "
+"algorithmic complexity. This is a mitigation for `CVE-2020-10735 <https://"
+"cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10735>`_. This limit can be "
+"configured or disabled by environment variable, command line flag, or :mod:"
+"`sys` APIs. See the :ref:`integer string conversion length limitation "
+"<int_max_str_digits>` documentation.  The default limit is 4300 digits in "
+"string form."
+msgstr ""
+
+#: whatsnew/3.8.rst:2348
+#, fuzzy
+msgid "Notable changes in 3.8.17"
+msgstr "Python 3.8.1'deki önemli değişiklikler"
+
+#: whatsnew/3.8.rst:2353
+msgid ""
+"The extraction methods in :mod:`tarfile`, and :func:`shutil.unpack_archive`, "
+"have a new a *filter* argument that allows limiting tar features than may be "
+"surprising or dangerous, such as creating files outside the destination "
+"directory. See :ref:`tarfile-extraction-filter` for details. In Python 3.12, "
+"use without the *filter* argument will show a :exc:`DeprecationWarning`. In "
+"Python 3.14, the default will switch to ``'data'``. (Contributed by Petr "
+"Viktorin in :pep:`706`.)"
+msgstr ""
 
 #~ msgid ""
 #~ "Added :meth:`pathlib.Path.link_to()` which creates a hard link pointing "

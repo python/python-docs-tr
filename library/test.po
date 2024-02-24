@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 00:16+0000\n"
+"POT-Creation-Date: 2024-02-24 17:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -161,9 +161,10 @@ msgstr ""
 #: library/test.rst:145
 msgid ""
 "When using this pattern, remember that all classes that inherit from :class:"
-"`unittest.TestCase` are run as tests.  The :class:`Mixin` class in the "
-"example above does not have any data and so can't be run by itself, thus it "
-"does not inherit from :class:`unittest.TestCase`."
+"`unittest.TestCase` are run as tests.  The :class:`!"
+"TestFuncAcceptsSequencesMixin` class in the example above does not have any "
+"data and so can't be run by itself, thus it does not inherit from :class:"
+"`unittest.TestCase`."
 msgstr ""
 
 #: library/test.rst:153
@@ -381,9 +382,8 @@ msgstr ""
 
 #: library/test.rst:327
 msgid ""
-"True if Python is built with the :c:macro:`Py_DEBUG` macro defined: if "
-"Python is :ref:`built in debug mode <debug-build>` (:option:`./configure --"
-"with-pydebug <--with-pydebug>`)."
+"True if Python was built with the :c:macro:`Py_DEBUG` macro defined, that "
+"is, if Python was :ref:`built in debug mode <debug-build>`."
 msgstr ""
 
 #: library/test.rst:336
