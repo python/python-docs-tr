@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 00:16+0000\n"
+"POT-Creation-Date: 2024-02-24 17:22+0000\n"
 "PO-Revision-Date: 2023-02-02 02:32+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -700,16 +700,15 @@ msgstr ""
 "karşılık gelen fonksiyonu çağırmaya eş değerdir."
 
 #: tutorial/classes.rst:389
+#, fuzzy
 msgid ""
-"If you still don't understand how methods work, a look at the implementation "
-"can perhaps clarify matters.  When a non-data attribute of an instance is "
-"referenced, the instance's class is searched.  If the name denotes a valid "
-"class attribute that is a function object, a method object is created by "
-"packing (pointers to) the instance object and the function object just found "
-"together in an abstract object: this is the method object.  When the method "
-"object is called with an argument list, a new argument list is constructed "
-"from the instance object and the argument list, and the function object is "
-"called with this new argument list."
+"In general, methods work as follows.  When a non-data attribute of an "
+"instance is referenced, the instance's class is searched. If the name "
+"denotes a valid class attribute that is a function object, references to "
+"both the instance object and the function object are packed into a method "
+"object.  When the method object is called with an argument list, a new "
+"argument list is constructed from the instance object and the argument list, "
+"and the function object is called with this new argument list."
 msgstr ""
 "Metotların nasıl çalıştığını hala anlamıyorsanız, nasıl uygulandığına bakmak "
 "belki de sorunları açıklığa kavuşturabilir.  Bir örneğin, veri olmayan bir "
@@ -721,11 +720,11 @@ msgstr ""
 "bir argüman listesi oluşturulur ve fonksiyon nesnesi bu yeni argüman "
 "listesiyle çağrılır."
 
-#: tutorial/classes.rst:403
+#: tutorial/classes.rst:402
 msgid "Class and Instance Variables"
 msgstr "Sınıf ve Örnek Değişkenleri"
 
-#: tutorial/classes.rst:405
+#: tutorial/classes.rst:404
 msgid ""
 "Generally speaking, instance variables are for data unique to each instance "
 "and class variables are for attributes and methods shared by all instances "
@@ -735,7 +734,7 @@ msgstr ""
 "değişkenleri sınıfın tüm örnekleri tarafından paylaşılan nitelikler ile "
 "metotlar içindir::"
 
-#: tutorial/classes.rst:427
+#: tutorial/classes.rst:426
 msgid ""
 "As discussed in :ref:`tut-object`, shared data can have possibly surprising "
 "effects with involving :term:`mutable` objects such as lists and "
@@ -749,16 +748,16 @@ msgstr ""
 "kullanılmamalıdır, çünkü yalnızca tek bir liste tüm *Dog* örnekleri "
 "tarafından paylaşılacaktır::"
 
-#: tutorial/classes.rst:450
+#: tutorial/classes.rst:449
 msgid "Correct design of the class should use an instance variable instead::"
 msgstr ""
 "Doğru olan ise veriyi paylaşmak yerine bir örnek değişkeni kullanmaktır:"
 
-#: tutorial/classes.rst:474
+#: tutorial/classes.rst:473
 msgid "Random Remarks"
 msgstr "Rastgele Açıklamalar"
 
-#: tutorial/classes.rst:478
+#: tutorial/classes.rst:477
 msgid ""
 "If the same attribute name occurs in both an instance and in a class, then "
 "attribute lookup prioritizes the instance::"
@@ -766,7 +765,7 @@ msgstr ""
 "Aynı nitelik adı hem bir örnekte hem de bir sınıfta oluşuyorsa, nitelik "
 "araması örneğe öncelik verir::"
 
-#: tutorial/classes.rst:493
+#: tutorial/classes.rst:492
 msgid ""
 "Data attributes may be referenced by methods as well as by ordinary users "
 "(\"clients\") of an object.  In other words, classes are not usable to "
@@ -785,7 +784,7 @@ msgstr ""
 "kontrol edebilir; bu, C ile yazılmış Python uzantıları tarafından "
 "kullanılabilir.)"
 
-#: tutorial/classes.rst:501
+#: tutorial/classes.rst:500
 msgid ""
 "Clients should use data attributes with care --- clients may mess up "
 "invariants maintained by the methods by stamping on their data attributes.  "
@@ -800,7 +799,7 @@ msgstr ""
 "burada da ad çakışmalarından kaçınılmalıdır, adlandırma kuralları ise "
 "kaçınmak için oldukça faydalı olabilir."
 
-#: tutorial/classes.rst:507
+#: tutorial/classes.rst:506
 msgid ""
 "There is no shorthand for referencing data attributes (or other methods!) "
 "from within methods.  I find that this actually increases the readability of "
@@ -812,7 +811,7 @@ msgstr ""
 "çünkü bir metoda bakarken yerel değişkenleri ve örnek değişkenlerini "
 "karıştırma ihtimali bırakmamış oluyoruz."
 
-#: tutorial/classes.rst:512
+#: tutorial/classes.rst:511
 msgid ""
 "Often, the first argument of a method is called ``self``.  This is nothing "
 "more than a convention: the name ``self`` has absolutely no special meaning "
@@ -828,7 +827,7 @@ msgstr ""
 "okunabilir olabileceğini ve yazılabilecek potansiyel bir *sınıf tarayıcısı* "
 "programının bu kurala dayanıyor olabileceğini unutmayın."
 
-#: tutorial/classes.rst:518
+#: tutorial/classes.rst:517
 msgid ""
 "Any function object that is a class attribute defines a method for instances "
 "of that class.  It is not necessary that the function definition is "
@@ -840,7 +839,7 @@ msgstr ""
 "dahil olması gerekli değildir: sınıftaki yerel bir değişkene fonksiyon "
 "nesnesi atamak da uygundur.  Mesela::"
 
-#: tutorial/classes.rst:535
+#: tutorial/classes.rst:534
 #, fuzzy
 msgid ""
 "Now ``f``, ``g`` and ``h`` are all attributes of class :class:`!C` that "
@@ -854,7 +853,7 @@ msgstr ""
 "kullanım şeklinin genellikle yalnızca bir programı okuyan kişinin kafasını "
 "karıştırmaya yaradığını unutmayın."
 
-#: tutorial/classes.rst:540
+#: tutorial/classes.rst:539
 msgid ""
 "Methods may call other methods by using method attributes of the ``self`` "
 "argument::"
@@ -862,7 +861,7 @@ msgstr ""
 "Metotlar, ``self`` bağımsız değişkeninin metot niteliklerini kullanarak "
 "diğer metotları çağırabilir::"
 
-#: tutorial/classes.rst:554
+#: tutorial/classes.rst:553
 msgid ""
 "Methods may reference global names in the same way as ordinary functions.  "
 "The global scope associated with a method is the module containing its "
@@ -884,7 +883,7 @@ msgstr ""
 "kendisi bu genel kapsamda tanımlanır ve sonraki bölümde bir yöntemin kendi "
 "sınıfına başvurmak istemesinin bazı iyi nedenlerini bulacağız."
 
-#: tutorial/classes.rst:564
+#: tutorial/classes.rst:563
 msgid ""
 "Each value is an object, and therefore has a *class* (also called its "
 "*type*). It is stored as ``object.__class__``."
@@ -892,11 +891,11 @@ msgstr ""
 "Her değer bir nesnedir ve bu nedenle bir *sınıf* (*type* olarak da "
 "adlandırılır) bulundurur. ``object.__class__`` olarak depolanır."
 
-#: tutorial/classes.rst:571
+#: tutorial/classes.rst:570
 msgid "Inheritance"
 msgstr "Kalıtım"
 
-#: tutorial/classes.rst:573
+#: tutorial/classes.rst:572
 msgid ""
 "Of course, a language feature would not be worthy of the name \"class\" "
 "without supporting inheritance.  The syntax for a derived class definition "
@@ -905,7 +904,7 @@ msgstr ""
 "Tabii ki, bir dil özelliği kalıtımı desteklemeden \"sınıf\" adına layık "
 "olmaz.  Türetilmiş sınıf tanımının söz dizimi şöyle görünür::"
 
-#: tutorial/classes.rst:584
+#: tutorial/classes.rst:583
 #, fuzzy
 msgid ""
 "The name :class:`!BaseClassName` must be defined in a namespace accessible "
@@ -918,7 +917,7 @@ msgstr ""
 "verilir.  Bu, örneğin, temel sınıf başka bir modülde tanımlandığında yararlı "
 "olabilir::"
 
-#: tutorial/classes.rst:592
+#: tutorial/classes.rst:591
 msgid ""
 "Execution of a derived class definition proceeds the same as for a base "
 "class. When the class object is constructed, the base class is remembered.  "
@@ -933,7 +932,7 @@ msgstr ""
 "arama temel sınıfa bakmaya devam eder.  Temel sınıfın kendisi başka bir "
 "sınıftan türetilmişse, bu kural özyinelemeli olarak uygulanır."
 
-#: tutorial/classes.rst:598
+#: tutorial/classes.rst:597
 msgid ""
 "There's nothing special about instantiation of derived classes: "
 "``DerivedClassName()`` creates a new instance of the class.  Method "
@@ -947,7 +946,7 @@ msgstr ""
 "gerekirse temel sınıflar zincirinin aşağısına inilir ve bu bir fonksiyon "
 "nesnesi veriyorsa metot başvurusu geçerlidir."
 
-#: tutorial/classes.rst:604
+#: tutorial/classes.rst:603
 msgid ""
 "Derived classes may override methods of their base classes.  Because methods "
 "have no special privileges when calling other methods of the same object, a "
@@ -962,7 +961,7 @@ msgstr ""
 "çağırabilir.  (C++ programcıları için: Python'daki tüm yöntemler etkili bir "
 "şekilde ``sanal``.)"
 
-#: tutorial/classes.rst:610
+#: tutorial/classes.rst:609
 msgid ""
 "An overriding method in a derived class may in fact want to extend rather "
 "than simply replace the base class method of the same name. There is a "
@@ -978,11 +977,11 @@ msgstr ""
 "için de yararlıdır.  (Bunun yalnızca temel sınıfa genel kapsamda "
 "``BaseClassName`` olarak erişilebiliyorsa çalıştığını unutmayın.)"
 
-#: tutorial/classes.rst:617
+#: tutorial/classes.rst:616
 msgid "Python has two built-in functions that work with inheritance:"
 msgstr "Python'un kalıtımla çalışan iki yerleşik fonksiyonu vardır:"
 
-#: tutorial/classes.rst:619
+#: tutorial/classes.rst:618
 msgid ""
 "Use :func:`isinstance` to check an instance's type: ``isinstance(obj, int)`` "
 "will be ``True`` only if ``obj.__class__`` is :class:`int` or some class "
@@ -992,7 +991,7 @@ msgstr ""
 "``isinstance(obj, int)`` yalnızca ``obj.__class__`` :class:`int` veya :class:"
 "`int` sınıfından türetilmiş bir sınıfsa ``True`` olacaktır."
 
-#: tutorial/classes.rst:623
+#: tutorial/classes.rst:622
 msgid ""
 "Use :func:`issubclass` to check class inheritance: ``issubclass(bool, int)`` "
 "is ``True`` since :class:`bool` is a subclass of :class:`int`.  However, "
@@ -1004,11 +1003,11 @@ msgstr ""
 "'in bir alt sınıfıdır.  Ancak, ``issubclass(float, int)`` ``False`` "
 "olduğundan :class:`float`, :class:`int` alt sınıfı değildir."
 
-#: tutorial/classes.rst:633
+#: tutorial/classes.rst:632
 msgid "Multiple Inheritance"
 msgstr "Çoklu Kalıtım"
 
-#: tutorial/classes.rst:635
+#: tutorial/classes.rst:634
 msgid ""
 "Python supports a form of multiple inheritance as well.  A class definition "
 "with multiple base classes looks like this::"
@@ -1016,7 +1015,7 @@ msgstr ""
 "Python, çoklu kalıtım biçimini de destekler.  Birden çok temel sınıf içeren "
 "bir sınıf tanımı şöyle görünür::"
 
-#: tutorial/classes.rst:645
+#: tutorial/classes.rst:644
 #, fuzzy
 msgid ""
 "For most purposes, in the simplest cases, you can think of the search for "
@@ -1034,7 +1033,7 @@ msgstr ""
 "(özyinelemeli olarak) :class:`Base1` temel sınıflarında aranır ve orada "
 "bulunamazsa :class:`Base2` vb."
 
-#: tutorial/classes.rst:652
+#: tutorial/classes.rst:651
 msgid ""
 "In fact, it is slightly more complex than that; the method resolution order "
 "changes dynamically to support cooperative calls to :func:`super`.  This "
@@ -1048,7 +1047,7 @@ msgstr ""
 "olarak bilinir ve tekli kalıtım dillerinde bulunan süper çağrıdan daha "
 "güçlüdür."
 
-#: tutorial/classes.rst:658
+#: tutorial/classes.rst:657
 msgid ""
 "Dynamic ordering is necessary because all cases of multiple inheritance "
 "exhibit one or more diamond relationships (where at least one of the parent "
@@ -1077,11 +1076,11 @@ msgstr ""
 "ile güvenilir ve genişletilebilir sınıflar tasarlamayı mümkün kılar.  Daha "
 "fazla ayrıntı için bkz. https://www.python.org/download/releases/2.3/mro/."
 
-#: tutorial/classes.rst:675
+#: tutorial/classes.rst:674
 msgid "Private Variables"
 msgstr "Özel Değişkenler"
 
-#: tutorial/classes.rst:677
+#: tutorial/classes.rst:676
 msgid ""
 "\"Private\" instance variables that cannot be accessed except from inside an "
 "object don't exist in Python.  However, there is a convention that is "
@@ -1097,7 +1096,7 @@ msgstr ""
 "veya veri üyesi olsun).  Bir uygulama detayıdır ve önceden haber "
 "verilmeksizin değiştirilebilir."
 
-#: tutorial/classes.rst:687
+#: tutorial/classes.rst:686
 msgid ""
 "Since there is a valid use-case for class-private members (namely to avoid "
 "name clashes of names with names defined by subclasses), there is limited "
@@ -1116,7 +1115,7 @@ msgstr ""
 "değiştirilir;  Bu mangling, bir sınıfın tanımı içinde gerçekleştiği sürece "
 "tanımlayıcının söz dizimsel konumuna bakılmaksızın yapılır."
 
-#: tutorial/classes.rst:696
+#: tutorial/classes.rst:695
 msgid ""
 "Name mangling is helpful for letting subclasses override methods without "
 "breaking intraclass method calls.  For example::"
@@ -1124,7 +1123,7 @@ msgstr ""
 "Ad mangling, alt sınıfların sınıf içi metot çağrılarını kesmeden metotları "
 "geçersiz kılmasına izin vermek için yararlıdır.  Mesela::"
 
-#: tutorial/classes.rst:718
+#: tutorial/classes.rst:717
 msgid ""
 "The above example would work even if ``MappingSubclass`` were to introduce a "
 "``__update`` identifier since it is replaced with ``_Mapping__update`` in "
@@ -1136,7 +1135,7 @@ msgstr ""
 "``_MappingSubclass__update`` ile değiştirildiği için ``__update`` "
 "tanımlayıcısı tanıtsa bile çalışır."
 
-#: tutorial/classes.rst:723
+#: tutorial/classes.rst:722
 msgid ""
 "Note that the mangling rules are designed mostly to avoid accidents; it "
 "still is possible to access or modify a variable that is considered "
@@ -1148,7 +1147,7 @@ msgstr ""
 "hala mümkündür.  Bu, hata ayıklayıcı gibi özel durumlarda bile yararlı "
 "olabilir."
 
-#: tutorial/classes.rst:727
+#: tutorial/classes.rst:726
 msgid ""
 "Notice that code passed to ``exec()`` or ``eval()`` does not consider the "
 "classname of the invoking class to be the current class; this is similar to "
@@ -1163,11 +1162,11 @@ msgstr ""
 "benzer.  Aynı kısıtlama ``getattr()``, ``setattr()`` ve ``delattr()`` ve "
 "doğrudan ``__dict__`` atıfta bulunurken de geçerlidir."
 
-#: tutorial/classes.rst:738
+#: tutorial/classes.rst:737
 msgid "Odds and Ends"
 msgstr "Oranlar ve Bitişler"
 
-#: tutorial/classes.rst:740
+#: tutorial/classes.rst:739
 msgid ""
 "Sometimes it is useful to have a data type similar to the Pascal \"record\" "
 "or C \"struct\", bundling together a few named data items. The idiomatic "
@@ -1177,7 +1176,7 @@ msgstr ""
 "'u veya C *struct* 'ına benzer bir veri türüne sahip olmak yararlıdır. "
 "Deyimsel yaklaşım, bu amaç için :mod:`dataclasses` kullanmaktır::"
 
-#: tutorial/classes.rst:760
+#: tutorial/classes.rst:759
 #, fuzzy
 msgid ""
 "A piece of Python code that expects a particular abstract data type can "
@@ -1194,7 +1193,7 @@ msgstr ""
 "değişken olarak geçiren :meth:`read` ve :meth:`!readline` yöntemlerine sahip "
 "bir sınıf tanımlayabilirsiniz."
 
-#: tutorial/classes.rst:772
+#: tutorial/classes.rst:771
 #, fuzzy
 msgid ""
 ":ref:`Instance method objects <instance-methods>` have attributes, too: :"
@@ -1206,11 +1205,11 @@ msgstr ""
 "örnek nesnedir :meth:`m`, ve ``m.__func__`` yönteme karşılık gelen fonksiyon "
 "nesnesidir."
 
-#: tutorial/classes.rst:782
+#: tutorial/classes.rst:781
 msgid "Iterators"
 msgstr "Yineleyiciler"
 
-#: tutorial/classes.rst:784
+#: tutorial/classes.rst:783
 msgid ""
 "By now you have probably noticed that most container objects can be looped "
 "over using a :keyword:`for` statement::"
@@ -1218,7 +1217,7 @@ msgstr ""
 "Şimdiye kadar büyük olasılıkla çoğu kapsayıcı nesnenin bir :keyword:`for` "
 "deyimi kullanılarak döngüye alınabileceğini fark etmişsinizdir::"
 
-#: tutorial/classes.rst:798
+#: tutorial/classes.rst:797
 msgid ""
 "This style of access is clear, concise, and convenient.  The use of "
 "iterators pervades and unifies Python.  Behind the scenes, the :keyword:"
@@ -1240,7 +1239,7 @@ msgstr ""
 "fonksiyonunu kullanarak :meth:`~iterator.__next__` yöntemini "
 "çağırabilirsiniz; Bu örnek, her şeyin nasıl çalıştığını gösterir::"
 
-#: tutorial/classes.rst:823
+#: tutorial/classes.rst:822
 #, fuzzy
 msgid ""
 "Having seen the mechanics behind the iterator protocol, it is easy to add "
@@ -1254,11 +1253,11 @@ msgstr ""
 "bir nesne döndüren :meth:`__iter__` metodunu tanımlayın.  Sınıf  :meth:"
 "`__next__` tanımlarsa, :meth:`__iter__`  sadece  ``self`` döndürebilir::"
 
-#: tutorial/classes.rst:860
+#: tutorial/classes.rst:859
 msgid "Generators"
 msgstr "Üreteçler"
 
-#: tutorial/classes.rst:862
+#: tutorial/classes.rst:861
 msgid ""
 ":term:`Generators <generator>` are a simple and powerful tool for creating "
 "iterators.  They are written like regular functions but use the :keyword:"
@@ -1274,7 +1273,7 @@ msgstr ""
 "değerlerini ve hangi deyimin en son yürütüldüğını hatırlar).  Bu örnek, "
 "üreteçlerin oluşturulmasının ne kadar da kolay olabileceğini gösterir::"
 
-#: tutorial/classes.rst:883
+#: tutorial/classes.rst:882
 #, fuzzy
 msgid ""
 "Anything that can be done with generators can also be done with class-based "
@@ -1287,7 +1286,7 @@ msgstr ""
 "şey: :meth:`__iter__` ve :meth:`~generator.__next__` yöntemlerinin otomatik "
 "olarak oluşturulmasıdır."
 
-#: tutorial/classes.rst:888
+#: tutorial/classes.rst:887
 msgid ""
 "Another key feature is that the local variables and execution state are "
 "automatically saved between calls.  This made the function easier to write "
@@ -1299,7 +1298,7 @@ msgstr ""
 "kolaylaştırdı ve ``self.index`` ve ``self.data`` gibi değişkenleri "
 "kullanmaya kıyasla çok daha net hale getirdi."
 
-#: tutorial/classes.rst:893
+#: tutorial/classes.rst:892
 msgid ""
 "In addition to automatic method creation and saving program state, when "
 "generators terminate, they automatically raise :exc:`StopIteration`. In "
@@ -1311,11 +1310,11 @@ msgstr ""
 "Birlikte, bu özellikler normal bir işlev yazmaktan daha fazla çaba "
 "harcamadan yinelemeler oluşturmayı kolaylaştırır."
 
-#: tutorial/classes.rst:902
+#: tutorial/classes.rst:901
 msgid "Generator Expressions"
 msgstr "Üreteç İfadeleri"
 
-#: tutorial/classes.rst:904
+#: tutorial/classes.rst:903
 msgid ""
 "Some simple generators can be coded succinctly as expressions using a syntax "
 "similar to list comprehensions but with parentheses instead of square "
@@ -1331,15 +1330,15 @@ msgstr ""
 "ancak daha az çok yönlüdür ve aynı özellikle liste anlamalarından daha "
 "bellek dostu olma eğilimindedir."
 
-#: tutorial/classes.rst:911
+#: tutorial/classes.rst:910
 msgid "Examples::"
 msgstr "Örnekler::"
 
-#: tutorial/classes.rst:932
+#: tutorial/classes.rst:931
 msgid "Footnotes"
 msgstr "Dipnotlar"
 
-#: tutorial/classes.rst:933
+#: tutorial/classes.rst:932
 msgid ""
 "Except for one thing.  Module objects have a secret read-only attribute "
 "called :attr:`~object.__dict__` which returns the dictionary used to "
@@ -1364,10 +1363,10 @@ msgstr "Metot Nesneleri"
 msgid "method"
 msgstr ""
 
-#: tutorial/classes.rst:684
+#: tutorial/classes.rst:683
 msgid "name"
 msgstr ""
 
-#: tutorial/classes.rst:684
+#: tutorial/classes.rst:683
 msgid "mangling"
 msgstr ""

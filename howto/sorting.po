@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 19:05+0000\n"
+"POT-Creation-Date: 2024-02-24 17:22+0000\n"
 "PO-Revision-Date: 2023-04-19 21:42+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -17,8 +17,9 @@ msgstr ""
 "X-Generator: Poedit 3.1\n"
 
 #: howto/sorting.rst:4
-msgid "Sorting HOW TO"
-msgstr "Sıralama NASIL YAPILIR"
+#, fuzzy
+msgid "Sorting Techniques"
+msgstr "Sıralama Temelleri"
 
 #: howto/sorting.rst:0
 msgid "Author"
@@ -28,15 +29,7 @@ msgstr "Yazar"
 msgid "Andrew Dalke and Raymond Hettinger"
 msgstr "Andrew Dalke and Raymond Hettinger"
 
-#: howto/sorting.rst:0
-msgid "Release"
-msgstr "Yayın Versiyonu"
-
-#: howto/sorting.rst:7
-msgid "0.1"
-msgstr "0.1"
-
-#: howto/sorting.rst:10
+#: howto/sorting.rst:9
 msgid ""
 "Python lists have a built-in :meth:`list.sort` method that modifies the list "
 "in-place.  There is also a :func:`sorted` built-in function that builds a "
@@ -46,7 +39,7 @@ msgstr ""
 "yöntemine sahiptir.  Ayrıca, bir yinelenebilirden yeni bir sıralanmış liste "
 "oluşturan bir :func:`sorted` yerleşik işlevi de vardır."
 
-#: howto/sorting.rst:14
+#: howto/sorting.rst:13
 msgid ""
 "In this document, we explore the various techniques for sorting data using "
 "Python."
@@ -54,11 +47,11 @@ msgstr ""
 "Bu belgede, Python kullanarak verileri sıralamak için çeşitli teknikleri "
 "keşfediyor olacağız."
 
-#: howto/sorting.rst:18
+#: howto/sorting.rst:17
 msgid "Sorting Basics"
 msgstr "Sıralama Temelleri"
 
-#: howto/sorting.rst:20
+#: howto/sorting.rst:19
 msgid ""
 "A simple ascending sort is very easy: just call the :func:`sorted` function. "
 "It returns a new sorted list:"
@@ -66,7 +59,7 @@ msgstr ""
 "Basit bir artan sıralama yaratmak çok kolaydır: :func:`sorted` fonksiyonunu "
 "çağırmanız yeterlidir. Bu fonksiyon, yeni bir sıralanmış liste döndürür:"
 
-#: howto/sorting.rst:28
+#: howto/sorting.rst:27
 msgid ""
 "You can also use the :meth:`list.sort` method. It modifies the list in-place "
 "(and returns ``None`` to avoid confusion). Usually it's less convenient "
@@ -78,7 +71,7 @@ msgstr ""
 "func:`sorted` yönteminden daha az kullanışlıdır - ancak orijinal listeye "
 "ihtiyacınız yoksa, biraz daha verimlidir."
 
-#: howto/sorting.rst:40
+#: howto/sorting.rst:39
 msgid ""
 "Another difference is that the :meth:`list.sort` method is only defined for "
 "lists. In contrast, the :func:`sorted` function accepts any iterable."
@@ -87,11 +80,11 @@ msgstr ""
 "tanımlanmış olmasıdır. Buna karşılık, :func:`sorted` fonksiyonu herhangi bir "
 "yinelenebiliri kabul eder."
 
-#: howto/sorting.rst:49
+#: howto/sorting.rst:48
 msgid "Key Functions"
 msgstr "Anahtar Fonksiyonları"
 
-#: howto/sorting.rst:51
+#: howto/sorting.rst:50
 msgid ""
 "Both :meth:`list.sort` and :func:`sorted` have a *key* parameter to specify "
 "a function (or other callable) to be called on each list element prior to "
@@ -101,13 +94,13 @@ msgstr ""
 "listenin her öğesi üzerinde çağrılacak bir işlevi (veya başka bir "
 "çağrılabiliri) özellikle belirtmek için bir *key* parametresine sahiptir."
 
-#: howto/sorting.rst:55
+#: howto/sorting.rst:54
 msgid "For example, here's a case-insensitive string comparison:"
 msgstr ""
 "Örneğin, büyük/küçük harfe duyarlı olmayan bir dize karşılaştırması bu "
 "şekilde yapılmaktadır:"
 
-#: howto/sorting.rst:62
+#: howto/sorting.rst:61
 msgid ""
 "The value of the *key* parameter should be a function (or other callable) "
 "that takes a single argument and returns a key to use for sorting purposes. "
@@ -119,7 +112,7 @@ msgstr ""
 "çağrılabilir) olmalıdır. Bu teknik, hızlı çalışır çünkü anahtar işlevi her "
 "girdi (input) kaydı için tam olarak bir kez çağrılır."
 
-#: howto/sorting.rst:67
+#: howto/sorting.rst:66
 msgid ""
 "A common pattern is to sort complex objects using some of the object's "
 "indices as keys. For example:"
@@ -127,23 +120,32 @@ msgstr ""
 "Yaygın bir model, nesnenin bazı indislerini anahtar olarak kullanarak "
 "karmaşık nesneleri sıralamaktır. Örneğin:"
 
-#: howto/sorting.rst:80
+#: howto/sorting.rst:79
 msgid ""
 "The same technique works for objects with named attributes. For example:"
 msgstr ""
 "Aynı teknik, adlandırılmış niteliklere sahip nesneler için de geçerlidir. "
 "Örneğin:"
 
-#: howto/sorting.rst:101
-msgid "Operator Module Functions"
+#: howto/sorting.rst:99
+msgid ""
+"Objects with named attributes can be made by a regular class as shown above, "
+"or they can be instances of :class:`~dataclasses.dataclass` or a :term:"
+"`named tuple`."
+msgstr ""
+
+#: howto/sorting.rst:104
+#, fuzzy
+msgid "Operator Module Functions and Partial Function Evaluation"
 msgstr "Operatör Modülü İşlevleri"
 
-#: howto/sorting.rst:103
+#: howto/sorting.rst:106
+#, fuzzy
 msgid ""
-"The key-function patterns shown above are very common, so Python provides "
-"convenience functions to make accessor functions easier and faster. The :mod:"
-"`operator` module has :func:`~operator.itemgetter`, :func:`~operator."
-"attrgetter`, and a :func:`~operator.methodcaller` function."
+"The :term:`key function` patterns shown above are very common, so Python "
+"provides convenience functions to make accessor functions easier and faster. "
+"The :mod:`operator` module has :func:`~operator.itemgetter`, :func:"
+"`~operator.attrgetter`, and a :func:`~operator.methodcaller` function."
 msgstr ""
 "Yukarıda gösterilen anahtar-fonksiyon kalıpları çok yaygındır. Bu nedenle "
 "Python, erişim fonksiyonlarını daha kolay ve hızlı hale getirmek için bazı "
@@ -151,13 +153,13 @@ msgstr ""
 "itemgetter`, :func:`~operator.attrgetter` ve bir :func:`~operator."
 "methodcaller` fonksiyonuna sahiptir."
 
-#: howto/sorting.rst:108
+#: howto/sorting.rst:111
 msgid "Using those functions, the above examples become simpler and faster:"
 msgstr ""
 "Bu fonksiyonların kullanımı sonucunda, yukarıdaki örnekler daha basit ve "
 "hızlı hale gelir:"
 
-#: howto/sorting.rst:120
+#: howto/sorting.rst:123
 msgid ""
 "The operator module functions allow multiple levels of sorting. For example, "
 "to sort by *grade* then by *age*:"
@@ -165,11 +167,19 @@ msgstr ""
 "Operatör modülü fonksiyonları birden fazla seviyede sıralama yapılmasına "
 "izin verir. Örneğin, *sınıf* ve ardından *yaş*'a göre sıralamak için:"
 
-#: howto/sorting.rst:132
+#: howto/sorting.rst:134
+msgid ""
+"The :mod:`functools` module provides another helpful tool for making key-"
+"functions.  The :func:`~functools.partial` function can reduce the `arity "
+"<https://en.wikipedia.org/wiki/Arity>`_ of a multi-argument function making "
+"it suitable for use as a key-function."
+msgstr ""
+
+#: howto/sorting.rst:153
 msgid "Ascending and Descending"
 msgstr "Yükselen ve Alçalan"
 
-#: howto/sorting.rst:134
+#: howto/sorting.rst:155
 msgid ""
 "Both :meth:`list.sort` and :func:`sorted` accept a *reverse* parameter with "
 "a boolean value. This is used to flag descending sorts. For example, to get "
@@ -179,11 +189,11 @@ msgstr ""
 "parametresi kabul eder. Bu, azalan sıralamaları işaretlemek için kullanılır. "
 "Örneğin, öğrenci verilerini ters olarak *yaş* sırasına göre elde etmek için:"
 
-#: howto/sorting.rst:147
+#: howto/sorting.rst:168
 msgid "Sort Stability and Complex Sorts"
 msgstr "Sıralama Kararlılığı ve Karmaşık Sıralamalar"
 
-#: howto/sorting.rst:149
+#: howto/sorting.rst:170
 msgid ""
 "Sorts are guaranteed to be `stable <https://en.wikipedia.org/wiki/"
 "Sorting_algorithm#Stability>`_\\. That means that when multiple records have "
@@ -194,7 +204,7 @@ msgstr ""
 "fazla kayıt aynı anahtara sahip olduğunda, orijinal sıralamanın "
 "korunacağıdır."
 
-#: howto/sorting.rst:159
+#: howto/sorting.rst:180
 msgid ""
 "Notice how the two records for *blue* retain their original order so that "
 "``('blue', 1)`` is guaranteed to precede ``('blue', 2)``."
@@ -203,7 +213,7 @@ msgstr ""
 "böylece ``('blue', 1)`` kaydının ``('blue', 2)`` kaydından önce gelmesi "
 "garanti edilir."
 
-#: howto/sorting.rst:162
+#: howto/sorting.rst:183
 msgid ""
 "This wonderful property lets you build complex sorts in a series of sorting "
 "steps. For example, to sort the student data by descending *grade* and then "
@@ -214,7 +224,7 @@ msgstr ""
 "ardından artan *yaş* ile sıralamak için, önce *yaş* sıralamasını yapın ve "
 "ardından *sınıf* kullanarak tekrar sıralayın:"
 
-#: howto/sorting.rst:172
+#: howto/sorting.rst:193
 msgid ""
 "This can be abstracted out into a wrapper function that can take a list and "
 "tuples of field and order to sort them on multiple passes."
@@ -222,7 +232,7 @@ msgstr ""
 "Bu, bir listeyi ve alan çiftlerini alıp bunları birden fazla geçişte "
 "sıralayabilen bir sarmalayıcı fonksiyon oluşturacak şekilde soyutlanabilir."
 
-#: howto/sorting.rst:185
+#: howto/sorting.rst:206
 msgid ""
 "The `Timsort <https://en.wikipedia.org/wiki/Timsort>`_ algorithm used in "
 "Python does multiple sorts efficiently because it can take advantage of any "
@@ -232,16 +242,16 @@ msgstr ""
 "algoritması, bir veri kümesinde zaten mevcut olan herhangi bir sıralamadan "
 "yararlanabildiği için çoklu sıralamayı verimli bir şekilde yapar."
 
-#: howto/sorting.rst:190
+#: howto/sorting.rst:211
 msgid "Decorate-Sort-Undecorate"
 msgstr "Süsle-Sırala-Boz"
 
-#: howto/sorting.rst:192
+#: howto/sorting.rst:213
 msgid "This idiom is called Decorate-Sort-Undecorate after its three steps:"
 msgstr ""
 "Süsle-Sırala-Boz deyimi, içerdiği üç adımdan ilham alınarak oluşturulmuştur:"
 
-#: howto/sorting.rst:194
+#: howto/sorting.rst:215
 msgid ""
 "First, the initial list is decorated with new values that control the sort "
 "order."
@@ -249,11 +259,11 @@ msgstr ""
 "İlk olarak, ilk liste sıralama düzenini kontrol eden yeni değerlerle "
 "süslenir (dekore edilir)."
 
-#: howto/sorting.rst:196
+#: howto/sorting.rst:217
 msgid "Second, the decorated list is sorted."
 msgstr "İkinci olarak, dekore edilmiş liste sıralanır."
 
-#: howto/sorting.rst:198
+#: howto/sorting.rst:219
 msgid ""
 "Finally, the decorations are removed, creating a list that contains only the "
 "initial values in the new order."
@@ -261,14 +271,14 @@ msgstr ""
 "Son olarak, süslemeler kaldırılır ve yeni sırada yalnızca ilk değerleri "
 "içeren bir liste oluşturulur."
 
-#: howto/sorting.rst:201
+#: howto/sorting.rst:222
 msgid ""
 "For example, to sort the student data by *grade* using the DSU approach:"
 msgstr ""
 "Örneğin, DSU yaklaşımını kullanarak öğrenci verilerini *sınıf* bazında "
 "sıralamak için:"
 
-#: howto/sorting.rst:208
+#: howto/sorting.rst:231
 msgid ""
 "This idiom works because tuples are compared lexicographically; the first "
 "items are compared; if they are the same then the second items are compared, "
@@ -278,7 +288,7 @@ msgstr ""
 "karşılaştırıldığı için işe yarar: İlk öğeler karşılaştırılır, aynılarsa "
 "ikinci öğeler karşılaştırılır ve bu böyle devam eder."
 
-#: howto/sorting.rst:212
+#: howto/sorting.rst:235
 msgid ""
 "It is not strictly necessary in all cases to include the index *i* in the "
 "decorated list, but including it gives two benefits:"
@@ -286,7 +296,7 @@ msgstr ""
 "*i* indeksini dekore edilmiş listeye dahil etmek her durumda gerekli "
 "değildir, ancak dahil etmek iki fayda sağlar:"
 
-#: howto/sorting.rst:215
+#: howto/sorting.rst:238
 msgid ""
 "The sort is stable -- if two items have the same key, their order will be "
 "preserved in the sorted list."
@@ -294,7 +304,7 @@ msgstr ""
 "Sıralama sabittir -- iki öğe aynı anahtara sahipse, sıralanmış listede "
 "sıraları korunacaktır."
 
-#: howto/sorting.rst:218
+#: howto/sorting.rst:241
 msgid ""
 "The original items do not have to be comparable because the ordering of the "
 "decorated tuples will be determined by at most the first two items. So for "
@@ -305,7 +315,7 @@ msgstr ""
 "çiftlerin sıralaması en fazla ilk iki öğe tarafından belirlenecektir. "
 "Örneğin orijinal liste doğrudan sıralanamayan karmaşık sayılar içerebilir."
 
-#: howto/sorting.rst:223
+#: howto/sorting.rst:246
 msgid ""
 "Another name for this idiom is `Schwartzian transform <https://en.wikipedia."
 "org/wiki/Schwartzian_transform>`_\\, after Randal L. Schwartz, who "
@@ -315,7 +325,7 @@ msgstr ""
 "getiren Randal L. Schwartz'a atfen `Schwartzian transform <https://en."
 "wikipedia.org/wiki/Schwartzian_transform>`_\\'dur."
 
-#: howto/sorting.rst:227
+#: howto/sorting.rst:250
 msgid ""
 "Now that Python sorting provides key-functions, this technique is not often "
 "needed."
@@ -323,11 +333,11 @@ msgstr ""
 "Artık Python sıralama anahtar fonksiyonları sağladığından, bu tekniğe pek "
 "sık ihtiyaç duyulmamaktadır."
 
-#: howto/sorting.rst:230
+#: howto/sorting.rst:253
 msgid "Comparison Functions"
 msgstr "Karşılaştırma Fonksiyonları"
 
-#: howto/sorting.rst:232
+#: howto/sorting.rst:255
 msgid ""
 "Unlike key functions that return an absolute value for sorting, a comparison "
 "function computes the relative ordering for two inputs."
@@ -335,7 +345,7 @@ msgstr ""
 "Sıralama için mutlak bir değer döndüren anahtar işlevlerinin aksine, "
 "karşılaştırma işlevi iki girdi için göreceli bir sıralamayı hesaplar."
 
-#: howto/sorting.rst:235
+#: howto/sorting.rst:258
 msgid ""
 "For example, a `balance scale <https://upload.wikimedia.org/wikipedia/"
 "commons/1/17/Balance_à_tabac_1850.JPG>`_ compares two samples giving a "
@@ -349,7 +359,7 @@ msgstr ""
 "``cmp(a, b)`` karşılaştırma fonksiyonu; girdiler eşitse sıfır, küçükse "
 "negatif, büyükse pozitif bir değer döndürür."
 
-#: howto/sorting.rst:242
+#: howto/sorting.rst:265
 msgid ""
 "It is common to encounter comparison functions when translating algorithms "
 "from other languages.  Also, some libraries provide comparison functions as "
@@ -361,7 +371,7 @@ msgstr ""
 "olarak karşılaştırma fonksiyonları sağlar.  Örneğin, :func:`locale.strcoll` "
 "bir karşılaştırma fonksiyonudur."
 
-#: howto/sorting.rst:246
+#: howto/sorting.rst:269
 msgid ""
 "To accommodate those situations, Python provides :class:`functools."
 "cmp_to_key` to wrap the comparison function to make it usable as a key "
@@ -371,11 +381,11 @@ msgstr ""
 "anahtar fonksiyon olarak kullanılabilir hale getirmek için :class:`functools."
 "cmp_to_key` aracını sağlar::"
 
-#: howto/sorting.rst:253
+#: howto/sorting.rst:276
 msgid "Odds and Ends"
 msgstr "Tuhaflıklar ve Sonlar"
 
-#: howto/sorting.rst:255
+#: howto/sorting.rst:278
 msgid ""
 "For locale aware sorting, use :func:`locale.strxfrm` for a key function or :"
 "func:`locale.strcoll` for a comparison function.  This is necessary because "
@@ -387,7 +397,7 @@ msgstr ""
 "kullanabilirsiniz. Bu gereklidir çünkü \"alfabetik\" sıralamalar, temel "
 "alfabe aynı olsa bile kültürler arasında farklılık gösterebilir."
 
-#: howto/sorting.rst:260
+#: howto/sorting.rst:283
 msgid ""
 "The *reverse* parameter still maintains sort stability (so that records with "
 "equal keys retain the original order). Interestingly, that effect can be "
@@ -399,7 +409,7 @@ msgstr ""
 "şekilde bu etki, parametre olmadan yerleşik :func:`reversed` fonksiyonu iki "
 "kez kullanılarak da simüle edilebilir:"
 
-#: howto/sorting.rst:274
+#: howto/sorting.rst:297
 #, fuzzy
 msgid ""
 "The sort routines use ``<`` when making comparisons between two objects. So, "
@@ -410,16 +420,16 @@ msgstr ""
 "kullanır. Bu nedenle, bir :meth:`__lt__` yöntemi tanımlayarak, bir sınıfa "
 "standart bir sıralama düzeni eklemek kolaydır:"
 
-#: howto/sorting.rst:284
-#, fuzzy
+#: howto/sorting.rst:307
 msgid ""
 "However, note that ``<`` can fall back to using :meth:`~object.__gt__` if :"
-"meth:`~object.__lt__` is not implemented (see :func:`object.__lt__`)."
+"meth:`~object.__lt__` is not implemented (see :func:`object.__lt__` for "
+"details on the mechanics).  To avoid surprises, :pep:`8` recommends that all "
+"six comparison methods be implemented. The :func:`~functools.total_ordering` "
+"decorator is provided to make that task easier."
 msgstr ""
-"Ancak, :meth:`__lt__` uygulanmamışsa, ``<``'ın :meth:`__gt__` kullanımına "
-"geri dönebileceğini unutmayın (bkz. :func:`object.__lt__`)."
 
-#: howto/sorting.rst:287
+#: howto/sorting.rst:314
 msgid ""
 "Key functions need not depend directly on the objects being sorted. A key "
 "function can also access external resources. For instance, if the student "
@@ -430,3 +440,54 @@ msgstr ""
 "anahtar işlevi, harici kaynaklara da erişebilir. Örneğin, öğrenci notları "
 "bir sözlükte saklanıyorsa, öğrenci adlarından oluşan ayrı bir listenin "
 "sıralanmasında da kullanılabilirler:"
+
+#: howto/sorting.rst:327
+msgid "Partial Sorts"
+msgstr ""
+
+#: howto/sorting.rst:329
+msgid ""
+"Some applications require only some of the data to be ordered.  The standard "
+"library provides several tools that do less work than a full sort:"
+msgstr ""
+
+#: howto/sorting.rst:332
+msgid ""
+":func:`min` and :func:`max` return the smallest and largest values, "
+"respectively.  These functions make a single pass over the input data and "
+"require almost no auxiliary memory."
+msgstr ""
+
+#: howto/sorting.rst:336
+msgid ""
+":func:`heapq.nsmallest` and :func:`heapq.nlargest` return the *n* smallest "
+"and largest values, respectively.  These functions make a single pass over "
+"the data keeping only *n* elements in memory at a time.  For values of *n* "
+"that are small relative to the number of inputs, these functions make far "
+"fewer comparisons than a full sort."
+msgstr ""
+
+#: howto/sorting.rst:342
+msgid ""
+":func:`heapq.heappush` and :func:`heapq.heappop` create and maintain a "
+"partially sorted arrangement of data that keeps the smallest element at "
+"position ``0``.  These functions are suitable for implementing priority "
+"queues which are commonly used for task scheduling."
+msgstr ""
+
+#~ msgid "Sorting HOW TO"
+#~ msgstr "Sıralama NASIL YAPILIR"
+
+#~ msgid "Release"
+#~ msgstr "Yayın Versiyonu"
+
+#~ msgid "0.1"
+#~ msgstr "0.1"
+
+#, fuzzy
+#~ msgid ""
+#~ "However, note that ``<`` can fall back to using :meth:`~object.__gt__` "
+#~ "if :meth:`~object.__lt__` is not implemented (see :func:`object.__lt__`)."
+#~ msgstr ""
+#~ "Ancak, :meth:`__lt__` uygulanmamışsa, ``<``'ın :meth:`__gt__` kullanımına "
+#~ "geri dönebileceğini unutmayın (bkz. :func:`object.__lt__`)."

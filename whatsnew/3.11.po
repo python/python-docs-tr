@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-04 05:12+0300\n"
+"POT-Creation-Date: 2024-02-24 17:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -758,9 +758,9 @@ msgstr ""
 msgid ""
 "Changed :meth:`Enum.__format__() <enum.Enum.__format__>` (the default for :"
 "func:`format`, :meth:`str.format` and :term:`f-string`\\s) to always produce "
-"the same result as :meth:`Enum.__str__()`:  for enums inheriting from :class:"
-"`~enum.ReprEnum` it will be the member's value; for all other enums it will "
-"be the enum and member name (e.g. ``Color.RED``)."
+"the same result as :meth:`Enum.__str__() <enum.Enum.__str__>`:  for enums "
+"inheriting from :class:`~enum.ReprEnum` it will be the member's value; for "
+"all other enums it will be the enum and member name (e.g. ``Color.RED``)."
 msgstr ""
 
 #: whatsnew/3.11.rst:679
@@ -2104,7 +2104,7 @@ msgstr ""
 
 #: whatsnew/3.11.rst:1607
 msgid ""
-":opcode:`ASYNC_GEN_WRAP`, :opcode:`RETURN_GENERATOR` and :opcode:`SEND`, "
+":opcode:`!ASYNC_GEN_WRAP`, :opcode:`RETURN_GENERATOR` and :opcode:`SEND`, "
 "used in generators and co-routines."
 msgstr ""
 
@@ -2126,7 +2126,7 @@ msgstr ""
 
 #: whatsnew/3.11.rst:1618
 msgid ""
-":opcode:`CHECK_EG_MATCH`  and  :opcode:`PREP_RERAISE_STAR`, to handle the :"
+":opcode:`CHECK_EG_MATCH`  and  :opcode:`!PREP_RERAISE_STAR`, to handle the :"
 "ref:`new exception groups and except* <whatsnew311-pep654>` added in :pep:"
 "`654`."
 msgstr ""
@@ -2190,11 +2190,11 @@ msgid ":opcode:`CALL`"
 msgstr ""
 
 #: whatsnew/3.11.rst:0
-msgid ":opcode:`KW_NAMES`"
+msgid ":opcode:`!KW_NAMES`"
 msgstr ""
 
 #: whatsnew/3.11.rst:0
-msgid ":opcode:`PRECALL`"
+msgid ":opcode:`!PRECALL`"
 msgstr ""
 
 #: whatsnew/3.11.rst:0
@@ -2272,11 +2272,11 @@ msgid ":opcode:`JUMP_BACKWARD`"
 msgstr ""
 
 #: whatsnew/3.11.rst:0
-msgid ":opcode:`POP_JUMP_BACKWARD_IF_* <POP_JUMP_BACKWARD_IF_TRUE>`"
+msgid ":opcode:`!POP_JUMP_BACKWARD_IF_*`"
 msgstr ""
 
 #: whatsnew/3.11.rst:0
-msgid ":opcode:`POP_JUMP_FORWARD_IF_* <POP_JUMP_FORWARD_IF_TRUE>`"
+msgid ":opcode:`!POP_JUMP_FORWARD_IF_*`"
 msgstr ""
 
 #: whatsnew/3.11.rst:1653
@@ -2303,8 +2303,8 @@ msgstr ""
 
 #: whatsnew/3.11.rst:1663
 msgid ""
-"All jump opcodes are now relative, including the existing :opcode:"
-"`JUMP_IF_TRUE_OR_POP` and :opcode:`JUMP_IF_FALSE_OR_POP`. The argument is "
+"All jump opcodes are now relative, including the existing :opcode:`!"
+"JUMP_IF_TRUE_OR_POP` and :opcode:`!JUMP_IF_FALSE_OR_POP`. The argument is "
 "now an offset from the current instruction rather than an absolute location."
 msgstr ""
 
@@ -3014,8 +3014,8 @@ msgstr ""
 
 #: whatsnew/3.11.rst:1970
 msgid ""
-"Removed the :mod:`distutils` ``bdist_msi`` command deprecated in Python 3.9. "
-"Use ``bdist_wheel`` (wheel packages) instead. (Contributed by Hugo van "
+"Removed the :mod:`!distutils` ``bdist_msi`` command deprecated in Python "
+"3.9. Use ``bdist_wheel`` (wheel packages) instead. (Contributed by Hugo van "
 "Kemenade in :issue:`45124`.)"
 msgstr ""
 
@@ -3505,7 +3505,7 @@ msgstr ""
 
 #: whatsnew/3.11.rst:2298
 msgid ""
-":c:func:`PyCode_New` and :c:func:`PyCode_NewWithPosOnlyArgs` now take an "
+":c:func:`!PyCode_New` and :c:func:`!PyCode_NewWithPosOnlyArgs` now take an "
 "additional ``exception_table`` argument. Using these functions should be "
 "avoided, if at all possible. To get a custom code object: create a code "
 "object using the compiler, then get a modified version with the ``replace`` "
@@ -3608,7 +3608,7 @@ msgstr ""
 
 #: whatsnew/3.11.rst:2405
 msgid ""
-"The :c:func:`PyUnicode_CHECK_INTERNED` macro has been excluded from the "
+"The :c:func:`!PyUnicode_CHECK_INTERNED` macro has been excluded from the "
 "limited C API. It was never usable there, because it used internal "
 "structures which are not available in the limited C API. (Contributed by "
 "Victor Stinner in :issue:`46007`.)"
@@ -3767,8 +3767,8 @@ msgstr ""
 #: whatsnew/3.11.rst:2466
 msgid ""
 "Debuggers that accessed the :attr:`~frame.f_locals` directly *must* call :c:"
-"func:`PyFrame_GetLocals` instead. They no longer need to call :c:func:"
-"`PyFrame_FastToLocalsWithError` or :c:func:`PyFrame_LocalsToFast`, in fact "
+"func:`PyFrame_GetLocals` instead. They no longer need to call :c:func:`!"
+"PyFrame_FastToLocalsWithError` or :c:func:`!PyFrame_LocalsToFast`, in fact "
 "they should not call those functions. The necessary updating of the frame is "
 "now managed by the virtual machine."
 msgstr ""
@@ -3959,11 +3959,11 @@ msgid ":c:func:`!PyUnicode_GetSize`"
 msgstr ""
 
 #: whatsnew/3.11.rst:2607
-msgid ":c:func:`PyUnicode_IS_COMPACT`"
+msgid ":c:func:`!PyUnicode_IS_COMPACT`"
 msgstr ""
 
 #: whatsnew/3.11.rst:2608
-msgid ":c:func:`PyUnicode_IS_READY`"
+msgid ":c:func:`!PyUnicode_IS_READY`"
 msgstr ""
 
 #: whatsnew/3.11.rst:2609
@@ -4083,7 +4083,7 @@ msgstr ""
 #: whatsnew/3.11.rst:2662
 msgid ""
 "Exclude :c:func:`PyWeakref_GET_OBJECT` from the limited C API. It never "
-"worked since the :c:type:`PyWeakReference` structure is opaque in the "
+"worked since the :c:type:`!PyWeakReference` structure is opaque in the "
 "limited C API. (Contributed by Victor Stinner in :issue:`35134`.)"
 msgstr ""
 
@@ -4168,4 +4168,36 @@ msgstr ""
 msgid ""
 "See :pep:`624` for details and :pep:`migration guidance <624#alternative-"
 "apis>`. (Contributed by Inada Naoki in :issue:`44029`.)"
+msgstr ""
+
+#: whatsnew/3.11.rst:2705
+msgid "Notable changes in 3.11.4"
+msgstr ""
+
+#: whatsnew/3.11.rst:2708
+msgid "tarfile"
+msgstr ""
+
+#: whatsnew/3.11.rst:2710
+msgid ""
+"The extraction methods in :mod:`tarfile`, and :func:`shutil.unpack_archive`, "
+"have a new a *filter* argument that allows limiting tar features than may be "
+"surprising or dangerous, such as creating files outside the destination "
+"directory. See :ref:`tarfile-extraction-filter` for details. In Python 3.12, "
+"use without the *filter* argument will show a :exc:`DeprecationWarning`. In "
+"Python 3.14, the default will switch to ``'data'``. (Contributed by Petr "
+"Viktorin in :pep:`706`.)"
+msgstr ""
+
+#: whatsnew/3.11.rst:2722
+msgid "Notable changes in 3.11.5"
+msgstr ""
+
+#: whatsnew/3.11.rst:2725
+msgid "OpenSSL"
+msgstr ""
+
+#: whatsnew/3.11.rst:2727
+msgid ""
+"Windows builds and macOS installers from python.org now use OpenSSL 3.0."
 msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 22:33+0300\n"
+"POT-Creation-Date: 2024-02-24 17:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -296,7 +296,7 @@ msgstr ""
 #: library/asyncio-policy.rst:240
 msgid ""
 "There is no noticeable overhead when handling a big number of children "
-"(*O(1)* each time a child terminates), but starting a thread per process "
+"(*O*\\ (1) each time a child terminates), but starting a thread per process "
 "requires extra memory."
 msgstr ""
 
@@ -326,7 +326,7 @@ msgstr ""
 #: library/asyncio-policy.rst:259
 msgid ""
 "The solution is safe but it has a significant overhead when handling a big "
-"number of processes (*O(n)* each time a :py:data:`SIGCHLD` is received)."
+"number of processes (*O*\\ (*n*) each time a :py:data:`SIGCHLD` is received)."
 msgstr ""
 
 #: library/asyncio-policy.rst:269
@@ -339,8 +339,8 @@ msgstr ""
 #: library/asyncio-policy.rst:276
 msgid ""
 "This solution is as safe as :class:`MultiLoopChildWatcher` and has the same "
-"*O(N)* complexity but requires a running event loop in the main thread to "
-"work."
+"*O*\\ (*n*) complexity but requires a running event loop in the main thread "
+"to work."
 msgstr ""
 
 #: library/asyncio-policy.rst:283
@@ -353,7 +353,7 @@ msgstr ""
 #: library/asyncio-policy.rst:287
 msgid ""
 "There is no noticeable overhead when handling a big number of children "
-"(*O(1)* each time a child terminates)."
+"(*O*\\ (1) each time a child terminates)."
 msgstr ""
 
 #: library/asyncio-policy.rst:290

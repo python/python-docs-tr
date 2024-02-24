@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-04 18:33+0000\n"
+"POT-Creation-Date: 2024-02-24 17:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -55,7 +55,19 @@ msgid ""
 "by :func:`termios.tcgetattr`, to that of a tty in cbreak mode."
 msgstr ""
 
+#: library/tty.rst:38
+msgid ""
+"This clears the ``ECHO`` and ``ICANON`` local mode flags in *mode* as well "
+"as setting the minimum input to 1 byte with no delay."
+msgstr ""
+
 #: library/tty.rst:43
+msgid ""
+"The ``ICRNL`` flag is no longer cleared. This matches Linux and macOS ``stty "
+"cbreak`` behavior and what :func:`setcbreak` historically did."
+msgstr ""
+
+#: library/tty.rst:50
 msgid ""
 "Change the mode of the file descriptor *fd* to raw. If *when* is omitted, it "
 "defaults to :const:`termios.TCSAFLUSH`, and is passed to :func:`termios."
@@ -63,11 +75,11 @@ msgid ""
 "setting *fd* to raw mode; this value is returned."
 msgstr ""
 
-#: library/tty.rst:59
+#: library/tty.rst:69
 msgid "The return value is now the original tty attributes, instead of None."
 msgstr ""
 
-#: library/tty.rst:54
+#: library/tty.rst:61
 msgid ""
 "Change the mode of file descriptor *fd* to cbreak. If *when* is omitted, it "
 "defaults to :const:`termios.TCSAFLUSH`, and is passed to :func:`termios."
@@ -75,10 +87,23 @@ msgid ""
 "setting *fd* to cbreak mode; this value is returned."
 msgstr ""
 
-#: library/tty.rst:65
+#: library/tty.rst:66
+msgid ""
+"This clears the ``ECHO`` and ``ICANON`` local mode flags as well as setting "
+"the minimum input to 1 byte with no delay."
+msgstr ""
+
+#: library/tty.rst:72
+msgid ""
+"The ``ICRNL`` flag is no longer cleared. This restores the behavior of "
+"Python 3.11 and earlier as well as matching what Linux, macOS, & BSDs "
+"describe in their ``stty(1)`` man pages regarding cbreak mode."
+msgstr ""
+
+#: library/tty.rst:80
 msgid "Module :mod:`termios`"
 msgstr ""
 
-#: library/tty.rst:66
+#: library/tty.rst:81
 msgid "Low-level terminal control interface."
 msgstr ""
