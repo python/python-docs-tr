@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-04 18:33+0000\n"
-"PO-Revision-Date: 2023-03-01 12:10+0300\n"
+"PO-Revision-Date: 2024-02-27 21:22+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: tutorial/introduction.rst:5
 msgid "An Informal Introduction to Python"
@@ -191,7 +191,7 @@ msgstr ""
 
 #: tutorial/introduction.rst:142
 msgid "Text"
-msgstr ""
+msgstr "Metin"
 
 #: tutorial/introduction.rst:144
 msgid ""
@@ -201,12 +201,20 @@ msgid ""
 "\"``Yay! :)``\". They can be enclosed in single quotes (``'...'``) or double "
 "quotes (``\"...\"``) with the same result [#]_."
 msgstr ""
+"Python sayıların yanı sıra metinleri de (\"string\" olarak adlandırılan :"
+"class:`str` türü ile temsil edilir) işleyebilir.  Bu karakterleri \"``!``\", "
+"kelimeleri \"``tavşan``\", isimleri \"``Paris``\", cümleleri \"``Arkanı "
+"kolla.``\", vb. içerir. \"``Yay! :)``\". Tek tırnak (``'...'``) veya çift "
+"tırnak (``\"...\"``) içine alınabilirler ve aynı sonucu verirler [#]_."
 
 #: tutorial/introduction.rst:157
 msgid ""
 "To quote a quote, we need to \"escape\" it, by preceding it with ``\\``. "
 "Alternatively, we can use the other type of quotation marks::"
 msgstr ""
+"Bir alıntıyı alıntılamak için, önüne ``\\`` koyarak \"kaçmamız\"(escape) "
+"gerekir. Alternatif olarak, diğer tırnak işareti türlerini de "
+"kullanabiliriz::"
 
 #: tutorial/introduction.rst:171
 msgid ""
@@ -215,6 +223,9 @@ msgid ""
 "omitting the enclosing quotes and by printing escaped and special "
 "characters::"
 msgstr ""
+"Python kabuğunda(shell), string tanımı ve çıktı stringi farklı görünebilir.  "
+"func:`print` fonksiyonu, tırnak işaretlerini atlayarak ve kaçan ve özel "
+"karakterleri yazdırarak daha okunabilir bir çıktı üretir::"
 
 #: tutorial/introduction.rst:182
 msgid ""
@@ -531,7 +542,6 @@ msgid "First Steps Towards Programming"
 msgstr "Programlamaya Doğru İlk Adımlar"
 
 #: tutorial/introduction.rst:481
-#, fuzzy
 msgid ""
 "Of course, we can use Python for more complicated tasks than adding two and "
 "two together.  For instance, we can write an initial sub-sequence of the "
@@ -656,7 +666,7 @@ msgstr ""
 
 #: tutorial/introduction.rst:21
 msgid "comment"
-msgstr ""
+msgstr "yorum"
 
 #~ msgid "Strings"
 #~ msgstr "Dizeler"
