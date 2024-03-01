@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-24 17:22+0000\n"
+"POT-Creation-Date: 2024-03-01 20:27+0000\n"
 "PO-Revision-Date: 2023-02-01 18:55-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -6842,11 +6842,12 @@ msgid "The NotImplemented Object"
 msgstr "NotImplemented Nesnesi"
 
 #: library/stdtypes.rst:5448
+#, fuzzy
 msgid ""
 "This object is returned from comparisons and binary operations when they are "
 "asked to operate on types they don't support. See :ref:`comparisons` for "
-"more information.  There is exactly one ``NotImplemented`` object. "
-"``type(NotImplemented)()`` produces the singleton instance."
+"more information.  There is exactly one :data:`NotImplemented` object. :code:"
+"`type(NotImplemented)()` produces the singleton instance."
 msgstr ""
 "Bu nesne, desteklemedikleri türlerde çalışmaları istendiğinde "
 "karşılaştırmalardan ve ikili işlemlerden döndürülür. Daha fazla bilgi için :"
@@ -6854,7 +6855,8 @@ msgstr ""
 "nesnesi vardır. ``type(NotImplemented)()``, singleton örneğini üretir."
 
 #: library/stdtypes.rst:5453
-msgid "It is written as ``NotImplemented``."
+#, fuzzy
+msgid "It is written as :code:`NotImplemented`."
 msgstr "''NotImplemented'' olarak yazılmıştır."
 
 #: library/stdtypes.rst:5459
