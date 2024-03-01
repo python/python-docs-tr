@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-01 00:16+0000\n"
-"PO-Revision-Date: 2022-12-29 00:15+0300\n"
+"PO-Revision-Date: 2024-03-01 20:13+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: tutorial/modules.rst:5
 msgid "Modules"
@@ -272,7 +272,6 @@ msgid "The Module Search Path"
 msgstr "Modül Arama Yolu"
 
 #: tutorial/modules.rst:186
-#, fuzzy
 msgid ""
 "When a module named :mod:`!spam` is imported, the interpreter first searches "
 "for a built-in module with that name. These module names are listed in :data:"
@@ -280,11 +279,11 @@ msgid ""
 "file:`spam.py` in a list of directories given by the variable :data:`sys."
 "path`.  :data:`sys.path` is initialized from these locations:"
 msgstr ""
-":mod:`spam` adlı bir modül içe aktarıldığında, yorumlayıcı önce bu ada sahip "
-"yerleşik bir modül arar. Bu modül adları :data:`sys.builtin_module_names` "
-"içinde listelenmiştir. Bulunamazsa, :data:`sys.path` değişkeni tarafından "
-"verilen dizin listesinde :file:`spam.py` adlı bir dosyayı arar. :data:`sys."
-"path` şu konumlardan başlatılır:"
+"mod:`!spam` adında bir modül içe aktarıldığında, yorumlayıcı ilk olarak bu "
+"ada sahip gömülü bir modül arar. Bu modül adları :data:`sys."
+"builtin_module_names` içinde listelenir. Bulamazsa, :data:`sys.path` "
+"değişkeni tarafından verilen dizin listesinde :file:`spam.py` adlı bir dosya "
+"arar. :data:`sys.path` bu konumlardan başlatılır:"
 
 #: tutorial/modules.rst:192
 msgid ""
@@ -530,7 +529,6 @@ msgid "Packages"
 msgstr "Paketler"
 
 #: tutorial/modules.rst:391
-#, fuzzy
 msgid ""
 "Packages are a way of structuring Python's module namespace by using "
 "\"dotted module names\".  For example, the module name :mod:`!A.B` "
@@ -540,13 +538,13 @@ msgid ""
 "saves the authors of multi-module packages like NumPy or Pillow from having "
 "to worry about each other's module names."
 msgstr ""
-"Paketler, \"noktalı modül adlarını\" kullanarak Python'un modül ad alanını "
-"yapılandırmanın bir yoludur. Örneğin, modül adı :mod:`A.B`, \"A\" adlı bir "
-"pakette \"B\" adlı bir alt modülü belirtir. Modüllerin kullanılması, farklı "
-"modüllerin yazarlarını birbirlerinin global değişken adları hakkında "
-"endişelenmekten kurtardığı gibi, noktalı modül adlarının kullanılması, NumPy "
-"veya Pillow gibi çok modüllü paketlerin yazarlarını birbirlerinin modül "
-"adları hakkında endişelenmekten kurtarır."
+"Paketler, Python'un modül isim alanını \"noktalı modül isimleri\" kullanarak "
+"yapılandırmanın bir yoludur.  Örneğin, :mod:`!A.B` modül adı, ``A`` adlı bir "
+"paketteki ``B`` adlı bir alt modülü belirtir.  Modül kullanımının farklı "
+"modüllerin yazarlarını birbirlerinin global değişken isimleri hakkında "
+"endişelenmekten kurtarması gibi, noktalı modül isimlerinin kullanımı da "
+"NumPy veya Pillow gibi çok modüllü paketlerin yazarlarını birbirlerinin "
+"modül isimleri hakkında endişelenmekten kurtarır."
 
 #: tutorial/modules.rst:399
 msgid ""
@@ -583,7 +581,6 @@ msgstr ""
 "üzerindeki dizinleri arar."
 
 #: tutorial/modules.rst:439
-#, fuzzy
 msgid ""
 "The :file:`__init__.py` files are required to make Python treat directories "
 "containing the file as packages (unless using a :term:`namespace package`, a "
@@ -593,13 +590,14 @@ msgid ""
 "can just be an empty file, but it can also execute initialization code for "
 "the package or set the ``__all__`` variable, described later."
 msgstr ""
-"Python'un dosyayı içeren dizinleri paketler olarak ele alması için :file:"
-"`__init__.py` dosyaları gereklidir. Bu, ``string`` gibi ortak bir ada sahip "
-"dizinlerin, daha sonra modül arama yolunda oluşan geçerli modülleri "
-"istemeden gizlemesini önler. En basit durumda, :file:`__init__.py` yalnızca "
-"boş bir dosya olabilir, ancak aynı zamanda paket için başlatma kodunu "
-"çalıştırabilir veya daha sonra açıklanacak olan ``__all__`` değişkenini "
-"ayarlayabilir."
+"Dosya:`__init__.py` dosyaları, Python'un dosyayı içeren dizinleri paket "
+"olarak ele almasını sağlamak için gereklidir (nispeten gelişmiş bir özellik "
+"olan :term:`namespace package` kullanılmadığı sürece). Bu, ``string`` gibi "
+"ortak bir ada sahip dizinlerin, modül arama yolunda daha sonra ortaya çıkan "
+"geçerli modülleri istemeden gizlemesini önler. En basit durumda, :file:"
+"`__init__.py` sadece boş bir dosya olabilir, ancak aynı zamanda paket için "
+"başlatma kodunu çalıştırabilir veya daha sonra açıklanacak olan ``__all__`` "
+"değişkenini ayarlayabilir."
 
 #: tutorial/modules.rst:447
 msgid ""
@@ -610,25 +608,23 @@ msgstr ""
 "örneğin::"
 
 #: tutorial/modules.rst:452
-#, fuzzy
 msgid ""
 "This loads the submodule :mod:`!sound.effects.echo`.  It must be referenced "
 "with its full name. ::"
 msgstr ""
-"Bu, :mod:`sound.effects.echo` alt modülünü yükler. Tam adı ile referans "
-"gösterilmelidir. ::"
+"Bu, :mod:`!sound.effects.echo` alt modülünü yükler.  Tam adı ile referans "
+"verilmelidir. ::"
 
 #: tutorial/modules.rst:457
 msgid "An alternative way of importing the submodule is::"
 msgstr "Alt modülü içe aktarmanın alternatif bir yolu::"
 
 #: tutorial/modules.rst:461
-#, fuzzy
 msgid ""
 "This also loads the submodule :mod:`!echo`, and makes it available without "
 "its package prefix, so it can be used as follows::"
 msgstr ""
-"Bu ayrıca :mod:`echo` alt modülünü yükler ve paket öneki olmadan "
+"Bu aynı zamanda :mod:`!echo` alt modülünü yükler ve paket öneki olmadan "
 "kullanılabilir hale getirir, böylece aşağıdaki gibi kullanılabilir::"
 
 #: tutorial/modules.rst:466
@@ -640,7 +636,6 @@ msgstr ""
 "aktarmaktır::"
 
 #: tutorial/modules.rst:470
-#, fuzzy
 msgid ""
 "Again, this loads the submodule :mod:`!echo`, but this makes its function :"
 "func:`!echofilter` directly available::"
@@ -718,13 +713,12 @@ msgstr ""
 "içerebilir::"
 
 #: tutorial/modules.rst:513
-#, fuzzy
 msgid ""
 "This would mean that ``from sound.effects import *`` would import the three "
 "named submodules of the :mod:`!sound.effects` package."
 msgstr ""
-"Bu, ``from sound.effects import *`` öğesinin :mod:`sound` paketinin "
-"adlandırılmış üç alt modülünü içe aktaracağı anlamına gelir."
+"Yine, bu :mod:`!echo` alt modülünü yükler, ancak bu onun :func:`!echofilter` "
+"işlevini doğrudan kullanılabilir hale getirir::"
 
 #: tutorial/modules.rst:516
 msgid ""
@@ -735,9 +729,14 @@ msgid ""
 "submodule, because it is shadowed by the locally defined ``reverse`` "
 "function::"
 msgstr ""
+"Alt modüllerin yerel olarak tanımlanmış isimler tarafından "
+"gölgelenebileceğini unutmayın. Örneğin, :file:`sound/effects/__init__.py` "
+"dosyasına bir ``reverse`` fonksiyonu eklediyseniz, ``from sound.effects "
+"import *`` sadece iki alt modül olan ``echo`` ve ``surround``u içe aktarır, "
+"ancak *reverse`` alt modülünü içe aktarmaz, çünkü yerel olarak tanımlanmış "
+"``reverse`` fonksiyonu tarafından gölgelenir::"
 
 #: tutorial/modules.rst:532
-#, fuzzy
 msgid ""
 "If ``__all__`` is not defined, the statement ``from sound.effects import *`` "
 "does *not* import all submodules from the package :mod:`!sound.effects` into "
@@ -749,17 +748,17 @@ msgid ""
 "were explicitly loaded by previous :keyword:`import` statements.  Consider "
 "this code::"
 msgstr ""
-"``__all__`` tanımlı değilse, ``from sound.effects import *`` ifadesi :mod:"
-"`sound.effects` paketindeki tüm alt modülleri geçerli ad alanına *almaz*; "
-"yalnızca :mod:`sound.effects` paketinin içe aktarılmasını sağlar (mümkünse "
-"herhangi bir başlatma kodunu :file:`__init__.py` içinde çalıştırır) ve "
-"ardından pakette tanımlanan adları içe aktarır. Bu, :file:`__init__.py` "
-"tarafından tanımlanan tüm adları (ve açıkça yüklenen alt modülleri) içerir. "
-"Ayrıca, önceki :keyword:`import` ifadeleri tarafından açıkça yüklenen "
-"paketin tüm alt modüllerini de içerir. Bu kodu dikkate alın ::"
+"Eğer ``__all__`` tanımlanmamışsa, ``from sound.effects import *`` ifadesi :"
+"mod:`!sound.effects` paketindeki tüm alt modülleri geçerli isim alanına "
+"import etmez; sadece :mod:`!sound.effects` paketinin import edildiğinden "
+"emin olur (muhtemelen :file:`__init__.py` içindeki herhangi bir başlatma "
+"kodunu çalıştırır) ve sonra pakette tanımlanan isimleri import eder.  Bu, :"
+"file:`__init__.py` tarafından tanımlanan (ve alt modülleri açıkça yüklenen) "
+"tüm isimleri içerir.  Ayrıca, önceki :keyword:`import` deyimleri tarafından "
+"açıkça yüklenmiş olan paketin tüm alt modüllerini de içerir.  Bu kodu göz "
+"önünde bulundurun::"
 
 #: tutorial/modules.rst:545
-#, fuzzy
 msgid ""
 "In this example, the :mod:`!echo` and :mod:`!surround` modules are imported "
 "in the current namespace because they are defined in the :mod:`!sound."
@@ -769,7 +768,10 @@ msgstr ""
 "Bu örnekte, :mod:`echo` ve :mod:`surround` modülleri geçerli ad alanına "
 "aktarılır, çünkü bunlar ``from...import`` ifadesi yürütüldüğünde :mod:`sound."
 "effects` paketinde tanımlanmışlardır. (Bu aynı zamanda ``__all__`` "
-"tanımlandığında da çalışır.)"
+"tanımlandığında da çalışır.)\vBu örnekte, :mod:`!echo` ve :mod:`!surround` "
+"modülleri, ``from...import`` deyimi çalıştırıldığında :mod:`!sound.effects` "
+"paketinde tanımlandıkları için geçerli ad alanında içe aktarılır.  (Bu aynı "
+"zamanda ``__all__`` tanımlandığında da çalışır)."
 
 #: tutorial/modules.rst:550
 msgid ""
@@ -797,7 +799,6 @@ msgid "Intra-package References"
 msgstr "Paket İçi Referanslar"
 
 #: tutorial/modules.rst:565
-#, fuzzy
 msgid ""
 "When packages are structured into subpackages (as with the :mod:`!sound` "
 "package in the example), you can use absolute imports to refer to submodules "
@@ -805,14 +806,13 @@ msgid ""
 "vocoder` needs to use the :mod:`!echo` module in the :mod:`!sound.effects` "
 "package, it can use ``from sound.effects import echo``."
 msgstr ""
-"Paketler alt paketler halinde yapılandırıldığında (örnekteki :mod:`sound` "
-"paketinde olduğu gibi), kardeş paketlerin alt modüllerine atıfta bulunmak "
-"için mutlak içe aktarma kullanabilirsiniz. Örneğin, :mod:`sound.filters."
-"vocoder` modülünün :mod:`sound.effects` paketindeki :mod:`echo` modülünü "
-"kullanması gerekiyorsa, ``from sound.effects import echo`` 'yu kullanabilir."
+"Paketler alt paketler halinde yapılandırıldığında (örnekteki :mod:`!sound` "
+"paketinde olduğu gibi), kardeş paketlerin alt modüllerine başvurmak için "
+"mutlak içe aktarımları kullanabilirsiniz.  Örneğin, :mod:`!sound.filters."
+"vocoder` modülünün :mod:`!sound.effects` paketindeki :mod:`!echo` modülünü "
+"kullanması gerekiyorsa, ``from sound.effects import echo`` kullanabilir.\v"
 
 #: tutorial/modules.rst:571
-#, fuzzy
 msgid ""
 "You can also write relative imports, with the ``from module import name`` "
 "form of import statement.  These imports use leading dots to indicate the "
@@ -820,9 +820,10 @@ msgid ""
 "`!surround` module for example, you might use::"
 msgstr ""
 "Ayrıca, içe aktarma ifadesinin ``from module import name`` formuyla göreli "
-"içe aktarmaları da yazabilirsiniz. Bu içe aktarmalar, göreli içe aktarmada "
-"yer alan mevcut ve ana paketleri belirtmek için baştaki noktaları kullanır. "
-"Örneğin :mod:`surround` modülünden şunları kullanabilirsiniz::"
+"içe aktarmaları(relative import) da yazabilirsiniz. Bu içe aktarmalar, "
+"göreli içe aktarmada(relative import) yer alan mevcut ve ana paketleri "
+"belirtmek için baştaki noktaları kullanır. Örneğin :mod:`surround` "
+"modülünden şunları kullanabilirsiniz::"
 
 #: tutorial/modules.rst:580
 msgid ""
@@ -877,13 +878,12 @@ msgstr ""
 "alanına ekler."
 
 #: tutorial/modules.rst:267 tutorial/modules.rst:348
-#, fuzzy
 msgid "module"
-msgstr "Modüller"
+msgstr "modül"
 
 #: tutorial/modules.rst:184
 msgid "search"
-msgstr ""
+msgstr "arama"
 
 #: tutorial/modules.rst:184
 msgid "path"
