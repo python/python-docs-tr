@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-04 05:12+0300\n"
+"POT-Creation-Date: 2024-04-01 00:17+0000\n"
 "PO-Revision-Date: 2022-12-28 16:25-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -123,16 +123,18 @@ msgstr ""
 "bulabilirsin."
 
 #: tools/templates/indexcontent.html:10
-msgid "Parts of the documentation:"
-msgstr "Dokümantasyonun bölümleri:"
+msgid "Documentation sections:"
+msgstr ""
 
 #: tools/templates/indexcontent.html:13
 msgid "What's new in Python %(version)s?"
 msgstr "Python %(version)s sürümündeki yenilikler nelerdir?"
 
 #: tools/templates/indexcontent.html:14
+#, fuzzy
 msgid ""
-"or <a href=\"%(whatsnew_index)s\">all \"What's new\" documents</a> since 2.0"
+"Or <a href=\"%(whatsnew_index)s\">all \"What's new\" documents since Python "
+"2.0</a>"
 msgstr ""
 "veya 2.0'dan bu yana <a href=\"%(whatsnew_index)s\">tüm \"Yenilikler\" "
 "belgeleri</a>"
@@ -142,99 +144,113 @@ msgid "Tutorial"
 msgstr "Öğretici"
 
 #: tools/templates/indexcontent.html:16
-msgid "start here"
-msgstr "buradan başla"
+msgid "Start here: a tour of Python's syntax and features"
+msgstr ""
 
 #: tools/templates/indexcontent.html:17
-msgid "Library Reference"
+#, fuzzy
+msgid "Library reference"
 msgstr "Kütüphane Referansı"
 
 #: tools/templates/indexcontent.html:18
-msgid "keep this under your pillow"
-msgstr "bunu yastığının altında tut"
+msgid "Standard library and builtins"
+msgstr ""
 
 #: tools/templates/indexcontent.html:19
-msgid "Language Reference"
+#, fuzzy
+msgid "Language reference"
 msgstr "Dil Referansı"
 
 #: tools/templates/indexcontent.html:20
-msgid "describes syntax and language elements"
+#, fuzzy
+msgid "Syntax and language elements"
 msgstr "söz dizimi ve dil öğelerini açıklar"
 
 #: tools/templates/indexcontent.html:21
-msgid "Python Setup and Usage"
+#, fuzzy
+msgid "Python setup and usage"
 msgstr "Python Kurulumu ve Kullanımı"
 
 #: tools/templates/indexcontent.html:22
-msgid "how to use Python on different platforms"
-msgstr "Python farklı platformlarda nasıl kullanılır"
+msgid "How to install, configure, and use Python"
+msgstr ""
 
 #: tools/templates/indexcontent.html:23
 msgid "Python HOWTOs"
 msgstr "Python NASIL'ları"
 
 #: tools/templates/indexcontent.html:24
-msgid "in-depth documents on specific topics"
-msgstr "spesifik konularda ayrıntılı dokümanlar"
+msgid "In-depth topic manuals"
+msgstr ""
 
 #: tools/templates/indexcontent.html:26
-msgid "Installing Python Modules"
+#, fuzzy
+msgid "Installing Python modules"
 msgstr "Python Modüllerini Yükleme"
 
 #: tools/templates/indexcontent.html:27
-msgid "installing from the Python Package Index &amp; other sources"
-msgstr "Python Paket Dizini'nden yükleme &amp; diğer kaynaklar"
+msgid "Third-party modules and PyPI.org"
+msgstr ""
 
 #: tools/templates/indexcontent.html:28
-msgid "Distributing Python Modules"
+#, fuzzy
+msgid "Distributing Python modules"
 msgstr "Python Modüllerini Dağıtma"
 
 #: tools/templates/indexcontent.html:29
-msgid "publishing modules for installation by others"
+#, fuzzy
+msgid "Publishing modules for use by other people"
 msgstr "modülleri başkaları tarafından yüklenmek üzere yayımlama"
 
 #: tools/templates/indexcontent.html:30
-msgid "Extending and Embedding"
+#, fuzzy
+msgid "Extending and embedding"
 msgstr "Genişletme ve Gömme"
 
 #: tools/templates/indexcontent.html:31
-msgid "tutorial for C/C++ programmers"
+#, fuzzy
+msgid "For C/C++ programmers"
 msgstr "C/C++ programcıları için öğretici"
 
 #: tools/templates/indexcontent.html:32
-msgid "Python/C API"
+#, fuzzy
+msgid "Python's C API"
 msgstr "Python/C API (Uygulama Programlama Arayüzü)"
 
 #: tools/templates/indexcontent.html:33
-msgid "reference for C/C++ programmers"
-msgstr "C/C++ programcıları için referans"
+msgid "C API reference"
+msgstr ""
 
 #: tools/templates/indexcontent.html:34
 msgid "FAQs"
 msgstr "SSS (Sıkça Sorulan Sorular)"
 
 #: tools/templates/indexcontent.html:35
-msgid "frequently asked questions (with answers!)"
+#, fuzzy
+msgid "Frequently asked questions (with answers!)"
 msgstr "sıkça sorulan sorular (cevaplarla!)"
 
 #: tools/templates/indexcontent.html:39
-msgid "Indices and tables:"
-msgstr "Endeksler ve tablolar:"
+msgid "Indices, glossary, and search:"
+msgstr ""
 
 #: tools/templates/indexcontent.html:42
-msgid "Global Module Index"
+#, fuzzy
+msgid "Global module index"
 msgstr "Genel Modül Endeksi"
 
 #: tools/templates/indexcontent.html:43
-msgid "quick access to all modules"
-msgstr "tüm modüllere çabuk erişim"
+msgid "All modules and libraries"
+msgstr ""
 
 #: tools/templates/indexcontent.html:44
-msgid "General Index"
+#, fuzzy
+msgid "General index"
 msgstr "Genel Endeks"
 
 #: tools/templates/indexcontent.html:45
-msgid "all functions, classes, terms"
+#, fuzzy
+msgid "All functions, classes, and terms"
 msgstr "tüm fonksiyonlar, sınıflar, terimler"
 
 #: tools/templates/indexcontent.html:46
@@ -242,31 +258,36 @@ msgid "Glossary"
 msgstr "Sözlük"
 
 #: tools/templates/indexcontent.html:47
-msgid "the most important terms explained"
-msgstr "en önemli terimler, açıklamalarıyla birlikte"
+msgid "Terms explained"
+msgstr ""
 
 #: tools/templates/indexcontent.html:49
 msgid "Search page"
 msgstr "Arama sayfası"
 
 #: tools/templates/indexcontent.html:50
-msgid "search this documentation"
+#, fuzzy
+msgid "Search this documentation"
 msgstr "bu dokümantasyonu ara"
 
 #: tools/templates/indexcontent.html:51
-msgid "Complete Table of Contents"
+#, fuzzy
+msgid "Complete table of contents"
 msgstr "Bütün İçeriklerin Tablosu"
 
 #: tools/templates/indexcontent.html:52
-msgid "lists all sections and subsections"
+#, fuzzy
+msgid "Lists all sections and subsections"
 msgstr "tüm bölümleri ve alt bölümleri listeler"
 
 #: tools/templates/indexcontent.html:56
-msgid "Meta information:"
+#, fuzzy
+msgid "Project information:"
 msgstr "Meta bilgiler:"
 
 #: tools/templates/indexcontent.html:59
-msgid "Reporting bugs"
+#, fuzzy
+msgid "Reporting issues"
 msgstr "Hataları bildirme"
 
 #: tools/templates/indexcontent.html:60
@@ -274,11 +295,12 @@ msgid "Contributing to Docs"
 msgstr "Dokümantasyona Katkıda Bulunma"
 
 #: tools/templates/indexcontent.html:61
-msgid "About the documentation"
-msgstr "Dokümantasyon hakkında"
+msgid "Download the documentation"
+msgstr "Dokümantasyonu indir"
 
 #: tools/templates/indexcontent.html:63
-msgid "History and License of Python"
+#, fuzzy
+msgid "History and license of Python"
 msgstr "Python'un tarihçesi ve Lisansı"
 
 #: tools/templates/indexcontent.html:64
@@ -286,8 +308,8 @@ msgid "Copyright"
 msgstr "Telif Hakkı"
 
 #: tools/templates/indexcontent.html:65
-msgid "Download the documentation"
-msgstr "Dokümantasyonu indir"
+msgid "About the documentation"
+msgstr "Dokümantasyon hakkında"
 
 #: tools/templates/indexsidebar.html:1
 msgid "Download"
@@ -362,3 +384,33 @@ msgstr ""
 #: tools/templates/layout.html:16
 msgid "the current stable release"
 msgstr "mevcut kararlı sürüm"
+
+#~ msgid "Parts of the documentation:"
+#~ msgstr "Dokümantasyonun bölümleri:"
+
+#~ msgid "start here"
+#~ msgstr "buradan başla"
+
+#~ msgid "keep this under your pillow"
+#~ msgstr "bunu yastığının altında tut"
+
+#~ msgid "how to use Python on different platforms"
+#~ msgstr "Python farklı platformlarda nasıl kullanılır"
+
+#~ msgid "in-depth documents on specific topics"
+#~ msgstr "spesifik konularda ayrıntılı dokümanlar"
+
+#~ msgid "installing from the Python Package Index &amp; other sources"
+#~ msgstr "Python Paket Dizini'nden yükleme &amp; diğer kaynaklar"
+
+#~ msgid "reference for C/C++ programmers"
+#~ msgstr "C/C++ programcıları için referans"
+
+#~ msgid "Indices and tables:"
+#~ msgstr "Endeksler ve tablolar:"
+
+#~ msgid "quick access to all modules"
+#~ msgstr "tüm modüllere çabuk erişim"
+
+#~ msgid "the most important terms explained"
+#~ msgstr "en önemli terimler, açıklamalarıyla birlikte"

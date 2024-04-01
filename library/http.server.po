@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-24 17:22+0000\n"
+"POT-Creation-Date: 2024-04-01 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -616,18 +616,25 @@ msgid ""
 "the ``--cgi`` option::"
 msgstr ""
 
-#: library/http.server.rst:513
+#: library/http.server.rst:512
+msgid ""
+":class:`CGIHTTPRequestHandler` and the ``--cgi`` command line option are not "
+"intended for use by untrusted clients and may be vulnerable to exploitation. "
+"Always use within a secure environment."
+msgstr ""
+
+#: library/http.server.rst:519
 msgid "Security Considerations"
 msgstr ""
 
-#: library/http.server.rst:517
+#: library/http.server.rst:523
 msgid ""
 ":class:`SimpleHTTPRequestHandler` will follow symbolic links when handling "
 "requests, this makes it possible for files outside of the specified "
 "directory to be served."
 msgstr ""
 
-#: library/http.server.rst:521
+#: library/http.server.rst:527
 msgid ""
 "Earlier versions of Python did not scrub control characters from the log "
 "messages emitted to stderr from ``python -m http.server`` or the default :"
@@ -636,7 +643,7 @@ msgid ""
 "codes to your terminal."
 msgstr ""
 
-#: library/http.server.rst:527
+#: library/http.server.rst:533
 msgid "Control characters are scrubbed in stderr logs."
 msgstr ""
 
@@ -664,10 +671,10 @@ msgstr ""
 msgid "httpd"
 msgstr ""
 
-#: library/http.server.rst:515
+#: library/http.server.rst:521
 msgid "http.server"
 msgstr ""
 
-#: library/http.server.rst:515
+#: library/http.server.rst:521
 msgid "security"
 msgstr ""
