@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 22:33+0300\n"
+"POT-Creation-Date: 2024-05-01 21:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -96,7 +96,7 @@ msgstr ""
 msgid "Terminology"
 msgstr ""
 
-#: library/optparse.rst:104
+#: library/optparse.rst:95
 msgid "argument"
 msgstr ""
 
@@ -116,7 +116,7 @@ msgid ""
 "argv[1:]``\"."
 msgstr ""
 
-#: library/optparse.rst:134
+#: library/optparse.rst:106
 msgid "option"
 msgstr ""
 
@@ -169,7 +169,7 @@ msgid ""
 "Windows or certain legacy platforms (e.g. VMS, MS-DOS)."
 msgstr ""
 
-#: library/optparse.rst:160
+#: library/optparse.rst:136
 msgid "option argument"
 msgstr ""
 
@@ -196,7 +196,7 @@ msgid ""
 "support this feature."
 msgstr ""
 
-#: library/optparse.rst:165
+#: library/optparse.rst:162
 msgid "positional argument"
 msgstr ""
 
@@ -207,7 +207,7 @@ msgid ""
 "argument list."
 msgstr ""
 
-#: library/optparse.rst:171
+#: library/optparse.rst:167
 msgid "required option"
 msgstr ""
 
@@ -520,7 +520,7 @@ msgstr ""
 msgid "Some other actions supported by :mod:`optparse` are:"
 msgstr ""
 
-#: library/optparse.rst:929
+#: library/optparse.rst:928
 msgid "``\"store_const\"``"
 msgstr ""
 
@@ -528,7 +528,7 @@ msgstr ""
 msgid "store a constant value, pre-set via :attr:`Option.const`"
 msgstr ""
 
-#: library/optparse.rst:938
+#: library/optparse.rst:937
 msgid "``\"append\"``"
 msgstr ""
 
@@ -536,7 +536,7 @@ msgstr ""
 msgid "append this option's argument to a list"
 msgstr ""
 
-#: library/optparse.rst:944
+#: library/optparse.rst:943
 msgid "``\"count\"``"
 msgstr ""
 
@@ -544,7 +544,7 @@ msgstr ""
 msgid "increment a counter by one"
 msgstr ""
 
-#: library/optparse.rst:947
+#: library/optparse.rst:946
 msgid "``\"callback\"``"
 msgstr ""
 
@@ -907,7 +907,7 @@ msgid ""
 "arguments, i.e. do not rely on the order in which the arguments are declared."
 msgstr ""
 
-#: library/optparse.rst:815
+#: library/optparse.rst:810
 msgid "``usage`` (default: ``\"%prog [options]\"``)"
 msgstr ""
 
@@ -920,7 +920,7 @@ msgid ""
 "value :const:`optparse.SUPPRESS_USAGE`."
 msgstr ""
 
-#: library/optparse.rst:822
+#: library/optparse.rst:817
 msgid "``option_list`` (default: ``[]``)"
 msgstr ""
 
@@ -933,7 +933,7 @@ msgid ""
 "the parser instead."
 msgstr ""
 
-#: library/optparse.rst:825
+#: library/optparse.rst:824
 msgid "``option_class`` (default: optparse.Option)"
 msgstr ""
 
@@ -941,7 +941,7 @@ msgstr ""
 msgid "Class to use when adding options to the parser in :meth:`add_option`."
 msgstr ""
 
-#: library/optparse.rst:831
+#: library/optparse.rst:827
 msgid "``version`` (default: ``None``)"
 msgstr ""
 
@@ -953,7 +953,7 @@ msgid ""
 "``%prog`` is expanded the same as for ``usage``."
 msgstr ""
 
-#: library/optparse.rst:836
+#: library/optparse.rst:833
 msgid "``conflict_handler`` (default: ``\"error\"``)"
 msgstr ""
 
@@ -963,7 +963,7 @@ msgid ""
 "to the parser; see section :ref:`optparse-conflicts-between-options`."
 msgstr ""
 
-#: library/optparse.rst:842
+#: library/optparse.rst:838
 msgid "``description`` (default: ``None``)"
 msgstr ""
 
@@ -975,7 +975,7 @@ msgid ""
 "options)."
 msgstr ""
 
-#: library/optparse.rst:847
+#: library/optparse.rst:844
 msgid "``formatter`` (default: a new :class:`IndentedHelpFormatter`)"
 msgstr ""
 
@@ -986,7 +986,7 @@ msgid ""
 "IndentedHelpFormatter and TitledHelpFormatter."
 msgstr ""
 
-#: library/optparse.rst:851
+#: library/optparse.rst:849
 msgid "``add_help_option`` (default: ``True``)"
 msgstr ""
 
@@ -996,7 +996,7 @@ msgid ""
 "and ``--help``) to the parser."
 msgstr ""
 
-#: library/optparse.rst:855
+#: library/optparse.rst:853
 msgid "``prog``"
 msgstr ""
 
@@ -1092,7 +1092,7 @@ msgid ""
 "into :mod:`optparse` are:"
 msgstr ""
 
-#: library/optparse.rst:926
+#: library/optparse.rst:925
 msgid "``\"store\"``"
 msgstr ""
 
@@ -1100,7 +1100,7 @@ msgstr ""
 msgid "store this option's argument (default)"
 msgstr ""
 
-#: library/optparse.rst:932
+#: library/optparse.rst:931
 msgid "``\"store_true\"``"
 msgstr ""
 
@@ -1108,7 +1108,7 @@ msgstr ""
 msgid "store ``True``"
 msgstr ""
 
-#: library/optparse.rst:935
+#: library/optparse.rst:934
 msgid "``\"store_false\"``"
 msgstr ""
 
@@ -1116,7 +1116,7 @@ msgstr ""
 msgid "store ``False``"
 msgstr ""
 
-#: library/optparse.rst:941
+#: library/optparse.rst:940
 msgid "``\"append_const\"``"
 msgstr ""
 
@@ -1610,7 +1610,7 @@ msgstr ""
 msgid "The input parameters are"
 msgstr ""
 
-#: library/optparse.rst:1364 library/optparse.rst:1684
+#: library/optparse.rst:1364 library/optparse.rst:1682
 msgid "``args``"
 msgstr ""
 
@@ -1618,7 +1618,7 @@ msgstr ""
 msgid "the list of arguments to process (default: ``sys.argv[1:]``)"
 msgstr ""
 
-#: library/optparse.rst:1356
+#: library/optparse.rst:1353
 msgid "``values``"
 msgstr ""
 
@@ -1633,7 +1633,7 @@ msgstr ""
 msgid "and the return value is a pair ``(options, args)`` where"
 msgstr ""
 
-#: library/optparse.rst:1362
+#: library/optparse.rst:1360
 msgid "``options``"
 msgstr ""
 
@@ -1757,7 +1757,7 @@ msgstr ""
 msgid "The available conflict handlers are:"
 msgstr ""
 
-#: library/optparse.rst:1459
+#: library/optparse.rst:1457
 msgid "``\"error\"`` (default)"
 msgstr ""
 
@@ -1767,7 +1767,7 @@ msgid ""
 "`OptionConflictError`"
 msgstr ""
 
-#: library/optparse.rst:1463
+#: library/optparse.rst:1461
 msgid "``\"resolve\"``"
 msgstr ""
 
@@ -1931,7 +1931,7 @@ msgid ""
 "define a callback option:"
 msgstr ""
 
-#: library/optparse.rst:1616
+#: library/optparse.rst:1612
 msgid ":attr:`~Option.type`"
 msgstr ""
 
@@ -1943,7 +1943,7 @@ msgid ""
 "though, :mod:`optparse` passes it to your callback function."
 msgstr ""
 
-#: library/optparse.rst:1622
+#: library/optparse.rst:1618
 msgid ":attr:`~Option.nargs`"
 msgstr ""
 
@@ -1955,7 +1955,7 @@ msgid ""
 "callback."
 msgstr ""
 
-#: library/optparse.rst:1625
+#: library/optparse.rst:1624
 msgid ":attr:`~Option.callback_args`"
 msgstr ""
 
@@ -1963,7 +1963,7 @@ msgstr ""
 msgid "a tuple of extra positional arguments to pass to the callback"
 msgstr ""
 
-#: library/optparse.rst:1629
+#: library/optparse.rst:1627
 msgid ":attr:`~Option.callback_kwargs`"
 msgstr ""
 
@@ -1979,7 +1979,7 @@ msgstr ""
 msgid "All callbacks are called as follows::"
 msgstr ""
 
-#: library/optparse.rst:1643
+#: library/optparse.rst:1642
 msgid "``option``"
 msgstr ""
 
@@ -1987,7 +1987,7 @@ msgstr ""
 msgid "is the Option instance that's calling the callback"
 msgstr ""
 
-#: library/optparse.rst:1650
+#: library/optparse.rst:1645
 msgid "``opt_str``"
 msgstr ""
 
@@ -2000,7 +2000,7 @@ msgid ""
 "``\"--foobar\"``.)"
 msgstr ""
 
-#: library/optparse.rst:1657
+#: library/optparse.rst:1652
 msgid "``value``"
 msgstr ""
 
@@ -2014,7 +2014,7 @@ msgid ""
 "of values of the appropriate type."
 msgstr ""
 
-#: library/optparse.rst:1680
+#: library/optparse.rst:1659
 msgid "``parser``"
 msgstr ""
 
@@ -2024,7 +2024,7 @@ msgid ""
 "you can access some other interesting data through its instance attributes:"
 msgstr ""
 
-#: library/optparse.rst:1667
+#: library/optparse.rst:1663
 msgid "``parser.largs``"
 msgstr ""
 
@@ -2037,7 +2037,7 @@ msgid ""
 "parse_args`.)"
 msgstr ""
 
-#: library/optparse.rst:1673
+#: library/optparse.rst:1669
 msgid "``parser.rargs``"
 msgstr ""
 
@@ -2048,7 +2048,7 @@ msgid ""
 "Feel free to modify ``parser.rargs``, e.g. by consuming more arguments."
 msgstr ""
 
-#: library/optparse.rst:1680
+#: library/optparse.rst:1675
 msgid "``parser.values``"
 msgstr ""
 
@@ -2067,7 +2067,7 @@ msgid ""
 "callback_args` option attribute."
 msgstr ""
 
-#: library/optparse.rst:1689
+#: library/optparse.rst:1686
 msgid "``kwargs``"
 msgstr ""
 
@@ -2323,7 +2323,7 @@ msgid ""
 "mod:`optparse` has a couple of classifications for actions:"
 msgstr ""
 
-#: library/optparse.rst:1962
+#: library/optparse.rst:1959
 msgid "\"store\" actions"
 msgstr ""
 
@@ -2334,7 +2334,7 @@ msgid ""
 "dest` attribute to be supplied to the Option constructor."
 msgstr ""
 
-#: library/optparse.rst:1968
+#: library/optparse.rst:1964
 msgid "\"typed\" actions"
 msgstr ""
 

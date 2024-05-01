@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-01 00:17+0000\n"
+"POT-Creation-Date: 2024-05-01 21:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -1793,7 +1793,7 @@ msgid ""
 "the parameter:"
 msgstr ""
 
-#: library/ctypes.rst:1785
+#: library/ctypes.rst:1784
 msgid "1"
 msgstr ""
 
@@ -1801,7 +1801,7 @@ msgstr ""
 msgid "Specifies an input parameter to the function."
 msgstr ""
 
-#: library/ctypes.rst:1788
+#: library/ctypes.rst:1787
 msgid "2"
 msgstr ""
 
@@ -1809,7 +1809,7 @@ msgstr ""
 msgid "Output parameter.  The foreign function fills in a value."
 msgstr ""
 
-#: library/ctypes.rst:1791
+#: library/ctypes.rst:1790
 msgid "4"
 msgstr ""
 
@@ -2125,15 +2125,14 @@ msgstr ""
 
 #: library/ctypes.rst:2077
 msgid ""
-"This function returns the C string starting at memory address *address* as a "
-"bytes object. If size is specified, it is used as size, otherwise the string "
-"is assumed to be zero-terminated."
+"Return the byte string at *void \\*ptr*. If *size* is specified, it is used "
+"as size, otherwise the string is assumed to be zero-terminated."
 msgstr ""
 
 #: library/ctypes.rst:2081
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``ctypes.string_at`` with "
-"arguments ``address``, ``size``."
+"arguments ``ptr``, ``size``."
 msgstr ""
 
 #: library/ctypes.rst:2086
@@ -2153,16 +2152,15 @@ msgstr ""
 
 #: library/ctypes.rst:2099
 msgid ""
-"This function returns the wide character string starting at memory address "
-"*address* as a string.  If *size* is specified, it is used as the number of "
-"characters of the string, otherwise the string is assumed to be zero-"
-"terminated."
+"Return the wide-character string at *void \\*ptr*. If *size* is specified, "
+"it is used as the number of characters of the string, otherwise the string "
+"is assumed to be zero-terminated."
 msgstr ""
 
 #: library/ctypes.rst:2104
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``ctypes.wstring_at`` with "
-"arguments ``address``, ``size``."
+"arguments ``ptr``, ``size``."
 msgstr ""
 
 #: library/ctypes.rst:2110

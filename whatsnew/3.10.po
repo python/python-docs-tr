@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-01 20:27+0000\n"
+"POT-Creation-Date: 2024-05-01 21:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -305,7 +305,7 @@ msgstr ""
 
 #: whatsnew/3.10.rst:355
 msgid ""
-"When printing :exc:`AttributeError`, :c:func:`PyErr_Display` will offer "
+"When printing :exc:`AttributeError`, :c:func:`!PyErr_Display` will offer "
 "suggestions of similar attribute names in the object that the exception was "
 "raised from:"
 msgstr ""
@@ -316,7 +316,7 @@ msgstr ""
 
 #: whatsnew/3.10.rst:369
 msgid ""
-"Notice this won't work if :c:func:`PyErr_Display` is not called to display "
+"Notice this won't work if :c:func:`!PyErr_Display` is not called to display "
 "the error which can happen if some other custom error display function is "
 "used. This is a common scenario in some REPLs like IPython."
 msgstr ""
@@ -327,14 +327,14 @@ msgstr ""
 
 #: whatsnew/3.10.rst:376
 msgid ""
-"When printing :exc:`NameError` raised by the interpreter, :c:func:"
-"`PyErr_Display` will offer suggestions of similar variable names in the "
+"When printing :exc:`NameError` raised by the interpreter, :c:func:`!"
+"PyErr_Display` will offer suggestions of similar variable names in the "
 "function that the exception was raised from:"
 msgstr ""
 
 #: whatsnew/3.10.rst:391
 msgid ""
-"Notice this won't work if :c:func:`PyErr_Display` is not called to display "
+"Notice this won't work if :c:func:`!PyErr_Display` is not called to display "
 "the error, which can happen if some other custom error display function is "
 "used. This is a common scenario in some REPLs like IPython."
 msgstr ""
@@ -649,10 +649,10 @@ msgstr ""
 
 #: whatsnew/3.10.rst:693
 msgid ""
-"The default encoding of :class:`TextIOWrapper` and :func:`open` is platform "
-"and locale dependent. Since UTF-8 is used on most Unix platforms, omitting "
-"``encoding`` option when opening UTF-8 files (e.g. JSON, YAML, TOML, "
-"Markdown) is a very common bug. For example::"
+"The default encoding of :class:`~io.TextIOWrapper` and :func:`open` is "
+"platform and locale dependent. Since UTF-8 is used on most Unix platforms, "
+"omitting ``encoding`` option when opening UTF-8 files (e.g. JSON, YAML, "
+"TOML, Markdown) is a very common bug. For example::"
 msgstr ""
 
 #: whatsnew/3.10.rst:702
@@ -774,8 +774,8 @@ msgstr ""
 
 #: whatsnew/3.10.rst:788
 msgid ""
-"Now the :mod:`typing` module has a special value :data:`TypeAlias` which "
-"lets you declare type aliases more explicitly::"
+"Now the :mod:`typing` module has a special value :data:`~typing.TypeAlias` "
+"which lets you declare type aliases more explicitly::"
 msgstr ""
 
 #: whatsnew/3.10.rst:794
@@ -792,10 +792,10 @@ msgstr ""
 
 #: whatsnew/3.10.rst:801
 msgid ""
-":data:`TypeGuard` has been added to the :mod:`typing` module to annotate "
-"type guard functions and improve information provided to static type "
-"checkers during type narrowing.  For more information, please see :data:"
-"`TypeGuard`\\ 's documentation, and :pep:`647`."
+":data:`~typing.TypeGuard` has been added to the :mod:`typing` module to "
+"annotate type guard functions and improve information provided to static "
+"type checkers during type narrowing.  For more information, please see :data:"
+"`~typing.TypeGuard`\\ 's documentation, and :pep:`647`."
 msgstr ""
 
 #: whatsnew/3.10.rst:806
@@ -1070,8 +1070,8 @@ msgstr ""
 
 #: whatsnew/3.10.rst:975
 msgid ""
-"Add :class:`AsyncContextDecorator`, for supporting usage of async context "
-"managers as decorators."
+"Add :class:`~contextlib.AsyncContextDecorator`, for supporting usage of "
+"async context managers as decorators."
 msgstr ""
 
 #: whatsnew/3.10.rst:979
@@ -1204,10 +1204,10 @@ msgstr ""
 
 #: whatsnew/3.10.rst:1092
 msgid ""
-":class:`Enum` :func:`__repr__` now returns ``enum_name.member_name`` and :"
-"func:`__str__` now returns ``member_name``.  Stdlib enums available as "
-"module constants have a :func:`repr` of ``module_name.member_name``. "
-"(Contributed by Ethan Furman in :issue:`40066`.)"
+":class:`~enum.Enum` :func:`~object.__repr__` now returns ``enum_name."
+"member_name`` and :func:`~object.__str__` now returns ``member_name``.  "
+"Stdlib enums available as module constants have a :func:`repr` of "
+"``module_name.member_name``. (Contributed by Ethan Furman in :issue:`40066`.)"
 msgstr ""
 
 #: whatsnew/3.10.rst:1097
@@ -1228,8 +1228,8 @@ msgstr ""
 
 #: whatsnew/3.10.rst:1107
 msgid ""
-":func:`fileinput.hook_compressed` now returns :class:`TextIOWrapper` object "
-"when *mode* is \"r\" and file is compressed, like uncompressed files. "
+":func:`fileinput.hook_compressed` now returns :class:`~io.TextIOWrapper` "
+"object when *mode* is \"r\" and file is compressed, like uncompressed files. "
 "(Contributed by Inada Naoki in :issue:`5758`.)"
 msgstr ""
 
@@ -1381,16 +1381,16 @@ msgstr ""
 #: whatsnew/3.10.rst:1202
 msgid ""
 ":ref:`importlib.metadata entry points <entry-points>` now provide a nicer "
-"experience for selecting entry points by group and name through a new :class:"
-"`importlib.metadata.EntryPoints` class. See the Compatibility Note in the "
-"docs for more info on the deprecation and usage."
+"experience for selecting entry points by group and name through a new :ref:"
+"`importlib.metadata.EntryPoints <entry-points>` class. See the Compatibility "
+"Note in the docs for more info on the deprecation and usage."
 msgstr ""
 
 #: whatsnew/3.10.rst:1208
 msgid ""
-"Added :func:`importlib.metadata.packages_distributions` for resolving top-"
-"level Python modules and packages to their :class:`importlib.metadata."
-"Distribution`."
+"Added :ref:`importlib.metadata.packages_distributions() <package-"
+"distributions>` for resolving top-level Python modules and packages to "
+"their :ref:`importlib.metadata.Distribution <distributions>`."
 msgstr ""
 
 #: whatsnew/3.10.rst:1213
@@ -1408,7 +1408,7 @@ msgid ""
 "annotations dict defined on any Python object; for more information on best "
 "practices for working with annotations, please see :ref:`annotations-howto`. "
 "Relatedly, :func:`inspect.signature`, :func:`inspect.Signature."
-"from_callable`, and :func:`inspect.Signature.from_function` now call :func:"
+"from_callable`, and :func:`!inspect.Signature.from_function` now call :func:"
 "`inspect.get_annotations` to retrieve annotations. This means :func:`inspect."
 "signature` and :func:`inspect.Signature.from_callable` can also now un-"
 "stringize stringized annotations. (Contributed by Larry Hastings in :issue:"
@@ -1801,10 +1801,10 @@ msgstr ""
 msgid ""
 "Subclasses of ``typing.Protocol`` which only have data variables declared "
 "will now raise a ``TypeError`` when checked with ``isinstance`` unless they "
-"are decorated with :func:`runtime_checkable`.  Previously, these checks "
-"passed silently.  Users should decorate their subclasses with the :func:"
-"`runtime_checkable` decorator if they want runtime protocols. (Contributed "
-"by Yurii Karabas in :issue:`38908`.)"
+"are decorated with :func:`~typing.runtime_checkable`.  Previously, these "
+"checks passed silently.  Users should decorate their subclasses with the :"
+"func:`!runtime_checkable` decorator if they want runtime protocols. "
+"(Contributed by Yurii Karabas in :issue:`38908`.)"
 msgstr ""
 
 #: whatsnew/3.10.rst:1493
@@ -1970,11 +1970,11 @@ msgstr ""
 
 #: whatsnew/3.10.rst:1598
 msgid ""
-":class:`BZ2File` performance is improved by removing internal ``RLock``. "
-"This makes :class:`BZ2File` thread unsafe in the face of multiple "
-"simultaneous readers or writers, just like its equivalent classes in :mod:"
-"`gzip` and :mod:`lzma` have always been.  (Contributed by Inada Naoki in :"
-"issue:`43785`.)"
+":class:`~bz2.BZ2File` performance is improved by removing internal "
+"``RLock``. This makes :class:`!BZ2File` thread unsafe in the face of "
+"multiple simultaneous readers or writers, just like its equivalent classes "
+"in :mod:`gzip` and :mod:`lzma` have always been.  (Contributed by Inada "
+"Naoki in :issue:`43785`.)"
 msgstr ""
 
 #: whatsnew/3.10.rst:2212
@@ -1999,7 +1999,7 @@ msgid ""
 "Starting in this release, there will be a concerted effort to begin cleaning "
 "up old import semantics that were kept for Python 2.7 compatibility. "
 "Specifically, :meth:`!find_loader`/:meth:`!find_module` (superseded by :meth:"
-"`~importlib.abc.Finder.find_spec`), :meth:`~importlib.abc.Loader."
+"`~importlib.abc.MetaPathFinder.find_spec`), :meth:`~importlib.abc.Loader."
 "load_module` (superseded by :meth:`~importlib.abc.Loader.exec_module`), :"
 "meth:`!module_repr` (which the import system takes care of for you), the "
 "``__package__`` attribute (superseded by ``__spec__.parent``), the "
@@ -2035,7 +2035,7 @@ msgstr ""
 
 #: whatsnew/3.10.rst:1650
 msgid ""
-":meth:`zimport.zipimporter.load_module` has been deprecated in preference "
+":meth:`!zimport.zipimporter.load_module` has been deprecated in preference "
 "for :meth:`~zipimport.zipimporter.exec_module`. (Contributed by Brett Cannon "
 "in :issue:`26131`.)"
 msgstr ""
@@ -2197,32 +2197,30 @@ msgstr ""
 
 #: whatsnew/3.10.rst:1762
 msgid ""
-":data:`~ssl.OP_NO_SSLv2`, :data:`~ssl.OP_NO_SSLv3`, :data:`~ssl."
-"OP_NO_TLSv1`, :data:`~ssl.OP_NO_TLSv1_1`, :data:`~ssl.OP_NO_TLSv1_2`, and :"
-"data:`~ssl.OP_NO_TLSv1_3` are replaced by :attr:`sslSSLContext."
-"minimum_version` and :attr:`sslSSLContext.maximum_version`."
+":data:`!OP_NO_SSLv2`, :data:`!OP_NO_SSLv3`, :data:`!OP_NO_TLSv1`, :data:`!"
+"OP_NO_TLSv1_1`, :data:`!OP_NO_TLSv1_2`, and :data:`!OP_NO_TLSv1_3` are "
+"replaced by :attr:`~ssl.SSLContext.minimum_version` and :attr:`~ssl."
+"SSLContext.maximum_version`."
 msgstr ""
 
 #: whatsnew/3.10.rst:1768
 msgid ""
-":data:`~ssl.PROTOCOL_SSLv2`, :data:`~ssl.PROTOCOL_SSLv3`, :data:`~ssl."
-"PROTOCOL_SSLv23`, :data:`~ssl.PROTOCOL_TLSv1`, :data:`~ssl."
-"PROTOCOL_TLSv1_1`, :data:`~ssl.PROTOCOL_TLSv1_2`, and :const:`~ssl."
-"PROTOCOL_TLS` are deprecated in favor of :const:`~ssl.PROTOCOL_TLS_CLIENT` "
-"and :const:`~ssl.PROTOCOL_TLS_SERVER`"
+":data:`!PROTOCOL_SSLv2`, :data:`!PROTOCOL_SSLv3`, :data:`!PROTOCOL_SSLv23`, :"
+"data:`!PROTOCOL_TLSv1`, :data:`!PROTOCOL_TLSv1_1`, :data:`!"
+"PROTOCOL_TLSv1_2`, and :const:`!PROTOCOL_TLS` are deprecated in favor of :"
+"const:`~ssl.PROTOCOL_TLS_CLIENT` and :const:`~ssl.PROTOCOL_TLS_SERVER`"
 msgstr ""
 
 #: whatsnew/3.10.rst:1774
-msgid ""
-":func:`~ssl.wrap_socket` is replaced by :meth:`ssl.SSLContext.wrap_socket`"
+msgid ":func:`!wrap_socket` is replaced by :meth:`ssl.SSLContext.wrap_socket`"
 msgstr ""
 
 #: whatsnew/3.10.rst:1776
-msgid ":func:`~ssl.match_hostname`"
+msgid ":func:`!match_hostname`"
 msgstr ""
 
 #: whatsnew/3.10.rst:1778
-msgid ":func:`~ssl.RAND_pseudo_bytes`, :func:`~ssl.RAND_egd`"
+msgid ":func:`!RAND_pseudo_bytes`, :func:`!RAND_egd`"
 msgstr ""
 
 #: whatsnew/3.10.rst:1780
@@ -3099,19 +3097,18 @@ msgid ""
 "(binary), 4, 8 (octal), 16 (hexadecimal), or 32 such as base 10 (decimal) "
 "now raises a :exc:`ValueError` if the number of digits in string form is "
 "above a limit to avoid potential denial of service attacks due to the "
-"algorithmic complexity. This is a mitigation for `CVE-2020-10735 <https://"
-"cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10735>`_. This limit can be "
-"configured or disabled by environment variable, command line flag, or :mod:"
-"`sys` APIs. See the :ref:`integer string conversion length limitation "
-"<int_max_str_digits>` documentation.  The default limit is 4300 digits in "
-"string form."
+"algorithmic complexity. This is a mitigation for :cve:`2020-10735`. This "
+"limit can be configured or disabled by environment variable, command line "
+"flag, or :mod:`sys` APIs. See the :ref:`integer string conversion length "
+"limitation <int_max_str_digits>` documentation.  The default limit is 4300 "
+"digits in string form."
 msgstr ""
 
-#: whatsnew/3.10.rst:2342
+#: whatsnew/3.10.rst:2341
 msgid "Notable security feature in 3.10.8"
 msgstr ""
 
-#: whatsnew/3.10.rst:2344
+#: whatsnew/3.10.rst:2343
 msgid ""
 "The deprecated :mod:`!mailcap` module now refuses to inject unsafe text "
 "(filenames, MIME types, parameters) into shell commands. Instead of using "
@@ -3120,15 +3117,15 @@ msgid ""
 "`98966`.)"
 msgstr ""
 
-#: whatsnew/3.10.rst:2351
+#: whatsnew/3.10.rst:2350
 msgid "Notable changes in 3.10.12"
 msgstr ""
 
-#: whatsnew/3.10.rst:2354
+#: whatsnew/3.10.rst:2353
 msgid "tarfile"
 msgstr ""
 
-#: whatsnew/3.10.rst:2356
+#: whatsnew/3.10.rst:2355
 msgid ""
 "The extraction methods in :mod:`tarfile`, and :func:`shutil.unpack_archive`, "
 "have a new a *filter* argument that allows limiting tar features than may be "

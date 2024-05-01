@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-01 00:17+0000\n"
+"POT-Creation-Date: 2024-05-01 21:53+0000\n"
 "PO-Revision-Date: 2023-03-01 11:44+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -767,7 +767,7 @@ msgstr "Onluk sayı şeklinde ayın günü [01,31]."
 msgid "``%f``"
 msgstr ""
 
-#: library/time.rst:431
+#: library/time.rst:430
 #, fuzzy
 msgid "Microseconds as a decimal number"
 msgstr "Onluk sayı şeklinde saniye [00,61]."
@@ -1355,7 +1355,7 @@ msgstr ""
 msgid "Where the components are:"
 msgstr "Bileşenlerin olduğu yerde:"
 
-#: library/time.rst:735
+#: library/time.rst:733
 msgid "``std`` and ``dst``"
 msgstr "``std`` ve ``dst``"
 
@@ -1367,7 +1367,7 @@ msgstr ""
 "Üç veya daha fazla harfler ve sayılar saat dilimi kısaltmalarını veriyor. "
 "Bunlar time.tzname içine yayılacaktır"
 
-#: library/time.rst:741
+#: library/time.rst:737
 msgid "``offset``"
 msgstr "``offset``"
 
@@ -1384,7 +1384,7 @@ msgstr ""
 "bir sapma yoksa, yaz saatinin standart saatten bir saat ileri olduğu "
 "varsayılır."
 
-#: library/time.rst:763
+#: library/time.rst:743
 msgid "``start[/time], end[/time]``"
 msgstr "``start[/time], end[/time]``"
 
@@ -1396,7 +1396,7 @@ msgstr ""
 "DST'ye ne zaman geçileceğini ve DST'den geri dönüleceğini gösterir. "
 "Başlangıç ve bitiş tarihlerinin biçimi aşağıdakilerden biridir:"
 
-#: library/time.rst:749
+#: library/time.rst:747
 msgid ":samp:`J{n}`"
 msgstr ":samp:`J{n}`"
 
@@ -1408,7 +1408,7 @@ msgstr ""
 "Jülyen günü *n* (1 <= *n* <= 365). Artık günler sayılmaz, yani bütün "
 "yıllarda 28 Şubat 59. gün ve 1 Mart 60. gündür."
 
-#: library/time.rst:753
+#: library/time.rst:751
 msgid ":samp:`{n}`"
 msgstr ":samp:`{n}`"
 
@@ -1420,7 +1420,7 @@ msgstr ""
 "Sıfır tabanlı Jülyen günü (0 <= *n* <= 365). Artık günler dahil edilmiştir, "
 "ve 29 Şubat'tan bahsetmek mümkündür."
 
-#: library/time.rst:760
+#: library/time.rst:755
 msgid ":samp:`M{m}.{n}.{d}`"
 msgstr ":samp:`M{m}.{n}.{d}`"
 
@@ -1666,7 +1666,7 @@ msgstr ""
 "almak için :func:`localtime`'den :attr:`tm_gmtoff` ve :attr:`tm_zone` "
 "sonuçlarının kullanılması önerilir."
 
-#: library/time.rst:958
+#: library/time.rst:957
 msgid "Module :mod:`datetime`"
 msgstr ":mod:`datetime` modülü"
 
@@ -1674,7 +1674,7 @@ msgstr ":mod:`datetime` modülü"
 msgid "More object-oriented interface to dates and times."
 msgstr "Tarihler ve zamanlar için daha fazla nesne tabanlı arayüz."
 
-#: library/time.rst:962
+#: library/time.rst:960
 msgid "Module :mod:`locale`"
 msgstr ":mod:`locale` modülü"
 
@@ -1687,7 +1687,7 @@ msgstr ""
 "Uluslararasılaştırma servisleri.  Yerel ayar, :func:`strftime` ve :func:"
 "`strptime` içindeki birçok biçim belirticisinin yorumlanmasını etkiler."
 
-#: library/time.rst:965
+#: library/time.rst:964
 msgid "Module :mod:`calendar`"
 msgstr ":mod:`calendar` modülü"
 

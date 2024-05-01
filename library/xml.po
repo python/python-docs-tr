@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-24 17:22+0000\n"
+"POT-Creation-Date: 2024-05-01 21:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -134,7 +134,7 @@ msgstr ""
 msgid "quadratic blowup"
 msgstr ""
 
-#: library/xml.rst:109
+#: library/xml.rst:106
 msgid "external entity expansion"
 msgstr ""
 
@@ -154,7 +154,7 @@ msgstr ""
 msgid "Safe (4)"
 msgstr ""
 
-#: library/xml.rst:114
+#: library/xml.rst:111
 msgid "`DTD`_ retrieval"
 msgstr ""
 
@@ -162,7 +162,7 @@ msgstr ""
 msgid "Safe"
 msgstr ""
 
-#: library/xml.rst:121
+#: library/xml.rst:116
 msgid "decompression bomb"
 msgstr ""
 
@@ -170,7 +170,7 @@ msgstr ""
 msgid "**Vulnerable**"
 msgstr ""
 
-#: library/xml.rst:128
+#: library/xml.rst:123
 msgid "large tokens"
 msgstr ""
 
@@ -216,7 +216,7 @@ msgid ""
 "const:`!pyexpat.EXPAT_VERSION`."
 msgstr ""
 
-#: library/xml.rst:97
+#: library/xml.rst:92
 msgid "billion laughs / exponential entity expansion"
 msgstr ""
 
@@ -229,7 +229,7 @@ msgid ""
 "consumes lots of memory and CPU time."
 msgstr ""
 
-#: library/xml.rst:104
+#: library/xml.rst:99
 msgid "quadratic blowup entity expansion"
 msgstr ""
 
@@ -268,24 +268,23 @@ msgstr ""
 msgid ""
 "Expat needs to re-parse unfinished tokens; without the protection introduced "
 "in Expat 2.6.0, this can lead to quadratic runtime that can be used to cause "
-"denial of service in the application parsing XML. The issue is known as "
-"`CVE-2023-52425 <https://cve.mitre.org/cgi-bin/cvename.cgi?"
-"name=CVE-2023-52425>`_."
+"denial of service in the application parsing XML. The issue is known as :cve:"
+"`2023-52425`."
 msgstr ""
 
-#: library/xml.rst:130
+#: library/xml.rst:129
 msgid ""
-"The documentation for `defusedxml`_ on PyPI has further information about "
-"all known attack vectors with examples and references."
+"The documentation for :pypi:`defusedxml` on PyPI has further information "
+"about all known attack vectors with examples and references."
 msgstr ""
 
-#: library/xml.rst:136
+#: library/xml.rst:135
 msgid "The :mod:`!defusedxml` Package"
 msgstr ""
 
-#: library/xml.rst:138
+#: library/xml.rst:137
 msgid ""
-"`defusedxml`_ is a pure Python package with modified subclasses of all "
+":pypi:`defusedxml` is a pure Python package with modified subclasses of all "
 "stdlib XML parsers that prevent any potentially malicious operation. Use of "
 "this package is recommended for any server code that parses untrusted XML "
 "data. The package also ships with example exploits and extended "

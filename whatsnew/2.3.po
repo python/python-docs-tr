@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-24 17:22+0000\n"
+"POT-Creation-Date: 2024-05-01 21:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -109,7 +109,7 @@ msgid ""
 "checking whether one set is a subset or superset of another::"
 msgstr ""
 
-#: whatsnew/2.3.rst:117
+#: whatsnew/2.3.rst:116
 msgid ":pep:`218` - Adding a Built-In Set Object Type"
 msgstr ""
 
@@ -249,7 +249,7 @@ msgid ""
 "functions or stored in a data structure."
 msgstr ""
 
-#: whatsnew/2.3.rst:248
+#: whatsnew/2.3.rst:247
 msgid ":pep:`255` - Simple Generators"
 msgstr ""
 
@@ -289,7 +289,7 @@ msgid ""
 "variable names that use characters outside of the usual alphanumerics."
 msgstr ""
 
-#: whatsnew/2.3.rst:282
+#: whatsnew/2.3.rst:281
 msgid ":pep:`263` - Defining Python Source Code Encodings"
 msgstr ""
 
@@ -328,7 +328,7 @@ msgid ""
 "import from the :file:`lib/` subdirectory within the archive."
 msgstr ""
 
-#: whatsnew/2.3.rst:331
+#: whatsnew/2.3.rst:328
 msgid ":pep:`273` - Import Modules from Zip Archives"
 msgstr ""
 
@@ -380,7 +380,7 @@ msgstr ""
 msgid "Under MacOS, :func:`os.listdir` may now return Unicode filenames."
 msgstr ""
 
-#: whatsnew/2.3.rst:365
+#: whatsnew/2.3.rst:364
 msgid ":pep:`277` - Unicode file name support for Windows NT"
 msgstr ""
 
@@ -840,7 +840,7 @@ msgid ""
 "succession of tuples or lists, quoting strings that contain the delimiter."
 msgstr ""
 
-#: whatsnew/2.3.rst:806
+#: whatsnew/2.3.rst:805
 msgid ":pep:`305` - CSV File API"
 msgstr ""
 
@@ -1142,8 +1142,7 @@ msgid ""
 "2.3 now uses the C3 algorithm as described in the paper `\"A Monotonic "
 "Superclass Linearization for Dylan\" <https://citeseerx.ist.psu.edu/viewdoc/"
 "summary?doi=10.1.1.19.3910>`_. To understand the motivation for this "
-"change,  read Michele Simionato's article `\"Python 2.3 Method Resolution "
-"Order\" <http://www.phyast.pitt.edu/~micheles/mro.html>`_, or read the "
+"change,  read Michele Simionato's article :ref:`python_2.3_mro`, or read the "
 "thread on python-dev starting with the message at https://mail.python.org/"
 "pipermail/python-dev/2002-October/029035.html. Samuele Pedroni first pointed "
 "out the problem and also implemented the fix by coding the C3 algorithm."
@@ -2039,7 +2038,7 @@ msgid ""
 "distribution and bundle it with the source of your extension."
 msgstr ""
 
-#: whatsnew/2.3.rst:1869
+#: whatsnew/2.3.rst:1867
 msgid "https://hg.python.org/cpython/file/default/Objects/obmalloc.c"
 msgstr ""
 

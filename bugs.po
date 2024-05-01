@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-01 14:57+0000\n"
+"POT-Creation-Date: 2024-05-01 21:53+0000\n"
 "PO-Revision-Date: 2023-03-01 12:08+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -66,6 +66,13 @@ msgstr ""
 
 #: bugs.rst:25
 msgid ""
+"If you find a bug in the theme (HTML / CSS / JavaScript) of the "
+"documentation, please submit a bug report on the `python-doc-theme bug "
+"tracker <https://github.com/python/python-docs-theme>`_."
+msgstr ""
+
+#: bugs.rst:29
+msgid ""
 "If you're short on time, you can also email documentation bug reports to "
 "docs@python.org (behavioral bugs can be sent to python-list@python.org). "
 "'docs@' is a mailing list run by volunteers; your request will be noticed, "
@@ -77,27 +84,27 @@ msgstr ""
 "posta listesidir; talebiniz fark edilecektir, ancak işlenmesi biraz zaman "
 "alabilir."
 
-#: bugs.rst:33
+#: bugs.rst:36
 msgid "`Documentation bugs`_"
 msgstr "`Dokümantasyon hataları`_"
 
-#: bugs.rst:33
+#: bugs.rst:37
 msgid ""
 "A list of documentation bugs that have been submitted to the Python issue "
 "tracker."
 msgstr "Python sorun takipçisine gönderilen dokümantasyon hatalarının listesi."
 
-#: bugs.rst:36
+#: bugs.rst:39
 msgid "`Issue Tracking <https://devguide.python.org/tracker/>`_"
 msgstr "`Hata Takibi <https://devguide.python.org/tracker/>`_"
 
-#: bugs.rst:36
+#: bugs.rst:40
 msgid ""
 "Overview of the process involved in reporting an improvement on the tracker."
 msgstr ""
 "Takipçide bir iyileştirmenin bildirilmesiyle ilgili sürece genel bakış."
 
-#: bugs.rst:39
+#: bugs.rst:42
 msgid ""
 "`Helping with Documentation <https://devguide.python.org/docquality/#helping-"
 "with-documentation>`_"
@@ -105,7 +112,7 @@ msgstr ""
 "`Dokümantasyona Yardım Etmek <https://devguide.python.org/docquality/"
 "#helping-with-documentation>`_"
 
-#: bugs.rst:39
+#: bugs.rst:43
 msgid ""
 "Comprehensive guide for individuals that are interested in contributing to "
 "Python documentation."
@@ -113,7 +120,7 @@ msgstr ""
 "Python dokümantasyonuna katkıda bulunmak isteyen bireyler için kapsamlı "
 "kılavuz."
 
-#: bugs.rst:41
+#: bugs.rst:45
 msgid ""
 "`Documentation Translations <https://devguide.python.org/documentation/"
 "translating/>`_"
@@ -121,7 +128,7 @@ msgstr ""
 "`Dokümantasyon Çevirileri <https://devguide.python.org/documentation/"
 "translating/>`_"
 
-#: bugs.rst:42
+#: bugs.rst:46
 msgid ""
 "A list of GitHub pages for documentation translation and their primary "
 "contacts."
@@ -129,11 +136,11 @@ msgstr ""
 "Dokümantasyon çevirilerinin GitHub sayfaları ve bunların iletişim "
 "bilgilerini içeren bir liste."
 
-#: bugs.rst:48
+#: bugs.rst:52
 msgid "Using the Python issue tracker"
 msgstr "Python hata takipçisini kullanmak"
 
-#: bugs.rst:50
+#: bugs.rst:54
 msgid ""
 "Issue reports for Python itself should be submitted via the GitHub issues "
 "tracker (https://github.com/python/cpython/issues). The GitHub issues "
@@ -145,7 +152,7 @@ msgstr ""
 "bilgilerin girilmesini ve geliştiricilere gönderilmesini sağlayan bir web "
 "formu sunar."
 
-#: bugs.rst:55
+#: bugs.rst:59
 msgid ""
 "The first step in filing a report is to determine whether the problem has "
 "already been reported.  The advantage in doing so, aside from saving the "
@@ -162,7 +169,7 @@ msgstr ""
 "mümkünse bilgileri sağlayabilirsiniz!). Bunu yapmak için, sayfanın üst "
 "kısmındaki arama kutusunu kullanarak hata veritabanında arama yapın."
 
-#: bugs.rst:62
+#: bugs.rst:66
 msgid ""
 "If the problem you're reporting is not already in the list, log in to "
 "GitHub. If you don't already have a GitHub account, create a new account "
@@ -173,7 +180,7 @@ msgstr ""
 "hesabınız, \"Kayıt Ol\" bağlantısına tıklayın.  Hata raporunu anonim olarak "
 "göndermek mümkün değildir."
 
-#: bugs.rst:67
+#: bugs.rst:71
 msgid ""
 "Being now logged in, you can submit an issue. Click on the \"New issue\" "
 "button in the top bar to report a new issue."
@@ -181,11 +188,11 @@ msgstr ""
 "Oturum açtıktan sonra bir hata raporu gönderebilirsiniz.  Yeni bir rapor "
 "oluşturmak için sayfanın üst kısmındaki \"New issue\" butonuna tıklayın."
 
-#: bugs.rst:70
+#: bugs.rst:74
 msgid "The submission form has two fields, \"Title\" and \"Comment\"."
 msgstr "Form iki kısımdan oluşur. \"Başlık\" ve \"Yorum\"."
 
-#: bugs.rst:72
+#: bugs.rst:76
 msgid ""
 "For the \"Title\" field, enter a *very* short description of the problem; "
 "fewer than ten words is good."
@@ -193,7 +200,7 @@ msgstr ""
 "\"Başlık\" için hatanın *çok* kısa açıklamasını girin; başlığın on kelimeden "
 "az olması iyidir."
 
-#: bugs.rst:75
+#: bugs.rst:79
 msgid ""
 "In the \"Comment\" field, describe the problem in detail, including what you "
 "expected to happen and what did happen.  Be sure to include whether any "
@@ -205,7 +212,7 @@ msgstr ""
 "dahil olup olmadığını, hangi donanım ve yazılım platformunu kullandığınızı "
 "(uygun sürüm bilgileri dahil) eklediğinizden emin olun."
 
-#: bugs.rst:80
+#: bugs.rst:84
 msgid ""
 "Each issue report will be reviewed by a developer who will determine what "
 "needs to be done to correct the problem. You will receive an update each "
@@ -215,7 +222,7 @@ msgstr ""
 "bir geliştiriciye atanır.  Hata üzerinde her işlem başlatıldığında bir "
 "güncelleme alırsınız."
 
-#: bugs.rst:89
+#: bugs.rst:91
 msgid ""
 "`How to Report Bugs Effectively <https://www.chiark.greenend.org.uk/"
 "~sgtatham/bugs.html>`_"
@@ -223,7 +230,7 @@ msgstr ""
 "'Hataları Etkili Bir Şekilde Bildirmek <https://www.chiark.greenend.org.uk/"
 "~sgtatham/bugs.html>'_"
 
-#: bugs.rst:88
+#: bugs.rst:92
 msgid ""
 "Article which goes into some detail about how to create a useful bug report. "
 "This describes what kind of information is useful and why it is useful."
@@ -232,7 +239,7 @@ msgstr ""
 "giren makale. Bu makale, ne tür bilgilerin yararlı olduğunu ve neden yararlı "
 "olduğunu açıklar."
 
-#: bugs.rst:92
+#: bugs.rst:95
 msgid ""
 "`Bug Writing Guidelines <https://bugzilla.mozilla.org/page.cgi?id=bug-"
 "writing.html>`_"
@@ -240,7 +247,7 @@ msgstr ""
 "'Hata Raporu Yazma Yönergeleri <https://bugzilla.mozilla.org/page.cgi?id=bug-"
 "writing.html>'_"
 
-#: bugs.rst:92
+#: bugs.rst:96
 msgid ""
 "Information about writing a good bug report.  Some of this is specific to "
 "the Mozilla project, but describes general good practices."
@@ -248,11 +255,11 @@ msgstr ""
 "İyi bir hata raporu yazma hakkında bilgi.  Bunların bir kısmı Mozilla "
 "projesine özgüdür, ancak genel iyi uygulamaları açıklar."
 
-#: bugs.rst:98
+#: bugs.rst:102
 msgid "Getting started contributing to Python yourself"
 msgstr "Python'a kendiniz katkıda bulunmaya başlayın"
 
-#: bugs.rst:100
+#: bugs.rst:104
 msgid ""
 "Beyond just reporting bugs that you find, you are also welcome to submit "
 "patches to fix them.  You can find more information on how to get started "
