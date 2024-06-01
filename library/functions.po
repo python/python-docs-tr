@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-01 20:27+0000\n"
+"POT-Creation-Date: 2024-06-01 00:16+0000\n"
 "PO-Revision-Date: 2023-03-08 10:13-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -496,19 +496,19 @@ msgstr ""
 "Eğer ön ek olarak \"0b\" isteniyorsa veya istenmiyorsa, aşağıdaki gibi iki "
 "şekilde de kullanabilirsiniz."
 
-#: library/functions.rst:845 library/functions.rst:1163
+#: library/functions.rst:909 library/functions.rst:1246
 msgid "See also :func:`format` for more information."
 msgstr "Ayrıca daha fazla bilgi için :func:`format` 'a bakabilirsiniz."
 
 #: library/functions.rst:146
 #, fuzzy
 msgid ""
-"Return a Boolean value, i.e. one of ``True`` or ``False``.  *x* is converted "
-"using the standard :ref:`truth testing procedure <truth>`.  If *x* is false "
-"or omitted, this returns ``False``; otherwise, it returns ``True``.  The :"
-"class:`bool` class is a subclass of :class:`int` (see :ref:`typesnumeric`). "
-"It cannot be subclassed further.  Its only instances are ``False`` and "
-"``True`` (see :ref:`typebool`)."
+"Return a Boolean value, i.e. one of ``True`` or ``False``.  The argument is "
+"converted using the standard :ref:`truth testing procedure <truth>`. If the "
+"argument is false or omitted, this returns ``False``; otherwise, it returns "
+"``True``.  The :class:`bool` class is a subclass of :class:`int` (see :ref:"
+"`typesnumeric`). It cannot be subclassed further.  Its only instances are "
+"``False`` and ``True`` (see :ref:`typebool`)."
 msgstr ""
 "``True`` ya da ``False`` değeri döndürür. *x*, standart :ref:`truth testing "
 "procedure <truth>` kullanılarak boolean veri tipine dönüştürülür. *x* "
@@ -517,11 +517,12 @@ msgstr ""
 "sınıfıdır (bkz. :ref:`typesnumeric`). Daha fazla alt sınıfa ayrılamaz. Bunun "
 "tek örnekleri ``False`` ve ``True`` 'dur (bkz. :ref:`bltin-boolean-values`)."
 
-#: library/functions.rst:710 library/functions.rst:934
-msgid "*x* is now a positional-only parameter."
+#: library/functions.rst:774
+#, fuzzy
+msgid "The parameter is now positional-only."
 msgstr "*x* artık yalnızca konumsal bir parametredir."
 
-#: library/functions.rst:160
+#: library/functions.rst:161
 msgid ""
 "This function drops you into the debugger at the call site.  Specifically, "
 "it calls :func:`sys.breakpointhook`, passing ``args`` and ``kws`` straight "
@@ -544,20 +545,20 @@ msgstr ""
 "ayıklayıcıya girmenize izin verir. Eğer :func:`sys.breakpointhook` "
 "ulaşılabilir değilse, bu fonksiyon :exc:`RuntimeError` hatasını verecektir."
 
-#: library/functions.rst:172
+#: library/functions.rst:173
 msgid ""
 "By default, the behavior of :func:`breakpoint` can be changed with the :"
 "envvar:`PYTHONBREAKPOINT` environment variable. See :func:`sys."
 "breakpointhook` for usage details."
 msgstr ""
 
-#: library/functions.rst:176
+#: library/functions.rst:177
 msgid ""
 "Note that this is not guaranteed if :func:`sys.breakpointhook` has been "
 "replaced."
 msgstr ""
 
-#: library/functions.rst:179
+#: library/functions.rst:180
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.breakpoint`` with "
 "argument ``breakpointhook``."
@@ -565,7 +566,7 @@ msgstr ""
 "``breakpointhook`` parametresi ile :ref:`denetleme olayı <auditing>` "
 "``builtins.breakpoint`` ortaya çıkartır."
 
-#: library/functions.rst:189
+#: library/functions.rst:190
 msgid ""
 "Return a new array of bytes.  The :class:`bytearray` class is a mutable "
 "sequence of integers in the range 0 <= x < 256.  It has most of the usual "
@@ -578,7 +579,7 @@ msgstr ""
 "metotlarının çoğuna sahiptir. :class:`bytes` tipinin sahip olduğu metotlar "
 "için, :ref:`bytes-methods` 'a bakınız."
 
-#: library/functions.rst:194
+#: library/functions.rst:195
 msgid ""
 "The optional *source* parameter can be used to initialize the array in a few "
 "different ways:"
@@ -586,7 +587,7 @@ msgstr ""
 "Opsiyonel *source* parametresi diziyi birkaç farklı şekilde başlatmak için "
 "kullanılabilir:"
 
-#: library/functions.rst:197
+#: library/functions.rst:198
 msgid ""
 "If it is a *string*, you must also give the *encoding* (and optionally, "
 "*errors*) parameters; :func:`bytearray` then converts the string to bytes "
@@ -596,14 +597,14 @@ msgstr ""
 "de vermelisiniz; sonrasında :func:`bytearray` :meth:`str.encode` kullanarak "
 "dizeyi bayta çevirecektir."
 
-#: library/functions.rst:201
+#: library/functions.rst:202
 msgid ""
 "If it is an *integer*, the array will have that size and will be initialized "
 "with null bytes."
 msgstr ""
 "Eğer bir *integer* ise, dizi bu boyuta göre null baytlar ile doldurulur."
 
-#: library/functions.rst:204
+#: library/functions.rst:205
 msgid ""
 "If it is an object conforming to the :ref:`buffer interface "
 "<bufferobjects>`, a read-only buffer of the object will be used to "
@@ -612,7 +613,7 @@ msgstr ""
 "Eğer :ref:`arabellek arayüzü <bufferobjects>` 'ne uyan bir objeyse, bayt "
 "dizisini başlatmak için bir salt okunur arabellek kullanılır."
 
-#: library/functions.rst:207
+#: library/functions.rst:208
 msgid ""
 "If it is an *iterable*, it must be an iterable of integers in the range ``0 "
 "<= x < 256``, which are used as the initial contents of the array."
@@ -620,15 +621,15 @@ msgstr ""
 "Eğer *iterable* ise, 0 <= x < 256 aralığındaki dizinin başlangıç içeriği "
 "olan tam sayılardan oluşan bir yinelenebilir nesne olmalıdır."
 
-#: library/functions.rst:210
+#: library/functions.rst:211
 msgid "Without an argument, an array of size 0 is created."
 msgstr "Argüman yoksa, boyutu 0 olan bir dizi oluşturulur."
 
-#: library/functions.rst:212
+#: library/functions.rst:213
 msgid "See also :ref:`binaryseq` and :ref:`typebytearray`."
 msgstr ":ref:`binaryseq` ve :ref:`typebytearray` 'a bakınız."
 
-#: library/functions.rst:221
+#: library/functions.rst:222
 msgid ""
 "Return a new \"bytes\" object which is an immutable sequence of integers in "
 "the range ``0 <= x < 256``.  :class:`bytes` is an immutable version of :"
@@ -640,24 +641,24 @@ msgstr ""
 "değiştirilemez versiyonudur. Aynı objeyi değiştirmeyen metotlara, indeksleme "
 "ve dilimleme davranışına sahiptir."
 
-#: library/functions.rst:226
+#: library/functions.rst:227
 msgid ""
 "Accordingly, constructor arguments are interpreted as for :func:`bytearray`."
 msgstr "Buna göre, yapıcı argümanları :func:`bytearray` için yorumlanır."
 
-#: library/functions.rst:228
+#: library/functions.rst:229
 msgid "Bytes objects can also be created with literals, see :ref:`strings`."
 msgstr ""
 "Bayt nesneleri değişmez değerler ile de oluşturulabilir, :ref:`strings` 'a "
 "bakınız."
 
-#: library/functions.rst:230
+#: library/functions.rst:231
 msgid "See also :ref:`binaryseq`, :ref:`typebytes`, and :ref:`bytes-methods`."
 msgstr ""
 "Ayrıca :ref:`binaryseq`, :ref:`typebytes`, ve :ref:`bytes-methods` 'a "
 "bakınız."
 
-#: library/functions.rst:235
+#: library/functions.rst:236
 #, fuzzy
 msgid ""
 "Return :const:`True` if the *object* argument appears callable, :const:"
@@ -673,7 +674,7 @@ msgstr ""
 "metodu varsa) çağrılabilir olduğunu not edin. Bir sınıfı çağırmak sınıftan "
 "türeyen yeni bir örnek döndürür."
 
-#: library/functions.rst:241
+#: library/functions.rst:242
 msgid ""
 "This function was first removed in Python 3.0 and then brought back in "
 "Python 3.2."
@@ -681,7 +682,7 @@ msgstr ""
 "Bu fonksiyon Python 3.0 versiyonunda kaldırılmıştı ama Python 3.2 "
 "versiyonunda geri getirildi."
 
-#: library/functions.rst:248
+#: library/functions.rst:249
 msgid ""
 "Return the string representing a character whose Unicode code point is the "
 "integer *i*.  For example, ``chr(97)`` returns the string ``'a'``, while "
@@ -692,7 +693,7 @@ msgstr ""
 "``chr(8364)`` , ``'€'`` dizesini döndürür. Bu fonksiyon, :func:`ord` 'un tam "
 "tersidir."
 
-#: library/functions.rst:252
+#: library/functions.rst:253
 msgid ""
 "The valid range for the argument is from 0 through 1,114,111 (0x10FFFF in "
 "base 16).  :exc:`ValueError` will be raised if *i* is outside that range."
@@ -701,11 +702,11 @@ msgstr ""
 "sisteminde 0x10FFFF). Eğer *i* aralığın dışında ise :exc:`ValueError` hatası "
 "ortaya çıkar."
 
-#: library/functions.rst:258
+#: library/functions.rst:259
 msgid "Transform a method into a class method."
 msgstr "Bir metodu sınıf metoduna dönüştürür."
 
-#: library/functions.rst:260
+#: library/functions.rst:261
 msgid ""
 "A class method receives the class as an implicit first argument, just like "
 "an instance method receives the instance. To declare a class method, use "
@@ -715,7 +716,7 @@ msgstr ""
 "türeyen bir örneğin metodunun örneği aldığı gibi. Bir sınıf metodunu bu "
 "şekilde tanımlayabilirsiniz::"
 
-#: library/functions.rst:268
+#: library/functions.rst:269
 msgid ""
 "The ``@classmethod`` form is a function :term:`decorator` -- see :ref:"
 "`function` for details."
@@ -723,7 +724,7 @@ msgstr ""
 "``@classmethod`` formu, bir :term:`decorator` fonksiyonudur. -- detaylar "
 "için :ref:`function` 'a bakınız."
 
-#: library/functions.rst:271
+#: library/functions.rst:272
 msgid ""
 "A class method can be called either on the class (such as ``C.f()``) or on "
 "an instance (such as ``C().f()``).  The instance is ignored except for its "
@@ -735,7 +736,7 @@ msgstr ""
 "metodu türetilmiş bir sınıf için çağrılırsa, türetilmiş sınıf nesnesi örtük "
 "ilk argüman olarak geçer."
 
-#: library/functions.rst:276
+#: library/functions.rst:277
 msgid ""
 "Class methods are different than C++ or Java static methods. If you want "
 "those, see :func:`staticmethod` in this section. For more information on "
@@ -745,7 +746,7 @@ msgstr ""
 "kullanmak isterseniz, bu bölümdeki :func:`staticmethod` kısmına bakınız. "
 "Sınıf metotları hakkında daha fazla bilgi için, :ref:`types` 'a bakınız."
 
-#: library/functions.rst:280
+#: library/functions.rst:281
 msgid ""
 "Class methods can now wrap other :term:`descriptors <descriptor>` such as :"
 "func:`property`."
@@ -753,7 +754,7 @@ msgstr ""
 "Sınıf metotları artık :func:`property` gibi diğer :term:`descriptors "
 "<descriptor>` 'ları sarmalayabilir."
 
-#: library/functions.rst:284
+#: library/functions.rst:285
 msgid ""
 "Class methods now inherit the method attributes (``__module__``, "
 "``__name__``, ``__qualname__``, ``__doc__`` and ``__annotations__``) and "
@@ -763,7 +764,7 @@ msgstr ""
 "``__doc__`` and ``__annotations__``) metot özelliklerini miras alır ve yeni "
 "bir ``__wrapped__`` özelliğine sahiplerdir."
 
-#: library/functions.rst:289
+#: library/functions.rst:290
 msgid ""
 "Class methods can no longer wrap other :term:`descriptors <descriptor>` such "
 "as :func:`property`."
@@ -771,7 +772,7 @@ msgstr ""
 "Sınıf metotları artık :func:`property` gibi diğer :term:`descriptor` 'ları "
 "sarmalayamaz."
 
-#: library/functions.rst:296
+#: library/functions.rst:297
 msgid ""
 "Compile the *source* into a code or AST object.  Code objects can be "
 "executed by :func:`exec` or :func:`eval`.  *source* can either be a normal "
@@ -783,7 +784,7 @@ msgstr ""
 "normal bir dize, bayt dizesi veya bir AST nesnesi olabilir. AST nesneleriyle "
 "nasıl çalışılacağını öğrenmek için :mod:`ast` modülüne bkz."
 
-#: library/functions.rst:301
+#: library/functions.rst:302
 msgid ""
 "The *filename* argument should give the file from which the code was read; "
 "pass some recognizable value if it wasn't read from a file (``'<string>'`` "
@@ -793,7 +794,7 @@ msgstr ""
 "okunmuyorsa ayırtedilebilir bir değer verebilirsin (genellikle "
 "``'<string>'`` kullanılır)."
 
-#: library/functions.rst:305
+#: library/functions.rst:306
 msgid ""
 "The *mode* argument specifies what kind of code must be compiled; it can be "
 "``'exec'`` if *source* consists of a sequence of statements, ``'eval'`` if "
@@ -807,7 +808,7 @@ msgstr ""
 "olabilir (ikinci durumda, \"None\" dışında bir değere sahip ifadeler "
 "yazdırılacaktır)."
 
-#: library/functions.rst:311
+#: library/functions.rst:312
 msgid ""
 "The optional arguments *flags* and *dont_inherit* control which :ref:"
 "`compiler options <ast-compiler-flags>` should be activated and which :ref:"
@@ -832,7 +833,7 @@ msgstr ""
 "koddaki bayraklar (gelecekteki özellikler ve derleyici seçenekleri) "
 "yoksayılır."
 
-#: library/functions.rst:322
+#: library/functions.rst:323
 msgid ""
 "Compiler options and future statements are specified by bits which can be "
 "bitwise ORed together to specify multiple options. The bitfield required to "
@@ -849,7 +850,7 @@ msgstr ""
 "`Derleyici bayrakları <ast-compiler-flags>` , :mod:`ast` modülünde ``PyCF_`` "
 "öneki ile bulunabilir."
 
-#: library/functions.rst:330
+#: library/functions.rst:331
 msgid ""
 "The argument *optimize* specifies the optimization level of the compiler; "
 "the default value of ``-1`` selects the optimization level of the "
@@ -863,7 +864,7 @@ msgstr ""
 "(optimizasyon yok; ``__debug__`` doğru), ``1`` (iddialar kaldırılır, "
 "``__debug__`` yanlış) veya ``2`` (Ekstradan doküman dizeleri de kaldırıldı)."
 
-#: library/functions.rst:336
+#: library/functions.rst:337
 msgid ""
 "This function raises :exc:`SyntaxError` if the compiled source is invalid, "
 "and :exc:`ValueError` if the source contains null bytes."
@@ -871,7 +872,7 @@ msgstr ""
 "Bu fonksiyon derlenmiş kaynak geçerli değil ise :exc:`SyntaxError` , null "
 "baytlar içeriyorsa :exc:`ValueError` hatalarını ortaya çıkarır."
 
-#: library/functions.rst:339
+#: library/functions.rst:340
 msgid ""
 "If you want to parse Python code into its AST representation, see :func:`ast."
 "parse`."
@@ -879,7 +880,7 @@ msgstr ""
 "Python kodunu onun AST temsiline ayrıştırmak isterseniz, :func:`ast.parse` "
 "'a bakınız."
 
-#: library/functions.rst:342
+#: library/functions.rst:343
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``compile`` with arguments "
 "``source``, ``filename``."
@@ -887,7 +888,7 @@ msgstr ""
 "``source`` ve ``filename`` argümanlarıyla :ref:`denetleme olayı <auditing>` "
 "``compile`` ortaya çıkartır."
 
-#: library/functions.rst:344
+#: library/functions.rst:345
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``compile`` with arguments "
 "``source`` and ``filename``. This event may also be raised by implicit "
@@ -897,7 +898,7 @@ msgstr ""
 "``compile`` ortaya çıkartır. Bu durum, örtük derleme ile de ortaya "
 "çıkarılabilir."
 
-#: library/functions.rst:350
+#: library/functions.rst:351
 msgid ""
 "When compiling a string with multi-line code in ``'single'`` or ``'eval'`` "
 "mode, input must be terminated by at least one newline character.  This is "
@@ -909,7 +910,7 @@ msgstr ""
 "`code` modülündeki tamamlanmış ve tamamlanmamış ifadelerin tespitini "
 "kolaylaştırmak içindir."
 
-#: library/functions.rst:357
+#: library/functions.rst:358
 msgid ""
 "It is possible to crash the Python interpreter with a sufficiently large/"
 "complex string when compiling to an AST object due to stack depth "
@@ -919,7 +920,7 @@ msgstr ""
 "yeterince büyük/karmaşık bir dizeyi bir AST nesnesine derlerken Python "
 "yorumlayıcısını çökertmek mümkündür."
 
-#: library/functions.rst:361
+#: library/functions.rst:362
 msgid ""
 "Allowed use of Windows and Mac newlines.  Also, input in ``'exec'`` mode "
 "does not have to end in a newline anymore.  Added the *optimize* parameter."
@@ -928,7 +929,7 @@ msgstr ""
 "böyle ``'exec'`` modunda iken veri girişinin yeni satırda sonlanması "
 "gerekmiyor. *optimize* parametresi eklendi."
 
-#: library/functions.rst:365
+#: library/functions.rst:366
 msgid ""
 "Previously, :exc:`TypeError` was raised when null bytes were encountered in "
 "*source*."
@@ -936,7 +937,7 @@ msgstr ""
 "Önceden, *source* , null baytlar içeriyorsa :exc:`TypeError` hatası ortaya "
 "çıkardı."
 
-#: library/functions.rst:369
+#: library/functions.rst:370
 msgid ""
 "``ast.PyCF_ALLOW_TOP_LEVEL_AWAIT`` can now be passed in flags to enable "
 "support for top-level ``await``, ``async for``, and ``async with``."
@@ -944,58 +945,72 @@ msgstr ""
 "``ast.PyCF_ALLOW_TOP_LEVEL_AWAIT`` artık üst düze ``await``, ``async for``, "
 "ve ``async with`` desteğini etkinleştirmek için bayraklarla iletilebilir."
 
-#: library/functions.rst:377
+#: library/functions.rst:379
 msgid ""
-"Return a complex number with the value *real* + *imag*\\*1j or convert a "
-"string or number to a complex number.  If the first parameter is a string, "
-"it will be interpreted as a complex number and the function must be called "
-"without a second parameter.  The second parameter can never be a string. "
-"Each argument may be any numeric type (including complex).  If *imag* is "
-"omitted, it defaults to zero and the constructor serves as a numeric "
-"conversion like :class:`int` and :class:`float`.  If both arguments are "
-"omitted, returns ``0j``."
+"Convert a single string or number to a complex number, or create a complex "
+"number from real and imaginary parts."
 msgstr ""
-"*real* + *imag*\\*1j değeriyle bir karmaşık sayı döndürür veya dize veya "
-"sayıyı karmaşık sayıya dönüştürür. Eğer ilk parametre dize ise, karmaşık "
-"sayı olarak yorumlanır ve fonksiyon ikinci bir parametre olmadan "
-"çağrılmalıdır. İkinci parametre asla dize olamaz. Her argüman bir sayısal "
-"çeşit olabilir (karmaşık sayılar dahil). Eğer *imag* atlandıysa, varsayılan "
-"olarak sıfır alınır ve yapıcı metot :class:`int` ve :class:`float` gibi sayı "
-"dönüştürme işlevi görür. Eğer iki argüman da atlandıysa, ``0j`` döndürür."
 
-#: library/functions.rst:386
+#: library/functions.rst:719 library/functions.rst:965
+#, fuzzy
+msgid "Examples:"
+msgstr "Örnekler::"
+
+#: library/functions.rst:403
+msgid ""
+"If the argument is a string, it must contain either a real part (in the same "
+"format as for :func:`float`) or an imaginary part (in the same format but "
+"with a ``'j'`` or ``'J'`` suffix), or both real and imaginary parts (the "
+"sign of the imaginary part is mandatory in this case). The string can "
+"optionally be surrounded by whitespaces and the round parentheses ``'('`` "
+"and ``')'``, which are ignored. The string must not contain whitespace "
+"between ``'+'``, ``'-'``, the ``'j'`` or ``'J'`` suffix, and the decimal "
+"number. For example, ``complex('1+2j')`` is fine, but ``complex('1 + 2j')`` "
+"raises :exc:`ValueError`. More precisely, the input must conform to the :"
+"token:`~float:complexvalue` production rule in the following grammar, after "
+"parentheses and leading and trailing whitespace characters are removed:"
+msgstr ""
+
+#: library/functions.rst:422
 #, fuzzy
 msgid ""
-"For a general Python object ``x``, ``complex(x)`` delegates to ``x."
-"__complex__()``.  If :meth:`~object.__complex__` is not defined then it "
-"falls back to :meth:`~object.__float__`.  If :meth:`!__float__` is not "
-"defined then it falls back to :meth:`~object.__index__`."
+"If the argument is a number, the constructor serves as a numeric conversion "
+"like :class:`int` and :class:`float`. For a general Python object ``x``, "
+"``complex(x)`` delegates to ``x.__complex__()``. If :meth:`~object."
+"__complex__` is not defined then it falls back to :meth:`~object.__float__`. "
+"If :meth:`!__float__` is not defined then it falls back to :meth:`~object."
+"__index__`."
 msgstr ""
 "Genel bir python nesnesi ``x`` için, ``complex(x)`` , ``x.__complex__()`` 'i "
 "temsil eder. Eğer ``__complex__()`` tanımlanmadıysa, :meth:`__float__` 'a "
 "geri döner. ``__float__()`` tanımlanmadıysa, :meth:`__index__` 'e geri döner."
 
-#: library/functions.rst:393
+#: library/functions.rst:431
 msgid ""
-"When converting from a string, the string must not contain whitespace around "
-"the central ``+`` or ``-`` operator.  For example, ``complex('1+2j')`` is "
-"fine, but ``complex('1 + 2j')`` raises :exc:`ValueError`."
+"If two arguments are provided or keyword arguments are used, each argument "
+"may be any numeric type (including complex). If both arguments are real "
+"numbers, return a complex number with the real component *real* and the "
+"imaginary component *imag*. If both arguments are complex numbers, return a "
+"complex number with the real component ``real.real-imag.imag`` and the "
+"imaginary component ``real.imag+imag.real``. If one of arguments is a real "
+"number, only its real component is used in the above expressions."
 msgstr ""
-"Bir dize dönüştürürken, dizenin, merkezi ``+`` veya ``-`` operatörünün "
-"etrafında boşluk içermemelidir. Örnek olarak, ``complex('1+2j')`` uygun, ama "
-"``complex('1 + 2j')`` :exc:`ValueError` hatası ortaya çıkarır."
 
-#: library/functions.rst:398
+#: library/functions.rst:441
+msgid "If all arguments are omitted, returns ``0j``."
+msgstr ""
+
+#: library/functions.rst:443
 msgid "The complex type is described in :ref:`typesnumeric`."
 msgstr "Karmaşık tür,  :ref:`typesnumeric` kısmında açıklanmıştır."
 
-#: library/functions.rst:707 library/functions.rst:931
+#: library/functions.rst:771 library/functions.rst:1014
 msgid "Grouping digits with underscores as in code literals is allowed."
 msgstr ""
 "Rakamların, kod sabitlerinde olduğu gibi alt çizgi ile gruplandırılmasına "
 "izin verilir."
 
-#: library/functions.rst:403
+#: library/functions.rst:448
 #, fuzzy
 msgid ""
 "Falls back to :meth:`~object.__index__` if :meth:`~object.__complex__` and :"
@@ -1004,7 +1019,7 @@ msgstr ""
 "Eğer :meth:`__complex__` ve :meth:`__float__` tanımlanmadıysa, :meth:"
 "`__index__` 'e geri döner."
 
-#: library/functions.rst:410
+#: library/functions.rst:455
 msgid ""
 "This is a relative of :func:`setattr`.  The arguments are an object and a "
 "string.  The string must be the name of one of the object's attributes.  The "
@@ -1019,7 +1034,7 @@ msgstr ""
 "değerdir. *name* bir Python tanımlayıcısı olmak zorunda değildir (:func:"
 "`setattr` bkz.)."
 
-#: library/functions.rst:423
+#: library/functions.rst:468
 msgid ""
 "Create a new dictionary.  The :class:`dict` object is the dictionary class. "
 "See :class:`dict` and :ref:`typesmapping` for documentation about this class."
@@ -1028,7 +1043,7 @@ msgstr ""
 "sınıf hakkındaki dokümantasyon için :class:`dict` ve :ref:`typesmapping` 'e "
 "bakınız."
 
-#: library/functions.rst:426
+#: library/functions.rst:471
 msgid ""
 "For other containers see the built-in :class:`list`, :class:`set`, and :"
 "class:`tuple` classes, as well as the :mod:`collections` module."
@@ -1036,7 +1051,7 @@ msgstr ""
 "Diğer konteynerler için dahili :class:`list` , :class:`set` , :class:`tuple` "
 "sınıfları ve :mod:`collections` modülüne bakınız."
 
-#: library/functions.rst:433
+#: library/functions.rst:478
 msgid ""
 "Without arguments, return the list of names in the current local scope.  "
 "With an argument, attempt to return a list of valid attributes for that "
@@ -1046,7 +1061,7 @@ msgstr ""
 "Argüman varsa, o nesne için geçerli özelliklerin bir listesini döndürmeye "
 "çalışır."
 
-#: library/functions.rst:436
+#: library/functions.rst:481
 #, fuzzy
 msgid ""
 "If the object has a method named :meth:`~object.__dir__`, this method will "
@@ -1061,7 +1076,7 @@ msgstr ""
 "nesnelerin, :func:`dir` 'in özellikleri bildirme şeklini özelleştirmesine "
 "izin verir."
 
-#: library/functions.rst:443
+#: library/functions.rst:488
 #, fuzzy
 msgid ""
 "If the object does not provide :meth:`~object.__dir__`, the function tries "
@@ -1075,7 +1090,7 @@ msgstr ""
 "dener. Sonuç listesinin tamamlanmış olmasına gerek yoktur ve nesnenin özel "
 "bir  :func:`__getattr__` fonksiyonu varsa kusurlu olabilir."
 
-#: library/functions.rst:449
+#: library/functions.rst:494
 msgid ""
 "The default :func:`dir` mechanism behaves differently with different types "
 "of objects, as it attempts to produce the most relevant, rather than "
@@ -1084,7 +1099,7 @@ msgstr ""
 "Varsayılan :func:`dir` mekanizması, eksiksiz bilgi yerine en alakalı bilgiyi "
 "üretmeye çalıştığı için farklı nesne türleriyle farklı çalışır:"
 
-#: library/functions.rst:453
+#: library/functions.rst:498
 msgid ""
 "If the object is a module object, the list contains the names of the "
 "module's attributes."
@@ -1092,7 +1107,7 @@ msgstr ""
 "Eğer nesne bir modül nesnesiyse, liste modülün özelliklerinin isimlerini "
 "içerir."
 
-#: library/functions.rst:456
+#: library/functions.rst:501
 msgid ""
 "If the object is a type or class object, the list contains the names of its "
 "attributes, and recursively of the attributes of its bases."
@@ -1100,7 +1115,7 @@ msgstr ""
 "Eğer nesne bir tür veya sınıf nesnesiyse, liste onun özelliklerini ve "
 "yinelemeli olarak tabanlarının özelliklerini içerir."
 
-#: library/functions.rst:459
+#: library/functions.rst:504
 msgid ""
 "Otherwise, the list contains the object's attributes' names, the names of "
 "its class's attributes, and recursively of the attributes of its class's "
@@ -1109,11 +1124,11 @@ msgstr ""
 "Aksi takdirde, liste nesnenin özelliklerini, sınıfının özelliklerini ve "
 "yinelemeli olarak sınıfının temel sınıflarının özelliklerini içerir."
 
-#: library/functions.rst:463
+#: library/functions.rst:508
 msgid "The resulting list is sorted alphabetically.  For example:"
 msgstr "Sonuç listesi alfabetik olarak sıralanmıştır. Örnek olarak:"
 
-#: library/functions.rst:483
+#: library/functions.rst:528
 msgid ""
 "Because :func:`dir` is supplied primarily as a convenience for use at an "
 "interactive prompt, it tries to supply an interesting set of names more than "
@@ -1127,7 +1142,7 @@ msgstr ""
 "arasında değişikliğe uğrayabilir. Örnek olarak, argüman sınıf ise metasınıf "
 "özellikleri sonuç listesinde yer almaz."
 
-#: library/functions.rst:493
+#: library/functions.rst:538
 msgid ""
 "Take two (non-complex) numbers as arguments and return a pair of numbers "
 "consisting of their quotient and remainder when using integer division.  "
@@ -1147,7 +1162,7 @@ msgstr ""
 "yakındır. Eğer ``a % b`` sıfır değilse, *b* ile aynı işarete sahiptir ve ``0 "
 "<= abs(a % b) < abs(b)``."
 
-#: library/functions.rst:505
+#: library/functions.rst:550
 msgid ""
 "Return an enumerate object. *iterable* must be a sequence, an :term:"
 "`iterator`, or some other object which supports iteration. The :meth:"
@@ -1161,21 +1176,43 @@ msgstr ""
 "sayıyı (varsayılan olarak 0 olan *start* 'dan) ve *iterable* üzerinde "
 "yinelemeden elde edilen değerleri içeren bir demet döndürür."
 
-#: library/functions.rst:517
+#: library/functions.rst:562
 msgid "Equivalent to::"
 msgstr "Şuna eşittir::"
 
-#: library/functions.rst:529
-msgid ""
-"The arguments are a string and optional globals and locals.  If provided, "
-"*globals* must be a dictionary.  If provided, *locals* can be any mapping "
-"object."
+#: library/functions.rst:0
+msgid "Parameters"
 msgstr ""
-"Argümanlar bir dize veya opsiyonel global ve yerel değişkenler olabilir. "
-"Sağlanırsa, *globals* bir sözlük olmalıdır. Sağlanırsa, *locals* herhangi "
-"bir haritalama nesnesi olabilir."
 
-#: library/functions.rst:533
+#: library/functions.rst:574
+msgid "A Python expression."
+msgstr ""
+
+#: library/functions.rst:578
+msgid "The global namespace (default: ``None``)."
+msgstr ""
+
+#: library/functions.rst:582
+msgid "The local namespace (default: ``None``)."
+msgstr ""
+
+#: library/functions.rst:0
+msgid "Returns"
+msgstr ""
+
+#: library/functions.rst:586
+msgid "The result of the evaluated expression."
+msgstr ""
+
+#: library/functions.rst:0
+msgid "raises"
+msgstr ""
+
+#: library/functions.rst:587
+msgid "Syntax errors are reported as exceptions."
+msgstr ""
+
+#: library/functions.rst:589
 msgid ""
 "The *expression* argument is parsed and evaluated as a Python expression "
 "(technically speaking, a condition list) using the *globals* and *locals* "
@@ -1205,15 +1242,12 @@ msgstr ""
 "kapsama ortamında :term:`iç içe kapsamlar <nested scope>` (yerel olmayan) "
 "erişimi yoktur."
 
-#: library/functions.rst:548
-msgid ""
-"The return value is the result of the evaluated expression. Syntax errors "
-"are reported as exceptions.  Example:"
-msgstr ""
-"Dönen değer değerlendirilmiş ifadenin sonucudur. Söz dizimi hataları, "
-"istisnalar olarak rapor edilir. Örnek:"
+#: library/functions.rst:604
+#, fuzzy
+msgid "Example:"
+msgstr "Örnek::"
 
-#: library/functions.rst:555
+#: library/functions.rst:610
 msgid ""
 "This function can also be used to execute arbitrary code objects (such as "
 "those created by :func:`compile`).  In this case, pass a code object instead "
@@ -1226,7 +1260,7 @@ msgstr ""
 "``'exec'`` ile derlendiyse, :func:`eval` 'in döndürdüğü değer ``None`` "
 "olacaktır."
 
-#: library/functions.rst:560
+#: library/functions.rst:615
 msgid ""
 "Hints: dynamic execution of statements is supported by the :func:`exec` "
 "function.  The :func:`globals` and :func:`locals` functions return the "
@@ -1238,7 +1272,7 @@ msgstr ""
 "mevcut global ve yerel sözlüğü döndürür. :func:`eval` veya :func:`exec` "
 "tarafından kullanım için dolaşmak yararlı olabilir."
 
-#: library/functions.rst:565
+#: library/functions.rst:620
 msgid ""
 "If the given source is a string, then leading and trailing spaces and tabs "
 "are stripped."
@@ -1246,7 +1280,7 @@ msgstr ""
 "Eğer verilen kaynak dize ise, baştaki ve sondaki boşluklar ve tab'lar "
 "çıkarılır."
 
-#: library/functions.rst:568
+#: library/functions.rst:623
 msgid ""
 "See :func:`ast.literal_eval` for a function that can safely evaluate strings "
 "with expressions containing only literals."
@@ -1255,7 +1289,7 @@ msgstr ""
 "değerlendirebilen bir fonksiyon arıyorsanız, :func:`ast.literal_eval` 'a "
 "bakınız."
 
-#: library/functions.rst:612
+#: library/functions.rst:671
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``exec`` with argument "
 "``code_object``."
@@ -1263,7 +1297,7 @@ msgstr ""
 "``code_object`` argümanıyla bir :ref:`denetleme olayı <auditing>` ``exec`` "
 "hatası ortaya çıkarır."
 
-#: library/functions.rst:614
+#: library/functions.rst:673
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``exec`` with the code object as "
 "the argument. Code compilation events may also be raised."
@@ -1272,7 +1306,7 @@ msgstr ""
 "``exec`` hatası ortaya çıkartır. Kodun derlendiği sırada çıkan hatalar da "
 "yükseltilir."
 
-#: library/functions.rst:580
+#: library/functions.rst:635
 msgid ""
 "This function supports dynamic execution of Python code. *object* must be "
 "either a string or a code object.  If it is a string, the string is parsed "
@@ -1294,7 +1328,8 @@ msgstr ""
 "geçirilen kod kaynağında bile fonksiyonlar dışında kullanılamayacağını "
 "unutmayınız. Döndürülen değer ``None`` 'dır."
 
-#: library/functions.rst:591
+#: library/functions.rst:646
+#, fuzzy
 msgid ""
 "In all cases, if the optional parts are omitted, the code is executed in the "
 "current scope.  If only *globals* is provided, it must be a dictionary (and "
@@ -1302,9 +1337,7 @@ msgid ""
 "the local variables.  If *globals* and *locals* are given, they are used for "
 "the global and local variables, respectively.  If provided, *locals* can be "
 "any mapping object.  Remember that at the module level, globals and locals "
-"are the same dictionary. If exec gets two separate objects as *globals* and "
-"*locals*, the code will be executed as if it were embedded in a class "
-"definition."
+"are the same dictionary."
 msgstr ""
 "Her durumda eğer opsiyonal kısımlar atlandıysa, kod mevcut kapsamda "
 "çalıştırılır. Eğer sadece *globals* sağlandıysa, global ve yerel değişkenler "
@@ -1315,7 +1348,14 @@ msgstr ""
 "sözlükte bulunduğunu unutmayın. Eğer exec *globals* ve *locals* olarak iki "
 "ayrı nesne alırsa, kod bir sınıf tanımına gömülmüş gibi çalıştırılacaktır."
 
-#: library/functions.rst:601
+#: library/functions.rst:656
+msgid ""
+"Most users should just pass a *globals* argument and never *locals*. If exec "
+"gets two separate objects as *globals* and *locals*, the code will be "
+"executed as if it were embedded in a class definition."
+msgstr ""
+
+#: library/functions.rst:660
 msgid ""
 "If the *globals* dictionary does not contain a value for the key "
 "``__builtins__``, a reference to the dictionary of the built-in module :mod:"
@@ -1329,7 +1369,7 @@ msgstr ""
 "`exec` 'e geçirmeden önce *globals* içine ekleyerek yürütülen kod için hangi "
 "yerleşiklerin mevcut olduğunu kontrol edebilirsiniz."
 
-#: library/functions.rst:607
+#: library/functions.rst:666
 msgid ""
 "The *closure* argument specifies a closure--a tuple of cellvars. It's only "
 "valid when the *object* is a code object containing free variables. The "
@@ -1341,7 +1381,7 @@ msgstr ""
 "olduğunda geçerlidir. Demetin uzunluğu, kod nesnesi tarafından başvurulan "
 "serbest değişkenlerin sayısıyla tam olarak eşleşmelidir."
 
-#: library/functions.rst:619
+#: library/functions.rst:678
 msgid ""
 "The built-in functions :func:`globals` and :func:`locals` return the current "
 "global and local dictionary, respectively, which may be useful to pass "
@@ -1351,7 +1391,7 @@ msgstr ""
 "yerel sözlüğü sırasıyla döndürür. Bu, :func:`exec` 'e ikinci ve üçüncü "
 "argüman olarak kullanılmak üzere geçirmek için yararlı olabilir."
 
-#: library/functions.rst:625
+#: library/functions.rst:684
 msgid ""
 "The default *locals* act as described for function :func:`locals` below: "
 "modifications to the default *locals* dictionary should not be attempted. "
@@ -1364,11 +1404,11 @@ msgstr ""
 "*locals* üzerindeki etkilerini görmeniz gerekiyorsa, açık bir *local* "
 "sözlüğü geçirin."
 
-#: library/functions.rst:630
+#: library/functions.rst:689
 msgid "Added the *closure* parameter."
 msgstr "*closure* parametresi eklendi."
 
-#: library/functions.rst:636
+#: library/functions.rst:695
 msgid ""
 "Construct an iterator from those elements of *iterable* for which *function* "
 "is true.  *iterable* may be either a sequence, a container which supports "
@@ -1380,7 +1420,7 @@ msgstr ""
 "yineleyici olabilir. *fonksiyon* ``None`` ise, kimlik işlevi varsayılır, "
 "yani *iterable* öğesinin yanlış olan tüm öğeleri kaldırılır."
 
-#: library/functions.rst:642
+#: library/functions.rst:701
 msgid ""
 "Note that ``filter(function, iterable)`` is equivalent to the generator "
 "expression ``(item for item in iterable if function(item))`` if function is "
@@ -1392,7 +1432,7 @@ msgstr ""
 "ifadesine ``(item for item in iterable if function(item))`` eşit olduğunu "
 "unutmayın."
 
-#: library/functions.rst:647
+#: library/functions.rst:706
 msgid ""
 "See :func:`itertools.filterfalse` for the complementary function that "
 "returns elements of *iterable* for which *function* is false."
@@ -1400,19 +1440,21 @@ msgstr ""
 "*fonksiyon*'un yanlış olduğu *iterable* öğelerini döndüren tamamlayıcı "
 "fonksiyon için :func:`itertools.filterfalse` konusuna bakın."
 
-#: library/functions.rst:657
-msgid "Return a floating point number constructed from a number or string *x*."
+#: library/functions.rst:717
+#, fuzzy
+msgid "Return a floating point number constructed from a number or a string."
 msgstr "Bir numara veya string *x* 'ten oluşturulan bir reel sayı döndürür."
 
-#: library/functions.rst:659
+#: library/functions.rst:734
+#, fuzzy
 msgid ""
 "If the argument is a string, it should contain a decimal number, optionally "
 "preceded by a sign, and optionally embedded in whitespace.  The optional "
 "sign may be ``'+'`` or ``'-'``; a ``'+'`` sign has no effect on the value "
 "produced.  The argument may also be a string representing a NaN (not-a-"
-"number), or positive or negative infinity.  More precisely, the input must "
-"conform to the ``floatvalue`` production rule in the following grammar, "
-"after leading and trailing whitespace characters are removed:"
+"number), or positive or negative infinity. More precisely, the input must "
+"conform to the :token:`~float:floatvalue` production rule in the following "
+"grammar, after leading and trailing whitespace characters are removed:"
 msgstr ""
 "Eğer argüman dize ise, bir ondalık sayı içermelidir, isteğe bağlı olarak "
 "önünde bir işaret bulunabilir veya boşluk içine gömülebilir. Opsiyonel "
@@ -1422,7 +1464,7 @@ msgstr ""
 "baştaki ve sondaki boşluk karakterleri kaldırıldıktan sonra veri girişi "
 "aşağıdaki dilbilgisindeki ``floatvalue`` üretim kuralına uygun olmalıdır:"
 
-#: library/functions.rst:678
+#: library/functions.rst:755
 #, fuzzy
 msgid ""
 "Case is not significant, so, for example, \"inf\", \"Inf\", \"INFINITY\", "
@@ -1433,7 +1475,7 @@ msgstr ""
 "örneğin, \"inf\", \"Inf\", \"INFINITY\" ve \"iNfINity\" pozitif sonsuzluk "
 "için kabul edilebilir yazımlardır."
 
-#: library/functions.rst:681
+#: library/functions.rst:758
 msgid ""
 "Otherwise, if the argument is an integer or a floating point number, a "
 "floating point number with the same value (within Python's floating point "
@@ -1444,7 +1486,7 @@ msgstr ""
 "sayı döndürülür. Eğer argüman Python reel sayı aralığının dışındaysa, :exc:"
 "`OverflowError` hatası ortaya çıkar."
 
-#: library/functions.rst:686
+#: library/functions.rst:763
 #, fuzzy
 msgid ""
 "For a general Python object ``x``, ``float(x)`` delegates to ``x."
@@ -1455,19 +1497,15 @@ msgstr ""
 "fonksiyonuna delege eder. Eğer ``__float__()`` tanımlanmamışsa, :meth:"
 "`__index__` 'e geri döner."
 
-#: library/functions.rst:690
+#: library/functions.rst:767
 msgid "If no argument is given, ``0.0`` is returned."
 msgstr "Argüman verilmediyse, ``0.0`` döndürülür."
 
-#: library/functions.rst:692
-msgid "Examples::"
-msgstr "Örnekler::"
-
-#: library/functions.rst:705
+#: library/functions.rst:769
 msgid "The float type is described in :ref:`typesnumeric`."
 msgstr "Float tipi :ref:`typesnumeric` kısmında açıklandı."
 
-#: library/functions.rst:713
+#: library/functions.rst:777
 #, fuzzy
 msgid ""
 "Falls back to :meth:`~object.__index__` if :meth:`~object.__float__` is not "
@@ -1475,7 +1513,7 @@ msgid ""
 msgstr ""
 ":meth:`__float__` tanımlanmadıysa, :meth:`__index__` konumuna geri döner."
 
-#: library/functions.rst:723
+#: library/functions.rst:787
 msgid ""
 "Convert a *value* to a \"formatted\" representation, as controlled by "
 "*format_spec*.  The interpretation of *format_spec* will depend on the type "
@@ -1488,7 +1526,7 @@ msgstr ""
 "tiplerde kullanılan :ref:`formatspec` adında bir standart biçimlendirme "
 "sözdizimi var."
 
-#: library/functions.rst:728
+#: library/functions.rst:792
 msgid ""
 "The default *format_spec* is an empty string which usually gives the same "
 "effect as calling :func:`str(value) <str>`."
@@ -1496,7 +1534,7 @@ msgstr ""
 "Varsayılan *format_spec*, :func:`str(value) <str>` fonksiyonunu çağırmakla "
 "aynı etkiyi gösteren boş bir dizedir."
 
-#: library/functions.rst:731
+#: library/functions.rst:795
 #, fuzzy
 msgid ""
 "A call to ``format(value, format_spec)`` is translated to ``type(value)."
@@ -1512,7 +1550,7 @@ msgstr ""
 "*format_spec* boş değilse, veya *format_spec* veya döndürülen değer dize "
 "değilse, :exc:`TypeError` hatası ortaya çıkar."
 
-#: library/functions.rst:738
+#: library/functions.rst:802
 msgid ""
 "``object().__format__(format_spec)`` raises :exc:`TypeError` if "
 "*format_spec* is not an empty string."
@@ -1520,7 +1558,7 @@ msgstr ""
 "*format_spec* boş bir dize değilse, ``object().__format__(format_spec)``, :"
 "exc:`TypeError` hatasını ortaya çıkartır."
 
-#: library/functions.rst:747
+#: library/functions.rst:811
 msgid ""
 "Return a new :class:`frozenset` object, optionally with elements taken from "
 "*iterable*.  ``frozenset`` is a built-in class.  See :class:`frozenset` and :"
@@ -1531,7 +1569,7 @@ msgstr ""
 "hakkında dokümantasyona ulaşmak için :class:`frozenset` ve :ref:`types-set` "
 "'e bakınız."
 
-#: library/functions.rst:751
+#: library/functions.rst:815
 msgid ""
 "For other containers see the built-in :class:`set`, :class:`list`, :class:"
 "`tuple`, and :class:`dict` classes, as well as the :mod:`collections` module."
@@ -1540,7 +1578,7 @@ msgstr ""
 "`tuple`, ve :class:`dict` sınıflarına, ayrıca :mod:`collections` modülüne "
 "bakabilirsiniz."
 
-#: library/functions.rst:759
+#: library/functions.rst:823
 msgid ""
 "Return the value of the named attribute of *object*.  *name* must be a "
 "string. If the string is the name of one of the object's attributes, the "
@@ -1557,7 +1595,7 @@ msgstr ""
 "ortaya çıkar. *name* bir Python tanımlayıcısı olmak zorunda değildir (:func:"
 "`setattr` bkz)."
 
-#: library/functions.rst:768
+#: library/functions.rst:832
 msgid ""
 "Since :ref:`private name mangling <private-name-mangling>` happens at "
 "compilation time, one must manually mangle a private attribute's (attributes "
@@ -1568,7 +1606,7 @@ msgstr ""
 "gerçekleştiğinden dolayı, :func:`getattr` ile almak için özel bir niteliğin "
 "(baştaki iki alt çizgili nitelikler) adını manuel olarak değiştirmek gerekir."
 
-#: library/functions.rst:776
+#: library/functions.rst:840
 msgid ""
 "Return the dictionary implementing the current module namespace. For code "
 "within functions, this is set when the function is defined and remains the "
@@ -1578,7 +1616,7 @@ msgstr ""
 "için, bu fonksiyon tanımlandığında ayarlanır ve fonksiyonun çağrıldığı "
 "yerden bağımsız olarak aynı kalır."
 
-#: library/functions.rst:783
+#: library/functions.rst:847
 msgid ""
 "The arguments are an object and a string.  The result is ``True`` if the "
 "string is the name of one of the object's attributes, ``False`` if not. "
@@ -1590,7 +1628,7 @@ msgstr ""
 "'i çağırarak uygulanır ve :exc:`AttributeError` hatası oluşup oluşmayacağı "
 "görülür.)"
 
-#: library/functions.rst:791
+#: library/functions.rst:855
 msgid ""
 "Return the hash value of the object (if it has one).  Hash values are "
 "integers.  They are used to quickly compare dictionary keys during a "
@@ -1603,7 +1641,7 @@ msgstr ""
 "değerler aynı karma değere sahiptir (1 ve 1.0 durumunda olduğu gibi farklı "
 "veri tiplerinde olsalar bile)."
 
-#: library/functions.rst:798
+#: library/functions.rst:862
 #, fuzzy
 msgid ""
 "For objects with custom :meth:`~object.__hash__` methods, note that :func:"
@@ -1613,7 +1651,7 @@ msgstr ""
 "makinenin bit genişliğine göre döndürdüğü değeri kestiğini unutmayın. "
 "Detaylar için :meth:`__hash__` 'e bakınız."
 
-#: library/functions.rst:805
+#: library/functions.rst:869
 msgid ""
 "Invoke the built-in help system.  (This function is intended for interactive "
 "use.)  If no argument is given, the interactive help system starts on the "
@@ -1629,7 +1667,7 @@ msgstr ""
 "dizeye bakılır ve bir yardım sayfası konsola bastırılır. Eğer argüman başka "
 "tipte bir nesne ise, nesne üzerinde bir yardım sayfası oluşturulur."
 
-#: library/functions.rst:812
+#: library/functions.rst:876
 msgid ""
 "Note that if a slash(/) appears in the parameter list of a function when "
 "invoking :func:`help`, it means that the parameters prior to the slash are "
@@ -1642,13 +1680,13 @@ msgstr ""
 "konumsalparametrelerle ilgili SSS girişi <faq-positional-only-arguments>` "
 "'ne bakınız."
 
-#: library/functions.rst:817
+#: library/functions.rst:881
 msgid ""
 "This function is added to the built-in namespace by the :mod:`site` module."
 msgstr ""
 "Bu fonksiyon :mod:`site` modülü tarafından yerleşik ad alanına eklenir."
 
-#: library/functions.rst:819
+#: library/functions.rst:883
 msgid ""
 "Changes to :mod:`pydoc` and :mod:`inspect` mean that the reported signatures "
 "for callables are now more comprehensive and consistent."
@@ -1657,7 +1695,7 @@ msgstr ""
 "için rapor edilen damgaların artık daha kapsamlı ve tutarlı olduğunu ifade "
 "eder."
 
-#: library/functions.rst:826
+#: library/functions.rst:890
 #, fuzzy
 msgid ""
 "Convert an integer number to a lowercase hexadecimal string prefixed with "
@@ -1668,7 +1706,7 @@ msgstr ""
 "dizeye dönüştürür. Eğer *x* Python :class:`int` nesnesi değilse, tam sayı "
 "döndüren bir :meth:`__index__` metoduna sahip olmalidir. Bazı örnekler:"
 
-#: library/functions.rst:835
+#: library/functions.rst:899
 msgid ""
 "If you want to convert an integer number to an uppercase or lower "
 "hexadecimal string with prefix or not, you can use either of the following "
@@ -1677,7 +1715,7 @@ msgstr ""
 "Eğer bir tam sayıyı büyük harf-küçük harf, önekli-öneksiz bir onaltılık "
 "sayıya dönüştürmek istiyorsanız, aşağıdaki yolları kullanabilirsiniz:"
 
-#: library/functions.rst:847
+#: library/functions.rst:911
 msgid ""
 "See also :func:`int` for converting a hexadecimal string to an integer using "
 "a base of 16."
@@ -1685,7 +1723,7 @@ msgstr ""
 "Ayrıca onaltılık bir dizgiyi 16 tabanını kullanarak bir tam sayıya "
 "dönüştürmek için :func:`int` 'e bakınız."
 
-#: library/functions.rst:852
+#: library/functions.rst:916
 msgid ""
 "To obtain a hexadecimal string representation for a float, use the :meth:"
 "`float.hex` method."
@@ -1693,7 +1731,7 @@ msgstr ""
 "Bir gerçel sayıdan onaltılık bir dize gösterimi elde etmek için :meth:`float."
 "hex` metodunu kullanın."
 
-#: library/functions.rst:858
+#: library/functions.rst:922
 msgid ""
 "Return the \"identity\" of an object.  This is an integer which is "
 "guaranteed to be unique and constant for this object during its lifetime. "
@@ -1704,11 +1742,11 @@ msgstr ""
 "sabit olduğu garanti edilen bir tam sayıdır. Ömürleri örtüşmeyen iki nesne "
 "aynı :func:`id` değerine sahip olabilir."
 
-#: library/functions.rst:863
+#: library/functions.rst:927
 msgid "This is the address of the object in memory."
 msgstr "Bu, bellekteki nesnenin adresidir."
 
-#: library/functions.rst:865
+#: library/functions.rst:929
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.id`` with argument "
 "``id``."
@@ -1716,7 +1754,7 @@ msgstr ""
 "``id`` argümanıyla beraber bir :ref:`denetleme olayı <auditing>` ``builtins."
 "id`` ortaya çıkartır."
 
-#: library/functions.rst:871
+#: library/functions.rst:935
 msgid ""
 "If the *prompt* argument is present, it is written to standard output "
 "without a trailing newline.  The function then reads a line from input, "
@@ -1728,7 +1766,7 @@ msgstr ""
 "bir dizeye çevirip (sondaki yeni satırı çıkartır) döndürür. EOF "
 "okunduğunda, :exc:`EOFError` istisnası ortaya çıkar. Örnek::"
 
-#: library/functions.rst:881
+#: library/functions.rst:945
 msgid ""
 "If the :mod:`readline` module was loaded, then :func:`input` will use it to "
 "provide elaborate line editing and history features."
@@ -1736,7 +1774,7 @@ msgstr ""
 "Eğer :mod:`readline` modülü yüklendiyse, :func:`input` ayrıntılı satır "
 "düzenleme ve geçmiş özellikleri sağlamak için onu kullanacaktır."
 
-#: library/functions.rst:884
+#: library/functions.rst:948
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.input`` with argument "
 "``prompt``."
@@ -1744,7 +1782,7 @@ msgstr ""
 "``prompt`` argümanıyla birlikte bir :ref:`denetleme olayı <auditing>` "
 "``builtins.input`` ortaya çıkartır."
 
-#: library/functions.rst:886
+#: library/functions.rst:950
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.input`` with argument "
 "``prompt`` before reading input"
@@ -1752,7 +1790,7 @@ msgstr ""
 "Girişi okumadan önce, ``prompt`` argümanıyla birlikte bir :ref:`denetleme "
 "olayı <auditing>` ``builtins.input`` ortaya çıkartır"
 
-#: library/functions.rst:889
+#: library/functions.rst:953
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.input/result`` with "
 "argument ``result``."
@@ -1760,7 +1798,7 @@ msgstr ""
 "``result`` argümanıyla birlikte bir :ref:`denetleme olayı <auditing>` "
 "``builtins.input/result`` ortaya çıkartır."
 
-#: library/functions.rst:891
+#: library/functions.rst:955
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.input/result`` with "
 "the result after successfully reading input."
@@ -1768,15 +1806,21 @@ msgstr ""
 "Girişi başarıyla okuduktan sonra sonuçla birlikte bir :ref:`auditing event "
 "<auditing>` ``builtins.input/result`` denetleme olayı ortaya çıkarır."
 
-#: library/functions.rst:898
+#: library/functions.rst:962
 #, fuzzy
 msgid ""
-"Return an integer object constructed from a number or string *x*, or return "
-"``0`` if no arguments are given.  If *x* defines :meth:`~object.__int__`, "
-"``int(x)`` returns ``x.__int__()``.  If *x* defines :meth:`~object."
-"__index__`, it returns ``x.__index__()``.  If *x* defines :meth:`~object."
-"__trunc__`, it returns ``x.__trunc__()``. For floating point numbers, this "
-"truncates towards zero."
+"Return an integer object constructed from a number or a string, or return "
+"``0`` if no arguments are given."
+msgstr "Bir numara veya string *x* 'ten oluşturulan bir reel sayı döndürür."
+
+#: library/functions.rst:982
+#, fuzzy
+msgid ""
+"If the argument defines :meth:`~object.__int__`, ``int(x)`` returns ``x."
+"__int__()``.  If the argument defines :meth:`~object.__index__`, it returns "
+"``x.__index__()``.  If the argument defines :meth:`~object.__trunc__`, it "
+"returns ``x.__trunc__()``. For floating point numbers, this truncates "
+"towards zero."
 msgstr ""
 "Bir numara veya *x* dizesinden bir tam sayı oluşturur. Eğer argüman "
 "verilmediyse 0 döndürür. *x* :meth:`__int__` 'i içeriyorsa, ``int(x)`` ``x."
@@ -1784,13 +1828,14 @@ msgstr ""
 "__index__()`` 'i döndürür. *x* :meth:`__trunc__` 'ı içeriyorsa, ``x."
 "__trunc__()`` 'ı döndürür. Gerçel sayılar için, sayı tam sayıya çevrilir."
 
-#: library/functions.rst:905
+#: library/functions.rst:988
+#, fuzzy
 msgid ""
-"If *x* is not a number or if *base* is given, then *x* must be a string, :"
-"class:`bytes`, or :class:`bytearray` instance representing an integer in "
-"radix *base*.  Optionally, the string can be preceded by ``+`` or ``-`` "
-"(with no space in between), have leading zeros, be surrounded by whitespace, "
-"and have single underscores interspersed between digits."
+"If the argument is not a number or if *base* is given, then it must be a "
+"string, :class:`bytes`, or :class:`bytearray` instance representing an "
+"integer in radix *base*.  Optionally, the string can be preceded by ``+`` or "
+"``-`` (with no space in between), have leading zeros, be surrounded by "
+"whitespace, and have single underscores interspersed between digits."
 msgstr ""
 "Eğer *x* bir sayı değilse veya *base* verilmişse, *x* *base* radiksinde bir "
 "tamsayıyı temsil eden bir string, :class:`bytes` veya :class:`bytearray` "
@@ -1799,7 +1844,7 @@ msgstr ""
 "çevrelenebilir ve rakamlar arasına serpiştirilmiş tek alt çizgilere sahip "
 "olabilir."
 
-#: library/functions.rst:911
+#: library/functions.rst:994
 msgid ""
 "A base-n integer string contains digits, each representing a value from 0 to "
 "n-1. The values 0--9 can be represented by any Unicode decimal digit. The "
@@ -1824,11 +1869,11 @@ msgstr ""
 "baştaki sıfırlara da izin vermez: ``int('010', 0)`` yasal değilken, "
 "``int('010')`` ve ``int('010', 8)`` yasaldır."
 
-#: library/functions.rst:922
+#: library/functions.rst:1005
 msgid "The integer type is described in :ref:`typesnumeric`."
 msgstr "Tam sayı tipi :ref:`typesnumeric` kısmında açıklandı."
 
-#: library/functions.rst:924
+#: library/functions.rst:1007
 msgid ""
 "If *base* is not an instance of :class:`int` and the *base* object has a :"
 "meth:`base.__index__ <object.__index__>` method, that method is called to "
@@ -1840,23 +1885,28 @@ msgstr ""
 "tamsayı elde etmek için çağrılır. Önceki sürümler :meth:`base.__index__ "
 "<object.__index__>` yerine :meth:`base.__int__ <object.__int__>` 'i kullandı."
 
-#: library/functions.rst:937
+#: library/functions.rst:1017
+msgid "The first parameter is now positional-only."
+msgstr ""
+
+#: library/functions.rst:1020
 #, fuzzy
 msgid ""
 "Falls back to :meth:`~object.__index__` if :meth:`~object.__int__` is not "
 "defined."
 msgstr ":meth:`__int__` tanımlı değilse :meth:`__index__` konumuna geri döner."
 
-#: library/functions.rst:940
+#: library/functions.rst:1023
 #, fuzzy
 msgid "The delegation to :meth:`~object.__trunc__` is deprecated."
 msgstr ":meth:`__trunc__` yetkisi kullanımdan kaldırıldı."
 
-#: library/functions.rst:943
+#: library/functions.rst:1026
+#, fuzzy
 msgid ""
 ":class:`int` string inputs and string representations can be limited to help "
 "avoid denial of service attacks. A :exc:`ValueError` is raised when the "
-"limit is exceeded while converting a string *x* to an :class:`int` or when "
+"limit is exceeded while converting a string to an :class:`int` or when "
 "converting an :class:`int` into a string would exceed the limit. See the :"
 "ref:`integer string conversion length limitation <int_max_str_digits>` "
 "documentation."
@@ -1868,7 +1918,7 @@ msgstr ""
 "ortaya çıkar. :ref:`tam sayı dönüştürme uzunluk sınırlaması "
 "<int_max_str_digits>` dokümanına bakın."
 
-#: library/functions.rst:953
+#: library/functions.rst:1036
 msgid ""
 "Return ``True`` if the *object* argument is an instance of the *classinfo* "
 "argument, or of a (direct, indirect, or :term:`virtual <abstract base "
@@ -1891,11 +1941,11 @@ msgstr ""
 "önceden yapılmış bir kontrol başarılıysa :exc:`TypeError` geçersiz bir tip "
 "için ortaya çıkmayabilir."
 
-#: library/functions.rst:978
+#: library/functions.rst:1061
 msgid "*classinfo* can be a :ref:`types-union`."
 msgstr "*classinfo* bir :ref:`types-union` olabilir."
 
-#: library/functions.rst:970
+#: library/functions.rst:1053
 msgid ""
 "Return ``True`` if *class* is a subclass (direct, indirect, or :term:"
 "`virtual <abstract base class>`) of *classinfo*.  A class is considered a "
@@ -1912,7 +1962,7 @@ msgstr ""
 "birinin alt sınıfıysa ``True`` döndürülür. Diğer her durumda, :exc:"
 "`TypeError` hatası ortaya çıkar."
 
-#: library/functions.rst:985
+#: library/functions.rst:1068
 #, fuzzy
 msgid ""
 "Return an :term:`iterator` object.  The first argument is interpreted very "
@@ -1940,11 +1990,11 @@ msgstr ""
 "döndürülen değer *sentinel* 'e eşitse, :exc:`StopIteration` hatası ortaya "
 "çıkar, aksi takdirde değer döndürülür."
 
-#: library/functions.rst:999
+#: library/functions.rst:1082
 msgid "See also :ref:`typeiter`."
 msgstr "Ayrıca :ref:`typeiter` bkz."
 
-#: library/functions.rst:1001
+#: library/functions.rst:1084
 msgid ""
 "One useful application of the second form of :func:`iter` is to build a "
 "block-reader. For example, reading fixed-width blocks from a binary database "
@@ -1954,7 +2004,7 @@ msgstr ""
 "okuyucu inşaa etmektir. Örnek olarak, dosyanın sonuna ulaşılana kadar ikili "
 "bir veritabanı dosyasından sabit genişlikte bloklar okunurken::"
 
-#: library/functions.rst:1013
+#: library/functions.rst:1096
 msgid ""
 "Return the length (the number of items) of an object.  The argument may be a "
 "sequence (such as a string, bytes, tuple, list, or range) or a collection "
@@ -1964,7 +2014,7 @@ msgstr ""
 "(örneğin dize, bytes, demet, liste veya aralık) veya bir koleksiyon (örneğin "
 "sözlük, küme veya dondurulmuş küme) olabilir."
 
-#: library/functions.rst:1019
+#: library/functions.rst:1102
 msgid ""
 "``len`` raises :exc:`OverflowError` on lengths larger than :data:`sys."
 "maxsize`, such as :class:`range(2 ** 100) <range>`."
@@ -1972,7 +2022,7 @@ msgstr ""
 "``len``, :class:`range(2 ** 100) <range>` gibi :data:`sys.maxsize` 'dan daha "
 "geniş uzunluklar için :exc:`OverflowError` hatası ortaya çıkartır."
 
-#: library/functions.rst:1028
+#: library/functions.rst:1111
 msgid ""
 "Rather than being a function, :class:`list` is actually a mutable sequence "
 "type, as documented in :ref:`typesseq-list` and :ref:`typesseq`."
@@ -1980,7 +2030,7 @@ msgstr ""
 "Bir fonksiyon görevi görmektense, :ref:`typesseq-list` ve :ref:`typesseq` de "
 "anlatıldığı gibi :class:`list` bir değiştirebilir dizi çeşididir."
 
-#: library/functions.rst:1034
+#: library/functions.rst:1117
 msgid ""
 "Update and return a dictionary representing the current local symbol table. "
 "Free variables are returned by :func:`locals` when it is called in function "
@@ -1993,7 +2043,7 @@ msgstr ""
 "Unutmayın ki modül seviyesinde, :func:`locals` ve :func:`globals` aynı "
 "sözlüklerdir."
 
-#: library/functions.rst:1040
+#: library/functions.rst:1123
 msgid ""
 "The contents of this dictionary should not be modified; changes may not "
 "affect the values of local and free variables used by the interpreter."
@@ -2002,7 +2052,7 @@ msgstr ""
 "tarafından kullanılan yerel ve serbest değişkenlerin değerlerini "
 "etkilemeyebilir."
 
-#: library/functions.rst:1045
+#: library/functions.rst:1128
 msgid ""
 "Return an iterator that applies *function* to every item of *iterable*, "
 "yielding the results.  If additional *iterables* arguments are passed, "
@@ -2019,7 +2069,7 @@ msgstr ""
 "girdilerinin zaten demetler halinde verildiği durumlar için, :func:"
 "`itertools.starmap`\\ 'a bakın."
 
-#: library/functions.rst:1057
+#: library/functions.rst:1140
 msgid ""
 "Return the largest item in an iterable or the largest of two or more "
 "arguments."
@@ -2027,7 +2077,7 @@ msgstr ""
 "Bir yineleyicinin veya birden fazla parametrenin en büyük elementini "
 "döndürür."
 
-#: library/functions.rst:1060
+#: library/functions.rst:1143
 msgid ""
 "If one positional argument is provided, it should be an :term:`iterable`. "
 "The largest item in the iterable is returned.  If two or more positional "
@@ -2038,7 +2088,7 @@ msgstr ""
 "pozisyonel parametre sağlandıysa, pozisyonel parametrelerin en büyüğü "
 "döndürülür."
 
-#: library/functions.rst:1103
+#: library/functions.rst:1186
 msgid ""
 "There are two optional keyword-only arguments. The *key* argument specifies "
 "a one-argument ordering function like that used for :meth:`list.sort`. The "
@@ -2052,7 +2102,7 @@ msgstr ""
 "döndürülecek nesneyi belirtir. Eğer yineleyici boş ve *varsayılan* "
 "verilmemiş ise, :exc:`ValueError` hatası ortaya çıkar."
 
-#: library/functions.rst:1071
+#: library/functions.rst:1154
 msgid ""
 "If multiple items are maximal, the function returns the first one "
 "encountered.  This is consistent with other sort-stability preserving tools "
@@ -2064,16 +2114,16 @@ msgstr ""
 "iterable, key=keyfunc)`` gibi sıralama kararlılığı muhafaza eden araçlar ile "
 "uygundur."
 
-#: library/functions.rst:1114
+#: library/functions.rst:1197
 #, fuzzy
 msgid "Added the *default* keyword-only parameter."
 msgstr "*varsayılan* yalnızca anahtar kelime parametresi."
 
-#: library/functions.rst:1117
+#: library/functions.rst:1200
 msgid "The *key* can be ``None``."
 msgstr "*key* ``None`` olabilir."
 
-#: library/functions.rst:1087
+#: library/functions.rst:1170
 msgid ""
 "Return a \"memory view\" object created from the given argument.  See :ref:"
 "`typememoryview` for more information."
@@ -2081,7 +2131,7 @@ msgstr ""
 "Verilen argümandan oluşturulan bir \"memory view\" objesi döndürür. Daha "
 "fazla bilgi için :ref:`typememoryview` bkz."
 
-#: library/functions.rst:1095
+#: library/functions.rst:1178
 msgid ""
 "Return the smallest item in an iterable or the smallest of two or more "
 "arguments."
@@ -2089,7 +2139,7 @@ msgstr ""
 "Bir yineleyicideki en küçük elementi veya birden fazla argümandan en "
 "küçüğünü döndürür."
 
-#: library/functions.rst:1098
+#: library/functions.rst:1181
 msgid ""
 "If one positional argument is provided, it should be an :term:`iterable`. "
 "The smallest item in the iterable is returned.  If two or more positional "
@@ -2099,7 +2149,7 @@ msgstr ""
 "Yineleyicinin en küçük elementi döndürülür. Eğer birden fazla argüman "
 "sağlandıysa, argümanların en küçüğü döndürülür."
 
-#: library/functions.rst:1109
+#: library/functions.rst:1192
 msgid ""
 "If multiple items are minimal, the function returns the first one "
 "encountered.  This is consistent with other sort-stability preserving tools "
@@ -2111,7 +2161,7 @@ msgstr ""
 "key=keyfunc)`` gibi diğer sıralama kararlılığını koruma araçlarıyla tutarlı "
 "çalışır."
 
-#: library/functions.rst:1124
+#: library/functions.rst:1207
 msgid ""
 "Retrieve the next item from the :term:`iterator` by calling its :meth:"
 "`~iterator.__next__` method.  If *default* is given, it is returned if the "
@@ -2121,7 +2171,7 @@ msgstr ""
 "elementi getirir. Eğer *default* verildiyse ve yineleyici tükenmiş ise "
 "*default* döndürülür, aksi takdirde :exc:`StopIteration` hatası ortaya çıkar."
 
-#: library/functions.rst:1131
+#: library/functions.rst:1214
 msgid ""
 "Return a new featureless object.  :class:`object` is a base for all classes. "
 "It has methods that are common to all instances of Python classes.  This "
@@ -2131,7 +2181,7 @@ msgstr ""
 "temeldir. Tüm Python sınıflarında bulunan genel metotları içerir. Bu "
 "fonksiyon hiçbir argüman kabul etmez."
 
-#: library/functions.rst:1137
+#: library/functions.rst:1220
 msgid ""
 ":class:`object` does *not* have a :attr:`~object.__dict__`, so you can't "
 "assign arbitrary attributes to an instance of the :class:`object` class."
@@ -2139,7 +2189,7 @@ msgstr ""
 ":class:`object`, :attr:`~object.__dict__` özelliğine sahip *değildir*, yani "
 "bir :class:`object` örneğine keyfi özellikler atayamazsınız."
 
-#: library/functions.rst:1143
+#: library/functions.rst:1226
 #, fuzzy
 msgid ""
 "Convert an integer number to an octal string prefixed with \"0o\".  The "
@@ -2151,7 +2201,7 @@ msgstr ""
 "Python ifadesidir. Eğer *x* bir Python :class:`int` nesnesi değilse, tamsayı "
 "döndüren bir :meth:`__index__` metoduna sahip olmalıdır. Örnek olarak:"
 
-#: library/functions.rst:1153
+#: library/functions.rst:1236
 msgid ""
 "If you want to convert an integer number to an octal string either with the "
 "prefix \"0o\" or not, you can use either of the following ways."
@@ -2159,7 +2209,7 @@ msgstr ""
 "Eğer bir tamsayıyı \"0o\" ön ekiyle veya ön eksiz oktal bir dizeye "
 "dönüştürmek istiyorsanız, aşağıdaki yolları kullanabilirsiniz."
 
-#: library/functions.rst:1170
+#: library/functions.rst:1253
 msgid ""
 "Open *file* and return a corresponding :term:`file object`.  If the file "
 "cannot be opened, an :exc:`OSError` is raised. See :ref:`tut-files` for more "
@@ -2169,7 +2219,7 @@ msgstr ""
 "dosya açılamazsa, :exc:`OSError` hatası ortaya çıkar. Bu fonksiyonun nasıl "
 "kullanıldığına dair daha fazla örnek için :ref:`tut-files` bkz."
 
-#: library/functions.rst:1174
+#: library/functions.rst:1257
 msgid ""
 "*file* is a :term:`path-like object` giving the pathname (absolute or "
 "relative to the current working directory) of the file to be opened or an "
@@ -2183,7 +2233,7 @@ msgstr ""
 "açıklayıcısı veirldiyse, *closefd*, ``False`` 'a ayarlanmadığı sürece I/O "
 "nesnesi kapatıldığında kapatılır."
 
-#: library/functions.rst:1180
+#: library/functions.rst:1263
 msgid ""
 "*mode* is an optional string that specifies the mode in which the file is "
 "opened.  It defaults to ``'r'`` which means open for reading in text mode. "
@@ -2207,71 +2257,71 @@ msgstr ""
 "(İşlenmemiş baytlar okumak veya yazmak için ikili modu kullanın ve "
 "*encoding* 'i boş bırakın. Geçerli modlar:"
 
-#: library/functions.rst:1197
+#: library/functions.rst:1280
 msgid "Character"
 msgstr "Karakter"
 
-#: library/functions.rst:1197
+#: library/functions.rst:1280
 msgid "Meaning"
 msgstr "Anlam"
 
-#: library/functions.rst:1199
+#: library/functions.rst:1282
 msgid "``'r'``"
 msgstr "``'r'``"
 
-#: library/functions.rst:1199
+#: library/functions.rst:1282
 msgid "open for reading (default)"
 msgstr "okumaya açık (varsayılan)"
 
-#: library/functions.rst:1200
+#: library/functions.rst:1283
 msgid "``'w'``"
 msgstr "``'w'``"
 
-#: library/functions.rst:1200
+#: library/functions.rst:1283
 msgid "open for writing, truncating the file first"
 msgstr "yazmaya açık, önce dosyayı keser"
 
-#: library/functions.rst:1201
+#: library/functions.rst:1284
 msgid "``'x'``"
 msgstr "``'x'``"
 
-#: library/functions.rst:1201
+#: library/functions.rst:1284
 msgid "open for exclusive creation, failing if the file already exists"
 msgstr "ayrıcalıklı oluşturma için açık, dosya varsa hata verir"
 
-#: library/functions.rst:1202
+#: library/functions.rst:1285
 msgid "``'a'``"
 msgstr "``'a'``"
 
-#: library/functions.rst:1202
+#: library/functions.rst:1285
 msgid "open for writing, appending to the end of file if it exists"
 msgstr "yazmaya açık, eğer dosya bulunuyorsa dosyaya ekleme yapar"
 
-#: library/functions.rst:1203
+#: library/functions.rst:1286
 msgid "``'b'``"
 msgstr "``'b'``"
 
-#: library/functions.rst:1347
+#: library/functions.rst:1430
 msgid "binary mode"
 msgstr "ikili mod"
 
-#: library/functions.rst:1204
+#: library/functions.rst:1287
 msgid "``'t'``"
 msgstr "``'t'``"
 
-#: library/functions.rst:1204
+#: library/functions.rst:1287
 msgid "text mode (default)"
 msgstr "metin modu (varsayılan)"
 
-#: library/functions.rst:1205
+#: library/functions.rst:1288
 msgid "``'+'``"
 msgstr "``'+'``"
 
-#: library/functions.rst:1205
+#: library/functions.rst:1288
 msgid "open for updating (reading and writing)"
 msgstr "güncellemeye açık (okuma ve yazma)"
 
-#: library/functions.rst:1208
+#: library/functions.rst:1291
 msgid ""
 "The default mode is ``'r'`` (open for reading text, a synonym of ``'rt'``). "
 "Modes ``'w+'`` and ``'w+b'`` open and truncate the file.  Modes ``'r+'`` and "
@@ -2281,7 +2331,7 @@ msgstr ""
 "``'w+'`` ve ``'w+b'`` modları dosyayı açar ve temizlerler. ``'r+'`` ve "
 "``'r+b'`` modları dosyayı temizlemeden açarlar."
 
-#: library/functions.rst:1212
+#: library/functions.rst:1295
 msgid ""
 "As mentioned in the :ref:`io-overview`, Python distinguishes between binary "
 "and text I/O.  Files opened in binary mode (including ``'b'`` in the *mode* "
@@ -2299,7 +2349,7 @@ msgstr ""
 "platforma bağlı bir kodlayıcı veya belirtilen *encoding* 'i kullanarak "
 "deşifre edilir."
 
-#: library/functions.rst:1222
+#: library/functions.rst:1305
 msgid ""
 "Python doesn't depend on the underlying operating system's notion of text "
 "files; all the processing is done by Python itself, and is therefore "
@@ -2309,7 +2359,7 @@ msgstr ""
 "değildir. Tüm işlemler Python'un kendisi tarafından yapılır ve bu yüzden de "
 "platformdan bağımsızdır."
 
-#: library/functions.rst:1226
+#: library/functions.rst:1309
 msgid ""
 "*buffering* is an optional integer used to set the buffering policy.  Pass 0 "
 "to switch buffering off (only allowed in binary mode), 1 to select line "
@@ -2334,7 +2384,7 @@ msgstr ""
 "değişkeni verilmediğinde, varsayılan arabelleğe alma ilkesi şu şekilde "
 "çalışır:"
 
-#: library/functions.rst:1236
+#: library/functions.rst:1319
 #, fuzzy
 msgid ""
 "Binary files are buffered in fixed-size chunks; the size of the buffer is "
@@ -2347,7 +2397,7 @@ msgstr ""
 "kullanılarak seçilir ve :attr:`io.DEFAULT_BUFFER_SIZE` değerine düşer. Çoğu "
 "sistemde, arabellek 4096 veya 8192 bayt uzunluğunda olacaktır."
 
-#: library/functions.rst:1241
+#: library/functions.rst:1324
 msgid ""
 "\"Interactive\" text files (files for which :meth:`~io.IOBase.isatty` "
 "returns ``True``) use line buffering.  Other text files use the policy "
@@ -2357,7 +2407,7 @@ msgstr ""
 "döndürdüğü dosyalar) satır arabelleğe almayı kullanır. Diğer metin dosyaları "
 "yukarıda ikili dosyalar için açıklanan poliçeyi kullanırlar."
 
-#: library/functions.rst:1245
+#: library/functions.rst:1328
 msgid ""
 "*encoding* is the name of the encoding used to decode or encode the file. "
 "This should only be used in text mode.  The default encoding is platform "
@@ -2372,7 +2422,7 @@ msgstr ""
 "kullanılabilir. Desteklenen kodlayıcıların listesi için :mod:`codecs` "
 "modülüne bkz."
 
-#: library/functions.rst:1251
+#: library/functions.rst:1334
 msgid ""
 "*errors* is an optional string that specifies how encoding and decoding "
 "errors are to be handled—this cannot be used in binary mode. A variety of "
@@ -2386,7 +2436,7 @@ msgstr ""
 "`codecs.register_error` ile kaydedilen herhangi bir hata işleyici ismi de "
 "geçerlidir. Standart isimler bunları içerir:"
 
-#: library/functions.rst:1259
+#: library/functions.rst:1342
 msgid ""
 "``'strict'`` to raise a :exc:`ValueError` exception if there is an encoding "
 "error.  The default value of ``None`` has the same effect."
@@ -2395,7 +2445,7 @@ msgstr ""
 "yükseltmek için kullanılır. Varsayılan değer ``None`` ile aynı etkiyi "
 "gösterir."
 
-#: library/functions.rst:1263
+#: library/functions.rst:1346
 msgid ""
 "``'ignore'`` ignores errors.  Note that ignoring encoding errors can lead to "
 "data loss."
@@ -2403,7 +2453,7 @@ msgstr ""
 "``'ignore'`` hataları görmezden gelir. Kodlayıcı hatalarını görmezden "
 "gelmenin veri kaybı ile sonuçlanabileceğini unutmayın."
 
-#: library/functions.rst:1266
+#: library/functions.rst:1349
 msgid ""
 "``'replace'`` causes a replacement marker (such as ``'?'``) to be inserted "
 "where there is malformed data."
@@ -2412,7 +2462,7 @@ msgstr ""
 "(``'?'`` gibi) 'nin hatalı biçimlendirilmiş verinin yerine geçmesine neden "
 "olur."
 
-#: library/functions.rst:1269
+#: library/functions.rst:1352
 msgid ""
 "``'surrogateescape'`` will represent any incorrect bytes as low surrogate "
 "code units ranging from U+DC80 to U+DCFF. These surrogate code units will "
@@ -2426,7 +2476,7 @@ msgstr ""
 "baytlara geri döndürülecektir. Bu dosyaları bilinmeyen bir kodlayıcıyla "
 "işlerken kullanışlıdır."
 
-#: library/functions.rst:1276
+#: library/functions.rst:1359
 #, fuzzy
 msgid ""
 "``'xmlcharrefreplace'`` is only supported when writing to a file. Characters "
@@ -2437,7 +2487,7 @@ msgstr ""
 "Kodlayıcı tarafından desteklenmeyen karakterler uygun XML karakter örneği "
 "ile değiştirilir."
 
-#: library/functions.rst:1280
+#: library/functions.rst:1363
 msgid ""
 "``'backslashreplace'`` replaces malformed data by Python's backslashed "
 "escape sequences."
@@ -2445,7 +2495,7 @@ msgstr ""
 "``'backslashreplace'`` Python'un ters slash kaçış karakterleri yüzünden "
 "oluşan hatalı veriyi değiştirir."
 
-#: library/functions.rst:1283
+#: library/functions.rst:1366
 msgid ""
 "``'namereplace'`` (also only supported when writing) replaces unsupported "
 "characters with ``\\N{...}`` escape sequences."
@@ -2453,7 +2503,7 @@ msgstr ""
 "``'namereplace'`` (sadece yazarken desteklenir) desteklenmeyen karakterleri "
 "``\\N{...}`` kaçış karakterleriyle değiştirir."
 
-#: library/functions.rst:1291
+#: library/functions.rst:1374
 msgid ""
 "*newline* determines how to parse newline characters from the stream. It can "
 "be ``None``, ``''``, ``'\\n'``, ``'\\r'``, and ``'\\r\\n'``.  It works as "
@@ -2463,7 +2513,7 @@ msgstr ""
 "belirler. ``None``, ``''``, ``'\\n'``, ``'\\r'`` ve ``'\\r\\n'`` olabilir. "
 "Aşağıdaki gibi çalışır:"
 
-#: library/functions.rst:1295
+#: library/functions.rst:1378
 msgid ""
 "When reading input from the stream, if *newline* is ``None``, universal "
 "newlines mode is enabled.  Lines in the input can end in ``'\\n'``, "
@@ -2481,7 +2531,7 @@ msgstr ""
 "değer verildiyse, girdi satırları sadece verilen dize ile sonlanır ve satır "
 "sonu çağrıcıya çevrilmeden döndürülür."
 
-#: library/functions.rst:1303
+#: library/functions.rst:1386
 msgid ""
 "When writing output to the stream, if *newline* is ``None``, any ``'\\n'`` "
 "characters written are translated to the system default line separator, :"
@@ -2495,7 +2545,7 @@ msgstr ""
 "yapılmaz. Eğer *newline* diğer uygun değerlerden biri ise, tüm ``'\\n'`` "
 "karakterleri verilen dizeye dönüştürülür."
 
-#: library/functions.rst:1309
+#: library/functions.rst:1392
 msgid ""
 "If *closefd* is ``False`` and a file descriptor rather than a filename was "
 "given, the underlying file descriptor will be kept open when the file is "
@@ -2507,7 +2557,7 @@ msgstr ""
 "Eğer bir dosya adı verildiyse, *closefd* ``True`` olmalıdır (varsayılan); "
 "aksi takdirde, bir hata ortaya çıkar."
 
-#: library/functions.rst:1314
+#: library/functions.rst:1397
 msgid ""
 "A custom opener can be used by passing a callable as *opener*. The "
 "underlying file descriptor for the file object is then obtained by calling "
@@ -2521,11 +2571,11 @@ msgstr ""
 "dosya tanımlayıcısı döndürmelidir (*opener* yerine :mod:`os.open` göndermek "
 "fonksiyonel olarak ``None`` göndermek ile benzer sonuçlanır)."
 
-#: library/functions.rst:1320
+#: library/functions.rst:1403
 msgid "The newly created file is :ref:`non-inheritable <fd_inheritance>`."
 msgstr "Yeni oluşturulan dosya :ref:`non-inheritable <fd_inheritance>` 'dir."
 
-#: library/functions.rst:1322
+#: library/functions.rst:1405
 msgid ""
 "The following example uses the :ref:`dir_fd <dir_fd>` parameter of the :func:"
 "`os.open` function to open a file relative to a given directory::"
@@ -2533,7 +2583,7 @@ msgstr ""
 "Aşağıdaki örnek verilen bir dizine ait bir dosyayı açmak için :func:`os."
 "open` fonksiyonunun :ref:`dir_fd <dir_fd>` parametresini kullanır:"
 
-#: library/functions.rst:1335
+#: library/functions.rst:1418
 msgid ""
 "The type of :term:`file object` returned by the :func:`open` function "
 "depends on the mode.  When :func:`open` is used to open a file in a text "
@@ -2559,7 +2609,7 @@ msgstr ""
 "olduğunda, ham akış, :class:`io.RawIOBase` 'in alt sınıfı, :class:`io."
 "FileIO` döndürülür."
 
-#: library/functions.rst:1356
+#: library/functions.rst:1439
 msgid ""
 "See also the file handling modules, such as :mod:`fileinput`, :mod:`io` "
 "(where :func:`open` is declared), :mod:`os`, :mod:`os.path`, :mod:"
@@ -2569,7 +2619,7 @@ msgstr ""
 "`os`, :mod:`os.path`, :mod:`tempfile`, ve :mod:`shutil` gibi dosya işleme "
 "modüllerine de bkz."
 
-#: library/functions.rst:1360
+#: library/functions.rst:1443
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``open`` with arguments ``file``, "
 "``mode``, ``flags``."
@@ -2577,7 +2627,7 @@ msgstr ""
 "``file``, ``mode``, ``flags`` parametreleriyle bir :ref:`audition event "
 "<auditing>` ``open`` ortaya çıkartır."
 
-#: library/functions.rst:1362
+#: library/functions.rst:1445
 msgid ""
 "The ``mode`` and ``flags`` arguments may have been modified or inferred from "
 "the original call."
@@ -2585,21 +2635,21 @@ msgstr ""
 "``mode`` ve ``flags`` parametreleri orijinal çağrı tarafından modifiye "
 "edilmiş veya çıkartılmış olabilir."
 
-#: library/functions.rst:1367
+#: library/functions.rst:1450
 msgid "The *opener* parameter was added."
 msgstr "*opener* parametresi eklendi."
 
-#: library/functions.rst:1368
+#: library/functions.rst:1451
 msgid "The ``'x'`` mode was added."
 msgstr "``'x'`` modu eklendi."
 
-#: library/functions.rst:1369
+#: library/functions.rst:1452
 msgid ":exc:`IOError` used to be raised, it is now an alias of :exc:`OSError`."
 msgstr ""
 "Eskiden :exc:`IOError` hatası ortaya çıkardı, şimdi :exc:`OSError` 'un takma "
 "adıdır."
 
-#: library/functions.rst:1370
+#: library/functions.rst:1453
 msgid ""
 ":exc:`FileExistsError` is now raised if the file opened in exclusive "
 "creation mode (``'x'``) already exists."
@@ -2607,11 +2657,11 @@ msgstr ""
 "Artık eğer özel oluşturma modunda (``'x'``) açılmış dosyalar zaten "
 "bulunuyorsa :exc:`FileExistsError` hatası ortaya çıkar."
 
-#: library/functions.rst:1375
+#: library/functions.rst:1458
 msgid "The file is now non-inheritable."
 msgstr "Dosya artık miras alınamaz."
 
-#: library/functions.rst:1379
+#: library/functions.rst:1462
 msgid ""
 "If the system call is interrupted and the signal handler does not raise an "
 "exception, the function now retries the system call instead of raising an :"
@@ -2621,15 +2671,15 @@ msgstr ""
 "çıkartmazsa, artık fonksiyon :exc:`InterruptedError` hatası ortaya çıkartmak "
 "yerine sistem çağrısını yeniden dener (açıklama için :pep:`475` bkz)."
 
-#: library/functions.rst:1382
+#: library/functions.rst:1465
 msgid "The ``'namereplace'`` error handler was added."
 msgstr "``'namereplace'`` hata işleyicisi eklendi."
 
-#: library/functions.rst:1386
+#: library/functions.rst:1469
 msgid "Support added to accept objects implementing :class:`os.PathLike`."
 msgstr ":class:`os.PathLike` uygulayan nesneleri kabul etme desteği eklendi."
 
-#: library/functions.rst:1387
+#: library/functions.rst:1470
 msgid ""
 "On Windows, opening a console buffer may return a subclass of :class:`io."
 "RawIOBase` other than :class:`io.FileIO`."
@@ -2637,11 +2687,11 @@ msgstr ""
 "Windows'da, bir konsol arabelleğinin açılması :class:`io.FileIO` dışında "
 "bir :class:`io.RawIOBase` alt sınıfını döndürebilir."
 
-#: library/functions.rst:1390
+#: library/functions.rst:1473
 msgid "The ``'U'`` mode has been removed."
 msgstr "``'U'`` modu kaldırıldı."
 
-#: library/functions.rst:1395
+#: library/functions.rst:1478
 msgid ""
 "Given a string representing one Unicode character, return an integer "
 "representing the Unicode code point of that character.  For example, "
@@ -2653,7 +2703,7 @@ msgstr ""
 "tamsayısını döndürür ve ``ord('€')`` (Euro simgesi) ``8364`` tamsayısını "
 "döndürür. Bu :func:`chr` 'nin tersidir."
 
-#: library/functions.rst:1403
+#: library/functions.rst:1486
 msgid ""
 "Return *base* to the power *exp*; if *mod* is present, return *base* to the "
 "power *exp*, modulo *mod* (computed more efficiently than ``pow(base, exp) % "
@@ -2665,7 +2715,7 @@ msgstr ""
 "parametreli formu ``pow(base, exp)``, üs operatörü ``base**exp`` kullanmaya "
 "eş değerdir."
 
-#: library/functions.rst:1408
+#: library/functions.rst:1491
 msgid ""
 "The arguments must have numeric types.  With mixed operand types, the "
 "coercion rules for binary arithmetic operators apply.  For :class:`int` "
@@ -2687,7 +2737,7 @@ msgstr ""
 "`float` tipinin negatif tabanı için, karmaşık bir sayı çıktı verilir. "
 "Örneğin, ``pow(-9, 0.5)``, ``3j`` 'ye yakın bir değer döndürür."
 
-#: library/functions.rst:1418
+#: library/functions.rst:1501
 msgid ""
 "For :class:`int` operands *base* and *exp*, if *mod* is present, *mod* must "
 "also be of integer type and *mod* must be nonzero. If *mod* is present and "
@@ -2701,11 +2751,11 @@ msgstr ""
 "``pow(inv_base,-exp,mod)`` döndürülüri *inv_base, *base* mod *mod* 'un "
 "tersidir."
 
-#: library/functions.rst:1424
+#: library/functions.rst:1507
 msgid "Here's an example of computing an inverse for ``38`` modulo ``97``::"
 msgstr "Burada ``38`` mod ``97`` 'nin tersini işlemek için bir örnek var::"
 
-#: library/functions.rst:1431
+#: library/functions.rst:1514
 msgid ""
 "For :class:`int` operands, the three-argument form of ``pow`` now allows the "
 "second argument to be negative, permitting computation of modular inverses."
@@ -2713,14 +2763,14 @@ msgstr ""
 ":class:`int` işlenenleri için, ``pow`` 'un üç parametreli formu artık ikinci "
 "parametrenin negatif olmasına, modüler terslerin hesaplanmasına izin verir."
 
-#: library/functions.rst:1436
+#: library/functions.rst:1519
 msgid ""
 "Allow keyword arguments.  Formerly, only positional arguments were supported."
 msgstr ""
 "Anahtar kelime parametrelerine izin ver, önceden sadece pozisyonel "
 "parametreler desteklenirdi."
 
-#: library/functions.rst:1443
+#: library/functions.rst:1526
 msgid ""
 "Print *objects* to the text stream *file*, separated by *sep* and followed "
 "by *end*.  *sep*, *end*, *file*, and *flush*, if present, must be given as "
@@ -2730,7 +2780,7 @@ msgstr ""
 "şekilde  *objects* 'i yazdırır. *sep*, *end, *file*, ve *flush* sunulursa "
 "anahtar kelime parametreleri olarak verilmelidir."
 
-#: library/functions.rst:1447
+#: library/functions.rst:1530
 msgid ""
 "All non-keyword arguments are converted to strings like :func:`str` does and "
 "written to the stream, separated by *sep* and followed by *end*.  Both *sep* "
@@ -2744,7 +2794,7 @@ msgstr ""
 "varsayılan değerler kullanılır. Eğer *objects* verilmediyse, :func:`print` "
 "sadece *end* 'i yazdırır."
 
-#: library/functions.rst:1453
+#: library/functions.rst:1536
 msgid ""
 "The *file* argument must be an object with a ``write(string)`` method; if it "
 "is not present or ``None``, :data:`sys.stdout` will be used.  Since printed "
@@ -2756,7 +2806,7 @@ msgstr ""
 "argümanlar metin dizelerine çevrildiğinden, :func:`print` ikili dosya "
 "nesneleri ile kullanılamaz. Bunlar için, ``file.write(...)`` 'ı kullanın."
 
-#: library/functions.rst:1458
+#: library/functions.rst:1541
 #, fuzzy
 msgid ""
 "Output buffering is usually determined by *file*. However, if *flush* is "
@@ -2765,15 +2815,15 @@ msgstr ""
 "Çıktının arabelleğe alınıp alınmadığı genellikle *file* tarafından "
 "belirlenir, ama *flush* argümanı doğru ise, akış zorla boşaltılır."
 
-#: library/functions.rst:1462
+#: library/functions.rst:1545
 msgid "Added the *flush* keyword argument."
 msgstr "*flush* anahtar kelimesi argümanı eklendi."
 
-#: library/functions.rst:1468
+#: library/functions.rst:1551
 msgid "Return a property attribute."
 msgstr "Bir özellik özelliği döndürür."
 
-#: library/functions.rst:1470
+#: library/functions.rst:1553
 msgid ""
 "*fget* is a function for getting an attribute value.  *fset* is a function "
 "for setting an attribute value. *fdel* is a function for deleting an "
@@ -2784,11 +2834,11 @@ msgstr ""
 "bir özelliğin değerini silmek için kullanılan bir fonksiyondur, ve *doc* "
 "özellik için bir belge dizisi oluşturur."
 
-#: library/functions.rst:1474
+#: library/functions.rst:1557
 msgid "A typical use is to define a managed attribute ``x``::"
 msgstr "Yönetilen bir ``x`` özelliği tanımlamak için tipik bir yöntem::"
 
-#: library/functions.rst:1491
+#: library/functions.rst:1574
 msgid ""
 "If *c* is an instance of *C*, ``c.x`` will invoke the getter, ``c.x = "
 "value`` will invoke the setter, and ``del c.x`` the deleter."
@@ -2796,7 +2846,7 @@ msgstr ""
 "Eğer *c*, *C* 'nin bir örneğiyse, ``c.x``, alıcı fonksiyonu çağıracaktır. "
 "``c.x = value`` ayarlayıcı fonksiyonu, ``del c.x`` ise siliciyi çağıracaktır."
 
-#: library/functions.rst:1494
+#: library/functions.rst:1577
 msgid ""
 "If given, *doc* will be the docstring of the property attribute. Otherwise, "
 "the property will copy *fget*'s docstring (if it exists).  This makes it "
@@ -2808,7 +2858,7 @@ msgstr ""
 "kopyalayacaktır. Bu :func:`property` 'i :term:`decorator` olarak kullanarak "
 "kolayca salt-okunur özellikler oluşturmayı mümkün kılar::"
 
-#: library/functions.rst:1507
+#: library/functions.rst:1590
 #, fuzzy
 msgid ""
 "The ``@property`` decorator turns the :meth:`!voltage` method into a "
@@ -2819,7 +2869,7 @@ msgstr ""
 "bir özellik için \"getter\" metoduna dönüştürür ve *voltage* için doküman "
 "dizisini \"Get the current voltage.\" olarak ayarlar."
 
-#: library/functions.rst:1515
+#: library/functions.rst:1598
 #, fuzzy
 msgid ""
 "A property object has ``getter``, ``setter``, and ``deleter`` methods usable "
@@ -2833,7 +2883,7 @@ msgstr ""
 "`~property.deleter` metotlarını içerir. Bu en iyi şekilde bir örnekle "
 "açıklanabilir::"
 
-#: library/functions.rst:1539
+#: library/functions.rst:1622
 msgid ""
 "This code is exactly equivalent to the first example.  Be sure to give the "
 "additional functions the same name as the original property (``x`` in this "
@@ -2842,7 +2892,7 @@ msgstr ""
 "Bu kod birinci örneğin tamamen eş değeridir. Orijinal özellikte olduğu gibi "
 "ekstra fonksiyonlara aynı ismi verdiğinizden emin olun (bu durumda ``x``)."
 
-#: library/functions.rst:1543
+#: library/functions.rst:1626
 msgid ""
 "The returned property object also has the attributes ``fget``, ``fset``, and "
 "``fdel`` corresponding to the constructor arguments."
@@ -2850,11 +2900,11 @@ msgstr ""
 "Döndürülen property nesnesi yapıcı metotta verilen ``fget``, ``fset``, ve "
 "``fdel`` özelliklerine sahiptir."
 
-#: library/functions.rst:1546
+#: library/functions.rst:1629
 msgid "The docstrings of property objects are now writeable."
 msgstr "Property nesnelerinin doküman dizeleri artık yazılabilir."
 
-#: library/functions.rst:1555
+#: library/functions.rst:1638
 msgid ""
 "Rather than being a function, :class:`range` is actually an immutable "
 "sequence type, as documented in :ref:`typesseq-range` and :ref:`typesseq`."
@@ -2863,7 +2913,7 @@ msgstr ""
 "tipidir. Daha fazla bilgi için :ref:`typesseq-range` ve :ref:`typesseq` 'e "
 "bakınız."
 
-#: library/functions.rst:1561
+#: library/functions.rst:1644
 #, fuzzy
 msgid ""
 "Return a string containing a printable representation of an object.  For "
@@ -2885,11 +2935,11 @@ msgstr ""
 "ne döndürdüğünü kontrol edebilir. :func:`sys.displayhook` erişilebilir "
 "değilse, bu fonksiyon :exc:`RuntimeError` değerini yükseltir."
 
-#: library/functions.rst:1572
+#: library/functions.rst:1655
 msgid "This class has a custom representation that can be evaluated::"
 msgstr ""
 
-#: library/functions.rst:1585
+#: library/functions.rst:1668
 #, fuzzy
 msgid ""
 "Return a reverse :term:`iterator`.  *seq* must be an object which has a :"
@@ -2902,7 +2952,7 @@ msgstr ""
 "tam sayı argümanları alan bir :meth:`__getitem__` metodu) destekleyen bir "
 "nesne olmalıdır."
 
-#: library/functions.rst:1593
+#: library/functions.rst:1676
 msgid ""
 "Return *number* rounded to *ndigits* precision after the decimal point.  If "
 "*ndigits* is omitted or is ``None``, it returns the nearest integer to its "
@@ -2912,7 +2962,7 @@ msgstr ""
 "*ndigits* verilmediyse veya ``None`` ise, *number* 'a en yakın tam sayı "
 "döndürülür."
 
-#: library/functions.rst:1597
+#: library/functions.rst:1680
 msgid ""
 "For the built-in types supporting :func:`round`, values are rounded to the "
 "closest multiple of 10 to the power minus *ndigits*; if two multiples are "
@@ -2930,7 +2980,7 @@ msgstr ""
 "*ndigits* verilmediyse veya ``None`` ise döndürülen değer bir tam sayıdır. "
 "Aksi takdirde, döndürülen değerin tipi *number* 'ınkiyle aynıdır."
 
-#: library/functions.rst:1606
+#: library/functions.rst:1689
 msgid ""
 "For a general Python object ``number``, ``round`` delegates to ``number."
 "__round__``."
@@ -2938,7 +2988,7 @@ msgstr ""
 "Genel bir Python nesnesi için ``number``, ``round`` ``number.__round__`` 'u "
 "temsil eder."
 
-#: library/functions.rst:1611
+#: library/functions.rst:1694
 msgid ""
 "The behavior of :func:`round` for floats can be surprising: for example, "
 "``round(2.675, 2)`` gives ``2.67`` instead of the expected ``2.68``. This is "
@@ -2952,7 +3002,7 @@ msgstr ""
 "gösterilemeyeceğinden bu sonucu alıyoruz. Daha fazla bilgi için :ref:`tut-fp-"
 "issues` 'e bkz."
 
-#: library/functions.rst:1623
+#: library/functions.rst:1706
 msgid ""
 "Return a new :class:`set` object, optionally with elements taken from "
 "*iterable*.  ``set`` is a built-in class.  See :class:`set` and :ref:`types-"
@@ -2962,7 +3012,7 @@ msgstr ""
 "nesnesi döndürür. ``set`` yerleşik bir sınıftır. Bu sınıf hakkında "
 "dokümantasyon için :class:`set` ve :ref:`types-set` 'e bakınız."
 
-#: library/functions.rst:1627
+#: library/functions.rst:1710
 msgid ""
 "For other containers see the built-in :class:`frozenset`, :class:`list`, :"
 "class:`tuple`, and :class:`dict` classes, as well as the :mod:`collections` "
@@ -2972,7 +3022,7 @@ msgstr ""
 "`tuple` ve :class:`dict` sınıflarını; aynı zamanda :mod:`collections`  "
 "modülüne bakınız."
 
-#: library/functions.rst:1634
+#: library/functions.rst:1717
 msgid ""
 "This is the counterpart of :func:`getattr`.  The arguments are an object, a "
 "string, and an arbitrary value.  The string may name an existing attribute "
@@ -2985,7 +3035,7 @@ msgstr ""
 "Fonksiyon, nesnenin izin vermesi koşuluyla, değeri özelliğe atar. Örneğin "
 "``setattr(x, 'foobar', 123)`` ve ``x.foobar = 123`` eş değerdir."
 
-#: library/functions.rst:1640
+#: library/functions.rst:1723
 msgid ""
 "*name* need not be a Python identifier as defined in :ref:`identifiers` "
 "unless the object chooses to enforce that, for example in a custom :meth:"
@@ -2999,7 +3049,7 @@ msgstr ""
 "zorunda değildir. Adı tanımlayıcı olmayan bir özelliğe nokta kullanılarak "
 "erişilemez, ancak :func:`getattr` vb. aracılığıyla erişilebilir."
 
-#: library/functions.rst:1648
+#: library/functions.rst:1731
 msgid ""
 "Since :ref:`private name mangling <private-name-mangling>` happens at "
 "compilation time, one must manually mangle a private attribute's (attributes "
@@ -3009,14 +3059,14 @@ msgstr ""
 "olacağından, :func:`setattr` ile ayarlamak için özel bir niteliğin (iki alt "
 "çizgi ile başlayan nitelikler) adını manuel olarak değiştirmek gerekir."
 
-#: library/functions.rst:1657
+#: library/functions.rst:1740
 msgid ""
 "Return a :term:`slice` object representing the set of indices specified by "
 "``range(start, stop, step)``.  The *start* and *step* arguments default to "
 "``None``."
 msgstr ""
 
-#: library/functions.rst:1665
+#: library/functions.rst:1748
 msgid ""
 "Slice objects have read-only data attributes :attr:`!start`, :attr:`!stop`, "
 "and :attr:`!step` which merely return the argument values (or their "
@@ -3024,30 +3074,30 @@ msgid ""
 "by NumPy and other third-party packages."
 msgstr ""
 
-#: library/functions.rst:1670
+#: library/functions.rst:1753
 msgid ""
 "Slice objects are also generated when extended indexing syntax is used.  For "
 "example: ``a[start:stop:step]`` or ``a[start:stop, i]``.  See :func:"
 "`itertools.islice` for an alternate version that returns an :term:`iterator`."
 msgstr ""
 
-#: library/functions.rst:1675
+#: library/functions.rst:1758
 msgid ""
 "Slice objects are now :term:`hashable` (provided :attr:`~slice.start`, :attr:"
 "`~slice.stop`, and :attr:`~slice.step` are hashable)."
 msgstr ""
 
-#: library/functions.rst:1681
+#: library/functions.rst:1764
 msgid "Return a new sorted list from the items in *iterable*."
 msgstr ""
 "*iterable* 'ın içindeki elementlerden oluşan sıralı bir liste döndürür."
 
-#: library/functions.rst:1683
+#: library/functions.rst:1766
 msgid ""
 "Has two optional arguments which must be specified as keyword arguments."
 msgstr "İsimle belirtilmesi gereken 2 opsiyonel parametresi vardır."
 
-#: library/functions.rst:1685
+#: library/functions.rst:1768
 msgid ""
 "*key* specifies a function of one argument that is used to extract a "
 "comparison key from each element in *iterable* (for example, ``key=str."
@@ -3057,7 +3107,7 @@ msgstr ""
 "için kullanılan bir argümanın fonksiyonunu belirtir (örneğin, ``key=str."
 "lower``). Varsayılan değer ``None`` 'dır (elementleri direkt karşılaştırır)."
 
-#: library/functions.rst:1689
+#: library/functions.rst:1772
 msgid ""
 "*reverse* is a boolean value.  If set to ``True``, then the list elements "
 "are sorted as if each comparison were reversed."
@@ -3065,7 +3115,7 @@ msgstr ""
 "*reverse* bir boolean değerdir. Eğer ``True`` ise, liste elementleri tüm "
 "karşılaştırmalar tersine çevrilmiş şekilde sıralanır."
 
-#: library/functions.rst:1692
+#: library/functions.rst:1775
 msgid ""
 "Use :func:`functools.cmp_to_key` to convert an old-style *cmp* function to a "
 "*key* function."
@@ -3073,7 +3123,7 @@ msgstr ""
 "Eski stil *cmp* fonksiyonunu bir *key* fonksiyonuna dönüştürmek için :func:"
 "`functools.cmp_to_key` 'yi kullanın."
 
-#: library/functions.rst:1695
+#: library/functions.rst:1778
 msgid ""
 "The built-in :func:`sorted` function is guaranteed to be stable. A sort is "
 "stable if it guarantees not to change the relative order of elements that "
@@ -3085,7 +3135,7 @@ msgstr ""
 "garantiliyorsa stabildir --- bu çoklu geçişlerle sıralama (örneğin önce "
 "departman, ardından maaş sıralama) için yardımcıdır."
 
-#: library/functions.rst:1700
+#: library/functions.rst:1783
 msgid ""
 "The sort algorithm uses only ``<`` comparisons between items.  While "
 "defining an :meth:`~object.__lt__` method will suffice for sorting, :PEP:`8` "
@@ -3105,18 +3155,18 @@ msgstr ""
 "uygulamak ayrıca yansıtılan :meth:`~object.__gt__` metodunu çağırabilen "
 "karmaşık tür karşılaştırmaları için karışıklığı da önler."
 
-#: library/functions.rst:1709
+#: library/functions.rst:1792
 msgid ""
 "For sorting examples and a brief sorting tutorial, see :ref:`sortinghowto`."
 msgstr ""
 "Sıralama örnekleri ve kısa sıralama öğreticisi için :ref:`sortinghowto` 'ya "
 "bakınız."
 
-#: library/functions.rst:1713
+#: library/functions.rst:1796
 msgid "Transform a method into a static method."
 msgstr "Bir metodu statik metoda dönüştürür."
 
-#: library/functions.rst:1715
+#: library/functions.rst:1798
 msgid ""
 "A static method does not receive an implicit first argument. To declare a "
 "static method, use this idiom::"
@@ -3124,7 +3174,7 @@ msgstr ""
 "Statik bir metot üstü kapalı şekilde bir ilk argüman almaz. Statik metot "
 "tanımlamak için bu ifadeyi kullanabilirsiniz::"
 
-#: library/functions.rst:1722
+#: library/functions.rst:1805
 msgid ""
 "The ``@staticmethod`` form is a function :term:`decorator` -- see :ref:"
 "`function` for details."
@@ -3132,17 +3182,19 @@ msgstr ""
 "``@staticmethod`` ifadesi bir :term:`decorator` fonksiyonudur. -- detaylar "
 "için :ref:`function` bkz."
 
-#: library/functions.rst:1725
+#: library/functions.rst:1808
+#, fuzzy
 msgid ""
 "A static method can be called either on the class (such as ``C.f()``) or on "
-"an instance (such as ``C().f()``). Moreover, they can be called as regular "
-"functions (such as ``f()``)."
+"an instance (such as ``C().f()``). Moreover, the static method :term:"
+"`descriptor` is also callable, so it can be used in the class definition "
+"(such as ``f()``)."
 msgstr ""
 "Bir statik metot sınıf üzerinden (``C.f()`` gibi) veya bir örnek üzerinden "
 "(``C().f()`` gibi) çağırılabilir. Hatta normal fonksiyonlar gibi (``f()``) "
 "de çağırılabilirler."
 
-#: library/functions.rst:1729
+#: library/functions.rst:1813
 msgid ""
 "Static methods in Python are similar to those found in Java or C++. Also, "
 "see :func:`classmethod` for a variant that is useful for creating alternate "
@@ -3152,7 +3204,7 @@ msgstr ""
 "için alternatif bir yapıcı metot oluşturmak isterseniz :func:`classmethod` "
 "bkz."
 
-#: library/functions.rst:1733
+#: library/functions.rst:1817
 msgid ""
 "Like all decorators, it is also possible to call ``staticmethod`` as a "
 "regular function and do something with its result.  This is needed in some "
@@ -3166,11 +3218,11 @@ msgstr ""
 "dönüşümü engellemek istediğinizde işinize yarayabilir. Böyle durumlar için, "
 "bu ifadeyi kullanabilirsiniz::"
 
-#: library/functions.rst:1745
+#: library/functions.rst:1829
 msgid "For more information on static methods, see :ref:`types`."
 msgstr "Statik metotlar hakkında daha fazla bilgi için, :ref:`types` bkz."
 
-#: library/functions.rst:1747
+#: library/functions.rst:1831
 msgid ""
 "Static methods now inherit the method attributes (``__module__``, "
 "``__name__``, ``__qualname__``, ``__doc__`` and ``__annotations__``), have a "
@@ -3181,14 +3233,14 @@ msgstr ""
 "``__wrapped__`` özellikleri var ve artık normal fonksiyonlar gibi "
 "çağırılabilirler."
 
-#: library/functions.rst:1762
+#: library/functions.rst:1846
 msgid ""
 "Return a :class:`str` version of *object*.  See :func:`str` for details."
 msgstr ""
 "*object* 'in :class:`str` versiyonunu döndürür. Detaylar için :func:`str` "
 "bkz."
 
-#: library/functions.rst:1764
+#: library/functions.rst:1848
 msgid ""
 "``str`` is the built-in string :term:`class`.  For general information about "
 "strings, see :ref:`textseq`."
@@ -3196,7 +3248,7 @@ msgstr ""
 "``str`` yerleşik dize :term:`class` 'ıdır. Dizeler hakkında genel bilgi "
 "için, :ref:`textseq` bkz."
 
-#: library/functions.rst:1770
+#: library/functions.rst:1854
 msgid ""
 "Sums *start* and the items of an *iterable* from left to right and returns "
 "the total.  The *iterable*'s items are normally numbers, and the start value "
@@ -3206,7 +3258,7 @@ msgstr ""
 "döndürür. *iterable* 'ın elemanları normal olarak numaralardır ve başlangıç "
 "değeri bir dize olamaz."
 
-#: library/functions.rst:1774
+#: library/functions.rst:1858
 msgid ""
 "For some use cases, there are good alternatives to :func:`sum`. The "
 "preferred, fast way to concatenate a sequence of strings is by calling ``''."
@@ -3221,17 +3273,17 @@ msgstr ""
 "nesnelerden oluşan bir diziyi birleştirmek istiyorsanız, :func:`itertools."
 "chain` fonksiyonunu kullanmayı göz önünde bulundurun."
 
-#: library/functions.rst:1780
+#: library/functions.rst:1864
 msgid "The *start* parameter can be specified as a keyword argument."
 msgstr "*start* parametresi bir anahtar kelime argümanı olarak belirtilebilir."
 
-#: library/functions.rst:1783
+#: library/functions.rst:1867
 msgid ""
 "Summation of floats switched to an algorithm that gives higher accuracy on "
 "most builds."
 msgstr ""
 
-#: library/functions.rst:1790
+#: library/functions.rst:1874
 msgid ""
 "Return a proxy object that delegates method calls to a parent or sibling "
 "class of *type*.  This is useful for accessing inherited methods that have "
@@ -3241,7 +3293,7 @@ msgstr ""
 "eden bir proxy objesi döndürür. Bu bir sınıfta üzerine yazılmış kalıtılan "
 "metotlara erişmek için kullanışlıdır."
 
-#: library/functions.rst:1794
+#: library/functions.rst:1878
 msgid ""
 "The *object_or_type* determines the :term:`method resolution order` to be "
 "searched.  The search starts from the class right after the *type*."
@@ -3249,7 +3301,7 @@ msgstr ""
 "*object_or_type* aranacak :term:`method resolution order` 'nı belirler. "
 "Arama *type* 'dan sonraki ilk sınıftan başlar."
 
-#: library/functions.rst:1798
+#: library/functions.rst:1882
 msgid ""
 "For example, if :attr:`~class.__mro__` of *object_or_type* is ``D -> B -> C -"
 "> A -> object`` and the value of *type* is ``B``, then :func:`super` "
@@ -3259,7 +3311,7 @@ msgstr ""
 "> B -> C -> A -> object`` ise ve *type* değeri ``B`` ise, :func:`super` ``C -"
 "> A -> object`` 'i arar."
 
-#: library/functions.rst:1802
+#: library/functions.rst:1886
 msgid ""
 "The :attr:`~class.__mro__` attribute of the *object_or_type* lists the "
 "method resolution search order used by both :func:`getattr` and :func:"
@@ -3271,7 +3323,7 @@ msgstr ""
 "listeler. Özellik dinamiktir ve kalıtım hiyerarşisi her güncellendiğinde "
 "değişebilir."
 
-#: library/functions.rst:1807
+#: library/functions.rst:1891
 msgid ""
 "If the second argument is omitted, the super object returned is unbound.  If "
 "the second argument is an object, ``isinstance(obj, type)`` must be true.  "
@@ -3283,7 +3335,7 @@ msgstr ""
 "zorundadır. Eğer ikinci parametre bir tür ise, ``issubclass(type2, type)`` "
 "doğru olmak zorundadır (bu sınıf metotları için kullanışlıdır)."
 
-#: library/functions.rst:1812
+#: library/functions.rst:1896
 msgid ""
 "There are two typical use cases for *super*.  In a class hierarchy with "
 "single inheritance, *super* can be used to refer to parent classes without "
@@ -3294,7 +3346,7 @@ msgstr ""
 "hiyerarşisinde *super* üst sınıfları açıkça adlandırmadan onlara başvurmak "
 "için kullanılabilir. böylece kodu daha sürdürülebilir hale getirir."
 
-#: library/functions.rst:1817
+#: library/functions.rst:1901
 msgid ""
 "The second use case is to support cooperative multiple inheritance in a "
 "dynamic execution environment.  This use case is unique to Python and is not "
@@ -3315,12 +3367,12 @@ msgstr ""
 "sıra sınıf hiyerarşisindeki değişikliklere uyarlanır ve çalışma zamanından "
 "önce bilinmeyen kardeş sınıfları içerebilir) dikte eder."
 
-#: library/functions.rst:1827
+#: library/functions.rst:1911
 msgid "For both use cases, a typical superclass call looks like this::"
 msgstr ""
 "İki kullanım durumu için de, tipik bir üst sınıf çağrısı bu şekildedir::"
 
-#: library/functions.rst:1834
+#: library/functions.rst:1918
 msgid ""
 "In addition to method lookups, :func:`super` also works for attribute "
 "lookups.  One possible use case for this is calling :term:`descriptors "
@@ -3330,7 +3382,7 @@ msgstr ""
 "çalışır. Bunun kullanım şekli ebeveyn veya kardeş bir sınıfta :term:"
 "`tanımlayıcılar <descriptor>` 'i çağırmaktır."
 
-#: library/functions.rst:1838
+#: library/functions.rst:1922
 #, fuzzy
 msgid ""
 "Note that :func:`super` is implemented as part of the binding process for "
@@ -3347,7 +3399,7 @@ msgstr ""
 "`super`, ifadeler veya ``super()[name]`` gibi operatörler kullanarak kesin "
 "aramalar için tanımsızdır."
 
-#: library/functions.rst:1846
+#: library/functions.rst:1930
 msgid ""
 "Also note that, aside from the zero argument form, :func:`super` is not "
 "limited to use inside methods.  The two argument form specifies the "
@@ -3362,7 +3414,7 @@ msgstr ""
 "tanımının içinde çalışır, derleyici tanımlanan sınıfı doğru şekilde almak ve "
 "sıradan yöntemlere geçerli örnekten erişmek için gerekli detayları doldurur."
 
-#: library/functions.rst:1853
+#: library/functions.rst:1937
 msgid ""
 "For practical suggestions on how to design cooperative classes using :func:"
 "`super`, see `guide to using super() <https://rhettinger.wordpress."
@@ -3372,7 +3424,7 @@ msgstr ""
 "öneriler için, `guide to using super() <https://rhettinger.wordpress."
 "com/2011/05/26/super-considered-super/>`_ bkz."
 
-#: library/functions.rst:1863
+#: library/functions.rst:1947
 msgid ""
 "Rather than being a function, :class:`tuple` is actually an immutable "
 "sequence type, as documented in :ref:`typesseq-tuple` and :ref:`typesseq`."
@@ -3380,7 +3432,7 @@ msgstr ""
 "Bir fonksiyon olmaktansa, :class:`tuple` :ref:`typesseq-tuple` ve :ref:"
 "`typesseq` 'de gösterildiği gibi düzenlenemez bir dizi türüdür."
 
-#: library/functions.rst:1872
+#: library/functions.rst:1956
 msgid ""
 "With one argument, return the type of an *object*.  The return value is a "
 "type object and generally the same object as returned by :attr:`object."
@@ -3390,7 +3442,7 @@ msgstr ""
 "türüdür ve genellikle :attr:`object.__class__ <instance.__class__>` "
 "tarafından döndürülen obje ile aynıdır."
 
-#: library/functions.rst:1876
+#: library/functions.rst:1960
 msgid ""
 "The :func:`isinstance` built-in function is recommended for testing the type "
 "of an object, because it takes subclasses into account."
@@ -3398,7 +3450,7 @@ msgstr ""
 ":func:`isinstance` yerleşik fonksiyonu bir objenin türünü test etmek için "
 "önerilir. Çünkü altsınıfları hesaba katar."
 
-#: library/functions.rst:1880
+#: library/functions.rst:1964
 msgid ""
 "With three arguments, return a new type object.  This is essentially a "
 "dynamic form of the :keyword:`class` statement. The *name* string is the "
@@ -3419,11 +3471,11 @@ msgstr ""
 "özelliği yerine geçmeden önce kopyalanabilir veya sarılabilir. Aşağıdaki iki "
 "ifade birebir aynı :class:`type` nesneleri oluşturur:"
 
-#: library/functions.rst:1895
+#: library/functions.rst:1979
 msgid "See also :ref:`bltin-type-objects`."
 msgstr ":ref:`bltin-type-objects` 'e de bkz."
 
-#: library/functions.rst:1897
+#: library/functions.rst:1981
 msgid ""
 "Keyword arguments provided to the three argument form are passed to the "
 "appropriate metaclass machinery (usually :meth:`~object.__init_subclass__`) "
@@ -3435,11 +3487,11 @@ msgstr ""
 "tanımındaki anahtar sözcüklerin (*metaclass* dışında) yapacağı şekilde "
 "iletilir."
 
-#: library/functions.rst:1902
+#: library/functions.rst:1986
 msgid "See also :ref:`class-customization`."
 msgstr ":ref:`class-customization` 'a da bkz."
 
-#: library/functions.rst:1904
+#: library/functions.rst:1988
 msgid ""
 "Subclasses of :class:`type` which don't override ``type.__new__`` may no "
 "longer use the one-argument form to get the type of an object."
@@ -3447,7 +3499,7 @@ msgstr ""
 "``type.__new__`` 'in üzerine yazmayan :class:`type` altsınıfları artık bir "
 "objenin türünü almak için tek argümanlı formu kullanamaz."
 
-#: library/functions.rst:1911
+#: library/functions.rst:1995
 msgid ""
 "Return the :attr:`~object.__dict__` attribute for a module, class, instance, "
 "or any other object with a :attr:`~object.__dict__` attribute."
@@ -3455,7 +3507,7 @@ msgstr ""
 "Bir modül, sınıf, örnek veya :attr:`~object.__dict__` özelliği bulunan "
 "herhangi bir obje için, :attr:`~object.__dict__` özelliğini döndürür."
 
-#: library/functions.rst:1914
+#: library/functions.rst:1998
 msgid ""
 "Objects such as modules and instances have an updateable :attr:`~object."
 "__dict__` attribute; however, other objects may have write restrictions on "
@@ -3468,7 +3520,7 @@ msgstr ""
 "sınıflar doğrudan sözlük güncellemelerini önlemek için :class:`types."
 "MappingProxyType` sınıfını kullanırlar)."
 
-#: library/functions.rst:1919
+#: library/functions.rst:2003
 msgid ""
 "Without an argument, :func:`vars` acts like :func:`locals`.  Note, the "
 "locals dictionary is only useful for reads since updates to the locals "
@@ -3478,7 +3530,7 @@ msgstr ""
 "ona yapılan güncellemeler görmezden gelindiğinden ötürü, sadece okuma işlemi "
 "için kullanışlıdır."
 
-#: library/functions.rst:1923
+#: library/functions.rst:2007
 msgid ""
 "A :exc:`TypeError` exception is raised if an object is specified but it "
 "doesn't have a :attr:`~object.__dict__` attribute (for example, if its class "
@@ -3488,7 +3540,7 @@ msgstr ""
 "(örneğin, :attr:`~object.__slots__` özelliğini tanımlayan bir sınıf ise), :"
 "exc:`TypeError` hatası ortaya çıkar."
 
-#: library/functions.rst:1929
+#: library/functions.rst:2013
 msgid ""
 "Iterate over several iterables in parallel, producing tuples with an item "
 "from each one."
@@ -3496,11 +3548,11 @@ msgstr ""
 "Paralel olarak birkaç yinelenebilir nesneyi yineler ve hepsinden bir element "
 "alarak bir demet üretir."
 
-#: library/functions.rst:1932
+#: library/functions.rst:2016
 msgid "Example::"
 msgstr "Örnek::"
 
-#: library/functions.rst:1941
+#: library/functions.rst:2025
 msgid ""
 "More formally: :func:`zip` returns an iterator of tuples, where the *i*-th "
 "tuple contains the *i*-th element from each of the argument iterables."
@@ -3509,7 +3561,7 @@ msgstr ""
 "parametre yineleyicisinden *i* 'inci elementi içerdiği bir yineleyici "
 "döndürür."
 
-#: library/functions.rst:1944
+#: library/functions.rst:2028
 msgid ""
 "Another way to think of :func:`zip` is that it turns rows into columns, and "
 "columns into rows.  This is similar to `transposing a matrix <https://en."
@@ -3519,7 +3571,7 @@ msgstr ""
 "sütunlara çevirmesidir. Bu `transposing a matrix <https://en.wikipedia.org/"
 "wiki/Transpose>`_ 'a benzer."
 
-#: library/functions.rst:1948
+#: library/functions.rst:2032
 msgid ""
 ":func:`zip` is lazy: The elements won't be processed until the iterable is "
 "iterated on, e.g. by a :keyword:`!for` loop or by wrapping in a :class:"
@@ -3529,7 +3581,7 @@ msgstr ""
 "döngüsü veya :class:`list` tarafından sarılarak yinelenmediği sürece "
 "elementler işlenmez."
 
-#: library/functions.rst:1952
+#: library/functions.rst:2036
 msgid ""
 "One thing to consider is that the iterables passed to :func:`zip` could have "
 "different lengths; sometimes by design, and sometimes because of a bug in "
@@ -3541,7 +3593,7 @@ msgstr ""
 "kodda oluşan bir hatadan dolayı farklı uzunluklarda olabilirler. Python "
 "bununla başa çıkmak için üç farklı yaklaşım sunar:"
 
-#: library/functions.rst:1957
+#: library/functions.rst:2041
 msgid ""
 "By default, :func:`zip` stops when the shortest iterable is exhausted. It "
 "will ignore the remaining items in the longer iterables, cutting off the "
@@ -3551,7 +3603,7 @@ msgstr ""
 "durur. Daha uzun yinelebilirlerde kalan elementleri görmezden gelecektir ve "
 "sonucu en kısa yineleyicinin uzunluğuna eşitleyecektir::"
 
-#: library/functions.rst:1964
+#: library/functions.rst:2048
 msgid ""
 ":func:`zip` is often used in cases where the iterables are assumed to be of "
 "equal length.  In such cases, it's recommended to use the ``strict=True`` "
@@ -3561,7 +3613,7 @@ msgstr ""
 "kullanılır. Bu gibi durumlarda, ``strict=True`` opsiyonunu kullanmak "
 "önerilir. Çıktısı sıradan :func:`zip` ile aynıdır::"
 
-#: library/functions.rst:1971
+#: library/functions.rst:2055
 msgid ""
 "Unlike the default behavior, it raises a :exc:`ValueError` if one iterable "
 "is exhausted before the others:"
@@ -3569,7 +3621,7 @@ msgstr ""
 "Varsayılan davranışın aksine, bir yinelenebilir diğerlerinden önce tükenirse "
 "bir :exc:`ValueError` ortaya çıkar:"
 
-#: library/functions.rst:1989
+#: library/functions.rst:2073
 msgid ""
 "Without the ``strict=True`` argument, any bug that results in iterables of "
 "different lengths will be silenced, possibly manifesting as a hard-to-find "
@@ -3579,7 +3631,7 @@ msgstr ""
 "sonuçlanan hatalar susturulacaktır. Mümkün olduğunca programın başka bir "
 "bölümünde bulunması zor bir hata olarak tezahür ediyor."
 
-#: library/functions.rst:1993
+#: library/functions.rst:2077
 msgid ""
 "Shorter iterables can be padded with a constant value to make all the "
 "iterables have the same length.  This is done by :func:`itertools."
@@ -3589,7 +3641,7 @@ msgstr ""
 "uzunlukta olması için sabit bir değerle doldurulabilirler. Bu :func:"
 "`itertools.zip_longest` tarafından yapılır."
 
-#: library/functions.rst:1997
+#: library/functions.rst:2081
 msgid ""
 "Edge cases: With a single iterable argument, :func:`zip` returns an iterator "
 "of 1-tuples.  With no arguments, it returns an empty iterator."
@@ -3598,11 +3650,11 @@ msgstr ""
 "bir demetin yineleyicisini döndürür. Argüman verilmezse, boş bir yineleyici "
 "döndürür."
 
-#: library/functions.rst:2000
+#: library/functions.rst:2084
 msgid "Tips and tricks:"
 msgstr "İpucu ve hileler:"
 
-#: library/functions.rst:2002
+#: library/functions.rst:2086
 msgid ""
 "The left-to-right evaluation order of the iterables is guaranteed. This "
 "makes possible an idiom for clustering a data series into n-length groups "
@@ -3617,7 +3669,7 @@ msgstr ""
 "sayıda çağrı yapmış olur. Bu, girdiyi n-uzunluklu parçalara bölme etkisine "
 "sahiptir."
 
-#: library/functions.rst:2008
+#: library/functions.rst:2092
 msgid ""
 ":func:`zip` in conjunction with the ``*`` operator can be used to unzip a "
 "list::"
@@ -3625,11 +3677,11 @@ msgstr ""
 ":func:`zip`, bir listeyi açmak için ``*`` operatörüyle birlikte "
 "kullanılabilir::"
 
-#: library/functions.rst:2019
+#: library/functions.rst:2103
 msgid "Added the ``strict`` argument."
 msgstr "``strict`` argümanı eklendi."
 
-#: library/functions.rst:2031
+#: library/functions.rst:2115
 msgid ""
 "This is an advanced function that is not needed in everyday Python "
 "programming, unlike :func:`importlib.import_module`."
@@ -3637,7 +3689,7 @@ msgstr ""
 "Bu :func:`importlib.import_module` 'un aksine günlük Python programlamasında "
 "genel olarak kullanılmayan gelişmiş bir fonksiyondur."
 
-#: library/functions.rst:2034
+#: library/functions.rst:2118
 msgid ""
 "This function is invoked by the :keyword:`import` statement.  It can be "
 "replaced (by importing the :mod:`builtins` module and assigning to "
@@ -3656,7 +3708,7 @@ msgstr ""
 "neden olmayacağından tavsiye **edilmez**. :func:`__import__` 'un doğrudan "
 "kullanımı da :func:`importlib.import_module` 'ın lehine tavsiye edilmez."
 
-#: library/functions.rst:2043
+#: library/functions.rst:2127
 msgid ""
 "The function imports the module *name*, potentially using the given "
 "*globals* and *locals* to determine how to interpret the name in a package "
@@ -3672,7 +3724,7 @@ msgstr ""
 "*locals* argümanını kullanmaya teşebbüs etmez ve *globals* 'i :keyword:"
 "`import` ifadesinin paket bağlamını belirlemek için kullanır."
 
-#: library/functions.rst:2050
+#: library/functions.rst:2134
 msgid ""
 "*level* specifies whether to use absolute or relative imports. ``0`` (the "
 "default) means only perform absolute imports.  Positive values for *level* "
@@ -3686,7 +3738,7 @@ msgstr ""
 "dizinine göre aranacak üst dizinlerin sayısını gösterir (detaylar için :pep:"
 "`328` 'e bakınız)."
 
-#: library/functions.rst:2056
+#: library/functions.rst:2140
 msgid ""
 "When the *name* variable is of the form ``package.module``, normally, the "
 "top-level package (the name up till the first dot) is returned, *not* the "
@@ -3697,7 +3749,7 @@ msgstr ""
 "((ilk noktaya kadar olan isim) döndürülür, *name* isimli modül *değil*. Boş "
 "olmayan bir *fromlist* argümanı verildiğinde, *name* isimli modül döndürülür."
 
-#: library/functions.rst:2061
+#: library/functions.rst:2145
 msgid ""
 "For example, the statement ``import spam`` results in bytecode resembling "
 "the following code::"
@@ -3705,11 +3757,11 @@ msgstr ""
 "Örnek olarak, ``import spam`` ifadesi aşağıdaki koda benzeyen bayt koduyla "
 "sonuçlanır::"
 
-#: library/functions.rst:2066
+#: library/functions.rst:2150
 msgid "The statement ``import spam.ham`` results in this call::"
 msgstr "``import spam.ham`` ifadesi şu çağrıyla sonuçlanır::"
 
-#: library/functions.rst:2070
+#: library/functions.rst:2154
 msgid ""
 "Note how :func:`__import__` returns the toplevel module here because this is "
 "the object that is bound to a name by the :keyword:`import` statement."
@@ -3718,7 +3770,7 @@ msgstr ""
 "dikkat edin, çünkü bu, :keyword:`import` ifadesiyle bir ada bağlanan "
 "nesnedir."
 
-#: library/functions.rst:2073
+#: library/functions.rst:2157
 msgid ""
 "On the other hand, the statement ``from spam.ham import eggs, sausage as "
 "saus`` results in ::"
@@ -3726,7 +3778,7 @@ msgstr ""
 "Diğer yandan, ``from spam.ham import eggs, sausage as saus`` ifadesi şöyle "
 "sonuçlanır::"
 
-#: library/functions.rst:2080
+#: library/functions.rst:2164
 msgid ""
 "Here, the ``spam.ham`` module is returned from :func:`__import__`.  From "
 "this object, the names to import are retrieved and assigned to their "
@@ -3735,7 +3787,7 @@ msgstr ""
 "Burada, ``spam.ham`` modülü :func:`__import__` 'dan döndürülür. Bu objeden, "
 "içeri aktarılacak isimler alınır ve sırasıyla adlarına atanır."
 
-#: library/functions.rst:2084
+#: library/functions.rst:2168
 msgid ""
 "If you simply want to import a module (potentially within a package) by "
 "name, use :func:`importlib.import_module`."
@@ -3743,7 +3795,7 @@ msgstr ""
 "Eğer ismiyle bir modülü (potansiyel olarak bir paket içinde) içe aktarmak "
 "istiyorsanız, :func:`importlib.import_module` 'i kullanın."
 
-#: library/functions.rst:2087
+#: library/functions.rst:2171
 msgid ""
 "Negative values for *level* are no longer supported (which also changes the "
 "default value to 0)."
@@ -3751,7 +3803,7 @@ msgstr ""
 "*level* için negatif değerler artık desteklenmiyor (bu, varsayılan değeri 0 "
 "olarak da değiştirir)."
 
-#: library/functions.rst:2091
+#: library/functions.rst:2175
 msgid ""
 "When the command line options :option:`-E` or :option:`-I` are being used, "
 "the environment variable :envvar:`PYTHONCASEOK` is now ignored."
@@ -3759,11 +3811,11 @@ msgstr ""
 "Komut satırı opsiyonlarından :option:`-E` veya :option:`-I` kullanıldığında, "
 "ortam değişkeni :envvar:`PYTHONCASEOK` görmezden gelinir."
 
-#: library/functions.rst:2096
+#: library/functions.rst:2180
 msgid "Footnotes"
 msgstr "Dipnotlar"
 
-#: library/functions.rst:2097
+#: library/functions.rst:2181
 msgid ""
 "Note that the parser only accepts the Unix-style end of line convention. If "
 "you are reading the code from a file, make sure to use newline conversion "
@@ -3774,119 +3826,164 @@ msgstr ""
 "satırları dönüştürmek için yeni satır dönüştürme modunu kullandığınızdan "
 "emin olun."
 
-#: library/functions.rst:153
+#: library/functions.rst:154
 msgid "Boolean"
 msgstr ""
 
-#: library/functions.rst:1870
+#: library/functions.rst:1954
 msgid "type"
 msgstr ""
 
-#: library/functions.rst:576
+#: library/functions.rst:631
 #, fuzzy
 msgid "built-in function"
 msgstr "Gömülü Fonksiyonlar"
 
-#: library/functions.rst:576
+#: library/functions.rst:631
 msgid "exec"
 msgstr ""
 
-#: library/functions.rst:653
+#: library/functions.rst:713
 msgid "NaN"
 msgstr ""
 
-#: library/functions.rst:653
+#: library/functions.rst:713
 msgid "Infinity"
 msgstr ""
 
-#: library/functions.rst:717
+#: library/functions.rst:781
 msgid "__format__"
 msgstr ""
 
-#: library/functions.rst:1754
+#: library/functions.rst:1838
 msgid "string"
 msgstr ""
 
-#: library/functions.rst:717
+#: library/functions.rst:781
 #, fuzzy
 msgid "format() (built-in function)"
 msgstr "Gömülü Fonksiyonlar"
 
-#: library/functions.rst:1165
+#: library/functions.rst:1248
 msgid "file object"
 msgstr ""
 
-#: library/functions.rst:1286
+#: library/functions.rst:1369
 #, fuzzy
 msgid "open() built-in function"
 msgstr "Gömülü Fonksiyonlar"
 
-#: library/functions.rst:1193
+#: library/functions.rst:1276
 msgid "file"
 msgstr ""
 
-#: library/functions.rst:1193
+#: library/functions.rst:1276
 msgid "modes"
 msgstr ""
 
-#: library/functions.rst:1286
+#: library/functions.rst:1369
 msgid "universal newlines"
 msgstr ""
 
-#: library/functions.rst:1347
+#: library/functions.rst:1430
 msgid "line-buffered I/O"
 msgstr ""
 
-#: library/functions.rst:1347
+#: library/functions.rst:1430
 msgid "unbuffered I/O"
 msgstr ""
 
-#: library/functions.rst:1347
+#: library/functions.rst:1430
 msgid "buffer size, I/O"
 msgstr ""
 
-#: library/functions.rst:1347
+#: library/functions.rst:1430
 msgid "I/O control"
 msgstr ""
 
-#: library/functions.rst:1347
+#: library/functions.rst:1430
 msgid "buffering"
 msgstr ""
 
-#: library/functions.rst:1347
+#: library/functions.rst:1430
 #, fuzzy
 msgid "text mode"
 msgstr "metin modu (varsayılan)"
 
-#: library/functions.rst:2025
+#: library/functions.rst:2109
 msgid "module"
 msgstr ""
 
-#: library/functions.rst:1347
+#: library/functions.rst:1430
 msgid "sys"
 msgstr ""
 
-#: library/functions.rst:1754
+#: library/functions.rst:1838
 #, fuzzy
 msgid "str() (built-in function)"
 msgstr "Gömülü Fonksiyonlar"
 
-#: library/functions.rst:1870
+#: library/functions.rst:1954
 #, fuzzy
 msgid "object"
 msgstr ":func:`object`"
 
-#: library/functions.rst:2025
+#: library/functions.rst:2109
 msgid "statement"
 msgstr ""
 
-#: library/functions.rst:2025
+#: library/functions.rst:2109
 msgid "import"
 msgstr ""
 
-#: library/functions.rst:2025
+#: library/functions.rst:2109
 msgid "builtins"
 msgstr ""
+
+#~ msgid ""
+#~ "Return a complex number with the value *real* + *imag*\\*1j or convert a "
+#~ "string or number to a complex number.  If the first parameter is a "
+#~ "string, it will be interpreted as a complex number and the function must "
+#~ "be called without a second parameter.  The second parameter can never be "
+#~ "a string. Each argument may be any numeric type (including complex).  If "
+#~ "*imag* is omitted, it defaults to zero and the constructor serves as a "
+#~ "numeric conversion like :class:`int` and :class:`float`.  If both "
+#~ "arguments are omitted, returns ``0j``."
+#~ msgstr ""
+#~ "*real* + *imag*\\*1j değeriyle bir karmaşık sayı döndürür veya dize veya "
+#~ "sayıyı karmaşık sayıya dönüştürür. Eğer ilk parametre dize ise, karmaşık "
+#~ "sayı olarak yorumlanır ve fonksiyon ikinci bir parametre olmadan "
+#~ "çağrılmalıdır. İkinci parametre asla dize olamaz. Her argüman bir sayısal "
+#~ "çeşit olabilir (karmaşık sayılar dahil). Eğer *imag* atlandıysa, "
+#~ "varsayılan olarak sıfır alınır ve yapıcı metot :class:`int` ve :class:"
+#~ "`float` gibi sayı dönüştürme işlevi görür. Eğer iki argüman da "
+#~ "atlandıysa, ``0j`` döndürür."
+
+#~ msgid ""
+#~ "When converting from a string, the string must not contain whitespace "
+#~ "around the central ``+`` or ``-`` operator.  For example, "
+#~ "``complex('1+2j')`` is fine, but ``complex('1 + 2j')`` raises :exc:"
+#~ "`ValueError`."
+#~ msgstr ""
+#~ "Bir dize dönüştürürken, dizenin, merkezi ``+`` veya ``-`` operatörünün "
+#~ "etrafında boşluk içermemelidir. Örnek olarak, ``complex('1+2j')`` uygun, "
+#~ "ama ``complex('1 + 2j')`` :exc:`ValueError` hatası ortaya çıkarır."
+
+#~ msgid ""
+#~ "The arguments are a string and optional globals and locals.  If provided, "
+#~ "*globals* must be a dictionary.  If provided, *locals* can be any mapping "
+#~ "object."
+#~ msgstr ""
+#~ "Argümanlar bir dize veya opsiyonel global ve yerel değişkenler olabilir. "
+#~ "Sağlanırsa, *globals* bir sözlük olmalıdır. Sağlanırsa, *locals* herhangi "
+#~ "bir haritalama nesnesi olabilir."
+
+#~ msgid ""
+#~ "The return value is the result of the evaluated expression. Syntax errors "
+#~ "are reported as exceptions.  Example:"
+#~ msgstr ""
+#~ "Dönen değer değerlendirilmiş ifadenin sonucudur. Söz dizimi hataları, "
+#~ "istisnalar olarak rapor edilir. Örnek:"
 
 #~ msgid ""
 #~ "Return a :term:`slice` object representing the set of indices specified "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-01 21:53+0000\n"
+"POT-Creation-Date: 2024-06-01 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: library/pickle.rst:2
-msgid ":mod:`pickle` --- Python object serialization"
+msgid ":mod:`!pickle` --- Python object serialization"
 msgstr ""
 
 #: library/pickle.rst:10
@@ -439,22 +439,22 @@ msgstr ""
 
 #: library/pickle.rst:317
 msgid ""
-"If *buffer_callback* is None (the default), buffer views are serialized into "
-"*file* as part of the pickle stream."
+"If *buffer_callback* is ``None`` (the default), buffer views are serialized "
+"into *file* as part of the pickle stream."
 msgstr ""
 
 #: library/pickle.rst:320
 msgid ""
-"If *buffer_callback* is not None, then it can be called any number of times "
-"with a buffer view.  If the callback returns a false value (such as None), "
-"the given buffer is :ref:`out-of-band <pickle-oob>`; otherwise the buffer is "
-"serialized in-band, i.e. inside the pickle stream."
+"If *buffer_callback* is not ``None``, then it can be called any number of "
+"times with a buffer view.  If the callback returns a false value (such as "
+"``None``), the given buffer is :ref:`out-of-band <pickle-oob>`; otherwise "
+"the buffer is serialized in-band, i.e. inside the pickle stream."
 msgstr ""
 
 #: library/pickle.rst:325
 msgid ""
-"It is an error if *buffer_callback* is not None and *protocol* is None or "
-"smaller than 5."
+"It is an error if *buffer_callback* is not ``None`` and *protocol* is "
+"``None`` or smaller than 5."
 msgstr ""
 
 #: library/pickle.rst:333
@@ -565,18 +565,18 @@ msgstr ""
 
 #: library/pickle.rst:419
 msgid ""
-"If *buffers* is None (the default), then all data necessary for "
+"If *buffers* is ``None`` (the default), then all data necessary for "
 "deserialization must be contained in the pickle stream.  This means that the "
-"*buffer_callback* argument was None when a :class:`Pickler` was instantiated "
-"(or when :func:`dump` or :func:`dumps` was called)."
+"*buffer_callback* argument was ``None`` when a :class:`Pickler` was "
+"instantiated (or when :func:`dump` or :func:`dumps` was called)."
 msgstr ""
 
 #: library/pickle.rst:424
 msgid ""
-"If *buffers* is not None, it should be an iterable of buffer-enabled objects "
-"that is consumed each time the pickle stream references an :ref:`out-of-band "
-"<pickle-oob>` buffer view.  Such buffers have been given in order to the "
-"*buffer_callback* of a Pickler object."
+"If *buffers* is not ``None``, it should be an iterable of buffer-enabled "
+"objects that is consumed each time the pickle stream references an :ref:`out-"
+"of-band <pickle-oob>` buffer view.  Such buffers have been given in order to "
+"the *buffer_callback* of a Pickler object."
 msgstr ""
 
 #: library/pickle.rst:434

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-01 00:17+0000\n"
+"POT-Creation-Date: 2024-06-01 00:16+0000\n"
 "PO-Revision-Date: 2023-03-31 00:00+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -17,7 +17,8 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 
 #: library/math.rst:2
-msgid ":mod:`math` --- Mathematical functions"
+#, fuzzy
+msgid ":mod:`!math` --- Mathematical functions"
 msgstr ":mod:`math` --- Matematiksel fonksiyonlar"
 
 #: library/math.rst:13
@@ -207,10 +208,12 @@ msgstr ""
 "olabilir."
 
 #: library/math.rst:119
+#, fuzzy
 msgid ""
 "For further discussion and two alternative approaches, see the `ASPN "
 "cookbook recipes for accurate floating point summation <https://code."
-"activestate.com/recipes/393090/>`_\\."
+"activestate.com/recipes/393090-binary-floating-point-summation-accurate-to-"
+"full-p/>`_\\."
 msgstr ""
 "Daha fazla tartışma ve iki alternatif yaklaşım için, `ASPN cookbook recipes "
 "for accurate floating point summation <https://code.activestate.com/"
@@ -430,8 +433,9 @@ msgstr ""
 "olduğunda sıfır olarak değerlendirir."
 
 #: library/math.rst:255
+#, fuzzy
 msgid ""
-"If *k* is not specified or is None, then *k* defaults to *n* and the "
+"If *k* is not specified or is ``None``, then *k* defaults to *n* and the "
 "function returns ``n!``."
 msgstr ""
 "Eğer *k* belirtilmemişse veya None ise, *k* varsayılan olarak *n* değerini "

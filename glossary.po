@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-01 21:53+0000\n"
+"POT-Creation-Date: 2024-06-01 00:16+0000\n"
 "PO-Revision-Date: 2022-12-28 16:12-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -1024,10 +1024,11 @@ msgstr ""
 "nesne."
 
 #: glossary.rst:436
+#, fuzzy
 msgid ""
-"Since Python 3.3, there are two types of finder: :term:`meta path finders "
-"<meta path finder>` for use with :data:`sys.meta_path`, and :term:`path "
-"entry finders <path entry finder>` for use with :data:`sys.path_hooks`."
+"There are two types of finder: :term:`meta path finders <meta path finder>` "
+"for use with :data:`sys.meta_path`, and :term:`path entry finders <path "
+"entry finder>` for use with :data:`sys.path_hooks`."
 msgstr ""
 "Python 3.3'ten beri, iki çeşit bulucu vardır: :data:`sys.meta_path` ile "
 "kullanılmak üzere :term:`meta yol bulucular <meta path finder>`, ve :data:"
@@ -1035,7 +1036,8 @@ msgstr ""
 "entry finder>`."
 
 #: glossary.rst:440
-msgid "See :pep:`302`, :pep:`420` and :pep:`451` for much more detail."
+#, fuzzy
+msgid "See :ref:`importsystem` and :mod:`importlib` for much more detail."
 msgstr "Daha fazla ayrıntı için :pep:`302`, :pep:`420` ve :pep:`451` bakın."
 
 #: glossary.rst:441

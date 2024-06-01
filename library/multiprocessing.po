@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-01 21:53+0000\n"
+"POT-Creation-Date: 2024-06-01 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: library/multiprocessing.rst:2
-msgid ":mod:`multiprocessing` --- Process-based parallelism"
+msgid ":mod:`!multiprocessing` --- Process-based parallelism"
 msgstr ""
 
 #: library/multiprocessing.rst:7
@@ -2695,9 +2695,9 @@ msgstr ""
 
 #: library/multiprocessing.rst:2475 library/multiprocessing.rst:2510
 msgid ""
-"If *authkey* is given and not None, it should be a byte string and will be "
-"used as the secret key for an HMAC-based authentication challenge. No "
-"authentication is done if *authkey* is None. :exc:`~multiprocessing."
+"If *authkey* is given and not ``None``, it should be a byte string and will "
+"be used as the secret key for an HMAC-based authentication challenge. No "
+"authentication is done if *authkey* is ``None``. :exc:`~multiprocessing."
 "AuthenticationError` is raised if authentication fails. See :ref:"
 "`multiprocessing-auth-keys`."
 msgstr ""

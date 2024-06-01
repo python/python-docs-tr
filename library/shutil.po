@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-24 17:22+0000\n"
+"POT-Creation-Date: 2024-06-01 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: library/shutil.rst:2
-msgid ":mod:`shutil` --- High-level file operations"
+msgid ":mod:`!shutil` --- High-level file operations"
 msgstr ""
 
 #: library/shutil.rst:10
@@ -298,9 +298,9 @@ msgstr ""
 
 #: library/shutil.rst:245
 msgid ""
-"When *symlinks* is false, if the file pointed by the symlink doesn't exist, "
-"an exception will be added in the list of errors raised in an :exc:`Error` "
-"exception at the end of the copy process. You can set the optional "
+"When *symlinks* is false, if the file pointed to by the symlink doesn't "
+"exist, an exception will be added in the list of errors raised in an :exc:"
+"`Error` exception at the end of the copy process. You can set the optional "
 "*ignore_dangling_symlinks* flag to true if you want to silence this "
 "exception. Notice that this option has no effect on platforms that don't "
 "support :func:`os.symlink`."
@@ -428,7 +428,7 @@ msgid ""
 msgstr ""
 
 #: library/shutil.rst:340
-msgid "The *dir_fd* parameter."
+msgid "Added the *dir_fd* parameter."
 msgstr ""
 
 #: library/shutil.rst:343
@@ -555,7 +555,7 @@ msgstr ""
 #: library/shutil.rst:439
 msgid ""
 "*mode* is a permission mask passed to :func:`os.access`, by default "
-"determining if the file exists and executable."
+"determining if the file exists and is executable."
 msgstr ""
 
 #: library/shutil.rst:442
