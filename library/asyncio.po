@@ -38,39 +38,42 @@ msgstr "Merhaba Dünya!"
 
 #: library/asyncio.rst:22
 msgid ""
-"asyncio is a library to write **concurrent** code using the **async/await** syntax."
+"asyncio is a library to write **concurrent** code using the **async/await** "
+"syntax."
 msgstr ""
-"asyncio **async/await** sözdizimini kullanarak **eş zamanlı** kod yazmak için "
-"kullanılan bir kütüphanedir."
+"asyncio **async/await** sözdizimini kullanarak **eş zamanlı** kod yazmak "
+"için kullanılan bir kütüphanedir."
 
 #: library/asyncio.rst:25
 msgid ""
-"asyncio is used as a foundation for multiple Python asynchronous frameworks that "
-"provide high-performance network and web-servers, database connection libraries, "
-"distributed task queues, etc."
+"asyncio is used as a foundation for multiple Python asynchronous frameworks "
+"that provide high-performance network and web-servers, database connection "
+"libraries, distributed task queues, etc."
 msgstr ""
-"asyncio yüksek performanslı ağ ve web sunucuları , veritabanı bağlantı kütüphaneleri , "
-"dağıtık görev kuyrukları vb. pek çok Python eş zamanlı çatısı için bir temel olarak "
-"kullanılmıştır."
+"asyncio yüksek performanslı ağ ve web sunucuları , veritabanı bağlantı "
+"kütüphaneleri , dağıtık görev kuyrukları vb. pek çok Python eş zamanlı "
+"çatısı için bir temel olarak kullanılmıştır."
 
 #: library/asyncio.rst:29
 msgid ""
-"asyncio is often a perfect fit for IO-bound and high-level **structured** network code."
+"asyncio is often a perfect fit for IO-bound and high-level **structured** "
+"network code."
 msgstr ""
-"asyncio, IO ağırlıklı  ve yüksek seviyeli **yapılandırılmış** ağ kodu için genellikle "
-"mükemmel bir seçimdir."
+"asyncio, IO ağırlıklı  ve yüksek seviyeli **yapılandırılmış** ağ kodu için "
+"genellikle mükemmel bir seçimdir."
 
 #: library/asyncio.rst:32
 msgid "asyncio provides a set of **high-level** APIs to:"
-msgstr "asyncio aşağıdakiler için bir takım **yüksek seviyeli** API'lar sağlar:"
+msgstr ""
+"asyncio aşağıdakiler için bir takım **yüksek seviyeli** API'lar sağlar:"
 
 #: library/asyncio.rst:34
 msgid ""
-":ref:`run Python coroutines <coroutine>` concurrently and have full control over their "
-"execution;"
+":ref:`run Python coroutines <coroutine>` concurrently and have full control "
+"over their execution;"
 msgstr ""
-":ref:`Python coroutine'lerini <coroutine>` eş zamanlı olarak çalıştırın ve yürütmeleri "
-"üzerinde tam kontrole sahip olun;"
+":ref:`Python coroutine'lerini <coroutine>` eş zamanlı olarak çalıştırın ve "
+"yürütmeleri üzerinde tam kontrole sahip olun;"
 
 #: library/asyncio.rst:37
 msgid "perform :ref:`network IO and IPC <asyncio-streams>`;"
@@ -90,40 +93,44 @@ msgstr "eş zamanlı kodun :ref:`senkronize edilmesi <asyncio-sync>`;"
 
 #: library/asyncio.rst:45
 msgid ""
-"Additionally, there are **low-level** APIs for *library and framework developers* to:"
+"Additionally, there are **low-level** APIs for *library and framework "
+"developers* to:"
 msgstr ""
-"Ek olarak , kütüphane ve dil çatısı geliştiricileri için **düşük seviyeli** API'lar "
-"bulunmaktadır:"
+"Ek olarak , kütüphane ve dil çatısı geliştiricileri için **düşük seviyeli** "
+"API'lar bulunmaktadır:"
 
 #: library/asyncio.rst:48
 msgid ""
-"create and manage :ref:`event loops <asyncio-event-loop>`, which provide asynchronous "
-"APIs for :ref:`networking <loop_create_server>`, running :ref:`subprocesses "
-"<loop_subprocess_exec>`, handling :ref:`OS signals <loop_add_signal_handler>`, etc;"
+"create and manage :ref:`event loops <asyncio-event-loop>`, which provide "
+"asynchronous APIs for :ref:`networking <loop_create_server>`, running :ref:"
+"`subprocesses <loop_subprocess_exec>`, handling :ref:`OS signals "
+"<loop_add_signal_handler>`, etc;"
 msgstr ""
 ":ref:`ağ <loop_create_server>`, :ref:`alt işlemler <loop_subprocess_exec>` "
-"çalıştırmak, :ref:`işletim sistemi sinyallerini <loop_add_signal_handler>` işlemek vb. işlemler "
-"için asenkron API'ler sağlayan :ref:`olay döngüleri <asyncio-event-loop>` oluşturun ve "
-"yönetin;"
+"çalıştırmak, :ref:`işletim sistemi sinyallerini <loop_add_signal_handler>` "
+"işlemek vb. işlemler için asenkron API'ler sağlayan :ref:`olay döngüleri "
+"<asyncio-event-loop>` oluşturun ve yönetin;"
 
 #: library/asyncio.rst:53
 msgid ""
-"implement efficient protocols using :ref:`transports <asyncio-transports-protocols>`;"
+"implement efficient protocols using :ref:`transports <asyncio-transports-"
+"protocols>`;"
 msgstr ""
-":ref:`aktarımları <asyncio-transports-protocols>` kullanarak verimli protokoller "
-"uygulayın ;"
+":ref:`aktarımları <asyncio-transports-protocols>` kullanarak verimli "
+"protokoller uygulayın ;"
 
 #: library/asyncio.rst:56
 msgid ""
-":ref:`bridge <asyncio-futures>` callback-based libraries and code with async/await "
-"syntax."
+":ref:`bridge <asyncio-futures>` callback-based libraries and code with async/"
+"await syntax."
 msgstr ""
-"geribildirim tabanlı kütüphane ve kodları :ref:`köprüleyerek <asyncio-futures>` async/"
-"await sözdizimi ile birleştirin."
+"geribildirim tabanlı kütüphane ve kodları :ref:`köprüleyerek <asyncio-"
+"futures>` async/await sözdizimi ile birleştirin."
 
 #: library/asyncio.rst:61
 msgid "You can experiment with an ``asyncio`` concurrent context in the REPL:"
-msgstr "REPL üzerinde ``asyncio`` ile eşzamanlı bağlamda denemeler yapabilirsiniz:"
+msgstr ""
+"REPL üzerinde ``asyncio`` ile eşzamanlı bağlamda denemeler yapabilirsiniz:"
 
 #: includes/wasm-notavail.rst:3
 msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
@@ -131,12 +138,13 @@ msgstr ":ref:`Uygunluk <availability>`: ne Emscripten , ne de WASI değil."
 
 #: includes/wasm-notavail.rst:5
 msgid ""
-"This module does not work or is not available on WebAssembly platforms ``wasm32-"
-"emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for more information."
+"This module does not work or is not available on WebAssembly platforms "
+"``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
+"more information."
 msgstr ""
-"Bu modül ``wasm32-emscripten`` ve ``wasm32-wasi`` WebAssembly platformları üzerinde "
-"çalışmaz veya mevcut değildir. Daha fazla bilgi için :ref:`wasm-availability` bölümüne "
-"bakınız."
+"Bu modül ``wasm32-emscripten`` ve ``wasm32-wasi`` WebAssembly platformları "
+"üzerinde çalışmaz veya mevcut değildir. Daha fazla bilgi için :ref:`wasm-"
+"availability` bölümüne bakınız."
 
 #: library/asyncio.rst:79
 msgid "Reference"
