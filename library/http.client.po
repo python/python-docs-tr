@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-08-01 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -438,10 +438,9 @@ msgid ""
 "already have a connection."
 msgstr ""
 
-#: library/http.client.rst:415
+#: library/http.client.rst:404
 msgid ""
-"Raises an :ref:`auditing event <auditing>` ``http.client.connect`` with "
-"arguments ``self``, ``host``, ``port``."
+"Raises an auditing event http.client.connect with arguments self, host, port."
 msgstr ""
 
 #: library/http.client.rst:409
@@ -515,10 +514,8 @@ msgid ""
 "`endheaders` method has been called and before :meth:`getresponse` is called."
 msgstr ""
 
-#: library/http.client.rst:485
-msgid ""
-"Raises an :ref:`auditing event <auditing>` ``http.client.send`` with "
-"arguments ``self``, ``data``."
+#: library/http.client.rst:474
+msgid "Raises an auditing event http.client.send with arguments self, data."
 msgstr ""
 
 #: library/http.client.rst:480

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-08-01 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -114,8 +114,7 @@ msgstr ""
 
 #: library/resource.rst:83
 msgid ""
-"Raises an :ref:`auditing event <auditing>` ``resource.setrlimit`` with "
-"arguments ``resource``, ``limits``."
+"Raises an auditing event resource.setrlimit with arguments resource, limits."
 msgstr ""
 
 #: library/resource.rst:88
@@ -143,8 +142,8 @@ msgstr ""
 
 #: library/resource.rst:102
 msgid ""
-"Raises an :ref:`auditing event <auditing>` ``resource.prlimit`` with "
-"arguments ``pid``, ``resource``, ``limits``."
+"Raises an auditing event resource.prlimit with arguments pid, resource, "
+"limits."
 msgstr ""
 
 #: library/resource.rst:104
@@ -331,7 +330,7 @@ msgstr ""
 #: library/resource.rst:307
 msgid ""
 "The fields :attr:`ru_utime` and :attr:`ru_stime` of the return value are "
-"floating point values representing the amount of time spent executing in "
+"floating-point values representing the amount of time spent executing in "
 "user mode and the amount of time spent executing in system mode, "
 "respectively. The remaining values are integers. Consult the :manpage:"
 "`getrusage(2)` man page for detailed information about these values. A brief "

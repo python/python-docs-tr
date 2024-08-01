@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-01 21:53+0000\n"
+"POT-Creation-Date: 2024-08-01 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -469,7 +469,7 @@ msgstr ""
 #: whatsnew/3.7.rst:341
 msgid ""
 "The resolution of clocks in modern systems can exceed the limited precision "
-"of a floating point number returned by the :func:`time.time` function and "
+"of a floating-point number returned by the :func:`time.time` function and "
 "its variants.  To avoid loss of precision, :pep:`564` adds six new "
 "\"nanosecond\" variants of the existing timer functions to the :mod:`time` "
 "module:"
@@ -2883,8 +2883,8 @@ msgstr ""
 
 #: whatsnew/3.7.rst:2051
 msgid ""
-":mod:`dummy_threading` and :mod:`_dummy_thread` have been deprecated.  It is "
-"no longer possible to build Python with threading disabled. Use :mod:"
+":mod:`!dummy_threading` and :mod:`!_dummy_thread` have been deprecated.  It "
+"is no longer possible to build Python with threading disabled. Use :mod:"
 "`threading` instead. (Contributed by Antoine Pitrou in :issue:`31370`.)"
 msgstr ""
 
@@ -3075,9 +3075,9 @@ msgstr ""
 
 #: whatsnew/3.7.rst:2186
 msgid ""
-":mod:`asyncio` no longer exports the :mod:`selectors` and :mod:`_overlapped` "
-"modules as ``asyncio.selectors`` and ``asyncio._overlapped``. Replace ``from "
-"asyncio import selectors`` with ``import selectors``."
+":mod:`asyncio` no longer exports the :mod:`selectors` and :mod:`!"
+"_overlapped` modules as ``asyncio.selectors`` and ``asyncio._overlapped``. "
+"Replace ``from asyncio import selectors`` with ``import selectors``."
 msgstr ""
 
 #: whatsnew/3.7.rst:2191

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2024-08-01 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -53,24 +53,31 @@ msgid ""
 msgstr ""
 
 #: c-api/cell.rst:42
-msgid "Return the contents of the cell *cell*."
+msgid ""
+"Return the contents of the cell *cell*, which can be ``NULL``. If *cell* is "
+"not a cell object, returns ``NULL`` with an exception set."
 msgstr ""
 
-#: c-api/cell.rst:47
+#: c-api/cell.rst:48
 msgid ""
 "Return the contents of the cell *cell*, but without checking that *cell* is "
 "non-``NULL`` and a cell object."
 msgstr ""
 
-#: c-api/cell.rst:53
+#: c-api/cell.rst:54
 msgid ""
 "Set the contents of the cell object *cell* to *value*.  This releases the "
 "reference to any current content of the cell. *value* may be ``NULL``.  "
-"*cell* must be non-``NULL``; if it is not a cell object, ``-1`` will be "
-"returned.  On success, ``0`` will be returned."
+"*cell* must be non-``NULL``."
 msgstr ""
 
-#: c-api/cell.rst:61
+#: c-api/cell.rst:58
+msgid ""
+"On success, return ``0``. If *cell* is not a cell object, set an exception "
+"and return ``-1``."
+msgstr ""
+
+#: c-api/cell.rst:64
 msgid ""
 "Sets the value of the cell object *cell* to *value*.  No reference counts "
 "are adjusted, and no checks are made for safety; *cell* must be non-``NULL`` "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-08-01 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -872,10 +872,12 @@ msgid ""
 "waited for. ::"
 msgstr ""
 
-#: library/subprocess.rst:712
+#: library/subprocess.rst:701
 msgid ""
-"Raises an :ref:`auditing event <auditing>` ``subprocess.Popen`` with "
-"arguments ``executable``, ``args``, ``cwd``, ``env``."
+"Popen and the other functions in this module that use it raise an auditing "
+"event subprocess.Popen with arguments executable, args, cwd, and env. The "
+"value for args may be a single string or a list of strings, depending on "
+"platform."
 msgstr ""
 
 #: library/subprocess.rst:703
@@ -1363,7 +1365,7 @@ msgstr ""
 #: library/subprocess.rst:1112
 msgid ""
 "A :class:`Popen` ``creationflags`` parameter to specify that a new process "
-"will have an normal priority. (default)"
+"will have a normal priority. (default)"
 msgstr ""
 
 #: library/subprocess.rst:1119

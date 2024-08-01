@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-24 17:22+0000\n"
+"POT-Creation-Date: 2024-08-01 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "**Source code:** :source:`Lib/telnetlib.py`"
 msgstr ""
 
-#: library/telnetlib.rst:17
+#: library/telnetlib.rst:14
 msgid ""
 "The :mod:`telnetlib` module is deprecated (see :pep:`PEP 594 "
 "<594#telnetlib>` for details and alternatives)."
@@ -189,10 +189,10 @@ msgstr ""
 msgid "Do not try to reopen an already connected instance."
 msgstr ""
 
-#: library/telnetlib.rst:161
+#: library/telnetlib.rst:150
 msgid ""
-"Raises an :ref:`auditing event <auditing>` ``telnetlib.Telnet.open`` with "
-"arguments ``self``, ``host``, ``port``."
+"Raises an auditing event telnetlib.Telnet.open with arguments self, host, "
+"port."
 msgstr ""
 
 #: library/telnetlib.rst:155
@@ -227,10 +227,9 @@ msgid ""
 "connection is closed."
 msgstr ""
 
-#: library/telnetlib.rst:198
+#: library/telnetlib.rst:187
 msgid ""
-"Raises an :ref:`auditing event <auditing>` ``telnetlib.Telnet.write`` with "
-"arguments ``self``, ``buffer``."
+"Raises an auditing event telnetlib.Telnet.write with arguments self, buffer."
 msgstr ""
 
 #: library/telnetlib.rst:189

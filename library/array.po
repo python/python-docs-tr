@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-08-01 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: library/array.rst:11
 msgid ""
 "This module defines an object type which can compactly represent an array of "
-"basic values: characters, integers, floating point numbers.  Arrays are "
+"basic values: characters, integers, floating-point numbers.  Arrays are "
 "sequence types and behave very much like lists, except that the type of "
 "objects stored in them is constrained.  The type is specified at object "
 "creation time by using a :dfn:`type code`, which is a single character.  The "
@@ -246,8 +246,7 @@ msgstr ""
 
 #: library/array.rst:96
 msgid ""
-"Raises an :ref:`auditing event <auditing>` ``array.__new__`` with arguments "
-"``typecode``, ``initializer``."
+"Raises an auditing event array.__new__ with arguments typecode, initializer."
 msgstr ""
 
 #: library/array.rst:101
@@ -404,7 +403,7 @@ msgid ""
 "be converted back to an array with the same type and value using :func:"
 "`eval`, so long as the :class:`~array.array` class has been imported using "
 "``from array import array``. Variables ``inf`` and ``nan`` must also be "
-"defined if it contains corresponding floating point values. Examples::"
+"defined if it contains corresponding floating-point values. Examples::"
 msgstr ""
 
 #: library/array.rst:267

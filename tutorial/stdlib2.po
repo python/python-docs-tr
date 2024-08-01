@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2024-08-01 00:19+0000\n"
 "PO-Revision-Date: 2022-01-02 22:55+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -315,8 +315,9 @@ msgstr ""
 "duyulmaktadır."
 
 #: tutorial/stdlib2.rst:296
+#, fuzzy
 msgid ""
-"The :mod:`array` module provides an :class:`~array.array()` object that is "
+"The :mod:`array` module provides an :class:`~array.array` object that is "
 "like a list that stores only homogeneous data and stores it more compactly.  "
 "The following example shows an array of numbers stored as two byte unsigned "
 "binary numbers (typecode ``\"H\"``) rather than the usual 16 bytes per entry "
@@ -329,11 +330,12 @@ msgstr ""
 "``\"H\"``) olarak saklanan bir sayı dizisini gösterir:"
 
 #: tutorial/stdlib2.rst:309
+#, fuzzy
 msgid ""
-"The :mod:`collections` module provides a :class:`~collections.deque()` "
-"object that is like a list with faster appends and pops from the left side "
-"but slower lookups in the middle. These objects are well suited for "
-"implementing queues and breadth first tree searches::"
+"The :mod:`collections` module provides a :class:`~collections.deque` object "
+"that is like a list with faster appends and pops from the left side but "
+"slower lookups in the middle. These objects are well suited for implementing "
+"queues and breadth first tree searches::"
 msgstr ""
 ":mod:`collections` modülü, eklemelerin daha hızlı olduğu ve sol taraftan "
 "açılan ancak ortada daha yavaş aramaların olduğu bir liste gibi bir :class:"
@@ -363,13 +365,15 @@ msgstr ""
 "çalıştırmak istemeyen uygulamalar için kullanışlıdır::"
 
 #: tutorial/stdlib2.rst:356
-msgid "Decimal Floating Point Arithmetic"
+#, fuzzy
+msgid "Decimal Floating-Point Arithmetic"
 msgstr "Ondalık Kayan Nokta Aritmetiği"
 
 #: tutorial/stdlib2.rst:358
+#, fuzzy
 msgid ""
 "The :mod:`decimal` module offers a :class:`~decimal.Decimal` datatype for "
-"decimal floating point arithmetic.  Compared to the built-in :class:`float` "
+"decimal floating-point arithmetic.  Compared to the built-in :class:`float` "
 "implementation of binary floating point, the class is especially helpful for"
 msgstr ""
 ":mod:`decimal` modülü, ondalık kayan nokta aritmetiği için bir :class:"

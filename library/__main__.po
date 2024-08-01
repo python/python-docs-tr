@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-08-01 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -267,9 +267,9 @@ msgstr ""
 
 #: library/__main__.rst:254
 msgid ""
-"This won't work for ``__main__.py`` files in the root directory of a .zip "
-"file though.  Hence, for consistency, minimal ``__main__.py`` like the :mod:"
-"`venv` one mentioned below are preferred."
+"This won't work for ``__main__.py`` files in the root directory of a ``."
+"zip`` file though.  Hence, for consistency, a minimal ``__main__.py`` "
+"without a ``__name__`` check is preferred."
 msgstr ""
 
 #: library/__main__.rst:260

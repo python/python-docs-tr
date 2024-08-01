@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-01 21:53+0000\n"
+"POT-Creation-Date: 2024-08-01 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -1047,7 +1047,7 @@ msgstr ""
 
 #: reference/lexical_analysis.rst:885
 msgid ""
-"There are three types of numeric literals: integers, floating point numbers, "
+"There are three types of numeric literals: integers, floating-point numbers, "
 "and imaginary numbers.  There are no complex literals (complex numbers can "
 "be formed by adding a real number and an imaginary number)."
 msgstr ""
@@ -1096,25 +1096,25 @@ msgid "Underscores are now allowed for grouping purposes in literals."
 msgstr ""
 
 #: reference/lexical_analysis.rst:947
-msgid "Floating point literals"
+msgid "Floating-point literals"
 msgstr ""
 
 #: reference/lexical_analysis.rst:949
 msgid ""
-"Floating point literals are described by the following lexical definitions:"
+"Floating-point literals are described by the following lexical definitions:"
 msgstr ""
 
 #: reference/lexical_analysis.rst:959
 msgid ""
 "Note that the integer and exponent parts are always interpreted using radix "
 "10. For example, ``077e010`` is legal, and denotes the same number as "
-"``77e10``. The allowed range of floating point literals is implementation-"
+"``77e10``. The allowed range of floating-point literals is implementation-"
 "dependent.  As in integer literals, underscores are supported for digit "
 "grouping."
 msgstr ""
 
 #: reference/lexical_analysis.rst:964
-msgid "Some examples of floating point literals::"
+msgid "Some examples of floating-point literals::"
 msgstr ""
 
 #: reference/lexical_analysis.rst:977
@@ -1128,9 +1128,9 @@ msgstr ""
 #: reference/lexical_analysis.rst:984
 msgid ""
 "An imaginary literal yields a complex number with a real part of 0.0.  "
-"Complex numbers are represented as a pair of floating point numbers and have "
+"Complex numbers are represented as a pair of floating-point numbers and have "
 "the same restrictions on their range.  To create a complex number with a "
-"nonzero real part, add a floating point number to it, e.g., ``(3+4j)``.  "
+"nonzero real part, add a floating-point number to it, e.g., ``(3+4j)``.  "
 "Some examples of imaginary literals::"
 msgstr ""
 
@@ -1524,7 +1524,7 @@ msgid "integer literal"
 msgstr ""
 
 #: reference/lexical_analysis.rst:881
-msgid "floating point literal"
+msgid "floating-point literal"
 msgstr ""
 
 #: reference/lexical_analysis.rst:881

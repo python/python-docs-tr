@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-08-01 00:19+0000\n"
 "PO-Revision-Date: 2024-07-06 18:16+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -16,15 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: library/asyncio.rst:80
+#: library/asyncio.rst:87
 msgid "High-level APIs"
 msgstr "Yüksek seviye API'lar"
 
-#: library/asyncio.rst:92
+#: library/asyncio.rst:99
 msgid "Low-level APIs"
 msgstr "Düşük seviye API'lar"
 
-#: library/asyncio.rst:103
+#: library/asyncio.rst:110
 msgid "Guides and Tutorials"
 msgstr "Rehberler ve Eğitimler"
 
@@ -127,11 +127,6 @@ msgstr ""
 "geribildirim tabanlı kütüphane ve kodları :ref:`köprüleyerek <asyncio-"
 "futures>` async/await sözdizimi ile birleştirin."
 
-#: library/asyncio.rst:61
-msgid "You can experiment with an ``asyncio`` concurrent context in the REPL:"
-msgstr ""
-"REPL üzerinde ``asyncio`` ile eşzamanlı bağlamda denemeler yapabilirsiniz:"
-
 #: includes/wasm-notavail.rst:3
 msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
 msgstr ":ref:`Uygunluk <availability>`: ne Emscripten , ne de WASI değil."
@@ -146,10 +141,27 @@ msgstr ""
 "üzerinde çalışmaz veya mevcut değildir. Daha fazla bilgi için :ref:`wasm-"
 "availability` bölümüne bakınız."
 
+#: library/asyncio.rst:64
+msgid "asyncio REPL"
+msgstr ""
+
+#: library/asyncio.rst:65
+msgid "You can experiment with an ``asyncio`` concurrent context in the REPL:"
+msgstr ""
+"REPL üzerinde ``asyncio`` ile eşzamanlı bağlamda denemeler yapabilirsiniz:"
+
+#: library/asyncio.rst:77
+msgid "Raises an auditing event cpython.run_stdin with no arguments."
+msgstr ""
+
 #: library/asyncio.rst:79
+msgid "(also 3.11.10, 3.10.15, 3.9.20, and 3.8.20) Emits audit events."
+msgstr ""
+
+#: library/asyncio.rst:86
 msgid "Reference"
 msgstr "Referans"
 
-#: library/asyncio.rst:112
+#: library/asyncio.rst:119
 msgid "The source code for asyncio can be found in :source:`Lib/asyncio/`."
 msgstr "Asyncio için kaynak kodu :source:`Lib/asyncio/` dizininde bulunabilir."

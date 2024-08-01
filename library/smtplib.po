@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-08-01 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -76,10 +76,10 @@ msgid ""
 "keyword:`!with` statement exits.  E.g.::"
 msgstr ""
 
-#: library/smtplib.rst:70
+#: library/smtplib.rst:59
 msgid ""
-"Raises an :ref:`auditing event <auditing>` ``smtplib.send`` with arguments "
-"``self``, ``data``."
+"All commands will raise an auditing event smtplib.SMTP.send with arguments "
+"self and data, where data is the bytes about to be sent to the remote host."
 msgstr ""
 
 #: library/smtplib.rst:61
@@ -308,10 +308,9 @@ msgid ""
 "connection response."
 msgstr ""
 
-#: library/smtplib.rst:264
+#: library/smtplib.rst:253
 msgid ""
-"Raises an :ref:`auditing event <auditing>` ``smtplib.connect`` with "
-"arguments ``self``, ``host``, ``port``."
+"Raises an auditing event smtplib.connect with arguments self, host, port."
 msgstr ""
 
 #: library/smtplib.rst:258
@@ -718,10 +717,10 @@ msgid ""
 "headers to be included with the message must be included in the message as "
 "entered; this example doesn't do any processing of the :rfc:`822` headers.  "
 "In particular, the 'To' and 'From' addresses must be included in the message "
-"headers explicitly. ::"
+"headers explicitly::"
 msgstr ""
 
-#: library/smtplib.rst:591
+#: library/smtplib.rst:590
 msgid ""
 "In general, you will want to use the :mod:`email` package's features to "
 "construct an email message, which you can then send via :meth:`~smtplib.SMTP."

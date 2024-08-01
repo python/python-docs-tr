@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-08-01 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -112,9 +112,7 @@ msgid "If the :c:func:`fcntl` call fails, an :exc:`OSError` is raised."
 msgstr ""
 
 #: library/fcntl.rst:85
-msgid ""
-"Raises an :ref:`auditing event <auditing>` ``fcntl.fcntl`` with arguments "
-"``fd``, ``cmd``, ``arg``."
+msgid "Raises an auditing event fcntl.fcntl with arguments fd, cmd, arg."
 msgstr ""
 
 #: library/fcntl.rst:90
@@ -179,9 +177,7 @@ msgid "An example::"
 msgstr ""
 
 #: library/fcntl.rst:136
-msgid ""
-"Raises an :ref:`auditing event <auditing>` ``fcntl.ioctl`` with arguments "
-"``fd``, ``request``, ``arg``."
+msgid "Raises an auditing event fcntl.ioctl with arguments fd, request, arg."
 msgstr ""
 
 #: library/fcntl.rst:141
@@ -198,9 +194,7 @@ msgid ""
 msgstr ""
 
 #: library/fcntl.rst:148
-msgid ""
-"Raises an :ref:`auditing event <auditing>` ``fcntl.flock`` with arguments "
-"``fd``, ``operation``."
+msgid "Raises an auditing event fcntl.flock with arguments fd, operation."
 msgstr ""
 
 #: library/fcntl.rst:153
@@ -267,8 +261,8 @@ msgstr ""
 
 #: library/fcntl.rst:194
 msgid ""
-"Raises an :ref:`auditing event <auditing>` ``fcntl.lockf`` with arguments "
-"``fd``, ``cmd``, ``len``, ``start``, ``whence``."
+"Raises an auditing event fcntl.lockf with arguments fd, cmd, len, start, "
+"whence."
 msgstr ""
 
 #: library/fcntl.rst:196

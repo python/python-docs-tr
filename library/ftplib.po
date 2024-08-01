@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-08-01 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -182,10 +182,9 @@ msgid ""
 "timeout setting)."
 msgstr ""
 
-#: library/ftplib.rst:198
+#: library/ftplib.rst:187
 msgid ""
-"Raises an :ref:`auditing event <auditing>` ``ftplib.connect`` with arguments "
-"``self``, ``host``, ``port``."
+"Raises an auditing event ftplib.connect with arguments self, host, port."
 msgstr ""
 
 #: library/ftplib.rst:195
@@ -219,10 +218,8 @@ msgid ""
 "Send a simple command string to the server and return the response string."
 msgstr ""
 
-#: library/ftplib.rst:249
-msgid ""
-"Raises an :ref:`auditing event <auditing>` ``ftplib.sendcmd`` with arguments "
-"``self``, ``cmd``."
+#: library/ftplib.rst:238
+msgid "Raises an auditing event ftplib.sendcmd with arguments self, cmd."
 msgstr ""
 
 #: library/ftplib.rst:234
@@ -236,8 +233,8 @@ msgstr ""
 msgid "Retrieve a file in binary transfer mode."
 msgstr ""
 
-#: library/ftplib.rst:289
-msgid "An appropriate ``STOR`` command: :samp:`\"STOR {filename}\"`."
+#: library/ftplib.rst:245
+msgid "An appropriate ``RETR`` command: :samp:`\"RETR {filename}\"`."
 msgstr ""
 
 #: library/ftplib.rst:248
@@ -279,6 +276,10 @@ msgstr ""
 
 #: library/ftplib.rst:287
 msgid "Store a file in binary transfer mode."
+msgstr ""
+
+#: library/ftplib.rst:289
+msgid "An appropriate ``STOR`` command: :samp:`\"STOR {filename}\"`."
 msgstr ""
 
 #: library/ftplib.rst:292

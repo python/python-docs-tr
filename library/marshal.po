@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-08-01 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -56,7 +56,7 @@ msgid ""
 "Not all Python object types are supported; in general, only objects whose "
 "value is independent from a particular invocation of Python can be written "
 "and read by this module.  The following types are supported: booleans, "
-"integers, floating point numbers, complex numbers, strings, bytes, "
+"integers, floating-point numbers, complex numbers, strings, bytes, "
 "bytearrays, tuples, lists, sets, frozensets, dictionaries, and code objects, "
 "where it should be understood that tuples, lists, sets, frozensets and "
 "dictionaries are only supported as long as the values contained therein are "
@@ -97,9 +97,7 @@ msgid ""
 msgstr ""
 
 #: library/marshal.rst:101
-msgid ""
-"Raises an :ref:`auditing event <auditing>` ``marshal.dumps`` with arguments "
-"``value``, ``version``."
+msgid "Raises an auditing event marshal.dumps with arguments value, version."
 msgstr ""
 
 #: library/marshal.rst:74
@@ -111,9 +109,7 @@ msgid ""
 msgstr ""
 
 #: library/marshal.rst:79
-msgid ""
-"Raises an :ref:`auditing event <auditing>` ``marshal.load`` with no "
-"arguments."
+msgid "Raises an auditing event marshal.load with no arguments."
 msgstr ""
 
 #: library/marshal.rst:83
@@ -149,9 +145,7 @@ msgid ""
 msgstr ""
 
 #: library/marshal.rst:110
-msgid ""
-"Raises an :ref:`auditing event <auditing>` ``marshal.loads`` with argument "
-"``bytes``."
+msgid "Raises an auditing event marshal.loads with argument bytes."
 msgstr ""
 
 #: library/marshal.rst:114
@@ -168,7 +162,7 @@ msgstr ""
 msgid ""
 "Indicates the format that the module uses. Version 0 is the historical "
 "format, version 1 shares interned strings and version 2 uses a binary format "
-"for floating point numbers. Version 3 adds support for object instancing and "
+"for floating-point numbers. Version 3 adds support for object instancing and "
 "recursion. The current version is 4."
 msgstr ""
 

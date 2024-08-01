@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-01 20:27+0000\n"
+"POT-Creation-Date: 2024-08-01 00:19+0000\n"
 "PO-Revision-Date: 2024-02-17 13:11+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -654,13 +654,14 @@ msgstr ""
 "dosya adıdır. Ayrıca, *filename2* kurucu argümanı ve niteliği eklenmiştir."
 
 #: library/exceptions.rst:411
+#, fuzzy
 msgid ""
 "Raised when the result of an arithmetic operation is too large to be "
 "represented.  This cannot occur for integers (which would rather raise :exc:"
 "`MemoryError` than give up).  However, for historical reasons, OverflowError "
 "is sometimes raised for integers that are outside a required range.   "
-"Because of the lack of standardization of floating point exception handling "
-"in C, most floating point operations are not checked."
+"Because of the lack of standardization of floating-point exception handling "
+"in C, most floating-point operations are not checked."
 msgstr ""
 "Bir aritmetik işlemin sonucu gösterilemeyecek kadar büyük olduğunda ortaya "
 "çıkar. Bu durum tamsayılar için oluşmaz (tamsayılar vazgeçmektense :exc:"
@@ -1530,9 +1531,11 @@ msgstr ""
 "``excs`` içine sarar."
 
 #: library/exceptions.rst:970
+#, fuzzy
 msgid ""
-"This method is used by :meth:`subgroup` and :meth:`split`. A subclass needs "
-"to override it in order to make :meth:`subgroup` and :meth:`split` return "
+"This method is used by :meth:`subgroup` and :meth:`split`, which are used in "
+"various contexts to break up an exception group. A subclass needs to "
+"override it in order to make :meth:`subgroup` and :meth:`split` return "
 "instances of the subclass rather than :exc:`ExceptionGroup`."
 msgstr ""
 "Bu yöntem :meth:`subgroup` ve :meth:`split` tarafından kullanılır. Bir alt "
@@ -1540,7 +1543,7 @@ msgstr ""
 "yerine alt sınıfın örneklerini döndürmesini sağlamak için bu metodu geçersiz "
 "kılması gerekir."
 
-#: library/exceptions.rst:975
+#: library/exceptions.rst:976
 msgid ""
 ":meth:`subgroup` and :meth:`split` copy the :attr:`~BaseException."
 "__traceback__`, :attr:`~BaseException.__cause__`, :attr:`~BaseException."
@@ -1554,7 +1557,7 @@ msgstr ""
 "`derive` tarafından döndürülene kopyalar, böylece bu alanların :meth:"
 "`derive` tarafından güncellenmesi gerekmez."
 
-#: library/exceptions.rst:1008
+#: library/exceptions.rst:1009
 msgid ""
 "Note that :exc:`BaseExceptionGroup` defines :meth:`~object.__new__`, so "
 "subclasses that need a different constructor signature need to override that "
@@ -1568,7 +1571,7 @@ msgstr ""
 "gerekir. Örneğin, aşağıda bir exit_code kabul eden ve grubun mesajını bundan "
 "oluşturan bir istisna grubu alt sınıfı tanımlanmaktadır:"
 
-#: library/exceptions.rst:1023
+#: library/exceptions.rst:1024
 msgid ""
 "Like :exc:`ExceptionGroup`, any subclass of :exc:`BaseExceptionGroup` which "
 "is also a subclass of :exc:`Exception` can only wrap instances of :exc:"
@@ -1578,11 +1581,11 @@ msgstr ""
 "exc:`Exception` alt sınıfı da yalnızca :exc:`Exception` örneklerini "
 "sarabilir."
 
-#: library/exceptions.rst:1031
+#: library/exceptions.rst:1032
 msgid "Exception hierarchy"
 msgstr "İstisna hiyerarşisi"
 
-#: library/exceptions.rst:1033
+#: library/exceptions.rst:1034
 msgid "The class hierarchy for built-in exceptions is:"
 msgstr "Gömülü istisnalar için sınıf hiyerarşisi şöyledir:"
 
