@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -203,6 +203,20 @@ msgstr ""
 msgid "An example usage of the module::"
 msgstr ""
 
+#: library/mimetypes.rst:163
+msgid ""
+">>> import mimetypes\n"
+">>> mimetypes.init()\n"
+">>> mimetypes.knownfiles\n"
+"['/etc/mime.types', '/etc/httpd/mime.types', ... ]\n"
+">>> mimetypes.suffix_map['.tgz']\n"
+"'.tar.gz'\n"
+">>> mimetypes.encodings_map['.gz']\n"
+"'gzip'\n"
+">>> mimetypes.types_map['.tgz']\n"
+"'application/x-tar-gz'"
+msgstr ""
+
 #: library/mimetypes.rst:178
 msgid "MimeTypes Objects"
 msgstr ""
@@ -308,7 +322,7 @@ msgid "Load MIME type information from the Windows registry."
 msgstr ""
 
 #: library/mimetypes.rst:269
-msgid ":ref:`Availability <availability>`: Windows."
+msgid "Availability"
 msgstr ""
 
 #: library/mimetypes.rst:31

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -55,10 +55,24 @@ msgid ""
 "the ``.py`` extension::"
 msgstr ""
 
+#: library/__main__.rst:31
+msgid ""
+">>> import configparser\n"
+">>> configparser.__name__\n"
+"'configparser'"
+msgstr ""
+
 #: library/__main__.rst:35
 msgid ""
 "If the file is part of a package, ``__name__`` will also include the parent "
 "package's path::"
+msgstr ""
+
+#: library/__main__.rst:38
+msgid ""
+">>> from concurrent.futures import process\n"
+">>> process.__name__\n"
+"'concurrent.futures.process'"
 msgstr ""
 
 #: library/__main__.rst:42
@@ -88,8 +102,20 @@ msgstr ""
 msgid "the scope of an interactive prompt::"
 msgstr ""
 
+#: library/__main__.rst:57
+msgid ""
+">>> __name__\n"
+"'__main__'"
+msgstr ""
+
 #: library/__main__.rst:60
 msgid "the Python module passed to the Python interpreter as a file argument:"
+msgstr ""
+
+#: library/__main__.rst:62
+msgid ""
+"$ python helloworld.py\n"
+"Hello, world!"
 msgstr ""
 
 #: library/__main__.rst:67
@@ -98,13 +124,39 @@ msgid ""
 "option:`-m` argument:"
 msgstr ""
 
+#: library/__main__.rst:70
+msgid ""
+"$ python -m tarfile\n"
+"usage: tarfile.py [-h] [-v] (...)"
+msgstr ""
+
 #: library/__main__.rst:75
 msgid "Python code read by the Python interpreter from standard input:"
+msgstr ""
+
+#: library/__main__.rst:77
+msgid ""
+"$ echo \"import this\" | python\n"
+"The Zen of Python, by Tim Peters\n"
+"\n"
+"Beautiful is better than ugly.\n"
+"Explicit is better than implicit.\n"
+"..."
 msgstr ""
 
 #: library/__main__.rst:86
 msgid ""
 "Python code passed to the Python interpreter with the :option:`-c` argument:"
+msgstr ""
+
+#: library/__main__.rst:88
+msgid ""
+"$ python -c \"import this\"\n"
+"The Zen of Python, by Tim Peters\n"
+"\n"
+"Beautiful is better than ugly.\n"
+"Explicit is better than implicit.\n"
+"..."
 msgstr ""
 
 #: library/__main__.rst:97
@@ -119,6 +171,13 @@ msgid ""
 "level environment by checking its own ``__name__``, which allows a common "
 "idiom for conditionally executing code when the module is not initialized "
 "from an import statement::"
+msgstr ""
+
+#: library/__main__.rst:105
+msgid ""
+"if __name__ == '__main__':\n"
+"    # Execute when the module is not initialized from an import statement.\n"
+"    ..."
 msgstr ""
 
 #: library/__main__.rst:111
@@ -153,6 +212,29 @@ msgid ""
 "function named ``main`` encapsulates the program's primary behavior::"
 msgstr ""
 
+#: library/__main__.rst:131
+msgid ""
+"# echo.py\n"
+"\n"
+"import shlex\n"
+"import sys\n"
+"\n"
+"def echo(phrase: str) -> None:\n"
+"   \"\"\"A dummy wrapper around print.\"\"\"\n"
+"   # for demonstration purposes, you can imagine that there is some\n"
+"   # valuable and reusable logic inside this function\n"
+"   print(phrase)\n"
+"\n"
+"def main() -> int:\n"
+"    \"\"\"Echo the input arguments to standard output\"\"\"\n"
+"    phrase = shlex.join(sys.argv)\n"
+"    echo(phrase)\n"
+"    return 0\n"
+"\n"
+"if __name__ == '__main__':\n"
+"    sys.exit(main())  # next section explains the use of sys.exit"
+msgstr ""
+
 #: library/__main__.rst:151
 msgid ""
 "Note that if the module didn't encapsulate code inside the ``main`` function "
@@ -181,6 +263,10 @@ msgid ""
 "them as entry points for console scripts.  When this is done, `pip <https://"
 "pip.pypa.io/>`_ inserts the function call into a template script, where the "
 "return value of ``main`` is passed into :func:`sys.exit`. For example::"
+msgstr ""
+
+#: library/__main__.rst:173
+msgid "sys.exit(main())"
 msgstr ""
 
 #: library/__main__.rst:175
@@ -228,10 +314,22 @@ msgid ""
 "hypothetical package, \"bandclass\":"
 msgstr ""
 
+#: library/__main__.rst:206
+msgid ""
+"bandclass\n"
+"  ├── __init__.py\n"
+"  ├── __main__.py\n"
+"  └── student.py"
+msgstr ""
+
 #: library/__main__.rst:213
 msgid ""
 "``__main__.py`` will be executed when the package itself is invoked directly "
 "from the command line using the :option:`-m` flag. For example:"
+msgstr ""
+
+#: library/__main__.rst:216
+msgid "$ python -m bandclass"
 msgstr ""
 
 #: library/__main__.rst:220
@@ -240,6 +338,17 @@ msgid ""
 "mechanism will depend on the nature of the package you are writing, but in "
 "this hypothetical case, it might make sense to allow the teacher to search "
 "for students::"
+msgstr ""
+
+#: library/__main__.rst:225
+msgid ""
+"# bandclass/__main__.py\n"
+"\n"
+"import sys\n"
+"from .student import search_students\n"
+"\n"
+"student_name = sys.argv[1] if len(sys.argv) >= 2 else ''\n"
+"print(f'Found student: {search_students(student_name)}')"
 msgstr ""
 
 #: library/__main__.rst:233
@@ -263,6 +372,13 @@ msgid ""
 "If used, an ``if __name__ == '__main__'`` block will still work as expected "
 "for a ``__main__.py`` file within a package, because its ``__name__`` "
 "attribute will include the package's path if imported::"
+msgstr ""
+
+#: library/__main__.rst:250
+msgid ""
+">>> import asyncio.__main__\n"
+">>> asyncio.__main__.__name__\n"
+"'asyncio.__main__'"
 msgstr ""
 
 #: library/__main__.rst:254
@@ -309,12 +425,57 @@ msgstr ""
 msgid "Here is an example module that consumes the ``__main__`` namespace::"
 msgstr ""
 
+#: library/__main__.rst:284
+msgid ""
+"# namely.py\n"
+"\n"
+"import __main__\n"
+"\n"
+"def did_user_define_their_name():\n"
+"    return 'my_name' in dir(__main__)\n"
+"\n"
+"def print_user_name():\n"
+"    if not did_user_define_their_name():\n"
+"        raise ValueError('Define the variable `my_name`!')\n"
+"\n"
+"    if '__file__' in dir(__main__):\n"
+"        print(__main__.my_name, \"found in file\", __main__.__file__)\n"
+"    else:\n"
+"        print(__main__.my_name)"
+msgstr ""
+
 #: library/__main__.rst:300
 msgid "Example usage of this module could be as follows::"
 msgstr ""
 
+#: library/__main__.rst:302
+msgid ""
+"# start.py\n"
+"\n"
+"import sys\n"
+"\n"
+"from namely import print_user_name\n"
+"\n"
+"# my_name = \"Dinsdale\"\n"
+"\n"
+"def main():\n"
+"    try:\n"
+"        print_user_name()\n"
+"    except ValueError as ve:\n"
+"        return str(ve)\n"
+"\n"
+"if __name__ == \"__main__\":\n"
+"    sys.exit(main())"
+msgstr ""
+
 #: library/__main__.rst:319
 msgid "Now, if we started our program, the result would look like this:"
+msgstr ""
+
+#: library/__main__.rst:321
+msgid ""
+"$ python start.py\n"
+"Define the variable `my_name`!"
 msgstr ""
 
 #: library/__main__.rst:326
@@ -322,6 +483,12 @@ msgid ""
 "The exit code of the program would be 1, indicating an error. Uncommenting "
 "the line with ``my_name = \"Dinsdale\"`` fixes the program and now it exits "
 "with status code 0, indicating success:"
+msgstr ""
+
+#: library/__main__.rst:330
+msgid ""
+"$ python start.py\n"
+"Dinsdale found in file /path/to/start.py"
 msgstr ""
 
 #: library/__main__.rst:335
@@ -349,6 +516,22 @@ msgstr ""
 msgid ""
 "The Python REPL is another example of a \"top-level environment\", so "
 "anything defined in the REPL becomes part of the ``__main__`` scope::"
+msgstr ""
+
+#: library/__main__.rst:351
+msgid ""
+">>> import namely\n"
+">>> namely.did_user_define_their_name()\n"
+"False\n"
+">>> namely.print_user_name()\n"
+"Traceback (most recent call last):\n"
+"...\n"
+"ValueError: Define the variable `my_name`!\n"
+">>> my_name = 'Jabberwocky'\n"
+">>> namely.did_user_define_their_name()\n"
+"True\n"
+">>> namely.print_user_name()\n"
+"Jabberwocky"
 msgstr ""
 
 #: library/__main__.rst:364

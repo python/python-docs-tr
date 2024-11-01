@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -84,6 +84,13 @@ msgstr ""
 
 #: library/linecache.rst:63
 msgid "Example::"
+msgstr ""
+
+#: library/linecache.rst:65
+msgid ""
+">>> import linecache\n"
+">>> linecache.getline(linecache.__file__, 8)\n"
+"'import sys\\n'"
 msgstr ""
 
 #: library/linecache.rst:31

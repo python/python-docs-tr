@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 01:28+0300\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -45,10 +45,18 @@ msgid ""
 "which usually looks like this:"
 msgstr ""
 
+#: faq/windows.rst:35
+msgid "C:\\>"
+msgstr ""
+
 #: faq/windows.rst:39
 msgid ""
 "The letter may be different, and there might be other things after it, so "
 "you might just as easily see something like:"
+msgstr ""
+
+#: faq/windows.rst:42
+msgid "D:\\YourName\\Projects\\Python>"
 msgstr ""
 
 #: faq/windows.rst:46
@@ -74,8 +82,21 @@ msgid ""
 "return:"
 msgstr ""
 
+#: faq/windows.rst:60
+msgid "C:\\Users\\YourName> py"
+msgstr ""
+
 #: faq/windows.rst:64
 msgid "You should then see something like:"
+msgstr ""
+
+#: faq/windows.rst:66
+msgid ""
+"Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit "
+"(Intel)] on win32\n"
+"Type \"help\", \"copyright\", \"credits\" or \"license\" for more "
+"information.\n"
+">>>"
 msgstr ""
 
 #: faq/windows.rst:72
@@ -84,6 +105,14 @@ msgid ""
 "enter Python statements or expressions interactively and have them executed "
 "or evaluated while you wait.  This is one of Python's strongest features.  "
 "Check it by entering a few expressions of your choice and seeing the results:"
+msgstr ""
+
+#: faq/windows.rst:77
+msgid ""
+">>> print(\"Hello\")\n"
+"Hello\n"
+">>> \"Hello\" * 3\n"
+"'HelloHelloHello'"
 msgstr ""
 
 #: faq/windows.rst:84
@@ -114,10 +143,20 @@ msgid ""
 "home directory so you're seeing something similar to::"
 msgstr ""
 
+#: faq/windows.rst:104
+msgid "C:\\Users\\YourName>"
+msgstr ""
+
 #: faq/windows.rst:106
 msgid ""
 "So now you'll ask the ``py`` command to give your script to Python by typing "
 "``py`` followed by your script path::"
+msgstr ""
+
+#: faq/windows.rst:110
+msgid ""
+"C:\\Users\\YourName> py Desktop\\hello.py\n"
+"hello"
 msgstr ""
 
 #: faq/windows.rst:114
@@ -263,6 +302,15 @@ msgid ""
 "interpreter with your extension module."
 msgstr ""
 
+#: faq/windows.rst:210
+msgid ""
+"#include <Python.h>\n"
+"...\n"
+"Py_Initialize();  // Initialize Python.\n"
+"initmyAppc();  // Initialize (import) the helper class.\n"
+"PyRun_SimpleString(\"import myApp\");  // Import the shadow class."
+msgstr ""
+
 #: faq/windows.rst:218
 msgid ""
 "There are two problems with Python's C API which will become apparent if you "
@@ -283,11 +331,22 @@ msgid ""
 "void functions:"
 msgstr ""
 
+#: faq/windows.rst:229
+msgid ""
+"Py_INCREF(Py_None);\n"
+"_resultobj = Py_None;\n"
+"return _resultobj;"
+msgstr ""
+
 #: faq/windows.rst:235
 msgid ""
 "Alas, Py_None is a macro that expands to a reference to a complex data "
 "structure called _Py_NoneStruct inside pythonNN.dll.  Again, this code will "
 "fail in a mult-compiler environment.  Replace such code by:"
+msgstr ""
+
+#: faq/windows.rst:239
+msgid "return Py_BuildValue(\"\");"
 msgstr ""
 
 #: faq/windows.rst:243

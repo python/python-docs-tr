@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 19:05+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -57,44 +57,46 @@ msgid ""
 "`buffer protocol <bufferobjects>`."
 msgstr ""
 
-#: c-api/bytearray.rst:48
-msgid ""
-"Create a new bytearray object from *string* and its length, *len*.  On "
-"failure, ``NULL`` is returned."
+#: c-api/bytearray.rst:52 c-api/bytearray.rst:59
+msgid "On failure, return ``NULL`` with an exception set."
 msgstr ""
 
-#: c-api/bytearray.rst:54
+#: c-api/bytearray.rst:50
+msgid "Create a new bytearray object from *string* and its length, *len*."
+msgstr ""
+
+#: c-api/bytearray.rst:57
 msgid ""
 "Concat bytearrays *a* and *b* and return a new bytearray with the result."
 msgstr ""
 
-#: c-api/bytearray.rst:59
+#: c-api/bytearray.rst:64
 msgid "Return the size of *bytearray* after checking for a ``NULL`` pointer."
 msgstr ""
 
-#: c-api/bytearray.rst:64
+#: c-api/bytearray.rst:69
 msgid ""
 "Return the contents of *bytearray* as a char array after checking for a "
 "``NULL`` pointer.  The returned array always has an extra null byte appended."
 msgstr ""
 
-#: c-api/bytearray.rst:71
+#: c-api/bytearray.rst:76
 msgid "Resize the internal buffer of *bytearray* to *len*."
 msgstr ""
 
-#: c-api/bytearray.rst:74
+#: c-api/bytearray.rst:79
 msgid "Macros"
 msgstr ""
 
-#: c-api/bytearray.rst:76
+#: c-api/bytearray.rst:81
 msgid "These macros trade safety for speed and they don't check pointers."
 msgstr ""
 
-#: c-api/bytearray.rst:80
+#: c-api/bytearray.rst:85
 msgid "Similar to :c:func:`PyByteArray_AsString`, but without error checking."
 msgstr ""
 
-#: c-api/bytearray.rst:85
+#: c-api/bytearray.rst:90
 msgid "Similar to :c:func:`PyByteArray_Size`, but without error checking."
 msgstr ""
 

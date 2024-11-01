@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 22:33+0300\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: 2023-02-01 17:47-0500\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -194,6 +194,10 @@ msgstr ""
 "Aşağıdaki komut, bir modülün en son sürümünü ve bağımlılıklarını Python "
 "Paket Dizininden yükleyecektir::"
 
+#: installing/index.rst:84
+msgid "python -m pip install SomePackage"
+msgstr ""
+
 #: installing/index.rst:88
 msgid ""
 "For POSIX users (including macOS and Linux users), the examples in this "
@@ -225,6 +229,12 @@ msgstr ""
 "yorumlanan diğer bazı özel karakterler kullanılırken, paket adı ve sürüm "
 "çift tırnak içine alınmalıdır::"
 
+#: installing/index.rst:100
+msgid ""
+"python -m pip install SomePackage==1.0.4    # specific version\n"
+"python -m pip install \"SomePackage>=1.0.4\"  # minimum version"
+msgstr ""
+
 #: installing/index.rst:103
 msgid ""
 "Normally, if a suitable module is already installed, attempting to install "
@@ -233,6 +243,10 @@ msgid ""
 msgstr ""
 "Normalde, uygun bir modül zaten kuruluysa, onu tekrar kurmayı denemenin bir "
 "etkisi olmaz. Mevcut modüllerin yükseltilmesi açıkça talep edilmelidir::"
+
+#: installing/index.rst:107
+msgid "python -m pip install --upgrade SomePackage"
+msgstr ""
 
 #: installing/index.rst:109
 msgid ""
@@ -346,6 +360,14 @@ msgstr ""
 "çalıştırmak için ``-m`` anahtarıyla birlikte sürümlü Python komutlarını "
 "kullanın::"
 
+#: installing/index.rst:171
+msgid ""
+"python2   -m pip install SomePackage  # default Python 2\n"
+"python2.7 -m pip install SomePackage  # specifically Python 2.7\n"
+"python3   -m pip install SomePackage  # default Python 3\n"
+"python3.4 -m pip install SomePackage  # specifically Python 3.4"
+msgstr ""
+
 #: installing/index.rst:176
 msgid "Appropriately versioned ``pip`` commands may also be available."
 msgstr "Uygun sürüme sahip ``pip`` komutları da mevcut olabilir."
@@ -357,6 +379,14 @@ msgid ""
 msgstr ""
 "Windows'ta, ``py`` Python başlatıcısını ``-m`` anahtarıyla birlikte "
 "kullanın::"
+
+#: installing/index.rst:181
+msgid ""
+"py -2   -m pip install SomePackage  # default Python 2\n"
+"py -2.7 -m pip install SomePackage  # specifically Python 2.7\n"
+"py -3   -m pip install SomePackage  # default Python 3\n"
+"py -3.4 -m pip install SomePackage  # specifically Python 3.4"
+msgstr ""
 
 #: installing/index.rst:195
 msgid "Common installation issues"
@@ -398,6 +428,10 @@ msgid ""
 "fix is::"
 msgstr ""
 "``pip`` 'in varsayılan olarak yüklenmemesi mümkündür. Bir olası düzeltme::"
+
+#: installing/index.rst:215
+msgid "python -m ensurepip --default-pip"
+msgstr ""
 
 #: installing/index.rst:217
 msgid ""

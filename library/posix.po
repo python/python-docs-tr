@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 
 #: library/posix.rst:14
-msgid ":ref:`Availability <availability>`: Unix."
+msgid "Availability"
 msgstr ""
 
 #: library/posix.rst:18
@@ -72,8 +72,21 @@ msgid ""
 "Solaris 2.6 and 2.7 you need to do something like::"
 msgstr ""
 
+#: library/posix.rst:55
+msgid ""
+"CFLAGS=\"`getconf LFS_CFLAGS`\" OPT=\"-g -O2 $CFLAGS\" \\\n"
+"        ./configure"
+msgstr ""
+
 #: library/posix.rst:58
 msgid "On large-file-capable Linux systems, this might work::"
+msgstr ""
+
+#: library/posix.rst:60
+msgid ""
+"CFLAGS='-D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64' OPT=\"-g -O2 $CFLAGS\" "
+"\\\n"
+"        ./configure"
 msgstr ""
 
 #: library/posix.rst:67

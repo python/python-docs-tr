@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -486,40 +486,39 @@ msgstr ""
 #: faq/general.rst:311
 msgid ""
 "The latest stable releases can always be found on the `Python download page "
-"<https://www.python.org/downloads/>`_.  There are two production-ready "
-"versions of Python: 2.x and 3.x. The recommended version is 3.x, which is "
-"supported by most widely used libraries.  Although 2.x is still widely used, "
-"`it is not maintained anymore <https://peps.python.org/pep-0373/>`_."
+"<https://www.python.org/downloads/>`_. Python 3.x is the recommended version "
+"and supported by most widely used libraries. Python 2.x :pep:`is not "
+"maintained anymore <373>`."
 msgstr ""
 
-#: faq/general.rst:318
+#: faq/general.rst:317
 msgid "How many people are using Python?"
 msgstr ""
 
-#: faq/general.rst:320
+#: faq/general.rst:319
 msgid ""
 "There are probably millions of users, though it's difficult to obtain an "
 "exact count."
 msgstr ""
 
-#: faq/general.rst:323
+#: faq/general.rst:322
 msgid ""
 "Python is available for free download, so there are no sales figures, and "
 "it's available from many different sites and packaged with many Linux "
 "distributions, so download statistics don't tell the whole story either."
 msgstr ""
 
-#: faq/general.rst:327
+#: faq/general.rst:326
 msgid ""
 "The comp.lang.python newsgroup is very active, but not all Python users post "
 "to the group or even read it."
 msgstr ""
 
-#: faq/general.rst:332
+#: faq/general.rst:331
 msgid "Have any significant projects been done in Python?"
 msgstr ""
 
-#: faq/general.rst:334
+#: faq/general.rst:333
 msgid ""
 "See https://www.python.org/about/success for a list of projects that use "
 "Python. Consulting the proceedings for `past Python conferences <https://www."
@@ -527,7 +526,7 @@ msgid ""
 "different companies and organizations."
 msgstr ""
 
-#: faq/general.rst:339
+#: faq/general.rst:338
 msgid ""
 "High-profile Python projects include `the Mailman mailing list manager "
 "<https://www.list.org>`_ and `the Zope application server <https://www.zope."
@@ -537,11 +536,11 @@ msgid ""
 "include Google, Yahoo, and Lucasfilm Ltd."
 msgstr ""
 
-#: faq/general.rst:348
+#: faq/general.rst:347
 msgid "What new developments are expected for Python in the future?"
 msgstr ""
 
-#: faq/general.rst:350
+#: faq/general.rst:349
 msgid ""
 "See https://peps.python.org/ for the Python Enhancement Proposals (PEPs). "
 "PEPs are design documents describing a suggested new feature for Python, "
@@ -550,17 +549,17 @@ msgid ""
 "been publicly released yet."
 msgstr ""
 
-#: faq/general.rst:356
+#: faq/general.rst:355
 msgid ""
 "New development is discussed on `the python-dev mailing list <https://mail."
 "python.org/mailman3/lists/python-dev.python.org/>`_."
 msgstr ""
 
-#: faq/general.rst:361
+#: faq/general.rst:360
 msgid "Is it reasonable to propose incompatible changes to Python?"
 msgstr ""
 
-#: faq/general.rst:363
+#: faq/general.rst:362
 msgid ""
 "In general, no.  There are already millions of lines of Python code around "
 "the world, so any change in the language that invalidates more than a very "
@@ -570,22 +569,22 @@ msgid ""
 "to invalidate them all at a single stroke."
 msgstr ""
 
-#: faq/general.rst:370
+#: faq/general.rst:369
 msgid ""
 "Providing a gradual upgrade path is necessary if a feature has to be "
 "changed. :pep:`5` describes the procedure followed for introducing backward-"
 "incompatible changes while minimizing disruption for users."
 msgstr ""
 
-#: faq/general.rst:376
+#: faq/general.rst:375
 msgid "Is Python a good language for beginning programmers?"
 msgstr ""
 
-#: faq/general.rst:378
+#: faq/general.rst:377
 msgid "Yes."
 msgstr ""
 
-#: faq/general.rst:380
+#: faq/general.rst:379
 msgid ""
 "It is still common to start students with a procedural and statically typed "
 "language such as Pascal, C, or a subset of C++ or Java.  Students may be "
@@ -598,7 +597,7 @@ msgid ""
 "with user-defined objects in their very first course."
 msgstr ""
 
-#: faq/general.rst:390
+#: faq/general.rst:389
 msgid ""
 "For a student who has never programmed before, using a statically typed "
 "language seems unnatural.  It presents additional complexity that the "
@@ -610,7 +609,7 @@ msgid ""
 "course."
 msgstr ""
 
-#: faq/general.rst:398
+#: faq/general.rst:397
 msgid ""
 "Many other aspects of Python make it a good first language.  Like Java, "
 "Python has a large standard library so that students can be assigned "
@@ -623,7 +622,7 @@ msgid ""
 "helpful in extending the students' reach."
 msgstr ""
 
-#: faq/general.rst:407
+#: faq/general.rst:406
 msgid ""
 "Python's interactive interpreter enables students to test language features "
 "while they're programming.  They can keep a window with the interpreter "
@@ -631,13 +630,41 @@ msgid ""
 "can't remember the methods for a list, they can do something like this::"
 msgstr ""
 
-#: faq/general.rst:436
+#: faq/general.rst:411
+msgid ""
+">>> L = []\n"
+">>> dir(L) \n"
+"['__add__', '__class__', '__contains__', '__delattr__', '__delitem__',\n"
+"'__dir__', '__doc__', '__eq__', '__format__', '__ge__',\n"
+"'__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__',\n"
+"'__imul__', '__init__', '__iter__', '__le__', '__len__', '__lt__',\n"
+"'__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__',\n"
+"'__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__',\n"
+"'__sizeof__', '__str__', '__subclasshook__', 'append', 'clear',\n"
+"'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove',\n"
+"'reverse', 'sort']\n"
+">>> [d for d in dir(L) if '__' not in d]\n"
+"['append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', "
+"'remove', 'reverse', 'sort']\n"
+"\n"
+">>> help(L.append)\n"
+"Help on built-in function append:\n"
+"\n"
+"append(...)\n"
+"    L.append(object) -> None -- append object to end\n"
+"\n"
+">>> L.append(1)\n"
+">>> L\n"
+"[1]"
+msgstr ""
+
+#: faq/general.rst:435
 msgid ""
 "With the interpreter, documentation is never far from the student as they "
 "are programming."
 msgstr ""
 
-#: faq/general.rst:439
+#: faq/general.rst:438
 msgid ""
 "There are also good IDEs for Python.  IDLE is a cross-platform IDE for "
 "Python that is written in Python using Tkinter. Emacs users will be happy to "
@@ -648,7 +675,7 @@ msgid ""
 "Python editing environments."
 msgstr ""
 
-#: faq/general.rst:447
+#: faq/general.rst:446
 msgid ""
 "If you want to discuss Python's use in education, you may be interested in "
 "joining `the edu-sig mailing list <https://www.python.org/community/sigs/"

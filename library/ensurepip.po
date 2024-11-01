@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -65,7 +65,7 @@ msgid "The original rationale and specification for this module."
 msgstr ""
 
 #: includes/wasm-notavail.rst:3
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
+msgid "Availability"
 msgstr ""
 
 #: includes/wasm-notavail.rst:5
@@ -88,12 +88,20 @@ msgstr ""
 msgid "The simplest possible invocation is::"
 msgstr ""
 
+#: library/ensurepip.rst:50
+msgid "python -m ensurepip"
+msgstr ""
+
 #: library/ensurepip.rst:52
 msgid ""
 "This invocation will install ``pip`` if it is not already installed, but "
 "otherwise does nothing. To ensure the installed version of ``pip`` is at "
 "least as recent as the one available in ``ensurepip``, pass the ``--"
 "upgrade`` option::"
+msgstr ""
+
+#: library/ensurepip.rst:57
+msgid "python -m ensurepip --upgrade"
 msgstr ""
 
 #: library/ensurepip.rst:59
@@ -207,7 +215,9 @@ msgid ""
 msgstr ""
 
 #: library/ensurepip.rst:125
-msgid "Raises an auditing event ensurepip.bootstrap with argument root."
+msgid ""
+"Raises an :ref:`auditing event <auditing>` ``ensurepip.bootstrap`` with "
+"argument ``root``."
 msgstr ""
 
 #: library/ensurepip.rst:129

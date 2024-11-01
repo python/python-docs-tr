@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -49,8 +49,8 @@ msgid ""
 "are not necessarily appropriate for your application."
 msgstr ""
 
-#: includes/wasm-notavail.rst:3
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
+#: library/ssl.rst:447 includes/wasm-notavail.rst:3
+msgid "Availability"
 msgstr ""
 
 #: includes/wasm-notavail.rst:5
@@ -124,12 +124,50 @@ msgstr ""
 msgid "Client socket example with default context and IPv4/IPv6 dual stack::"
 msgstr ""
 
+#: library/ssl.rst:84
+msgid ""
+"import socket\n"
+"import ssl\n"
+"\n"
+"hostname = 'www.python.org'\n"
+"context = ssl.create_default_context()\n"
+"\n"
+"with socket.create_connection((hostname, 443)) as sock:\n"
+"    with context.wrap_socket(sock, server_hostname=hostname) as ssock:\n"
+"        print(ssock.version())"
+msgstr ""
+
 #: library/ssl.rst:95
 msgid "Client socket example with custom context and IPv4::"
 msgstr ""
 
+#: library/ssl.rst:97
+msgid ""
+"hostname = 'www.python.org'\n"
+"# PROTOCOL_TLS_CLIENT requires valid cert chain and hostname\n"
+"context = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)\n"
+"context.load_verify_locations('path/to/cabundle.pem')\n"
+"\n"
+"with socket.socket(socket.AF_INET, socket.SOCK_STREAM, 0) as sock:\n"
+"    with context.wrap_socket(sock, server_hostname=hostname) as ssock:\n"
+"        print(ssock.version())"
+msgstr ""
+
 #: library/ssl.rst:107
 msgid "Server socket example listening on localhost IPv4::"
+msgstr ""
+
+#: library/ssl.rst:109
+msgid ""
+"context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)\n"
+"context.load_cert_chain('/path/to/certchain.pem', '/path/to/private.key')\n"
+"\n"
+"with socket.socket(socket.AF_INET, socket.SOCK_STREAM, 0) as sock:\n"
+"    sock.bind(('127.0.0.1', 8443))\n"
+"    sock.listen(5)\n"
+"    with context.wrap_socket(sock, server_side=True) as ssock:\n"
+"        conn, addr = ssock.accept()\n"
+"        ..."
 msgstr ""
 
 #: library/ssl.rst:121
@@ -199,6 +237,12 @@ msgid ""
 "SSL3.0 is widely considered to be `completely broken <https://en.wikipedia."
 "org/wiki/POODLE>`_. If you still wish to continue to use this function but "
 "still allow SSL 3.0 connections you can re-enable them using::"
+msgstr ""
+
+#: library/ssl.rst:170
+msgid ""
+"ctx = ssl.create_default_context(Purpose.CLIENT_AUTH)\n"
+"ctx.options &= ~ssl.OP_NO_SSLv3"
 msgstr ""
 
 #: library/ssl.rst:177
@@ -371,6 +415,17 @@ msgstr ""
 msgid "Here's an example:"
 msgstr ""
 
+#: library/ssl.rst:345
+msgid ""
+">>> import ssl\n"
+">>> timestamp = ssl.cert_time_to_seconds(\"Jan  5 09:34:43 2018 GMT\")\n"
+">>> timestamp  \n"
+"1515144883\n"
+">>> from datetime import datetime\n"
+">>> print(datetime.utcfromtimestamp(timestamp))  \n"
+"2018-01-05 09:34:43"
+msgstr ""
+
 #: library/ssl.rst:355
 msgid "\"notBefore\" or \"notAfter\" dates must use GMT (:rfc:`5280`)."
 msgstr ""
@@ -481,8 +536,11 @@ msgstr ""
 msgid "Example::"
 msgstr ""
 
-#: library/ssl.rst:447
-msgid ":ref:`Availability <availability>`: Windows."
+#: library/ssl.rst:428
+msgid ""
+">>> ssl.enum_certificates(\"CA\")\n"
+"[(b'data...', 'x509_asn', {'1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2'}),\n"
+" (b'data...', 'x509_asn', True)]"
 msgstr ""
 
 #: library/ssl.rst:438
@@ -936,14 +994,34 @@ msgstr ""
 msgid "The version string of the OpenSSL library loaded by the interpreter::"
 msgstr ""
 
+#: library/ssl.rst:920
+msgid ""
+">>> ssl.OPENSSL_VERSION\n"
+"'OpenSSL 1.0.2k  26 Jan 2017'"
+msgstr ""
+
 #: library/ssl.rst:927
 msgid ""
 "A tuple of five integers representing version information about the OpenSSL "
 "library::"
 msgstr ""
 
+#: library/ssl.rst:930
+msgid ""
+">>> ssl.OPENSSL_VERSION_INFO\n"
+"(1, 0, 2, 11, 15)"
+msgstr ""
+
 #: library/ssl.rst:937
 msgid "The raw version number of the OpenSSL library, as a single integer::"
+msgstr ""
+
+#: library/ssl.rst:939
+msgid ""
+">>> ssl.OPENSSL_VERSION_NUMBER\n"
+"268443839\n"
+">>> hex(ssl.OPENSSL_VERSION_NUMBER)\n"
+"'0x100020bf'"
 msgstr ""
 
 #: library/ssl.rst:950
@@ -1016,73 +1094,71 @@ msgid "SSL sockets provide the following methods of :ref:`socket-objects`:"
 msgstr ""
 
 #: library/ssl.rst:1024
-msgid ":meth:`~socket.socket.accept()`"
+msgid ":meth:`~socket.socket.accept`"
 msgstr ""
 
 #: library/ssl.rst:1025
-msgid ":meth:`~socket.socket.bind()`"
+msgid ":meth:`~socket.socket.bind`"
 msgstr ""
 
 #: library/ssl.rst:1026
-msgid ":meth:`~socket.socket.close()`"
+msgid ":meth:`~socket.socket.close`"
 msgstr ""
 
 #: library/ssl.rst:1027
-msgid ":meth:`~socket.socket.connect()`"
+msgid ":meth:`~socket.socket.connect`"
 msgstr ""
 
 #: library/ssl.rst:1028
-msgid ":meth:`~socket.socket.detach()`"
+msgid ":meth:`~socket.socket.detach`"
 msgstr ""
 
 #: library/ssl.rst:1029
-msgid ":meth:`~socket.socket.fileno()`"
+msgid ":meth:`~socket.socket.fileno`"
 msgstr ""
 
 #: library/ssl.rst:1030
-msgid ""
-":meth:`~socket.socket.getpeername()`, :meth:`~socket.socket.getsockname()`"
+msgid ":meth:`~socket.socket.getpeername`, :meth:`~socket.socket.getsockname`"
 msgstr ""
 
 #: library/ssl.rst:1031
-msgid ""
-":meth:`~socket.socket.getsockopt()`, :meth:`~socket.socket.setsockopt()`"
+msgid ":meth:`~socket.socket.getsockopt`, :meth:`~socket.socket.setsockopt`"
 msgstr ""
 
 #: library/ssl.rst:1032
 msgid ""
-":meth:`~socket.socket.gettimeout()`, :meth:`~socket.socket.settimeout()`, :"
-"meth:`~socket.socket.setblocking()`"
+":meth:`~socket.socket.gettimeout`, :meth:`~socket.socket.settimeout`, :meth:"
+"`~socket.socket.setblocking`"
 msgstr ""
 
 #: library/ssl.rst:1034
-msgid ":meth:`~socket.socket.listen()`"
+msgid ":meth:`~socket.socket.listen`"
 msgstr ""
 
 #: library/ssl.rst:1035
-msgid ":meth:`~socket.socket.makefile()`"
+msgid ":meth:`~socket.socket.makefile`"
 msgstr ""
 
 #: library/ssl.rst:1036
 msgid ""
-":meth:`~socket.socket.recv()`, :meth:`~socket.socket.recv_into()` (but "
-"passing a non-zero ``flags`` argument is not allowed)"
+":meth:`~socket.socket.recv`, :meth:`~socket.socket.recv_into` (but passing a "
+"non-zero ``flags`` argument is not allowed)"
 msgstr ""
 
 #: library/ssl.rst:1038
 msgid ""
-":meth:`~socket.socket.send()`, :meth:`~socket.socket.sendall()` (with the "
-"same limitation)"
+":meth:`~socket.socket.send`, :meth:`~socket.socket.sendall` (with the same "
+"limitation)"
 msgstr ""
 
 #: library/ssl.rst:1040
 msgid ""
-":meth:`~socket.socket.sendfile()` (but :mod:`os.sendfile` will be used for "
-"plain-text sockets only, else :meth:`~socket.socket.send()` will be used)"
+":meth:`~socket.socket.sendfile` (but :mod:`os.sendfile` will be used for "
+"plain-text sockets only, else :meth:`~socket.socket.send` will be used)"
 msgstr ""
 
 #: library/ssl.rst:1042
-msgid ":meth:`~socket.socket.shutdown()`"
+msgid ":meth:`~socket.socket.shutdown`"
 msgstr ""
 
 #: library/ssl.rst:1044
@@ -1257,6 +1333,29 @@ msgid ""
 "relative distinguished names (RDNs) given in the certificate's data "
 "structure for the respective fields, and each RDN is a sequence of name-"
 "value pairs.  Here is a real-world example::"
+msgstr ""
+
+#: library/ssl.rst:1166
+msgid ""
+"{'issuer': ((('countryName', 'IL'),),\n"
+"            (('organizationName', 'StartCom Ltd.'),),\n"
+"            (('organizationalUnitName',\n"
+"              'Secure Digital Certificate Signing'),),\n"
+"            (('commonName',\n"
+"              'StartCom Class 2 Primary Intermediate Server CA'),)),\n"
+" 'notAfter': 'Nov 22 08:15:19 2013 GMT',\n"
+" 'notBefore': 'Nov 21 03:09:52 2011 GMT',\n"
+" 'serialNumber': '95F0',\n"
+" 'subject': ((('description', '571208-SLe257oHY9fVQ07Z'),),\n"
+"             (('countryName', 'US'),),\n"
+"             (('stateOrProvinceName', 'California'),),\n"
+"             (('localityName', 'San Francisco'),),\n"
+"             (('organizationName', 'Electronic Frontier Foundation, "
+"Inc.'),),\n"
+"             (('commonName', '*.eff.org'),),\n"
+"             (('emailAddress', 'hostmaster@eff.org'),)),\n"
+" 'subjectAltName': (('DNS', '*.eff.org'), ('DNS', 'eff.org')),\n"
+" 'version': 3}"
 msgstr ""
 
 #: library/ssl.rst:1185
@@ -1628,6 +1727,12 @@ msgstr ""
 msgid "Example for a context with one CA cert and one other cert::"
 msgstr ""
 
+#: library/ssl.rst:1455
+msgid ""
+">>> context.cert_store_stats()\n"
+"{'crl': 0, 'x509_ca': 1, 'x509': 2}"
+msgstr ""
+
 #: library/ssl.rst:1463
 msgid ""
 "Load a private key and the corresponding certificate.  The *certfile* string "
@@ -1711,8 +1816,7 @@ msgstr ""
 msgid ""
 "The *capath* string, if present, is the path to a directory containing "
 "several CA certificates in PEM format, following an `OpenSSL specific layout "
-"<https://www.openssl.org/docs/manmaster/man3/SSL_CTX_load_verify_locations."
-"html>`_."
+"<https://docs.openssl.org/master/man3/SSL_CTX_load_verify_locations/>`_."
 msgstr ""
 
 #: library/ssl.rst:1527
@@ -1749,6 +1853,37 @@ msgid ""
 "meth:`SSLContext.set_ciphers`."
 msgstr ""
 
+#: library/ssl.rst:1557
+msgid ""
+">>> ctx = ssl.SSLContext(ssl.PROTOCOL_SSLv23)\n"
+">>> ctx.set_ciphers('ECDHE+AESGCM:!ECDSA')\n"
+">>> ctx.get_ciphers()\n"
+"[{'aead': True,\n"
+"  'alg_bits': 256,\n"
+"  'auth': 'auth-rsa',\n"
+"  'description': 'ECDHE-RSA-AES256-GCM-SHA384 TLSv1.2 Kx=ECDH     Au=RSA  '\n"
+"                 'Enc=AESGCM(256) Mac=AEAD',\n"
+"  'digest': None,\n"
+"  'id': 50380848,\n"
+"  'kea': 'kx-ecdhe',\n"
+"  'name': 'ECDHE-RSA-AES256-GCM-SHA384',\n"
+"  'protocol': 'TLSv1.2',\n"
+"  'strength_bits': 256,\n"
+"  'symmetric': 'aes-256-gcm'},\n"
+" {'aead': True,\n"
+"  'alg_bits': 128,\n"
+"  'auth': 'auth-rsa',\n"
+"  'description': 'ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 Kx=ECDH     Au=RSA  '\n"
+"                 'Enc=AESGCM(128) Mac=AEAD',\n"
+"  'digest': None,\n"
+"  'id': 50380847,\n"
+"  'kea': 'kx-ecdhe',\n"
+"  'name': 'ECDHE-RSA-AES128-GCM-SHA256',\n"
+"  'protocol': 'TLSv1.2',\n"
+"  'strength_bits': 128,\n"
+"  'symmetric': 'aes-128-gcm'}]"
+msgstr ""
+
 #: library/ssl.rst:1589
 msgid ""
 "Load a set of default \"certification authority\" (CA) certificates from a "
@@ -1762,10 +1897,10 @@ msgstr ""
 #: library/ssl.rst:1598
 msgid ""
 "Set the available ciphers for sockets created with this context. It should "
-"be a string in the `OpenSSL cipher list format <https://www.openssl.org/docs/"
-"manmaster/man1/ciphers.html>`_. If no cipher can be selected (because "
-"compile-time options or other configuration forbids use of all the specified "
-"ciphers), an :class:`SSLError` will be raised."
+"be a string in the `OpenSSL cipher list format <https://docs.openssl.org/"
+"master/man1/ciphers/>`_. If no cipher can be selected (because compile-time "
+"options or other configuration forbids use of all the specified ciphers), "
+"an :class:`SSLError` will be raised."
 msgstr ""
 
 #: library/ssl.rst:1606
@@ -2058,9 +2193,16 @@ msgstr ""
 msgid ""
 "Get statistics about the SSL sessions created or managed by this context. A "
 "dictionary is returned which maps the names of each `piece of information "
-"<https://www.openssl.org/docs/man1.1.1/man3/SSL_CTX_sess_number.html>`_ to "
-"their numeric values.  For example, here is the total number of hits and "
-"misses in the session cache since the context was created::"
+"<https://docs.openssl.org/1.1.1/man3/SSL_CTX_sess_number/>`_ to their "
+"numeric values.  For example, here is the total number of hits and misses in "
+"the session cache since the context was created::"
+msgstr ""
+
+#: library/ssl.rst:1836
+msgid ""
+">>> stats = context.session_stats()\n"
+">>> stats['hits'], stats['misses']\n"
+"(0, 0)"
 msgstr ""
 
 #: library/ssl.rst:1842
@@ -2074,6 +2216,20 @@ msgid ""
 "set back to :data:`CERT_NONE` as long as hostname checking is enabled. The :"
 "data:`PROTOCOL_TLS_CLIENT` protocol enables hostname checking by default. "
 "With other protocols, hostname checking must be enabled explicitly."
+msgstr ""
+
+#: library/ssl.rst:1855
+msgid ""
+"import socket, ssl\n"
+"\n"
+"context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)\n"
+"context.verify_mode = ssl.CERT_REQUIRED\n"
+"context.check_hostname = True\n"
+"context.load_default_certs()\n"
+"\n"
+"s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n"
+"ssl_sock = context.wrap_socket(s, server_hostname='www.verisign.com')\n"
+"ssl_sock.connect(('www.verisign.com', 443))"
 msgstr ""
 
 #: library/ssl.rst:1870
@@ -2185,9 +2341,9 @@ msgstr ""
 
 #: library/ssl.rst:1974
 msgid ""
-"An integer representing the `security level <https://www.openssl.org/docs/"
-"manmaster/man3/SSL_CTX_get_security_level.html>`_ for the context. This "
-"attribute is read-only."
+"An integer representing the `security level <https://docs.openssl.org/master/"
+"man3/SSL_CTX_get_security_level/>`_ for the context. This attribute is read-"
+"only."
 msgstr ""
 
 #: library/ssl.rst:1982
@@ -2261,6 +2417,13 @@ msgid ""
 "header line and a footer line::"
 msgstr ""
 
+#: library/ssl.rst:2047
+msgid ""
+"-----BEGIN CERTIFICATE-----\n"
+"... (certificate in base64 PEM encoding) ...\n"
+"-----END CERTIFICATE-----"
+msgstr ""
+
 #: library/ssl.rst:2052
 msgid "Certificate chains"
 msgstr ""
@@ -2279,6 +2442,19 @@ msgid ""
 "from our server certificate to the certificate of the certification "
 "authority that signed our server certificate, to the root certificate of the "
 "agency which issued the certification authority's certificate::"
+msgstr ""
+
+#: library/ssl.rst:2067
+msgid ""
+"-----BEGIN CERTIFICATE-----\n"
+"... (certificate for your server)...\n"
+"-----END CERTIFICATE-----\n"
+"-----BEGIN CERTIFICATE-----\n"
+"... (the certificate for the CA)...\n"
+"-----END CERTIFICATE-----\n"
+"-----BEGIN CERTIFICATE-----\n"
+"... (the root certificate for the CA's issuer)...\n"
+"-----END CERTIFICATE-----"
 msgstr ""
 
 #: library/ssl.rst:2078
@@ -2309,6 +2485,16 @@ msgid ""
 "should come before the first certificate in the certificate chain::"
 msgstr ""
 
+#: library/ssl.rst:2097
+msgid ""
+"-----BEGIN RSA PRIVATE KEY-----\n"
+"... (private key in base64 encoding) ...\n"
+"-----END RSA PRIVATE KEY-----\n"
+"-----BEGIN CERTIFICATE-----\n"
+"... (certificate in base64 PEM encoding) ...\n"
+"-----END CERTIFICATE-----"
+msgstr ""
+
 #: library/ssl.rst:2105
 msgid "Self-signed certificates"
 msgstr ""
@@ -2321,6 +2507,32 @@ msgid ""
 "a certification authority.  Another common practice is to generate a self-"
 "signed certificate.  The simplest way to do this is with the OpenSSL "
 "package, using something like the following::"
+msgstr ""
+
+#: library/ssl.rst:2114
+msgid ""
+"% openssl req -new -x509 -days 365 -nodes -out cert.pem -keyout cert.pem\n"
+"Generating a 1024 bit RSA private key\n"
+".......++++++\n"
+".............................++++++\n"
+"writing new private key to 'cert.pem'\n"
+"-----\n"
+"You are about to be asked to enter information that will be incorporated\n"
+"into your certificate request.\n"
+"What you are about to enter is what is called a Distinguished Name or a DN.\n"
+"There are quite a few fields but you can leave some blank\n"
+"For some fields there will be a default value,\n"
+"If you enter '.', the field will be left blank.\n"
+"-----\n"
+"Country Name (2 letter code) [AU]:US\n"
+"State or Province Name (full name) [Some-State]:MyState\n"
+"Locality Name (eg, city) []:Some City\n"
+"Organization Name (eg, company) [Internet Widgits Pty Ltd]:My Organization, "
+"Inc.\n"
+"Organizational Unit Name (eg, section) []:My Group\n"
+"Common Name (eg, YOUR name) []:myserver.mygroup.myorganization.com\n"
+"Email Address []:ops@myserver.mygroup.myorganization.com\n"
+"%"
 msgstr ""
 
 #: library/ssl.rst:2136
@@ -2344,6 +2556,16 @@ msgid ""
 "should use the following idiom::"
 msgstr ""
 
+#: library/ssl.rst:2150
+msgid ""
+"try:\n"
+"    import ssl\n"
+"except ImportError:\n"
+"    pass\n"
+"else:\n"
+"    ...  # do something that requires SSL support"
+msgstr ""
+
 #: library/ssl.rst:2158
 msgid "Client-side operation"
 msgstr ""
@@ -2354,10 +2576,20 @@ msgid ""
 "for client sockets, including automatic certificate verification::"
 msgstr ""
 
+#: library/ssl.rst:2163
+msgid ">>> context = ssl.create_default_context()"
+msgstr ""
+
 #: library/ssl.rst:2165
 msgid ""
 "If you prefer to tune security settings yourself, you might create a context "
 "from scratch (but beware that you might not get the settings right)::"
+msgstr ""
+
+#: library/ssl.rst:2169
+msgid ""
+">>> context = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)\n"
+">>> context.load_verify_locations(\"/etc/ssl/certs/ca-bundle.crt\")"
 msgstr ""
 
 #: library/ssl.rst:2172
@@ -2384,8 +2616,19 @@ msgid ""
 "properties like validity and identity of the hostname::"
 msgstr ""
 
+#: library/ssl.rst:2187
+msgid ""
+">>> conn = context.wrap_socket(socket.socket(socket.AF_INET),\n"
+"...                            server_hostname=\"www.python.org\")\n"
+">>> conn.connect((\"www.python.org\", 443))"
+msgstr ""
+
 #: library/ssl.rst:2191
 msgid "You may then fetch the certificate::"
+msgstr ""
+
+#: library/ssl.rst:2193
+msgid ">>> cert = conn.getpeercert()"
 msgstr ""
 
 #: library/ssl.rst:2195
@@ -2394,10 +2637,80 @@ msgid ""
 "service (that is, the HTTPS host ``www.python.org``)::"
 msgstr ""
 
+#: library/ssl.rst:2198
+msgid ""
+">>> pprint.pprint(cert)\n"
+"{'OCSP': ('http://ocsp.digicert.com',),\n"
+" 'caIssuers': ('http://cacerts.digicert.com/"
+"DigiCertSHA2ExtendedValidationServerCA.crt',),\n"
+" 'crlDistributionPoints': ('http://crl3.digicert.com/sha2-ev-server-g1."
+"crl',\n"
+"                           'http://crl4.digicert.com/sha2-ev-server-g1."
+"crl'),\n"
+" 'issuer': ((('countryName', 'US'),),\n"
+"            (('organizationName', 'DigiCert Inc'),),\n"
+"            (('organizationalUnitName', 'www.digicert.com'),),\n"
+"            (('commonName', 'DigiCert SHA2 Extended Validation Server "
+"CA'),)),\n"
+" 'notAfter': 'Sep  9 12:00:00 2016 GMT',\n"
+" 'notBefore': 'Sep  5 00:00:00 2014 GMT',\n"
+" 'serialNumber': '01BB6F00122B177F36CAB49CEA8B6B26',\n"
+" 'subject': ((('businessCategory', 'Private Organization'),),\n"
+"             (('1.3.6.1.4.1.311.60.2.1.3', 'US'),),\n"
+"             (('1.3.6.1.4.1.311.60.2.1.2', 'Delaware'),),\n"
+"             (('serialNumber', '3359300'),),\n"
+"             (('streetAddress', '16 Allen Rd'),),\n"
+"             (('postalCode', '03894-4801'),),\n"
+"             (('countryName', 'US'),),\n"
+"             (('stateOrProvinceName', 'NH'),),\n"
+"             (('localityName', 'Wolfeboro'),),\n"
+"             (('organizationName', 'Python Software Foundation'),),\n"
+"             (('commonName', 'www.python.org'),)),\n"
+" 'subjectAltName': (('DNS', 'www.python.org'),\n"
+"                    ('DNS', 'python.org'),\n"
+"                    ('DNS', 'pypi.org'),\n"
+"                    ('DNS', 'docs.python.org'),\n"
+"                    ('DNS', 'testpypi.org'),\n"
+"                    ('DNS', 'bugs.python.org'),\n"
+"                    ('DNS', 'wiki.python.org'),\n"
+"                    ('DNS', 'hg.python.org'),\n"
+"                    ('DNS', 'mail.python.org'),\n"
+"                    ('DNS', 'packaging.python.org'),\n"
+"                    ('DNS', 'pythonhosted.org'),\n"
+"                    ('DNS', 'www.pythonhosted.org'),\n"
+"                    ('DNS', 'test.pythonhosted.org'),\n"
+"                    ('DNS', 'us.pycon.org'),\n"
+"                    ('DNS', 'id.python.org')),\n"
+" 'version': 3}"
+msgstr ""
+
 #: library/ssl.rst:2238
 msgid ""
 "Now the SSL channel is established and the certificate verified, you can "
 "proceed to talk with the server::"
+msgstr ""
+
+#: library/ssl.rst:2241
+msgid ""
+">>> conn.sendall(b\"HEAD / HTTP/1.0\\r\\nHost: linuxfr.org\\r\\n\\r\\n\")\n"
+">>> pprint.pprint(conn.recv(1024).split(b\"\\r\\n\"))\n"
+"[b'HTTP/1.1 200 OK',\n"
+" b'Date: Sat, 18 Oct 2014 18:27:20 GMT',\n"
+" b'Server: nginx',\n"
+" b'Content-Type: text/html; charset=utf-8',\n"
+" b'X-Frame-Options: SAMEORIGIN',\n"
+" b'Content-Length: 45679',\n"
+" b'Accept-Ranges: bytes',\n"
+" b'Via: 1.1 varnish',\n"
+" b'Age: 2188',\n"
+" b'X-Served-By: cache-lcy1134-LCY',\n"
+" b'X-Cache: HIT',\n"
+" b'X-Cache-Hits: 11',\n"
+" b'Vary: Cookie',\n"
+" b'Strict-Transport-Security: max-age=63072000; includeSubDomains',\n"
+" b'Connection: close',\n"
+" b'',\n"
+" b'']"
 msgstr ""
 
 #: library/ssl.rst:2265
@@ -2413,6 +2726,18 @@ msgid ""
 "start waiting for clients to connect::"
 msgstr ""
 
+#: library/ssl.rst:2273
+msgid ""
+"import socket, ssl\n"
+"\n"
+"context = ssl.create_default_context(ssl.Purpose.CLIENT_AUTH)\n"
+"context.load_cert_chain(certfile=\"mycertfile\", keyfile=\"mykeyfile\")\n"
+"\n"
+"bindsocket = socket.socket()\n"
+"bindsocket.bind(('myaddr.example.com', 10023))\n"
+"bindsocket.listen(5)"
+msgstr ""
+
 #: library/ssl.rst:2282
 msgid ""
 "When a client connects, you'll call :meth:`accept` on the socket to get the "
@@ -2420,10 +2745,36 @@ msgid ""
 "wrap_socket` method to create a server-side SSL socket for the connection::"
 msgstr ""
 
+#: library/ssl.rst:2286
+msgid ""
+"while True:\n"
+"    newsocket, fromaddr = bindsocket.accept()\n"
+"    connstream = context.wrap_socket(newsocket, server_side=True)\n"
+"    try:\n"
+"        deal_with_client(connstream)\n"
+"    finally:\n"
+"        connstream.shutdown(socket.SHUT_RDWR)\n"
+"        connstream.close()"
+msgstr ""
+
 #: library/ssl.rst:2295
 msgid ""
 "Then you'll read data from the ``connstream`` and do something with it till "
 "you are finished with the client (or the client is finished with you)::"
+msgstr ""
+
+#: library/ssl.rst:2298
+msgid ""
+"def deal_with_client(connstream):\n"
+"    data = connstream.recv(1024)\n"
+"    # empty data means the client is finished with us\n"
+"    while data:\n"
+"        if not do_something(connstream, data):\n"
+"            # we'll assume do_something returns False\n"
+"            # when we're finished with client\n"
+"            break\n"
+"        data = connstream.recv(1024)\n"
+"    # finished with client"
 msgstr ""
 
 #: library/ssl.rst:2309
@@ -2494,6 +2845,18 @@ msgid ""
 "do_handshake` method has to be retried until it returns successfully.  Here "
 "is a synopsis using :func:`~select.select` to wait for the socket's "
 "readiness::"
+msgstr ""
+
+#: library/ssl.rst:2360
+msgid ""
+"while True:\n"
+"    try:\n"
+"        sock.do_handshake()\n"
+"        break\n"
+"    except ssl.SSLWantReadError:\n"
+"        select.select([sock], [], [])\n"
+"    except ssl.SSLWantWriteError:\n"
+"        select.select([], [sock], [])"
 msgstr ""
 
 #: library/ssl.rst:2371
@@ -2785,6 +3148,15 @@ msgid ""
 "create a trusted, secure connection to a SMTP server::"
 msgstr ""
 
+#: library/ssl.rst:2550
+msgid ""
+">>> import ssl, smtplib\n"
+">>> smtp = smtplib.SMTP(\"mail.python.org\", port=587)\n"
+">>> context = ssl.create_default_context()\n"
+">>> smtp.starttls(context=context)\n"
+"(220, b'2.0.0 Ready to start TLS')"
+msgstr ""
+
 #: library/ssl.rst:2556
 msgid ""
 "If a client certificate is needed for the connection, it can be added with :"
@@ -2811,9 +3183,9 @@ msgstr ""
 msgid ""
 "When calling the :class:`SSLContext` constructor directly, :const:"
 "`CERT_NONE` is the default.  Since it does not authenticate the other peer, "
-"it can be insecure, especially in client mode where most of time you would "
-"like to ensure the authenticity of the server you're talking to. Therefore, "
-"when in client mode, it is highly recommended to use :const:"
+"it can be insecure, especially in client mode where most of the time you "
+"would like to ensure the authenticity of the server you're talking to. "
+"Therefore, when in client mode, it is highly recommended to use :const:"
 "`CERT_REQUIRED`.  However, it is in itself not sufficient; you also have to "
 "check that the server certificate, which can be obtained by calling :meth:"
 "`SSLSocket.getpeercert`, matches the desired service.  For many protocols "
@@ -2849,6 +3221,13 @@ msgid ""
 "by default."
 msgstr ""
 
+#: library/ssl.rst:2602
+msgid ""
+">>> client_context = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)\n"
+">>> client_context.minimum_version = ssl.TLSVersion.TLSv1_3\n"
+">>> client_context.maximum_version = ssl.TLSVersion.TLSv1_3"
+msgstr ""
+
 #: library/ssl.rst:2607
 msgid ""
 "The SSL context created above will only allow TLSv1.3 and later (if "
@@ -2868,10 +3247,10 @@ msgid ""
 "`SSLContext.set_ciphers` method.  Starting from Python 3.2.3, the ssl module "
 "disables certain weak ciphers by default, but you may want to further "
 "restrict the cipher choice. Be sure to read OpenSSL's documentation about "
-"the `cipher list format <https://www.openssl.org/docs/man1.1.1/man1/ciphers."
-"html#CIPHER-LIST-FORMAT>`_. If you want to check which ciphers are enabled "
-"by a given cipher list, use :meth:`SSLContext.get_ciphers` or the ``openssl "
-"ciphers`` command on your system."
+"the `cipher list format <https://docs.openssl.org/1.1.1/man1/ciphers/#cipher-"
+"list-format>`_. If you want to check which ciphers are enabled by a given "
+"cipher list, use :meth:`SSLContext.get_ciphers` or the ``openssl ciphers`` "
+"command on your system."
 msgstr ""
 
 #: library/ssl.rst:2627

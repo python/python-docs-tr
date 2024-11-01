@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -198,10 +198,26 @@ msgid ""
 "the mappings last to first::"
 msgstr ""
 
+#: library/collections.rst:105
+msgid ""
+">>> baseline = {'music': 'bach', 'art': 'rembrandt'}\n"
+">>> adjustments = {'art': 'van gogh', 'opera': 'carmen'}\n"
+">>> list(ChainMap(adjustments, baseline))\n"
+"['music', 'art', 'opera']"
+msgstr ""
+
 #: library/collections.rst:110
 msgid ""
 "This gives the same ordering as a series of :meth:`dict.update` calls "
 "starting with the last mapping::"
+msgstr ""
+
+#: library/collections.rst:113
+msgid ""
+">>> combined = baseline.copy()\n"
+">>> combined.update(adjustments)\n"
+">>> list(combined)\n"
+"['music', 'art', 'opera']"
 msgstr ""
 
 #: library/collections.rst:118
@@ -251,6 +267,12 @@ msgstr ""
 msgid "Example of simulating Python's internal lookup chain::"
 msgstr ""
 
+#: library/collections.rst:153
+msgid ""
+"import builtins\n"
+"pylookup = ChainMap(locals(), globals(), vars(builtins))"
+msgstr ""
+
 #: library/collections.rst:156
 msgid ""
 "Example of letting user specified command-line arguments take precedence "
@@ -258,10 +280,48 @@ msgid ""
 "values::"
 msgstr ""
 
+#: library/collections.rst:159
+msgid ""
+"import os, argparse\n"
+"\n"
+"defaults = {'color': 'red', 'user': 'guest'}\n"
+"\n"
+"parser = argparse.ArgumentParser()\n"
+"parser.add_argument('-u', '--user')\n"
+"parser.add_argument('-c', '--color')\n"
+"namespace = parser.parse_args()\n"
+"command_line_args = {k: v for k, v in vars(namespace).items() if v is not "
+"None}\n"
+"\n"
+"combined = ChainMap(command_line_args, os.environ, defaults)\n"
+"print(combined['color'])\n"
+"print(combined['user'])"
+msgstr ""
+
 #: library/collections.rst:173
 msgid ""
 "Example patterns for using the :class:`ChainMap` class to simulate nested "
 "contexts::"
+msgstr ""
+
+#: library/collections.rst:176
+msgid ""
+"c = ChainMap()        # Create root context\n"
+"d = c.new_child()     # Create nested child context\n"
+"e = c.new_child()     # Child of c, independent from d\n"
+"e.maps[0]             # Current context dictionary -- like Python's "
+"locals()\n"
+"e.maps[-1]            # Root context -- like Python's globals()\n"
+"e.parents             # Enclosing context chain -- like Python's nonlocals\n"
+"\n"
+"d['x'] = 1            # Set value in current context\n"
+"d['x']                # Get first key in the chain of contexts\n"
+"del d['x']            # Delete from current context\n"
+"list(d)               # All nested values\n"
+"k in d                # Check all nested values\n"
+"len(d)                # Number of nested values\n"
+"d.items()             # All nested items\n"
+"dict(d)               # Flatten into a regular dictionary"
 msgstr ""
 
 #: library/collections.rst:192
@@ -272,6 +332,34 @@ msgid ""
 "subclass that updates keys found deeper in the chain::"
 msgstr ""
 
+#: library/collections.rst:197
+msgid ""
+"class DeepChainMap(ChainMap):\n"
+"    'Variant of ChainMap that allows direct updates to inner scopes'\n"
+"\n"
+"    def __setitem__(self, key, value):\n"
+"        for mapping in self.maps:\n"
+"            if key in mapping:\n"
+"                mapping[key] = value\n"
+"                return\n"
+"        self.maps[0][key] = value\n"
+"\n"
+"    def __delitem__(self, key):\n"
+"        for mapping in self.maps:\n"
+"            if key in mapping:\n"
+"                del mapping[key]\n"
+"                return\n"
+"        raise KeyError(key)\n"
+"\n"
+">>> d = DeepChainMap({'zebra': 'black'}, {'elephant': 'blue'}, {'lion': "
+"'yellow'})\n"
+">>> d['lion'] = 'orange'         # update an existing key two levels down\n"
+">>> d['snake'] = 'red'           # new keys get added to the topmost dict\n"
+">>> del d['elephant']            # remove an existing key one level down\n"
+">>> d                            # display result\n"
+"DeepChainMap({'zebra': 'black', 'snake': 'red'}, {}, {'lion': 'orange'})"
+msgstr ""
+
 #: library/collections.rst:223
 msgid ":class:`Counter` objects"
 msgstr ""
@@ -280,6 +368,24 @@ msgstr ""
 msgid ""
 "A counter tool is provided to support convenient and rapid tallies. For "
 "example::"
+msgstr ""
+
+#: library/collections.rst:228
+msgid ""
+">>> # Tally occurrences of words in a list\n"
+">>> cnt = Counter()\n"
+">>> for word in ['red', 'blue', 'red', 'green', 'blue', 'blue']:\n"
+"...     cnt[word] += 1\n"
+"...\n"
+">>> cnt\n"
+"Counter({'blue': 3, 'red': 2, 'green': 1})\n"
+"\n"
+">>> # Find the ten most common words in Hamlet\n"
+">>> import re\n"
+">>> words = re.findall(r'\\w+', open('hamlet.txt').read().lower())\n"
+">>> Counter(words).most_common(10)\n"
+"[('the', 1143), ('and', 966), ('to', 762), ('of', 669), ('i', 631),\n"
+" ('you', 554),  ('a', 546), ('my', 514), ('hamlet', 471), ('in', 451)]"
 msgstr ""
 
 #: library/collections.rst:245
@@ -391,6 +497,19 @@ msgstr ""
 msgid "Common patterns for working with :class:`Counter` objects::"
 msgstr ""
 
+#: library/collections.rst:356
+msgid ""
+"c.total()                       # total of all counts\n"
+"c.clear()                       # reset all counts\n"
+"list(c)                         # list unique elements\n"
+"set(c)                          # convert to a set\n"
+"dict(c)                         # convert to a regular dictionary\n"
+"c.items()                       # convert to a list of (elem, cnt) pairs\n"
+"Counter(dict(list_of_pairs))    # convert from a list of (elem, cnt) pairs\n"
+"c.most_common()[:-n-1:-1]       # n least common elements\n"
+"+c                              # remove zero and negative counts"
+msgstr ""
+
 #: library/collections.rst:366
 msgid ""
 "Several mathematical operations are provided for combining :class:`Counter` "
@@ -400,6 +519,24 @@ msgid ""
 "and maximum of corresponding counts.  Equality and inclusion compare "
 "corresponding counts.  Each operation can accept inputs with signed counts, "
 "but the output will exclude results with counts of zero or less."
+msgstr ""
+
+#: library/collections.rst:374
+msgid ""
+">>> c = Counter(a=3, b=1)\n"
+">>> d = Counter(a=1, b=2)\n"
+">>> c + d                       # add two counters together:  c[x] + d[x]\n"
+"Counter({'a': 4, 'b': 3})\n"
+">>> c - d                       # subtract (keeping only positive counts)\n"
+"Counter({'a': 2})\n"
+">>> c & d                       # intersection:  min(c[x], d[x])\n"
+"Counter({'a': 1, 'b': 1})\n"
+">>> c | d                       # union:  max(c[x], d[x])\n"
+"Counter({'a': 3, 'b': 2})\n"
+">>> c == d                      # equality:  c[x] == d[x]\n"
+"False\n"
+">>> c <= d                      # inclusion:  c[x] <= d[x]\n"
+"False"
 msgstr ""
 
 #: library/collections.rst:391
@@ -485,6 +622,11 @@ msgstr ""
 msgid ""
 "To enumerate all distinct multisets of a given size over a given set of "
 "elements, see :func:`itertools.combinations_with_replacement`::"
+msgstr ""
+
+#: library/collections.rst:447
+msgid ""
+"map(Counter, combinations_with_replacement('ABC', 2)) # --> AA AB AC BB BC CC"
 msgstr ""
 
 #: library/collections.rst:451
@@ -642,6 +784,62 @@ msgstr ""
 msgid "Example:"
 msgstr ""
 
+#: library/collections.rst:596
+msgid ""
+">>> from collections import deque\n"
+">>> d = deque('ghi')                 # make a new deque with three items\n"
+">>> for elem in d:                   # iterate over the deque's elements\n"
+"...     print(elem.upper())\n"
+"G\n"
+"H\n"
+"I\n"
+"\n"
+">>> d.append('j')                    # add a new entry to the right side\n"
+">>> d.appendleft('f')                # add a new entry to the left side\n"
+">>> d                                # show the representation of the deque\n"
+"deque(['f', 'g', 'h', 'i', 'j'])\n"
+"\n"
+">>> d.pop()                          # return and remove the rightmost item\n"
+"'j'\n"
+">>> d.popleft()                      # return and remove the leftmost item\n"
+"'f'\n"
+">>> list(d)                          # list the contents of the deque\n"
+"['g', 'h', 'i']\n"
+">>> d[0]                             # peek at leftmost item\n"
+"'g'\n"
+">>> d[-1]                            # peek at rightmost item\n"
+"'i'\n"
+"\n"
+">>> list(reversed(d))                # list the contents of a deque in "
+"reverse\n"
+"['i', 'h', 'g']\n"
+">>> 'h' in d                         # search the deque\n"
+"True\n"
+">>> d.extend('jkl')                  # add multiple elements at once\n"
+">>> d\n"
+"deque(['g', 'h', 'i', 'j', 'k', 'l'])\n"
+">>> d.rotate(1)                      # right rotation\n"
+">>> d\n"
+"deque(['l', 'g', 'h', 'i', 'j', 'k'])\n"
+">>> d.rotate(-1)                     # left rotation\n"
+">>> d\n"
+"deque(['g', 'h', 'i', 'j', 'k', 'l'])\n"
+"\n"
+">>> deque(reversed(d))               # make a new deque in reverse order\n"
+"deque(['l', 'k', 'j', 'i', 'h', 'g'])\n"
+">>> d.clear()                        # empty the deque\n"
+">>> d.pop()                          # cannot pop from an empty deque\n"
+"Traceback (most recent call last):\n"
+"    File \"<pyshell#6>\", line 1, in -toplevel-\n"
+"        d.pop()\n"
+"IndexError: pop from an empty deque\n"
+"\n"
+">>> d.extendleft('abc')              # extendleft() reverses the input "
+"order\n"
+">>> d\n"
+"deque(['c', 'b', 'a'])"
+msgstr ""
+
 #: library/collections.rst:651
 msgid ":class:`deque` Recipes"
 msgstr ""
@@ -656,10 +854,33 @@ msgid ""
 "in Unix::"
 msgstr ""
 
+#: library/collections.rst:658
+msgid ""
+"def tail(filename, n=10):\n"
+"    'Return the last n lines of a file'\n"
+"    with open(filename) as f:\n"
+"        return deque(f, n)"
+msgstr ""
+
 #: library/collections.rst:663
 msgid ""
 "Another approach to using deques is to maintain a sequence of recently added "
 "elements by appending to the right and popping to the left::"
+msgstr ""
+
+#: library/collections.rst:666
+msgid ""
+"def moving_average(iterable, n=3):\n"
+"    # moving_average([40, 30, 50, 46, 39, 44]) --> 40.0 42.0 45.0 43.0\n"
+"    # https://en.wikipedia.org/wiki/Moving_average\n"
+"    it = iter(iterable)\n"
+"    d = deque(itertools.islice(it, n-1))\n"
+"    d.appendleft(0)\n"
+"    s = sum(d)\n"
+"    for elem in it:\n"
+"        s += elem - d.popleft()\n"
+"        d.append(elem)\n"
+"        yield s / n"
 msgstr ""
 
 #: library/collections.rst:678
@@ -672,11 +893,34 @@ msgid ""
 "rotate` method::"
 msgstr ""
 
+#: library/collections.rst:685
+msgid ""
+"def roundrobin(*iterables):\n"
+"    \"roundrobin('ABC', 'D', 'EF') --> A D E B F C\"\n"
+"    iterators = deque(map(iter, iterables))\n"
+"    while iterators:\n"
+"        try:\n"
+"            while True:\n"
+"                yield next(iterators[0])\n"
+"                iterators.rotate(-1)\n"
+"        except StopIteration:\n"
+"            # Remove an exhausted iterator.\n"
+"            iterators.popleft()"
+msgstr ""
+
 #: library/collections.rst:697
 msgid ""
 "The :meth:`~deque.rotate` method provides a way to implement :class:`deque` "
 "slicing and deletion.  For example, a pure Python implementation of ``del "
 "d[n]`` relies on the ``rotate()`` method to position elements to be popped::"
+msgstr ""
+
+#: library/collections.rst:701
+msgid ""
+"def delete_nth(d, n):\n"
+"    d.rotate(-n)\n"
+"    d.popleft()\n"
+"    d.rotate(n)"
 msgstr ""
 
 #: library/collections.rst:706
@@ -760,7 +1004,7 @@ msgid ""
 "absent."
 msgstr ""
 
-#: library/collections.rst:1182
+#: library/collections.rst:1185
 msgid ""
 "Added merge (``|``) and update (``|=``) operators, specified in :pep:`584`."
 msgstr ""
@@ -872,8 +1116,8 @@ msgstr ""
 
 #: library/collections.rst:877
 msgid ""
-"If *module* is defined, the ``__module__`` attribute of the named tuple is "
-"set to that value."
+"If *module* is defined, the :attr:`~type.__module__` attribute of the named "
+"tuple is set to that value."
 msgstr ""
 
 #: library/collections.rst:880
@@ -911,10 +1155,46 @@ msgid ""
 "Added the *defaults* parameter and the :attr:`_field_defaults` attribute."
 msgstr ""
 
+#: library/collections.rst:903
+msgid ""
+">>> # Basic example\n"
+">>> Point = namedtuple('Point', ['x', 'y'])\n"
+">>> p = Point(11, y=22)     # instantiate with positional or keyword "
+"arguments\n"
+">>> p[0] + p[1]             # indexable like the plain tuple (11, 22)\n"
+"33\n"
+">>> x, y = p                # unpack like a regular tuple\n"
+">>> x, y\n"
+"(11, 22)\n"
+">>> p.x + p.y               # fields also accessible by name\n"
+"33\n"
+">>> p                       # readable __repr__ with a name=value style\n"
+"Point(x=11, y=22)"
+msgstr ""
+
 #: library/collections.rst:919
 msgid ""
 "Named tuples are especially useful for assigning field names to result "
 "tuples returned by the :mod:`csv` or :mod:`sqlite3` modules::"
+msgstr ""
+
+#: library/collections.rst:922
+msgid ""
+"EmployeeRecord = namedtuple('EmployeeRecord', 'name, age, title, department, "
+"paygrade')\n"
+"\n"
+"import csv\n"
+"for emp in map(EmployeeRecord._make, csv.reader(open(\"employees.csv\", "
+"\"rb\"))):\n"
+"    print(emp.name, emp.title)\n"
+"\n"
+"import sqlite3\n"
+"conn = sqlite3.connect('/companydata')\n"
+"cursor = conn.cursor()\n"
+"cursor.execute('SELECT name, age, title, department, paygrade FROM "
+"employees')\n"
+"for emp in map(EmployeeRecord._make, cursor.fetchall()):\n"
+"    print(emp.name, emp.title)"
 msgstr ""
 
 #: library/collections.rst:935
@@ -929,10 +1209,24 @@ msgid ""
 "Class method that makes a new instance from an existing sequence or iterable."
 msgstr ""
 
+#: library/collections.rst:943
+msgid ""
+">>> t = [11, 22]\n"
+">>> Point._make(t)\n"
+"Point(x=11, y=22)"
+msgstr ""
+
 #: library/collections.rst:951
 msgid ""
 "Return a new :class:`dict` which maps field names to their corresponding "
 "values:"
+msgstr ""
+
+#: library/collections.rst:954
+msgid ""
+">>> p = Point(x=11, y=22)\n"
+">>> p._asdict()\n"
+"{'x': 11, 'y': 22}"
 msgstr ""
 
 #: library/collections.rst:960
@@ -953,14 +1247,45 @@ msgid ""
 "values::"
 msgstr ""
 
+#: library/collections.rst:975
+msgid ""
+">>> p = Point(x=11, y=22)\n"
+">>> p._replace(x=33)\n"
+"Point(x=33, y=22)\n"
+"\n"
+">>> for partnum, record in inventory.items():\n"
+"...     inventory[partnum] = record._replace(price=newprices[partnum], "
+"timestamp=time.now())"
+msgstr ""
+
 #: library/collections.rst:984
 msgid ""
 "Tuple of strings listing the field names.  Useful for introspection and for "
 "creating new named tuple types from existing named tuples."
 msgstr ""
 
+#: library/collections.rst:987
+msgid ""
+">>> p._fields            # view the field names\n"
+"('x', 'y')\n"
+"\n"
+">>> Color = namedtuple('Color', 'red green blue')\n"
+">>> Pixel = namedtuple('Pixel', Point._fields + Color._fields)\n"
+">>> Pixel(11, 22, 128, 255, 0)\n"
+"Pixel(x=11, y=22, red=128, green=255, blue=0)"
+msgstr ""
+
 #: library/collections.rst:999
 msgid "Dictionary mapping field names to default values."
+msgstr ""
+
+#: library/collections.rst:1001
+msgid ""
+">>> Account = namedtuple('Account', ['type', 'balance'], defaults=[0])\n"
+">>> Account._field_defaults\n"
+"{'balance': 0}\n"
+">>> Account('premium')\n"
+"Account(type='premium', balance=0)"
 msgstr ""
 
 #: library/collections.rst:1009
@@ -980,6 +1305,23 @@ msgid ""
 "Since a named tuple is a regular Python class, it is easy to add or change "
 "functionality with a subclass.  Here is how to add a calculated field and a "
 "fixed-width print format:"
+msgstr ""
+
+#: library/collections.rst:1026
+msgid ""
+">>> class Point(namedtuple('Point', ['x', 'y'])):\n"
+"...     __slots__ = ()\n"
+"...     @property\n"
+"...     def hypot(self):\n"
+"...         return (self.x ** 2 + self.y ** 2) ** 0.5\n"
+"...     def __str__(self):\n"
+"...         return 'Point: x=%6.3f  y=%6.3f  hypot=%6.3f' % (self.x, self.y, "
+"self.hypot)\n"
+"\n"
+">>> for p in Point(3, 4), Point(14, 5/7):\n"
+"...     print(p)\n"
+"Point: x= 3.000  y= 4.000  hypot= 5.000\n"
+"Point: x=14.000  y= 0.714  hypot=14.018"
 msgstr ""
 
 #: library/collections.rst:1041
@@ -1011,6 +1353,14 @@ msgid ""
 "See :class:`typing.NamedTuple` for a way to add type hints for named "
 "tuples.  It also provides an elegant notation using the :keyword:`class` "
 "keyword::"
+msgstr ""
+
+#: library/collections.rst:1067
+msgid ""
+"class Component(NamedTuple):\n"
+"    part_number: int\n"
+"    weight: float\n"
+"    description: Optional[str] = None"
 msgstr ""
 
 #: library/collections.rst:1072
@@ -1136,39 +1486,54 @@ msgid ""
 "if *last* is false.  Raises :exc:`KeyError` if the *key* does not exist:"
 msgstr ""
 
+#: library/collections.rst:1151
+msgid ""
+">>> d = OrderedDict.fromkeys('abcde')\n"
+">>> d.move_to_end('b')\n"
+">>> ''.join(d)\n"
+"'acdeb'\n"
+">>> d.move_to_end('b', last=False)\n"
+">>> ''.join(d)\n"
+"'bacde'"
+msgstr ""
+
 #: library/collections.rst:1163
 msgid ""
 "In addition to the usual mapping methods, ordered dictionaries also support "
 "reverse iteration using :func:`reversed`."
 msgstr ""
 
-#: library/collections.rst:1166
+#: library/collections.rst:1168
 msgid ""
 "Equality tests between :class:`OrderedDict` objects are order-sensitive and "
-"are implemented as ``list(od1.items())==list(od2.items())``. Equality tests "
-"between :class:`OrderedDict` objects and other :class:`~collections.abc."
-"Mapping` objects are order-insensitive like regular dictionaries.  This "
-"allows :class:`OrderedDict` objects to be substituted anywhere a regular "
-"dictionary is used."
+"are roughly equivalent to ``list(od1.items())==list(od2.items())``."
 msgstr ""
 
-#: library/collections.rst:1173
+#: library/collections.rst:1171
+msgid ""
+"Equality tests between :class:`OrderedDict` objects and other :class:"
+"`~collections.abc.Mapping` objects are order-insensitive like regular "
+"dictionaries.  This allows :class:`OrderedDict` objects to be substituted "
+"anywhere a regular dictionary is used."
+msgstr ""
+
+#: library/collections.rst:1176
 msgid ""
 "The items, keys, and values :term:`views <dictionary view>` of :class:"
 "`OrderedDict` now support reverse iteration using :func:`reversed`."
 msgstr ""
 
-#: library/collections.rst:1177
+#: library/collections.rst:1180
 msgid ""
 "With the acceptance of :pep:`468`, order is retained for keyword arguments "
 "passed to the :class:`OrderedDict` constructor and its :meth:`update` method."
 msgstr ""
 
-#: library/collections.rst:1187
+#: library/collections.rst:1190
 msgid ":class:`OrderedDict` Examples and Recipes"
 msgstr ""
 
-#: library/collections.rst:1189
+#: library/collections.rst:1192
 msgid ""
 "It is straightforward to create an ordered dictionary variant that remembers "
 "the order the keys were *last* inserted. If a new entry overwrites an "
@@ -1176,17 +1541,92 @@ msgid ""
 "end::"
 msgstr ""
 
-#: library/collections.rst:1201
+#: library/collections.rst:1197
+msgid ""
+"class LastUpdatedOrderedDict(OrderedDict):\n"
+"    'Store items in the order the keys were last added'\n"
+"\n"
+"    def __setitem__(self, key, value):\n"
+"        super().__setitem__(key, value)\n"
+"        self.move_to_end(key)"
+msgstr ""
+
+#: library/collections.rst:1204
 msgid ""
 "An :class:`OrderedDict` would also be useful for implementing variants of :"
 "func:`functools.lru_cache`:"
 msgstr ""
 
-#: library/collections.rst:1300
+#: library/collections.rst:1207
+msgid ""
+"from collections import OrderedDict\n"
+"from time import time\n"
+"\n"
+"class TimeBoundedLRU:\n"
+"    \"LRU Cache that invalidates and refreshes old entries.\"\n"
+"\n"
+"    def __init__(self, func, maxsize=128, maxage=30):\n"
+"        self.cache = OrderedDict()      # { args : (timestamp, result)}\n"
+"        self.func = func\n"
+"        self.maxsize = maxsize\n"
+"        self.maxage = maxage\n"
+"\n"
+"    def __call__(self, *args):\n"
+"        if args in self.cache:\n"
+"            self.cache.move_to_end(args)\n"
+"            timestamp, result = self.cache[args]\n"
+"            if time() - timestamp <= self.maxage:\n"
+"                return result\n"
+"        result = self.func(*args)\n"
+"        self.cache[args] = time(), result\n"
+"        if len(self.cache) > self.maxsize:\n"
+"            self.cache.popitem(0)\n"
+"        return result"
+msgstr ""
+
+#: library/collections.rst:1234
+msgid ""
+"class MultiHitLRUCache:\n"
+"    \"\"\" LRU cache that defers caching a result until\n"
+"        it has been requested multiple times.\n"
+"\n"
+"        To avoid flushing the LRU cache with one-time requests,\n"
+"        we don't cache until a request has been made more than once.\n"
+"\n"
+"    \"\"\"\n"
+"\n"
+"    def __init__(self, func, maxsize=128, maxrequests=4096, cache_after=1):\n"
+"        self.requests = OrderedDict()   # { uncached_key : request_count }\n"
+"        self.cache = OrderedDict()      # { cached_key : function_result }\n"
+"        self.func = func\n"
+"        self.maxrequests = maxrequests  # max number of uncached requests\n"
+"        self.maxsize = maxsize          # max number of stored return "
+"values\n"
+"        self.cache_after = cache_after\n"
+"\n"
+"    def __call__(self, *args):\n"
+"        if args in self.cache:\n"
+"            self.cache.move_to_end(args)\n"
+"            return self.cache[args]\n"
+"        result = self.func(*args)\n"
+"        self.requests[args] = self.requests.get(args, 0) + 1\n"
+"        if self.requests[args] <= self.cache_after:\n"
+"            self.requests.move_to_end(args)\n"
+"            if len(self.requests) > self.maxrequests:\n"
+"                self.requests.popitem(0)\n"
+"        else:\n"
+"            self.requests.pop(args, None)\n"
+"            self.cache[args] = result\n"
+"            if len(self.cache) > self.maxsize:\n"
+"                self.cache.popitem(0)\n"
+"        return result"
+msgstr ""
+
+#: library/collections.rst:1303
 msgid ":class:`UserDict` objects"
 msgstr ""
 
-#: library/collections.rst:1302
+#: library/collections.rst:1305
 msgid ""
 "The class, :class:`UserDict` acts as a wrapper around dictionary objects. "
 "The need for this class has been partially supplanted by the ability to "
@@ -1194,7 +1634,7 @@ msgid ""
 "work with because the underlying dictionary is accessible as an attribute."
 msgstr ""
 
-#: library/collections.rst:1310
+#: library/collections.rst:1313
 msgid ""
 "Class that simulates a dictionary.  The instance's contents are kept in a "
 "regular dictionary, which is accessible via the :attr:`data` attribute of :"
@@ -1203,22 +1643,22 @@ msgid ""
 "not be kept, allowing it to be used for other purposes."
 msgstr ""
 
-#: library/collections.rst:1316
+#: library/collections.rst:1319
 msgid ""
 "In addition to supporting the methods and operations of mappings, :class:"
 "`UserDict` instances provide the following attribute:"
 msgstr ""
 
-#: library/collections.rst:1321
+#: library/collections.rst:1324
 msgid ""
 "A real dictionary used to store the contents of the :class:`UserDict` class."
 msgstr ""
 
-#: library/collections.rst:1327
+#: library/collections.rst:1330
 msgid ":class:`UserList` objects"
 msgstr ""
 
-#: library/collections.rst:1329
+#: library/collections.rst:1332
 msgid ""
 "This class acts as a wrapper around list objects.  It is a useful base class "
 "for your own list-like classes which can inherit from them and override "
@@ -1226,14 +1666,14 @@ msgid ""
 "lists."
 msgstr ""
 
-#: library/collections.rst:1334
+#: library/collections.rst:1337
 msgid ""
 "The need for this class has been partially supplanted by the ability to "
 "subclass directly from :class:`list`; however, this class can be easier to "
 "work with because the underlying list is accessible as an attribute."
 msgstr ""
 
-#: library/collections.rst:1340
+#: library/collections.rst:1343
 msgid ""
 "Class that simulates a list.  The instance's contents are kept in a regular "
 "list, which is accessible via the :attr:`data` attribute of :class:"
@@ -1242,19 +1682,19 @@ msgid ""
 "for example a real Python list or a :class:`UserList` object."
 msgstr ""
 
-#: library/collections.rst:1346
+#: library/collections.rst:1349
 msgid ""
 "In addition to supporting the methods and operations of mutable sequences, :"
 "class:`UserList` instances provide the following attribute:"
 msgstr ""
 
-#: library/collections.rst:1351
+#: library/collections.rst:1354
 msgid ""
 "A real :class:`list` object used to store the contents of the :class:"
 "`UserList` class."
 msgstr ""
 
-#: library/collections.rst:1354
+#: library/collections.rst:1357
 msgid ""
 "**Subclassing requirements:** Subclasses of :class:`UserList` are expected "
 "to offer a constructor which can be called with either no arguments or one "
@@ -1264,7 +1704,7 @@ msgid ""
 "object used as a data source."
 msgstr ""
 
-#: library/collections.rst:1361
+#: library/collections.rst:1364
 msgid ""
 "If a derived class does not wish to comply with this requirement, all of the "
 "special methods supported by this class will need to be overridden; please "
@@ -1272,11 +1712,11 @@ msgid ""
 "provided in that case."
 msgstr ""
 
-#: library/collections.rst:1367
+#: library/collections.rst:1370
 msgid ":class:`UserString` objects"
 msgstr ""
 
-#: library/collections.rst:1369
+#: library/collections.rst:1372
 msgid ""
 "The class, :class:`UserString` acts as a wrapper around string objects. The "
 "need for this class has been partially supplanted by the ability to subclass "
@@ -1284,7 +1724,7 @@ msgid ""
 "because the underlying string is accessible as an attribute."
 msgstr ""
 
-#: library/collections.rst:1377
+#: library/collections.rst:1380
 msgid ""
 "Class that simulates a string object.  The instance's content is kept in a "
 "regular string object, which is accessible via the :attr:`data` attribute "
@@ -1293,19 +1733,19 @@ msgid ""
 "converted into a string using the built-in :func:`str` function."
 msgstr ""
 
-#: library/collections.rst:1384
+#: library/collections.rst:1387
 msgid ""
 "In addition to supporting the methods and operations of strings, :class:"
 "`UserString` instances provide the following attribute:"
 msgstr ""
 
-#: library/collections.rst:1389
+#: library/collections.rst:1392
 msgid ""
 "A real :class:`str` object used to store the contents of the :class:"
 "`UserString` class."
 msgstr ""
 
-#: library/collections.rst:1392
+#: library/collections.rst:1395
 msgid ""
 "New methods ``__getnewargs__``, ``__rmod__``, ``casefold``, ``format_map``, "
 "``isprintable``, and ``maketrans``."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -123,8 +123,8 @@ msgstr ""
 
 #: library/tkinter.rst:61
 msgid ""
-"`Python GUI programming with Tkinter <https://www.packtpub.com/product/"
-"python-gui-programming-with-tkinter/9781788835886>`_"
+"`Python GUI programming with Tkinter <https://www.packtpub.com/en-us/product/"
+"python-gui-programming-with-tkinter-9781788835886>`_"
 msgstr ""
 
 #: library/tkinter.rst:62
@@ -231,6 +231,12 @@ msgid ""
 "Support for Tkinter is spread across several modules. Most applications will "
 "need the main :mod:`tkinter` module, as well as the :mod:`tkinter.ttk` "
 "module, which provides the modern themed widget set and API::"
+msgstr ""
+
+#: library/tkinter.rst:123
+msgid ""
+"from tkinter import *\n"
+"from tkinter import ttk"
 msgstr ""
 
 #: library/tkinter.rst:129
@@ -535,6 +541,18 @@ msgid ""
 "some key concepts you'll need to know."
 msgstr ""
 
+#: library/tkinter.rst:290
+msgid ""
+"from tkinter import *\n"
+"from tkinter import ttk\n"
+"root = Tk()\n"
+"frm = ttk.Frame(root, padding=10)\n"
+"frm.grid()\n"
+"ttk.Label(frm, text=\"Hello World!\").grid(column=0, row=0)\n"
+"ttk.Button(frm, text=\"Quit\", command=root.destroy).grid(column=1, row=0)\n"
+"root.mainloop()"
+msgstr ""
+
 #: library/tkinter.rst:300
 msgid ""
 "After the imports, the next line creates an instance of the :class:`Tk` "
@@ -659,6 +677,15 @@ msgid ""
 "script above."
 msgstr ""
 
+#: library/tkinter.rst:371
+msgid ""
+"ttk::frame .frm -padding 10\n"
+"grid .frm\n"
+"grid [ttk::label .frm.lbl -text \"Hello World!\"] -column 0 -row 0\n"
+"grid [ttk::button .frm.btn -text \"Quit\" -command \"destroy .\"] -column 1 -"
+"row 0"
+msgstr ""
+
 #: library/tkinter.rst:377
 msgid ""
 "Tcl's syntax is similar to many shell languages, where the first word is the "
@@ -737,6 +764,12 @@ msgid ""
 "values. Use :meth:`keys` to get just the names of each option."
 msgstr ""
 
+#: library/tkinter.rst:427
+msgid ""
+"btn = ttk.Button(frm, ...)\n"
+"print(btn.configure().keys())"
+msgstr ""
+
 #: library/tkinter.rst:430
 msgid ""
 "As most widgets have many configuration options in common, it can be useful "
@@ -745,12 +778,22 @@ msgid ""
 "that."
 msgstr ""
 
+#: library/tkinter.rst:437
+msgid "print(set(btn.configure().keys()) - set(frm.configure().keys()))"
+msgstr ""
+
 #: library/tkinter.rst:439
 msgid ""
 "Similarly, you can find the available methods for a widget object using the "
 "standard :func:`dir` function. If you try it, you'll see there are over 200 "
 "common widget methods, so again identifying those specific to a widget class "
 "is helpful."
+msgstr ""
+
+#: library/tkinter.rst:446
+msgid ""
+"print(dir(btn))\n"
+"print(set(dir(btn)) - set(dir(frm)))"
 msgstr ""
 
 #: library/tkinter.rst:451
@@ -774,12 +817,24 @@ msgid ""
 "parameters, e.g."
 msgstr ""
 
+#: library/tkinter.rst:465
+msgid ""
+"destroy .\n"
+"grid .frm.btn -column 0 -row 0"
+msgstr ""
+
 #: library/tkinter.rst:468
 msgid ""
 "Others, however, look more like methods called on a widget object (in fact, "
 "when you create a widget in Tcl/Tk, it creates a Tcl command with the name "
 "of the widget pathname, with the first parameter to that command being the "
 "name of a method to call)."
+msgstr ""
+
+#: library/tkinter.rst:475
+msgid ""
+".frm.btn invoke\n"
+".frm.lbl configure -text \"Goodbye\""
 msgstr ""
 
 #: library/tkinter.rst:479
@@ -920,14 +975,28 @@ msgstr ""
 msgid "At object creation time, using keyword arguments"
 msgstr ""
 
+#: library/tkinter.rst:574
+msgid "fred = Button(self, fg=\"red\", bg=\"blue\")"
+msgstr ""
+
 #: library/tkinter.rst:576
 msgid "After object creation, treating the option name like a dictionary index"
+msgstr ""
+
+#: library/tkinter.rst:579
+msgid ""
+"fred[\"fg\"] = \"red\"\n"
+"fred[\"bg\"] = \"blue\""
 msgstr ""
 
 #: library/tkinter.rst:582
 msgid ""
 "Use the config() method to update multiple attrs subsequent to object "
 "creation"
+msgstr ""
+
+#: library/tkinter.rst:585
+msgid "fred.config(fg=\"red\", bg=\"blue\")"
 msgstr ""
 
 #: library/tkinter.rst:587
@@ -1043,6 +1112,12 @@ msgstr ""
 msgid "Example::"
 msgstr ""
 
+#: library/tkinter.rst:630
+msgid ""
+">>> print(fred.config())\n"
+"{'relief': ('relief', 'relief', 'Relief', 'raised', 'groove')}"
+msgstr ""
+
 #: library/tkinter.rst:633
 msgid ""
 "Of course, the dictionary printed will include all the options available and "
@@ -1088,6 +1163,13 @@ msgid ""
 "The pack() method can be called with keyword-option/value pairs that control "
 "where the widget is to appear within its container, and how it is to behave "
 "when the main application window is resized.  Here are some examples::"
+msgstr ""
+
+#: library/tkinter.rst:666
+msgid ""
+"fred.pack()                     # defaults to side = \"top\"\n"
+"fred.pack(side=\"left\")\n"
+"fred.pack(expand=1)"
 msgstr ""
 
 #: library/tkinter.rst:672
@@ -1188,6 +1270,39 @@ msgstr ""
 msgid "For example::"
 msgstr ""
 
+#: library/tkinter.rst:720
+msgid ""
+"import tkinter as tk\n"
+"\n"
+"class App(tk.Frame):\n"
+"    def __init__(self, master):\n"
+"        super().__init__(master)\n"
+"        self.pack()\n"
+"\n"
+"        self.entrythingy = tk.Entry()\n"
+"        self.entrythingy.pack()\n"
+"\n"
+"        # Create the application variable.\n"
+"        self.contents = tk.StringVar()\n"
+"        # Set it to some value.\n"
+"        self.contents.set(\"this is a variable\")\n"
+"        # Tell the entry widget to watch this variable.\n"
+"        self.entrythingy[\"textvariable\"] = self.contents\n"
+"\n"
+"        # Define a callback for when the user hits return.\n"
+"        # It prints the current value of the variable.\n"
+"        self.entrythingy.bind('<Key-Return>',\n"
+"                             self.print_contents)\n"
+"\n"
+"    def print_contents(self, event):\n"
+"        print(\"Hi. The current entry content is:\",\n"
+"              self.contents.get())\n"
+"\n"
+"root = tk.Tk()\n"
+"myapp = App(root)\n"
+"myapp.mainloop()"
+msgstr ""
+
 #: library/tkinter.rst:751
 msgid "The Window Manager"
 msgstr ""
@@ -1215,6 +1330,28 @@ msgstr ""
 
 #: library/tkinter.rst:769
 msgid "Here are some examples of typical usage::"
+msgstr ""
+
+#: library/tkinter.rst:771
+msgid ""
+"import tkinter as tk\n"
+"\n"
+"class App(tk.Frame):\n"
+"    def __init__(self, master=None):\n"
+"        super().__init__(master)\n"
+"        self.pack()\n"
+"\n"
+"# create the application\n"
+"myapp = App()\n"
+"\n"
+"#\n"
+"# here are method calls to the window manager class\n"
+"#\n"
+"myapp.master.title(\"My Do-Nothing Application\")\n"
+"myapp.master.maxsize(1000, 400)\n"
+"\n"
+"# start the program\n"
+"myapp.mainloop()"
 msgstr ""
 
 #: library/tkinter.rst:794
@@ -1254,6 +1391,13 @@ msgstr ""
 
 #: library/tkinter.rst:810
 msgid "This is any Python function that takes no arguments.  For example::"
+msgstr ""
+
+#: library/tkinter.rst:812
+msgid ""
+"def print_it():\n"
+"    print(\"hi there\")\n"
+"fred[\"command\"] = print_it"
 msgstr ""
 
 #: library/tkinter.rst:816
@@ -1377,6 +1521,10 @@ msgid ""
 "The form of the bind method is::"
 msgstr ""
 
+#: library/tkinter.rst:878
+msgid "def bind(self, sequence, func, add=''):"
+msgstr ""
+
 #: library/tkinter.rst:880
 msgid "where:"
 msgstr ""
@@ -1413,6 +1561,14 @@ msgid ""
 "this binding is to replace any other bindings that this event is associated "
 "with.  Passing a ``'+'`` means that this function is to be added to the list "
 "of functions bound to this event type."
+msgstr ""
+
+#: library/tkinter.rst:900
+msgid ""
+"def turn_red(self, event):\n"
+"    event.widget[\"activeforeground\"] = \"red\"\n"
+"\n"
+"self.button.bind(\"<Enter>\", self.turn_red)"
 msgstr ""
 
 #: library/tkinter.rst:905
@@ -1687,6 +1843,16 @@ msgid ""
 "one handler may be registered per file descriptor. Example code::"
 msgstr ""
 
+#: library/tkinter.rst:1006
+msgid ""
+"import tkinter\n"
+"widget = tkinter.Tk()\n"
+"mask = tkinter.READABLE | tkinter.WRITABLE\n"
+"widget.tk.createfilehandler(file, mask, callback)\n"
+"...\n"
+"widget.tk.deletefilehandler(file)"
+msgstr ""
+
 #: library/tkinter.rst:1013
 msgid "This feature is not available on Windows."
 msgstr ""
@@ -1709,6 +1875,10 @@ msgid ""
 "or socket object), or an integer file descriptor. The *mask* argument is an "
 "ORed combination of any of the three constants below. The callback is called "
 "as follows::"
+msgstr ""
+
+#: library/tkinter.rst:1032
+msgid "callback(file, mask)"
 msgstr ""
 
 #: library/tkinter.rst:1037

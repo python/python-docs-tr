@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-01 00:17+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -89,11 +89,10 @@ msgid ""
 "use :c:func:`Py_XINCREF`."
 msgstr ""
 
-#: c-api/refcounting.rst:127
+#: c-api/refcounting.rst:61
 msgid ""
-"Do not expect this function to actually modify *o* in any way. For at least "
-"`some objects <https://peps.python.org/pep-0683/>`_, this function has no "
-"effect."
+"Do not expect this function to actually modify *o* in any way. For at least :"
+"pep:`some objects <0683>`, this function has no effect."
 msgstr ""
 
 #: c-api/refcounting.rst:71
@@ -128,8 +127,18 @@ msgstr ""
 msgid "For example::"
 msgstr ""
 
+#: c-api/refcounting.rst:90
+msgid ""
+"Py_INCREF(obj);\n"
+"self->attr = obj;"
+msgstr ""
+
 #: c-api/refcounting.rst:93
 msgid "can be written as::"
+msgstr ""
+
+#: c-api/refcounting.rst:95
+msgid "self->attr = Py_NewRef(obj);"
 msgstr ""
 
 #: c-api/refcounting.rst:97
@@ -167,6 +176,12 @@ msgstr ""
 msgid ""
 "The object must not be ``NULL``; if you aren't sure that it isn't ``NULL``, "
 "use :c:func:`Py_XDECREF`."
+msgstr ""
+
+#: c-api/refcounting.rst:127
+msgid ""
+"Do not expect this function to actually modify *o* in any way. For at least :"
+"pep:`some objects <683>`, this function has no effect."
 msgstr ""
 
 #: c-api/refcounting.rst:133
@@ -234,8 +249,18 @@ msgstr ""
 msgid "As in case of :c:func:`Py_CLEAR`, \"the obvious\" code can be deadly::"
 msgstr ""
 
+#: c-api/refcounting.rst:192
+msgid ""
+"Py_DECREF(dst);\n"
+"dst = src;"
+msgstr ""
+
 #: c-api/refcounting.rst:195
 msgid "The safe way is::"
+msgstr ""
+
+#: c-api/refcounting.rst:197
+msgid "Py_SETREF(dst, src);"
 msgstr ""
 
 #: c-api/refcounting.rst:199

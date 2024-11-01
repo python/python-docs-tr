@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-01 20:27+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -106,11 +106,11 @@ msgid ""
 "exc:`SyntaxError`), so they can be considered \"true\" constants."
 msgstr ""
 
-#: library/constants.rst:83
+#: library/constants.rst:85
 msgid "Constants added by the :mod:`site` module"
 msgstr ""
 
-#: library/constants.rst:85
+#: library/constants.rst:87
 msgid ""
 "The :mod:`site` module (which is imported automatically during startup, "
 "except if the :option:`-S` command-line option is given) adds several "
@@ -118,20 +118,27 @@ msgid ""
 "interpreter shell and should not be used in programs."
 msgstr ""
 
-#: library/constants.rst:93
+#: library/constants.rst:95
 msgid ""
 "Objects that when printed, print a message like \"Use quit() or Ctrl-D (i.e. "
 "EOF) to exit\", and when called, raise :exc:`SystemExit` with the specified "
 "exit code."
 msgstr ""
 
-#: library/constants.rst:100
+#: library/constants.rst:102
+msgid ""
+"Object that when printed, prints the message \"Type help() for interactive "
+"help, or help(object) for help about object.\", and when called, acts as "
+"described :func:`elsewhere <help>`."
+msgstr ""
+
+#: library/constants.rst:109
 msgid ""
 "Objects that when printed or called, print the text of copyright or credits, "
 "respectively."
 msgstr ""
 
-#: library/constants.rst:105
+#: library/constants.rst:114
 msgid ""
 "Object that when printed, prints the message \"Type license() to see the "
 "full license text\", and when called, displays the full license text in a "

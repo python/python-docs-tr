@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-24 17:22+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -127,6 +127,18 @@ msgid ""
 "annotations dict of a *base class.* As an example::"
 msgstr ""
 
+#: howto/annotations.rst:89
+msgid ""
+"class Base:\n"
+"    a: int = 3\n"
+"    b: str = 'abc'\n"
+"\n"
+"class Derived(Base):\n"
+"    pass\n"
+"\n"
+"print(Derived.__annotations__)"
+msgstr ""
+
 #: howto/annotations.rst:98
 msgid "This will print the annotations dict from ``Base``, not ``Derived``."
 msgstr ""
@@ -136,9 +148,9 @@ msgid ""
 "Your code will have to have a separate code path if the object you're "
 "examining is a class (``isinstance(o, type)``). In that case, best practice "
 "relies on an implementation detail of Python 3.9 and before: if a class has "
-"annotations defined, they are stored in the class's ``__dict__`` "
+"annotations defined, they are stored in the class's :attr:`~type.__dict__` "
 "dictionary.  Since the class may or may not have annotations defined, best "
-"practice is to call the ``get`` method on the class dict."
+"practice is to call the :meth:`~dict.get` method on the class dict."
 msgstr ""
 
 #: howto/annotations.rst:109
@@ -146,6 +158,14 @@ msgid ""
 "To put it all together, here is some sample code that safely accesses the "
 "``__annotations__`` attribute on an arbitrary object in Python 3.9 and "
 "before::"
+msgstr ""
+
+#: howto/annotations.rst:113
+msgid ""
+"if isinstance(o, type):\n"
+"    ann = o.__dict__.get('__annotations__', None)\n"
+"else:\n"
+"    ann = getattr(o, '__annotations__', None)"
 msgstr ""
 
 #: howto/annotations.rst:118
@@ -157,9 +177,9 @@ msgstr ""
 
 #: howto/annotations.rst:123
 msgid ""
-"Note that some exotic or malformed type objects may not have a ``__dict__`` "
-"attribute, so for extra safety you may also wish to use :func:`getattr` to "
-"access ``__dict__``."
+"Note that some exotic or malformed type objects may not have a :attr:`~type."
+"__dict__` attribute, so for extra safety you may also wish to use :func:"
+"`getattr` to access :attr:`!__dict__`."
 msgstr ""
 
 #: howto/annotations.rst:129
@@ -315,6 +335,14 @@ msgid ""
 "import annotations``), and you specify a string as an annotation, the string "
 "will itself be quoted.  In effect the annotation is quoted *twice.*  For "
 "example::"
+msgstr ""
+
+#: howto/annotations.rst:227
+msgid ""
+"from __future__ import annotations\n"
+"def foo(a: \"str\"): pass\n"
+"\n"
+"print(foo.__annotations__)"
 msgstr ""
 
 #: howto/annotations.rst:232

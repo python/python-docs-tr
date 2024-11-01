@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -427,8 +427,19 @@ msgstr ""
 msgid "For example,  ::"
 msgstr ""
 
+#: library/ossaudiodev.rst:313
+msgid "(fmt, channels, rate) = dsp.setparameters(fmt, channels, rate)"
+msgstr ""
+
 #: library/ossaudiodev.rst:315
 msgid "is equivalent to  ::"
+msgstr ""
+
+#: library/ossaudiodev.rst:317
+msgid ""
+"fmt = dsp.setfmt(fmt)\n"
+"channels = dsp.channels(channels)\n"
+"rate = dsp.rate(rate)"
 msgstr ""
 
 #: library/ossaudiodev.rst:324
@@ -497,6 +508,14 @@ msgid ""
 "subset of all available mixer controls---the :const:`SOUND_MIXER_\\*` "
 "constants defined at module level. To determine if, for example, the current "
 "mixer object supports a PCM mixer, use the following Python code::"
+msgstr ""
+
+#: library/ossaudiodev.rst:389
+msgid ""
+"mixer=ossaudiodev.openmixer()\n"
+"if mixer.controls() & (1 << ossaudiodev.SOUND_MIXER_PCM):\n"
+"    # PCM is supported\n"
+"    ... code ..."
 msgstr ""
 
 #: library/ossaudiodev.rst:394
@@ -569,4 +588,8 @@ msgid ""
 "indicating the new recording source (or sources) if successful; raises :exc:"
 "`OSError` if an invalid source was specified.  To set the current recording "
 "source to the microphone input::"
+msgstr ""
+
+#: library/ossaudiodev.rst:453
+msgid "mixer.setrecsrc (1 << ossaudiodev.SOUND_MIXER_MIC)"
 msgstr ""

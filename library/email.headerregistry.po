@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -122,6 +122,10 @@ msgid ""
 "method is called as follows::"
 msgstr ""
 
+#: library/email.headerregistry.rst:94
+msgid "parse(string, kwds)"
+msgstr ""
+
 #: library/email.headerregistry.rst:96
 msgid ""
 "``kwds`` is a dictionary containing one pre-initialized key, ``defects``. "
@@ -141,6 +145,13 @@ msgid ""
 "``init`` method.  The specialized class only needs to provide an ``init`` "
 "method if it wishes to set additional attributes beyond those provided by "
 "``BaseHeader`` itself.  Such an ``init`` method should look like this::"
+msgstr ""
+
+#: library/email.headerregistry.rst:110
+msgid ""
+"def init(self, /, *args, **kw):\n"
+"    self._myattr = kw.pop('myattr')\n"
+"    super().init(*args, **kw)"
 msgstr ""
 
 #: library/email.headerregistry.rst:114
@@ -205,11 +216,19 @@ msgid ""
 "``datetime`` according to the :rfc:`5322` rules; that is, it is set to::"
 msgstr ""
 
+#: library/email.headerregistry.rst:163
+msgid "email.utils.format_datetime(self.datetime)"
+msgstr ""
+
 #: library/email.headerregistry.rst:165
 msgid ""
 "When creating a ``DateHeader``, *value* may be :class:`~datetime.datetime` "
 "instance.  This means, for example, that the following code is valid and "
 "does what one would expect::"
+msgstr ""
+
+#: library/email.headerregistry.rst:169
+msgid "msg['Date'] = datetime(2011, 7, 15, 21)"
 msgstr ""
 
 #: library/email.headerregistry.rst:171
@@ -218,6 +237,10 @@ msgid ""
 "timestamp, and the resulting value will have a timezone of ``-0000``.  Much "
 "more useful is to use the :func:`~email.utils.localtime` function from the :"
 "mod:`~email.utils` module::"
+msgstr ""
+
+#: library/email.headerregistry.rst:176
+msgid "msg['Date'] = utils.localtime()"
 msgstr ""
 
 #: library/email.headerregistry.rst:178
@@ -361,7 +384,7 @@ msgid ""
 "class.  When *use_default_map* is ``True`` (the default), the standard "
 "mapping of header names to classes is copied in to the registry during "
 "initialization.  *base_class* is always the last class in the generated "
-"class's ``__bases__`` list."
+"class's :class:`~type.__bases__` list."
 msgstr ""
 
 #: library/email.headerregistry.rst:322
@@ -537,8 +560,16 @@ msgid ""
 "address is::"
 msgstr ""
 
+#: library/email.headerregistry.rst:380
+msgid "[display_name] <username@domain>"
+msgstr ""
+
 #: library/email.headerregistry.rst:382
 msgid "or::"
+msgstr ""
+
+#: library/email.headerregistry.rst:384
+msgid "username@domain"
 msgstr ""
 
 #: library/email.headerregistry.rst:386
@@ -596,6 +627,10 @@ msgstr ""
 msgid ""
 "The class used to represent an address group.  The general form of an "
 "address group is::"
+msgstr ""
+
+#: library/email.headerregistry.rst:432
+msgid "display_name: [address-list];"
 msgstr ""
 
 #: library/email.headerregistry.rst:434

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -49,6 +49,14 @@ msgstr ""
 
 #: c-api/complex.rst:33
 msgid "The structure is defined as::"
+msgstr ""
+
+#: c-api/complex.rst:35
+msgid ""
+"typedef struct {\n"
+"    double real;\n"
+"    double imag;\n"
+"} Py_complex;"
 msgstr ""
 
 #: c-api/complex.rst:43

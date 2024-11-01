@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -59,6 +59,29 @@ msgid ""
 "``median_high()``, ``median_grouped()``, ``mode()``, ``multimode()``, and "
 "``quantiles()``.  The ``NaN`` values should be stripped before calling these "
 "functions::"
+msgstr ""
+
+#: library/statistics.rst:47
+msgid ""
+">>> from statistics import median\n"
+">>> from math import isnan\n"
+">>> from itertools import filterfalse\n"
+"\n"
+">>> data = [20.7, float('NaN'),19.2, 18.3, float('NaN'), 14.4]\n"
+">>> sorted(data)  # This has surprising behavior\n"
+"[20.7, nan, 14.4, 18.3, 19.2, nan]\n"
+">>> median(data)  # This result is unexpected\n"
+"16.35\n"
+"\n"
+">>> sum(map(isnan, data))    # Number of missing values\n"
+"2\n"
+">>> clean = list(filterfalse(isnan, data))  # Strip NaN values\n"
+">>> clean\n"
+"[20.7, 19.2, 18.3, 14.4]\n"
+">>> sorted(clean)  # Sorting now works as expected\n"
+"[14.4, 18.3, 19.2, 20.7]\n"
+">>> median(clean)       # This result is now well defined\n"
+"18.75"
 msgstr ""
 
 #: library/statistics.rst:69
@@ -266,6 +289,22 @@ msgstr ""
 msgid "Some examples of use:"
 msgstr ""
 
+#: library/statistics.rst:132
+msgid ""
+">>> mean([1, 2, 3, 4, 4])\n"
+"2.8\n"
+">>> mean([-1.0, 2.5, 3.25, 5.75])\n"
+"2.625\n"
+"\n"
+">>> from fractions import Fraction as F\n"
+">>> mean([F(3, 7), F(1, 21), F(5, 3), F(1, 3)])\n"
+"Fraction(13, 21)\n"
+"\n"
+">>> from decimal import Decimal as D\n"
+">>> mean([D(\"0.5\"), D(\"0.75\"), D(\"0.625\"), D(\"0.375\")])\n"
+"Decimal('0.5625')"
+msgstr ""
+
 #: library/statistics.rst:149
 msgid ""
 "The mean is strongly affected by `outliers <https://en.wikipedia.org/wiki/"
@@ -294,11 +333,25 @@ msgid ""
 "dataset is empty, raises a :exc:`StatisticsError`."
 msgstr ""
 
+#: library/statistics.rst:170
+msgid ""
+">>> fmean([3.5, 4.0, 5.25])\n"
+"4.25"
+msgstr ""
+
 #: library/statistics.rst:175
 msgid ""
 "Optional weighting is supported.  For example, a professor assigns a grade "
 "for a course by weighting quizzes at 20%, homework at 20%, a midterm exam at "
 "30%, and a final exam at 30%:"
+msgstr ""
+
+#: library/statistics.rst:179
+msgid ""
+">>> grades = [85, 92, 83, 91]\n"
+">>> weights = [0.20, 0.20, 0.30, 0.30]\n"
+">>> fmean(grades, weights)\n"
+"87.6"
 msgstr ""
 
 #: library/statistics.rst:186
@@ -335,6 +388,12 @@ msgid ""
 "change in the future.)"
 msgstr ""
 
+#: library/statistics.rst:210
+msgid ""
+">>> round(geometric_mean([54, 24, 36]), 1)\n"
+"36.0"
+msgstr ""
+
 #: library/statistics.rst:220
 msgid ""
 "Return the harmonic mean of *data*, a sequence or iterable of real-valued "
@@ -363,11 +422,23 @@ msgid ""
 "What is the average speed?"
 msgstr ""
 
+#: library/statistics.rst:236
+msgid ""
+">>> harmonic_mean([40, 60])\n"
+"48.0"
+msgstr ""
+
 #: library/statistics.rst:241
 msgid ""
 "Suppose a car travels 40 km/hr for 5 km, and when traffic clears, speeds-up "
 "to 60 km/hr for the remaining 30 km of the journey. What is the average "
 "speed?"
+msgstr ""
+
+#: library/statistics.rst:245
+msgid ""
+">>> harmonic_mean([40, 60], weights=[5, 30])\n"
+"56.0"
 msgstr ""
 
 #: library/statistics.rst:250
@@ -397,10 +468,22 @@ msgid ""
 "data point is returned:"
 msgstr ""
 
+#: library/statistics.rst:272
+msgid ""
+">>> median([1, 3, 5])\n"
+"3"
+msgstr ""
+
 #: library/statistics.rst:277
 msgid ""
 "When the number of data points is even, the median is interpolated by taking "
 "the average of the two middle values:"
+msgstr ""
+
+#: library/statistics.rst:280
+msgid ""
+">>> median([1, 3, 5, 7])\n"
+"4.0"
 msgstr ""
 
 #: library/statistics.rst:285
@@ -429,6 +512,14 @@ msgid ""
 "of the two middle values is returned."
 msgstr ""
 
+#: library/statistics.rst:301
+msgid ""
+">>> median_low([1, 3, 5])\n"
+"3\n"
+">>> median_low([1, 3, 5, 7])\n"
+"3"
+msgstr ""
+
 #: library/statistics.rst:308
 msgid ""
 "Use the low median when your data are discrete and you prefer the median to "
@@ -446,6 +537,14 @@ msgid ""
 "The high median is always a member of the data set.  When the number of data "
 "points is odd, the middle value is returned.  When it is even, the larger of "
 "the two middle values is returned."
+msgstr ""
+
+#: library/statistics.rst:321
+msgid ""
+">>> median_high([1, 3, 5])\n"
+"3\n"
+">>> median_high([1, 3, 5, 7])\n"
+"5"
 msgstr ""
 
 #: library/statistics.rst:328
@@ -478,6 +577,19 @@ msgid ""
 "year midpoints of the intervals:"
 msgstr ""
 
+#: library/statistics.rst:347
+msgid ""
+">>> from collections import Counter\n"
+">>> demographics = Counter({\n"
+"...    25: 172,   # 20 to 30 years old\n"
+"...    35: 484,   # 30 to 40 years old\n"
+"...    45: 387,   # 40 to 50 years old\n"
+"...    55:  22,   # 50 to 60 years old\n"
+"...    65:   6,   # 60 to 70 years old\n"
+"... })\n"
+"..."
+msgstr ""
+
 #: library/statistics.rst:359
 msgid ""
 "The 50th percentile (median) is the 536th person out of the 1071 member "
@@ -490,6 +602,15 @@ msgid ""
 "tricenarian age group was exactly 35 years old.  A more tenable assumption "
 "is that the 484 members of that age group are evenly distributed between 30 "
 "and 40.  For that, we use :func:`median_grouped`:"
+msgstr ""
+
+#: library/statistics.rst:368
+msgid ""
+">>> data = list(demographics.elements())\n"
+">>> median(data)\n"
+"35\n"
+">>> round(median_grouped(data, interval=10), 1)\n"
+"37.5"
 msgstr ""
 
 #: library/statistics.rst:376
@@ -526,10 +647,23 @@ msgid ""
 "standard treatment of the mode as commonly taught in schools:"
 msgstr ""
 
+#: library/statistics.rst:398
+msgid ""
+">>> mode([1, 1, 2, 3, 3, 3, 3, 4])\n"
+"3"
+msgstr ""
+
 #: library/statistics.rst:403
 msgid ""
 "The mode is unique in that it is the only statistic in this package that "
 "also applies to nominal (non-numeric) data:"
+msgstr ""
+
+#: library/statistics.rst:406
+msgid ""
+">>> mode([\"red\", \"blue\", \"blue\", \"red\", \"green\", \"red\", "
+"\"red\"])\n"
+"'red'"
 msgstr ""
 
 #: library/statistics.rst:411
@@ -554,10 +688,24 @@ msgid ""
 "are multiple modes or an empty list if the *data* is empty:"
 msgstr ""
 
+#: library/statistics.rst:429
+msgid ""
+">>> multimode('aabbbbccddddeeffffgg')\n"
+"['b', 'd', 'f']\n"
+">>> multimode('')\n"
+"[]"
+msgstr ""
+
 #: library/statistics.rst:441
 msgid ""
 "Return the population standard deviation (the square root of the population "
 "variance).  See :func:`pvariance` for arguments and other details."
+msgstr ""
+
+#: library/statistics.rst:444
+msgid ""
+">>> pstdev([1.5, 2.5, 2.5, 2.75, 3.25, 4.75])\n"
+"0.986893273527251"
 msgstr ""
 
 #: library/statistics.rst:452
@@ -592,14 +740,40 @@ msgstr ""
 msgid "Examples:"
 msgstr ""
 
+#: library/statistics.rst:471
+msgid ""
+">>> data = [0.0, 0.25, 0.25, 1.25, 1.5, 1.75, 2.75, 3.25]\n"
+">>> pvariance(data)\n"
+"1.25"
+msgstr ""
+
 #: library/statistics.rst:477
 msgid ""
 "If you have already calculated the mean of your data, you can pass it as the "
 "optional second argument *mu* to avoid recalculation:"
 msgstr ""
 
+#: library/statistics.rst:480
+msgid ""
+">>> mu = mean(data)\n"
+">>> pvariance(data, mu)\n"
+"1.25"
+msgstr ""
+
 #: library/statistics.rst:486
 msgid "Decimals and Fractions are supported:"
+msgstr ""
+
+#: library/statistics.rst:488
+msgid ""
+">>> from decimal import Decimal as D\n"
+">>> pvariance([D(\"27.5\"), D(\"30.25\"), D(\"30.25\"), D(\"34.5\"), "
+"D(\"41.75\")])\n"
+"Decimal('24.815')\n"
+"\n"
+">>> from fractions import Fraction as F\n"
+">>> pvariance([F(1, 4), F(5, 4), F(1, 2)])\n"
+"Fraction(13, 72)"
 msgstr ""
 
 #: library/statistics.rst:500
@@ -622,6 +796,12 @@ msgstr ""
 msgid ""
 "Return the sample standard deviation (the square root of the sample "
 "variance).  See :func:`variance` for arguments and other details."
+msgstr ""
+
+#: library/statistics.rst:516
+msgid ""
+">>> stdev([1.5, 2.5, 2.5, 2.75, 3.25, 4.75])\n"
+"1.0810874155219827"
 msgstr ""
 
 #: library/statistics.rst:524
@@ -650,10 +830,24 @@ msgstr ""
 msgid "Raises :exc:`StatisticsError` if *data* has fewer than two values."
 msgstr ""
 
+#: library/statistics.rst:541
+msgid ""
+">>> data = [2.75, 1.75, 1.25, 0.25, 0.5, 1.25, 3.5]\n"
+">>> variance(data)\n"
+"1.3720238095238095"
+msgstr ""
+
 #: library/statistics.rst:547
 msgid ""
 "If you have already calculated the sample mean of your data, you can pass it "
 "as the optional second argument *xbar* to avoid recalculation:"
+msgstr ""
+
+#: library/statistics.rst:550
+msgid ""
+">>> m = mean(data)\n"
+">>> variance(data, m)\n"
+"1.3720238095238095"
 msgstr ""
 
 #: library/statistics.rst:556
@@ -665,6 +859,18 @@ msgstr ""
 
 #: library/statistics.rst:560
 msgid "Decimal and Fraction values are supported:"
+msgstr ""
+
+#: library/statistics.rst:562
+msgid ""
+">>> from decimal import Decimal as D\n"
+">>> variance([D(\"27.5\"), D(\"30.25\"), D(\"30.25\"), D(\"34.5\"), "
+"D(\"41.75\")])\n"
+"Decimal('31.01875')\n"
+"\n"
+">>> from fractions import Fraction as F\n"
+">>> variance([F(1, 6), F(1, 2), F(5, 3)])\n"
+"Fraction(67, 108)"
 msgstr ""
 
 #: library/statistics.rst:574
@@ -739,6 +945,18 @@ msgid ""
 "80%, 90%, 100%."
 msgstr ""
 
+#: library/statistics.rst:622
+msgid ""
+"# Decile cut points for empirically sampled data\n"
+">>> data = [105, 129, 87, 86, 111, 111, 89, 81, 108, 92, 110,\n"
+"...         100, 75, 105, 103, 109, 76, 119, 99, 91, 103, 129,\n"
+"...         106, 101, 84, 111, 74, 87, 86, 103, 103, 106, 86,\n"
+"...         111, 75, 87, 102, 121, 111, 88, 89, 101, 106, 95,\n"
+"...         103, 107, 101, 81, 109, 104]\n"
+">>> [round(q, 1) for q in quantiles(data, n=10)]\n"
+"[81.0, 86.2, 89.0, 99.4, 102.5, 103.6, 106.0, 109.8, 111.0]"
+msgstr ""
+
 #: library/statistics.rst:637
 msgid ""
 "Return the sample covariance of two inputs *x* and *y*. Covariance is a "
@@ -749,6 +967,19 @@ msgstr ""
 msgid ""
 "Both inputs must be of the same length (no less than two), otherwise :exc:"
 "`StatisticsError` is raised."
+msgstr ""
+
+#: library/statistics.rst:645
+msgid ""
+">>> x = [1, 2, 3, 4, 5, 6, 7, 8, 9]\n"
+">>> y = [1, 2, 3, 1, 2, 3, 1, 2, 3]\n"
+">>> covariance(x, y)\n"
+"0.75\n"
+">>> z = [9, 8, 7, 6, 5, 4, 3, 2, 1]\n"
+">>> covariance(x, z)\n"
+"-7.5\n"
+">>> covariance(z, x)\n"
+"-7.5"
 msgstr ""
 
 #: library/statistics.rst:661
@@ -785,6 +1016,31 @@ msgstr ""
 msgid ""
 "Example with `Kepler's laws of planetary motion <https://en.wikipedia.org/"
 "wiki/Kepler's_laws_of_planetary_motion>`_:"
+msgstr ""
+
+#: library/statistics.rst:683
+msgid ""
+">>> # Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and  Neptune\n"
+">>> orbital_period = [88, 225, 365, 687, 4331, 10_756, 30_687, 60_190]    # "
+"days\n"
+">>> dist_from_sun = [58, 108, 150, 228, 778, 1_400, 2_900, 4_500] # million "
+"km\n"
+"\n"
+">>> # Show that a perfect monotonic relationship exists\n"
+">>> correlation(orbital_period, dist_from_sun, method='ranked')\n"
+"1.0\n"
+"\n"
+">>> # Observe that a linear relationship is imperfect\n"
+">>> round(correlation(orbital_period, dist_from_sun), 4)\n"
+"0.9882\n"
+"\n"
+">>> # Demonstrate Kepler's third law: There is a linear correlation\n"
+">>> # between the square of the orbital period and the cube of the\n"
+">>> # distance from the sun.\n"
+">>> period_squared = [p * p for p in orbital_period]\n"
+">>> dist_cubed = [d * d * d for d in dist_from_sun]\n"
+">>> round(correlation(period_squared, dist_cubed), 4)\n"
+"1.0"
 msgstr ""
 
 #: library/statistics.rst:707
@@ -827,6 +1083,15 @@ msgid ""
 "2019 assuming that they had kept the pace."
 msgstr ""
 
+#: library/statistics.rst:736
+msgid ""
+">>> year = [1971, 1975, 1979, 1982, 1983]\n"
+">>> films_total = [1, 2, 3, 4, 5]\n"
+">>> slope, intercept = linear_regression(year, films_total)\n"
+">>> round(slope * 2019 + intercept)\n"
+"16"
+msgstr ""
+
 #: library/statistics.rst:744
 msgid ""
 "If *proportional* is true, the independent variable *x* and the dependent "
@@ -844,6 +1109,22 @@ msgid ""
 "Continuing the example from :func:`correlation`, we look to see how well a "
 "model based on major planets can predict the orbital distances for dwarf "
 "planets:"
+msgstr ""
+
+#: library/statistics.rst:756
+msgid ""
+">>> model = linear_regression(period_squared, dist_cubed, "
+"proportional=True)\n"
+">>> slope = model.slope\n"
+"\n"
+">>> # Dwarf planets:   Pluto,  Eris,    Makemake, Haumea, Ceres\n"
+">>> orbital_periods = [90_560, 204_199, 111_845, 103_410, 1_680]  # days\n"
+">>> predicted_dist = [math.cbrt(slope * (p * p)) for p in orbital_periods]\n"
+">>> list(map(round, predicted_dist))\n"
+"[5912, 10166, 6806, 6459, 414]\n"
+"\n"
+">>> [5_906, 10_152, 6_796, 6_450, 414]  # actual distance in million km\n"
+"[5906, 10152, 6796, 6450, 414]"
 msgstr ""
 
 #: library/statistics.rst:772
@@ -1026,6 +1307,13 @@ msgid ""
 "translation and scaling.  For example:"
 msgstr ""
 
+#: library/statistics.rst:920
+msgid ""
+">>> temperature_february = NormalDist(5, 2.5)             # Celsius\n"
+">>> temperature_february * (9/5) + 32                     # Fahrenheit\n"
+"NormalDist(mu=41.0, sigma=4.5)"
+msgstr ""
+
 #: library/statistics.rst:926
 msgid ""
 "Dividing a constant by an instance of :class:`NormalDist` is not supported "
@@ -1039,6 +1327,17 @@ msgid ""
 "distributed random variables <https://en.wikipedia.org/wiki/"
 "Sum_of_normally_distributed_random_variables>`_ represented as instances of :"
 "class:`NormalDist`.  For example:"
+msgstr ""
+
+#: library/statistics.rst:935
+msgid ""
+">>> birth_weights = NormalDist.from_samples([2.5, 3.1, 2.1, 2.4, 2.7, 3.5])\n"
+">>> drug_effects = NormalDist(0.4, 0.15)\n"
+">>> combined = birth_weights + drug_effects\n"
+">>> round(combined.mean, 1)\n"
+"3.1\n"
+">>> round(combined.stdev, 1)\n"
+"0.5"
 msgstr ""
 
 #: library/statistics.rst:949
@@ -1062,10 +1361,26 @@ msgid ""
 "after rounding to the nearest whole number:"
 msgstr ""
 
+#: library/statistics.rst:963
+msgid ""
+">>> sat = NormalDist(1060, 195)\n"
+">>> fraction = sat.cdf(1200 + 0.5) - sat.cdf(1100 - 0.5)\n"
+">>> round(fraction * 100.0, 1)\n"
+"18.4"
+msgstr ""
+
 #: library/statistics.rst:970
 msgid ""
 "Find the `quartiles <https://en.wikipedia.org/wiki/Quartile>`_ and `deciles "
 "<https://en.wikipedia.org/wiki/Decile>`_ for the SAT scores:"
+msgstr ""
+
+#: library/statistics.rst:973
+msgid ""
+">>> list(map(round, sat.quantiles()))\n"
+"[928, 1060, 1192]\n"
+">>> list(map(round, sat.quantiles(n=10)))\n"
+"[810, 896, 958, 1011, 1060, 1109, 1162, 1224, 1310]"
 msgstr ""
 
 #: library/statistics.rst:982
@@ -1077,6 +1392,19 @@ msgid ""
 "To estimate the distribution for a model that isn't easy to solve "
 "analytically, :class:`NormalDist` can generate input samples for a `Monte "
 "Carlo simulation <https://en.wikipedia.org/wiki/Monte_Carlo_method>`_:"
+msgstr ""
+
+#: library/statistics.rst:988
+msgid ""
+">>> def model(x, y, z):\n"
+"...     return (3*x + 7*x*y - 5*y) / (11 * z)\n"
+"...\n"
+">>> n = 100_000\n"
+">>> X = NormalDist(10, 2.5).samples(n, seed=3652260728)\n"
+">>> Y = NormalDist(15, 1.75).samples(n, seed=4582495471)\n"
+">>> Z = NormalDist(50, 1.25).samples(n, seed=6582483453)\n"
+">>> quantiles(map(model, X, Y, Z))       \n"
+"[1.4591308524824727, 1.8035946855390597, 2.175091447274739]"
 msgstr ""
 
 #: library/statistics.rst:1001
@@ -1097,6 +1425,30 @@ msgid ""
 "In previous conferences, 65% of the attendees preferred to listen to Python "
 "talks.  Assuming the population preferences haven't changed, what is the "
 "probability that the Python room will stay within its capacity limits?"
+msgstr ""
+
+#: library/statistics.rst:1014
+msgid ""
+">>> n = 750             # Sample size\n"
+">>> p = 0.65            # Preference for Python\n"
+">>> q = 1.0 - p         # Preference for Ruby\n"
+">>> k = 500             # Room capacity\n"
+"\n"
+">>> # Approximation using the cumulative normal distribution\n"
+">>> from math import sqrt\n"
+">>> round(NormalDist(mu=n*p, sigma=sqrt(n*p*q)).cdf(k + 0.5), 4)\n"
+"0.8402\n"
+"\n"
+">>> # Exact solution using the cumulative binomial distribution\n"
+">>> from math import comb, fsum\n"
+">>> round(fsum(comb(n, r) * p**r * q**(n-r) for r in range(k+1)), 4)\n"
+"0.8402\n"
+"\n"
+">>> # Approximation using a simulation\n"
+">>> from random import seed, binomialvariate\n"
+">>> seed(8675309)\n"
+">>> mean(binomialvariate(n, p) <= k for i in range(10_000))\n"
+"0.8406"
 msgstr ""
 
 #: library/statistics.rst:1039
@@ -1122,10 +1474,27 @@ msgid ""
 "data with :class:`NormalDist`:"
 msgstr ""
 
+#: library/statistics.rst:1052
+msgid ""
+">>> height_male = NormalDist.from_samples([6, 5.92, 5.58, 5.92])\n"
+">>> height_female = NormalDist.from_samples([5, 5.5, 5.42, 5.75])\n"
+">>> weight_male = NormalDist.from_samples([180, 190, 170, 165])\n"
+">>> weight_female = NormalDist.from_samples([100, 150, 130, 150])\n"
+">>> foot_size_male = NormalDist.from_samples([12, 11, 12, 10])\n"
+">>> foot_size_female = NormalDist.from_samples([6, 8, 7, 9])"
+msgstr ""
+
 #: library/statistics.rst:1061
 msgid ""
 "Next, we encounter a new person whose feature measurements are known but "
 "whose gender is unknown:"
+msgstr ""
+
+#: library/statistics.rst:1064
+msgid ""
+">>> ht = 6.0        # height\n"
+">>> wt = 130        # weight\n"
+">>> fs = 8          # foot size"
 msgstr ""
 
 #: library/statistics.rst:1070
@@ -1136,11 +1505,28 @@ msgid ""
 "given the gender:"
 msgstr ""
 
+#: library/statistics.rst:1075
+msgid ""
+">>> prior_male = 0.5\n"
+">>> prior_female = 0.5\n"
+">>> posterior_male = (prior_male * height_male.pdf(ht) *\n"
+"...                   weight_male.pdf(wt) * foot_size_male.pdf(fs))\n"
+"\n"
+">>> posterior_female = (prior_female * height_female.pdf(ht) *\n"
+"...                     weight_female.pdf(wt) * foot_size_female.pdf(fs))"
+msgstr ""
+
 #: library/statistics.rst:1085
 msgid ""
 "The final prediction goes to the largest posterior. This is known as the "
 "`maximum a posteriori <https://en.wikipedia.org/wiki/"
 "Maximum_a_posteriori_estimation>`_ or MAP:"
+msgstr ""
+
+#: library/statistics.rst:1089
+msgid ""
+">>> 'male' if posterior_male > posterior_female else 'female'\n"
+"'female'"
 msgstr ""
 
 #: library/statistics.rst:1096
@@ -1163,12 +1549,45 @@ msgid ""
 "*bandwidth*."
 msgstr ""
 
+#: library/statistics.rst:1107
+msgid ""
+"from random import choice, random\n"
+"\n"
+"def kde_normal(data, h):\n"
+"    \"Create a continuous probability distribution from discrete samples.\"\n"
+"\n"
+"    # Smooth the data with a normal distribution kernel scaled by h.\n"
+"    K_h = NormalDist(0.0, h)\n"
+"\n"
+"    def pdf(x):\n"
+"        'Probability density function.  P(x <= X < x+dx) / dx'\n"
+"        return sum(K_h.pdf(x - x_i) for x_i in data) / len(data)\n"
+"\n"
+"    def cdf(x):\n"
+"        'Cumulative distribution function.  P(X <= x)'\n"
+"        return sum(K_h.cdf(x - x_i) for x_i in data) / len(data)\n"
+"\n"
+"    def rand():\n"
+"        'Random selection from the probability distribution.'\n"
+"        return choice(data) + K_h.inv_cdf(random())\n"
+"\n"
+"    return pdf, cdf, rand"
+msgstr ""
+
 #: library/statistics.rst:1131
 msgid ""
 "`Wikipedia has an example <https://en.wikipedia.org/wiki/"
 "Kernel_density_estimation#Example>`_ where we can use the ``kde_normal()`` "
 "recipe to generate and plot a probability density function estimated from a "
 "small sample:"
+msgstr ""
+
+#: library/statistics.rst:1136
+msgid ""
+">>> sample = [-2.1, -1.3, -0.4, 1.9, 5.1, 6.2]\n"
+">>> pdf, cdf, rand = kde_normal(sample, h=1.5)\n"
+">>> xarr = [i/100 for i in range(-750, 1100)]\n"
+">>> yarr = [pdf(x) for x in xarr]"
 msgstr ""
 
 #: library/statistics.rst:1143
@@ -1185,10 +1604,27 @@ msgid ""
 "to produce 100 new selections:"
 msgstr ""
 
+#: library/statistics.rst:1151
+msgid ">>> new_selections = [rand() for i in range(100)]"
+msgstr ""
+
 #: library/statistics.rst:1155
 msgid "Determine the probability of a new selection being below ``2.0``:"
 msgstr ""
 
+#: library/statistics.rst:1157
+msgid ""
+">>> round(cdf(2.0), 4)\n"
+"0.5794"
+msgstr ""
+
 #: library/statistics.rst:1162
 msgid "Add a new sample data point and find the new CDF at ``2.0``:"
+msgstr ""
+
+#: library/statistics.rst:1164
+msgid ""
+">>> sample.append(4.9)\n"
+">>> round(cdf(2.0), 4)\n"
+"0.5005"
 msgstr ""

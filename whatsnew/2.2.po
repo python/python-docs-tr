@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -172,6 +172,14 @@ msgid ""
 "subclass :class:`object`::"
 msgstr ""
 
+#: whatsnew/2.2.rst:116
+msgid ""
+"class C(object):\n"
+"    def __init__ (self):\n"
+"        ...\n"
+"    ..."
+msgstr ""
+
 #: whatsnew/2.2.rst:121
 msgid ""
 "This means that :keyword:`class` statements that don't have any base classes "
@@ -189,11 +197,28 @@ msgid ""
 "more, but type objects that behave as factories when called. ::"
 msgstr ""
 
+#: whatsnew/2.2.rst:131
+msgid ""
+">>> int\n"
+"<type 'int'>\n"
+">>> int('123')\n"
+"123"
+msgstr ""
+
 #: whatsnew/2.2.rst:136
 msgid ""
 "To make the set of types complete, new type objects such as :func:`dict` "
 "and :func:`!file` have been added.  Here's a more interesting example, "
 "adding a :meth:`!lock` method to file objects::"
+msgstr ""
+
+#: whatsnew/2.2.rst:140
+msgid ""
+"class LockableFile(file):\n"
+"    def lock (self, operation, length=0, start=0, whence=0):\n"
+"        import fcntl\n"
+"        return fcntl.lockf(self.fileno(), operation,\n"
+"                           length, start, whence)"
 msgstr ""
 
 #: whatsnew/2.2.rst:146
@@ -240,7 +265,7 @@ msgid ":attr:`~definition.__name__` is the attribute's name."
 msgstr ""
 
 #: whatsnew/2.2.rst:174
-msgid ":attr:`!__doc__` is the attribute's docstring."
+msgid ":attr:`~definition.__doc__` is the attribute's docstring."
 msgstr ""
 
 #: whatsnew/2.2.rst:176
@@ -264,19 +289,37 @@ msgid ""
 "performs are::"
 msgstr ""
 
-#: whatsnew/2.2.rst:189
+#: whatsnew/2.2.rst:186
 msgid ""
-"For methods, :meth:`!descriptor.__get__` returns a temporary object that's "
-"callable, and wraps up the instance and the method to be called on it. This "
-"is also why static methods and class methods are now possible; they have "
-"descriptors that wrap up just the method, or the method and the class.  As a "
-"brief explanation of these new kinds of methods, static methods aren't "
-"passed the instance, and therefore resemble regular functions.  Class "
-"methods are passed the class of the object, but not the object itself.  "
-"Static and class methods are defined like this::"
+"descriptor = obj.__class__.x\n"
+"descriptor.__get__(obj)"
 msgstr ""
 
-#: whatsnew/2.2.rst:207
+#: whatsnew/2.2.rst:189
+msgid ""
+"For methods, :meth:`descriptor.__get__ <object.__get__>` returns a temporary "
+"object that's callable, and wraps up the instance and the method to be "
+"called on it. This is also why static methods and class methods are now "
+"possible; they have descriptors that wrap up just the method, or the method "
+"and the class.  As a brief explanation of these new kinds of methods, static "
+"methods aren't passed the instance, and therefore resemble regular "
+"functions.  Class methods are passed the class of the object, but not the "
+"object itself.  Static and class methods are defined like this::"
+msgstr ""
+
+#: whatsnew/2.2.rst:199
+msgid ""
+"class C(object):\n"
+"    def f(arg1, arg2):\n"
+"        ...\n"
+"    f = staticmethod(f)\n"
+"\n"
+"    def g(cls, arg1, arg2):\n"
+"        ...\n"
+"    g = classmethod(g)"
+msgstr ""
+
+#: whatsnew/2.2.rst:208
 msgid ""
 "The :func:`staticmethod` function takes the function :func:`!f`, and returns "
 "it wrapped up in a descriptor so it can be stored in the class object.  You "
@@ -285,7 +328,7 @@ msgid ""
 "has been defined yet; that's been left for future versions of Python."
 msgstr ""
 
-#: whatsnew/2.2.rst:213
+#: whatsnew/2.2.rst:214
 msgid ""
 "More new features, such as slots and properties, are also implemented as new "
 "kinds of descriptors, and it's not difficult to write a descriptor class "
@@ -295,7 +338,25 @@ msgid ""
 "defined like this::"
 msgstr ""
 
-#: whatsnew/2.2.rst:235
+#: whatsnew/2.2.rst:221
+msgid ""
+"from eiffel import eiffelmethod\n"
+"\n"
+"class C(object):\n"
+"    def f(self, arg1, arg2):\n"
+"        # The actual function\n"
+"        ...\n"
+"    def pre_f(self):\n"
+"        # Check preconditions\n"
+"        ...\n"
+"    def post_f(self):\n"
+"        # Check postconditions\n"
+"        ...\n"
+"\n"
+"    f = eiffelmethod(f, pre_f, post_f)"
+msgstr ""
+
+#: whatsnew/2.2.rst:236
 msgid ""
 "Note that a person using the new :func:`!eiffelmethod` doesn't have to "
 "understand anything about descriptors.  This is why I think the new features "
@@ -305,18 +366,35 @@ msgid ""
 "resulting libraries and ignore the implementation details."
 msgstr ""
 
-#: whatsnew/2.2.rst:244
+#: whatsnew/2.2.rst:245
 msgid "Multiple Inheritance: The Diamond Rule"
 msgstr ""
 
-#: whatsnew/2.2.rst:246
+#: whatsnew/2.2.rst:247
 msgid ""
 "Multiple inheritance has also been made more useful through changing the "
 "rules under which names are resolved.  Consider this set of classes (diagram "
 "taken from :pep:`253` by Guido van Rossum)::"
 msgstr ""
 
-#: whatsnew/2.2.rst:264
+#: whatsnew/2.2.rst:251
+msgid ""
+"      class A:\n"
+"        ^ ^  def save(self): ...\n"
+"       /   \\\n"
+"      /     \\\n"
+"     /       \\\n"
+"    /         \\\n"
+"class B     class C:\n"
+"    ^         ^  def save(self): ...\n"
+"     \\       /\n"
+"      \\     /\n"
+"       \\   /\n"
+"        \\ /\n"
+"      class D"
+msgstr ""
+
+#: whatsnew/2.2.rst:265
 msgid ""
 "The lookup rule for classic classes is simple but not very smart; the base "
 "classes are searched depth-first, going from left to right.  A reference to :"
@@ -327,7 +405,7 @@ msgid ""
 "not calling it will result in that state never getting saved."
 msgstr ""
 
-#: whatsnew/2.2.rst:272
+#: whatsnew/2.2.rst:273
 msgid ""
 "New-style classes follow a different algorithm that's a bit more complicated "
 "to explain, but does the right thing in this situation. (Note that Python "
@@ -336,7 +414,7 @@ msgid ""
 "graphs.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:277
+#: whatsnew/2.2.rst:278
 msgid ""
 "List all the base classes, following the classic lookup rule and include a "
 "class multiple times if it's visited repeatedly.  In the above example, the "
@@ -344,7 +422,7 @@ msgid ""
 "C`, :class:`!A`]."
 msgstr ""
 
-#: whatsnew/2.2.rst:282
+#: whatsnew/2.2.rst:283
 msgid ""
 "Scan the list for duplicated classes.  If any are found, remove all but one "
 "occurrence, leaving the *last* one in the list.  In the above example, the "
@@ -352,7 +430,7 @@ msgid ""
 "dropping duplicates."
 msgstr ""
 
-#: whatsnew/2.2.rst:287
+#: whatsnew/2.2.rst:288
 msgid ""
 "Following this rule, referring to :meth:`!D.save` will return :meth:`!C."
 "save`, which is the behaviour we're after.  This lookup rule is the same as "
@@ -365,18 +443,28 @@ msgid ""
 "like this::"
 msgstr ""
 
-#: whatsnew/2.2.rst:303
+#: whatsnew/2.2.rst:297
+msgid ""
+"class D (B,C):\n"
+"    def save (self):\n"
+"        # Call superclass .save()\n"
+"        super(D, self).save()\n"
+"        # Save D's private information here\n"
+"        ..."
+msgstr ""
+
+#: whatsnew/2.2.rst:304
 msgid ""
 ":func:`super` can also return unbound superclass objects when called as "
 "``super(class)`` or ``super(class1, class2)``, but this probably won't often "
 "be useful."
 msgstr ""
 
-#: whatsnew/2.2.rst:309
+#: whatsnew/2.2.rst:310
 msgid "Attribute Access"
 msgstr ""
 
-#: whatsnew/2.2.rst:311
+#: whatsnew/2.2.rst:312
 msgid ""
 "A fair number of sophisticated Python classes define hooks for attribute "
 "access using :meth:`~object.__getattr__`; most commonly this is done for "
@@ -385,7 +473,7 @@ msgid ""
 "get_parent``.  Python 2.2 adds some new ways of controlling attribute access."
 msgstr ""
 
-#: whatsnew/2.2.rst:317
+#: whatsnew/2.2.rst:318
 msgid ""
 "First, ``__getattr__(attr_name)`` is still supported by new-style classes, "
 "and nothing about it has changed.  As before, it will be called when an "
@@ -393,7 +481,7 @@ msgid ""
 "found in the instance's dictionary."
 msgstr ""
 
-#: whatsnew/2.2.rst:322
+#: whatsnew/2.2.rst:323
 msgid ""
 "New-style classes also support a new method, "
 "``__getattribute__(attr_name)``.  The difference between the two methods is "
@@ -402,7 +490,7 @@ msgid ""
 "called if ``foo`` isn't found in the instance's dictionary."
 msgstr ""
 
-#: whatsnew/2.2.rst:328
+#: whatsnew/2.2.rst:329
 msgid ""
 "However, Python 2.2's support for :dfn:`properties` will often be a simpler "
 "way to trap attribute references.  Writing a :meth:`!__getattr__` method is "
@@ -415,7 +503,7 @@ msgid ""
 "in a sizable performance loss."
 msgstr ""
 
-#: whatsnew/2.2.rst:337
+#: whatsnew/2.2.rst:338
 msgid ""
 ":class:`property` is a new built-in type that packages up three functions "
 "that get, set, or delete an attribute, and a docstring.  For example, if you "
@@ -423,7 +511,25 @@ msgid ""
 "you could write::"
 msgstr ""
 
-#: whatsnew/2.2.rst:357
+#: whatsnew/2.2.rst:343
+msgid ""
+"class C(object):\n"
+"    def get_size (self):\n"
+"        result = ... computation ...\n"
+"        return result\n"
+"    def set_size (self, size):\n"
+"        ... compute something based on the size\n"
+"        and set internal state appropriately ...\n"
+"\n"
+"    # Define a property.  The 'delete this attribute'\n"
+"    # method is defined as None, so the attribute\n"
+"    # can't be deleted.\n"
+"    size = property(get_size, set_size,\n"
+"                    None,\n"
+"                    \"Storage size of this instance\")"
+msgstr ""
+
+#: whatsnew/2.2.rst:358
 msgid ""
 "That is certainly clearer and easier to write than a pair of :meth:`!"
 "__getattr__`/:meth:`!__setattr__` methods that check for the :attr:`!size` "
@@ -433,7 +539,7 @@ msgid ""
 "references to other attributes run at their usual speed."
 msgstr ""
 
-#: whatsnew/2.2.rst:364
+#: whatsnew/2.2.rst:365
 msgid ""
 "Finally, it's possible to constrain the list of attributes that can be "
 "referenced on an object using the new :attr:`~object.__slots__` class "
@@ -444,17 +550,34 @@ msgid ""
 "names.  An example will make this clear::"
 msgstr ""
 
-#: whatsnew/2.2.rst:385
+#: whatsnew/2.2.rst:372
+msgid ""
+">>> class C(object):\n"
+"...     __slots__ = ('template', 'name')\n"
+"...\n"
+">>> obj = C()\n"
+">>> print obj.template\n"
+"None\n"
+">>> obj.template = 'Test'\n"
+">>> print obj.template\n"
+"Test\n"
+">>> obj.newattr = None\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in ?\n"
+"AttributeError: 'C' object has no attribute 'newattr'"
+msgstr ""
+
+#: whatsnew/2.2.rst:386
 msgid ""
 "Note how you get an :exc:`AttributeError` on the attempt to assign to an "
 "attribute not listed in :attr:`~object.__slots__`."
 msgstr ""
 
-#: whatsnew/2.2.rst:392
+#: whatsnew/2.2.rst:393
 msgid "Related Links"
 msgstr ""
 
-#: whatsnew/2.2.rst:394
+#: whatsnew/2.2.rst:395
 msgid ""
 "This section has just been a quick overview of the new features, giving "
 "enough of an explanation to start you programming, but many details have "
@@ -462,7 +585,7 @@ msgid ""
 "picture?"
 msgstr ""
 
-#: whatsnew/2.2.rst:398
+#: whatsnew/2.2.rst:399
 msgid ""
 "The :ref:`descriptorhowto` is a lengthy tutorial introduction to the "
 "descriptor features, written by Guido van Rossum. If my description has "
@@ -470,7 +593,7 @@ msgid ""
 "more detail about the new features while still remaining quite easy to read."
 msgstr ""
 
-#: whatsnew/2.2.rst:403
+#: whatsnew/2.2.rst:404
 msgid ""
 "Next, there are two relevant PEPs, :pep:`252` and :pep:`253`.  :pep:`252` is "
 "titled \"Making Types Look More Like Classes\", and covers the descriptor "
@@ -482,7 +605,7 @@ msgid ""
 "substantial assistance from the rest of the Zope Corp. team."
 msgstr ""
 
-#: whatsnew/2.2.rst:412
+#: whatsnew/2.2.rst:413
 msgid ""
 "Finally, there's the ultimate authority: the source code.  Most of the "
 "machinery for the type handling is in :file:`Objects/typeobject.c`, but you "
@@ -490,25 +613,31 @@ msgid ""
 "including posting a question to python-list or python-dev."
 msgstr ""
 
-#: whatsnew/2.2.rst:421
+#: whatsnew/2.2.rst:422
 msgid "PEP 234: Iterators"
 msgstr ""
 
-#: whatsnew/2.2.rst:423
+#: whatsnew/2.2.rst:424
 msgid ""
 "Another significant addition to 2.2 is an iteration interface at both the C "
 "and Python levels.  Objects can define how they can be looped over by "
 "callers."
 msgstr ""
 
-#: whatsnew/2.2.rst:426
+#: whatsnew/2.2.rst:427
 msgid ""
 "In Python versions up to 2.1, the usual way to make ``for item in obj`` work "
 "is to define a :meth:`~object.__getitem__` method that looks something like "
 "this::"
 msgstr ""
 
-#: whatsnew/2.2.rst:432
+#: whatsnew/2.2.rst:430
+msgid ""
+"def __getitem__(self, index):\n"
+"    return <next item>"
+msgstr ""
+
+#: whatsnew/2.2.rst:433
 msgid ""
 ":meth:`~object.__getitem__` is more properly used to define an indexing "
 "operation on an object so that you can write ``obj[5]`` to retrieve the "
@@ -522,7 +651,7 @@ msgid ""
 "really should."
 msgstr ""
 
-#: whatsnew/2.2.rst:442
+#: whatsnew/2.2.rst:443
 msgid ""
 "In Python 2.2, iteration can be implemented separately, and :meth:`~object."
 "__getitem__` methods can be limited to classes that really do support random "
@@ -533,7 +662,7 @@ msgid ""
 "until it returns *sentinel* to signal that the iterator is done."
 msgstr ""
 
-#: whatsnew/2.2.rst:450
+#: whatsnew/2.2.rst:451
 msgid ""
 "Python classes can define an :meth:`!__iter__` method, which should create "
 "and return a new iterator for the object; if the object is its own iterator, "
@@ -544,7 +673,7 @@ msgid ""
 "`~PyTypeObject.tp_iternext` function."
 msgstr ""
 
-#: whatsnew/2.2.rst:457
+#: whatsnew/2.2.rst:458
 msgid ""
 "So, after all this, what do iterators actually do?  They have one required "
 "method, :meth:`next`, which takes no arguments and returns the next value.  "
@@ -552,7 +681,26 @@ msgid ""
 "raise the :exc:`StopIteration` exception. ::"
 msgstr ""
 
-#: whatsnew/2.2.rst:478
+#: whatsnew/2.2.rst:463
+msgid ""
+">>> L = [1,2,3]\n"
+">>> i = iter(L)\n"
+">>> print i\n"
+"<iterator object at 0x8116870>\n"
+">>> i.next()\n"
+"1\n"
+">>> i.next()\n"
+"2\n"
+">>> i.next()\n"
+"3\n"
+">>> i.next()\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in ?\n"
+"StopIteration\n"
+">>>"
+msgstr ""
+
+#: whatsnew/2.2.rst:479
 msgid ""
 "In 2.2, Python's :keyword:`for` statement no longer expects a sequence; it "
 "expects something for which :func:`iter` will return an iterator. For "
@@ -564,14 +712,43 @@ msgid ""
 "this::"
 msgstr ""
 
-#: whatsnew/2.2.rst:492
+#: whatsnew/2.2.rst:487
+msgid ""
+">>> L = [1,2,3]\n"
+">>> i = iter(L)\n"
+">>> a,b,c = i\n"
+">>> a,b,c\n"
+"(1, 2, 3)"
+msgstr ""
+
+#: whatsnew/2.2.rst:493
 msgid ""
 "Iterator support has been added to some of Python's basic types.   Calling :"
 "func:`iter` on a dictionary will return an iterator which loops over its "
 "keys::"
 msgstr ""
 
-#: whatsnew/2.2.rst:512
+#: whatsnew/2.2.rst:496
+msgid ""
+">>> m = {'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6,\n"
+"...      'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12}\n"
+">>> for key in m: print key, m[key]\n"
+"...\n"
+"Mar 3\n"
+"Feb 2\n"
+"Aug 8\n"
+"Sep 9\n"
+"May 5\n"
+"Jun 6\n"
+"Jul 7\n"
+"Jan 1\n"
+"Apr 4\n"
+"Nov 11\n"
+"Dec 12\n"
+"Oct 10"
+msgstr ""
+
+#: whatsnew/2.2.rst:513
 msgid ""
 "That's just the default behaviour.  If you want to iterate over keys, "
 "values, or key/value pairs, you can explicitly call the :meth:`!iterkeys`, :"
@@ -580,14 +757,21 @@ msgid ""
 "dictionaries, so ``key in dict`` is now equivalent to ``dict.has_key(key)``."
 msgstr ""
 
-#: whatsnew/2.2.rst:518
+#: whatsnew/2.2.rst:519
 msgid ""
 "Files also provide an iterator, which calls the :meth:`readline` method "
 "until there are no more lines in the file.  This means you can now read each "
 "line of a file using code like this::"
 msgstr ""
 
-#: whatsnew/2.2.rst:526
+#: whatsnew/2.2.rst:523
+msgid ""
+"for line in file:\n"
+"    # do something for each line\n"
+"    ..."
+msgstr ""
+
+#: whatsnew/2.2.rst:527
 msgid ""
 "Note that you can only go forward in an iterator; there's no way to get the "
 "previous element, reset the iterator, or make a copy of it. An iterator "
@@ -595,27 +779,27 @@ msgid ""
 "only requires a :meth:`next` method."
 msgstr ""
 
-#: whatsnew/2.2.rst:534
+#: whatsnew/2.2.rst:535
 msgid ":pep:`234` - Iterators"
 msgstr ""
 
-#: whatsnew/2.2.rst:535
+#: whatsnew/2.2.rst:536
 msgid ""
 "Written by Ka-Ping Yee and GvR; implemented  by the Python Labs crew, mostly "
 "by GvR and Tim Peters."
 msgstr ""
 
-#: whatsnew/2.2.rst:542
+#: whatsnew/2.2.rst:543
 msgid "PEP 255: Simple Generators"
 msgstr ""
 
-#: whatsnew/2.2.rst:544
+#: whatsnew/2.2.rst:545
 msgid ""
 "Generators are another new feature, one that interacts with the introduction "
 "of iterators."
 msgstr ""
 
-#: whatsnew/2.2.rst:547
+#: whatsnew/2.2.rst:548
 msgid ""
 "You're doubtless familiar with how function calls work in Python or C.  When "
 "you call a function, it gets a private namespace where its local variables "
@@ -628,11 +812,18 @@ msgid ""
 "functions."
 msgstr ""
 
-#: whatsnew/2.2.rst:556
+#: whatsnew/2.2.rst:557
 msgid "Here's the simplest example of a generator function::"
 msgstr ""
 
-#: whatsnew/2.2.rst:562
+#: whatsnew/2.2.rst:559
+msgid ""
+"def generate_ints(N):\n"
+"    for i in range(N):\n"
+"        yield i"
+msgstr ""
+
+#: whatsnew/2.2.rst:563
 msgid ""
 "A new keyword, :keyword:`yield`, was introduced for generators.  Any "
 "function containing a :keyword:`!yield` statement is a generator function; "
@@ -643,7 +834,7 @@ msgid ""
 "Python 2.3 this statement will become unnecessary."
 msgstr ""
 
-#: whatsnew/2.2.rst:570
+#: whatsnew/2.2.rst:571
 msgid ""
 "When you call a generator function, it doesn't return a single value; "
 "instead it returns a generator object that supports the iterator protocol.  "
@@ -659,17 +850,35 @@ msgid ""
 "explanation of the interaction between :keyword:`!yield` and exceptions.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:583
+#: whatsnew/2.2.rst:584
 msgid "Here's a sample usage of the :func:`!generate_ints` generator::"
 msgstr ""
 
-#: whatsnew/2.2.rst:600
+#: whatsnew/2.2.rst:586
+msgid ""
+">>> gen = generate_ints(3)\n"
+">>> gen\n"
+"<generator object at 0x8117f90>\n"
+">>> gen.next()\n"
+"0\n"
+">>> gen.next()\n"
+"1\n"
+">>> gen.next()\n"
+"2\n"
+">>> gen.next()\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in ?\n"
+"  File \"<stdin>\", line 2, in generate_ints\n"
+"StopIteration"
+msgstr ""
+
+#: whatsnew/2.2.rst:601
 msgid ""
 "You could equally write ``for i in generate_ints(5)``, or ``a,b,c = "
 "generate_ints(3)``."
 msgstr ""
 
-#: whatsnew/2.2.rst:603
+#: whatsnew/2.2.rst:604
 msgid ""
 "Inside a generator function, the :keyword:`return` statement can only be "
 "used without a value, and signals the end of the procession of values; "
@@ -680,7 +889,7 @@ msgid ""
 "flow of execution fall off the bottom of the function."
 msgstr ""
 
-#: whatsnew/2.2.rst:611
+#: whatsnew/2.2.rst:612
 msgid ""
 "You could achieve the effect of generators manually by writing your own "
 "class and storing all the local variables of the generator as instance "
@@ -693,7 +902,19 @@ msgid ""
 "recursively. ::"
 msgstr ""
 
-#: whatsnew/2.2.rst:629
+#: whatsnew/2.2.rst:621
+msgid ""
+"# A recursive generator that generates Tree leaves in in-order.\n"
+"def inorder(t):\n"
+"    if t:\n"
+"        for x in inorder(t.left):\n"
+"            yield x\n"
+"        yield t.label\n"
+"        for x in inorder(t.right):\n"
+"            yield x"
+msgstr ""
+
+#: whatsnew/2.2.rst:630
 msgid ""
 "Two other examples in :file:`Lib/test/test_generators.py` produce solutions "
 "for the N-Queens problem (placing $N$ queens on an $NxN$ chess board so that "
@@ -702,7 +923,7 @@ msgid ""
 "twice)."
 msgstr ""
 
-#: whatsnew/2.2.rst:634
+#: whatsnew/2.2.rst:635
 msgid ""
 "The idea of generators comes from other programming languages, especially "
 "Icon (https://www2.cs.arizona.edu/icon/), where the idea of generators is "
@@ -712,7 +933,13 @@ msgid ""
 "of what this looks like::"
 msgstr ""
 
-#: whatsnew/2.2.rst:644
+#: whatsnew/2.2.rst:642
+msgid ""
+"sentence := \"Store it in the neighboring harbor\"\n"
+"if (i := find(\"or\", sentence)) > 5 then write(i)"
+msgstr ""
+
+#: whatsnew/2.2.rst:645
 msgid ""
 "In Icon the :func:`!find` function returns the indexes at which the "
 "substring \"or\" is found: 3, 23, 33.  In the :keyword:`if` statement, ``i`` "
@@ -722,7 +949,7 @@ msgid ""
 "screen."
 msgstr ""
 
-#: whatsnew/2.2.rst:650
+#: whatsnew/2.2.rst:651
 msgid ""
 "Python doesn't go nearly as far as Icon in adopting generators as a central "
 "concept.  Generators are considered a new part of the core Python language, "
@@ -733,22 +960,22 @@ msgid ""
 "other functions or stored in a data structure."
 msgstr ""
 
-#: whatsnew/2.2.rst:661
+#: whatsnew/2.2.rst:662
 msgid ":pep:`255` - Simple Generators"
 msgstr ""
 
-#: whatsnew/2.2.rst:662
+#: whatsnew/2.2.rst:663
 msgid ""
 "Written by Neil Schemenauer, Tim Peters, Magnus Lie Hetland.  Implemented "
 "mostly by Neil Schemenauer and Tim Peters, with other fixes from the Python "
 "Labs crew."
 msgstr ""
 
-#: whatsnew/2.2.rst:669
+#: whatsnew/2.2.rst:670
 msgid "PEP 237: Unifying Long Integers and Integers"
 msgstr ""
 
-#: whatsnew/2.2.rst:671
+#: whatsnew/2.2.rst:672
 msgid ""
 "In recent versions, the distinction between regular integers, which are 32-"
 "bit values on most machines, and long integers, which can be of arbitrary "
@@ -761,7 +988,7 @@ msgid ""
 "exception with the message 'slice index must be int'."
 msgstr ""
 
-#: whatsnew/2.2.rst:681
+#: whatsnew/2.2.rst:682
 msgid ""
 "Python 2.2 will shift values from short to long integers as required. The "
 "'L' suffix is no longer needed to indicate a long integer literal, as now "
@@ -772,28 +999,36 @@ msgid ""
 "result.  For example::"
 msgstr ""
 
-#: whatsnew/2.2.rst:694
+#: whatsnew/2.2.rst:690
+msgid ""
+">>> 1234567890123\n"
+"1234567890123L\n"
+">>> 2 ** 64\n"
+"18446744073709551616L"
+msgstr ""
+
+#: whatsnew/2.2.rst:695
 msgid ""
 "In most cases, integers and long integers will now be treated identically.  "
 "You can still distinguish them with the :func:`type` built-in function, but "
 "that's rarely needed."
 msgstr ""
 
-#: whatsnew/2.2.rst:701
+#: whatsnew/2.2.rst:702
 msgid ":pep:`237` - Unifying Long Integers and Integers"
 msgstr ""
 
-#: whatsnew/2.2.rst:702
+#: whatsnew/2.2.rst:703
 msgid ""
 "Written by Moshe Zadka and Guido van Rossum.  Implemented mostly by Guido "
 "van Rossum."
 msgstr ""
 
-#: whatsnew/2.2.rst:709
+#: whatsnew/2.2.rst:710
 msgid "PEP 238: Changing the Division Operator"
 msgstr ""
 
-#: whatsnew/2.2.rst:711
+#: whatsnew/2.2.rst:712
 msgid ""
 "The most controversial change in Python 2.2 heralds the start of an effort "
 "to fix an old design flaw that's been in Python from the beginning. "
@@ -806,7 +1041,7 @@ msgid ""
 "difficult to determine the possible types of the operands."
 msgstr ""
 
-#: whatsnew/2.2.rst:721
+#: whatsnew/2.2.rst:722
 msgid ""
 "(The controversy is over whether this is *really* a design flaw, and whether "
 "it's worth breaking existing code to fix this.  It's caused endless "
@@ -816,14 +1051,14 @@ msgid ""
 "Read :pep:`238` for a summary of arguments and counter-arguments.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:728
+#: whatsnew/2.2.rst:729
 msgid ""
 "Because this change might break code, it's being introduced very gradually. "
 "Python 2.2 begins the transition, but the switch won't be complete until "
 "Python 3.0."
 msgstr ""
 
-#: whatsnew/2.2.rst:732
+#: whatsnew/2.2.rst:733
 msgid ""
 "First, I'll borrow some terminology from :pep:`238`.  \"True division\" is "
 "the division that most non-programmers are familiar with: 3/2 is 1.5, 1/4 is "
@@ -835,11 +1070,11 @@ msgid ""
 "the operands is a floating-point number."
 msgstr ""
 
-#: whatsnew/2.2.rst:740
+#: whatsnew/2.2.rst:741
 msgid "Here are the changes 2.2 introduces:"
 msgstr ""
 
-#: whatsnew/2.2.rst:742
+#: whatsnew/2.2.rst:743
 msgid ""
 "A new operator, ``//``, is the floor division operator. (Yes, we know it "
 "looks like C++'s comment symbol.)  ``//`` *always* performs floor division "
@@ -847,13 +1082,13 @@ msgid ""
 "``1.0 // 2.0`` is also 0.0."
 msgstr ""
 
-#: whatsnew/2.2.rst:747
+#: whatsnew/2.2.rst:748
 msgid ""
 "``//`` is always available in Python 2.2; you don't need to enable it using "
 "a ``__future__`` statement."
 msgstr ""
 
-#: whatsnew/2.2.rst:750
+#: whatsnew/2.2.rst:751
 msgid ""
 "By including a ``from __future__ import division`` in a module, the ``/`` "
 "operator will be changed to return the result of true division, so ``1/2`` "
@@ -861,7 +1096,7 @@ msgid ""
 "division. The default meaning of ``/`` will not change until Python 3.0."
 msgstr ""
 
-#: whatsnew/2.2.rst:755
+#: whatsnew/2.2.rst:756
 msgid ""
 "Classes can define methods called :meth:`~object.__truediv__` and :meth:"
 "`~object.__floordiv__` to overload the two division operators.  At the C "
@@ -869,7 +1104,7 @@ msgid ""
 "extension types can define the two operators."
 msgstr ""
 
-#: whatsnew/2.2.rst:760
+#: whatsnew/2.2.rst:761
 msgid ""
 "Python 2.2 supports some command-line arguments for testing whether code "
 "will work with the changed division semantics.  Running python with :option:"
@@ -879,21 +1114,21 @@ msgid ""
 "without a warning; the warning will be turned on by default in Python 2.3."
 msgstr ""
 
-#: whatsnew/2.2.rst:770
+#: whatsnew/2.2.rst:771
 msgid ":pep:`238` - Changing the Division Operator"
 msgstr ""
 
-#: whatsnew/2.2.rst:771
+#: whatsnew/2.2.rst:772
 msgid ""
 "Written by Moshe Zadka and  Guido van Rossum.  Implemented by Guido van "
 "Rossum.."
 msgstr ""
 
-#: whatsnew/2.2.rst:777
+#: whatsnew/2.2.rst:778
 msgid "Unicode Changes"
 msgstr ""
 
-#: whatsnew/2.2.rst:779
+#: whatsnew/2.2.rst:780
 msgid ""
 "Python's Unicode support has been enhanced a bit in 2.2.  Unicode strings "
 "are usually stored as UCS-2, as 16-bit unsigned integers. Python 2.2 can "
@@ -903,7 +1138,7 @@ msgid ""
 "completely disable Unicode support.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:786
+#: whatsnew/2.2.rst:787
 msgid ""
 "When built to use UCS-4 (a \"wide Python\"), the interpreter can natively "
 "handle Unicode characters from U+000000 to U+110000, so the range of legal "
@@ -914,7 +1149,7 @@ msgid ""
 "characters\"; consult it for further details."
 msgstr ""
 
-#: whatsnew/2.2.rst:794
+#: whatsnew/2.2.rst:795
 msgid ""
 "Another change is simpler to explain. Since their introduction, Unicode "
 "strings have supported an :meth:`!encode` method to convert the string to a "
@@ -925,39 +1160,60 @@ msgid ""
 "codec."
 msgstr ""
 
-#: whatsnew/2.2.rst:801
+#: whatsnew/2.2.rst:802
 msgid ""
 "Using this new feature, codecs have been added for tasks not directly "
 "related to Unicode.  For example, codecs have been added for uu-encoding, "
 "MIME's base64 encoding, and compression with the :mod:`zlib` module::"
 msgstr ""
 
-#: whatsnew/2.2.rst:822
+#: whatsnew/2.2.rst:806
+msgid ""
+">>> s = \"\"\"Here is a lengthy piece of redundant, overly verbose,\n"
+"... and repetitive text.\n"
+"... \"\"\"\n"
+">>> data = s.encode('zlib')\n"
+">>> data\n"
+"'x\\x9c\\r\\xc9\\xc1\\r\\x80 \\x10\\x04\\xc0?Ul...'\n"
+">>> data.decode('zlib')\n"
+"'Here is a lengthy piece of redundant, overly verbose,\\nand repetitive text."
+"\\n'\n"
+">>> print s.encode('uu')\n"
+"begin 666 <data>\n"
+"M2&5R92!I<R!A(&QE;F=T:'D@<&EE8V4@;V8@<F5D=6YD86YT+\"!O=F5R;'D@\n"
+">=F5R8F]S92P*86YD(')E<&5T:71I=F4@=&5X=\"X*\n"
+"\n"
+"end\n"
+">>> \"sheesh\".encode('rot-13')\n"
+"'furrfu'"
+msgstr ""
+
+#: whatsnew/2.2.rst:823
 msgid ""
 "To convert a class instance to Unicode, a :meth:`!__unicode__` method can be "
 "defined by a class, analogous to :meth:`!__str__`."
 msgstr ""
 
-#: whatsnew/2.2.rst:825
+#: whatsnew/2.2.rst:826
 msgid ""
 ":meth:`!encode`, :meth:`!decode`, and :meth:`!__unicode__` were implemented "
 "by Marc-André Lemburg.  The changes to support using UCS-4 internally were "
 "implemented by Fredrik Lundh and Martin von Löwis."
 msgstr ""
 
-#: whatsnew/2.2.rst:832
+#: whatsnew/2.2.rst:833
 msgid ":pep:`261` - Support for 'wide' Unicode characters"
 msgstr ""
 
-#: whatsnew/2.2.rst:833
+#: whatsnew/2.2.rst:834
 msgid "Written by Paul Prescod."
 msgstr ""
 
-#: whatsnew/2.2.rst:839
+#: whatsnew/2.2.rst:840
 msgid "PEP 227: Nested Scopes"
 msgstr ""
 
-#: whatsnew/2.2.rst:841
+#: whatsnew/2.2.rst:842
 msgid ""
 "In Python 2.1, statically nested scopes were added as an optional feature, "
 "to be enabled by a ``from __future__ import nested_scopes`` directive.  In "
@@ -967,7 +1223,7 @@ msgid ""
 "2.1 came out, you can skip the rest of this section."
 msgstr ""
 
-#: whatsnew/2.2.rst:848
+#: whatsnew/2.2.rst:849
 msgid ""
 "The largest change introduced in Python 2.1, and made complete in 2.2, is to "
 "Python's scoping rules.  In Python 2.0, at any given time there are at most "
@@ -977,7 +1233,17 @@ msgid ""
 "definition doesn't work::"
 msgstr ""
 
-#: whatsnew/2.2.rst:862
+#: whatsnew/2.2.rst:856
+msgid ""
+"def f():\n"
+"    ...\n"
+"    def g(value):\n"
+"        ...\n"
+"        return g(value-1) + 1\n"
+"    ..."
+msgstr ""
+
+#: whatsnew/2.2.rst:863
 msgid ""
 "The function :func:`!g` will always raise a :exc:`NameError` exception, "
 "because the binding of the name ``g`` isn't in either its local namespace or "
@@ -989,13 +1255,22 @@ msgid ""
 "arguments. ::"
 msgstr ""
 
-#: whatsnew/2.2.rst:876
+#: whatsnew/2.2.rst:871
+msgid ""
+"def find(self, name):\n"
+"    \"Return list of any entries equal to 'name'\"\n"
+"    L = filter(lambda x, name=name: x == name,\n"
+"               self.list_attribute)\n"
+"    return L"
+msgstr ""
+
+#: whatsnew/2.2.rst:877
 msgid ""
 "The readability of Python code written in a strongly functional style "
 "suffers greatly as a result."
 msgstr ""
 
-#: whatsnew/2.2.rst:879
+#: whatsnew/2.2.rst:880
 msgid ""
 "The most significant change to Python 2.2 is that static scoping has been "
 "added to the language to fix this problem.  As a first effect, the "
@@ -1007,7 +1282,7 @@ msgid ""
 "rules, and a dissection of the implementation, can be found in the PEP."
 msgstr ""
 
-#: whatsnew/2.2.rst:888
+#: whatsnew/2.2.rst:889
 msgid ""
 "This change may cause some compatibility problems for code where the same "
 "variable name is used both at the module level and as a local variable "
@@ -1016,7 +1291,7 @@ msgid ""
 "read in the first place."
 msgstr ""
 
-#: whatsnew/2.2.rst:894
+#: whatsnew/2.2.rst:895
 msgid ""
 "One side effect of the change is that the ``from module import *`` and "
 "``exec`` statements have been made illegal inside a function scope under "
@@ -1032,37 +1307,47 @@ msgid ""
 "the compiler will flag this by raising a :exc:`SyntaxError` exception."
 msgstr ""
 
-#: whatsnew/2.2.rst:907
+#: whatsnew/2.2.rst:908
 msgid "To make the preceding explanation a bit clearer, here's an example::"
 msgstr ""
 
-#: whatsnew/2.2.rst:916
+#: whatsnew/2.2.rst:910
+msgid ""
+"x = 1\n"
+"def f():\n"
+"    # The next line is a syntax error\n"
+"    exec 'x=2'\n"
+"    def g():\n"
+"        return x"
+msgstr ""
+
+#: whatsnew/2.2.rst:917
 msgid ""
 "Line 4 containing the ``exec`` statement is a syntax error, since ``exec`` "
 "would define a new local variable named ``x`` whose value should be accessed "
 "by :func:`!g`."
 msgstr ""
 
-#: whatsnew/2.2.rst:920
+#: whatsnew/2.2.rst:921
 msgid ""
 "This shouldn't be much of a limitation, since ``exec`` is rarely used in "
 "most Python code (and when it is used, it's often a sign of a poor design "
 "anyway)."
 msgstr ""
 
-#: whatsnew/2.2.rst:927
+#: whatsnew/2.2.rst:928
 msgid ":pep:`227` - Statically Nested Scopes"
 msgstr ""
 
-#: whatsnew/2.2.rst:928
+#: whatsnew/2.2.rst:929
 msgid "Written and implemented by Jeremy Hylton."
 msgstr ""
 
-#: whatsnew/2.2.rst:934
+#: whatsnew/2.2.rst:935
 msgid "New and Improved Modules"
 msgstr ""
 
-#: whatsnew/2.2.rst:936
+#: whatsnew/2.2.rst:937
 msgid ""
 "The :mod:`xmlrpclib <xmlrpc.client>` module was contributed to the standard "
 "library by Fredrik Lundh, providing support for writing XML-RPC clients.  "
@@ -1072,20 +1357,40 @@ msgid ""
 "channel::"
 msgstr ""
 
-#: whatsnew/2.2.rst:959
+#: whatsnew/2.2.rst:943
+msgid ""
+"import xmlrpclib\n"
+"s = xmlrpclib.Server(\n"
+"      'http://www.oreillynet.com/meerkat/xml-rpc/server.php')\n"
+"channels = s.meerkat.getChannels()\n"
+"# channels is a list of dictionaries, like this:\n"
+"# [{'id': 4, 'title': 'Freshmeat Daily News'}\n"
+"#  {'id': 190, 'title': '32Bits Online'},\n"
+"#  {'id': 4549, 'title': '3DGamers'}, ... ]\n"
+"\n"
+"# Get the items for one channel\n"
+"items = s.meerkat.getItems( {'channel': 4} )\n"
+"\n"
+"# 'items' is another list of dictionaries, like this:\n"
+"# [{'link': 'http://freshmeat.net/releases/52719/',\n"
+"#   'description': 'A utility which converts HTML to XSL FO.',\n"
+"#   'title': 'html2fo 0.3 (Default)'}, ... ]"
+msgstr ""
+
+#: whatsnew/2.2.rst:960
 msgid ""
 "The :mod:`SimpleXMLRPCServer <xmlrpc.server>` module makes it easy to create "
 "straightforward XML-RPC servers.  See http://xmlrpc.scripting.com/ for more "
 "information about XML-RPC."
 msgstr ""
 
-#: whatsnew/2.2.rst:962
+#: whatsnew/2.2.rst:963
 msgid ""
 "The new :mod:`hmac` module implements the HMAC algorithm described by :rfc:"
 "`2104`. (Contributed by Gerhard Häring.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:965
+#: whatsnew/2.2.rst:966
 msgid ""
 "Several functions that originally returned lengthy tuples now return pseudo-"
 "sequences that still behave like tuples but also have mnemonic attributes "
@@ -1096,7 +1401,7 @@ msgid ""
 "`time` module."
 msgstr ""
 
-#: whatsnew/2.2.rst:972
+#: whatsnew/2.2.rst:973
 msgid ""
 "For example, to obtain a file's size using the old tuples, you'd end up "
 "writing something like ``file_size = os.stat(filename)[stat.ST_SIZE]``, but "
@@ -1104,25 +1409,25 @@ msgid ""
 "st_size``."
 msgstr ""
 
-#: whatsnew/2.2.rst:976
+#: whatsnew/2.2.rst:977
 msgid "The original patch for this feature was contributed by Nick Mathewson."
 msgstr ""
 
-#: whatsnew/2.2.rst:978
+#: whatsnew/2.2.rst:979
 msgid ""
 "The Python profiler has been extensively reworked and various errors in its "
 "output have been corrected.  (Contributed by Fred L. Drake, Jr. and Tim "
 "Peters.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:981
+#: whatsnew/2.2.rst:982
 msgid ""
 "The :mod:`socket` module can be compiled to support IPv6; specify the :"
 "option:`!--enable-ipv6` option to Python's configure script.  (Contributed "
 "by Jun-ichiro \"itojun\" Hagino.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:985
+#: whatsnew/2.2.rst:986
 msgid ""
 "Two new format characters were added to the :mod:`struct` module for 64-bit "
 "integers on platforms that support the C :c:expr:`long long` type.  ``q`` is "
@@ -1130,7 +1435,7 @@ msgid ""
 "returned in Python's long integer type.  (Contributed by Tim Peters.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:990
+#: whatsnew/2.2.rst:991
 msgid ""
 "In the interpreter's interactive mode, there's a new built-in function :func:"
 "`help` that uses the :mod:`pydoc` module introduced in Python 2.1 to provide "
@@ -1141,7 +1446,7 @@ msgid ""
 "`pydoc` module.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:998
+#: whatsnew/2.2.rst:999
 msgid ""
 "Various bugfixes and performance improvements have been made to the SRE "
 "engine underlying the :mod:`re` module.  For example, the :func:`re.sub` "
@@ -1152,7 +1457,7 @@ msgid ""
 "Fredrik Lundh.  The BIGCHARSET patch was contributed by Martin von Löwis.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1006
+#: whatsnew/2.2.rst:1007
 msgid ""
 "The :mod:`smtplib` module now supports :rfc:`2487`, \"Secure SMTP over "
 "TLS\", so it's now possible to encrypt the SMTP traffic between a Python "
@@ -1160,7 +1465,7 @@ msgid ""
 "also supports SMTP authentication.  (Contributed by Gerhard Häring.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1011
+#: whatsnew/2.2.rst:1012
 msgid ""
 "The :mod:`imaplib` module, maintained by Piers Lauder, has support for "
 "several new extensions: the NAMESPACE extension defined in :rfc:`2342`, "
@@ -1168,7 +1473,7 @@ msgid ""
 "Pelletier.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1015
+#: whatsnew/2.2.rst:1016
 msgid ""
 "The :mod:`!rfc822` module's parsing of email addresses is now compliant "
 "with :rfc:`2822`, an update to :rfc:`822`.  (The module's name is *not* "
@@ -1177,7 +1482,7 @@ msgid ""
 "Barry Warsaw, and arising out of his work on Mailman.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1021
+#: whatsnew/2.2.rst:1022
 msgid ""
 "The :mod:`difflib` module now contains a new :class:`!Differ` class for "
 "producing human-readable lists of changes (a \"delta\") between two "
@@ -1188,7 +1493,7 @@ msgid ""
 "the generatorization.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1028
+#: whatsnew/2.2.rst:1029
 msgid ""
 "New constants :const:`!ascii_letters`, :const:`!ascii_lowercase`, and :const:"
 "`!ascii_uppercase` were added to the :mod:`string` module.  There were "
@@ -1200,25 +1505,25 @@ msgid ""
 "person; fixed by Fred L. Drake, Jr.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1037
+#: whatsnew/2.2.rst:1038
 msgid ""
 "The :mod:`mimetypes` module now makes it easier to use alternative MIME-type "
 "databases by the addition of a :class:`~mimetypes.MimeTypes` class, which "
 "takes a list of filenames to be parsed.  (Contributed by Fred L. Drake, Jr.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1041
+#: whatsnew/2.2.rst:1042
 msgid ""
 "A :class:`~threading.Timer` class was added to the :mod:`threading` module "
 "that allows scheduling an activity to happen at some future time.  "
 "(Contributed by Itamar Shtull-Trauring.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1049
+#: whatsnew/2.2.rst:1050
 msgid "Interpreter Changes and Fixes"
 msgstr ""
 
-#: whatsnew/2.2.rst:1051
+#: whatsnew/2.2.rst:1052
 msgid ""
 "Some of the changes only affect people who deal with the Python interpreter "
 "at the C level because they're writing Python extension modules, embedding "
@@ -1227,7 +1532,7 @@ msgid ""
 "much."
 msgstr ""
 
-#: whatsnew/2.2.rst:1056
+#: whatsnew/2.2.rst:1057
 msgid ""
 "Profiling and tracing functions can now be implemented in C, which can "
 "operate at much higher speeds than Python-based functions and should reduce "
@@ -1239,7 +1544,7 @@ msgid ""
 "(Contributed by Fred L. Drake, Jr.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1065
+#: whatsnew/2.2.rst:1066
 msgid ""
 "Another low-level API, primarily of interest to implementers of Python "
 "debuggers and development tools, was added. :c:func:"
@@ -1250,7 +1555,7 @@ msgid ""
 "David Beazley.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1072
+#: whatsnew/2.2.rst:1073
 msgid ""
 "The C-level interface to the garbage collector has been changed to make it "
 "easier to write extension types that support garbage collection and to debug "
@@ -1261,40 +1566,40 @@ msgid ""
 "priority."
 msgstr ""
 
-#: whatsnew/2.2.rst:1079
+#: whatsnew/2.2.rst:1080
 msgid ""
 "To upgrade an extension module to the new API, perform the following steps:"
 msgstr ""
 
-#: whatsnew/2.2.rst:1081
+#: whatsnew/2.2.rst:1082
 msgid "Rename :c:macro:`!Py_TPFLAGS_GC` to :c:macro:`Py_TPFLAGS_HAVE_GC`."
 msgstr ""
 
-#: whatsnew/2.2.rst:1083
+#: whatsnew/2.2.rst:1084
 msgid ""
 "Use :c:func:`PyObject_GC_New` or :c:func:`PyObject_GC_NewVar` to allocate"
 msgstr ""
 
-#: whatsnew/2.2.rst:1084
+#: whatsnew/2.2.rst:1085
 msgid "objects, and :c:func:`PyObject_GC_Del` to deallocate them."
 msgstr ""
 
-#: whatsnew/2.2.rst:1086
+#: whatsnew/2.2.rst:1087
 msgid ""
 "Rename :c:func:`!PyObject_GC_Init` to :c:func:`PyObject_GC_Track` and :c:"
 "func:`!PyObject_GC_Fini` to :c:func:`PyObject_GC_UnTrack`."
 msgstr ""
 
-#: whatsnew/2.2.rst:1089
+#: whatsnew/2.2.rst:1090
 msgid "Remove :c:macro:`!PyGC_HEAD_SIZE` from object size calculations."
 msgstr ""
 
-#: whatsnew/2.2.rst:1091
+#: whatsnew/2.2.rst:1092
 msgid ""
 "Remove calls to :c:func:`!PyObject_AS_GC` and :c:func:`!PyObject_FROM_GC`."
 msgstr ""
 
-#: whatsnew/2.2.rst:1093
+#: whatsnew/2.2.rst:1094
 msgid ""
 "A new ``et`` format sequence was added to :c:func:`PyArg_ParseTuple`; ``et`` "
 "takes both a parameter and an encoding name, and converts the parameter to "
@@ -1306,7 +1611,7 @@ msgid ""
 "and used for the MBCS support on Windows described in the following section.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1102
+#: whatsnew/2.2.rst:1103
 msgid ""
 "A different argument parsing function, :c:func:`PyArg_UnpackTuple`, has been "
 "added that's simpler and presumably faster.  Instead of specifying a format "
@@ -1315,7 +1620,7 @@ msgid ""
 "be filled in with argument values."
 msgstr ""
 
-#: whatsnew/2.2.rst:1108
+#: whatsnew/2.2.rst:1109
 msgid ""
 "Two new flags :c:macro:`METH_NOARGS` and :c:macro:`METH_O` are available in "
 "method definition tables to simplify implementation of methods with no "
@@ -1325,7 +1630,7 @@ msgid ""
 "methods is  now officially deprecated."
 msgstr ""
 
-#: whatsnew/2.2.rst:1114
+#: whatsnew/2.2.rst:1115
 msgid ""
 "Two new wrapper functions, :c:func:`PyOS_snprintf` and :c:func:"
 "`PyOS_vsnprintf` were added to provide  cross-platform implementations for "
@@ -1335,7 +1640,7 @@ msgid ""
 "protect against buffer overruns. (Contributed by M.-A. Lemburg.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1121
+#: whatsnew/2.2.rst:1122
 msgid ""
 "The :c:func:`_PyTuple_Resize` function has lost an unused parameter, so now "
 "it takes 2 parameters instead of 3.  The third argument was never used, and "
@@ -1343,11 +1648,11 @@ msgid ""
 "2.2."
 msgstr ""
 
-#: whatsnew/2.2.rst:1129
+#: whatsnew/2.2.rst:1130
 msgid "Other Changes and Fixes"
 msgstr ""
 
-#: whatsnew/2.2.rst:1131
+#: whatsnew/2.2.rst:1132
 msgid ""
 "As usual there were a bunch of other improvements and bugfixes scattered "
 "throughout the source tree.  A search through the CVS change logs finds "
@@ -1356,18 +1661,18 @@ msgid ""
 "and fixed 82 bugs.  These figures are likely to be underestimates."
 msgstr ""
 
-#: whatsnew/2.2.rst:1137
+#: whatsnew/2.2.rst:1138
 msgid "Some of the more notable changes are:"
 msgstr ""
 
-#: whatsnew/2.2.rst:1139
+#: whatsnew/2.2.rst:1140
 msgid ""
 "The code for the MacOS port for Python, maintained by Jack Jansen, is now "
 "kept in the main Python CVS tree, and many changes have been made to support "
 "MacOS X."
 msgstr ""
 
-#: whatsnew/2.2.rst:1142
+#: whatsnew/2.2.rst:1143
 msgid ""
 "The most significant change is the ability to build Python as a framework, "
 "enabled by supplying the :option:`!--enable-framework` option to the "
@@ -1381,7 +1686,7 @@ msgid ""
 "OSA scripting language and much more.\""
 msgstr ""
 
-#: whatsnew/2.2.rst:1153
+#: whatsnew/2.2.rst:1154
 msgid ""
 "Most of the MacPython toolbox modules, which interface to MacOS APIs such as "
 "windowing, QuickTime, scripting, etc. have been ported to OS X, but they've "
@@ -1389,14 +1694,14 @@ msgid ""
 "with these modules can uncomment them manually."
 msgstr ""
 
-#: whatsnew/2.2.rst:1176
+#: whatsnew/2.2.rst:1177
 msgid ""
 "Keyword arguments passed to built-in functions that don't take them now "
 "cause a :exc:`TypeError` exception to be raised, with the message "
 "\"*function* takes no keyword arguments\"."
 msgstr ""
 
-#: whatsnew/2.2.rst:1180
+#: whatsnew/2.2.rst:1181
 msgid ""
 "Weak references, added in Python 2.1 as an extension module, are now part of "
 "the core because they're used in the implementation of new-style classes.  "
@@ -1404,14 +1709,14 @@ msgid ""
 "`weakref` module to become a built-in exception."
 msgstr ""
 
-#: whatsnew/2.2.rst:1185
+#: whatsnew/2.2.rst:1186
 msgid ""
 "A new script, :file:`Tools/scripts/cleanfuture.py` by Tim Peters, "
 "automatically removes obsolete ``__future__`` statements from Python source "
 "code."
 msgstr ""
 
-#: whatsnew/2.2.rst:1189
+#: whatsnew/2.2.rst:1190
 msgid ""
 "An additional *flags* argument has been added to the built-in function :func:"
 "`compile`, so the behaviour of ``__future__`` statements can now be "
@@ -1420,7 +1725,7 @@ msgid ""
 "(Contributed by Michael Hudson.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1195
+#: whatsnew/2.2.rst:1196
 msgid ""
 "The new license introduced with Python 1.6 wasn't GPL-compatible.  This is "
 "fixed by some minor textual changes to the 2.2 license, so it's now legal to "
@@ -1430,7 +1735,7 @@ msgid ""
 "to the Python 2.0.1 and 2.1.1 releases."
 msgstr ""
 
-#: whatsnew/2.2.rst:1202
+#: whatsnew/2.2.rst:1203
 msgid ""
 "When presented with a Unicode filename on Windows, Python will now convert "
 "it to an MBCS encoded string, as used by the Microsoft file APIs.  As MBCS "
@@ -1441,18 +1746,18 @@ msgid ""
 "Unix support was added by Martin von Löwis.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1210
+#: whatsnew/2.2.rst:1211
 msgid ""
 "Large file support is now enabled on Windows.  (Contributed by Tim Peters.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1212
+#: whatsnew/2.2.rst:1213
 msgid ""
 "The :file:`Tools/scripts/ftpmirror.py` script now parses a :file:`.netrc` "
 "file, if you have one. (Contributed by Mike Romberg.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1215
+#: whatsnew/2.2.rst:1216
 msgid ""
 "Some features of the object returned by the :func:`!xrange` function are now "
 "deprecated, and trigger warnings when they're accessed; they'll disappear in "
@@ -1465,7 +1770,7 @@ msgid ""
 "been deprecated."
 msgstr ""
 
-#: whatsnew/2.2.rst:1224
+#: whatsnew/2.2.rst:1225
 msgid ""
 "There were a bunch of patches to the dictionary implementation, mostly to "
 "fix potential core dumps if a dictionary contains objects that sneakily "
@@ -1475,14 +1780,14 @@ msgid ""
 "case, and round and round it went."
 msgstr ""
 
-#: whatsnew/2.2.rst:1231
+#: whatsnew/2.2.rst:1232
 msgid ""
 "On Windows, Python can now be compiled with Borland C thanks to a number of "
 "patches contributed by Stephen Hansen, though the result isn't fully "
 "functional yet.  (But this *is* progress...)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1235
+#: whatsnew/2.2.rst:1236
 msgid ""
 "Another Windows enhancement: Wise Solutions generously offered PythonLabs "
 "use of their InstallerMaster 8.1 system.  Earlier PythonLabs Windows "
@@ -1490,7 +1795,7 @@ msgid ""
 "up by Tim Peters.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1239
+#: whatsnew/2.2.rst:1240
 msgid ""
 "Files ending in ``.pyw`` can now be imported on Windows. ``.pyw`` is a "
 "Windows-only thing, used to indicate that a script needs to be run using "
@@ -1500,7 +1805,7 @@ msgid ""
 "Bolen.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1245
+#: whatsnew/2.2.rst:1246
 msgid ""
 "On platforms where Python uses the C :c:func:`dlopen` function  to load "
 "extension modules, it's now possible to set the flags used  by :c:func:"
@@ -1508,7 +1813,7 @@ msgid ""
 "functions. (Contributed by Bram Stolk.)"
 msgstr ""
 
-#: whatsnew/2.2.rst:1250
+#: whatsnew/2.2.rst:1251
 msgid ""
 "The :func:`pow` built-in function no longer supports 3 arguments when "
 "floating-point numbers are supplied. ``pow(x, y, z)`` returns ``(x**y) % "
@@ -1517,11 +1822,11 @@ msgid ""
 "``pow(2.0, 8.0, 7.0)`` will now raise a :exc:`TypeError` exception."
 msgstr ""
 
-#: whatsnew/2.2.rst:1260
+#: whatsnew/2.2.rst:1261
 msgid "Acknowledgements"
 msgstr ""
 
-#: whatsnew/2.2.rst:1262
+#: whatsnew/2.2.rst:1263
 msgid ""
 "The author would like to thank the following people for offering "
 "suggestions, corrections and assistance with various drafts of this article: "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -26,8 +26,9 @@ msgid ""
 "resources utilized by a program."
 msgstr ""
 
-#: library/resource.rst:16
-msgid ":ref:`Availability <availability>`: Unix, not Emscripten, not WASI."
+#: library/resource.rst:104 library/resource.rst:192 library/resource.rst:210
+#: library/resource.rst:229 library/resource.rst:252 library/resource.rst:268
+msgid "Availability"
 msgstr ""
 
 #: library/resource.rst:18
@@ -114,7 +115,8 @@ msgstr ""
 
 #: library/resource.rst:83
 msgid ""
-"Raises an auditing event resource.setrlimit with arguments resource, limits."
+"Raises an :ref:`auditing event <auditing>` ``resource.setrlimit`` with "
+"arguments ``resource``, ``limits``."
 msgstr ""
 
 #: library/resource.rst:88
@@ -142,12 +144,8 @@ msgstr ""
 
 #: library/resource.rst:102
 msgid ""
-"Raises an auditing event resource.prlimit with arguments pid, resource, "
-"limits."
-msgstr ""
-
-#: library/resource.rst:104
-msgid ":ref:`Availability <availability>`: Linux >= 2.6.36 with glibc >= 2.13."
+"Raises an :ref:`auditing event <auditing>` ``resource.prlimit`` with "
+"arguments ``pid``, ``resource``, ``limits``."
 msgstr ""
 
 #: library/resource.rst:109
@@ -220,10 +218,6 @@ msgstr ""
 msgid "The largest area of mapped memory which the process may occupy."
 msgstr ""
 
-#: library/resource.rst:268
-msgid ":ref:`Availability <availability>`: FreeBSD >= 11."
-msgstr ""
-
 #: library/resource.rst:185
 msgid ""
 "The maximum area (in bytes) of address space which may be taken by the "
@@ -234,16 +228,8 @@ msgstr ""
 msgid "The number of bytes that can be allocated for POSIX message queues."
 msgstr ""
 
-#: library/resource.rst:229
-msgid ":ref:`Availability <availability>`: Linux >= 2.6.8."
-msgstr ""
-
 #: library/resource.rst:199
 msgid "The ceiling for the process's nice level (calculated as 20 - rlim_cur)."
-msgstr ""
-
-#: library/resource.rst:210
-msgid ":ref:`Availability <availability>`: Linux >= 2.6.12."
 msgstr ""
 
 #: library/resource.rst:208
@@ -256,10 +242,6 @@ msgid ""
 "real-time scheduling without making a blocking syscall."
 msgstr ""
 
-#: library/resource.rst:220
-msgid ":ref:`Availability <availability>`: Linux >= 2.6.25."
-msgstr ""
-
 #: library/resource.rst:227
 msgid "The number of signals which the process may queue."
 msgstr ""
@@ -269,10 +251,6 @@ msgid ""
 "The maximum size (in bytes) of socket buffer usage for this user. This "
 "limits the amount of network memory, and hence the amount of mbufs, that "
 "this user may hold at any time."
-msgstr ""
-
-#: library/resource.rst:252 library/resource.rst:260
-msgid ":ref:`Availability <availability>`: FreeBSD."
 msgstr ""
 
 #: library/resource.rst:245
@@ -310,6 +288,21 @@ msgstr ""
 
 #: library/resource.rst:285
 msgid "A simple example::"
+msgstr ""
+
+#: library/resource.rst:287
+msgid ""
+"from resource import *\n"
+"import time\n"
+"\n"
+"# a non CPU-bound task\n"
+"time.sleep(3)\n"
+"print(getrusage(RUSAGE_SELF))\n"
+"\n"
+"# a CPU-bound task\n"
+"for i in range(10 ** 8):\n"
+"   _ = 1 + 1\n"
+"print(getrusage(RUSAGE_SELF))"
 msgstr ""
 
 #: library/resource.rst:299

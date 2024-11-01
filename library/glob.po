@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -93,13 +93,15 @@ msgid ""
 msgstr ""
 
 #: library/glob.rst:100
-msgid "Raises an auditing event glob.glob with arguments pathname, recursive."
+msgid ""
+"Raises an :ref:`auditing event <auditing>` ``glob.glob`` with arguments "
+"``pathname``, ``recursive``."
 msgstr ""
 
 #: library/glob.rst:101
 msgid ""
-"Raises an auditing event glob.glob/2 with arguments pathname, recursive, "
-"root_dir, dir_fd."
+"Raises an :ref:`auditing event <auditing>` ``glob.glob/2`` with arguments "
+"``pathname``, ``recursive``, ``root_dir``, ``dir_fd``."
 msgstr ""
 
 #: library/glob.rst:77
@@ -150,11 +152,35 @@ msgid ""
 "preserved. ::"
 msgstr ""
 
+#: library/glob.rst:134
+msgid ""
+">>> import glob\n"
+">>> glob.glob('./[0-9].*')\n"
+"['./1.gif', './2.txt']\n"
+">>> glob.glob('*.gif')\n"
+"['1.gif', 'card.gif']\n"
+">>> glob.glob('?.gif')\n"
+"['1.gif']\n"
+">>> glob.glob('**/*.txt', recursive=True)\n"
+"['2.txt', 'sub/3.txt']\n"
+">>> glob.glob('./**/', recursive=True)\n"
+"['./', './sub/']"
+msgstr ""
+
 #: library/glob.rst:146
 msgid ""
 "If the directory contains files starting with ``.`` they won't be matched by "
 "default. For example, consider a directory containing :file:`card.gif` and :"
 "file:`.card.gif`::"
+msgstr ""
+
+#: library/glob.rst:150
+msgid ""
+">>> import glob\n"
+">>> glob.glob('*.gif')\n"
+"['card.gif']\n"
+">>> glob.glob('.c*')\n"
+"['.card.gif']"
 msgstr ""
 
 #: library/glob.rst:158

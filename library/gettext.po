@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -130,6 +130,16 @@ msgstr ""
 msgid "Here's an example of typical usage for this API::"
 msgstr ""
 
+#: library/gettext.rst:106
+msgid ""
+"import gettext\n"
+"gettext.bindtextdomain('myapplication', '/path/to/my/language/directory')\n"
+"gettext.textdomain('myapplication')\n"
+"_ = gettext.gettext\n"
+"# ...\n"
+"print(_('This is a translatable string.'))"
+msgstr ""
+
 #: library/gettext.rst:115
 msgid "Class-based API"
 msgstr ""
@@ -233,6 +243,10 @@ msgid ""
 "As seen below, you usually mark the strings in your application that are "
 "candidates for translation, by wrapping them in a call to the :func:`!_` "
 "function, like this::"
+msgstr ""
+
+#: library/gettext.rst:187
+msgid "print(_('This string will be translated.'))"
 msgstr ""
 
 #: library/gettext.rst:189
@@ -341,6 +355,13 @@ msgid ""
 "this code to make :func:`!_` available to their module::"
 msgstr ""
 
+#: library/gettext.rst:285
+msgid ""
+"import gettext\n"
+"t = gettext.translation('mymodule', ...)\n"
+"_ = t.gettext"
+msgstr ""
+
 #: library/gettext.rst:289
 msgid ""
 "This puts :func:`!_` only in the module's global namespace and so only "
@@ -428,6 +449,16 @@ msgstr ""
 msgid "Here is an example::"
 msgstr ""
 
+#: library/gettext.rst:350
+msgid ""
+"n = len(os.listdir('.'))\n"
+"cat = GNUTranslations(somefile)\n"
+"message = cat.ngettext(\n"
+"    'There is %(num)d file in this directory',\n"
+"    'There are %(num)d files in this directory',\n"
+"    n) % {'num': n}"
+msgstr ""
+
 #: library/gettext.rst:360
 msgid ""
 "Look up the *context* and *message* id in the catalog and return the "
@@ -471,6 +502,14 @@ msgstr ""
 msgid ""
 "GNOME uses a version of the :mod:`gettext` module by James Henstridge, but "
 "this version has a slightly different API.  Its documented usage was::"
+msgstr ""
+
+#: library/gettext.rst:399
+msgid ""
+"import gettext\n"
+"cat = gettext.Catalog(domain, localedir)\n"
+"_ = cat.gettext\n"
+"print(_('hello world'))"
 msgstr ""
 
 #: library/gettext.rst:404
@@ -524,6 +563,14 @@ msgid ""
 "in your files.  Any string that needs to be translated should be marked by "
 "wrapping it in ``_('...')`` --- that is, a call to the function :func:`_ "
 "<gettext>`.  For example::"
+msgstr ""
+
+#: library/gettext.rst:434
+msgid ""
+"filename = 'mylog.txt'\n"
+"message = _('writing a log message')\n"
+"with open(filename, 'w') as fp:\n"
+"    fp.write(message)"
 msgstr ""
 
 #: library/gettext.rst:439
@@ -604,6 +651,13 @@ msgid ""
 "your module::"
 msgstr ""
 
+#: library/gettext.rst:496
+msgid ""
+"import gettext\n"
+"t = gettext.translation('spam', '/usr/share/locale')\n"
+"_ = t.gettext"
+msgstr ""
+
 #: library/gettext.rst:502
 msgid "Localizing your application"
 msgstr ""
@@ -622,10 +676,22 @@ msgid ""
 "main driver file of your application::"
 msgstr ""
 
+#: library/gettext.rst:512
+msgid ""
+"import gettext\n"
+"gettext.install('myapplication')"
+msgstr ""
+
 #: library/gettext.rst:515
 msgid ""
 "If you need to set the locale directory, you can pass it into the :func:"
 "`install` function::"
+msgstr ""
+
+#: library/gettext.rst:518
+msgid ""
+"import gettext\n"
+"gettext.install('myapplication', '/usr/share/locale')"
 msgstr ""
 
 #: library/gettext.rst:523
@@ -639,6 +705,24 @@ msgid ""
 "explicitly, like so::"
 msgstr ""
 
+#: library/gettext.rst:529
+msgid ""
+"import gettext\n"
+"\n"
+"lang1 = gettext.translation('myapplication', languages=['en'])\n"
+"lang2 = gettext.translation('myapplication', languages=['fr'])\n"
+"lang3 = gettext.translation('myapplication', languages=['de'])\n"
+"\n"
+"# start by using language1\n"
+"lang1.install()\n"
+"\n"
+"# ... time goes by, user selects language 2\n"
+"lang2.install()\n"
+"\n"
+"# ... more time goes by, user selects language 3\n"
+"lang3.install()"
+msgstr ""
+
 #: library/gettext.rst:546
 msgid "Deferred translations"
 msgstr ""
@@ -650,6 +734,18 @@ msgid ""
 "actual translation until later.  A classic example is::"
 msgstr ""
 
+#: library/gettext.rst:552
+msgid ""
+"animals = ['mollusk',\n"
+"           'albatross',\n"
+"           'rat',\n"
+"           'penguin',\n"
+"           'python', ]\n"
+"# ...\n"
+"for a in animals:\n"
+"    print(a)"
+msgstr ""
+
 #: library/gettext.rst:561
 msgid ""
 "Here, you want to mark the strings in the ``animals`` list as being "
@@ -659,6 +755,23 @@ msgstr ""
 
 #: library/gettext.rst:565
 msgid "Here is one way you can handle this situation::"
+msgstr ""
+
+#: library/gettext.rst:567
+msgid ""
+"def _(message): return message\n"
+"\n"
+"animals = [_('mollusk'),\n"
+"           _('albatross'),\n"
+"           _('rat'),\n"
+"           _('penguin'),\n"
+"           _('python'), ]\n"
+"\n"
+"del _\n"
+"\n"
+"# ...\n"
+"for a in animals:\n"
+"    print(_(a))"
 msgstr ""
 
 #: library/gettext.rst:581
@@ -679,6 +792,21 @@ msgstr ""
 
 #: library/gettext.rst:591
 msgid "Another way to handle this is with the following example::"
+msgstr ""
+
+#: library/gettext.rst:593
+msgid ""
+"def N_(message): return message\n"
+"\n"
+"animals = [N_('mollusk'),\n"
+"           N_('albatross'),\n"
+"           N_('rat'),\n"
+"           N_('penguin'),\n"
+"           N_('python'), ]\n"
+"\n"
+"# ...\n"
+"for a in animals:\n"
+"    print(_(a))"
 msgstr ""
 
 #: library/gettext.rst:605

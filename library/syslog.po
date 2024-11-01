@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 
 #: library/syslog.rst:14
-msgid ":ref:`Availability <availability>`: Unix, not Emscripten, not WASI."
+msgid "Availability"
 msgstr ""
 
 #: library/syslog.rst:16
@@ -60,7 +60,8 @@ msgstr ""
 
 #: library/syslog.rst:36
 msgid ""
-"Raises an auditing event syslog.syslog with arguments priority, message."
+"Raises an :ref:`auditing event <auditing>` ``syslog.syslog`` with arguments "
+"``priority``, ``message``."
 msgstr ""
 
 #: library/syslog.rst:38
@@ -98,8 +99,8 @@ msgstr ""
 
 #: library/syslog.rst:64
 msgid ""
-"Raises an auditing event syslog.openlog with arguments ident, logoption, "
-"facility."
+"Raises an :ref:`auditing event <auditing>` ``syslog.openlog`` with arguments "
+"``ident``, ``logoption``, ``facility``."
 msgstr ""
 
 #: library/syslog.rst:66
@@ -130,7 +131,9 @@ msgid ""
 msgstr ""
 
 #: library/syslog.rst:87
-msgid "Raises an auditing event syslog.closelog with no arguments."
+msgid ""
+"Raises an :ref:`auditing event <auditing>` ``syslog.closelog`` with no "
+"arguments."
 msgstr ""
 
 #: library/syslog.rst:99
@@ -144,7 +147,9 @@ msgid ""
 msgstr ""
 
 #: library/syslog.rst:106
-msgid "Raises an auditing event syslog.setlogmask with argument maskpri."
+msgid ""
+"Raises an :ref:`auditing event <auditing>` ``syslog.setlogmask`` with "
+"argument ``maskpri``."
 msgstr ""
 
 #: library/syslog.rst:108
@@ -197,9 +202,24 @@ msgstr ""
 msgid "A simple set of examples::"
 msgstr ""
 
+#: library/syslog.rst:136
+msgid ""
+"import syslog\n"
+"\n"
+"syslog.syslog('Processing started')\n"
+"if error:\n"
+"    syslog.syslog(syslog.LOG_ERR, 'Processing started')"
+msgstr ""
+
 #: library/syslog.rst:142
 msgid ""
 "An example of setting some log options, these would include the process ID "
 "in logged messages, and write the messages to the destination facility used "
 "for mail logging::"
+msgstr ""
+
+#: library/syslog.rst:146
+msgid ""
+"syslog.openlog(logoption=syslog.LOG_PID, facility=syslog.LOG_MAIL)\n"
+"syslog.syslog('E-mail processing initiated...')"
 msgstr ""

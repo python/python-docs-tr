@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -246,7 +246,8 @@ msgstr ""
 
 #: library/array.rst:96
 msgid ""
-"Raises an auditing event array.__new__ with arguments typecode, initializer."
+"Raises an :ref:`auditing event <auditing>` ``array.__new__`` with arguments "
+"``typecode``, ``initializer``."
 msgstr ""
 
 #: library/array.rst:101
@@ -404,6 +405,14 @@ msgid ""
 "`eval`, so long as the :class:`~array.array` class has been imported using "
 "``from array import array``. Variables ``inf`` and ``nan`` must also be "
 "defined if it contains corresponding floating-point values. Examples::"
+msgstr ""
+
+#: library/array.rst:259
+msgid ""
+"array('l')\n"
+"array('u', 'hello \\u2641')\n"
+"array('l', [1, 2, 3, 4, 5])\n"
+"array('d', [1.0, 2.0, 3.14, -inf, nan])"
 msgstr ""
 
 #: library/array.rst:267

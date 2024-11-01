@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -40,9 +40,19 @@ msgstr ""
 msgid "When invoking Python, you may specify any of these options::"
 msgstr ""
 
+#: using/cmdline.rst:27
+msgid ""
+"python [-bBdEhiIOPqRsSuvVWx?] [-c command | -m module-name | script | - ] "
+"[args]"
+msgstr ""
+
 #: using/cmdline.rst:29
 msgid ""
 "The most common use case is, of course, a simple invocation of a script::"
+msgstr ""
+
+#: using/cmdline.rst:31
+msgid "python myscript.py"
 msgstr ""
 
 #: using/cmdline.rst:37
@@ -117,7 +127,9 @@ msgid ""
 msgstr ""
 
 #: using/cmdline.rst:73
-msgid "Raises an auditing event cpython.run_command with argument command."
+msgid ""
+"Raises an :ref:`auditing event <auditing>` ``cpython.run_command`` with "
+"argument ``command``."
 msgstr ""
 
 #: using/cmdline.rst:77
@@ -172,8 +184,16 @@ msgid ""
 "execution as a script.  An example is the :mod:`timeit` module::"
 msgstr ""
 
+#: using/cmdline.rst:112
+msgid ""
+"python -m timeit -s \"setup here\" \"benchmarked code here\"\n"
+"python -m timeit -h # for details"
+msgstr ""
+
 #: using/cmdline.rst:115
-msgid "Raises an auditing event cpython.run_module with argument module-name."
+msgid ""
+"Raises an :ref:`auditing event <auditing>` ``cpython.run_module`` with "
+"argument ``module-name``."
 msgstr ""
 
 #: using/cmdline.rst:118
@@ -210,7 +230,9 @@ msgid ""
 msgstr ""
 
 #: using/cmdline.rst:723
-msgid "Raises an auditing event cpython.run_stdin with no arguments."
+msgid ""
+"Raises an :ref:`auditing event <auditing>` ``cpython.run_stdin`` with no "
+"arguments."
 msgstr ""
 
 #: using/cmdline.rst:146
@@ -249,7 +271,9 @@ msgid ""
 msgstr ""
 
 #: using/cmdline.rst:167
-msgid "Raises an auditing event cpython.run_file with argument filename."
+msgid ""
+"Raises an :ref:`auditing event <auditing>` ``cpython.run_file`` with "
+"argument ``filename``."
 msgstr ""
 
 #: using/cmdline.rst:170
@@ -301,8 +325,18 @@ msgstr ""
 msgid "Print the Python version number and exit.  Example output could be:"
 msgstr ""
 
+#: using/cmdline.rst:223
+msgid "Python 3.8.0b2+"
+msgstr ""
+
 #: using/cmdline.rst:227
 msgid "When given twice, print more information about the build, like:"
+msgstr ""
+
+#: using/cmdline.rst:229
+msgid ""
+"Python 3.8.0b2+ (3.8:0c076caaa8, Apr 20 2019, 21:55:00)\n"
+"[GCC 6.2.0 20161005]"
 msgstr ""
 
 #: using/cmdline.rst:234
@@ -551,6 +585,17 @@ msgid ""
 "default)::"
 msgstr ""
 
+#: using/cmdline.rst:440
+msgid ""
+"-Wdefault  # Warn once per call location\n"
+"-Werror    # Convert to exceptions\n"
+"-Walways   # Warn every time\n"
+"-Wall      # Same as -Walways\n"
+"-Wmodule   # Warn once per calling module\n"
+"-Wonce     # Warn once per Python process\n"
+"-Wignore   # Never warn"
+msgstr ""
+
 #: using/cmdline.rst:448
 msgid ""
 "The action names can be abbreviated as desired and the interpreter will "
@@ -560,6 +605,10 @@ msgstr ""
 
 #: using/cmdline.rst:452
 msgid "The full form of argument is::"
+msgstr ""
+
+#: using/cmdline.rst:454
+msgid "action:message:category:module:lineno"
 msgstr ""
 
 #: using/cmdline.rst:456
@@ -835,12 +884,6 @@ msgid ""
 "file."
 msgstr ""
 
-#: using/cmdline.rst:680
-msgid ""
-"Raises an auditing event cpython.run_startup with the filename as the "
-"argument when called on startup."
-msgstr ""
-
 #: using/cmdline.rst:682
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``cpython.run_startup`` with the "
@@ -1014,6 +1057,17 @@ msgid ""
 "filters later in the list taking precedence over those earlier in the list."
 msgstr ""
 
+#: using/cmdline.rst:848
+msgid ""
+"PYTHONWARNINGS=default  # Warn once per call location\n"
+"PYTHONWARNINGS=error    # Convert to exceptions\n"
+"PYTHONWARNINGS=always   # Warn every time\n"
+"PYTHONWARNINGS=all      # Same as PYTHONWARNINGS=always\n"
+"PYTHONWARNINGS=module   # Warn once per calling module\n"
+"PYTHONWARNINGS=once     # Warn once per Python process\n"
+"PYTHONWARNINGS=ignore   # Never warn"
+msgstr ""
+
 #: using/cmdline.rst:862
 msgid ""
 "If this environment variable is set to a non-empty string, :func:"
@@ -1127,11 +1181,11 @@ msgstr ""
 #: using/cmdline.rst:952
 msgid ""
 "This may also be enabled at runtime with :func:`sys."
-"_enablelegacywindowsfsencoding()`."
+"_enablelegacywindowsfsencoding`."
 msgstr ""
 
-#: using/cmdline.rst:969
-msgid ":ref:`Availability <availability>`: Windows."
+#: using/cmdline.rst:969 using/cmdline.rst:1020
+msgid "Availability"
 msgstr ""
 
 #: using/cmdline.rst:957
@@ -1219,10 +1273,6 @@ msgid ""
 "default in legacy ASCII-based locales. Both features must be disabled in "
 "order to force the interpreter to use ``ASCII`` instead of ``UTF-8`` for "
 "system interfaces."
-msgstr ""
-
-#: using/cmdline.rst:1020
-msgid ":ref:`Availability <availability>`: Unix."
 msgstr ""
 
 #: using/cmdline.rst:1022

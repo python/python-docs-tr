@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 22:33+0300\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -50,6 +50,26 @@ msgstr ""
 msgid ""
 "Let's show the sort of functionality that we are going to explore in this "
 "introductory tutorial by making use of the :command:`ls` command:"
+msgstr ""
+
+#: howto/argparse.rst:29
+msgid ""
+"$ ls\n"
+"cpython  devguide  prog.py  pypy  rm-unused-function.patch\n"
+"$ ls pypy\n"
+"ctypes_configure  demo  dotviewer  include  lib_pypy  lib-python ...\n"
+"$ ls -l\n"
+"total 20\n"
+"drwxr-xr-x 19 wena wena 4096 Feb 18 18:51 cpython\n"
+"drwxr-xr-x  4 wena wena 4096 Feb  8 12:04 devguide\n"
+"-rwxr-xr-x  1 wena wena  535 Feb 19 00:05 prog.py\n"
+"drwxr-xr-x 14 wena wena 4096 Feb  7 00:59 pypy\n"
+"-rw-r--r--  1 wena wena  741 Feb 18 01:01 rm-unused-function.patch\n"
+"$ ls --help\n"
+"Usage: ls [OPTION]... [FILE]...\n"
+"List information about the FILEs (the current directory by default).\n"
+"Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.\n"
+"..."
 msgstr ""
 
 #: howto/argparse.rst:48
@@ -96,8 +116,31 @@ msgstr ""
 msgid "Let us start with a very simple example which does (almost) nothing::"
 msgstr ""
 
+#: howto/argparse.rst:76
+msgid ""
+"import argparse\n"
+"parser = argparse.ArgumentParser()\n"
+"parser.parse_args()"
+msgstr ""
+
 #: howto/argparse.rst:188 howto/argparse.rst:209
 msgid "Following is a result of running the code:"
+msgstr ""
+
+#: howto/argparse.rst:82
+msgid ""
+"$ python prog.py\n"
+"$ python prog.py --help\n"
+"usage: prog.py [-h]\n"
+"\n"
+"options:\n"
+"  -h, --help  show this help message and exit\n"
+"$ python prog.py --verbose\n"
+"usage: prog.py [-h]\n"
+"prog.py: error: unrecognized arguments: --verbose\n"
+"$ python prog.py foo\n"
+"usage: prog.py [-h]\n"
+"prog.py: error: unrecognized arguments: foo"
 msgstr ""
 
 #: howto/argparse.rst:254 howto/argparse.rst:298
@@ -132,8 +175,34 @@ msgstr ""
 msgid "An example::"
 msgstr ""
 
+#: howto/argparse.rst:116
+msgid ""
+"import argparse\n"
+"parser = argparse.ArgumentParser()\n"
+"parser.add_argument(\"echo\")\n"
+"args = parser.parse_args()\n"
+"print(args.echo)"
+msgstr ""
+
 #: howto/argparse.rst:122
 msgid "And running the code:"
+msgstr ""
+
+#: howto/argparse.rst:124
+msgid ""
+"$ python prog.py\n"
+"usage: prog.py [-h] echo\n"
+"prog.py: error: the following arguments are required: echo\n"
+"$ python prog.py --help\n"
+"usage: prog.py [-h] echo\n"
+"\n"
+"positional arguments:\n"
+"  echo\n"
+"\n"
+"options:\n"
+"  -h, --help  show this help message and exit\n"
+"$ python prog.py foo\n"
+"foo"
 msgstr ""
 
 #: howto/argparse.rst:140
@@ -175,12 +244,52 @@ msgid ""
 "useful::"
 msgstr ""
 
+#: howto/argparse.rst:161
+msgid ""
+"import argparse\n"
+"parser = argparse.ArgumentParser()\n"
+"parser.add_argument(\"echo\", help=\"echo the string you use here\")\n"
+"args = parser.parse_args()\n"
+"print(args.echo)"
+msgstr ""
+
 #: howto/argparse.rst:167
 msgid "And we get:"
 msgstr ""
 
+#: howto/argparse.rst:169
+msgid ""
+"$ python prog.py -h\n"
+"usage: prog.py [-h] echo\n"
+"\n"
+"positional arguments:\n"
+"  echo        echo the string you use here\n"
+"\n"
+"options:\n"
+"  -h, --help  show this help message and exit"
+msgstr ""
+
 #: howto/argparse.rst:180
 msgid "Now, how about doing something even more useful::"
+msgstr ""
+
+#: howto/argparse.rst:182
+msgid ""
+"import argparse\n"
+"parser = argparse.ArgumentParser()\n"
+"parser.add_argument(\"square\", help=\"display a square of a given "
+"number\")\n"
+"args = parser.parse_args()\n"
+"print(args.square**2)"
+msgstr ""
+
+#: howto/argparse.rst:190
+msgid ""
+"$ python prog.py 4\n"
+"Traceback (most recent call last):\n"
+"  File \"prog.py\", line 5, in <module>\n"
+"    print(args.square**2)\n"
+"TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'"
 msgstr ""
 
 #: howto/argparse.rst:198
@@ -188,6 +297,26 @@ msgid ""
 "That didn't go so well. That's because :mod:`argparse` treats the options we "
 "give it as strings, unless we tell it otherwise. So, let's tell :mod:"
 "`argparse` to treat that input as an integer::"
+msgstr ""
+
+#: howto/argparse.rst:202
+msgid ""
+"import argparse\n"
+"parser = argparse.ArgumentParser()\n"
+"parser.add_argument(\"square\", help=\"display a square of a given "
+"number\",\n"
+"                    type=int)\n"
+"args = parser.parse_args()\n"
+"print(args.square**2)"
+msgstr ""
+
+#: howto/argparse.rst:211
+msgid ""
+"$ python prog.py 4\n"
+"16\n"
+"$ python prog.py four\n"
+"usage: prog.py [-h] square\n"
+"prog.py: error: argument square: invalid int value: 'four'"
 msgstr ""
 
 #: howto/argparse.rst:219
@@ -206,8 +335,35 @@ msgid ""
 "how to add optional ones::"
 msgstr ""
 
+#: howto/argparse.rst:229
+msgid ""
+"import argparse\n"
+"parser = argparse.ArgumentParser()\n"
+"parser.add_argument(\"--verbosity\", help=\"increase output verbosity\")\n"
+"args = parser.parse_args()\n"
+"if args.verbosity:\n"
+"    print(\"verbosity turned on\")"
+msgstr ""
+
 #: howto/argparse.rst:282 howto/argparse.rst:432
 msgid "And the output:"
+msgstr ""
+
+#: howto/argparse.rst:238
+msgid ""
+"$ python prog.py --verbosity 1\n"
+"verbosity turned on\n"
+"$ python prog.py\n"
+"$ python prog.py --help\n"
+"usage: prog.py [-h] [--verbosity VERBOSITY]\n"
+"\n"
+"options:\n"
+"  -h, --help            show this help message and exit\n"
+"  --verbosity VERBOSITY\n"
+"                        increase output verbosity\n"
+"$ python prog.py --verbosity\n"
+"usage: prog.py [-h] [--verbosity VERBOSITY]\n"
+"prog.py: error: argument --verbosity: expected one argument"
 msgstr ""
 
 #: howto/argparse.rst:256
@@ -242,6 +398,32 @@ msgid ""
 "``False``. Let's modify the code accordingly::"
 msgstr ""
 
+#: howto/argparse.rst:274
+msgid ""
+"import argparse\n"
+"parser = argparse.ArgumentParser()\n"
+"parser.add_argument(\"--verbose\", help=\"increase output verbosity\",\n"
+"                    action=\"store_true\")\n"
+"args = parser.parse_args()\n"
+"if args.verbose:\n"
+"    print(\"verbosity turned on\")"
+msgstr ""
+
+#: howto/argparse.rst:284
+msgid ""
+"$ python prog.py --verbose\n"
+"verbosity turned on\n"
+"$ python prog.py --verbose 1\n"
+"usage: prog.py [-h] [--verbose]\n"
+"prog.py: error: unrecognized arguments: 1\n"
+"$ python prog.py --help\n"
+"usage: prog.py [-h] [--verbose]\n"
+"\n"
+"options:\n"
+"  -h, --help  show this help message and exit\n"
+"  --verbose   increase output verbosity"
+msgstr ""
+
 #: howto/argparse.rst:300
 msgid ""
 "The option is now more of a flag than something that requires a value. We "
@@ -272,8 +454,32 @@ msgid ""
 "simple::"
 msgstr ""
 
+#: howto/argparse.rst:320
+msgid ""
+"import argparse\n"
+"parser = argparse.ArgumentParser()\n"
+"parser.add_argument(\"-v\", \"--verbose\", help=\"increase output "
+"verbosity\",\n"
+"                    action=\"store_true\")\n"
+"args = parser.parse_args()\n"
+"if args.verbose:\n"
+"    print(\"verbosity turned on\")"
+msgstr ""
+
 #: howto/argparse.rst:328
 msgid "And here goes:"
+msgstr ""
+
+#: howto/argparse.rst:330
+msgid ""
+"$ python prog.py -v\n"
+"verbosity turned on\n"
+"$ python prog.py --help\n"
+"usage: prog.py [-h] [-v]\n"
+"\n"
+"options:\n"
+"  -h, --help     show this help message and exit\n"
+"  -v, --verbose  increase output verbosity"
 msgstr ""
 
 #: howto/argparse.rst:341
@@ -288,8 +494,37 @@ msgstr ""
 msgid "Our program keeps growing in complexity::"
 msgstr ""
 
+#: howto/argparse.rst:349
+msgid ""
+"import argparse\n"
+"parser = argparse.ArgumentParser()\n"
+"parser.add_argument(\"square\", type=int,\n"
+"                    help=\"display a square of a given number\")\n"
+"parser.add_argument(\"-v\", \"--verbose\", action=\"store_true\",\n"
+"                    help=\"increase output verbosity\")\n"
+"args = parser.parse_args()\n"
+"answer = args.square**2\n"
+"if args.verbose:\n"
+"    print(f\"the square of {args.square} equals {answer}\")\n"
+"else:\n"
+"    print(answer)"
+msgstr ""
+
 #: howto/argparse.rst:362
 msgid "And now the output:"
+msgstr ""
+
+#: howto/argparse.rst:364
+msgid ""
+"$ python prog.py\n"
+"usage: prog.py [-h] [-v] square\n"
+"prog.py: error: the following arguments are required: square\n"
+"$ python prog.py 4\n"
+"16\n"
+"$ python prog.py 4 --verbose\n"
+"the square of 4 equals 16\n"
+"$ python prog.py --verbose 4\n"
+"the square of 4 equals 16"
 msgstr ""
 
 #: howto/argparse.rst:376
@@ -306,11 +541,80 @@ msgid ""
 "verbosity values, and actually get to use them::"
 msgstr ""
 
+#: howto/argparse.rst:383
+msgid ""
+"import argparse\n"
+"parser = argparse.ArgumentParser()\n"
+"parser.add_argument(\"square\", type=int,\n"
+"                    help=\"display a square of a given number\")\n"
+"parser.add_argument(\"-v\", \"--verbosity\", type=int,\n"
+"                    help=\"increase output verbosity\")\n"
+"args = parser.parse_args()\n"
+"answer = args.square**2\n"
+"if args.verbosity == 2:\n"
+"    print(f\"the square of {args.square} equals {answer}\")\n"
+"elif args.verbosity == 1:\n"
+"    print(f\"{args.square}^2 == {answer}\")\n"
+"else:\n"
+"    print(answer)"
+msgstr ""
+
+#: howto/argparse.rst:400
+msgid ""
+"$ python prog.py 4\n"
+"16\n"
+"$ python prog.py 4 -v\n"
+"usage: prog.py [-h] [-v VERBOSITY] square\n"
+"prog.py: error: argument -v/--verbosity: expected one argument\n"
+"$ python prog.py 4 -v 1\n"
+"4^2 == 16\n"
+"$ python prog.py 4 -v 2\n"
+"the square of 4 equals 16\n"
+"$ python prog.py 4 -v 3\n"
+"16"
+msgstr ""
+
 #: howto/argparse.rst:414
 msgid ""
 "These all look good except the last one, which exposes a bug in our program. "
 "Let's fix it by restricting the values the ``--verbosity`` option can "
 "accept::"
+msgstr ""
+
+#: howto/argparse.rst:417
+msgid ""
+"import argparse\n"
+"parser = argparse.ArgumentParser()\n"
+"parser.add_argument(\"square\", type=int,\n"
+"                    help=\"display a square of a given number\")\n"
+"parser.add_argument(\"-v\", \"--verbosity\", type=int, choices=[0, 1, 2],\n"
+"                    help=\"increase output verbosity\")\n"
+"args = parser.parse_args()\n"
+"answer = args.square**2\n"
+"if args.verbosity == 2:\n"
+"    print(f\"the square of {args.square} equals {answer}\")\n"
+"elif args.verbosity == 1:\n"
+"    print(f\"{args.square}^2 == {answer}\")\n"
+"else:\n"
+"    print(answer)"
+msgstr ""
+
+#: howto/argparse.rst:434
+msgid ""
+"$ python prog.py 4 -v 3\n"
+"usage: prog.py [-h] [-v {0,1,2}] square\n"
+"prog.py: error: argument -v/--verbosity: invalid choice: 3 (choose from 0, "
+"1, 2)\n"
+"$ python prog.py 4 -h\n"
+"usage: prog.py [-h] [-v {0,1,2}] square\n"
+"\n"
+"positional arguments:\n"
+"  square                display a square of a given number\n"
+"\n"
+"options:\n"
+"  -h, --help            show this help message and exit\n"
+"  -v {0,1,2}, --verbosity {0,1,2}\n"
+"                        increase output verbosity"
 msgstr ""
 
 #: howto/argparse.rst:450
@@ -326,10 +630,54 @@ msgid ""
 "own verbosity argument (check the output of ``python --help``)::"
 msgstr ""
 
+#: howto/argparse.rst:457
+msgid ""
+"import argparse\n"
+"parser = argparse.ArgumentParser()\n"
+"parser.add_argument(\"square\", type=int,\n"
+"                    help=\"display the square of a given number\")\n"
+"parser.add_argument(\"-v\", \"--verbosity\", action=\"count\",\n"
+"                    help=\"increase output verbosity\")\n"
+"args = parser.parse_args()\n"
+"answer = args.square**2\n"
+"if args.verbosity == 2:\n"
+"    print(f\"the square of {args.square} equals {answer}\")\n"
+"elif args.verbosity == 1:\n"
+"    print(f\"{args.square}^2 == {answer}\")\n"
+"else:\n"
+"    print(answer)"
+msgstr ""
+
 #: howto/argparse.rst:472
 msgid ""
 "We have introduced another action, \"count\", to count the number of "
 "occurrences of specific options."
+msgstr ""
+
+#: howto/argparse.rst:476
+msgid ""
+"$ python prog.py 4\n"
+"16\n"
+"$ python prog.py 4 -v\n"
+"4^2 == 16\n"
+"$ python prog.py 4 -vv\n"
+"the square of 4 equals 16\n"
+"$ python prog.py 4 --verbosity --verbosity\n"
+"the square of 4 equals 16\n"
+"$ python prog.py 4 -v 1\n"
+"usage: prog.py [-h] [-v] square\n"
+"prog.py: error: unrecognized arguments: 1\n"
+"$ python prog.py 4 -h\n"
+"usage: prog.py [-h] [-v] square\n"
+"\n"
+"positional arguments:\n"
+"  square           display a square of a given number\n"
+"\n"
+"options:\n"
+"  -h, --help       show this help message and exit\n"
+"  -v, --verbosity  increase output verbosity\n"
+"$ python prog.py 4 -vvv\n"
+"16"
 msgstr ""
 
 #: howto/argparse.rst:501
@@ -375,8 +723,41 @@ msgstr ""
 msgid "Let's fix::"
 msgstr ""
 
+#: howto/argparse.rst:524
+msgid ""
+"import argparse\n"
+"parser = argparse.ArgumentParser()\n"
+"parser.add_argument(\"square\", type=int,\n"
+"                    help=\"display a square of a given number\")\n"
+"parser.add_argument(\"-v\", \"--verbosity\", action=\"count\",\n"
+"                    help=\"increase output verbosity\")\n"
+"args = parser.parse_args()\n"
+"answer = args.square**2\n"
+"\n"
+"# bugfix: replace == with >=\n"
+"if args.verbosity >= 2:\n"
+"    print(f\"the square of {args.square} equals {answer}\")\n"
+"elif args.verbosity >= 1:\n"
+"    print(f\"{args.square}^2 == {answer}\")\n"
+"else:\n"
+"    print(answer)"
+msgstr ""
+
 #: howto/argparse.rst:541
 msgid "And this is what it gives:"
+msgstr ""
+
+#: howto/argparse.rst:543
+msgid ""
+"$ python prog.py 4 -vvv\n"
+"the square of 4 equals 16\n"
+"$ python prog.py 4 -vvvv\n"
+"the square of 4 equals 16\n"
+"$ python prog.py 4\n"
+"Traceback (most recent call last):\n"
+"  File \"prog.py\", line 11, in <module>\n"
+"    if args.verbosity >= 2:\n"
+"TypeError: '>=' not supported between instances of 'NoneType' and 'int'"
 msgstr ""
 
 #: howto/argparse.rst:556
@@ -393,6 +774,24 @@ msgstr ""
 msgid "Let's fix that bug::"
 msgstr ""
 
+#: howto/argparse.rst:563
+msgid ""
+"import argparse\n"
+"parser = argparse.ArgumentParser()\n"
+"parser.add_argument(\"square\", type=int,\n"
+"                    help=\"display a square of a given number\")\n"
+"parser.add_argument(\"-v\", \"--verbosity\", action=\"count\", default=0,\n"
+"                    help=\"increase output verbosity\")\n"
+"args = parser.parse_args()\n"
+"answer = args.square**2\n"
+"if args.verbosity >= 2:\n"
+"    print(f\"the square of {args.square} equals {answer}\")\n"
+"elif args.verbosity >= 1:\n"
+"    print(f\"{args.square}^2 == {answer}\")\n"
+"else:\n"
+"    print(answer)"
+msgstr ""
+
 #: howto/argparse.rst:578
 msgid ""
 "We've just introduced yet another keyword, ``default``. We've set it to "
@@ -404,6 +803,12 @@ msgstr ""
 
 #: howto/argparse.rst:585
 msgid "And:"
+msgstr ""
+
+#: howto/argparse.rst:587
+msgid ""
+"$ python prog.py 4\n"
+"16"
 msgstr ""
 
 #: howto/argparse.rst:592
@@ -423,8 +828,44 @@ msgid ""
 "just squares::"
 msgstr ""
 
-#: howto/argparse.rst:656
+#: howto/argparse.rst:604
+msgid ""
+"import argparse\n"
+"parser = argparse.ArgumentParser()\n"
+"parser.add_argument(\"x\", type=int, help=\"the base\")\n"
+"parser.add_argument(\"y\", type=int, help=\"the exponent\")\n"
+"parser.add_argument(\"-v\", \"--verbosity\", action=\"count\", default=0)\n"
+"args = parser.parse_args()\n"
+"answer = args.x**args.y\n"
+"if args.verbosity >= 2:\n"
+"    print(f\"{args.x} to the power {args.y} equals {answer}\")\n"
+"elif args.verbosity >= 1:\n"
+"    print(f\"{args.x}^{args.y} == {answer}\")\n"
+"else:\n"
+"    print(answer)"
+msgstr ""
+
+#: howto/argparse.rst:656 howto/argparse.rst:872
 msgid "Output:"
+msgstr ""
+
+#: howto/argparse.rst:620
+msgid ""
+"$ python prog.py\n"
+"usage: prog.py [-h] [-v] x y\n"
+"prog.py: error: the following arguments are required: x, y\n"
+"$ python prog.py -h\n"
+"usage: prog.py [-h] [-v] x y\n"
+"\n"
+"positional arguments:\n"
+"  x                the base\n"
+"  y                the exponent\n"
+"\n"
+"options:\n"
+"  -h, --help       show this help message and exit\n"
+"  -v, --verbosity\n"
+"$ python prog.py 4 2 -v\n"
+"4^2 == 16"
 msgstr ""
 
 #: howto/argparse.rst:639
@@ -432,6 +873,33 @@ msgid ""
 "Notice that so far we've been using verbosity level to *change* the text "
 "that gets displayed. The following example instead uses verbosity level to "
 "display *more* text instead::"
+msgstr ""
+
+#: howto/argparse.rst:643
+msgid ""
+"import argparse\n"
+"parser = argparse.ArgumentParser()\n"
+"parser.add_argument(\"x\", type=int, help=\"the base\")\n"
+"parser.add_argument(\"y\", type=int, help=\"the exponent\")\n"
+"parser.add_argument(\"-v\", \"--verbosity\", action=\"count\", default=0)\n"
+"args = parser.parse_args()\n"
+"answer = args.x**args.y\n"
+"if args.verbosity >= 2:\n"
+"    print(f\"Running '{__file__}'\")\n"
+"if args.verbosity >= 1:\n"
+"    print(f\"{args.x}^{args.y} == \", end=\"\")\n"
+"print(answer)"
+msgstr ""
+
+#: howto/argparse.rst:658
+msgid ""
+"$ python prog.py 4 2\n"
+"16\n"
+"$ python prog.py 4 2 -v\n"
+"4^2 == 16\n"
+"$ python prog.py 4 2 -vv\n"
+"Running 'prog.py'\n"
+"4^2 == 16"
 msgstr ""
 
 #: howto/argparse.rst:672
@@ -443,6 +911,28 @@ msgid ""
 "When there is ambiguity in deciding whether an argument is positional or for "
 "an argument, ``--`` can be used to tell :meth:`~ArgumentParser.parse_args` "
 "that everything after that is a positional argument::"
+msgstr ""
+
+#: howto/argparse.rst:678
+msgid ""
+">>> parser = argparse.ArgumentParser(prog='PROG')\n"
+">>> parser.add_argument('-n', nargs='+')\n"
+">>> parser.add_argument('args', nargs='*')\n"
+"\n"
+">>> # ambiguous, so parse_args assumes it's an option\n"
+">>> parser.parse_args(['-f'])\n"
+"usage: PROG [-h] [-n N [N ...]] [args ...]\n"
+"PROG: error: unrecognized arguments: -f\n"
+"\n"
+">>> parser.parse_args(['--', '-f'])\n"
+"Namespace(args=['-f'], n=None)\n"
+"\n"
+">>> # ambiguous, so the -n option greedily accepts arguments\n"
+">>> parser.parse_args(['-n', '1', '2', '3'])\n"
+"Namespace(args=[], n=['1', '2', '3'])\n"
+"\n"
+">>> parser.parse_args(['-n', '1', '--', '2', '3'])\n"
+"Namespace(args=['2', '3'], n=['1'])"
 msgstr ""
 
 #: howto/argparse.rst:699
@@ -459,10 +949,47 @@ msgid ""
 "``--quiet`` option, which will be the opposite of the ``--verbose`` one::"
 msgstr ""
 
+#: howto/argparse.rst:709
+msgid ""
+"import argparse\n"
+"\n"
+"parser = argparse.ArgumentParser()\n"
+"group = parser.add_mutually_exclusive_group()\n"
+"group.add_argument(\"-v\", \"--verbose\", action=\"store_true\")\n"
+"group.add_argument(\"-q\", \"--quiet\", action=\"store_true\")\n"
+"parser.add_argument(\"x\", type=int, help=\"the base\")\n"
+"parser.add_argument(\"y\", type=int, help=\"the exponent\")\n"
+"args = parser.parse_args()\n"
+"answer = args.x**args.y\n"
+"\n"
+"if args.quiet:\n"
+"    print(answer)\n"
+"elif args.verbose:\n"
+"    print(f\"{args.x} to the power {args.y} equals {answer}\")\n"
+"else:\n"
+"    print(f\"{args.x}^{args.y} == {answer}\")"
+msgstr ""
+
 #: howto/argparse.rst:727
 msgid ""
 "Our program is now simpler, and we've lost some functionality for the sake "
 "of demonstration. Anyways, here's the output:"
+msgstr ""
+
+#: howto/argparse.rst:730
+msgid ""
+"$ python prog.py 4 2\n"
+"4^2 == 16\n"
+"$ python prog.py 4 2 -q\n"
+"16\n"
+"$ python prog.py 4 2 -v\n"
+"4 to the power 2 equals 16\n"
+"$ python prog.py 4 2 -vq\n"
+"usage: prog.py [-h] [-v | -q] x y\n"
+"prog.py: error: argument -q/--quiet: not allowed with argument -v/--verbose\n"
+"$ python prog.py 4 2 -v --quiet\n"
+"usage: prog.py [-h] [-v | -q] x y\n"
+"prog.py: error: argument -q/--quiet: not allowed with argument -v/--verbose"
 msgstr ""
 
 #: howto/argparse.rst:745
@@ -478,11 +1005,50 @@ msgid ""
 "your program, just in case they don't know::"
 msgstr ""
 
+#: howto/argparse.rst:752
+msgid ""
+"import argparse\n"
+"\n"
+"parser = argparse.ArgumentParser(description=\"calculate X to the power of "
+"Y\")\n"
+"group = parser.add_mutually_exclusive_group()\n"
+"group.add_argument(\"-v\", \"--verbose\", action=\"store_true\")\n"
+"group.add_argument(\"-q\", \"--quiet\", action=\"store_true\")\n"
+"parser.add_argument(\"x\", type=int, help=\"the base\")\n"
+"parser.add_argument(\"y\", type=int, help=\"the exponent\")\n"
+"args = parser.parse_args()\n"
+"answer = args.x**args.y\n"
+"\n"
+"if args.quiet:\n"
+"    print(answer)\n"
+"elif args.verbose:\n"
+"    print(f\"{args.x} to the power {args.y} equals {answer}\")\n"
+"else:\n"
+"    print(f\"{args.x}^{args.y} == {answer}\")"
+msgstr ""
+
 #: howto/argparse.rst:770
 msgid ""
 "Note that slight difference in the usage text. Note the ``[-v | -q]``, which "
 "tells us that we can either use ``-v`` or ``-q``, but not both at the same "
 "time:"
+msgstr ""
+
+#: howto/argparse.rst:801
+msgid ""
+"$ python prog.py --help\n"
+"usage: prog.py [-h] [-v | -q] x y\n"
+"\n"
+"calculate X to the power of Y\n"
+"\n"
+"positional arguments:\n"
+"  x              the base\n"
+"  y              the exponent\n"
+"\n"
+"options:\n"
+"  -h, --help     show this help message and exit\n"
+"  -v, --verbose\n"
+"  -q, --quiet"
 msgstr ""
 
 #: howto/argparse.rst:792
@@ -514,6 +1080,10 @@ msgid ""
 "command:"
 msgstr ""
 
+#: howto/argparse.rst:824
+msgid "$ pybabel extract -o messages.po /usr/lib/python3.12/argparse.py"
+msgstr ""
+
 #: howto/argparse.rst:828
 msgid ""
 "This command will extract all translatable strings from the :mod:`argparse` "
@@ -525,6 +1095,12 @@ msgstr ""
 msgid ""
 "You can find out the location of the :mod:`argparse` module on your system "
 "using this script::"
+msgstr ""
+
+#: howto/argparse.rst:835
+msgid ""
+"import argparse\n"
+"print(argparse.__file__)"
 msgstr ""
 
 #: howto/argparse.rst:838
@@ -541,10 +1117,82 @@ msgid ""
 msgstr ""
 
 #: howto/argparse.rst:845
-msgid "Conclusion"
+msgid "Custom type converters"
 msgstr ""
 
 #: howto/argparse.rst:847
+msgid ""
+"The :mod:`argparse` module allows you to specify custom type converters for "
+"your command-line arguments. This allows you to modify user input before "
+"it's stored in the :class:`argparse.Namespace`. This can be useful when you "
+"need to pre-process the input before it is used in your program."
+msgstr ""
+
+#: howto/argparse.rst:852
+msgid ""
+"When using a custom type converter, you can use any callable that takes a "
+"single string argument (the argument value) and returns the converted value. "
+"However, if you need to handle more complex scenarios, you can use a custom "
+"action class with the **action** parameter instead."
+msgstr ""
+
+#: howto/argparse.rst:857
+msgid ""
+"For example, let's say you want to handle arguments with different prefixes "
+"and process them accordingly::"
+msgstr ""
+
+#: howto/argparse.rst:860
+msgid ""
+"import argparse\n"
+"\n"
+"parser = argparse.ArgumentParser(prefix_chars='-+')\n"
+"\n"
+"parser.add_argument('-a', metavar='<value>', action='append',\n"
+"                    type=lambda x: ('-', x))\n"
+"parser.add_argument('+a', metavar='<value>', action='append',\n"
+"                    type=lambda x: ('+', x))\n"
+"\n"
+"args = parser.parse_args()\n"
+"print(args)"
+msgstr ""
+
+#: howto/argparse.rst:874
+msgid ""
+"$ python prog.py -a value1 +a value2\n"
+"Namespace(a=[('-', 'value1'), ('+', 'value2')])"
+msgstr ""
+
+#: howto/argparse.rst:879
+msgid "In this example, we:"
+msgstr ""
+
+#: howto/argparse.rst:881
+msgid ""
+"Created a parser with custom prefix characters using the ``prefix_chars`` "
+"parameter."
+msgstr ""
+
+#: howto/argparse.rst:884
+msgid ""
+"Defined two arguments, ``-a`` and ``+a``, which used the ``type`` parameter "
+"to create custom type converters to store the value in a tuple with the "
+"prefix."
+msgstr ""
+
+#: howto/argparse.rst:887
+msgid ""
+"Without the custom type converters, the arguments would have treated the ``-"
+"a`` and ``+a`` as the same argument, which would have been undesirable. By "
+"using custom type converters, we were able to differentiate between the two "
+"arguments."
+msgstr ""
+
+#: howto/argparse.rst:892
+msgid "Conclusion"
+msgstr ""
+
+#: howto/argparse.rst:894
 msgid ""
 "The :mod:`argparse` module offers a lot more than shown here. Its docs are "
 "quite detailed and thorough, and full of examples. Having gone through this "

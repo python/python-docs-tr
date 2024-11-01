@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -69,6 +69,17 @@ msgid ""
 "Message` object to an instance of :class:`Header` instead of using a string "
 "for the header value.  Import the :class:`Header` class from the :mod:`email."
 "header` module. For example::"
+msgstr ""
+
+#: library/email.header.rst:40
+msgid ""
+">>> from email.message import Message\n"
+">>> from email.header import Header\n"
+">>> msg = Message()\n"
+">>> h = Header('p\\xf6stal', 'iso-8859-1')\n"
+">>> msg['Subject'] = h\n"
+">>> msg.as_string()\n"
+"'Subject: =?iso-8859-1?q?p=F6stal?=\\n\\n'"
 msgstr ""
 
 #: library/email.header.rst:50
@@ -263,6 +274,13 @@ msgstr ""
 
 #: library/email.header.rst:186
 msgid "Here's an example::"
+msgstr ""
+
+#: library/email.header.rst:188
+msgid ""
+">>> from email.header import decode_header\n"
+">>> decode_header('=?iso-8859-1?q?p=F6stal?=')\n"
+"[(b'p\\xf6stal', 'iso-8859-1')]"
 msgstr ""
 
 #: library/email.header.rst:195

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-24 17:22+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: 2022-01-02 19:09+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH<python.docs.tr@gmail.com>\n"
@@ -79,6 +79,10 @@ msgstr ""
 "BSD türü Unix sistemlerinde Python komut dosyaları, :: satırı koyarak kabuk "
 "komut dosyaları gibi doğrudan yürütülebilir hale getirilebilir:"
 
+#: tutorial/appendix.rst:43
+msgid "#!/usr/bin/env python3"
+msgstr ""
+
 #: tutorial/appendix.rst:45
 msgid ""
 "(assuming that the interpreter is on the user's :envvar:`PATH`) at the "
@@ -102,6 +106,10 @@ msgid ""
 msgstr ""
 "Komut dosyasına :program:`chmod` komutu kullanılarak yürütülebilir mod veya "
 "izin verilebilir."
+
+#: tutorial/appendix.rst:55
+msgid "$ chmod +x myscript.py"
+msgstr ""
 
 #: tutorial/appendix.rst:59
 msgid ""
@@ -167,6 +175,16 @@ msgstr ""
 "Başlangıç dosyasını bir komut dosyasında kullanmak istiyorsanız, bunu komut "
 "dosyasında açıkça yapmalısınız::"
 
+#: tutorial/appendix.rst:91
+msgid ""
+"import os\n"
+"filename = os.environ.get('PYTHONSTARTUP')\n"
+"if filename and os.path.isfile(filename):\n"
+"    with open(filename) as fobj:\n"
+"        startup_file = fobj.read()\n"
+"    exec(startup_file)"
+msgstr ""
+
 #: tutorial/appendix.rst:102
 msgid "The Customization Modules"
 msgstr "Özelliştirme Modülleri"
@@ -183,6 +201,13 @@ msgstr ""
 "`sitecustomize` ve :mod:`usercustomize`.  Nasıl çalıştığını görmek için önce "
 "kullanıcı sitesi paketleri dizininizin konumunu bulmanız gerekir.  Python'ı "
 "başlatın ve şu kodu çalıştırın::"
+
+#: tutorial/appendix.rst:108
+msgid ""
+">>> import site\n"
+">>> site.getusersitepackages()\n"
+"'/home/user/.local/lib/python3.x/site-packages'"
+msgstr ""
 
 #: tutorial/appendix.rst:112
 msgid ""

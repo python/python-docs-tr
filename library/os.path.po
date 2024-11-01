@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -108,7 +108,7 @@ msgstr ""
 msgid ""
 "Return the longest common sub-path of each pathname in the sequence "
 "*paths*.  Raise :exc:`ValueError` if *paths* contain both absolute and "
-"relative pathnames, the *paths* are on the different drives or if *paths* is "
+"relative pathnames, if *paths* are on different drives, or if *paths* is "
 "empty.  Unlike :func:`commonprefix`, this returns a valid path."
 msgstr ""
 
@@ -127,6 +127,15 @@ msgstr ""
 msgid ""
 "This function may return invalid paths because it works a character at a "
 "time.  To obtain a valid path, see :func:`commonpath`."
+msgstr ""
+
+#: library/os.path.rst:108
+msgid ""
+">>> os.path.commonprefix(['/usr/lib', '/usr/local/lib'])\n"
+"'/usr/l'\n"
+"\n"
+">>> os.path.commonpath(['/usr/lib', '/usr/local/lib'])\n"
+"'/usr'"
 msgstr ""
 
 #: library/os.path.rst:120
@@ -305,7 +314,7 @@ msgid ""
 msgstr ""
 
 #: library/os.path.rst:318
-msgid ":ref:`Availability <availability>`: Windows."
+msgid "Availability"
 msgstr ""
 
 #: library/os.path.rst:325
@@ -469,9 +478,21 @@ msgid ""
 "including the colon::"
 msgstr ""
 
+#: library/os.path.rst:486
+msgid ""
+">>> splitdrive(\"c:/dir\")\n"
+"(\"c:\", \"/dir\")"
+msgstr ""
+
 #: library/os.path.rst:489
 msgid ""
 "If the path contains a UNC path, drive will contain the host name and share::"
+msgstr ""
+
+#: library/os.path.rst:492
+msgid ""
+">>> splitdrive(\"//host/computer/dir\")\n"
+"(\"//host/computer\", \"/dir\")"
 msgstr ""
 
 #: library/os.path.rst:501
@@ -492,11 +513,29 @@ msgid ""
 "basedefs/V1_chap04.html#tag_04_13>`_.) For example::"
 msgstr ""
 
+#: library/os.path.rst:513
+msgid ""
+">>> splitroot('/home/sam')\n"
+"('', '/', 'home/sam')\n"
+">>> splitroot('//home/sam')\n"
+"('', '//', 'home/sam')\n"
+">>> splitroot('///home/sam')\n"
+"('', '/', '//home/sam')"
+msgstr ""
+
 #: library/os.path.rst:520
 msgid ""
 "On Windows, *drive* may be empty, a drive-letter name, a UNC share, or a "
 "device name. The *root* may be empty, a forward slash, or a backward slash. "
 "For example::"
+msgstr ""
+
+#: library/os.path.rst:524
+msgid ""
+">>> splitroot('C:/Users/Sam')\n"
+"('C:', '/', 'Users/Sam')\n"
+">>> splitroot('//Server/Share/Users/Sam')\n"
+"('//Server/Share', '/', 'Users/Sam')"
 msgstr ""
 
 #: library/os.path.rst:534
@@ -510,16 +549,38 @@ msgstr ""
 msgid "If the path contains no extension, *ext* will be ``''``::"
 msgstr ""
 
+#: library/os.path.rst:540
+msgid ""
+">>> splitext('bar')\n"
+"('bar', '')"
+msgstr ""
+
 #: library/os.path.rst:543
 msgid ""
 "If the path contains an extension, then *ext* will be set to this extension, "
 "including the leading period. Note that previous periods will be ignored::"
 msgstr ""
 
+#: library/os.path.rst:546
+msgid ""
+">>> splitext('foo.bar.exe')\n"
+"('foo.bar', '.exe')\n"
+">>> splitext('/foo/bar.exe')\n"
+"('/foo/bar', '.exe')"
+msgstr ""
+
 #: library/os.path.rst:551
 msgid ""
 "Leading periods of the last component of the path are considered to be part "
 "of the root::"
+msgstr ""
+
+#: library/os.path.rst:554
+msgid ""
+">>> splitext('.cshrc')\n"
+"('.cshrc', '')\n"
+">>> splitext('/foo/....jpg')\n"
+"('/foo/....jpg', '')"
 msgstr ""
 
 #: library/os.path.rst:565

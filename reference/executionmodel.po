@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-01 21:53+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -238,8 +238,24 @@ msgid ""
 "the following will fail::"
 msgstr ""
 
+#: reference/executionmodel.rst:176
+msgid ""
+"class A:\n"
+"    a = 42\n"
+"    b = list(a + i for i in range(10))"
+msgstr ""
+
 #: reference/executionmodel.rst:180
 msgid "However, the following will succeed::"
+msgstr ""
+
+#: reference/executionmodel.rst:182
+msgid ""
+"class A:\n"
+"    type Alias = Nested\n"
+"    class Nested: pass\n"
+"\n"
+"print(A.Alias.__value__)  # <type 'A.Nested'>"
 msgstr ""
 
 #: reference/executionmodel.rst:191
@@ -322,9 +338,9 @@ msgstr ""
 #: reference/executionmodel.rst:227
 msgid ""
 "While annotation scopes have an internal name, that name is not reflected in "
-"the :term:`__qualname__ <qualified name>` of objects defined within the "
-"scope. Instead, the :attr:`!__qualname__` of such objects is as if the "
-"object were defined in the enclosing scope."
+"the :term:`qualified name` of objects defined within the scope. Instead, "
+"the :attr:`~definition.__qualname__` of such objects is as if the object "
+"were defined in the enclosing scope."
 msgstr ""
 
 #: reference/executionmodel.rst:232
@@ -349,6 +365,21 @@ msgstr ""
 msgid "Example:"
 msgstr ""
 
+#: reference/executionmodel.rst:249
+msgid ""
+">>> type Alias = 1/0\n"
+">>> Alias.__value__\n"
+"Traceback (most recent call last):\n"
+"  ...\n"
+"ZeroDivisionError: division by zero\n"
+">>> def func[T: 1/0](): pass\n"
+">>> T = func.__type_params__[0]\n"
+">>> T.__bound__\n"
+"Traceback (most recent call last):\n"
+"  ...\n"
+"ZeroDivisionError: division by zero"
+msgstr ""
+
 #: reference/executionmodel.rst:263
 msgid ""
 "Here the exception is raised only when the ``__value__`` attribute of the "
@@ -360,6 +391,15 @@ msgid ""
 "This behavior is primarily useful for references to types that have not yet "
 "been defined when the type alias or type variable is created. For example, "
 "lazy evaluation enables creation of mutually recursive type aliases::"
+msgstr ""
+
+#: reference/executionmodel.rst:271
+msgid ""
+"from typing import Literal\n"
+"\n"
+"type SimpleExpr = int | Parenthesized\n"
+"type Parenthesized = tuple[Literal[\"(\"], Expr, Literal[\")\"]]\n"
+"type Expr = SimpleExpr | tuple[SimpleExpr, Literal[\"+\", \"-\"], Expr]"
 msgstr ""
 
 #: reference/executionmodel.rst:277
@@ -400,6 +440,15 @@ msgstr ""
 msgid ""
 "Name resolution of free variables occurs at runtime, not at compile time. "
 "This means that the following code will print 42::"
+msgstr ""
+
+#: reference/executionmodel.rst:314
+msgid ""
+"i = 10\n"
+"def f():\n"
+"    print(i)\n"
+"i = 42\n"
+"f()"
 msgstr ""
 
 #: reference/executionmodel.rst:322

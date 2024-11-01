@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -107,6 +107,14 @@ msgstr ""
 msgid ""
 "All IDs are treated the same by the VM with regard to events, but the "
 "following IDs are pre-defined to make co-operation of tools easier::"
+msgstr ""
+
+#: library/sys.monitoring.rst:73
+msgid ""
+"sys.monitoring.DEBUGGER_ID = 0\n"
+"sys.monitoring.COVERAGE_ID = 1\n"
+"sys.monitoring.PROFILER_ID = 2\n"
+"sys.monitoring.OPTIMIZER_ID = 5"
 msgstr ""
 
 #: library/sys.monitoring.rst:78
@@ -227,6 +235,12 @@ msgstr ""
 
 #: library/sys.monitoring.rst:166
 msgid "An alias for ``0`` so users can do explicit comparisons like::"
+msgstr ""
+
+#: library/sys.monitoring.rst:168
+msgid ""
+"if get_events(DEBUGGER_ID) == NO_EVENTS:\n"
+"    ..."
 msgstr ""
 
 #: library/sys.monitoring.rst:171
@@ -507,14 +521,30 @@ msgstr ""
 msgid ":monitoring-event:`PY_START` and :monitoring-event:`PY_RESUME`::"
 msgstr ""
 
+#: library/sys.monitoring.rst:368
+msgid "func(code: CodeType, instruction_offset: int) -> DISABLE | Any"
+msgstr ""
+
 #: library/sys.monitoring.rst:339
 msgid ":monitoring-event:`PY_RETURN` and :monitoring-event:`PY_YIELD`::"
+msgstr ""
+
+#: library/sys.monitoring.rst:341
+msgid ""
+"func(code: CodeType, instruction_offset: int, retval: object) -> DISABLE | "
+"Any"
 msgstr ""
 
 #: library/sys.monitoring.rst:343
 msgid ""
 ":monitoring-event:`CALL`, :monitoring-event:`C_RAISE` and :monitoring-event:"
 "`C_RETURN`::"
+msgstr ""
+
+#: library/sys.monitoring.rst:345
+msgid ""
+"func(code: CodeType, instruction_offset: int, callable: object, arg0: object "
+"| MISSING) -> DISABLE | Any"
 msgstr ""
 
 #: library/sys.monitoring.rst:347
@@ -529,12 +559,28 @@ msgid ""
 "`PY_THROW` and :monitoring-event:`STOP_ITERATION`::"
 msgstr ""
 
+#: library/sys.monitoring.rst:352
+msgid ""
+"func(code: CodeType, instruction_offset: int, exception: BaseException) -> "
+"DISABLE | Any"
+msgstr ""
+
 #: library/sys.monitoring.rst:354
 msgid ":monitoring-event:`LINE`::"
 msgstr ""
 
+#: library/sys.monitoring.rst:356
+msgid "func(code: CodeType, line_number: int) -> DISABLE | Any"
+msgstr ""
+
 #: library/sys.monitoring.rst:358
 msgid ":monitoring-event:`BRANCH` and :monitoring-event:`JUMP`::"
+msgstr ""
+
+#: library/sys.monitoring.rst:360
+msgid ""
+"func(code: CodeType, instruction_offset: int, destination_offset: int) -> "
+"DISABLE | Any"
 msgstr ""
 
 #: library/sys.monitoring.rst:362

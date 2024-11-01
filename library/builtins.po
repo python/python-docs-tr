@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -24,11 +24,10 @@ msgstr ""
 msgid ""
 "This module provides direct access to all 'built-in' identifiers of Python; "
 "for example, ``builtins.open`` is the full name for the built-in function :"
-"func:`open`.  See :ref:`built-in-funcs` and :ref:`built-in-consts` for "
-"documentation."
+"func:`open`."
 msgstr ""
 
-#: library/builtins.rst:15
+#: library/builtins.rst:12
 msgid ""
 "This module is not normally accessed explicitly by most applications, but "
 "can be useful in modules that provide objects with the same name as a built-"
@@ -37,11 +36,47 @@ msgid ""
 "wraps the built-in :func:`open`, this module can be used directly::"
 msgstr ""
 
-#: library/builtins.rst:38
+#: library/builtins.rst:18
+msgid ""
+"import builtins\n"
+"\n"
+"def open(path):\n"
+"    f = builtins.open(path, 'r')\n"
+"    return UpperCaser(f)\n"
+"\n"
+"class UpperCaser:\n"
+"    '''Wrapper around a file that converts output to uppercase.'''\n"
+"\n"
+"    def __init__(self, f):\n"
+"        self._f = f\n"
+"\n"
+"    def read(self, count=-1):\n"
+"        return self._f.read(count).upper()\n"
+"\n"
+"    # ..."
+msgstr ""
+
+#: library/builtins.rst:35
 msgid ""
 "As an implementation detail, most modules have the name ``__builtins__`` "
 "made available as part of their globals.  The value of ``__builtins__`` is "
 "normally either this module or the value of this module's :attr:`~object."
 "__dict__` attribute. Since this is an implementation detail, it may not be "
 "used by alternate implementations of Python."
+msgstr ""
+
+#: library/builtins.rst:43
+msgid ":ref:`built-in-consts`"
+msgstr ""
+
+#: library/builtins.rst:44
+msgid ":ref:`bltin-exceptions`"
+msgstr ""
+
+#: library/builtins.rst:45
+msgid ":ref:`built-in-funcs`"
+msgstr ""
+
+#: library/builtins.rst:46
+msgid ":ref:`bltin-types`"
 msgstr ""

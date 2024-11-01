@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -58,6 +58,10 @@ msgid ""
 "the wrapped paragraph.  :func:`fill` is shorthand for  ::"
 msgstr ""
 
+#: library/textwrap.rst:48
+msgid "\"\\n\".join(wrap(text, ...))"
+msgstr ""
+
 #: library/textwrap.rst:50
 msgid ""
 "In particular, :func:`fill` accepts exactly the same keyword arguments as :"
@@ -74,6 +78,16 @@ msgid ""
 "single spaces).  If the result fits in the *width*, it is returned. "
 "Otherwise, enough words are dropped from the end so that the remaining words "
 "plus the *placeholder* fit within *width*::"
+msgstr ""
+
+#: library/textwrap.rst:65
+msgid ""
+">>> textwrap.shorten(\"Hello  world!\", width=12)\n"
+"'Hello world!'\n"
+">>> textwrap.shorten(\"Hello  world!\", width=11)\n"
+"'Hello [...]'\n"
+">>> textwrap.shorten(\"Hello world\", width=10, placeholder=\"...\")\n"
+"'Hello...'"
 msgstr ""
 
 #: library/textwrap.rst:72
@@ -112,6 +126,18 @@ msgstr ""
 msgid "For example::"
 msgstr ""
 
+#: library/textwrap.rst:96
+msgid ""
+"def test():\n"
+"    # end first line with \\ to avoid the empty line!\n"
+"    s = '''\\\n"
+"    hello\n"
+"      world\n"
+"    '''\n"
+"    print(repr(s))          # prints '    hello\\n      world\\n    '\n"
+"    print(repr(dedent(s)))  # prints 'hello\\n  world\\n'"
+msgstr ""
+
 #: library/textwrap.rst:108
 msgid "Add *prefix* to the beginning of selected lines in *text*."
 msgstr ""
@@ -126,11 +152,27 @@ msgid ""
 "whitespace (including any line endings)."
 msgstr ""
 
+#: library/textwrap.rst:117
+msgid ""
+">>> s = 'hello\\n\\n \\nworld'\n"
+">>> indent(s, '  ')\n"
+"'  hello\\n\\n \\n  world'"
+msgstr ""
+
 #: library/textwrap.rst:121
 msgid ""
 "The optional *predicate* argument can be used to control which lines are "
 "indented. For example, it is easy to add *prefix* to even empty and "
 "whitespace-only lines::"
+msgstr ""
+
+#: library/textwrap.rst:125
+msgid ""
+">>> print(indent(s, '+ ', lambda line: True))\n"
+"+ hello\n"
+"+\n"
+"+\n"
+"+ world"
 msgstr ""
 
 #: library/textwrap.rst:134
@@ -156,8 +198,18 @@ msgid ""
 "for example ::"
 msgstr ""
 
+#: library/textwrap.rst:150
+msgid "wrapper = TextWrapper(initial_indent=\"* \")"
+msgstr ""
+
 #: library/textwrap.rst:152
 msgid "is the same as  ::"
+msgstr ""
+
+#: library/textwrap.rst:154
+msgid ""
+"wrapper = TextWrapper()\n"
+"wrapper.initial_indent = \"* \""
 msgstr ""
 
 #: library/textwrap.rst:157
@@ -252,8 +304,16 @@ msgid ""
 "to detect the difference between \"Dr.\" in ::"
 msgstr ""
 
+#: library/textwrap.rst:244
+msgid "[...] Dr. Frankenstein's monster [...]"
+msgstr ""
+
 #: library/textwrap.rst:246
 msgid "and \"Spot.\" in ::"
+msgstr ""
+
+#: library/textwrap.rst:248
+msgid "[...] See Spot. See Spot run [...]"
 msgstr ""
 
 #: library/textwrap.rst:250

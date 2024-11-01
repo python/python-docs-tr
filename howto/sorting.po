@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-24 17:22+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: 2023-04-19 21:42+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -59,6 +59,12 @@ msgstr ""
 "Basit bir artan sıralama yaratmak çok kolaydır: :func:`sorted` fonksiyonunu "
 "çağırmanız yeterlidir. Bu fonksiyon, yeni bir sıralanmış liste döndürür:"
 
+#: howto/sorting.rst:22
+msgid ""
+">>> sorted([5, 2, 3, 1, 4])\n"
+"[1, 2, 3, 4, 5]"
+msgstr ""
+
 #: howto/sorting.rst:27
 msgid ""
 "You can also use the :meth:`list.sort` method. It modifies the list in-place "
@@ -71,6 +77,14 @@ msgstr ""
 "func:`sorted` yönteminden daha az kullanışlıdır - ancak orijinal listeye "
 "ihtiyacınız yoksa, biraz daha verimlidir."
 
+#: howto/sorting.rst:32
+msgid ""
+">>> a = [5, 2, 3, 1, 4]\n"
+">>> a.sort()\n"
+">>> a\n"
+"[1, 2, 3, 4, 5]"
+msgstr ""
+
 #: howto/sorting.rst:39
 msgid ""
 "Another difference is that the :meth:`list.sort` method is only defined for "
@@ -79,6 +93,12 @@ msgstr ""
 "Diğer bir fark ise :meth:`list.sort` metodunun sadece listeler için "
 "tanımlanmış olmasıdır. Buna karşılık, :func:`sorted` fonksiyonu herhangi bir "
 "yinelenebiliri kabul eder."
+
+#: howto/sorting.rst:42
+msgid ""
+">>> sorted({1: 'D', 2: 'B', 3: 'B', 4: 'E', 5: 'A'})\n"
+"[1, 2, 3, 4, 5]"
+msgstr ""
 
 #: howto/sorting.rst:48
 msgid "Key Functions"
@@ -100,6 +120,12 @@ msgstr ""
 "Örneğin, büyük/küçük harfe duyarlı olmayan bir dize karşılaştırması bu "
 "şekilde yapılmaktadır:"
 
+#: howto/sorting.rst:56
+msgid ""
+">>> sorted(\"This is a test string from Andrew\".split(), key=str.casefold)\n"
+"['a', 'Andrew', 'from', 'is', 'string', 'test', 'This']"
+msgstr ""
+
 #: howto/sorting.rst:61
 msgid ""
 "The value of the *key* parameter should be a function (or other callable) "
@@ -120,12 +146,43 @@ msgstr ""
 "Yaygın bir model, nesnenin bazı indislerini anahtar olarak kullanarak "
 "karmaşık nesneleri sıralamaktır. Örneğin:"
 
+#: howto/sorting.rst:69
+msgid ""
+">>> student_tuples = [\n"
+"...     ('john', 'A', 15),\n"
+"...     ('jane', 'B', 12),\n"
+"...     ('dave', 'B', 10),\n"
+"... ]\n"
+">>> sorted(student_tuples, key=lambda student: student[2])   # sort by age\n"
+"[('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]"
+msgstr ""
+
 #: howto/sorting.rst:79
 msgid ""
 "The same technique works for objects with named attributes. For example:"
 msgstr ""
 "Aynı teknik, adlandırılmış niteliklere sahip nesneler için de geçerlidir. "
 "Örneğin:"
+
+#: howto/sorting.rst:81
+msgid ""
+">>> class Student:\n"
+"...     def __init__(self, name, grade, age):\n"
+"...         self.name = name\n"
+"...         self.grade = grade\n"
+"...         self.age = age\n"
+"...     def __repr__(self):\n"
+"...         return repr((self.name, self.grade, self.age))\n"
+"\n"
+">>> student_objects = [\n"
+"...     Student('john', 'A', 15),\n"
+"...     Student('jane', 'B', 12),\n"
+"...     Student('dave', 'B', 10),\n"
+"... ]\n"
+">>> sorted(student_objects, key=lambda student: student.age)   # sort by "
+"age\n"
+"[('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]"
+msgstr ""
 
 #: howto/sorting.rst:99
 msgid ""
@@ -159,6 +216,17 @@ msgstr ""
 "Bu fonksiyonların kullanımı sonucunda, yukarıdaki örnekler daha basit ve "
 "hızlı hale gelir:"
 
+#: howto/sorting.rst:113
+msgid ""
+">>> from operator import itemgetter, attrgetter\n"
+"\n"
+">>> sorted(student_tuples, key=itemgetter(2))\n"
+"[('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]\n"
+"\n"
+">>> sorted(student_objects, key=attrgetter('age'))\n"
+"[('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]"
+msgstr ""
+
 #: howto/sorting.rst:123
 msgid ""
 "The operator module functions allow multiple levels of sorting. For example, "
@@ -167,12 +235,35 @@ msgstr ""
 "Operatör modülü fonksiyonları birden fazla seviyede sıralama yapılmasına "
 "izin verir. Örneğin, *sınıf* ve ardından *yaş*'a göre sıralamak için:"
 
+#: howto/sorting.rst:126
+msgid ""
+">>> sorted(student_tuples, key=itemgetter(1,2))\n"
+"[('john', 'A', 15), ('dave', 'B', 10), ('jane', 'B', 12)]\n"
+"\n"
+">>> sorted(student_objects, key=attrgetter('grade', 'age'))\n"
+"[('john', 'A', 15), ('dave', 'B', 10), ('jane', 'B', 12)]"
+msgstr ""
+
 #: howto/sorting.rst:134
 msgid ""
 "The :mod:`functools` module provides another helpful tool for making key-"
 "functions.  The :func:`~functools.partial` function can reduce the `arity "
 "<https://en.wikipedia.org/wiki/Arity>`_ of a multi-argument function making "
 "it suitable for use as a key-function."
+msgstr ""
+
+#: howto/sorting.rst:139
+msgid ""
+">>> from functools import partial\n"
+">>> from unicodedata import normalize\n"
+"\n"
+">>> names = 'Zoë Åbjørn Núñez Élana Zeke Abe Nubia Eloise'.split()\n"
+"\n"
+">>> sorted(names, key=partial(normalize, 'NFD'))\n"
+"['Abe', 'Åbjørn', 'Eloise', 'Élana', 'Nubia', 'Núñez', 'Zeke', 'Zoë']\n"
+"\n"
+">>> sorted(names, key=partial(normalize, 'NFC'))\n"
+"['Abe', 'Eloise', 'Nubia', 'Núñez', 'Zeke', 'Zoë', 'Åbjørn', 'Élana']"
 msgstr ""
 
 #: howto/sorting.rst:153
@@ -189,6 +280,15 @@ msgstr ""
 "parametresi kabul eder. Bu, azalan sıralamaları işaretlemek için kullanılır. "
 "Örneğin, öğrenci verilerini ters olarak *yaş* sırasına göre elde etmek için:"
 
+#: howto/sorting.rst:159
+msgid ""
+">>> sorted(student_tuples, key=itemgetter(2), reverse=True)\n"
+"[('john', 'A', 15), ('jane', 'B', 12), ('dave', 'B', 10)]\n"
+"\n"
+">>> sorted(student_objects, key=attrgetter('age'), reverse=True)\n"
+"[('john', 'A', 15), ('jane', 'B', 12), ('dave', 'B', 10)]"
+msgstr ""
+
 #: howto/sorting.rst:168
 msgid "Sort Stability and Complex Sorts"
 msgstr "Sıralama Kararlılığı ve Karmaşık Sıralamalar"
@@ -203,6 +303,13 @@ msgstr ""
 "Sorting_algorithm#Stability>`_\\ olması kesindir. Bunun anlamı ise, birden "
 "fazla kayıt aynı anahtara sahip olduğunda, orijinal sıralamanın "
 "korunacağıdır."
+
+#: howto/sorting.rst:174
+msgid ""
+">>> data = [('red', 1), ('blue', 1), ('red', 2), ('blue', 2)]\n"
+">>> sorted(data, key=itemgetter(0))\n"
+"[('blue', 1), ('blue', 2), ('red', 1), ('red', 2)]"
+msgstr ""
 
 #: howto/sorting.rst:180
 msgid ""
@@ -224,6 +331,15 @@ msgstr ""
 "ardından artan *yaş* ile sıralamak için, önce *yaş* sıralamasını yapın ve "
 "ardından *sınıf* kullanarak tekrar sıralayın:"
 
+#: howto/sorting.rst:187
+msgid ""
+">>> s = sorted(student_objects, key=attrgetter('age'))     # sort on "
+"secondary key\n"
+">>> sorted(s, key=attrgetter('grade'), reverse=True)       # now sort on "
+"primary key, descending\n"
+"[('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]"
+msgstr ""
+
 #: howto/sorting.rst:193
 msgid ""
 "This can be abstracted out into a wrapper function that can take a list and "
@@ -231,6 +347,17 @@ msgid ""
 msgstr ""
 "Bu, bir listeyi ve alan çiftlerini alıp bunları birden fazla geçişte "
 "sıralayabilen bir sarmalayıcı fonksiyon oluşturacak şekilde soyutlanabilir."
+
+#: howto/sorting.rst:196
+msgid ""
+">>> def multisort(xs, specs):\n"
+"...     for key, reverse in reversed(specs):\n"
+"...         xs.sort(key=attrgetter(key), reverse=reverse)\n"
+"...     return xs\n"
+"\n"
+">>> multisort(list(student_objects), (('grade', True), ('age', False)))\n"
+"[('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]"
+msgstr ""
 
 #: howto/sorting.rst:206
 msgid ""
@@ -277,6 +404,15 @@ msgid ""
 msgstr ""
 "Örneğin, DSU yaklaşımını kullanarak öğrenci verilerini *sınıf* bazında "
 "sıralamak için:"
+
+#: howto/sorting.rst:224
+msgid ""
+">>> decorated = [(student.grade, i, student) for i, student in "
+"enumerate(student_objects)]\n"
+">>> decorated.sort()\n"
+">>> [student for grade, i, student in decorated]               # undecorate\n"
+"[('john', 'A', 15), ('jane', 'B', 12), ('dave', 'B', 10)]"
+msgstr ""
 
 #: howto/sorting.rst:231
 msgid ""
@@ -381,6 +517,10 @@ msgstr ""
 "anahtar fonksiyon olarak kullanılabilir hale getirmek için :class:`functools."
 "cmp_to_key` aracını sağlar::"
 
+#: howto/sorting.rst:273
+msgid "sorted(words, key=cmp_to_key(strcoll))  # locale-aware sort order"
+msgstr ""
+
 #: howto/sorting.rst:276
 msgid "Odds and Ends"
 msgstr "Tuhaflıklar ve Sonlar"
@@ -409,6 +549,17 @@ msgstr ""
 "şekilde bu etki, parametre olmadan yerleşik :func:`reversed` fonksiyonu iki "
 "kez kullanılarak da simüle edilebilir:"
 
+#: howto/sorting.rst:288
+msgid ""
+">>> data = [('red', 1), ('blue', 1), ('red', 2), ('blue', 2)]\n"
+">>> standard_way = sorted(data, key=itemgetter(0), reverse=True)\n"
+">>> double_reversed = list(reversed(sorted(reversed(data), "
+"key=itemgetter(0))))\n"
+">>> assert standard_way == double_reversed\n"
+">>> standard_way\n"
+"[('red', 1), ('red', 2), ('blue', 1), ('blue', 2)]"
+msgstr ""
+
 #: howto/sorting.rst:297
 #, fuzzy
 msgid ""
@@ -419,6 +570,13 @@ msgstr ""
 "Sıralama rutinleri, iki nesne arasında karşılaştırma yaparken ``<`` "
 "kullanır. Bu nedenle, bir :meth:`__lt__` yöntemi tanımlayarak, bir sınıfa "
 "standart bir sıralama düzeni eklemek kolaydır:"
+
+#: howto/sorting.rst:301
+msgid ""
+">>> Student.__lt__ = lambda self, other: self.age < other.age\n"
+">>> sorted(student_objects)\n"
+"[('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]"
+msgstr ""
 
 #: howto/sorting.rst:307
 msgid ""
@@ -440,6 +598,14 @@ msgstr ""
 "anahtar işlevi, harici kaynaklara da erişebilir. Örneğin, öğrenci notları "
 "bir sözlükte saklanıyorsa, öğrenci adlarından oluşan ayrı bir listenin "
 "sıralanmasında da kullanılabilirler:"
+
+#: howto/sorting.rst:319
+msgid ""
+">>> students = ['dave', 'john', 'jane']\n"
+">>> newgrades = {'john': 'F', 'jane':'A', 'dave': 'C'}\n"
+">>> sorted(students, key=newgrades.__getitem__)\n"
+"['jane', 'dave', 'john']"
+msgstr ""
 
 #: howto/sorting.rst:327
 msgid "Partial Sorts"

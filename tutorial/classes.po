@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: 2023-02-02 02:32+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -384,9 +384,43 @@ msgstr ""
 "keyword:`nonlocal` değişken bağlamasını nasıl etkileyeceğini gösteren bir "
 "örnektir::"
 
+#: tutorial/classes.rst:168
+msgid ""
+"def scope_test():\n"
+"    def do_local():\n"
+"        spam = \"local spam\"\n"
+"\n"
+"    def do_nonlocal():\n"
+"        nonlocal spam\n"
+"        spam = \"nonlocal spam\"\n"
+"\n"
+"    def do_global():\n"
+"        global spam\n"
+"        spam = \"global spam\"\n"
+"\n"
+"    spam = \"test spam\"\n"
+"    do_local()\n"
+"    print(\"After local assignment:\", spam)\n"
+"    do_nonlocal()\n"
+"    print(\"After nonlocal assignment:\", spam)\n"
+"    do_global()\n"
+"    print(\"After global assignment:\", spam)\n"
+"\n"
+"scope_test()\n"
+"print(\"In global scope:\", spam)"
+msgstr ""
+
 #: tutorial/classes.rst:191
 msgid "The output of the example code is:"
 msgstr "Örnek kodun çıktısı şudur:"
+
+#: tutorial/classes.rst:193
+msgid ""
+"After local assignment: test spam\n"
+"After nonlocal assignment: nonlocal spam\n"
+"After global assignment: nonlocal spam\n"
+"In global scope: global spam"
+msgstr ""
 
 #: tutorial/classes.rst:200
 msgid ""
@@ -427,6 +461,16 @@ msgstr "Sınıf Tanımlama Söz Dizimi"
 #: tutorial/classes.rst:223
 msgid "The simplest form of class definition looks like this::"
 msgstr "Sınıf tanımlamasının en basit biçimi şöyledir:"
+
+#: tutorial/classes.rst:225
+msgid ""
+"class ClassName:\n"
+"    <statement-1>\n"
+"    .\n"
+"    .\n"
+"    .\n"
+"    <statement-N>"
+msgstr ""
 
 #: tutorial/classes.rst:232
 msgid ""
@@ -509,13 +553,23 @@ msgstr ""
 "sınıf nesnesi oluşturulduğunda sınıfın ad alanında bulunan tüm adlardır.  "
 "Yani, sınıf tanımı şöyle görünüyorsa::"
 
+#: tutorial/classes.rst:269
+msgid ""
+"class MyClass:\n"
+"    \"\"\"A simple example class\"\"\"\n"
+"    i = 12345\n"
+"\n"
+"    def f(self):\n"
+"        return 'hello world'"
+msgstr ""
+
 #: tutorial/classes.rst:276
 #, fuzzy
 msgid ""
 "then ``MyClass.i`` and ``MyClass.f`` are valid attribute references, "
 "returning an integer and a function object, respectively. Class attributes "
 "can also be assigned to, so you can change the value of ``MyClass.i`` by "
-"assignment. :attr:`!__doc__` is also a valid attribute, returning the "
+"assignment. :attr:`~type.__doc__` is also a valid attribute, returning the "
 "docstring belonging to the class: ``\"A simple example class\"``."
 msgstr ""
 "bu durumda ``MyClass.i`` ve ``MyClass.f`` geçerli nitelik referanslarıdır ve "
@@ -533,6 +587,10 @@ msgstr ""
 "Sınıf *örnekleme* fonksiyon notasyonunu kullanır.  Sınıf nesnesinin, sınıfın "
 "yeni bir örneğini döndüren parametresiz bir fonksiyon olduğunu varsayın. "
 "Örneğin (yukarıdaki sınıfı varsayarsak)::"
+
+#: tutorial/classes.rst:303
+msgid "x = MyClass()"
+msgstr ""
 
 #: tutorial/classes.rst:288
 msgid ""
@@ -554,6 +612,12 @@ msgstr ""
 "sınıf, belirli bir başlangıç durumuna göre özelleştirilmiş örneklerle "
 "nesneler oluşturmayı sever. Bu nedenle bir sınıf, :meth:`__init__` adlı özel "
 "bir metot tanımlayabilir:"
+
+#: tutorial/classes.rst:296
+msgid ""
+"def __init__(self):\n"
+"    self.data = []"
+msgstr ""
 
 #: tutorial/classes.rst:299
 #, fuzzy
@@ -577,6 +641,18 @@ msgstr ""
 "Tabii ki, :meth:`__init__` yöntemi daha fazla esneklik için argümanlara "
 "sahip olabilir.  Bu durumda, sınıf örnekleme işlecine verilen bağımsız "
 "değişkenler :meth:`__init__` için aktarılır.  Mesela::"
+
+#: tutorial/classes.rst:309
+msgid ""
+">>> class Complex:\n"
+"...     def __init__(self, realpart, imagpart):\n"
+"...         self.r = realpart\n"
+"...         self.i = imagpart\n"
+"...\n"
+">>> x = Complex(3.0, -4.5)\n"
+">>> x.r, x.i\n"
+"(3.0, -4.5)"
+msgstr ""
 
 #: tutorial/classes.rst:322
 msgid "Instance Objects"
@@ -607,6 +683,15 @@ msgstr ""
 "gerekmez; yerel değişkenler gibi, ilk değer atandığı anda varlıkları "
 "başlar.  Örneğin, ``x`` yukarıda oluşturulan :class:`MyClass` örneğiyse, "
 "aşağıdaki kod parçası iz bırakmadan ``16`` değerini yazdırır::"
+
+#: tutorial/classes.rst:334
+msgid ""
+"x.counter = 1\n"
+"while x.counter < 10:\n"
+"    x.counter = x.counter * 2\n"
+"print(x.counter)\n"
+"del x.counter"
+msgstr ""
 
 #: tutorial/classes.rst:340
 msgid ""
@@ -639,6 +724,10 @@ msgstr "Metot Nesneleri"
 msgid "Usually, a method is called right after it is bound::"
 msgstr "Genellikle, bir metot bağlandıktan hemen sonra çağrılır::"
 
+#: tutorial/classes.rst:360
+msgid "x.f()"
+msgstr ""
+
 #: tutorial/classes.rst:362
 #, fuzzy
 msgid ""
@@ -650,6 +739,13 @@ msgstr ""
 ":class:`MyClass` örneğinde, ``hello world`` string'ini döndürür. Lakin, "
 "hemen bir metot çağırmak gerekli değildir: ``x.f`` bir metot nesnesidir, "
 "yani daha sonra depolanabilir ve çağrılabilir.  Mesela::"
+
+#: tutorial/classes.rst:366
+msgid ""
+"xf = x.f\n"
+"while True:\n"
+"    print(xf())"
+msgstr ""
 
 #: tutorial/classes.rst:370
 msgid "will continue to print ``hello world`` until the end of time."
@@ -723,6 +819,27 @@ msgstr ""
 "değişkenleri sınıfın tüm örnekleri tarafından paylaşılan nitelikler ile "
 "metotlar içindir::"
 
+#: tutorial/classes.rst:404
+msgid ""
+"class Dog:\n"
+"\n"
+"    kind = 'canine'         # class variable shared by all instances\n"
+"\n"
+"    def __init__(self, name):\n"
+"        self.name = name    # instance variable unique to each instance\n"
+"\n"
+">>> d = Dog('Fido')\n"
+">>> e = Dog('Buddy')\n"
+">>> d.kind                  # shared by all dogs\n"
+"'canine'\n"
+">>> e.kind                  # shared by all dogs\n"
+"'canine'\n"
+">>> d.name                  # unique to d\n"
+"'Fido'\n"
+">>> e.name                  # unique to e\n"
+"'Buddy'"
+msgstr ""
+
 #: tutorial/classes.rst:422
 msgid ""
 "As discussed in :ref:`tut-object`, shared data can have possibly surprising "
@@ -737,10 +854,51 @@ msgstr ""
 "kullanılmamalıdır, çünkü yalnızca tek bir liste tüm *Dog* örnekleri "
 "tarafından paylaşılacaktır::"
 
+#: tutorial/classes.rst:428
+msgid ""
+"class Dog:\n"
+"\n"
+"    tricks = []             # mistaken use of a class variable\n"
+"\n"
+"    def __init__(self, name):\n"
+"        self.name = name\n"
+"\n"
+"    def add_trick(self, trick):\n"
+"        self.tricks.append(trick)\n"
+"\n"
+">>> d = Dog('Fido')\n"
+">>> e = Dog('Buddy')\n"
+">>> d.add_trick('roll over')\n"
+">>> e.add_trick('play dead')\n"
+">>> d.tricks                # unexpectedly shared by all dogs\n"
+"['roll over', 'play dead']"
+msgstr ""
+
 #: tutorial/classes.rst:445
 msgid "Correct design of the class should use an instance variable instead::"
 msgstr ""
 "Doğru olan ise veriyi paylaşmak yerine bir örnek değişkeni kullanmaktır:"
+
+#: tutorial/classes.rst:447
+msgid ""
+"class Dog:\n"
+"\n"
+"    def __init__(self, name):\n"
+"        self.name = name\n"
+"        self.tricks = []    # creates a new empty list for each dog\n"
+"\n"
+"    def add_trick(self, trick):\n"
+"        self.tricks.append(trick)\n"
+"\n"
+">>> d = Dog('Fido')\n"
+">>> e = Dog('Buddy')\n"
+">>> d.add_trick('roll over')\n"
+">>> e.add_trick('play dead')\n"
+">>> d.tricks\n"
+"['roll over']\n"
+">>> e.tricks\n"
+"['play dead']"
+msgstr ""
 
 #: tutorial/classes.rst:469
 msgid "Random Remarks"
@@ -753,6 +911,21 @@ msgid ""
 msgstr ""
 "Aynı nitelik adı hem bir örnekte hem de bir sınıfta oluşuyorsa, nitelik "
 "araması örneğe öncelik verir::"
+
+#: tutorial/classes.rst:476
+msgid ""
+">>> class Warehouse:\n"
+"...    purpose = 'storage'\n"
+"...    region = 'west'\n"
+"...\n"
+">>> w1 = Warehouse()\n"
+">>> print(w1.purpose, w1.region)\n"
+"storage west\n"
+">>> w2 = Warehouse()\n"
+">>> w2.region = 'east'\n"
+">>> print(w2.purpose, w2.region)\n"
+"storage east"
+msgstr ""
 
 #: tutorial/classes.rst:488
 msgid ""
@@ -828,6 +1001,21 @@ msgstr ""
 "dahil olması gerekli değildir: sınıftaki yerel bir değişkene fonksiyon "
 "nesnesi atamak da uygundur.  Mesela::"
 
+#: tutorial/classes.rst:518
+msgid ""
+"# Function defined outside the class\n"
+"def f1(self, x, y):\n"
+"    return min(x, x+y)\n"
+"\n"
+"class C:\n"
+"    f = f1\n"
+"\n"
+"    def g(self):\n"
+"        return 'hello world'\n"
+"\n"
+"    h = g"
+msgstr ""
+
 #: tutorial/classes.rst:530
 #, fuzzy
 msgid ""
@@ -849,6 +1037,20 @@ msgid ""
 msgstr ""
 "Metotlar, ``self`` bağımsız değişkeninin metot niteliklerini kullanarak "
 "diğer metotları çağırabilir::"
+
+#: tutorial/classes.rst:538
+msgid ""
+"class Bag:\n"
+"    def __init__(self):\n"
+"        self.data = []\n"
+"\n"
+"    def add(self, x):\n"
+"        self.data.append(x)\n"
+"\n"
+"    def addtwice(self, x):\n"
+"        self.add(x)\n"
+"        self.add(x)"
+msgstr ""
 
 #: tutorial/classes.rst:549
 msgid ""
@@ -893,6 +1095,16 @@ msgstr ""
 "Tabii ki, bir dil özelliği kalıtımı desteklemeden \"sınıf\" adına layık "
 "olmaz.  Türetilmiş sınıf tanımının söz dizimi şöyle görünür::"
 
+#: tutorial/classes.rst:572
+msgid ""
+"class DerivedClassName(BaseClassName):\n"
+"    <statement-1>\n"
+"    .\n"
+"    .\n"
+"    .\n"
+"    <statement-N>"
+msgstr ""
+
 #: tutorial/classes.rst:579
 #, fuzzy
 msgid ""
@@ -905,6 +1117,10 @@ msgstr ""
 "tanımlanmalıdır.  Temel sınıf adı yerine, diğer rasgele ifadelere de izin "
 "verilir.  Bu, örneğin, temel sınıf başka bir modülde tanımlandığında yararlı "
 "olabilir::"
+
+#: tutorial/classes.rst:585
+msgid "class DerivedClassName(modname.BaseClassName):"
+msgstr ""
 
 #: tutorial/classes.rst:587
 msgid ""
@@ -1003,6 +1219,16 @@ msgid ""
 msgstr ""
 "Python, çoklu kalıtım biçimini de destekler.  Birden çok temel sınıf içeren "
 "bir sınıf tanımı şöyle görünür::"
+
+#: tutorial/classes.rst:633
+msgid ""
+"class DerivedClassName(Base1, Base2, Base3):\n"
+"    <statement-1>\n"
+"    .\n"
+"    .\n"
+"    .\n"
+"    <statement-N>"
+msgstr ""
 
 #: tutorial/classes.rst:640
 #, fuzzy
@@ -1118,6 +1344,28 @@ msgstr ""
 "Ad mangling, alt sınıfların sınıf içi metot çağrılarını kesmeden metotları "
 "geçersiz kılmasına izin vermek için yararlıdır.  Mesela::"
 
+#: tutorial/classes.rst:699
+msgid ""
+"class Mapping:\n"
+"    def __init__(self, iterable):\n"
+"        self.items_list = []\n"
+"        self.__update(iterable)\n"
+"\n"
+"    def update(self, iterable):\n"
+"        for item in iterable:\n"
+"            self.items_list.append(item)\n"
+"\n"
+"    __update = update   # private copy of original update() method\n"
+"\n"
+"class MappingSubclass(Mapping):\n"
+"\n"
+"    def update(self, keys, values):\n"
+"        # provides new signature for update()\n"
+"        # but does not break __init__()\n"
+"        for item in zip(keys, values):\n"
+"            self.items_list.append(item)"
+msgstr ""
+
 #: tutorial/classes.rst:718
 msgid ""
 "The above example would work even if ``MappingSubclass`` were to introduce a "
@@ -1171,6 +1419,26 @@ msgstr ""
 "'u veya C *struct* 'ına benzer bir veri türüne sahip olmak yararlıdır. "
 "Deyimsel yaklaşım, bu amaç için :mod:`dataclasses` kullanmaktır::"
 
+#: tutorial/classes.rst:744
+msgid ""
+"from dataclasses import dataclass\n"
+"\n"
+"@dataclass\n"
+"class Employee:\n"
+"    name: str\n"
+"    dept: str\n"
+"    salary: int"
+msgstr ""
+
+#: tutorial/classes.rst:754
+msgid ""
+">>> john = Employee('john', 'computer lab', 1000)\n"
+">>> john.dept\n"
+"'computer lab'\n"
+">>> john.salary\n"
+"1000"
+msgstr ""
+
 #: tutorial/classes.rst:760
 #, fuzzy
 msgid ""
@@ -1212,6 +1480,20 @@ msgstr ""
 "Şimdiye kadar büyük olasılıkla çoğu kapsayıcı nesnenin bir :keyword:`for` "
 "deyimi kullanılarak döngüye alınabileceğini fark etmişsinizdir::"
 
+#: tutorial/classes.rst:787
+msgid ""
+"for element in [1, 2, 3]:\n"
+"    print(element)\n"
+"for element in (1, 2, 3):\n"
+"    print(element)\n"
+"for key in {'one':1, 'two':2}:\n"
+"    print(key)\n"
+"for char in \"123\":\n"
+"    print(char)\n"
+"for line in open(\"myfile.txt\"):\n"
+"    print(line, end='')"
+msgstr ""
+
 #: tutorial/classes.rst:798
 msgid ""
 "This style of access is clear, concise, and convenient.  The use of "
@@ -1234,6 +1516,25 @@ msgstr ""
 "fonksiyonunu kullanarak :meth:`~iterator.__next__` yöntemini "
 "çağırabilirsiniz; Bu örnek, her şeyin nasıl çalıştığını gösterir::"
 
+#: tutorial/classes.rst:807
+msgid ""
+">>> s = 'abc'\n"
+">>> it = iter(s)\n"
+">>> it\n"
+"<str_iterator object at 0x10c90e650>\n"
+">>> next(it)\n"
+"'a'\n"
+">>> next(it)\n"
+"'b'\n"
+">>> next(it)\n"
+"'c'\n"
+">>> next(it)\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"    next(it)\n"
+"StopIteration"
+msgstr ""
+
 #: tutorial/classes.rst:823
 #, fuzzy
 msgid ""
@@ -1247,6 +1548,38 @@ msgstr ""
 "yineleme davranışı eklemek kolaydır.  :meth:`~iterator.__next__` metodu ile "
 "bir nesne döndüren :meth:`__iter__` metodunu tanımlayın.  Sınıf  :meth:"
 "`__next__` tanımlarsa, :meth:`__iter__`  sadece  ``self`` döndürebilir::"
+
+#: tutorial/classes.rst:828
+msgid ""
+"class Reverse:\n"
+"    \"\"\"Iterator for looping over a sequence backwards.\"\"\"\n"
+"    def __init__(self, data):\n"
+"        self.data = data\n"
+"        self.index = len(data)\n"
+"\n"
+"    def __iter__(self):\n"
+"        return self\n"
+"\n"
+"    def __next__(self):\n"
+"        if self.index == 0:\n"
+"            raise StopIteration\n"
+"        self.index = self.index - 1\n"
+"        return self.data[self.index]"
+msgstr ""
+
+#: tutorial/classes.rst:845
+msgid ""
+">>> rev = Reverse('spam')\n"
+">>> iter(rev)\n"
+"<__main__.Reverse object at 0x00A1DB50>\n"
+">>> for char in rev:\n"
+"...     print(char)\n"
+"...\n"
+"m\n"
+"a\n"
+"p\n"
+"s"
+msgstr ""
 
 #: tutorial/classes.rst:860
 msgid "Generators"
@@ -1267,6 +1600,24 @@ msgstr ""
 "`next` çağrıldığı zaman, üreteç kaldığı yerden devam eder (tüm veri "
 "değerlerini ve hangi deyimin en son yürütüldüğını hatırlar).  Bu örnek, "
 "üreteçlerin oluşturulmasının ne kadar da kolay olabileceğini gösterir::"
+
+#: tutorial/classes.rst:869
+msgid ""
+"def reverse(data):\n"
+"    for index in range(len(data)-1, -1, -1):\n"
+"        yield data[index]"
+msgstr ""
+
+#: tutorial/classes.rst:875
+msgid ""
+">>> for char in reverse('golf'):\n"
+"...     print(char)\n"
+"...\n"
+"f\n"
+"l\n"
+"o\n"
+"g"
+msgstr ""
 
 #: tutorial/classes.rst:883
 #, fuzzy
@@ -1329,18 +1680,39 @@ msgstr ""
 msgid "Examples::"
 msgstr "Örnekler::"
 
+#: tutorial/classes.rst:913
+msgid ""
+">>> sum(i*i for i in range(10))                 # sum of squares\n"
+"285\n"
+"\n"
+">>> xvec = [10, 20, 30]\n"
+">>> yvec = [7, 5, 3]\n"
+">>> sum(x*y for x,y in zip(xvec, yvec))         # dot product\n"
+"260\n"
+"\n"
+">>> unique_words = set(word for line in page  for word in line.split())\n"
+"\n"
+">>> valedictorian = max((student.gpa, student.name) for student in "
+"graduates)\n"
+"\n"
+">>> data = 'golf'\n"
+">>> list(data[i] for i in range(len(data)-1, -1, -1))\n"
+"['f', 'l', 'o', 'g']"
+msgstr ""
+
 #: tutorial/classes.rst:932
 msgid "Footnotes"
 msgstr "Dipnotlar"
 
 #: tutorial/classes.rst:933
+#, fuzzy
 msgid ""
 "Except for one thing.  Module objects have a secret read-only attribute "
 "called :attr:`~object.__dict__` which returns the dictionary used to "
-"implement the module's namespace; the name :attr:`~object.__dict__` is an "
-"attribute but not a global name. Obviously, using this violates the "
-"abstraction of namespace implementation, and should be restricted to things "
-"like post-mortem debuggers."
+"implement the module's namespace; the name ``__dict__`` is an attribute but "
+"not a global name. Obviously, using this violates the abstraction of "
+"namespace implementation, and should be restricted to things like post-"
+"mortem debuggers."
 msgstr ""
 "Bir şey hariç.  Modül nesneleri,  :attr:`~object.__dict__`  denen sadece "
 "okunabilir bir özelliğe sahiptir, bu da modülün ad alanını uygulamak için "

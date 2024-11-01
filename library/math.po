@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: 2023-03-31 00:00+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -509,6 +509,10 @@ msgstr ""
 msgid "Roughly equivalent to::"
 msgstr "Kabaca şuna eşdeğerdir::"
 
+#: library/math.rst:305
+msgid "sum(itertools.starmap(operator.mul, zip(p, q, strict=True)))"
+msgstr ""
+
 #: library/math.rst:307
 msgid ""
 "For float and mixed int/float inputs, the intermediate products and sums are "
@@ -793,6 +797,10 @@ msgstr ""
 "*q* noktası arasındaki Öklid mesafesini döndürür.  İki nokta aynı boyuta "
 "sahip olmalıdır."
 
+#: library/math.rst:500
+msgid "sqrt(sum((px - qx) ** 2.0 for px, qx in zip(p, q)))"
+msgstr ""
+
 #: library/math.rst:507
 msgid ""
 "Return the Euclidean norm, ``sqrt(sum(x**2 for x in coordinates))``. This is "
@@ -910,6 +918,13 @@ msgstr ""
 ":func:`erf` fonksiyonu, `kümülatif standart normal dağılım <https://en."
 "wikipedia.org/wiki/Normal_distribution#Cumulative_distribution_functions>`_: "
 "gibi geleneksel istatistiksel fonksiyonları hesaplamak için kullanılabilir:"
+
+#: library/math.rst:597
+msgid ""
+"def phi(x):\n"
+"    'Cumulative distribution function for the standard normal distribution'\n"
+"    return (1.0 + erf(x / sqrt(2.0))) / 2.0"
+msgstr ""
 
 #: library/math.rst:606
 msgid ""

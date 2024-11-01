@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 22:33+0300\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -32,15 +32,15 @@ msgstr ""
 msgid ""
 "Python comes preinstalled on most Linux distributions, and is available as a "
 "package on all others.  However there are certain features you might want to "
-"use that are not available on your distro's package.  You can easily compile "
-"the latest version of Python from source."
+"use that are not available on your distro's package.  You can compile the "
+"latest version of Python from source."
 msgstr ""
 
 #: using/unix.rst:23
 msgid ""
-"In the event that Python doesn't come preinstalled and isn't in the "
-"repositories as well, you can easily make packages for your own distro.  "
-"Have a look at the following links:"
+"In the event that the latest version of Python doesn't come preinstalled and "
+"isn't in the repositories as well, you can make packages for your own "
+"distro.  Have a look at the following links:"
 msgstr ""
 
 #: using/unix.rst:29
@@ -85,12 +85,30 @@ msgstr ""
 msgid "FreeBSD users, to add the package use::"
 msgstr ""
 
+#: using/unix.rst:44
+msgid "pkg install python3"
+msgstr ""
+
 #: using/unix.rst:46
 msgid "OpenBSD users, to add the package use::"
 msgstr ""
 
+#: using/unix.rst:48
+msgid ""
+"pkg_add -r python\n"
+"\n"
+"pkg_add ftp://ftp.openbsd.org/pub/OpenBSD/4.2/packages/<insert your "
+"architecture here>/python-<version>.tgz"
+msgstr ""
+
 #: using/unix.rst:52
 msgid "For example i386 users get the 2.5.1 version of Python using::"
+msgstr ""
+
+#: using/unix.rst:54
+msgid ""
+"pkg_add ftp://ftp.openbsd.org/pub/OpenBSD/4.2/packages/i386/python-2.5.1p2."
+"tgz"
 msgstr ""
 
 #: using/unix.rst:60
@@ -108,6 +126,13 @@ msgstr ""
 
 #: using/unix.rst:68
 msgid "The build process consists of the usual commands::"
+msgstr ""
+
+#: using/unix.rst:70
+msgid ""
+"./configure\n"
+"make\n"
+"make install"
 msgstr ""
 
 #: using/unix.rst:74
@@ -190,10 +215,18 @@ msgid ""
 "with"
 msgstr ""
 
+#: using/unix.rst:116
+msgid "$ chmod +x script"
+msgstr ""
+
 #: using/unix.rst:120
 msgid ""
 "and put an appropriate Shebang line at the top of the script.  A good choice "
 "is usually ::"
+msgstr ""
+
+#: using/unix.rst:123
+msgid "#!/usr/bin/env python3"
 msgstr ""
 
 #: using/unix.rst:125
@@ -222,16 +255,48 @@ msgid ""
 "directory."
 msgstr ""
 
+#: using/unix.rst:142
+msgid ""
+"$ find /etc/ -name openssl.cnf -printf \"%h\\n\"\n"
+"/etc/ssl"
+msgstr ""
+
 #: using/unix.rst:147
 msgid ""
 "Download, build, and install OpenSSL. Make sure you use ``install_sw`` and "
 "not ``install``. The ``install_sw`` target does not override ``openssl.cnf``."
 msgstr ""
 
+#: using/unix.rst:151
+msgid ""
+"$ curl -O https://www.openssl.org/source/openssl-VERSION.tar.gz\n"
+"$ tar xzf openssl-VERSION\n"
+"$ pushd openssl-VERSION\n"
+"$ ./config \\\n"
+"    --prefix=/usr/local/custom-openssl \\\n"
+"    --libdir=lib \\\n"
+"    --openssldir=/etc/ssl\n"
+"$ make -j1 depend\n"
+"$ make -j8\n"
+"$ make install_sw\n"
+"$ popd"
+msgstr ""
+
 #: using/unix.rst:165
 msgid ""
 "Build Python with custom OpenSSL (see the configure ``--with-openssl`` and "
 "``--with-openssl-rpath`` options)"
+msgstr ""
+
+#: using/unix.rst:168
+msgid ""
+"$ pushd python-3.x.x\n"
+"$ ./configure -C \\\n"
+"    --with-openssl=/usr/local/custom-openssl \\\n"
+"    --with-openssl-rpath=auto \\\n"
+"    --prefix=/usr/local/python-3.x.x\n"
+"$ make -j8\n"
+"$ make altinstall"
 msgstr ""
 
 #: using/unix.rst:180

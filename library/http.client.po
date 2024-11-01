@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -44,7 +44,7 @@ msgid ""
 msgstr ""
 
 #: includes/wasm-notavail.rst:3
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
+msgid "Availability"
 msgstr ""
 
 #: includes/wasm-notavail.rst:5
@@ -76,6 +76,14 @@ msgstr ""
 msgid ""
 "For example, the following calls all create instances that connect to the "
 "server at the same host and port::"
+msgstr ""
+
+#: library/http.client.rst:54
+msgid ""
+">>> h1 = http.client.HTTPConnection('www.python.org')\n"
+">>> h2 = http.client.HTTPConnection('www.python.org:80')\n"
+">>> h3 = http.client.HTTPConnection('www.python.org', 80)\n"
+">>> h4 = http.client.HTTPConnection('www.python.org', 80, timeout=10)"
 msgstr ""
 
 #: library/http.client.rst:59
@@ -329,6 +337,17 @@ msgid ""
 "For example, to perform a ``GET`` request to ``https://docs.python.org/3/``::"
 msgstr ""
 
+#: library/http.client.rst:299
+msgid ""
+">>> import http.client\n"
+">>> host = \"docs.python.org\"\n"
+">>> conn = http.client.HTTPSConnection(host)\n"
+">>> conn.request(\"GET\", \"/3/\", headers={\"Host\": host})\n"
+">>> response = conn.getresponse()\n"
+">>> print(response.status, response.reason)\n"
+"200 OK"
+msgstr ""
+
 #: library/http.client.rst:308
 msgid ""
 "Chunked transfer encoding has been added to the HTTP protocol version 1.1.  "
@@ -413,6 +432,14 @@ msgid ""
 "the :meth:`~HTTPConnection.set_tunnel` method::"
 msgstr ""
 
+#: library/http.client.rst:374
+msgid ""
+">>> import http.client\n"
+">>> conn = http.client.HTTPSConnection(\"localhost\", 8080)\n"
+">>> conn.set_tunnel(\"www.python.org\")\n"
+">>> conn.request(\"HEAD\",\"/index.html\")"
+msgstr ""
+
 #: library/http.client.rst:381
 msgid ""
 "HTTP CONNECT tunnelling requests use protocol HTTP/1.1, upgraded from "
@@ -440,7 +467,8 @@ msgstr ""
 
 #: library/http.client.rst:404
 msgid ""
-"Raises an auditing event http.client.connect with arguments self, host, port."
+"Raises an :ref:`auditing event <auditing>` ``http.client.connect`` with "
+"arguments ``self``, ``host``, ``port``."
 msgstr ""
 
 #: library/http.client.rst:409
@@ -515,7 +543,9 @@ msgid ""
 msgstr ""
 
 #: library/http.client.rst:474
-msgid "Raises an auditing event http.client.send with arguments self, data."
+msgid ""
+"Raises an :ref:`auditing event <auditing>` ``http.client.send`` with "
+"arguments ``self``, ``data``."
 msgstr ""
 
 #: library/http.client.rst:480
@@ -623,14 +653,74 @@ msgstr ""
 msgid "Here is an example session that uses the ``GET`` method::"
 msgstr ""
 
+#: library/http.client.rst:573
+msgid ""
+">>> import http.client\n"
+">>> conn = http.client.HTTPSConnection(\"www.python.org\")\n"
+">>> conn.request(\"GET\", \"/\")\n"
+">>> r1 = conn.getresponse()\n"
+">>> print(r1.status, r1.reason)\n"
+"200 OK\n"
+">>> data1 = r1.read()  # This will return entire content.\n"
+">>> # The following example demonstrates reading data in chunks.\n"
+">>> conn.request(\"GET\", \"/\")\n"
+">>> r1 = conn.getresponse()\n"
+">>> while chunk := r1.read(200):\n"
+"...     print(repr(chunk))\n"
+"b'<!doctype html>\\n<!--[if\"...\n"
+"...\n"
+">>> # Example of an invalid request\n"
+">>> conn = http.client.HTTPSConnection(\"docs.python.org\")\n"
+">>> conn.request(\"GET\", \"/parrot.spam\")\n"
+">>> r2 = conn.getresponse()\n"
+">>> print(r2.status, r2.reason)\n"
+"404 Not Found\n"
+">>> data2 = r2.read()\n"
+">>> conn.close()"
+msgstr ""
+
 #: library/http.client.rst:596
 msgid ""
 "Here is an example session that uses the ``HEAD`` method.  Note that the "
 "``HEAD`` method never returns any data. ::"
 msgstr ""
 
+#: library/http.client.rst:599
+msgid ""
+">>> import http.client\n"
+">>> conn = http.client.HTTPSConnection(\"www.python.org\")\n"
+">>> conn.request(\"HEAD\", \"/\")\n"
+">>> res = conn.getresponse()\n"
+">>> print(res.status, res.reason)\n"
+"200 OK\n"
+">>> data = res.read()\n"
+">>> print(len(data))\n"
+"0\n"
+">>> data == b''\n"
+"True"
+msgstr ""
+
 #: library/http.client.rst:611
 msgid "Here is an example session that uses the ``POST`` method::"
+msgstr ""
+
+#: library/http.client.rst:613
+msgid ""
+">>> import http.client, urllib.parse\n"
+">>> params = urllib.parse.urlencode({'@number': 12524, '@type': 'issue', "
+"'@action': 'show'})\n"
+">>> headers = {\"Content-type\": \"application/x-www-form-urlencoded\",\n"
+"...            \"Accept\": \"text/plain\"}\n"
+">>> conn = http.client.HTTPConnection(\"bugs.python.org\")\n"
+">>> conn.request(\"POST\", \"\", params, headers)\n"
+">>> response = conn.getresponse()\n"
+">>> print(response.status, response.reason)\n"
+"302 Found\n"
+">>> data = response.read()\n"
+">>> data\n"
+"b'Redirecting to <a href=\"https://bugs.python.org/issue12524\">https://bugs."
+"python.org/issue12524</a>'\n"
+">>> conn.close()"
 msgstr ""
 
 #: library/http.client.rst:627
@@ -641,6 +731,21 @@ msgid ""
 "HTTP methods are also handled in :class:`urllib.request.Request` by setting "
 "the appropriate method attribute. Here is an example session that uses the "
 "``PUT`` method::"
+msgstr ""
+
+#: library/http.client.rst:633
+msgid ""
+">>> # This creates an HTTP request\n"
+">>> # with the content of BODY as the enclosed representation\n"
+">>> # for the resource http://localhost:8080/file\n"
+"...\n"
+">>> import http.client\n"
+">>> BODY = \"***filecontents***\"\n"
+">>> conn = http.client.HTTPConnection(\"localhost\", 8080)\n"
+">>> conn.request(\"PUT\", \"/file\", BODY)\n"
+">>> response = conn.getresponse()\n"
+">>> print(response.status, response.reason)\n"
+"200, OK"
 msgstr ""
 
 #: library/http.client.rst:648

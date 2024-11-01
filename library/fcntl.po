@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -29,7 +29,7 @@ msgid ""
 msgstr ""
 
 #: library/fcntl.rst:21
-msgid ":ref:`Availability <availability>`: Unix, not Emscripten, not WASI."
+msgid "Availability"
 msgstr ""
 
 #: library/fcntl.rst:23
@@ -112,7 +112,9 @@ msgid "If the :c:func:`fcntl` call fails, an :exc:`OSError` is raised."
 msgstr ""
 
 #: library/fcntl.rst:85
-msgid "Raises an auditing event fcntl.fcntl with arguments fd, cmd, arg."
+msgid ""
+"Raises an :ref:`auditing event <auditing>` ``fcntl.fcntl`` with arguments "
+"``fd``, ``cmd``, ``arg``."
 msgstr ""
 
 #: library/fcntl.rst:90
@@ -176,8 +178,24 @@ msgstr ""
 msgid "An example::"
 msgstr ""
 
+#: library/fcntl.rst:125
+msgid ""
+">>> import array, fcntl, struct, termios, os\n"
+">>> os.getpgrp()\n"
+"13341\n"
+">>> struct.unpack('h', fcntl.ioctl(0, termios.TIOCGPGRP, \"  \"))[0]\n"
+"13341\n"
+">>> buf = array.array('h', [0])\n"
+">>> fcntl.ioctl(0, termios.TIOCGPGRP, buf, 1)\n"
+"0\n"
+">>> buf\n"
+"array('h', [13341])"
+msgstr ""
+
 #: library/fcntl.rst:136
-msgid "Raises an auditing event fcntl.ioctl with arguments fd, request, arg."
+msgid ""
+"Raises an :ref:`auditing event <auditing>` ``fcntl.ioctl`` with arguments "
+"``fd``, ``request``, ``arg``."
 msgstr ""
 
 #: library/fcntl.rst:141
@@ -194,7 +212,9 @@ msgid ""
 msgstr ""
 
 #: library/fcntl.rst:148
-msgid "Raises an auditing event fcntl.flock with arguments fd, operation."
+msgid ""
+"Raises an :ref:`auditing event <auditing>` ``fcntl.flock`` with arguments "
+"``fd``, ``operation``."
 msgstr ""
 
 #: library/fcntl.rst:153
@@ -261,12 +281,23 @@ msgstr ""
 
 #: library/fcntl.rst:194
 msgid ""
-"Raises an auditing event fcntl.lockf with arguments fd, cmd, len, start, "
-"whence."
+"Raises an :ref:`auditing event <auditing>` ``fcntl.lockf`` with arguments "
+"``fd``, ``cmd``, ``len``, ``start``, ``whence``."
 msgstr ""
 
 #: library/fcntl.rst:196
 msgid "Examples (all on a SVR4 compliant system)::"
+msgstr ""
+
+#: library/fcntl.rst:198
+msgid ""
+"import struct, fcntl, os\n"
+"\n"
+"f = open(...)\n"
+"rv = fcntl.fcntl(f, fcntl.F_SETFL, os.O_NDELAY)\n"
+"\n"
+"lockdata = struct.pack('hhllhh', fcntl.F_WRLCK, 0, 0, 0, 0, 0)\n"
+"rv = fcntl.fcntl(f, fcntl.F_SETLKW, lockdata)"
 msgstr ""
 
 #: library/fcntl.rst:206

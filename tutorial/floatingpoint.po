@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: 2022-12-28 22:25+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -60,9 +60,21 @@ msgstr ""
 "düşünün.  Bunu 10 tabanında bir kesir olarak yaklaşık olarak "
 "hesaplayabilirsiniz::"
 
+#: tutorial/floatingpoint.rst:31
+msgid "0.3"
+msgstr ""
+
 #: tutorial/floatingpoint.rst:37
 msgid "or, better, ::"
 msgstr "ya da daha iyisi ::"
+
+#: tutorial/floatingpoint.rst:35
+msgid "0.33"
+msgstr ""
+
+#: tutorial/floatingpoint.rst:39
+msgid "0.333"
+msgstr ""
 
 #: tutorial/floatingpoint.rst:41
 msgid ""
@@ -83,6 +95,10 @@ msgstr ""
 "Aynı şekilde, kaç tane 2 tabanı basamağı kullanmak isterseniz isteyin, 0.1 "
 "ondalık değeri tam olarak 2 tabanı kesri olarak gösterilemez.  Taban 2'de "
 "1/10 sonsuza kadar tekrar eden bir kesirdir ::"
+
+#: tutorial/floatingpoint.rst:49
+msgid "0.0001100110011001100110011001100110011001100110011..."
+msgstr ""
 
 #: tutorial/floatingpoint.rst:51
 msgid ""
@@ -115,6 +131,12 @@ msgstr ""
 "makinede, Python 0.1 için saklanan ikili yaklaşımın gerçek ondalık değerini "
 "yazdıracak olsaydı, ::"
 
+#: tutorial/floatingpoint.rst:64
+msgid ""
+">>> 0.1\n"
+"0.1000000000000000055511151231257827021181583404541015625"
+msgstr ""
+
 #: tutorial/floatingpoint.rst:67
 #, fuzzy
 msgid ""
@@ -124,6 +146,12 @@ msgstr ""
 "Bu çoğu insanın kullanışlı bulacağı seviyeden çok daha fazla basamak olurdu. "
 "Dolayısıyla, Python sayıları yuvarlayarak basamak sayısını kontrol "
 "edilebilir seviyede tutar ::"
+
+#: tutorial/floatingpoint.rst:70
+msgid ""
+">>> 1 / 10\n"
+"0.1"
+msgstr ""
 
 #: tutorial/floatingpoint.rst:75
 msgid ""
@@ -185,6 +213,18 @@ msgstr ""
 "Daha hoş bir çıktı için, sınırlı sayıda anlamlı hane üretmek üzere dize "
 "biçimlendirmesini kullanmak isteyebilirsiniz::"
 
+#: tutorial/floatingpoint.rst:100
+msgid ""
+">>> format(math.pi, '.12g')  # give 12 significant digits\n"
+"'3.14159265359'\n"
+"\n"
+">>> format(math.pi, '.2f')   # give 2 digits after the point\n"
+"'3.14'\n"
+"\n"
+">>> repr(math.pi)\n"
+"'3.141592653589793'"
+msgstr ""
+
 #: tutorial/floatingpoint.rst:111
 msgid ""
 "It's important to realize that this is, in a real sense, an illusion: you're "
@@ -202,6 +242,12 @@ msgstr ""
 "Bir yanılsama diğerini doğurabilir.  Örneğin, 0,1 tam olarak 1/10 "
 "olmadığından, 0,1'in üç değerini toplamak da tam olarak 0,3 vermeyebilir::"
 
+#: tutorial/floatingpoint.rst:117
+msgid ""
+">>> 0.1 + 0.1 + 0.1 == 0.3\n"
+"False"
+msgstr ""
+
 #: tutorial/floatingpoint.rst:122
 #, fuzzy
 msgid ""
@@ -213,6 +259,12 @@ msgstr ""
 "yaklaşamayacağından, :func:`round` fonksiyonu ile ön yuvarlama yapmak "
 "yardımcı olamaz::"
 
+#: tutorial/floatingpoint.rst:126
+msgid ""
+">>> round(0.1, 1) + round(0.1, 1) + round(0.1, 1) == round(0.3, 1)\n"
+"False"
+msgstr ""
+
 #: tutorial/floatingpoint.rst:131
 #, fuzzy
 msgid ""
@@ -223,10 +275,22 @@ msgstr ""
 "kesin olmayan değerlere sahip sonuçların birbiriyle karşılaştırılabilir hale "
 "gelmesi için sonradan yuvarlama yapmaya yarayabilir::"
 
+#: tutorial/floatingpoint.rst:134
+msgid ""
+">>> math.isclose(0.1 + 0.1 + 0.1, 0.3)\n"
+"True"
+msgstr ""
+
 #: tutorial/floatingpoint.rst:139
 msgid ""
 "Alternatively, the :func:`round` function can be used to compare rough "
 "approximations:"
+msgstr ""
+
+#: tutorial/floatingpoint.rst:142
+msgid ""
+">>> round(math.pi, ndigits=2) == round(22 / 7, ndigits=2)\n"
+"True"
 msgstr ""
 
 #: tutorial/floatingpoint.rst:147
@@ -325,6 +389,13 @@ msgstr ""
 "as_integer_ratio` metodu bir kayan noktanın değerini kesir olarak ifade "
 "eder::"
 
+#: tutorial/floatingpoint.rst:186
+msgid ""
+">>> x = 3.14159\n"
+">>> x.as_integer_ratio()\n"
+"(3537115888337719, 1125899906842624)"
+msgstr ""
+
 #: tutorial/floatingpoint.rst:192
 #, fuzzy
 msgid ""
@@ -333,6 +404,12 @@ msgid ""
 msgstr ""
 "Oran tam olduğundan, orijinal değeri kayıpsız olarak yeniden oluşturmak için "
 "kullanılabilir::"
+
+#: tutorial/floatingpoint.rst:195
+msgid ""
+">>> x == 3537115888337719 / 1125899906842624\n"
+"True"
+msgstr ""
 
 #: tutorial/floatingpoint.rst:200
 #, fuzzy
@@ -344,6 +421,12 @@ msgstr ""
 "olarak ifade eder ve yine bilgisayarınız tarafından depolanan tam değeri "
 "verir::"
 
+#: tutorial/floatingpoint.rst:203
+msgid ""
+">>> x.hex()\n"
+"'0x1.921f9f01b866ep+1'"
+msgstr ""
+
 #: tutorial/floatingpoint.rst:208
 #, fuzzy
 msgid ""
@@ -352,6 +435,12 @@ msgid ""
 msgstr ""
 "Bu hassas onaltılık gösterim, float değerini tam olarak yeniden oluşturmak "
 "için kullanılabilir::"
+
+#: tutorial/floatingpoint.rst:211
+msgid ""
+">>> x == float.fromhex('0x1.921f9f01b866ep+1')\n"
+"True"
+msgstr ""
 
 #: tutorial/floatingpoint.rst:216
 msgid ""
@@ -380,13 +469,42 @@ msgstr ""
 "yaratabilir, böylece hatalar nihai toplamı etkileyecek noktaya kadar "
 "birikmez:"
 
+#: tutorial/floatingpoint.rst:226
+msgid ""
+">>> 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 == 1.0\n"
+"False\n"
+">>> sum([0.1] * 10) == 1.0\n"
+"True"
+msgstr ""
+
 #: tutorial/floatingpoint.rst:233
 msgid ""
-"The :func:`math.fsum()` goes further and tracks all of the \"lost digits\" "
-"as values are added onto a running total so that the result has only a "
-"single rounding.  This is slower than :func:`sum` but will be more accurate "
-"in uncommon cases where large magnitude inputs mostly cancel each other out "
+"The :func:`math.fsum` goes further and tracks all of the \"lost digits\" as "
+"values are added onto a running total so that the result has only a single "
+"rounding.  This is slower than :func:`sum` but will be more accurate in "
+"uncommon cases where large magnitude inputs mostly cancel each other out "
 "leaving a final sum near zero:"
+msgstr ""
+
+#: tutorial/floatingpoint.rst:239
+msgid ""
+">>> arr = [-0.10430216751806065, -266310978.67179024, 143401161448607.16,\n"
+"...        -143401161400469.7, 266262841.31058735, -0.003244936839808227]\n"
+">>> float(sum(map(Fraction, arr)))   # Exact summation with single rounding\n"
+"8.042173697819788e-13\n"
+">>> math.fsum(arr)                   # Single rounding\n"
+"8.042173697819788e-13\n"
+">>> sum(arr)                         # Multiple roundings in extended "
+"precision\n"
+"8.042178034628478e-13\n"
+">>> total = 0.0\n"
+">>> for x in arr:\n"
+"...     total += x                   # Multiple roundings in standard "
+"precision\n"
+"...\n"
+">>> total                            # Straight addition has no correct "
+"digits!\n"
+"-0.0051575902860057365"
 msgstr ""
 
 #: tutorial/floatingpoint.rst:260
@@ -435,9 +553,17 @@ msgstr ""
 "formundaki en yakın kesre dönüştürmeye çalışır, burada *J* tam olarak 53 bit "
 "içeren bir tamsayıdır.  Yeniden Yazma ::"
 
+#: tutorial/floatingpoint.rst:280
+msgid "1 / 10 ~= J / (2**N)"
+msgstr ""
+
 #: tutorial/floatingpoint.rst:282
 msgid "as ::"
 msgstr "şu şekilde ::"
+
+#: tutorial/floatingpoint.rst:284
+msgid "J ~= 2**N / 10"
+msgstr ""
 
 #: tutorial/floatingpoint.rst:286
 #, fuzzy
@@ -448,6 +574,12 @@ msgstr ""
 "ve *J*'nin tam olarak 53 bit olduğunu hatırlarsak (``>= 2**52`` ama ``< "
 "2**53``), *N* için en iyi değer 56:'dır:"
 
+#: tutorial/floatingpoint.rst:289
+msgid ""
+">>> 2**52 <=  2**56 // 10  < 2**53\n"
+"True"
+msgstr ""
+
 #: tutorial/floatingpoint.rst:294
 #, fuzzy
 msgid ""
@@ -456,6 +588,13 @@ msgid ""
 msgstr ""
 "Yani, *N* için *J*'ye tam olarak 53 bit bırakan tek değer 56'dır.  O halde "
 "*J* için mümkün olan en iyi değer, bu bölümün yuvarlanmış halidir::"
+
+#: tutorial/floatingpoint.rst:297
+msgid ""
+">>> q, r = divmod(2**56, 10)\n"
+">>> r\n"
+"6"
+msgstr ""
 
 #: tutorial/floatingpoint.rst:303
 #, fuzzy
@@ -466,6 +605,12 @@ msgstr ""
 "Kalanın değeri 10'un yarısından fazla olduğu için, en iyi yaklaşım yukarı "
 "yuvarlama ile elde edilir::"
 
+#: tutorial/floatingpoint.rst:306
+msgid ""
+">>> q+1\n"
+"7205759403792794"
+msgstr ""
+
 #: tutorial/floatingpoint.rst:313
 #, fuzzy
 msgid ""
@@ -474,10 +619,18 @@ msgid ""
 msgstr ""
 "Bu nedenle 754 çift duyarlılıkta, 1/10'a mümkün olan en iyi yaklaşım şudur ::"
 
+#: tutorial/floatingpoint.rst:316
+msgid "7205759403792794 / 2 ** 56"
+msgstr ""
+
 #: tutorial/floatingpoint.rst:318
 msgid ""
 "Dividing both the numerator and denominator by two reduces the fraction to::"
 msgstr "Hem pay hem de paydayı ikiye böldüğünüzde kesir şuna indirgenir::"
+
+#: tutorial/floatingpoint.rst:320
+msgid "3602879701896397 / 2 ** 55"
+msgstr ""
 
 #: tutorial/floatingpoint.rst:322
 msgid ""
@@ -498,6 +651,12 @@ msgstr ""
 "Yani bilgisayar asla 1/10'u \"görmez\": gördüğü şey yukarıda verilen tam "
 "kesirdir, alabileceği en iyi 754 çift yaklaşımıdır::"
 
+#: tutorial/floatingpoint.rst:329
+msgid ""
+">>> 0.1 * 2 ** 55\n"
+"3602879701896397.0"
+msgstr ""
+
 #: tutorial/floatingpoint.rst:334
 #, fuzzy
 msgid ""
@@ -506,6 +665,12 @@ msgid ""
 msgstr ""
 "Bu kesri 10\\*\\*55 ile çarparsak, değeri 55 ondalık basamağa kadar "
 "görebiliriz::"
+
+#: tutorial/floatingpoint.rst:337
+msgid ""
+">>> 3602879701896397 * 10 ** 55 // 2 ** 55\n"
+"1000000000000000055511151231257827021181583404541015625"
+msgstr ""
 
 #: tutorial/floatingpoint.rst:342
 #, fuzzy
@@ -520,12 +685,36 @@ msgstr ""
 "olduğu anlamına gelir. Python’un eski sürümleri dahil olmak üzere çoğu dil, "
 "tam kesri göstermek yerine sonucu 17 anlamlı basamağa yuvarlar::"
 
+#: tutorial/floatingpoint.rst:347
+msgid ""
+">>> format(0.1, '.17f')\n"
+"'0.10000000000000001'"
+msgstr ""
+
 #: tutorial/floatingpoint.rst:352
 #, fuzzy
 msgid ""
 "The :mod:`fractions` and :mod:`decimal` modules make these calculations easy:"
 msgstr ""
 ":mod:`fractions` ve :mod:`decimal` modülleri bu hesaplamaları kolaylaştırır::"
+
+#: tutorial/floatingpoint.rst:355
+msgid ""
+">>> from decimal import Decimal\n"
+">>> from fractions import Fraction\n"
+"\n"
+">>> Fraction.from_float(0.1)\n"
+"Fraction(3602879701896397, 36028797018963968)\n"
+"\n"
+">>> (0.1).as_integer_ratio()\n"
+"(3602879701896397, 36028797018963968)\n"
+"\n"
+">>> Decimal.from_float(0.1)\n"
+"Decimal('0.1000000000000000055511151231257827021181583404541015625')\n"
+"\n"
+">>> format(Decimal.from_float(0.1), '.17')\n"
+"'0.10000000000000001'"
+msgstr ""
 
 #~ msgid ""
 #~ "Floating-point numbers are represented in computer hardware as base 2 "

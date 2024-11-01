@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -21,7 +21,7 @@ msgid ":mod:`!mmap` --- Memory-mapped file support"
 msgstr ""
 
 #: includes/wasm-notavail.rst:3
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
+msgid "Availability"
 msgstr ""
 
 #: includes/wasm-notavail.rst:5
@@ -119,8 +119,8 @@ msgstr ""
 
 #: library/mmap.rst:163
 msgid ""
-"Raises an auditing event mmap.__new__ with arguments fileno, length, access, "
-"offset."
+"Raises an :ref:`auditing event <auditing>` ``mmap.__new__`` with arguments "
+"``fileno``, ``length``, ``access``, ``offset``."
 msgstr ""
 
 #: library/mmap.rst:77
@@ -177,10 +177,43 @@ msgstr ""
 msgid "This example shows a simple way of using :class:`~mmap.mmap`::"
 msgstr ""
 
+#: library/mmap.rst:111
+msgid ""
+"import mmap\n"
+"\n"
+"# write a simple example file\n"
+"with open(\"hello.txt\", \"wb\") as f:\n"
+"    f.write(b\"Hello Python!\\n\")\n"
+"\n"
+"with open(\"hello.txt\", \"r+b\") as f:\n"
+"    # memory-map the file, size 0 means whole file\n"
+"    mm = mmap.mmap(f.fileno(), 0)\n"
+"    # read content via standard file methods\n"
+"    print(mm.readline())  # prints b\"Hello Python!\\n\"\n"
+"    # read content via slice notation\n"
+"    print(mm[:5])  # prints b\"Hello\"\n"
+"    # update content using slice notation;\n"
+"    # note that new content must have same size\n"
+"    mm[6:] = b\" world!\\n\"\n"
+"    # ... and read again using standard file methods\n"
+"    mm.seek(0)\n"
+"    print(mm.readline())  # prints b\"Hello  world!\\n\"\n"
+"    # close the map\n"
+"    mm.close()"
+msgstr ""
+
 #: library/mmap.rst:134
 msgid ""
 ":class:`~mmap.mmap` can also be used as a context manager in a :keyword:"
 "`with` statement::"
+msgstr ""
+
+#: library/mmap.rst:137
+msgid ""
+"import mmap\n"
+"\n"
+"with mmap.mmap(-1, 13) as mm:\n"
+"    mm.write(b\"Hello world!\")"
 msgstr ""
 
 #: library/mmap.rst:142
@@ -191,6 +224,23 @@ msgstr ""
 msgid ""
 "The next example demonstrates how to create an anonymous map and exchange "
 "data between the parent and child processes::"
+msgstr ""
+
+#: library/mmap.rst:149
+msgid ""
+"import mmap\n"
+"import os\n"
+"\n"
+"mm = mmap.mmap(-1, 13)\n"
+"mm.write(b\"Hello world!\")\n"
+"\n"
+"pid = os.fork()\n"
+"\n"
+"if pid == 0:  # In a child process\n"
+"    mm.seek(0)\n"
+"    print(mm.readline())\n"
+"\n"
+"    mm.close()"
 msgstr ""
 
 #: library/mmap.rst:165

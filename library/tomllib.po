@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -26,9 +26,9 @@ msgstr ""
 
 #: library/tomllib.rst:16
 msgid ""
-"This module provides an interface for parsing TOML (Tom's Obvious Minimal "
-"Language, `https://toml.io <https://toml.io/en/>`_). This module does not "
-"support writing TOML."
+"This module provides an interface for parsing TOML 1.0.0 (Tom's Obvious "
+"Minimal Language, `https://toml.io <https://toml.io/en/>`_). This module "
+"does not support writing TOML."
 msgstr ""
 
 #: library/tomllib.rst:22
@@ -92,8 +92,28 @@ msgstr ""
 msgid "Parsing a TOML file::"
 msgstr ""
 
+#: library/tomllib.rst:73
+msgid ""
+"import tomllib\n"
+"\n"
+"with open(\"pyproject.toml\", \"rb\") as f:\n"
+"    data = tomllib.load(f)"
+msgstr ""
+
 #: library/tomllib.rst:78
 msgid "Parsing a TOML string::"
+msgstr ""
+
+#: library/tomllib.rst:80
+msgid ""
+"import tomllib\n"
+"\n"
+"toml_str = \"\"\"\n"
+"python-version = \"3.11.0\"\n"
+"python-implementation = \"CPython\"\n"
+"\"\"\"\n"
+"\n"
+"data = tomllib.loads(toml_str)"
 msgstr ""
 
 #: library/tomllib.rst:91

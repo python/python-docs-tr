@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -50,10 +50,22 @@ msgid ""
 "imaginary axis::"
 msgstr ""
 
+#: library/cmath.rst:31
+msgid ""
+">>> cmath.sqrt(complex(-2.0, -0.0))\n"
+"-1.4142135623730951j"
+msgstr ""
+
 #: library/cmath.rst:34
 msgid ""
 "But an argument of ``complex(-2.0, 0.0)`` is treated as though it lies above "
 "the branch cut::"
+msgstr ""
+
+#: library/cmath.rst:37
+msgid ""
+">>> cmath.sqrt(complex(-2.0, 0.0))\n"
+"1.4142135623730951j"
 msgstr ""
 
 #: library/cmath.rst:42
@@ -90,6 +102,14 @@ msgid ""
 "lies in the range [-\\ *π*, *π*], and the branch cut for this operation lies "
 "along the negative real axis.  The sign of the result is the same as the "
 "sign of ``x.imag``, even when ``x.imag`` is zero::"
+msgstr ""
+
+#: library/cmath.rst:66
+msgid ""
+">>> phase(complex(-1.0, 0.0))\n"
+"3.141592653589793\n"
+">>> phase(complex(-1.0, -0.0))\n"
+"-3.141592653589793"
 msgstr ""
 
 #: library/cmath.rst:74

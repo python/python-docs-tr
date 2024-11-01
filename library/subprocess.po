@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -31,6 +31,12 @@ msgid ""
 "intends to replace several older modules and functions::"
 msgstr ""
 
+#: library/subprocess.rst:18
+msgid ""
+"os.system\n"
+"os.spawn*"
+msgstr ""
+
 #: library/subprocess.rst:21
 msgid ""
 "Information about how the :mod:`subprocess` module can be used to replace "
@@ -41,8 +47,10 @@ msgstr ""
 msgid ":pep:`324` -- PEP proposing the subprocess module"
 msgstr ""
 
+#: library/subprocess.rst:605 library/subprocess.rst:624
+#: library/subprocess.rst:639 library/subprocess.rst:1566
 #: includes/wasm-notavail.rst:3
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
+msgid "Availability"
 msgstr ""
 
 #: includes/wasm-notavail.rst:5
@@ -138,6 +146,22 @@ msgstr ""
 
 #: library/subprocess.rst:95
 msgid "Examples::"
+msgstr ""
+
+#: library/subprocess.rst:97
+msgid ""
+">>> subprocess.run([\"ls\", \"-l\"])  # doesn't capture output\n"
+"CompletedProcess(args=['ls', '-l'], returncode=0)\n"
+"\n"
+">>> subprocess.run(\"exit 1\", shell=True, check=True)\n"
+"Traceback (most recent call last):\n"
+"  ...\n"
+"subprocess.CalledProcessError: Command 'exit 1' returned non-zero exit "
+"status 1\n"
+"\n"
+">>> subprocess.run([\"ls\", \"-l\", \"/dev/null\"], capture_output=True)\n"
+"CompletedProcess(args=['ls', '-l', '/dev/null'], returncode=0,\n"
+"stdout=b'crw-rw-rw- 1 root root 1, 3 Jan 23 16:23 /dev/null\\n', stderr=b'')"
 msgstr ""
 
 #: library/subprocess.rst:113
@@ -459,6 +483,10 @@ msgid ""
 "is::"
 msgstr ""
 
+#: library/subprocess.rst:403
+msgid "Popen([\"/usr/bin/git\", \"commit\", \"-m\", \"Fixes a bug.\"])"
+msgstr ""
+
 #: library/subprocess.rst:405
 msgid ""
 "On POSIX, if *args* is a string, the string is interpreted as the name or "
@@ -471,6 +499,19 @@ msgid ""
 "It may not be obvious how to break a shell command into a sequence of "
 "arguments, especially in complex cases. :meth:`shlex.split` can illustrate "
 "how to determine the correct tokenization for *args*::"
+msgstr ""
+
+#: library/subprocess.rst:415
+msgid ""
+">>> import shlex, subprocess\n"
+">>> command_line = input()\n"
+"/bin/vikings -input eggs.txt -output \"spam spam.txt\" -cmd \"echo "
+"'$MONEY'\"\n"
+">>> args = shlex.split(command_line)\n"
+">>> print(args)\n"
+"['/bin/vikings', '-input', 'eggs.txt', '-output', 'spam spam.txt', '-cmd', "
+"\"echo '$MONEY'\"]\n"
+">>> p = subprocess.Popen(args) # Success!"
 msgstr ""
 
 #: library/subprocess.rst:423
@@ -518,6 +559,10 @@ msgid ""
 "the first item specifies the command string, and any additional items will "
 "be treated as additional arguments to the shell itself.  That is to say, :"
 "class:`Popen` does the equivalent of::"
+msgstr ""
+
+#: library/subprocess.rst:455
+msgid "Popen(['/bin/sh', '-c', args[0], args[1], ...])"
 msgstr ""
 
 #: library/subprocess.rst:457
@@ -708,11 +753,6 @@ msgid ""
 "the child process prior to the execution of the subprocess."
 msgstr ""
 
-#: library/subprocess.rst:605 library/subprocess.rst:624
-#: library/subprocess.rst:639
-msgid ":ref:`Availability <availability>`: POSIX"
-msgstr ""
-
 #: library/subprocess.rst:599
 msgid "*start_new_session* was added."
 msgstr ""
@@ -732,7 +772,7 @@ msgstr ""
 msgid ""
 "If *group* is not ``None``, the setregid() system call will be made in the "
 "child process prior to the execution of the subprocess. If the provided "
-"value is a string, it will be looked up via :func:`grp.getgrnam()` and the "
+"value is a string, it will be looked up via :func:`grp.getgrnam` and the "
 "value in ``gr_gid`` will be used. If the value is an integer, it will be "
 "passed verbatim. (POSIX only)"
 msgstr ""
@@ -741,7 +781,7 @@ msgstr ""
 msgid ""
 "If *extra_groups* is not ``None``, the setgroups() system call will be made "
 "in the child process prior to the execution of the subprocess. Strings "
-"provided in *extra_groups* will be looked up via :func:`grp.getgrnam()` and "
+"provided in *extra_groups* will be looked up via :func:`grp.getgrnam` and "
 "the values in ``gr_gid`` will be used. Integer values will be passed "
 "verbatim. (POSIX only)"
 msgstr ""
@@ -750,7 +790,7 @@ msgstr ""
 msgid ""
 "If *user* is not ``None``, the setreuid() system call will be made in the "
 "child process prior to the execution of the subprocess. If the provided "
-"value is a string, it will be looked up via :func:`pwd.getpwnam()` and the "
+"value is a string, it will be looked up via :func:`pwd.getpwnam` and the "
 "value in ``pw_uid`` will be used. If the value is an integer, it will be "
 "passed verbatim. (POSIX only)"
 msgstr ""
@@ -872,12 +912,10 @@ msgid ""
 "waited for. ::"
 msgstr ""
 
-#: library/subprocess.rst:701
+#: library/subprocess.rst:698
 msgid ""
-"Popen and the other functions in this module that use it raise an auditing "
-"event subprocess.Popen with arguments executable, args, cwd, and env. The "
-"value for args may be a single string or a list of strings, depending on "
-"platform."
+"with Popen([\"ifconfig\"], stdout=PIPE) as proc:\n"
+"    log.write(proc.stdout.read())"
 msgstr ""
 
 #: library/subprocess.rst:703
@@ -1070,6 +1108,16 @@ msgid ""
 "and finish communication::"
 msgstr ""
 
+#: library/subprocess.rst:840
+msgid ""
+"proc = subprocess.Popen(...)\n"
+"try:\n"
+"    outs, errs = proc.communicate(timeout=15)\n"
+"except TimeoutExpired:\n"
+"    proc.kill()\n"
+"    outs, errs = proc.communicate()"
+msgstr ""
+
 #: library/subprocess.rst:849
 msgid ""
 "The data read is buffered in memory, so do not use this method if the data "
@@ -1202,6 +1250,13 @@ msgstr ""
 msgid ""
 "A bit field that determines whether certain :class:`STARTUPINFO` attributes "
 "are used when the process creates a window. ::"
+msgstr ""
+
+#: library/subprocess.rst:971
+msgid ""
+"si = subprocess.STARTUPINFO()\n"
+"si.dwFlags = subprocess.STARTF_USESTDHANDLES | subprocess."
+"STARTF_USESHOWWINDOW"
 msgstr ""
 
 #: library/subprocess.rst:976
@@ -1427,6 +1482,10 @@ msgid ""
 "Code needing to capture stdout or stderr should use :func:`run` instead::"
 msgstr ""
 
+#: library/subprocess.rst:1177
+msgid "run(...).returncode"
+msgstr ""
+
 #: library/subprocess.rst:1219
 msgid "To suppress stdout or stderr, supply a value of :data:`DEVNULL`."
 msgstr ""
@@ -1455,6 +1514,10 @@ msgid ""
 "to start the process it will propagate the exception that was raised."
 msgstr ""
 
+#: library/subprocess.rst:1217
+msgid "run(..., check=True)"
+msgstr ""
+
 #: library/subprocess.rst:1250
 msgid "Run command with arguments and return its output."
 msgstr ""
@@ -1469,6 +1532,10 @@ msgstr ""
 
 #: library/subprocess.rst:1257
 msgid "This is equivalent to::"
+msgstr ""
+
+#: library/subprocess.rst:1259
+msgid "run(..., check=True, stdout=PIPE).stdout"
 msgstr ""
 
 #: library/subprocess.rst:1261
@@ -1499,6 +1566,15 @@ msgstr ""
 msgid ""
 "To also capture standard error in the result, use ``stderr=subprocess."
 "STDOUT``::"
+msgstr ""
+
+#: library/subprocess.rst:1279
+msgid ""
+">>> subprocess.check_output(\n"
+"...     \"ls non_existent_file; exit 0\",\n"
+"...     stderr=subprocess.STDOUT,\n"
+"...     shell=True)\n"
+"'ls: non_existent_file: No such file or directory\\n'"
 msgstr ""
 
 #: library/subprocess.rst:1290
@@ -1544,12 +1620,32 @@ msgstr ""
 msgid "Replacing :program:`/bin/sh` shell command substitution"
 msgstr ""
 
+#: library/subprocess.rst:1333
+msgid "output=$(mycmd myarg)"
+msgstr ""
+
 #: library/subprocess.rst:1348 library/subprocess.rst:1365
 msgid "becomes::"
 msgstr ""
 
+#: library/subprocess.rst:1339
+msgid "output = check_output([\"mycmd\", \"myarg\"])"
+msgstr ""
+
 #: library/subprocess.rst:1342
 msgid "Replacing shell pipeline"
+msgstr ""
+
+#: library/subprocess.rst:1361
+msgid "output=$(dmesg | grep hda)"
+msgstr ""
+
+#: library/subprocess.rst:1350
+msgid ""
+"p1 = Popen([\"dmesg\"], stdout=PIPE)\n"
+"p2 = Popen([\"grep\", \"hda\"], stdin=p1.stdout, stdout=PIPE)\n"
+"p1.stdout.close()  # Allow p1 to receive a SIGPIPE if p2 exits.\n"
+"output = p2.communicate()[0]"
 msgstr ""
 
 #: library/subprocess.rst:1355
@@ -1564,8 +1660,19 @@ msgid ""
 "be used directly:"
 msgstr ""
 
+#: library/subprocess.rst:1367
+msgid "output = check_output(\"dmesg | grep hda\", shell=True)"
+msgstr ""
+
 #: library/subprocess.rst:1371
 msgid "Replacing :func:`os.system`"
+msgstr ""
+
+#: library/subprocess.rst:1375
+msgid ""
+"sts = os.system(\"mycmd\" + \" myarg\")\n"
+"# becomes\n"
+"retcode = call(\"mycmd\" + \" myarg\", shell=True)"
 msgstr ""
 
 #: library/subprocess.rst:1379
@@ -1593,6 +1700,19 @@ msgstr ""
 msgid "A more realistic example would look like this::"
 msgstr ""
 
+#: library/subprocess.rst:1391
+msgid ""
+"try:\n"
+"    retcode = call(\"mycmd\" + \" myarg\", shell=True)\n"
+"    if retcode < 0:\n"
+"        print(\"Child was terminated by signal\", -retcode, file=sys."
+"stderr)\n"
+"    else:\n"
+"        print(\"Child returned\", retcode, file=sys.stderr)\n"
+"except OSError as e:\n"
+"    print(\"Execution failed:\", e, file=sys.stderr)"
+msgstr ""
+
 #: library/subprocess.rst:1402
 msgid "Replacing the :func:`os.spawn <os.spawnl>` family"
 msgstr ""
@@ -1601,24 +1721,98 @@ msgstr ""
 msgid "P_NOWAIT example::"
 msgstr ""
 
+#: library/subprocess.rst:1406
+msgid ""
+"pid = os.spawnlp(os.P_NOWAIT, \"/bin/mycmd\", \"mycmd\", \"myarg\")\n"
+"==>\n"
+"pid = Popen([\"/bin/mycmd\", \"myarg\"]).pid"
+msgstr ""
+
 #: library/subprocess.rst:1410
 msgid "P_WAIT example::"
+msgstr ""
+
+#: library/subprocess.rst:1412
+msgid ""
+"retcode = os.spawnlp(os.P_WAIT, \"/bin/mycmd\", \"mycmd\", \"myarg\")\n"
+"==>\n"
+"retcode = call([\"/bin/mycmd\", \"myarg\"])"
 msgstr ""
 
 #: library/subprocess.rst:1416
 msgid "Vector example::"
 msgstr ""
 
+#: library/subprocess.rst:1418
+msgid ""
+"os.spawnvp(os.P_NOWAIT, path, args)\n"
+"==>\n"
+"Popen([path] + args[1:])"
+msgstr ""
+
 #: library/subprocess.rst:1422
 msgid "Environment example::"
+msgstr ""
+
+#: library/subprocess.rst:1424
+msgid ""
+"os.spawnlpe(os.P_NOWAIT, \"/bin/mycmd\", \"mycmd\", \"myarg\", env)\n"
+"==>\n"
+"Popen([\"/bin/mycmd\", \"myarg\"], env={\"PATH\": \"/usr/bin\"})"
 msgstr ""
 
 #: library/subprocess.rst:1431
 msgid "Replacing :func:`os.popen`, :func:`os.popen2`, :func:`os.popen3`"
 msgstr ""
 
+#: library/subprocess.rst:1435
+msgid ""
+"(child_stdin, child_stdout) = os.popen2(cmd, mode, bufsize)\n"
+"==>\n"
+"p = Popen(cmd, shell=True, bufsize=bufsize,\n"
+"          stdin=PIPE, stdout=PIPE, close_fds=True)\n"
+"(child_stdin, child_stdout) = (p.stdin, p.stdout)"
+msgstr ""
+
+#: library/subprocess.rst:1443
+msgid ""
+"(child_stdin,\n"
+" child_stdout,\n"
+" child_stderr) = os.popen3(cmd, mode, bufsize)\n"
+"==>\n"
+"p = Popen(cmd, shell=True, bufsize=bufsize,\n"
+"          stdin=PIPE, stdout=PIPE, stderr=PIPE, close_fds=True)\n"
+"(child_stdin,\n"
+" child_stdout,\n"
+" child_stderr) = (p.stdin, p.stdout, p.stderr)"
+msgstr ""
+
+#: library/subprocess.rst:1455
+msgid ""
+"(child_stdin, child_stdout_and_stderr) = os.popen4(cmd, mode, bufsize)\n"
+"==>\n"
+"p = Popen(cmd, shell=True, bufsize=bufsize,\n"
+"          stdin=PIPE, stdout=PIPE, stderr=STDOUT, close_fds=True)\n"
+"(child_stdin, child_stdout_and_stderr) = (p.stdin, p.stdout)"
+msgstr ""
+
 #: library/subprocess.rst:1461
 msgid "Return code handling translates as follows::"
+msgstr ""
+
+#: library/subprocess.rst:1463
+msgid ""
+"pipe = os.popen(cmd, 'w')\n"
+"...\n"
+"rc = pipe.close()\n"
+"if rc is not None and rc >> 8:\n"
+"    print(\"There were some errors\")\n"
+"==>\n"
+"process = Popen(cmd, stdin=PIPE)\n"
+"...\n"
+"process.stdin.close()\n"
+"if process.wait() != 0:\n"
+"    print(\"There were some errors\")"
 msgstr ""
 
 #: library/subprocess.rst:1477
@@ -1629,6 +1823,25 @@ msgstr ""
 msgid ""
 "If the cmd argument to popen2 functions is a string, the command is executed "
 "through /bin/sh.  If it is a list, the command is directly executed."
+msgstr ""
+
+#: library/subprocess.rst:1486
+msgid ""
+"(child_stdout, child_stdin) = popen2.popen2(\"somestring\", bufsize, mode)\n"
+"==>\n"
+"p = Popen(\"somestring\", shell=True, bufsize=bufsize,\n"
+"          stdin=PIPE, stdout=PIPE, close_fds=True)\n"
+"(child_stdout, child_stdin) = (p.stdout, p.stdin)"
+msgstr ""
+
+#: library/subprocess.rst:1494
+msgid ""
+"(child_stdout, child_stdin) = popen2.popen2([\"mycmd\", \"myarg\"], bufsize, "
+"mode)\n"
+"==>\n"
+"p = Popen([\"mycmd\", \"myarg\"], bufsize=bufsize,\n"
+"          stdin=PIPE, stdout=PIPE, close_fds=True)\n"
+"(child_stdout, child_stdin) = (p.stdout, p.stdin)"
 msgstr ""
 
 #: library/subprocess.rst:1500
@@ -1686,8 +1899,16 @@ msgid ""
 "command can be interpreted as the return code of subprocess.  Example::"
 msgstr ""
 
-#: library/subprocess.rst:1566
-msgid ":ref:`Availability <availability>`: Unix, Windows."
+#: library/subprocess.rst:1535
+msgid ""
+">>> subprocess.getstatusoutput('ls /bin/ls')\n"
+"(0, '/bin/ls')\n"
+">>> subprocess.getstatusoutput('cat /bin/junk')\n"
+"(1, 'cat: /bin/junk: No such file or directory')\n"
+">>> subprocess.getstatusoutput('/bin/junk')\n"
+"(127, 'sh: /bin/junk: not found')\n"
+">>> subprocess.getstatusoutput('/bin/kill $$')\n"
+"(-15, '')"
 msgstr ""
 
 #: library/subprocess.rst:1546
@@ -1709,6 +1930,12 @@ msgstr ""
 msgid ""
 "Like :func:`getstatusoutput`, except the exit code is ignored and the return "
 "value is a string containing the command's output.  Example::"
+msgstr ""
+
+#: library/subprocess.rst:1563
+msgid ""
+">>> subprocess.getoutput('ls /bin/ls')\n"
+"'/bin/ls'"
 msgstr ""
 
 #: library/subprocess.rst:1568
@@ -1788,12 +2015,20 @@ msgid ""
 "`subprocess._USE_VFORK` attribute to a false value."
 msgstr ""
 
+#: library/subprocess.rst:1630
+msgid "subprocess._USE_VFORK = False  # See CPython issue gh-NNNNNN."
+msgstr ""
+
 #: library/subprocess.rst:1632
 msgid ""
 "Setting this has no impact on use of ``posix_spawn()`` which could use "
 "``vfork()`` internally within its libc implementation.  There is a similar :"
 "const:`subprocess._USE_POSIX_SPAWN` attribute if you need to prevent use of "
 "that."
+msgstr ""
+
+#: library/subprocess.rst:1639
+msgid "subprocess._USE_POSIX_SPAWN = False  # See CPython issue gh-NNNNNN."
 msgstr ""
 
 #: library/subprocess.rst:1641

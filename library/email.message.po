@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -163,7 +163,7 @@ msgstr ""
 
 #: library/email.message.rst:127
 msgid ""
-"Equivalent to :meth:`.as_bytes()`.  Allows ``bytes(msg)`` to produce a bytes "
+"Equivalent to :meth:`.as_bytes`.  Allows ``bytes(msg)`` to produce a bytes "
 "object containing the serialized message."
 msgstr ""
 
@@ -228,6 +228,12 @@ msgid ""
 "Used for the ``in`` operator.  For example::"
 msgstr ""
 
+#: library/email.message.rst:185
+msgid ""
+"if 'message-id' in myMessage:\n"
+"   print('Message-ID:', myMessage['message-id'])"
+msgstr ""
+
 #: library/email.message.rst:191
 msgid ""
 "Return the value of the named header field.  *name* does not include the "
@@ -260,6 +266,12 @@ msgid ""
 "Note that this does *not* overwrite or delete any existing header with the "
 "same name.  If you want to ensure that the new header is the only one "
 "present in the message with field name *name*, delete the field first, e.g.::"
+msgstr ""
+
+#: library/email.message.rst:213
+msgid ""
+"del msg['subject']\n"
+"msg['subject'] = 'Python roolz!'"
 msgstr ""
 
 #: library/email.message.rst:216
@@ -345,12 +357,26 @@ msgstr ""
 msgid "Here is an example::"
 msgstr ""
 
+#: library/email.message.rst:289
+msgid "msg.add_header('Content-Disposition', 'attachment', filename='bud.gif')"
+msgstr ""
+
 #: library/email.message.rst:291
 msgid "This will add a header that looks like ::"
 msgstr ""
 
+#: library/email.message.rst:293
+msgid "Content-Disposition: attachment; filename=\"bud.gif\""
+msgstr ""
+
 #: library/email.message.rst:295
 msgid "An example of the extended interface with non-ASCII characters::"
+msgstr ""
+
+#: library/email.message.rst:297
+msgid ""
+"msg.add_header('Content-Disposition', 'attachment',\n"
+"               filename=('iso-8859-1', '', 'Fußballer.ppt'))"
 msgstr ""
 
 #: library/email.message.rst:303
@@ -558,12 +584,48 @@ msgid ""
 "message structure:"
 msgstr ""
 
+#: library/email.message.rst:491
+msgid ""
+">>> for part in msg.walk():\n"
+"...     print(part.get_content_type())\n"
+"multipart/report\n"
+"text/plain\n"
+"message/delivery-status\n"
+"text/plain\n"
+"text/plain\n"
+"message/rfc822\n"
+"text/plain"
+msgstr ""
+
 #: library/email.message.rst:503
 msgid ""
 "``walk`` iterates over the subparts of any part where :meth:`is_multipart` "
 "returns ``True``, even though ``msg.get_content_maintype() == 'multipart'`` "
 "may return ``False``.  We can see this in our example by making use of the "
 "``_structure`` debug helper function:"
+msgstr ""
+
+#: library/email.message.rst:509
+msgid ""
+">>> from email.iterators import _structure\n"
+">>> for part in msg.walk():\n"
+"...     print(part.get_content_maintype() == 'multipart',\n"
+"...           part.is_multipart())\n"
+"True True\n"
+"False False\n"
+"False True\n"
+"False False\n"
+"False False\n"
+"False True\n"
+"False False\n"
+">>> _structure(msg)\n"
+"multipart/report\n"
+"    text/plain\n"
+"    message/delivery-status\n"
+"        text/plain\n"
+"        text/plain\n"
+"    message/rfc822\n"
+"        text/plain"
 msgstr ""
 
 #: library/email.message.rst:531

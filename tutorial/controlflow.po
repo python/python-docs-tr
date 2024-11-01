@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-01 00:18+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: 2022-12-28 21:35+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -40,6 +40,23 @@ msgid ""
 "Perhaps the most well-known statement type is the :keyword:`if` statement.  "
 "For example::"
 msgstr "Belki de en iyi bilinen deyim türü :keyword:`if` deyimidir.  Örneğin::"
+
+#: tutorial/controlflow.rst:19
+msgid ""
+">>> x = int(input(\"Please enter an integer: \"))\n"
+"Please enter an integer: 42\n"
+">>> if x < 0:\n"
+"...     x = 0\n"
+"...     print('Negative changed to zero')\n"
+"... elif x == 0:\n"
+"...     print('Zero')\n"
+"... elif x == 1:\n"
+"...     print('Single')\n"
+"... else:\n"
+"...     print('More')\n"
+"...\n"
+"More"
+msgstr ""
 
 #: tutorial/controlflow.rst:33
 msgid ""
@@ -87,6 +104,18 @@ msgstr ""
 "üzerinde, dizide göründükleri sırayla yineler.  Örneğin (kelime oyunu yapmak "
 "istemedim):"
 
+#: tutorial/controlflow.rst:63
+msgid ""
+">>> # Measure some strings:\n"
+">>> words = ['cat', 'window', 'defenestrate']\n"
+">>> for w in words:\n"
+"...     print(w, len(w))\n"
+"...\n"
+"cat 3\n"
+"window 6\n"
+"defenestrate 12"
+msgstr ""
+
 #: tutorial/controlflow.rst:72
 msgid ""
 "Code that modifies a collection while iterating over that same collection "
@@ -97,6 +126,23 @@ msgstr ""
 "doğru yazılması zor olabilir.  Bunun yerine, koleksiyonun bir kopyası "
 "üzerinde döngü yapmak veya yeni bir koleksiyon oluşturmak genellikle daha "
 "kolaydır::"
+
+#: tutorial/controlflow.rst:76
+msgid ""
+"# Create a sample collection\n"
+"users = {'Hans': 'active', 'Éléonore': 'inactive', '景太郎': 'active'}\n"
+"\n"
+"# Strategy:  Iterate over a copy\n"
+"for user, status in users.copy().items():\n"
+"    if status == 'inactive':\n"
+"        del users[user]\n"
+"\n"
+"# Strategy:  Create a new collection\n"
+"active_users = {}\n"
+"for user, status in users.items():\n"
+"    if status == 'active':\n"
+"        active_users[user] = status"
+msgstr ""
 
 #: tutorial/controlflow.rst:94
 msgid "The :func:`range` Function"
@@ -109,6 +155,18 @@ msgid ""
 msgstr ""
 "Bir sayı dizisi üzerinde yineleme yapmanız gerekiyorsa, yerleşik :func:"
 "`range` fonksiyonu kullanışlı olur.  Aritmetik ilerlemeler üretir::"
+
+#: tutorial/controlflow.rst:99
+msgid ""
+">>> for i in range(5):\n"
+"...     print(i)\n"
+"...\n"
+"0\n"
+"1\n"
+"2\n"
+"3\n"
+"4"
+msgstr ""
 
 #: tutorial/controlflow.rst:108
 msgid ""
@@ -123,6 +181,18 @@ msgstr ""
 "farklı bir artış (negatif bile olsa; bazen buna 'adım' denir) belirtmek "
 "mümkündür::"
 
+#: tutorial/controlflow.rst:113
+msgid ""
+">>> list(range(5, 10))\n"
+"[5, 6, 7, 8, 9]\n"
+"\n"
+">>> list(range(0, 10, 3))\n"
+"[0, 3, 6, 9]\n"
+"\n"
+">>> list(range(-10, -100, -30))\n"
+"[-10, -40, -70]"
+msgstr ""
+
 #: tutorial/controlflow.rst:122
 msgid ""
 "To iterate over the indices of a sequence, you can combine :func:`range` "
@@ -130,6 +200,19 @@ msgid ""
 msgstr ""
 "Bir dizinin indisleri üzerinde yineleme yapmak için :func:`range` ve :func:"
 "`len` öğelerini aşağıdaki gibi birleştirebilirsiniz::"
+
+#: tutorial/controlflow.rst:125
+msgid ""
+">>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n"
+">>> for i in range(len(a)):\n"
+"...     print(i, a[i])\n"
+"...\n"
+"0 Mary\n"
+"1 had\n"
+"2 a\n"
+"3 little\n"
+"4 lamb"
+msgstr ""
 
 #: tutorial/controlflow.rst:135
 msgid ""
@@ -142,6 +225,12 @@ msgstr ""
 #: tutorial/controlflow.rst:138
 msgid "A strange thing happens if you just print a range::"
 msgstr "Sadece bir aralık yazdırırsanız garip bir şey olur::"
+
+#: tutorial/controlflow.rst:140
+msgid ""
+">>> range(10)\n"
+"range(0, 10)"
+msgstr ""
 
 #: tutorial/controlflow.rst:143
 msgid ""
@@ -169,6 +258,12 @@ msgstr ""
 "deyiminin böyle bir yapı olduğunu görmüştük, bir yinelenebilir alan bir "
 "fonksiyon örneği ise :func:`sum`::"
 
+#: tutorial/controlflow.rst:154
+msgid ""
+">>> sum(range(4))  # 0 + 1 + 2 + 3\n"
+"6"
+msgstr ""
+
 #: tutorial/controlflow.rst:157
 msgid ""
 "Later we will see more functions that return iterables and take iterables as "
@@ -180,9 +275,8 @@ msgstr ""
 "`list` hakkında daha ayrıntılı olarak tartışacağız."
 
 #: tutorial/controlflow.rst:164
-msgid ""
-":keyword:`!break` and :keyword:`!continue` Statements, and :keyword:`!else` "
-"Clauses on Loops"
+#, fuzzy
+msgid ":keyword:`!break` and :keyword:`!continue` Statements"
 msgstr ""
 ":keyword:`!break` ve :keyword:`!continue` İfadeleri ve :keyword:`!else` "
 "Döngülerdeki Cümleler"
@@ -191,60 +285,139 @@ msgstr ""
 #, fuzzy
 msgid ""
 "The :keyword:`break` statement breaks out of the innermost enclosing :"
-"keyword:`for` or :keyword:`while` loop."
+"keyword:`for` or :keyword:`while` loop::"
 msgstr ""
 "C'de olduğu gibi :keyword:`break` deyimi, en içteki :keyword:`for` veya :"
 "keyword:`while` döngüsünü keser."
 
 #: tutorial/controlflow.rst:169
+msgid ""
+">>> for n in range(2, 10):\n"
+"...     for x in range(2, n):\n"
+"...         if n % x == 0:\n"
+"...             print(f\"{n} equals {x} * {n//x}\")\n"
+"...             break\n"
+"...\n"
+"4 equals 2 * 2\n"
+"6 equals 2 * 3\n"
+"8 equals 2 * 4\n"
+"9 equals 3 * 3"
+msgstr ""
+
+#: tutorial/controlflow.rst:180
 #, fuzzy
 msgid ""
-"A :keyword:`!for` or :keyword:`!while` loop can include an :keyword:`!else` "
-"clause."
+"The :keyword:`continue` statement continues with the next iteration of the "
+"loop::"
 msgstr ""
-":keyword:`!break` ve :keyword:`!continue` İfadeleri ve :keyword:`!else` "
-"Döngülerdeki Cümleler"
+"Yine C'den ödünç alınan :keyword:`continue` deyimi, döngünün bir sonraki "
+"yinelemesiyle devam eder::"
 
-#: tutorial/controlflow.rst:171
+#: tutorial/controlflow.rst:183
+msgid ""
+">>> for num in range(2, 10):\n"
+"...     if num % 2 == 0:\n"
+"...         print(f\"Found an even number {num}\")\n"
+"...         continue\n"
+"...     print(f\"Found an odd number {num}\")\n"
+"...\n"
+"Found an even number 2\n"
+"Found an odd number 3\n"
+"Found an even number 4\n"
+"Found an odd number 5\n"
+"Found an even number 6\n"
+"Found an odd number 7\n"
+"Found an even number 8\n"
+"Found an odd number 9"
+msgstr ""
+
+#: tutorial/controlflow.rst:202
+#, fuzzy
+msgid ":keyword:`!else` Clauses on Loops"
+msgstr ":keyword:`!pass` İfadeleri"
+
+#: tutorial/controlflow.rst:204
+msgid ""
+"In a :keyword:`!for` or :keyword:`!while` loop the :keyword:`!break` "
+"statement may be paired with an :keyword:`!else` clause.  If the loop "
+"finishes without executing the :keyword:`!break`, the :keyword:`!else` "
+"clause executes."
+msgstr ""
+
+#: tutorial/controlflow.rst:208
 msgid ""
 "In a :keyword:`for` loop, the :keyword:`!else` clause is executed after the "
-"loop reaches its final iteration."
+"loop finishes its final iteration, that is, if no break occurred."
 msgstr ""
 
-#: tutorial/controlflow.rst:174
+#: tutorial/controlflow.rst:211
 msgid ""
 "In a :keyword:`while` loop, it's executed after the loop's condition becomes "
 "false."
 msgstr ""
 
-#: tutorial/controlflow.rst:176
+#: tutorial/controlflow.rst:213
 msgid ""
 "In either kind of loop, the :keyword:`!else` clause is **not** executed if "
-"the loop was terminated by a :keyword:`break`."
+"the loop was terminated by a :keyword:`break`.  Of course, other ways of "
+"ending the loop early, such as a :keyword:`return` or a raised exception, "
+"will also skip execution of the :keyword:`else` clause."
 msgstr ""
 
-#: tutorial/controlflow.rst:179
+#: tutorial/controlflow.rst:218
 msgid ""
 "This is exemplified in the following :keyword:`!for` loop, which searches "
 "for prime numbers::"
 msgstr ""
 
-#: tutorial/controlflow.rst:200
+#: tutorial/controlflow.rst:221
+msgid ""
+">>> for n in range(2, 10):\n"
+"...     for x in range(2, n):\n"
+"...         if n % x == 0:\n"
+"...             print(n, 'equals', x, '*', n//x)\n"
+"...             break\n"
+"...     else:\n"
+"...         # loop fell through without finding a factor\n"
+"...         print(n, 'is a prime number')\n"
+"...\n"
+"2 is a prime number\n"
+"3 is a prime number\n"
+"4 equals 2 * 2\n"
+"5 is a prime number\n"
+"6 equals 2 * 3\n"
+"7 is a prime number\n"
+"8 equals 2 * 4\n"
+"9 equals 3 * 3"
+msgstr ""
+
+#: tutorial/controlflow.rst:239
+#, fuzzy
 msgid ""
 "(Yes, this is the correct code.  Look closely: the ``else`` clause belongs "
-"to the :keyword:`for` loop, **not** the :keyword:`if` statement.)"
+"to the ``for`` loop, **not** the ``if`` statement.)"
 msgstr ""
 "(Evet, bu doğru koddur.  Yakından bakın: ``else`` cümlesi :keyword:`for` "
 "döngüsüne aittir, **değil** :keyword:`if` deyimine)"
 
-#: tutorial/controlflow.rst:203
+#: tutorial/controlflow.rst:242
+msgid ""
+"One way to think of the else clause is to imagine it paired with the ``if`` "
+"inside the loop.  As the loop executes, it will run a sequence like if/if/if/"
+"else. The ``if`` is inside the loop, encountered a number of times. If the "
+"condition is ever true, a ``break`` will happen. If the condition is never "
+"true, the ``else`` clause outside the loop will execute."
+msgstr ""
+
+#: tutorial/controlflow.rst:248
+#, fuzzy
 msgid ""
 "When used with a loop, the ``else`` clause has more in common with the "
-"``else`` clause of a :keyword:`try` statement than it does with that of :"
-"keyword:`if` statements: a :keyword:`try` statement's ``else`` clause runs "
-"when no exception occurs, and a loop's ``else`` clause runs when no "
-"``break`` occurs. For more on the :keyword:`!try` statement and exceptions, "
-"see :ref:`tut-handling`."
+"``else`` clause of a :keyword:`try` statement than it does with that of "
+"``if`` statements: a ``try`` statement's ``else`` clause runs when no "
+"exception occurs, and a loop's ``else`` clause runs when no ``break`` "
+"occurs. For more on the ``try`` statement and exceptions, see :ref:`tut-"
+"handling`."
 msgstr ""
 "Bir döngü ile kullanıldığında, ``else`` ifadesinin :keyword:`try` deyiminin "
 "``else`` cümlesiyle, :keyword:`if` deyimlerininkinden daha fazla ortak "
@@ -253,19 +426,11 @@ msgstr ""
 "``break`` oluşmadığında çalışır. :keyword:`!try` deyimi ve istisnalar "
 "hakkında daha fazla bilgi için :ref:`tut-handling` bölümüne bakınız."
 
-#: tutorial/controlflow.rst:210
-msgid ""
-"The :keyword:`continue` statement, also borrowed from C, continues with the "
-"next iteration of the loop::"
-msgstr ""
-"Yine C'den ödünç alınan :keyword:`continue` deyimi, döngünün bir sonraki "
-"yinelemesiyle devam eder::"
-
-#: tutorial/controlflow.rst:231
+#: tutorial/controlflow.rst:257
 msgid ":keyword:`!pass` Statements"
 msgstr ":keyword:`!pass` İfadeleri"
 
-#: tutorial/controlflow.rst:233
+#: tutorial/controlflow.rst:259
 msgid ""
 "The :keyword:`pass` statement does nothing. It can be used when a statement "
 "is required syntactically but the program requires no action. For example::"
@@ -274,11 +439,25 @@ msgstr ""
 "gerektiğinde ancak program hiçbir eylem gerektirmediğinde kullanılabilir. "
 "Örneğin::"
 
-#: tutorial/controlflow.rst:240
+#: tutorial/controlflow.rst:262
+msgid ""
+">>> while True:\n"
+"...     pass  # Busy-wait for keyboard interrupt (Ctrl+C)\n"
+"..."
+msgstr ""
+
+#: tutorial/controlflow.rst:266
 msgid "This is commonly used for creating minimal classes::"
 msgstr "Bu genellikle minimal sınıflar oluşturmak için kullanılır::"
 
-#: tutorial/controlflow.rst:246
+#: tutorial/controlflow.rst:268
+msgid ""
+">>> class MyEmptyClass:\n"
+"...     pass\n"
+"..."
+msgstr ""
+
+#: tutorial/controlflow.rst:272
 msgid ""
 "Another place :keyword:`pass` can be used is as a place-holder for a "
 "function or conditional body when you are working on new code, allowing you "
@@ -290,11 +469,18 @@ msgstr ""
 "soyut bir düzeyde düşünmeye devam etmenizi sağlamaktır.  :keyword:`!pass` "
 "sessizce göz ardı edilir::"
 
-#: tutorial/controlflow.rst:258
+#: tutorial/controlflow.rst:276
+msgid ""
+">>> def initlog(*args):\n"
+"...     pass   # Remember to implement this!\n"
+"..."
+msgstr ""
+
+#: tutorial/controlflow.rst:284
 msgid ":keyword:`!match` Statements"
 msgstr ":keyword:`!pass` İfadeleri"
 
-#: tutorial/controlflow.rst:260
+#: tutorial/controlflow.rst:286
 msgid ""
 "A :keyword:`match` statement takes an expression and compares its value to "
 "successive patterns given as one or more case blocks.  This is superficially "
@@ -311,13 +497,27 @@ msgstr ""
 "daha çok benzer. Yalnızca eşleşen ilk kalıp yürütülür ve ayrıca bileşenleri "
 "(sıra öğeleri veya nesne nitelikleri) değerden değişkenlere çıkarabilir."
 
-#: tutorial/controlflow.rst:268
+#: tutorial/controlflow.rst:294
 msgid ""
 "The simplest form compares a subject value against one or more literals::"
 msgstr ""
 "En basit form, bir konu değerini bir veya daha fazla sabitle karşılaştırır::"
 
-#: tutorial/controlflow.rst:281
+#: tutorial/controlflow.rst:296
+msgid ""
+"def http_error(status):\n"
+"    match status:\n"
+"        case 400:\n"
+"            return \"Bad request\"\n"
+"        case 404:\n"
+"            return \"Not found\"\n"
+"        case 418:\n"
+"            return \"I'm a teapot\"\n"
+"        case _:\n"
+"            return \"Something's wrong with the internet\""
+msgstr ""
+
+#: tutorial/controlflow.rst:307
 msgid ""
 "Note the last block: the \"variable name\" ``_`` acts as a *wildcard* and "
 "never fails to match. If no case matches, none of the branches is executed."
@@ -325,14 +525,20 @@ msgstr ""
 "Son bloğa dikkat edin: \"değişken adı\" ``_`` bir *wildcard* görevi görür ve "
 "asla eşleşmez. Hiçbir durum eşleşmezse, dallardan hiçbiri yürütülmez."
 
-#: tutorial/controlflow.rst:284
+#: tutorial/controlflow.rst:310
 msgid ""
 "You can combine several literals in a single pattern using ``|`` (\"or\")::"
 msgstr ""
 "``|`` (\"or\") kullanarak birkaç sabiti tek bir kalıpta "
 "birleştirebilirsiniz::"
 
-#: tutorial/controlflow.rst:289
+#: tutorial/controlflow.rst:312
+msgid ""
+"case 401 | 403 | 404:\n"
+"    return \"Not allowed\""
+msgstr ""
+
+#: tutorial/controlflow.rst:315
 msgid ""
 "Patterns can look like unpacking assignments, and can be used to bind "
 "variables::"
@@ -340,7 +546,23 @@ msgstr ""
 "Kalıplar paket açma atamaları gibi görünebilir ve değişkenleri bağlamak için "
 "kullanılabilir::"
 
-#: tutorial/controlflow.rst:305
+#: tutorial/controlflow.rst:318
+msgid ""
+"# point is an (x, y) tuple\n"
+"match point:\n"
+"    case (0, 0):\n"
+"        print(\"Origin\")\n"
+"    case (0, y):\n"
+"        print(f\"Y={y}\")\n"
+"    case (x, 0):\n"
+"        print(f\"X={x}\")\n"
+"    case (x, y):\n"
+"        print(f\"X={x}, Y={y}\")\n"
+"    case _:\n"
+"        raise ValueError(\"Not a point\")"
+msgstr ""
+
+#: tutorial/controlflow.rst:331
 msgid ""
 "Study that one carefully!  The first pattern has two literals, and can be "
 "thought of as an extension of the literal pattern shown above.  But the next "
@@ -356,7 +578,7 @@ msgstr ""
 "onu kavramsal olarak ``(x, y) = point`` paket açma atamasına benzer hale "
 "getirir."
 
-#: tutorial/controlflow.rst:312
+#: tutorial/controlflow.rst:338
 msgid ""
 "If you are using classes to structure your data you can use the class name "
 "followed by an argument list resembling a constructor, but with the ability "
@@ -366,7 +588,28 @@ msgstr ""
 "ardından bir yapıcıya benzeyen, ancak nitelikleri değişkenlere yakalama "
 "yeteneğine sahip bir argüman listesi kullanabilirsiniz::"
 
-#: tutorial/controlflow.rst:334
+#: tutorial/controlflow.rst:342
+msgid ""
+"class Point:\n"
+"    def __init__(self, x, y):\n"
+"        self.x = x\n"
+"        self.y = y\n"
+"\n"
+"def where_is(point):\n"
+"    match point:\n"
+"        case Point(x=0, y=0):\n"
+"            print(\"Origin\")\n"
+"        case Point(x=0, y=y):\n"
+"            print(f\"Y={y}\")\n"
+"        case Point(x=x, y=0):\n"
+"            print(f\"X={x}\")\n"
+"        case Point():\n"
+"            print(\"Somewhere else\")\n"
+"        case _:\n"
+"            print(\"Not a point\")"
+msgstr ""
+
+#: tutorial/controlflow.rst:360
 msgid ""
 "You can use positional parameters with some builtin classes that provide an "
 "ordering for their attributes (e.g. dataclasses). You can also define a "
@@ -382,7 +625,15 @@ msgstr ""
 "ayarlanırsa, bahsi geçen kalıpların hepsi eş değerdir (ve hepsi ``y`` "
 "niteliğini ``var`` değişkenine bağlar)::"
 
-#: tutorial/controlflow.rst:345
+#: tutorial/controlflow.rst:366
+msgid ""
+"Point(1, var)\n"
+"Point(1, y=var)\n"
+"Point(x=1, y=var)\n"
+"Point(y=var, x=1)"
+msgstr ""
+
+#: tutorial/controlflow.rst:371
 msgid ""
 "A recommended way to read patterns is to look at them as an extended form of "
 "what you would put on the left of an assignment, to understand which "
@@ -400,7 +651,7 @@ msgstr ""
 "gibi) veya sınıf isimlerine (yukarıdaki ``Point`` gibi yanlarındaki "
 "\"(...)\" ile tanınan) asla atama yapılmaz."
 
-#: tutorial/controlflow.rst:352
+#: tutorial/controlflow.rst:378
 #, fuzzy
 msgid ""
 "Patterns can be arbitrarily nested.  For example, if we have a short list of "
@@ -409,7 +660,28 @@ msgstr ""
 "Kalıplar keyfi olarak iç içe geçebilir.  Örneğin, kısa bir nokta listemiz "
 "varsa, bunu şu şekilde eşleştirebiliriz::"
 
-#: tutorial/controlflow.rst:373
+#: tutorial/controlflow.rst:381
+msgid ""
+"class Point:\n"
+"    __match_args__ = ('x', 'y')\n"
+"    def __init__(self, x, y):\n"
+"        self.x = x\n"
+"        self.y = y\n"
+"\n"
+"match points:\n"
+"    case []:\n"
+"        print(\"No points\")\n"
+"    case [Point(0, 0)]:\n"
+"        print(\"The origin\")\n"
+"    case [Point(x, y)]:\n"
+"        print(f\"Single point {x}, {y}\")\n"
+"    case [Point(0, y1), Point(0, y2)]:\n"
+"        print(f\"Two on the Y axis at {y1}, {y2}\")\n"
+"    case _:\n"
+"        print(\"Something else\")"
+msgstr ""
+
+#: tutorial/controlflow.rst:399
 msgid ""
 "We can add an ``if`` clause to a pattern, known as a \"guard\".  If the "
 "guard is false, ``match`` goes on to try the next case block.  Note that "
@@ -420,11 +692,20 @@ msgstr ""
 "Değer yakalamanın koruma değerlendirilmeden önce gerçekleştiğine dikkat "
 "edin::"
 
-#: tutorial/controlflow.rst:383
+#: tutorial/controlflow.rst:403
+msgid ""
+"match point:\n"
+"    case Point(x, y) if x == y:\n"
+"        print(f\"Y=X at {x}\")\n"
+"    case Point(x, y):\n"
+"        print(f\"Not on the diagonal\")"
+msgstr ""
+
+#: tutorial/controlflow.rst:409
 msgid "Several other key features of this statement:"
 msgstr "Bu açıklamanın diğer bazı kilit özellikleri:"
 
-#: tutorial/controlflow.rst:385
+#: tutorial/controlflow.rst:411
 msgid ""
 "Like unpacking assignments, tuple and list patterns have exactly the same "
 "meaning and actually match arbitrary sequences.  An important exception is "
@@ -434,7 +715,7 @@ msgstr ""
 "sahiptir ve aslında rastgele dizilerle eşleşir.  Önemli bir istisna, "
 "yineleyicilerle veya string'lerle eşleşmezler."
 
-#: tutorial/controlflow.rst:389
+#: tutorial/controlflow.rst:415
 msgid ""
 "Sequence patterns support extended unpacking: ``[x, y, *rest]`` and ``(x, y, "
 "*rest)`` work similar to unpacking assignments.  The name after ``*`` may "
@@ -446,7 +727,7 @@ msgstr ""
 "öğesinden sonraki ad ``_`` de olabilir, bu nedenle ``(x, y, *_)`` öğesi, "
 "kalan öğeleri bağlamadan en az iki öğeden oluşan bir diziyle eşleşir."
 
-#: tutorial/controlflow.rst:394
+#: tutorial/controlflow.rst:420
 msgid ""
 "Mapping patterns: ``{\"bandwidth\": b, \"latency\": l}`` captures the "
 "``\"bandwidth\"`` and ``\"latency\"`` values from a dictionary.  Unlike "
@@ -458,11 +739,15 @@ msgstr ""
 "aksine, ekstra anahtarlar göz ardı edilir.  ``**rest`` gibi bir paket açma "
 "da desteklenir.  (Ancak ``**_`` gereksiz olacağından buna izin verilmez)"
 
-#: tutorial/controlflow.rst:399
+#: tutorial/controlflow.rst:425
 msgid "Subpatterns may be captured using the ``as`` keyword::"
 msgstr "Alt kalıplar ``as`` anahtar sözcüğü kullanılarak yakalanabilir::"
 
-#: tutorial/controlflow.rst:403
+#: tutorial/controlflow.rst:427
+msgid "case (Point(x1, y1), Point(x2, y2) as p2): ..."
+msgstr ""
+
+#: tutorial/controlflow.rst:429
 msgid ""
 "will capture the second element of the input as ``p2`` (as long as the input "
 "is a sequence of two points)"
@@ -470,7 +755,7 @@ msgstr ""
 "girdinin ikinci elemanını ``p2`` olarak yakalayacaktır (girdi iki noktadan "
 "oluşan bir dizi olduğu sürece)"
 
-#: tutorial/controlflow.rst:406
+#: tutorial/controlflow.rst:432
 msgid ""
 "Most literals are compared by equality, however the singletons ``True``, "
 "``False`` and ``None`` are compared by identity."
@@ -478,7 +763,7 @@ msgstr ""
 "Çoğu sabit eşitlikle karşılaştırılır, ancak ``True``, ``False`` ve ``None`` "
 "tekilleri özdeşlikle karşılaştırılır."
 
-#: tutorial/controlflow.rst:409
+#: tutorial/controlflow.rst:435
 msgid ""
 "Patterns may use named constants.  These must be dotted names to prevent "
 "them from being interpreted as capture variable::"
@@ -486,7 +771,26 @@ msgstr ""
 "Kalıplar adlandırılmış sabitler kullanabilir.  Bunlar, yakalama değişkeni "
 "olarak yorumlanmalarını önlemek için noktalı isimler olmalıdır::"
 
-#: tutorial/controlflow.rst:428
+#: tutorial/controlflow.rst:438
+msgid ""
+"from enum import Enum\n"
+"class Color(Enum):\n"
+"    RED = 'red'\n"
+"    GREEN = 'green'\n"
+"    BLUE = 'blue'\n"
+"\n"
+"color = Color(input(\"Enter your choice of 'red', 'blue' or 'green': \"))\n"
+"\n"
+"match color:\n"
+"    case Color.RED:\n"
+"        print(\"I see red!\")\n"
+"    case Color.GREEN:\n"
+"        print(\"Grass is green\")\n"
+"    case Color.BLUE:\n"
+"        print(\"I'm feeling the blues :(\")"
+msgstr ""
+
+#: tutorial/controlflow.rst:454
 msgid ""
 "For a more detailed explanation and additional examples, you can look into :"
 "pep:`636` which is written in a tutorial format."
@@ -494,11 +798,11 @@ msgstr ""
 "Daha ayrıntılı bir açıklama ve ek örnekler için, öğretici bir formatta "
 "yazılmış olan :pep:`636` sayfasına bakabilirsiniz."
 
-#: tutorial/controlflow.rst:434
+#: tutorial/controlflow.rst:460
 msgid "Defining Functions"
 msgstr "Fonksiyonların Tanımlanması"
 
-#: tutorial/controlflow.rst:436
+#: tutorial/controlflow.rst:462
 msgid ""
 "We can create a function that writes the Fibonacci series to an arbitrary "
 "boundary::"
@@ -506,7 +810,22 @@ msgstr ""
 "Fibonacci serisini rastgele bir sınıra kadar yazan bir fonksiyon "
 "oluşturabiliriz::"
 
-#: tutorial/controlflow.rst:456
+#: tutorial/controlflow.rst:465
+msgid ""
+">>> def fib(n):    # write Fibonacci series less than n\n"
+"...     \"\"\"Print a Fibonacci series less than n.\"\"\"\n"
+"...     a, b = 0, 1\n"
+"...     while a < n:\n"
+"...         print(a, end=' ')\n"
+"...         a, b = b, a+b\n"
+"...     print()\n"
+"...\n"
+">>> # Now call the function we just defined:\n"
+">>> fib(2000)\n"
+"0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597"
+msgstr ""
+
+#: tutorial/controlflow.rst:482
 msgid ""
 "The keyword :keyword:`def` introduces a function *definition*.  It must be "
 "followed by the function name and the parenthesized list of formal "
@@ -518,7 +837,7 @@ msgstr ""
 "etmelidir. Fonksiyonun gövdesini oluşturan ifadeler bir sonraki satırdan "
 "başlar ve girintili olmalıdır."
 
-#: tutorial/controlflow.rst:461
+#: tutorial/controlflow.rst:487
 msgid ""
 "The first statement of the function body can optionally be a string literal; "
 "this string literal is the function's documentation string, or :dfn:"
@@ -537,7 +856,7 @@ msgstr ""
 "docstringler eklemek iyi bir uygulamadır, bu yüzden bunu alışkanlık haline "
 "getirin."
 
-#: tutorial/controlflow.rst:468
+#: tutorial/controlflow.rst:494
 msgid ""
 "The *execution* of a function introduces a new symbol table used for the "
 "local variables of the function.  More precisely, all variable assignments "
@@ -562,7 +881,7 @@ msgstr ""
 "bir :keyword:`nonlocal` deyiminde isimlendirilmedikçe), ancak bunlara "
 "referans verilebilir."
 
-#: tutorial/controlflow.rst:479
+#: tutorial/controlflow.rst:505
 msgid ""
 "The actual parameters (arguments) to a function call are introduced in the "
 "local symbol table of the called function when it is called; thus, arguments "
@@ -578,7 +897,7 @@ msgstr ""
 "fonksiyon başka bir fonksiyonu çağırdığında veya kendini tekrarlı olarak "
 "çağırdığında, bu çağrı için yeni bir yerel sembol tablosu oluşturulur."
 
-#: tutorial/controlflow.rst:486
+#: tutorial/controlflow.rst:512
 msgid ""
 "A function definition associates the function name with the function object "
 "in the current symbol table.  The interpreter recognizes the object pointed "
@@ -591,7 +910,16 @@ msgstr ""
 "fonksiyon nesnesine işaret edebilir ve fonksiyona erişmek için "
 "kullanılabilir::"
 
-#: tutorial/controlflow.rst:497
+#: tutorial/controlflow.rst:517
+msgid ""
+">>> fib\n"
+"<function fib at 10042ed0>\n"
+">>> f = fib\n"
+">>> f(100)\n"
+"0 1 1 2 3 5 8 13 21 34 55 89"
+msgstr ""
+
+#: tutorial/controlflow.rst:523
 msgid ""
 "Coming from other languages, you might object that ``fib`` is not a function "
 "but a procedure since it doesn't return a value.  In fact, even functions "
@@ -609,7 +937,14 @@ msgstr ""
 "yorumlayıcı tarafından bastırılır. Eğer gerçekten istiyorsanız :func:`print` "
 "kullanarak görebilirsiniz::"
 
-#: tutorial/controlflow.rst:508
+#: tutorial/controlflow.rst:530
+msgid ""
+">>> fib(0)\n"
+">>> print(fib(0))\n"
+"None"
+msgstr ""
+
+#: tutorial/controlflow.rst:534
 msgid ""
 "It is simple to write a function that returns a list of the numbers of the "
 "Fibonacci series, instead of printing it::"
@@ -617,12 +952,28 @@ msgstr ""
 "Fibonacci serisindeki sayıların listesini döndürebilecek bir fonksiyon "
 "yazmak gayet basittir, onun yerine şunu yazdırarak::"
 
-#: tutorial/controlflow.rst:524
+#: tutorial/controlflow.rst:537
+msgid ""
+">>> def fib2(n):  # return Fibonacci series up to n\n"
+"...     \"\"\"Return a list containing the Fibonacci series up to n.\"\"\"\n"
+"...     result = []\n"
+"...     a, b = 0, 1\n"
+"...     while a < n:\n"
+"...         result.append(a)    # see below\n"
+"...         a, b = b, a+b\n"
+"...     return result\n"
+"...\n"
+">>> f100 = fib2(100)    # call it\n"
+">>> f100                # write the result\n"
+"[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]"
+msgstr ""
+
+#: tutorial/controlflow.rst:550
 msgid "This example, as usual, demonstrates some new Python features:"
 msgstr ""
 "Bu örnek, her zamanki gibi, bazı yeni Python özelliklerini göstermektedir:"
 
-#: tutorial/controlflow.rst:526
+#: tutorial/controlflow.rst:552
 msgid ""
 "The :keyword:`return` statement returns with a value from a function. :"
 "keyword:`!return` without an expression argument returns ``None``. Falling "
@@ -632,7 +983,7 @@ msgstr ""
 "return` deyimi bir ifade argümanı olmadan ``None`` döndürür. Bir fonksiyonun "
 "sonundan düşmek de ``None`` değerini döndürür."
 
-#: tutorial/controlflow.rst:530
+#: tutorial/controlflow.rst:556
 #, fuzzy
 msgid ""
 "The statement ``result.append(a)`` calls a *method* of the list object "
@@ -658,11 +1009,11 @@ msgstr ""
 "nesneleri için tanımlanmıştır; listenin sonuna yeni bir öğe ekler.  Bu "
 "örnekte ``result = result + [a]`` ile eş değerdir, ancak daha verimlidir."
 
-#: tutorial/controlflow.rst:545
+#: tutorial/controlflow.rst:571
 msgid "More on Defining Functions"
 msgstr "İşlev Tanımlama hakkında daha fazla bilgi"
 
-#: tutorial/controlflow.rst:547
+#: tutorial/controlflow.rst:573
 msgid ""
 "It is also possible to define functions with a variable number of arguments. "
 "There are three forms, which can be combined."
@@ -670,11 +1021,11 @@ msgstr ""
 "Değişken sayıda argüman içeren fonksiyonlar tanımlamak da mümkündür. "
 "Birleştirilebilen üç form vardır."
 
-#: tutorial/controlflow.rst:554
+#: tutorial/controlflow.rst:580
 msgid "Default Argument Values"
 msgstr "Varsayılan Değişken Değerleri"
 
-#: tutorial/controlflow.rst:556
+#: tutorial/controlflow.rst:582
 msgid ""
 "The most useful form is to specify a default value for one or more "
 "arguments. This creates a function that can be called with fewer arguments "
@@ -684,18 +1035,33 @@ msgstr ""
 "bir değer belirtmektir. Bu, izin vermek üzere tanımlandığından daha az "
 "sayıda bağımsız değişkenle çağrılabilen bir fonksiyon oluşturur.  Örneğin::"
 
-#: tutorial/controlflow.rst:572
+#: tutorial/controlflow.rst:586
+msgid ""
+"def ask_ok(prompt, retries=4, reminder='Please try again!'):\n"
+"    while True:\n"
+"        reply = input(prompt)\n"
+"        if reply in {'y', 'ye', 'yes'}:\n"
+"            return True\n"
+"        if reply in {'n', 'no', 'nop', 'nope'}:\n"
+"            return False\n"
+"        retries = retries - 1\n"
+"        if retries < 0:\n"
+"            raise ValueError('invalid user response')\n"
+"        print(reminder)"
+msgstr ""
+
+#: tutorial/controlflow.rst:598
 msgid "This function can be called in several ways:"
 msgstr "Bu fonksiyon çeşitli yollarla çağrılabilir:"
 
-#: tutorial/controlflow.rst:574
+#: tutorial/controlflow.rst:600
 msgid ""
 "giving only the mandatory argument: ``ask_ok('Do you really want to quit?')``"
 msgstr ""
 "sadece zorunlu argümanı vererek: ``ask_ok('Gerçekten çıkmak istiyor "
 "musun?')``"
 
-#: tutorial/controlflow.rst:576
+#: tutorial/controlflow.rst:602
 msgid ""
 "giving one of the optional arguments: ``ask_ok('OK to overwrite the file?', "
 "2)``"
@@ -703,7 +1069,7 @@ msgstr ""
 "isteğe bağlı değişkenlerden birini vermek: ``ask_ok('OK to overwrite the "
 "file?', 2)``"
 
-#: tutorial/controlflow.rst:578
+#: tutorial/controlflow.rst:604
 msgid ""
 "or even giving all arguments: ``ask_ok('OK to overwrite the file?', 2, 'Come "
 "on, only yes or no!')``"
@@ -711,7 +1077,7 @@ msgstr ""
 "ya da bütün değişkenleri vermek: ``ask_ok('OK to overwrite the file?', 2, "
 "'Come on, only yes or no!')``"
 
-#: tutorial/controlflow.rst:581
+#: tutorial/controlflow.rst:607
 msgid ""
 "This example also introduces the :keyword:`in` keyword. This tests whether "
 "or not a sequence contains a certain value."
@@ -719,7 +1085,7 @@ msgstr ""
 "Bu örnek ayrıca :keyword:`in` anahtar sözcüğünü de tanıtır. Bu, bir dizinin "
 "belirli bir değer içerip içermediğini test eder."
 
-#: tutorial/controlflow.rst:584
+#: tutorial/controlflow.rst:610
 msgid ""
 "The default values are evaluated at the point of function definition in the "
 "*defining* scope, so that ::"
@@ -727,11 +1093,22 @@ msgstr ""
 "Varsayılan değerler *tanımlayan* kapsamdaki fonksiyon tanımlama noktasında "
 "değerlendirilir, böylece ::"
 
-#: tutorial/controlflow.rst:595
+#: tutorial/controlflow.rst:613
+msgid ""
+"i = 5\n"
+"\n"
+"def f(arg=i):\n"
+"    print(arg)\n"
+"\n"
+"i = 6\n"
+"f()"
+msgstr ""
+
+#: tutorial/controlflow.rst:621
 msgid "will print ``5``."
 msgstr "``5`` çıktısını verecektir."
 
-#: tutorial/controlflow.rst:597
+#: tutorial/controlflow.rst:623
 msgid ""
 "**Important warning:**  The default value is evaluated only once. This makes "
 "a difference when the default is a mutable object such as a list, "
@@ -744,11 +1121,29 @@ msgstr ""
 "aşağıdaki fonksiyon sonraki çağrılarda kendisine aktarılan argümanları "
 "biriktirir::"
 
-#: tutorial/controlflow.rst:610
+#: tutorial/controlflow.rst:628
+msgid ""
+"def f(a, L=[]):\n"
+"    L.append(a)\n"
+"    return L\n"
+"\n"
+"print(f(1))\n"
+"print(f(2))\n"
+"print(f(3))"
+msgstr ""
+
+#: tutorial/controlflow.rst:636
 msgid "This will print ::"
 msgstr "Bu şu çıktıyı verecektir ::"
 
-#: tutorial/controlflow.rst:616
+#: tutorial/controlflow.rst:638
+msgid ""
+"[1]\n"
+"[1, 2]\n"
+"[1, 2, 3]"
+msgstr ""
+
+#: tutorial/controlflow.rst:642
 msgid ""
 "If you don't want the default to be shared between subsequent calls, you can "
 "write the function like this instead::"
@@ -756,11 +1151,20 @@ msgstr ""
 "Varsayılan değerin sonraki çağrılar arasında paylaşılmasını istemiyorsanız, "
 "bunun yerine fonksiyonu şu şekilde yazabilirsiniz::"
 
-#: tutorial/controlflow.rst:629
+#: tutorial/controlflow.rst:645
+msgid ""
+"def f(a, L=None):\n"
+"    if L is None:\n"
+"        L = []\n"
+"    L.append(a)\n"
+"    return L"
+msgstr ""
+
+#: tutorial/controlflow.rst:655
 msgid "Keyword Arguments"
 msgstr "Anahtar Kelime Değişkenleri"
 
-#: tutorial/controlflow.rst:631
+#: tutorial/controlflow.rst:657
 msgid ""
 "Functions can also be called using :term:`keyword arguments <keyword "
 "argument>` of the form ``kwarg=value``.  For instance, the following "
@@ -770,7 +1174,16 @@ msgstr ""
 "argümanları <keyword argument>` kullanılarak da çağrılabilir.  Örneğin, "
 "aşağıdaki fonksiyon::"
 
-#: tutorial/controlflow.rst:640
+#: tutorial/controlflow.rst:660
+msgid ""
+"def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):\n"
+"    print(\"-- This parrot wouldn't\", action, end=' ')\n"
+"    print(\"if you put\", voltage, \"volts through it.\")\n"
+"    print(\"-- Lovely plumage, the\", type)\n"
+"    print(\"-- It's\", state, \"!\")"
+msgstr ""
+
+#: tutorial/controlflow.rst:666
 msgid ""
 "accepts one required argument (``voltage``) and three optional arguments "
 "(``state``, ``action``, and ``type``).  This function can be called in any "
@@ -780,11 +1193,33 @@ msgstr ""
 "``action`` ve ``type``) kabul eder.  Bu fonksiyon aşağıdaki yollardan "
 "herhangi biriyle çağrılabilir::"
 
-#: tutorial/controlflow.rst:651
+#: tutorial/controlflow.rst:670
+msgid ""
+"parrot(1000)                                          # 1 positional "
+"argument\n"
+"parrot(voltage=1000)                                  # 1 keyword argument\n"
+"parrot(voltage=1000000, action='VOOOOOM')             # 2 keyword arguments\n"
+"parrot(action='VOOOOOM', voltage=1000000)             # 2 keyword arguments\n"
+"parrot('a million', 'bereft of life', 'jump')         # 3 positional "
+"arguments\n"
+"parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 "
+"keyword"
+msgstr ""
+
+#: tutorial/controlflow.rst:677
 msgid "but all the following calls would be invalid::"
 msgstr "ancak aşağıdaki tüm çağrılar geçersiz olacaktır::"
 
-#: tutorial/controlflow.rst:658
+#: tutorial/controlflow.rst:679
+msgid ""
+"parrot()                     # required argument missing\n"
+"parrot(voltage=5.0, 'dead')  # non-keyword argument after a keyword "
+"argument\n"
+"parrot(110, voltage=220)     # duplicate value for the same argument\n"
+"parrot(actor='John Cleese')  # unknown keyword argument"
+msgstr ""
+
+#: tutorial/controlflow.rst:684
 msgid ""
 "In a function call, keyword arguments must follow positional arguments. All "
 "the keyword arguments passed must match one of the arguments accepted by the "
@@ -802,7 +1237,18 @@ msgstr ""
 "(örneğin ``parrot(voltage=1000)`` da geçerlidir). Hiçbir argüman birden "
 "fazla değer alamaz. İşte bu kısıtlama nedeniyle başarısız olan bir örnek::"
 
-#: tutorial/controlflow.rst:674
+#: tutorial/controlflow.rst:692
+msgid ""
+">>> def function(a):\n"
+"...     pass\n"
+"...\n"
+">>> function(0, a=0)\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: function() got multiple values for argument 'a'"
+msgstr ""
+
+#: tutorial/controlflow.rst:700
 msgid ""
 "When a final formal parameter of the form ``**name`` is present, it receives "
 "a dictionary (see :ref:`typesmapping`) containing all keyword arguments "
@@ -820,15 +1266,48 @@ msgstr ""
 "sonraki alt bölümde açıklanmıştır).  (``*name``, ``**name`` 'den önce "
 "gelmelidir.) Örneğin, aşağıdaki gibi bir fonksiyon tanımlarsak::"
 
-#: tutorial/controlflow.rst:691
+#: tutorial/controlflow.rst:708
+msgid ""
+"def cheeseshop(kind, *arguments, **keywords):\n"
+"    print(\"-- Do you have any\", kind, \"?\")\n"
+"    print(\"-- I'm sorry, we're all out of\", kind)\n"
+"    for arg in arguments:\n"
+"        print(arg)\n"
+"    print(\"-\" * 40)\n"
+"    for kw in keywords:\n"
+"        print(kw, \":\", keywords[kw])"
+msgstr ""
+
+#: tutorial/controlflow.rst:717
 msgid "It could be called like this::"
 msgstr "Şöyle denebilir::"
 
-#: tutorial/controlflow.rst:699
+#: tutorial/controlflow.rst:719
+msgid ""
+"cheeseshop(\"Limburger\", \"It's very runny, sir.\",\n"
+"           \"It's really very, VERY runny, sir.\",\n"
+"           shopkeeper=\"Michael Palin\",\n"
+"           client=\"John Cleese\",\n"
+"           sketch=\"Cheese Shop Sketch\")"
+msgstr ""
+
+#: tutorial/controlflow.rst:725
 msgid "and of course it would print:"
 msgstr "ve tabii ki yazdıracaktır:"
 
-#: tutorial/controlflow.rst:712
+#: tutorial/controlflow.rst:727
+msgid ""
+"-- Do you have any Limburger ?\n"
+"-- I'm sorry, we're all out of Limburger\n"
+"It's very runny, sir.\n"
+"It's really very, VERY runny, sir.\n"
+"----------------------------------------\n"
+"shopkeeper : Michael Palin\n"
+"client : John Cleese\n"
+"sketch : Cheese Shop Sketch"
+msgstr ""
+
+#: tutorial/controlflow.rst:738
 msgid ""
 "Note that the order in which the keyword arguments are printed is guaranteed "
 "to match the order in which they were provided in the function call."
@@ -836,11 +1315,11 @@ msgstr ""
 "Anahtar sözcük bağımsız değişkenlerinin yazdırılma sırasının, fonksiyon "
 "çağrısında sağlandıkları sırayla eşleşmesinin garanti edildiğini unutmayın."
 
-#: tutorial/controlflow.rst:716
+#: tutorial/controlflow.rst:742
 msgid "Special parameters"
 msgstr "Özel parametreler"
 
-#: tutorial/controlflow.rst:718
+#: tutorial/controlflow.rst:744
 msgid ""
 "By default, arguments may be passed to a Python function either by position "
 "or explicitly by keyword. For readability and performance, it makes sense to "
@@ -855,11 +1334,21 @@ msgstr ""
 "anahtar sözcükle mi geçirildiğini belirlemek için yalnızca fonksiyon "
 "tanımına bakması gerekir."
 
-#: tutorial/controlflow.rst:724
+#: tutorial/controlflow.rst:750
 msgid "A function definition may look like:"
 msgstr "Bir fonksiyon tanımı aşağıdaki gibi görünebilir:"
 
-#: tutorial/controlflow.rst:735
+#: tutorial/controlflow.rst:752
+msgid ""
+"def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):\n"
+"      -----------    ----------     ----------\n"
+"        |             |                  |\n"
+"        |        Positional or keyword   |\n"
+"        |                                - Keyword only\n"
+"         -- Positional only"
+msgstr ""
+
+#: tutorial/controlflow.rst:761
 msgid ""
 "where ``/`` and ``*`` are optional. If used, these symbols indicate the kind "
 "of parameter by how the arguments may be passed to the function: positional-"
@@ -872,11 +1361,11 @@ msgstr ""
 "anahtar sözcük. Anahtar sözcük parametreleri, adlandırılmış parametreler "
 "olarak da adlandırılır."
 
-#: tutorial/controlflow.rst:742
+#: tutorial/controlflow.rst:768
 msgid "Positional-or-Keyword Arguments"
 msgstr "Konumsal veya Anahtar Kelime Argümanları"
 
-#: tutorial/controlflow.rst:744
+#: tutorial/controlflow.rst:770
 msgid ""
 "If ``/`` and ``*`` are not present in the function definition, arguments may "
 "be passed to a function by position or by keyword."
@@ -884,11 +1373,11 @@ msgstr ""
 "Eğer ``/`` ve ``*`` fonksiyon tanımında mevcut değilse, argümanlar bir "
 "fonksiyona pozisyon veya anahtar kelime ile aktarılabilir."
 
-#: tutorial/controlflow.rst:749
+#: tutorial/controlflow.rst:775
 msgid "Positional-Only Parameters"
 msgstr "Yalnızca Konumsal Parametreler"
 
-#: tutorial/controlflow.rst:751
+#: tutorial/controlflow.rst:777
 msgid ""
 "Looking at this in a bit more detail, it is possible to mark certain "
 "parameters as *positional-only*. If *positional-only*, the parameters' order "
@@ -906,7 +1395,7 @@ msgstr ""
 "parametrelerden mantıksal olarak ayırmak için kullanılır. Fonksiyon "
 "tanımında ``/`` yoksa, sadece konumsal parametre yoktur."
 
-#: tutorial/controlflow.rst:759
+#: tutorial/controlflow.rst:785
 msgid ""
 "Parameters following the ``/`` may be *positional-or-keyword* or *keyword-"
 "only*."
@@ -914,11 +1403,11 @@ msgstr ""
 "``/`` işaretini takip eden parametreler *konumsal veya anahtar sözcük* veya "
 "*sadece anahtar sözcük* olabilir."
 
-#: tutorial/controlflow.rst:763
+#: tutorial/controlflow.rst:789
 msgid "Keyword-Only Arguments"
 msgstr "Yalnızca Anahtar Sözcük İçeren Değişkenler"
 
-#: tutorial/controlflow.rst:765
+#: tutorial/controlflow.rst:791
 msgid ""
 "To mark parameters as *keyword-only*, indicating the parameters must be "
 "passed by keyword argument, place an ``*`` in the arguments list just before "
@@ -929,11 +1418,11 @@ msgstr ""
 "listesine ilk *anahtar sözcüğe özel* parametreden hemen önce bir ``*`` "
 "yerleştirin."
 
-#: tutorial/controlflow.rst:771
+#: tutorial/controlflow.rst:797
 msgid "Function Examples"
 msgstr "Fonksiyon Örnekleri"
 
-#: tutorial/controlflow.rst:773
+#: tutorial/controlflow.rst:799
 msgid ""
 "Consider the following example function definitions paying close attention "
 "to the markers ``/`` and ``*``::"
@@ -941,7 +1430,22 @@ msgstr ""
 "``/`` ve ``*`` işaretlerine çok dikkat ederek aşağıdaki örnek fonksiyon "
 "tanımlarını göz önünde bulundurun::"
 
-#: tutorial/controlflow.rst:789
+#: tutorial/controlflow.rst:802
+msgid ""
+">>> def standard_arg(arg):\n"
+"...     print(arg)\n"
+"...\n"
+">>> def pos_only_arg(arg, /):\n"
+"...     print(arg)\n"
+"...\n"
+">>> def kwd_only_arg(*, arg):\n"
+"...     print(arg)\n"
+"...\n"
+">>> def combined_example(pos_only, /, standard, *, kwd_only):\n"
+"...     print(pos_only, standard, kwd_only)"
+msgstr ""
+
+#: tutorial/controlflow.rst:815
 msgid ""
 "The first function definition, ``standard_arg``, the most familiar form, "
 "places no restrictions on the calling convention and arguments may be passed "
@@ -951,7 +1455,16 @@ msgstr ""
 "kuralına herhangi bir kısıtlama getirmez ve argümanlar konum veya anahtar "
 "kelime ile aktarılabilir::"
 
-#: tutorial/controlflow.rst:799
+#: tutorial/controlflow.rst:819
+msgid ""
+">>> standard_arg(2)\n"
+"2\n"
+"\n"
+">>> standard_arg(arg=2)\n"
+"2"
+msgstr ""
+
+#: tutorial/controlflow.rst:825
 msgid ""
 "The second function ``pos_only_arg`` is restricted to only use positional "
 "parameters as there is a ``/`` in the function definition::"
@@ -959,21 +1472,65 @@ msgstr ""
 "İkinci fonksiyon ``pos_only_arg``, fonksiyon tanımında bir ``/`` olduğu için "
 "sadece konumsal parametreleri kullanacak şekilde sınırlandırılmıştır::"
 
-#: tutorial/controlflow.rst:810
+#: tutorial/controlflow.rst:828
 msgid ""
-"The third function ``kwd_only_args`` only allows keyword arguments as "
+">>> pos_only_arg(1)\n"
+"1\n"
+"\n"
+">>> pos_only_arg(arg=1)\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: pos_only_arg() got some positional-only arguments passed as "
+"keyword arguments: 'arg'"
+msgstr ""
+
+#: tutorial/controlflow.rst:836
+#, fuzzy
+msgid ""
+"The third function ``kwd_only_arg`` only allows keyword arguments as "
 "indicated by a ``*`` in the function definition::"
 msgstr ""
 "Üçüncü fonksiyon ``kwd_only_args`` sadece fonksiyon tanımında ``*`` ile "
 "belirtilen anahtar kelime argümanlarına izin verir::"
 
-#: tutorial/controlflow.rst:821
+#: tutorial/controlflow.rst:839
+msgid ""
+">>> kwd_only_arg(3)\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: kwd_only_arg() takes 0 positional arguments but 1 was given\n"
+"\n"
+">>> kwd_only_arg(arg=3)\n"
+"3"
+msgstr ""
+
+#: tutorial/controlflow.rst:847
 msgid ""
 "And the last uses all three calling conventions in the same function "
 "definition::"
 msgstr "Sonuncusu ise aynı fonksiyon tanımında üç çağrı kuralını da kullanır::"
 
-#: tutorial/controlflow.rst:841
+#: tutorial/controlflow.rst:850
+msgid ""
+">>> combined_example(1, 2, 3)\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: combined_example() takes 2 positional arguments but 3 were given\n"
+"\n"
+">>> combined_example(1, 2, kwd_only=3)\n"
+"1 2 3\n"
+"\n"
+">>> combined_example(1, standard=2, kwd_only=3)\n"
+"1 2 3\n"
+"\n"
+">>> combined_example(pos_only=1, standard=2, kwd_only=3)\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: combined_example() got some positional-only arguments passed as "
+"keyword arguments: 'pos_only'"
+msgstr ""
+
+#: tutorial/controlflow.rst:867
 msgid ""
 "Finally, consider this function definition which has a potential collision "
 "between the positional argument ``name``  and ``**kwds`` which has ``name`` "
@@ -983,7 +1540,13 @@ msgstr ""
 "``**kwds`` arasında potansiyel bir çakışma olan bu fonksiyon tanımını "
 "düşünün::"
 
-#: tutorial/controlflow.rst:846
+#: tutorial/controlflow.rst:869
+msgid ""
+"def foo(name, **kwds):\n"
+"    return 'name' in kwds"
+msgstr ""
+
+#: tutorial/controlflow.rst:872
 msgid ""
 "There is no possible call that will make it return ``True`` as the keyword "
 "``'name'`` will always bind to the first parameter. For example::"
@@ -991,7 +1554,16 @@ msgstr ""
 "Anahtar kelime ``'name'`` her zaman ilk parametreye bağlanacağı için "
 "``True`` döndürmesini sağlayacak olası bir çağrı yoktur. Örneğin::"
 
-#: tutorial/controlflow.rst:855
+#: tutorial/controlflow.rst:875
+msgid ""
+">>> foo(1, **{'name': 2})\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: foo() got multiple values for argument 'name'\n"
+">>>"
+msgstr ""
+
+#: tutorial/controlflow.rst:881
 msgid ""
 "But using ``/`` (positional only arguments), it is possible since it allows "
 "``name`` as a positional argument and ``'name'`` as a key in the keyword "
@@ -1001,7 +1573,16 @@ msgstr ""
 "konumsal argüman olarak ve ``'name'`` anahtar kelime argümanlarında bir "
 "anahtar olarak izin verdiği için mümkündür::"
 
-#: tutorial/controlflow.rst:863
+#: tutorial/controlflow.rst:883
+msgid ""
+">>> def foo(name, /, **kwds):\n"
+"...     return 'name' in kwds\n"
+"...\n"
+">>> foo(1, **{'name': 2})\n"
+"True"
+msgstr ""
+
+#: tutorial/controlflow.rst:889
 msgid ""
 "In other words, the names of positional-only parameters can be used in "
 "``**kwds`` without ambiguity."
@@ -1009,11 +1590,11 @@ msgstr ""
 "Başka bir deyişle, yalnızca konumsal parametrelerin adları ``**kwds`` içinde "
 "belirsizlik olmadan kullanılabilir."
 
-#: tutorial/controlflow.rst:868
+#: tutorial/controlflow.rst:894
 msgid "Recap"
 msgstr "Özet"
 
-#: tutorial/controlflow.rst:870
+#: tutorial/controlflow.rst:896
 msgid ""
 "The use case will determine which parameters to use in the function "
 "definition::"
@@ -1021,11 +1602,15 @@ msgstr ""
 "Kullanım durumu, fonksiyon tanımında hangi parametrelerin kullanılacağını "
 "belirleyecektir::"
 
-#: tutorial/controlflow.rst:874
+#: tutorial/controlflow.rst:898
+msgid "def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):"
+msgstr ""
+
+#: tutorial/controlflow.rst:900
 msgid "As guidance:"
 msgstr "Rehber olarak:"
 
-#: tutorial/controlflow.rst:876
+#: tutorial/controlflow.rst:902
 msgid ""
 "Use positional-only if you want the name of the parameters to not be "
 "available to the user. This is useful when parameter names have no real "
@@ -1039,7 +1624,7 @@ msgstr ""
 "zorlamak istediğinizde veya bazı konumsal parametreler ve rastgele anahtar "
 "sözcükler almanız gerektiğinde kullanışlıdır."
 
-#: tutorial/controlflow.rst:881
+#: tutorial/controlflow.rst:907
 msgid ""
 "Use keyword-only when names have meaning and the function definition is more "
 "understandable by being explicit with names or you want to prevent users "
@@ -1049,7 +1634,7 @@ msgstr ""
 "daha anlaşılır olduğunda veya kullanıcıların geçirilen argümanın konumuna "
 "güvenmesini önlemek istediğinizde yalnızca anahtar sözcük kullanın."
 
-#: tutorial/controlflow.rst:884
+#: tutorial/controlflow.rst:910
 msgid ""
 "For an API, use positional-only to prevent breaking API changes if the "
 "parameter's name is modified in the future."
@@ -1057,11 +1642,11 @@ msgstr ""
 "Bir API için, parametrenin adı gelecekte değiştirilirse API "
 "değişikliklerinin bozulmasını önlemek için yalnızca konumsal kullanın."
 
-#: tutorial/controlflow.rst:890
+#: tutorial/controlflow.rst:916
 msgid "Arbitrary Argument Lists"
 msgstr "Keyfi Argüman Listeleri"
 
-#: tutorial/controlflow.rst:895
+#: tutorial/controlflow.rst:921
 msgid ""
 "Finally, the least frequently used option is to specify that a function can "
 "be called with an arbitrary number of arguments.  These arguments will be "
@@ -1073,7 +1658,13 @@ msgstr ""
 "paketlenecektir (bkz :ref:`tut-tuples`).  Değişken argüman sayısından önce, "
 "sıfır veya daha fazla normal argüman olabilir. ::"
 
-#: tutorial/controlflow.rst:904
+#: tutorial/controlflow.rst:926
+msgid ""
+"def write_multiple_items(file, separator, *args):\n"
+"    file.write(separator.join(args))"
+msgstr ""
+
+#: tutorial/controlflow.rst:930
 msgid ""
 "Normally, these *variadic* arguments will be last in the list of formal "
 "parameters, because they scoop up all remaining input arguments that are "
@@ -1087,11 +1678,22 @@ msgstr ""
 "'keyword-only' (yalnızca-anahtar-kelime) argümanlarıdır, yani konumsal "
 "argümanlar yerine sadece anahtar kelimeler olarak kullanılabilirler. ::"
 
-#: tutorial/controlflow.rst:921
+#: tutorial/controlflow.rst:936
+msgid ""
+">>> def concat(*args, sep=\"/\"):\n"
+"...     return sep.join(args)\n"
+"...\n"
+">>> concat(\"earth\", \"mars\", \"venus\")\n"
+"'earth/mars/venus'\n"
+">>> concat(\"earth\", \"mars\", \"venus\", sep=\".\")\n"
+"'earth.mars.venus'"
+msgstr ""
+
+#: tutorial/controlflow.rst:947
 msgid "Unpacking Argument Lists"
 msgstr "Argüman Listelerini Açma"
 
-#: tutorial/controlflow.rst:923
+#: tutorial/controlflow.rst:949
 msgid ""
 "The reverse situation occurs when the arguments are already in a list or "
 "tuple but need to be unpacked for a function call requiring separate "
@@ -1107,7 +1709,17 @@ msgstr ""
 "olarak mevcut değilse, argümanları bir listeden veya tuple'dan çıkarmak için "
 "fonksiyon çağrısını ``*``\\ -operatörü ile yazın::"
 
-#: tutorial/controlflow.rst:939
+#: tutorial/controlflow.rst:956
+msgid ""
+">>> list(range(3, 6))            # normal call with separate arguments\n"
+"[3, 4, 5]\n"
+">>> args = [3, 6]\n"
+">>> list(range(*args))            # call with arguments unpacked from a "
+"list\n"
+"[3, 4, 5]"
+msgstr ""
+
+#: tutorial/controlflow.rst:965
 msgid ""
 "In the same fashion, dictionaries can deliver keyword arguments with the "
 "``**``\\ -operator::"
@@ -1115,11 +1727,25 @@ msgstr ""
 "Aynı şekilde, sözlükler ``**``\\ -operatörü ile anahtar sözcük argümanları "
 "sunabilir::"
 
-#: tutorial/controlflow.rst:955
+#: tutorial/controlflow.rst:968
+msgid ""
+">>> def parrot(voltage, state='a stiff', action='voom'):\n"
+"...     print(\"-- This parrot wouldn't\", action, end=' ')\n"
+"...     print(\"if you put\", voltage, \"volts through it.\", end=' ')\n"
+"...     print(\"E's\", state, \"!\")\n"
+"...\n"
+">>> d = {\"voltage\": \"four million\", \"state\": \"bleedin' demised\", "
+"\"action\": \"VOOM\"}\n"
+">>> parrot(**d)\n"
+"-- This parrot wouldn't VOOM if you put four million volts through it. E's "
+"bleedin' demised !"
+msgstr ""
+
+#: tutorial/controlflow.rst:981
 msgid "Lambda Expressions"
 msgstr "Lambda İfadeleri"
 
-#: tutorial/controlflow.rst:957
+#: tutorial/controlflow.rst:983
 msgid ""
 "Small anonymous functions can be created with the :keyword:`lambda` keyword. "
 "This function returns the sum of its two arguments: ``lambda a, b: a+b``. "
@@ -1137,7 +1763,19 @@ msgstr ""
 "şekerdirler.  İç içe işlev tanımları gibi, lambda işlevleri de içeren "
 "kapsamdaki değişkenlere başvurabilir::"
 
-#: tutorial/controlflow.rst:974
+#: tutorial/controlflow.rst:991
+msgid ""
+">>> def make_incrementor(n):\n"
+"...     return lambda x: x + n\n"
+"...\n"
+">>> f = make_incrementor(42)\n"
+">>> f(0)\n"
+"42\n"
+">>> f(1)\n"
+"43"
+msgstr ""
+
+#: tutorial/controlflow.rst:1000
 msgid ""
 "The above example uses a lambda expression to return a function.  Another "
 "use is to pass a small function as an argument::"
@@ -1146,11 +1784,19 @@ msgstr ""
 "kullanılmıştır.  Başka bir kullanım da küçük bir fonksiyonu argüman olarak "
 "geçirmektir::"
 
-#: tutorial/controlflow.rst:986
+#: tutorial/controlflow.rst:1003
+msgid ""
+">>> pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]\n"
+">>> pairs.sort(key=lambda pair: pair[1])\n"
+">>> pairs\n"
+"[(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]"
+msgstr ""
+
+#: tutorial/controlflow.rst:1012
 msgid "Documentation Strings"
 msgstr "Dokümantasyon Stringler'i"
 
-#: tutorial/controlflow.rst:993
+#: tutorial/controlflow.rst:1019
 msgid ""
 "Here are some conventions about the content and formatting of documentation "
 "strings."
@@ -1158,7 +1804,7 @@ msgstr ""
 "Belge dizelerinin içeriği ve biçimlendirilmesiyle ilgili bazı kurallar "
 "aşağıda verilmiştir."
 
-#: tutorial/controlflow.rst:996
+#: tutorial/controlflow.rst:1022
 msgid ""
 "The first line should always be a short, concise summary of the object's "
 "purpose.  For brevity, it should not explicitly state the object's name or "
@@ -1172,7 +1818,7 @@ msgstr ""
 "bir fiil olması durumu hariç).  Bu satır büyük harfle başlamalı ve nokta ile "
 "bitmelidir."
 
-#: tutorial/controlflow.rst:1002
+#: tutorial/controlflow.rst:1028
 msgid ""
 "If there are more lines in the documentation string, the second line should "
 "be blank, visually separating the summary from the rest of the description.  "
@@ -1184,7 +1830,7 @@ msgstr ""
 "satırlar, nesnenin çağrı kurallarını, yan etkilerini vb. açıklayan bir veya "
 "daha fazla paragraftan oluşmalıdır."
 
-#: tutorial/controlflow.rst:1007
+#: tutorial/controlflow.rst:1033
 msgid ""
 "The Python parser does not strip indentation from multi-line string literals "
 "in Python, so tools that process documentation have to strip indentation if "
@@ -1210,15 +1856,30 @@ msgstr ""
 "çıkarılmalıdır.  Beyaz boşlukların eş değerliği sekmelerin "
 "genişletilmesinden sonra test edilmelidir (normalde 8 boşluğa kadar)."
 
-#: tutorial/controlflow.rst:1019
+#: tutorial/controlflow.rst:1045
 msgid "Here is an example of a multi-line docstring::"
 msgstr "İşte çok satırlı bir docstring örneği::"
 
-#: tutorial/controlflow.rst:1037
+#: tutorial/controlflow.rst:1047
+msgid ""
+">>> def my_function():\n"
+"...     \"\"\"Do nothing, but document it.\n"
+"...\n"
+"...     No, really, it doesn't do anything.\n"
+"...     \"\"\"\n"
+"...     pass\n"
+"...\n"
+">>> print(my_function.__doc__)\n"
+"Do nothing, but document it.\n"
+"\n"
+"    No, really, it doesn't do anything."
+msgstr ""
+
+#: tutorial/controlflow.rst:1063
 msgid "Function Annotations"
 msgstr "Fonksiyon Ek Açıklamaları"
 
-#: tutorial/controlflow.rst:1045
+#: tutorial/controlflow.rst:1071
 msgid ""
 ":ref:`Function annotations <function>` are completely optional metadata "
 "information about the types used by user-defined functions (see :pep:`3107` "
@@ -1229,7 +1890,7 @@ msgstr ""
 "bilgileridir (daha fazla bilgi için :pep:`3107` ve :pep:`484` sayfalarına "
 "bakınız)."
 
-#: tutorial/controlflow.rst:1049
+#: tutorial/controlflow.rst:1075
 #, fuzzy
 msgid ""
 ":term:`Annotations <function annotation>` are stored in the :attr:`!"
@@ -1251,11 +1912,25 @@ msgstr ""
 "tanımlanır.  Aşağıdaki örnekte bir gerekli argüman, bir isteğe bağlı argüman "
 "ve dönüş değeri ek açıklamalıdır::"
 
-#: tutorial/controlflow.rst:1071
+#: tutorial/controlflow.rst:1084
+msgid ""
+">>> def f(ham: str, eggs: str = 'eggs') -> str:\n"
+"...     print(\"Annotations:\", f.__annotations__)\n"
+"...     print(\"Arguments:\", ham, eggs)\n"
+"...     return ham + ' and ' + eggs\n"
+"...\n"
+">>> f('spam')\n"
+"Annotations: {'ham': <class 'str'>, 'return': <class 'str'>, 'eggs': <class "
+"'str'>}\n"
+"Arguments: spam eggs\n"
+"'spam and eggs'"
+msgstr ""
+
+#: tutorial/controlflow.rst:1097
 msgid "Intermezzo: Coding Style"
 msgstr "Intermezzo: Kodlama Stili"
 
-#: tutorial/controlflow.rst:1076
+#: tutorial/controlflow.rst:1102
 msgid ""
 "Now that you are about to write longer, more complex pieces of Python, it is "
 "a good time to talk about *coding style*.  Most languages can be written (or "
@@ -1270,7 +1945,7 @@ msgstr ""
 "kolaylaştırmak her zaman iyi bir fikirdir ve güzel bir kodlama stili "
 "benimsemek buna çok yardımcı olur."
 
-#: tutorial/controlflow.rst:1082
+#: tutorial/controlflow.rst:1108
 msgid ""
 "For Python, :pep:`8` has emerged as the style guide that most projects "
 "adhere to; it promotes a very readable and eye-pleasing coding style.  Every "
@@ -1282,11 +1957,11 @@ msgstr ""
 "Her Python geliştiricisi bir noktada onu okumalıdır; işte sizin için "
 "çıkarılan en önemli noktalar:"
 
-#: tutorial/controlflow.rst:1087
+#: tutorial/controlflow.rst:1113
 msgid "Use 4-space indentation, and no tabs."
 msgstr "4 aralıklı girinti kullanın ve sekme kullanmayın."
 
-#: tutorial/controlflow.rst:1089
+#: tutorial/controlflow.rst:1115
 msgid ""
 "4 spaces are a good compromise between small indentation (allows greater "
 "nesting depth) and large indentation (easier to read).  Tabs introduce "
@@ -1296,11 +1971,11 @@ msgstr ""
 "girinti (okunması daha kolay) arasında iyi bir uzlaşmadır.  Sekmeler "
 "karışıklığa neden olur ve en iyisi dışarıda bırakmaktır."
 
-#: tutorial/controlflow.rst:1093
+#: tutorial/controlflow.rst:1119
 msgid "Wrap lines so that they don't exceed 79 characters."
 msgstr "Satırları 79 karakteri geçmeyecek şekilde sarın."
 
-#: tutorial/controlflow.rst:1095
+#: tutorial/controlflow.rst:1121
 msgid ""
 "This helps users with small displays and makes it possible to have several "
 "code files side-by-side on larger displays."
@@ -1308,7 +1983,7 @@ msgstr ""
 "Bu, küçük ekranlı kullanıcılara yardımcı olur ve daha büyük ekranlarda "
 "birkaç kod dosyasının yan yana olmasını mümkün kılar."
 
-#: tutorial/controlflow.rst:1098
+#: tutorial/controlflow.rst:1124
 msgid ""
 "Use blank lines to separate functions and classes, and larger blocks of code "
 "inside functions."
@@ -1316,15 +1991,15 @@ msgstr ""
 "Fonksiyonları ve sınıfları ve fonksiyonların içindeki büyük kod bloklarını "
 "ayırmak için boş satırlar kullanın."
 
-#: tutorial/controlflow.rst:1101
+#: tutorial/controlflow.rst:1127
 msgid "When possible, put comments on a line of their own."
 msgstr "Mümkün olduğunda, yorumları kendi başlarına bir satıra koyun."
 
-#: tutorial/controlflow.rst:1103
+#: tutorial/controlflow.rst:1129
 msgid "Use docstrings."
 msgstr "Docstrings kullanın."
 
-#: tutorial/controlflow.rst:1105
+#: tutorial/controlflow.rst:1131
 msgid ""
 "Use spaces around operators and after commas, but not directly inside "
 "bracketing constructs: ``a = f(1, 2) + g(3, 4)``."
@@ -1332,7 +2007,7 @@ msgstr ""
 "Operatörlerin etrafında ve virgüllerden sonra boşluk kullanın, ancak "
 "doğrudan parantez yapılarının içinde kullanmayın: ``a = f(1, 2) + g(3, 4)``."
 
-#: tutorial/controlflow.rst:1108
+#: tutorial/controlflow.rst:1134
 msgid ""
 "Name your classes and functions consistently; the convention is to use "
 "``UpperCamelCase`` for classes and ``lowercase_with_underscores`` for "
@@ -1345,7 +2020,7 @@ msgstr ""
 "olarak her zaman ``self`` kullanın (sınıflar ve yöntemler hakkında daha "
 "fazla bilgi için :ref:`tut-firstclasses` bölümüne bakın)."
 
-#: tutorial/controlflow.rst:1113
+#: tutorial/controlflow.rst:1139
 msgid ""
 "Don't use fancy encodings if your code is meant to be used in international "
 "environments.  Python's default, UTF-8, or even plain ASCII work best in any "
@@ -1355,7 +2030,7 @@ msgstr ""
 "kullanmayın.  Python'un varsayılanı, UTF-8 veya hatta düz ASCII her durumda "
 "en iyi sonucu verir."
 
-#: tutorial/controlflow.rst:1117
+#: tutorial/controlflow.rst:1143
 msgid ""
 "Likewise, don't use non-ASCII characters in identifiers if there is only the "
 "slightest chance people speaking a different language will read or maintain "
@@ -1365,11 +2040,11 @@ msgstr ""
 "etmesi için en ufak bir şans varsa, tanımlayıcılarda ASCII olmayan "
 "karakterler kullanmayın."
 
-#: tutorial/controlflow.rst:1123
+#: tutorial/controlflow.rst:1149
 msgid "Footnotes"
 msgstr "Dipnotlar"
 
-#: tutorial/controlflow.rst:1124
+#: tutorial/controlflow.rst:1150
 msgid ""
 "Actually, *call by object reference* would be a better description, since if "
 "a mutable object is passed, the caller will see any changes the callee makes "
@@ -1387,63 +2062,71 @@ msgstr ""
 msgid "for"
 msgstr ""
 
-#: tutorial/controlflow.rst:988
+#: tutorial/controlflow.rst:1014
 #, fuzzy
 msgid "documentation strings"
 msgstr "Dokümantasyon Stringler'i"
 
-#: tutorial/controlflow.rst:988
+#: tutorial/controlflow.rst:1014
 #, fuzzy
 msgid "docstrings"
 msgstr "Docstrings kullanın."
 
-#: tutorial/controlflow.rst:988
+#: tutorial/controlflow.rst:1014
 msgid "strings, documentation"
 msgstr ""
 
-#: tutorial/controlflow.rst:892
+#: tutorial/controlflow.rst:918
 msgid "* (asterisk)"
 msgstr ""
 
-#: tutorial/controlflow.rst:936
+#: tutorial/controlflow.rst:962
 #, fuzzy
 msgid "in function calls"
 msgstr "Fonksiyon Örnekleri"
 
-#: tutorial/controlflow.rst:936
+#: tutorial/controlflow.rst:962
 msgid "**"
 msgstr ""
 
-#: tutorial/controlflow.rst:1040
+#: tutorial/controlflow.rst:1066
 #, fuzzy
 msgid "function"
 msgstr "Fonksiyonların Tanımlanması"
 
-#: tutorial/controlflow.rst:1040
+#: tutorial/controlflow.rst:1066
 #, fuzzy
 msgid "annotations"
 msgstr "Fonksiyon Ek Açıklamaları"
 
-#: tutorial/controlflow.rst:1040
+#: tutorial/controlflow.rst:1066
 msgid "->"
 msgstr ""
 
-#: tutorial/controlflow.rst:1040
+#: tutorial/controlflow.rst:1066
 #, fuzzy
 msgid "function annotations"
 msgstr "Fonksiyon Ek Açıklamaları"
 
-#: tutorial/controlflow.rst:1040
+#: tutorial/controlflow.rst:1066
 msgid ": (colon)"
 msgstr ""
 
-#: tutorial/controlflow.rst:1074
+#: tutorial/controlflow.rst:1100
 msgid "coding"
 msgstr ""
 
-#: tutorial/controlflow.rst:1074
+#: tutorial/controlflow.rst:1100
 msgid "style"
 msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "A :keyword:`!for` or :keyword:`!while` loop can include an :keyword:`!"
+#~ "else` clause."
+#~ msgstr ""
+#~ ":keyword:`!break` ve :keyword:`!continue` İfadeleri ve :keyword:`!else` "
+#~ "Döngülerdeki Cümleler"
 
 #~ msgid ""
 #~ "Loop statements may have an :keyword:`!else` clause; it is executed when "

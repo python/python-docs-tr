@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 22:33+0300\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: 2022-12-28 22:35+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -36,6 +36,10 @@ msgstr ""
 "Python yorumlayıcısı genellikle mevcut olduğu makinelerde :file:`/usr/local/"
 "bin/python3.10` 'a yüklenir; Unix kabuğunuzun arama yoluna (path) :file:`/"
 "usr/local/bin` yazmak, komutu yazarak başlatmayı mümkün kılar:"
+
+#: tutorial/interpreter.rst:17
+msgid "python3.12"
+msgstr ""
 
 #: tutorial/interpreter.rst:21
 msgid ""
@@ -202,6 +206,16 @@ msgstr ""
 "Yorumlayıcı, ilk istemi yazdırmadan önce sürüm numarasını ve telif hakkı "
 "bildirimini belirten bir karşılama iletisi yazdırır:"
 
+#: tutorial/interpreter.rst:98
+msgid ""
+"$ python3.12\n"
+"Python 3.12 (default, April 4 2022, 09:25:04)\n"
+"[GCC 10.2.0] on linux\n"
+"Type \"help\", \"copyright\", \"credits\" or \"license\" for more "
+"information.\n"
+">>>"
+msgstr ""
+
 #: tutorial/interpreter.rst:108
 msgid ""
 "Continuation lines are needed when entering a multi-line construct. As an "
@@ -209,6 +223,15 @@ msgid ""
 msgstr ""
 "Çok satırlı bir yapıya girilirken devamlılık satırları gereklidir. Örnek "
 "olarak, :keyword:`if` ifadesine bir göz atın::"
+
+#: tutorial/interpreter.rst:111
+msgid ""
+">>> the_world_is_flat = True\n"
+">>> if the_world_is_flat:\n"
+"...     print(\"Be careful not to fall off!\")\n"
+"...\n"
+"Be careful not to fall off!"
+msgstr ""
 
 #: tutorial/interpreter.rst:118
 msgid "For more on interactive mode, see :ref:`tut-interac`."
@@ -249,6 +272,10 @@ msgstr ""
 "Varsayılan dil şeması dışında bir şema bildirmek için, dosyanın *ilk* satırı "
 "olarak özel bir yorum satırı eklenmelidir.  Sözdizimi aşağıdaki gibidir::"
 
+#: tutorial/interpreter.rst:143
+msgid "# -*- coding: encoding -*-"
+msgstr ""
+
 #: tutorial/interpreter.rst:145
 msgid "where *encoding* is one of the valid :mod:`codecs` supported by Python."
 msgstr ""
@@ -263,6 +290,10 @@ msgstr ""
 "Örneğin, Windows-1252 şemasının kullanılacağını bildirmek için, kaynak kod "
 "dosyanızın ilk satırı şu olmalıdır::"
 
+#: tutorial/interpreter.rst:150
+msgid "# -*- coding: cp1252 -*-"
+msgstr ""
+
 #: tutorial/interpreter.rst:152
 msgid ""
 "One exception to the *first line* rule is when the source code starts with "
@@ -272,6 +303,12 @@ msgstr ""
 "*İlk satır* kuralının bir istisnası, kaynak kodun :ref:`UNIX \"shebang\" "
 "line <tut-scripts>` satırı ile başlamasıdır.  Bu durumda, şema bildirimi "
 "dosyanın ikinci satırı olarak eklenmelidir.  Örneğin::"
+
+#: tutorial/interpreter.rst:156
+msgid ""
+"#!/usr/bin/env python3\n"
+"# -*- coding: cp1252 -*-"
+msgstr ""
 
 #: tutorial/interpreter.rst:160
 msgid "Footnotes"

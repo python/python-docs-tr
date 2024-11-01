@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -73,6 +73,10 @@ msgstr ""
 msgid ""
 "To get at the \"64-bitness\" of the current interpreter, it is more reliable "
 "to query the :data:`sys.maxsize` attribute::"
+msgstr ""
+
+#: library/platform.rst:51
+msgid "is_64bits = sys.maxsize > 2**32"
 msgstr ""
 
 #: library/platform.rst:56
@@ -360,4 +364,15 @@ msgstr ""
 
 #: library/platform.rst:289
 msgid "Example::"
+msgstr ""
+
+#: library/platform.rst:291
+msgid ""
+"def get_like_distro():\n"
+"    info = platform.freedesktop_os_release()\n"
+"    ids = [info[\"ID\"]]\n"
+"    if \"ID_LIKE\" in info:\n"
+"        # ids are space separated and ordered by precedence\n"
+"        ids.extend(info[\"ID_LIKE\"].split())\n"
+"    return ids"
 msgstr ""

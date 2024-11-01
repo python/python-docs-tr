@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -50,7 +50,7 @@ msgid ""
 msgstr ""
 
 #: includes/wasm-notavail.rst:3
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
+msgid "Availability"
 msgstr ""
 
 #: includes/wasm-notavail.rst:5
@@ -75,16 +75,11 @@ msgstr ""
 
 #: library/poplib.rst:66
 msgid ""
-"Raises an auditing event poplib.connect with arguments self, host, port."
+"Raises an :ref:`auditing event <auditing>` ``poplib.connect`` with arguments "
+"``self``, ``host``, ``port``."
 msgstr ""
 
-#: library/poplib.rst:68
-msgid ""
-"All commands will raise an auditing event poplib.putline with arguments self "
-"and line, where line is the bytes about to be sent to the remote host."
-msgstr ""
-
-#: library/poplib.rst:70
+#: library/poplib.rst:48 library/poplib.rst:70
 msgid ""
 "All commands will raise an :ref:`auditing event <auditing>` ``poplib."
 "putline`` with arguments ``self`` and ``line``, where ``line`` is the bytes "
@@ -307,6 +302,19 @@ msgstr ""
 msgid ""
 "Here is a minimal example (without error checking) that opens a mailbox and "
 "retrieves and prints all messages::"
+msgstr ""
+
+#: library/poplib.rst:260
+msgid ""
+"import getpass, poplib\n"
+"\n"
+"M = poplib.POP3('localhost')\n"
+"M.user(getpass.getuser())\n"
+"M.pass_(getpass.getpass())\n"
+"numMessages = len(M.list()[1])\n"
+"for i in range(numMessages):\n"
+"    for j in M.retr(i+1)[1]:\n"
+"        print(j)"
 msgstr ""
 
 #: library/poplib.rst:270

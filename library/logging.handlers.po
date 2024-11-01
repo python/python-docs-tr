@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -661,6 +661,13 @@ msgid ""
 "Pickles the record's attribute dictionary in binary format with a length "
 "prefix, and returns it ready for transmission across the socket. The details "
 "of this operation are equivalent to::"
+msgstr ""
+
+#: library/logging.handlers.rst:517
+msgid ""
+"data = pickle.dumps(record_attr_dict, 1)\n"
+"datalen = struct.pack('>L', len(data))\n"
+"return datalen + data"
 msgstr ""
 
 #: library/logging.handlers.rst:521

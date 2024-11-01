@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -43,7 +43,7 @@ msgid ""
 msgstr ""
 
 #: library/pipes.rst:26
-msgid ":ref:`Availability <availability>`: Unix, not VxWorks."
+msgid "Availability"
 msgstr ""
 
 #: library/pipes.rst:28
@@ -56,6 +56,18 @@ msgstr ""
 
 #: library/pipes.rst:35
 msgid "Example::"
+msgstr ""
+
+#: library/pipes.rst:37
+msgid ""
+">>> import pipes\n"
+">>> t = pipes.Template()\n"
+">>> t.append('tr a-z A-Z', '--')\n"
+">>> f = t.open('pipefile', 'w')\n"
+">>> f.write('hello world')\n"
+">>> f.close()\n"
+">>> open('pipefile').read()\n"
+"'HELLO WORLD'"
 msgstr ""
 
 #: library/pipes.rst:50

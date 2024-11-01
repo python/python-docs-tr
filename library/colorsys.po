@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 00:19+0000\n"
+"POT-Creation-Date: 2024-11-01 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -72,4 +72,13 @@ msgstr ""
 
 #: library/colorsys.rst:59
 msgid "Example::"
+msgstr ""
+
+#: library/colorsys.rst:61
+msgid ""
+">>> import colorsys\n"
+">>> colorsys.rgb_to_hsv(0.2, 0.4, 0.4)\n"
+"(0.5, 0.5, 0.4)\n"
+">>> colorsys.hsv_to_rgb(0.5, 0.5, 0.4)\n"
+"(0.2, 0.4, 0.4)"
 msgstr ""
