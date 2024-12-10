@@ -8,21 +8,22 @@ msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-01 00:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2024-12-09 23:37+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
 
 #: library/glob.rst:2
 msgid ":mod:`!glob` --- Unix style pathname pattern expansion"
-msgstr ""
+msgstr ":mod:`!glob` --- Unix tarzı yol adı kalıp açılımı"
 
 #: library/glob.rst:7
 msgid "**Source code:** :source:`Lib/glob.py`"
-msgstr ""
+msgstr "**Kaynak kod** :source:`Lib/glob.py`"
 
 #: library/glob.rst:21
 msgid ""
@@ -33,6 +34,12 @@ msgid ""
 "done by using the :func:`os.scandir` and :func:`fnmatch.fnmatch` functions "
 "in concert, and not by actually invoking a subshell."
 msgstr ""
+":mod:`glob` modülü Unix kabuğu tarafından kullanılan kurallarına uyarak "
+"spesifik desenlerle eşleşen tüm yol adlarını bulur ve sonucu gelişigüzel bir "
+"sırada ile döndürür. Tilde açılımı yapılmaz fakat ``[]`` içinde ifade edilen "
+"karakter aralığı ve ``*``, ``?`` karakterleri eşleştirilir. Bu işlem :func:"
+"`os.scandir` ve :func:`fnmatch.fnmatch` fonksiyonlarının birlikte çalışması "
+"ile olur ve bir altkabuk çağırılmaz."
 
 #: library/glob.rst:28
 msgid ""
@@ -41,16 +48,22 @@ msgid ""
 "Path.glob`. (For tilde and shell variable expansion, use :func:`os.path."
 "expanduser` and :func:`os.path.expandvars`.)"
 msgstr ""
+"Dikkat edilmeli ki :func:`fnmatch.fnmatch` veya :func:`pathlib.Path.glob` "
+"aksine, nokta (``.``) ile başlayan dosyalar sadece nokta ile başlayan "
+"desenler ile eşleştirilebilir. (Tilde ve kabuk değişken açılımları için :"
+"func:`os.path.expanduser` ve :func:`os.path.expandvars` kullanın.)"
 
 #: library/glob.rst:34
 msgid ""
 "For a literal match, wrap the meta-characters in brackets. For example, "
 "``'[?]'`` matches the character ``'?'``."
 msgstr ""
+"Harfi harfine eşleşme için meta-karakter'leri köşeli parantez içine koyun. "
+"Örneğin, ``'[?]'`` deseni ``'?'`` karakteri ile eşleşir."
 
 #: library/glob.rst:39
 msgid "The :mod:`pathlib` module offers high-level path objects."
-msgstr ""
+msgstr ":mod:`pathlib` modülü yüksek-seviye dizin yolu nesneleri döndürür."
 
 #: library/glob.rst:45
 msgid ""
@@ -63,6 +76,15 @@ msgid ""
 "conditions is removed or added during the call of this function, whether a "
 "path name for that file will be included is unspecified."
 msgstr ""
+"*pathname* ile eşleşen bir liste döndürür ve bu boş liste de olabilir. "
+"*pathname*, dizin yolu belirtimi içeren bir string olmalıdır. *pathname* hem "
+"mutlak (örneğin :file:`/usr/src/Python-1.5/Makefile`) hem de göreceli "
+"(örneğin :file:`../../Tools/\\*/\\*.gif`) olabilir ve kabuk-tarzı joker "
+"karakterler de içerebilir. Bozuk sembolik bağlantılar de sonuçlara dahil "
+"edilir (kabukta olduğu gibi). Sonucun sıralanmış olup olmaması dosya "
+"sistemine bağlıdır. Eğer eşleşmeye uyan bir dosya bu fonksiyonun çağrılması "
+"sırasında kaldırılırsa veya eklenirse dönüş değerinde dosyanın bulunup "
+"bulunmayacağı belirsizdir."
 
 #: library/glob.rst:54
 msgid ""
@@ -71,12 +93,20 @@ msgid ""
 "func:`glob` as changing the current directory before calling it.  If "
 "*pathname* is relative, the result will contain paths relative to *root_dir*."
 msgstr ""
+"Eğer *root_dir* ``None`` değilse, arama için kök dizini belirten bir "
+":term:`yol benzeri nesne <path-like object>` olmalıdır. Bu, :func:"
+"`glob` fonksiyonu üzerinde, fonksiyonu çağırmadan önce geçerli "
+"dizini değiştirmekle aynı etkiyi yaratır. Eğer *pathname* göreceli "
+"bir yol ise, sonuç *root_dir*'den itibaren oluşturulmuş göreceli "
+"yolları içerir."
 
 #: library/glob.rst:60
 msgid ""
 "This function can support :ref:`paths relative to directory descriptors "
 "<dir_fd>` with the *dir_fd* parameter."
 msgstr ""
+"Bu fonksiyon *dir_fd* parametresi ile :ref:`dizin tanımlayıcılarına göre "
+"dosya yolları <dir_fd>` destekler ."
 
 #: library/glob.rst:66
 msgid ""
@@ -85,54 +115,69 @@ msgid ""
 "the pattern is followed by an :data:`os.sep` or :data:`os.altsep` then files "
 "will not match."
 msgstr ""
+"Eğer *recursive* True ise \"``**``\" deseni tüm dosyaları ve sıfır veya daha "
+"fazla dizin, alt dizin ve dizinlere işaret eden sembolik bağlantılarla "
+"eşleşir. Eğer desen ardından :data:`os.sep` veya :data:`os.altsep` gelirse "
+"dosyalar eşlenmez."
 
 #: library/glob.rst:71
 msgid ""
 "If *include_hidden* is true, \"``**``\" pattern will match hidden "
 "directories."
 msgstr ""
+"Eğer *include_hidden* True ise, \"``**``\" deseni gizli dizinleri de eşler."
 
 #: library/glob.rst:100
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``glob.glob`` with arguments "
 "``pathname``, ``recursive``."
 msgstr ""
+"``pathname``, ``recursive`` argümanları ile ``glob.glob`` fonksiyonu için "
+"bir :ref:`denetim olayı <auditing>` tetikler."
 
 #: library/glob.rst:101
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``glob.glob/2`` with arguments "
 "``pathname``, ``recursive``, ``root_dir``, ``dir_fd``."
 msgstr ""
+"``pathname``, ``recursive`` , ``root_dir``, ``dir_fd`` argümanları ile "
+"``glob.glob/2`` fonksiyonu için bir :ref:`denetim olayı <auditing>` tetikler."
 
 #: library/glob.rst:77
 msgid ""
 "Using the \"``**``\" pattern in large directory trees may consume an "
 "inordinate amount of time."
 msgstr ""
+"\"``**``\" deseninin geniş dizin ağaçlarıyla kullanımı aşırı derecede zaman "
+"harcar."
 
 #: library/glob.rst:104
 msgid ""
 "This function may return duplicate path names if *pathname* contains "
 "multiple \"``**``\" patterns and *recursive* is true."
 msgstr ""
+"Eğer *pathname* birden fazla \"``**``\" deseni içerirse ve *recursive* True "
+"ise fonksiyon tekrar eden yol adları döndürebilir."
 
 #: library/glob.rst:107
 msgid "Support for recursive globs using \"``**``\"."
-msgstr ""
+msgstr "\"``**``\" kullanarak yinelemeli glob'lar için destek eklendi."
 
 #: library/glob.rst:110
 msgid "Added the *root_dir* and *dir_fd* parameters."
-msgstr ""
+msgstr "*root_dir* ve *dir_fd* parametreleri eklendi."
 
 #: library/glob.rst:113
 msgid "Added the *include_hidden* parameter."
-msgstr ""
+msgstr "*include_hidden* parametresi eklendi."
 
 #: library/glob.rst:97
 msgid ""
 "Return an :term:`iterator` which yields the same values as :func:`glob` "
 "without actually storing them all simultaneously."
 msgstr ""
+":func:`glob` fonksiyonuyla aynı değerleri döndüren fakat eş zamanlı olarak "
+"saklamayan bir :term:`yineleyici` döndürür."
 
 #: library/glob.rst:119
 msgid ""
@@ -142,6 +187,11 @@ msgid ""
 "escaped, e.g. on Windows ``escape('//?/c:/Quo vadis?.txt')`` returns ``'//?/"
 "c:/Quo vadis[?].txt'``."
 msgstr ""
+"Tüm özel karakterlerden (``'?'``, ``'*'`` and ``'['``) kaçar. Eğer özel "
+"karakterler içerme ihtimali olan belirsiz bir dizini harfi harfine "
+"eşleştirmek istiyorsanız faydalıdır. Sürücü/UNC paylaşım noktalarındaki özel "
+"karakterler kaçırılamaz; örneğin Windows'ta ``escape('//?/c:/Quo vadis?."
+"txt')`` ``'//?/c:/Quo vadis[?].txt'`` döndürür."
 
 #: library/glob.rst:128
 msgid ""
@@ -151,6 +201,10 @@ msgid ""
 "following results.  Notice how any leading components of the path are "
 "preserved. ::"
 msgstr ""
+"Örneğin, :file:`1.gif`, :file:`2.txt`, :file:`card.gif` dosyalarını içeren "
+"bir dizin ve :file:`sub` adında sadece :file:`3.txt` dosyasını içeren bir "
+"alt dizin düşünün. :func:`glob` aşağıdaki sonuçları üretir. Yolun başlangıç "
+"bileşenlerinin nasıl korunduğuna dikkat edin."
 
 #: library/glob.rst:134
 msgid ""
@@ -166,6 +220,17 @@ msgid ""
 ">>> glob.glob('./**/', recursive=True)\n"
 "['./', './sub/']"
 msgstr ""
+">>> import glob\n"
+">>> glob.glob('./[0-9].*')\n"
+"['./1.gif', './2.txt']\n"
+">>> glob.glob('*.gif')\n"
+"['1.gif', 'card.gif']\n"
+">>> glob.glob('?.gif')\n"
+"['1.gif']\n"
+">>> glob.glob('**/*.txt', recursive=True)\n"
+"['2.txt', 'sub/3.txt']\n"
+">>> glob.glob('./**/', recursive=True)\n"
+"['./', './sub/']"
 
 #: library/glob.rst:146
 msgid ""
@@ -173,6 +238,9 @@ msgid ""
 "default. For example, consider a directory containing :file:`card.gif` and :"
 "file:`.card.gif`::"
 msgstr ""
+"Eğer dizin ``.`` ile başlayan dosyalar içeriyorsa varsayılan olarak "
+"eşleştirilmezler. Örneğin, :file:`card.gif` and :file:`.card.gif`:: "
+"dosyalarını içeren bir dizin düşünün."
 
 #: library/glob.rst:150
 msgid ""
@@ -182,22 +250,27 @@ msgid ""
 ">>> glob.glob('.c*')\n"
 "['.card.gif']"
 msgstr ""
+">>> import glob\n"
+">>> glob.glob('*.gif')\n"
+"['card.gif']\n"
+">>> glob.glob('.c*')\n"
+"['.card.gif']"
 
 #: library/glob.rst:158
 msgid "Module :mod:`fnmatch`"
-msgstr ""
+msgstr "Modül :mod:`fnmatch`"
 
 #: library/glob.rst:159
 msgid "Shell-style filename (not path) expansion"
-msgstr ""
+msgstr "Kabuk-tarzı dosya ismi (yol adı değil) açılımı"
 
 #: library/glob.rst:9
 msgid "filenames"
-msgstr ""
+msgstr "dosya adları"
 
 #: library/glob.rst:9
 msgid "pathname expansion"
-msgstr ""
+msgstr "yol adı açılımı"
 
 #: library/glob.rst:13
 msgid "* (asterisk)"
@@ -205,7 +278,7 @@ msgstr ""
 
 #: library/glob.rst:63
 msgid "in glob-style wildcards"
-msgstr ""
+msgstr "in glob-tarzı joker karakterleri"
 
 #: library/glob.rst:13
 msgid "? (question mark)"
