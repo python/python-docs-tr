@@ -8,17 +8,18 @@ msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-18 19:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-05-31 02:15+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
 
 #: reference/toplevel_components.rst:6
 msgid "Top-level components"
-msgstr ""
+msgstr "Üst düzey bileşenler"
 
 #: reference/toplevel_components.rst:10
 msgid ""
@@ -27,10 +28,14 @@ msgid ""
 "interactively, from a module source file, etc.  This chapter gives the "
 "syntax used in these cases."
 msgstr ""
+"Python yorumlayıcısı girdisini bir dizi kaynaktan alabilir: standart girdi "
+"veya program argümanı olarak kendisine aktarılan bir koddan, etkileşimli "
+"olarak yazılanlardan, bir modül kaynak dosyasından vb.  Bu bölüm bu "
+"durumlarda kullanılan söz dizimini verir."
 
 #: reference/toplevel_components.rst:19
 msgid "Complete Python programs"
-msgstr ""
+msgstr "Tam Python programları"
 
 #: reference/toplevel_components.rst:28
 msgid ""
@@ -38,17 +43,27 @@ msgid ""
 "interpreter is invoked, it is useful to have a notion of a complete Python "
 "program.  A complete Python program is executed in a minimally initialized "
 "environment: all built-in and standard modules are available, but none have "
-"been initialized, except for :mod:`sys` (various system services), :mod:"
-"`builtins` (built-in functions, exceptions and ``None``) and :mod:"
-"`__main__`.  The latter is used to provide the local and global namespace "
-"for execution of the complete program."
+"been initialized, except for :mod:`sys` (various system "
+"services), :mod:`builtins` (built-in functions, exceptions and ``None``) "
+"and :mod:`__main__`.  The latter is used to provide the local and global "
+"namespace for execution of the complete program."
 msgstr ""
+"Bir dil spesifikasyonu dil yorumlayıcısının nasıl çağrılacağını tarif etmek "
+"zorunda olmasa da, bir tam Python programı kavramına sahip olmak faydalıdır. "
+"Bir tam Python programı asgari düzeyde başlatılmış bir ortamda yürütülür: "
+"tüm yerleşik ve standart modüller mevcuttur, ancak :mod:`sys` (çeşitli "
+"sistem hizmetleri), :mod:`builtins` (yerleşik işlevler, istisnalar ve "
+"``None``) ve :mod:`__main__` dışında hiçbiri başlatılmamıştır. İkincisi, tam "
+"programın yürütülmesi için yerel ve genel ad alanını sağlamak için "
+"kullanılır."
 
 #: reference/toplevel_components.rst:36
 msgid ""
 "The syntax for a complete Python program is that for file input, described "
 "in the next section."
 msgstr ""
+"Bir tam Python programının söz dizimi, bir sonraki bölümde açıklanan dosya "
+"girdisi için geçerli olan söz dizimidir."
 
 #: reference/toplevel_components.rst:43
 msgid ""
@@ -58,6 +73,10 @@ msgid ""
 "identical to that of a complete program; each statement is executed in the "
 "namespace of :mod:`__main__`."
 msgstr ""
+"Yorumlayıcı etkileşimli modda da çağrılabilir; bu durumda, bir tam programı "
+"okumaz ve yürütmez, ancak bir seferde bir ifadeyi (muhtemelen bileşik) okur "
+"ve yürütür. Başlangıç ​​ortamı bir tam programın ortamıyla aynıdır; her "
+"ifade :mod:`__main__` ad alanında yürütülür."
 
 #: reference/toplevel_components.rst:55
 msgid ""
@@ -67,38 +86,47 @@ msgid ""
 "is a tty device, the interpreter enters interactive mode; otherwise, it "
 "executes the file as a complete program."
 msgstr ""
+"Bir tam program yorumlayıcıya üç şekilde aktarılabilir: :option:`-c` "
+"*string* komut satırı seçeneğiyle, ilk komut satırı argümanı olarak "
+"aktarılan bir dosya olarak veya standart girdi olarak.  Dosya veya standart "
+"girdi bir tty aygıtı ise, yorumlayıcı etkileşimli moda girer; aksi takdirde, "
+"dosyayı bir tam program olarak çalıştırır."
 
 #: reference/toplevel_components.rst:65
 msgid "File input"
-msgstr ""
+msgstr "Dosya girdisi"
 
 #: reference/toplevel_components.rst:67
 msgid "All input read from non-interactive files has the same form:"
 msgstr ""
+"Etkileşimli olmayan dosyalardan okunan tüm girdiler aynı biçime sahiptir:"
 
 #: reference/toplevel_components.rst:72
 msgid "This syntax is used in the following situations:"
-msgstr ""
+msgstr "Bu söz dizimi aşağıdaki durumlarda kullanılır:"
 
 #: reference/toplevel_components.rst:74
 msgid "when parsing a complete Python program (from a file or from a string);"
 msgstr ""
+"bir tam Python programı ayrıştırılırken (bir dosyadan veya bir dizgeden);"
 
 #: reference/toplevel_components.rst:76
 msgid "when parsing a module;"
-msgstr ""
+msgstr "bir modül ayrıştırılırken;"
 
 #: reference/toplevel_components.rst:78
 msgid "when parsing a string passed to the :func:`exec` function;"
-msgstr ""
+msgstr ":func:`exec` fonksiyonuna geçirilen bir dizeyi ayrıştırırken;"
 
 #: reference/toplevel_components.rst:84
 msgid "Interactive input"
-msgstr ""
+msgstr "Etkileşimli girdi"
 
 #: reference/toplevel_components.rst:86
 msgid "Input in interactive mode is parsed using the following grammar:"
 msgstr ""
+"Etkileşimli moddaki girdi, aşağıdaki dil bilgisi kuralları kullanılarak "
+"ayrıştırılır:"
 
 #: reference/toplevel_components.rst:91
 msgid ""
@@ -106,69 +134,74 @@ msgid ""
 "in interactive mode; this is needed to help the parser detect the end of the "
 "input."
 msgstr ""
+"Etkileşimli modda, (en üst düzey) bir bileşik ifadenin ardından boş bir "
+"satırın gelmesi gerektiğini unutmayın; bu, ayrıştırıcının girdinin sonunu "
+"algılamasına yardımcı olmak için gereklidir."
 
 #: reference/toplevel_components.rst:98
 msgid "Expression input"
-msgstr ""
+msgstr "İfade girdisi"
 
 #: reference/toplevel_components.rst:103
 msgid ""
 ":func:`eval` is used for expression input.  It ignores leading whitespace. "
 "The string argument to :func:`eval` must have the following form:"
 msgstr ""
+":func:`eval` ifade girişi için kullanılır. Öndeki boşlukları yok "
+"sayar. :func:`eval` için dize argümanı aşağıdaki biçimde olmalıdır:"
 
 #: reference/toplevel_components.rst:8
 msgid "interpreter"
-msgstr ""
+msgstr "yorumlayıcı"
 
 #: reference/toplevel_components.rst:21
 msgid "program"
-msgstr ""
+msgstr "program"
 
 #: reference/toplevel_components.rst:23 reference/toplevel_components.rst:39
 msgid "module"
-msgstr ""
+msgstr "modül"
 
 #: reference/toplevel_components.rst:23
 msgid "sys"
-msgstr ""
+msgstr "sys"
 
 #: reference/toplevel_components.rst:23 reference/toplevel_components.rst:39
 msgid "__main__"
-msgstr ""
+msgstr "__main__"
 
 #: reference/toplevel_components.rst:23
 msgid "builtins"
-msgstr ""
+msgstr "builtins"
 
 #: reference/toplevel_components.rst:39
 msgid "interactive mode"
-msgstr ""
+msgstr "etkileşimli mod"
 
 #: reference/toplevel_components.rst:49
 msgid "UNIX"
-msgstr ""
+msgstr "UNIX"
 
 #: reference/toplevel_components.rst:49
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: reference/toplevel_components.rst:49
 msgid "command line"
-msgstr ""
+msgstr "komut satırı"
 
 #: reference/toplevel_components.rst:49
 msgid "standard input"
-msgstr ""
+msgstr "standart girdi"
 
 #: reference/toplevel_components.rst:100
 msgid "input"
-msgstr ""
+msgstr "girdi"
 
 #: reference/toplevel_components.rst:101
 msgid "built-in function"
-msgstr ""
+msgstr "yerleşik fonksiyon"
 
 #: reference/toplevel_components.rst:101
 msgid "eval"
-msgstr ""
+msgstr "eval"
