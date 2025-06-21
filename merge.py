@@ -20,7 +20,7 @@ def run(*args: str | Path, **kwargs) -> subprocess.CompletedProcess:
     """Run a shell command with subprocess.run() with check=True and
     encoding="UTF-8".
     """
-    return subprocess.run(list(args), encoding="UTF-8", check=True, **kwargs)
+    return subprocess.run(list(args), encoding='UTF-8', check=True, **kwargs)
 
 
 def parse_args():
