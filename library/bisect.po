@@ -18,11 +18,11 @@ msgstr ""
 
 #: library/bisect.rst:2
 msgid ":mod:`!bisect` --- Array bisection algorithm"
-msgstr ""
+msgstr ":mod:`!bisect` --- Dizi ikiye bölme algoritması"
 
 #: library/bisect.rst:10
 msgid "**Source code:** :source:`Lib/bisect.py`"
-msgstr ""
+msgstr "**Kaynak kodu:** :source:`Lib/bisect.py`"
 
 #: library/bisect.rst:14
 msgid ""
@@ -31,6 +31,10 @@ msgid ""
 "expensive comparison operations, this can be an improvement over linear "
 "searches or frequent resorting."
 msgstr ""
+"Bu modül, her eklemeden sonra listeyi yeniden sıralamak zorunda kalmadan "
+"bir listeyi sıralı düzende tutmak için destek sağlar. Maliyetli "
+"karşılaştırma işlemlerine sahip uzun öğe listeleri için bu, doğrusal "
+"aramalara veya sık sık yeniden sıralamaya göre bir iyileştirme olabilir."
 
 #: library/bisect.rst:19
 msgid ""
@@ -42,10 +46,17 @@ msgid ""
 "functions only call the :meth:`~object.__lt__` method and will return an "
 "insertion point between values in an array."
 msgstr ""
+"Bu modül, işini yapmak için temel bir ikiye bölme algoritması kullandığı "
+"için :mod:`bisect` olarak adlandırılmıştır. Belirli bir değeri arayan diğer "
+"ikiye bölme araçlarının aksine, bu modüldeki fonksiyonlar bir ekleme noktası "
+"bulmak için tasarlanmıştır. Buna göre fonksiyonlar, bir değerin bulunup "
+"bulunmadığını belirlemek için hiçbir zaman :meth:`~object.__eq__` metodunu "
+"çağırmaz. Bunun yerine fonksiyonlar yalnızca :meth:`~object.__lt__` metodunu "
+"çağırır ve dizideki değerler arasında bir ekleme noktası döndürür."
 
 #: library/bisect.rst:29
 msgid "The following functions are provided:"
-msgstr ""
+msgstr "Aşağıdaki fonksiyonlar sağlanmaktadır:"
 
 #: library/bisect.rst:34
 msgid ""
@@ -56,6 +67,13 @@ msgid ""
 "existing entries.  The return value is suitable for use as the first "
 "parameter to ``list.insert()`` assuming that *a* is already sorted."
 msgstr ""
+"Sıralı düzeni korumak için *a*'da *x* için ekleme noktasını bulur. *lo* "
+"ve *hi* parametreleri, dikkate alınması gereken listenin bir alt kümesini "
+"belirtmek için kullanılabilir; varsayılan olarak listenin tamamı kullanılır. "
+"*x*, *a*'da zaten mevcutsa, ekleme noktası mevcut girdilerin önünde "
+"(solunda) olacaktır. Dönüş değeri, *a*'nın zaten sıralı olduğu "
+"varsayılarak ``list.insert()`` fonksiyonunun ilk parametresi olarak "
+"kullanılmaya uygundur."
 
 #: library/bisect.rst:41
 msgid ""
@@ -64,6 +82,9 @@ msgid ""
 "slice and ``all(elem >= x for elem in a[ip : hi])`` is true for the right "
 "slice."
 msgstr ""
+"Döndürülen ekleme noktası *ip*, *a* dizisini iki dilime ayırır; "
+"sol dilim için ``all(elem < x for elem in a[lo : ip])`` ve "
+"sağ dilim için ``all(elem >= x for elem in a[ip : hi])`` doğrudur."
 
 #: library/bisect.rst:46
 msgid ""
@@ -71,22 +92,30 @@ msgid ""
 "extract a comparison key from each element in the array.  To support "
 "searching complex records, the key function is not applied to the *x* value."
 msgstr ""
+"*key*, dizideki her öğeden bir karşılaştırma anahtarı çıkarmak için "
+"kullanılan tek argümanlı bir :term:`key function` (anahtar fonksiyonu) "
+"belirtir. Karmaşık kayıtlarda aramayı desteklemek için anahtar fonksiyonu "
+"*x* değerine uygulanmaz."
 
 #: library/bisect.rst:50
 msgid ""
 "If *key* is ``None``, the elements are compared directly and no key function "
 "is called."
 msgstr ""
+"*key* ``None`` ise, öğeler doğrudan karşılaştırılır ve anahtar fonksiyonu "
+"çağrılmaz."
 
 #: library/bisect.rst:67 library/bisect.rst:105
 msgid "Added the *key* parameter."
-msgstr ""
+msgstr "*key* parametresi eklendi."
 
 #: library/bisect.rst:60
 msgid ""
 "Similar to :py:func:`~bisect.bisect_left`, but returns an insertion point "
 "which comes after (to the right of) any existing entries of *x* in *a*."
 msgstr ""
+":py:func:`~bisect.bisect_left` ile benzerdir, ancak *a*'daki mevcut "
+"*x* girdilerinin sonrasında (sağında) bir ekleme noktası döndürür."
 
 #: library/bisect.rst:63
 msgid ""
@@ -95,10 +124,13 @@ msgid ""
 "slice and ``all(elem > x for elem in a[ip : hi])`` is true for the right "
 "slice."
 msgstr ""
+"Döndürülen ekleme noktası *ip*, *a* dizisini iki dilime ayırır; "
+"sol dilim için ``all(elem <= x for elem in a[lo : ip])`` ve "
+"sağ dilim için ``all(elem > x for elem in a[ip : hi])`` doğrudur."
 
 #: library/bisect.rst:73
 msgid "Insert *x* in *a* in sorted order."
-msgstr ""
+msgstr "*x*'i *a*'ya sıralı düzende ekler."
 
 #: library/bisect.rst:75
 msgid ""
@@ -106,24 +138,34 @@ msgid ""
 "insertion point. Next, it runs the :meth:`!insert` method on *a* to insert "
 "*x* at the appropriate position to maintain sort order."
 msgstr ""
+"Bu fonksiyon önce bir ekleme noktası bulmak için "
+":py:func:`~bisect.bisect_left` çalıştırır. Ardından, sıralama düzenini "
+"korumak için *a* üzerinde :meth:`!insert` metodunu çalıştırarak *x*'i "
+"uygun konuma ekler."
 
 #: library/bisect.rst:99
 msgid ""
 "To support inserting records in a table, the *key* function (if any) is "
 "applied to *x* for the search step but not for the insertion step."
 msgstr ""
+"Bir tabloya kayıt eklemeyi desteklemek için, *key* fonksiyonu (varsa) "
+"arama adımında *x*'e uygulanır ancak ekleme adımında uygulanmaz."
 
 #: library/bisect.rst:102
 msgid ""
 "Keep in mind that the *O*\\ (log *n*) search is dominated by the slow *O*\\ "
 "(*n*) insertion step."
 msgstr ""
+"*O*\\ (log *n*) aramanın, yavaş *O*\\ (*n*) ekleme adımı tarafından "
+"baskılandığını unutmayın."
 
 #: library/bisect.rst:92
 msgid ""
 "Similar to :py:func:`~bisect.insort_left`, but inserting *x* in *a* after "
 "any existing entries of *x*."
 msgstr ""
+":py:func:`~bisect.insort_left` ile benzerdir, ancak *x*'i *a*'daki "
+"mevcut *x* girdilerinin sonrasına ekler."
 
 #: library/bisect.rst:95
 msgid ""
@@ -131,28 +173,38 @@ msgid ""
 "insertion point. Next, it runs the :meth:`!insert` method on *a* to insert "
 "*x* at the appropriate position to maintain sort order."
 msgstr ""
+"Bu fonksiyon önce bir ekleme noktası bulmak için "
+":py:func:`~bisect.bisect_right` çalıştırır. Ardından, sıralama düzenini "
+"korumak için *a* üzerinde :meth:`!insert` metodunu çalıştırarak *x*'i "
+"uygun konuma ekler."
 
 #: library/bisect.rst:110
 msgid "Performance Notes"
-msgstr ""
+msgstr "Performans Notları"
 
 #: library/bisect.rst:112
 msgid ""
 "When writing time sensitive code using *bisect()* and *insort()*, keep these "
 "thoughts in mind:"
 msgstr ""
+"*bisect()* ve *insort()* kullanarak zamana duyarlı kod yazarken şu "
+"hususları aklınızda tutun:"
 
 #: library/bisect.rst:115
 msgid ""
 "Bisection is effective for searching ranges of values. For locating specific "
 "values, dictionaries are more performant."
 msgstr ""
+"İkiye bölme, değer aralıklarını aramak için etkilidir. Belirli değerleri "
+"bulmak için sözlükler daha performanslıdır."
 
 #: library/bisect.rst:118
 msgid ""
 "The *insort()* functions are *O*\\ (*n*) because the logarithmic search step "
 "is dominated by the linear time insertion step."
 msgstr ""
+"*insort()* fonksiyonları *O*\\ (*n*)'dir çünkü logaritmik arama adımı, "
+"doğrusal zamanlı ekleme adımı tarafından baskılanır."
 
 #: library/bisect.rst:121
 msgid ""
@@ -164,6 +216,14 @@ msgid ""
 "searching an array of precomputed keys to locate the insertion point (as "
 "shown in the examples section below)."
 msgstr ""
+"Arama fonksiyonları durum bilgisi taşımaz ve anahtar fonksiyonu sonuçlarını "
+"kullanıldıktan sonra atar. Sonuç olarak, arama fonksiyonları bir döngüde "
+"kullanılırsa, anahtar fonksiyonu aynı dizi öğeleri üzerinde tekrar tekrar "
+"çağrılabilir. Anahtar fonksiyonu hızlı değilse, yinelenen hesaplamalardan "
+"kaçınmak için :py:func:`functools.cache` ile sarmalamanızı düşünün. "
+"Alternatif olarak, ekleme noktasını bulmak için önceden hesaplanmış "
+"anahtarlardan oluşan bir dizi aramayı düşünün (aşağıdaki örnekler "
+"bölümünde gösterildiği gibi)."
 
 #: library/bisect.rst:131
 msgid ""
@@ -171,6 +231,9 @@ msgid ""
 "high performance module that uses *bisect* to managed sorted collections of "
 "data."
 msgstr ""
+"`Sorted Collections <https://grantjenks.com/docs/sortedcollections/>`_, "
+"sıralı veri koleksiyonlarını yönetmek için *bisect* kullanan yüksek "
+"performanslı bir modüldür."
 
 #: library/bisect.rst:135
 msgid ""
@@ -180,10 +243,15 @@ msgid ""
 "keys are precomputed to save unnecessary calls to the key function during "
 "searches."
 msgstr ""
+"`SortedCollection tarifi <https://code.activestate.com/recipes/577197-"
+"sortedcollection/>`_, doğrudan arama yöntemleri ve anahtar fonksiyonu "
+"desteğine sahip tam özellikli bir koleksiyon sınıfı oluşturmak için bisect "
+"kullanır. Aramalar sırasında anahtar fonksiyonuna gereksiz çağrılardan "
+"tasarruf etmek için anahtarlar önceden hesaplanır."
 
 #: library/bisect.rst:143
 msgid "Searching Sorted Lists"
-msgstr ""
+msgstr "Sıralı Listelerde Arama"
 
 #: library/bisect.rst:145
 msgid ""
@@ -192,6 +260,10 @@ msgid ""
 "five functions show how to transform them into the standard lookups for "
 "sorted lists::"
 msgstr ""
+"Yukarıdaki `bisect fonksiyonları`_ ekleme noktaları bulmak için yararlıdır "
+"ancak yaygın arama görevleri için kullanımı zor veya karmaşık olabilir. "
+"Aşağıdaki beş fonksiyon, bunların sıralı listeler için standart aramalara "
+"nasıl dönüştürüleceğini gösterir::"
 
 #: library/bisect.rst:150
 msgid ""
@@ -233,7 +305,7 @@ msgstr ""
 
 #: library/bisect.rst:187
 msgid "Examples"
-msgstr ""
+msgstr "Örnekler"
 
 #: library/bisect.rst:191
 msgid ""
@@ -242,6 +314,10 @@ msgid ""
 "grade for an exam score (say) based on a set of ordered numeric breakpoints: "
 "90 and up is an 'A', 80 to 89 is a 'B', and so on::"
 msgstr ""
+":py:func:`~bisect.bisect` fonksiyonu sayısal tablo aramaları için yararlı "
+"olabilir. Bu örnek, sıralı sayısal kesme noktalarına dayalı olarak bir sınav "
+"puanı için harf notu aramak üzere :py:func:`~bisect.bisect` kullanır: "
+"90 ve üzeri 'A', 80 ile 89 arası 'B' ve bu şekilde devam eder::"
 
 #: library/bisect.rst:196
 msgid ""
@@ -259,6 +335,9 @@ msgid ""
 "work with lists of tuples.  The *key* argument can serve to extract the "
 "field used for ordering records in a table::"
 msgstr ""
+":py:func:`~bisect.bisect` ve :py:func:`~bisect.insort` fonksiyonları "
+"demet listeleriyle de çalışır. *key* argümanı, bir tablodaki kayıtları "
+"sıralamak için kullanılan alanı çıkarmaya yarayabilir::"
 
 #: library/bisect.rst:207
 msgid ""
@@ -298,6 +377,9 @@ msgid ""
 "If the key function is expensive, it is possible to avoid repeated function "
 "calls by searching a list of precomputed keys to find the index of a record::"
 msgstr ""
+"Anahtar fonksiyonu maliyetliyse, bir kaydın dizinini bulmak için önceden "
+"hesaplanmış anahtarlardan oluşan bir listeyi arayarak yinelenen fonksiyon "
+"çağrılarından kaçınmak mümkündür::"
 
 #: library/bisect.rst:240
 msgid ""
