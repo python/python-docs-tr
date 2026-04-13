@@ -18,11 +18,11 @@ msgstr ""
 
 #: howto/argparse.rst:5
 msgid "Argparse Tutorial"
-msgstr ""
+msgstr "Argparse Öğreticisi"
 
 #: howto/argparse.rst:0
 msgid "author"
-msgstr ""
+msgstr "yazar"
 
 #: howto/argparse.rst:7
 msgid "Tshepang Mbambo"
@@ -33,6 +33,8 @@ msgid ""
 "This tutorial is intended to be a gentle introduction to :mod:`argparse`, "
 "the recommended command-line parsing module in the Python standard library."
 msgstr ""
+"Bu öğretici, Python standart kütüphanesinde önerilen komut satırı ayrıştırma "
+"modülü olan :mod:`argparse` modülüne nazik bir giriş niteliğindedir."
 
 #: howto/argparse.rst:16
 msgid ""
@@ -41,16 +43,23 @@ msgid ""
 "`optparse`. Note also that :mod:`argparse` is based on :mod:`optparse`, and "
 "therefore very similar in terms of usage."
 msgstr ""
+"Aynı görevi yerine getiren iki modül daha vardır: :mod:`getopt` "
+"(C dilindeki ``getopt()`` fonksiyonunun karşılığı) ve kullanımdan "
+"kaldırılmış :mod:`optparse`. Ayrıca :mod:`argparse` modülünün :mod:`optparse` "
+"temel alınarak geliştirildiğini ve bu nedenle kullanım açısından çok benzer "
+"olduğunu unutmayın."
 
 #: howto/argparse.rst:24
 msgid "Concepts"
-msgstr ""
+msgstr "Kavramlar"
 
 #: howto/argparse.rst:26
 msgid ""
 "Let's show the sort of functionality that we are going to explore in this "
 "introductory tutorial by making use of the :command:`ls` command:"
 msgstr ""
+"Bu giriş öğreticisinde keşfedeceğimiz işlevselliği :command:`ls` komutunu "
+"kullanarak gösterelim:"
 
 #: howto/argparse.rst:29
 msgid ""
@@ -74,13 +83,15 @@ msgstr ""
 
 #: howto/argparse.rst:48
 msgid "A few concepts we can learn from the four commands:"
-msgstr ""
+msgstr "Bu dört komuttan öğrenebileceğimiz birkaç kavram:"
 
 #: howto/argparse.rst:50
 msgid ""
 "The :command:`ls` command is useful when run without any options at all. It "
 "defaults to displaying the contents of the current directory."
 msgstr ""
+":command:`ls` komutu hiçbir seçenek olmadan çalıştırıldığında bile "
+"kullanışlıdır. Varsayılan olarak geçerli dizinin içeriğini görüntüler."
 
 #: howto/argparse.rst:53
 msgid ""
@@ -93,6 +104,14 @@ msgid ""
 "position is *what you want copied,* and the second position is *where you "
 "want it copied to*."
 msgstr ""
+"Varsayılan olarak sağladığının ötesinde bir şey istiyorsak, programa biraz "
+"daha bilgi veririz. Bu durumda, farklı bir dizini, ``pypy`` dizinini "
+"görüntülemesini istiyoruz. Yaptığımız şey konumsal argüman olarak bilinen "
+"şeyi belirtmektir. Bu ismi almasının nedeni, programın değerle ne yapacağını "
+"yalnızca komut satırında göründüğü konuma göre bilmesidir. Bu kavram "
+":command:`cp` gibi bir komut için daha geçerlidir; en temel kullanımı "
+"``cp SRC DEST`` şeklindedir. İlk konum *kopyalamak istediğiniz şey,* "
+"ikinci konum ise *kopyalamak istediğiniz yerdir*."
 
 #: howto/argparse.rst:62
 msgid ""
@@ -100,6 +119,10 @@ msgid ""
 "display more info for each file instead of just showing the file names. The "
 "``-l`` in that case is known as an optional argument."
 msgstr ""
+"Şimdi, programın davranışını değiştirmek istediğimizi varsayalım. "
+"Örneğimizde, yalnızca dosya adlarını göstermek yerine her dosya için daha "
+"fazla bilgi görüntülüyoruz. Bu durumda ``-l``, isteğe bağlı argüman olarak "
+"bilinir."
 
 #: howto/argparse.rst:66
 msgid ""
@@ -107,14 +130,17 @@ msgid ""
 "across a program you have never used before, and can figure out how it works "
 "simply by reading its help text."
 msgstr ""
+"Bu, yardım metninin bir parçasıdır. Daha önce hiç kullanmadığınız bir "
+"programla karşılaşabilmeniz ve yardım metnini okuyarak nasıl çalıştığını "
+"anlayabilmeniz açısından çok kullanışlıdır."
 
 #: howto/argparse.rst:72
 msgid "The basics"
-msgstr ""
+msgstr "Temel bilgiler"
 
 #: howto/argparse.rst:74
 msgid "Let us start with a very simple example which does (almost) nothing::"
-msgstr ""
+msgstr "(Neredeyse) hiçbir şey yapmayan çok basit bir örnekle başlayalım::"
 
 #: howto/argparse.rst:76
 msgid ""
@@ -125,7 +151,7 @@ msgstr ""
 
 #: howto/argparse.rst:188 howto/argparse.rst:209
 msgid "Following is a result of running the code:"
-msgstr ""
+msgstr "Kodun çalıştırılmasının sonucu aşağıdadır:"
 
 #: howto/argparse.rst:82
 msgid ""
@@ -145,19 +171,23 @@ msgstr ""
 
 #: howto/argparse.rst:254 howto/argparse.rst:298
 msgid "Here is what is happening:"
-msgstr ""
+msgstr "Neler olduğuna bakalım:"
 
 #: howto/argparse.rst:99
 msgid ""
 "Running the script without any options results in nothing displayed to "
 "stdout. Not so useful."
 msgstr ""
+"Betiği herhangi bir seçenek olmadan çalıştırmak stdout'a hiçbir şey "
+"yazdırmaz. Çok kullanışlı değil."
 
 #: howto/argparse.rst:102
 msgid ""
 "The second one starts to display the usefulness of the :mod:`argparse` "
 "module. We have done almost nothing, but already we get a nice help message."
 msgstr ""
+"İkincisi :mod:`argparse` modülünün kullanışlılığını göstermeye başlıyor. "
+"Neredeyse hiçbir şey yapmadık, ama zaten güzel bir yardım mesajı alıyoruz."
 
 #: howto/argparse.rst:105
 msgid ""
@@ -166,14 +196,18 @@ msgid ""
 "else results in an error. But even then, we do get a useful usage message, "
 "also for free."
 msgstr ""
+"``-h`` olarak da kısaltılabilen ``--help`` seçeneği, ücretsiz olarak "
+"aldığımız tek seçenektir (yani belirtmeye gerek yoktur). Başka herhangi bir "
+"şey belirtmek bir hata ile sonuçlanır. Ancak o zaman bile, yine ücretsiz "
+"olarak kullanışlı bir kullanım mesajı alırız."
 
 #: howto/argparse.rst:112
 msgid "Introducing Positional arguments"
-msgstr ""
+msgstr "Konumsal argümanların tanıtılması"
 
 #: howto/argparse.rst:114
 msgid "An example::"
-msgstr ""
+msgstr "Bir örnek::"
 
 #: howto/argparse.rst:116
 msgid ""
@@ -186,7 +220,7 @@ msgstr ""
 
 #: howto/argparse.rst:122
 msgid "And running the code:"
-msgstr ""
+msgstr "Ve kodu çalıştırdığımızda:"
 
 #: howto/argparse.rst:124
 msgid ""
@@ -207,7 +241,7 @@ msgstr ""
 
 #: howto/argparse.rst:140
 msgid "Here is what's happening:"
-msgstr ""
+msgstr "Neler oluyor:"
 
 #: howto/argparse.rst:142
 msgid ""
@@ -216,16 +250,21 @@ msgid ""
 "accept. In this case, I've named it ``echo`` so that it's in line with its "
 "function."
 msgstr ""
+"Programın hangi komut satırı seçeneklerini kabul edeceğini belirtmek için "
+"kullandığımız :meth:`~ArgumentParser.add_argument` metodunu ekledik. Bu "
+"durumda, işleviyle uyumlu olması için ``echo`` olarak adlandırdım."
 
 #: howto/argparse.rst:146
 msgid "Calling our program now requires us to specify an option."
-msgstr ""
+msgstr "Programımızı çağırmak artık bir seçenek belirtmemizi gerektiriyor."
 
 #: howto/argparse.rst:148
 msgid ""
 "The :meth:`~ArgumentParser.parse_args` method actually returns some data "
 "from the options specified, in this case, ``echo``."
 msgstr ""
+":meth:`~ArgumentParser.parse_args` metodu, belirtilen seçeneklerden bazı "
+"verileri döndürür, bu durumda ``echo``."
 
 #: howto/argparse.rst:151
 msgid ""
@@ -234,6 +273,10 @@ msgid ""
 "also notice that its name matches the string argument given to the method, "
 "``echo``."
 msgstr ""
+"Değişken, :mod:`argparse` modülünün ücretsiz olarak gerçekleştirdiği bir tür "
+"'sihir'dir (yani değerin hangi değişkende saklanacağını belirtmeye gerek "
+"yoktur). Ayrıca adının metoda verilen dize argümanı olan ``echo`` ile "
+"eşleştiğini fark edeceksiniz."
 
 #: howto/argparse.rst:156
 msgid ""
@@ -243,6 +286,10 @@ msgid ""
 "than by guessing or by reading the source code. So, let's make it a bit more "
 "useful::"
 msgstr ""
+"Ancak yardım görüntüsü güzel görünse de şu anda olabileceği kadar yardımcı "
+"olmadığını unutmayın. Örneğin, ``echo`` ifadesini konumsal argüman olarak "
+"aldığımızı görüyoruz, ancak tahmin etmek veya kaynak kodu okumak dışında ne "
+"yaptığını bilmiyoruz. Bu yüzden, onu biraz daha kullanışlı yapalım::"
 
 #: howto/argparse.rst:161
 msgid ""
@@ -255,7 +302,7 @@ msgstr ""
 
 #: howto/argparse.rst:167
 msgid "And we get:"
-msgstr ""
+msgstr "Ve şunu elde ederiz:"
 
 #: howto/argparse.rst:169
 msgid ""
@@ -271,7 +318,7 @@ msgstr ""
 
 #: howto/argparse.rst:180
 msgid "Now, how about doing something even more useful::"
-msgstr ""
+msgstr "Şimdi, daha da kullanışlı bir şey yapmaya ne dersiniz::"
 
 #: howto/argparse.rst:182
 msgid ""
@@ -298,6 +345,10 @@ msgid ""
 "give it as strings, unless we tell it otherwise. So, let's tell :mod:"
 "`argparse` to treat that input as an integer::"
 msgstr ""
+"Bu pek iyi gitmedi. Bunun nedeni, aksini söylemedikçe :mod:`argparse` "
+"modülünün kendisine verdiğimiz seçenekleri dize olarak ele almasıdır. "
+"O halde :mod:`argparse` modülüne bu girdiyi bir tamsayı olarak ele almasını "
+"söyleyelim::"
 
 #: howto/argparse.rst:202
 msgid ""
@@ -324,16 +375,20 @@ msgid ""
 "That went well. The program now even helpfully quits on bad illegal input "
 "before proceeding."
 msgstr ""
+"Bu iyi gitti. Program artık devam etmeden önce geçersiz girdilerde yardımcı "
+"bir şekilde çıkış yapıyor."
 
 #: howto/argparse.rst:224
 msgid "Introducing Optional arguments"
-msgstr ""
+msgstr "İsteğe bağlı argümanların tanıtılması"
 
 #: howto/argparse.rst:226
 msgid ""
 "So far we have been playing with positional arguments. Let us have a look on "
 "how to add optional ones::"
 msgstr ""
+"Şimdiye kadar konumsal argümanlarla çalıştık. Şimdi isteğe bağlı "
+"argümanların nasıl ekleneceğine bakalım::"
 
 #: howto/argparse.rst:229
 msgid ""
@@ -347,7 +402,7 @@ msgstr ""
 
 #: howto/argparse.rst:282 howto/argparse.rst:432
 msgid "And the output:"
-msgstr ""
+msgstr "Ve çıktı:"
 
 #: howto/argparse.rst:238
 msgid ""
@@ -371,6 +426,8 @@ msgid ""
 "The program is written so as to display something when ``--verbosity`` is "
 "specified and display nothing when not."
 msgstr ""
+"Program, ``--verbosity`` belirtildiğinde bir şey görüntüleyecek ve "
+"belirtilmediğinde hiçbir şey görüntülemeyecek şekilde yazılmıştır."
 
 #: howto/argparse.rst:259
 msgid ""
@@ -380,16 +437,23 @@ msgid ""
 "``None`` as a value, which is the reason it fails the truth test of the :"
 "keyword:`if` statement."
 msgstr ""
+"Seçeneğin gerçekten isteğe bağlı olduğunu göstermek için, program onsuz "
+"çalıştırıldığında hata oluşmaz. Varsayılan olarak, isteğe bağlı bir "
+"argüman kullanılmazsa, ilgili değişkene, bu durumda ``args.verbosity`` "
+"değişkenine, değer olarak ``None`` atanır; bu da :keyword:`if` ifadesinin "
+"doğruluk testini geçememesinin nedenidir."
 
 #: howto/argparse.rst:265
 msgid "The help message is a bit different."
-msgstr ""
+msgstr "Yardım mesajı biraz farklıdır."
 
 #: howto/argparse.rst:267
 msgid ""
 "When using the ``--verbosity`` option, one must also specify some value, any "
 "value."
 msgstr ""
+"``--verbosity`` seçeneğini kullanırken, bir değer de belirtmek "
+"gerekir, herhangi bir değer."
 
 #: howto/argparse.rst:270
 msgid ""
@@ -397,6 +461,9 @@ msgid ""
 "for our simple program, only two values are actually useful, ``True`` or "
 "``False``. Let's modify the code accordingly::"
 msgstr ""
+"Yukarıdaki örnek ``--verbosity`` için rastgele tamsayı değerlerini kabul "
+"eder, ancak basit programımız için yalnızca iki değer gerçekten kullanışlıdır: "
+"``True`` veya ``False``. Kodu buna göre değiştirelim::"
 
 #: howto/argparse.rst:274
 msgid ""
@@ -432,20 +499,28 @@ msgid ""
 "This means that, if the option is specified, assign the value ``True`` to "
 "``args.verbose``. Not specifying it implies ``False``."
 msgstr ""
+"Seçenek artık bir değer gerektiren bir şeyden ziyade bir flag niteliğindedir. "
+"Bu fikre uyması için seçeneğin adını bile değiştirdik. Artık yeni bir "
+"anahtar kelime olan ``action`` belirttiğimize ve ona ``\"store_true\"`` "
+"değerini verdiğimize dikkat edin. Bu, seçenek belirtilirse ``args.verbose`` "
+"değişkenine ``True`` değerinin atanması anlamına gelir. Belirtilmemesi "
+"``False`` anlamına gelir."
 
 #: howto/argparse.rst:307
 msgid ""
 "It complains when you specify a value, in true spirit of what flags actually "
 "are."
 msgstr ""
+"Flag'lerin gerçek doğasına uygun olarak, bir değer belirttiğinizde hata "
+"verir."
 
 #: howto/argparse.rst:310
 msgid "Notice the different help text."
-msgstr ""
+msgstr "Farklı yardım metnine dikkat edin."
 
 #: howto/argparse.rst:314
 msgid "Short options"
-msgstr ""
+msgstr "Kısa seçenekler"
 
 #: howto/argparse.rst:316
 msgid ""
@@ -453,6 +528,8 @@ msgid ""
 "yet touched on the topic of short versions of the options. It's quite "
 "simple::"
 msgstr ""
+"Komut satırı kullanımına aşinaysanız, seçeneklerin kısa sürümlerinden henüz "
+"bahsetmediğimi fark edeceksiniz. Oldukça basittir::"
 
 #: howto/argparse.rst:320
 msgid ""
@@ -468,7 +545,7 @@ msgstr ""
 
 #: howto/argparse.rst:328
 msgid "And here goes:"
-msgstr ""
+msgstr "Ve işte sonuç:"
 
 #: howto/argparse.rst:330
 msgid ""
@@ -484,15 +561,15 @@ msgstr ""
 
 #: howto/argparse.rst:341
 msgid "Note that the new ability is also reflected in the help text."
-msgstr ""
+msgstr "Yeni özelliğin yardım metnine de yansıdığına dikkat edin."
 
 #: howto/argparse.rst:345
 msgid "Combining Positional and Optional arguments"
-msgstr ""
+msgstr "Konumsal ve isteğe bağlı argümanların birleştirilmesi"
 
 #: howto/argparse.rst:347
 msgid "Our program keeps growing in complexity::"
-msgstr ""
+msgstr "Programımız karmaşıklık olarak büyümeye devam ediyor::"
 
 #: howto/argparse.rst:349
 msgid ""
@@ -512,7 +589,7 @@ msgstr ""
 
 #: howto/argparse.rst:362
 msgid "And now the output:"
-msgstr ""
+msgstr "Ve şimdi çıktı:"
 
 #: howto/argparse.rst:364
 msgid ""
@@ -529,17 +606,19 @@ msgstr ""
 
 #: howto/argparse.rst:376
 msgid "We've brought back a positional argument, hence the complaint."
-msgstr ""
+msgstr "Konumsal argümanı geri getirdik, bu nedenle hata mesajı alıyoruz."
 
 #: howto/argparse.rst:378
 msgid "Note that the order does not matter."
-msgstr ""
+msgstr "Sıralamanın önemli olmadığına dikkat edin."
 
 #: howto/argparse.rst:380
 msgid ""
 "How about we give this program of ours back the ability to have multiple "
 "verbosity values, and actually get to use them::"
 msgstr ""
+"Programımıza birden fazla ayrıntı düzeyi değerine sahip olma yeteneğini "
+"geri versek ve bunları gerçekten kullansak nasıl olur::"
 
 #: howto/argparse.rst:383
 msgid ""
@@ -580,6 +659,9 @@ msgid ""
 "Let's fix it by restricting the values the ``--verbosity`` option can "
 "accept::"
 msgstr ""
+"Sonuncusu hariç hepsi iyi görünüyor; sonuncusu programımızdaki bir hatayı "
+"ortaya çıkarıyor. ``--verbosity`` seçeneğinin kabul edebileceği değerleri "
+"kısıtlayarak bunu düzeltelim::"
 
 #: howto/argparse.rst:417
 msgid ""
@@ -622,6 +704,8 @@ msgid ""
 "Note that the change also reflects both in the error message as well as the "
 "help string."
 msgstr ""
+"Değişikliğin hem hata mesajına hem de yardım metnine yansıdığına dikkat "
+"edin."
 
 #: howto/argparse.rst:453
 msgid ""
@@ -629,6 +713,10 @@ msgid ""
 "pretty common. It also matches the way the CPython executable handles its "
 "own verbosity argument (check the output of ``python --help``)::"
 msgstr ""
+"Şimdi, ayrıntı düzeyiyle oynamak için oldukça yaygın olan farklı bir "
+"yaklaşım kullanalım. Bu aynı zamanda CPython çalıştırılabilir dosyasının "
+"kendi ayrıntı düzeyi argümanını ele alma biçimiyle de eşleşir "
+"(``python --help`` çıktısına bakın)::"
 
 #: howto/argparse.rst:457
 msgid ""
@@ -653,6 +741,8 @@ msgid ""
 "We have introduced another action, \"count\", to count the number of "
 "occurrences of specific options."
 msgstr ""
+"Belirli seçeneklerin kaç kez kullanıldığını saymak için başka bir eylem olan "
+"\"count\" tanıttık."
 
 #: howto/argparse.rst:476
 msgid ""
@@ -685,28 +775,36 @@ msgid ""
 "Yes, it's now more of a flag (similar to ``action=\"store_true\"``) in the "
 "previous version of our script. That should explain the complaint."
 msgstr ""
+"Evet, betiğimizin önceki sürümünde artık daha çok bir flag "
+"(``action=\"store_true\"`` ile benzer). Bu, hata mesajını açıklamalıdır."
 
 #: howto/argparse.rst:504
 msgid "It also behaves similar to \"store_true\" action."
-msgstr ""
+msgstr "Ayrıca \"store_true\" eylemiyle benzer şekilde davranır."
 
 #: howto/argparse.rst:506
 msgid ""
 "Now here's a demonstration of what the \"count\" action gives. You've "
 "probably seen this sort of usage before."
 msgstr ""
+"Şimdi \"count\" eyleminin ne sağladığının bir gösterimi. Bu tür bir "
+"kullanımı daha önce görmüş olabilirsiniz."
 
 #: howto/argparse.rst:509
 msgid ""
 "And if you don't specify the ``-v`` flag, that flag is considered to have "
 "``None`` value."
 msgstr ""
+"Ve ``-v`` flag'ini belirtmezseniz, bu flag ``None`` değerine sahip kabul "
+"edilir."
 
 #: howto/argparse.rst:512
 msgid ""
 "As should be expected, specifying the long form of the flag, we should get "
 "the same output."
 msgstr ""
+"Beklendiği gibi, flag'in uzun biçimini belirttiğimizde aynı çıktıyı "
+"almalıyız."
 
 #: howto/argparse.rst:515
 msgid ""
@@ -714,14 +812,18 @@ msgid ""
 "has acquired, but that can always be fixed by improving the documentation "
 "for our script (e.g. via the ``help`` keyword argument)."
 msgstr ""
+"Ne yazık ki, yardım çıktımız betiğimizin kazandığı yeni yetenek hakkında "
+"çok bilgilendirici değil, ancak bu her zaman betiğimizin belgelendirmesini "
+"iyileştirerek düzeltilebilir (örneğin ``help`` anahtar kelime argümanı "
+"aracılığıyla)."
 
 #: howto/argparse.rst:519
 msgid "That last output exposes a bug in our program."
-msgstr ""
+msgstr "Son çıktı programımızdaki bir hatayı ortaya çıkarıyor."
 
 #: howto/argparse.rst:522
 msgid "Let's fix::"
-msgstr ""
+msgstr "Düzeltelim::"
 
 #: howto/argparse.rst:524
 msgid ""
@@ -745,7 +847,7 @@ msgstr ""
 
 #: howto/argparse.rst:541
 msgid "And this is what it gives:"
-msgstr ""
+msgstr "Ve sonuç şudur:"
 
 #: howto/argparse.rst:543
 msgid ""
@@ -765,14 +867,16 @@ msgid ""
 "First output went well, and fixes the bug we had before. That is, we want "
 "any value >= 2 to be as verbose as possible."
 msgstr ""
+"İlk çıktı iyi gitti ve daha önceki hatayı düzeltiyor. Yani, >= 2 olan "
+"herhangi bir değerin mümkün olduğunca ayrıntılı olmasını istiyoruz."
 
 #: howto/argparse.rst:559
 msgid "Third output not so good."
-msgstr ""
+msgstr "Üçüncü çıktı pek iyi değil."
 
 #: howto/argparse.rst:561
 msgid "Let's fix that bug::"
-msgstr ""
+msgstr "Bu hatayı düzeltelim::"
 
 #: howto/argparse.rst:563
 msgid ""
@@ -800,10 +904,15 @@ msgid ""
 "value, and that cannot be compared to an int value (hence the :exc:"
 "`TypeError` exception)."
 msgstr ""
+"Bir başka anahtar kelimeyi daha tanıttık: ``default``. Diğer int "
+"değerleriyle karşılaştırılabilir olması için ``0`` olarak ayarladık. "
+"Varsayılan olarak, isteğe bağlı bir argüman belirtilmezse ``None`` değerini "
+"aldığını ve bunun bir int değeriyle karşılaştırılamayacağını unutmayın "
+"(bu nedenle :exc:`TypeError` istisnası oluşur)."
 
 #: howto/argparse.rst:585
 msgid "And:"
-msgstr ""
+msgstr "Ve:"
 
 #: howto/argparse.rst:587
 msgid ""
@@ -817,16 +926,21 @@ msgid ""
 "scratched the surface. The :mod:`argparse` module is very powerful, and "
 "we'll explore a bit more of it before we end this tutorial."
 msgstr ""
+"Şimdiye kadar öğrendiklerimizle oldukça ileri gidebilirsiniz ve henüz sadece "
+"yüzeyi kazıdık. :mod:`argparse` modülü çok güçlüdür ve bu öğreticiyi "
+"bitirmeden önce biraz daha keşfedeceğiz."
 
 #: howto/argparse.rst:599
 msgid "Getting a little more advanced"
-msgstr ""
+msgstr "Biraz daha ileri düzey"
 
 #: howto/argparse.rst:601
 msgid ""
 "What if we wanted to expand our tiny program to perform other powers, not "
 "just squares::"
 msgstr ""
+"Küçük programımızı sadece kareleri değil, diğer kuvvetleri de hesaplayacak "
+"şekilde genişletmek istersek ne olur::"
 
 #: howto/argparse.rst:604
 msgid ""
@@ -847,7 +961,7 @@ msgstr ""
 
 #: howto/argparse.rst:656 howto/argparse.rst:872
 msgid "Output:"
-msgstr ""
+msgstr "Çıktı:"
 
 #: howto/argparse.rst:620
 msgid ""
@@ -874,6 +988,9 @@ msgid ""
 "that gets displayed. The following example instead uses verbosity level to "
 "display *more* text instead::"
 msgstr ""
+"Şimdiye kadar ayrıntı düzeyini görüntülenen metni *değiştirmek* için "
+"kullandığımıza dikkat edin. Aşağıdaki örnek bunun yerine daha *fazla* metin "
+"görüntülemek için ayrıntı düzeyini kullanır::"
 
 #: howto/argparse.rst:643
 msgid ""
@@ -904,7 +1021,7 @@ msgstr ""
 
 #: howto/argparse.rst:672
 msgid "Specifying ambiguous arguments"
-msgstr ""
+msgstr "Belirsiz argümanların belirtilmesi"
 
 #: howto/argparse.rst:674
 msgid ""
@@ -912,6 +1029,9 @@ msgid ""
 "an argument, ``--`` can be used to tell :meth:`~ArgumentParser.parse_args` "
 "that everything after that is a positional argument::"
 msgstr ""
+"Bir argümanın konumsal mı yoksa bir seçenek için mi olduğuna karar vermede "
+"belirsizlik olduğunda, ``--`` kullanılarak :meth:`~ArgumentParser.parse_args` "
+"metoduna bundan sonraki her şeyin konumsal argüman olduğu söylenebilir::"
 
 #: howto/argparse.rst:678
 msgid ""
@@ -937,7 +1057,7 @@ msgstr ""
 
 #: howto/argparse.rst:699
 msgid "Conflicting options"
-msgstr ""
+msgstr "Çakışan seçenekler"
 
 #: howto/argparse.rst:701
 msgid ""
@@ -948,6 +1068,12 @@ msgid ""
 "program so that the new functionality makes more sense: we'll introduce the "
 "``--quiet`` option, which will be the opposite of the ``--verbose`` one::"
 msgstr ""
+"Şimdiye kadar bir :class:`argparse.ArgumentParser` örneğinin iki metoduyla "
+"çalıştık. Üçüncüsünü tanıtalım: :meth:`~ArgumentParser."
+"add_mutually_exclusive_group`. Bu metod, birbiriyle çakışan seçenekler "
+"belirtmemizi sağlar. Programın geri kalanını da yeni işlevselliğin daha "
+"anlamlı olması için değiştirelim: ``--verbose`` seçeneğinin zıttı olan "
+"``--quiet`` seçeneğini tanıtacağız::"
 
 #: howto/argparse.rst:709
 msgid ""
@@ -975,6 +1101,8 @@ msgid ""
 "Our program is now simpler, and we've lost some functionality for the sake "
 "of demonstration. Anyways, here's the output:"
 msgstr ""
+"Programımız artık daha basit ve gösterim amacıyla bazı işlevleri kaybettik. "
+"Her neyse, işte çıktı:"
 
 #: howto/argparse.rst:730
 msgid ""
@@ -998,12 +1126,17 @@ msgid ""
 "the sort of flexibility you get, i.e. mixing long form options with short "
 "form ones."
 msgstr ""
+"Bunu takip etmek kolay olmalı. Son çıktıyı, elde ettiğiniz esnekliği "
+"görebilmeniz için ekledim; yani uzun biçimli seçenekleri kısa biçimli "
+"olanlarla karıştırabilirsiniz."
 
 #: howto/argparse.rst:749
 msgid ""
 "Before we conclude, you probably want to tell your users the main purpose of "
 "your program, just in case they don't know::"
 msgstr ""
+"Bitirmeden önce, kullanıcılarınıza programınızın ana amacını söylemek "
+"isteyebilirsiniz, bilmemeleri ihtimaline karşı::"
 
 #: howto/argparse.rst:752
 msgid ""
@@ -1033,6 +1166,9 @@ msgid ""
 "tells us that we can either use ``-v`` or ``-q``, but not both at the same "
 "time:"
 msgstr ""
+"Kullanım metnindeki küçük farka dikkat edin. ``[-v | -q]`` ifadesine dikkat "
+"edin; bu bize ``-v`` veya ``-q`` kullanabileceğimizi, ancak ikisini aynı "
+"anda kullanamayacağımızı söyler:"
 
 #: howto/argparse.rst:801
 msgid ""
@@ -1053,7 +1189,7 @@ msgstr ""
 
 #: howto/argparse.rst:792
 msgid "How to translate the argparse output"
-msgstr ""
+msgstr "argparse çıktısı nasıl çevrilir"
 
 #: howto/argparse.rst:794
 msgid ""
@@ -1062,16 +1198,22 @@ msgid ""
 "allows applications to easily localize messages produced by :mod:`argparse`. "
 "See also :ref:`i18n-howto`."
 msgstr ""
+":mod:`argparse` modülünün yardım metni ve hata mesajları gibi çıktılarının "
+"tümü, :mod:`gettext` modülü kullanılarak çevrilebilir hale getirilmiştir. "
+"Bu, uygulamaların :mod:`argparse` tarafından üretilen mesajları kolayca "
+"yerelleştirmesini sağlar. Ayrıca :ref:`i18n-howto` belgesine bakın."
 
 #: howto/argparse.rst:799
 msgid "For instance, in this :mod:`argparse` output:"
-msgstr ""
+msgstr "Örneğin, bu :mod:`argparse` çıktısında:"
 
 #: howto/argparse.rst:817
 msgid ""
 "The strings ``usage:``, ``positional arguments:``, ``options:`` and ``show "
 "this help message and exit`` are all translatable."
 msgstr ""
+"``usage:``, ``positional arguments:``, ``options:`` ve ``show "
+"this help message and exit`` dizeleri çevrilebilir niteliktedir."
 
 #: howto/argparse.rst:820
 msgid ""
@@ -1079,6 +1221,9 @@ msgid ""
 "po`` file. For example, using `Babel <https://babel.pocoo.org/>`__, run this "
 "command:"
 msgstr ""
+"Bu dizeleri çevirmek için önce bir ``.po`` dosyasına çıkarılmaları gerekir. "
+"Örneğin, `Babel <https://babel.pocoo.org/>`__ kullanarak şu komutu "
+"çalıştırın:"
 
 #: howto/argparse.rst:824
 msgid "$ pybabel extract -o messages.po /usr/lib/python3.12/argparse.py"
@@ -1090,12 +1235,17 @@ msgid ""
 "module and output them into a file named ``messages.po``. This command "
 "assumes that your Python installation is in ``/usr/lib``."
 msgstr ""
+"Bu komut, :mod:`argparse` modülündeki tüm çevrilebilir dizeleri çıkaracak "
+"ve ``messages.po`` adlı bir dosyaya yazacaktır. Bu komut, Python "
+"kurulumunuzun ``/usr/lib`` dizininde olduğunu varsayar."
 
 #: howto/argparse.rst:832
 msgid ""
 "You can find out the location of the :mod:`argparse` module on your system "
 "using this script::"
 msgstr ""
+"Sisteminizde :mod:`argparse` modülünün konumunu şu betik ile "
+"öğrenebilirsiniz::"
 
 #: howto/argparse.rst:835
 msgid ""
@@ -1109,16 +1259,20 @@ msgid ""
 "are installed using :mod:`gettext`, :mod:`argparse` will be able to display "
 "the translated messages."
 msgstr ""
+"``.po`` dosyasındaki mesajlar çevrilip çeviriler :mod:`gettext` kullanılarak "
+"kurulduktan sonra, :mod:`argparse` çevrilmiş mesajları görüntüleyebilecektir."
 
 #: howto/argparse.rst:842
 msgid ""
 "To translate your own strings in the :mod:`argparse` output, use :mod:"
 "`gettext`."
 msgstr ""
+":mod:`argparse` çıktısındaki kendi dizelerinizi çevirmek için :mod:`gettext` "
+"kullanın."
 
 #: howto/argparse.rst:845
 msgid "Custom type converters"
-msgstr ""
+msgstr "Özel tür dönüştürücüler"
 
 #: howto/argparse.rst:847
 msgid ""
@@ -1127,6 +1281,11 @@ msgid ""
 "it's stored in the :class:`argparse.Namespace`. This can be useful when you "
 "need to pre-process the input before it is used in your program."
 msgstr ""
+":mod:`argparse` modülü, komut satırı argümanlarınız için özel tür "
+"dönüştürücüler belirtmenize olanak tanır. Bu, kullanıcı girdisini "
+":class:`argparse.Namespace` içinde saklanmadan önce değiştirmenizi sağlar. "
+"Girdiyi programınızda kullanılmadan önce ön işleme tabi tutmanız gerektiğinde "
+"bu yararlı olabilir."
 
 #: howto/argparse.rst:852
 msgid ""
@@ -1135,12 +1294,19 @@ msgid ""
 "However, if you need to handle more complex scenarios, you can use a custom "
 "action class with the **action** parameter instead."
 msgstr ""
+"Özel bir tür dönüştürücü kullanırken, tek bir dize argümanı (argüman "
+"değeri) alan ve dönüştürülmüş değeri döndüren herhangi bir çağrılabilir "
+"nesne kullanabilirsiniz. Ancak daha karmaşık senaryoları ele almanız "
+"gerekiyorsa, bunun yerine **action** parametresiyle özel bir eylem sınıfı "
+"kullanabilirsiniz."
 
 #: howto/argparse.rst:857
 msgid ""
 "For example, let's say you want to handle arguments with different prefixes "
 "and process them accordingly::"
 msgstr ""
+"Örneğin, farklı ön eklere sahip argümanları ele almak ve bunları buna göre "
+"işlemek istediğinizi varsayalım::"
 
 #: howto/argparse.rst:860
 msgid ""
@@ -1165,13 +1331,15 @@ msgstr ""
 
 #: howto/argparse.rst:879
 msgid "In this example, we:"
-msgstr ""
+msgstr "Bu örnekte:"
 
 #: howto/argparse.rst:881
 msgid ""
 "Created a parser with custom prefix characters using the ``prefix_chars`` "
 "parameter."
 msgstr ""
+"``prefix_chars`` parametresini kullanarak özel ön ek karakterlerine sahip "
+"bir parser oluşturduk."
 
 #: howto/argparse.rst:884
 msgid ""
@@ -1179,6 +1347,9 @@ msgid ""
 "to create custom type converters to store the value in a tuple with the "
 "prefix."
 msgstr ""
+"Değeri ön ek ile birlikte bir demet içinde saklamak için ``type`` "
+"parametresini kullanarak özel tür dönüştürücüler oluşturan ``-a`` ve ``+a`` "
+"olmak üzere iki argüman tanımladık."
 
 #: howto/argparse.rst:887
 msgid ""
@@ -1187,10 +1358,13 @@ msgid ""
 "using custom type converters, we were able to differentiate between the two "
 "arguments."
 msgstr ""
+"Özel tür dönüştürücüler olmadan, argümanlar ``-a`` ve ``+a`` ifadelerini "
+"aynı argüman olarak ele alacaktı ve bu istenmeyen bir durum olurdu. Özel "
+"tür dönüştürücüler kullanarak iki argümanı birbirinden ayırt edebildik."
 
 #: howto/argparse.rst:892
 msgid "Conclusion"
-msgstr ""
+msgstr "Sonuç"
 
 #: howto/argparse.rst:894
 msgid ""
@@ -1198,3 +1372,7 @@ msgid ""
 "quite detailed and thorough, and full of examples. Having gone through this "
 "tutorial, you should easily digest them without feeling overwhelmed."
 msgstr ""
+":mod:`argparse` modülü burada gösterilenden çok daha fazlasını sunar. "
+"Belgeleri oldukça ayrıntılı, kapsamlı ve örneklerle doludur. Bu öğreticiyi "
+"tamamladıktan sonra, bunları bunalmış hissetmeden kolayca sindirmeniz "
+"gerekir."
