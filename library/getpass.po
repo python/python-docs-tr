@@ -18,15 +18,15 @@ msgstr ""
 
 #: library/getpass.rst:2
 msgid ":mod:`!getpass` --- Portable password input"
-msgstr ""
+msgstr ":mod:`!getpass` --- Taşınabilir parola girişi"
 
 #: library/getpass.rst:11
 msgid "**Source code:** :source:`Lib/getpass.py`"
-msgstr ""
+msgstr "**Kaynak kodu:** :source:`Lib/getpass.py`"
 
 #: includes/wasm-notavail.rst:3
 msgid "Availability"
-msgstr ""
+msgstr "Kullanılabilirlik"
 
 #: includes/wasm-notavail.rst:5
 msgid ""
@@ -34,10 +34,13 @@ msgid ""
 "``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
 "more information."
 msgstr ""
+"Bu modül, WebAssembly platformlarında ``wasm32-emscripten`` ve "
+"``wasm32-wasi`` üzerinde çalışmaz veya kullanılamaz. Daha fazla bilgi için "
+":ref:`wasm-availability` bölümüne bakın."
 
 #: library/getpass.rst:17
 msgid "The :mod:`getpass` module provides two functions:"
-msgstr ""
+msgstr ":mod:`getpass` modülü iki fonksiyon sağlar:"
 
 #: library/getpass.rst:21
 msgid ""
@@ -48,6 +51,12 @@ msgid ""
 "dev/tty`) or if that is unavailable to ``sys.stderr`` (this argument is "
 "ignored on Windows)."
 msgstr ""
+"Kullanıcıdan ekrana yansıtmadan parola ister. Kullanıcıya varsayılan olarak "
+"``'Password: '`` olan *prompt* dizesi ile istem gösterilir. Unix'te, istem "
+"gerektiğinde replace hata işleyicisi kullanılarak dosya benzeri *stream* "
+"nesnesine yazılır. *stream* varsayılan olarak kontrol terminaline (:file:`/"
+"dev/tty`) veya bu kullanılamıyorsa ``sys.stderr``'e yönlendirilir (bu "
+"argüman Windows'ta yok sayılır)."
 
 #: library/getpass.rst:28
 msgid ""
@@ -55,20 +64,27 @@ msgid ""
 "message to *stream* and reading from ``sys.stdin`` and issuing a :exc:"
 "`GetPassWarning`."
 msgstr ""
+"Ekrana yansıtmasız giriş kullanılamıyorsa getpass(), *stream*'e bir uyarı "
+"mesajı yazdırarak ``sys.stdin``'den okumaya geri döner ve bir "
+":exc:`GetPassWarning` uyarısı verir."
 
 #: library/getpass.rst:33
 msgid ""
 "If you call getpass from within IDLE, the input may be done in the terminal "
 "you launched IDLE from rather than the idle window itself."
 msgstr ""
+"getpass'ı IDLE içinden çağırırsanız, giriş IDLE penceresinin kendisi yerine "
+"IDLE'ı başlattığınız terminalde yapılabilir."
 
 #: library/getpass.rst:38
 msgid "A :exc:`UserWarning` subclass issued when password input may be echoed."
 msgstr ""
+"Parola girişi ekrana yansıtılabilecek olduğunda verilen bir "
+":exc:`UserWarning` alt sınıfı."
 
 #: library/getpass.rst:43
 msgid "Return the \"login name\" of the user."
-msgstr ""
+msgstr "Kullanıcının \"oturum açma adını\" döndürür."
 
 #: library/getpass.rst:45
 msgid ""
@@ -78,7 +94,12 @@ msgid ""
 "the login name from the password database is returned on systems which "
 "support the :mod:`pwd` module, otherwise, an exception is raised."
 msgstr ""
+"Bu fonksiyon sırasıyla :envvar:`LOGNAME`, :envvar:`USER`, :envvar:`!LNAME` "
+"ve :envvar:`USERNAME` ortam değişkenlerini kontrol eder ve boş olmayan bir "
+"dizeye ayarlanmış ilk değişkenin değerini döndürür. Hiçbiri ayarlanmamışsa, "
+":mod:`pwd` modülünü destekleyen sistemlerde parola veritabanındaki oturum "
+"açma adı döndürülür; aksi takdirde bir istisna oluşturulur."
 
 #: library/getpass.rst:52
 msgid "In general, this function should be preferred over :func:`os.getlogin`."
-msgstr ""
+msgstr "Genel olarak bu fonksiyon :func:`os.getlogin` yerine tercih edilmelidir."

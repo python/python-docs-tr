@@ -18,23 +18,27 @@ msgstr ""
 
 #: library/constants.rst:4
 msgid "Built-in Constants"
-msgstr ""
+msgstr "Yerleşik Sabitler"
 
 #: library/constants.rst:6
 msgid "A small number of constants live in the built-in namespace.  They are:"
-msgstr ""
+msgstr "Az sayıda sabit, yerleşik isim alanında bulunur. Bunlar şunlardır:"
 
 #: library/constants.rst:10
 msgid ""
 "The false value of the :class:`bool` type. Assignments to ``False`` are "
 "illegal and raise a :exc:`SyntaxError`."
 msgstr ""
+":class:`bool` türünün yanlış (false) değeri. ``False``'a atama yapmak "
+"geçersizdir ve :exc:`SyntaxError` hatası oluşturur."
 
 #: library/constants.rst:16
 msgid ""
 "The true value of the :class:`bool` type. Assignments to ``True`` are "
 "illegal and raise a :exc:`SyntaxError`."
 msgstr ""
+":class:`bool` türünün doğru (true) değeri. ``True``'ya atama yapmak "
+"geçersizdir ve :exc:`SyntaxError` hatası oluşturur."
 
 #: library/constants.rst:22
 msgid ""
@@ -43,6 +47,10 @@ msgid ""
 "illegal and raise a :exc:`SyntaxError`. ``None`` is the sole instance of "
 "the :data:`~types.NoneType` type."
 msgstr ""
+"Bir değerin yokluğunu temsil etmek için sıkça kullanılan bir nesne; "
+"örneğin bir fonksiyona varsayılan argümanlar iletilmediğinde kullanılır. "
+"``None``'a atama yapmak geçersizdir ve :exc:`SyntaxError` hatası oluşturur. "
+"``None``, :data:`~types.NoneType` türünün tek örneğidir."
 
 #: library/constants.rst:30
 msgid ""
@@ -55,6 +63,14 @@ msgid ""
 "boolean context. :data:`!NotImplemented` is the sole instance of the :data:"
 "`types.NotImplementedType` type."
 msgstr ""
+"İkili özel metodlar (ör. :meth:`~object.__eq__`, :meth:`~object.__lt__`, "
+":meth:`~object.__add__`, :meth:`~object.__rsub__` vb.) tarafından, işlemin "
+"diğer tür için uygulanmadığını belirtmek amacıyla döndürülmesi gereken özel "
+"bir değer; aynı amaçla yerinde (in-place) ikili özel metodlar (ör. "
+":meth:`~object.__imul__`, :meth:`~object.__iand__` vb.) tarafından da "
+"döndürülebilir. Boolean bağlamında değerlendirilmemelidir. "
+":data:`!NotImplemented`, :data:`types.NotImplementedType` türünün tek "
+"örneğidir."
 
 #: library/constants.rst:40
 msgid ""
@@ -66,10 +82,17 @@ msgid ""
 "error message or the :data:`!NotImplemented` value being returned to Python "
 "code."
 msgstr ""
+"Bir ikili (veya yerinde) metod :data:`!NotImplemented` döndürdüğünde, "
+"yorumlayıcı diğer tür üzerinde yansıtılmış işlemi (veya operatöre bağlı "
+"olarak başka bir geri dönüş yöntemini) dener. Tüm denemeler "
+":data:`!NotImplemented` döndürürse, yorumlayıcı uygun bir istisna oluşturur. "
+":data:`!NotImplemented` değerinin yanlış döndürülmesi, yanıltıcı bir hata "
+"mesajına veya :data:`!NotImplemented` değerinin Python koduna döndürülmesine "
+"neden olur."
 
 #: library/constants.rst:47
 msgid "See :ref:`implementing-the-arithmetic-operations` for examples."
-msgstr ""
+msgstr "Örnekler için :ref:`implementing-the-arithmetic-operations` bölümüne bakın."
 
 #: library/constants.rst:51
 msgid ""
@@ -77,6 +100,9 @@ msgid ""
 "even though they have similar names and purposes. See :exc:"
 "`NotImplementedError` for details on when to use it."
 msgstr ""
+"``NotImplementedError`` ve :data:`!NotImplemented`, benzer adlara ve "
+"amaçlara sahip olmalarına rağmen birbirinin yerine kullanılamaz. Ne zaman "
+"kullanılacağına dair ayrıntılar için :exc:`NotImplementedError` bölümüne bakın."
 
 #: library/constants.rst:55
 msgid ""
@@ -84,6 +110,10 @@ msgid ""
 "it currently evaluates as true, it will emit a :exc:`DeprecationWarning`. It "
 "will raise a :exc:`TypeError` in a future version of Python."
 msgstr ""
+":data:`!NotImplemented` değerini boolean bağlamında değerlendirmek kullanımdan "
+"kaldırılmıştır. Şu anda true olarak değerlendirilse de bir "
+":exc:`DeprecationWarning` uyarısı verir. Python'un gelecekteki bir "
+"sürümünde :exc:`TypeError` hatası oluşturacaktır."
 
 #: library/constants.rst:64
 msgid ""
@@ -92,12 +122,18 @@ msgid ""
 "types. ``Ellipsis`` is the sole instance of the :data:`types.EllipsisType` "
 "type."
 msgstr ""
+"Üç nokta değişmez değeri \"``...``\" ile aynıdır. Çoğunlukla kullanıcı "
+"tanımlı kapsayıcı veri türleri için genişletilmiş dilimleme sözdizimi ile "
+"birlikte kullanılan özel bir değerdir. ``Ellipsis``, "
+":data:`types.EllipsisType` türünün tek örneğidir."
 
 #: library/constants.rst:71
 msgid ""
 "This constant is true if Python was not started with an :option:`-O` option. "
 "See also the :keyword:`assert` statement."
 msgstr ""
+"Python, :option:`-O` seçeneği ile başlatılmadıysa bu sabit true değerindedir. "
+"Ayrıca :keyword:`assert` deyimine de bakın."
 
 #: library/constants.rst:77
 msgid ""
@@ -105,10 +141,14 @@ msgid ""
 "cannot be reassigned (assignments to them, even as an attribute name, raise :"
 "exc:`SyntaxError`), so they can be considered \"true\" constants."
 msgstr ""
+":data:`None`, :data:`False`, :data:`True` ve :data:`__debug__` adlarına "
+"yeniden atama yapılamaz (bir nitelik adı olarak bile bunlara atama yapmak "
+":exc:`SyntaxError` hatası oluşturur), bu nedenle \"gerçek\" sabitler olarak "
+"kabul edilebilirler."
 
 #: library/constants.rst:85
 msgid "Constants added by the :mod:`site` module"
-msgstr ""
+msgstr ":mod:`site` modülü tarafından eklenen sabitler"
 
 #: library/constants.rst:87
 msgid ""
@@ -117,6 +157,10 @@ msgid ""
 "constants to the built-in namespace.  They are useful for the interactive "
 "interpreter shell and should not be used in programs."
 msgstr ""
+":mod:`site` modülü (komut satırında :option:`-S` seçeneği verilmedikçe "
+"başlangıçta otomatik olarak içe aktarılır) yerleşik isim alanına birkaç "
+"sabit ekler. Bunlar etkileşimli yorumlayıcı kabuğu için yararlıdır ve "
+"programlarda kullanılmamalıdır."
 
 #: library/constants.rst:95
 msgid ""
@@ -124,6 +168,9 @@ msgid ""
 "EOF) to exit\", and when called, raise :exc:`SystemExit` with the specified "
 "exit code."
 msgstr ""
+"Yazdırıldığında \"Çıkmak için quit() veya Ctrl-D (yani EOF) kullanın\" gibi "
+"bir mesaj yazdıran ve çağrıldığında belirtilen çıkış koduyla "
+":exc:`SystemExit` oluşturan nesneler."
 
 #: library/constants.rst:102
 msgid ""
@@ -131,12 +178,17 @@ msgid ""
 "help, or help(object) for help about object.\", and when called, acts as "
 "described :func:`elsewhere <help>`."
 msgstr ""
+"Yazdırıldığında \"Etkileşimli yardım için help(), bir nesne hakkında yardım "
+"için help(nesne) yazın.\" mesajını yazdıran ve çağrıldığında :func:`başka "
+"yerde <help>` açıklandığı gibi davranan nesne."
 
 #: library/constants.rst:109
 msgid ""
 "Objects that when printed or called, print the text of copyright or credits, "
 "respectively."
 msgstr ""
+"Yazdırıldığında veya çağrıldığında sırasıyla telif hakkı veya katkıda "
+"bulunanlar metnini yazdıran nesneler."
 
 #: library/constants.rst:114
 msgid ""
@@ -144,6 +196,9 @@ msgid ""
 "full license text\", and when called, displays the full license text in a "
 "pager-like fashion (one screen at a time)."
 msgstr ""
+"Yazdırıldığında \"Tam lisans metnini görmek için license() yazın\" mesajını "
+"yazdıran ve çağrıldığında tam lisans metnini sayfalayıcı benzeri bir biçimde "
+"(her seferinde bir ekran) görüntüleyen nesne."
 
 #: library/constants.rst:61
 msgid "..."
@@ -151,4 +206,4 @@ msgstr ""
 
 #: library/constants.rst:61
 msgid "ellipsis literal"
-msgstr ""
+msgstr "üç nokta değişmez değeri"
