@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-01 00:16+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2026-08-06 18:20+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -18,11 +18,11 @@ msgstr ""
 
 #: library/copyreg.rst:2
 msgid ":mod:`!copyreg` --- Register :mod:`!pickle` support functions"
-msgstr ""
+msgstr ":mod:`!copyreg` --- :mod:`!pickle` destek fonksiyonlarını kaydetme"
 
 #: library/copyreg.rst:7
 msgid "**Source code:** :source:`Lib/copyreg.py`"
-msgstr ""
+msgstr "**Kaynak kodu:** :source:`Lib/copyreg.py`"
 
 #: library/copyreg.rst:15
 msgid ""
@@ -32,12 +32,21 @@ msgid ""
 "configuration information about object constructors which are not classes. "
 "Such constructors may be factory functions or class instances."
 msgstr ""
+":mod:`copyreg` modülü, belirli nesneler pickle'lanırken kullanılan "
+"fonksiyonları tanımlamak için bir yol sunar.  :mod:`pickle` ve :mod:`copy` "
+"modülleri, bu nesneleri pickle'larken/kopyalarken bu fonksiyonları "
+"kullanır.  Modül, sınıf olmayan nesne kurucuları hakkında yapılandırma "
+"bilgisi sağlar. Bu tür kurucular fabrika fonksiyonları veya sınıf örnekleri "
+"olabilir."
 
 #: library/copyreg.rst:24
 msgid ""
 "Declares *object* to be a valid constructor.  If *object* is not callable "
 "(and hence not valid as a constructor), raises :exc:`TypeError`."
 msgstr ""
+"*object*'i geçerli bir kurucu olarak bildirir.  Eğer *object* çağrılabilir "
+"değilse (ve dolayısıyla kurucu olarak geçerli değilse), :exc:`TypeError` "
+"hatası ortaya çıkarır."
 
 #: library/copyreg.rst:30
 msgid ""
@@ -46,12 +55,19 @@ msgid ""
 "containing between two and six elements. See the :attr:`~pickle.Pickler."
 "dispatch_table` for more details on the interface of *function*."
 msgstr ""
+"*type* türündeki nesneler için *function*'ın bir \"reduction\" (indirgeme) "
+"fonksiyonu olarak kullanılması gerektiğini bildirir.  *function*, bir dize "
+"ya da iki ile altı arasında öğe içeren bir tuple döndürmelidir. "
+"*function*'ın arayüzü hakkında daha fazla ayrıntı için "
+":attr:`~pickle.Pickler.dispatch_table`'a bakın."
 
 #: library/copyreg.rst:35
 msgid ""
 "The *constructor_ob* parameter is a legacy feature and is now ignored, but "
 "if passed it must be a callable."
 msgstr ""
+"*constructor_ob* parametresi eski (legacy) bir özelliktir ve artık yok "
+"sayılır, ancak geçirilirse çağrılabilir olmalıdır."
 
 #: library/copyreg.rst:38
 msgid ""
@@ -59,25 +75,30 @@ msgid ""
 "object or subclass of :class:`pickle.Pickler` can also be used for declaring "
 "reduction functions."
 msgstr ""
+"Bir pickler nesnesinin veya :class:`pickle.Pickler` alt sınıfının "
+":attr:`~pickle.Pickler.dispatch_table` özniteliğinin de indirgeme "
+"(reduction) fonksiyonlarını bildirmek için kullanılabileceğini unutmayın."
 
 #: library/copyreg.rst:43
 msgid "Example"
-msgstr ""
+msgstr "Örnek"
 
 #: library/copyreg.rst:45
 msgid ""
 "The example below would like to show how to register a pickle function and "
 "how it will be used:"
 msgstr ""
+"Aşağıdaki örnek, bir pickle fonksiyonunun nasıl kaydedileceğini ve nasıl "
+"kullanılacağını göstermeyi amaçlar:"
 
 #: library/copyreg.rst:9
 msgid "module"
-msgstr ""
+msgstr "modül"
 
 #: library/copyreg.rst:9
 msgid "pickle"
-msgstr ""
+msgstr "pickle"
 
 #: library/copyreg.rst:9
 msgid "copy"
-msgstr ""
+msgstr "copy"
