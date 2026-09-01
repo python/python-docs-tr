@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-09-01 00:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -186,18 +186,25 @@ msgstr ""
 msgid "Return immediately if the sound driver is busy."
 msgstr ""
 
-#: library/winsound.rst:160
+#: library/winsound.rst:140
+msgid ""
+"The *sound* parameter is an application-specific alias in the registry. This "
+"flag can be combined with the :const:`SND_ALIAS` flag to specify an "
+"application-defined sound alias."
+msgstr ""
+
+#: library/winsound.rst:167
 msgid "Play the ``SystemDefault`` sound."
 msgstr ""
 
-#: library/winsound.rst:145
+#: library/winsound.rst:152
 msgid "Play the ``SystemExclamation`` sound."
 msgstr ""
 
-#: library/winsound.rst:150
+#: library/winsound.rst:157
 msgid "Play the ``SystemHand`` sound."
 msgstr ""
 
-#: library/winsound.rst:155
+#: library/winsound.rst:162
 msgid "Play the ``SystemQuestion`` sound."
 msgstr ""

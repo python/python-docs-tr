@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-09-01 00:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,6 +30,14 @@ msgid ""
 msgstr ""
 
 #: deprecations/pending-removal-in-3.15.rst:9
+msgid ":mod:`importlib`:"
+msgstr ""
+
+#: deprecations/pending-removal-in-3.15.rst:11
+msgid "``load_module()`` method: use ``exec_module()`` instead."
+msgstr ""
+
+#: deprecations/pending-removal-in-3.15.rst:13
 msgid ""
 ":class:`locale`: :func:`locale.getdefaultlocale` was deprecated in Python "
 "3.11 and originally planned for removal in Python 3.13 (:gh:`90817`), but "
@@ -38,21 +46,31 @@ msgid ""
 "by Hugo van Kemenade in :gh:`111187`.)"
 msgstr ""
 
-#: deprecations/pending-removal-in-3.15.rst:16
+#: deprecations/pending-removal-in-3.15.rst:20
 msgid ""
 ":mod:`pathlib`: :meth:`pathlib.PurePath.is_reserved` is deprecated and "
 "scheduled for removal in Python 3.15. From Python 3.13 onwards, use ``os."
 "path.isreserved`` to detect reserved paths on Windows."
 msgstr ""
 
-#: deprecations/pending-removal-in-3.15.rst:21
+#: deprecations/pending-removal-in-3.15.rst:25
 msgid ""
 ":mod:`platform`: :func:`~platform.java_ver` is deprecated and will be "
 "removed in 3.15. It was largely untested, had a confusing API, and was only "
 "useful for Jython support. (Contributed by Nikita Sobolev in :gh:`116349`.)"
 msgstr ""
 
-#: deprecations/pending-removal-in-3.15.rst:27
+#: deprecations/pending-removal-in-3.15.rst:31
+msgid ":mod:`sysconfig`:"
+msgstr ""
+
+#: deprecations/pending-removal-in-3.15.rst:33
+msgid ""
+"The *check_home* argument of :func:`sysconfig.is_python_build` has been "
+"deprecated since Python 3.12."
+msgstr ""
+
+#: deprecations/pending-removal-in-3.15.rst:36
 msgid ""
 ":mod:`threading`: Passing any arguments to :func:`threading.RLock` is now "
 "deprecated. C version allows any numbers of args and kwargs, but they are "
@@ -61,11 +79,11 @@ msgid ""
 "Nikita Sobolev in :gh:`102029`.)"
 msgstr ""
 
-#: deprecations/pending-removal-in-3.15.rst:34
+#: deprecations/pending-removal-in-3.15.rst:43
 msgid ":class:`typing.NamedTuple`:"
 msgstr ""
 
-#: deprecations/pending-removal-in-3.15.rst:36
+#: deprecations/pending-removal-in-3.15.rst:45
 msgid ""
 "The undocumented keyword argument syntax for creating :class:`!NamedTuple` "
 "classes (``NT = NamedTuple(\"NT\", x=int)``) is deprecated, and will be "
@@ -73,7 +91,23 @@ msgid ""
 "instead."
 msgstr ""
 
-#: deprecations/pending-removal-in-3.15.rst:40
+#: deprecations/pending-removal-in-3.15.rst:49
+msgid ":mod:`types`:"
+msgstr ""
+
+#: deprecations/pending-removal-in-3.15.rst:51
+msgid ""
+":class:`types.CodeType`: Accessing :attr:`~codeobject.co_lnotab` was "
+"deprecated in :pep:`626` since 3.10 and was planned to be removed in 3.12, "
+"but it only got a proper :exc:`DeprecationWarning` in 3.12. May be removed "
+"in 3.15. (Contributed by Nikita Sobolev in :gh:`101866`.)"
+msgstr ""
+
+#: deprecations/pending-removal-in-3.15.rst:58
+msgid ":mod:`typing`:"
+msgstr ""
+
+#: deprecations/pending-removal-in-3.15.rst:60
 msgid ""
 "When using the functional syntax to create a :class:`!NamedTuple` class, "
 "failing to pass a value to the *fields* parameter (``NT = "
@@ -84,7 +118,7 @@ msgid ""
 "[])``."
 msgstr ""
 
-#: deprecations/pending-removal-in-3.15.rst:47
+#: deprecations/pending-removal-in-3.15.rst:67
 msgid ""
 ":class:`typing.TypedDict`: When using the functional syntax to create a :"
 "class:`!TypedDict` class, failing to pass a value to the *fields* parameter "
@@ -94,7 +128,7 @@ msgid ""
 "fields, use ``class TD(TypedDict): pass`` or ``TD = TypedDict(\"TD\", {})``."
 msgstr ""
 
-#: deprecations/pending-removal-in-3.15.rst:54
+#: deprecations/pending-removal-in-3.15.rst:74
 msgid ""
 ":mod:`wave`: Deprecate the ``getmark()``, ``setmark()`` and ``getmarkers()`` "
 "methods of the :class:`wave.Wave_read` and :class:`wave.Wave_write` classes. "
