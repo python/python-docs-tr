@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-09-01 00:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -157,11 +157,17 @@ msgstr ""
 
 #: c-api/slice.rst:123
 msgid ""
+"The type of Python :const:`Ellipsis` object.  Same as :class:`types."
+"EllipsisType` in the Python layer."
+msgstr ""
+
+#: c-api/slice.rst:129
+msgid ""
 "The Python ``Ellipsis`` object.  This object has no methods.  Like :c:data:"
 "`Py_None`, it is an `immortal <https://peps.python.org/pep-0683/>`_. "
 "singleton object."
 msgstr ""
 
-#: c-api/slice.rst:127
+#: c-api/slice.rst:133
 msgid ":c:data:`Py_Ellipsis` is immortal."
 msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 19:05+0000\n"
+"POT-Creation-Date: 2026-09-01 00:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -23,19 +23,17 @@ msgstr ""
 #: c-api/allocation.rst:17
 msgid ""
 "Initialize a newly allocated object *op* with its type and initial "
-"reference.  Returns the initialized object.  If *type* indicates that the "
-"object participates in the cyclic garbage detector, it is added to the "
-"detector's set of observed objects. Other fields of the object are not "
-"affected."
+"reference.  Returns the initialized object.  Other fields of the object are "
+"not affected."
 msgstr ""
 
-#: c-api/allocation.rst:26
+#: c-api/allocation.rst:24
 msgid ""
 "This does everything :c:func:`PyObject_Init` does, and also initializes the "
 "length information for a variable-size object."
 msgstr ""
 
-#: c-api/allocation.rst:32
+#: c-api/allocation.rst:30
 msgid ""
 "Allocate a new Python object using the C structure type *TYPE* and the "
 "Python type object *typeobj* (``PyTypeObject*``). Fields not defined by the "
@@ -45,7 +43,14 @@ msgid ""
 "tp_basicsize` field of the type object."
 msgstr ""
 
-#: c-api/allocation.rst:43
+#: c-api/allocation.rst:38
+msgid ""
+"Note that this function is unsuitable if *typeobj* has :c:macro:"
+"`Py_TPFLAGS_HAVE_GC` set. For such objects, use :c:func:`PyObject_GC_New` "
+"instead."
+msgstr ""
+
+#: c-api/allocation.rst:45
 msgid ""
 "Allocate a new Python object using the C structure type *TYPE* and the "
 "Python type object *typeobj* (``PyTypeObject*``). Fields not defined by the "
@@ -58,7 +63,14 @@ msgid ""
 "management efficiency."
 msgstr ""
 
-#: c-api/allocation.rst:57
+#: c-api/allocation.rst:56
+msgid ""
+"Note that this function is unsuitable if *typeobj* has :c:macro:"
+"`Py_TPFLAGS_HAVE_GC` set. For such objects, use :c:func:`PyObject_GC_NewVar` "
+"instead."
+msgstr ""
+
+#: c-api/allocation.rst:63
 msgid ""
 "Releases memory allocated to an object using :c:macro:`PyObject_New` or :c:"
 "macro:`PyObject_NewVar`.  This is normally called from the :c:member:"
@@ -67,17 +79,17 @@ msgid ""
 "no longer a valid Python object."
 msgstr ""
 
-#: c-api/allocation.rst:66
+#: c-api/allocation.rst:72
 msgid ""
 "Object which is visible in Python as ``None``.  This should only be accessed "
 "using the :c:macro:`Py_None` macro, which evaluates to a pointer to this "
 "object."
 msgstr ""
 
-#: c-api/allocation.rst:73
+#: c-api/allocation.rst:79
 msgid ":c:func:`PyModule_Create`"
 msgstr ""
 
-#: c-api/allocation.rst:74
+#: c-api/allocation.rst:80
 msgid "To allocate and create extension modules."
 msgstr ""

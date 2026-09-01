@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-09-01 00:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -285,21 +285,27 @@ msgid ""
 "only produced when :func:`ast.parse` is invoked with ``type_comments=True``."
 msgstr ""
 
-#: library/token.rst:82
+#: library/token.rst:84
+msgid ""
+"A dictionary mapping the string representation of a token to its numeric "
+"code."
+msgstr ""
+
+#: library/token.rst:89
 msgid "Added :data:`AWAIT` and :data:`ASYNC` tokens."
 msgstr ""
 
-#: library/token.rst:85
+#: library/token.rst:92
 msgid "Added :data:`COMMENT`, :data:`NL` and :data:`ENCODING` tokens."
 msgstr ""
 
-#: library/token.rst:88
+#: library/token.rst:95
 msgid ""
 "Removed :data:`AWAIT` and :data:`ASYNC` tokens. \"async\" and \"await\" are "
 "now tokenized as :data:`NAME` tokens."
 msgstr ""
 
-#: library/token.rst:92
+#: library/token.rst:99
 msgid ""
 "Added :data:`TYPE_COMMENT`, :data:`TYPE_IGNORE`, :data:`COLONEQUAL`. Added :"
 "data:`AWAIT` and :data:`ASYNC` tokens back (they're needed to support "

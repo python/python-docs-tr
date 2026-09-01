@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-09-01 00:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -427,10 +427,12 @@ msgid ""
 msgstr ""
 
 #: library/locale.rst:284
-msgid "Get a string that represents the era used in the current locale."
+msgid ""
+"Get a string which describes how years are counted and displayed for each "
+"era in a locale."
 msgstr ""
 
-#: library/locale.rst:286
+#: library/locale.rst:287
 msgid ""
 "Most locales do not define this value.  An example of a locale which does "
 "define this value is the Japanese one.  In Japan, the traditional "
@@ -438,47 +440,48 @@ msgid ""
 "then-emperor's reign."
 msgstr ""
 
-#: library/locale.rst:291
+#: library/locale.rst:292
 msgid ""
 "Normally it should not be necessary to use this value directly. Specifying "
 "the ``E`` modifier in their format strings causes the :func:`time.strftime` "
-"function to use this information.  The format of the returned string is not "
-"specified, and therefore you should not assume knowledge of it on different "
-"systems."
+"function to use this information. The format of the returned string is "
+"specified in *The Open Group Base Specifications Issue 8*, paragraph "
+"`7.3.5.2 LC_TIME C-Language Access <https://pubs.opengroup.org/"
+"onlinepubs/9799919799/basedefs/V1_chap07.html#tag_07_03_05_02>`_."
 msgstr ""
 
-#: library/locale.rst:299
+#: library/locale.rst:301
 msgid ""
 "Get a format string for :func:`time.strftime` to represent date and time in "
 "a locale-specific era-based way."
 msgstr ""
 
-#: library/locale.rst:304
+#: library/locale.rst:306
 msgid ""
 "Get a format string for :func:`time.strftime` to represent a date in a "
 "locale-specific era-based way."
 msgstr ""
 
-#: library/locale.rst:309
+#: library/locale.rst:311
 msgid ""
 "Get a format string for :func:`time.strftime` to represent a time in a "
 "locale-specific era-based way."
 msgstr ""
 
-#: library/locale.rst:314
+#: library/locale.rst:316
 msgid ""
 "Get a string consisting of up to 100 semicolon-separated symbols used to "
 "represent the values 0 to 99 in a locale-specific way. In most locales this "
 "is an empty string."
 msgstr ""
 
-#: library/locale.rst:321
+#: library/locale.rst:323
 msgid ""
 "Tries to determine the default locale settings and returns them as a tuple "
 "of the form ``(language code, encoding)``."
 msgstr ""
 
-#: library/locale.rst:324
+#: library/locale.rst:326
 msgid ""
 "According to POSIX, a program which has not called ``setlocale(LC_ALL, '')`` "
 "runs using the portable ``'C'`` locale.  Calling ``setlocale(LC_ALL, '')`` "
@@ -487,7 +490,7 @@ msgid ""
 "emulate the behavior in the way described above."
 msgstr ""
 
-#: library/locale.rst:330
+#: library/locale.rst:332
 msgid ""
 "To maintain compatibility with other platforms, not only the :envvar:`LANG` "
 "variable is tested, but a list of variables given as envvars parameter.  The "
@@ -497,21 +500,21 @@ msgid ""
 "``'LC_CTYPE'``, ``'LANG'`` and ``'LANGUAGE'``, in that order."
 msgstr ""
 
-#: library/locale.rst:350
+#: library/locale.rst:352
 msgid ""
 "Except for the code ``'C'``, the language code corresponds to :rfc:`1766`. "
 "*language code* and *encoding* may be ``None`` if their values cannot be "
 "determined."
 msgstr ""
 
-#: library/locale.rst:346
+#: library/locale.rst:348
 msgid ""
 "Returns the current setting for the given locale category as sequence "
 "containing *language code*, *encoding*. *category* may be one of the :const:"
 "`!LC_\\*` values except :const:`LC_ALL`.  It defaults to :const:`LC_CTYPE`."
 msgstr ""
 
-#: library/locale.rst:357
+#: library/locale.rst:359
 msgid ""
 "Return the :term:`locale encoding` used for text data, according to user "
 "preferences.  User preferences are expressed differently on different "
@@ -519,82 +522,82 @@ msgid ""
 "this function only returns a guess."
 msgstr ""
 
-#: library/locale.rst:362
+#: library/locale.rst:364
 msgid ""
 "On some systems, it is necessary to invoke :func:`setlocale` to obtain the "
 "user preferences, so this function is not thread-safe. If invoking setlocale "
 "is not necessary or desired, *do_setlocale* should be set to ``False``."
 msgstr ""
 
-#: library/locale.rst:366
+#: library/locale.rst:368
 msgid ""
 "On Android or if the :ref:`Python UTF-8 Mode <utf8-mode>` is enabled, always "
 "return ``'utf-8'``, the :term:`locale encoding` and the *do_setlocale* "
 "argument are ignored."
 msgstr ""
 
-#: library/locale.rst:388
+#: library/locale.rst:390
 msgid ""
 "The :ref:`Python preinitialization <c-preinit>` configures the LC_CTYPE "
 "locale. See also the :term:`filesystem encoding and error handler`."
 msgstr ""
 
-#: library/locale.rst:373
+#: library/locale.rst:375
 msgid ""
 "The function now always returns ``\"utf-8\"`` on Android or if the :ref:"
 "`Python UTF-8 Mode <utf8-mode>` is enabled."
 msgstr ""
 
-#: library/locale.rst:380
+#: library/locale.rst:382
 msgid "Get the current :term:`locale encoding`:"
 msgstr ""
 
-#: library/locale.rst:382
+#: library/locale.rst:384
 msgid "On Android and VxWorks, return ``\"utf-8\"``."
 msgstr ""
 
-#: library/locale.rst:383
+#: library/locale.rst:385
 msgid ""
 "On Unix, return the encoding of the current :data:`LC_CTYPE` locale. Return "
 "``\"utf-8\"`` if ``nl_langinfo(CODESET)`` returns an empty string: for "
 "example, if the current LC_CTYPE locale is not supported."
 msgstr ""
 
-#: library/locale.rst:386
+#: library/locale.rst:388
 msgid "On Windows, return the ANSI code page."
 msgstr ""
 
-#: library/locale.rst:391
+#: library/locale.rst:393
 msgid ""
 "This function is similar to :func:`getpreferredencoding(False) "
 "<getpreferredencoding>` except this function ignores the :ref:`Python UTF-8 "
 "Mode <utf8-mode>`."
 msgstr ""
 
-#: library/locale.rst:400
+#: library/locale.rst:402
 msgid ""
 "Returns a normalized locale code for the given locale name.  The returned "
 "locale code is formatted for use with :func:`setlocale`.  If normalization "
 "fails, the original name is returned unchanged."
 msgstr ""
 
-#: library/locale.rst:404
+#: library/locale.rst:406
 msgid ""
 "If the given encoding is not known, the function defaults to the default "
 "encoding for the locale code just like :func:`setlocale`."
 msgstr ""
 
-#: library/locale.rst:410
+#: library/locale.rst:412
 msgid "Sets the locale for *category* to the default setting."
 msgstr ""
 
-#: library/locale.rst:412
+#: library/locale.rst:414
 msgid ""
 "The default setting is determined by calling :func:`getdefaultlocale`. "
 "*category* defaults to :const:`LC_ALL`."
 msgstr ""
 
-#: library/locale.rst:420
+#: library/locale.rst:422
 msgid ""
 "Compares two strings according to the current :const:`LC_COLLATE` setting. "
 "As any other compare function, returns a negative, or a positive value, or "
@@ -602,7 +605,7 @@ msgid ""
 "is equal to it."
 msgstr ""
 
-#: library/locale.rst:428
+#: library/locale.rst:430
 msgid ""
 "Transforms a string to one that can be used in locale-aware comparisons.  "
 "For example, ``strxfrm(s1) < strxfrm(s2)`` is equivalent to ``strcoll(s1, "
@@ -610,7 +613,7 @@ msgid ""
 "repeatedly, e.g. when collating a sequence of strings."
 msgstr ""
 
-#: library/locale.rst:437
+#: library/locale.rst:439
 msgid ""
 "Formats a number *val* according to the current :const:`LC_NUMERIC` setting. "
 "The format follows the conventions of the ``%`` operator.  For floating-"
@@ -618,29 +621,29 @@ msgid ""
 "is ``True``, also takes the grouping into account."
 msgstr ""
 
-#: library/locale.rst:442
+#: library/locale.rst:444
 msgid ""
 "If *monetary* is true, the conversion uses monetary thousands separator and "
 "grouping strings."
 msgstr ""
 
-#: library/locale.rst:445
+#: library/locale.rst:447
 msgid ""
 "Processes formatting specifiers as in ``format % val``, but takes the "
 "current locale settings into account."
 msgstr ""
 
-#: library/locale.rst:448
+#: library/locale.rst:450
 msgid "The *monetary* keyword parameter was added."
 msgstr ""
 
-#: library/locale.rst:454
+#: library/locale.rst:456
 msgid ""
 "Formats a number *val* according to the current :const:`LC_MONETARY` "
 "settings."
 msgstr ""
 
-#: library/locale.rst:456
+#: library/locale.rst:458
 msgid ""
 "The returned string includes the currency symbol if *symbol* is true, which "
 "is the default. If *grouping* is ``True`` (which is not the default), "
@@ -648,43 +651,43 @@ msgid ""
 "not the default), the international currency symbol is used."
 msgstr ""
 
-#: library/locale.rst:463
+#: library/locale.rst:465
 msgid ""
 "This function will not work with the 'C' locale, so you have to set a locale "
 "via :func:`setlocale` first."
 msgstr ""
 
-#: library/locale.rst:469
+#: library/locale.rst:471
 msgid ""
 "Formats a floating-point number using the same format as the built-in "
 "function ``str(float)``, but takes the decimal point into account."
 msgstr ""
 
-#: library/locale.rst:475
+#: library/locale.rst:477
 msgid ""
 "Converts a string into a normalized number string, following the :const:"
 "`LC_NUMERIC` settings."
 msgstr ""
 
-#: library/locale.rst:483
+#: library/locale.rst:485
 msgid ""
 "Converts a normalized number string into a formatted string following the :"
 "const:`LC_NUMERIC` settings."
 msgstr ""
 
-#: library/locale.rst:491
+#: library/locale.rst:493
 msgid ""
 "Converts a string to a number, following the :const:`LC_NUMERIC` settings, "
 "by calling *func* on the result of calling :func:`delocalize` on *string*."
 msgstr ""
 
-#: library/locale.rst:497
+#: library/locale.rst:499
 msgid ""
 "Converts a string to an integer, following the :const:`LC_NUMERIC` "
 "conventions."
 msgstr ""
 
-#: library/locale.rst:502
+#: library/locale.rst:504
 msgid ""
 "Locale category for the character type functions.  Most importantly, this "
 "category defines the text encoding, i.e. how bytes are interpreted as "
@@ -694,32 +697,32 @@ msgid ""
 "SSH connections."
 msgstr ""
 
-#: library/locale.rst:509
+#: library/locale.rst:511
 msgid ""
 "Python doesn't internally use locale-dependent character transformation "
 "functions from ``ctype.h``. Instead, an internal ``pyctype.h`` provides "
 "locale-independent equivalents like :c:macro:`!Py_TOLOWER`."
 msgstr ""
 
-#: library/locale.rst:516
+#: library/locale.rst:518
 msgid ""
 "Locale category for sorting strings.  The functions :func:`strcoll` and :"
 "func:`strxfrm` of the :mod:`locale` module are affected."
 msgstr ""
 
-#: library/locale.rst:522
+#: library/locale.rst:524
 msgid ""
 "Locale category for the formatting of time.  The function :func:`time."
 "strftime` follows these conventions."
 msgstr ""
 
-#: library/locale.rst:528
+#: library/locale.rst:530
 msgid ""
 "Locale category for formatting of monetary values.  The available options "
 "are available from the :func:`localeconv` function."
 msgstr ""
 
-#: library/locale.rst:534
+#: library/locale.rst:536
 msgid ""
 "Locale category for message display. Python currently does not support "
 "application specific locale-aware messages.  Messages displayed by the "
@@ -727,13 +730,13 @@ msgid ""
 "affected by this category."
 msgstr ""
 
-#: library/locale.rst:539
+#: library/locale.rst:541
 msgid ""
 "This value may not be available on operating systems not conforming to the "
 "POSIX standard, most notably Windows."
 msgstr ""
 
-#: library/locale.rst:545
+#: library/locale.rst:547
 msgid ""
 "Locale category for formatting numbers.  The functions :func:"
 "`format_string`, :func:`atoi`, :func:`atof` and :func:`.str` of the :mod:"
@@ -741,7 +744,7 @@ msgid ""
 "operations are not affected."
 msgstr ""
 
-#: library/locale.rst:553
+#: library/locale.rst:555
 msgid ""
 "Combination of all locale settings.  If this flag is used when the locale is "
 "changed, setting the locale for all categories is attempted. If that fails "
@@ -751,17 +754,17 @@ msgid ""
 "settings."
 msgstr ""
 
-#: library/locale.rst:562
+#: library/locale.rst:564
 msgid ""
 "This is a symbolic constant used for different values returned by :func:"
 "`localeconv`."
 msgstr ""
 
-#: library/locale.rst:566
+#: library/locale.rst:568
 msgid "Example::"
 msgstr ""
 
-#: library/locale.rst:568
+#: library/locale.rst:570
 msgid ""
 ">>> import locale\n"
 ">>> loc = locale.getlocale()  # get current locale\n"
@@ -774,11 +777,11 @@ msgid ""
 ">>> locale.setlocale(locale.LC_ALL, loc)  # restore saved locale"
 msgstr ""
 
-#: library/locale.rst:579
+#: library/locale.rst:581
 msgid "Background, details, hints, tips and caveats"
 msgstr ""
 
-#: library/locale.rst:581
+#: library/locale.rst:583
 msgid ""
 "The C standard defines the locale as a program-wide property that may be "
 "relatively expensive to change.  On top of that, some implementations are "
@@ -786,7 +789,7 @@ msgid ""
 "This makes the locale somewhat painful to use correctly."
 msgstr ""
 
-#: library/locale.rst:586
+#: library/locale.rst:588
 msgid ""
 "Initially, when a program is started, the locale is the ``C`` locale, no "
 "matter what the user's preferred locale is.  There is one exception: the :"
@@ -796,7 +799,7 @@ msgid ""
 "categories by calling ``setlocale(LC_ALL, '')``."
 msgstr ""
 
-#: library/locale.rst:593
+#: library/locale.rst:595
 msgid ""
 "It is generally a bad idea to call :func:`setlocale` in some library "
 "routine, since as a side effect it affects the entire program.  Saving and "
@@ -804,7 +807,7 @@ msgid ""
 "that happen to run before the settings have been restored."
 msgstr ""
 
-#: library/locale.rst:598
+#: library/locale.rst:600
 msgid ""
 "If, when coding a module for general use, you need a locale independent "
 "version of an operation that is affected by the locale (such as certain "
@@ -815,14 +818,14 @@ msgid ""
 "settings."
 msgstr ""
 
-#: library/locale.rst:605
+#: library/locale.rst:607
 msgid ""
 "The only way to perform numeric operations according to the locale is to use "
 "the special functions defined by this module: :func:`atof`, :func:`atoi`, :"
 "func:`format_string`, :func:`.str`."
 msgstr ""
 
-#: library/locale.rst:609
+#: library/locale.rst:611
 msgid ""
 "There is no way to perform case conversions and character classifications "
 "according to the locale.  For (Unicode) text strings these are done "
@@ -833,11 +836,11 @@ msgid ""
 "whitespace."
 msgstr ""
 
-#: library/locale.rst:620
+#: library/locale.rst:622
 msgid "For extension writers and programs that embed Python"
 msgstr ""
 
-#: library/locale.rst:622
+#: library/locale.rst:624
 msgid ""
 "Extension modules should never call :func:`setlocale`, except to find out "
 "what the current locale is.  But since the return value can only be used "
@@ -845,7 +848,7 @@ msgid ""
 "whether or not the locale is ``C``)."
 msgstr ""
 
-#: library/locale.rst:627
+#: library/locale.rst:629
 msgid ""
 "When Python code uses the :mod:`locale` module to change the locale, this "
 "also affects the embedding application.  If the embedding application "
@@ -855,11 +858,11 @@ msgid ""
 "accessible as a shared library."
 msgstr ""
 
-#: library/locale.rst:638
+#: library/locale.rst:640
 msgid "Access to message catalogs"
 msgstr ""
 
-#: library/locale.rst:647
+#: library/locale.rst:649
 msgid ""
 "The locale module exposes the C library's gettext interface on systems that "
 "provide this interface.  It consists of the functions :func:`gettext`, :func:"
@@ -870,7 +873,7 @@ msgid ""
 "locating message catalogs."
 msgstr ""
 
-#: library/locale.rst:654
+#: library/locale.rst:656
 msgid ""
 "Python applications should normally find no need to invoke these functions, "
 "and should use :mod:`gettext` instead.  A known exception to this rule are "
