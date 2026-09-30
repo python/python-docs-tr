@@ -2,14 +2,13 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-01 00:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2026-09-30 14:45+0300\n"
+"Last-Translator: Tunahan Haksever <tunahanhaksever@users.noreply.github.com>\n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -18,11 +17,11 @@ msgstr ""
 
 #: library/colorsys.rst:2
 msgid ":mod:`!colorsys` --- Conversions between color systems"
-msgstr ""
+msgstr ":mod:`!colorsys` --- Renk sistemleri arasındaki dönüşümler"
 
 #: library/colorsys.rst:9
 msgid "**Source code:** :source:`Lib/colorsys.py`"
-msgstr ""
+msgstr "**Kaynak kodu:** :source:`Lib/colorsys.py`"
 
 #: library/colorsys.rst:13
 msgid ""
@@ -34,6 +33,13 @@ msgid ""
 "coordinate is between 0 and 1, but the I and Q coordinates can be positive "
 "or negative.  In all other spaces, the coordinates are all between 0 and 1."
 msgstr ""
+":mod:`colorsys` modülü, bilgisayar monitörlerinde kullanılan RGB (Kırmızı Yeşil "
+"Mavi) renk uzayında ifade edilen renkler ile diğer üç koordinat sistemi (YIQ, "
+"HLS [Ton Açıklık Doygunluk] ve HSV [Ton Doygunluk Değeri]) arasında renk "
+"değerlerinin iki yönlü dönüşümlerini tanımlar. Bu renk uzaylarının tümündeki "
+"koordinatlar kayan noktalı sayılardır. YIQ uzayında Y koordinatı 0 ile 1 "
+"arasındadır, ancak I ve Q koordinatları pozitif veya negatif olabilir. Diğer "
+"tüm uzaylarda koordinatların tümü 0 ile 1 arasındadır."
 
 #: library/colorsys.rst:23
 msgid ""
@@ -41,38 +47,41 @@ msgid ""
 "ColorFAQ.html and https://www.cambridgeincolour.com/tutorials/color-spaces."
 "htm."
 msgstr ""
+"Renk uzayları hakkında daha fazla bilgiye https://poynton.ca/ColorFAQ.html "
+"ve https://www.cambridgeincolour.com/tutorials/color-spaces.htm adreslerinden "
+"ulaşılabilir."
 
 #: library/colorsys.rst:27
 msgid "The :mod:`colorsys` module defines the following functions:"
-msgstr ""
+msgstr ":mod:`colorsys` modülü aşağıdaki fonksiyonları tanımlar:"
 
 #: library/colorsys.rst:32
 msgid "Convert the color from RGB coordinates to YIQ coordinates."
-msgstr ""
+msgstr "Rengi RGB koordinatlarından YIQ koordinatlarına dönüştürür."
 
 #: library/colorsys.rst:37
 msgid "Convert the color from YIQ coordinates to RGB coordinates."
-msgstr ""
+msgstr "Rengi YIQ koordinatlarından RGB koordinatlarına dönüştürür."
 
 #: library/colorsys.rst:42
 msgid "Convert the color from RGB coordinates to HLS coordinates."
-msgstr ""
+msgstr "Rengi RGB koordinatlarından HLS koordinatlarına dönüştürür."
 
 #: library/colorsys.rst:47
 msgid "Convert the color from HLS coordinates to RGB coordinates."
-msgstr ""
+msgstr "Rengi HLS koordinatlarından RGB koordinatlarına dönüştürür."
 
 #: library/colorsys.rst:52
 msgid "Convert the color from RGB coordinates to HSV coordinates."
-msgstr ""
+msgstr "Rengi RGB koordinatlarından HSV koordinatlarına dönüştürür."
 
 #: library/colorsys.rst:57
 msgid "Convert the color from HSV coordinates to RGB coordinates."
-msgstr ""
+msgstr "Rengi HSV koordinatlarından RGB koordinatlarına dönüştürür."
 
 #: library/colorsys.rst:59
 msgid "Example::"
-msgstr ""
+msgstr "Örnek::"
 
 #: library/colorsys.rst:61
 msgid ""
@@ -82,3 +91,8 @@ msgid ""
 ">>> colorsys.hsv_to_rgb(0.5, 0.5, 0.4)\n"
 "(0.2, 0.4, 0.4)"
 msgstr ""
+">>> import colorsys\n"
+">>> colorsys.rgb_to_hsv(0.2, 0.4, 0.4)\n"
+"(0.5, 0.5, 0.4)\n"
+">>> colorsys.hsv_to_rgb(0.5, 0.5, 0.4)\n"
+"(0.2, 0.4, 0.4)"
