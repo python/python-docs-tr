@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -78,8 +78,8 @@ msgstr ""
 
 #: library/bz2.rst:45
 msgid ""
-"The *compresslevel* argument is an integer from 1 to 9, as for the :class:"
-"`BZ2File` constructor."
+"The *compresslevel* argument is an integer from 1 to 9, as for "
+"the :class:`BZ2File` constructor."
 msgstr ""
 
 #: library/bz2.rst:48
@@ -92,8 +92,8 @@ msgstr ""
 
 #: library/bz2.rst:53
 msgid ""
-"For text mode, a :class:`BZ2File` object is created, and wrapped in an :"
-"class:`io.TextIOWrapper` instance with the specified encoding, error "
+"For text mode, a :class:`BZ2File` object is created, and wrapped in "
+"an :class:`io.TextIOWrapper` instance with the specified encoding, error "
 "handling behavior, and line ending(s)."
 msgstr ""
 
@@ -145,9 +145,10 @@ msgstr ""
 
 #: library/bz2.rst:89
 msgid ""
-":class:`BZ2File` provides all of the members specified by the :class:`io."
-"BufferedIOBase`, except for :meth:`~io.BufferedIOBase.detach` and :meth:`~io."
-"IOBase.truncate`. Iteration and the :keyword:`with` statement are supported."
+":class:`BZ2File` provides all of the members specified by "
+"the :class:`io.BufferedIOBase`, except for :meth:`~io.BufferedIOBase.detach` "
+"and :meth:`~io.IOBase.truncate`. Iteration and the :keyword:`with` statement "
+"are supported."
 msgstr ""
 
 #: library/bz2.rst:94
@@ -163,10 +164,10 @@ msgstr ""
 
 #: library/bz2.rst:102
 msgid ""
-"While calling :meth:`peek` does not change the file position of the :class:"
-"`BZ2File`, it may change the position of the underlying file object (e.g. if "
-"the :class:`BZ2File` was constructed by passing a file object for "
-"*filename*)."
+"While calling :meth:`peek` does not change the file position of "
+"the :class:`BZ2File`, it may change the position of the underlying file "
+"object (e.g. if the :class:`BZ2File` was constructed by passing a file "
+"object for *filename*)."
 msgstr ""
 
 #: library/bz2.rst:111
@@ -268,8 +269,8 @@ msgstr ""
 
 #: library/bz2.rst:202
 msgid ""
-"When you have finished providing data to the compressor, call the :meth:"
-"`flush` method to finish the compression process."
+"When you have finished providing data to the compressor, call "
+"the :meth:`flush` method to finish the compression process."
 msgstr ""
 
 #: library/bz2.rst:208
@@ -324,9 +325,9 @@ msgstr ""
 
 #: library/bz2.rst:246
 msgid ""
-"Attempting to decompress data after the end of stream is reached raises an :"
-"exc:`EOFError`.  Any data found after the end of the stream is ignored and "
-"saved in the :attr:`~.unused_data` attribute."
+"Attempting to decompress data after the end of stream is reached raises "
+"an :exc:`EOFError`.  Any data found after the end of the stream is ignored "
+"and saved in the :attr:`~.unused_data` attribute."
 msgstr ""
 
 #: library/bz2.rst:250

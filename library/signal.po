@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -46,8 +46,8 @@ msgstr ""
 msgid ""
 "A handler for a particular signal, once set, remains installed until it is "
 "explicitly reset (Python emulates the BSD style interface regardless of the "
-"underlying implementation), with the exception of the handler for :const:"
-"`SIGCHLD`, which follows the underlying implementation."
+"underlying implementation), with the exception of the handler "
+"for :const:`SIGCHLD`, which follows the underlying implementation."
 msgstr ""
 
 #: library/signal.rst:29
@@ -72,12 +72,12 @@ msgstr ""
 
 #: library/signal.rst:42
 msgid ""
-"It makes little sense to catch synchronous errors like :const:`SIGFPE` or :"
-"const:`SIGSEGV` that are caused by an invalid operation in C code.  Python "
-"will return from the signal handler to the C code, which is likely to raise "
-"the same signal again, causing Python to apparently hang.  From Python 3.3 "
-"onwards, you can use the :mod:`faulthandler` module to report on synchronous "
-"errors."
+"It makes little sense to catch synchronous errors like :const:`SIGFPE` "
+"or :const:`SIGSEGV` that are caused by an invalid operation in C code.  "
+"Python will return from the signal handler to the C code, which is likely to "
+"raise the same signal again, causing Python to apparently hang.  From Python "
+"3.3 onwards, you can use the :mod:`faulthandler` module to report on "
+"synchronous errors."
 msgstr ""
 
 #: library/signal.rst:49
@@ -120,13 +120,13 @@ msgstr ""
 
 #: library/signal.rst:75
 msgid ""
-"signal (SIG*), handler (:const:`SIG_DFL`, :const:`SIG_IGN`) and sigmask (:"
-"const:`SIG_BLOCK`, :const:`SIG_UNBLOCK`, :const:`SIG_SETMASK`) related "
-"constants listed below were turned into :class:`enums <enum.IntEnum>` (:"
-"class:`Signals`, :class:`Handlers` and :class:`Sigmasks` respectively). :"
-"func:`getsignal`, :func:`pthread_sigmask`, :func:`sigpending` and :func:"
-"`sigwait` functions return human-readable :class:`enums <enum.IntEnum>` as :"
-"class:`Signals` objects."
+"signal (SIG*), handler (:const:`SIG_DFL`, :const:`SIG_IGN`) and sigmask "
+"(:const:`SIG_BLOCK`, :const:`SIG_UNBLOCK`, :const:`SIG_SETMASK`) related "
+"constants listed below were turned into :class:`enums <enum.IntEnum>` "
+"(:class:`Signals`, :class:`Handlers` and :class:`Sigmasks` "
+"respectively). :func:`getsignal`, :func:`pthread_sigmask`, :func:`sigpending` "
+"and :func:`sigwait` functions return human-readable :class:`enums "
+"<enum.IntEnum>` as :class:`Signals` objects."
 msgstr ""
 
 #: library/signal.rst:85
@@ -140,14 +140,14 @@ msgstr ""
 
 #: library/signal.rst:95
 msgid ""
-":class:`enum.IntEnum` collection the constants :const:`SIG_DFL` and :const:"
-"`SIG_IGN`."
+":class:`enum.IntEnum` collection the constants :const:`SIG_DFL` "
+"and :const:`SIG_IGN`."
 msgstr ""
 
 #: library/signal.rst:101
 msgid ""
-":class:`enum.IntEnum` collection the constants :const:`SIG_BLOCK`, :const:"
-"`SIG_UNBLOCK` and :const:`SIG_SETMASK`."
+":class:`enum.IntEnum` collection the "
+"constants :const:`SIG_BLOCK`, :const:`SIG_UNBLOCK` and :const:`SIG_SETMASK`."
 msgstr ""
 
 #: library/signal.rst:136 library/signal.rst:148 library/signal.rst:160
@@ -265,8 +265,8 @@ msgstr ""
 
 #: library/signal.rst:219
 msgid ""
-"On architectures where the signal is available. See the man page :manpage:"
-"`signal(7)` for further information."
+"On architectures where the signal is available. See the man "
+"page :manpage:`signal(7)` for further information."
 msgstr ""
 
 #: library/signal.rst:226
@@ -291,9 +291,10 @@ msgid ""
 "signal is defined as :const:`signal.SIGHUP`; the variable names are "
 "identical to the names used in C programs, as found in ``<signal.h>``.  The "
 "Unix man page for ':c:func:`signal`' lists the existing signals (on some "
-"systems this is :manpage:`signal(2)`, on others the list is in :manpage:"
-"`signal(7)`). Note that not all systems define the same set of signal names; "
-"only those names defined by the system are defined by this module."
+"systems this is :manpage:`signal(2)`, on others the list is "
+"in :manpage:`signal(7)`). Note that not all systems define the same set of "
+"signal names; only those names defined by the system are defined by this "
+"module."
 msgstr ""
 
 #: library/signal.rst:259
@@ -310,8 +311,8 @@ msgstr ""
 
 #: library/signal.rst:279
 msgid ""
-"One more than the number of the highest signal number. Use :func:"
-"`valid_signals` to get valid signal numbers."
+"One more than the number of the highest signal number. "
+"Use :func:`valid_signals` to get valid signal numbers."
 msgstr ""
 
 #: library/signal.rst:285
@@ -358,16 +359,16 @@ msgstr ""
 
 #: library/signal.rst:329
 msgid ""
-"Raised to signal an error from the underlying :func:`setitimer` or :func:"
-"`getitimer` implementation. Expect this error if an invalid interval timer "
-"or a negative time is passed to :func:`setitimer`. This error is a subtype "
-"of :exc:`OSError`."
+"Raised to signal an error from the underlying :func:`setitimer` "
+"or :func:`getitimer` implementation. Expect this error if an invalid "
+"interval timer or a negative time is passed to :func:`setitimer`. This error "
+"is a subtype of :exc:`OSError`."
 msgstr ""
 
 #: library/signal.rst:334
 msgid ""
-"This error used to be a subtype of :exc:`IOError`, which is now an alias of :"
-"exc:`OSError`."
+"This error used to be a subtype of :exc:`IOError`, which is now an alias "
+"of :exc:`OSError`."
 msgstr ""
 
 #: library/signal.rst:339
@@ -392,19 +393,19 @@ msgstr ""
 #: library/signal.rst:358
 msgid ""
 "Return the current signal handler for the signal *signalnum*. The returned "
-"value may be a callable Python object, or one of the special values :const:"
-"`signal.SIG_IGN`, :const:`signal.SIG_DFL` or :const:`None`.  Here, :const:"
-"`signal.SIG_IGN` means that the signal was previously ignored, :const:"
-"`signal.SIG_DFL` means that the default way of handling the signal was "
-"previously in use, and ``None`` means that the previous signal handler was "
-"not installed from Python."
+"value may be a callable Python object, or one of the special "
+"values :const:`signal.SIG_IGN`, :const:`signal.SIG_DFL` or :const:`None`.  "
+"Here, :const:`signal.SIG_IGN` means that the signal was previously "
+"ignored, :const:`signal.SIG_DFL` means that the default way of handling the "
+"signal was previously in use, and ``None`` means that the previous signal "
+"handler was not installed from Python."
 msgstr ""
 
 #: library/signal.rst:369
 msgid ""
-"Returns the description of signal *signalnum*, such as \"Interrupt\" for :"
-"const:`SIGINT`. Returns :const:`None` if *signalnum* has no description. "
-"Raises :exc:`ValueError` if *signalnum* is invalid."
+"Returns the description of signal *signalnum*, such as \"Interrupt\" "
+"for :const:`SIGINT`. Returns :const:`None` if *signalnum* has no "
+"description. Raises :exc:`ValueError` if *signalnum* is invalid."
 msgstr ""
 
 #: library/signal.rst:378
@@ -426,8 +427,8 @@ msgstr ""
 
 #: library/signal.rst:394
 msgid ""
-"See also :func:`sigwait`, :func:`sigwaitinfo`, :func:`sigtimedwait` and :"
-"func:`sigpending`."
+"See also :func:`sigwait`, :func:`sigwaitinfo`, :func:`sigtimedwait` "
+"and :func:`sigpending`."
 msgstr ""
 
 #: library/signal.rst:400
@@ -517,9 +518,9 @@ msgstr ""
 
 #: library/signal.rst:462
 msgid ""
-"*mask* is a set of signal numbers (e.g. {:const:`signal.SIGINT`, :const:"
-"`signal.SIGTERM`}). Use :func:`~signal.valid_signals` for a full mask "
-"including all signals."
+"*mask* is a set of signal numbers (e.g. "
+"{:const:`signal.SIGINT`, :const:`signal.SIGTERM`}). "
+"Use :func:`~signal.valid_signals` for a full mask including all signals."
 msgstr ""
 
 #: library/signal.rst:466
@@ -538,20 +539,21 @@ msgstr ""
 
 #: library/signal.rst:483
 msgid ""
-"Sets given interval timer (one of :const:`signal.ITIMER_REAL`, :const:"
-"`signal.ITIMER_VIRTUAL` or :const:`signal.ITIMER_PROF`) specified by *which* "
-"to fire after *seconds* (float is accepted, different from :func:`alarm`) "
-"and after that every *interval* seconds (if *interval* is non-zero). The "
-"interval timer specified by *which* can be cleared by setting *seconds* to "
-"zero."
+"Sets given interval timer (one "
+"of :const:`signal.ITIMER_REAL`, :const:`signal.ITIMER_VIRTUAL` "
+"or :const:`signal.ITIMER_PROF`) specified by *which* to fire after *seconds* "
+"(float is accepted, different from :func:`alarm`) and after that every "
+"*interval* seconds (if *interval* is non-zero). The interval timer specified "
+"by *which* can be cleared by setting *seconds* to zero."
 msgstr ""
 
 #: library/signal.rst:490
 msgid ""
 "When an interval timer fires, a signal is sent to the process. The signal "
 "sent is dependent on the timer being used; :const:`signal.ITIMER_REAL` will "
-"deliver :const:`SIGALRM`, :const:`signal.ITIMER_VIRTUAL` sends :const:"
-"`SIGVTALRM`, and :const:`signal.ITIMER_PROF` will deliver :const:`SIGPROF`."
+"deliver :const:`SIGALRM`, :const:`signal.ITIMER_VIRTUAL` "
+"sends :const:`SIGVTALRM`, and :const:`signal.ITIMER_PROF` will "
+"deliver :const:`SIGPROF`."
 msgstr ""
 
 #: library/signal.rst:496
@@ -560,8 +562,8 @@ msgstr ""
 
 #: library/signal.rst:498
 msgid ""
-"Attempting to pass an invalid interval timer will cause an :exc:"
-"`ItimerError`."
+"Attempting to pass an invalid interval timer will cause "
+"an :exc:`ItimerError`."
 msgstr ""
 
 #: library/signal.rst:506
@@ -651,9 +653,9 @@ msgid ""
 "Set the handler for signal *signalnum* to the function *handler*.  *handler* "
 "can be a callable Python object taking two arguments (see below), or one of "
 "the special values :const:`signal.SIG_IGN` or :const:`signal.SIG_DFL`.  The "
-"previous signal handler will be returned (see the description of :func:"
-"`getsignal` above).  (See the Unix man page :manpage:`signal(2)` for further "
-"information.)"
+"previous signal handler will be returned (see the description "
+"of :func:`getsignal` above).  (See the Unix man page :manpage:`signal(2)` "
+"for further information.)"
 msgstr ""
 
 #: library/signal.rst:583
@@ -666,10 +668,10 @@ msgstr ""
 
 #: library/signal.rst:588
 msgid ""
-"On Windows, :func:`signal` can only be called with :const:`SIGABRT`, :const:"
-"`SIGFPE`, :const:`SIGILL`, :const:`SIGINT`, :const:`SIGSEGV`, :const:"
-"`SIGTERM`, or :const:`SIGBREAK`. A :exc:`ValueError` will be raised in any "
-"other case. Note that not all systems define the same set of signal names; "
+"On Windows, :func:`signal` can only be called "
+"with :const:`SIGABRT`, :const:`SIGFPE`, :const:`SIGILL`, :const:`SIGINT`, :const:`SIGSEGV`, :const:`SIGTERM`, "
+"or :const:`SIGBREAK`. A :exc:`ValueError` will be raised in any other case. "
+"Note that not all systems define the same set of signal names; "
 "an :exc:`AttributeError` will be raised if a signal name is not defined as "
 "``SIG*`` module level constant."
 msgstr ""
@@ -703,8 +705,9 @@ msgstr ""
 
 #: library/signal.rst:622
 msgid ""
-"See also :func:`pause`, :func:`pthread_sigmask`, :func:`sigpending`, :func:"
-"`sigwaitinfo` and :func:`sigtimedwait`."
+"See "
+"also :func:`pause`, :func:`pthread_sigmask`, :func:`sigpending`, :func:`sigwaitinfo` "
+"and :func:`sigtimedwait`."
 msgstr ""
 
 #: library/signal.rst:630
@@ -714,16 +717,16 @@ msgid ""
 "signal and removes it from the pending list of signals. If one of the "
 "signals in *sigset* is already pending for the calling thread, the function "
 "will return immediately with information about that signal. The signal "
-"handler is not called for the delivered signal. The function raises an :exc:"
-"`InterruptedError` if it is interrupted by a signal that is not in *sigset*."
+"handler is not called for the delivered signal. The function raises "
+"an :exc:`InterruptedError` if it is interrupted by a signal that is not in "
+"*sigset*."
 msgstr ""
 
 #: library/signal.rst:639
 msgid ""
-"The return value is an object representing the data contained in the :c:type:"
-"`siginfo_t` structure, namely: :attr:`si_signo`, :attr:`si_code`, :attr:"
-"`si_errno`, :attr:`si_pid`, :attr:`si_uid`, :attr:`si_status`, :attr:"
-"`si_band`."
+"The return value is an object representing the data contained in "
+"the :c:type:`siginfo_t` structure, "
+"namely: :attr:`si_signo`, :attr:`si_code`, :attr:`si_errno`, :attr:`si_pid`, :attr:`si_uid`, :attr:`si_status`, :attr:`si_band`."
 msgstr ""
 
 #: library/signal.rst:646
@@ -802,11 +805,11 @@ msgstr ""
 
 #: library/signal.rst:709
 msgid ""
-"Piping output of your program to tools like :manpage:`head(1)` will cause a :"
-"const:`SIGPIPE` signal to be sent to your process when the receiver of its "
-"standard output closes early.  This results in an exception like :code:"
-"`BrokenPipeError: [Errno 32] Broken pipe`.  To handle this case, wrap your "
-"entry point to catch this exception as follows::"
+"Piping output of your program to tools like :manpage:`head(1)` will cause "
+"a :const:`SIGPIPE` signal to be sent to your process when the receiver of "
+"its standard output closes early.  This results in an exception "
+"like :code:`BrokenPipeError: [Errno 32] Broken pipe`.  To handle this case, "
+"wrap your entry point to catch this exception as follows::"
 msgstr ""
 
 #: library/signal.rst:715
@@ -881,9 +884,9 @@ msgstr ""
 
 #: library/signal.rst:771
 msgid ""
-"For many programs, especially those that merely want to exit on :exc:"
-"`KeyboardInterrupt`, this is not a problem, but applications that are "
-"complex or require high reliability should avoid raising exceptions from "
+"For many programs, especially those that merely want to exit "
+"on :exc:`KeyboardInterrupt`, this is not a problem, but applications that "
+"are complex or require high reliability should avoid raising exceptions from "
 "signal handlers. They should also avoid catching :exc:`KeyboardInterrupt` as "
 "a means of gracefully shutting down.  Instead, they should install their "
 "own :const:`SIGINT` handler. Below is an example of an HTTP server that "

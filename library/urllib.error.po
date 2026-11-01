@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -27,8 +27,8 @@ msgstr ""
 #: library/urllib.error.rst:14
 msgid ""
 "The :mod:`urllib.error` module defines the exception classes for exceptions "
-"raised by :mod:`urllib.request`.  The base exception class is :exc:"
-"`URLError`."
+"raised by :mod:`urllib.request`.  The base exception class "
+"is :exc:`URLError`."
 msgstr ""
 
 #: library/urllib.error.rst:17
@@ -56,10 +56,11 @@ msgstr ""
 
 #: library/urllib.error.rst:36
 msgid ""
-"Though being an exception (a subclass of :exc:`URLError`), an :exc:"
-"`HTTPError` can also function as a non-exceptional file-like return value "
-"(the same thing that :func:`~urllib.request.urlopen` returns).  This is "
-"useful when handling exotic HTTP errors, such as requests for authentication."
+"Though being an exception (a subclass of :exc:`URLError`), "
+"an :exc:`HTTPError` can also function as a non-exceptional file-like return "
+"value (the same thing that :func:`~urllib.request.urlopen` returns).  This "
+"is useful when handling exotic HTTP errors, such as requests for "
+"authentication."
 msgstr ""
 
 #: library/urllib.error.rst:44
@@ -69,8 +70,8 @@ msgstr ""
 #: library/urllib.error.rst:49
 msgid ""
 "An HTTP status code as defined in :rfc:`2616`.  This numeric value "
-"corresponds to a value found in the dictionary of codes as found in :attr:"
-"`http.server.BaseHTTPRequestHandler.responses`."
+"corresponds to a value found in the dictionary of codes as found "
+"in :attr:`http.server.BaseHTTPRequestHandler.responses`."
 msgstr ""
 
 #: library/urllib.error.rst:55
@@ -81,8 +82,8 @@ msgstr ""
 
 #: library/urllib.error.rst:60
 msgid ""
-"The HTTP response headers for the HTTP request that caused the :exc:"
-"`HTTPError`. An alias for *hdrs* attribute."
+"The HTTP response headers for the HTTP request that caused "
+"the :exc:`HTTPError`. An alias for *hdrs* attribute."
 msgstr ""
 
 #: library/urllib.error.rst:68

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,8 +59,8 @@ msgstr ""
 #: deprecations/c-api-pending-removal-in-3.14.rst:21
 #: deprecations/c-api-pending-removal-in-3.14.rst:71
 msgid ""
-"The :c:func:`Py_InitializeFromConfig` API should be used with :c:type:"
-"`PyConfig` instead."
+"The :c:func:`Py_InitializeFromConfig` API should be used "
+"with :c:type:`PyConfig` instead."
 msgstr ""
 
 #: deprecations/c-api-pending-removal-in-3.14.rst:24
@@ -122,8 +122,8 @@ msgstr ""
 
 #: deprecations/c-api-pending-removal-in-3.14.rst:48
 msgid ""
-":c:var:`Py_NoUserSiteDirectory`: Use :c:member:`PyConfig."
-"user_site_directory` instead."
+":c:var:`Py_NoUserSiteDirectory`: "
+"Use :c:member:`PyConfig.user_site_directory` instead."
 msgstr ""
 
 #: deprecations/c-api-pending-removal-in-3.14.rst:50
@@ -144,36 +144,36 @@ msgstr ""
 
 #: deprecations/c-api-pending-removal-in-3.14.rst:57
 msgid ""
-":c:var:`Py_LegacyWindowsFSEncodingFlag`: Use :c:member:`PyPreConfig."
-"legacy_windows_fs_encoding` instead."
+":c:var:`Py_LegacyWindowsFSEncodingFlag`: "
+"Use :c:member:`PyPreConfig.legacy_windows_fs_encoding` instead."
 msgstr ""
 
 #: deprecations/c-api-pending-removal-in-3.14.rst:59
 msgid ""
-":c:var:`Py_LegacyWindowsStdioFlag`: Use :c:member:`PyConfig."
-"legacy_windows_stdio` instead."
+":c:var:`Py_LegacyWindowsStdioFlag`: "
+"Use :c:member:`PyConfig.legacy_windows_stdio` instead."
 msgstr ""
 
 #: deprecations/c-api-pending-removal-in-3.14.rst:61
 msgid ""
-":c:var:`!Py_FileSystemDefaultEncoding`: Use :c:member:`PyConfig."
-"filesystem_encoding` instead."
+":c:var:`!Py_FileSystemDefaultEncoding`: "
+"Use :c:member:`PyConfig.filesystem_encoding` instead."
 msgstr ""
 
 #: deprecations/c-api-pending-removal-in-3.14.rst:63
 msgid ""
-":c:var:`!Py_HasFileSystemDefaultEncoding`: Use :c:member:`PyConfig."
-"filesystem_encoding` instead."
+":c:var:`!Py_HasFileSystemDefaultEncoding`: "
+"Use :c:member:`PyConfig.filesystem_encoding` instead."
 msgstr ""
 
 #: deprecations/c-api-pending-removal-in-3.14.rst:65
 msgid ""
-":c:var:`!Py_FileSystemDefaultEncodeErrors`: Use :c:member:`PyConfig."
-"filesystem_errors` instead."
+":c:var:`!Py_FileSystemDefaultEncodeErrors`: "
+"Use :c:member:`PyConfig.filesystem_errors` instead."
 msgstr ""
 
 #: deprecations/c-api-pending-removal-in-3.14.rst:67
 msgid ""
-":c:var:`!Py_UTF8Mode`: Use :c:member:`PyPreConfig.utf8_mode` instead. (see :"
-"c:func:`Py_PreInitialize`)"
+":c:var:`!Py_UTF8Mode`: Use :c:member:`PyPreConfig.utf8_mode` instead. "
+"(see :c:func:`Py_PreInitialize`)"
 msgstr ""

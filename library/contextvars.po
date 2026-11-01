@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -31,9 +31,9 @@ msgstr ""
 
 #: library/contextvars.rst:17
 msgid ""
-"Context managers that have state should use Context Variables instead of :"
-"func:`threading.local` to prevent their state from bleeding to other code "
-"unexpectedly, when used in concurrent code."
+"Context managers that have state should use Context Variables instead "
+"of :func:`threading.local` to prevent their state from bleeding to other "
+"code unexpectedly, when used in concurrent code."
 msgstr ""
 
 #: library/contextvars.rst:21
@@ -59,9 +59,9 @@ msgstr ""
 
 #: library/contextvars.rst:38
 msgid ""
-"The optional keyword-only *default* parameter is returned by :meth:"
-"`ContextVar.get` when no value for the variable is found in the current "
-"context."
+"The optional keyword-only *default* parameter is returned "
+"by :meth:`ContextVar.get` when no value for the variable is found in the "
+"current context."
 msgstr ""
 
 #: library/contextvars.rst:42
@@ -119,8 +119,8 @@ msgstr ""
 
 #: library/contextvars.rst:82
 msgid ""
-"Reset the context variable to the value it had before the :meth:`ContextVar."
-"set` that created the *token* was used."
+"Reset the context variable to the value it had before "
+"the :meth:`ContextVar.set` that created the *token* was used."
 msgstr ""
 
 #: library/contextvars.rst:85
@@ -154,9 +154,9 @@ msgstr ""
 
 #: library/contextvars.rst:111
 msgid ""
-"A read-only property.  Set to the value the variable had before the :meth:"
-"`ContextVar.set` method call that created the token. It points to :attr:"
-"`Token.MISSING` if the variable was not set before the call."
+"A read-only property.  Set to the value the variable had before "
+"the :meth:`ContextVar.set` method call that created the token. It points "
+"to :attr:`Token.MISSING` if the variable was not set before the call."
 msgstr ""
 
 #: library/contextvars.rst:118

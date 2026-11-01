@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -24,11 +24,11 @@ msgstr ""
 msgid ""
 "Various date and time objects are supplied by the :mod:`datetime` module. "
 "Before using any of these functions, the header file :file:`datetime.h` must "
-"be included in your source (note that this is not included by :file:`Python."
-"h`), and the macro :c:macro:`!PyDateTime_IMPORT` must be invoked, usually as "
-"part of the module initialisation function.  The macro puts a pointer to a C "
-"structure into a static variable, :c:data:`!PyDateTimeAPI`, that is used by "
-"the following macros."
+"be included in your source (note that this is not included "
+"by :file:`Python.h`), and the macro :c:macro:`!PyDateTime_IMPORT` must be "
+"invoked, usually as part of the module initialisation function.  The macro "
+"puts a pointer to a C structure into a static variable, :c:data:`!"
+"PyDateTimeAPI`, that is used by the following macros."
 msgstr ""
 
 #: c-api/datetime.rst:18
@@ -70,8 +70,8 @@ msgstr ""
 #: c-api/datetime.rst:49
 msgid ""
 "This instance of :c:type:`PyTypeObject` represents Python type for the "
-"difference between two datetime values; it is the same object as :class:"
-"`datetime.timedelta` in the Python layer."
+"difference between two datetime values; it is the same object "
+"as :class:`datetime.timedelta` in the Python layer."
 msgstr ""
 
 #: c-api/datetime.rst:55
@@ -86,8 +86,8 @@ msgstr ""
 
 #: c-api/datetime.rst:63
 msgid ""
-"Returns the time zone singleton representing UTC, the same object as :attr:"
-"`datetime.timezone.utc`."
+"Returns the time zone singleton representing UTC, the same object "
+"as :attr:`datetime.timezone.utc`."
 msgstr ""
 
 #: c-api/datetime.rst:69
@@ -216,9 +216,9 @@ msgstr ""
 #: c-api/datetime.rst:195
 msgid ""
 "Macros to extract fields from date objects.  The argument must be an "
-"instance of :c:type:`PyDateTime_Date`, including subclasses (such as :c:type:"
-"`PyDateTime_DateTime`).  The argument must not be ``NULL``, and the type is "
-"not checked:"
+"instance of :c:type:`PyDateTime_Date`, including subclasses (such "
+"as :c:type:`PyDateTime_DateTime`).  The argument must not be ``NULL``, and "
+"the type is not checked:"
 msgstr ""
 
 #: c-api/datetime.rst:202

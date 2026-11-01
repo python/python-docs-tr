@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -121,9 +121,9 @@ msgstr ""
 
 #: library/random.rst:77
 msgid ""
-"With version 2 (the default), a :class:`str`, :class:`bytes`, or :class:"
-"`bytearray` object gets converted to an :class:`int` and all of its bits are "
-"used."
+"With version 2 (the default), a :class:`str`, :class:`bytes`, "
+"or :class:`bytearray` object gets converted to an :class:`int` and all of "
+"its bits are used."
 msgstr ""
 
 #: library/random.rst:80
@@ -140,8 +140,9 @@ msgstr ""
 
 #: library/random.rst:87
 msgid ""
-"The *seed* must be one of the following types: ``None``, :class:`int`, :"
-"class:`float`, :class:`str`, :class:`bytes`, or :class:`bytearray`."
+"The *seed* must be one of the following types: "
+"``None``, :class:`int`, :class:`float`, :class:`str`, :class:`bytes`, "
+"or :class:`bytearray`."
 msgstr ""
 
 #: library/random.rst:94
@@ -167,8 +168,8 @@ msgstr ""
 
 #: library/random.rst:112
 msgid ""
-"This method should not be used for generating security tokens. Use :func:"
-"`secrets.token_bytes` instead."
+"This method should not be used for generating security tokens. "
+"Use :func:`secrets.token_bytes` instead."
 msgstr ""
 
 #: library/random.rst:119
@@ -206,8 +207,8 @@ msgstr ""
 #: library/random.rst:140
 msgid ""
 "Automatic conversion of non-integer types is no longer supported. Calls such "
-"as ``randrange(10.0)`` and ``randrange(Fraction(10, 1))`` now raise a :exc:"
-"`TypeError`."
+"as ``randrange(10.0)`` and ``randrange(Fraction(10, 1))`` now raise "
+"a :exc:`TypeError`."
 msgstr ""
 
 #: library/random.rst:147
@@ -220,8 +221,9 @@ msgstr ""
 msgid ""
 "Returns a non-negative Python integer with *k* random bits. This method is "
 "supplied with the Mersenne Twister generator and some other generators may "
-"also provide it as an optional part of the API. When available, :meth:"
-"`getrandbits` enables :meth:`randrange` to handle arbitrarily large ranges."
+"also provide it as an optional part of the API. When "
+"available, :meth:`getrandbits` enables :meth:`randrange` to handle "
+"arbitrarily large ranges."
 msgstr ""
 
 #: library/random.rst:158
@@ -275,11 +277,11 @@ msgstr ""
 #: library/random.rst:195
 msgid ""
 "For a given seed, the :func:`choices` function with equal weighting "
-"typically produces a different sequence than repeated calls to :func:"
-"`choice`.  The algorithm used by :func:`choices` uses floating-point "
-"arithmetic for internal consistency and speed.  The algorithm used by :func:"
-"`choice` defaults to integer arithmetic with repeated selections to avoid "
-"small biases from round-off error."
+"typically produces a different sequence than repeated calls "
+"to :func:`choice`.  The algorithm used by :func:`choices` uses floating-"
+"point arithmetic for internal consistency and speed.  The algorithm used "
+"by :func:`choice` defaults to integer arithmetic with repeated selections to "
+"avoid small biases from round-off error."
 msgstr ""
 
 #: library/random.rst:204
@@ -372,9 +374,9 @@ msgstr ""
 
 #: library/random.rst:266
 msgid ""
-"`Binomial distribution <https://mathworld.wolfram.com/BinomialDistribution."
-"html>`_. Return the number of successes for *n* independent trials with the "
-"probability of success in each trial being *p*:"
+"`Binomial distribution <https://mathworld.wolfram.com/"
+"BinomialDistribution.html>`_. Return the number of successes for *n* "
+"independent trials with the probability of success in each trial being *p*:"
 msgstr ""
 
 #: library/random.rst:271
@@ -531,8 +533,8 @@ msgstr ""
 #: library/random.rst:409
 msgid ""
 "Formerly the *seed* could be any hashable object.  Now it is limited to: "
-"``None``, :class:`int`, :class:`float`, :class:`str`, :class:`bytes`, or :"
-"class:`bytearray`."
+"``None``, :class:`int`, :class:`float`, :class:`str`, :class:`bytes`, "
+"or :class:`bytearray`."
 msgstr ""
 
 #: library/random.rst:414
@@ -572,8 +574,8 @@ msgstr ""
 
 #: library/random.rst:441
 msgid ""
-"Override this method in subclasses to customise the :meth:`~random."
-"getrandbits` behaviour of :class:`!Random` instances."
+"Override this method in subclasses to customise "
+"the :meth:`~random.getrandbits` behaviour of :class:`!Random` instances."
 msgstr ""
 
 #: library/random.rst:447
@@ -582,8 +584,8 @@ msgid ""
 "numbers from sources provided by the operating system. Not available on all "
 "systems. Does not rely on software state, and sequences are not "
 "reproducible. Accordingly, the :meth:`seed` method has no effect and is "
-"ignored. The :meth:`getstate` and :meth:`setstate` methods raise :exc:"
-"`NotImplementedError` if called."
+"ignored. The :meth:`getstate` and :meth:`setstate` methods "
+"raise :exc:`NotImplementedError` if called."
 msgstr ""
 
 #: library/random.rst:456
@@ -785,11 +787,11 @@ msgstr ""
 
 #: library/random.rst:604
 msgid ""
-"`Economics Simulation <https://nbviewer.org/url/norvig.com/ipython/Economics."
-"ipynb>`_ a simulation of a marketplace by `Peter Norvig <https://norvig.com/"
-"bio.html>`_ that shows effective use of many of the tools and distributions "
-"provided by this module (gauss, uniform, sample, betavariate, choice, "
-"triangular, and randrange)."
+"`Economics Simulation <https://nbviewer.org/url/norvig.com/ipython/"
+"Economics.ipynb>`_ a simulation of a marketplace by `Peter Norvig <https://"
+"norvig.com/bio.html>`_ that shows effective use of many of the tools and "
+"distributions provided by this module (gauss, uniform, sample, betavariate, "
+"choice, triangular, and randrange)."
 msgstr ""
 
 #: library/random.rst:611
@@ -833,8 +835,8 @@ msgid ""
 "def random_combination_with_replacement(iterable, r):\n"
 "    \"Choose r elements with replacement.  Order the result to match the "
 "iterable.\"\n"
-"    # Result will be in set(itertools."
-"combinations_with_replacement(iterable, r)).\n"
+"    # Result will be in "
+"set(itertools.combinations_with_replacement(iterable, r)).\n"
 "    pool = tuple(iterable)\n"
 "    n = len(pool)\n"
 "    indices = sorted(random.choices(range(n), k=r))\n"
@@ -904,6 +906,6 @@ msgstr ""
 msgid ""
 "`Generating Pseudo-random Floating-Point Values <https://allendowney.com/"
 "research/rand/downey07randfloat.pdf>`_ a paper by Allen B. Downey describing "
-"ways to generate more fine-grained floats than normally generated by :func:`."
-"random`."
+"ways to generate more fine-grained floats than normally generated "
+"by :func:`.random`."
 msgstr ""

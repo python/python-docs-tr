@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -345,9 +345,9 @@ msgstr ""
 
 #: using/windows.rst:165
 msgid ""
-":file:`%LocalAppData%\\\\\\ Programs\\\\Python\\\\\\ PythonXY` or :file:"
-"`%LocalAppData%\\\\\\ Programs\\\\Python\\\\\\ PythonXY-32` or :file:"
-"`%LocalAppData%\\\\\\ Programs\\\\Python\\\\\\ PythonXY-64`"
+":file:`%LocalAppData%\\\\\\ Programs\\\\Python\\\\\\ PythonXY` "
+"or :file:`%LocalAppData%\\\\\\ Programs\\\\Python\\\\\\ PythonXY-32` "
+"or :file:`%LocalAppData%\\\\\\ Programs\\\\Python\\\\\\ PythonXY-64`"
 msgstr ""
 
 #: using/windows.rst:175
@@ -572,11 +572,12 @@ msgstr ""
 
 #: using/windows.rst:252
 msgid ""
-"The options listed above can also be provided in a file named ``unattend."
-"xml`` alongside the executable. This file specifies a list of options and "
-"values. When a value is provided as an attribute, it will be converted to a "
-"number if possible. Values provided as element text are always left as "
-"strings. This example file sets the same options as the previous example:"
+"The options listed above can also be provided in a file named "
+"``unattend.xml`` alongside the executable. This file specifies a list of "
+"options and values. When a value is provided as an attribute, it will be "
+"converted to a number if possible. Values provided as element text are "
+"always left as strings. This example file sets the same options as the "
+"previous example:"
 msgstr ""
 
 #: using/windows.rst:258
@@ -650,8 +651,8 @@ msgstr ""
 
 #: using/windows.rst:307
 msgid ""
-"\"Uninstall\" will remove Python entirely, with the exception of the :ref:"
-"`launcher`, which has its own entry in Programs and Features."
+"\"Uninstall\" will remove Python entirely, with the exception of "
+"the :ref:`launcher`, which has its own entry in Programs and Features."
 msgstr ""
 
 #: using/windows.rst:314
@@ -706,8 +707,8 @@ msgstr ""
 msgid ""
 "If you have installed another version of Python and added it to your "
 "``PATH`` variable, it will be available as ``python.exe`` rather than the "
-"one from the Microsoft Store. To access the new installation, use ``python3."
-"exe`` or ``python3.x.exe``."
+"one from the Microsoft Store. To access the new installation, use "
+"``python3.exe`` or ``python3.x.exe``."
 msgstr ""
 
 #: using/windows.rst:350
@@ -744,9 +745,9 @@ msgstr ""
 msgid ""
 "At runtime, Python will use a private copy of well-known Windows folders and "
 "the registry. For example, if the environment variable :envvar:`%APPDATA%` "
-"is :file:`c:\\\\Users\\\\<user>\\\\AppData\\\\`, then when writing to :file:"
-"`C:\\\\Users\\\\<user>\\\\AppData\\\\Local` will write to :file:`C:\\"
-"\\Users\\\\<user>\\\\AppData\\\\Local\\\\Packages\\"
+"is :file:`c:\\\\Users\\\\<user>\\\\AppData\\\\`, then when writing "
+"to :file:`C:\\\\Users\\\\<user>\\\\AppData\\\\Local` will write to :file:`C:"
+"\\\\Users\\\\<user>\\\\AppData\\\\Local\\\\Packages\\"
 "\\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\\\\LocalCache\\\\Local\\"
 "\\`."
 msgstr ""
@@ -754,16 +755,16 @@ msgstr ""
 #: using/windows.rst:374
 msgid ""
 "When reading files, Windows will return the file from the private folder, or "
-"if that does not exist, the real Windows directory. For example reading :"
-"file:`C:\\\\Windows\\\\System32` returns the contents of :file:`C:\\"
+"if that does not exist, the real Windows directory. For example "
+"reading :file:`C:\\\\Windows\\\\System32` returns the contents of :file:`C:\\"
 "\\Windows\\\\System32` plus the contents of :file:`C:\\\\Program Files\\"
 "\\WindowsApps\\\\package_name\\\\VFS\\\\SystemX86`."
 msgstr ""
 
 #: using/windows.rst:378
 msgid ""
-"You can find the real path of any existing file using :func:`os.path."
-"realpath`:"
+"You can find the real path of any existing file "
+"using :func:`os.path.realpath`:"
 msgstr ""
 
 #: using/windows.rst:380
@@ -804,7 +805,7 @@ msgid ""
 "For more detail on the technical basis for these limitations, please consult "
 "Microsoft's documentation on packaged full-trust apps, currently available "
 "at `docs.microsoft.com/en-us/windows/msix/desktop/desktop-to-uwp-behind-the-"
-"scenes <https://docs.microsoft.com/en-us/windows/msix/desktop/desktop-to-uwp-"
+"scenes <https://learn.microsoft.com/windows/msix/desktop/desktop-to-uwp-"
 "behind-the-scenes>`_"
 msgstr ""
 
@@ -830,9 +831,9 @@ msgstr ""
 #: using/windows.rst:416
 msgid ""
 "The ``nuget.exe`` command line tool may be downloaded directly from "
-"``https://aka.ms/nugetclidl``, for example, using curl or PowerShell. With "
-"the tool, the latest version of Python for 64-bit or 32-bit machines is "
-"installed using::"
+"``https://dist.nuget.org/win-x86-commandline/latest/nuget.exe``, for "
+"example, using curl or PowerShell. With the tool, the latest version of "
+"Python for 64-bit or 32-bit machines is installed using::"
 msgstr ""
 
 #: using/windows.rst:421
@@ -911,7 +912,7 @@ msgstr ""
 #: using/windows.rst:477
 msgid ""
 "The embedded distribution does not include the `Microsoft C Runtime <https://"
-"docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist#visual-"
+"learn.microsoft.com/cpp/windows/latest-supported-vc-redist#visual-"
 "studio-2015-2017-2019-and-2022>`_ and it is the responsibility of the "
 "application installer to provide this. The runtime may have already been "
 "installed on a user's system previously or automatically via Windows Update, "
@@ -1086,8 +1087,8 @@ msgstr ""
 
 #: using/windows.rst:584
 msgid ""
-"To temporarily set environment variables, open Command Prompt and use the :"
-"command:`set` command:"
+"To temporarily set environment variables, open Command Prompt and use "
+"the :command:`set` command:"
 msgstr ""
 
 #: using/windows.rst:587
@@ -1107,19 +1108,19 @@ msgstr ""
 msgid ""
 "Including the variable name within percent signs will expand to the existing "
 "value, allowing you to add your new value at either the start or the end. "
-"Modifying :envvar:`PATH` by adding the directory containing :program:`python."
-"exe` to the start is a common way to ensure the correct version of Python is "
-"launched."
+"Modifying :envvar:`PATH` by adding the directory "
+"containing :program:`python.exe` to the start is a common way to ensure the "
+"correct version of Python is launched."
 msgstr ""
 
 #: using/windows.rst:602
 msgid ""
 "To permanently modify the default environment variables, click Start and "
-"search for 'edit environment variables', or open System properties, :"
-"guilabel:`Advanced system settings` and click the :guilabel:`Environment "
-"Variables` button. In this dialog, you can add or modify User and System "
-"variables. To change System variables, you need non-restricted access to "
-"your machine (i.e. Administrator rights)."
+"search for 'edit environment variables', or open System "
+"properties, :guilabel:`Advanced system settings` and click "
+"the :guilabel:`Environment Variables` button. In this dialog, you can add or "
+"modify User and System variables. To change System variables, you need non-"
+"restricted access to your machine (i.e. Administrator rights)."
 msgstr ""
 
 #: using/windows.rst:611
@@ -1137,8 +1138,7 @@ msgstr ""
 
 #: using/windows.rst:621
 msgid ""
-"https://docs.microsoft.com/en-us/windows/win32/procthread/environment-"
-"variables"
+"https://learn.microsoft.com/windows/win32/procthread/environment-variables"
 msgstr ""
 
 #: using/windows.rst:622
@@ -1147,8 +1147,8 @@ msgstr ""
 
 #: using/windows.rst:624
 msgid ""
-"https://docs.microsoft.com/en-us/windows-server/administration/windows-"
-"commands/set_1"
+"https://learn.microsoft.com/windows-server/administration/windows-commands/"
+"set_1"
 msgstr ""
 
 #: using/windows.rst:625
@@ -1157,8 +1157,8 @@ msgstr ""
 
 #: using/windows.rst:627
 msgid ""
-"https://docs.microsoft.com/en-us/windows-server/administration/windows-"
-"commands/setx"
+"https://learn.microsoft.com/windows-server/administration/windows-commands/"
+"setx"
 msgstr ""
 
 #: using/windows.rst:628
@@ -1209,8 +1209,8 @@ msgstr ""
 #: using/windows.rst:666
 msgid ""
 "Windows still uses legacy encodings for the system encoding (the ANSI Code "
-"Page).  Python uses it for the default encoding of text files (e.g. :func:"
-"`locale.getencoding`)."
+"Page).  Python uses it for the default encoding of text files "
+"(e.g. :func:`locale.getencoding`)."
 msgstr ""
 
 #: using/windows.rst:670
@@ -1470,8 +1470,8 @@ msgstr ""
 
 #: using/windows.rst:836
 msgid ""
-"The launcher should have been associated with Python files (i.e. ``.py``, ``."
-"pyw``, ``.pyc`` files) when it was installed.  This means that when you "
+"The launcher should have been associated with Python files (i.e. ``.py``, "
+"``.pyw``, ``.pyc`` files) when it was installed.  This means that when you "
 "double-click on one of these files from Windows explorer the launcher will "
 "be used, and therefore you can use the same facilities described above to "
 "have the script specify the version which should be used."
@@ -1556,8 +1556,8 @@ msgstr ""
 #: using/windows.rst:890
 msgid ""
 "The \"-64\" suffix is deprecated, and now implies \"any architecture that is "
-"not provably i386/32-bit\". To request a specific environment, use the new :"
-"samp:`-V:{TAG}` argument with the complete tag."
+"not provably i386/32-bit\". To request a specific environment, use the "
+"new :samp:`-V:{TAG}` argument with the complete tag."
 msgstr ""
 
 #: using/windows.rst:894
@@ -1569,9 +1569,9 @@ msgid ""
 "program, which performs a :envvar:`PATH` search. If an executable matching "
 "the first argument after the ``env`` command cannot be found, but the "
 "argument starts with ``python``, it will be handled as described for the "
-"other virtual commands. The environment variable :envvar:"
-"`PYLAUNCHER_NO_SEARCH_PATH` may be set (to any value) to skip this search "
-"of :envvar:`PATH`."
+"other virtual commands. The environment "
+"variable :envvar:`PYLAUNCHER_NO_SEARCH_PATH` may be set (to any value) to "
+"skip this search of :envvar:`PATH`."
 msgstr ""
 
 #: using/windows.rst:905
@@ -1631,10 +1631,10 @@ msgstr ""
 #: using/windows.rst:946
 msgid ""
 "Two .ini files will be searched by the launcher - ``py.ini`` in the current "
-"user's application data directory (``%LOCALAPPDATA%`` or ``$env:"
-"LocalAppData``) and ``py.ini`` in the same directory as the launcher. The "
-"same .ini files are used for both the 'console' version of the launcher (i."
-"e. py.exe) and for the 'windows' version (i.e. pyw.exe)."
+"user's application data directory (``%LOCALAPPDATA%`` or "
+"``$env:LocalAppData``) and ``py.ini`` in the same directory as the launcher. "
+"The same .ini files are used for both the 'console' version of the launcher "
+"(i.e. py.exe) and for the 'windows' version (i.e. pyw.exe)."
 msgstr ""
 
 #: using/windows.rst:952
@@ -1667,12 +1667,12 @@ msgstr ""
 
 #: using/windows.rst:968
 msgid ""
-"If no version qualifiers are found in a command, the environment variable :"
-"envvar:`PY_PYTHON` can be set to specify the default version qualifier. If "
-"it is not set, the default is \"3\". The variable can specify any value that "
-"may be passed on the command line, such as \"3\", \"3.7\", \"3.7-32\" or "
-"\"3.7-64\". (Note that the \"-64\" option is only available with the "
-"launcher included with Python 3.7 or newer.)"
+"If no version qualifiers are found in a command, the environment "
+"variable :envvar:`PY_PYTHON` can be set to specify the default version "
+"qualifier. If it is not set, the default is \"3\". The variable can specify "
+"any value that may be passed on the command line, such as \"3\", \"3.7\", "
+"\"3.7-32\" or \"3.7-64\". (Note that the \"-64\" option is only available "
+"with the launcher included with Python 3.7 or newer.)"
 msgstr ""
 
 #: using/windows.rst:975
@@ -1819,8 +1819,8 @@ msgstr ""
 msgid ""
 "An additional :envvar:`PYLAUNCHER_ALWAYS_INSTALL` variable causes the "
 "launcher to always try to install Python, even if it is detected. This is "
-"mainly intended for testing (and should be used with :envvar:"
-"`PYLAUNCHER_DRYRUN`)."
+"mainly intended for testing (and should be used "
+"with :envvar:`PYLAUNCHER_DRYRUN`)."
 msgstr ""
 
 #: using/windows.rst:1072
@@ -1955,19 +1955,19 @@ msgstr ""
 
 #: using/windows.rst:1117
 msgid ""
-"If the environment variable :envvar:`PYTHONPATH` exists, as described in :"
-"ref:`using-on-envvars`, its entries are added next.  Note that on Windows, "
-"paths in this variable must be separated by semicolons, to distinguish them "
-"from the colon used in drive identifiers (``C:\\`` etc.)."
+"If the environment variable :envvar:`PYTHONPATH` exists, as described "
+"in :ref:`using-on-envvars`, its entries are added next.  Note that on "
+"Windows, paths in this variable must be separated by semicolons, to "
+"distinguish them from the colon used in drive identifiers (``C:\\`` etc.)."
 msgstr ""
 
 #: using/windows.rst:1122
 msgid ""
-"Additional \"application paths\" can be added in the registry as subkeys of :"
-"samp:`\\\\SOFTWARE\\\\Python\\\\PythonCore\\\\{version}\\\\PythonPath` under "
-"both the ``HKEY_CURRENT_USER`` and ``HKEY_LOCAL_MACHINE`` hives.  Subkeys "
-"which have semicolon-delimited path strings as their default value will "
-"cause each path to be added to :data:`sys.path`.  (Note that all known "
+"Additional \"application paths\" can be added in the registry as subkeys "
+"of :samp:`\\\\SOFTWARE\\\\Python\\\\PythonCore\\\\{version}\\\\PythonPath` "
+"under both the ``HKEY_CURRENT_USER`` and ``HKEY_LOCAL_MACHINE`` hives.  "
+"Subkeys which have semicolon-delimited path strings as their default value "
+"will cause each path to be added to :data:`sys.path`.  (Note that all known "
 "installers only use HKLM, so HKCU is typically empty.)"
 msgstr ""
 
@@ -2046,8 +2046,8 @@ msgstr ""
 #: using/windows.rst:1171
 msgid ""
 "If you are loading :file:`python3.dll` or :file:`python37.dll` in your own "
-"executable, explicitly call :c:func:`Py_SetPath` or (at least) :c:func:"
-"`Py_SetProgramName` before :c:func:`Py_Initialize`."
+"executable, explicitly call :c:func:`Py_SetPath` or (at "
+"least) :c:func:`Py_SetProgramName` before :c:func:`Py_Initialize`."
 msgstr ""
 
 #: using/windows.rst:1175
@@ -2077,8 +2077,8 @@ msgstr ""
 
 #: using/windows.rst:1192
 msgid ""
-"Add ``._pth`` file support and removes ``applocal`` option from ``pyvenv."
-"cfg``."
+"Add ``._pth`` file support and removes ``applocal`` option from "
+"``pyvenv.cfg``."
 msgstr ""
 
 #: using/windows.rst:1197
@@ -2124,7 +2124,7 @@ msgstr ""
 
 #: using/windows.rst:1224
 msgid ""
-"`Component Object Model <https://docs.microsoft.com/en-us/windows/win32/com/"
+"`Component Object Model <https://learn.microsoft.com/windows/win32/com/"
 "component-object-model--com--portal>`_ (COM)"
 msgstr ""
 
@@ -2142,15 +2142,15 @@ msgstr ""
 
 #: using/windows.rst:1230
 msgid ""
-"`Microsoft Foundation Classes <https://docs.microsoft.com/en-us/cpp/mfc/mfc-"
+"`Microsoft Foundation Classes <https://learn.microsoft.com/cpp/mfc/mfc-"
 "desktop-applications>`_ (MFC) user interfaces"
 msgstr ""
 
 #: using/windows.rst:1234
 msgid ""
-"`PythonWin <https://web.archive.org/web/20060524042422/ https://www.python."
-"org/windows/pythonwin/>`_ is a sample MFC application shipped with PyWin32.  "
-"It is an embeddable IDE with a built-in debugger."
+"`PythonWin <https://web.archive.org/web/20060524042422/ https://"
+"www.python.org/windows/pythonwin/>`_ is a sample MFC application shipped "
+"with PyWin32.  It is an embeddable IDE with a built-in debugger."
 msgstr ""
 
 #: using/windows.rst:1240

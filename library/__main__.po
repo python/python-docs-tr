@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -40,8 +40,8 @@ msgstr ""
 msgid ""
 "Both of these mechanisms are related to Python modules; how users interact "
 "with them and how they interact with each other.  They are explained in "
-"detail below.  If you're new to Python modules, see the tutorial section :"
-"ref:`tut-modules` for an introduction."
+"detail below.  If you're new to Python modules, see the tutorial "
+"section :ref:`tut-modules` for an introduction."
 msgstr ""
 
 #: library/__main__.rst:25
@@ -120,8 +120,8 @@ msgstr ""
 
 #: library/__main__.rst:67
 msgid ""
-"the Python module or package passed to the Python interpreter with the :"
-"option:`-m` argument:"
+"the Python module or package passed to the Python interpreter with "
+"the :option:`-m` argument:"
 msgstr ""
 
 #: library/__main__.rst:70
@@ -272,9 +272,9 @@ msgstr ""
 #: library/__main__.rst:175
 msgid ""
 "Since the call to ``main`` is wrapped in :func:`sys.exit`, the expectation "
-"is that your function will return some value acceptable as an input to :func:"
-"`sys.exit`; typically, an integer or ``None`` (which is implicitly returned "
-"if your function does not have a return statement)."
+"is that your function will return some value acceptable as an input "
+"to :func:`sys.exit`; typically, an integer or ``None`` (which is implicitly "
+"returned if your function does not have a return statement)."
 msgstr ""
 
 #: library/__main__.rst:180
@@ -290,8 +290,8 @@ msgid ""
 "In particular, be careful about returning strings from your ``main`` "
 "function. :func:`sys.exit` will interpret a string argument as a failure "
 "message, so your program will have an exit code of ``1``, indicating "
-"failure, and the string will be written to :data:`sys.stderr`.  The ``echo."
-"py`` example from earlier exemplifies using the ``sys.exit(main())`` "
+"failure, and the string will be written to :data:`sys.stderr`.  The "
+"``echo.py`` example from earlier exemplifies using the ``sys.exit(main())`` "
 "convention."
 msgstr ""
 
@@ -383,8 +383,8 @@ msgstr ""
 
 #: library/__main__.rst:254
 msgid ""
-"This won't work for ``__main__.py`` files in the root directory of a ``."
-"zip`` file though.  Hence, for consistency, a minimal ``__main__.py`` "
+"This won't work for ``__main__.py`` files in the root directory of a "
+"``.zip`` file though.  Hence, for consistency, a minimal ``__main__.py`` "
 "without a ``__name__`` check is preferred."
 msgstr ""
 
@@ -542,6 +542,6 @@ msgstr ""
 
 #: library/__main__.rst:367
 msgid ""
-"The ``__main__`` scope is used in the implementation of :mod:`pdb` and :mod:"
-"`rlcompleter`."
+"The ``__main__`` scope is used in the implementation of :mod:`pdb` "
+"and :mod:`rlcompleter`."
 msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -74,8 +74,8 @@ msgstr ""
 
 #: c-api/refcounting.rst:52
 msgid ""
-"This function is usually used to convert a :term:`borrowed reference` to a :"
-"term:`strong reference` in-place. The :c:func:`Py_NewRef` function can be "
+"This function is usually used to convert a :term:`borrowed reference` to "
+"a :term:`strong reference` in-place. The :c:func:`Py_NewRef` function can be "
 "used to create a new :term:`strong reference`."
 msgstr ""
 
@@ -91,8 +91,8 @@ msgstr ""
 
 #: c-api/refcounting.rst:61
 msgid ""
-"Do not expect this function to actually modify *o* in any way. For at least :"
-"pep:`some objects <0683>`, this function has no effect."
+"Do not expect this function to actually modify *o* in any way. For at "
+"least :pep:`some objects <0683>`, this function has no effect."
 msgstr ""
 
 #: c-api/refcounting.rst:71
@@ -180,14 +180,14 @@ msgstr ""
 
 #: c-api/refcounting.rst:127
 msgid ""
-"Do not expect this function to actually modify *o* in any way. For at least :"
-"pep:`some objects <683>`, this function has no effect."
+"Do not expect this function to actually modify *o* in any way. For at "
+"least :pep:`some objects <683>`, this function has no effect."
 msgstr ""
 
 #: c-api/refcounting.rst:133
 msgid ""
-"The deallocation function can cause arbitrary Python code to be invoked (e."
-"g. when a class instance with a :meth:`~object.__del__` method is "
+"The deallocation function can cause arbitrary Python code to be invoked "
+"(e.g. when a class instance with a :meth:`~object.__del__` method is "
 "deallocated).  While exceptions in such code are not propagated, the "
 "executed code has free access to all Python global variables.  This means "
 "that any object that is reachable from a global variable should be in a "
@@ -235,8 +235,9 @@ msgstr ""
 
 #: c-api/refcounting.rst:180
 msgid ""
-"Release a :term:`strong reference` to object *o*. A function version of :c:"
-"func:`Py_XDECREF`. It can be used for runtime dynamic embedding of Python."
+"Release a :term:`strong reference` to object *o*. A function version "
+"of :c:func:`Py_XDECREF`. It can be used for runtime dynamic embedding of "
+"Python."
 msgstr ""
 
 #: c-api/refcounting.rst:187

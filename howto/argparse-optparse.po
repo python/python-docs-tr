@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,8 +26,8 @@ msgid ""
 "Originally, the :mod:`argparse` module had attempted to maintain "
 "compatibility with :mod:`optparse`.  However, :mod:`optparse` was difficult "
 "to extend transparently, particularly with the changes required to support "
-"``nargs=`` specifiers and better usage messages.  When most everything in :"
-"mod:`optparse` had either been copy-pasted over or monkey-patched, it no "
+"``nargs=`` specifiers and better usage messages.  When most everything "
+"in :mod:`optparse` had either been copy-pasted over or monkey-patched, it no "
 "longer seemed practical to try to maintain the backwards compatibility."
 msgstr ""
 
@@ -66,23 +67,23 @@ msgstr ""
 
 #: howto/argparse-optparse.rst:28
 msgid ""
-"Replace all :meth:`optparse.OptionParser.add_option` calls with :meth:"
-"`ArgumentParser.add_argument` calls."
+"Replace all :meth:`optparse.OptionParser.add_option` calls "
+"with :meth:`ArgumentParser.add_argument` calls."
 msgstr ""
 
 #: howto/argparse-optparse.rst:31
 msgid ""
-"Replace ``(options, args) = parser.parse_args()`` with ``args = parser."
-"parse_args()`` and add additional :meth:`ArgumentParser.add_argument` calls "
-"for the positional arguments. Keep in mind that what was previously called "
-"``options``, now in the :mod:`argparse` context is called ``args``."
+"Replace ``(options, args) = parser.parse_args()`` with ``args = "
+"parser.parse_args()`` and add additional :meth:`ArgumentParser.add_argument` "
+"calls for the positional arguments. Keep in mind that what was previously "
+"called ``options``, now in the :mod:`argparse` context is called ``args``."
 msgstr ""
 
 #: howto/argparse-optparse.rst:36
 msgid ""
-"Replace :meth:`optparse.OptionParser.disable_interspersed_args` by using :"
-"meth:`~ArgumentParser.parse_intermixed_args` instead of :meth:"
-"`~ArgumentParser.parse_args`."
+"Replace :meth:`optparse.OptionParser.disable_interspersed_args` by "
+"using :meth:`~ArgumentParser.parse_intermixed_args` instead "
+"of :meth:`~ArgumentParser.parse_args`."
 msgstr ""
 
 #: howto/argparse-optparse.rst:40
@@ -99,8 +100,9 @@ msgstr ""
 
 #: howto/argparse-optparse.rst:46
 msgid ""
-"Replace :class:`optparse.Values` with :class:`Namespace` and :exc:`optparse."
-"OptionError` and :exc:`optparse.OptionValueError` with :exc:`ArgumentError`."
+"Replace :class:`optparse.Values` with :class:`Namespace` "
+"and :exc:`optparse.OptionError` and :exc:`optparse.OptionValueError` "
+"with :exc:`ArgumentError`."
 msgstr ""
 
 #: howto/argparse-optparse.rst:50

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -37,9 +37,9 @@ msgstr ""
 #: howto/argparse.rst:16
 msgid ""
 "There are two other modules that fulfill the same task, namely :mod:`getopt` "
-"(an equivalent for ``getopt()`` from the C language) and the deprecated :mod:"
-"`optparse`. Note also that :mod:`argparse` is based on :mod:`optparse`, and "
-"therefore very similar in terms of usage."
+"(an equivalent for ``getopt()`` from the C language) and the "
+"deprecated :mod:`optparse`. Note also that :mod:`argparse` is based "
+"on :mod:`optparse`, and therefore very similar in terms of usage."
 msgstr ""
 
 #: howto/argparse.rst:24
@@ -295,8 +295,8 @@ msgstr ""
 #: howto/argparse.rst:198
 msgid ""
 "That didn't go so well. That's because :mod:`argparse` treats the options we "
-"give it as strings, unless we tell it otherwise. So, let's tell :mod:"
-"`argparse` to treat that input as an integer::"
+"give it as strings, unless we tell it otherwise. So, let's "
+"tell :mod:`argparse` to treat that input as an integer::"
 msgstr ""
 
 #: howto/argparse.rst:202
@@ -377,8 +377,8 @@ msgid ""
 "To show that the option is actually optional, there is no error when running "
 "the program without it. Note that by default, if an optional argument isn't "
 "used, the relevant variable, in this case ``args.verbosity``, is given "
-"``None`` as a value, which is the reason it fails the truth test of the :"
-"keyword:`if` statement."
+"``None`` as a value, which is the reason it fails the truth test of "
+"the :keyword:`if` statement."
 msgstr ""
 
 #: howto/argparse.rst:265
@@ -797,8 +797,8 @@ msgid ""
 "We've just introduced yet another keyword, ``default``. We've set it to "
 "``0`` in order to make it comparable to the other int values. Remember that "
 "by default, if an optional argument isn't specified, it gets the ``None`` "
-"value, and that cannot be compared to an int value (hence the :exc:"
-"`TypeError` exception)."
+"value, and that cannot be compared to an int value (hence "
+"the :exc:`TypeError` exception)."
 msgstr ""
 
 #: howto/argparse.rst:585
@@ -941,12 +941,13 @@ msgstr ""
 
 #: howto/argparse.rst:701
 msgid ""
-"So far, we have been working with two methods of an :class:`argparse."
-"ArgumentParser` instance. Let's introduce a third one, :meth:"
-"`~ArgumentParser.add_mutually_exclusive_group`. It allows for us to specify "
-"options that conflict with each other. Let's also change the rest of the "
-"program so that the new functionality makes more sense: we'll introduce the "
-"``--quiet`` option, which will be the opposite of the ``--verbose`` one::"
+"So far, we have been working with two methods of "
+"an :class:`argparse.ArgumentParser` instance. Let's introduce a third "
+"one, :meth:`~ArgumentParser.add_mutually_exclusive_group`. It allows for us "
+"to specify options that conflict with each other. Let's also change the rest "
+"of the program so that the new functionality makes more sense: we'll "
+"introduce the ``--quiet`` option, which will be the opposite of the ``--"
+"verbose`` one::"
 msgstr ""
 
 #: howto/argparse.rst:709
@@ -1075,9 +1076,9 @@ msgstr ""
 
 #: howto/argparse.rst:820
 msgid ""
-"In order to translate these strings, they must first be extracted into a ``."
-"po`` file. For example, using `Babel <https://babel.pocoo.org/>`__, run this "
-"command:"
+"In order to translate these strings, they must first be extracted into a "
+"``.po`` file. For example, using `Babel <https://babel.pocoo.org/>`__, run "
+"this command:"
 msgstr ""
 
 #: howto/argparse.rst:824
@@ -1112,8 +1113,8 @@ msgstr ""
 
 #: howto/argparse.rst:842
 msgid ""
-"To translate your own strings in the :mod:`argparse` output, use :mod:"
-"`gettext`."
+"To translate your own strings in the :mod:`argparse` output, "
+"use :mod:`gettext`."
 msgstr ""
 
 #: howto/argparse.rst:845

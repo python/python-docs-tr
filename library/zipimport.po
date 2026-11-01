@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -26,11 +26,11 @@ msgstr ""
 
 #: library/zipimport.rst:13
 msgid ""
-"This module adds the ability to import Python modules (:file:`\\*.py`, :file:"
-"`\\*.pyc`) and packages from ZIP-format archives. It is usually not needed "
-"to use the :mod:`zipimport` module explicitly; it is automatically used by "
-"the built-in :keyword:`import` mechanism for :data:`sys.path` items that are "
-"paths to ZIP archives."
+"This module adds the ability to import Python modules "
+"(:file:`\\*.py`, :file:`\\*.pyc`) and packages from ZIP-format archives. It "
+"is usually not needed to use the :mod:`zipimport` module explicitly; it is "
+"automatically used by the built-in :keyword:`import` mechanism "
+"for :data:`sys.path` items that are paths to ZIP archives."
 msgstr ""
 
 #: library/zipimport.rst:19
@@ -47,8 +47,8 @@ msgstr ""
 #: library/zipimport.rst:26
 msgid ""
 "Any files may be present in the ZIP archive, but importers are only invoked "
-"for :file:`.py` and :file:`.pyc` files.  ZIP import of dynamic modules (:"
-"file:`.pyd`, :file:`.so`) is disallowed. Note that if an archive only "
+"for :file:`.py` and :file:`.pyc` files.  ZIP import of dynamic modules "
+"(:file:`.pyd`, :file:`.so`) is disallowed. Note that if an archive only "
 "contains :file:`.py` files, Python will not attempt to modify the archive by "
 "adding the corresponding :file:`.pyc` file, meaning that if a ZIP archive "
 "doesn't contain :file:`.pyc` files, importing may be rather slow."
@@ -78,8 +78,8 @@ msgstr ""
 msgid ""
 "Written by James C. Ahlstrom, who also provided an implementation. Python "
 "2.3 follows the specification in :pep:`273`, but uses an implementation "
-"written by Just van Rossum that uses the import hooks described in :pep:"
-"`302`."
+"written by Just van Rossum that uses the import hooks described "
+"in :pep:`302`."
 msgstr ""
 
 #: library/zipimport.rst:47
@@ -97,8 +97,8 @@ msgstr ""
 
 #: library/zipimport.rst:56
 msgid ""
-"Exception raised by zipimporter objects. It's a subclass of :exc:"
-"`ImportError`, so it can be caught as :exc:`ImportError`, too."
+"Exception raised by zipimporter objects. It's a subclass "
+"of :exc:`ImportError`, so it can be caught as :exc:`ImportError`, too."
 msgstr ""
 
 #: library/zipimport.rst:63
@@ -113,9 +113,9 @@ msgstr ""
 msgid ""
 "Create a new zipimporter instance. *archivepath* must be a path to a ZIP "
 "file, or to a specific path within a ZIP file.  For example, an "
-"*archivepath* of :file:`foo/bar.zip/lib` will look for modules in the :file:"
-"`lib` directory inside the ZIP file :file:`foo/bar.zip` (provided that it "
-"exists)."
+"*archivepath* of :file:`foo/bar.zip/lib` will look for modules in "
+"the :file:`lib` directory inside the ZIP file :file:`foo/bar.zip` (provided "
+"that it exists)."
 msgstr ""
 
 #: library/zipimport.rst:74
@@ -132,8 +132,8 @@ msgstr ""
 
 #: library/zipimport.rst:84
 msgid ""
-"Implementation of :meth:`importlib.abc.Loader.create_module` that returns :"
-"const:`None` to explicitly request the default semantics."
+"Implementation of :meth:`importlib.abc.Loader.create_module` that "
+"returns :const:`None` to explicitly request the default semantics."
 msgstr ""
 
 #: library/zipimport.rst:92
@@ -175,8 +175,8 @@ msgstr ""
 
 #: library/zipimport.rst:138
 msgid ""
-"Return ``True`` if the module specified by *fullname* is a package. Raise :"
-"exc:`ZipImportError` if the module couldn't be found."
+"Return ``True`` if the module specified by *fullname* is a package. "
+"Raise :exc:`ZipImportError` if the module couldn't be found."
 msgstr ""
 
 #: library/zipimport.rst:144
@@ -211,8 +211,8 @@ msgstr ""
 #: library/zipimport.rst:173
 msgid ""
 "The :attr:`archive` and :attr:`prefix` attributes, when combined with a "
-"slash, equal the original *archivepath* argument given to the :class:"
-"`zipimporter` constructor."
+"slash, equal the original *archivepath* argument given to "
+"the :class:`zipimporter` constructor."
 msgstr ""
 
 #: library/zipimport.rst:181
@@ -221,8 +221,8 @@ msgstr ""
 
 #: library/zipimport.rst:183
 msgid ""
-"Here is an example that imports a module from a ZIP archive - note that the :"
-"mod:`zipimport` module is not explicitly used."
+"Here is an example that imports a module from a ZIP archive - note that "
+"the :mod:`zipimport` module is not explicitly used."
 msgstr ""
 
 #: library/zipimport.rst:186
