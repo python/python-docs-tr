@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 00:16+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -54,9 +54,9 @@ msgid ""
 "instance of :class:`InteractiveConsole` and sets *readfunc* to be used as "
 "the :meth:`InteractiveConsole.raw_input` method, if provided.  If *local* is "
 "provided, it is passed to the :class:`InteractiveConsole` constructor for "
-"use as the default namespace for the interpreter loop.  The :meth:"
-"`~InteractiveConsole.interact` method of the instance is then run with "
-"*banner* and *exitmsg* passed as the banner and exit message to use, if "
+"use as the default namespace for the interpreter loop.  "
+"The :meth:`~InteractiveConsole.interact` method of the instance is then run "
+"with *banner* and *exitmsg* passed as the banner and exit message to use, if "
 "provided.  The console object is discarded after use."
 msgstr ""
 
@@ -104,10 +104,10 @@ msgstr ""
 
 #: library/code.rst:81
 msgid ""
-"The input is incorrect; :func:`compile_command` raised an exception (:exc:"
-"`SyntaxError` or :exc:`OverflowError`).  A syntax traceback will be printed "
-"by calling the :meth:`showsyntaxerror` method.  :meth:`runsource` returns "
-"``False``."
+"The input is incorrect; :func:`compile_command` raised an exception "
+"(:exc:`SyntaxError` or :exc:`OverflowError`).  A syntax traceback will be "
+"printed by calling the :meth:`showsyntaxerror` method.  :meth:`runsource` "
+"returns ``False``."
 msgstr ""
 
 #: library/code.rst:86
@@ -126,15 +126,15 @@ msgstr ""
 
 #: library/code.rst:93
 msgid ""
-"The return value can be used to decide whether to use ``sys.ps1`` or ``sys."
-"ps2`` to prompt the next line."
+"The return value can be used to decide whether to use ``sys.ps1`` or "
+"``sys.ps2`` to prompt the next line."
 msgstr ""
 
 #: library/code.rst:99
 msgid ""
 "Execute a code object. When an exception occurs, :meth:`showtraceback` is "
-"called to display a traceback.  All exceptions are caught except :exc:"
-"`SystemExit`, which is allowed to propagate."
+"called to display a traceback.  All exceptions are caught "
+"except :exc:`SystemExit`, which is allowed to propagate."
 msgstr ""
 
 #: library/code.rst:103
@@ -179,9 +179,9 @@ msgstr ""
 
 #: library/code.rst:138
 msgid ""
-"The :class:`InteractiveConsole` class is a subclass of :class:"
-"`InteractiveInterpreter`, and so offers all the methods of the interpreter "
-"objects as well as the following additions."
+"The :class:`InteractiveConsole` class is a subclass "
+"of :class:`InteractiveInterpreter`, and so offers all the methods of the "
+"interpreter objects as well as the following additions."
 msgstr ""
 
 #: library/code.rst:145
@@ -229,7 +229,7 @@ msgstr ""
 #: library/code.rst:181
 msgid ""
 "Write a prompt and read a line.  The returned line does not include the "
-"trailing newline.  When the user enters the EOF key sequence, :exc:"
-"`EOFError` is raised. The base implementation reads from ``sys.stdin``; a "
-"subclass may replace this with a different implementation."
+"trailing newline.  When the user enters the EOF key "
+"sequence, :exc:`EOFError` is raised. The base implementation reads from "
+"``sys.stdin``; a subclass may replace this with a different implementation."
 msgstr ""

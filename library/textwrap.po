@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -26,11 +26,11 @@ msgstr ""
 
 #: library/textwrap.rst:14
 msgid ""
-"The :mod:`textwrap` module provides some convenience functions, as well as :"
-"class:`TextWrapper`, the class that does all the work. If you're just "
+"The :mod:`textwrap` module provides some convenience functions, as well "
+"as :class:`TextWrapper`, the class that does all the work. If you're just "
 "wrapping or filling one or two text strings, the convenience functions "
-"should be good enough; otherwise, you should use an instance of :class:"
-"`TextWrapper` for efficiency."
+"should be good enough; otherwise, you should use an instance "
+"of :class:`TextWrapper` for efficiency."
 msgstr ""
 
 #: library/textwrap.rst:27
@@ -42,14 +42,14 @@ msgstr ""
 
 #: library/textwrap.rst:31
 msgid ""
-"Optional keyword arguments correspond to the instance attributes of :class:"
-"`TextWrapper`, documented below."
+"Optional keyword arguments correspond to the instance attributes "
+"of :class:`TextWrapper`, documented below."
 msgstr ""
 
 #: library/textwrap.rst:34
 msgid ""
-"See the :meth:`TextWrapper.wrap` method for additional details on how :func:"
-"`wrap` behaves."
+"See the :meth:`TextWrapper.wrap` method for additional details on "
+"how :func:`wrap` behaves."
 msgstr ""
 
 #: library/textwrap.rst:45
@@ -64,8 +64,8 @@ msgstr ""
 
 #: library/textwrap.rst:50
 msgid ""
-"In particular, :func:`fill` accepts exactly the same keyword arguments as :"
-"func:`wrap`."
+"In particular, :func:`fill` accepts exactly the same keyword arguments "
+"as :func:`wrap`."
 msgstr ""
 
 #: library/textwrap.rst:58
@@ -92,11 +92,12 @@ msgstr ""
 
 #: library/textwrap.rst:72
 msgid ""
-"Optional keyword arguments correspond to the instance attributes of :class:"
-"`TextWrapper`, documented below.  Note that the whitespace is collapsed "
-"before the text is passed to the :class:`TextWrapper` :meth:`fill` function, "
-"so changing the value of :attr:`.tabsize`, :attr:`.expand_tabs`, :attr:`."
-"drop_whitespace`, and :attr:`.replace_whitespace` will have no effect."
+"Optional keyword arguments correspond to the instance attributes "
+"of :class:`TextWrapper`, documented below.  Note that the whitespace is "
+"collapsed before the text is passed to the :class:`TextWrapper` :meth:`fill` "
+"function, so changing the value "
+"of :attr:`.tabsize`, :attr:`.expand_tabs`, :attr:`.drop_whitespace`, "
+"and :attr:`.replace_whitespace` will have no effect."
 msgstr ""
 
 #: library/textwrap.rst:82
@@ -177,18 +178,18 @@ msgstr ""
 
 #: library/textwrap.rst:134
 msgid ""
-":func:`wrap`, :func:`fill` and :func:`shorten` work by creating a :class:"
-"`TextWrapper` instance and calling a single method on it.  That instance is "
-"not reused, so for applications that process many text strings using :func:"
-"`wrap` and/or :func:`fill`, it may be more efficient to create your own :"
-"class:`TextWrapper` object."
+":func:`wrap`, :func:`fill` and :func:`shorten` work by creating "
+"a :class:`TextWrapper` instance and calling a single method on it.  That "
+"instance is not reused, so for applications that process many text strings "
+"using :func:`wrap` and/or :func:`fill`, it may be more efficient to create "
+"your own :class:`TextWrapper` object."
 msgstr ""
 
 #: library/textwrap.rst:140
 msgid ""
 "Text is preferably wrapped on whitespaces and right after the hyphens in "
-"hyphenated words; only then will long words be broken if necessary, unless :"
-"attr:`TextWrapper.break_long_words` is set to false."
+"hyphenated words; only then will long words be broken if necessary, "
+"unless :attr:`TextWrapper.break_long_words` is set to false."
 msgstr ""
 
 #: library/textwrap.rst:146
@@ -228,9 +229,9 @@ msgstr ""
 #: library/textwrap.rst:167
 msgid ""
 "(default: ``70``) The maximum length of wrapped lines.  As long as there are "
-"no individual words in the input text longer than :attr:`width`, :class:"
-"`TextWrapper` guarantees that no output line will be longer than :attr:"
-"`width` characters."
+"no individual words in the input text longer "
+"than :attr:`width`, :class:`TextWrapper` guarantees that no output line will "
+"be longer than :attr:`width` characters."
 msgstr ""
 
 #: library/textwrap.rst:175
@@ -248,8 +249,8 @@ msgstr ""
 
 #: library/textwrap.rst:190
 msgid ""
-"(default: ``True``) If true, after tab expansion but before wrapping, the :"
-"meth:`wrap` method will replace each whitespace character with a single "
+"(default: ``True``) If true, after tab expansion but before wrapping, "
+"the :meth:`wrap` method will replace each whitespace character with a single "
 "space.  The whitespace characters replaced are as follows: tab, newline, "
 "vertical tab, formfeed, and carriage return (``'\\t\\n\\v\\f\\r'``)."
 msgstr ""
@@ -367,11 +368,11 @@ msgstr ""
 
 #: library/textwrap.rst:300
 msgid ""
-"Wraps the single paragraph in *text* (a string) so every line is at most :"
-"attr:`width` characters long.  All wrapping options are taken from instance "
-"attributes of the :class:`TextWrapper` instance.  Returns a list of output "
-"lines, without final newlines.  If the wrapped output has no content, the "
-"returned list is empty."
+"Wraps the single paragraph in *text* (a string) so every line is at "
+"most :attr:`width` characters long.  All wrapping options are taken from "
+"instance attributes of the :class:`TextWrapper` instance.  Returns a list of "
+"output lines, without final newlines.  If the wrapped output has no content, "
+"the returned list is empty."
 msgstr ""
 
 #: library/textwrap.rst:309

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -163,11 +163,9 @@ msgstr ""
 
 #: c-api/init.rst:64
 msgid ""
-"The following functions **should not be called** before :c:func:"
-"`Py_Initialize`: :c:func:`Py_EncodeLocale`, :c:func:`Py_GetPath`, :c:func:"
-"`Py_GetPrefix`, :c:func:`Py_GetExecPrefix`, :c:func:"
-"`Py_GetProgramFullPath`, :c:func:`Py_GetPythonHome`, :c:func:"
-"`Py_GetProgramName` and :c:func:`PyEval_InitThreads`."
+"The following functions **should not be called** "
+"before :c:func:`Py_Initialize`: :c:func:`Py_EncodeLocale`, :c:func:`Py_GetPath`, :c:func:`Py_GetPrefix`, :c:func:`Py_GetExecPrefix`, :c:func:`Py_GetProgramFullPath`, :c:func:`Py_GetPythonHome`, :c:func:`Py_GetProgramName` "
+"and :c:func:`PyEval_InitThreads`."
 msgstr ""
 
 #: c-api/init.rst:74
@@ -177,30 +175,30 @@ msgstr ""
 #: c-api/init.rst:76
 msgid ""
 "Python has variables for the global configuration to control different "
-"features and options. By default, these flags are controlled by :ref:"
-"`command line options <using-on-interface-options>`."
+"features and options. By default, these flags are controlled "
+"by :ref:`command line options <using-on-interface-options>`."
 msgstr ""
 
 #: c-api/init.rst:80
 msgid ""
 "When a flag is set by an option, the value of the flag is the number of "
-"times that the option was set. For example, ``-b`` sets :c:data:"
-"`Py_BytesWarningFlag` to 1 and ``-bb`` sets :c:data:`Py_BytesWarningFlag` to "
-"2."
+"times that the option was set. For example, ``-b`` "
+"sets :c:data:`Py_BytesWarningFlag` to 1 and ``-bb`` "
+"sets :c:data:`Py_BytesWarningFlag` to 2."
 msgstr ""
 
 #: c-api/init.rst:86
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"bytes_warning` should be used instead, see :ref:`Python Initialization "
-"Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.bytes_warning` should be used instead, "
+"see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:90
 msgid ""
-"Issue a warning when comparing :class:`bytes` or :class:`bytearray` with :"
-"class:`str` or :class:`bytes` with :class:`int`.  Issue an error if greater "
-"or equal to ``2``."
+"Issue a warning when comparing :class:`bytes` or :class:`bytearray` "
+"with :class:`str` or :class:`bytes` with :class:`int`.  Issue an error if "
+"greater or equal to ``2``."
 msgstr ""
 
 #: c-api/init.rst:94
@@ -209,9 +207,9 @@ msgstr ""
 
 #: c-api/init.rst:100
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"parser_debug` should be used instead, see :ref:`Python Initialization "
-"Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.parser_debug` should be used instead, "
+"see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:104
@@ -228,9 +226,9 @@ msgstr ""
 
 #: c-api/init.rst:114
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"write_bytecode` should be used instead, see :ref:`Python Initialization "
-"Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.write_bytecode` should be used instead, "
+"see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:118
@@ -247,15 +245,15 @@ msgstr ""
 
 #: c-api/init.rst:128
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"pathconfig_warnings` should be used instead, see :ref:`Python Initialization "
-"Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.pathconfig_warnings` should be used instead, "
+"see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:132
 msgid ""
-"Suppress error messages when calculating the module search path in :c:func:"
-"`Py_GetPath`."
+"Suppress error messages when calculating the module search path "
+"in :c:func:`Py_GetPath`."
 msgstr ""
 
 #: c-api/init.rst:135
@@ -264,8 +262,9 @@ msgstr ""
 
 #: c-api/init.rst:141
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"hash_seed` and :c:member:`PyConfig.use_hash_seed` should be used instead, "
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.hash_seed` "
+"and :c:member:`PyConfig.use_hash_seed` should be used instead, "
 "see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
@@ -283,15 +282,15 @@ msgstr ""
 
 #: c-api/init.rst:156
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"use_environment` should be used instead, see :ref:`Python Initialization "
-"Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.use_environment` should be used instead, "
+"see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:160
 msgid ""
-"Ignore all :envvar:`!PYTHON*` environment variables, e.g. :envvar:"
-"`PYTHONPATH` and :envvar:`PYTHONHOME`, that might be set."
+"Ignore all :envvar:`!PYTHON*` environment variables, "
+"e.g. :envvar:`PYTHONPATH` and :envvar:`PYTHONHOME`, that might be set."
 msgstr ""
 
 #: c-api/init.rst:163
@@ -300,9 +299,9 @@ msgstr ""
 
 #: c-api/init.rst:169
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"inspect` should be used instead, see :ref:`Python Initialization "
-"Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.inspect` should be used instead, "
+"see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:173
@@ -320,9 +319,9 @@ msgstr ""
 
 #: c-api/init.rst:184
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"interactive` should be used instead, see :ref:`Python Initialization "
-"Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.interactive` should be used instead, "
+"see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:188
@@ -331,9 +330,9 @@ msgstr ""
 
 #: c-api/init.rst:194
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"isolated` should be used instead, see :ref:`Python Initialization "
-"Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.isolated` should be used instead, "
+"see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:198
@@ -348,9 +347,9 @@ msgstr ""
 
 #: c-api/init.rst:209
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyPreConfig."
-"legacy_windows_fs_encoding` should be used instead, see :ref:`Python "
-"Initialization Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyPreConfig.legacy_windows_fs_encoding` should be used "
+"instead, see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:213
@@ -376,15 +375,15 @@ msgstr ""
 
 #: c-api/init.rst:228
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"legacy_windows_stdio` should be used instead, see :ref:`Python "
-"Initialization Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.legacy_windows_stdio` should be used instead, "
+"see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:232
 msgid ""
-"If the flag is non-zero, use :class:`io.FileIO` instead of :class:`!io."
-"_WindowsConsoleIO` for :mod:`sys` standard streams."
+"If the flag is non-zero, use :class:`io.FileIO` instead of :class:`!"
+"io._WindowsConsoleIO` for :mod:`sys` standard streams."
 msgstr ""
 
 #: c-api/init.rst:235
@@ -399,17 +398,17 @@ msgstr ""
 
 #: c-api/init.rst:246
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"site_import` should be used instead, see :ref:`Python Initialization "
-"Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.site_import` should be used instead, "
+"see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:250
 msgid ""
 "Disable the import of the module :mod:`site` and the site-dependent "
 "manipulations of :data:`sys.path` that it entails.  Also disable these "
-"manipulations if :mod:`site` is explicitly imported later (call :func:`site."
-"main` if you want them to be triggered)."
+"manipulations if :mod:`site` is explicitly imported later "
+"(call :func:`site.main` if you want them to be triggered)."
 msgstr ""
 
 #: c-api/init.rst:255
@@ -418,28 +417,28 @@ msgstr ""
 
 #: c-api/init.rst:261
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"user_site_directory` should be used instead, see :ref:`Python Initialization "
-"Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.user_site_directory` should be used instead, "
+"see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:265
 msgid ""
-"Don't add the :data:`user site-packages directory <site.USER_SITE>` to :data:"
-"`sys.path`."
+"Don't add the :data:`user site-packages directory <site.USER_SITE>` "
+"to :data:`sys.path`."
 msgstr ""
 
 #: c-api/init.rst:268
 msgid ""
-"Set by the :option:`-s` and :option:`-I` options, and the :envvar:"
-"`PYTHONNOUSERSITE` environment variable."
+"Set by the :option:`-s` and :option:`-I` options, and "
+"the :envvar:`PYTHONNOUSERSITE` environment variable."
 msgstr ""
 
 #: c-api/init.rst:275
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"optimization_level` should be used instead, see :ref:`Python Initialization "
-"Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.optimization_level` should be used instead, "
+"see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:279
@@ -450,9 +449,9 @@ msgstr ""
 
 #: c-api/init.rst:286
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"quiet` should be used instead, see :ref:`Python Initialization Configuration "
-"<init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.quiet` should be used instead, see :ref:`Python "
+"Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:290
@@ -466,9 +465,9 @@ msgstr ""
 
 #: c-api/init.rst:300
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"buffered_stdio` should be used instead, see :ref:`Python Initialization "
-"Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.buffered_stdio` should be used instead, "
+"see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:304
@@ -483,9 +482,9 @@ msgstr ""
 
 #: c-api/init.rst:313
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"verbose` should be used instead, see :ref:`Python Initialization "
-"Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.verbose` should be used instead, "
+"see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:317
@@ -509,8 +508,9 @@ msgstr ""
 #: c-api/init.rst:347
 msgid ""
 "Initialize the Python interpreter.  In an application embedding  Python, "
-"this should be called before using any other Python/C API functions; see :"
-"ref:`Before Python Initialization <pre-init-safe>` for the few exceptions."
+"this should be called before using any other Python/C API functions; "
+"see :ref:`Before Python Initialization <pre-init-safe>` for the few "
+"exceptions."
 msgstr ""
 
 #: c-api/init.rst:351
@@ -525,8 +525,8 @@ msgstr ""
 
 #: c-api/init.rst:373
 msgid ""
-"Use the :c:func:`Py_InitializeFromConfig` function to customize the :ref:"
-"`Python Initialization Configuration <init-config>`."
+"Use the :c:func:`Py_InitializeFromConfig` function to customize "
+"the :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:363
@@ -552,19 +552,20 @@ msgstr ""
 #: c-api/init.rst:386
 msgid ""
 "Undo all initializations made by :c:func:`Py_Initialize` and subsequent use "
-"of Python/C API functions, and destroy all sub-interpreters (see :c:func:"
-"`Py_NewInterpreter` below) that were created and not yet destroyed since the "
-"last call to :c:func:`Py_Initialize`.  Ideally, this frees all memory "
-"allocated by the Python interpreter.  This is a no-op when called for a "
-"second time (without calling :c:func:`Py_Initialize` again first)."
+"of Python/C API functions, and destroy all sub-interpreters "
+"(see :c:func:`Py_NewInterpreter` below) that were created and not yet "
+"destroyed since the last call to :c:func:`Py_Initialize`.  Ideally, this "
+"frees all memory allocated by the Python interpreter.  This is a no-op when "
+"called for a second time (without calling :c:func:`Py_Initialize` again "
+"first)."
 msgstr ""
 
 #: c-api/init.rst:393
 msgid ""
 "Since this is the reverse of :c:func:`Py_Initialize`, it should be called in "
 "the same thread with the same interpreter active.  That means the main "
-"thread and the main interpreter. This should never be called while :c:func:"
-"`Py_RunMain` is running."
+"thread and the main interpreter. This should never be called "
+"while :c:func:`Py_RunMain` is running."
 msgstr ""
 
 #: c-api/init.rst:398
@@ -601,8 +602,8 @@ msgstr ""
 
 #: c-api/init.rst:421
 msgid ""
-"Raises an :ref:`auditing event <auditing>` ``cpython."
-"_PySys_ClearAuditHooks`` with no arguments."
+"Raises an :ref:`auditing event <auditing>` "
+"``cpython._PySys_ClearAuditHooks`` with no arguments."
 msgstr ""
 
 #: c-api/init.rst:427
@@ -617,9 +618,10 @@ msgstr ""
 
 #: c-api/init.rst:442
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"stdio_encoding` and :c:member:`PyConfig.stdio_errors` should be used "
-"instead, see :ref:`Python Initialization Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.stdio_encoding` "
+"and :c:member:`PyConfig.stdio_errors` should be used instead, "
+"see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:447
@@ -661,9 +663,9 @@ msgstr ""
 
 #: c-api/init.rst:479
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"program_name` should be used instead, see :ref:`Python Initialization "
-"Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.program_name` should be used instead, "
+"see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:483
@@ -680,10 +682,10 @@ msgid ""
 "this storage."
 msgstr ""
 
-#: c-api/init.rst:494
+#: c-api/init.rst:760 c-api/init.rst:822
 msgid ""
-"Use :c:func:`Py_DecodeLocale` to decode a bytes string to get a :c:expr:"
-"`wchar_t *` string."
+"Use :c:func:`Py_DecodeLocale` to decode a bytes string to get "
+"a :c:expr:`wchar_t*` string."
 msgstr ""
 
 #: c-api/init.rst:504
@@ -724,11 +726,11 @@ msgid ""
 "with :c:func:`Py_SetProgramName` and some environment variables; for "
 "example, if the program name is ``'/usr/local/bin/python'``, the exec-prefix "
 "is ``'/usr/local'``.  The returned string points into static storage; the "
-"caller should not modify its value.  This corresponds to the :makevar:"
-"`exec_prefix` variable in the top-level :file:`Makefile` and the ``--exec-"
-"prefix`` argument to the :program:`configure` script at build  time.  The "
-"value is available to Python code as ``sys.exec_prefix``.  It is only useful "
-"on Unix."
+"caller should not modify its value.  This corresponds to "
+"the :makevar:`exec_prefix` variable in the top-level :file:`Makefile` and "
+"the ``--exec-prefix`` argument to the :program:`configure` script at build  "
+"time.  The value is available to Python code as ``sys.exec_prefix``.  It is "
+"only useful on Unix."
 msgstr ""
 
 #: c-api/init.rst:546
@@ -756,10 +758,10 @@ msgstr ""
 
 #: c-api/init.rst:563
 msgid ""
-"System administrators will know how to configure the :program:`mount` or :"
-"program:`automount` programs to share :file:`/usr/local` between platforms "
-"while having :file:`/usr/local/plat` be a different filesystem for each "
-"platform."
+"System administrators will know how to configure the :program:`mount` "
+"or :program:`automount` programs to share :file:`/usr/local` between "
+"platforms while having :file:`/usr/local/plat` be a different filesystem for "
+"each platform."
 msgstr ""
 
 #: c-api/init.rst:581
@@ -786,35 +788,35 @@ msgstr ""
 
 #: c-api/init.rst:627
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"module_search_paths` and :c:member:`PyConfig.module_search_paths_set` should "
-"be used instead, see :ref:`Python Initialization Configuration <init-"
-"config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.module_search_paths` "
+"and :c:member:`PyConfig.module_search_paths_set` should be used instead, "
+"see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:632
 msgid ""
-"Set the default module search path.  If this function is called before :c:"
-"func:`Py_Initialize`, then :c:func:`Py_GetPath` won't attempt to compute a "
-"default search path but uses the one provided instead.  This is useful if "
-"Python is embedded by an application that has full knowledge of the location "
-"of all modules.  The path components should be separated by the platform "
-"dependent delimiter character, which is ``':'`` on Unix and macOS, ``';'`` "
-"on Windows."
+"Set the default module search path.  If this function is called "
+"before :c:func:`Py_Initialize`, then :c:func:`Py_GetPath` won't attempt to "
+"compute a default search path but uses the one provided instead.  This is "
+"useful if Python is embedded by an application that has full knowledge of "
+"the location of all modules.  The path components should be separated by the "
+"platform dependent delimiter character, which is ``':'`` on Unix and macOS, "
+"``';'`` on Windows."
 msgstr ""
 
 #: c-api/init.rst:640
 msgid ""
 "This also causes :data:`sys.executable` to be set to the program full path "
-"(see :c:func:`Py_GetProgramFullPath`) and for :data:`sys.prefix` and :data:"
-"`sys.exec_prefix` to be empty.  It is up to the caller to modify these if "
-"required after calling :c:func:`Py_Initialize`."
+"(see :c:func:`Py_GetProgramFullPath`) and for :data:`sys.prefix` "
+"and :data:`sys.exec_prefix` to be empty.  It is up to the caller to modify "
+"these if required after calling :c:func:`Py_Initialize`."
 msgstr ""
 
-#: c-api/init.rst:760 c-api/init.rst:822
+#: c-api/init.rst:645
 msgid ""
-"Use :c:func:`Py_DecodeLocale` to decode a bytes string to get a :c:expr:"
-"`wchar_*` string."
+"Use :c:func:`Py_DecodeLocale` to decode a bytes string to get "
+"a :c:expr:`wchar_*` string."
 msgstr ""
 
 #: c-api/init.rst:648
@@ -844,8 +846,8 @@ msgid ""
 "The first word (up to the first space character) is the current Python "
 "version; the first characters are the major and minor version separated by a "
 "period.  The returned string points into static storage; the caller should "
-"not modify its value.  The value is available to Python code as :data:`sys."
-"version`."
+"not modify its value.  The value is available to Python code "
+"as :data:`sys.version`."
 msgstr ""
 
 #: c-api/init.rst:672
@@ -908,10 +910,10 @@ msgstr ""
 
 #: c-api/init.rst:735
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"argv`, :c:member:`PyConfig.parse_argv` and :c:member:`PyConfig.safe_path` "
-"should be used instead, see :ref:`Python Initialization Configuration <init-"
-"config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.argv`, :c:member:`PyConfig.parse_argv` "
+"and :c:member:`PyConfig.safe_path` should be used instead, see :ref:`Python "
+"Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:740
@@ -935,8 +937,8 @@ msgstr ""
 #: c-api/init.rst:752
 msgid ""
 "If the name of an existing script is passed in ``argv[0]``, the absolute "
-"path of the directory where the script is located is prepended to :data:`sys."
-"path`."
+"path of the directory where the script is located is prepended "
+"to :data:`sys.path`."
 msgstr ""
 
 #: c-api/init.rst:755
@@ -962,8 +964,8 @@ msgstr ""
 #: c-api/init.rst:772
 msgid ""
 "On versions before 3.1.3, you can achieve the same effect by manually "
-"popping the first :data:`sys.path` element after having called :c:func:"
-"`PySys_SetArgv`, for example using::"
+"popping the first :data:`sys.path` element after having "
+"called :c:func:`PySys_SetArgv`, for example using::"
 msgstr ""
 
 #: c-api/init.rst:776
@@ -972,16 +974,17 @@ msgstr ""
 
 #: c-api/init.rst:788
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"argv` and :c:member:`PyConfig.parse_argv` should be used instead, see :ref:"
-"`Python Initialization Configuration <init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.argv` and :c:member:`PyConfig.parse_argv` should "
+"be used instead, see :ref:`Python Initialization Configuration <init-"
+"config>`."
 msgstr ""
 
 #: c-api/init.rst:792
 msgid ""
 "This function works like :c:func:`PySys_SetArgvEx` with *updatepath* set to "
-"``1`` unless the :program:`python` interpreter was started with the :option:"
-"`-I`."
+"``1`` unless the :program:`python` interpreter was started with "
+"the :option:`-I`."
 msgstr ""
 
 #: c-api/init.rst:802
@@ -990,9 +993,9 @@ msgstr ""
 
 #: c-api/init.rst:809
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"home` should be used instead, see :ref:`Python Initialization Configuration "
-"<init-config>`."
+"This API is kept for backward compatibility: "
+"setting :c:member:`PyConfig.home` should be used instead, see :ref:`Python "
+"Initialization Configuration <init-config>`."
 msgstr ""
 
 #: c-api/init.rst:813
@@ -1012,8 +1015,8 @@ msgstr ""
 
 #: c-api/init.rst:830
 msgid ""
-"Return the default \"home\", that is, the value set by a previous call to :c:"
-"func:`Py_SetPythonHome`, or the value of the :envvar:`PYTHONHOME` "
+"Return the default \"home\", that is, the value set by a previous call "
+"to :c:func:`Py_SetPythonHome`, or the value of the :envvar:`PYTHONHOME` "
 "environment variable if it is set."
 msgstr ""
 
@@ -1035,12 +1038,13 @@ msgstr ""
 
 #: c-api/init.rst:861
 msgid ""
-"Therefore, the rule exists that only the thread that has acquired the :term:"
-"`GIL` may operate on Python objects or call Python/C API functions. In order "
-"to emulate concurrency of execution, the interpreter regularly tries to "
-"switch threads (see :func:`sys.setswitchinterval`).  The lock is also "
-"released around potentially blocking I/O operations like reading or writing "
-"a file, so that other Python threads can run in the meantime."
+"Therefore, the rule exists that only the thread that has acquired "
+"the :term:`GIL` may operate on Python objects or call Python/C API "
+"functions. In order to emulate concurrency of execution, the interpreter "
+"regularly tries to switch threads (see :func:`sys.setswitchinterval`).  The "
+"lock is also released around potentially blocking I/O operations like "
+"reading or writing a file, so that other Python threads can run in the "
+"meantime."
 msgstr ""
 
 #: c-api/init.rst:871
@@ -1128,10 +1132,10 @@ msgstr ""
 
 #: c-api/init.rst:936
 msgid ""
-"When threads are created using the dedicated Python APIs (such as the :mod:"
-"`threading` module), a thread state is automatically associated to them and "
-"the code showed above is therefore correct.  However, when threads are "
-"created from C (for example by a third-party library with its own thread "
+"When threads are created using the dedicated Python APIs (such as "
+"the :mod:`threading` module), a thread state is automatically associated to "
+"them and the code showed above is therefore correct.  However, when threads "
+"are created from C (for example by a third-party library with its own thread "
 "management), they don't hold the GIL, nor is there a thread state structure "
 "for them."
 msgstr ""
@@ -1171,9 +1175,9 @@ msgstr ""
 msgid ""
 "Note that the ``PyGILState_*`` functions assume there is only one global "
 "interpreter (created automatically by :c:func:`Py_Initialize`).  Python "
-"supports the creation of additional interpreters (using :c:func:"
-"`Py_NewInterpreter`), but mixing multiple interpreters and the "
-"``PyGILState_*`` API is unsupported."
+"supports the creation of additional interpreters "
+"(using :c:func:`Py_NewInterpreter`), but mixing multiple interpreters and "
+"the ``PyGILState_*`` API is unsupported."
 msgstr ""
 
 #: c-api/init.rst:975
@@ -1199,11 +1203,11 @@ msgid ""
 "of additional (non-Python) locks that need to be acquired before or reset "
 "after a fork. OS facilities such as :c:func:`!pthread_atfork` would need to "
 "be used to accomplish the same thing. Additionally, when extending or "
-"embedding Python, calling :c:func:`fork` directly rather than through :func:"
-"`os.fork` (and returning to or calling into Python) may result in a deadlock "
-"by one of Python's internal locks being held by a thread that is defunct "
-"after the fork. :c:func:`PyOS_AfterFork_Child` tries to reset the necessary "
-"locks, but is not always able to."
+"embedding Python, calling :c:func:`fork` directly rather than "
+"through :func:`os.fork` (and returning to or calling into Python) may result "
+"in a deadlock by one of Python's internal locks being held by a thread that "
+"is defunct after the fork. :c:func:`PyOS_AfterFork_Child` tries to reset the "
+"necessary locks, but is not always able to."
 msgstr ""
 
 #: c-api/init.rst:998
@@ -1341,21 +1345,21 @@ msgid ""
 "of the current state of Python, or of the global interpreter lock. This may "
 "be called as many times as desired by a thread as long as each call is "
 "matched with a call to :c:func:`PyGILState_Release`. In general, other "
-"thread-related APIs may be used between :c:func:`PyGILState_Ensure` and :c:"
-"func:`PyGILState_Release` calls as long as the thread state is restored to "
-"its previous state before the Release().  For example, normal usage of the :"
-"c:macro:`Py_BEGIN_ALLOW_THREADS` and :c:macro:`Py_END_ALLOW_THREADS` macros "
-"is acceptable."
+"thread-related APIs may be used between :c:func:`PyGILState_Ensure` "
+"and :c:func:`PyGILState_Release` calls as long as the thread state is "
+"restored to its previous state before the Release().  For example, normal "
+"usage of the :c:macro:`Py_BEGIN_ALLOW_THREADS` "
+"and :c:macro:`Py_END_ALLOW_THREADS` macros is acceptable."
 msgstr ""
 
 #: c-api/init.rst:1129
 msgid ""
-"The return value is an opaque \"handle\" to the thread state when :c:func:"
-"`PyGILState_Ensure` was called, and must be passed to :c:func:"
-"`PyGILState_Release` to ensure Python is left in the same state. Even though "
-"recursive calls are allowed, these handles *cannot* be shared - each unique "
-"call to :c:func:`PyGILState_Ensure` must save the handle for its call to :c:"
-"func:`PyGILState_Release`."
+"The return value is an opaque \"handle\" to the thread state "
+"when :c:func:`PyGILState_Ensure` was called, and must be passed "
+"to :c:func:`PyGILState_Release` to ensure Python is left in the same state. "
+"Even though recursive calls are allowed, these handles *cannot* be shared - "
+"each unique call to :c:func:`PyGILState_Ensure` must save the handle for its "
+"call to :c:func:`PyGILState_Release`."
 msgstr ""
 
 #: c-api/init.rst:1136
@@ -1367,15 +1371,15 @@ msgstr ""
 #: c-api/init.rst:1148
 msgid ""
 "Release any resources previously acquired.  After this call, Python's state "
-"will be the same as it was prior to the corresponding :c:func:"
-"`PyGILState_Ensure` call (but generally this state will be unknown to the "
-"caller, hence the use of the GILState API)."
+"will be the same as it was prior to the "
+"corresponding :c:func:`PyGILState_Ensure` call (but generally this state "
+"will be unknown to the caller, hence the use of the GILState API)."
 msgstr ""
 
 #: c-api/init.rst:1153
 msgid ""
-"Every call to :c:func:`PyGILState_Ensure` must be matched by a call to :c:"
-"func:`PyGILState_Release` on the same thread."
+"Every call to :c:func:`PyGILState_Ensure` must be matched by a call "
+"to :c:func:`PyGILState_Release` on the same thread."
 msgstr ""
 
 #: c-api/init.rst:1159
@@ -1405,30 +1409,30 @@ msgstr ""
 
 #: c-api/init.rst:1185
 msgid ""
-"This macro expands to ``{ PyThreadState *_save; _save = PyEval_SaveThread();"
-"``. Note that it contains an opening brace; it must be matched with a "
-"following :c:macro:`Py_END_ALLOW_THREADS` macro.  See above for further "
-"discussion of this macro."
+"This macro expands to ``{ PyThreadState *_save; _save = "
+"PyEval_SaveThread();``. Note that it contains an opening brace; it must be "
+"matched with a following :c:macro:`Py_END_ALLOW_THREADS` macro.  See above "
+"for further discussion of this macro."
 msgstr ""
 
 #: c-api/init.rst:1193
 msgid ""
 "This macro expands to ``PyEval_RestoreThread(_save); }``. Note that it "
-"contains a closing brace; it must be matched with an earlier :c:macro:"
-"`Py_BEGIN_ALLOW_THREADS` macro.  See above for further discussion of this "
-"macro."
+"contains a closing brace; it must be matched with an "
+"earlier :c:macro:`Py_BEGIN_ALLOW_THREADS` macro.  See above for further "
+"discussion of this macro."
 msgstr ""
 
 #: c-api/init.rst:1201
 msgid ""
-"This macro expands to ``PyEval_RestoreThread(_save);``: it is equivalent to :"
-"c:macro:`Py_END_ALLOW_THREADS` without the closing brace."
+"This macro expands to ``PyEval_RestoreThread(_save);``: it is equivalent "
+"to :c:macro:`Py_END_ALLOW_THREADS` without the closing brace."
 msgstr ""
 
 #: c-api/init.rst:1207
 msgid ""
-"This macro expands to ``_save = PyEval_SaveThread();``: it is equivalent to :"
-"c:macro:`Py_BEGIN_ALLOW_THREADS` without the opening brace and variable "
+"This macro expands to ``_save = PyEval_SaveThread();``: it is equivalent "
+"to :c:macro:`Py_BEGIN_ALLOW_THREADS` without the opening brace and variable "
 "declaration."
 msgstr ""
 
@@ -1454,8 +1458,8 @@ msgstr ""
 
 #: c-api/init.rst:1227
 msgid ""
-"Raises an :ref:`auditing event <auditing>` ``cpython."
-"PyInterpreterState_New`` with no arguments."
+"Raises an :ref:`auditing event <auditing>` "
+"``cpython.PyInterpreterState_New`` with no arguments."
 msgstr ""
 
 #: c-api/init.rst:1232
@@ -1466,8 +1470,8 @@ msgstr ""
 
 #: c-api/init.rst:1235
 msgid ""
-"Raises an :ref:`auditing event <auditing>` ``cpython."
-"PyInterpreterState_Clear`` with no arguments."
+"Raises an :ref:`auditing event <auditing>` "
+"``cpython.PyInterpreterState_Clear`` with no arguments."
 msgstr ""
 
 #: c-api/init.rst:1240
@@ -1499,16 +1503,16 @@ msgstr ""
 #: c-api/init.rst:1264
 msgid ""
 "Destroy a thread state object.  The global interpreter lock need not be "
-"held. The thread state must have been reset with a previous call to :c:func:"
-"`PyThreadState_Clear`."
+"held. The thread state must have been reset with a previous call "
+"to :c:func:`PyThreadState_Clear`."
 msgstr ""
 
 #: c-api/init.rst:1271
 msgid ""
 "Destroy the current thread state and release the global interpreter lock. "
 "Like :c:func:`PyThreadState_Delete`, the global interpreter lock must be "
-"held. The thread state must have been reset with a previous call to :c:func:"
-"`PyThreadState_Clear`."
+"held. The thread state must have been reset with a previous call "
+"to :c:func:`PyThreadState_Clear`."
 msgstr ""
 
 #: c-api/init.rst:1279
@@ -1645,8 +1649,8 @@ msgstr ""
 
 #: c-api/init.rst:1411
 msgid ""
-"The type of the *id* parameter changed from :c:expr:`long` to :c:expr:"
-"`unsigned long`."
+"The type of the *id* parameter changed from :c:expr:`long` "
+"to :c:expr:`unsigned long`."
 msgstr ""
 
 #: c-api/init.rst:1417
@@ -1658,9 +1662,10 @@ msgstr ""
 
 #: c-api/init.rst:1466
 msgid ""
-"Updated to be consistent with :c:func:`PyEval_RestoreThread`, :c:func:"
-"`Py_END_ALLOW_THREADS`, and :c:func:`PyGILState_Ensure`, and terminate the "
-"current thread if called while the interpreter is finalizing."
+"Updated to be consistent "
+"with :c:func:`PyEval_RestoreThread`, :c:func:`Py_END_ALLOW_THREADS`, "
+"and :c:func:`PyGILState_Ensure`, and terminate the current thread if called "
+"while the interpreter is finalizing."
 msgstr ""
 
 #: c-api/init.rst:1433
@@ -1692,8 +1697,8 @@ msgstr ""
 
 #: c-api/init.rst:1454
 msgid ""
-"This function does not update the current thread state.  Please use :c:func:"
-"`PyEval_RestoreThread` or :c:func:`PyEval_AcquireThread` instead."
+"This function does not update the current thread state.  Please "
+"use :c:func:`PyEval_RestoreThread` or :c:func:`PyEval_AcquireThread` instead."
 msgstr ""
 
 #: c-api/init.rst:1460
@@ -1713,8 +1718,8 @@ msgstr ""
 
 #: c-api/init.rst:1476
 msgid ""
-"This function does not update the current thread state.  Please use :c:func:"
-"`PyEval_SaveThread` or :c:func:`PyEval_ReleaseThread` instead."
+"This function does not update the current thread state.  Please "
+"use :c:func:`PyEval_SaveThread` or :c:func:`PyEval_ReleaseThread` instead."
 msgstr ""
 
 #: c-api/init.rst:1485
@@ -1742,9 +1747,9 @@ msgstr ""
 
 #: c-api/init.rst:1499
 msgid ""
-"You can switch between sub-interpreters using the :c:func:"
-"`PyThreadState_Swap` function. You can create and destroy them using the "
-"following functions:"
+"You can switch between sub-interpreters using "
+"the :c:func:`PyThreadState_Swap` function. You can create and destroy them "
+"using the following functions:"
 msgstr ""
 
 #: c-api/init.rst:1505
@@ -1766,10 +1771,10 @@ msgstr ""
 
 #: c-api/init.rst:1519
 msgid ""
-"If this is ``0`` then :c:member:`~PyInterpreterConfig."
-"check_multi_interp_extensions` must be ``1`` (non-zero). If this is ``1`` "
-"then :c:member:`~PyInterpreterConfig.gil` must not be :c:macro:"
-"`PyInterpreterConfig_OWN_GIL`."
+"If this is ``0`` "
+"then :c:member:`~PyInterpreterConfig.check_multi_interp_extensions` must be "
+"``1`` (non-zero). If this is ``1`` then :c:member:`~PyInterpreterConfig.gil` "
+"must not be :c:macro:`PyInterpreterConfig_OWN_GIL`."
 msgstr ""
 
 #: c-api/init.rst:1527
@@ -1805,23 +1810,23 @@ msgstr ""
 #: c-api/init.rst:1552
 msgid ""
 "If this is ``0`` then the sub-interpreter's :mod:`threading` module won't "
-"create daemon threads. Otherwise daemon threads are allowed (as long as :c:"
-"member:`~PyInterpreterConfig.allow_threads` is non-zero)."
+"create daemon threads. Otherwise daemon threads are allowed (as long "
+"as :c:member:`~PyInterpreterConfig.allow_threads` is non-zero)."
 msgstr ""
 
 #: c-api/init.rst:1559
 msgid ""
 "If this is ``0`` then all extension modules may be imported, including "
 "legacy (single-phase init) modules, in any thread where the sub-interpreter "
-"is currently active. Otherwise only multi-phase init extension modules (see :"
-"pep:`489`) may be imported. (Also see :c:macro:"
-"`Py_mod_multiple_interpreters`.)"
+"is currently active. Otherwise only multi-phase init extension modules "
+"(see :pep:`489`) may be imported. (Also "
+"see :c:macro:`Py_mod_multiple_interpreters`.)"
 msgstr ""
 
 #: c-api/init.rst:1566
 msgid ""
-"This must be ``1`` (non-zero) if :c:member:`~PyInterpreterConfig."
-"use_main_obmalloc` is ``0``."
+"This must be ``1`` (non-zero) "
+"if :c:member:`~PyInterpreterConfig.use_main_obmalloc` is ``0``."
 msgstr ""
 
 #: c-api/init.rst:1571
@@ -1844,8 +1849,8 @@ msgstr ""
 
 #: c-api/init.rst:1588
 msgid ""
-"If this is :c:macro:`PyInterpreterConfig_OWN_GIL` then :c:member:"
-"`PyInterpreterConfig.use_main_obmalloc` must be ``0``."
+"If this is :c:macro:`PyInterpreterConfig_OWN_GIL` "
+"then :c:member:`PyInterpreterConfig.use_main_obmalloc` must be ``0``."
 msgstr ""
 
 #: c-api/init.rst:1602
@@ -1853,12 +1858,12 @@ msgid ""
 "Create a new sub-interpreter.  This is an (almost) totally separate "
 "environment for the execution of Python code.  In particular, the new "
 "interpreter has separate, independent versions of all imported modules, "
-"including the fundamental modules :mod:`builtins`, :mod:`__main__` and :mod:"
-"`sys`.  The table of loaded modules (``sys.modules``) and the module search "
-"path (``sys.path``) are also separate.  The new environment has no ``sys."
-"argv`` variable.  It has new standard I/O stream file objects ``sys.stdin``, "
-"``sys.stdout`` and ``sys.stderr`` (however these refer to the same "
-"underlying file descriptors)."
+"including the fundamental modules :mod:`builtins`, :mod:`__main__` "
+"and :mod:`sys`.  The table of loaded modules (``sys.modules``) and the "
+"module search path (``sys.path``) are also separate.  The new environment "
+"has no ``sys.argv`` variable.  It has new standard I/O stream file objects "
+"``sys.stdin``, ``sys.stdout`` and ``sys.stderr`` (however these refer to the "
+"same underlying file descriptors)."
 msgstr ""
 
 #: c-api/init.rst:1612
@@ -1907,61 +1912,66 @@ msgid ""
 "    .check_multi_interp_extensions = 1,\n"
 "    .gil = PyInterpreterConfig_OWN_GIL,\n"
 "};\n"
-"PyThreadState *tstate = Py_NewInterpreterFromConfig(&config);"
+"PyThreadState *tstate = NULL;\n"
+"PyStatus status = Py_NewInterpreterFromConfig(&tstate, &config);\n"
+"if (PyStatus_Exception(status)) {\n"
+"    Py_ExitStatusException(status);\n"
+"}"
 msgstr ""
 
-#: c-api/init.rst:1649
+#: c-api/init.rst:1653
 msgid ""
 "Note that the config is used only briefly and does not get modified. During "
-"initialization the config's values are converted into various :c:type:"
-"`PyInterpreterState` values.  A read-only copy of the config may be stored "
-"internally on the :c:type:`PyInterpreterState`."
+"initialization the config's values are converted into "
+"various :c:type:`PyInterpreterState` values.  A read-only copy of the config "
+"may be stored internally on the :c:type:`PyInterpreterState`."
 msgstr ""
 
-#: c-api/init.rst:1658
+#: c-api/init.rst:1662
 msgid "Extension modules are shared between (sub-)interpreters as follows:"
 msgstr ""
 
-#: c-api/init.rst:1660
+#: c-api/init.rst:1664
 msgid ""
-"For modules using multi-phase initialization, e.g. :c:func:"
-"`PyModule_FromDefAndSpec`, a separate module object is created and "
-"initialized for each interpreter. Only C-level static and global variables "
-"are shared between these module objects."
+"For modules using multi-phase initialization, "
+"e.g. :c:func:`PyModule_FromDefAndSpec`, a separate module object is created "
+"and initialized for each interpreter. Only C-level static and global "
+"variables are shared between these module objects."
 msgstr ""
 
-#: c-api/init.rst:1666
+#: c-api/init.rst:1670
 msgid ""
-"For modules using single-phase initialization, e.g. :c:func:"
-"`PyModule_Create`, the first time a particular extension is imported, it is "
-"initialized normally, and a (shallow) copy of its module's dictionary is "
-"squirreled away. When the same extension is imported by another "
-"(sub-)interpreter, a new module is initialized and filled with the contents "
-"of this copy; the extension's ``init`` function is not called. Objects in "
-"the module's dictionary thus end up shared across (sub-)interpreters, which "
-"might cause unwanted behavior (see `Bugs and caveats`_ below)."
+"For modules using single-phase initialization, "
+"e.g. :c:func:`PyModule_Create`, the first time a particular extension is "
+"imported, it is initialized normally, and a (shallow) copy of its module's "
+"dictionary is squirreled away. When the same extension is imported by "
+"another (sub-)interpreter, a new module is initialized and filled with the "
+"contents of this copy; the extension's ``init`` function is not called. "
+"Objects in the module's dictionary thus end up shared across "
+"(sub-)interpreters, which might cause unwanted behavior (see `Bugs and "
+"caveats`_ below)."
 msgstr ""
 
-#: c-api/init.rst:1677
+#: c-api/init.rst:1681
 msgid ""
 "Note that this is different from what happens when an extension is imported "
-"after the interpreter has been completely re-initialized by calling :c:func:"
-"`Py_FinalizeEx` and :c:func:`Py_Initialize`; in that case, the extension's "
-"``initmodule`` function *is* called again. As with multi-phase "
-"initialization, this means that only C-level static and global variables are "
-"shared between these modules."
+"after the interpreter has been completely re-initialized by "
+"calling :c:func:`Py_FinalizeEx` and :c:func:`Py_Initialize`; in that case, "
+"the extension's ``initmodule`` function *is* called again. As with multi-"
+"phase initialization, this means that only C-level static and global "
+"variables are shared between these modules."
 msgstr ""
 
-#: c-api/init.rst:1697
+#: c-api/init.rst:1701
 msgid ""
-"Create a new sub-interpreter.  This is essentially just a wrapper around :c:"
-"func:`Py_NewInterpreterFromConfig` with a config that preserves the existing "
-"behavior.  The result is an unisolated sub-interpreter that shares the main "
-"interpreter's GIL, allows fork/exec, allows daemon threads, and allows "
-"single-phase init modules."
+"Create a new sub-interpreter.  This is essentially just a wrapper "
+"around :c:func:`Py_NewInterpreterFromConfig` with a config that preserves "
+"the existing behavior.  The result is an unisolated sub-interpreter that "
+"shares the main interpreter's GIL, allows fork/exec, allows daemon threads, "
+"and allows single-phase init modules."
 msgstr ""
 
-#: c-api/init.rst:1709
+#: c-api/init.rst:1713
 msgid ""
 "Destroy the (sub-)interpreter represented by the given thread state. The "
 "given thread state must be the current thread state.  See the discussion of "
@@ -1971,17 +1981,17 @@ msgid ""
 "be held before calling this function.  No GIL is held when it returns."
 msgstr ""
 
-#: c-api/init.rst:1717
+#: c-api/init.rst:1721
 msgid ""
 ":c:func:`Py_FinalizeEx` will destroy all sub-interpreters that haven't been "
 "explicitly destroyed at that point."
 msgstr ""
 
-#: c-api/init.rst:1722
+#: c-api/init.rst:1726
 msgid "A Per-Interpreter GIL"
 msgstr ""
 
-#: c-api/init.rst:1724
+#: c-api/init.rst:1728
 msgid ""
 "Using :c:func:`Py_NewInterpreterFromConfig` you can create a sub-interpreter "
 "that is completely isolated from other interpreters, including having its "
@@ -1993,7 +2003,7 @@ msgid ""
 "just using threads. (See :pep:`554`.)"
 msgstr ""
 
-#: c-api/init.rst:1734
+#: c-api/init.rst:1738
 msgid ""
 "Using an isolated interpreter requires vigilance in preserving that "
 "isolation.  That especially means not sharing any objects or mutable state "
@@ -2007,7 +2017,7 @@ msgid ""
 "builtin objects."
 msgstr ""
 
-#: c-api/init.rst:1745
+#: c-api/init.rst:1749
 msgid ""
 "If you preserve isolation then you will have access to proper multi-core "
 "computing without the complications that come with free-threading. Failure "
@@ -2015,7 +2025,7 @@ msgid ""
 "threading, including races and hard-to-debug crashes."
 msgstr ""
 
-#: c-api/init.rst:1750
+#: c-api/init.rst:1754
 msgid ""
 "Aside from that, one of the main challenges of using multiple isolated "
 "interpreters is how to communicate between them safely (not break isolation) "
@@ -2025,11 +2035,11 @@ msgid ""
 "sharing) data between interpreters."
 msgstr ""
 
-#: c-api/init.rst:1761
+#: c-api/init.rst:1765
 msgid "Bugs and caveats"
 msgstr ""
 
-#: c-api/init.rst:1763
+#: c-api/init.rst:1767
 msgid ""
 "Because sub-interpreters (and the main interpreter) are part of the same "
 "process, the insulation between them isn't perfect --- for example, using "
@@ -2042,7 +2052,7 @@ msgid ""
 "should be avoided if possible."
 msgstr ""
 
-#: c-api/init.rst:1773
+#: c-api/init.rst:1777
 msgid ""
 "Special care should be taken to avoid sharing user-defined functions, "
 "methods, instances or classes between sub-interpreters, since import "
@@ -2051,37 +2061,37 @@ msgid ""
 "objects from which the above are reachable."
 msgstr ""
 
-#: c-api/init.rst:1779
+#: c-api/init.rst:1783
 msgid ""
 "Also note that combining this functionality with ``PyGILState_*`` APIs is "
 "delicate, because these APIs assume a bijection between Python thread states "
 "and OS-level threads, an assumption broken by the presence of sub-"
 "interpreters. It is highly recommended that you don't switch sub-"
-"interpreters between a pair of matching :c:func:`PyGILState_Ensure` and :c:"
-"func:`PyGILState_Release` calls. Furthermore, extensions (such as :mod:"
-"`ctypes`) using these APIs to allow calling of Python code from non-Python "
-"created threads will probably be broken when using sub-interpreters."
+"interpreters between a pair of matching :c:func:`PyGILState_Ensure` "
+"and :c:func:`PyGILState_Release` calls. Furthermore, extensions (such "
+"as :mod:`ctypes`) using these APIs to allow calling of Python code from non-"
+"Python created threads will probably be broken when using sub-interpreters."
 msgstr ""
 
-#: c-api/init.rst:1790
+#: c-api/init.rst:1794
 msgid "Asynchronous Notifications"
 msgstr ""
 
-#: c-api/init.rst:1792
+#: c-api/init.rst:1796
 msgid ""
 "A mechanism is provided to make asynchronous notifications to the main "
 "interpreter thread.  These notifications take the form of a function pointer "
 "and a void pointer argument."
 msgstr ""
 
-#: c-api/init.rst:1799
+#: c-api/init.rst:1803
 msgid ""
 "Schedule a function to be called from the main interpreter thread.  On "
 "success, ``0`` is returned and *func* is queued for being called in the main "
 "thread.  On failure, ``-1`` is returned without setting any exception."
 msgstr ""
 
-#: c-api/init.rst:1803
+#: c-api/init.rst:1807
 msgid ""
 "When successfully queued, *func* will be *eventually* called from the main "
 "interpreter thread with the argument *arg*.  It will be called "
@@ -2089,17 +2099,17 @@ msgid ""
 "these conditions met:"
 msgstr ""
 
-#: c-api/init.rst:1808
+#: c-api/init.rst:1812
 msgid "on a :term:`bytecode` boundary;"
 msgstr ""
 
-#: c-api/init.rst:1809
+#: c-api/init.rst:1813
 msgid ""
 "with the main thread holding the :term:`global interpreter lock` (*func* can "
 "therefore use the full C API)."
 msgstr ""
 
-#: c-api/init.rst:1812
+#: c-api/init.rst:1816
 msgid ""
 "*func* must return ``0`` on success, or ``-1`` on failure with an exception "
 "set.  *func* won't be interrupted to perform another asynchronous "
@@ -2107,30 +2117,30 @@ msgid ""
 "if the global interpreter lock is released."
 msgstr ""
 
-#: c-api/init.rst:1817
+#: c-api/init.rst:1821
 msgid ""
 "This function doesn't need a current thread state to run, and it doesn't "
 "need the global interpreter lock."
 msgstr ""
 
-#: c-api/init.rst:1820
+#: c-api/init.rst:1824
 msgid ""
 "To call this function in a subinterpreter, the caller must hold the GIL. "
 "Otherwise, the function *func* can be scheduled to be called from the wrong "
 "interpreter."
 msgstr ""
 
-#: c-api/init.rst:1825
+#: c-api/init.rst:1829
 msgid ""
 "This is a low-level function, only useful for very special cases. There is "
 "no guarantee that *func* will be called as quick as possible.  If the main "
 "thread is busy executing a system call, *func* won't be called before the "
 "system call returns.  This function is generally **not** suitable for "
-"calling Python code from arbitrary C threads.  Instead, use the :ref:"
-"`PyGILState API<gilstate>`."
+"calling Python code from arbitrary C threads.  Instead, use "
+"the :ref:`PyGILState API<gilstate>`."
 msgstr ""
 
-#: c-api/init.rst:1834
+#: c-api/init.rst:1838
 msgid ""
 "If this function is called in a subinterpreter, the function *func* is now "
 "scheduled to be called from the subinterpreter, rather than being called "
@@ -2138,18 +2148,18 @@ msgid ""
 "scheduled calls."
 msgstr ""
 
-#: c-api/init.rst:1843
+#: c-api/init.rst:1847
 msgid "Profiling and Tracing"
 msgstr ""
 
-#: c-api/init.rst:1848
+#: c-api/init.rst:1852
 msgid ""
 "The Python interpreter provides some low-level support for attaching "
 "profiling and execution tracing facilities.  These are used for profiling, "
 "debugging, and coverage analysis tools."
 msgstr ""
 
-#: c-api/init.rst:1852
+#: c-api/init.rst:1856
 msgid ""
 "This C interface allows the profiling or tracing code to avoid the overhead "
 "of calling through Python-level callable objects, making a direct C function "
@@ -2159,76 +2169,74 @@ msgid ""
 "reported to the Python-level trace functions in previous versions."
 msgstr ""
 
-#: c-api/init.rst:1862
+#: c-api/init.rst:1866
 msgid ""
 "The type of the trace function registered using :c:func:`PyEval_SetProfile` "
 "and :c:func:`PyEval_SetTrace`. The first parameter is the object passed to "
 "the registration function as *obj*, *frame* is the frame object to which the "
-"event pertains, *what* is one of the constants :c:data:`PyTrace_CALL`, :c:"
-"data:`PyTrace_EXCEPTION`, :c:data:`PyTrace_LINE`, :c:data:`PyTrace_RETURN`, :"
-"c:data:`PyTrace_C_CALL`, :c:data:`PyTrace_C_EXCEPTION`, :c:data:"
-"`PyTrace_C_RETURN`, or :c:data:`PyTrace_OPCODE`, and *arg* depends on the "
-"value of *what*:"
+"event pertains, *what* is one of the "
+"constants :c:data:`PyTrace_CALL`, :c:data:`PyTrace_EXCEPTION`, :c:data:`PyTrace_LINE`, :c:data:`PyTrace_RETURN`, :c:data:`PyTrace_C_CALL`, :c:data:`PyTrace_C_EXCEPTION`, :c:data:`PyTrace_C_RETURN`, "
+"or :c:data:`PyTrace_OPCODE`, and *arg* depends on the value of *what*:"
 msgstr ""
 
-#: c-api/init.rst:1871
+#: c-api/init.rst:1875
 msgid "Value of *what*"
 msgstr ""
 
-#: c-api/init.rst:1871
+#: c-api/init.rst:1875
 msgid "Meaning of *arg*"
 msgstr ""
 
-#: c-api/init.rst:1873
+#: c-api/init.rst:1877
 msgid ":c:data:`PyTrace_CALL`"
 msgstr ""
 
-#: c-api/init.rst:1878 c-api/init.rst:1889
+#: c-api/init.rst:1882 c-api/init.rst:1893
 msgid "Always :c:data:`Py_None`."
 msgstr ""
 
-#: c-api/init.rst:1875
+#: c-api/init.rst:1879
 msgid ":c:data:`PyTrace_EXCEPTION`"
 msgstr ""
 
-#: c-api/init.rst:1875
+#: c-api/init.rst:1879
 msgid "Exception information as returned by :func:`sys.exc_info`."
 msgstr ""
 
-#: c-api/init.rst:1878
+#: c-api/init.rst:1882
 msgid ":c:data:`PyTrace_LINE`"
 msgstr ""
 
-#: c-api/init.rst:1880
+#: c-api/init.rst:1884
 msgid ":c:data:`PyTrace_RETURN`"
 msgstr ""
 
-#: c-api/init.rst:1880
+#: c-api/init.rst:1884
 msgid ""
 "Value being returned to the caller, or ``NULL`` if caused by an exception."
 msgstr ""
 
-#: c-api/init.rst:1883
+#: c-api/init.rst:1887
 msgid ":c:data:`PyTrace_C_CALL`"
 msgstr ""
 
-#: c-api/init.rst:1885 c-api/init.rst:1887
+#: c-api/init.rst:1889 c-api/init.rst:1891
 msgid "Function object being called."
 msgstr ""
 
-#: c-api/init.rst:1885
+#: c-api/init.rst:1889
 msgid ":c:data:`PyTrace_C_EXCEPTION`"
 msgstr ""
 
-#: c-api/init.rst:1887
+#: c-api/init.rst:1891
 msgid ":c:data:`PyTrace_C_RETURN`"
 msgstr ""
 
-#: c-api/init.rst:1889
+#: c-api/init.rst:1893
 msgid ":c:data:`PyTrace_OPCODE`"
 msgstr ""
 
-#: c-api/init.rst:1894
+#: c-api/init.rst:1898
 msgid ""
 "The value of the *what* parameter to a :c:type:`Py_tracefunc` function when "
 "a new call to a function or method is being reported, or a new entry into a "
@@ -2237,7 +2245,7 @@ msgid ""
 "the corresponding frame."
 msgstr ""
 
-#: c-api/init.rst:1903
+#: c-api/init.rst:1907
 msgid ""
 "The value of the *what* parameter to a :c:type:`Py_tracefunc` function when "
 "an exception has been raised.  The callback function is called with this "
@@ -2249,147 +2257,148 @@ msgid ""
 "profiler."
 msgstr ""
 
-#: c-api/init.rst:1914
+#: c-api/init.rst:1918
 msgid ""
 "The value passed as the *what* parameter to a :c:type:`Py_tracefunc` "
 "function (but not a profiling function) when a line-number event is being "
-"reported. It may be disabled for a frame by setting :attr:`~frame."
-"f_trace_lines` to *0* on that frame."
+"reported. It may be disabled for a frame by "
+"setting :attr:`~frame.f_trace_lines` to *0* on that frame."
 msgstr ""
 
-#: c-api/init.rst:1922
+#: c-api/init.rst:1926
 msgid ""
 "The value for the *what* parameter to :c:type:`Py_tracefunc` functions when "
 "a call is about to return."
 msgstr ""
 
-#: c-api/init.rst:1928
+#: c-api/init.rst:1932
 msgid ""
 "The value for the *what* parameter to :c:type:`Py_tracefunc` functions when "
 "a C function is about to be called."
 msgstr ""
 
-#: c-api/init.rst:1934
+#: c-api/init.rst:1938
 msgid ""
 "The value for the *what* parameter to :c:type:`Py_tracefunc` functions when "
 "a C function has raised an exception."
 msgstr ""
 
-#: c-api/init.rst:1940
+#: c-api/init.rst:1944
 msgid ""
 "The value for the *what* parameter to :c:type:`Py_tracefunc` functions when "
 "a C function has returned."
 msgstr ""
 
-#: c-api/init.rst:1946
+#: c-api/init.rst:1950
 msgid ""
 "The value for the *what* parameter to :c:type:`Py_tracefunc` functions (but "
 "not profiling functions) when a new opcode is about to be executed.  This "
-"event is not emitted by default: it must be explicitly requested by setting :"
-"attr:`~frame.f_trace_opcodes` to *1* on the frame."
+"event is not emitted by default: it must be explicitly requested by "
+"setting :attr:`~frame.f_trace_opcodes` to *1* on the frame."
 msgstr ""
 
-#: c-api/init.rst:1954
+#: c-api/init.rst:1958
 msgid ""
 "Set the profiler function to *func*.  The *obj* parameter is passed to the "
 "function as its first parameter, and may be any Python object, or ``NULL``.  "
 "If the profile function needs to maintain state, using a different value for "
 "*obj* for each thread provides a convenient and thread-safe place to store "
-"it.  The profile function is called for all monitored events except :c:data:"
-"`PyTrace_LINE` :c:data:`PyTrace_OPCODE` and :c:data:`PyTrace_EXCEPTION`."
+"it.  The profile function is called for all monitored events "
+"except :c:data:`PyTrace_LINE` :c:data:`PyTrace_OPCODE` "
+"and :c:data:`PyTrace_EXCEPTION`."
 msgstr ""
 
-#: c-api/init.rst:1961
+#: c-api/init.rst:1965
 msgid "See also the :func:`sys.setprofile` function."
 msgstr ""
 
-#: c-api/init.rst:1970 c-api/init.rst:1996
+#: c-api/init.rst:1974 c-api/init.rst:2000
 msgid "The caller must hold the :term:`GIL`."
 msgstr ""
 
-#: c-api/init.rst:1967
+#: c-api/init.rst:1971
 msgid ""
 "Like :c:func:`PyEval_SetProfile` but sets the profile function in all "
 "running threads belonging to the current interpreter instead of the setting "
 "it only on the current thread."
 msgstr ""
 
-#: c-api/init.rst:1972
+#: c-api/init.rst:1976
 msgid ""
 "As :c:func:`PyEval_SetProfile`, this function ignores any exceptions raised "
 "while setting the profile functions in all threads."
 msgstr ""
 
-#: c-api/init.rst:1980
+#: c-api/init.rst:1984
 msgid ""
-"Set the tracing function to *func*.  This is similar to :c:func:"
-"`PyEval_SetProfile`, except the tracing function does receive line-number "
-"events and per-opcode events, but does not receive any event related to C "
-"function objects being called.  Any trace function registered using :c:func:"
-"`PyEval_SetTrace` will not receive :c:data:`PyTrace_C_CALL`, :c:data:"
-"`PyTrace_C_EXCEPTION` or :c:data:`PyTrace_C_RETURN` as a value for the "
-"*what* parameter."
+"Set the tracing function to *func*.  This is similar "
+"to :c:func:`PyEval_SetProfile`, except the tracing function does receive "
+"line-number events and per-opcode events, but does not receive any event "
+"related to C function objects being called.  Any trace function registered "
+"using :c:func:`PyEval_SetTrace` will not "
+"receive :c:data:`PyTrace_C_CALL`, :c:data:`PyTrace_C_EXCEPTION` "
+"or :c:data:`PyTrace_C_RETURN` as a value for the *what* parameter."
 msgstr ""
 
-#: c-api/init.rst:1987
+#: c-api/init.rst:1991
 msgid "See also the :func:`sys.settrace` function."
 msgstr ""
 
-#: c-api/init.rst:1993
+#: c-api/init.rst:1997
 msgid ""
 "Like :c:func:`PyEval_SetTrace` but sets the tracing function in all running "
 "threads belonging to the current interpreter instead of the setting it only "
 "on the current thread."
 msgstr ""
 
-#: c-api/init.rst:1998
+#: c-api/init.rst:2002
 msgid ""
 "As :c:func:`PyEval_SetTrace`, this function ignores any exceptions raised "
 "while setting the trace functions in all threads."
 msgstr ""
 
-#: c-api/init.rst:2007
+#: c-api/init.rst:2011
 msgid "Advanced Debugger Support"
 msgstr ""
 
-#: c-api/init.rst:2012
+#: c-api/init.rst:2016
 msgid ""
 "These functions are only intended to be used by advanced debugging tools."
 msgstr ""
 
-#: c-api/init.rst:2017
+#: c-api/init.rst:2021
 msgid ""
 "Return the interpreter state object at the head of the list of all such "
 "objects."
 msgstr ""
 
-#: c-api/init.rst:2022
+#: c-api/init.rst:2026
 msgid "Return the main interpreter state object."
 msgstr ""
 
-#: c-api/init.rst:2027
+#: c-api/init.rst:2031
 msgid ""
 "Return the next interpreter state object after *interp* from the list of all "
 "such objects."
 msgstr ""
 
-#: c-api/init.rst:2033
+#: c-api/init.rst:2037
 msgid ""
 "Return the pointer to the first :c:type:`PyThreadState` object in the list "
 "of threads associated with the interpreter *interp*."
 msgstr ""
 
-#: c-api/init.rst:2039
+#: c-api/init.rst:2043
 msgid ""
 "Return the next thread state object after *tstate* from the list of all such "
 "objects belonging to the same :c:type:`PyInterpreterState` object."
 msgstr ""
 
-#: c-api/init.rst:2046
+#: c-api/init.rst:2050
 msgid "Thread Local Storage Support"
 msgstr ""
 
-#: c-api/init.rst:2050
+#: c-api/init.rst:2054
 msgid ""
 "The Python interpreter provides low-level support for thread-local storage "
 "(TLS) which wraps the underlying native TLS implementation to support the "
@@ -2399,42 +2408,42 @@ msgid ""
 "thread."
 msgstr ""
 
-#: c-api/init.rst:2057
+#: c-api/init.rst:2061
 msgid ""
 "The GIL does *not* need to be held when calling these functions; they supply "
 "their own locking."
 msgstr ""
 
-#: c-api/init.rst:2060
+#: c-api/init.rst:2064
 msgid ""
 "Note that :file:`Python.h` does not include the declaration of the TLS APIs, "
 "you need to include :file:`pythread.h` to use thread-local storage."
 msgstr ""
 
-#: c-api/init.rst:2064
+#: c-api/init.rst:2068
 msgid ""
-"None of these API functions handle memory management on behalf of the :c:"
-"expr:`void*` values.  You need to allocate and deallocate them yourself. If "
-"the :c:expr:`void*` values happen to be :c:expr:`PyObject*`, these functions "
-"don't do refcount operations on them either."
+"None of these API functions handle memory management on behalf of "
+"the :c:expr:`void*` values.  You need to allocate and deallocate them "
+"yourself. If the :c:expr:`void*` values happen to be :c:expr:`PyObject*`, "
+"these functions don't do refcount operations on them either."
 msgstr ""
 
-#: c-api/init.rst:2072
+#: c-api/init.rst:2076
 msgid "Thread Specific Storage (TSS) API"
 msgstr ""
 
-#: c-api/init.rst:2074
+#: c-api/init.rst:2078
 msgid ""
 "TSS API is introduced to supersede the use of the existing TLS API within "
 "the CPython interpreter.  This API uses a new type :c:type:`Py_tss_t` "
 "instead of :c:expr:`int` to represent thread keys."
 msgstr ""
 
-#: c-api/init.rst:2080
+#: c-api/init.rst:2084
 msgid "\"A New C-API for Thread-Local Storage in CPython\" (:pep:`539`)"
 msgstr ""
 
-#: c-api/init.rst:2085
+#: c-api/init.rst:2089
 msgid ""
 "This data structure represents the state of a thread key, the definition of "
 "which may depend on the underlying TLS implementation, and it has an "
@@ -2442,66 +2451,67 @@ msgid ""
 "public members in this structure."
 msgstr ""
 
-#: c-api/init.rst:2090
+#: c-api/init.rst:2094
 msgid ""
 "When :ref:`Py_LIMITED_API <stable>` is not defined, static allocation of "
 "this type by :c:macro:`Py_tss_NEEDS_INIT` is allowed."
 msgstr ""
 
-#: c-api/init.rst:2096
+#: c-api/init.rst:2100
 msgid ""
 "This macro expands to the initializer for :c:type:`Py_tss_t` variables. Note "
 "that this macro won't be defined with :ref:`Py_LIMITED_API <stable>`."
 msgstr ""
 
-#: c-api/init.rst:2101
+#: c-api/init.rst:2105
 msgid "Dynamic Allocation"
 msgstr ""
 
-#: c-api/init.rst:2103
+#: c-api/init.rst:2107
 msgid ""
 "Dynamic allocation of the :c:type:`Py_tss_t`, required in extension modules "
 "built with :ref:`Py_LIMITED_API <stable>`, where static allocation of this "
 "type is not possible due to its implementation being opaque at build time."
 msgstr ""
 
-#: c-api/init.rst:2110
+#: c-api/init.rst:2114
 msgid ""
-"Return a value which is the same state as a value initialized with :c:macro:"
-"`Py_tss_NEEDS_INIT`, or ``NULL`` in the case of dynamic allocation failure."
+"Return a value which is the same state as a value initialized "
+"with :c:macro:`Py_tss_NEEDS_INIT`, or ``NULL`` in the case of dynamic "
+"allocation failure."
 msgstr ""
 
-#: c-api/init.rst:2117
+#: c-api/init.rst:2121
 msgid ""
 "Free the given *key* allocated by :c:func:`PyThread_tss_alloc`, after first "
 "calling :c:func:`PyThread_tss_delete` to ensure any associated thread locals "
 "have been unassigned. This is a no-op if the *key* argument is ``NULL``."
 msgstr ""
 
-#: c-api/init.rst:2123
+#: c-api/init.rst:2127
 msgid ""
 "A freed key becomes a dangling pointer. You should reset the key to ``NULL``."
 msgstr ""
 
-#: c-api/init.rst:2128
+#: c-api/init.rst:2132
 msgid "Methods"
 msgstr ""
 
-#: c-api/init.rst:2130
+#: c-api/init.rst:2134
 msgid ""
 "The parameter *key* of these functions must not be ``NULL``.  Moreover, the "
 "behaviors of :c:func:`PyThread_tss_set` and :c:func:`PyThread_tss_get` are "
-"undefined if the given :c:type:`Py_tss_t` has not been initialized by :c:"
-"func:`PyThread_tss_create`."
+"undefined if the given :c:type:`Py_tss_t` has not been initialized "
+"by :c:func:`PyThread_tss_create`."
 msgstr ""
 
-#: c-api/init.rst:2138
+#: c-api/init.rst:2142
 msgid ""
 "Return a non-zero value if the given :c:type:`Py_tss_t` has been initialized "
 "by :c:func:`PyThread_tss_create`."
 msgstr ""
 
-#: c-api/init.rst:2144
+#: c-api/init.rst:2148
 msgid ""
 "Return a zero value on successful initialization of a TSS key.  The behavior "
 "is undefined if the value pointed to by the *key* argument is not "
@@ -2510,40 +2520,40 @@ msgid ""
 "no-op and immediately returns success."
 msgstr ""
 
-#: c-api/init.rst:2153
+#: c-api/init.rst:2157
 msgid ""
 "Destroy a TSS key to forget the values associated with the key across all "
 "threads, and change the key's initialization state to uninitialized.  A "
-"destroyed key is able to be initialized again by :c:func:"
-"`PyThread_tss_create`. This function can be called repeatedly on the same "
-"key -- calling it on an already destroyed key is a no-op."
+"destroyed key is able to be initialized again "
+"by :c:func:`PyThread_tss_create`. This function can be called repeatedly on "
+"the same key -- calling it on an already destroyed key is a no-op."
 msgstr ""
 
-#: c-api/init.rst:2162
+#: c-api/init.rst:2166
 msgid ""
 "Return a zero value to indicate successfully associating a :c:expr:`void*` "
 "value with a TSS key in the current thread.  Each thread has a distinct "
 "mapping of the key to a :c:expr:`void*` value."
 msgstr ""
 
-#: c-api/init.rst:2169
+#: c-api/init.rst:2173
 msgid ""
 "Return the :c:expr:`void*` value associated with a TSS key in the current "
 "thread.  This returns ``NULL`` if no value is associated with the key in the "
 "current thread."
 msgstr ""
 
-#: c-api/init.rst:2177
+#: c-api/init.rst:2181
 msgid "Thread Local Storage (TLS) API"
 msgstr ""
 
-#: c-api/init.rst:2179
+#: c-api/init.rst:2183
 msgid ""
 "This API is superseded by :ref:`Thread Specific Storage (TSS) API <thread-"
 "specific-storage-api>`."
 msgstr ""
 
-#: c-api/init.rst:2184
+#: c-api/init.rst:2188
 msgid ""
 "This version of the API does not support platforms where the native TLS key "
 "is defined in a way that cannot be safely cast to ``int``.  On such "
@@ -2552,7 +2562,7 @@ msgid ""
 "platforms."
 msgstr ""
 
-#: c-api/init.rst:2189
+#: c-api/init.rst:2193
 msgid ""
 "Due to the compatibility problem noted above, this version of the API should "
 "not be used in new code."
@@ -2574,19 +2584,19 @@ msgstr ""
 msgid "path (in module sys)"
 msgstr ""
 
-#: c-api/init.rst:596 c-api/init.rst:1063 c-api/init.rst:1689
+#: c-api/init.rst:596 c-api/init.rst:1063 c-api/init.rst:1693
 msgid "module"
 msgstr ""
 
-#: c-api/init.rst:1594 c-api/init.rst:1689
+#: c-api/init.rst:1594 c-api/init.rst:1693
 msgid "builtins"
 msgstr ""
 
-#: c-api/init.rst:1594 c-api/init.rst:1689
+#: c-api/init.rst:1594 c-api/init.rst:1693
 msgid "__main__"
 msgstr ""
 
-#: c-api/init.rst:1594 c-api/init.rst:1689
+#: c-api/init.rst:1594 c-api/init.rst:1693
 msgid "sys"
 msgstr ""
 
@@ -2606,7 +2616,7 @@ msgstr ""
 msgid "PySys_SetArgvEx (C function)"
 msgstr ""
 
-#: c-api/init.rst:1654 c-api/init.rst:1707
+#: c-api/init.rst:1658 c-api/init.rst:1711
 msgid "Py_FinalizeEx (C function)"
 msgstr ""
 
@@ -2718,22 +2728,22 @@ msgstr ""
 msgid "_thread"
 msgstr ""
 
-#: c-api/init.rst:1689
+#: c-api/init.rst:1693
 msgid "stdout (in module sys)"
 msgstr ""
 
-#: c-api/init.rst:1689
+#: c-api/init.rst:1693
 msgid "stderr (in module sys)"
 msgstr ""
 
-#: c-api/init.rst:1689
+#: c-api/init.rst:1693
 msgid "stdin (in module sys)"
 msgstr ""
 
-#: c-api/init.rst:1654
+#: c-api/init.rst:1658
 msgid "Py_Initialize (C function)"
 msgstr ""
 
-#: c-api/init.rst:1684
+#: c-api/init.rst:1688
 msgid "close (in module os)"
 msgstr ""

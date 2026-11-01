@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 19:05+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -22,8 +22,8 @@ msgstr ""
 
 #: c-api/mapping.rst:8
 msgid ""
-"See also :c:func:`PyObject_GetItem`, :c:func:`PyObject_SetItem` and :c:func:"
-"`PyObject_DelItem`."
+"See also :c:func:`PyObject_GetItem`, :c:func:`PyObject_SetItem` "
+"and :c:func:`PyObject_DelItem`."
 msgstr ""
 
 #: c-api/mapping.rst:14
@@ -43,16 +43,16 @@ msgstr ""
 
 #: c-api/mapping.rst:31
 msgid ""
-"This is the same as :c:func:`PyObject_GetItem`, but *key* is specified as a :"
-"c:expr:`const char*` UTF-8 encoded bytes string, rather than a :c:expr:"
-"`PyObject*`."
+"This is the same as :c:func:`PyObject_GetItem`, but *key* is specified as "
+"a :c:expr:`const char*` UTF-8 encoded bytes string, rather than "
+"a :c:expr:`PyObject*`."
 msgstr ""
 
 #: c-api/mapping.rst:38
 msgid ""
-"This is the same as :c:func:`PyObject_SetItem`, but *key* is specified as a :"
-"c:expr:`const char*` UTF-8 encoded bytes string, rather than a :c:expr:"
-"`PyObject*`."
+"This is the same as :c:func:`PyObject_SetItem`, but *key* is specified as "
+"a :c:expr:`const char*` UTF-8 encoded bytes string, rather than "
+"a :c:expr:`PyObject*`."
 msgstr ""
 
 #: c-api/mapping.rst:45
@@ -61,9 +61,9 @@ msgstr ""
 
 #: c-api/mapping.rst:50
 msgid ""
-"This is the same as :c:func:`PyObject_DelItem`, but *key* is specified as a :"
-"c:expr:`const char*` UTF-8 encoded bytes string, rather than a :c:expr:"
-"`PyObject*`."
+"This is the same as :c:func:`PyObject_DelItem`, but *key* is specified as "
+"a :c:expr:`const char*` UTF-8 encoded bytes string, rather than "
+"a :c:expr:`PyObject*`."
 msgstr ""
 
 #: c-api/mapping.rst:57
@@ -76,15 +76,15 @@ msgstr ""
 #: c-api/mapping.rst:63
 msgid ""
 "Exceptions which occur when this calls :meth:`~object.__getitem__` method "
-"are silently ignored. For proper error handling, use :c:func:"
-"`PyObject_GetItem()` instead."
+"are silently ignored. For proper error handling, "
+"use :c:func:`PyObject_GetItem()` instead."
 msgstr ""
 
 #: c-api/mapping.rst:70
 msgid ""
-"This is the same as :c:func:`PyMapping_HasKey`, but *key* is specified as a :"
-"c:expr:`const char*` UTF-8 encoded bytes string, rather than a :c:expr:"
-"`PyObject*`."
+"This is the same as :c:func:`PyMapping_HasKey`, but *key* is specified as "
+"a :c:expr:`const char*` UTF-8 encoded bytes string, rather than "
+"a :c:expr:`PyObject*`."
 msgstr ""
 
 #: c-api/mapping.rst:76

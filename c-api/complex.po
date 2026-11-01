@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -67,14 +67,14 @@ msgstr ""
 
 #: c-api/complex.rst:49
 msgid ""
-"Return the difference between two complex numbers, using the C :c:type:"
-"`Py_complex` representation."
+"Return the difference between two complex numbers, using the "
+"C :c:type:`Py_complex` representation."
 msgstr ""
 
 #: c-api/complex.rst:55
 msgid ""
-"Return the negation of the complex number *num*, using the C :c:type:"
-"`Py_complex` representation."
+"Return the negation of the complex number *num*, using the "
+"C :c:type:`Py_complex` representation."
 msgstr ""
 
 #: c-api/complex.rst:61
@@ -91,14 +91,14 @@ msgstr ""
 
 #: c-api/complex.rst:70
 msgid ""
-"If *divisor* is null, this method returns zero and sets :c:data:`errno` to :"
-"c:macro:`!EDOM`."
+"If *divisor* is null, this method returns zero and sets :c:data:`errno` "
+"to :c:macro:`!EDOM`."
 msgstr ""
 
 #: c-api/complex.rst:76
 msgid ""
-"Return the exponentiation of *num* by *exp*, using the C :c:type:"
-"`Py_complex` representation."
+"Return the exponentiation of *num* by *exp*, using the "
+"C :c:type:`Py_complex` representation."
 msgstr ""
 
 #: c-api/complex.rst:79
@@ -124,8 +124,8 @@ msgstr ""
 
 #: c-api/complex.rst:100
 msgid ""
-"Return true if its argument is a :c:type:`PyComplexObject` or a subtype of :"
-"c:type:`PyComplexObject`.  This function always succeeds."
+"Return true if its argument is a :c:type:`PyComplexObject` or a subtype "
+"of :c:type:`PyComplexObject`.  This function always succeeds."
 msgstr ""
 
 #: c-api/complex.rst:106
@@ -166,18 +166,18 @@ msgstr ""
 
 #: c-api/complex.rst:139
 msgid ""
-"If *op* is not a Python complex number object but has a :meth:`~object."
-"__complex__` method, this method will first be called to convert *op* to a "
-"Python complex number object.  If :meth:`!__complex__` is not defined then "
-"it falls back to :meth:`~object.__float__`.  If :meth:`!__float__` is not "
-"defined then it falls back to :meth:`~object.__index__`."
+"If *op* is not a Python complex number object but has "
+"a :meth:`~object.__complex__` method, this method will first be called to "
+"convert *op* to a Python complex number object.  If :meth:`!__complex__` is "
+"not defined then it falls back to :meth:`~object.__float__`.  If :meth:`!"
+"__float__` is not defined then it falls back to :meth:`~object.__index__`."
 msgstr ""
 
 #: c-api/complex.rst:145
 msgid ""
-"Upon failure, this method returns :c:type:`Py_complex` with :c:member:"
-"`~Py_complex.real` set to ``-1.0`` and with an exception set, so one should "
-"call :c:func:`PyErr_Occurred` to check for errors."
+"Upon failure, this method returns :c:type:`Py_complex` "
+"with :c:member:`~Py_complex.real` set to ``-1.0`` and with an exception set, "
+"so one should call :c:func:`PyErr_Occurred` to check for errors."
 msgstr ""
 
 #: c-api/complex.rst:149

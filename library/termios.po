@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -35,8 +35,9 @@ msgstr ""
 #: library/termios.rst:21
 msgid ""
 "All functions in this module take a file descriptor *fd* as their first "
-"argument.  This can be an integer file descriptor, such as returned by ``sys."
-"stdin.fileno()``, or a :term:`file object`, such as ``sys.stdin`` itself."
+"argument.  This can be an integer file descriptor, such as returned by "
+"``sys.stdin.fileno()``, or a :term:`file object`, such as ``sys.stdin`` "
+"itself."
 msgstr ""
 
 #: library/termios.rst:25
@@ -111,17 +112,17 @@ msgstr ""
 #: library/termios.rst:91
 msgid ""
 "Return a tuple ``(ws_row, ws_col)`` containing the tty window size for file "
-"descriptor *fd*. Requires :const:`termios.TIOCGWINSZ` or :const:`termios."
-"TIOCGSIZE`."
+"descriptor *fd*. Requires :const:`termios.TIOCGWINSZ` "
+"or :const:`termios.TIOCGSIZE`."
 msgstr ""
 
 #: library/termios.rst:100
 msgid ""
 "Set the tty window size for file descriptor *fd* from *winsize*, which is a "
-"two-item tuple ``(ws_row, ws_col)`` like the one returned by :func:"
-"`tcgetwinsize`. Requires at least one of the pairs (:const:`termios."
-"TIOCGWINSZ`, :const:`termios.TIOCSWINSZ`); (:const:`termios.TIOCGSIZE`, :"
-"const:`termios.TIOCSSIZE`) to be defined."
+"two-item tuple ``(ws_row, ws_col)`` like the one returned "
+"by :func:`tcgetwinsize`. Requires at least one of the pairs "
+"(:const:`termios.TIOCGWINSZ`, :const:`termios.TIOCSWINSZ`); "
+"(:const:`termios.TIOCGSIZE`, :const:`termios.TIOCSSIZE`) to be defined."
 msgstr ""
 
 #: library/termios.rst:111
@@ -139,9 +140,9 @@ msgstr ""
 #: library/termios.rst:120
 msgid ""
 "Here's a function that prompts for a password with echoing turned off.  Note "
-"the technique using a separate :func:`tcgetattr` call and a :keyword:"
-"`try` ... :keyword:`finally` statement to ensure that the old tty attributes "
-"are restored exactly no matter what happens::"
+"the technique using a separate :func:`tcgetattr` call and "
+"a :keyword:`try` ... :keyword:`finally` statement to ensure that the old tty "
+"attributes are restored exactly no matter what happens::"
 msgstr ""
 
 #: library/termios.rst:125

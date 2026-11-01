@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -41,13 +41,13 @@ msgstr ""
 
 #: library/statistics.rst:31
 msgid ""
-"Unless explicitly noted, these functions support :class:`int`, :class:"
-"`float`, :class:`~decimal.Decimal` and :class:`~fractions.Fraction`. "
-"Behaviour with other types (whether in the numeric tower or not) is "
-"currently unsupported.  Collections with a mix of types are also undefined "
-"and implementation-dependent.  If your input data consists of mixed types, "
-"you may be able to use :func:`map` to ensure a consistent result, for "
-"example: ``map(float, input_data)``."
+"Unless explicitly noted, these functions "
+"support :class:`int`, :class:`float`, :class:`~decimal.Decimal` "
+"and :class:`~fractions.Fraction`. Behaviour with other types (whether in the "
+"numeric tower or not) is currently unsupported.  Collections with a mix of "
+"types are also undefined and implementation-dependent.  If your input data "
+"consists of mixed types, you may be able to use :func:`map` to ensure a "
+"consistent result, for example: ``map(float, input_data)``."
 msgstr ""
 
 #: library/statistics.rst:39
@@ -328,8 +328,8 @@ msgstr ""
 
 #: library/statistics.rst:166
 msgid ""
-"This runs faster than the :func:`mean` function and it always returns a :"
-"class:`float`.  The *data* may be a sequence or iterable.  If the input "
+"This runs faster than the :func:`mean` function and it always returns "
+"a :class:`float`.  The *data* may be a sequence or iterable.  If the input "
 "dataset is empty, raises a :exc:`StatisticsError`."
 msgstr ""
 
@@ -356,8 +356,8 @@ msgstr ""
 
 #: library/statistics.rst:186
 msgid ""
-"If *weights* is supplied, it must be the same length as the *data* or a :exc:"
-"`ValueError` will be raised."
+"If *weights* is supplied, it must be the same length as the *data* or "
+"a :exc:`ValueError` will be raised."
 msgstr ""
 
 #: library/statistics.rst:259
@@ -501,8 +501,9 @@ msgstr ""
 
 #: library/statistics.rst:294
 msgid ""
-"Return the low median of numeric data.  If *data* is empty, :exc:"
-"`StatisticsError` is raised.  *data* can be a sequence or iterable."
+"Return the low median of numeric data.  If *data* is "
+"empty, :exc:`StatisticsError` is raised.  *data* can be a sequence or "
+"iterable."
 msgstr ""
 
 #: library/statistics.rst:297
@@ -883,9 +884,9 @@ msgstr ""
 
 #: library/statistics.rst:579
 msgid ""
-"If you somehow know the actual population mean μ you should pass it to the :"
-"func:`pvariance` function as the *mu* parameter to get the variance of a "
-"sample."
+"If you somehow know the actual population mean μ you should pass it to "
+"the :func:`pvariance` function as the *mu* parameter to get the variance of "
+"a sample."
 msgstr ""
 
 #: library/statistics.rst:585
@@ -965,8 +966,8 @@ msgstr ""
 
 #: library/statistics.rst:640
 msgid ""
-"Both inputs must be of the same length (no less than two), otherwise :exc:"
-"`StatisticsError` is raised."
+"Both inputs must be of the same length (no less than two), "
+"otherwise :exc:`StatisticsError` is raised."
 msgstr ""
 
 #: library/statistics.rst:645
@@ -1049,8 +1050,8 @@ msgstr ""
 
 #: library/statistics.rst:712
 msgid ""
-"Return the slope and intercept of `simple linear regression <https://en."
-"wikipedia.org/wiki/Simple_linear_regression>`_ parameters estimated using "
+"Return the slope and intercept of `simple linear regression <https://"
+"en.wikipedia.org/wiki/Simple_linear_regression>`_ parameters estimated using "
 "ordinary least squares. Simple linear regression describes the relationship "
 "between an independent variable *x* and a dependent variable *y* in terms of "
 "this linear function:"
@@ -1071,8 +1072,8 @@ msgstr ""
 #: library/statistics.rst:726
 msgid ""
 "Both inputs must be of the same length (no less than two), and the "
-"independent variable *x* cannot be constant; otherwise a :exc:"
-"`StatisticsError` is raised."
+"independent variable *x* cannot be constant; otherwise "
+"a :exc:`StatisticsError` is raised."
 msgstr ""
 
 #: library/statistics.rst:730
@@ -1150,15 +1151,15 @@ msgstr ""
 #: library/statistics.rst:788
 msgid ""
 ":class:`NormalDist` is a tool for creating and manipulating normal "
-"distributions of a `random variable <http://www.stat.yale.edu/"
-"Courses/1997-98/101/ranvar.htm>`_.  It is a class that treats the mean and "
-"standard deviation of data measurements as a single entity."
+"distributions of a `random variable <http://www.stat.yale.edu/Courses/"
+"1997-98/101/ranvar.htm>`_.  It is a class that treats the mean and standard "
+"deviation of data measurements as a single entity."
 msgstr ""
 
 #: library/statistics.rst:794
 msgid ""
-"Normal distributions arise from the `Central Limit Theorem <https://en."
-"wikipedia.org/wiki/Central_limit_theorem>`_ and have a wide range of "
+"Normal distributions arise from the `Central Limit Theorem <https://"
+"en.wikipedia.org/wiki/Central_limit_theorem>`_ and have a wide range of "
 "applications in statistics."
 msgstr ""
 
@@ -1260,8 +1261,8 @@ msgstr ""
 msgid ""
 "Compute the inverse cumulative distribution function, also known as the "
 "`quantile function <https://en.wikipedia.org/wiki/Quantile_function>`_ or "
-"the `percent-point <https://web.archive.org/web/20190203145224/https://www."
-"statisticshowto.datasciencecentral.com/inverse-distribution-function/>`_ "
+"the `percent-point <https://web.archive.org/web/20190203145224/https://"
+"www.statisticshowto.datasciencecentral.com/inverse-distribution-function/>`_ "
 "function.  Mathematically, it is written ``x : P(X <= x) = p``."
 msgstr ""
 
@@ -1325,8 +1326,8 @@ msgid ""
 "Since normal distributions arise from additive effects of independent "
 "variables, it is possible to `add and subtract two independent normally "
 "distributed random variables <https://en.wikipedia.org/wiki/"
-"Sum_of_normally_distributed_random_variables>`_ represented as instances of :"
-"class:`NormalDist`.  For example:"
+"Sum_of_normally_distributed_random_variables>`_ represented as instances "
+"of :class:`NormalDist`.  For example:"
 msgstr ""
 
 #: library/statistics.rst:935
@@ -1403,7 +1404,7 @@ msgid ""
 ">>> X = NormalDist(10, 2.5).samples(n, seed=3652260728)\n"
 ">>> Y = NormalDist(15, 1.75).samples(n, seed=4582495471)\n"
 ">>> Z = NormalDist(50, 1.25).samples(n, seed=6582483453)\n"
-">>> quantiles(map(model, X, Y, Z))       \n"
+">>> quantiles(map(model, X, Y, Z))\n"
 "[1.4591308524824727, 1.8035946855390597, 2.175091447274739]"
 msgstr ""
 
@@ -1461,8 +1462,8 @@ msgstr ""
 
 #: library/statistics.rst:1043
 msgid ""
-"Wikipedia has a `nice example of a Naive Bayesian Classifier <https://en."
-"wikipedia.org/wiki/Naive_Bayes_classifier#Person_classification>`_. The "
+"Wikipedia has a `nice example of a Naive Bayesian Classifier <https://"
+"en.wikipedia.org/wiki/Naive_Bayes_classifier#Person_classification>`_. The "
 "challenge is to predict a person's gender from measurements of normally "
 "distributed features including height, weight, and foot size."
 msgstr ""

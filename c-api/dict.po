@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -71,32 +71,32 @@ msgstr ""
 
 #: c-api/dict.rst:65
 msgid ""
-"Insert *val* into the dictionary *p* with a key of *key*.  *key* must be :"
-"term:`hashable`; if it isn't, :exc:`TypeError` will be raised. Return ``0`` "
-"on success or ``-1`` on failure.  This function *does not* steal a reference "
-"to *val*."
+"Insert *val* into the dictionary *p* with a key of *key*.  *key* must "
+"be :term:`hashable`; if it isn't, :exc:`TypeError` will be raised. Return "
+"``0`` on success or ``-1`` on failure.  This function *does not* steal a "
+"reference to *val*."
 msgstr ""
 
 #: c-api/dict.rst:73
 msgid ""
-"This is the same as :c:func:`PyDict_SetItem`, but *key* is specified as a :c:"
-"expr:`const char*` UTF-8 encoded bytes string, rather than a :c:expr:"
-"`PyObject*`."
+"This is the same as :c:func:`PyDict_SetItem`, but *key* is specified as "
+"a :c:expr:`const char*` UTF-8 encoded bytes string, rather than "
+"a :c:expr:`PyObject*`."
 msgstr ""
 
 #: c-api/dict.rst:80
 msgid ""
-"Remove the entry in dictionary *p* with key *key*. *key* must be :term:"
-"`hashable`; if it isn't, :exc:`TypeError` is raised. If *key* is not in the "
-"dictionary, :exc:`KeyError` is raised. Return ``0`` on success or ``-1`` on "
-"failure."
+"Remove the entry in dictionary *p* with key *key*. *key* must "
+"be :term:`hashable`; if it isn't, :exc:`TypeError` is raised. If *key* is "
+"not in the dictionary, :exc:`KeyError` is raised. Return ``0`` on success or "
+"``-1`` on failure."
 msgstr ""
 
 #: c-api/dict.rst:88
 msgid ""
-"This is the same as :c:func:`PyDict_DelItem`, but *key* is specified as a :c:"
-"expr:`const char*` UTF-8 encoded bytes string, rather than a :c:expr:"
-"`PyObject*`."
+"This is the same as :c:func:`PyDict_DelItem`, but *key* is specified as "
+"a :c:expr:`const char*` UTF-8 encoded bytes string, rather than "
+"a :c:expr:`PyObject*`."
 msgstr ""
 
 #: c-api/dict.rst:95
@@ -107,9 +107,9 @@ msgstr ""
 
 #: c-api/dict.rst:100
 msgid ""
-"Exceptions that occur while this calls :meth:`~object.__hash__` and :meth:"
-"`~object.__eq__` methods are silently ignored. Prefer the :c:func:"
-"`PyDict_GetItemWithError` function instead."
+"Exceptions that occur while this calls :meth:`~object.__hash__` "
+"and :meth:`~object.__eq__` methods are silently ignored. Prefer "
+"the :c:func:`PyDict_GetItemWithError` function instead."
 msgstr ""
 
 #: c-api/dict.rst:104
@@ -127,17 +127,18 @@ msgstr ""
 
 #: c-api/dict.rst:119
 msgid ""
-"This is the same as :c:func:`PyDict_GetItem`, but *key* is specified as a :c:"
-"expr:`const char*` UTF-8 encoded bytes string, rather than a :c:expr:"
-"`PyObject*`."
+"This is the same as :c:func:`PyDict_GetItem`, but *key* is specified as "
+"a :c:expr:`const char*` UTF-8 encoded bytes string, rather than "
+"a :c:expr:`PyObject*`."
 msgstr ""
 
 #: c-api/dict.rst:125
 msgid ""
-"Exceptions that occur while this calls :meth:`~object.__hash__` and :meth:"
-"`~object.__eq__` methods or while creating the temporary :class:`str` object "
-"are silently ignored. Prefer using the :c:func:`PyDict_GetItemWithError` "
-"function with your own :c:func:`PyUnicode_FromString` *key* instead."
+"Exceptions that occur while this calls :meth:`~object.__hash__` "
+"and :meth:`~object.__eq__` methods or while creating the "
+"temporary :class:`str` object are silently ignored. Prefer using "
+"the :c:func:`PyDict_GetItemWithError` function with your "
+"own :c:func:`PyUnicode_FromString` *key* instead."
 msgstr ""
 
 #: c-api/dict.rst:134
@@ -174,16 +175,16 @@ msgstr ""
 
 #: c-api/dict.rst:168
 msgid ""
-"Iterate over all key-value pairs in the dictionary *p*.  The :c:type:"
-"`Py_ssize_t` referred to by *ppos* must be initialized to ``0`` prior to the "
-"first call to this function to start the iteration; the function returns "
-"true for each pair in the dictionary, and false once all pairs have been "
-"reported.  The parameters *pkey* and *pvalue* should either point to :c:expr:"
-"`PyObject*` variables that will be filled in with each key and value, "
-"respectively, or may be ``NULL``.  Any references returned through them are "
-"borrowed.  *ppos* should not be altered during iteration. Its value "
-"represents offsets within the internal dictionary structure, and since the "
-"structure is sparse, the offsets are not consecutive."
+"Iterate over all key-value pairs in the dictionary *p*.  "
+"The :c:type:`Py_ssize_t` referred to by *ppos* must be initialized to ``0`` "
+"prior to the first call to this function to start the iteration; the "
+"function returns true for each pair in the dictionary, and false once all "
+"pairs have been reported.  The parameters *pkey* and *pvalue* should either "
+"point to :c:expr:`PyObject*` variables that will be filled in with each key "
+"and value, respectively, or may be ``NULL``.  Any references returned "
+"through them are borrowed.  *ppos* should not be altered during iteration. "
+"Its value represents offsets within the internal dictionary structure, and "
+"since the structure is sparse, the offsets are not consecutive."
 msgstr ""
 
 #: c-api/dict.rst:179
@@ -241,10 +242,10 @@ msgstr ""
 
 #: c-api/dict.rst:224
 msgid ""
-"This is the same as ``PyDict_Merge(a, b, 1)`` in C, and is similar to ``a."
-"update(b)`` in Python except that :c:func:`PyDict_Update` doesn't fall back "
-"to the iterating over a sequence of key value pairs if the second argument "
-"has no \"keys\" attribute.  Return ``0`` on success or ``-1`` if an "
+"This is the same as ``PyDict_Merge(a, b, 1)`` in C, and is similar to "
+"``a.update(b)`` in Python except that :c:func:`PyDict_Update` doesn't fall "
+"back to the iterating over a sequence of key value pairs if the second "
+"argument has no \"keys\" attribute.  Return ``0`` on success or ``-1`` if an "
 "exception was raised."
 msgstr ""
 
@@ -275,15 +276,15 @@ msgstr ""
 
 #: c-api/dict.rst:256
 msgid ""
-"Clear watcher identified by *watcher_id* previously returned from :c:func:"
-"`PyDict_AddWatcher`. Return ``0`` on success, ``-1`` on error (e.g. if the "
-"given *watcher_id* was never registered.)"
+"Clear watcher identified by *watcher_id* previously returned "
+"from :c:func:`PyDict_AddWatcher`. Return ``0`` on success, ``-1`` on error "
+"(e.g. if the given *watcher_id* was never registered.)"
 msgstr ""
 
 #: c-api/dict.rst:264
 msgid ""
-"Mark dictionary *dict* as watched. The callback granted *watcher_id* by :c:"
-"func:`PyDict_AddWatcher` will be called when *dict* is modified or "
+"Mark dictionary *dict* as watched. The callback granted *watcher_id* "
+"by :c:func:`PyDict_AddWatcher` will be called when *dict* is modified or "
 "deallocated. Return ``0`` on success or ``-1`` on error."
 msgstr ""
 
@@ -349,8 +350,8 @@ msgstr ""
 #: c-api/dict.rst:316
 msgid ""
 "If the callback sets an exception, it must return ``-1``; this exception "
-"will be printed as an unraisable exception using :c:func:"
-"`PyErr_WriteUnraisable`. Otherwise it should return ``0``."
+"will be printed as an unraisable exception "
+"using :c:func:`PyErr_WriteUnraisable`. Otherwise it should return ``0``."
 msgstr ""
 
 #: c-api/dict.rst:320

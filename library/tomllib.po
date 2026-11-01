@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -52,17 +52,17 @@ msgstr ""
 #: library/tomllib.rst:39
 msgid ""
 "Read a TOML file. The first argument should be a readable and binary file "
-"object. Return a :class:`dict`. Convert TOML types to Python using this :ref:"
-"`conversion table <toml-to-py-table>`."
+"object. Return a :class:`dict`. Convert TOML types to Python using "
+"this :ref:`conversion table <toml-to-py-table>`."
 msgstr ""
 
 #: library/tomllib.rst:43
 msgid ""
 "*parse_float* will be called with the string of every TOML float to be "
 "decoded.  By default, this is equivalent to ``float(num_str)``. This can be "
-"used to use another datatype or parser for TOML floats (e.g. :class:`decimal."
-"Decimal`). The callable must not return a :class:`dict` or a :class:`list`, "
-"else a :exc:`ValueError` is raised."
+"used to use another datatype or parser for TOML floats "
+"(e.g. :class:`decimal.Decimal`). The callable must not return "
+"a :class:`dict` or a :class:`list`, else a :exc:`ValueError` is raised."
 msgstr ""
 
 #: library/tomllib.rst:58
@@ -174,8 +174,8 @@ msgstr ""
 
 #: library/tomllib.rst:108
 msgid ""
-"datetime.datetime (``tzinfo`` attribute set to an instance of ``datetime."
-"timezone``)"
+"datetime.datetime (``tzinfo`` attribute set to an instance of "
+"``datetime.timezone``)"
 msgstr ""
 
 #: library/tomllib.rst:110

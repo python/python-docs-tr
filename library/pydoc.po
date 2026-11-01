@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -38,8 +38,8 @@ msgid ""
 "of the object, and recursively of its documentable members.  If there is no "
 "docstring, :mod:`!pydoc` tries to obtain a description from the block of "
 "comment lines just above the definition of the class, function or method in "
-"the source file, or at the top of the module (see :func:`inspect."
-"getcomments`)."
+"the source file, or at the top of the module "
+"(see :func:`inspect.getcomments`)."
 msgstr ""
 
 #: library/pydoc.rst:30
@@ -78,9 +78,10 @@ msgstr ""
 #: library/pydoc.rst:54
 msgid ""
 "When printing output to the console, :program:`pydoc` attempts to paginate "
-"the output for easier reading.  If either the :envvar:`MANPAGER` or the :"
-"envvar:`PAGER` environment variable is set, :program:`pydoc` will use its "
-"value as a pagination program. When both are set, :envvar:`MANPAGER` is used."
+"the output for easier reading.  If either the :envvar:`MANPAGER` or "
+"the :envvar:`PAGER` environment variable is set, :program:`pydoc` will use "
+"its value as a pagination program. When both are set, :envvar:`MANPAGER` is "
+"used."
 msgstr ""
 
 #: library/pydoc.rst:59
@@ -101,11 +102,11 @@ msgstr ""
 #: library/pydoc.rst:68
 msgid ""
 "You can also use :program:`pydoc` to start an HTTP server on the local "
-"machine that will serve documentation to visiting web browsers.  :program:"
-"`python -m pydoc -p 1234` will start a HTTP server on port 1234, allowing "
-"you to browse the documentation at ``http://localhost:1234/`` in your "
-"preferred web browser. Specifying ``0`` as the port number will select an "
-"arbitrary unused port."
+"machine that will serve documentation to visiting web "
+"browsers.  :program:`python -m pydoc -p 1234` will start a HTTP server on "
+"port 1234, allowing you to browse the documentation at ``http://"
+"localhost:1234/`` in your preferred web browser. Specifying ``0`` as the "
+"port number will select an arbitrary unused port."
 msgstr ""
 
 #: library/pydoc.rst:74
@@ -136,11 +137,11 @@ msgstr ""
 
 #: library/pydoc.rst:91
 msgid ""
-"Module docs for core modules are assumed to reside in ``https://docs.python."
-"org/X.Y/library/`` where ``X`` and ``Y`` are the major and minor version "
-"numbers of the Python interpreter.  This can be overridden by setting the :"
-"envvar:`!PYTHONDOCS` environment variable to a different URL or to a local "
-"directory containing the Library Reference Manual pages."
+"Module docs for core modules are assumed to reside in ``https://"
+"docs.python.org/X.Y/library/`` where ``X`` and ``Y`` are the major and minor "
+"version numbers of the Python interpreter.  This can be overridden by "
+"setting the :envvar:`!PYTHONDOCS` environment variable to a different URL or "
+"to a local directory containing the Library Reference Manual pages."
 msgstr ""
 
 #: library/pydoc.rst:98
@@ -153,8 +154,9 @@ msgstr ""
 
 #: library/pydoc.rst:104
 msgid ""
-":mod:`!pydoc` now uses :func:`inspect.signature` rather than :func:`inspect."
-"getfullargspec` to extract signature information from callables."
+":mod:`!pydoc` now uses :func:`inspect.signature` rather "
+"than :func:`inspect.getfullargspec` to extract signature information from "
+"callables."
 msgstr ""
 
 #: library/pydoc.rst:109

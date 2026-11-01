@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -75,8 +75,8 @@ msgstr ""
 
 #: howto/isolating-extensions.rst:42
 msgid ""
-"in parallel, managing \"sub-interpreters\" using :c:func:"
-"`Py_NewInterpreter`/:c:func:`Py_EndInterpreter`."
+"in parallel, managing \"sub-interpreters\" "
+"using :c:func:`Py_NewInterpreter`/:c:func:`Py_EndInterpreter`."
 msgstr ""
 
 #: howto/isolating-extensions.rst:45
@@ -306,8 +306,9 @@ msgstr ""
 #: howto/isolating-extensions.rst:205
 msgid ""
 "An example of a module with per-module state is currently available as "
-"`xxlimited <https://github.com/python/cpython/blob/master/Modules/xxlimited."
-"c>`__; example module initialization shown at the bottom of the file."
+"`xxlimited <https://github.com/python/cpython/blob/master/Modules/"
+"xxlimited.c>`__; example module initialization shown at the bottom of the "
+"file."
 msgstr ""
 
 #: howto/isolating-extensions.rst:211
@@ -434,8 +435,8 @@ msgstr ""
 
 #: howto/isolating-extensions.rst:302
 msgid ""
-"Unlike static types, heap type objects are mutable by default. Use the :c:"
-"macro:`Py_TPFLAGS_IMMUTABLETYPE` flag to prevent mutability."
+"Unlike static types, heap type objects are mutable by default. Use "
+"the :c:macro:`Py_TPFLAGS_IMMUTABLETYPE` flag to prevent mutability."
 msgstr ""
 
 #: howto/isolating-extensions.rst:304
@@ -452,8 +453,8 @@ msgstr ""
 #: howto/isolating-extensions.rst:312
 msgid ""
 "Heap types can be created by filling a :c:struct:`PyType_Spec` structure, a "
-"description or \"blueprint\" of a class, and calling :c:func:"
-"`PyType_FromModuleAndSpec` to construct a new class object."
+"description or \"blueprint\" of a class, and "
+"calling :c:func:`PyType_FromModuleAndSpec` to construct a new class object."
 msgstr ""
 
 #: howto/isolating-extensions.rst:317
@@ -498,8 +499,8 @@ msgstr ""
 
 #: howto/isolating-extensions.rst:342
 msgid ""
-"Please refer to the documentation of :c:macro:`Py_TPFLAGS_HAVE_GC` and :c:"
-"member:`~PyTypeObject.tp_traverse` for additional considerations."
+"Please refer to the documentation of :c:macro:`Py_TPFLAGS_HAVE_GC` "
+"and :c:member:`~PyTypeObject.tp_traverse` for additional considerations."
 msgstr ""
 
 #: howto/isolating-extensions.rst:346
@@ -543,8 +544,8 @@ msgstr ""
 
 #: howto/isolating-extensions.rst:370
 msgid ""
-":py:data:`sys.version_info` (via :c:func:`PySys_GetObject` and :c:func:"
-"`PyArg_ParseTuple`)."
+":py:data:`sys.version_info` (via :c:func:`PySys_GetObject` "
+"and :c:func:`PyArg_ParseTuple`)."
 msgstr ""
 
 #: howto/isolating-extensions.rst:375
@@ -553,10 +554,10 @@ msgstr ""
 
 #: howto/isolating-extensions.rst:377
 msgid ""
-"If your traverse function delegates to the :c:member:`~PyTypeObject."
-"tp_traverse` of its base class (or another type), ensure that "
-"``Py_TYPE(self)`` is visited only once. Note that only heap type are "
-"expected to visit the type in ``tp_traverse``."
+"If your traverse function delegates to "
+"the :c:member:`~PyTypeObject.tp_traverse` of its base class (or another "
+"type), ensure that ``Py_TYPE(self)`` is visited only once. Note that only "
+"heap type are expected to visit the type in ``tp_traverse``."
 msgstr ""
 
 #: howto/isolating-extensions.rst:382
@@ -584,8 +585,8 @@ msgstr ""
 
 #: howto/isolating-extensions.rst:396
 msgid ""
-"It is not necessary to handle the type's reference count in :c:member:"
-"`~PyTypeObject.tp_new` and :c:member:`~PyTypeObject.tp_clear`."
+"It is not necessary to handle the type's reference count "
+"in :c:member:`~PyTypeObject.tp_new` and :c:member:`~PyTypeObject.tp_clear`."
 msgstr ""
 
 #: howto/isolating-extensions.rst:401
@@ -637,8 +638,8 @@ msgstr ""
 
 #: howto/isolating-extensions.rst:429
 msgid ""
-"The :c:member:`~PyTypeObject.tp_free` slot of a heap type must be set to :c:"
-"func:`PyObject_GC_Del`. This is the default; do not override it."
+"The :c:member:`~PyTypeObject.tp_free` slot of a heap type must be set "
+"to :c:func:`PyObject_GC_Del`. This is the default; do not override it."
 msgstr ""
 
 #: howto/isolating-extensions.rst:435
@@ -671,8 +672,8 @@ msgstr ""
 
 #: howto/isolating-extensions.rst:449
 msgid ""
-"If the above is not possible (e.g. inside a custom ``tp_alloc``), call :c:"
-"func:`PyObject_GC_New` or :c:func:`PyObject_GC_NewVar`::"
+"If the above is not possible (e.g. inside a custom ``tp_alloc``), "
+"call :c:func:`PyObject_GC_New` or :c:func:`PyObject_GC_NewVar`::"
 msgstr ""
 
 #: howto/isolating-extensions.rst:452
@@ -735,8 +736,8 @@ msgstr ""
 
 #: howto/isolating-extensions.rst:490
 msgid ""
-"The following Python code can illustrate the concept. ``Base."
-"get_defining_class`` returns ``Base`` even if ``type(self) == Sub``:"
+"The following Python code can illustrate the concept. "
+"``Base.get_defining_class`` returns ``Base`` even if ``type(self) == Sub``:"
 msgstr ""
 
 #: howto/isolating-extensions.rst:494
@@ -754,10 +755,10 @@ msgstr ""
 
 #: howto/isolating-extensions.rst:506
 msgid ""
-"For a method to get its \"defining class\", it must use the :ref:"
-"`METH_METHOD | METH_FASTCALL | METH_KEYWORDS <METH_METHOD-METH_FASTCALL-"
-"METH_KEYWORDS>` :c:type:`calling convention <PyMethodDef>` and the "
-"corresponding :c:type:`PyCMethod` signature::"
+"For a method to get its \"defining class\", it must use "
+"the :ref:`METH_METHOD | METH_FASTCALL | METH_KEYWORDS <METH_METHOD-"
+"METH_FASTCALL-METH_KEYWORDS>` :c:type:`calling convention <PyMethodDef>` and "
+"the corresponding :c:type:`PyCMethod` signature::"
 msgstr ""
 
 #: howto/isolating-extensions.rst:511
@@ -817,19 +818,20 @@ msgstr ""
 
 #: howto/isolating-extensions.rst:561
 msgid ""
-"Slot methods—the fast C equivalents for special methods, such as :c:member:"
-"`~PyNumberMethods.nb_add` for :py:attr:`~object.__add__` or :c:member:"
-"`~PyTypeObject.tp_new` for initialization—have a very simple API that "
-"doesn't allow passing in the defining class, unlike with :c:type:"
-"`PyCMethod`. The same goes for getters and setters defined with :c:type:"
-"`PyGetSetDef`."
+"Slot methods—the fast C equivalents for special methods, such "
+"as :c:member:`~PyNumberMethods.nb_add` for :py:attr:`~object.__add__` "
+"or :c:member:`~PyTypeObject.tp_new` for initialization—have a very simple "
+"API that doesn't allow passing in the defining class, unlike "
+"with :c:type:`PyCMethod`. The same goes for getters and setters defined "
+"with :c:type:`PyGetSetDef`."
 msgstr ""
 
 #: howto/isolating-extensions.rst:568
 msgid ""
-"To access the module state in these cases, use the :c:func:"
-"`PyType_GetModuleByDef` function, and pass in the module definition. Once "
-"you have the module, call :c:func:`PyModule_GetState` to get the state::"
+"To access the module state in these cases, use "
+"the :c:func:`PyType_GetModuleByDef` function, and pass in the module "
+"definition. Once you have the module, call :c:func:`PyModule_GetState` to "
+"get the state::"
 msgstr ""
 
 #: howto/isolating-extensions.rst:573
@@ -869,11 +871,11 @@ msgstr ""
 
 #: howto/isolating-extensions.rst:599
 msgid ""
-"Usually this is not an issue, because types created with :c:func:"
-"`PyType_FromModuleAndSpec`, and their instances, hold a reference to the "
-"module. However, you must be careful in reference counting when you "
-"reference module state from other places, such as callbacks for external "
-"libraries."
+"Usually this is not an issue, because types created "
+"with :c:func:`PyType_FromModuleAndSpec`, and their instances, hold a "
+"reference to the module. However, you must be careful in reference counting "
+"when you reference module state from other places, such as callbacks for "
+"external libraries."
 msgstr ""
 
 #: howto/isolating-extensions.rst:608

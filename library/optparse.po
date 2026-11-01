@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -33,12 +33,12 @@ msgstr ""
 #: library/optparse.rst:19
 msgid ""
 ":mod:`optparse` is a more convenient, flexible, and powerful library for "
-"parsing command-line options than the old :mod:`getopt` module.  :mod:"
-"`optparse` uses a more declarative style of command-line parsing: you create "
-"an instance of :class:`OptionParser`, populate it with options, and parse "
-"the command line. :mod:`optparse` allows users to specify options in the "
-"conventional GNU/POSIX syntax, and additionally generates usage and help "
-"messages for you."
+"parsing command-line options than the old :mod:`getopt` "
+"module.  :mod:`optparse` uses a more declarative style of command-line "
+"parsing: you create an instance of :class:`OptionParser`, populate it with "
+"options, and parse the command line. :mod:`optparse` allows users to specify "
+"options in the conventional GNU/POSIX syntax, and additionally generates "
+"usage and help messages for you."
 msgstr ""
 
 #: library/optparse.rst:26
@@ -152,10 +152,10 @@ msgstr ""
 
 #: library/optparse.rst:101
 msgid ""
-"It is occasionally desirable to substitute an argument list other than ``sys."
-"argv[1:]``, so you should read \"argument\" as \"an element of ``sys."
-"argv[1:]``, or of some other list provided as a substitute for ``sys."
-"argv[1:]``\"."
+"It is occasionally desirable to substitute an argument list other than "
+"``sys.argv[1:]``, so you should read \"argument\" as \"an element of "
+"``sys.argv[1:]``, or of some other list provided as a substitute for "
+"``sys.argv[1:]``\"."
 msgstr ""
 
 #: library/optparse.rst:106
@@ -166,10 +166,10 @@ msgstr ""
 msgid ""
 "an argument used to supply extra information to guide or customize the "
 "execution of a program.  There are many different syntaxes for options; the "
-"traditional Unix syntax is a hyphen (\"-\") followed by a single letter, e."
-"g. ``-x`` or ``-F``.  Also, traditional Unix syntax allows multiple options "
-"to be merged into a single argument, e.g. ``-x -F`` is equivalent to ``-"
-"xF``.  The GNU project introduced ``--`` followed by a series of hyphen-"
+"traditional Unix syntax is a hyphen (\"-\") followed by a single letter, "
+"e.g. ``-x`` or ``-F``.  Also, traditional Unix syntax allows multiple "
+"options to be merged into a single argument, e.g. ``-x -F`` is equivalent to "
+"``-xF``.  The GNU project introduced ``--`` followed by a series of hyphen-"
 "separated words, e.g. ``--file`` or ``--dry-run``.  These are the only two "
 "option syntaxes provided by :mod:`optparse`."
 msgstr ""
@@ -218,9 +218,9 @@ msgstr ""
 #: library/optparse.rst:137
 msgid ""
 "an argument that follows an option, is closely associated with that option, "
-"and is consumed from the argument list when that option is. With :mod:"
-"`optparse`, option arguments may either be in a separate argument from their "
-"option:"
+"and is consumed from the argument list when that option is. "
+"With :mod:`optparse`, option arguments may either be in a separate argument "
+"from their option:"
 msgstr ""
 
 #: library/optparse.rst:142
@@ -433,8 +433,9 @@ msgstr ""
 msgid ""
 "The option strings passed to :meth:`OptionParser.add_option` are effectively "
 "labels for the option defined by that call.  For brevity, we will frequently "
-"refer to *encountering an option* on the command line; in reality, :mod:"
-"`optparse` encounters *option strings* and looks up options from them."
+"refer to *encountering an option* on the command line; in "
+"reality, :mod:`optparse` encounters *option strings* and looks up options "
+"from them."
 msgstr ""
 
 #: library/optparse.rst:283
@@ -449,9 +450,9 @@ msgstr ""
 
 #: library/optparse.rst:288
 msgid ""
-"(If you like, you can pass a custom argument list to :meth:`~OptionParser."
-"parse_args`, but that's rarely necessary: by default it uses ``sys."
-"argv[1:]``.)"
+"(If you like, you can pass a custom argument list "
+"to :meth:`~OptionParser.parse_args`, but that's rarely necessary: by default "
+"it uses ``sys.argv[1:]``.)"
 msgstr ""
 
 #: library/optparse.rst:291
@@ -474,9 +475,9 @@ msgstr ""
 #: library/optparse.rst:300
 msgid ""
 "This tutorial section only covers the four most important option "
-"attributes: :attr:`~Option.action`, :attr:`~Option.type`, :attr:`~Option."
-"dest` (destination), and :attr:`~Option.help`. Of these, :attr:`~Option."
-"action` is the most fundamental."
+"attributes: :attr:`~Option.action`, :attr:`~Option.type`, :attr:`~Option.dest` "
+"(destination), and :attr:`~Option.help`. Of these, :attr:`~Option.action` is "
+"the most fundamental."
 msgstr ""
 
 #: library/optparse.rst:309
@@ -486,11 +487,11 @@ msgstr ""
 #: library/optparse.rst:311
 msgid ""
 "Actions tell :mod:`optparse` what to do when it encounters an option on the "
-"command line.  There is a fixed set of actions hard-coded into :mod:"
-"`optparse`; adding new actions is an advanced topic covered in section :ref:"
-"`optparse-extending-optparse`.  Most actions tell :mod:`optparse` to store a "
-"value in some variable---for example, take a string from the command line "
-"and store it in an attribute of ``options``."
+"command line.  There is a fixed set of actions hard-coded "
+"into :mod:`optparse`; adding new actions is an advanced topic covered in "
+"section :ref:`optparse-extending-optparse`.  Most actions "
+"tell :mod:`optparse` to store a value in some variable---for example, take a "
+"string from the command line and store it in an attribute of ``options``."
 msgstr ""
 
 #: library/optparse.rst:318
@@ -625,8 +626,8 @@ msgstr ""
 #: library/optparse.rst:394
 msgid ""
 "When :mod:`optparse` encounters ``-v`` on the command line, it sets "
-"``options.verbose`` to ``True``; when it encounters ``-q``, ``options."
-"verbose`` is set to ``False``."
+"``options.verbose`` to ``True``; when it encounters ``-q``, "
+"``options.verbose`` is set to ``False``."
 msgstr ""
 
 #: library/optparse.rst:402
@@ -671,8 +672,8 @@ msgstr ""
 
 #: library/optparse.rst:418
 msgid ""
-"These are covered in section :ref:`optparse-reference-guide`, and section :"
-"ref:`optparse-option-callbacks`."
+"These are covered in section :ref:`optparse-reference-guide`, and "
+"section :ref:`optparse-option-callbacks`."
 msgstr ""
 
 #: library/optparse.rst:425
@@ -737,8 +738,8 @@ msgstr ""
 #: library/optparse.rst:455
 msgid ""
 "A clearer way to specify default values is the :meth:`set_defaults` method "
-"of OptionParser, which you can call at any time before calling :meth:"
-"`~OptionParser.parse_args`::"
+"of OptionParser, which you can call at any time before "
+"calling :meth:`~OptionParser.parse_args`::"
 msgstr ""
 
 #: library/optparse.rst:459
@@ -861,11 +862,11 @@ msgstr ""
 #: library/optparse.rst:538
 msgid ""
 "Here, \"MODE\" is called the meta-variable: it stands for the argument that "
-"the user is expected to supply to ``-m``/``--mode``.  By default, :mod:"
-"`optparse` converts the destination variable name to uppercase and uses that "
-"for the meta-variable.  Sometimes, that's not what you want---for example, "
-"the ``--filename`` option explicitly sets ``metavar=\"FILE\"``, resulting in "
-"this automatically generated option description::"
+"the user is expected to supply to ``-m``/``--mode``.  By "
+"default, :mod:`optparse` converts the destination variable name to uppercase "
+"and uses that for the meta-variable.  Sometimes, that's not what you want---"
+"for example, the ``--filename`` option explicitly sets ``metavar=\"FILE\"``, "
+"resulting in this automatically generated option description::"
 msgstr ""
 
 #: library/optparse.rst:545
@@ -924,21 +925,22 @@ msgstr ""
 
 #: library/optparse.rst:576
 msgid ""
-":class:`OptionGroup` inherits from :class:`OptionContainer` (like :class:"
-"`OptionParser`) and so the :meth:`add_option` method can be used to add an "
-"option to the group."
+":class:`OptionGroup` inherits from :class:`OptionContainer` "
+"(like :class:`OptionParser`) and so the :meth:`add_option` method can be "
+"used to add an option to the group."
 msgstr ""
 
 #: library/optparse.rst:580
 msgid ""
-"Once all the options are declared, using the :class:`OptionParser` method :"
-"meth:`add_option_group` the group is added to the previously defined parser."
+"Once all the options are declared, using the :class:`OptionParser` "
+"method :meth:`add_option_group` the group is added to the previously defined "
+"parser."
 msgstr ""
 
 #: library/optparse.rst:583
 msgid ""
-"Continuing with the parser defined in the previous section, adding an :class:"
-"`OptionGroup` to a parser is easy::"
+"Continuing with the parser defined in the previous section, adding "
+"an :class:`OptionGroup` to a parser is easy::"
 msgstr ""
 
 #: library/optparse.rst:586
@@ -1036,8 +1038,8 @@ msgstr ""
 #: library/optparse.rst:661
 msgid ""
 "Return the :class:`OptionGroup` to which the short or long option string "
-"*opt_str* (e.g. ``'-o'`` or ``'--option'``) belongs. If there's no such :"
-"class:`OptionGroup`, return ``None``."
+"*opt_str* (e.g. ``'-o'`` or ``'--option'``) belongs. If there's no "
+"such :class:`OptionGroup`, return ``None``."
 msgstr ""
 
 #: library/optparse.rst:668
@@ -1058,10 +1060,10 @@ msgstr ""
 #: library/optparse.rst:676
 msgid ""
 "``%prog`` is expanded just like it is in ``usage``.  Apart from that, "
-"``version`` can contain anything you like.  When you supply it, :mod:"
-"`optparse` automatically adds a ``--version`` option to your parser. If it "
-"encounters this option on the command line, it expands your ``version`` "
-"string (by replacing ``%prog``), prints it to stdout, and exits."
+"``version`` can contain anything you like.  When you supply "
+"it, :mod:`optparse` automatically adds a ``--version`` option to your "
+"parser. If it encounters this option on the command line, it expands your "
+"``version`` string (by replacing ``%prog``), prints it to stdout, and exits."
 msgstr ""
 
 #: library/optparse.rst:682
@@ -1104,8 +1106,9 @@ msgid ""
 "about: programmer errors and user errors.  Programmer errors are usually "
 "erroneous calls to :func:`OptionParser.add_option`, e.g. invalid option "
 "strings, unknown option attributes, missing option attributes, etc.  These "
-"are dealt with in the usual way: raise an exception (either :exc:`optparse."
-"OptionError` or :exc:`TypeError`) and let the program crash."
+"are dealt with in the usual way: raise an exception "
+"(either :exc:`optparse.OptionError` or :exc:`TypeError`) and let the program "
+"crash."
 msgstr ""
 
 #: library/optparse.rst:716
@@ -1163,15 +1166,15 @@ msgstr ""
 #: library/optparse.rst:752
 msgid ""
 ":mod:`optparse`\\ -generated error messages take care always to mention the "
-"option involved in the error; be sure to do the same when calling :func:"
-"`OptionParser.error` from your application code."
+"option involved in the error; be sure to do the same when "
+"calling :func:`OptionParser.error` from your application code."
 msgstr ""
 
 #: library/optparse.rst:756
 msgid ""
 "If :mod:`optparse`'s default error-handling behaviour does not suit your "
-"needs, you'll need to subclass OptionParser and override its :meth:"
-"`~OptionParser.exit` and/or :meth:`~OptionParser.error` methods."
+"needs, you'll need to subclass OptionParser and override "
+"its :meth:`~OptionParser.exit` and/or :meth:`~OptionParser.error` methods."
 msgstr ""
 
 #: library/optparse.rst:764
@@ -1342,8 +1345,9 @@ msgstr ""
 #: library/optparse.rst:865
 msgid ""
 "There are several ways to populate the parser with options.  The preferred "
-"way is by using :meth:`OptionParser.add_option`, as shown in section :ref:"
-"`optparse-tutorial`.  :meth:`add_option` can be called in one of two ways:"
+"way is by using :meth:`OptionParser.add_option`, as shown in "
+"section :ref:`optparse-tutorial`.  :meth:`add_option` can be called in one "
+"of two ways:"
 msgstr ""
 
 #: library/optparse.rst:869
@@ -1377,10 +1381,10 @@ msgstr ""
 #: library/optparse.rst:886
 msgid ""
 "(:func:`make_option` is a factory function for creating Option instances; "
-"currently it is an alias for the Option constructor.  A future version of :"
-"mod:`optparse` may split Option into several classes, and :func:"
-"`make_option` will pick the right class to instantiate.  Do not instantiate "
-"Option directly.)"
+"currently it is an alias for the Option constructor.  A future version "
+"of :mod:`optparse` may split Option into several classes, "
+"and :func:`make_option` will pick the right class to instantiate.  Do not "
+"instantiate Option directly.)"
 msgstr ""
 
 #: library/optparse.rst:895
@@ -1396,8 +1400,8 @@ msgstr ""
 
 #: library/optparse.rst:901
 msgid ""
-"The canonical way to create an :class:`Option` instance is with the :meth:"
-"`add_option` method of :class:`OptionParser`."
+"The canonical way to create an :class:`Option` instance is with "
+"the :meth:`add_option` method of :class:`OptionParser`."
 msgstr ""
 
 #: library/optparse.rst:907
@@ -1482,17 +1486,18 @@ msgstr ""
 
 #: library/optparse.rst:956
 msgid ""
-"As you can see, most actions involve storing or updating a value somewhere. :"
-"mod:`optparse` always creates a special object for this, conventionally "
-"called ``options``, which is an instance of :class:`optparse.Values`."
+"As you can see, most actions involve storing or updating a value "
+"somewhere. :mod:`optparse` always creates a special object for this, "
+"conventionally called ``options``, which is an instance "
+"of :class:`optparse.Values`."
 msgstr ""
 
 #: library/optparse.rst:962
 msgid ""
 "An object holding parsed argument names and values as attributes. Normally "
 "created by calling when calling :meth:`OptionParser.parse_args`, and can be "
-"overridden by a custom subclass passed to the *values* argument of :meth:"
-"`OptionParser.parse_args` (as described in :ref:`optparse-parsing-"
+"overridden by a custom subclass passed to the *values* argument "
+"of :meth:`OptionParser.parse_args` (as described in :ref:`optparse-parsing-"
 "arguments`)."
 msgstr ""
 
@@ -1572,9 +1577,9 @@ msgstr ""
 
 #: library/optparse.rst:1012
 msgid ""
-"The following option attributes may be passed as keyword arguments to :meth:"
-"`OptionParser.add_option`.  If you pass an option attribute that is not "
-"relevant to a particular option, or fail to pass a required option "
+"The following option attributes may be passed as keyword arguments "
+"to :meth:`OptionParser.add_option`.  If you pass an option attribute that is "
+"not relevant to a particular option, or fail to pass a required option "
 "attribute, :mod:`optparse` raises :exc:`OptionError`."
 msgstr ""
 
@@ -1625,8 +1630,8 @@ msgstr ""
 #: library/optparse.rst:1051
 msgid ""
 "How many arguments of type :attr:`~Option.type` should be consumed when this "
-"option is seen.  If > 1, :mod:`optparse` will store a tuple of values to :"
-"attr:`~Option.dest`."
+"option is seen.  If > 1, :mod:`optparse` will store a tuple of values "
+"to :attr:`~Option.dest`."
 msgstr ""
 
 #: library/optparse.rst:1057
@@ -1680,15 +1685,15 @@ msgstr ""
 
 #: library/optparse.rst:1101
 msgid ""
-"``\"store\"`` [relevant: :attr:`~Option.type`, :attr:`~Option.dest`, :attr:"
-"`~Option.nargs`, :attr:`~Option.choices`]"
+"``\"store\"`` "
+"[relevant: :attr:`~Option.type`, :attr:`~Option.dest`, :attr:`~Option.nargs`, :attr:`~Option.choices`]"
 msgstr ""
 
 #: library/optparse.rst:1104
 msgid ""
 "The option must be followed by an argument, which is converted to a value "
-"according to :attr:`~Option.type` and stored in :attr:`~Option.dest`.  If :"
-"attr:`~Option.nargs` > 1, multiple arguments will be consumed from the "
+"according to :attr:`~Option.type` and stored in :attr:`~Option.dest`.  "
+"If :attr:`~Option.nargs` > 1, multiple arguments will be consumed from the "
 "command line; all will be converted according to :attr:`~Option.type` and "
 "stored to :attr:`~Option.dest` as a tuple.  See the :ref:`optparse-standard-"
 "option-types` section."
@@ -1744,8 +1749,8 @@ msgstr ""
 
 #: library/optparse.rst:1136
 msgid ""
-"``\"store_const\"`` [required: :attr:`~Option.const`; relevant: :attr:"
-"`~Option.dest`]"
+"``\"store_const\"`` [required: :attr:`~Option.const`; "
+"relevant: :attr:`~Option.dest`]"
 msgstr ""
 
 #: library/optparse.rst:1139
@@ -1776,8 +1781,8 @@ msgstr ""
 
 #: library/optparse.rst:1156
 msgid ""
-"A special case of ``\"store_const\"`` that stores ``True`` to :attr:`~Option."
-"dest`."
+"A special case of ``\"store_const\"`` that stores ``True`` "
+"to :attr:`~Option.dest`."
 msgstr ""
 
 #: library/optparse.rst:1159
@@ -1796,8 +1801,8 @@ msgstr ""
 
 #: library/optparse.rst:1168
 msgid ""
-"``\"append\"`` [relevant: :attr:`~Option.type`, :attr:`~Option.dest`, :attr:"
-"`~Option.nargs`, :attr:`~Option.choices`]"
+"``\"append\"`` "
+"[relevant: :attr:`~Option.type`, :attr:`~Option.dest`, :attr:`~Option.nargs`, :attr:`~Option.choices`]"
 msgstr ""
 
 #: library/optparse.rst:1171
@@ -1861,8 +1866,8 @@ msgstr ""
 
 #: library/optparse.rst:1206
 msgid ""
-"``\"append_const\"`` [required: :attr:`~Option.const`; relevant: :attr:"
-"`~Option.dest`]"
+"``\"append_const\"`` [required: :attr:`~Option.const`; "
+"relevant: :attr:`~Option.dest`]"
 msgstr ""
 
 #: library/optparse.rst:1209
@@ -1910,9 +1915,8 @@ msgstr ""
 
 #: library/optparse.rst:1234
 msgid ""
-"``\"callback\"`` [required: :attr:`~Option.callback`; relevant: :attr:"
-"`~Option.type`, :attr:`~Option.nargs`, :attr:`~Option.callback_args`, :attr:"
-"`~Option.callback_kwargs`]"
+"``\"callback\"`` [required: :attr:`~Option.callback`; "
+"relevant: :attr:`~Option.type`, :attr:`~Option.nargs`, :attr:`~Option.callback_args`, :attr:`~Option.callback_kwargs`]"
 msgstr ""
 
 #: library/optparse.rst:1238
@@ -1998,9 +2002,9 @@ msgid ""
 "Prints the version number supplied to the OptionParser to stdout and exits. "
 "The version number is actually formatted and printed by the "
 "``print_version()`` method of OptionParser.  Generally only relevant if the "
-"``version`` argument is supplied to the OptionParser constructor.  As with :"
-"attr:`~Option.help` options, you will rarely create ``version`` options, "
-"since :mod:`optparse` automatically adds them when needed."
+"``version`` argument is supplied to the OptionParser constructor.  As "
+"with :attr:`~Option.help` options, you will rarely create ``version`` "
+"options, since :mod:`optparse` automatically adds them when needed."
 msgstr ""
 
 #: library/optparse.rst:1302
@@ -2056,11 +2060,11 @@ msgstr ""
 
 #: library/optparse.rst:1329
 msgid ""
-"``\"choice\"`` options are a subtype of ``\"string\"`` options.  The :attr:"
-"`~Option.choices` option attribute (a sequence of strings) defines the set "
-"of allowed option arguments.  :func:`optparse.check_choice` compares user-"
-"supplied option arguments against this master list and raises :exc:"
-"`OptionValueError` if an invalid string is given."
+"``\"choice\"`` options are a subtype of ``\"string\"`` options.  "
+"The :attr:`~Option.choices` option attribute (a sequence of strings) defines "
+"the set of allowed option arguments.  :func:`optparse.check_choice` compares "
+"user-supplied option arguments against this master list and "
+"raises :exc:`OptionValueError` if an invalid string is given."
 msgstr ""
 
 #: library/optparse.rst:1339
@@ -2069,8 +2073,8 @@ msgstr ""
 
 #: library/optparse.rst:1341
 msgid ""
-"The whole point of creating and populating an OptionParser is to call its :"
-"meth:`~OptionParser.parse_args` method."
+"The whole point of creating and populating an OptionParser is to call "
+"its :meth:`~OptionParser.parse_args` method."
 msgstr ""
 
 #: library/optparse.rst:1346
@@ -2257,8 +2261,8 @@ msgstr ""
 
 #: library/optparse.rst:1458
 msgid ""
-"assume option conflicts are a programming error and raise :exc:"
-"`OptionConflictError`"
+"assume option conflicts are a programming error and "
+"raise :exc:`OptionConflictError`"
 msgstr ""
 
 #: library/optparse.rst:1461
@@ -2361,8 +2365,8 @@ msgstr ""
 msgid ""
 "Print the usage message for the current program (``self.usage``) to *file* "
 "(default stdout).  Any occurrence of the string ``%prog`` in ``self.usage`` "
-"is replaced with the name of the current program.  Does nothing if ``self."
-"usage`` is empty or not defined."
+"is replaced with the name of the current program.  Does nothing if "
+"``self.usage`` is empty or not defined."
 msgstr ""
 
 #: library/optparse.rst:1535
@@ -2373,11 +2377,11 @@ msgstr ""
 
 #: library/optparse.rst:1540
 msgid ""
-"Set default values for several option destinations at once.  Using :meth:"
-"`set_defaults` is the preferred way to set default values for options, since "
-"multiple options can share the same destination.  For example, if several "
-"\"mode\" options all set the same destination, any one of them can set the "
-"default, and the last one wins::"
+"Set default values for several option destinations at once.  "
+"Using :meth:`set_defaults` is the preferred way to set default values for "
+"options, since multiple options can share the same destination.  For "
+"example, if several \"mode\" options all set the same destination, any one "
+"of them can set the default, and the last one wins::"
 msgstr ""
 
 #: library/optparse.rst:1546
@@ -2435,10 +2439,10 @@ msgstr ""
 
 #: library/optparse.rst:1585
 msgid ""
-"As always, the easiest way to define a callback option is by using the :meth:"
-"`OptionParser.add_option` method.  Apart from :attr:`~Option.action`, the "
-"only option attribute you must specify is ``callback``, the function to "
-"call::"
+"As always, the easiest way to define a callback option is by using "
+"the :meth:`OptionParser.add_option` method.  Apart "
+"from :attr:`~Option.action`, the only option attribute you must specify is "
+"``callback``, the function to call::"
 msgstr ""
 
 #: library/optparse.rst:1589
@@ -2460,9 +2464,9 @@ msgstr ""
 #: library/optparse.rst:1600
 msgid ""
 ":mod:`optparse` always passes four particular arguments to your callback, "
-"and it will only pass additional arguments if you specify them via :attr:"
-"`~Option.callback_args` and :attr:`~Option.callback_kwargs`.  Thus, the "
-"minimal callback function signature is::"
+"and it will only pass additional arguments if you specify them "
+"via :attr:`~Option.callback_args` and :attr:`~Option.callback_kwargs`.  "
+"Thus, the minimal callback function signature is::"
 msgstr ""
 
 #: library/optparse.rst:1605
@@ -2486,9 +2490,9 @@ msgstr ""
 #: library/optparse.rst:1613
 msgid ""
 "has its usual meaning: as with the ``\"store\"`` or ``\"append\"`` actions, "
-"it instructs :mod:`optparse` to consume one argument and convert it to :attr:"
-"`~Option.type`.  Rather than storing the converted value(s) anywhere, "
-"though, :mod:`optparse` passes it to your callback function."
+"it instructs :mod:`optparse` to consume one argument and convert it "
+"to :attr:`~Option.type`.  Rather than storing the converted value(s) "
+"anywhere, though, :mod:`optparse` passes it to your callback function."
 msgstr ""
 
 #: library/optparse.rst:1618
@@ -2556,10 +2560,10 @@ msgstr ""
 msgid ""
 "is the argument to this option seen on the command-line.  :mod:`optparse` "
 "will only expect an argument if :attr:`~Option.type` is set; the type of "
-"``value`` will be the type implied by the option's type.  If :attr:`~Option."
-"type` for this option is ``None`` (no argument expected), then ``value`` "
-"will be ``None``.  If :attr:`~Option.nargs` > 1, ``value`` will be a tuple "
-"of values of the appropriate type."
+"``value`` will be the type implied by the option's type.  "
+"If :attr:`~Option.type` for this option is ``None`` (no argument expected), "
+"then ``value`` will be ``None``.  If :attr:`~Option.nargs` > 1, ``value`` "
+"will be a tuple of values of the appropriate type."
 msgstr ""
 
 #: library/optparse.rst:1659
@@ -2581,8 +2585,8 @@ msgid ""
 "the current list of leftover arguments, ie. arguments that have been "
 "consumed but are neither options nor option arguments. Feel free to modify "
 "``parser.largs``, e.g. by adding more arguments to it.  (This list will "
-"become ``args``, the second return value of :meth:`~OptionParser."
-"parse_args`.)"
+"become ``args``, the second return value "
+"of :meth:`~OptionParser.parse_args`.)"
 msgstr ""
 
 #: library/optparse.rst:1669
@@ -2611,8 +2615,8 @@ msgstr ""
 
 #: library/optparse.rst:1683
 msgid ""
-"is a tuple of arbitrary positional arguments supplied via the :attr:`~Option."
-"callback_args` option attribute."
+"is a tuple of arbitrary positional arguments supplied via "
+"the :attr:`~Option.callback_args` option attribute."
 msgstr ""
 
 #: library/optparse.rst:1686
@@ -2621,8 +2625,8 @@ msgstr ""
 
 #: library/optparse.rst:1687
 msgid ""
-"is a dictionary of arbitrary keyword arguments supplied via :attr:`~Option."
-"callback_kwargs`."
+"is a dictionary of arbitrary keyword arguments supplied "
+"via :attr:`~Option.callback_kwargs`."
 msgstr ""
 
 #: library/optparse.rst:1694
@@ -2746,8 +2750,9 @@ msgid ""
 "take a fixed number of arguments.  Specifying that a callback option takes "
 "arguments is similar to defining a ``\"store\"`` or ``\"append\"`` option: "
 "if you define :attr:`~Option.type`, then the option takes one argument that "
-"must be convertible to that type; if you further define :attr:`~Option."
-"nargs`, then the option takes :attr:`~Option.nargs` arguments."
+"must be convertible to that type; if you further "
+"define :attr:`~Option.nargs`, then the option takes :attr:`~Option.nargs` "
+"arguments."
 msgstr ""
 
 #: library/optparse.rst:1788
@@ -2781,9 +2786,9 @@ msgid ""
 "Things get hairy when you want an option to take a variable number of "
 "arguments. For this case, you must write a callback, as :mod:`optparse` "
 "doesn't provide any built-in capabilities for it.  And you have to deal with "
-"certain intricacies of conventional Unix command-line parsing that :mod:"
-"`optparse` normally handles for you.  In particular, callbacks should "
-"implement the conventional rules for bare ``--`` and ``-`` arguments:"
+"certain intricacies of conventional Unix command-line parsing "
+"that :mod:`optparse` normally handles for you.  In particular, callbacks "
+"should implement the conventional rules for bare ``--`` and ``-`` arguments:"
 msgstr ""
 
 #: library/optparse.rst:1814
@@ -2864,16 +2869,16 @@ msgstr ""
 
 #: library/optparse.rst:1874
 msgid ""
-"To add new types, you need to define your own subclass of :mod:`optparse`'s :"
-"class:`Option` class.  This class has a couple of attributes that define :"
-"mod:`optparse`'s types: :attr:`~Option.TYPES` and :attr:`~Option."
-"TYPE_CHECKER`."
+"To add new types, you need to define your own subclass "
+"of :mod:`optparse`'s :class:`Option` class.  This class has a couple of "
+"attributes that define :mod:`optparse`'s types: :attr:`~Option.TYPES` "
+"and :attr:`~Option.TYPE_CHECKER`."
 msgstr ""
 
 #: library/optparse.rst:1880
 msgid ""
-"A tuple of type names; in your subclass, simply define a new tuple :attr:"
-"`TYPES` that builds on the standard one."
+"A tuple of type names; in your subclass, simply define a new "
+"tuple :attr:`TYPES` that builds on the standard one."
 msgstr ""
 
 #: library/optparse.rst:1885
@@ -2955,9 +2960,9 @@ msgstr ""
 #: library/optparse.rst:1931
 msgid ""
 "(If we didn't make a :func:`copy` of :attr:`Option.TYPE_CHECKER`, we would "
-"end up modifying the :attr:`~Option.TYPE_CHECKER` attribute of :mod:"
-"`optparse`'s Option class.  This being Python, nothing stops you from doing "
-"that except good manners and common sense.)"
+"end up modifying the :attr:`~Option.TYPE_CHECKER` attribute "
+"of :mod:`optparse`'s Option class.  This being Python, nothing stops you "
+"from doing that except good manners and common sense.)"
 msgstr ""
 
 #: library/optparse.rst:1936
@@ -2993,8 +2998,8 @@ msgstr ""
 
 #: library/optparse.rst:1956
 msgid ""
-"Adding new actions is a bit trickier, because you have to understand that :"
-"mod:`optparse` has a couple of classifications for actions:"
+"Adding new actions is a bit trickier, because you have to understand "
+"that :mod:`optparse` has a couple of classifications for actions:"
 msgstr ""
 
 #: library/optparse.rst:1959
@@ -3004,8 +3009,8 @@ msgstr ""
 #: library/optparse.rst:1960
 msgid ""
 "actions that result in :mod:`optparse` storing a value to an attribute of "
-"the current OptionValues instance; these options require a :attr:`~Option."
-"dest` attribute to be supplied to the Option constructor."
+"the current OptionValues instance; these options require "
+"a :attr:`~Option.dest` attribute to be supplied to the Option constructor."
 msgstr ""
 
 #: library/optparse.rst:1964
@@ -3056,8 +3061,9 @@ msgstr ""
 
 #: library/optparse.rst:1996
 msgid ""
-"In order to actually implement your new action, you must override Option's :"
-"meth:`take_action` method and add a case that recognizes your action."
+"In order to actually implement your new action, you must override "
+"Option's :meth:`take_action` method and add a case that recognizes your "
+"action."
 msgstr ""
 
 #: library/optparse.rst:1999
@@ -3111,15 +3117,15 @@ msgstr ""
 #: library/optparse.rst:2031
 msgid ""
 "``\"extend\"`` both expects a value on the command-line and stores that "
-"value somewhere, so it goes in both :attr:`~Option.STORE_ACTIONS` and :attr:"
-"`~Option.TYPED_ACTIONS`."
+"value somewhere, so it goes in both :attr:`~Option.STORE_ACTIONS` "
+"and :attr:`~Option.TYPED_ACTIONS`."
 msgstr ""
 
 #: library/optparse.rst:2035
 msgid ""
 "to ensure that :mod:`optparse` assigns the default type of ``\"string\"`` to "
-"``\"extend\"`` actions, we put the ``\"extend\"`` action in :attr:`~Option."
-"ALWAYS_TYPED_ACTIONS` as well."
+"``\"extend\"`` actions, we put the ``\"extend\"`` action "
+"in :attr:`~Option.ALWAYS_TYPED_ACTIONS` as well."
 msgstr ""
 
 #: library/optparse.rst:2039
@@ -3149,8 +3155,8 @@ msgid ""
 "variable to be of a certain type (a list for the first two, an integer for "
 "the latter).  Using :meth:`ensure_value` means that scripts using your "
 "action don't have to worry about setting a default value for the option "
-"destinations in question; they can just leave the default as ``None`` and :"
-"meth:`ensure_value` will take care of getting it right when it's needed."
+"destinations in question; they can just leave the default as ``None`` "
+"and :meth:`ensure_value` will take care of getting it right when it's needed."
 msgstr ""
 
 #: library/optparse.rst:2060

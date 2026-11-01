@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -204,8 +204,8 @@ msgstr ""
 
 #: library/sys.monitoring.rst:145
 msgid ""
-"An exception is raised, except those that cause a :monitoring-event:"
-"`STOP_ITERATION` event."
+"An exception is raised, except those that cause a :monitoring-"
+"event:`STOP_ITERATION` event."
 msgstr ""
 
 #: library/sys.monitoring.rst:149
@@ -319,9 +319,9 @@ msgstr ""
 #: library/sys.monitoring.rst:200
 msgid ""
 "The :monitoring-event:`C_RETURN` and :monitoring-event:`C_RAISE` events are "
-"controlled by the :monitoring-event:`CALL` event. :monitoring-event:"
-"`C_RETURN` and :monitoring-event:`C_RAISE` events will only be seen if the "
-"corresponding :monitoring-event:`CALL` event is being monitored."
+"controlled by the :monitoring-event:`CALL` event. :monitoring-"
+"event:`C_RETURN` and :monitoring-event:`C_RAISE` events will only be seen if "
+"the corresponding :monitoring-event:`CALL` event is being monitored."
 msgstr ""
 
 #: library/sys.monitoring.rst:206
@@ -360,8 +360,8 @@ msgstr ""
 
 #: library/sys.monitoring.rst:222
 msgid ""
-":pep:`PEP 380 <380#use-of-stopiteration-to-return-values>` specifies that a :"
-"exc:`StopIteration` exception is raised when returning a value from a "
+":pep:`PEP 380 <380#use-of-stopiteration-to-return-values>` specifies that "
+"a :exc:`StopIteration` exception is raised when returning a value from a "
 "generator or coroutine. However, this is a very inefficient way to return a "
 "value, so some Python implementations, notably CPython 3.12+, do not raise "
 "an exception unless it would be visible to other code."
@@ -402,8 +402,8 @@ msgstr ""
 
 #: library/sys.monitoring.rst:253
 msgid ""
-"Activates all events which are set in *event_set*. Raises a :exc:"
-"`ValueError` if *tool_id* is not in use."
+"Activates all events which are set in *event_set*. Raises "
+"a :exc:`ValueError` if *tool_id* is not in use."
 msgstr ""
 
 #: library/sys.monitoring.rst:256
@@ -446,9 +446,10 @@ msgstr ""
 
 #: library/sys.monitoring.rst:285
 msgid ""
-"Local events can be disabled for a specific code location by returning :data:"
-"`sys.monitoring.DISABLE` from a callback function. This does not change "
-"which events are set, or any other code locations for the same event."
+"Local events can be disabled for a specific code location by "
+"returning :data:`sys.monitoring.DISABLE` from a callback function. This does "
+"not change which events are set, or any other code locations for the same "
+"event."
 msgstr ""
 
 #: library/sys.monitoring.rst:289
@@ -486,8 +487,8 @@ msgstr ""
 
 #: library/sys.monitoring.rst:316
 msgid ""
-"Functions can be unregistered by calling ``sys.monitoring."
-"register_callback(tool_id, event, None)``."
+"Functions can be unregistered by calling "
+"``sys.monitoring.register_callback(tool_id, event, None)``."
 msgstr ""
 
 #: library/sys.monitoring.rst:319
@@ -496,8 +497,8 @@ msgstr ""
 
 #: library/sys.monitoring.rst:321
 msgid ""
-"Registering or unregistering a callback function will generate a :func:`sys."
-"audit` event."
+"Registering or unregistering a callback function will generate "
+"a :func:`sys.audit` event."
 msgstr ""
 
 #: library/sys.monitoring.rst:325
@@ -537,8 +538,8 @@ msgstr ""
 
 #: library/sys.monitoring.rst:343
 msgid ""
-":monitoring-event:`CALL`, :monitoring-event:`C_RAISE` and :monitoring-event:"
-"`C_RETURN`::"
+":monitoring-event:`CALL`, :monitoring-event:`C_RAISE` and :monitoring-"
+"event:`C_RETURN`::"
 msgstr ""
 
 #: library/sys.monitoring.rst:345
@@ -554,9 +555,9 @@ msgstr ""
 
 #: library/sys.monitoring.rst:349
 msgid ""
-":monitoring-event:`RAISE`, :monitoring-event:`RERAISE`, :monitoring-event:"
-"`EXCEPTION_HANDLED`, :monitoring-event:`PY_UNWIND`, :monitoring-event:"
-"`PY_THROW` and :monitoring-event:`STOP_ITERATION`::"
+":monitoring-event:`RAISE`, :monitoring-event:`RERAISE`, :monitoring-"
+"event:`EXCEPTION_HANDLED`, :monitoring-event:`PY_UNWIND`, :monitoring-"
+"event:`PY_THROW` and :monitoring-event:`STOP_ITERATION`::"
 msgstr ""
 
 #: library/sys.monitoring.rst:352

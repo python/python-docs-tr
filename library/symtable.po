@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -76,8 +76,8 @@ msgid ""
 "``'top'`` if the table is global (:meth:`get_type` returns ``'module'``). "
 "For type parameter scopes (which are used for generic classes, functions, "
 "and type aliases), it is the name of the underlying class, function, or type "
-"alias. For type alias scopes, it is the name of the type alias. For :class:"
-"`~typing.TypeVar` bound scopes, it is the name of the ``TypeVar``."
+"alias. For type alias scopes, it is the name of the type alias. "
+"For :class:`~typing.TypeVar` bound scopes, it is the name of the ``TypeVar``."
 msgstr ""
 
 #: library/symtable.rst:65
@@ -100,8 +100,8 @@ msgstr ""
 
 #: library/symtable.rst:82
 msgid ""
-"Return a view object containing the names of symbols in the table. See the :"
-"ref:`documentation of view objects <dict-views>`."
+"Return a view object containing the names of symbols in the table. See "
+"the :ref:`documentation of view objects <dict-views>`."
 msgstr ""
 
 #: library/symtable.rst:87
@@ -118,8 +118,8 @@ msgstr ""
 
 #: library/symtable.rst:100
 msgid ""
-"A namespace for a function or method.  This class inherits from :class:"
-"`SymbolTable`."
+"A namespace for a function or method.  This class inherits "
+"from :class:`SymbolTable`."
 msgstr ""
 
 #: library/symtable.rst:105

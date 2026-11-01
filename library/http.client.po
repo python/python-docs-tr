@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -27,8 +27,8 @@ msgstr ""
 #: library/http.client.rst:17
 msgid ""
 "This module defines classes that implement the client side of the HTTP and "
-"HTTPS protocols.  It is normally not used directly --- the module :mod:"
-"`urllib.request` uses it to handle URLs that use HTTP and HTTPS."
+"HTTPS protocols.  It is normally not used directly --- the "
+"module :mod:`urllib.request` uses it to handle URLs that use HTTP and HTTPS."
 msgstr ""
 
 #: library/http.client.rst:23
@@ -118,8 +118,8 @@ msgstr ""
 
 #: library/http.client.rst:84
 msgid ""
-"This class now supports HTTPS virtual hosts if possible (that is, if :const:"
-"`ssl.HAS_SNI` is true)."
+"This class now supports HTTPS virtual hosts if possible (that is, "
+"if :const:`ssl.HAS_SNI` is true)."
 msgstr ""
 
 #: library/http.client.rst:88
@@ -131,8 +131,8 @@ msgstr ""
 #: library/http.client.rst:92
 msgid ""
 "This class now performs all the necessary certificate and hostname checks by "
-"default. To revert to the previous, unverified, behavior :func:`!ssl."
-"_create_unverified_context` can be passed to the *context* parameter."
+"default. To revert to the previous, unverified, behavior :func:`!"
+"ssl._create_unverified_context` can be passed to the *context* parameter."
 msgstr ""
 
 #: library/http.client.rst:98
@@ -145,8 +145,8 @@ msgstr ""
 #: library/http.client.rst:103
 msgid ""
 "This class now sends an ALPN extension with protocol indicator ``http/1.1`` "
-"when no *context* is given. Custom *context* should set ALPN protocols with :"
-"meth:`~ssl.SSLContext.set_alpn_protocols`."
+"when no *context* is given. Custom *context* should set ALPN protocols "
+"with :meth:`~ssl.SSLContext.set_alpn_protocols`."
 msgstr ""
 
 #: library/http.client.rst:108
@@ -181,9 +181,10 @@ msgstr ""
 #: library/http.client.rst:130
 msgid ""
 "This function returns an instance of :class:`http.client.HTTPMessage` that "
-"holds the header fields, but no payload (the same as :attr:`HTTPResponse."
-"msg` and :attr:`http.server.BaseHTTPRequestHandler.headers`). After "
-"returning, the file pointer *fp* is ready to read the HTTP body."
+"holds the header fields, but no payload (the same "
+"as :attr:`HTTPResponse.msg` "
+"and :attr:`http.server.BaseHTTPRequestHandler.headers`). After returning, "
+"the file pointer *fp* is ready to read the HTTP body."
 msgstr ""
 
 #: library/http.client.rst:137
@@ -200,8 +201,8 @@ msgstr ""
 
 #: library/http.client.rst:147
 msgid ""
-"The base class of the other exceptions in this module.  It is a subclass of :"
-"exc:`Exception`."
+"The base class of the other exceptions in this module.  It is a subclass "
+"of :exc:`Exception`."
 msgstr ""
 
 #: library/http.client.rst:164 library/http.client.rst:174
@@ -290,16 +291,16 @@ msgstr ""
 #: library/http.client.rst:262
 msgid ""
 "If *body* is specified, the specified data is sent after the headers are "
-"finished.  It may be a :class:`str`, a :term:`bytes-like object`, an open :"
-"term:`file object`, or an iterable of :class:`bytes`.  If *body* is a "
+"finished.  It may be a :class:`str`, a :term:`bytes-like object`, an "
+"open :term:`file object`, or an iterable of :class:`bytes`.  If *body* is a "
 "string, it is encoded as ISO-8859-1, the default for HTTP.  If it is a bytes-"
 "like object, the bytes are sent as is.  If it is a :term:`file object`, the "
 "contents of the file is sent; this file object should support at least the "
-"``read()`` method.  If the file object is an instance of :class:`io."
-"TextIOBase`, the data returned by the ``read()`` method will be encoded as "
-"ISO-8859-1, otherwise the data returned by ``read()`` is sent as is.  If "
-"*body* is an iterable, the elements of the iterable are sent as is until the "
-"iterable is exhausted."
+"``read()`` method.  If the file object is an instance "
+"of :class:`io.TextIOBase`, the data returned by the ``read()`` method will "
+"be encoded as ISO-8859-1, otherwise the data returned by ``read()`` is sent "
+"as is.  If *body* is an iterable, the elements of the iterable are sent as "
+"is until the iterable is exhausted."
 msgstr ""
 
 #: library/http.client.rst:274
@@ -382,9 +383,9 @@ msgstr ""
 
 #: library/http.client.rst:334
 msgid ""
-"If a :exc:`ConnectionError` or subclass is raised, the :class:"
-"`HTTPConnection` object will be ready to reconnect when a new request is "
-"sent."
+"If a :exc:`ConnectionError` or subclass is raised, "
+"the :class:`HTTPConnection` object will be ready to reconnect when a new "
+"request is sent."
 msgstr ""
 
 #: library/http.client.rst:342
@@ -517,11 +518,11 @@ msgid ""
 "*message_body* will be chunk-encoded as specified in :rfc:`7230`, Section "
 "3.3.1.  How the data is encoded is dependent on the type of *message_body*.  "
 "If *message_body* implements the :ref:`buffer interface <bufferobjects>` the "
-"encoding will result in a single chunk. If *message_body* is a :class:"
-"`collections.abc.Iterable`, each iteration of *message_body* will result in "
-"a chunk.  If *message_body* is a :term:`file object`, each call to ``."
-"read()`` will result in a chunk. The method automatically signals the end of "
-"the chunk-encoded data immediately after *message_body*."
+"encoding will result in a single chunk. If *message_body* is "
+"a :class:`collections.abc.Iterable`, each iteration of *message_body* will "
+"result in a chunk.  If *message_body* is a :term:`file object`, each call to "
+"``.read()`` will result in a chunk. The method automatically signals the end "
+"of the chunk-encoded data immediately after *message_body*."
 msgstr ""
 
 #: library/http.client.rst:459
@@ -538,8 +539,9 @@ msgstr ""
 
 #: library/http.client.rst:470
 msgid ""
-"Send data to the server.  This should be used directly only after the :meth:"
-"`endheaders` method has been called and before :meth:`getresponse` is called."
+"Send data to the server.  This should be used directly only after "
+"the :meth:`endheaders` method has been called and before :meth:`getresponse` "
+"is called."
 msgstr ""
 
 #: library/http.client.rst:474
@@ -594,8 +596,8 @@ msgstr ""
 #: library/http.client.rst:520
 msgid ""
 "A :class:`http.client.HTTPMessage` instance containing the response "
-"headers.  :class:`http.client.HTTPMessage` is a subclass of :class:`email."
-"message.Message`."
+"headers.  :class:`http.client.HTTPMessage` is a subclass "
+"of :class:`email.message.Message`."
 msgstr ""
 
 #: library/http.client.rst:526
@@ -611,8 +613,8 @@ msgstr ""
 
 #: library/http.client.rst:534
 msgid ""
-"Headers of the response in the form of an :class:`email.message."
-"EmailMessage` instance."
+"Headers of the response in the form of "
+"an :class:`email.message.EmailMessage` instance."
 msgstr ""
 
 #: library/http.client.rst:538
@@ -718,8 +720,8 @@ msgid ""
 "302 Found\n"
 ">>> data = response.read()\n"
 ">>> data\n"
-"b'Redirecting to <a href=\"https://bugs.python.org/issue12524\">https://bugs."
-"python.org/issue12524</a>'\n"
+"b'Redirecting to <a href=\"https://bugs.python.org/issue12524\">https://"
+"bugs.python.org/issue12524</a>'\n"
 ">>> conn.close()"
 msgstr ""
 

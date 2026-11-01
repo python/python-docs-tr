@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-01 00:21+0000\n"
+"POT-Creation-Date: 2026-11-01 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
@@ -56,17 +56,17 @@ msgstr ""
 msgid ""
 "Some instructions are accompanied by one or more inline cache entries, which "
 "take the form of :opcode:`CACHE` instructions. These instructions are hidden "
-"by default, but can be shown by passing ``show_caches=True`` to any :mod:"
-"`dis` utility. Furthermore, the interpreter now adapts the bytecode to "
-"specialize it for different runtime conditions. The adaptive bytecode can be "
-"shown by passing ``adaptive=True``."
+"by default, but can be shown by passing ``show_caches=True`` to "
+"any :mod:`dis` utility. Furthermore, the interpreter now adapts the bytecode "
+"to specialize it for different runtime conditions. The adaptive bytecode can "
+"be shown by passing ``adaptive=True``."
 msgstr ""
 
 #: library/dis.rst:45
 msgid ""
 "The argument of a jump is the offset of the target instruction relative to "
-"the instruction that appears immediately after the jump instruction's :"
-"opcode:`CACHE` entries."
+"the instruction that appears immediately after the jump "
+"instruction's :opcode:`CACHE` entries."
 msgstr ""
 
 #: library/dis.rst:50
@@ -140,9 +140,9 @@ msgstr ""
 
 #: library/dis.rst:101
 msgid ""
-"The bytecode analysis API allows pieces of Python code to be wrapped in a :"
-"class:`Bytecode` object that provides easy access to details of the compiled "
-"code."
+"The bytecode analysis API allows pieces of Python code to be wrapped in "
+"a :class:`Bytecode` object that provides easy access to details of the "
+"compiled code."
 msgstr ""
 
 #: library/dis.rst:108
@@ -202,8 +202,8 @@ msgstr ""
 
 #: library/dis.rst:146
 msgid ""
-"Return a formatted view of the bytecode operations (the same as printed by :"
-"func:`dis.dis`, but returned as a multi-line string)."
+"Return a formatted view of the bytecode operations (the same as printed "
+"by :func:`dis.dis`, but returned as a multi-line string)."
 msgstr ""
 
 #: library/dis.rst:151
@@ -390,10 +390,10 @@ msgstr ""
 
 #: library/dis.rst:319
 msgid ""
-"This generator function uses the :meth:`~codeobject.co_lines` method of the :"
-"ref:`code object <code-objects>` *code* to find the offsets which are starts "
-"of lines in the source code.  They are generated as ``(offset, lineno)`` "
-"pairs."
+"This generator function uses the :meth:`~codeobject.co_lines` method of "
+"the :ref:`code object <code-objects>` *code* to find the offsets which are "
+"starts of lines in the source code.  They are generated as ``(offset, "
+"lineno)`` pairs."
 msgstr ""
 
 #: library/dis.rst:324
@@ -402,8 +402,8 @@ msgstr ""
 
 #: library/dis.rst:327
 msgid ""
-"The :pep:`626` :meth:`~codeobject.co_lines` method is used instead of the :"
-"attr:`~codeobject.co_firstlineno` and :attr:`~codeobject.co_lnotab` "
+"The :pep:`626` :meth:`~codeobject.co_lines` method is used instead of "
+"the :attr:`~codeobject.co_firstlineno` and :attr:`~codeobject.co_lnotab` "
 "attributes of the :ref:`code object <code-objects>`."
 msgstr ""
 
@@ -743,10 +743,10 @@ msgstr ""
 
 #: library/dis.rst:671
 msgid ""
-"Handles an exception raised during a :meth:`~generator.throw` or :meth:"
-"`~generator.close` call through the current frame.  If ``STACK[-1]`` is an "
-"instance of :exc:`StopIteration`, pop three values from the stack and push "
-"its ``value`` member.  Otherwise, re-raise ``STACK[-1]``."
+"Handles an exception raised during a :meth:`~generator.throw` "
+"or :meth:`~generator.close` call through the current frame.  If "
+"``STACK[-1]`` is an instance of :exc:`StopIteration`, pop three values from "
+"the stack and push its ``value`` member.  Otherwise, re-raise ``STACK[-1]``."
 msgstr ""
 
 #: library/dis.rst:681
@@ -802,10 +802,10 @@ msgstr ""
 
 #: library/dis.rst:727
 msgid ""
-"For all of the :opcode:`SET_ADD`, :opcode:`LIST_APPEND` and :opcode:"
-"`MAP_ADD` instructions, while the added value or key/value pair is popped "
-"off, the container object remains on the stack so that it is available for "
-"further iterations of the loop."
+"For all of the :opcode:`SET_ADD`, :opcode:`LIST_APPEND` "
+"and :opcode:`MAP_ADD` instructions, while the added value or key/value pair "
+"is popped off, the container object remains on the stack so that it is "
+"available for further iterations of the loop."
 msgstr ""
 
 #: library/dis.rst:735
@@ -846,8 +846,8 @@ msgstr ""
 #: library/dis.rst:775
 msgid ""
 "Re-raises the exception currently on top of the stack. If oparg is non-zero, "
-"pops an additional value from the stack which is used to set :attr:`~frame."
-"f_lasti` of the current frame."
+"pops an additional value from the stack which is used to "
+"set :attr:`~frame.f_lasti` of the current frame."
 msgstr ""
 
 #: library/dis.rst:786
@@ -908,9 +908,9 @@ msgstr ""
 msgid ""
 "This opcode performs several operations before a with block starts.  First, "
 "it loads :meth:`~object.__exit__` from the context manager and pushes it "
-"onto the stack for later use by :opcode:`WITH_EXCEPT_START`.  Then, :meth:"
-"`~object.__enter__` is called. Finally, the result of calling the "
-"``__enter__()`` method is pushed onto the stack."
+"onto the stack for later use by :opcode:`WITH_EXCEPT_START`.  "
+"Then, :meth:`~object.__enter__` is called. Finally, the result of calling "
+"the ``__enter__()`` method is pushed onto the stack."
 msgstr ""
 
 #: library/dis.rst:853
@@ -939,8 +939,9 @@ msgstr ""
 #: library/dis.rst:881
 msgid ""
 "``STACK[-1]`` is a tuple of mapping keys, and ``STACK[-2]`` is the match "
-"subject. If ``STACK[-2]`` contains all of the keys in ``STACK[-1]``, push a :"
-"class:`tuple` containing the corresponding values. Otherwise, push ``None``."
+"subject. If ``STACK[-2]`` contains all of the keys in ``STACK[-1]``, push "
+"a :class:`tuple` containing the corresponding values. Otherwise, push "
+"``None``."
 msgstr ""
 
 #: library/dis.rst:1521
@@ -953,14 +954,15 @@ msgstr ""
 msgid ""
 "Implements ``name = STACK.pop()``. *namei* is the index of *name* in the "
 "attribute :attr:`~codeobject.co_names` of the :ref:`code object <code-"
-"objects>`. The compiler tries to use :opcode:`STORE_FAST` or :opcode:"
-"`STORE_GLOBAL` if possible."
+"objects>`. The compiler tries to use :opcode:`STORE_FAST` "
+"or :opcode:`STORE_GLOBAL` if possible."
 msgstr ""
 
 #: library/dis.rst:901
 msgid ""
-"Implements ``del name``, where *namei* is the index into :attr:`~codeobject."
-"co_names` attribute of the :ref:`code object <code-objects>`."
+"Implements ``del name``, where *namei* is the index "
+"into :attr:`~codeobject.co_names` attribute of the :ref:`code object <code-"
+"objects>`."
 msgstr ""
 
 #: library/dis.rst:907
@@ -1011,8 +1013,8 @@ msgstr ""
 
 #: library/dis.rst:941
 msgid ""
-"where *namei* is the index of name in :attr:`~codeobject.co_names` of the :"
-"ref:`code object <code-objects>`."
+"where *namei* is the index of name in :attr:`~codeobject.co_names` of "
+"the :ref:`code object <code-objects>`."
 msgstr ""
 
 #: library/dis.rst:948
@@ -1023,8 +1025,8 @@ msgstr ""
 
 #: library/dis.rst:951
 msgid ""
-"where *namei* is the index of name into :attr:`~codeobject.co_names` of the :"
-"ref:`code object <code-objects>`."
+"where *namei* is the index of name into :attr:`~codeobject.co_names` of "
+"the :ref:`code object <code-objects>`."
 msgstr ""
 
 #: library/dis.rst:957
@@ -1048,8 +1050,8 @@ msgstr ""
 #: library/dis.rst:978
 msgid ""
 "Pushes a reference to the locals dictionary onto the stack.  This is used to "
-"prepare namespace dictionaries for :opcode:`LOAD_FROM_DICT_OR_DEREF` and :"
-"opcode:`LOAD_FROM_DICT_OR_GLOBALS`."
+"prepare namespace dictionaries for :opcode:`LOAD_FROM_DICT_OR_DEREF` "
+"and :opcode:`LOAD_FROM_DICT_OR_GLOBALS`."
 msgstr ""
 
 #: library/dis.rst:987
@@ -1191,9 +1193,9 @@ msgstr ""
 
 #: library/dis.rst:1123
 msgid ""
-"The low bit of ``namei`` signals to attempt a method load, as with :opcode:"
-"`LOAD_ATTR`, which results in pushing ``NULL`` and the loaded method. When "
-"it is unset a single value is pushed to the stack."
+"The low bit of ``namei`` signals to attempt a method load, as "
+"with :opcode:`LOAD_ATTR`, which results in pushing ``NULL`` and the loaded "
+"method. When it is unset a single value is pushed to the stack."
 msgstr ""
 
 #: library/dis.rst:1127
@@ -1225,10 +1227,10 @@ msgstr ""
 #: library/dis.rst:1158
 msgid ""
 "Imports the module ``co_names[namei]``.  ``STACK[-1]`` and ``STACK[-2]`` are "
-"popped and provide the *fromlist* and *level* arguments of :func:"
-"`__import__`. The module object is pushed onto the stack.  The current "
-"namespace is not affected: for a proper import statement, a subsequent :"
-"opcode:`STORE_FAST` instruction modifies the namespace."
+"popped and provide the *fromlist* and *level* arguments "
+"of :func:`__import__`. The module object is pushed onto the stack.  The "
+"current namespace is not affected: for a proper import statement, a "
+"subsequent :opcode:`STORE_FAST` instruction modifies the namespace."
 msgstr ""
 
 #: library/dis.rst:1166
@@ -1383,10 +1385,10 @@ msgstr ""
 msgid ""
 "Pops a mapping off the stack and looks up the name associated with slot "
 "``i`` of the \"fast locals\" storage in this mapping. If the name is not "
-"found there, loads it from the cell contained in slot ``i``, similar to :"
-"opcode:`LOAD_DEREF`. This is used for loading free variables in class bodies "
-"(which previously used :opcode:`!LOAD_CLASSDEREF`) and in :ref:`annotation "
-"scopes <annotation-scopes>` within class bodies."
+"found there, loads it from the cell contained in slot ``i``, similar "
+"to :opcode:`LOAD_DEREF`. This is used for loading free variables in class "
+"bodies (which previously used :opcode:`!LOAD_CLASSDEREF`) and "
+"in :ref:`annotation scopes <annotation-scopes>` within class bodies."
 msgstr ""
 
 #: library/dis.rst:1339
@@ -1906,8 +1908,9 @@ msgstr ""
 #: library/dis.rst:1693
 msgid ""
 "This variant is used in :keyword:`with` and :keyword:`async with` "
-"constructs, which push the return value of the context manager's :meth:"
-"`~object.__enter__` or :meth:`~object.__aenter__` to the stack."
+"constructs, which push the return value of the context "
+"manager's :meth:`~object.__enter__` or :meth:`~object.__aenter__` to the "
+"stack."
 msgstr ""
 
 #: library/dis.rst:1700
