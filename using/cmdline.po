@@ -28,8 +28,8 @@ msgstr ""
 
 #: using/cmdline.rst:16
 msgid ""
-"Other implementations' command line schemes may differ.  See :ref:"
-"`implementations` for further resources."
+"Other implementations' command line schemes may differ.  "
+"See :ref:`implementations` for further resources."
 msgstr ""
 
 #: using/cmdline.rst:23
@@ -121,9 +121,9 @@ msgstr ""
 #: using/cmdline.rst:68
 msgid ""
 "If this option is given, the first element of :data:`sys.argv` will be ``\"-"
-"c\"`` and the current directory will be added to the start of :data:`sys."
-"path` (allowing modules in that directory to be imported as top level "
-"modules)."
+"c\"`` and the current directory will be added to the start "
+"of :data:`sys.path` (allowing modules in that directory to be imported as "
+"top level modules)."
 msgstr ""
 
 #: using/cmdline.rst:73
@@ -173,9 +173,10 @@ msgstr ""
 
 #: using/cmdline.rst:104
 msgid ""
-":option:`-I` option can  be used to run the script in isolated mode where :"
-"data:`sys.path` contains neither the current directory nor the user's site-"
-"packages directory. All ``PYTHON*`` environment variables are ignored, too."
+":option:`-I` option can  be used to run the script in isolated mode "
+"where :data:`sys.path` contains neither the current directory nor the user's "
+"site-packages directory. All ``PYTHON*`` environment variables are ignored, "
+"too."
 msgstr ""
 
 #: using/cmdline.rst:109
@@ -225,8 +226,8 @@ msgstr ""
 #: using/cmdline.rst:136
 msgid ""
 "If this option is given, the first element of :data:`sys.argv` will be ``\"-"
-"\"`` and the current directory will be added to the start of :data:`sys."
-"path`."
+"\"`` and the current directory will be added to the start "
+"of :data:`sys.path`."
 msgstr ""
 
 #: using/cmdline.rst:723
@@ -265,9 +266,10 @@ msgstr ""
 
 #: using/cmdline.rst:162
 msgid ""
-":option:`-I` option can  be used to run the script in isolated mode where :"
-"data:`sys.path` contains neither the script's directory nor the user's site-"
-"packages directory. All ``PYTHON*`` environment variables are ignored, too."
+":option:`-I` option can  be used to run the script in isolated mode "
+"where :data:`sys.path` contains neither the script's directory nor the "
+"user's site-packages directory. All ``PYTHON*`` environment variables are "
+"ignored, too."
 msgstr ""
 
 #: using/cmdline.rst:167
@@ -349,10 +351,11 @@ msgstr ""
 
 #: using/cmdline.rst:245
 msgid ""
-"Issue a warning when converting :class:`bytes` or :class:`bytearray` to :"
-"class:`str` without specifying encoding or comparing :class:`!bytes` or :"
-"class:`!bytearray` with :class:`!str` or :class:`!bytes` with :class:`int`. "
-"Issue an error when the option is given twice (:option:`!-bb`)."
+"Issue a warning when converting :class:`bytes` or :class:`bytearray` "
+"to :class:`str` without specifying encoding or comparing :class:`!bytes` "
+"or :class:`!bytearray` with :class:`!str` or :class:`!bytes` "
+"with :class:`int`. Issue an error when the option is given twice (:option:`!-"
+"bb`)."
 msgstr ""
 
 #: using/cmdline.rst:250
@@ -384,8 +387,8 @@ msgstr ""
 
 #: using/cmdline.rst:275
 msgid ""
-"Turn on parser debugging output (for expert only). See also the :envvar:"
-"`PYTHONDEBUG` environment variable."
+"Turn on parser debugging output (for expert only). See also "
+"the :envvar:`PYTHONDEBUG` environment variable."
 msgstr ""
 
 #: using/cmdline.rst:278
@@ -396,8 +399,8 @@ msgstr ""
 
 #: using/cmdline.rst:284
 msgid ""
-"Ignore all ``PYTHON*`` environment variables, e.g. :envvar:`PYTHONPATH` and :"
-"envvar:`PYTHONHOME`, that might be set."
+"Ignore all ``PYTHON*`` environment variables, e.g. :envvar:`PYTHONPATH` "
+"and :envvar:`PYTHONHOME`, that might be set."
 msgstr ""
 
 #: using/cmdline.rst:287
@@ -408,8 +411,8 @@ msgstr ""
 msgid ""
 "When a script is passed as first argument or the :option:`-c` option is "
 "used, enter interactive mode after executing the script or the command, even "
-"when :data:`sys.stdin` does not appear to be a terminal.  The :envvar:"
-"`PYTHONSTARTUP` file is not read."
+"when :data:`sys.stdin` does not appear to be a terminal.  "
+"The :envvar:`PYTHONSTARTUP` file is not read."
 msgstr ""
 
 #: using/cmdline.rst:297
@@ -434,10 +437,10 @@ msgstr ""
 
 #: using/cmdline.rst:316
 msgid ""
-"Remove assert statements and any code conditional on the value of :const:"
-"`__debug__`.  Augment the filename for compiled (:term:`bytecode`) files by "
-"adding ``.opt-1`` before the ``.pyc`` extension (see :pep:`488`).  See also :"
-"envvar:`PYTHONOPTIMIZE`."
+"Remove assert statements and any code conditional on the value "
+"of :const:`__debug__`.  Augment the filename for compiled (:term:`bytecode`) "
+"files by adding ``.opt-1`` before the ``.pyc`` extension (see :pep:`488`).  "
+"See also :envvar:`PYTHONOPTIMIZE`."
 msgstr ""
 
 #: using/cmdline.rst:331
@@ -486,9 +489,9 @@ msgstr ""
 
 #: using/cmdline.rst:361
 msgid ""
-"Turn on hash randomization. This option only has an effect if the :envvar:"
-"`PYTHONHASHSEED` environment variable is set to ``0``, since hash "
-"randomization is enabled by default."
+"Turn on hash randomization. This option only has an effect if "
+"the :envvar:`PYTHONHASHSEED` environment variable is set to ``0``, since "
+"hash randomization is enabled by default."
 msgstr ""
 
 #: using/cmdline.rst:365
@@ -520,8 +523,8 @@ msgstr ""
 
 #: using/cmdline.rst:387
 msgid ""
-"Don't add the :data:`user site-packages directory <site.USER_SITE>` to :data:"
-"`sys.path`."
+"Don't add the :data:`user site-packages directory <site.USER_SITE>` "
+"to :data:`sys.path`."
 msgstr ""
 
 #: using/cmdline.rst:390
@@ -536,8 +539,8 @@ msgstr ""
 msgid ""
 "Disable the import of the module :mod:`site` and the site-dependent "
 "manipulations of :data:`sys.path` that it entails.  Also disable these "
-"manipulations if :mod:`site` is explicitly imported later (call :func:`site."
-"main` if you want them to be triggered)."
+"manipulations if :mod:`site` is explicitly imported later "
+"(call :func:`site.main` if you want them to be triggered)."
 msgstr ""
 
 #: using/cmdline.rst:407
@@ -557,8 +560,8 @@ msgstr ""
 #: using/cmdline.rst:418
 msgid ""
 "Print a message each time a module is initialized, showing the place "
-"(filename or built-in module) from which it is loaded.  When given twice (:"
-"option:`!-vv`), print a message for each file that is checked for when "
+"(filename or built-in module) from which it is loaded.  When given twice "
+"(:option:`!-vv`), print a message for each file that is checked for when "
 "searching for a module.  Also provides information on module cleanup at exit."
 msgstr ""
 
@@ -653,17 +656,17 @@ msgstr ""
 #: using/cmdline.rst:477
 msgid ""
 "Multiple :option:`-W` options can be given; when a warning matches more than "
-"one option, the action for the last matching option is performed. Invalid :"
-"option:`-W` options are ignored (though, a warning message is printed about "
-"invalid options when the first warning is issued)."
+"one option, the action for the last matching option is performed. "
+"Invalid :option:`-W` options are ignored (though, a warning message is "
+"printed about invalid options when the first warning is issued)."
 msgstr ""
 
 #: using/cmdline.rst:482
 msgid ""
 "Warnings can also be controlled using the :envvar:`PYTHONWARNINGS` "
-"environment variable and from within a Python program using the :mod:"
-"`warnings` module. For example, the :func:`warnings.filterwarnings` function "
-"can be used to use a regular expression on the warning message."
+"environment variable and from within a Python program using "
+"the :mod:`warnings` module. For example, the :func:`warnings.filterwarnings` "
+"function can be used to use a regular expression on the warning message."
 msgstr ""
 
 #: using/cmdline.rst:856
@@ -686,8 +689,8 @@ msgstr ""
 
 #: using/cmdline.rst:502
 msgid ""
-"``-X faulthandler`` to enable :mod:`faulthandler`. See also :envvar:"
-"`PYTHONFAULTHANDLER`."
+"``-X faulthandler`` to enable :mod:`faulthandler`. See "
+"also :envvar:`PYTHONFAULTHANDLER`."
 msgstr ""
 
 #: using/cmdline.rst:507
@@ -700,18 +703,19 @@ msgstr ""
 
 #: using/cmdline.rst:514
 msgid ""
-"``-X tracemalloc`` to start tracing Python memory allocations using the :mod:"
-"`tracemalloc` module. By default, only the most recent frame is stored in a "
-"traceback of a trace. Use ``-X tracemalloc=NFRAME`` to start tracing with a "
-"traceback limit of *NFRAME* frames. See :func:`tracemalloc.start` and :"
-"envvar:`PYTHONTRACEMALLOC` for more information."
+"``-X tracemalloc`` to start tracing Python memory allocations using "
+"the :mod:`tracemalloc` module. By default, only the most recent frame is "
+"stored in a traceback of a trace. Use ``-X tracemalloc=NFRAME`` to start "
+"tracing with a traceback limit of *NFRAME* frames. "
+"See :func:`tracemalloc.start` and :envvar:`PYTHONTRACEMALLOC` for more "
+"information."
 msgstr ""
 
 #: using/cmdline.rst:523
 msgid ""
 "``-X int_max_str_digits`` configures the :ref:`integer string conversion "
-"length limitation <int_max_str_digits>`.  See also :envvar:"
-"`PYTHONINTMAXSTRDIGITS`."
+"length limitation <int_max_str_digits>`.  See "
+"also :envvar:`PYTHONINTMAXSTRDIGITS`."
 msgstr ""
 
 #: using/cmdline.rst:529
@@ -740,15 +744,15 @@ msgstr ""
 #: using/cmdline.rst:550
 msgid ""
 "``-X pycache_prefix=PATH`` enables writing ``.pyc`` files to a parallel tree "
-"rooted at the given directory instead of to the code tree. See also :envvar:"
-"`PYTHONPYCACHEPREFIX`."
+"rooted at the given directory instead of to the code tree. See "
+"also :envvar:`PYTHONPYCACHEPREFIX`."
 msgstr ""
 
 #: using/cmdline.rst:556
 msgid ""
 "``-X warn_default_encoding`` issues a :class:`EncodingWarning` when the "
-"locale-specific default encoding is used for opening files. See also :envvar:"
-"`PYTHONWARNDEFAULTENCODING`."
+"locale-specific default encoding is used for opening files. See "
+"also :envvar:`PYTHONWARNDEFAULTENCODING`."
 msgstr ""
 
 #: using/cmdline.rst:562
@@ -757,8 +761,8 @@ msgid ""
 "location information (end line, start column offset and end column offset) "
 "to every instruction in code objects. This is useful when smaller code "
 "objects and pyc files are desired as well as suppressing the extra visual "
-"location indicators when the interpreter displays tracebacks. See also :"
-"envvar:`PYTHONNODEBUGRANGES`."
+"location indicators when the interpreter displays tracebacks. See "
+"also :envvar:`PYTHONNODEBUGRANGES`."
 msgstr ""
 
 #: using/cmdline.rst:571
@@ -783,8 +787,8 @@ msgstr ""
 
 #: using/cmdline.rst:589
 msgid ""
-"It also allows passing arbitrary values and retrieving them through the :"
-"data:`sys._xoptions` dictionary."
+"It also allows passing arbitrary values and retrieving them through "
+"the :data:`sys._xoptions` dictionary."
 msgstr ""
 
 #: using/cmdline.rst:594
@@ -818,10 +822,10 @@ msgstr ""
 #: using/cmdline.rst:623
 msgid ""
 "Change the location of the standard Python libraries.  By default, the "
-"libraries are searched in :file:`{prefix}/lib/python{version}` and :file:"
-"`{exec_prefix}/lib/python{version}`, where :file:`{prefix}` and :file:"
-"`{exec_prefix}` are installation-dependent directories, both defaulting to :"
-"file:`/usr/local`."
+"libraries are searched in :file:`{prefix}/lib/python{version}` "
+"and :file:`{exec_prefix}/lib/python{version}`, where :file:`{prefix}` "
+"and :file:`{exec_prefix}` are installation-dependent directories, both "
+"defaulting to :file:`/usr/local`."
 msgstr ""
 
 #: using/cmdline.rst:629
@@ -834,8 +838,8 @@ msgstr ""
 #: using/cmdline.rst:636
 msgid ""
 "Augment the default search path for module files.  The format is the same as "
-"the shell's :envvar:`PATH`: one or more directory pathnames separated by :"
-"data:`os.pathsep` (e.g. colons on Unix or semicolons on Windows). Non-"
+"the shell's :envvar:`PATH`: one or more directory pathnames separated "
+"by :data:`os.pathsep` (e.g. colons on Unix or semicolons on Windows). Non-"
 "existent directories are silently ignored."
 msgstr ""
 
@@ -855,8 +859,8 @@ msgstr ""
 
 #: using/cmdline.rst:649
 msgid ""
-"An additional directory will be inserted in the search path in front of :"
-"envvar:`PYTHONPATH` as described above under :ref:`using-on-interface-"
+"An additional directory will be inserted in the search path in front "
+"of :envvar:`PYTHONPATH` as described above under :ref:`using-on-interface-"
 "options`. The search path can be manipulated from within a Python program as "
 "the variable :data:`sys.path`."
 msgstr ""
@@ -869,8 +873,8 @@ msgstr ""
 
 #: using/cmdline.rst:665
 msgid ""
-"If this is set to a non-empty string, it overrides the :data:`sys."
-"platlibdir` value."
+"If this is set to a non-empty string, it overrides "
+"the :data:`sys.platlibdir` value."
 msgstr ""
 
 #: using/cmdline.rst:673
@@ -892,9 +896,9 @@ msgstr ""
 
 #: using/cmdline.rst:688
 msgid ""
-"If this is set to a non-empty string it is equivalent to specifying the :"
-"option:`-O` option.  If set to an integer, it is equivalent to specifying :"
-"option:`-O` multiple times."
+"If this is set to a non-empty string it is equivalent to specifying "
+"the :option:`-O` option.  If set to an integer, it is equivalent to "
+"specifying :option:`-O` multiple times."
 msgstr ""
 
 #: using/cmdline.rst:695
@@ -904,15 +908,15 @@ msgid ""
 "by the default implementation of :func:`sys.breakpointhook` which itself is "
 "called by built-in :func:`breakpoint`.  If not set, or set to the empty "
 "string, it is equivalent to the value \"pdb.set_trace\".  Setting this to "
-"the string \"0\" causes the default implementation of :func:`sys."
-"breakpointhook` to do nothing but return immediately."
+"the string \"0\" causes the default implementation "
+"of :func:`sys.breakpointhook` to do nothing but return immediately."
 msgstr ""
 
 #: using/cmdline.rst:707
 msgid ""
-"If this is set to a non-empty string it is equivalent to specifying the :"
-"option:`-d` option.  If set to an integer, it is equivalent to specifying :"
-"option:`-d` multiple times."
+"If this is set to a non-empty string it is equivalent to specifying "
+"the :option:`-d` option.  If set to an integer, it is equivalent to "
+"specifying :option:`-d` multiple times."
 msgstr ""
 
 #: using/cmdline.rst:711
@@ -923,8 +927,8 @@ msgstr ""
 
 #: using/cmdline.rst:717
 msgid ""
-"If this is set to a non-empty string it is equivalent to specifying the :"
-"option:`-i` option."
+"If this is set to a non-empty string it is equivalent to specifying "
+"the :option:`-i` option."
 msgstr ""
 
 #: using/cmdline.rst:720
@@ -939,15 +943,15 @@ msgstr ""
 
 #: using/cmdline.rst:731
 msgid ""
-"If this is set to a non-empty string it is equivalent to specifying the :"
-"option:`-u` option."
+"If this is set to a non-empty string it is equivalent to specifying "
+"the :option:`-u` option."
 msgstr ""
 
 #: using/cmdline.rst:737
 msgid ""
-"If this is set to a non-empty string it is equivalent to specifying the :"
-"option:`-v` option.  If set to an integer, it is equivalent to specifying :"
-"option:`-v` multiple times."
+"If this is set to a non-empty string it is equivalent to specifying "
+"the :option:`-v` option.  If set to an integer, it is equivalent to "
+"specifying :option:`-v` multiple times."
 msgstr ""
 
 #: using/cmdline.rst:744
@@ -1039,8 +1043,8 @@ msgstr ""
 #: using/cmdline.rst:821
 msgid ""
 "Defines the :data:`user base directory <site.USER_BASE>`, which is used to "
-"compute the path of the :data:`user site-packages directory <site."
-"USER_SITE>` and :ref:`installation paths <sysconfig-user-scheme>` for "
+"compute the path of the :data:`user site-packages directory "
+"<site.USER_SITE>` and :ref:`installation paths <sysconfig-user-scheme>` for "
 "``python -m pip install --user``."
 msgstr ""
 
@@ -1070,11 +1074,11 @@ msgstr ""
 
 #: using/cmdline.rst:862
 msgid ""
-"If this environment variable is set to a non-empty string, :func:"
-"`faulthandler.enable` is called at startup: install a handler for :const:"
-"`~signal.SIGSEGV`, :const:`~signal.SIGFPE`, :const:`~signal.SIGABRT`, :const:"
-"`~signal.SIGBUS` and :const:`~signal.SIGILL` signals to dump the Python "
-"traceback. This is equivalent to :option:`-X` ``faulthandler`` option."
+"If this environment variable is set to a non-empty "
+"string, :func:`faulthandler.enable` is called at startup: install a handler "
+"for :const:`~signal.SIGSEGV`, :const:`~signal.SIGFPE`, :const:`~signal.SIGABRT`, :const:`~signal.SIGBUS` "
+"and :const:`~signal.SIGILL` signals to dump the Python traceback. This is "
+"equivalent to :option:`-X` ``faulthandler`` option."
 msgstr ""
 
 #: using/cmdline.rst:874
@@ -1096,8 +1100,8 @@ msgstr ""
 
 #: using/cmdline.rst:896
 msgid ""
-"If this environment variable is set to a non-empty string, enable the :ref:"
-"`debug mode <asyncio-debug-mode>` of the :mod:`asyncio` module."
+"If this environment variable is set to a non-empty string, enable "
+"the :ref:`debug mode <asyncio-debug-mode>` of the :mod:`asyncio` module."
 msgstr ""
 
 #: using/cmdline.rst:904
@@ -1117,15 +1121,15 @@ msgstr ""
 #: using/cmdline.rst:910
 msgid ""
 "``malloc``: use the :c:func:`malloc` function of the C library for all "
-"domains (:c:macro:`PYMEM_DOMAIN_RAW`, :c:macro:`PYMEM_DOMAIN_MEM`, :c:macro:"
-"`PYMEM_DOMAIN_OBJ`)."
+"domains "
+"(:c:macro:`PYMEM_DOMAIN_RAW`, :c:macro:`PYMEM_DOMAIN_MEM`, :c:macro:`PYMEM_DOMAIN_OBJ`)."
 msgstr ""
 
 #: using/cmdline.rst:913
 msgid ""
-"``pymalloc``: use the :ref:`pymalloc allocator <pymalloc>` for :c:macro:"
-"`PYMEM_DOMAIN_MEM` and :c:macro:`PYMEM_DOMAIN_OBJ` domains and use the :c:"
-"func:`malloc` function for the :c:macro:`PYMEM_DOMAIN_RAW` domain."
+"``pymalloc``: use the :ref:`pymalloc allocator <pymalloc>` "
+"for :c:macro:`PYMEM_DOMAIN_MEM` and :c:macro:`PYMEM_DOMAIN_OBJ` domains and "
+"use the :c:func:`malloc` function for the :c:macro:`PYMEM_DOMAIN_RAW` domain."
 msgstr ""
 
 #: using/cmdline.rst:917
@@ -1152,9 +1156,9 @@ msgstr ""
 
 #: using/cmdline.rst:932
 msgid ""
-"If set to a non-empty string, Python will print statistics of the :ref:"
-"`pymalloc memory allocator <pymalloc>` every time a new pymalloc object "
-"arena is created, and on shutdown."
+"If set to a non-empty string, Python will print statistics of "
+"the :ref:`pymalloc memory allocator <pymalloc>` every time a new pymalloc "
+"object arena is created, and on shutdown."
 msgstr ""
 
 #: using/cmdline.rst:936
@@ -1180,8 +1184,8 @@ msgstr ""
 
 #: using/cmdline.rst:952
 msgid ""
-"This may also be enabled at runtime with :func:`sys."
-"_enablelegacywindowsfsencoding`."
+"This may also be enabled at runtime "
+"with :func:`sys._enablelegacywindowsfsencoding`."
 msgstr ""
 
 #: using/cmdline.rst:969 using/cmdline.rst:1020
@@ -1251,11 +1255,12 @@ msgstr ""
 #: using/cmdline.rst:1002
 msgid ""
 "Configuring one of these locales (either explicitly or via the above "
-"implicit locale coercion) automatically enables the ``surrogateescape`` :ref:"
-"`error handler <error-handlers>` for :data:`sys.stdin` and :data:`sys."
-"stdout` (:data:`sys.stderr` continues to use ``backslashreplace`` as it does "
-"in any other locale). This stream handling behavior can be overridden using :"
-"envvar:`PYTHONIOENCODING` as usual."
+"implicit locale coercion) automatically enables the "
+"``surrogateescape`` :ref:`error handler <error-handlers>` "
+"for :data:`sys.stdin` and :data:`sys.stdout` (:data:`sys.stderr` continues "
+"to use ``backslashreplace`` as it does in any other locale). This stream "
+"handling behavior can be overridden using :envvar:`PYTHONIOENCODING` as "
+"usual."
 msgstr ""
 
 #: using/cmdline.rst:1009
@@ -1281,10 +1286,10 @@ msgstr ""
 
 #: using/cmdline.rst:1028
 msgid ""
-"If this environment variable is set to a non-empty string, enable :ref:"
-"`Python Development Mode <devmode>`, introducing additional runtime checks "
-"that are too expensive to be enabled by default. This is equivalent to "
-"setting the :option:`-X` ``dev`` option."
+"If this environment variable is set to a non-empty string, "
+"enable :ref:`Python Development Mode <devmode>`, introducing additional "
+"runtime checks that are too expensive to be enabled by default. This is "
+"equivalent to setting the :option:`-X` ``dev`` option."
 msgstr ""
 
 #: using/cmdline.rst:1037
@@ -1303,8 +1308,8 @@ msgstr ""
 
 #: using/cmdline.rst:1048
 msgid ""
-"If this environment variable is set to a non-empty string, issue a :class:"
-"`EncodingWarning` when the locale-specific default encoding is used."
+"If this environment variable is set to a non-empty string, issue "
+"a :class:`EncodingWarning` when the locale-specific default encoding is used."
 msgstr ""
 
 #: using/cmdline.rst:1051
@@ -1332,8 +1337,8 @@ msgstr ""
 
 #: using/cmdline.rst:1072
 msgid ""
-"See also the :option:`-X perf <-X>` command-line option and :ref:"
-"`perf_profiling`."
+"See also the :option:`-X perf <-X>` command-line option "
+"and :ref:`perf_profiling`."
 msgstr ""
 
 #: using/cmdline.rst:1079

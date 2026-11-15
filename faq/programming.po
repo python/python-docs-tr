@@ -40,8 +40,8 @@ msgstr ""
 
 #: faq/programming.rst:19
 msgid ""
-"Several debuggers for Python are described below, and the built-in function :"
-"func:`breakpoint` allows you to drop into any of them."
+"Several debuggers for Python are described below, and the built-in "
+"function :func:`breakpoint` allows you to drop into any of them."
 msgstr ""
 
 #: faq/programming.rst:22
@@ -441,8 +441,8 @@ msgstr ""
 
 #: faq/programming.rst:301
 msgid ""
-"standard library modules -- e.g. :mod:`sys`, :mod:`os`, :mod:`argparse`, :"
-"mod:`re`"
+"standard library modules -- "
+"e.g. :mod:`sys`, :mod:`os`, :mod:`argparse`, :mod:`re`"
 msgstr ""
 
 #: faq/programming.rst:302
@@ -626,9 +626,9 @@ msgstr ""
 msgid ""
 ":term:`Parameters <parameter>` are defined by the names that appear in a "
 "function definition, whereas :term:`arguments <argument>` are the values "
-"actually passed to a function when calling it.  Parameters define what :term:"
-"`kind of arguments <parameter>` a function can accept.  For example, given "
-"the function definition::"
+"actually passed to a function when calling it.  Parameters define "
+"what :term:`kind of arguments <parameter>` a function can accept.  For "
+"example, given the function definition::"
 msgstr ""
 
 #: faq/programming.rst:423
@@ -973,8 +973,8 @@ msgstr ""
 
 #: faq/programming.rst:641
 msgid ""
-"Some objects can be copied more easily.  Dictionaries have a :meth:`~dict."
-"copy` method::"
+"Some objects can be copied more easily.  Dictionaries have "
+"a :meth:`~dict.copy` method::"
 msgstr ""
 
 #: faq/programming.rst:644
@@ -1291,8 +1291,8 @@ msgstr ""
 
 #: faq/programming.rst:850
 msgid ""
-"Trying to lookup an ``int`` literal attribute in the normal manner gives a :"
-"exc:`SyntaxError` because the period is seen as a decimal point::"
+"Trying to lookup an ``int`` literal attribute in the normal manner gives "
+"a :exc:`SyntaxError` because the period is seen as a decimal point::"
 msgstr ""
 
 #: faq/programming.rst:853
@@ -1358,8 +1358,8 @@ msgid ""
 "in type constructor :func:`str`.  If you want a hexadecimal or octal "
 "representation, use the built-in functions :func:`hex` or :func:`oct`.  For "
 "fancy formatting, see the :ref:`f-strings` and :ref:`formatstrings` "
-"sections, e.g. ``\"{:04d}\".format(144)`` yields ``'0144'`` and ``\"{:.3f}\"."
-"format(1.0/3.0)`` yields ``'0.333'``."
+"sections, e.g. ``\"{:04d}\".format(144)`` yields ``'0144'`` and ``\"{:.3f}"
+"\".format(1.0/3.0)`` yields ``'0.333'``."
 msgstr ""
 
 #: faq/programming.rst:906
@@ -1519,10 +1519,10 @@ msgstr ""
 msgid ""
 "For simple input parsing, the easiest approach is usually to split the line "
 "into whitespace-delimited words using the :meth:`~str.split` method of "
-"string objects and then convert decimal strings to numeric values using :"
-"func:`int` or :func:`float`.  :meth:`!split` supports an optional \"sep\" "
-"parameter which is useful if the line uses something other than whitespace "
-"as a separator."
+"string objects and then convert decimal strings to numeric values "
+"using :func:`int` or :func:`float`.  :meth:`!split` supports an optional "
+"\"sep\" parameter which is useful if the line uses something other than "
+"whitespace as a separator."
 msgstr ""
 
 #: faq/programming.rst:1019
@@ -1682,9 +1682,9 @@ msgid ""
 "When the standard library provides a primitive for doing something, it is "
 "likely (although not guaranteed) to be faster than any alternative you may "
 "come up with.  This is doubly true for primitives written in C, such as "
-"builtins and some extension types.  For example, be sure to use either the :"
-"meth:`list.sort` built-in method or the related :func:`sorted` function to "
-"do sorting (and see the :ref:`sortinghowto` for examples of moderately "
+"builtins and some extension types.  For example, be sure to use either "
+"the :meth:`list.sort` built-in method or the related :func:`sorted` function "
+"to do sorting (and see the :ref:`sortinghowto` for examples of moderately "
 "advanced usage)."
 msgstr ""
 
@@ -1861,8 +1861,8 @@ msgstr ""
 
 #: faq/programming.rst:1220
 msgid ""
-"If all elements of the list may be used as set keys (i.e. they are all :term:"
-"`hashable`) this is often faster ::"
+"If all elements of the list may be used as set keys (i.e. they are "
+"all :term:`hashable`) this is often faster ::"
 msgstr ""
 
 #: faq/programming.rst:1223
@@ -2020,8 +2020,8 @@ msgstr ""
 
 #: faq/programming.rst:1327
 msgid ""
-"To call a method or function and accumulate the return values is a list, a :"
-"term:`list comprehension` is an elegant solution::"
+"To call a method or function and accumulate the return values is a list, "
+"a :term:`list comprehension` is an elegant solution::"
 msgstr ""
 
 #: faq/programming.rst:1330
@@ -2266,8 +2266,8 @@ msgstr ""
 
 #: faq/programming.rst:1481
 msgid ""
-"A method is a function on some object ``x`` that you normally call as ``x."
-"name(arguments...)``.  Methods are defined as functions inside the class "
+"A method is a function on some object ``x`` that you normally call as "
+"``x.name(arguments...)``.  Methods are defined as functions inside the class "
 "definition::"
 msgstr ""
 
@@ -2312,8 +2312,8 @@ msgstr ""
 
 #: faq/programming.rst:1511
 msgid ""
-"Note that :func:`isinstance` also checks for virtual inheritance from an :"
-"term:`abstract base class`.  So, the test will return ``True`` for a "
+"Note that :func:`isinstance` also checks for virtual inheritance from "
+"an :term:`abstract base class`.  So, the test will return ``True`` for a "
 "registered class even if hasn't directly or indirectly inherited from it.  "
 "To test for \"true inheritance\", scan the :term:`MRO` of the class:"
 msgstr ""
@@ -2426,19 +2426,19 @@ msgstr ""
 #: faq/programming.rst:1598
 msgid ""
 "Here the ``UpperOut`` class redefines the ``write()`` method to convert the "
-"argument string to uppercase before calling the underlying ``self._outfile."
-"write()`` method.  All other methods are delegated to the underlying ``self."
-"_outfile`` object.  The delegation is accomplished via the :meth:`~object."
-"__getattr__` method; consult :ref:`the language reference <attribute-"
-"access>` for more information about controlling attribute access."
+"argument string to uppercase before calling the underlying "
+"``self._outfile.write()`` method.  All other methods are delegated to the "
+"underlying ``self._outfile`` object.  The delegation is accomplished via "
+"the :meth:`~object.__getattr__` method; consult :ref:`the language reference "
+"<attribute-access>` for more information about controlling attribute access."
 msgstr ""
 
 #: faq/programming.rst:1605
 msgid ""
 "Note that for more general cases delegation can get trickier. When "
-"attributes must be set as well as retrieved, the class must define a :meth:"
-"`~object.__setattr__` method too, and it must do so carefully.  The basic "
-"implementation of :meth:`!__setattr__` is roughly equivalent to the "
+"attributes must be set as well as retrieved, the class must define "
+"a :meth:`~object.__setattr__` method too, and it must do so carefully.  The "
+"basic implementation of :meth:`!__setattr__` is roughly equivalent to the "
 "following::"
 msgstr ""
 
@@ -2453,8 +2453,9 @@ msgstr ""
 
 #: faq/programming.rst:1616
 msgid ""
-"Many :meth:`~object.__setattr__` implementations call :meth:`!object."
-"__setattr__` to set an attribute on self without causing infinite recursion::"
+"Many :meth:`~object.__setattr__` implementations call :meth:`!"
+"object.__setattr__` to set an attribute on self without causing infinite "
+"recursion::"
 msgstr ""
 
 #: faq/programming.rst:1619
@@ -2467,8 +2468,8 @@ msgstr ""
 
 #: faq/programming.rst:1624
 msgid ""
-"Alternatively, it is possible to set attributes by inserting entries into :"
-"attr:`self.__dict__ <object.__dict__>` directly."
+"Alternatively, it is possible to set attributes by inserting entries "
+"into :attr:`self.__dict__ <object.__dict__>` directly."
 msgstr ""
 
 #: faq/programming.rst:1629
@@ -2711,9 +2712,9 @@ msgstr ""
 
 #: faq/programming.rst:1782
 msgid ""
-"The :keyword:`del` statement does not necessarily call :meth:`~object."
-"__del__` -- it simply decrements the object's reference count, and if this "
-"reaches zero :meth:`!__del__` is called."
+"The :keyword:`del` statement does not necessarily "
+"call :meth:`~object.__del__` -- it simply decrements the object's reference "
+"count, and if this reaches zero :meth:`!__del__` is called."
 msgstr ""
 
 #: faq/programming.rst:1786
@@ -2911,8 +2912,8 @@ msgstr ""
 
 #: faq/programming.rst:1932
 msgid ""
-"For example, here is the implementation of :meth:`!collections.abc.Sequence."
-"__contains__`::"
+"For example, here is the implementation of :meth:`!"
+"collections.abc.Sequence.__contains__`::"
 msgstr ""
 
 #: faq/programming.rst:1935
@@ -2989,9 +2990,10 @@ msgstr ""
 
 #: faq/programming.rst:1995
 msgid ""
-"The two principal tools for caching methods are :func:`functools."
-"cached_property` and :func:`functools.lru_cache`.  The former stores results "
-"at the instance level and the latter at the class level."
+"The two principal tools for caching methods "
+"are :func:`functools.cached_property` and :func:`functools.lru_cache`.  The "
+"former stores results at the instance level and the latter at the class "
+"level."
 msgstr ""
 
 #: faq/programming.rst:2000
@@ -3062,8 +3064,9 @@ msgstr ""
 #: faq/programming.rst:2047
 msgid ""
 "To make the *lru_cache* approach work when the *station_id* is mutable, the "
-"class needs to define the :meth:`~object.__eq__` and :meth:`~object."
-"__hash__` methods so that the cache can detect relevant attribute updates::"
+"class needs to define the :meth:`~object.__eq__` "
+"and :meth:`~object.__hash__` methods so that the cache can detect relevant "
+"attribute updates::"
 msgstr ""
 
 #: faq/programming.rst:2051
@@ -3128,19 +3131,19 @@ msgstr ""
 
 #: faq/programming.rst:2096
 msgid ""
-"Running Python on a top level script is not considered an import and no ``."
-"pyc`` will be created.  For example, if you have a top-level module ``foo."
-"py`` that imports another module ``xyz.py``, when you run ``foo`` (by typing "
-"``python foo.py`` as a shell command), a ``.pyc`` will be created for "
+"Running Python on a top level script is not considered an import and no "
+"``.pyc`` will be created.  For example, if you have a top-level module "
+"``foo.py`` that imports another module ``xyz.py``, when you run ``foo`` (by "
+"typing ``python foo.py`` as a shell command), a ``.pyc`` will be created for "
 "``xyz`` because ``xyz`` is imported, but no ``.pyc`` file will be created "
 "for ``foo`` since ``foo.py`` isn't being imported."
 msgstr ""
 
 #: faq/programming.rst:2103
 msgid ""
-"If you need to create a ``.pyc`` file for ``foo`` -- that is, to create a ``."
-"pyc`` file for a module that is not imported -- you can, using the :mod:"
-"`py_compile` and :mod:`compileall` modules."
+"If you need to create a ``.pyc`` file for ``foo`` -- that is, to create a "
+"``.pyc`` file for a module that is not imported -- you can, using "
+"the :mod:`py_compile` and :mod:`compileall` modules."
 msgstr ""
 
 #: faq/programming.rst:2107
@@ -3283,11 +3286,11 @@ msgstr ""
 
 #: faq/programming.rst:2176
 msgid ""
-"Guido van Rossum recommends avoiding all uses of ``from <module> import ..."
-"``, and placing all code inside functions.  Initializations of global "
-"variables and class variables should use constants or built-in functions "
-"only.  This means everything from an imported module is referenced as "
-"``<module>.<name>``."
+"Guido van Rossum recommends avoiding all uses of ``from <module> "
+"import ...``, and placing all code inside functions.  Initializations of "
+"global variables and class variables should use constants or built-in "
+"functions only.  This means everything from an imported module is referenced "
+"as ``<module>.<name>``."
 msgstr ""
 
 #: faq/programming.rst:2181

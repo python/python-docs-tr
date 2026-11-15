@@ -85,8 +85,8 @@ msgstr ""
 #: c-api/slice.rst:60
 msgid ""
 "This function is considered not safe for resizable sequences. Its invocation "
-"should be replaced by a combination of :c:func:`PySlice_Unpack` and :c:func:"
-"`PySlice_AdjustIndices` where ::"
+"should be replaced by a combination of :c:func:`PySlice_Unpack` "
+"and :c:func:`PySlice_AdjustIndices` where ::"
 msgstr ""
 
 #: c-api/slice.rst:64
@@ -157,9 +157,9 @@ msgstr ""
 
 #: c-api/slice.rst:123
 msgid ""
-"The Python ``Ellipsis`` object.  This object has no methods.  Like :c:data:"
-"`Py_None`, it is an `immortal <https://peps.python.org/pep-0683/>`_. "
-"singleton object."
+"The Python ``Ellipsis`` object.  This object has no methods.  "
+"Like :c:data:`Py_None`, it is an `immortal <https://peps.python.org/pep-0683/"
+">`_. singleton object."
 msgstr ""
 
 #: c-api/slice.rst:127

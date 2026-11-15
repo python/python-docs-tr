@@ -34,8 +34,8 @@ msgstr ""
 
 #: library/shutil.rst:25
 msgid ""
-"Even the higher-level file copying functions (:func:`shutil.copy`, :func:"
-"`shutil.copy2`) cannot copy all file metadata."
+"Even the higher-level file copying functions "
+"(:func:`shutil.copy`, :func:`shutil.copy2`) cannot copy all file metadata."
 msgstr ""
 
 #: library/shutil.rst:28
@@ -129,10 +129,10 @@ msgid ""
 "like object>` or path names given as strings. If *follow_symlinks* is false, "
 "and both *src* and *dst* are symbolic links, :func:`copymode` will attempt "
 "to modify the mode of *dst* itself (rather than the file it points to).  "
-"This functionality is not available on every platform; please see :func:"
-"`copystat` for more information.  If :func:`copymode` cannot modify symbolic "
-"links on the local platform, and it is asked to do so, it will do nothing "
-"and return."
+"This functionality is not available on every platform; please "
+"see :func:`copystat` for more information.  If :func:`copymode` cannot "
+"modify symbolic links on the local platform, and it is asked to do so, it "
+"will do nothing and return."
 msgstr ""
 
 #: library/shutil.rst:179
@@ -182,9 +182,9 @@ msgstr ""
 
 #: library/shutil.rst:140
 msgid ""
-"If ``os.chflags in os.supports_follow_symlinks`` is ``True``, :func:"
-"`copystat` can modify the flags of a symbolic link.  (``os.chflags`` is not "
-"available on all platforms.)"
+"If ``os.chflags in os.supports_follow_symlinks`` is "
+"``True``, :func:`copystat` can modify the flags of a symbolic link.  "
+"(``os.chflags`` is not available on all platforms.)"
 msgstr ""
 
 #: library/shutil.rst:145
@@ -250,15 +250,16 @@ msgid ""
 "attempts to copy all metadata from the *src* symbolic link to the newly "
 "created *dst* symbolic link. However, this functionality is not available on "
 "all platforms. On platforms where some or all of this functionality is "
-"unavailable, :func:`copy2` will preserve all the metadata it can; :func:"
-"`copy2` never raises an exception because it cannot preserve file metadata."
+"unavailable, :func:`copy2` will preserve all the metadata it "
+"can; :func:`copy2` never raises an exception because it cannot preserve file "
+"metadata."
 msgstr ""
 
 #: library/shutil.rst:204
 msgid ""
-":func:`copy2` uses :func:`copystat` to copy the file metadata. Please see :"
-"func:`copystat` for more information about platform support for modifying "
-"symbolic link metadata."
+":func:`copy2` uses :func:`copystat` to copy the file metadata. Please "
+"see :func:`copystat` for more information about platform support for "
+"modifying symbolic link metadata."
 msgstr ""
 
 #: library/shutil.rst:212
@@ -270,9 +271,9 @@ msgstr ""
 
 #: library/shutil.rst:224
 msgid ""
-"This factory function creates a function that can be used as a callable for :"
-"func:`copytree`\\'s *ignore* argument, ignoring files and directories that "
-"match one of the glob-style *patterns* provided.  See the example below."
+"This factory function creates a function that can be used as a callable "
+"for :func:`copytree`\\'s *ignore* argument, ignoring files and directories "
+"that match one of the glob-style *patterns* provided.  See the example below."
 msgstr ""
 
 #: library/shutil.rst:233
@@ -299,9 +300,9 @@ msgstr ""
 #: library/shutil.rst:245
 msgid ""
 "When *symlinks* is false, if the file pointed to by the symlink doesn't "
-"exist, an exception will be added in the list of errors raised in an :exc:"
-"`Error` exception at the end of the copy process. You can set the optional "
-"*ignore_dangling_symlinks* flag to true if you want to silence this "
+"exist, an exception will be added in the list of errors raised in "
+"an :exc:`Error` exception at the end of the copy process. You can set the "
+"optional *ignore_dangling_symlinks* flag to true if you want to silence this "
 "exception. Notice that this option has no effect on platforms that don't "
 "support :func:`os.symlink`."
 msgstr ""
@@ -334,8 +335,8 @@ msgstr ""
 
 #: library/shutil.rst:269
 msgid ""
-"If *dirs_exist_ok* is false (the default) and *dst* already exists, a :exc:"
-"`FileExistsError` is raised. If *dirs_exist_ok* is true, the copying "
+"If *dirs_exist_ok* is false (the default) and *dst* already exists, "
+"a :exc:`FileExistsError` is raised. If *dirs_exist_ok* is true, the copying "
 "operation will continue if it encounters existing directories, and files "
 "within the *dst* tree will be overwritten by corresponding files from the "
 "*src* tree."
@@ -473,9 +474,9 @@ msgstr ""
 msgid ""
 "If *copy_function* is given, it must be a callable that takes two arguments, "
 "*src* and the destination, and will be used to copy *src* to the destination "
-"if :func:`os.rename` cannot be used.  If the source is a directory, :func:"
-"`copytree` is called, passing it the *copy_function*. The default "
-"*copy_function* is :func:`copy2`.  Using :func:`~shutil.copy` as the "
+"if :func:`os.rename` cannot be used.  If the source is a "
+"directory, :func:`copytree` is called, passing it the *copy_function*. The "
+"default *copy_function* is :func:`copy2`.  Using :func:`~shutil.copy` as the "
 "*copy_function* allows the move to succeed when it is not possible to also "
 "copy the metadata, at the expense of not copying any of the metadata."
 msgstr ""
@@ -557,9 +558,9 @@ msgstr ""
 #: library/shutil.rst:442
 msgid ""
 "*path* is a \"``PATH`` string\" specifying the directories to look in, "
-"delimited by :data:`os.pathsep`. When no *path* is specified, the :envvar:"
-"`PATH` environment variable is read from :data:`os.environ`, falling back "
-"to :data:`os.defpath` if it is not set."
+"delimited by :data:`os.pathsep`. When no *path* is specified, "
+"the :envvar:`PATH` environment variable is read from :data:`os.environ`, "
+"falling back to :data:`os.defpath` if it is not set."
 msgstr ""
 
 #: library/shutil.rst:447
@@ -636,12 +637,12 @@ msgstr ""
 
 #: library/shutil.rst:501
 msgid ""
-"Starting from Python 3.8, all functions involving a file copy (:func:"
-"`copyfile`, :func:`~shutil.copy`, :func:`copy2`, :func:`copytree`, and :func:"
-"`move`) may use platform-specific \"fast-copy\" syscalls in order to copy "
-"the file more efficiently (see :issue:`33671`). \"fast-copy\" means that the "
-"copying operation occurs within the kernel, avoiding the use of userspace "
-"buffers in Python as in \"``outfd.write(infd.read())``\"."
+"Starting from Python 3.8, all functions involving a file copy "
+"(:func:`copyfile`, :func:`~shutil.copy`, :func:`copy2`, :func:`copytree`, "
+"and :func:`move`) may use platform-specific \"fast-copy\" syscalls in order "
+"to copy the file more efficiently (see :issue:`33671`). \"fast-copy\" means "
+"that the copying operation occurs within the kernel, avoiding the use of "
+"userspace buffers in Python as in \"``outfd.write(infd.read())``\"."
 msgstr ""
 
 #: library/shutil.rst:509
@@ -655,15 +656,15 @@ msgstr ""
 #: library/shutil.rst:513
 msgid ""
 "On Windows :func:`shutil.copyfile` uses a bigger default buffer size (1 MiB "
-"instead of 64 KiB) and a :func:`memoryview`-based variant of :func:`shutil."
-"copyfileobj` is used."
+"instead of 64 KiB) and a :func:`memoryview`-based variant "
+"of :func:`shutil.copyfileobj` is used."
 msgstr ""
 
 #: library/shutil.rst:517
 msgid ""
 "If the fast-copy operation fails and no data was written in the destination "
-"file then shutil will silently fallback on using less efficient :func:"
-"`copyfileobj` function internally."
+"file then shutil will silently fallback on using less "
+"efficient :func:`copyfileobj` function internally."
 msgstr ""
 
 #: library/shutil.rst:526
@@ -756,8 +757,8 @@ msgstr ""
 msgid ""
 "*format* is the archive format: one of \"zip\" (if the :mod:`zlib` module is "
 "available), \"tar\", \"gztar\" (if the :mod:`zlib` module is available), "
-"\"bztar\" (if the :mod:`bz2` module is available), or \"xztar\" (if the :mod:"
-"`lzma` module is available)."
+"\"bztar\" (if the :mod:`bz2` module is available), or \"xztar\" (if "
+"the :mod:`lzma` module is available)."
 msgstr ""
 
 #: library/shutil.rst:595
@@ -809,10 +810,10 @@ msgstr ""
 
 #: library/shutil.rst:622
 msgid ""
-"This function is not thread-safe when custom archivers registered with :func:"
-"`register_archive_format` do not support the *root_dir* argument.  In this "
-"case it temporarily changes the current working directory of the process to "
-"*root_dir* to perform archiving."
+"This function is not thread-safe when custom archivers registered "
+"with :func:`register_archive_format` do not support the *root_dir* "
+"argument.  In this case it temporarily changes the current working directory "
+"of the process to *root_dir* to perform archiving."
 msgstr ""
 
 #: library/shutil.rst:628
@@ -919,10 +920,11 @@ msgstr ""
 #: library/shutil.rst:691
 msgid ""
 "*format* is the archive format: one of \"zip\", \"tar\", \"gztar\", "
-"\"bztar\", or \"xztar\".  Or any other format registered with :func:"
-"`register_unpack_format`.  If not provided, :func:`unpack_archive` will use "
-"the archive file name extension and see if an unpacker was registered for "
-"that extension.  In case none is found, a :exc:`ValueError` is raised."
+"\"bztar\", or \"xztar\".  Or any other format registered "
+"with :func:`register_unpack_format`.  If not "
+"provided, :func:`unpack_archive` will use the archive file name extension "
+"and see if an unpacker was registered for that extension.  In case none is "
+"found, a :exc:`ValueError` is raised."
 msgstr ""
 
 #: library/shutil.rst:698
@@ -960,8 +962,8 @@ msgstr ""
 #: library/shutil.rst:723
 msgid ""
 "Registers an unpack format. *name* is the name of the format and "
-"*extensions* is a list of extensions corresponding to the format, like ``."
-"zip`` for Zip files."
+"*extensions* is a list of extensions corresponding to the format, like "
+"``.zip`` for Zip files."
 msgstr ""
 
 #: library/shutil.rst:727
@@ -981,8 +983,8 @@ msgstr ""
 
 #: library/shutil.rst:732
 msgid ""
-"possibly a *filter* keyword argument, if it was given to :func:"
-"`unpack_archive`;"
+"possibly a *filter* keyword argument, if it was given "
+"to :func:`unpack_archive`;"
 msgstr ""
 
 #: library/shutil.rst:734
@@ -1084,8 +1086,8 @@ msgstr ""
 
 #: library/shutil.rst:814
 msgid ""
-"In the final archive, :file:`please_add.txt` should be included, but :file:"
-"`do_not_add.txt` should not.  Therefore we use the following::"
+"In the final archive, :file:`please_add.txt` should be included, "
+"but :file:`do_not_add.txt` should not.  Therefore we use the following::"
 msgstr ""
 
 #: library/shutil.rst:817
@@ -1131,8 +1133,8 @@ msgstr ""
 #: library/shutil.rst:848
 msgid ""
 "When ``COLUMNS`` or ``LINES`` is not defined, which is the common case, the "
-"terminal connected to :data:`sys.__stdout__` is queried by invoking :func:"
-"`os.get_terminal_size`."
+"terminal connected to :data:`sys.__stdout__` is queried by "
+"invoking :func:`os.get_terminal_size`."
 msgstr ""
 
 #: library/shutil.rst:852

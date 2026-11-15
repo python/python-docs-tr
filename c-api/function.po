@@ -31,15 +31,15 @@ msgstr ""
 #: c-api/function.rst:22
 msgid ""
 "This is an instance of :c:type:`PyTypeObject` and represents the Python "
-"function type.  It is exposed to Python programmers as ``types."
-"FunctionType``."
+"function type.  It is exposed to Python programmers as "
+"``types.FunctionType``."
 msgstr ""
 
 #: c-api/function.rst:28
 msgid ""
-"Return true if *o* is a function object (has type :c:data:"
-"`PyFunction_Type`). The parameter must not be ``NULL``.  This function "
-"always succeeds."
+"Return true if *o* is a function object (has "
+"type :c:data:`PyFunction_Type`). The parameter must not be ``NULL``.  This "
+"function always succeeds."
 msgstr ""
 
 #: c-api/function.rst:34
@@ -51,19 +51,20 @@ msgstr ""
 
 #: c-api/function.rst:37
 msgid ""
-"The function's docstring and name are retrieved from the code object. :attr:"
-"`~function.__module__` is retrieved from *globals*. The argument defaults, "
-"annotations and closure are set to ``NULL``. :attr:`~function.__qualname__` "
-"is set to the same value as the code object's :attr:`~codeobject."
-"co_qualname` field."
+"The function's docstring and name are retrieved from the code "
+"object. :attr:`~function.__module__` is retrieved from *globals*. The "
+"argument defaults, annotations and closure are set to "
+"``NULL``. :attr:`~function.__qualname__` is set to the same value as the "
+"code object's :attr:`~codeobject.co_qualname` field."
 msgstr ""
 
 #: c-api/function.rst:46
 msgid ""
-"As :c:func:`PyFunction_New`, but also allows setting the function object's :"
-"attr:`~function.__qualname__` attribute. *qualname* should be a unicode "
-"object or ``NULL``; if ``NULL``, the :attr:`!__qualname__` attribute is set "
-"to the same value as the code object's :attr:`~codeobject.co_qualname` field."
+"As :c:func:`PyFunction_New`, but also allows setting the function "
+"object's :attr:`~function.__qualname__` attribute. *qualname* should be a "
+"unicode object or ``NULL``; if ``NULL``, the :attr:`!__qualname__` attribute "
+"is set to the same value as the code "
+"object's :attr:`~codeobject.co_qualname` field."
 msgstr ""
 
 #: c-api/function.rst:57
@@ -147,10 +148,10 @@ msgstr ""
 
 #: c-api/function.rst:138
 msgid ""
-"Clear watcher identified by *watcher_id* previously returned from :c:func:"
-"`PyFunction_AddWatcher` for the current interpreter. Return ``0`` on "
-"success, or ``-1`` and set an exception on error (e.g.  if the given "
-"*watcher_id* was never registered.)"
+"Clear watcher identified by *watcher_id* previously returned "
+"from :c:func:`PyFunction_AddWatcher` for the current interpreter. Return "
+"``0`` on success, or ``-1`` and set an exception on error (e.g.  if the "
+"given *watcher_id* was never registered.)"
 msgstr ""
 
 #: c-api/function.rst:148
@@ -168,9 +169,9 @@ msgstr ""
 #: c-api/function.rst:162
 msgid ""
 "If *event* is ``PyFunction_EVENT_CREATE`` or ``PyFunction_EVENT_DESTROY`` "
-"then *new_value* will be ``NULL``. Otherwise, *new_value* will hold a :term:"
-"`borrowed reference` to the new value that is about to be stored in *func* "
-"for the attribute that is being modified."
+"then *new_value* will be ``NULL``. Otherwise, *new_value* will hold "
+"a :term:`borrowed reference` to the new value that is about to be stored in "
+"*func* for the attribute that is being modified."
 msgstr ""
 
 #: c-api/function.rst:167
@@ -202,8 +203,8 @@ msgstr ""
 #: c-api/function.rst:184
 msgid ""
 "If the callback sets an exception, it must return ``-1``; this exception "
-"will be printed as an unraisable exception using :c:func:"
-"`PyErr_WriteUnraisable`. Otherwise it should return ``0``."
+"will be printed as an unraisable exception "
+"using :c:func:`PyErr_WriteUnraisable`. Otherwise it should return ``0``."
 msgstr ""
 
 #: c-api/function.rst:188

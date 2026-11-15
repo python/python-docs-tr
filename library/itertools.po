@@ -463,11 +463,11 @@ msgstr ""
 
 #: library/itertools.rst:134
 msgid ""
-"The *function* argument can be set to :func:`min` for a running minimum, :"
-"func:`max` for a running maximum, or :func:`operator.mul` for a running "
-"product.  `Amortization tables <https://www.ramseysolutions.com/real-estate/"
-"amortization-schedule>`_ can be built by accumulating interest and applying "
-"payments:"
+"The *function* argument can be set to :func:`min` for a running "
+"minimum, :func:`max` for a running maximum, or :func:`operator.mul` for a "
+"running product.  `Amortization tables <https://www.ramseysolutions.com/real-"
+"estate/amortization-schedule>`_ can be built by accumulating interest and "
+"applying payments:"
 msgstr ""
 
 #: library/itertools.rst:140
@@ -568,9 +568,9 @@ msgstr ""
 #: library/itertools.rst:223
 msgid ""
 "The output is a subsequence of :func:`product` keeping only entries that are "
-"subsequences of the *iterable*.  The length of the output is given by :func:"
-"`math.comb` which computes ``n! / r! / (n - r)!`` when ``0 ≤ r ≤ n`` or zero "
-"when ``r > n``."
+"subsequences of the *iterable*.  The length of the output is given "
+"by :func:`math.comb` which computes ``n! / r! / (n - r)!`` when ``0 ≤ r ≤ "
+"n`` or zero when ``r > n``."
 msgstr ""
 
 #: library/itertools.rst:228
@@ -679,8 +679,8 @@ msgstr ""
 #: library/itertools.rst:319
 msgid ""
 "Make an iterator that returns evenly spaced values beginning with *start*. "
-"Can be used with :func:`map` to generate consecutive data points or with :"
-"func:`zip` to add sequence numbers.  Roughly equivalent to::"
+"Can be used with :func:`map` to generate consecutive data points or "
+"with :func:`zip` to add sequence numbers.  Roughly equivalent to::"
 msgstr ""
 
 #: library/itertools.rst:324
@@ -798,9 +798,9 @@ msgstr ""
 #: library/itertools.rst:412
 msgid ""
 "The returned group is itself an iterator that shares the underlying iterable "
-"with :func:`groupby`.  Because the source is shared, when the :func:"
-"`groupby` object is advanced, the previous group is no longer visible.  So, "
-"if that data is needed later, it should be stored as a list::"
+"with :func:`groupby`.  Because the source is shared, when "
+"the :func:`groupby` object is advanced, the previous group is no longer "
+"visible.  So, if that data is needed later, it should be stored as a list::"
 msgstr ""
 
 #: library/itertools.rst:417
@@ -925,8 +925,8 @@ msgstr ""
 
 #: library/itertools.rst:522
 msgid ""
-"Return successive *r* length `permutations of elements <https://www."
-"britannica.com/science/permutation>`_ from the *iterable*."
+"Return successive *r* length `permutations of elements <https://"
+"www.britannica.com/science/permutation>`_ from the *iterable*."
 msgstr ""
 
 #: library/itertools.rst:525
@@ -938,9 +938,9 @@ msgstr ""
 #: library/itertools.rst:529
 msgid ""
 "The output is a subsequence of :func:`product` where entries with repeated "
-"elements have been filtered out.  The length of the output is given by :func:"
-"`math.perm` which computes ``n! / (n - r)!`` when ``0 ≤ r ≤ n`` or zero when "
-"``r > n``."
+"elements have been filtered out.  The length of the output is given "
+"by :func:`math.perm` which computes ``n! / (n - r)!`` when ``0 ≤ r ≤ n`` or "
+"zero when ``r > n``."
 msgstr ""
 
 #: library/itertools.rst:534
@@ -1117,8 +1117,9 @@ msgid ""
 "the input iterator and there is no way to access it. This could be an issue "
 "if an application wants to further consume the input iterator after "
 "*takewhile* has been run to exhaustion.  To work around this problem, "
-"consider using `more-iterools before_and_after() <https://more-itertools."
-"readthedocs.io/en/stable/api.html#more_itertools.before_and_after>`_ instead."
+"consider using `more-iterools before_and_after() <https://more-"
+"itertools.readthedocs.io/en/stable/"
+"api.html#more_itertools.before_and_after>`_ instead."
 msgstr ""
 
 #: library/itertools.rst:674
@@ -1172,8 +1173,8 @@ msgstr ""
 msgid ""
 "This itertool may require significant auxiliary storage (depending on how "
 "much temporary data needs to be stored). In general, if one iterator uses "
-"most or all of the data before another iterator starts, it is faster to use :"
-"func:`list` instead of :func:`tee`."
+"most or all of the data before another iterator starts, it is faster to "
+"use :func:`list` instead of :func:`tee`."
 msgstr ""
 
 #: library/itertools.rst:723
@@ -1217,9 +1218,9 @@ msgstr ""
 
 #: library/itertools.rst:755
 msgid ""
-"If one of the iterables is potentially infinite, then the :func:"
-"`zip_longest` function should be wrapped with something that limits the "
-"number of calls (for example :func:`islice` or :func:`takewhile`)."
+"If one of the iterables is potentially infinite, then "
+"the :func:`zip_longest` function should be wrapped with something that "
+"limits the number of calls (for example :func:`islice` or :func:`takewhile`)."
 msgstr ""
 
 #: library/itertools.rst:763
@@ -1239,9 +1240,9 @@ msgid ""
 "``chain.from_iterable`` is related to the concept of flattening.  The "
 "recipes also give ideas about ways that the tools can be combined — for "
 "example, how ``starmap()`` and ``repeat()`` can work together.  The recipes "
-"also show patterns for using itertools with the :mod:`operator` and :mod:"
-"`collections` modules as well as with the built-in itertools such as "
-"``map()``, ``filter()``, ``reversed()``, and ``enumerate()``."
+"also show patterns for using itertools with the :mod:`operator` "
+"and :mod:`collections` modules as well as with the built-in itertools such "
+"as ``map()``, ``filter()``, ``reversed()``, and ``enumerate()``."
 msgstr ""
 
 #: library/itertools.rst:777
@@ -1413,8 +1414,8 @@ msgid ""
 "def partition(predicate, iterable):\n"
 "    \"\"\"Partition entries into false entries and true entries.\n"
 "\n"
-"    If *predicate* is slow, consider wrapping it with functools."
-"lru_cache().\n"
+"    If *predicate* is slow, consider wrapping it with "
+"functools.lru_cache().\n"
 "    \"\"\"\n"
 "    # partition(is_odd, range(10)) → 0 2 4 6 8   and  1 3 5 7 9\n"
 "    t1, t2 = tee(iterable)\n"

@@ -36,9 +36,10 @@ msgstr ""
 
 #: library/pdb.rst:26
 msgid ""
-"The debugger is extensible -- it is actually defined as the class :class:"
-"`Pdb`. This is currently undocumented but easily understood by reading the "
-"source.  The extension interface uses the modules :mod:`bdb` and :mod:`cmd`."
+"The debugger is extensible -- it is actually defined as the "
+"class :class:`Pdb`. This is currently undocumented but easily understood by "
+"reading the source.  The extension interface uses the modules :mod:`bdb` "
+"and :mod:`cmd`."
 msgstr ""
 
 #: library/pdb.rst:32
@@ -206,8 +207,8 @@ msgid ""
 "statement using :pdbcmd:`step` or :pdbcmd:`next` (all these commands are "
 "explained below).  The optional *globals* and *locals* arguments specify the "
 "environment in which the code is executed; by default the dictionary of the "
-"module :mod:`__main__` is used.  (See the explanation of the built-in :func:"
-"`exec` or :func:`eval` functions.)"
+"module :mod:`__main__` is used.  (See the explanation of the built-"
+"in :func:`exec` or :func:`eval` functions.)"
 msgstr ""
 
 #: library/pdb.rst:144
@@ -247,8 +248,8 @@ msgstr ""
 
 #: library/pdb.rst:178
 msgid ""
-"Enter post-mortem debugging of the traceback found in :data:`sys."
-"last_traceback`."
+"Enter post-mortem debugging of the traceback found "
+"in :data:`sys.last_traceback`."
 msgstr ""
 
 #: library/pdb.rst:182
@@ -278,16 +279,16 @@ msgstr ""
 #: library/pdb.rst:198
 msgid ""
 "By default, Pdb sets a handler for the SIGINT signal (which is sent when the "
-"user presses :kbd:`Ctrl-C` on the console) when you give a :pdbcmd:"
-"`continue` command. This allows you to break into the debugger again by "
-"pressing :kbd:`Ctrl-C`.  If you want Pdb not to touch the SIGINT handler, "
-"set *nosigint* to true."
+"user presses :kbd:`Ctrl-C` on the console) when you give "
+"a :pdbcmd:`continue` command. This allows you to break into the debugger "
+"again by pressing :kbd:`Ctrl-C`.  If you want Pdb not to touch the SIGINT "
+"handler, set *nosigint* to true."
 msgstr ""
 
 #: library/pdb.rst:203
 msgid ""
-"The *readrc* argument defaults to true and controls whether Pdb will load ."
-"pdbrc files from the filesystem."
+"The *readrc* argument defaults to true and controls whether Pdb will "
+"load .pdbrc files from the filesystem."
 msgstr ""
 
 #: library/pdb.rst:206
@@ -414,8 +415,8 @@ msgstr ""
 
 #: library/pdb.rst:294
 msgid ""
-":file:`.pdbrc` can now contain commands that continue debugging, such as :"
-"pdbcmd:`continue` or :pdbcmd:`next`.  Previously, these commands had no "
+":file:`.pdbrc` can now contain commands that continue debugging, such "
+"as :pdbcmd:`continue` or :pdbcmd:`next`.  Previously, these commands had no "
 "effect."
 msgstr ""
 
@@ -553,13 +554,13 @@ msgstr ""
 
 #: library/pdb.rst:399
 msgid ""
-"Specifying any command resuming execution (currently :pdbcmd:`continue`, :"
-"pdbcmd:`step`, :pdbcmd:`next`, :pdbcmd:`return`, :pdbcmd:`jump`, :pdbcmd:"
-"`quit` and their abbreviations) terminates the command list (as if that "
-"command was immediately followed by end). This is because any time you "
-"resume execution (even with a simple next or step), you may encounter "
-"another breakpoint—which could have its own command list, leading to "
-"ambiguities about which list to execute."
+"Specifying any command resuming execution "
+"(currently :pdbcmd:`continue`, :pdbcmd:`step`, :pdbcmd:`next`, :pdbcmd:`return`, :pdbcmd:`jump`, :pdbcmd:`quit` "
+"and their abbreviations) terminates the command list (as if that command was "
+"immediately followed by end). This is because any time you resume execution "
+"(even with a simple next or step), you may encounter another breakpoint—"
+"which could have its own command list, leading to ambiguities about which "
+"list to execute."
 msgstr ""
 
 #: library/pdb.rst:408
@@ -621,8 +622,8 @@ msgstr ""
 #: library/pdb.rst:452
 msgid ""
 "It should be noted that not all jumps are allowed -- for instance it is not "
-"possible to jump into the middle of a :keyword:`for` loop or out of a :"
-"keyword:`finally` clause."
+"possible to jump into the middle of a :keyword:`for` loop or out of "
+"a :keyword:`finally` clause."
 msgstr ""
 
 #: library/pdb.rst:458
@@ -785,8 +786,8 @@ msgstr ""
 
 #: library/pdb.rst:592
 msgid ""
-"As an example, here are two useful aliases (especially when placed in the :"
-"file:`.pdbrc` file)::"
+"As an example, here are two useful aliases (especially when placed in "
+"the :file:`.pdbrc` file)::"
 msgstr ""
 
 #: library/pdb.rst:595
@@ -816,8 +817,8 @@ msgstr ""
 
 #: library/pdb.rst:615
 msgid ""
-"To set a global variable, you can prefix the assignment command with a :"
-"keyword:`global` statement on the same line, e.g.:"
+"To set a global variable, you can prefix the assignment command with "
+"a :keyword:`global` statement on the same line, e.g.:"
 msgstr ""
 
 #: library/pdb.rst:618
@@ -830,8 +831,8 @@ msgstr ""
 msgid ""
 "Restart the debugged Python program.  If *args* is supplied, it is split "
 "with :mod:`shlex` and the result is used as the new :data:`sys.argv`. "
-"History, breakpoints, actions and debugger options are preserved. :pdbcmd:"
-"`restart` is an alias for :pdbcmd:`run`."
+"History, breakpoints, actions and debugger options are "
+"preserved. :pdbcmd:`restart` is an alias for :pdbcmd:`run`."
 msgstr ""
 
 #: library/pdb.rst:633

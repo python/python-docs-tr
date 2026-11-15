@@ -46,14 +46,14 @@ msgstr ""
 
 #: library/constants.rst:30
 msgid ""
-"A special value which should be returned by the binary special methods (e."
-"g. :meth:`~object.__eq__`, :meth:`~object.__lt__`, :meth:`~object.__add__`, :"
-"meth:`~object.__rsub__`, etc.) to indicate that the operation is not "
-"implemented with respect to the other type; may be returned by the in-place "
-"binary special methods (e.g. :meth:`~object.__imul__`, :meth:`~object."
-"__iand__`, etc.) for the same purpose. It should not be evaluated in a "
-"boolean context. :data:`!NotImplemented` is the sole instance of the :data:"
-"`types.NotImplementedType` type."
+"A special value which should be returned by the binary special methods "
+"(e.g. :meth:`~object.__eq__`, :meth:`~object.__lt__`, :meth:`~object.__add__`, :meth:`~object.__rsub__`, "
+"etc.) to indicate that the operation is not implemented with respect to the "
+"other type; may be returned by the in-place binary special methods "
+"(e.g. :meth:`~object.__imul__`, :meth:`~object.__iand__`, etc.) for the same "
+"purpose. It should not be evaluated in a boolean context. :data:`!"
+"NotImplemented` is the sole instance of the :data:`types.NotImplementedType` "
+"type."
 msgstr ""
 
 #: library/constants.rst:40
@@ -74,8 +74,8 @@ msgstr ""
 #: library/constants.rst:51
 msgid ""
 "``NotImplementedError`` and :data:`!NotImplemented` are not interchangeable, "
-"even though they have similar names and purposes. See :exc:"
-"`NotImplementedError` for details on when to use it."
+"even though they have similar names and purposes. "
+"See :exc:`NotImplementedError` for details on when to use it."
 msgstr ""
 
 #: library/constants.rst:55
@@ -102,8 +102,8 @@ msgstr ""
 #: library/constants.rst:77
 msgid ""
 "The names :data:`None`, :data:`False`, :data:`True` and :data:`__debug__` "
-"cannot be reassigned (assignments to them, even as an attribute name, raise :"
-"exc:`SyntaxError`), so they can be considered \"true\" constants."
+"cannot be reassigned (assignments to them, even as an attribute name, "
+"raise :exc:`SyntaxError`), so they can be considered \"true\" constants."
 msgstr ""
 
 #: library/constants.rst:85

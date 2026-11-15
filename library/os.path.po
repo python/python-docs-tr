@@ -56,12 +56,12 @@ msgstr ""
 #: library/os.path.rst:37
 msgid ""
 "Since different operating systems have different path name conventions, "
-"there are several versions of this module in the standard library.  The :mod:"
-"`os.path` module is always the path module suitable for the operating system "
-"Python is running on, and therefore usable for local paths.  However, you "
-"can also import and use the individual modules if you want to manipulate a "
-"path that is *always* in one of the different formats.  They all have the "
-"same interface:"
+"there are several versions of this module in the standard library.  "
+"The :mod:`os.path` module is always the path module suitable for the "
+"operating system Python is running on, and therefore usable for local "
+"paths.  However, you can also import and use the individual modules if you "
+"want to manipulate a path that is *always* in one of the different formats.  "
+"They all have the same interface:"
 msgstr ""
 
 #: library/os.path.rst:45
@@ -74,10 +74,9 @@ msgstr ""
 
 #: library/os.path.rst:51
 msgid ""
-":func:`exists`, :func:`lexists`, :func:`isdir`, :func:`isfile`, :func:"
-"`islink`, and :func:`ismount` now return ``False`` instead of raising an "
-"exception for paths that contain characters or bytes unrepresentable at the "
-"OS level."
+":func:`exists`, :func:`lexists`, :func:`isdir`, :func:`isfile`, :func:`islink`, "
+"and :func:`ismount` now return ``False`` instead of raising an exception for "
+"paths that contain characters or bytes unrepresentable at the OS level."
 msgstr ""
 
 #: library/os.path.rst:59
@@ -162,8 +161,8 @@ msgstr ""
 #: library/os.path.rst:145
 msgid ""
 "Return ``True`` if *path* refers to an existing path, including broken "
-"symbolic links.   Equivalent to :func:`exists` on platforms lacking :func:"
-"`os.lstat`."
+"symbolic links.   Equivalent to :func:`exists` on platforms "
+"lacking :func:`os.lstat`."
 msgstr ""
 
 #: library/os.path.rst:157
@@ -174,10 +173,11 @@ msgstr ""
 
 #: library/os.path.rst:162
 msgid ""
-"On Unix, an initial ``~`` is replaced by the environment variable :envvar:"
-"`HOME` if it is set; otherwise the current user's home directory is looked "
-"up in the password directory through the built-in module :mod:`pwd`. An "
-"initial ``~user`` is looked up directly in the password directory."
+"On Unix, an initial ``~`` is replaced by the environment "
+"variable :envvar:`HOME` if it is set; otherwise the current user's home "
+"directory is looked up in the password directory through the built-in "
+"module :mod:`pwd`. An initial ``~user`` is looked up directly in the "
+"password directory."
 msgstr ""
 
 #: library/os.path.rst:167
@@ -216,9 +216,9 @@ msgstr ""
 #: library/os.path.rst:201
 msgid ""
 "Return the time of last access of *path*.  The return value is a floating-"
-"point number giving the number of seconds since the epoch (see the  :mod:"
-"`time` module).  Raise :exc:`OSError` if the file does not exist or is "
-"inaccessible."
+"point number giving the number of seconds since the epoch (see "
+"the  :mod:`time` module).  Raise :exc:`OSError` if the file does not exist "
+"or is inaccessible."
 msgstr ""
 
 #: library/os.path.rst:208
@@ -333,9 +333,9 @@ msgid ""
 "On Windows, the drive is not reset when a rooted path segment (e.g., "
 "``r'\\foo'``) is encountered. If a segment is on a different drive or is an "
 "absolute path, all previous segments are ignored and the drive is reset. "
-"Note that since there is a current directory for each drive, ``os.path."
-"join(\"c:\", \"foo\")`` represents a path relative to the current directory "
-"on drive :file:`C:` (:file:`c:foo`), not :file:`c:\\\\foo`."
+"Note that since there is a current directory for each drive, "
+"``os.path.join(\"c:\", \"foo\")`` represents a path relative to the current "
+"directory on drive :file:`C:` (:file:`c:foo`), not :file:`c:\\\\foo`."
 msgstr ""
 
 #: library/os.path.rst:340
@@ -441,9 +441,10 @@ msgstr ""
 #: library/os.path.rst:446
 msgid ""
 "Return ``True`` if the stat tuples *stat1* and *stat2* refer to the same "
-"file. These structures may have been returned by :func:`os.fstat`, :func:`os."
-"lstat`, or :func:`os.stat`.  This function implements the underlying "
-"comparison used by :func:`samefile` and :func:`sameopenfile`."
+"file. These structures may have been returned "
+"by :func:`os.fstat`, :func:`os.lstat`, or :func:`os.stat`.  This function "
+"implements the underlying comparison used by :func:`samefile` "
+"and :func:`sameopenfile`."
 msgstr ""
 
 #: library/os.path.rst:460

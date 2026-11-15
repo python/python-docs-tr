@@ -103,8 +103,8 @@ msgstr ""
 #: library/asyncio-subprocess.rst:69 library/asyncio-subprocess.rst:87
 msgid ""
 "The *limit* argument sets the buffer limit for :class:`StreamReader` "
-"wrappers for :attr:`Process.stdout` and :attr:`Process.stderr` (if :const:"
-"`subprocess.PIPE` is passed to *stdout* and *stderr* arguments)."
+"wrappers for :attr:`Process.stdout` and :attr:`Process.stderr` "
+"(if :const:`subprocess.PIPE` is passed to *stdout* and *stderr* arguments)."
 msgstr ""
 
 #: library/asyncio-subprocess.rst:73 library/asyncio-subprocess.rst:91
@@ -148,11 +148,10 @@ msgstr ""
 
 #: library/asyncio-subprocess.rst:116
 msgid ""
-"asyncio also has the following *low-level* APIs to work with subprocesses: :"
-"meth:`loop.subprocess_exec`, :meth:`loop.subprocess_shell`, :meth:`loop."
-"connect_read_pipe`, :meth:`loop.connect_write_pipe`, as well as the :ref:"
-"`Subprocess Transports <asyncio-subprocess-transports>` and :ref:`Subprocess "
-"Protocols <asyncio-subprocess-protocols>`."
+"asyncio also has the following *low-level* APIs to work with "
+"subprocesses: :meth:`loop.subprocess_exec`, :meth:`loop.subprocess_shell`, :meth:`loop.connect_read_pipe`, :meth:`loop.connect_write_pipe`, "
+"as well as the :ref:`Subprocess Transports <asyncio-subprocess-transports>` "
+"and :ref:`Subprocess Protocols <asyncio-subprocess-protocols>`."
 msgstr ""
 
 #: library/asyncio-subprocess.rst:124
@@ -165,17 +164,17 @@ msgstr ""
 
 #: library/asyncio-subprocess.rst:131
 msgid ""
-"If *PIPE* is passed to *stdin* argument, the :attr:`Process.stdin <asyncio."
-"subprocess.Process.stdin>` attribute will point to a :class:`StreamWriter` "
-"instance."
+"If *PIPE* is passed to *stdin* argument, the :attr:`Process.stdin "
+"<asyncio.subprocess.Process.stdin>` attribute will point to "
+"a :class:`StreamWriter` instance."
 msgstr ""
 
 #: library/asyncio-subprocess.rst:135
 msgid ""
-"If *PIPE* is passed to *stdout* or *stderr* arguments, the :attr:`Process."
-"stdout <asyncio.subprocess.Process.stdout>` and :attr:`Process.stderr "
-"<asyncio.subprocess.Process.stderr>` attributes will point to :class:"
-"`StreamReader` instances."
+"If *PIPE* is passed to *stdout* or *stderr* arguments, "
+"the :attr:`Process.stdout <asyncio.subprocess.Process.stdout>` "
+"and :attr:`Process.stderr <asyncio.subprocess.Process.stderr>` attributes "
+"will point to :class:`StreamReader` instances."
 msgstr ""
 
 #: library/asyncio-subprocess.rst:143
@@ -187,8 +186,8 @@ msgstr ""
 #: library/asyncio-subprocess.rst:149
 msgid ""
 "Special value that can be used as the *stdin*, *stdout* or *stderr* argument "
-"to process creation functions.  It indicates that the special file :data:`os."
-"devnull` will be used for the corresponding subprocess stream."
+"to process creation functions.  It indicates that the special "
+"file :data:`os.devnull` will be used for the corresponding subprocess stream."
 msgstr ""
 
 #: library/asyncio-subprocess.rst:155
@@ -205,27 +204,28 @@ msgstr ""
 
 #: library/asyncio-subprocess.rst:165
 msgid ""
-"An object that wraps OS processes created by the :func:"
-"`create_subprocess_exec` and :func:`create_subprocess_shell` functions."
+"An object that wraps OS processes created by "
+"the :func:`create_subprocess_exec` and :func:`create_subprocess_shell` "
+"functions."
 msgstr ""
 
 #: library/asyncio-subprocess.rst:169
 msgid ""
-"This class is designed to have a similar API to the :class:`subprocess."
-"Popen` class, but there are some notable differences:"
+"This class is designed to have a similar API to "
+"the :class:`subprocess.Popen` class, but there are some notable differences:"
 msgstr ""
 
 #: library/asyncio-subprocess.rst:173
 msgid ""
-"unlike Popen, Process instances do not have an equivalent to the :meth:"
-"`~subprocess.Popen.poll` method;"
+"unlike Popen, Process instances do not have an equivalent to "
+"the :meth:`~subprocess.Popen.poll` method;"
 msgstr ""
 
 #: library/asyncio-subprocess.rst:176
 msgid ""
-"the :meth:`~asyncio.subprocess.Process.communicate` and :meth:`~asyncio."
-"subprocess.Process.wait` methods don't have a *timeout* parameter: use the :"
-"func:`~asyncio.wait_for` function;"
+"the :meth:`~asyncio.subprocess.Process.communicate` "
+"and :meth:`~asyncio.subprocess.Process.wait` methods don't have a *timeout* "
+"parameter: use the :func:`~asyncio.wait_for` function;"
 msgstr ""
 
 #: library/asyncio-subprocess.rst:180
@@ -429,8 +429,8 @@ msgstr ""
 
 #: library/asyncio-subprocess.rst:319
 msgid ""
-"On UNIX *child watchers* are used for subprocess finish waiting, see :ref:"
-"`asyncio-watchers` for more info."
+"On UNIX *child watchers* are used for subprocess finish waiting, "
+"see :ref:`asyncio-watchers` for more info."
 msgstr ""
 
 #: library/asyncio-subprocess.rst:325
@@ -441,8 +441,8 @@ msgstr ""
 
 #: library/asyncio-subprocess.rst:328
 msgid ""
-"Spawning a subprocess with *inactive* current child watcher raises :exc:"
-"`RuntimeError`."
+"Spawning a subprocess with *inactive* current child watcher "
+"raises :exc:`RuntimeError`."
 msgstr ""
 
 #: library/asyncio-subprocess.rst:331

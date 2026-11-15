@@ -32,8 +32,8 @@ msgstr ""
 msgid ""
 "This module provides :term:`abstract base classes <abstract base class>` "
 "that can be used to test whether a class provides a particular interface; "
-"for example, whether it is :term:`hashable` or whether it is a :term:"
-"`mapping`."
+"for example, whether it is :term:`hashable` or whether it is "
+"a :term:`mapping`."
 msgstr ""
 
 #: library/collections.abc.rst:27
@@ -103,9 +103,9 @@ msgstr ""
 msgid ""
 "In this example, class :class:`!D` does not need to define ``__contains__``, "
 "``__iter__``, and ``__reversed__`` because the :ref:`in-operator "
-"<comparisons>`, the :term:`iteration <iterable>` logic, and the :func:"
-"`reversed` function automatically fall back to using ``__getitem__`` and "
-"``__len__``."
+"<comparisons>`, the :term:`iteration <iterable>` logic, and "
+"the :func:`reversed` function automatically fall back to using "
+"``__getitem__`` and ``__len__``."
 msgstr ""
 
 #: library/collections.abc.rst:82
@@ -471,8 +471,8 @@ msgid ""
 "Checking ``isinstance(obj, Iterable)`` detects classes that are registered "
 "as :class:`Iterable` or that have an :meth:`~container.__iter__` method, but "
 "it does not detect classes that iterate with the :meth:`~object.__getitem__` "
-"method.  The only reliable way to determine whether an object is :term:"
-"`iterable` is to call ``iter(obj)``."
+"method.  The only reliable way to determine whether an object "
+"is :term:`iterable` is to call ``iter(obj)``."
 msgstr ""
 
 #: library/collections.abc.rst:200
@@ -510,8 +510,8 @@ msgid ""
 "Checking ``isinstance(obj, Iterable)`` detects classes that are registered "
 "as :class:`Iterable` or that have an :meth:`~container.__iter__` method, but "
 "it does not detect classes that iterate with the :meth:`~object.__getitem__` "
-"method. The only reliable way to determine whether an object is :term:"
-"`iterable` is to call ``iter(obj)``."
+"method. The only reliable way to determine whether an object "
+"is :term:`iterable` is to call ``iter(obj)``."
 msgstr ""
 
 #: library/collections.abc.rst:235
@@ -520,8 +520,9 @@ msgstr ""
 
 #: library/collections.abc.rst:241
 msgid ""
-"ABC for classes that provide the :meth:`~iterator.__iter__` and :meth:"
-"`~iterator.__next__` methods.  See also the definition of :term:`iterator`."
+"ABC for classes that provide the :meth:`~iterator.__iter__` "
+"and :meth:`~iterator.__next__` methods.  See also the definition "
+"of :term:`iterator`."
 msgstr ""
 
 #: library/collections.abc.rst:247
@@ -532,16 +533,16 @@ msgstr ""
 
 #: library/collections.abc.rst:254
 msgid ""
-"ABC for :term:`generator` classes that implement the protocol defined in :"
-"pep:`342` that extends :term:`iterators <iterator>` with the :meth:"
-"`~generator.send`, :meth:`~generator.throw` and :meth:`~generator.close` "
-"methods."
+"ABC for :term:`generator` classes that implement the protocol defined "
+"in :pep:`342` that extends :term:`iterators <iterator>` with "
+"the :meth:`~generator.send`, :meth:`~generator.throw` "
+"and :meth:`~generator.close` methods."
 msgstr ""
 
 #: library/collections.abc.rst:259
 msgid ""
-"See :ref:`annotating-generators-and-coroutines` for details on using :class:"
-"`!Generator` in type annotations."
+"See :ref:`annotating-generators-and-coroutines` for details on "
+"using :class:`!Generator` in type annotations."
 msgstr ""
 
 #: library/collections.abc.rst:268
@@ -550,9 +551,10 @@ msgstr ""
 
 #: library/collections.abc.rst:270
 msgid ""
-"Implementation note: Some of the mixin methods, such as :meth:`~container."
-"__iter__`, :meth:`~object.__reversed__` and :meth:`index`, make repeated "
-"calls to the underlying :meth:`~object.__getitem__` method. Consequently, "
+"Implementation note: Some of the mixin methods, such "
+"as :meth:`~container.__iter__`, :meth:`~object.__reversed__` "
+"and :meth:`index`, make repeated calls to the "
+"underlying :meth:`~object.__getitem__` method. Consequently, "
 "if :meth:`~object.__getitem__` is implemented with constant access speed, "
 "the mixin methods will have linear performance; however, if the underlying "
 "method is linear (as it would be with a linked list), the mixins will have "
@@ -586,14 +588,14 @@ msgstr ""
 #: library/collections.abc.rst:308
 msgid ""
 "ABC for :term:`awaitable` objects, which can be used in :keyword:`await` "
-"expressions.  Custom implementations must provide the :meth:`~object."
-"__await__` method."
+"expressions.  Custom implementations must provide "
+"the :meth:`~object.__await__` method."
 msgstr ""
 
 #: library/collections.abc.rst:312
 msgid ""
-":term:`Coroutine <coroutine>` objects and instances of the :class:"
-"`~collections.abc.Coroutine` ABC are all instances of this ABC."
+":term:`Coroutine <coroutine>` objects and instances of "
+"the :class:`~collections.abc.Coroutine` ABC are all instances of this ABC."
 msgstr ""
 
 #: library/collections.abc.rst:316
@@ -601,17 +603,18 @@ msgid ""
 "In CPython, generator-based coroutines (:term:`generators <generator>` "
 "decorated with :func:`@types.coroutine <types.coroutine>`) are *awaitables*, "
 "even though they do not have an :meth:`~object.__await__` method. Using "
-"``isinstance(gencoro, Awaitable)`` for them will return ``False``. Use :func:"
-"`inspect.isawaitable` to detect them."
+"``isinstance(gencoro, Awaitable)`` for them will return ``False``. "
+"Use :func:`inspect.isawaitable` to detect them."
 msgstr ""
 
 #: library/collections.abc.rst:326
 msgid ""
 "ABC for :term:`coroutine` compatible classes.  These implement the following "
-"methods, defined in :ref:`coroutine-objects`: :meth:`~coroutine.send`, :meth:"
-"`~coroutine.throw`, and :meth:`~coroutine.close`.  Custom implementations "
-"must also implement :meth:`~object.__await__`.  All :class:`Coroutine` "
-"instances are also instances of :class:`Awaitable`."
+"methods, defined in :ref:`coroutine-"
+"objects`: :meth:`~coroutine.send`, :meth:`~coroutine.throw`, "
+"and :meth:`~coroutine.close`.  Custom implementations must also "
+"implement :meth:`~object.__await__`.  All :class:`Coroutine` instances are "
+"also instances of :class:`Awaitable`."
 msgstr ""
 
 #: library/collections.abc.rst:334
@@ -619,15 +622,15 @@ msgid ""
 "In CPython, generator-based coroutines (:term:`generators <generator>` "
 "decorated with :func:`@types.coroutine <types.coroutine>`) are *awaitables*, "
 "even though they do not have an :meth:`~object.__await__` method. Using "
-"``isinstance(gencoro, Coroutine)`` for them will return ``False``. Use :func:"
-"`inspect.isawaitable` to detect them."
+"``isinstance(gencoro, Coroutine)`` for them will return ``False``. "
+"Use :func:`inspect.isawaitable` to detect them."
 msgstr ""
 
 #: library/collections.abc.rst:340
 msgid ""
-"See :ref:`annotating-generators-and-coroutines` for details on using :class:"
-"`!Coroutine` in type annotations. The variance and order of type parameters "
-"correspond to those of :class:`Generator`."
+"See :ref:`annotating-generators-and-coroutines` for details on "
+"using :class:`!Coroutine` in type annotations. The variance and order of "
+"type parameters correspond to those of :class:`Generator`."
 msgstr ""
 
 #: library/collections.abc.rst:349
@@ -650,8 +653,8 @@ msgstr ""
 
 #: library/collections.abc.rst:366
 msgid ""
-"See :ref:`annotating-generators-and-coroutines` for details on using :class:"
-"`!AsyncGenerator` in type annotations."
+"See :ref:`annotating-generators-and-coroutines` for details on "
+"using :class:`!AsyncGenerator` in type annotations."
 msgstr ""
 
 #: library/collections.abc.rst:373
@@ -682,9 +685,10 @@ msgid ""
 "Several of the ABCs are also useful as mixins that make it easier to develop "
 "classes supporting container APIs.  For example, to write a class supporting "
 "the full :class:`Set` API, it is only necessary to supply the three "
-"underlying abstract methods: :meth:`~object.__contains__`, :meth:`~container."
-"__iter__`, and :meth:`~object.__len__`. The ABC supplies the remaining "
-"methods such as :meth:`!__and__` and :meth:`~frozenset.isdisjoint`::"
+"underlying abstract "
+"methods: :meth:`~object.__contains__`, :meth:`~container.__iter__`, "
+"and :meth:`~object.__len__`. The ABC supplies the remaining methods such "
+"as :meth:`!__and__` and :meth:`~frozenset.isdisjoint`::"
 msgstr ""
 
 #: library/collections.abc.rst:395
@@ -722,12 +726,12 @@ msgid ""
 "Since some set operations create new sets, the default mixin methods need a "
 "way to create new instances from an :term:`iterable`. The class constructor "
 "is assumed to have a signature in the form ``ClassName(iterable)``. That "
-"assumption is factored-out to an internal :class:`classmethod` called :meth:"
-"`!_from_iterable` which calls ``cls(iterable)`` to produce a new set. If "
-"the :class:`Set` mixin is being used in a class with a different constructor "
-"signature, you will need to override :meth:`!_from_iterable` with a "
-"classmethod or regular method that can construct new instances from an "
-"iterable argument."
+"assumption is factored-out to an internal :class:`classmethod` "
+"called :meth:`!_from_iterable` which calls ``cls(iterable)`` to produce a "
+"new set. If the :class:`Set` mixin is being used in a class with a different "
+"constructor signature, you will need to override :meth:`!_from_iterable` "
+"with a classmethod or regular method that can construct new instances from "
+"an iterable argument."
 msgstr ""
 
 #: library/collections.abc.rst:431

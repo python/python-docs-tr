@@ -83,8 +83,8 @@ msgstr ""
 
 #: library/importlib.resources.rst:55
 msgid ""
-"Represents an anchor for resources, either a :class:`module object <types."
-"ModuleType>` or a module name as a string. Defined as ``Union[str, "
+"Represents an anchor for resources, either a :class:`module object "
+"<types.ModuleType>` or a module name as a string. Defined as ``Union[str, "
 "ModuleType]``."
 msgstr ""
 
@@ -107,9 +107,10 @@ msgstr ""
 msgid ""
 "*package* parameter was renamed to *anchor*. *anchor* can now be a non-"
 "package module and if omitted will default to the caller's module. *package* "
-"is still accepted for compatibility but will raise a :exc:"
-"`DeprecationWarning`. Consider passing the anchor positionally or using "
-"``importlib_resources >= 5.10`` for a compatible interface on older Pythons."
+"is still accepted for compatibility but will raise "
+"a :exc:`DeprecationWarning`. Consider passing the anchor positionally or "
+"using ``importlib_resources >= 5.10`` for a compatible interface on older "
+"Pythons."
 msgstr ""
 
 #: library/importlib.resources.rst:84
@@ -152,8 +153,8 @@ msgstr ""
 msgid ""
 "Whenever a function accepts a ``Package`` argument, you can pass in either "
 "a :class:`module object <types.ModuleType>` or a module name as a string.  "
-"You can only pass module objects whose ``__spec__."
-"submodule_search_locations`` is not ``None``."
+"You can only pass module objects whose "
+"``__spec__.submodule_search_locations`` is not ``None``."
 msgstr ""
 
 #: library/importlib.resources.rst:117
@@ -179,8 +180,8 @@ msgid ""
 "*package* is either a name or a module object which conforms to the "
 "``Package`` requirements.  *resource* is the name of the resource to open "
 "within *package*; it may not contain path separators and it may not have sub-"
-"resources (i.e. it cannot be a directory).  This function returns a ``typing."
-"BinaryIO`` instance, a binary I/O stream open for reading."
+"resources (i.e. it cannot be a directory).  This function returns a "
+"``typing.BinaryIO`` instance, a binary I/O stream open for reading."
 msgstr ""
 
 #: library/importlib.resources.rst:143 library/importlib.resources.rst:164
@@ -312,6 +313,6 @@ msgstr ""
 
 #: library/importlib.resources.rst:255
 msgid ""
-"(resource.name for resource in files(package).iterdir() if resource."
-"is_file())"
+"(resource.name for resource in files(package).iterdir() if "
+"resource.is_file())"
 msgstr ""
