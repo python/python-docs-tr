@@ -27,15 +27,15 @@ msgstr ""
 #: library/dataclasses.rst:14
 msgid ""
 "This module provides a decorator and functions for automatically adding "
-"generated :term:`special methods <special method>` such as :meth:`~object."
-"__init__` and :meth:`~object.__repr__` to user-defined classes.  It was "
-"originally described in :pep:`557`."
+"generated :term:`special methods <special method>` such "
+"as :meth:`~object.__init__` and :meth:`~object.__repr__` to user-defined "
+"classes.  It was originally described in :pep:`557`."
 msgstr ""
 
 #: library/dataclasses.rst:19
 msgid ""
-"The member variables to use in these generated methods are defined using :"
-"pep:`526` type annotations.  For example, this code::"
+"The member variables to use in these generated methods are defined "
+"using :pep:`526` type annotations.  For example, this code::"
 msgstr ""
 
 #: library/dataclasses.rst:22
@@ -78,8 +78,9 @@ msgstr ""
 
 #: library/dataclasses.rst:51
 msgid ""
-"This function is a :term:`decorator` that is used to add generated :term:"
-"`special methods <special method>` to classes, as described below."
+"This function is a :term:`decorator` that is used to add "
+"generated :term:`special methods <special method>` to classes, as described "
+"below."
 msgstr ""
 
 #: library/dataclasses.rst:54
@@ -174,17 +175,19 @@ msgstr ""
 
 #: library/dataclasses.rst:113
 msgid ""
-"*order*: If true (the default is ``False``), :meth:`~object.__lt__`, :meth:"
-"`~object.__le__`, :meth:`~object.__gt__`, and :meth:`~object.__ge__` methods "
-"will be generated.  These compare the class as if it were a tuple of its "
-"fields, in order.  Both instances in the comparison must be of the identical "
-"type.  If *order* is true and *eq* is false, a :exc:`ValueError` is raised."
+"*order*: If true (the default is "
+"``False``), :meth:`~object.__lt__`, :meth:`~object.__le__`, :meth:`~object.__gt__`, "
+"and :meth:`~object.__ge__` methods will be generated.  These compare the "
+"class as if it were a tuple of its fields, in order.  Both instances in the "
+"comparison must be of the identical type.  If *order* is true and *eq* is "
+"false, a :exc:`ValueError` is raised."
 msgstr ""
 
 #: library/dataclasses.rst:120
 msgid ""
-"If the class already defines any of :meth:`!__lt__`, :meth:`!__le__`, :meth:"
-"`!__gt__`, or :meth:`!__ge__`, then :exc:`TypeError` is raised."
+"If the class already defines any of :meth:`!__lt__`, :meth:`!"
+"__le__`, :meth:`!__gt__`, or :meth:`!__ge__`, then :exc:`TypeError` is "
+"raised."
 msgstr ""
 
 #: library/dataclasses.rst:124
@@ -205,11 +208,11 @@ msgstr ""
 
 #: library/dataclasses.rst:134
 msgid ""
-"By default, ``@dataclass`` will not implicitly add a :meth:`~object."
-"__hash__` method unless it is safe to do so.  Neither will it add or change "
-"an existing explicitly defined :meth:`!__hash__` method.  Setting the class "
-"attribute ``__hash__ = None`` has a specific meaning to Python, as described "
-"in the :meth:`!__hash__` documentation."
+"By default, ``@dataclass`` will not implicitly add "
+"a :meth:`~object.__hash__` method unless it is safe to do so.  Neither will "
+"it add or change an existing explicitly defined :meth:`!__hash__` method.  "
+"Setting the class attribute ``__hash__ = None`` has a specific meaning to "
+"Python, as described in the :meth:`!__hash__` documentation."
 msgstr ""
 
 #: library/dataclasses.rst:140
@@ -226,36 +229,37 @@ msgstr ""
 msgid ""
 "Here are the rules governing implicit creation of a :meth:`!__hash__` "
 "method.  Note that you cannot both have an explicit :meth:`!__hash__` method "
-"in your dataclass and set ``unsafe_hash=True``; this will result in a :exc:"
-"`TypeError`."
+"in your dataclass and set ``unsafe_hash=True``; this will result in "
+"a :exc:`TypeError`."
 msgstr ""
 
 #: library/dataclasses.rst:152
 msgid ""
 "If *eq* and *frozen* are both true, by default ``@dataclass`` will generate "
-"a :meth:`!__hash__` method for you.  If *eq* is true and *frozen* is false, :"
-"meth:`!__hash__` will be set to ``None``, marking it unhashable (which it "
-"is, since it is mutable).  If *eq* is false, :meth:`!__hash__` will be left "
-"untouched meaning the :meth:`!__hash__` method of the superclass will be "
-"used (if the superclass is :class:`object`, this means it will fall back to "
-"id-based hashing)."
+"a :meth:`!__hash__` method for you.  If *eq* is true and *frozen* is "
+"false, :meth:`!__hash__` will be set to ``None``, marking it unhashable "
+"(which it is, since it is mutable).  If *eq* is false, :meth:`!__hash__` "
+"will be left untouched meaning the :meth:`!__hash__` method of the "
+"superclass will be used (if the superclass is :class:`object`, this means it "
+"will fall back to id-based hashing)."
 msgstr ""
 
 #: library/dataclasses.rst:160
 msgid ""
 "*frozen*: If true (the default is ``False``), assigning to fields will "
-"generate an exception.  This emulates read-only frozen instances.  If :meth:"
-"`~object.__setattr__` or :meth:`~object.__delattr__` is defined in the "
-"class, then :exc:`TypeError` is raised.  See the discussion below."
+"generate an exception.  This emulates read-only frozen instances.  "
+"If :meth:`~object.__setattr__` or :meth:`~object.__delattr__` is defined in "
+"the class, then :exc:`TypeError` is raised.  See the discussion below."
 msgstr ""
 
 #: library/dataclasses.rst:165
 msgid ""
-"*match_args*: If true (the default is ``True``), the :attr:`~object."
-"__match_args__` tuple will be created from the list of parameters to the "
-"generated :meth:`~object.__init__` method (even if :meth:`!__init__` is not "
-"generated, see above).  If false, or if :attr:`!__match_args__` is already "
-"defined in the class, then :attr:`!__match_args__` will not be generated."
+"*match_args*: If true (the default is ``True``), "
+"the :attr:`~object.__match_args__` tuple will be created from the list of "
+"parameters to the generated :meth:`~object.__init__` method (even if :meth:`!"
+"__init__` is not generated, see above).  If false, or if :attr:`!"
+"__match_args__` is already defined in the class, then :attr:`!"
+"__match_args__` will not be generated."
 msgstr ""
 
 #: library/dataclasses.rst:174
@@ -264,17 +268,17 @@ msgid ""
 "marked as keyword-only.  If a field is marked as keyword-only, then the only "
 "effect is that the :meth:`~object.__init__` parameter generated from a "
 "keyword-only field must be specified with a keyword when :meth:`!__init__` "
-"is called.  There is no effect on any other aspect of dataclasses.  See the :"
-"term:`parameter` glossary entry for details.  Also see the :const:`KW_ONLY` "
-"section."
+"is called.  There is no effect on any other aspect of dataclasses.  See "
+"the :term:`parameter` glossary entry for details.  Also see "
+"the :const:`KW_ONLY` section."
 msgstr ""
 
 #: library/dataclasses.rst:185
 msgid ""
 "*slots*: If true (the default is ``False``), :attr:`~object.__slots__` "
 "attribute will be generated and new class will be returned instead of the "
-"original one. If :attr:`!__slots__` is already defined in the class, then :"
-"exc:`TypeError` is raised."
+"original one. If :attr:`!__slots__` is already defined in the class, "
+"then :exc:`TypeError` is raised."
 msgstr ""
 
 #: library/dataclasses.rst:191
@@ -298,9 +302,9 @@ msgid ""
 "If a field name is already included in the :attr:`!__slots__` of a base "
 "class, it will not be included in the generated :attr:`!__slots__` to "
 "prevent :ref:`overriding them <datamodel-note-slots>`. Therefore, do not "
-"use :attr:`!__slots__` to retrieve the field names of a dataclass. Use :func:"
-"`fields` instead. To be able to determine inherited slots, base class :attr:"
-"`!__slots__` may be any iterable, but *not* an iterator."
+"use :attr:`!__slots__` to retrieve the field names of a dataclass. "
+"Use :func:`fields` instead. To be able to determine inherited slots, base "
+"class :attr:`!__slots__` may be any iterable, but *not* an iterator."
 msgstr ""
 
 #: library/dataclasses.rst:216
@@ -422,8 +426,8 @@ msgstr ""
 #: library/dataclasses.rst:292
 msgid ""
 "*compare*: If true (the default), this field is included in the generated "
-"equality and comparison methods (:meth:`~object.__eq__`, :meth:`~object."
-"__gt__`, et al.)."
+"equality and comparison methods "
+"(:meth:`~object.__eq__`, :meth:`~object.__gt__`, et al.)."
 msgstr ""
 
 #: library/dataclasses.rst:296
@@ -488,9 +492,10 @@ msgstr ""
 
 #: library/dataclasses.rst:339
 msgid ""
-":attr:`!default`, :attr:`!default_factory`, :attr:`!init`, :attr:`!repr`, :"
-"attr:`!hash`, :attr:`!compare`, :attr:`!metadata`, and :attr:`!kw_only` have "
-"the identical meaning and values as they do in the :func:`field` function."
+":attr:`!default`, :attr:`!default_factory`, :attr:`!init`, :attr:`!"
+"repr`, :attr:`!hash`, :attr:`!compare`, :attr:`!metadata`, and :attr:`!"
+"kw_only` have the identical meaning and values as they do in "
+"the :func:`field` function."
 msgstr ""
 
 #: library/dataclasses.rst:343
@@ -586,8 +591,8 @@ msgid ""
 "``name``, ``(name, type)``, or ``(name, type, Field)``.  If just ``name`` is "
 "supplied, :data:`typing.Any` is used for ``type``.  The values of *init*, "
 "*repr*, *eq*, *order*, *unsafe_hash*, *frozen*, *match_args*, *kw_only*, "
-"*slots*, and *weakref_slot* have the same meaning as they do in :func:"
-"`@dataclass <dataclass>`."
+"*slots*, and *weakref_slot* have the same meaning as they do "
+"in :func:`@dataclass <dataclass>`."
 msgstr ""
 
 #: library/dataclasses.rst:417
@@ -599,9 +604,9 @@ msgstr ""
 #: library/dataclasses.rst:421
 msgid ""
 "This function is not strictly required, because any Python mechanism for "
-"creating a new class with :attr:`!__annotations__` can then apply the :func:"
-"`@dataclass <dataclass>` function to convert that class to a dataclass.  "
-"This function is provided as a convenience.  For example::"
+"creating a new class with :attr:`!__annotations__` can then apply "
+"the :func:`@dataclass <dataclass>` function to convert that class to a "
+"dataclass.  This function is provided as a convenience.  For example::"
 msgstr ""
 
 #: library/dataclasses.rst:427
@@ -633,8 +638,8 @@ msgstr ""
 msgid ""
 "Creates a new object of the same type as *obj*, replacing fields with values "
 "from *changes*.  If *obj* is not a Data Class, raises :exc:`TypeError`.  If "
-"keys in *changes* are not field names of the given dataclass, raises :exc:"
-"`TypeError`."
+"keys in *changes* are not field names of the given dataclass, "
+"raises :exc:`TypeError`."
 msgstr ""
 
 #: library/dataclasses.rst:451
@@ -697,9 +702,9 @@ msgid ""
 "with the type of :const:`!KW_ONLY` are marked as keyword-only fields.  Note "
 "that a pseudo-field of type :const:`!KW_ONLY` is otherwise completely "
 "ignored.  This includes the name of such a field.  By convention, a name of "
-"``_`` is used for a :const:`!KW_ONLY` field.  Keyword-only fields signify :"
-"meth:`~object.__init__` parameters that must be specified as keywords when "
-"the class is instantiated."
+"``_`` is used for a :const:`!KW_ONLY` field.  Keyword-only fields "
+"signify :meth:`~object.__init__` parameters that must be specified as "
+"keywords when the class is instantiated."
 msgstr ""
 
 #: library/dataclasses.rst:499
@@ -728,9 +733,9 @@ msgstr ""
 
 #: library/dataclasses.rst:517
 msgid ""
-"Raised when an implicitly defined :meth:`~object.__setattr__` or :meth:"
-"`~object.__delattr__` is called on a dataclass which was defined with "
-"``frozen=True``. It is a subclass of :exc:`AttributeError`."
+"Raised when an implicitly defined :meth:`~object.__setattr__` "
+"or :meth:`~object.__delattr__` is called on a dataclass which was defined "
+"with ``frozen=True``. It is a subclass of :exc:`AttributeError`."
 msgstr ""
 
 #: library/dataclasses.rst:524
@@ -739,12 +744,12 @@ msgstr ""
 
 #: library/dataclasses.rst:528
 msgid ""
-"When defined on the class, it will be called by the generated :meth:`~object."
-"__init__`, normally as :meth:`!self.__post_init__`. However, if any "
-"``InitVar`` fields are defined, they will also be passed to :meth:`!"
-"__post_init__` in the order they were defined in the class.  If no :meth:`!"
-"__init__` method is generated, then :meth:`!__post_init__` will not "
-"automatically be called."
+"When defined on the class, it will be called by the "
+"generated :meth:`~object.__init__`, normally as :meth:`!self.__post_init__`. "
+"However, if any ``InitVar`` fields are defined, they will also be passed "
+"to :meth:`!__post_init__` in the order they were defined in the class.  If "
+"no :meth:`!__init__` method is generated, then :meth:`!__post_init__` will "
+"not automatically be called."
 msgstr ""
 
 #: library/dataclasses.rst:535
@@ -797,8 +802,8 @@ msgstr ""
 
 #: library/dataclasses.rst:568
 msgid ""
-"See the section below on init-only variables for ways to pass parameters to :"
-"meth:`!__post_init__`.  Also see the warning about how :func:`replace` "
+"See the section below on init-only variables for ways to pass parameters "
+"to :meth:`!__post_init__`.  Also see the warning about how :func:`replace` "
 "handles ``init=False`` fields."
 msgstr ""
 
@@ -813,8 +818,8 @@ msgid ""
 "defined in :pep:`526`.  It does this by checking if the type of the field "
 "is :data:`typing.ClassVar`.  If a field is a ``ClassVar``, it is excluded "
 "from consideration as a field and is ignored by the dataclass mechanisms.  "
-"Such ``ClassVar`` pseudo-fields are not returned by the module-level :func:"
-"`fields` function."
+"Such ``ClassVar`` pseudo-fields are not returned by the module-"
+"level :func:`fields` function."
 msgstr ""
 
 #: library/dataclasses.rst:588
@@ -869,16 +874,17 @@ msgstr ""
 msgid ""
 "It is not possible to create truly immutable Python objects.  However, by "
 "passing ``frozen=True`` to the :func:`@dataclass <dataclass>` decorator you "
-"can emulate immutability.  In that case, dataclasses will add :meth:`~object."
-"__setattr__` and :meth:`~object.__delattr__` methods to the class.  These "
-"methods will raise a :exc:`FrozenInstanceError` when invoked."
+"can emulate immutability.  In that case, dataclasses will "
+"add :meth:`~object.__setattr__` and :meth:`~object.__delattr__` methods to "
+"the class.  These methods will raise a :exc:`FrozenInstanceError` when "
+"invoked."
 msgstr ""
 
 #: library/dataclasses.rst:629
 msgid ""
-"There is a tiny performance penalty when using ``frozen=True``: :meth:"
-"`~object.__init__` cannot use simple assignment to initialize fields, and "
-"must use :meth:`!object.__setattr__`."
+"There is a tiny performance penalty when using "
+"``frozen=True``: :meth:`~object.__init__` cannot use simple assignment to "
+"initialize fields, and must use :meth:`!object.__setattr__`."
 msgstr ""
 
 #: library/dataclasses.rst:638
@@ -1071,14 +1077,14 @@ msgstr ""
 #: library/dataclasses.rst:758
 msgid ""
 "This has the same issue as the original example using class :class:`!C`. "
-"That is, two instances of class :class:`!D` that do not specify a value for :"
-"attr:`!x` when creating a class instance will share the same copy of :attr:`!"
-"x`.  Because dataclasses just use normal Python class creation they also "
-"share this behavior.  There is no general way for Data Classes to detect "
-"this condition.  Instead, the :func:`@dataclass <dataclass>` decorator will "
-"raise a :exc:`ValueError` if it detects an unhashable default parameter.  "
-"The assumption is that if a value is unhashable, it is mutable.  This is a "
-"partial solution, but it does protect against many common errors."
+"That is, two instances of class :class:`!D` that do not specify a value "
+"for :attr:`!x` when creating a class instance will share the same copy "
+"of :attr:`!x`.  Because dataclasses just use normal Python class creation "
+"they also share this behavior.  There is no general way for Data Classes to "
+"detect this condition.  Instead, the :func:`@dataclass <dataclass>` "
+"decorator will raise a :exc:`ValueError` if it detects an unhashable default "
+"parameter.  The assumption is that if a value is unhashable, it is mutable.  "
+"This is a partial solution, but it does protect against many common errors."
 msgstr ""
 
 #: library/dataclasses.rst:769
@@ -1098,9 +1104,10 @@ msgstr ""
 
 #: library/dataclasses.rst:778
 msgid ""
-"Instead of looking for and disallowing objects of type :class:`list`, :class:"
-"`dict`, or :class:`set`, unhashable objects are now not allowed as default "
-"values.  Unhashability is used to approximate mutability."
+"Instead of looking for and disallowing objects of "
+"type :class:`list`, :class:`dict`, or :class:`set`, unhashable objects are "
+"now not allowed as default values.  Unhashability is used to approximate "
+"mutability."
 msgstr ""
 
 #: library/dataclasses.rst:785
@@ -1122,9 +1129,9 @@ msgstr ""
 
 #: library/dataclasses.rst:794
 msgid ""
-"Similarly, when getting or setting the field, the descriptor's :meth:"
-"`~object.__get__` or :meth:`!__set__` method is called rather than returning "
-"or overwriting the descriptor object."
+"Similarly, when getting or setting the field, the "
+"descriptor's :meth:`~object.__get__` or :meth:`!__set__` method is called "
+"rather than returning or overwriting the descriptor object."
 msgstr ""
 
 #: library/dataclasses.rst:798

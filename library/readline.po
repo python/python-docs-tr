@@ -27,8 +27,8 @@ msgid ""
 "This module can be used directly, or via the :mod:`rlcompleter` module, "
 "which supports completion of Python identifiers at the interactive prompt.  "
 "Settings made using  this module affect the behaviour of both the "
-"interpreter's interactive prompt  and the prompts offered by the built-in :"
-"func:`input` function."
+"interpreter's interactive prompt  and the prompts offered by the built-"
+"in :func:`input` function."
 msgstr ""
 
 #: library/readline.rst:20
@@ -87,8 +87,8 @@ msgstr ""
 
 #: library/readline.rst:60
 msgid ""
-"Execute the init line provided in the *string* argument. This calls :c:func:"
-"`rl_parse_and_bind` in the underlying library."
+"Execute the init line provided in the *string* argument. This "
+"calls :c:func:`rl_parse_and_bind` in the underlying library."
 msgstr ""
 
 #: library/readline.rst:66
@@ -114,8 +114,9 @@ msgstr ""
 
 #: library/readline.rst:84
 msgid ""
-"Insert text into the line buffer at the cursor position.  This calls :c:func:"
-"`rl_insert_text` in the underlying library, but ignores the return value."
+"Insert text into the line buffer at the cursor position.  This "
+"calls :c:func:`rl_insert_text` in the underlying library, but ignores the "
+"return value."
 msgstr ""
 
 #: library/readline.rst:91
@@ -142,24 +143,25 @@ msgstr ""
 #: library/readline.rst:110
 msgid ""
 "Save the history list to a readline history file, overwriting any existing "
-"file.  The default filename is :file:`~/.history`.  This calls :c:func:"
-"`write_history` in the underlying library."
+"file.  The default filename is :file:`~/.history`.  This "
+"calls :c:func:`write_history` in the underlying library."
 msgstr ""
 
 #: library/readline.rst:117
 msgid ""
 "Append the last *nelements* items of history to a file.  The default "
-"filename is :file:`~/.history`.  The file must already exist.  This calls :c:"
-"func:`append_history` in the underlying library.  This function only exists "
-"if Python was compiled for a version of the library that supports it."
+"filename is :file:`~/.history`.  The file must already exist.  This "
+"calls :c:func:`append_history` in the underlying library.  This function "
+"only exists if Python was compiled for a version of the library that "
+"supports it."
 msgstr ""
 
 #: library/readline.rst:129
 msgid ""
-"Set or return the desired number of lines to save in the history file. The :"
-"func:`write_history_file` function uses this value to truncate the history "
-"file, by calling :c:func:`history_truncate_file` in the underlying library.  "
-"Negative values imply unlimited history file size."
+"Set or return the desired number of lines to save in the history file. "
+"The :func:`write_history_file` function uses this value to truncate the "
+"history file, by calling :c:func:`history_truncate_file` in the underlying "
+"library.  Negative values imply unlimited history file size."
 msgstr ""
 
 #: library/readline.rst:137
@@ -275,8 +277,9 @@ msgstr ""
 msgid ""
 "The installed completer function is invoked by the *entry_func* callback "
 "passed to :c:func:`rl_completion_matches` in the underlying library. The "
-"*text* string comes from the first parameter to the :c:data:"
-"`rl_attempted_completion_function` callback of the underlying library."
+"*text* string comes from the first parameter to "
+"the :c:data:`rl_attempted_completion_function` callback of the underlying "
+"library."
 msgstr ""
 
 #: library/readline.rst:251
@@ -287,18 +290,19 @@ msgstr ""
 
 #: library/readline.rst:256
 msgid ""
-"Get the type of completion being attempted.  This returns the :c:data:"
-"`rl_completion_type` variable in the underlying library as an integer."
+"Get the type of completion being attempted.  This returns "
+"the :c:data:`rl_completion_type` variable in the underlying library as an "
+"integer."
 msgstr ""
 
 #: library/readline.rst:264
 msgid ""
 "Get the beginning or ending index of the completion scope. These indexes are "
-"the *start* and *end* arguments passed to the :c:data:"
-"`rl_attempted_completion_function` callback of the underlying library.  The "
-"values may be different in the same input editing scenario based on the "
-"underlying C readline implementation. Ex: libedit is known to behave "
-"differently than libreadline."
+"the *start* and *end* arguments passed to "
+"the :c:data:`rl_attempted_completion_function` callback of the underlying "
+"library.  The values may be different in the same input editing scenario "
+"based on the underlying C readline implementation. Ex: libedit is known to "
+"behave differently than libreadline."
 msgstr ""
 
 #: library/readline.rst:275
@@ -352,8 +356,8 @@ msgstr ""
 
 #: library/readline.rst:318
 msgid ""
-"This code is actually automatically run when Python is run in :ref:"
-"`interactive mode <tut-interactive>` (see :ref:`rlcompleter-config`)."
+"This code is actually automatically run when Python is run "
+"in :ref:`interactive mode <tut-interactive>` (see :ref:`rlcompleter-config`)."
 msgstr ""
 
 #: library/readline.rst:321

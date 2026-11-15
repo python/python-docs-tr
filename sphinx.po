@@ -130,8 +130,8 @@ msgstr ""
 
 #: tools/templates/download.html:51
 msgid ""
-"<a href=\"%(dl_base)s/python-%(dl_version)s-docs.epub\">Download</a> (ca. "
-"%(download_size)s MiB)"
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs.epub\">Download</a> (ca. %"
+"(download_size)s MiB)"
 msgstr ""
 
 #: tools/templates/download.html:56
@@ -518,8 +518,8 @@ msgstr "mevcut kararlı sürüm için olan Python dokümantasyonunu okumalısın
 
 #: tools/templates/layout.html:14
 msgid ""
-"This is a deploy preview created from a <a href=\"%(repository_url)s/pull/"
-"%(pr_id)s\">pull request</a>.\n"
+"This is a deploy preview created from a <a href=\"%(repository_url)s/pull/%"
+"(pr_id)s\">pull request</a>.\n"
 "  For authoritative documentation, see"
 msgstr ""
 "Bu, <a href=\"%(repository_url)s/pull/%(pr_id)s\">pull request</a>'ten "

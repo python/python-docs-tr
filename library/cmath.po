@@ -75,8 +75,8 @@ msgstr ""
 #: library/cmath.rst:44
 msgid ""
 "A Python complex number ``z`` is stored internally using *rectangular* or "
-"*Cartesian* coordinates.  It is completely determined by its *real part* ``z."
-"real`` and its *imaginary part* ``z.imag``."
+"*Cartesian* coordinates.  It is completely determined by its *real part* "
+"``z.real`` and its *imaginary part* ``z.imag``."
 msgstr ""
 
 #: library/cmath.rst:48
@@ -151,8 +151,8 @@ msgstr ""
 
 #: library/cmath.rst:111
 msgid ""
-"Return the base-10 logarithm of *x*. This has the same branch cut as :func:"
-"`log`."
+"Return the base-10 logarithm of *x*. This has the same branch cut "
+"as :func:`log`."
 msgstr ""
 
 #: library/cmath.rst:117
@@ -342,10 +342,10 @@ msgid ""
 "in module :mod:`math`.  The reason for having two modules is that some users "
 "aren't interested in complex numbers, and perhaps don't even know what they "
 "are.  They would rather have ``math.sqrt(-1)`` raise an exception than "
-"return a complex number. Also note that the functions defined in :mod:"
-"`cmath` always return a complex number, even if the answer can be expressed "
-"as a real number (in which case the complex number has an imaginary part of "
-"zero)."
+"return a complex number. Also note that the functions defined "
+"in :mod:`cmath` always return a complex number, even if the answer can be "
+"expressed as a real number (in which case the complex number has an "
+"imaginary part of zero)."
 msgstr ""
 
 #: library/cmath.rst:311
