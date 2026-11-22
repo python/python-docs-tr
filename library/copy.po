@@ -2,14 +2,13 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-01 00:16+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2026-11-22 22:45+0300\n"
+"Last-Translator: Burak Celik <burakceliks89@gmail.com>\n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -18,11 +17,11 @@ msgstr ""
 
 #: library/copy.rst:2
 msgid ":mod:`!copy` --- Shallow and deep copy operations"
-msgstr ""
+msgstr ":mod:`!copy` --- Sığ ve derin kopyalama işlemleri"
 
 #: library/copy.rst:7
 msgid "**Source code:** :source:`Lib/copy.py`"
-msgstr ""
+msgstr "**Kaynak kodu:** :source:`Lib/copy.py`"
 
 #: library/copy.rst:11
 msgid ""
@@ -32,22 +31,27 @@ msgid ""
 "changing the other. This module provides generic shallow and deep copy "
 "operations (explained below)."
 msgstr ""
+"Python'daki atama deyimleri nesneleri kopyalamaz, hedef ile nesne arasında "
+"bağlar (bindings) oluşturur. Değiştirilebilir olan veya değiştirilebilir "
+"öğeler içeren koleksiyonlar için, bazen bir kopyayı diğerini değiştirmeden "
+"değiştirebilmek adına bir kopya gerekebilir. Bu modül genel sığ ve derin "
+"kopyalama işlemlerini sağlar (aşağıda açıklanmıştır)."
 
 #: library/copy.rst:18
 msgid "Interface summary:"
-msgstr ""
+msgstr "Arayüz özeti:"
 
 #: library/copy.rst:22
 msgid "Return a shallow copy of *x*."
-msgstr ""
+msgstr "*x*'in sığ bir kopyasını döndürür."
 
 #: library/copy.rst:27
 msgid "Return a deep copy of *x*."
-msgstr ""
+msgstr "*x*'in derin bir kopyasını döndürür."
 
 #: library/copy.rst:32
 msgid "Raised for module specific errors."
-msgstr ""
+msgstr "Modüle özgü hatalar için tetiklenir."
 
 #: library/copy.rst:36
 msgid ""
@@ -55,52 +59,68 @@ msgid ""
 "compound objects (objects that contain other objects, like lists or class "
 "instances):"
 msgstr ""
+"Sığ ve derin kopyalama arasındaki fark yalnızca bileşik nesneler (listeler "
+"veya sınıf örnekleri gibi diğer nesneleri içeren nesneler) için geçerlidir:"
 
 #: library/copy.rst:39
 msgid ""
 "A *shallow copy* constructs a new compound object and then (to the extent "
 "possible) inserts *references* into it to the objects found in the original."
 msgstr ""
+"Bir *sığ kopya* yeni bir bileşik nesne oluşturur ve ardından (mümkün olduğu "
+"ölçüde) orijinalde bulunan nesnelere *referanslar* ekler."
 
 #: library/copy.rst:42
 msgid ""
 "A *deep copy* constructs a new compound object and then, recursively, "
 "inserts *copies* into it of the objects found in the original."
 msgstr ""
+"Bir *derin kopya* yeni bir bileşik nesne oluşturur ve ardından, özyinelemeli "
+"(recursive) olarak orijinalde bulunan nesnelerin *kopyalarını* içine ekler."
 
 #: library/copy.rst:45
 msgid ""
 "Two problems often exist with deep copy operations that don't exist with "
 "shallow copy operations:"
 msgstr ""
+"Derin kopyalama işlemlerinde, sığ kopyalama işlemlerinde bulunmayan iki sorun "
+"sıkça ortaya çıkar:"
 
 #: library/copy.rst:48
 msgid ""
 "Recursive objects (compound objects that, directly or indirectly, contain a "
 "reference to themselves) may cause a recursive loop."
 msgstr ""
+"Özyinelemeli nesneler (doğrudan veya dolaylı olarak kendilerine bir referans "
+"içeren bileşik nesneler) özyinelemeli bir döngüye yol açabilir."
 
 #: library/copy.rst:51
 msgid ""
 "Because deep copy copies everything it may copy too much, such as data which "
 "is intended to be shared between copies."
 msgstr ""
+"Derin kopya her şeyi kopyaladığından çok fazla şeyi kopyalayabilir; örneğin "
+"kopyalar arasında paylaşılması amaçlanan verileri de çoğaltabilir."
 
 #: library/copy.rst:54
 msgid "The :func:`deepcopy` function avoids these problems by:"
-msgstr ""
+msgstr ":func:`deepcopy` fonksiyonu bu sorunları şu şekilde önler:"
 
 #: library/copy.rst:56
 msgid ""
 "keeping a ``memo`` dictionary of objects already copied during the current "
 "copying pass; and"
 msgstr ""
+"mevcut kopyalama geçişi sırasında zaten kopyalanmış nesnelerin bir ``memo`` "
+"sözlüğünü tutarak; ve"
 
 #: library/copy.rst:59
 msgid ""
 "letting user-defined classes override the copying operation or the set of "
 "components copied."
 msgstr ""
+"kullanıcı tanımlı sınıfların kopyalama işlemini veya kopyalanan bileşenler "
+"kümesini geçersiz kılmasına (override) izin vererek."
 
 #: library/copy.rst:62
 msgid ""
@@ -110,6 +130,11 @@ msgid ""
 "unchanged; this is compatible with the way these are treated by the :mod:"
 "`pickle` module."
 msgstr ""
+"Bu modül modül, yöntem, yığın izleme (stack trace), yığın çerçevesi (stack "
+"frame), dosya, soket, pencere gibi türleri veya benzeri türleri kopyalamaz. "
+"Fonksiyonları ve sınıfları (sığ veya derin), orijinal nesneyi değiştirmeden "
+"döndürerek \"kopyalar\"; bu, :mod:`pickle` modülü tarafından ele alınma "
+"biçimiyle uyumludur."
 
 #: library/copy.rst:67
 msgid ""
@@ -117,6 +142,9 @@ msgid ""
 "lists by assigning a slice of the entire list, for example, ``copied_list = "
 "original_list[:]``."
 msgstr ""
+"Sözlüklerin sığ kopyaları :meth:`dict.copy` kullanılarak, listelerin ise tüm "
+"listenin bir dilimi atanarak yapılabilir, örneğin ``copied_list = "
+"original_list[:]``."
 
 #: library/copy.rst:73
 msgid ""
@@ -125,6 +153,11 @@ msgid ""
 "information on these methods.  In fact, the :mod:`copy` module uses the "
 "registered pickle functions from the :mod:`copyreg` module."
 msgstr ""
+"Sınıflar, kopyalamayı denetlemek için seri hale getirmeyi (pickling) "
+"denetlerken kullandıkları aynı arayüzleri kullanabilir. Bu yöntemler "
+"hakkında bilgi için :mod:`pickle` modülünün açıklamasına bakın. Hatta :mod:"
+"`copy` modülü, :mod:`copyreg` modülündeki kayıtlı pickle fonksiyonlarını "
+"kullanır."
 
 #: library/copy.rst:82
 msgid ""
@@ -138,29 +171,40 @@ msgid ""
 "dictionary as second argument. The memo dictionary should be treated as an "
 "opaque object."
 msgstr ""
+"Bir sınıfın kendi kopyalama uygulamasını tanımlayabilmesi için :meth:"
+"`__copy__` ve :meth:`__deepcopy__` özel yöntemlerini tanımlayabilir. İlki, "
+"sığ kopyalama işlemini uygulamak için çağrılır; ek bağımsız değişken "
+"aktarılmaz. İkincisi, derin kopyalama işlemini uygulamak için çağrılır; ona "
+"tek bir bağımsız değişken olan ``memo`` sözlüğü iletilir. Eğer :meth:"
+"`__deepcopy__` uygulamasının bir bileşenin derin kopyasını alması "
+"gerekiyorsa, ilk bağımsız değişken olarak bileşen ve ikinci bağımsız değişken "
+"olarak memo sözlüğü ile :func:`deepcopy` fonksiyonunu çağırmalıdır. Memo "
+"sözlüğü opak bir nesne olarak ele alınmalıdır."
 
 #: library/copy.rst:94
 msgid "Module :mod:`pickle`"
-msgstr ""
+msgstr ":mod:`pickle` Modülü"
 
 #: library/copy.rst:95
 msgid ""
 "Discussion of the special methods used to support object state retrieval and "
 "restoration."
 msgstr ""
+"Nesne durumunun alınmasını ve geri yüklenmesini desteklemek için kullanılan "
+"özel yöntemlerin tartışılması."
 
 #: library/copy.rst:71
 msgid "module"
-msgstr ""
+msgstr "modül"
 
 #: library/copy.rst:71
 msgid "pickle"
-msgstr ""
+msgstr "pickle"
 
 #: library/copy.rst:78
 msgid "__copy__() (copy protocol)"
-msgstr ""
+msgstr "__copy__() (kopyalama protokolü)"
 
 #: library/copy.rst:78
 msgid "__deepcopy__() (copy protocol)"
-msgstr ""
+msgstr "__deepcopy__() (kopyalama protokolü)"
