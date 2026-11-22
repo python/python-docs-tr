@@ -2,13 +2,13 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-01 00:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2026-11-22 22:50+0300\n"
+"Last-Translator: Burak Celik <burakceliks89@gmail.com>\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -18,11 +18,11 @@ msgstr ""
 
 #: library/stat.rst:2
 msgid ":mod:`!stat` --- Interpreting :func:`~os.stat` results"
-msgstr ""
+msgstr ":mod:`!stat` --- :func:`~os.stat` sonuçlarını yorumlama"
 
 #: library/stat.rst:10
 msgid "**Source code:** :source:`Lib/stat.py`"
-msgstr ""
+msgstr "**Kaynak kodu:** :source:`Lib/stat.py`"
 
 #: library/stat.rst:14
 msgid ""
@@ -34,7 +34,7 @@ msgstr ""
 
 #: library/stat.rst:19
 msgid "The stat module is backed by a C implementation."
-msgstr ""
+msgstr "Stat modülü bir C uygulaması ile desteklenmektedir."
 
 #: library/stat.rst:22
 msgid ""
@@ -44,43 +44,43 @@ msgstr ""
 
 #: library/stat.rst:28
 msgid "Return non-zero if the mode is from a directory."
-msgstr ""
+msgstr "Mod bir dizine aitse sıfır olmayan bir değer döndürür."
 
 #: library/stat.rst:33
 msgid "Return non-zero if the mode is from a character special device file."
-msgstr ""
+msgstr "Mod bir karakter özel aygıt dosyasına aitse sıfır olmayan bir değer döndürür."
 
 #: library/stat.rst:38
 msgid "Return non-zero if the mode is from a block special device file."
-msgstr ""
+msgstr "Mod bir blok özel aygıt dosyasına aitse sıfır olmayan bir değer döndürür."
 
 #: library/stat.rst:43
 msgid "Return non-zero if the mode is from a regular file."
-msgstr ""
+msgstr "Mod normal bir dosyaya aitse sıfır olmayan bir değer döndürür."
 
 #: library/stat.rst:48
 msgid "Return non-zero if the mode is from a FIFO (named pipe)."
-msgstr ""
+msgstr "Mod bir FIFO (adlandırılmış kanal) dosyasına aitse sıfır olmayan bir değer döndürür."
 
 #: library/stat.rst:53
 msgid "Return non-zero if the mode is from a symbolic link."
-msgstr ""
+msgstr "Mod bir sembolik bağa aitse sıfır olmayan bir değer döndürür."
 
 #: library/stat.rst:58
 msgid "Return non-zero if the mode is from a socket."
-msgstr ""
+msgstr "Mod bir sokete aitse sıfır olmayan bir değer döndürür."
 
 #: library/stat.rst:62
 msgid "Return non-zero if the mode is from a door."
-msgstr ""
+msgstr "Mod bir door dosyasına aitse sıfır olmayan bir değer döndürür."
 
 #: library/stat.rst:68
 msgid "Return non-zero if the mode is from an event port."
-msgstr ""
+msgstr "Mod bir olay bağlantı noktasına (event port) aitse sıfır olmayan bir değer döndürür."
 
 #: library/stat.rst:74
 msgid "Return non-zero if the mode is from a whiteout."
-msgstr ""
+msgstr "Mod bir whiteout dosyasına aitse sıfır olmayan bir değer döndürür."
 
 #: library/stat.rst:78
 msgid ""
@@ -113,7 +113,7 @@ msgstr ""
 
 #: library/stat.rst:101
 msgid "Example::"
-msgstr ""
+msgstr "Örnek::"
 
 #: library/stat.rst:103
 msgid ""
@@ -152,7 +152,7 @@ msgstr ""
 
 #: library/stat.rst:134
 msgid "Convert a file's mode to a string of the form '-rwxrwxrwx'."
-msgstr ""
+msgstr "Bir dosyanın modunu '-rwxrwxrwx' biçiminde bir dizeye dönüştürür."
 
 #: library/stat.rst:138
 msgid ""
@@ -167,27 +167,27 @@ msgstr ""
 
 #: library/stat.rst:149
 msgid "Inode protection mode."
-msgstr ""
+msgstr "Inode koruma modu."
 
 #: library/stat.rst:154
 msgid "Inode number."
-msgstr ""
+msgstr "Inode numarası."
 
 #: library/stat.rst:159
 msgid "Device inode resides on."
-msgstr ""
+msgstr "Inode'un bulunduğu aygıt."
 
 #: library/stat.rst:164
 msgid "Number of links to the inode."
-msgstr ""
+msgstr "Inode'a olan bağlantı sayısı."
 
 #: library/stat.rst:169
 msgid "User id of the owner."
-msgstr ""
+msgstr "Sahibin kullanıcı kimliği (UID)."
 
 #: library/stat.rst:174
 msgid "Group id of the owner."
-msgstr ""
+msgstr "Sahibin grup kimliği (GID)."
 
 #: library/stat.rst:179
 msgid ""
@@ -196,11 +196,11 @@ msgstr ""
 
 #: library/stat.rst:184
 msgid "Time of last access."
-msgstr ""
+msgstr "Son erişim zamanı."
 
 #: library/stat.rst:189
 msgid "Time of last modification."
-msgstr ""
+msgstr "Son değişiklik zamanı."
 
 #: library/stat.rst:194
 msgid ""
@@ -223,7 +223,7 @@ msgstr ""
 
 #: library/stat.rst:207
 msgid "The variables below define the flags used in the :data:`ST_MODE` field."
-msgstr ""
+msgstr "Aşağıdaki değişkenler :data:`ST_MODE` alanında kullanılan bayrakları tanımlar."
 
 #: library/stat.rst:209
 msgid ""
@@ -233,43 +233,43 @@ msgstr ""
 
 #: library/stat.rst:213
 msgid "Socket."
-msgstr ""
+msgstr "Soket."
 
 #: library/stat.rst:217
 msgid "Symbolic link."
-msgstr ""
+msgstr "Sembolik bağ."
 
 #: library/stat.rst:221
 msgid "Regular file."
-msgstr ""
+msgstr "Normal dosya."
 
 #: library/stat.rst:225
 msgid "Block device."
-msgstr ""
+msgstr "Blok aygıtı."
 
 #: library/stat.rst:229
 msgid "Directory."
-msgstr ""
+msgstr "Dizin."
 
 #: library/stat.rst:233
 msgid "Character device."
-msgstr ""
+msgstr "Karakter aygıtı."
 
 #: library/stat.rst:237
 msgid "FIFO."
-msgstr ""
+msgstr "FIFO."
 
 #: library/stat.rst:241
 msgid "Door."
-msgstr ""
+msgstr "Door."
 
 #: library/stat.rst:247
 msgid "Event port."
-msgstr ""
+msgstr "Olay bağlantı noktası."
 
 #: library/stat.rst:253
 msgid "Whiteout."
-msgstr ""
+msgstr "Whiteout."
 
 #: library/stat.rst:259
 msgid ""
@@ -285,7 +285,7 @@ msgstr ""
 
 #: library/stat.rst:266
 msgid "Set UID bit."
-msgstr ""
+msgstr "UID bitini ayarla."
 
 #: library/stat.rst:270
 msgid ""
@@ -307,51 +307,51 @@ msgstr ""
 
 #: library/stat.rst:287
 msgid "Mask for file owner permissions."
-msgstr ""
+msgstr "Dosya sahibi izinleri için maske."
 
 #: library/stat.rst:291
 msgid "Owner has read permission."
-msgstr ""
+msgstr "Sahibin okuma izni var."
 
 #: library/stat.rst:295
 msgid "Owner has write permission."
-msgstr ""
+msgstr "Sahibin yazma izni var."
 
 #: library/stat.rst:299
 msgid "Owner has execute permission."
-msgstr ""
+msgstr "Sahibin çalıştırma izni var."
 
 #: library/stat.rst:303
 msgid "Mask for group permissions."
-msgstr ""
+msgstr "Grup izinleri için maske."
 
 #: library/stat.rst:307
 msgid "Group has read permission."
-msgstr ""
+msgstr "Grubun okuma izni var."
 
 #: library/stat.rst:311
 msgid "Group has write permission."
-msgstr ""
+msgstr "Grubun yazma izni var."
 
 #: library/stat.rst:315
 msgid "Group has execute permission."
-msgstr ""
+msgstr "Grubun çalıştırma izni var."
 
 #: library/stat.rst:319
 msgid "Mask for permissions for others (not in group)."
-msgstr ""
+msgstr "Diğerleri (grupta olmayanlar) için izin maskesi."
 
 #: library/stat.rst:323
 msgid "Others have read permission."
-msgstr ""
+msgstr "Diğerlerinin okuma izni var."
 
 #: library/stat.rst:327
 msgid "Others have write permission."
-msgstr ""
+msgstr "Diğerlerinin yazma izni var."
 
 #: library/stat.rst:331
 msgid "Others have execute permission."
-msgstr ""
+msgstr "Diğerlerinin çalıştırma izni var."
 
 #: library/stat.rst:335
 msgid ""
@@ -362,15 +362,15 @@ msgstr ""
 
 #: library/stat.rst:341
 msgid "Unix V7 synonym for :data:`S_IRUSR`."
-msgstr ""
+msgstr ":data:`S_IRUSR` için Unix V7 eşanlamlısı."
 
 #: library/stat.rst:345
 msgid "Unix V7 synonym for :data:`S_IWUSR`."
-msgstr ""
+msgstr ":data:`S_IWUSR` için Unix V7 eşanlamlısı."
 
 #: library/stat.rst:349
 msgid "Unix V7 synonym for :data:`S_IXUSR`."
-msgstr ""
+msgstr ":data:`S_IXUSR` için Unix V7 eşanlamlısı."
 
 #: library/stat.rst:351
 msgid ""
@@ -380,39 +380,39 @@ msgstr ""
 
 #: library/stat.rst:355
 msgid "Do not dump the file."
-msgstr ""
+msgstr "Dosyayı dökümlemeyin (dump)."
 
 #: library/stat.rst:387
 msgid "The file may not be changed."
-msgstr ""
+msgstr "Dosya değiştirilemez."
 
 #: library/stat.rst:391
 msgid "The file may only be appended to."
-msgstr ""
+msgstr "Dosyaya yalnızca sonuna ekleme yapılabilir."
 
 #: library/stat.rst:367
 msgid "The directory is opaque when viewed through a union stack."
-msgstr ""
+msgstr "Dizin birleşim yığını (union stack) üzerinden görüntülendiğinde opaktır."
 
 #: library/stat.rst:395
 msgid "The file may not be renamed or deleted."
-msgstr ""
+msgstr "Dosya yeniden adlandırılamaz veya silinemez."
 
 #: library/stat.rst:375
 msgid "The file is stored compressed (macOS 10.6+)."
-msgstr ""
+msgstr "Dosya sıkıştırılmış olarak depolanır (macOS 10.6+)."
 
 #: library/stat.rst:379
 msgid "The file should not be displayed in a GUI (macOS 10.5+)."
-msgstr ""
+msgstr "Dosya bir grafik arayüzde (GUI) görüntülenmemelidir (macOS 10.5+)."
 
 #: library/stat.rst:383
 msgid "The file may be archived."
-msgstr ""
+msgstr "Dosya arşivlenebilir."
 
 #: library/stat.rst:399
 msgid "The file is a snapshot file."
-msgstr ""
+msgstr "Dosya bir anlık görüntü (snapshot) dosyasıdır."
 
 #: library/stat.rst:401
 msgid ""
