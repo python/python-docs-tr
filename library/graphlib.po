@@ -2,13 +2,12 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-01 00:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2026-11-22 18:00+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -19,17 +18,19 @@ msgstr ""
 #: library/graphlib.rst:2
 msgid ""
 ":mod:`!graphlib` --- Functionality to operate with graph-like structures"
-msgstr ""
+msgstr ":mod:`!graphlib` --- Çizge benzeri yapılarla çalışma işlevselliği"
 
 #: library/graphlib.rst:8
 msgid "**Source code:** :source:`Lib/graphlib.py`"
-msgstr ""
+msgstr "**Kaynak kodu:** :source:`Lib/graphlib.py`"
 
 #: library/graphlib.rst:20
 msgid ""
 "Provides functionality to topologically sort a graph of :term:`hashable` "
 "nodes."
 msgstr ""
+":term:`hashable` düğümlerden oluşan bir çizgeyi topolojik olarak sıralama "
+"işlevselliği sağlar."
 
 #: library/graphlib.rst:22
 msgid ""
@@ -42,6 +43,14 @@ msgid ""
 "topological ordering is possible if and only if the graph has no directed "
 "cycles, that is, if it is a directed acyclic graph."
 msgstr ""
+"Topolojik sıra, bir çizgedeki köşelerin, u köşesinden v köşesine giden her u"
+" -> v yönlü kenarı için sıralamada u köşesinin v köşesinden önce gelecek "
+"şekilde doğrusal olarak sıralanmasıdır. Örneğin, çizgenin köşeleri "
+"gerçekleştirilecek görevleri, kenarları ise bir görevin diğerinden önce "
+"yapılması gerektiğine dair kısıtları temsil edebilir; bu örnekte topolojik "
+"sıralama, görevler için yalnızca geçerli bir sıradır. Tam bir topolojik "
+"sıralama ancak ve ancak çizgede yönlü çevrim yoksa, yani yönlü çevrimsiz bir"
+" çizge ise mümkündür."
 
 #: library/graphlib.rst:31
 msgid ""
@@ -51,26 +60,35 @@ msgid ""
 "nodes that have edges that point to the value in the key). Additional nodes "
 "can be added to the graph using the :meth:`~TopologicalSorter.add` method."
 msgstr ""
+"İsteğe bağlı *graph* argümanı sağlanırsa, bu argüman yönlü çevrimsiz bir "
+"çizgeyi temsil eden bir sözlük olmalıdır; bu sözlükte anahtarlar düğümler, "
+"değerler ise çizgede o düğümün tüm öncüllerini (anahtardaki değere işaret "
+"eden kenarlara sahip düğümleri) içeren yinelenebilir nesnelerdir. Çizgeye "
+":meth:`~TopologicalSorter.add` metodu kullanılarak ek düğümler eklenebilir."
 
 #: library/graphlib.rst:37
 msgid ""
 "In the general case, the steps required to perform the sorting of a given "
 "graph are as follows:"
 msgstr ""
+"Genel durumda, verilen bir çizgenin sıralanmasını gerçekleştirmek için "
+"gereken adımlar şunlardır:"
 
 #: library/graphlib.rst:40
 msgid ""
 "Create an instance of the :class:`TopologicalSorter` with an optional "
 "initial graph."
 msgstr ""
+"İsteğe bağlı bir başlangıç çizgesi ile :class:`TopologicalSorter` sınıfının "
+"bir örneğini oluşturun."
 
 #: library/graphlib.rst:42
 msgid "Add additional nodes to the graph."
-msgstr ""
+msgstr "Çizgeye ek düğümler ekleyin."
 
 #: library/graphlib.rst:43
 msgid "Call :meth:`~TopologicalSorter.prepare` on the graph."
-msgstr ""
+msgstr "Çizge üzerinde :meth:`~TopologicalSorter.prepare` metodunu çağırın."
 
 #: library/graphlib.rst:44
 msgid ""
@@ -78,6 +96,10 @@ msgid ""
 "nodes returned by :meth:`~TopologicalSorter.get_ready` and process them. "
 "Call :meth:`~TopologicalSorter.done` on each node as it finishes processing."
 msgstr ""
+":meth:`~TopologicalSorter.is_active` ``True`` olduğu sürece, "
+":meth:`~TopologicalSorter.get_ready` tarafından döndürülen düğümler üzerinde"
+" yineleme yapın ve bunları işleyin. Her düğümün işlenmesi tamamlandığında "
+"üzerinde :meth:`~TopologicalSorter.done` metodunu çağırın."
 
 #: library/graphlib.rst:49
 msgid ""
@@ -85,6 +107,9 @@ msgid ""
 "no parallelism is involved, the convenience method :meth:`TopologicalSorter."
 "static_order` can be used directly:"
 msgstr ""
+"Çizgedeki düğümlerin yalnızca doğrudan sıralanması gerekiyorsa ve paralellik"
+" söz konusu değilse, kolaylık sağlayan "
+":meth:`TopologicalSorter.static_order` metodu doğrudan kullanılabilir:"
 
 #: library/graphlib.rst:53
 msgid ""
@@ -93,12 +118,18 @@ msgid ""
 ">>> tuple(ts.static_order())\n"
 "('A', 'C', 'B', 'D')"
 msgstr ""
+">>> graph = {\"D\": {\"B\", \"C\"}, \"C\": {\"A\"}, \"B\": {\"A\"}}\n"
+">>> ts = TopologicalSorter(graph)\n"
+">>> tuple(ts.static_order())\n"
+"('A', 'C', 'B', 'D')"
 
 #: library/graphlib.rst:60
 msgid ""
 "The class is designed to easily support parallel processing of the nodes as "
 "they become ready. For instance::"
 msgstr ""
+"Sınıf, düğümler hazır hale geldikçe paralel olarak işlenmelerini kolayca "
+"destekleyecek şekilde tasarlanmıştır. Örneğin::"
 
 #: library/graphlib.rst:63
 msgid ""
@@ -124,18 +155,45 @@ msgid ""
 "    node = finalized_tasks_queue.get()\n"
 "    topological_sorter.done(node)"
 msgstr ""
+"topological_sorter = TopologicalSorter()\n"
+"\n"
+"# 'topological_sorter' nesnesine düğümler ekleyin...\n"
+"\n"
+"topological_sorter.prepare()\n"
+"while topological_sorter.is_active():\n"
+"    for node in topological_sorter.get_ready():\n"
+"        # İşçi iş parçacıkları veya süreçleri, üzerinde çalışılacak\n"
+"        # düğümleri 'task_queue' kuyruğundan alır.\n"
+"        task_queue.put(node)\n"
+"\n"
+"    # Bir düğüm üzerindeki iş tamamlandığında, işçiler üzerinde\n"
+"    # çalışacak daha fazla düğüm alabilmemiz için düğümü\n"
+"    # 'finalized_tasks_queue' kuyruğuna koyar.\n"
+"    # 'is_active()' tanımı, bu noktada 'task_queue' kuyruğuna henüz\n"
+"    # 'done()' metoduna geçirilmemiş en az bir düğüm konulduğunu\n"
+"    # garanti eder; bu nedenle bu engelleyici 'get()' çağrısı (sonunda)\n"
+"    # başarılı olmalıdır. 'done()' çağrısından sonra tekrar 'get_ready()'\n"
+"    # çağırmak için döngünün başına döneriz; bu yüzden yeni serbest kalan\n"
+"    # düğümleri mantıksal olarak mümkün olan en kısa sürede\n"
+"    # 'task_queue' kuyruğuna ekleyin.\n"
+"    node = finalized_tasks_queue.get()\n"
+"    topological_sorter.done(node)"
 
 #: library/graphlib.rst:87
 msgid ""
 "Add a new node and its predecessors to the graph. Both the *node* and all "
 "elements in *predecessors* must be :term:`hashable`."
 msgstr ""
+"Çizgeye yeni bir düğüm ve öncüllerini ekler. Hem *node* hem de "
+"*predecessors* içindeki tüm öğeler :term:`hashable` olmalıdır."
 
 #: library/graphlib.rst:90
 msgid ""
 "If called multiple times with the same node argument, the set of "
 "dependencies will be the union of all dependencies passed in."
 msgstr ""
+"Aynı düğüm argümanıyla birden fazla kez çağrılırsa, bağımlılık kümesi "
+"aktarılan tüm bağımlılıkların birleşimi olur."
 
 #: library/graphlib.rst:93
 msgid ""
@@ -144,11 +202,17 @@ msgid ""
 "provided before is included among *predecessors* it will be automatically "
 "added to the graph with no predecessors of its own."
 msgstr ""
+"Hiç bağımlılığı olmayan bir düğüm eklemek (*predecessors* sağlanmadığında) "
+"veya bir bağımlılığı iki kez sağlamak mümkündür. Daha önce sağlanmamış bir "
+"düğüm *predecessors* içinde yer alıyorsa, kendi öncülü olmaksızın otomatik "
+"olarak çizgeye eklenir."
 
 #: library/graphlib.rst:98
 msgid ""
 "Raises :exc:`ValueError` if called after :meth:`~TopologicalSorter.prepare`."
 msgstr ""
+":meth:`~TopologicalSorter.prepare` çağrıldıktan sonra çağrılırsa "
+":exc:`ValueError` hatası yükseltir."
 
 #: library/graphlib.rst:102
 msgid ""
@@ -159,6 +223,13 @@ msgid ""
 "be modified, and therefore no more nodes can be added using :meth:"
 "`~TopologicalSorter.add`."
 msgstr ""
+"Çizgeyi tamamlanmış olarak işaretler ve çizgede çevrim olup olmadığını "
+"kontrol eder. Herhangi bir çevrim algılanırsa :exc:`CycleError` hatası "
+"yükseltilir, ancak çevrimler daha fazla ilerlemeyi engelleyene kadar mümkün "
+"olduğunca çok düğüm elde etmek için :meth:`~TopologicalSorter.get_ready` "
+"yine de kullanılabilir. Bu fonksiyona yapılan bir çağrıdan sonra çizge "
+"değiştirilemez ve bu nedenle :meth:`~TopologicalSorter.add` kullanılarak "
+"artık düğüm eklenemez."
 
 #: library/graphlib.rst:111
 msgid ""
@@ -169,34 +240,48 @@ msgid ""
 "`TopologicalSorter.done` is less than the number that have been returned by :"
 "meth:`TopologicalSorter.get_ready`."
 msgstr ""
+"Daha fazla ilerleme kaydedilebiliyorsa ``True``, aksi takdirde ``False`` "
+"döndürür. Çevrimler çözümlemeyi engellemiyorsa ve henüz "
+":meth:`TopologicalSorter.get_ready` tarafından döndürülmemiş hazır düğümler "
+"hâlâ varsa veya :meth:`TopologicalSorter.done` ile işaretlenen düğümlerin "
+"sayısı :meth:`TopologicalSorter.get_ready` tarafından döndürülenlerin "
+"sayısından azsa ilerleme kaydedilebilir."
 
 #: library/graphlib.rst:118
 msgid ""
 "The :meth:`~object.__bool__` method of this class defers to this function, "
 "so instead of::"
 msgstr ""
+"Bu sınıfın :meth:`~object.__bool__` metodu bu fonksiyona yönlendirir; "
+"dolayısıyla şunu yazmak yerine::"
 
 #: library/graphlib.rst:121
 msgid ""
 "if ts.is_active():\n"
 "    ..."
 msgstr ""
+"if ts.is_active():\n"
+"    ..."
 
 #: library/graphlib.rst:124
 msgid "it is possible to simply do::"
-msgstr ""
+msgstr "kısaca şunu yazmak mümkündür::"
 
 #: library/graphlib.rst:126
 msgid ""
 "if ts:\n"
 "    ..."
 msgstr ""
+"if ts:\n"
+"    ..."
 
 #: library/graphlib.rst:152
 msgid ""
 "Raises :exc:`ValueError` if called without calling :meth:`~TopologicalSorter."
 "prepare` previously."
 msgstr ""
+"Daha önce :meth:`~TopologicalSorter.prepare` çağrılmadan çağrılırsa "
+":exc:`ValueError` hatası yükseltir."
 
 #: library/graphlib.rst:134
 msgid ""
@@ -204,6 +289,10 @@ msgid ""
 "processed, unblocking any successor of each node in *nodes* for being "
 "returned in the future by a call to :meth:`TopologicalSorter.get_ready`."
 msgstr ""
+":meth:`TopologicalSorter.get_ready` tarafından döndürülen bir düğüm kümesini"
+" işlenmiş olarak işaretler; *nodes* içindeki her düğümün ardılları "
+"üzerindeki engeli kaldırarak bunların gelecekteki bir "
+":meth:`TopologicalSorter.get_ready` çağrısıyla döndürülebilmesini sağlar."
 
 #: library/graphlib.rst:138
 msgid ""
@@ -213,6 +302,12 @@ msgid ""
 "meth:`~TopologicalSorter.prepare` or if node has not yet been returned by :"
 "meth:`~TopologicalSorter.get_ready`."
 msgstr ""
+"*nodes* içindeki herhangi bir düğüm bu metoda yapılan önceki bir çağrıyla "
+"zaten işlenmiş olarak işaretlenmişse, bir düğüm çizgeye "
+":meth:`TopologicalSorter.add` kullanılarak eklenmemişse, daha önce "
+":meth:`~TopologicalSorter.prepare` çağrılmadan çağrılmışsa veya düğüm henüz "
+":meth:`~TopologicalSorter.get_ready` tarafından döndürülmemişse "
+":exc:`ValueError` hatası yükseltir."
 
 #: library/graphlib.rst:146
 msgid ""
@@ -222,6 +317,11 @@ msgid ""
 "nodes that have all their predecessors already processed. Once no more "
 "progress can be made, empty tuples are returned."
 msgstr ""
+"Hazır olan tüm düğümleri içeren bir ``tuple`` döndürür. Başlangıçta öncülü "
+"olmayan tüm düğümleri döndürür ve bunlar :meth:`TopologicalSorter.done` "
+"çağrılarak işlenmiş olarak işaretlendiğinde, sonraki çağrılar tüm öncülleri "
+"halihazırda işlenmiş olan tüm yeni düğümleri döndürür. Artık daha fazla "
+"ilerleme kaydedilemediğinde boş demetler döndürülür."
 
 #: library/graphlib.rst:157
 msgid ""
@@ -230,6 +330,9 @@ msgid ""
 "`~TopologicalSorter.done` should not be called. This method is equivalent "
 "to::"
 msgstr ""
+"Düğümler üzerinde topolojik sırada yineleme yapacak bir yineleyici nesnesi "
+"döndürür. Bu metot kullanılırken :meth:`~TopologicalSorter.prepare` ve "
+":meth:`~TopologicalSorter.done` çağrılmamalıdır. Bu metot şuna eşdeğerdir::"
 
 #: library/graphlib.rst:162
 msgid ""
@@ -240,12 +343,20 @@ msgid ""
 "        yield from node_group\n"
 "        self.done(*node_group)"
 msgstr ""
+"def static_order(self):\n"
+"    self.prepare()\n"
+"    while self.is_active():\n"
+"        node_group = self.get_ready()\n"
+"        yield from node_group\n"
+"        self.done(*node_group)"
 
 #: library/graphlib.rst:169
 msgid ""
 "The particular order that is returned may depend on the specific order in "
 "which the items were inserted in the graph. For example:"
 msgstr ""
+"Döndürülen belirli sıra, öğelerin çizgeye eklenme sırasına bağlı olabilir. "
+"Örneğin:"
 
 #: library/graphlib.rst:172
 msgid ""
@@ -261,6 +372,17 @@ msgid ""
 ">>> print([*ts2.static_order()])\n"
 "[0, 2, 1, 3]"
 msgstr ""
+">>> ts = TopologicalSorter()\n"
+">>> ts.add(3, 2, 1)\n"
+">>> ts.add(1, 0)\n"
+">>> print([*ts.static_order()])\n"
+"[2, 0, 1, 3]\n"
+"\n"
+">>> ts2 = TopologicalSorter()\n"
+">>> ts2.add(1, 0)\n"
+">>> ts2.add(3, 2, 1)\n"
+">>> print([*ts2.static_order()])\n"
+"[0, 2, 1, 3]"
 
 #: library/graphlib.rst:186
 msgid ""
@@ -269,18 +391,21 @@ msgid ""
 "`~TopologicalSorter.get_ready`) and the order between them is determined by "
 "the order of insertion."
 msgstr ""
+"Bunun nedeni, \"0\" ve \"2\" düğümlerinin çizgede aynı düzeyde olması "
+"(:meth:`~TopologicalSorter.get_ready` çağrısında aynı anda döndürülecek "
+"olmaları) ve aralarındaki sıranın ekleme sırasına göre belirlenmesidir."
 
 #: library/graphlib.rst:192
 msgid "If any cycle is detected, :exc:`CycleError` will be raised."
-msgstr ""
+msgstr "Herhangi bir çevrim algılanırsa :exc:`CycleError` hatası yükseltilir."
 
 #: library/graphlib.rst:198
 msgid "Exceptions"
-msgstr ""
+msgstr "İstisnalar"
 
 #: library/graphlib.rst:199
 msgid "The :mod:`graphlib` module defines the following exception classes:"
-msgstr ""
+msgstr ":mod:`graphlib` modülü aşağıdaki istisna sınıflarını tanımlar:"
 
 #: library/graphlib.rst:203
 msgid ""
@@ -288,6 +413,10 @@ msgid ""
 "cycles exist in the working graph. If multiple cycles exist, only one "
 "undefined choice among them will be reported and included in the exception."
 msgstr ""
+"Üzerinde çalışılan çizgede çevrimler varsa :meth:`TopologicalSorter.prepare`"
+" tarafından yükseltilen :exc:`ValueError` alt sınıfı. Birden fazla çevrim "
+"varsa, bunlardan yalnızca belirsiz bir şekilde seçilen bir tanesi bildirilir"
+" ve istisnaya dahil edilir."
 
 #: library/graphlib.rst:207
 msgid ""
@@ -297,3 +426,8 @@ msgid ""
 "predecessor of the next node in the list. In the reported list, the first "
 "and the last node will be the same, to make it clear that it is cyclic."
 msgstr ""
+"Algılanan çevrime istisna örneğinin :attr:`~BaseException.args` "
+"niteliğindeki ikinci öğe aracılığıyla erişilebilir ve bu çevrim, listedeki "
+"her düğümün çizgede bir sonraki düğümün doğrudan öncülü olduğu bir düğüm "
+"listesinden oluşur. Bildirilen listede, çevrimsel olduğunu açıkça göstermek "
+"için ilk ve son düğüm aynı olur."
