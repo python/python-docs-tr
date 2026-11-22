@@ -2,13 +2,12 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-01 00:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2026-11-22 17:17+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -18,11 +17,11 @@ msgstr ""
 
 #: library/tomllib.rst:2
 msgid ":mod:`!tomllib` --- Parse TOML files"
-msgstr ""
+msgstr ":mod:`!tomllib` --- TOML dosyalarını ayrıştırma"
 
 #: library/tomllib.rst:12
 msgid "**Source code:** :source:`Lib/tomllib`"
-msgstr ""
+msgstr "**Kaynak kodu:** :source:`Lib/tomllib`"
 
 #: library/tomllib.rst:16
 msgid ""
@@ -30,6 +29,9 @@ msgid ""
 "Minimal Language, `https://toml.io <https://toml.io/en/>`_). This module "
 "does not support writing TOML."
 msgstr ""
+"Bu modül, TOML 1.0.0 (Tom's Obvious Minimal Language, `https://toml.io "
+"<https://toml.io/en/>`_) ayrıştırmak için bir arayüz sağlar. Bu modül TOML "
+"yazmayı desteklemez."
 
 #: library/tomllib.rst:22
 msgid ""
@@ -37,6 +39,9 @@ msgid ""
 "conjunction with this module, providing a write API familiar to users of the "
 "standard library :mod:`marshal` and :mod:`pickle` modules."
 msgstr ""
+":pypi:`Tomli-W paketi <tomli-w>`, bu modülle birlikte kullanılabilen bir TOML"
+" yazıcısıdır ve standart kütüphanedeki :mod:`marshal` ile :mod:`pickle` "
+"modüllerinin kullanıcılarına tanıdık gelen bir yazma API'si sunar."
 
 #: library/tomllib.rst:29
 msgid ""
@@ -44,10 +49,13 @@ msgid ""
 "with both read and write capability. It is a recommended replacement for "
 "this module for editing already existing TOML files."
 msgstr ""
+":pypi:`TOML Kit paketi <tomlkit>`, hem okuma hem de yazma özelliğine sahip, "
+"biçimi koruyan bir TOML kütüphanesidir. Mevcut TOML dosyalarını düzenlemek "
+"için bu modülün yerine kullanılması önerilir."
 
 #: library/tomllib.rst:35
 msgid "This module defines the following functions:"
-msgstr ""
+msgstr "Bu modül aşağıdaki fonksiyonları tanımlar:"
 
 #: library/tomllib.rst:39
 msgid ""
@@ -55,6 +63,9 @@ msgid ""
 "object. Return a :class:`dict`. Convert TOML types to Python using this :ref:"
 "`conversion table <toml-to-py-table>`."
 msgstr ""
+"Bir TOML dosyasını okur. İlk argüman okunabilir bir ikili dosya nesnesi "
+"olmalıdır. Bir :class:`dict` döndürür. TOML türlerini bu :ref:`dönüşüm "
+"tablosunu <toml-to-py-table>` kullanarak Python'a dönüştürür."
 
 #: library/tomllib.rst:43
 msgid ""
@@ -64,10 +75,16 @@ msgid ""
 "Decimal`). The callable must not return a :class:`dict` or a :class:`list`, "
 "else a :exc:`ValueError` is raised."
 msgstr ""
+"*parse_float*, çözümlenecek her TOML kayan noktalı sayısının dizesiyle "
+"çağrılır.  Varsayılan olarak bu, ``float(num_str)`` çağrısına eşdeğerdir. Bu "
+"özellik, TOML kayan noktalı sayıları için başka bir veri türü veya "
+"ayrıştırıcı (ör. :class:`decimal.Decimal`) belirlemek amacıyla "
+"kullanılabilir. Bu çağrılabilir nesne bir :class:`dict` veya :class:`list` "
+"döndürmemelidir; aksi takdirde bir :exc:`ValueError` hatası oluşur."
 
 #: library/tomllib.rst:58
 msgid "A :exc:`TOMLDecodeError` will be raised on an invalid TOML document."
-msgstr ""
+msgstr "Geçersiz bir TOML belgesinde :exc:`TOMLDecodeError` hatası oluşur."
 
 #: library/tomllib.rst:54
 msgid ""
@@ -75,22 +92,26 @@ msgid ""
 "types to Python using this :ref:`conversion table <toml-to-py-table>`. The "
 "*parse_float* argument has the same meaning as in :func:`load`."
 msgstr ""
+"Bir :class:`str` nesnesinden TOML yükler. Bir :class:`dict` döndürür. TOML "
+"türlerini bu :ref:`dönüşüm tablosunu <toml-to-py-table>` kullanarak Python'a "
+"dönüştürür. *parse_float* argümanı, :func:`load` fonksiyonundakiyle aynı "
+"anlama sahiptir."
 
 #: library/tomllib.rst:61
 msgid "The following exceptions are available:"
-msgstr ""
+msgstr "Aşağıdaki istisnalar mevcuttur:"
 
 #: library/tomllib.rst:65
 msgid "Subclass of :exc:`ValueError`."
-msgstr ""
+msgstr ":exc:`ValueError` alt sınıfı."
 
 #: library/tomllib.rst:69
 msgid "Examples"
-msgstr ""
+msgstr "Örnekler"
 
 #: library/tomllib.rst:71
 msgid "Parsing a TOML file::"
-msgstr ""
+msgstr "Bir TOML dosyasını ayrıştırma::"
 
 #: library/tomllib.rst:73
 msgid ""
@@ -99,10 +120,14 @@ msgid ""
 "with open(\"pyproject.toml\", \"rb\") as f:\n"
 "    data = tomllib.load(f)"
 msgstr ""
+"import tomllib\n"
+"\n"
+"with open(\"pyproject.toml\", \"rb\") as f:\n"
+"    data = tomllib.load(f)"
 
 #: library/tomllib.rst:78
 msgid "Parsing a TOML string::"
-msgstr ""
+msgstr "Bir TOML dizesini ayrıştırma::"
 
 #: library/tomllib.rst:80
 msgid ""
@@ -115,113 +140,123 @@ msgid ""
 "\n"
 "data = tomllib.loads(toml_str)"
 msgstr ""
+"import tomllib\n"
+"\n"
+"toml_str = \"\"\"\n"
+"python-version = \"3.11.0\"\n"
+"python-implementation = \"CPython\"\n"
+"\"\"\"\n"
+"\n"
+"data = tomllib.loads(toml_str)"
 
 #: library/tomllib.rst:91
 msgid "Conversion Table"
-msgstr ""
+msgstr "Dönüşüm Tablosu"
 
 #: library/tomllib.rst:96
 msgid "TOML"
-msgstr ""
+msgstr "TOML"
 
 #: library/tomllib.rst:96
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: library/tomllib.rst:98
 msgid "TOML document"
-msgstr ""
+msgstr "TOML belgesi"
 
 #: library/tomllib.rst:118 library/tomllib.rst:120
 msgid "dict"
-msgstr ""
+msgstr "dict"
 
 #: library/tomllib.rst:100
 msgid "string"
-msgstr ""
+msgstr "dize"
 
 #: library/tomllib.rst:100
 msgid "str"
-msgstr ""
+msgstr "str"
 
 #: library/tomllib.rst:102
 msgid "integer"
-msgstr ""
+msgstr "tamsayı"
 
 #: library/tomllib.rst:102
 msgid "int"
-msgstr ""
+msgstr "int"
 
 #: library/tomllib.rst:104
 msgid "float"
-msgstr ""
+msgstr "kayan noktalı sayı"
 
 #: library/tomllib.rst:104
 msgid "float (configurable with *parse_float*)"
-msgstr ""
+msgstr "float (*parse_float* ile yapılandırılabilir)"
 
 #: library/tomllib.rst:106
 msgid "boolean"
-msgstr ""
+msgstr "mantıksal"
 
 #: library/tomllib.rst:106
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: library/tomllib.rst:108
 msgid "offset date-time"
-msgstr ""
+msgstr "zaman dilimli tarih-saat"
 
 #: library/tomllib.rst:108
 msgid ""
 "datetime.datetime (``tzinfo`` attribute set to an instance of ``datetime."
 "timezone``)"
 msgstr ""
+"datetime.datetime (``tzinfo`` niteliği bir ``datetime.timezone`` örneğine "
+"ayarlı)"
 
 #: library/tomllib.rst:110
 msgid "local date-time"
-msgstr ""
+msgstr "yerel tarih-saat"
 
 #: library/tomllib.rst:110
 msgid "datetime.datetime (``tzinfo`` attribute set to ``None``)"
-msgstr ""
+msgstr "datetime.datetime (``tzinfo`` niteliği ``None`` olarak ayarlı)"
 
 #: library/tomllib.rst:112
 msgid "local date"
-msgstr ""
+msgstr "yerel tarih"
 
 #: library/tomllib.rst:112
 msgid "datetime.date"
-msgstr ""
+msgstr "datetime.date"
 
 #: library/tomllib.rst:114
 msgid "local time"
-msgstr ""
+msgstr "yerel saat"
 
 #: library/tomllib.rst:114
 msgid "datetime.time"
-msgstr ""
+msgstr "datetime.time"
 
 #: library/tomllib.rst:116
 msgid "array"
-msgstr ""
+msgstr "dizi"
 
 #: library/tomllib.rst:116
 msgid "list"
-msgstr ""
+msgstr "list"
 
 #: library/tomllib.rst:118
 msgid "table"
-msgstr ""
+msgstr "tablo"
 
 #: library/tomllib.rst:120
 msgid "inline table"
-msgstr ""
+msgstr "satır içi tablo"
 
 #: library/tomllib.rst:122
 msgid "array of tables"
-msgstr ""
+msgstr "tablolar dizisi"
 
 #: library/tomllib.rst:122
 msgid "list of dicts"
-msgstr ""
+msgstr "dict listesi"
