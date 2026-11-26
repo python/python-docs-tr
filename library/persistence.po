@@ -2,14 +2,13 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2026-11-26 23:00+0300\n"
+"Last-Translator: Burak Çelik\n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +17,7 @@ msgstr ""
 
 #: library/persistence.rst:5
 msgid "Data Persistence"
-msgstr ""
+msgstr "Veri Kalıcılığı"
 
 #: library/persistence.rst:7
 msgid ""
@@ -28,7 +27,12 @@ msgid ""
 "objects from the bytes.  The various DBM-related modules support a family of "
 "hash-based file formats that store a mapping of strings to other strings."
 msgstr ""
+"Bu bölümde açıklanan modüller, Python verilerinin disk üzerinde kalıcı bir "
+"biçimde depolanmasını destekler.  :mod:`pickle` ve :mod:`marshal` modülleri, "
+"birçok Python veri türünü bir bayt akışına dönüştürebilir ve ardından bu "
+"baytlardan nesneleri yeniden oluşturabilir.  Çeşitli DBM ile ilgili modüller, "
+"dizeleri diğer dizelere eşleyen karma tabanlı bir dosya biçimleri ailesini destekler."
 
 #: library/persistence.rst:13
 msgid "The list of modules described in this chapter is:"
-msgstr ""
+msgstr "Bu bölümde açıklanan modüllerin listesi şöyledir:"
