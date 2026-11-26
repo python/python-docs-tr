@@ -2,7 +2,6 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
@@ -18,7 +17,7 @@ msgstr ""
 
 #: library/debug.rst:3
 msgid "Debugging and Profiling"
-msgstr ""
+msgstr "Hata Ayıklama ve Profilleme"
 
 #: library/debug.rst:5
 msgid ""
@@ -29,3 +28,11 @@ msgid ""
 "provide visibility into runtime behaviors that would otherwise require "
 "intrusive debugging or patching."
 msgstr ""
+"Bu kütüphaneler Python geliştirme sürecinizde size yardımcı olur: hata "
+"ayıklayıcı (debugger) kodu adım adım izlemenizi, yığın çerçevelerini (stack "
+"frames) analiz etmenizi ve kesme noktaları (breakpoints) koymanızı vb. "
+"sağlar; profilleyiciler (profilers) ise kodu çalıştırıp yürütme sürelerinin "
+"ayrıntılı bir dökümünü vererek programlarınızdaki darboğazları belirlemenize "
+"olanak tanır. Denetim olayları (auditing events), aksi takdirde müdahaleci "
+"hata ayıklama veya yama gerektirecek çalışma zamanı davranışlarına görünürlük "
+"sağlar."
