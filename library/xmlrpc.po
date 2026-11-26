@@ -2,7 +2,6 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
@@ -18,7 +17,7 @@ msgstr ""
 
 #: library/xmlrpc.rst:2
 msgid ":mod:`!xmlrpc` --- XMLRPC server and client modules"
-msgstr ""
+msgstr ":mod:`!xmlrpc` --- XMLRPC sunucu ve istemci modülleri"
 
 #: library/xmlrpc.rst:4
 msgid ""
@@ -26,17 +25,23 @@ msgid ""
 "transport.  With it, a client can call methods with parameters on a remote "
 "server (the server is named by a URI) and get back structured data."
 msgstr ""
+"XML-RPC, taşıma katmanı olarak HTTP üzerinden iletilen XML'i kullanan bir "
+"Uzaktan Yordam Çağrısı (Remote Procedure Call) yöntemidir. Bu yöntemle bir "
+"istemci, uzak bir sunucudaki (sunucu bir URI ile adlandırılır) metotları "
+"parametrelerle çağırabilir ve yapılandırılmış veri geri alabilir."
 
 #: library/xmlrpc.rst:8
 msgid ""
 "``xmlrpc`` is a package that collects server and client modules implementing "
 "XML-RPC.  The modules are:"
 msgstr ""
+"``xmlrpc``, XML-RPC'yi uygulayan sunucu ve istemci modüllerini bir araya "
+"getiren bir pakettir. Modüller şunlardır:"
 
 #: library/xmlrpc.rst:11
 msgid ":mod:`xmlrpc.client`"
-msgstr ""
+msgstr ":mod:`xmlrpc.client`"
 
 #: library/xmlrpc.rst:12
 msgid ":mod:`xmlrpc.server`"
-msgstr ""
+msgstr ":mod:`xmlrpc.server`"
